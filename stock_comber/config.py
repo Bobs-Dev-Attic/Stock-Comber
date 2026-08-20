@@ -29,6 +29,10 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "tickers": [],
         "limit": 500,  # cap when pulling the full SEC ticker list
         "exchanges": [],  # reserved for future filtering
+        # Index template for the nightly candidate pool: "" (curated seed),
+        # "dow", "nasdaq100", or "sp500". When set, that index's constituents
+        # are the universe, filtered by the nightly criteria below.
+        "index": "",
         "extra_tickers": [],  # add your own names to the nightly candidate pool
         # Nightly "hidden gems" selection — capped, sector-diversified, rotating.
         "nightly": {
@@ -42,6 +46,7 @@ DEFAULT_CONFIG: dict[str, Any] = {
             "max_per_sector": 12,            # diversify: cap names per sector
             "enrich_per_run": 40,            # Finnhub profiles to fetch per night
             "include_unknown": True,         # screen not-yet-enriched names too
+            "industries": [],                # empty = all (GICS sub-industry)
         },
     },
     # Data-source knobs.
@@ -213,4 +218,12 @@ def validate_config(cfg: dict[str, Any]) -> list[str]:
     limit = cfg.get("universe", {}).get("limit")
     if limit is not None and limit < 0:
         problems.append("universe.limit must be >= 0")
+
+    index = cfg.get("universe", {}).get("index")
+    if index:
+        from .indices import index_keys
+        if index not in index_keys():
+            problems.append(
+                f"unknown universe.index: {index!r} "
+                f"(choose from {', '.join(index_keys())} or leave blank)")
     return problems

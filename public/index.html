@@ -173,6 +173,11 @@
                 title="Choose which value frameworks the Screen table runs">Strategies ▾</button>
         <div class="panel-pop" id="strat-pop"></div>
       </div>
+      <div class="menu" id="tmpl-menu">
+        <button class="btn ghost" id="tmpl-btn" aria-haspopup="true" aria-expanded="false"
+                title="Load a slice of an index (Dow / Nasdaq-100 / S&amp;P 500), filtered by sector">Templates ▾</button>
+        <div class="panel-pop" id="tmpl-pop" style="min-width:250px"></div>
+      </div>
     </div>
     <div id="ac" class="ac-dd" role="listbox"></div>
 
@@ -214,7 +219,7 @@
   <p class="foot">
     Educational tool only — not investment advice. Data from SEC EDGAR, Yahoo &amp; Stooq may be delayed or incomplete.<br>
     <a href="/history.html">🕓 History</a> · <a href="/analytics.html">📊 Analytics</a> · <a href="/backtest.html">🧪 Backtest</a> · <a href="/settings.html">⚙️ Settings</a> ·
-    API: <code>/api/latest</code> · <code>/api/screen</code> · <code>/api/analyze</code> · <code>/api/export</code> · <code>/api/runs</code> ·
+    API: <code>/api/latest</code> · <code>/api/screen</code> · <code>/api/analyze</code> · <code>/api/universe</code> · <code>/api/export</code> · <code>/api/runs</code> ·
     <a href="https://github.com/Bobs-Dev-Attic/Stock-Comber">source</a>
   </p>
 </div>
@@ -300,6 +305,51 @@ function buildStratMenu() {
   updateStratBtn();
 }
 
+/* index universe templates (Dow / Nasdaq-100 / S&P 500) */
+let tmplBuilt = false;
+async function buildTmplMenu() {
+  const pop = $("#tmpl-pop"); pop.innerHTML = '<div class="hint" style="padding:.2rem">Loading…</div>';
+  let templates = [];
+  try { const d = await (await fetch("/api/universe")).json(); templates = d.templates || []; }
+  catch(e) { pop.innerHTML = '<div class="hint" style="padding:.2rem">Couldn\'t load templates.</div>'; return; }
+  pop.innerHTML = "";
+  const mk = (lab, node) => { const w = document.createElement("div"); w.className = "colrow";
+    w.style.flexDirection = "column"; w.style.alignItems = "stretch";
+    const l = document.createElement("label"); l.textContent = lab; l.style.color = "var(--muted)"; l.style.fontSize = ".8rem";
+    w.append(l, node); pop.appendChild(w); return node; };
+  const idx = document.createElement("select");
+  templates.forEach(t => { const o = document.createElement("option"); o.value = t.key; o.textContent = `${t.name} (${t.count})`; idx.appendChild(o); });
+  mk("Index", idx);
+  const sector = document.createElement("select"); mk("Sector (optional)", sector);
+  const nInp = document.createElement("input"); nInp.type = "number"; nInp.value = 10; nInp.min = 1; nInp.max = 30; mk("How many (top by market cap)", nInp);
+  const go = document.createElement("button"); go.className = "btn"; go.style.width = "100%"; go.style.marginTop = ".4rem"; go.textContent = "Load into search";
+  pop.appendChild(go);
+  const note = document.createElement("div"); note.className = "hint"; note.style.marginTop = ".3rem";
+  pop.appendChild(note);
+  async function refreshSectors() {
+    sector.innerHTML = '<option value="">All sectors</option>';
+    try { const d = await (await fetch("/api/universe?index=" + encodeURIComponent(idx.value) + "&limit=1")).json();
+      (d.sectors || []).forEach(s => { const o = document.createElement("option"); o.value = s; o.textContent = s; sector.appendChild(o); });
+      note.textContent = "Snapshot " + (d.snapshot_date || "") + ". Nightly job covers the full index; here you load a slice to compare live.";
+    } catch(e){}
+  }
+  idx.onchange = refreshSectors; await refreshSectors();
+  go.onclick = async () => {
+    go.disabled = true; go.textContent = "Loading…";
+    const p = new URLSearchParams({ index: idx.value, limit: String(nInp.value || 10) });
+    if (sector.value) p.set("sector", sector.value);
+    try {
+      const d = await (await fetch("/api/universe?" + p.toString())).json();
+      const tks = (d.results || []).map(r => r.ticker);
+      if (!tks.length) { note.textContent = "No matching constituents."; return; }
+      $("#tickers").value = tks.join(", ");
+      $("#tmpl-menu").classList.remove("open");
+      runLive();
+    } catch(e) { note.textContent = "Failed: " + e.message; }
+    finally { go.disabled = false; go.textContent = "Load into search"; }
+  };
+}
+
 /* formatting */
 const num = v => (v === null || v === undefined || v === "" || v === "—") ? null : Number(v);
 function fmt(v) {
@@ -346,6 +396,7 @@ document.addEventListener("click", () => document.querySelectorAll(".menu").forE
 $("#cols-pop").addEventListener("click", e => e.stopPropagation());
 $("#export-menu .panel-pop").addEventListener("click", e => e.stopPropagation());
 $("#strat-pop").addEventListener("click", e => e.stopPropagation());
+$("#tmpl-pop").addEventListener("click", e => e.stopPropagation());
 
 /* ---- table ---- */
 function renderHead() {
@@ -751,8 +802,10 @@ tickersInput.addEventListener("keydown", e => {
 tickersInput.addEventListener("blur", () => setTimeout(closeAC, 120));
 
 /* init */
-wireMenu("cols-menu"); wireMenu("export-menu"); wireMenu("strat-menu");
+wireMenu("cols-menu"); wireMenu("export-menu"); wireMenu("strat-menu"); wireMenu("tmpl-menu");
 buildColsMenu(); buildStratMenu(); renderHead(); loadLatest();
+// Lazily build the Templates menu the first time it's opened.
+$("#tmpl-btn").addEventListener("click", () => { if (!tmplBuilt) { tmplBuilt = true; buildTmplMenu(); } }, true);
 </script>
 </body>
 </html>
