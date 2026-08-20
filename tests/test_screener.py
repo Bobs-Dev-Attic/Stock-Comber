@@ -30,6 +30,22 @@ def test_run_ranks_passing_first(strong_company, weak_company, config):
     assert not results[-1].passed
 
 
+def test_rank_attaches_health_and_can_sort_by_it(strong_company, weak_company, config):
+    config["universe"]["tickers"] = ["STRONG", "WEAK"]
+    config["strategies"] = ["graham"]
+    config["output"]["sort_by"] = "health"
+    screener = Screener(config, sec=FakeSec([strong_company, weak_company]),
+                        stooq=FakeStooq())
+    results = screener.run()
+    # Every result carries a composite health score in its metrics.
+    assert all("health_score" in r.metrics for r in results)
+    strong = next(r for r in results if r.ticker == "STRONG")
+    weak = next(r for r in results if r.ticker == "WEAK")
+    assert strong.metrics["health_score"] > weak.metrics["health_score"]
+    # The healthier company ranks first.
+    assert results[0].ticker == "STRONG"
+
+
 def test_unknown_ticker_is_reported_not_fatal(config):
     config["universe"]["tickers"] = ["GHOST"]
     config["strategies"] = ["graham"]

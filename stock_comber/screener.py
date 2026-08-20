@@ -158,9 +158,22 @@ class Screener:
 
     # -- ranking ---------------------------------------------------------
     def rank(self, results: list[ScreenResult]) -> list[ScreenResult]:
+        from .scoring import overall_health
+
         sort_by = self.config.get("output", {}).get("sort_by", "score_pct")
 
+        # Attach the composite 0–100 health score to every result so it can be
+        # ranked on, exported, and shown. Cheap: pure math over metrics we
+        # already computed. The nightly "hidden gems" run ranks by it (see
+        # cli._load), surfacing the strongest businesses at the top.
+        for r in results:
+            if r.metrics is not None and "health_score" not in r.metrics:
+                r.metrics["health_score"] = overall_health(r.metrics)
+
         def key(r: ScreenResult) -> tuple:
+            if sort_by == "health":
+                health = (r.metrics or {}).get("health_score")
+                return (r.passed, health if health is not None else -1.0, r.score_pct)
             if sort_by == "score_pct":
                 return (r.passed, r.score_pct)
             return (r.passed, getattr(r, sort_by, r.score_pct))

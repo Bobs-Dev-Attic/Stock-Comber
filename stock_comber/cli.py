@@ -71,6 +71,11 @@ def _load(args) -> dict:
         cfg["universe"]["limit"] = args.limit
     if getattr(args, "nightly", False):
         cfg["universe"]["mode"] = "nightly"
+        # Rank the nightly "hidden gems" by composite health, unless the user
+        # explicitly chose another sort.
+        out = cfg.setdefault("output", {})
+        if out.get("sort_by", "score_pct") == "score_pct":
+            out["sort_by"] = "health"
     if getattr(args, "strategy", None):
         cfg["strategies"] = args.strategy
     if getattr(args, "only_passing", False):
