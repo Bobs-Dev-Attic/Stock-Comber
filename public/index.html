@@ -180,6 +180,10 @@
 <script>
 const $ = s => document.querySelector(s);
 const escHtml = v => (v==null?"":String(v)).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const STRAT_LABEL = {graham:"Graham (defensive)", buffett:"Buffett (quality)",
+  piotroski:"Piotroski F-Score", greenblatt:"Greenblatt Magic Formula",
+  lynch:"Lynch (GARP)", netnet:"Graham Net-Net (NCAV)", custom:"Custom criteria"};
+const stratLabel = s => STRAT_LABEL[s] || s;
 let strat = "both", rows = [], sortK = "score_pct", sortDir = -1;
 
 const METRICS = [
@@ -401,7 +405,7 @@ function openDetail(r) {
   $("#modal").innerHTML =
     `<button class="close" aria-label="Close">×</button>`+
     `<h2>${r.ticker} <span class="badge ${badgeCls}">${badge}</span></h2>`+
-    `<div class="sub">${r.name||""} · <b>${r.strategy}</b> strategy · score ${(r.score_pct??0).toFixed(0)}% (${r.score}/${r.max_score})</div>`+
+    `<div class="sub">${r.name||""} · <b>${stratLabel(r.strategy)}</b> · score ${(r.score_pct??0).toFixed(0)}% (${r.score}/${r.max_score})</div>`+
     errs+`<div class="sec-h">Criteria</div>${crits||emptyCrit}`+
     `<div class="sec-h">Key metrics</div><div class="mgrid">${mcells}</div>`+
     `<div class="sec-h">Data sources &amp; additional context</div>`+
@@ -473,7 +477,7 @@ function openAnalysis(data) {
     }
     return `<div class="crit ${!evaluated?'na':r.passed?'ok':'no'}" ${evaluated?`data-s="${r.strategy}" style="cursor:pointer"`:''}>`+
     `<div class="ic">${!evaluated?'!':r.passed?'✔':'✕'}</div><div class="body">`+
-    `<div class="cname">${r.strategy} <span class="badge ${badgeCls}">${badge}</span></div>`+
+    `<div class="cname">${stratLabel(r.strategy)} <span class="badge ${badgeCls}">${badge}</span></div>`+
     `<div class="vals">${sub}</div>`+
     `</div></div>`;
   }).join("") || '<div class="hint">No strategy results.</div>';

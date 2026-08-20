@@ -47,6 +47,7 @@ def run_analysis(ticker: str, news_days: int = 14) -> dict:
     sentiment = extra.get("sentiment")
 
     run_id = None
+    passing = sum(1 for r in results if r.passed)
     if getattr(store, "enabled", False):
         try:
             run_id = store.save_run(results, screener.last_companies,
@@ -55,6 +56,12 @@ def run_analysis(ticker: str, news_days: int = 14) -> dict:
             store.mark_queue(ticker.upper(), "done", run_id=run_id)
         except Exception:  # persistence must never fail the analysis
             run_id = None
+        # Record the analysis in the search log so it shows in History.
+        try:
+            store.log_search("analyze", [ticker.upper()], cfg.get("strategies", []),
+                             None, len({r.ticker for r in results}), passing)
+        except Exception:
+            pass
 
     return {
         "version": __version__,
@@ -62,7 +69,7 @@ def run_analysis(ticker: str, news_days: int = 14) -> dict:
         "run_id": run_id,
         "finnhub_enabled": screener.finnhub is not None,
         "count": len({r.ticker for r in results}),
-        "passing": sum(1 for r in results if r.passed),
+        "passing": passing,
         "results": [r.to_dict() for r in results],
         "news": news,
         "sentiment": sentiment,

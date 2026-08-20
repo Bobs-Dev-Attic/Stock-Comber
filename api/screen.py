@@ -28,7 +28,8 @@ from stock_comber.storage import get_storage  # noqa: E402
 
 MAX_TICKERS = 10
 MAX_CUSTOM = 15
-VALID_STRATEGIES = ("graham", "buffett", "custom")
+VALID_STRATEGIES = ("graham", "buffett", "custom", "piotroski",
+                    "greenblatt", "lynch", "netnet")
 
 
 def run_screen(tickers, strategies, custom_criteria=None):

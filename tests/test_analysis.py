@@ -34,7 +34,7 @@ def test_full_config_enables_enrichment():
     cfg = _full_config(load_config())
     assert cfg["data"]["finnhub_enrich_results"] is True
     assert cfg["universe"]["mode"] == "list"
-    assert set(cfg["strategies"]) == {"graham", "buffett"}
+    assert {"graham", "buffett", "piotroski", "greenblatt", "lynch", "netnet"} <= set(cfg["strategies"])
 
 
 def test_process_queue_noop_without_db():
