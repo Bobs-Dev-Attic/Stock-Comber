@@ -1,5 +1,13 @@
 # Release notes
 
+## v0.5.1 — Settings page (2026-08-20)
+
+A browser **Settings page** (linked from the dashboard) to edit every parameter:
+strategies, Graham/Buffett thresholds, the nightly universe filters (cap,
+market-cap band, volume, sectors, countries, extra tickers), custom criteria and
+output preferences. It shows which keys/DB are configured (never the secrets),
+saves to your database, or lets you **Download as YAML** if you don't use a DB.
+
 ## v0.5.0 — Nightly "hidden gems" universe (2026-08-20)
 
 The nightly job no longer re-screens every listed company. It now screens a

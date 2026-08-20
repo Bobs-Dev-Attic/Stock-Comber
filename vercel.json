@@ -17,6 +17,11 @@
       "memory": 512,
       "maxDuration": 30,
       "includeFiles": "{stock_comber/**,public/data/latest.json}"
+    },
+    "api/settings.py": {
+      "memory": 512,
+      "maxDuration": 15,
+      "includeFiles": "stock_comber/**"
     }
   }
 }

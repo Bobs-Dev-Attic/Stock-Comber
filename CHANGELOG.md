@@ -4,6 +4,22 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.1] - 2026-08-20
+
+### Added
+- **Settings page** (`public/settings.html`) — edit strategies, Graham/Buffett
+  thresholds, the nightly universe filters (cap, market-cap band, volume,
+  sectors, countries, extra tickers), custom criteria, and output preferences in
+  the browser. Shows **key/DB status** (configured or not) without ever
+  revealing secrets. Saves to the database, or **Download as YAML** when no DB is
+  configured. Linked from the dashboard.
+- **Settings API** (`api/settings.py`) — `GET /api/settings` returns the
+  effective config + key status; `POST /api/settings?key=…` validates and merges
+  changes into the stored settings (requires `DATABASE_URL` +
+  `STOCK_COMBER_API_KEY`).
+
+[0.5.1]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.5.1
+
 ## [0.5.0] - 2026-08-20
 
 ### Added
