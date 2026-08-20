@@ -8,6 +8,8 @@ Writing requires a database (`DATABASE_URL`) and the `STOCK_COMBER_API_KEY`
 booleans indicating which keys are configured.
 """
 
+from __future__ import annotations   # `dict | None` annotations on Python 3.9
+
 from http.server import BaseHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs
 import copy
