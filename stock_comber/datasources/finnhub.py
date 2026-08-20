@@ -59,6 +59,8 @@ class FinnhubSource:
         self.cache = cache
         self.timeout = timeout
         self.delay = delay
+        self._rate_limited = False  # circuit breaker after repeated 429s
+        self._429s = 0
         if session is not None:
             self.session = session
         elif requests is not None:
@@ -71,13 +73,23 @@ class FinnhubSource:
             cached = self.cache.get(namespace, key)
             if cached is not None:
                 return cached
+        # Once we've hit the free-tier limit repeatedly, stop calling for the
+        # rest of the run so we don't waste time on guaranteed 429s.
+        if self._rate_limited:
+            return None
         if self.session is None:  # pragma: no cover
             raise RuntimeError("requests is not available; cannot fetch data")
         params = dict(params, token=self.api_key)
         resp = self.session.get(f"{BASE}{path}", params=params, timeout=self.timeout)
         if self.delay:
-            time.sleep(self.delay)
+            time.sleep(self.delay)  # throttle to stay under ~60 req/min
+        if resp.status_code == 429:
+            self._429s += 1
+            if self._429s >= 3:
+                self._rate_limited = True
+            resp.raise_for_status()
         resp.raise_for_status()
+        self._429s = 0
         data = resp.json()
         if self.cache is not None:
             self.cache.set(namespace, key, data)
@@ -101,11 +113,13 @@ class FinnhubSource:
             return None
         return data.get("metric") or data
 
-    def fetch_profile(self, ticker: str) -> Optional[dict]:
+    def fetch_profile(self, ticker: str, with_volume: bool = False) -> Optional[dict]:
         """Return {market_cap, sector, country, exchange, name, avg_volume}.
 
-        Market cap is normalised to dollars (Finnhub reports it in millions);
-        average daily volume comes from the metric bundle when available.
+        Market cap is normalised to dollars (Finnhub reports it in millions).
+        This is one API call by default; ``with_volume=True`` spends a second
+        call on the metric bundle for average volume — off by default to conserve
+        the free-tier rate limit.
         """
         symbol = ticker.upper()
         try:
@@ -124,12 +138,13 @@ class FinnhubSource:
             "market_cap": float(cap_m) * 1e6 if cap_m else None,
             "avg_volume": None,
         }
-        metrics = self.fetch_metrics(symbol) or {}
-        vol_m = (metrics.get("10DayAverageTradingVolume")
-                 or metrics.get("3MonthAverageTradingVolume"))
-        if vol_m:
-            try:
-                prof["avg_volume"] = float(vol_m) * 1e6  # reported in millions
-            except (TypeError, ValueError):
-                pass
+        if with_volume:
+            metrics = self.fetch_metrics(symbol) or {}
+            vol_m = (metrics.get("10DayAverageTradingVolume")
+                     or metrics.get("3MonthAverageTradingVolume"))
+            if vol_m:
+                try:
+                    prof["avg_volume"] = float(vol_m) * 1e6  # reported in millions
+                except (TypeError, ValueError):
+                    pass
         return prof

@@ -43,20 +43,26 @@ class Screener:
         self.finnhub: Optional[FinnhubSource] = None
         fh_key = resolve_api_key(config)
         if fh_key:
-            self.finnhub = FinnhubSource(fh_key, cache=cache, timeout=timeout)
+            # Throttle Finnhub to stay under the free-tier ~60 req/min limit.
+            self.finnhub = FinnhubSource(
+                fh_key, cache=cache, timeout=timeout,
+                delay=data.get("finnhub_min_interval", 1.1))
 
-        # Price sources are tried in order until one returns a price. Finnhub
-        # (when configured) first, then Yahoo (reliable from servers), then Stooq.
+        # Price sources are tried in order until one returns a price. Yahoo is
+        # primary (reliable, unmetered from servers), Stooq the fallback, and
+        # Finnhub only as a last resort — Finnhub's budget is reserved for
+        # universe enrichment, not per-ticker prices.
         if price_sources is not None:
             self.price_sources = price_sources
         elif stooq is not None:
             self.price_sources = [stooq]
         else:
-            self.price_sources = []
+            self.price_sources = [
+                YahooSource(cache=cache, timeout=timeout, delay=0.0),
+                StooqSource(cache=cache, timeout=timeout, delay=delay),
+            ]
             if self.finnhub is not None:
                 self.price_sources.append(self.finnhub)
-            self.price_sources.append(YahooSource(cache=cache, timeout=timeout, delay=0.0))
-            self.price_sources.append(StooqSource(cache=cache, timeout=timeout, delay=delay))
         # Back-compat alias.
         self.stooq = stooq or (self.price_sources[-1] if self.price_sources else None)
         # Companies fetched during the most recent run(), for persistence.
@@ -118,8 +124,10 @@ class Screener:
         except Exception as exc:
             log.warning("failed to fetch price for %s: %s", ticker, exc)
 
-        # Supplementary Finnhub metrics (stored alongside the analysis).
-        if self.finnhub is not None:
+        # Supplementary Finnhub metrics (stored alongside the analysis). Off by
+        # default — one extra Finnhub call per ticker is costly on the free tier.
+        if self.finnhub is not None and self.config.get("data", {}).get(
+                "finnhub_enrich_results", False):
             try:
                 company.extra = self.finnhub.fetch_metrics(ticker)
             except Exception as exc:

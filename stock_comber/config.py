@@ -54,8 +54,13 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "request_delay_seconds": 0.2,  # be polite to free endpoints
         "min_annual_years": 3,  # need at least this many years of data
         # Optional Finnhub API key (or set FINNHUB_API_KEY). When present,
-        # Finnhub is used as an extra price source and metrics enricher.
+        # Finnhub enriches the universe (market cap / sector / country).
         "finnhub_api_key": None,
+        # Seconds between Finnhub calls (free tier is ~60/min → ~1.1s).
+        "finnhub_min_interval": 1.1,
+        # Fetch Finnhub's metric bundle for every screened company (1 extra call
+        # per ticker). Off by default to conserve the free-tier rate limit.
+        "finnhub_enrich_results": False,
     },
     # Persistence. Leave dsn null to read DATABASE_URL/POSTGRES_URL from the
     # environment (e.g. a free Neon Postgres). Without any DSN, runs are not
