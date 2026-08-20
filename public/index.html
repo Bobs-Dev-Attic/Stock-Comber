@@ -66,6 +66,7 @@
   .badge { display: inline-block; padding: .1rem .5rem; border-radius: 999px; font-size: .78rem; font-weight: 700; }
   .badge.pass { background: var(--pass-bg); color: var(--pass-ink); }
   .badge.near { background: var(--chip); color: var(--near); }
+  .badge.warn { background: color-mix(in srgb, var(--fail-ink) 16%, transparent); color: var(--fail-ink); }
   .bar { height: 7px; width: 70px; background: var(--chip); border-radius: 999px; overflow: hidden; display: inline-block; vertical-align: middle; }
   .bar > i { display: block; height: 100%; background: var(--accent); }
   .foot { margin-top: 2rem; color: var(--muted); font-size: .82rem; }
@@ -99,6 +100,7 @@
   .crit .cname { font-weight: 600; }
   .crit .vals, .crit .det { color: var(--muted); font-size: .85rem; }
   .crit.ok .ic { color: var(--pass-ink); } .crit.no .ic { color: var(--fail-ink); }
+  .crit.na .ic { color: var(--fail-ink); font-weight: 700; }
   .mgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: .5rem; margin: .9rem 0; }
   .mgrid .m { background: var(--bg); border: 1px solid var(--line); border-radius: 9px; padding: .45rem .6rem; }
   .mgrid .m b { display: block; font-size: 1rem; } .mgrid .m span { color: var(--muted); font-size: .78rem; }
@@ -177,6 +179,7 @@
 
 <script>
 const $ = s => document.querySelector(s);
+const escHtml = v => (v==null?"":String(v)).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 let strat = "both", rows = [], sortK = "score_pct", sortDir = -1;
 
 const METRICS = [
@@ -390,11 +393,16 @@ function openDetail(r) {
     .map(([lab,k])=>`<div class="m"><b>${fmt(m[k])}</b><span>${lab}</span></div>`).join("");
   const links = extLinks(r).map(([lab,href])=>`<a href="${href}" target="_blank" rel="noopener">${lab} ↗</a>`).join("");
   const errs = (r.errors&&r.errors.length)?`<div class="hint" style="color:var(--fail-ink)">Notes: ${r.errors.join("; ")}</div>`:"";
+  const evaluated = (r.max_score || 0) > 0;
+  const badge = evaluated ? (r.passed ? "PASS" : "did not pass") : "not analyzed";
+  const badgeCls = evaluated ? (r.passed ? "pass" : "near") : "warn";
+  const emptyCrit = `<div class="hint">This strategy couldn't be scored — no annual `+
+    `fundamentals were retrieved from SEC EDGAR for this ticker.</div>`;
   $("#modal").innerHTML =
     `<button class="close" aria-label="Close">×</button>`+
-    `<h2>${r.ticker} <span class="badge ${r.passed?'pass':'near'}">${r.passed?'PASS':'near miss'}</span></h2>`+
+    `<h2>${r.ticker} <span class="badge ${badgeCls}">${badge}</span></h2>`+
     `<div class="sub">${r.name||""} · <b>${r.strategy}</b> strategy · score ${(r.score_pct??0).toFixed(0)}% (${r.score}/${r.max_score})</div>`+
-    errs+`<div class="sec-h">Criteria</div>${crits||'<div class="hint">No criteria evaluated.</div>'}`+
+    errs+`<div class="sec-h">Criteria</div>${crits||emptyCrit}`+
     `<div class="sec-h">Key metrics</div><div class="mgrid">${mcells}</div>`+
     `<div class="sec-h">Data sources &amp; additional context</div>`+
     `<div class="hint">Fundamentals from SEC EDGAR; price from Yahoo/Stooq. Verify and dig deeper here:</div>`+
@@ -449,12 +457,26 @@ function openAnalysis(data) {
   const results = data.results || [];
   const s = data.sentiment, news = data.news || [];
   const grade = s && s.grade ? s.grade : "—";
-  const stratRows = results.map(r =>
-    `<div class="crit ${r.passed?'ok':'no'}" data-t="${r.ticker}" data-s="${r.strategy}" style="cursor:pointer">`+
-    `<div class="ic">${r.passed?'✔':'✕'}</div><div class="body">`+
-    `<div class="cname">${r.strategy} <span class="badge ${r.passed?'pass':'near'}">${r.passed?'PASS':'near miss'}</span></div>`+
-    `<div class="vals">score ${(r.score_pct??0).toFixed(0)}% (${r.score}/${r.max_score}) · tap for full breakdown</div>`+
-    `</div></div>`).join("") || '<div class="hint">No strategy results.</div>';
+  const stratRows = results.map(r => {
+    const evaluated = (r.max_score || 0) > 0;
+    const met = (r.criteria || []).filter(c => c.passed).length;
+    const total = (r.criteria || []).length;
+    let badge, badgeCls, sub;
+    if (!evaluated) {
+      badge = "not analyzed"; badgeCls = "warn";
+      sub = (r.errors && r.errors.length)
+        ? escHtml(r.errors.join("; "))
+        : "No fundamentals were available to score this strategy.";
+    } else {
+      badge = r.passed ? "PASS" : "did not pass"; badgeCls = r.passed ? "pass" : "near";
+      sub = `met ${met} of ${total} criteria · score ${(r.score_pct??0).toFixed(0)}% · tap for full breakdown`;
+    }
+    return `<div class="crit ${!evaluated?'na':r.passed?'ok':'no'}" ${evaluated?`data-s="${r.strategy}" style="cursor:pointer"`:''}>`+
+    `<div class="ic">${!evaluated?'!':r.passed?'✔':'✕'}</div><div class="body">`+
+    `<div class="cname">${r.strategy} <span class="badge ${badgeCls}">${badge}</span></div>`+
+    `<div class="vals">${sub}</div>`+
+    `</div></div>`;
+  }).join("") || '<div class="hint">No strategy results.</div>';
 
   let sentHtml;
   if (s && s.article_count) {
@@ -469,17 +491,25 @@ function openAnalysis(data) {
   }
   const newsHtml = news.length
     ? `<div class="links" style="flex-direction:column;align-items:flex-start">`+
-      news.slice(0,10).map(n => `<a href="${n.url||'#'}" target="_blank" rel="noopener">${(n.headline||"(untitled)")} ↗</a>`).join("")+`</div>`
+      news.slice(0,10).map(n => `<a href="${encodeURI(n.url||'#')}" target="_blank" rel="noopener">${escHtml(n.headline||"(untitled)")} ↗</a>`).join("")+`</div>`
     : "";
   const first = results[0] || {};
+  const anyEvaluated = results.some(r => (r.max_score || 0) > 0);
+  const dataNote = !anyEvaluated
+    ? `<div class="hint" style="margin-top:.5rem;color:var(--fail-ink)">`+
+      `Couldn't retrieve annual fundamentals from SEC EDGAR for this ticker, so the `+
+      `Graham &amp; Buffett checklists couldn't be scored. News sentiment (below) still ran. `+
+      `This usually means EDGAR has no XBRL 10-K data under the ticker's filing entity.</div>`
+    : "";
   $("#modal").innerHTML =
     `<button class="close" aria-label="Close">×</button>`+
-    `<h2>${data.ticker} <span class="badge ${data.passing?'pass':'near'}">${data.passing?data.passing+' passing':'no pass'}</span></h2>`+
+    `<h2>${data.ticker} <span class="badge ${data.passing?'pass':anyEvaluated?'near':'warn'}">`+
+    `${data.passing?data.passing+' passing':anyEvaluated?'no pass':'not analyzed'}</span></h2>`+
     `<div class="sub">${first.name||""} · full analysis${data.run_id?` · stored as run #${data.run_id}`:""}</div>`+
-    `<div class="sec-h">Strategies</div>${stratRows}`+
+    `<div class="sec-h">Strategies</div>${stratRows}${dataNote}`+
     `<div class="sec-h">News sentiment</div>${sentHtml}${newsHtml}`;
   $("#modal .close").onclick = closeDetail;
-  $("#modal").querySelectorAll(".crit[data-t]").forEach(el => el.onclick = () => {
+  $("#modal").querySelectorAll(".crit[data-s]").forEach(el => el.onclick = () => {
     const r = results.find(x => x.strategy === el.dataset.s); if (r) openDetail(r);
   });
   $("#overlay").classList.add("open");

@@ -4,6 +4,27 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.10.0] - 2026-08-20
+
+### Fixed
+- **Fundamentals now resolve for tickers SEC maps to the "wrong" CIK.** SEC's
+  `company_tickers.json` can point a ticker (e.g. **XOM**) at a registrant that
+  has no XBRL 10-K facts, which produced an empty 0/0 screen. `fetch_company`
+  now falls back to EDGAR's company search to find the CIK that actually files
+  10-Ks for the ticker and re-fetches its `companyfacts`, so Graham/Buffett get
+  real data. Only consulted when the mapped CIK yields nothing (no extra calls
+  otherwise).
+
+### Changed
+- **Honest analysis states.** A result with no evaluable criteria no longer
+  mislabels itself "near miss." The manual-analysis modal now distinguishes
+  **PASS** / **did not pass** (with "met N of M criteria") from **not analyzed**,
+  and, when fundamentals couldn't be retrieved, explains why instead of showing
+  a blank 0/0. News sentiment still shows regardless. Added HTML-escaping for
+  error text and news headlines.
+
+[0.10.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.10.0
+
 ## [0.9.1] - 2026-08-20
 
 ### Fixed
