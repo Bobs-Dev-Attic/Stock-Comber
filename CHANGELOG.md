@@ -4,6 +4,21 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.11.1] - 2026-08-20
+
+### Changed
+- **Strategy picker is now a multi-select dropdown.** The Both/Graham/Buffett
+  segmented buttons are replaced by a **Strategies ▾** checkbox menu listing all
+  six investor lenses; tick any combination for the Screen table. Selection is
+  remembered in your browser (defaults to Graham + Buffett).
+- **Clearer Screen vs. Analyze now.** "Screen live" is renamed **Screen** with a
+  tooltip and inline help explaining the difference: **Screen** compares up to 10
+  tickers at once as a sortable table using the ticked strategies; **Analyze now**
+  deep-dives a single ticker across all six analysts plus news & sentiment. Both
+  are kept — they serve different jobs (batch table vs. one-ticker deep-dive).
+
+[0.11.1]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.11.1
+
 ## [0.11.0] - 2026-08-20
 
 ### Added

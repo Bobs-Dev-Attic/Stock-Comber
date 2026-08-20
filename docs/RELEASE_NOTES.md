@@ -1,5 +1,19 @@
 # Release notes
 
+## v0.11.1 — Multi-select strategies + clearer Screen vs. Analyze (2026-08-20)
+
+- The strategy chooser under the search box is now a **Strategies ▾ dropdown with
+  checkboxes** for all six lenses — tick any combination for the Screen table,
+  and your choice is remembered (defaults to Graham + Buffett).
+- **What does "Screen" do vs. "Analyze now"?** Both are useful:
+  - **Screen** (renamed from "Screen live") compares **up to 10 tickers at once**
+    as a sortable table, using the strategies you tick. Fast, no news/enrichment.
+  - **Analyze now** takes **one** ticker and does the full deep-dive — all six
+    analysts + Finnhub enrichment + recent news and a sentiment grade — in a
+    detail view, and stores it to history.
+
+  Tooltips and inline help now spell this out on the page.
+
 ## v0.11.0 — Four more investor lenses + fuller history (2026-08-20)
 
 **Are there other analysts to consider?** Yes — four classics now ship alongside
