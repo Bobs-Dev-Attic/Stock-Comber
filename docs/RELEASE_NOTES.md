@@ -1,5 +1,13 @@
 # Release notes
 
+## v0.3.1 — Live-screen production fix (2026-08-20)
+
+The live screen was returning HTML instead of JSON in production. Fixed two
+causes: Vercel Authentication was enabled (redirecting `/api/*` to a login page),
+and the `builds`/`routes` config wasn't routing to the Python lambdas (404).
+Switched to the standard `framework: null` + `outputDirectory: public` +
+`functions` config so `/api/screen` and `/api/latest` serve JSON.
+
 ## v0.3.0 — Explanations, source links & custom criteria (2026-08-20)
 
 Three new user-facing capabilities on the dashboard and API:

@@ -4,6 +4,19 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.1] - 2026-08-20
+
+### Fixed
+- **Live screen returned HTML instead of JSON in production.** Two causes:
+  (1) the project had Vercel Authentication (SSO) enabled, which 302-redirected
+  `/api/*` to a login page — disabled it so the public dashboard and API work;
+  (2) the `builds`/`routes` config built the Python lambdas but didn't route to
+  them (404). Replaced it with the standard `framework: null` +
+  `outputDirectory: public` + `functions` config so `api/*.py` are served as
+  regular serverless functions at `/api/*` and `public/` is the static root.
+
+[0.3.1]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.3.1
+
 ## [0.3.0] - 2026-08-20
 
 ### Added
