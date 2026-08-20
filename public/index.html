@@ -122,13 +122,13 @@
         <input id="tickers" type="text" placeholder="Tickers, e.g. AAPL, MSFT, JNJ, KO" autocomplete="off"
                role="combobox" aria-expanded="false" aria-controls="ac" aria-autocomplete="list">
       </div>
-      <div class="seg" role="group" aria-label="Strategy">
-        <button data-strat="both" aria-pressed="true">Both</button>
-        <button data-strat="graham" aria-pressed="false">Graham</button>
-        <button data-strat="buffett" aria-pressed="false">Buffett</button>
+      <div class="menu" id="strat-menu">
+        <button class="btn ghost" id="strat-btn" aria-haspopup="true" aria-expanded="false"
+                title="Choose which value frameworks the Screen table runs">Strategies ▾</button>
+        <div class="panel-pop" id="strat-pop"></div>
       </div>
-      <button id="run" class="btn">Screen live</button>
-      <button id="analyze" class="btn ghost" title="Full analysis of the first ticker: all strategies + news &amp; sentiment">Analyze now</button>
+      <button id="run" class="btn" title="Screen up to 10 tickers at once against the selected strategies — shown as a sortable table (no news/sentiment).">Screen</button>
+      <button id="analyze" class="btn ghost" title="Deep-dive ONE ticker: all six analysts + Finnhub enrichment + news &amp; sentiment, in a detail view.">Analyze now</button>
     </div>
     <div id="ac" class="ac-dd" role="listbox"></div>
 
@@ -142,7 +142,7 @@
       </div>
     </details>
 
-    <div class="hint">Live screen combs SEC EDGAR + Yahoo/Stooq for up to 10 tickers. Leave tickers empty and press “Screen live” to reload the latest scheduled report.</div>
+    <div class="hint"><b>Screen</b> compares up to 10 tickers at once as a sortable table, using the strategies you tick above. <b>Analyze now</b> takes the first ticker and does a full deep-dive — all six analysts plus recent news &amp; a sentiment grade — in a detail view. Leave the box empty and press <b>Screen</b> to reload the latest scheduled report.</div>
 
     <div class="toolbar">
       <div id="status" class="status" style="margin:0"></div>
@@ -184,7 +184,7 @@ const STRAT_LABEL = {graham:"Graham (defensive)", buffett:"Buffett (quality)",
   piotroski:"Piotroski F-Score", greenblatt:"Greenblatt Magic Formula",
   lynch:"Lynch (GARP)", netnet:"Graham Net-Net (NCAV)", custom:"Custom criteria"};
 const stratLabel = s => STRAT_LABEL[s] || s;
-let strat = "both", rows = [], sortK = "score_pct", sortDir = -1;
+let rows = [], sortK = "score_pct", sortDir = -1;
 
 const METRICS = [
   ["pe_ratio","P/E ratio"], ["pb_ratio","P/B ratio"], ["roe_pct","ROE %"],
@@ -215,11 +215,46 @@ function loadCols() {
 }
 function saveCols() { try { localStorage.setItem("sc_cols", JSON.stringify(selectedCols)); } catch(e){} }
 
-/* strategy segmented control */
-document.querySelectorAll(".seg button").forEach(b => b.onclick = () => {
-  strat = b.dataset.strat;
-  document.querySelectorAll(".seg button").forEach(x => x.setAttribute("aria-pressed", x === b));
-});
+/* strategy multi-select dropdown */
+const STRATS = [
+  ["graham","Graham (defensive)"], ["buffett","Buffett (quality)"],
+  ["piotroski","Piotroski F-Score"], ["greenblatt","Greenblatt Magic Formula"],
+  ["lynch","Lynch (GARP)"], ["netnet","Graham Net-Net (NCAV)"],
+];
+const STRAT_KEYS = STRATS.map(s => s[0]);
+function loadStrats() {
+  try { const s = JSON.parse(localStorage.getItem("sc_strats"));
+    if (Array.isArray(s) && s.length) return s.filter(k => STRAT_KEYS.includes(k)); } catch(e){}
+  return ["graham","buffett"];
+}
+let selectedStrats = loadStrats();
+function saveStrats() { try { localStorage.setItem("sc_strats", JSON.stringify(selectedStrats)); } catch(e){} }
+function updateStratBtn() {
+  const n = selectedStrats.length;
+  $("#strat-btn").textContent = (n === 0 ? "Strategies" : `Strategies (${n})`) + " ▾";
+}
+function buildStratMenu() {
+  const pop = $("#strat-pop"); pop.innerHTML = "";
+  STRATS.forEach(([key,label]) => {
+    const row = document.createElement("div"); row.className = "colrow";
+    const cb = document.createElement("input"); cb.type = "checkbox"; cb.id = "strat_"+key;
+    cb.checked = selectedStrats.includes(key);
+    cb.onchange = () => {
+      if (cb.checked) { if (!selectedStrats.includes(key)) selectedStrats.push(key); }
+      else selectedStrats = selectedStrats.filter(k => k !== key);
+      saveStrats(); updateStratBtn();
+    };
+    const lab = document.createElement("label"); lab.htmlFor = cb.id; lab.textContent = label;
+    row.append(cb, lab); pop.appendChild(row);
+  });
+  const mini = document.createElement("div"); mini.className = "mini";
+  const all = document.createElement("button"); all.className = "btn ghost"; all.textContent = "All";
+  all.onclick = () => { selectedStrats = STRAT_KEYS.slice(); saveStrats(); buildStratMenu(); updateStratBtn(); };
+  const def = document.createElement("button"); def.className = "btn ghost"; def.textContent = "Reset";
+  def.onclick = () => { selectedStrats = ["graham","buffett"]; saveStrats(); buildStratMenu(); updateStratBtn(); };
+  mini.append(all, def); pop.appendChild(mini);
+  updateStratBtn();
+}
 
 /* formatting */
 const num = v => (v === null || v === undefined || v === "" || v === "—") ? null : Number(v);
@@ -266,6 +301,7 @@ function wireMenu(id) {
 document.addEventListener("click", () => document.querySelectorAll(".menu").forEach(m => m.classList.remove("open")));
 $("#cols-pop").addEventListener("click", e => e.stopPropagation());
 $("#export-menu .panel-pop").addEventListener("click", e => e.stopPropagation());
+$("#strat-pop").addEventListener("click", e => e.stopPropagation());
 
 /* ---- table ---- */
 function renderHead() {
@@ -438,9 +474,12 @@ async function runLive() {
   closeAC();
   const raw = $("#tickers").value.trim(); const criteria = readCriteria();
   if (!raw) { if (!criteria.length) return loadLatest(); $("#status").textContent = "Enter tickers to screen your custom criteria."; return; }
+  if (!selectedStrats.length && !criteria.length) {
+    $("#status").textContent = "Pick at least one strategy (or add custom criteria) to screen.";
+    return;
+  }
   const params = new URLSearchParams(); params.set("tickers", raw);
-  if (strat !== "both") params.append("strategy", strat);
-  else { params.append("strategy","graham"); params.append("strategy","buffett"); }
+  selectedStrats.forEach(s => params.append("strategy", s));
   if (criteria.length) params.set("custom", JSON.stringify(criteria));
   $("#run").disabled = true; $("#status").textContent = "Combing SEC EDGAR + Yahoo/Stooq…";
   try {
@@ -595,7 +634,8 @@ tickersInput.addEventListener("keydown", e => {
 tickersInput.addEventListener("blur", () => setTimeout(closeAC, 120));
 
 /* init */
-wireMenu("cols-menu"); wireMenu("export-menu"); buildColsMenu(); renderHead(); loadLatest();
+wireMenu("cols-menu"); wireMenu("export-menu"); wireMenu("strat-menu");
+buildColsMenu(); buildStratMenu(); renderHead(); loadLatest();
 </script>
 </body>
 </html>
