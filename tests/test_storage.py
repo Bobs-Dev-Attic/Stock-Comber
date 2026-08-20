@@ -54,5 +54,5 @@ def test_raw_row_serializes_company(strong_company):
 
 def test_null_storage_analytics_shape():
     data = NullStorage().analytics()
-    assert set(data) == {"runs", "top_tickers", "sectors", "sentiment"}
+    assert set(data) == {"runs", "top_tickers", "sectors", "sentiment", "health"}
     assert all(data[k] == [] for k in data)

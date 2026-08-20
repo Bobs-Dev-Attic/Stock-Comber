@@ -28,7 +28,8 @@ class handler(BaseHTTPRequestHandler):
             run_limit = 30
 
         store = get_storage()
-        data = {"runs": [], "top_tickers": [], "sectors": [], "sentiment": []}
+        data = {"runs": [], "top_tickers": [], "sectors": [], "sentiment": [],
+                "health": []}
         if getattr(store, "enabled", False):
             try:
                 data = store.analytics(run_limit)

@@ -1,5 +1,13 @@
 # Release notes
 
+## v0.19.2 — Health score on the Analytics page (2026-08-20)
+
+The **Analytics** page gains a **Health-score grades** chart: the composite
+0–100 health of every passing company, bucketed into A–F bands (counted once per
+ticker) and colored green (A/B) → amber (C) → red (D/F), with each band's average
+score. It sits next to the news-sentiment chart. Backed by a new `health`
+aggregation on `/api/analytics`.
+
 ## v0.19.1 — Nightly gems ranked by health (2026-08-20)
 
 The nightly "hidden gems" shortlist is now **ranked by the composite health
