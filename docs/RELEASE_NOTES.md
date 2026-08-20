@@ -1,5 +1,22 @@
 # Release notes
 
+## v0.4.0 — Persistence, Finnhub, and a key-protected export API (2026-08-20)
+
+- **Storage (Postgres/Neon):** each screen run — results plus the raw retrieved
+  fundamentals — is stored when a `DATABASE_URL` is configured. No-op without one.
+- **Finnhub:** an extra price + metrics source, enabled with a `FINNHUB_API_KEY`.
+- **Export API:** `GET /api/export?key=…&format=csv|json` returns stored runs,
+  protected by the `STOCK_COMBER_API_KEY` env var.
+
+### Setup (all optional; the app runs without them)
+- **Neon:** create a free Postgres project, copy its connection string, and add it
+  as `DATABASE_URL` in Vercel (Project → Settings → Environment Variables) and as
+  a `DATABASE_URL` GitHub Actions secret (so scheduled runs persist).
+- **Finnhub:** get a free key at finnhub.io and set `FINNHUB_API_KEY` in Vercel /
+  GitHub secrets.
+- **Export key:** set `STOCK_COMBER_API_KEY` in Vercel to any random string; pass
+  it as `?key=` or the `X-API-Key` header.
+
 ## v0.3.2 — Reliable prices (Yahoo fallback) (2026-08-20)
 
 Added a Yahoo Finance price source (keyless) as the primary price feed, with

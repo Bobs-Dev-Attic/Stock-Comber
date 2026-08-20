@@ -36,6 +36,16 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "request_timeout": 30,
         "request_delay_seconds": 0.2,  # be polite to free endpoints
         "min_annual_years": 3,  # need at least this many years of data
+        # Optional Finnhub API key (or set FINNHUB_API_KEY). When present,
+        # Finnhub is used as an extra price source and metrics enricher.
+        "finnhub_api_key": None,
+    },
+    # Persistence. Leave dsn null to read DATABASE_URL/POSTGRES_URL from the
+    # environment (e.g. a free Neon Postgres). Without any DSN, runs are not
+    # stored and the app works exactly as before.
+    "storage": {
+        "dsn": None,
+        "persist_runs": True,   # store each completed screen run
     },
     # Graham "defensive investor" thresholds. All adjustable.
     "graham": {

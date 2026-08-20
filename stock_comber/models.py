@@ -48,6 +48,7 @@ class Company:
     name: Optional[str] = None
     annuals: list[AnnualFacts] = field(default_factory=list)
     quote: Optional[Quote] = None
+    extra: Optional[dict] = None  # supplementary data (e.g. Finnhub metrics)
 
     @property
     def latest(self) -> Optional[AnnualFacts]:

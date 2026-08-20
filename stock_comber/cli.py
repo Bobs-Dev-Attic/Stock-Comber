@@ -69,6 +69,21 @@ def cmd_screen(args) -> int:
     screener = Screener(cfg)
     tickers = [t.upper() for t in args.tickers] or None
     results = screener.run(tickers, progress=_progress)
+
+    # Persist the run when a database is configured.
+    if cfg.get("storage", {}).get("persist_runs", True):
+        from .storage import get_storage
+        store = get_storage(cfg)
+        if getattr(store, "enabled", False):
+            try:
+                run_id = store.save_run(
+                    results, screener.last_companies,
+                    meta={"universe": len({r.ticker for r in results})},
+                )
+                print(f"Stored run #{run_id} in the database.")
+            except Exception as exc:  # persistence must never fail the screen
+                print(f"Warning: could not store run: {exc}", file=sys.stderr)
+
     if args.no_write:
         print(to_markdown(results, cfg))
     else:

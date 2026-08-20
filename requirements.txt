@@ -1,5 +1,8 @@
 requests>=2.28
 PyYAML>=6.0
+# Postgres persistence (e.g. a free Neon database). Only used when a
+# DATABASE_URL / POSTGRES_URL is configured; harmless otherwise.
+psycopg[binary]>=3.1
 # Optional: enables `stock-comber schedule` local cron. Not required for
 # GitHub Actions scheduling.
 apscheduler>=3.10
