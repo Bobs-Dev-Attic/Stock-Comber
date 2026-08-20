@@ -98,6 +98,28 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "min_fcf_years": 3,
         "pass_ratio": 0.8,
     },
+    # Piotroski F-Score: pass when the 9-signal score meets this floor.
+    "piotroski": {
+        "min_score": 7,
+    },
+    # Greenblatt "Magic Formula" (threshold-adapted): cheap + productive.
+    "greenblatt": {
+        "min_earnings_yield_pct": 8.0,
+        "min_return_on_capital_pct": 20.0,
+        "pass_ratio": 1.0,
+    },
+    # Peter Lynch GARP: fairly priced growth.
+    "lynch": {
+        "max_peg": 1.0,
+        "min_growth_pct": 15.0,
+        "max_growth_pct": 50.0,
+        "max_debt_to_equity": 0.8,
+        "pass_ratio": 0.75,
+    },
+    # Graham net-net (NCAV) deep value.
+    "netnet": {
+        "discount": 0.667,   # Graham's two-thirds-of-NCAV margin of safety
+    },
     # User-defined custom criteria. Add rules of the form {metric} {op} {value};
     # include "custom" in `strategies` to run them. Metrics are the keys of the
     # computed metric bundle (see stock_comber/metrics.py METRIC_KEYS).
@@ -163,7 +185,8 @@ def load_config(path: Optional[str] = None) -> dict[str, Any]:
 def validate_config(cfg: dict[str, Any]) -> list[str]:
     """Return a list of human-readable problems (empty means valid)."""
     problems: list[str] = []
-    valid_strategies = {"graham", "buffett", "custom"}
+    valid_strategies = {"graham", "buffett", "custom", "piotroski",
+                        "greenblatt", "lynch", "netnet"}
     strategies = cfg.get("strategies", [])
     if not strategies:
         problems.append("strategies must list at least one strategy")
@@ -171,7 +194,7 @@ def validate_config(cfg: dict[str, Any]) -> list[str]:
         if s not in valid_strategies:
             problems.append(f"unknown strategy: {s!r}")
 
-    for strat in ("graham", "buffett", "custom"):
+    for strat in ("graham", "buffett", "custom", "greenblatt", "lynch"):
         pr = cfg.get(strat, {}).get("pass_ratio")
         if pr is not None and not (0.0 < pr <= 1.0):
             problems.append(f"{strat}.pass_ratio must be in (0, 1]")

@@ -34,7 +34,9 @@ def _build_parser() -> argparse.ArgumentParser:
     ps.add_argument("--limit", type=int, help="Cap the SEC ticker universe.")
     ps.add_argument("--nightly", action="store_true",
                     help="Use the capped, diversified 'hidden gems' universe.")
-    ps.add_argument("--strategy", action="append", choices=["graham", "buffett", "custom"],
+    ps.add_argument("--strategy", action="append",
+                    choices=["graham", "buffett", "custom", "piotroski",
+                             "greenblatt", "lynch", "netnet"],
                     help="Restrict to specific strategies (repeatable).")
     ps.add_argument("--only-passing", action="store_true", help="Report only passing rows.")
     ps.add_argument("--no-write", action="store_true", help="Print to stdout, don't write files.")

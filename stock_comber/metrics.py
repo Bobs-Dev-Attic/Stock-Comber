@@ -91,6 +91,70 @@ def cumulative_growth_pct(
     return 100.0 * (end - start) / start
 
 
+def return_on_assets(a: AnnualFacts) -> Optional[float]:
+    """Return on assets as a percentage."""
+    r = _safe_div(a.net_income, a.total_assets)
+    return r * 100.0 if r is not None else None
+
+
+def asset_turnover(a: AnnualFacts) -> Optional[float]:
+    """Revenue / total assets."""
+    return _safe_div(a.revenue, a.total_assets)
+
+
+def return_on_capital(a: AnnualFacts) -> Optional[float]:
+    """Greenblatt-style return on capital: net income / (equity + long-term debt),
+    as a percentage. A pragmatic free-data stand-in for EBIT / (net working
+    capital + net fixed assets)."""
+    eq = a.stockholders_equity
+    ltd = a.long_term_debt or 0.0
+    if eq is None:
+        return None
+    denom = eq + ltd
+    if denom <= 0:
+        return None
+    r = _safe_div(a.net_income, denom)
+    return r * 100.0 if r is not None else None
+
+
+def ncav_per_share(a: AnnualFacts) -> Optional[float]:
+    """Net current asset value per share = (current assets − total liabilities)
+    / shares. Graham's deep-value 'net-net' anchor."""
+    if a.current_assets is None or a.total_liabilities is None:
+        return None
+    ncav = a.current_assets - a.total_liabilities
+    return _safe_div(ncav, a.shares_outstanding)
+
+
+def market_cap(price: Optional[float], a: AnnualFacts) -> Optional[float]:
+    if price is None or a.shares_outstanding is None:
+        return None
+    return price * a.shares_outstanding
+
+
+def earnings_yield(price: Optional[float], a: AnnualFacts) -> Optional[float]:
+    """Earnings yield as a percentage (net income / market cap ≈ 1/PE)."""
+    mc = market_cap(price, a)
+    r = _safe_div(a.net_income, mc)
+    return r * 100.0 if r is not None else None
+
+
+def cagr_pct(annuals: list[AnnualFacts], years: int, attr: str = "net_income") -> Optional[float]:
+    """Compound annual growth rate of ``attr`` over the window, as a percentage.
+    Returns None when the endpoints aren't both positive."""
+    vals = [(a.fiscal_year, getattr(a, attr)) for a in annuals if getattr(a, attr) is not None]
+    if len(vals) < 2:
+        return None
+    vals.sort()
+    window = vals[-(years + 1):] if years + 1 <= len(vals) else vals
+    start = window[0][1]
+    end = window[-1][1]
+    span = window[-1][0] - window[0][0]
+    if start is None or end is None or start <= 0 or end <= 0 or span <= 0:
+        return None
+    return 100.0 * ((end / start) ** (1.0 / span) - 1.0)
+
+
 def pe_ratio(price: Optional[float], a: AnnualFacts) -> Optional[float]:
     e = eps(a)
     if price is None or e is None or e <= 0:
@@ -112,6 +176,8 @@ METRIC_KEYS = [
     "long_term_debt_to_equity", "roe_pct", "net_margin_pct", "free_cash_flow",
     "graham_number", "pe_ratio", "pb_ratio",
     "earnings_growth_5y_pct", "revenue_growth_5y_pct",
+    "roa_pct", "return_on_capital_pct", "earnings_yield_pct",
+    "ncav_per_share", "earnings_cagr_5y_pct",
 ]
 
 
@@ -139,4 +205,9 @@ def compute_metrics(company: Company) -> dict[str, Optional[float]]:
         "pb_ratio": pb_ratio(price, latest),
         "earnings_growth_5y_pct": cumulative_growth_pct(company.annuals, 5, "net_income"),
         "revenue_growth_5y_pct": cumulative_growth_pct(company.annuals, 5, "revenue"),
+        "roa_pct": return_on_assets(latest),
+        "return_on_capital_pct": return_on_capital(latest),
+        "earnings_yield_pct": earnings_yield(price, latest),
+        "ncav_per_share": ncav_per_share(latest),
+        "earnings_cagr_5y_pct": cagr_pct(company.annuals, 5, "net_income"),
     }

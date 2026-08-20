@@ -4,6 +4,27 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.11.0] - 2026-08-20
+
+### Added
+- **Four more investor strategies**, all computed from the existing free SEC
+  fundamentals + price and fully adjustable in config:
+  - **Piotroski F-Score** (`piotroski`) — 9-signal financial-strength score.
+  - **Greenblatt Magic Formula** (`greenblatt`) — earnings yield + return on capital.
+  - **Peter Lynch GARP** (`lynch`) — PEG ≤ 1 with healthy growth and sane debt.
+  - **Graham Net-Net / NCAV** (`netnet`) — price below net current asset value.
+
+  Available via `--strategy`, the `strategies:` config list, and `?strategy=` on
+  `/api/screen`. The dashboard **Analyze now** button now scores a ticker against
+  *all six* lenses at once, each with its own pass/fail breakdown. Adds supporting
+  metrics (ROA, return on capital, earnings yield, NCAV/share, earnings CAGR, PEG,
+  F-score), which are also usable in custom criteria.
+- **Manual analyses are logged to History.** The "Analyze now" path now records a
+  `searches` entry (source `analyze`) in addition to storing the run, so every
+  search — live screens and manual analyses alike — appears on the History page.
+
+[0.11.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.11.0
+
 ## [0.10.0] - 2026-08-20
 
 ### Fixed

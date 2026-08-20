@@ -21,7 +21,8 @@ log = logging.getLogger("stock_comber.analysis")
 def _full_config(base: dict) -> dict:
     cfg = copy.deepcopy(base)
     cfg.setdefault("data", {})["finnhub_enrich_results"] = True
-    cfg["strategies"] = ["graham", "buffett"]
+    # A manual/queued analysis runs every built-in investor lens.
+    cfg["strategies"] = ["graham", "buffett", "piotroski", "greenblatt", "lynch", "netnet"]
     cfg["universe"] = {**cfg.get("universe", {}), "mode": "list"}
     return cfg
 

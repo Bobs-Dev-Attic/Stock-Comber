@@ -46,6 +46,23 @@ of that strategy's criteria. **Every number above lives in
 [`config/default.yaml`](config/default.yaml)** — copy it, tune it, and pass it
 with `--config`.
 
+### More investor lenses
+
+Four additional, fully-adjustable strategies ship alongside Graham & Buffett
+(all computed from the same free SEC fundamentals + price):
+
+| Strategy | Key | The idea |
+|---|---|---|
+| **Piotroski F-Score** | `piotroski` | A 9-point test of *improving* financial strength (profitability, leverage/liquidity, efficiency). Passes at ≥ 7/9. |
+| **Greenblatt Magic Formula** | `greenblatt` | Cheap **and** productive: high earnings yield + high return on capital. |
+| **Peter Lynch (GARP)** | `lynch` | Growth at a reasonable price — PEG ≤ 1 with healthy, not-too-hot growth and sane debt. |
+| **Graham Net-Net (NCAV)** | `netnet` | Deep value: price below (⅔ of) net current asset value. Rare — most large caps fail by design. |
+
+Run any subset with `--strategy` (repeatable) or list them under `strategies:`
+in config. The dashboard's **Analyze now** button scores a ticker against *all*
+of them at once. A couple use free-data stand-ins (e.g. net margin for gross
+margin, ROE-style return on capital) — noted in each rule's explanation.
+
 ### Custom criteria
 
 Beyond the two built-in strategies you can define your own rules — each a simple

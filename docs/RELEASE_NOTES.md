@@ -1,5 +1,30 @@
 # Release notes
 
+## v0.11.0 — Four more investor lenses + fuller history (2026-08-20)
+
+**Are there other analysts to consider?** Yes — four classics now ship alongside
+Graham & Buffett, all computed from the same free SEC data:
+
+- **Piotroski F-Score** — a 9-point test of *improving* financial strength
+  (profitability, leverage/liquidity, operating efficiency); passes at ≥ 7/9.
+- **Greenblatt Magic Formula** — cheap **and** productive: high earnings yield +
+  high return on capital.
+- **Peter Lynch (GARP)** — growth at a reasonable price: PEG ≤ 1 with healthy,
+  not-overheated growth and manageable debt.
+- **Graham Net-Net (NCAV)** — deep value: price below (two-thirds of) net current
+  asset value. Rare, and most large caps fail by design.
+
+The dashboard **Analyze now** button now scores a ticker against **all six**
+lenses at once, each with its own pass/fail breakdown (tap a strategy for the
+per-criterion actual-vs-target detail). They're also available via `--strategy`,
+the `strategies:` config list, and `/api/screen?strategy=…`. A few use
+free-data stand-ins (net margin for gross margin, an ROE-style return on
+capital), noted in each rule.
+
+**Fuller history.** Manual analyses are now logged to the History page's search
+list (not just stored as runs), so every search — live screens and one-off
+analyses — is recorded.
+
 ## v0.10.0 — Real data for "wrong-CIK" tickers + honest analysis states (2026-08-20)
 
 **Why did XOM say "near miss" with a 0/0 score?** It wasn't a near miss — the
