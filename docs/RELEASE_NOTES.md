@@ -1,5 +1,12 @@
 # Release notes
 
+## v0.18.1 — Company snapshot header (2026-08-20)
+
+The **Analyze** deep-dive now opens with a one-line **company snapshot** —
+exchange, industry, market cap, IPO year, shares outstanding, and a link to the
+company website (with its logo when available), from Finnhub's free `profile2`.
+Also on the `profile` field of `/api/analyze`.
+
 ## v0.18.0 — Composite 0–100 scores (2026-08-20)
 
 The **Analyze** deep-dive now opens with four at-a-glance scores:

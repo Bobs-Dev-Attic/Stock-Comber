@@ -184,6 +184,7 @@ class FinnhubSource:
         if not p:
             return None
         cap_m = p.get("marketCapitalization")
+        shares_m = p.get("shareOutstanding")
         prof = {
             "name": p.get("name"),
             "sector": p.get("finnhubIndustry"),
@@ -191,6 +192,12 @@ class FinnhubSource:
             "exchange": p.get("exchange"),
             "market_cap": float(cap_m) * 1e6 if cap_m else None,
             "avg_volume": None,
+            # Snapshot extras (used by the company header; harmless elsewhere).
+            "ipo": p.get("ipo") or None,
+            "weburl": p.get("weburl") or None,
+            "logo": p.get("logo") or None,
+            "shares_outstanding": float(shares_m) * 1e6 if shares_m else None,
+            "currency": p.get("currency") or None,
         }
         if with_volume:
             metrics = self.fetch_metrics(symbol) or {}
