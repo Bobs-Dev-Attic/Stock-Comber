@@ -4,6 +4,18 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.9.1] - 2026-08-20
+
+### Fixed
+- **Autocomplete no longer blocks "Analyze now" / "Screen live".** The ticker
+  suggestions used to open as an overlay that covered the wrapped action
+  buttons, so a click landed on a suggestion instead of the button and the
+  analysis never ran. The suggestion list now renders in-flow beneath the
+  controls (never over the buttons), closes as soon as an action starts, and
+  carries proper combobox ARIA state.
+
+[0.9.1]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.9.1
+
 ## [0.9.0] - 2026-08-20
 
 ### Added

@@ -1,5 +1,14 @@
 # Release notes
 
+## v0.9.1 — Fix: autocomplete blocked the action buttons (2026-08-20)
+
+The ticker autocomplete opened as an overlay that could sit on top of the
+wrapped **Analyze now** / **Screen live** buttons, so a click hit a suggestion
+instead of the button and the Graham/Buffett analysis never ran. The suggestion
+list now renders **in-flow below the controls** (it can't cover the buttons) and
+closes the moment you start an action. Enter XOM, click **Analyze now**, and it
+runs.
+
 ## v0.9.0 — Manual "Analyze now" button (2026-08-20)
 
 The dashboard now has an **Analyze now** button beside "Screen live". Enter a

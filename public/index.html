@@ -33,11 +33,11 @@
   input[type=text], input[type=number], select {
     padding: .55rem .6rem; font-size: 1rem; border: 1px solid var(--line);
     border-radius: 9px; background: var(--bg); color: var(--ink); }
-  .acwrap { position: relative; flex: 1 1 260px; min-width: 200px; }
+  .acwrap { flex: 1 1 260px; min-width: 200px; }
   #tickers { width: 100%; }
-  .ac-dd { position: absolute; z-index: 15; left: 0; right: 0; top: calc(100% + 3px);
-    background: var(--panel); border: 1px solid var(--line); border-radius: 9px;
-    box-shadow: var(--shadow); max-height: 260px; overflow-y: auto; display: none; }
+  /* In-flow (not an overlay) so suggestions never cover the action buttons. */
+  .ac-dd { margin: .5rem 0 0; background: var(--panel); border: 1px solid var(--line);
+    border-radius: 9px; box-shadow: var(--shadow); max-height: 260px; overflow-y: auto; display: none; }
   .ac-dd.open { display: block; }
   .ac-item { padding: .45rem .6rem; cursor: pointer; display: flex; gap: .5rem; align-items: baseline; }
   .ac-item.active, .ac-item:hover { background: color-mix(in srgb, var(--accent) 12%, transparent); }
@@ -117,8 +117,8 @@
   <section class="card">
     <div class="controls">
       <div class="acwrap">
-        <input id="tickers" type="text" placeholder="Tickers, e.g. AAPL, MSFT, JNJ, KO" autocomplete="off">
-        <div id="ac" class="ac-dd"></div>
+        <input id="tickers" type="text" placeholder="Tickers, e.g. AAPL, MSFT, JNJ, KO" autocomplete="off"
+               role="combobox" aria-expanded="false" aria-controls="ac" aria-autocomplete="list">
       </div>
       <div class="seg" role="group" aria-label="Strategy">
         <button data-strat="both" aria-pressed="true">Both</button>
@@ -128,6 +128,7 @@
       <button id="run" class="btn">Screen live</button>
       <button id="analyze" class="btn ghost" title="Full analysis of the first ticker: all strategies + news &amp; sentiment">Analyze now</button>
     </div>
+    <div id="ac" class="ac-dd" role="listbox"></div>
 
     <details class="custom">
       <summary>Custom criteria <span id="custom-count" class="hint" style="display:inline"></span></summary>
@@ -422,6 +423,7 @@ async function loadLatest() {
   } catch (e) { $("#status").textContent = "Could not load the latest report."; }
 }
 async function runLive() {
+  closeAC();
   const raw = $("#tickers").value.trim(); const criteria = readCriteria();
   if (!raw) { if (!criteria.length) return loadLatest(); $("#status").textContent = "Enter tickers to screen your custom criteria."; return; }
   const params = new URLSearchParams(); params.set("tickers", raw);
@@ -483,6 +485,7 @@ function openAnalysis(data) {
   $("#overlay").classList.add("open");
 }
 async function analyzeNow() {
+  closeAC();
   const raw = $("#tickers").value.trim();
   const ticker = raw.split(",").map(t=>t.trim()).filter(Boolean)[0];
   if (!ticker) { $("#status").textContent = "Enter a ticker to analyze."; $("#tickers").focus(); return; }
@@ -521,7 +524,8 @@ async function enqueueForAnalysis(raw) {
 const acBox = $("#ac"); const tickersInput = $("#tickers");
 let acItems = [], acActive = -1, acTimer = null;
 const lastToken = s => { const parts = s.split(","); return parts[parts.length-1].trim(); };
-function closeAC(){ acBox.classList.remove("open"); acBox.innerHTML=""; acItems=[]; acActive=-1; }
+function closeAC(){ acBox.classList.remove("open"); acBox.innerHTML=""; acItems=[]; acActive=-1;
+  tickersInput.setAttribute("aria-expanded","false"); }
 function pickAC(i){
   const it = acItems[i]; if (!it) return;
   const parts = tickersInput.value.split(",");
@@ -533,6 +537,7 @@ function renderAC(){
   acBox.innerHTML = acItems.map((it,i) =>
     `<div class="ac-item ${i===acActive?'active':''}" data-i="${i}"><span class="t">${it.ticker}</span><span class="n">${(it.name||"")}</span></div>`).join("");
   acBox.classList.toggle("open", acItems.length>0);
+  tickersInput.setAttribute("aria-expanded", acItems.length>0 ? "true" : "false");
   acBox.querySelectorAll(".ac-item").forEach(el => el.onmousedown = e => { e.preventDefault(); pickAC(+el.dataset.i); });
 }
 async function acLookup(){
