@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "stock-comber"
-version = "0.4.1"
+version = "0.4.2"
 description = "Find publicly traded companies that fit Graham and Buffett value-investing criteria, using free data sources."
 readme = "README.md"
 requires-python = ">=3.9"
@@ -18,6 +18,7 @@ dependencies = [
 
 [project.optional-dependencies]
 schedule = ["apscheduler>=3.10"]
+storage = ["psycopg[binary]>=3.1"]
 dev = ["pytest>=7.0"]
 
 [project.scripts]
