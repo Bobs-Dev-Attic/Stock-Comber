@@ -25,6 +25,7 @@ from stock_comber import __version__  # noqa: E402
 from stock_comber.config import load_config, validate_config  # noqa: E402
 from stock_comber.screener import Screener  # noqa: E402
 from stock_comber.storage import get_storage  # noqa: E402
+from stock_comber.universe import effective_config  # noqa: E402
 
 MAX_TICKERS = 10
 MAX_CUSTOM = 15
@@ -33,7 +34,9 @@ VALID_STRATEGIES = ("graham", "buffett", "custom", "piotroski",
 
 
 def run_screen(tickers, strategies, custom_criteria=None):
-    cfg = load_config()
+    # Merge DB-stored settings (tuned thresholds + a stored Finnhub key) over the
+    # file defaults so the settings page drives live screens too.
+    cfg = effective_config(load_config(), get_storage())
     chosen = [s for s in strategies if s in VALID_STRATEGIES]
     if custom_criteria:
         cfg["custom"]["criteria"] = custom_criteria[:MAX_CUSTOM]
