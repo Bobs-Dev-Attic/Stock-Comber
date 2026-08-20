@@ -1,5 +1,23 @@
 # Release notes
 
+## v0.15.4 — Settings page covers all six analysts (2026-08-20)
+
+The **Settings page** (⚙️ from the dashboard) already let you set your keys'
+status, pick strategies, tune Graham/Buffett thresholds, shape the nightly
+"hidden gems" universe, define custom criteria, and set output preferences —
+saving to your database or downloading as YAML. This release rounds it out for
+the newer analysts:
+
+- **Select and tune all six strategies** — Piotroski F-Score, Greenblatt Magic
+  Formula, Lynch (GARP), and Graham Net-Net now have their own editable
+  threshold cards, next to Graham and Buffett.
+- **Custom criteria** gain the newer metrics (ROA, return-on-capital, earnings
+  yield, NCAV per share, earnings CAGR).
+
+Keys remain **read-only status pills** by design — `FINNHUB_API_KEY`,
+`DATABASE_URL`, and `STOCK_COMBER_API_KEY` are secrets you set as environment
+variables (Vercel / GitHub Actions), never typed into the browser.
+
 ## v0.15.3 — Recent searches on focus (2026-08-20)
 
 Click into the ticker box (while it's empty) and your **recent searches** now
