@@ -39,6 +39,15 @@
   code{background:var(--chip);padding:.1rem .35rem;border-radius:5px}
   .bar{position:sticky;bottom:0;background:var(--panel);border-top:1px solid var(--line);
     margin:1.2rem -1.2rem -5rem;padding:1rem 1.2rem;display:flex;gap:.6rem;align-items:center;flex-wrap:wrap}
+  .f input,.f select{width:100%}
+  @media (max-width:640px){
+    .wrap{padding:1.2rem .8rem 5rem}
+    h1{font-size:1.35rem}
+    .card{padding:.9rem .85rem;border-radius:12px}
+    .grid{grid-template-columns:1fr}
+    .f[style*="max-width"]{max-width:none !important}
+    .bar{margin:1.2rem -.85rem -5rem;padding:.9rem .85rem}
+  }
 </style>
 </head>
 <body>
