@@ -85,6 +85,13 @@ def _grade(score: Optional[float]) -> Optional[str]:
 _HEALTH_WEIGHTS = {"value": 0.30, "quality": 0.45, "growth": 0.25}
 
 
+def overall_health(metrics: Optional[dict]) -> Optional[float]:
+    """The blended 0–100 health score for a metric bundle, or ``None`` when
+    nothing is measurable. Convenience wrapper over :func:`compute_scores`."""
+    o = compute_scores(metrics).get("overall")
+    return o["score"] if o else None
+
+
 def compute_scores(metrics: Optional[dict]) -> dict:
     """Return {value, quality, growth, overall} composite scores (0–100).
 

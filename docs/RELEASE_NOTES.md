@@ -1,5 +1,14 @@
 # Release notes
 
+## v0.19.1 — Nightly gems ranked by health (2026-08-20)
+
+The nightly "hidden gems" shortlist is now **ranked by the composite health
+score** (the blended 0–100 Value / Quality / Growth number). Every screen result
+carries a `health_score`, the nightly job sorts by it by default, and it's a
+default column on the dashboard and included in exports — so the strongest
+businesses surface at the top instead of ties being broken arbitrarily. Set a
+different `output.sort_by` to override.
+
 ## v0.19.0 — Investment thesis tracker (2026-08-20)
 
 The feature almost nobody offers: the app doesn't just track the stock, it

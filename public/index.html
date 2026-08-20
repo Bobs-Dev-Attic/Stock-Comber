@@ -251,6 +251,7 @@ const stratLabel = s => STRAT_LABEL[s] || s;
 let rows = [], sortK = "score_pct", sortDir = -1;
 
 const METRICS = [
+  ["health_score","Health 0–100"],
   ["pe_ratio","P/E ratio"], ["pb_ratio","P/B ratio"], ["roe_pct","ROE %"],
   ["net_margin_pct","Net margin %"], ["current_ratio","Current ratio"],
   ["debt_to_equity","Debt / equity"], ["long_term_debt_to_equity","LT debt / equity"],
@@ -270,7 +271,7 @@ const ALL_COLUMNS = [
   {key:"score_pct", label:"Score", base:true},
   ...METRICS.map(([key,label]) => ({key, label, base:false})),
 ];
-const DEFAULT_COLS = ["strategy","passed","score_pct","price","pe_ratio","pb_ratio","roe_pct","current_ratio","debt_to_equity"];
+const DEFAULT_COLS = ["strategy","passed","score_pct","health_score","price","pe_ratio","pb_ratio","roe_pct","current_ratio","debt_to_equity"];
 let selectedCols = loadCols();
 
 function loadCols() {

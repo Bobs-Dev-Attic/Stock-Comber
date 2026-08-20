@@ -4,6 +4,19 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.19.1] - 2026-08-20
+
+### Changed
+- **Nightly "hidden gems" are ranked by composite health.** Every screen result
+  now carries a `health_score` (the blended 0–100 Value/Quality/Growth score),
+  and the nightly run sorts by it by default (`output.sort_by: "health"`, unless
+  you set another sort) — so the strongest businesses rise to the top of the
+  shortlist instead of ties being broken arbitrarily. `health_score` is a
+  selectable/default dashboard column and is exported with each run.
+  `Screener.rank` attaches it; `scoring.overall_health` is the helper.
+
+[0.19.1]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.19.1
+
 ## [0.19.0] - 2026-08-20
 
 ### Added
