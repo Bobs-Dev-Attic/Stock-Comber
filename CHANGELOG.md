@@ -4,6 +4,18 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.12.1] - 2026-08-20
+
+### Fixed
+- **Mobile responsiveness.** The Strategies (and Columns/Export) menus no longer
+  open off-screen on phones — on narrow viewports they become a viewport-pinned
+  bottom sheet that always fits. The dashboard search row stacks and its buttons
+  span full width; every page (dashboard, History, Settings, Analytics) gets
+  tighter phone padding, and the Analytics charts now scale by aspect ratio
+  instead of squishing. No horizontal page overflow at 360px.
+
+[0.12.1]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.12.1
+
 ## [0.12.0] - 2026-08-20
 
 ### Changed

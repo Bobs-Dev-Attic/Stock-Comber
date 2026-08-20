@@ -48,6 +48,12 @@
   .g-axis{fill:var(--muted-ink);font-size:11px}
   .g-lbl{fill:var(--text-primary);font-size:11px;font-variant-numeric:tabular-nums}
   .g-cat{fill:var(--text-secondary);font-size:11.5px}
+  @media (max-width:640px){
+    .wrap{padding:1.2rem .8rem 3rem}
+    h1{font-size:1.35rem}
+    .card{padding:.9rem .85rem;border-radius:12px}
+    .grid{gap:.9rem}
+  }
 </style>
 </head>
 <body>
@@ -103,7 +109,11 @@ const el = (n, attrs={}, txt) => {
 function svg(w, h){
   const s = el("svg", {viewBox:`0 0 ${w} ${h}`, width:"100%", class:"chart",
     role:"img", preserveAspectRatio:"xMidYMid meet"});
-  s.style.height = h + "px";
+  // Cap the on-screen height but let it scale down with width (keeps aspect
+  // ratio on narrow/mobile screens instead of squishing a fixed-height box).
+  s.style.height = "auto";
+  s.style.maxHeight = h + "px";
+  s.style.aspectRatio = w + " / " + h;
   return s;
 }
 const empty = (id, msg) => { $(id).innerHTML = `<div class="empty">${esc(msg)}</div>`; };

@@ -1,5 +1,18 @@
 # Release notes
 
+## v0.12.1 — Mobile responsiveness (2026-08-20)
+
+Fixes the **Strategies dropdown opening off-screen on phones** and makes every
+page adapt to browser width:
+
+- The Strategies / Columns / Export menus become a **viewport-pinned bottom
+  sheet** on narrow screens, so they always fit no matter which button opened
+  them.
+- The dashboard search row **stacks** on phones and its buttons span the width.
+- Dashboard, History, Settings and Analytics all get tighter phone padding, and
+  the Analytics charts **scale by aspect ratio** instead of squishing.
+- Verified: no horizontal page overflow at a 360px viewport.
+
 ## v0.12.0 — One "Analyze" button (2026-08-20)
 
 Screen and Analyze now are merged into a **single Analyze button** that does the
