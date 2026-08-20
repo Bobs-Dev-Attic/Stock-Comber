@@ -8,10 +8,14 @@ on:
     - cron: "30 6 * * 1-5"
   workflow_dispatch:
     inputs:
-      limit:
-        description: "Cap the SEC ticker universe"
+      nightly:
+        description: "Use the nightly 'hidden gems' universe (true) or a plain SEC-list cap"
         required: false
-        default: "500"
+        default: "true"
+      limit:
+        description: "When nightly=false, cap the SEC ticker universe"
+        required: false
+        default: "50"
 
 permissions:
   contents: write
@@ -38,12 +42,17 @@ jobs:
 
       - name: Run screen
         env:
-          LIMIT: ${{ github.event.inputs.limit || '500' }}
+          NIGHTLY: ${{ github.event.inputs.nightly || 'true' }}
+          LIMIT: ${{ github.event.inputs.limit || '50' }}
           # Optional: set these repo secrets to persist runs / enable Finnhub.
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
         run: |
-          stock-comber --config config/default.yaml --verbose screen --limit "$LIMIT"
+          if [ "$NIGHTLY" = "false" ]; then
+            stock-comber --config config/default.yaml --verbose screen --limit "$LIMIT"
+          else
+            stock-comber --config config/default.yaml --verbose screen --nightly
+          fi
 
       - name: Publish latest report to the dashboard
         run: |

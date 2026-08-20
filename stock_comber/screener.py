@@ -61,6 +61,8 @@ class Screener:
         self.stooq = stooq or (self.price_sources[-1] if self.price_sources else None)
         # Companies fetched during the most recent run(), for persistence.
         self.last_companies: dict[str, Company] = {}
+        # Optional storage (for the nightly universe catalog / rotation).
+        self.store = None
 
     def fetch_price(self, ticker: str) -> Quote:
         """Try each price source in order; return the first quote with a price."""
@@ -80,9 +82,17 @@ class Screener:
     # -- universe --------------------------------------------------------
     def resolve_universe(self) -> list[str]:
         uni = self.config.get("universe", {})
+        # Explicit tickers always win.
         tickers = [t.upper() for t in uni.get("tickers", []) if t]
         if tickers:
             return tickers
+        if uni.get("mode") == "nightly":
+            from datetime import date
+            from .universe import build_nightly
+            return build_nightly(
+                self.config, store=self.store, finnhub=self.finnhub,
+                day_ordinal=date.today().toordinal(),
+            )
         limit = uni.get("limit") or None
         return self.sec.list_tickers(limit=limit)
 

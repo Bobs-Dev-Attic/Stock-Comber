@@ -23,9 +23,26 @@ DEFAULT_CONFIG: dict[str, Any] = {
     # Universe of tickers to comb through. If empty, the SEC ticker list is
     # used (optionally capped by universe.limit).
     "universe": {
+        # "list": screen `tickers` (or the first `limit` SEC tickers).
+        # "nightly": the capped, diversified "hidden gems" engine below.
+        "mode": "list",
         "tickers": [],
         "limit": 500,  # cap when pulling the full SEC ticker list
         "exchanges": [],  # reserved for future filtering
+        "extra_tickers": [],  # add your own names to the nightly candidate pool
+        # Nightly "hidden gems" selection — capped, sector-diversified, rotating.
+        "nightly": {
+            "cap": 75,                       # stocks screened per night
+            "market_cap_min": 100_000_000,   # $100M floor (skip tiny/illiquid)
+            "market_cap_max": 20_000_000_000,  # $20B ceiling (skip mega-caps)
+            "min_avg_volume": 100_000,       # shares/day liquidity floor
+            "sectors": [],                   # empty = all industries
+            "exclude_sectors": [],
+            "countries": [],                 # empty = all (incl. international)
+            "max_per_sector": 12,            # diversify: cap names per sector
+            "enrich_per_run": 40,            # Finnhub profiles to fetch per night
+            "include_unknown": True,         # screen not-yet-enriched names too
+        },
     },
     # Data-source knobs.
     "data": {

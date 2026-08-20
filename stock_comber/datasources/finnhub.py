@@ -100,3 +100,36 @@ class FinnhubSource:
         if not data:
             return None
         return data.get("metric") or data
+
+    def fetch_profile(self, ticker: str) -> Optional[dict]:
+        """Return {market_cap, sector, country, exchange, name, avg_volume}.
+
+        Market cap is normalised to dollars (Finnhub reports it in millions);
+        average daily volume comes from the metric bundle when available.
+        """
+        symbol = ticker.upper()
+        try:
+            p = self._get("/stock/profile2", {"symbol": symbol},
+                          "finnhub_profile", symbol)
+        except Exception:
+            return None
+        if not p:
+            return None
+        cap_m = p.get("marketCapitalization")
+        prof = {
+            "name": p.get("name"),
+            "sector": p.get("finnhubIndustry"),
+            "country": p.get("country"),
+            "exchange": p.get("exchange"),
+            "market_cap": float(cap_m) * 1e6 if cap_m else None,
+            "avg_volume": None,
+        }
+        metrics = self.fetch_metrics(symbol) or {}
+        vol_m = (metrics.get("10DayAverageTradingVolume")
+                 or metrics.get("3MonthAverageTradingVolume"))
+        if vol_m:
+            try:
+                prof["avg_volume"] = float(vol_m) * 1e6  # reported in millions
+            except (TypeError, ValueError):
+                pass
+        return prof

@@ -55,6 +55,27 @@ CREATE TABLE IF NOT EXISTS raw_fundamentals (
 CREATE INDEX IF NOT EXISTS idx_results_run ON screen_results(run_id);
 CREATE INDEX IF NOT EXISTS idx_results_ticker ON screen_results(ticker);
 CREATE INDEX IF NOT EXISTS idx_runs_created ON screen_runs(created_at DESC);
+CREATE TABLE IF NOT EXISTS settings (
+    id         INTEGER PRIMARY KEY DEFAULT 1,
+    data       JSONB NOT NULL DEFAULT '{}'::jsonb,
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    CONSTRAINT settings_singleton CHECK (id = 1)
+);
+CREATE TABLE IF NOT EXISTS universe (
+    ticker      TEXT PRIMARY KEY,
+    name        TEXT,
+    exchange    TEXT,
+    country     TEXT,
+    sector      TEXT,
+    market_cap  DOUBLE PRECISION,
+    avg_volume  DOUBLE PRECISION,
+    source      TEXT,
+    updated_at  TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+CREATE TABLE IF NOT EXISTS screen_state (
+    key   TEXT PRIMARY KEY,
+    value JSONB NOT NULL
+);
 """
 
 
@@ -97,6 +118,24 @@ class NullStorage:
         return []
 
     def get_run(self, run_id: int) -> Optional[dict]:
+        return None
+
+    def get_settings(self) -> dict:
+        return {}
+
+    def save_settings(self, data: dict) -> None:
+        return None
+
+    def get_universe(self) -> list[dict]:
+        return []
+
+    def upsert_universe(self, rows: list[dict]) -> None:
+        return None
+
+    def get_state(self, key: str):
+        return None
+
+    def set_state(self, key: str, value) -> None:
         return None
 
 
@@ -204,6 +243,81 @@ class PostgresStorage:
         with self._connect() as conn:
             self._ensure_schema(conn)
             return self._run_payload(conn, run_id)
+
+    # -- settings --------------------------------------------------------
+    def get_settings(self) -> dict:
+        with self._connect() as conn:
+            self._ensure_schema(conn)
+            with conn.cursor() as cur:
+                cur.execute("SELECT data FROM settings WHERE id = 1")
+                row = cur.fetchone()
+        return row[0] if row and isinstance(row[0], dict) else {}
+
+    def save_settings(self, data: dict) -> None:
+        with self._connect() as conn:
+            self._ensure_schema(conn)
+            with conn.cursor() as cur:
+                cur.execute(
+                    "INSERT INTO settings (id, data, updated_at) "
+                    "VALUES (1, %s, now()) ON CONFLICT (id) DO UPDATE "
+                    "SET data = EXCLUDED.data, updated_at = now()",
+                    (json.dumps(data, default=str),))
+            conn.commit()
+
+    # -- universe catalog ------------------------------------------------
+    def get_universe(self) -> list[dict]:
+        with self._connect() as conn:
+            self._ensure_schema(conn)
+            with conn.cursor() as cur:
+                cur.execute(
+                    "SELECT ticker, name, exchange, country, sector, "
+                    "market_cap, avg_volume, source FROM universe")
+                cols = ["ticker", "name", "exchange", "country", "sector",
+                        "market_cap", "avg_volume", "source"]
+                return [dict(zip(cols, r)) for r in cur.fetchall()]
+
+    def upsert_universe(self, rows: list[dict]) -> None:
+        if not rows:
+            return
+        with self._connect() as conn:
+            self._ensure_schema(conn)
+            with conn.cursor() as cur:
+                cur.executemany(
+                    "INSERT INTO universe (ticker, name, exchange, country, "
+                    "sector, market_cap, avg_volume, source, updated_at) "
+                    "VALUES (%s,%s,%s,%s,%s,%s,%s,%s, now()) "
+                    "ON CONFLICT (ticker) DO UPDATE SET "
+                    "name=COALESCE(EXCLUDED.name, universe.name), "
+                    "exchange=COALESCE(EXCLUDED.exchange, universe.exchange), "
+                    "country=COALESCE(EXCLUDED.country, universe.country), "
+                    "sector=COALESCE(EXCLUDED.sector, universe.sector), "
+                    "market_cap=COALESCE(EXCLUDED.market_cap, universe.market_cap), "
+                    "avg_volume=COALESCE(EXCLUDED.avg_volume, universe.avg_volume), "
+                    "source=EXCLUDED.source, updated_at=now()",
+                    [(r.get("ticker"), r.get("name"), r.get("exchange"),
+                      r.get("country"), r.get("sector"), r.get("market_cap"),
+                      r.get("avg_volume"), r.get("source", "seed"))
+                     for r in rows if r.get("ticker")])
+            conn.commit()
+
+    # -- rotation / misc state ------------------------------------------
+    def get_state(self, key: str):
+        with self._connect() as conn:
+            self._ensure_schema(conn)
+            with conn.cursor() as cur:
+                cur.execute("SELECT value FROM screen_state WHERE key = %s", (key,))
+                row = cur.fetchone()
+        return row[0] if row else None
+
+    def set_state(self, key: str, value) -> None:
+        with self._connect() as conn:
+            self._ensure_schema(conn)
+            with conn.cursor() as cur:
+                cur.execute(
+                    "INSERT INTO screen_state (key, value) VALUES (%s, %s) "
+                    "ON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value",
+                    (key, json.dumps(value, default=str)))
+            conn.commit()
 
 
 def resolve_dsn(config: Optional[dict] = None) -> Optional[str]:

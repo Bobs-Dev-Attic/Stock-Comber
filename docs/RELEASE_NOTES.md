@@ -1,5 +1,24 @@
 # Release notes
 
+## v0.5.0 — Nightly "hidden gems" universe (2026-08-20)
+
+The nightly job no longer re-screens every listed company. It now screens a
+**capped, sector-diversified, rotating** pick designed to surface under-followed
+long-term value:
+
+- Filters by **market-cap band** (default $100M–$20B), **volume**, **sector**,
+  and **country** (international included), with a **per-sector cap** so results
+  stay diversified, and a **nightly count** (default 75) that **rotates** so
+  coverage spreads across nights.
+- Starts from a **curated seed** of diversified small/mid-cap + international
+  names and **expands via Finnhub** (market cap / sector / country / volume),
+  cached in the database.
+- DB settings already override the file config; a settings page to edit it all
+  ships next.
+
+Run it with `stock-comber screen --nightly`; the scheduled workflow uses it by
+default.
+
 ## v0.4.1 — Selectable columns & export button (2026-08-20)
 
 The dashboard now has a **Columns** menu (toggle any metric on/off, remembered in

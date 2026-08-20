@@ -32,6 +32,8 @@ def _build_parser() -> argparse.ArgumentParser:
                     default=argparse.SUPPRESS, help="Verbose logging.")
     ps.add_argument("tickers", nargs="*", help="Explicit tickers (overrides config universe).")
     ps.add_argument("--limit", type=int, help="Cap the SEC ticker universe.")
+    ps.add_argument("--nightly", action="store_true",
+                    help="Use the capped, diversified 'hidden gems' universe.")
     ps.add_argument("--strategy", action="append", choices=["graham", "buffett", "custom"],
                     help="Restrict to specific strategies (repeatable).")
     ps.add_argument("--only-passing", action="store_true", help="Report only passing rows.")
@@ -50,8 +52,14 @@ def _build_parser() -> argparse.ArgumentParser:
 
 def _load(args) -> dict:
     cfg = load_config(args.config)
+    # Merge any DB-stored settings (from the settings page) over the file config.
+    from .storage import get_storage
+    from .universe import effective_config
+    cfg = effective_config(cfg, get_storage(cfg))
     if getattr(args, "limit", None) is not None:
         cfg["universe"]["limit"] = args.limit
+    if getattr(args, "nightly", False):
+        cfg["universe"]["mode"] = "nightly"
     if getattr(args, "strategy", None):
         cfg["strategies"] = args.strategy
     if getattr(args, "only_passing", False):
@@ -71,14 +79,15 @@ def cmd_screen(args) -> int:
         for p in problems:
             print(f"  - {p}", file=sys.stderr)
         return 2
+    from .storage import get_storage
+    store = get_storage(cfg)
     screener = Screener(cfg)
+    screener.store = store  # share store for the nightly universe/rotation
     tickers = [t.upper() for t in args.tickers] or None
     results = screener.run(tickers, progress=_progress)
 
     # Persist the run when a database is configured.
     if cfg.get("storage", {}).get("persist_runs", True):
-        from .storage import get_storage
-        store = get_storage(cfg)
         if getattr(store, "enabled", False):
             try:
                 run_id = store.save_run(

@@ -4,6 +4,32 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 2026-08-20
+
+### Added
+- **Nightly "hidden gems" universe** (`stock_comber/universe.py`) — instead of
+  re-screening every listed company, the nightly job now screens a **capped,
+  sector-diversified, rotating** pick tuned to find under-followed long-term
+  value. Configurable filters: market-cap band (default $100M–$20B), minimum
+  average volume, sectors, excluded sectors, countries (international included),
+  per-sector cap, and nightly count (default 75).
+- **Curated seed universe** (`seed_universe.py`) of ~65 diversified small/mid-cap
+  and international names, expanded over time by a **Finnhub-backed catalog**
+  (`universe`, `screen_state` tables): each night enriches a rotating batch with
+  market cap / sector / country / volume (`FinnhubSource.fetch_profile`).
+- **DB-stored settings** (`settings` table) deep-merged over the file/default
+  config via `effective_config`, so a settings page can drive runs.
+- `stock-comber screen --nightly` and a `universe.mode: nightly` config switch;
+  the scheduled workflow now runs `--nightly` by default (with a `nightly=false`
+  dispatch option for the old SEC-list mode).
+
+### Notes
+- New tickers beyond the seed come from `universe.extra_tickers` (settings) and
+  the accumulating catalog; broad auto-discovery of the full symbol list is a
+  planned follow-up (kept off by default to respect Finnhub's free-tier limits).
+
+[0.5.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.5.0
+
 ## [0.4.2] - 2026-08-20
 
 ### Fixed
