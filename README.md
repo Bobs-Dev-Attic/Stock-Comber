@@ -117,7 +117,8 @@ stable `latest.*` copy for dashboards. Choose formats in config
 | Source | What we pull | Endpoint |
 |--------|--------------|----------|
 | **SEC EDGAR** | Fundamentals (XBRL `companyfacts`) + ticker→CIK map | `data.sec.gov` |
-| **Stooq** | Latest daily close price | `stooq.com` |
+| **Yahoo Finance** | Latest market price (primary) | `query1.finance.yahoo.com` |
+| **Stooq** | Latest daily close price (fallback) | `stooq.com` |
 
 SEC asks for a descriptive `User-Agent` containing a contact email — set it in
 `config.data.user_agent`. Responses are cached under `data.cache_dir` with a

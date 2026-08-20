@@ -4,6 +4,18 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.2] - 2026-08-20
+
+### Added
+- **Yahoo Finance price source** (`stock_comber/datasources/yahoo.py`), used as
+  the primary price feed with Stooq as a fallback. Stooq rate-limits shared
+  server IPs (e.g. Vercel), which left `price`, P/E, P/B and the Graham number
+  empty; Yahoo's keyless chart endpoint is reliable from servers.
+- A price-source chain in the screener (`fetch_price`) that tries each source in
+  order and tolerates failures.
+
+[0.3.2]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.3.2
+
 ## [0.3.1] - 2026-08-20
 
 ### Fixed
