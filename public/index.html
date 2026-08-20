@@ -693,6 +693,10 @@ function closeAC(){ acBox.classList.remove("open"); acBox.innerHTML=""; acItems=
   tickersInput.setAttribute("aria-expanded","false"); }
 function pickAC(i){
   const it = acItems[i]; if (!it) return;
+  if (it.full) {                       // a recent-search entry: replace the whole field
+    tickersInput.value = it.value;
+    closeAC(); tickersInput.focus(); return;
+  }
   const parts = tickersInput.value.split(",");
   parts[parts.length-1] = " " + it.ticker;
   tickersInput.value = parts.join(",").replace(/^\s+/, "") + ", ";
@@ -700,19 +704,40 @@ function pickAC(i){
 }
 function renderAC(){
   acBox.innerHTML = acItems.map((it,i) =>
-    `<div class="ac-item ${i===acActive?'active':''}" data-i="${i}"><span class="t">${it.ticker}</span><span class="n">${(it.name||"")}</span></div>`).join("");
+    `<div class="ac-item ${i===acActive?'active':''}" data-i="${i}"><span class="t">${escHtml(it.ticker)}</span><span class="n">${escHtml(it.name||"")}</span></div>`).join("");
   acBox.classList.toggle("open", acItems.length>0);
   tickersInput.setAttribute("aria-expanded", acItems.length>0 ? "true" : "false");
   acBox.querySelectorAll(".ac-item").forEach(el => el.onmousedown = e => { e.preventDefault(); pickAC(+el.dataset.i); });
 }
 async function acLookup(){
   const q = lastToken(tickersInput.value);
-  if (q.length < 1) { closeAC(); return; }
+  if (q.length < 1) { showHistory(); return; }   // empty token → recent searches
   try {
     const r = await fetch("/api/tickers?q=" + encodeURIComponent(q) + "&limit=8");
     const d = await r.json(); acItems = d.results || []; acActive = -1; renderAC();
   } catch(e) { closeAC(); }
 }
+// On focus (or an emptied box), offer the recent search history to pick from.
+async function showHistory(){
+  if (tickersInput.value.trim()) return;   // only when the field is empty
+  try {
+    const r = await fetch("/api/runs?limit=25");
+    const d = await r.json();
+    const seen = new Set(), items = [];
+    for (const s of (d.searches || [])) {
+      const tks = Array.isArray(s.tickers) ? s.tickers.filter(Boolean) : [];
+      if (!tks.length) continue;
+      const value = tks.join(", "), key = value.toUpperCase();
+      if (seen.has(key)) continue;
+      seen.add(key);
+      items.push({ ticker: value, name: "🕓 " + (s.source || "recent"), full: true, value });
+      if (items.length >= 8) break;
+    }
+    if (items.length) { acItems = items; acActive = -1; renderAC(); }
+    else closeAC();
+  } catch(e) { closeAC(); }
+}
+tickersInput.addEventListener("focus", showHistory);
 tickersInput.addEventListener("input", () => { clearTimeout(acTimer); acTimer = setTimeout(acLookup, 160); });
 tickersInput.addEventListener("keydown", e => {
   if (acBox.classList.contains("open") && acItems.length) {
