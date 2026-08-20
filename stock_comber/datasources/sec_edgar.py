@@ -33,6 +33,28 @@ FACTS_URL = "https://data.sec.gov/api/xbrl/companyfacts/CIK{cik:010d}.json"
 FILER_URL = ("https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany"
              "&ticker={ticker}&type=10-K&dateb=&owner=include&count=1&output=atom")
 
+# Curated CIK override for the largest, most-searched tickers. This is a
+# hardening safety net, NOT the primary resolver: it is consulted ONLY when the
+# ticker map's CIK yields no annual fundamentals (the same trigger as the
+# browse-edgar fallback), and it is tried before that network lookup. Because it
+# only fires on an already-failing ticker, a wrong entry can never regress a
+# ticker that currently resolves correctly — worst case the ticker stays
+# unresolved and the EDGAR lookup still runs. Every CIK is the entity that files
+# the 10-K on EDGAR.
+MEGACAP_CIK: dict[str, int] = {
+    "AAPL": 320193, "MSFT": 789019, "AMZN": 1018724, "GOOGL": 1652044,
+    "GOOG": 1652044, "META": 1326801, "NVDA": 1045810, "TSLA": 1318605,
+    "BRK.B": 1067983, "BRK-B": 1067983, "BRK.A": 1067983, "BRK-A": 1067983,
+    "JPM": 19617, "JNJ": 200406, "XOM": 34088, "WMT": 104169, "PG": 80424,
+    "KO": 21344, "PEP": 77476, "CVX": 93410, "HD": 354950, "BAC": 70858,
+    "PFE": 78003, "MRK": 310158, "INTC": 50863, "CSCO": 858877, "VZ": 732712,
+    "ORCL": 1341439, "COST": 909832, "MCD": 63908, "NKE": 320187,
+    "CRM": 1108524, "ADBE": 796343, "WFC": 72971, "LLY": 59478, "TXN": 97476,
+    "HON": 773840, "IBM": 51143, "CAT": 18230, "MMM": 66740, "GS": 886982,
+    "MS": 895421, "AXP": 4962, "BA": 12927, "UNH": 731766, "T": 732717,
+    "V": 1403161, "MA": 1141391, "DIS": 1744489, "ABT": 1800, "UNP": 100885,
+}
+
 # Concept fallbacks, in priority order, per logical field. The unit key differs
 # by concept (dollars vs. shares vs. per-share dollars).
 _USD = "USD"
@@ -296,16 +318,27 @@ class SecEdgarSource:
         annuals = extract_annuals(facts) if facts else []
 
         # The ticker map sometimes points to an entity with no XBRL facts (a
-        # newer registrant sharing the ticker). If we got nothing, ask EDGAR
-        # which CIK actually files 10-Ks for this ticker and use that instead.
+        # newer registrant sharing the ticker). If we got nothing, try the
+        # curated mega-cap override first (instant, no network), then ask EDGAR
+        # which CIK actually files 10-Ks for this ticker. Use the first
+        # candidate that yields annual fundamentals.
         if not annuals:
-            alt = self.filer_cik(ticker)
-            if alt and alt != cik:
+            def _candidates():
+                override = MEGACAP_CIK.get(ticker.upper())
+                if override:
+                    yield override
+                # Lazy: the network lookup runs only if the override missed.
+                yield self.filer_cik(ticker)
+
+            for alt in _candidates():
+                if not alt or alt == cik:
+                    continue
                 alt_facts = self._get_json(
                     FACTS_URL.format(cik=alt), "sec_facts", str(alt))
                 alt_annuals = extract_annuals(alt_facts) if alt_facts else []
                 if alt_annuals:
                     cik, facts, annuals = alt, alt_facts, alt_annuals
+                    break
 
         if not facts:
             return Company(ticker=ticker.upper(), cik=str(cik), name=info.get("name"))
