@@ -42,6 +42,15 @@
   </div>
 
   <div class="card">
+    <h2>Analysis queue</h2>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Ticker</th><th>Status</th><th>Requested</th><th>Run</th></tr></thead>
+      <tbody id="queue"></tbody>
+    </table></div>
+    <p class="hint">Tickers you screen are queued here; a worker runs a full analysis (news + sentiment) every ~20 min and links the resulting run.</p>
+  </div>
+
+  <div class="card">
     <h2>Runs</h2>
     <div class="tablewrap"><table>
       <thead><tr><th>#</th><th>When</th><th>Strategies</th><th class="r">Companies</th><th class="r">Passing</th><th>Export</th></tr></thead>
@@ -86,10 +95,20 @@ function renderSearches(rows) {
       + `<td>${esc(t).slice(0,80)}</td><td class="r">${s.result_count??"—"}</td><td class="r">${s.passing_count??"—"}</td></tr>`;
   }).join("") || `<tr><td colspan="5" class="hint">No searches yet.</td></tr>`;
 }
+function renderQueue(rows) {
+  const badge = s => `<span class="pill">${esc(s)}</span>`;
+  $("#queue").innerHTML = rows.map(q =>
+    `<tr><td><strong>${esc(q.ticker)}</strong></td><td>${badge(q.status)}</td>`
+    + `<td>${fmtDate(q.requested_at)}</td>`
+    + `<td>${q.run_id ? "#" + q.run_id : (q.note ? esc(q.note).slice(0,40) : "—")}</td></tr>`
+  ).join("") || `<tr><td colspan="4" class="hint">Queue is empty.</td></tr>`;
+}
 async function load() {
   try {
-    const r = await fetch("/api/runs?limit=50"); const d = await r.json();
+    const [r, q] = await Promise.all([fetch("/api/runs?limit=50"), fetch("/api/queue?limit=50")]);
+    const d = await r.json();
     RUNS = d.runs || []; renderRuns(); renderSearches(d.searches || []);
+    try { renderQueue((await q.json()).queue || []); } catch(e){ renderQueue([]); }
     $("#status").textContent = d.storage_enabled
       ? `${RUNS.length} runs · ${(d.searches||[]).length} searches`
       : "No database configured — set DATABASE_URL in Vercel to record history.";

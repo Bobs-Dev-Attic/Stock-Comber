@@ -1,5 +1,19 @@
 # Release notes
 
+## v0.7.0 — Analysis queue, news & sentiment (2026-08-20)
+
+- **Queue for deeper analysis.** Screen a ticker and it's queued; a worker runs
+  every ~20 min doing a full analysis — all strategies, Finnhub enrichment, and
+  recent **news with an A–F sentiment grade** — and stores it as a run. Queue
+  status shows on the History page.
+- **News & sentiment** come from Finnhub's free company-news feed scored by a
+  transparent local lexicon (no paid API). Stored with each analysis.
+- `POST /api/queue` to enqueue, `GET /api/queue` to view.
+
+_On Dataroma:_ superinvestor ownership is a strong gem signal, but there's no
+free/official API and scraping is fragile — SEC 13F filings are the clean
+free alternative (a possible future enrichment).
+
 ## v0.6.0 — Activity log & ticker autocomplete (2026-08-20)
 
 - **History page** (`/history.html`) — a log of every stored nightly run (with
