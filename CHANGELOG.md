@@ -4,6 +4,15 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.18.1] - 2026-08-20
+
+### Added
+- **Company snapshot header** in the Analyze deep-dive — exchange, industry,
+  market cap, IPO year, shares outstanding, and a website link (with logo when
+  available), from Finnhub `profile2`. Exposed as `profile` on `/api/analyze`.
+
+[0.18.1]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.18.1
+
 ## [0.18.0] - 2026-08-20
 
 ### Added

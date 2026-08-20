@@ -53,6 +53,13 @@ def run_analysis(ticker: str, news_days: int = 14) -> dict:
     signal = compute_signal(results)
     from stock_comber.scoring import compute_scores
     scores = compute_scores(results[0].metrics if results else {})
+    # Company snapshot for the header (Finnhub profile2, one throttled call).
+    profile = None
+    if screener.finnhub is not None:
+        try:
+            profile = screener.finnhub.fetch_profile(ticker)
+        except Exception:
+            profile = None
 
     run_id = None
     passing = sum(1 for r in results if r.passed)
@@ -84,6 +91,7 @@ def run_analysis(ticker: str, news_days: int = 14) -> dict:
         "peers": peers,
         "signal": signal,
         "scores": scores,
+        "profile": profile,
     }
 
 
