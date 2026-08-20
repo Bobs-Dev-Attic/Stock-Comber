@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stock-comber"
+version = "0.1.0"
+description = "Find publicly traded companies that fit Graham and Buffett value-investing criteria, using free data sources."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Bob Chang", email = "bobchang711@gmail.com" }]
+keywords = ["value-investing", "stocks", "graham", "buffett", "screener", "sec-edgar"]
+dependencies = [
+    "requests>=2.28",
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+schedule = ["apscheduler>=3.10"]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+stock-comber = "stock_comber.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Bobs-Dev-Attic/Stock-Comber"
+
+[tool.setuptools.packages.find]
+include = ["stock_comber*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

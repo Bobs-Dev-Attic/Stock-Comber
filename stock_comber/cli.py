@@ -1,0 +1,135 @@
+"""Command-line interface for Stock-Comber."""
+
+from __future__ import annotations
+
+import argparse
+import json
+import logging
+import sys
+from typing import Optional
+
+from . import __version__
+from .config import DEFAULT_CONFIG, load_config, validate_config
+from .report import to_markdown, write_reports
+from .screener import Screener
+
+
+def _build_parser() -> argparse.ArgumentParser:
+    p = argparse.ArgumentParser(
+        prog="stock-comber",
+        description="Find publicly traded companies that fit Graham/Buffett value criteria.",
+    )
+    p.add_argument("--version", action="version", version=f"stock-comber {__version__}")
+    p.add_argument("-c", "--config", help="Path to a YAML config file.")
+    p.add_argument("-v", "--verbose", action="store_true", help="Verbose logging.")
+    sub = p.add_subparsers(dest="command", required=True)
+
+    ps = sub.add_parser("screen", help="Run the screen over the universe.")
+    ps.add_argument("tickers", nargs="*", help="Explicit tickers (overrides config universe).")
+    ps.add_argument("--limit", type=int, help="Cap the SEC ticker universe.")
+    ps.add_argument("--strategy", action="append", choices=["graham", "buffett"],
+                    help="Restrict to specific strategies (repeatable).")
+    ps.add_argument("--only-passing", action="store_true", help="Report only passing rows.")
+    ps.add_argument("--no-write", action="store_true", help="Print to stdout, don't write files.")
+
+    sub.add_parser("config", help="Print the effective configuration and exit.")
+    sub.add_parser("validate", help="Validate the configuration and exit.")
+
+    pt = sub.add_parser("tickers", help="List available tickers from SEC EDGAR.")
+    pt.add_argument("--limit", type=int, default=50)
+
+    psch = sub.add_parser("schedule", help="Run the screen on a recurring local schedule.")
+    psch.add_argument("--once", action="store_true", help="Run one cycle then exit.")
+    return p
+
+
+def _load(args) -> dict:
+    cfg = load_config(args.config)
+    if getattr(args, "limit", None) is not None:
+        cfg["universe"]["limit"] = args.limit
+    if getattr(args, "strategy", None):
+        cfg["strategies"] = args.strategy
+    if getattr(args, "only_passing", False):
+        cfg["output"]["only_passing"] = True
+    return cfg
+
+
+def _progress(i: int, total: int, ticker: str) -> None:
+    print(f"  [{i}/{total}] {ticker}", file=sys.stderr)
+
+
+def cmd_screen(args) -> int:
+    cfg = _load(args)
+    problems = validate_config(cfg)
+    if problems:
+        print("Invalid configuration:", file=sys.stderr)
+        for p in problems:
+            print(f"  - {p}", file=sys.stderr)
+        return 2
+    screener = Screener(cfg)
+    tickers = [t.upper() for t in args.tickers] or None
+    results = screener.run(tickers, progress=_progress)
+    if args.no_write:
+        print(to_markdown(results, cfg))
+    else:
+        paths = write_reports(results, cfg)
+        passing = sum(1 for r in results if r.passed)
+        print(f"Screened {len({r.ticker for r in results})} companies · "
+              f"{passing} strategy matches passed.")
+        print("Wrote:")
+        for path in paths:
+            print(f"  {path}")
+    return 0
+
+
+def cmd_config(args) -> int:
+    print(json.dumps(load_config(args.config), indent=2))
+    return 0
+
+
+def cmd_validate(args) -> int:
+    cfg = load_config(args.config)
+    problems = validate_config(cfg)
+    if problems:
+        for p in problems:
+            print(f"  - {p}")
+        return 1
+    print("Configuration OK.")
+    return 0
+
+
+def cmd_tickers(args) -> int:
+    cfg = load_config(args.config)
+    screener = Screener(cfg)
+    for t in screener.sec.list_tickers(limit=args.limit):
+        print(t)
+    return 0
+
+
+def cmd_schedule(args) -> int:
+    from .scheduler import run_schedule
+    cfg = _load(args)
+    return run_schedule(cfg, once=args.once)
+
+
+COMMANDS = {
+    "screen": cmd_screen,
+    "config": cmd_config,
+    "validate": cmd_validate,
+    "tickers": cmd_tickers,
+    "schedule": cmd_schedule,
+}
+
+
+def main(argv: Optional[list[str]] = None) -> int:
+    parser = _build_parser()
+    args = parser.parse_args(argv)
+    logging.basicConfig(
+        level=logging.INFO if args.verbose else logging.WARNING,
+        format="%(levelname)s %(message)s",
+    )
+    return COMMANDS[args.command](args)
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
