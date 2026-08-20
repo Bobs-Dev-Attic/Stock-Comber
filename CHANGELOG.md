@@ -4,6 +4,19 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.18.0] - 2026-08-20
+
+### Added
+- **Composite 0–100 scores.** The Analyze deep-dive now shows **Value**,
+  **Quality**, **Growth** and a blended **Overall** score (0–100, with an A–F
+  grade and a meter), computed by transparent documented bands over the
+  fundamentals we already calculate — no ML, no paid data. Missing metrics are
+  skipped and weights renormalised, so a score only disappears when nothing in
+  that category is measurable. New `stock_comber/scoring.py`
+  (`compute_scores`); exposed as `scores` on `/api/analyze`.
+
+[0.18.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.18.0
+
 ## [0.17.0] - 2026-08-20
 
 ### Added

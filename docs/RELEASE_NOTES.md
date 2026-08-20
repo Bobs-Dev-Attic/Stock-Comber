@@ -1,5 +1,22 @@
 # Release notes
 
+## v0.18.0 — Composite 0–100 scores (2026-08-20)
+
+The **Analyze** deep-dive now opens with four at-a-glance scores:
+
+- **Value** — how cheap (earnings yield, P/E, P/B)
+- **Quality** — how good the business is (ROE, return on capital, margins, ROA,
+  debt, liquidity)
+- **Growth** — 5-year earnings & revenue trends
+- **Overall** — a quality-tilted blend, with an A–F grade
+
+Each is a 0–100 number with a colored meter. The math is fully transparent —
+documented linear bands over the fundamentals Stock-Comber already computes, no
+machine learning and no paid data. Metrics that aren't available are skipped and
+the weights renormalise, so you never get a misleadingly low score just because
+one input was missing. Also available programmatically as the `scores` field on
+`/api/analyze`.
+
 ## v0.17.0 — Index universe templates (2026-08-20)
 
 Screen a whole index — the **Dow 30**, **Nasdaq-100**, or **S&P 500** — filtered
