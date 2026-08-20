@@ -1,5 +1,11 @@
 # Release notes
 
+## v0.4.1 — Selectable columns & export button (2026-08-20)
+
+The dashboard now has a **Columns** menu (toggle any metric on/off, remembered in
+your browser) and an **Export** button to download the current results as CSV or
+JSON. Programmatic export stays available via the key-protected `/api/export`.
+
 ## v0.4.0 — Persistence, Finnhub, and a key-protected export API (2026-08-20)
 
 - **Storage (Postgres/Neon):** each screen run — results plus the raw retrieved
