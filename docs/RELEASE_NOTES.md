@@ -1,5 +1,14 @@
 # Release notes
 
+## v0.15.2 — Analyze as a search icon in the ticker field (2026-08-20)
+
+The Analyze button now lives **inside the ticker field**, on the same row —
+embedded at the right edge as a 🔍 search icon (labelled "Analyze" for screen
+readers, with the full tooltip on hover). This tightens the search row,
+especially on mobile. It shows a ⏳ while working. Nothing about the behaviour
+changed: enter one ticker for the full deep-dive, several to compare them in a
+table using the ticked strategies.
+
 ## v0.15.1 — Mega-cap CIK override (2026-08-20)
 
 Hardens SEC fundamentals resolution for the largest, most-searched tickers

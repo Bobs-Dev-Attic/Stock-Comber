@@ -4,6 +4,17 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.15.2] - 2026-08-20
+
+### Changed
+- **Analyze is now a search icon inside the ticker field.** The Analyze button
+  moved onto the same row as the ticker box — embedded at its right edge as a 🔍
+  icon (with an "Analyze" aria-label + tooltip) — so the search row is tighter,
+  especially on mobile. It shows a ⏳ while a request is in flight. Behaviour is
+  unchanged: one ticker → deep-dive, several → compare table.
+
+[0.15.2]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.15.2
+
 ## [0.15.1] - 2026-08-20
 
 ### Changed
