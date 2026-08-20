@@ -87,6 +87,15 @@
   .signal.na .act { background: var(--chip); color: var(--muted); }
   .bar { height: 7px; width: 70px; background: var(--chip); border-radius: 999px; overflow: hidden; display: inline-block; vertical-align: middle; }
   .bar > i { display: block; height: 100%; background: var(--accent); }
+  /* composite score tiles */
+  .m.sc { align-items: stretch; }
+  .m.sc .scv { display: flex; align-items: baseline; gap: .3rem; }
+  .m.sc .scv .g { font-size: .78rem; font-weight: 700; color: var(--muted); }
+  .meter { height: 6px; border-radius: 999px; background: var(--chip); overflow: hidden; margin-top: .35rem; }
+  .meter > i { display: block; height: 100%; border-radius: 999px; background: var(--accent); }
+  .m.sc.good .meter > i { background: #0ca30c; }
+  .m.sc.warn .meter > i { background: #eda100; }
+  .m.sc.bad .meter > i { background: var(--fail-ink); }
   .foot { margin-top: 2rem; color: var(--muted); font-size: .82rem; }
   .foot code { background: var(--chip); padding: .1rem .35rem; border-radius: 5px; }
   a { color: var(--accent); }
@@ -613,6 +622,25 @@ function signalBanner(sig) {
     `<div><div><b>${escHtml(sig.label||"")}</b>${sig.score?` · signal ${sig.score}/100`:""}</div>`+
     `<div class="rz">${escHtml(sig.reason||"")} <em>Educational summary — not advice.</em></div></div></div>`;
 }
+const scoreCls = g => (g==="A"||g==="B") ? "good" : (g==="C" ? "warn" : "bad");
+function scoreTile(label, o) {
+  if (!o) return `<div class="m sc"><div class="scv"><b>—</b></div><span>${label}</span>`+
+    `<div class="meter"><i style="width:0"></i></div></div>`;
+  const w = Math.max(0, Math.min(100, o.score));
+  return `<div class="m sc ${scoreCls(o.grade)}" title="${label}: ${o.score} (${o.grade})">`+
+    `<div class="scv"><b>${Math.round(o.score)}</b><span class="g">${o.grade}</span></div>`+
+    `<span>${label}</span><div class="meter"><i style="width:${w}%"></i></div></div>`;
+}
+function scoresHtml(sc) {
+  if (!sc || (!sc.overall && !sc.value && !sc.quality && !sc.growth))
+    return `<div class="hint">Not enough fundamentals to score.</div>`;
+  return `<div class="mgrid">`+
+    scoreTile("Overall", sc.overall)+scoreTile("Value", sc.value)+
+    scoreTile("Quality", sc.quality)+scoreTile("Growth", sc.growth)+`</div>`+
+    `<div class="hint" style="margin-top:.3rem">0–100 composites from the fundamentals `+
+    `(transparent bands, higher is better): <b>Value</b> = cheapness, <b>Quality</b> = `+
+    `profitability &amp; balance sheet, <b>Growth</b> = 5-year trends.</div>`;
+}
 function openAnalysis(data) {
   const results = data.results || [];
   const signalHtml = signalBanner(data.signal);
@@ -681,6 +709,7 @@ function openAnalysis(data) {
     `<div class="sub">${first.name||""} · full analysis${data.run_id?` · stored as run #${data.run_id}`:""}`+
     ` · <a href="/backtest.html?ticker=${encodeURIComponent(data.ticker)}" target="_blank" rel="noopener">🧪 backtest ↗</a></div>`+
     signalHtml+
+    `<div class="sec-h">Scores</div>${scoresHtml(data.scores)}`+
     `<div class="sec-h">Strategies</div>${stratRows}${dataNote}`+
     `<div class="sec-h">Similar companies (same sector)</div>${peersHtml}`+
     `<div class="sec-h">News sentiment</div>${sentHtml}${newsHtml}`;
