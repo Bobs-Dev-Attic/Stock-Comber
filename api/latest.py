@@ -11,24 +11,33 @@ from http.server import BaseHTTPRequestHandler
 import json
 import os
 
-DATA_PATH = os.path.join(
-    os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-    "public", "data", "latest.json",
-)
+_HERE = os.path.dirname(os.path.abspath(__file__))
+# The bundle layout can vary; check a few plausible locations for the report.
+CANDIDATES = [
+    os.path.join(_HERE, "..", "public", "data", "latest.json"),
+    os.path.join(os.getcwd(), "public", "data", "latest.json"),
+    "/var/task/public/data/latest.json",
+]
+
+
+def _load():
+    for path in CANDIDATES:
+        try:
+            with open(path, "r", encoding="utf-8") as fh:
+                return json.load(fh)
+        except (FileNotFoundError, NotADirectoryError):
+            continue
+    return None
 
 
 class handler(BaseHTTPRequestHandler):
     def do_GET(self):
-        try:
-            with open(DATA_PATH, "r", encoding="utf-8") as fh:
-                payload = json.load(fh)
+        payload = _load()
+        if payload is not None:
             code = 200
-        except FileNotFoundError:
+        else:
             payload = {"error": "no report yet", "results": []}
             code = 404
-        except Exception as exc:
-            payload = {"error": str(exc), "results": []}
-            code = 500
 
         body = json.dumps(payload, default=str).encode("utf-8")
         self.send_response(code)
