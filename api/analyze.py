@@ -45,6 +45,7 @@ def run_analysis(ticker: str, news_days: int = 14) -> dict:
     extra = getattr(company, "extra", None) or {}
     news = extra.get("news", [])
     sentiment = extra.get("sentiment")
+    peers = extra.get("peers", [])
 
     run_id = None
     passing = sum(1 for r in results if r.passed)
@@ -73,6 +74,7 @@ def run_analysis(ticker: str, news_days: int = 14) -> dict:
         "results": [r.to_dict() for r in results],
         "news": news,
         "sentiment": sentiment,
+        "peers": peers,
     }
 
 

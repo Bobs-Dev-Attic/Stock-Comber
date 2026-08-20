@@ -4,6 +4,17 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.13.0] - 2026-08-20
+
+### Added
+- **Similar companies (same sector).** The Analyze deep-dive now lists
+  same-sector peers (Finnhub `/stock/peers`): tap a peer chip to deep-dive it,
+  or "Compare all in a table" to screen the whole peer group side by side.
+  Exposed as `peers` on `/api/analyze` and `FinnhubSource.fetch_peers`. Needs a
+  `FINNHUB_API_KEY`; degrades to a note when absent.
+
+[0.13.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.13.0
+
 ## [0.12.1] - 2026-08-20
 
 ### Fixed

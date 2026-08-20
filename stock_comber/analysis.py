@@ -38,8 +38,13 @@ def analyze_ticker(ticker: str, screener: Screener, news_days: int = 14):
             log.warning("news fetch failed for %s: %s", ticker, exc)
             news = []
         sentiment = compute_sentiment([n.get("headline") for n in news])
+        try:
+            peers = screener.finnhub.fetch_peers(ticker)
+        except Exception as exc:
+            log.warning("peers fetch failed for %s: %s", ticker, exc)
+            peers = []
         company.extra = {**(company.extra or {}),
-                         "news": news[:15], "sentiment": sentiment}
+                         "news": news[:15], "sentiment": sentiment, "peers": peers}
     return results, company
 
 
