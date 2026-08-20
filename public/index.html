@@ -33,7 +33,16 @@
   input[type=text], input[type=number], select {
     padding: .55rem .6rem; font-size: 1rem; border: 1px solid var(--line);
     border-radius: 9px; background: var(--bg); color: var(--ink); }
-  #tickers { flex: 1 1 260px; min-width: 200px; }
+  .acwrap { position: relative; flex: 1 1 260px; min-width: 200px; }
+  #tickers { width: 100%; }
+  .ac-dd { position: absolute; z-index: 15; left: 0; right: 0; top: calc(100% + 3px);
+    background: var(--panel); border: 1px solid var(--line); border-radius: 9px;
+    box-shadow: var(--shadow); max-height: 260px; overflow-y: auto; display: none; }
+  .ac-dd.open { display: block; }
+  .ac-item { padding: .45rem .6rem; cursor: pointer; display: flex; gap: .5rem; align-items: baseline; }
+  .ac-item.active, .ac-item:hover { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+  .ac-item .t { font-weight: 700; }
+  .ac-item .n { color: var(--muted); font-size: .85rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 9px; overflow: hidden; }
   .seg button { border: 0; background: var(--panel); color: var(--muted); padding: .55rem .8rem; cursor: pointer; font-size: .9rem; }
   .seg button[aria-pressed=true] { background: var(--accent); color: #fff; }
@@ -107,7 +116,10 @@
 
   <section class="card">
     <div class="controls">
-      <input id="tickers" type="text" placeholder="Tickers, e.g. AAPL, MSFT, JNJ, KO" autocomplete="off">
+      <div class="acwrap">
+        <input id="tickers" type="text" placeholder="Tickers, e.g. AAPL, MSFT, JNJ, KO" autocomplete="off">
+        <div id="ac" class="ac-dd"></div>
+      </div>
       <div class="seg" role="group" aria-label="Strategy">
         <button data-strat="both" aria-pressed="true">Both</button>
         <button data-strat="graham" aria-pressed="false">Graham</button>
@@ -153,8 +165,8 @@
 
   <p class="foot">
     Educational tool only — not investment advice. Data from SEC EDGAR, Yahoo &amp; Stooq may be delayed or incomplete.<br>
-    <a href="/settings.html">⚙️ Settings</a> ·
-    API: <code>/api/latest</code> · <code>/api/screen</code> · <code>/api/export</code> ·
+    <a href="/history.html">🕓 History</a> · <a href="/settings.html">⚙️ Settings</a> ·
+    API: <code>/api/latest</code> · <code>/api/screen</code> · <code>/api/export</code> · <code>/api/runs</code> ·
     <a href="https://github.com/Bobs-Dev-Attic/Stock-Comber">source</a>
   </p>
 </div>
@@ -424,7 +436,44 @@ async function runLive() {
   finally { $("#run").disabled = false; }
 }
 $("#run").onclick = runLive;
-$("#tickers").addEventListener("keydown", e => { if (e.key === "Enter") runLive(); });
+
+/* ---- ticker autocomplete ---- */
+const acBox = $("#ac"); const tickersInput = $("#tickers");
+let acItems = [], acActive = -1, acTimer = null;
+const lastToken = s => { const parts = s.split(","); return parts[parts.length-1].trim(); };
+function closeAC(){ acBox.classList.remove("open"); acBox.innerHTML=""; acItems=[]; acActive=-1; }
+function pickAC(i){
+  const it = acItems[i]; if (!it) return;
+  const parts = tickersInput.value.split(",");
+  parts[parts.length-1] = " " + it.ticker;
+  tickersInput.value = parts.join(",").replace(/^\s+/, "") + ", ";
+  closeAC(); tickersInput.focus();
+}
+function renderAC(){
+  acBox.innerHTML = acItems.map((it,i) =>
+    `<div class="ac-item ${i===acActive?'active':''}" data-i="${i}"><span class="t">${it.ticker}</span><span class="n">${(it.name||"")}</span></div>`).join("");
+  acBox.classList.toggle("open", acItems.length>0);
+  acBox.querySelectorAll(".ac-item").forEach(el => el.onmousedown = e => { e.preventDefault(); pickAC(+el.dataset.i); });
+}
+async function acLookup(){
+  const q = lastToken(tickersInput.value);
+  if (q.length < 1) { closeAC(); return; }
+  try {
+    const r = await fetch("/api/tickers?q=" + encodeURIComponent(q) + "&limit=8");
+    const d = await r.json(); acItems = d.results || []; acActive = -1; renderAC();
+  } catch(e) { closeAC(); }
+}
+tickersInput.addEventListener("input", () => { clearTimeout(acTimer); acTimer = setTimeout(acLookup, 160); });
+tickersInput.addEventListener("keydown", e => {
+  if (acBox.classList.contains("open") && acItems.length) {
+    if (e.key === "ArrowDown") { e.preventDefault(); acActive = (acActive+1)%acItems.length; renderAC(); return; }
+    if (e.key === "ArrowUp") { e.preventDefault(); acActive = (acActive-1+acItems.length)%acItems.length; renderAC(); return; }
+    if (e.key === "Enter" && acActive >= 0) { e.preventDefault(); pickAC(acActive); return; }
+    if (e.key === "Escape") { closeAC(); return; }
+  }
+  if (e.key === "Enter") runLive();
+});
+tickersInput.addEventListener("blur", () => setTimeout(closeAC, 120));
 
 /* init */
 wireMenu("cols-menu"); wireMenu("export-menu"); buildColsMenu(); renderHead(); loadLatest();

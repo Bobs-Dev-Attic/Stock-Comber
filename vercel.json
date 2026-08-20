@@ -22,6 +22,16 @@
       "memory": 512,
       "maxDuration": 15,
       "includeFiles": "stock_comber/**"
+    },
+    "api/runs.py": {
+      "memory": 256,
+      "maxDuration": 15,
+      "includeFiles": "stock_comber/**"
+    },
+    "api/tickers.py": {
+      "memory": 512,
+      "maxDuration": 15,
+      "includeFiles": "stock_comber/**"
     }
   }
 }

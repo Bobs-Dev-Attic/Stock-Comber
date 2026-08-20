@@ -155,6 +155,8 @@ serverless API — configured in [`vercel.json`](vercel.json).
 | `/api/screen?tickers=AAPL&custom=[{"metric":"pe_ratio","op":"<=","value":12}]` | Live screen with custom criteria (URL-encode the JSON) |
 | `/api/export?key=KEY&format=csv` | **Key-protected** export of the latest stored run (`format=json` also; `&run=<id>` for a specific run) |
 | `/settings.html` · `/api/settings` | Settings page + API (edit parameters; `POST` needs `DATABASE_URL` + `STOCK_COMBER_API_KEY`) |
+| `/history.html` · `/api/runs` | Activity log — stored runs + ad-hoc searches |
+| `/api/tickers?q=AAP` | Ticker autocomplete (powers the dashboard search box) |
 
 ### Persistence, Finnhub & the export API (all optional)
 
