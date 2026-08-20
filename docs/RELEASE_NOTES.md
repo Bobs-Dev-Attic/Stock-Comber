@@ -1,5 +1,12 @@
 # Release notes
 
+## v0.6.0 — Activity log & ticker autocomplete (2026-08-20)
+
+- **History page** (`/history.html`) — a log of every stored nightly run (with
+  per-run CSV/JSON export links) and every ad-hoc search. Backed by `/api/runs`.
+- **Ticker autocomplete** in the dashboard search box, backed by `/api/tickers`
+  (prefix/substring search over the SEC ticker list, with keyboard nav).
+
 ## v0.5.1 — Settings page (2026-08-20)
 
 A browser **Settings page** (linked from the dashboard) to edit every parameter:

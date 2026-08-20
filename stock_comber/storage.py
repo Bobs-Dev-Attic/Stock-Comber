@@ -76,6 +76,17 @@ CREATE TABLE IF NOT EXISTS screen_state (
     key   TEXT PRIMARY KEY,
     value JSONB NOT NULL
 );
+CREATE TABLE IF NOT EXISTS searches (
+    id            BIGSERIAL PRIMARY KEY,
+    created_at    TIMESTAMPTZ NOT NULL DEFAULT now(),
+    source        TEXT,                 -- 'live' | 'nightly' | 'cli'
+    tickers       JSONB,
+    strategies    JSONB,
+    custom        JSONB,
+    result_count  INTEGER,
+    passing_count INTEGER
+);
+CREATE INDEX IF NOT EXISTS idx_searches_created ON searches(created_at DESC);
 """
 
 
@@ -137,6 +148,13 @@ class NullStorage:
 
     def set_state(self, key: str, value) -> None:
         return None
+
+    def log_search(self, source, tickers, strategies, custom,
+                   result_count, passing_count) -> None:
+        return None
+
+    def list_searches(self, limit: int = 25) -> list[dict]:
+        return []
 
 
 class PostgresStorage:
@@ -318,6 +336,38 @@ class PostgresStorage:
                     "ON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value",
                     (key, json.dumps(value, default=str)))
             conn.commit()
+
+    # -- search log ------------------------------------------------------
+    def log_search(self, source, tickers, strategies, custom,
+                   result_count, passing_count) -> None:
+        with self._connect() as conn:
+            self._ensure_schema(conn)
+            with conn.cursor() as cur:
+                cur.execute(
+                    "INSERT INTO searches (source, tickers, strategies, custom, "
+                    "result_count, passing_count) VALUES (%s,%s,%s,%s,%s,%s)",
+                    (source, json.dumps(tickers, default=str),
+                     json.dumps(strategies, default=str),
+                     json.dumps(custom, default=str) if custom else None,
+                     result_count, passing_count))
+            conn.commit()
+
+    def list_searches(self, limit: int = 25) -> list[dict]:
+        with self._connect() as conn:
+            self._ensure_schema(conn)
+            with conn.cursor() as cur:
+                cur.execute(
+                    "SELECT id, created_at, source, tickers, strategies, custom, "
+                    "result_count, passing_count FROM searches "
+                    "ORDER BY created_at DESC LIMIT %s", (limit,))
+                cols = ["id", "created_at", "source", "tickers", "strategies",
+                        "custom", "result_count", "passing_count"]
+                out = []
+                for r in cur.fetchall():
+                    d = dict(zip(cols, r))
+                    d["created_at"] = d["created_at"].isoformat()
+                    out.append(d)
+                return out
 
 
 def resolve_dsn(config: Optional[dict] = None) -> Optional[str]:

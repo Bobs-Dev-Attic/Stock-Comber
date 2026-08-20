@@ -111,6 +111,26 @@ def _annual_by_year(concept: dict[str, Any], unit_key: str) -> dict[int, float]:
     return {fy: v for fy, (_end, v) in best.items()}
 
 
+def match_tickers(mapping: dict[str, dict], query: str, limit: int = 10) -> list[dict]:
+    """Prefix/substring ticker search over a {TICKER: {cik, name}} map.
+
+    Ticker prefix matches rank first, then ticker-substring/name matches.
+    """
+    q = (query or "").strip().upper()
+    if not q:
+        return []
+    starts, contains = [], []
+    for ticker, info in mapping.items():
+        name = info.get("name") or ""
+        if ticker.startswith(q):
+            starts.append((ticker, name))
+        elif q in ticker or q in name.upper():
+            contains.append((ticker, name))
+    starts.sort()
+    contains.sort()
+    return [{"ticker": t, "name": n} for t, n in (starts + contains)[:limit]]
+
+
 def extract_annuals(facts_json: dict[str, Any]) -> list[AnnualFacts]:
     """Reduce a raw companyfacts document to a sorted list of AnnualFacts."""
     gaap = facts_json.get("facts", {}).get("us-gaap", {})
@@ -223,6 +243,9 @@ class SecEdgarSource:
     def list_tickers(self, limit: Optional[int] = None) -> list[str]:
         tickers = sorted(self.ticker_map().keys())
         return tickers[:limit] if limit else tickers
+
+    def search_tickers(self, query: str, limit: int = 10) -> list[dict]:
+        return match_tickers(self.ticker_map(), query, limit)
 
     def fetch_company(self, ticker: str) -> Optional[Company]:
         """Fetch and reduce fundamentals for one ticker (no price)."""

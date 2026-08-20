@@ -24,6 +24,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from stock_comber import __version__  # noqa: E402
 from stock_comber.config import load_config, validate_config  # noqa: E402
 from stock_comber.screener import Screener  # noqa: E402
+from stock_comber.storage import get_storage  # noqa: E402
 
 MAX_TICKERS = 10
 MAX_CUSTOM = 15
@@ -50,11 +51,22 @@ def run_screen(tickers, strategies, custom_criteria=None):
     cfg["data"]["request_delay_seconds"] = 0
     cfg["data"]["request_timeout"] = 25
     results = Screener(cfg).run(tickers)
+    passing = sum(1 for r in results if r.passed)
+
+    # Log the ad-hoc search to the activity log (best-effort, when a DB exists).
+    try:
+        store = get_storage(cfg)
+        if getattr(store, "enabled", False):
+            store.log_search("live", tickers, chosen, custom_criteria,
+                             len({r.ticker for r in results}), passing)
+    except Exception:
+        pass
+
     return {
         "version": __version__,
         "strategies": chosen,
         "count": len({r.ticker for r in results}),
-        "passing": sum(1 for r in results if r.passed),
+        "passing": passing,
         "results": [r.to_dict() for r in results],
     }
 
