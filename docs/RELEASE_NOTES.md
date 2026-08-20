@@ -1,5 +1,29 @@
 # Release notes
 
+## v0.19.0 — Investment thesis tracker (2026-08-20)
+
+The feature almost nobody offers: the app doesn't just track the stock, it
+tracks **why you bought it**.
+
+On the new **Thesis Tracker** (`/thesis.html`, also a "🎯 track thesis" link in
+the Analyze deep-dive) you write your reasons as **measurable conditions** —
+e.g. `revenue_growth_5y_pct ≥ 20`, `net_margin_pct ≥ 15`, `debt_to_equity ≤ 0.5`
+— plus a free-text note. Stock-Comber snapshots today's metrics as your
+**baseline**, and the nightly job re-checks the live fundamentals and marks each
+thesis:
+
+- **intact** — every condition still holds,
+- **weakening** — all still hold, but a metric has slipped ≥15% toward its limit,
+- **broken** — one or more conditions no longer hold.
+
+Each thesis shows a per-condition table: current value, baseline, **drift**, and
+pass/fail — so you can see exactly what changed. Conditions reuse the same
+metric vocabulary as custom criteria. Creating and deleting theses needs the
+`STOCK_COMBER_API_KEY`; anyone can view them.
+
+_Not investment advice — an educational tool for keeping yourself honest about
+your original reasoning._
+
 ## v0.18.1 — Company snapshot header (2026-08-20)
 
 The **Analyze** deep-dive now opens with a one-line **company snapshot** —

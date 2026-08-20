@@ -4,6 +4,21 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.19.0] - 2026-08-20
+
+### Added
+- **Investment thesis tracker** (`/thesis.html`, `/api/thesis`). Write *why*
+  you'd buy a stock as measurable conditions (`metric op value`, reusing the
+  custom-criteria vocabulary); Stock-Comber snapshots the metrics as a
+  **baseline**, then the nightly job re-checks the live fundamentals and marks
+  each thesis **intact / weakening / broken**, showing exactly which conditions
+  failed and how far each metric has drifted from the baseline. New
+  `stock_comber/thesis.py`, a `theses` table, the `check-theses` CLI (wired into
+  the scheduled screen workflow), and a "🎯 track thesis" link in the Analyze
+  modal. Writes are gated by `STOCK_COMBER_API_KEY`.
+
+[0.19.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.19.0
+
 ## [0.18.1] - 2026-08-20
 
 ### Added

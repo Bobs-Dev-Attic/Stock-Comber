@@ -96,6 +96,20 @@ CREATE TABLE IF NOT EXISTS analysis_queue (
     note         TEXT
 );
 CREATE INDEX IF NOT EXISTS idx_queue_status ON analysis_queue(status, requested_at);
+CREATE TABLE IF NOT EXISTS theses (
+    id           BIGSERIAL PRIMARY KEY,
+    ticker       TEXT NOT NULL,
+    note         TEXT,                 -- why you bought (free text)
+    conditions   JSONB NOT NULL,       -- [{metric, op, value}]
+    baseline     JSONB,                -- metric snapshot at creation
+    status       TEXT NOT NULL DEFAULT 'intact',  -- intact|weakening|broken
+    last_checks  JSONB,                -- per-condition results from last check
+    current      JSONB,                -- metric snapshot at last check
+    created_at   TIMESTAMPTZ NOT NULL DEFAULT now(),
+    checked_at   TIMESTAMPTZ
+);
+CREATE INDEX IF NOT EXISTS idx_theses_ticker ON theses(ticker);
+CREATE INDEX IF NOT EXISTS idx_theses_created ON theses(created_at DESC);
 """
 
 
@@ -182,6 +196,22 @@ class NullStorage:
 
     def analytics(self, run_limit: int = 30) -> dict:
         return {"runs": [], "top_tickers": [], "sectors": [], "sentiment": []}
+
+    # -- theses (no-op) --
+    def create_thesis(self, ticker, note, conditions, baseline) -> Optional[int]:
+        return None
+
+    def list_theses(self, limit: int = 100) -> list[dict]:
+        return []
+
+    def get_thesis(self, thesis_id: int) -> Optional[dict]:
+        return None
+
+    def update_thesis_check(self, thesis_id, status, current, checks) -> None:
+        return None
+
+    def delete_thesis(self, thesis_id: int) -> bool:
+        return False
 
 
 class PostgresStorage:
@@ -370,6 +400,73 @@ class PostgresStorage:
 
         return {"runs": runs, "top_tickers": top_tickers,
                 "sectors": sectors, "sentiment": sentiment}
+
+    # -- theses ----------------------------------------------------------
+    _THESIS_COLS = ("id", "ticker", "note", "conditions", "baseline", "status",
+                    "last_checks", "current", "created_at", "checked_at")
+
+    @classmethod
+    def _thesis_row(cls, r) -> dict:
+        d = dict(zip(cls._THESIS_COLS, r))
+        d["created_at"] = d["created_at"].isoformat() if d["created_at"] else None
+        d["checked_at"] = d["checked_at"].isoformat() if d["checked_at"] else None
+        return d
+
+    def create_thesis(self, ticker, note, conditions, baseline) -> Optional[int]:
+        with self._connect() as conn:
+            self._ensure_schema(conn)
+            with conn.cursor() as cur:
+                cur.execute(
+                    "INSERT INTO theses (ticker, note, conditions, baseline, "
+                    "status, current, checked_at) VALUES "
+                    "(%s,%s,%s,%s,'intact',%s, now()) RETURNING id",
+                    (ticker.upper(), note, json.dumps(conditions, default=str),
+                     json.dumps(baseline or {}, default=str),
+                     json.dumps(baseline or {}, default=str)))
+                tid = cur.fetchone()[0]
+            conn.commit()
+        return tid
+
+    def list_theses(self, limit: int = 100) -> list[dict]:
+        with self._connect() as conn:
+            self._ensure_schema(conn)
+            with conn.cursor() as cur:
+                cur.execute(
+                    "SELECT id, ticker, note, conditions, baseline, status, "
+                    "last_checks, current, created_at, checked_at FROM theses "
+                    "ORDER BY created_at DESC LIMIT %s", (limit,))
+                return [self._thesis_row(r) for r in cur.fetchall()]
+
+    def get_thesis(self, thesis_id: int) -> Optional[dict]:
+        with self._connect() as conn:
+            self._ensure_schema(conn)
+            with conn.cursor() as cur:
+                cur.execute(
+                    "SELECT id, ticker, note, conditions, baseline, status, "
+                    "last_checks, current, created_at, checked_at FROM theses "
+                    "WHERE id = %s", (thesis_id,))
+                row = cur.fetchone()
+        return self._thesis_row(row) if row else None
+
+    def update_thesis_check(self, thesis_id, status, current, checks) -> None:
+        with self._connect() as conn:
+            self._ensure_schema(conn)
+            with conn.cursor() as cur:
+                cur.execute(
+                    "UPDATE theses SET status=%s, current=%s, last_checks=%s, "
+                    "checked_at=now() WHERE id=%s",
+                    (status, json.dumps(current or {}, default=str),
+                     json.dumps(checks or [], default=str), thesis_id))
+            conn.commit()
+
+    def delete_thesis(self, thesis_id: int) -> bool:
+        with self._connect() as conn:
+            self._ensure_schema(conn)
+            with conn.cursor() as cur:
+                cur.execute("DELETE FROM theses WHERE id = %s", (thesis_id,))
+                deleted = cur.rowcount > 0
+            conn.commit()
+        return deleted
 
     # -- settings --------------------------------------------------------
     def get_settings(self) -> dict:
