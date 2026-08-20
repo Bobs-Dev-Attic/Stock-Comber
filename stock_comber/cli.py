@@ -51,6 +51,7 @@ def _build_parser() -> argparse.ArgumentParser:
     paq = sub.add_parser("analyze-queue",
                          help="Process queued tickers with a full analysis (news + sentiment).")
     paq.add_argument("--limit", type=int, default=5, help="Max tickers to process.")
+    paq.add_argument("--seed", help="Comma-separated tickers to enqueue first (analyse on demand).")
     return p
 
 
@@ -154,7 +155,14 @@ def cmd_analyze_queue(args) -> int:
         print("No database configured (set DATABASE_URL); nothing to process.",
               file=sys.stderr)
         return 0
-    summary = process_queue(cfg, store, limit=args.limit)
+    limit = args.limit
+    if getattr(args, "seed", None):
+        seed = [t.strip().upper() for t in args.seed.split(",") if t.strip()]
+        if seed:
+            store.enqueue(seed)
+            print(f"Seeded {len(seed)} ticker(s) into the queue.")
+            limit = max(limit, len(seed))
+    summary = process_queue(cfg, store, limit=limit)
     print(f"Processed {summary.get('processed', 0)} queued ticker(s).")
     for item in summary.get("tickers", []):
         if "error" in item:
