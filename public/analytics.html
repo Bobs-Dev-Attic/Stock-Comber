@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stock-Comber · Analytics</title>
+<style>
+  /* App shell (matches History / Settings) */
+  :root { --bg:#f6f7f9; --panel:#fff; --ink:#1a1d23; --muted:#5b6472; --line:#e3e6ea;
+    --accent:#1f7a4d; --chip:#eef1f4; --shadow:0 1px 3px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.04); }
+  @media (prefers-color-scheme: dark){ :root{ --bg:#0f1115; --panel:#171a20; --ink:#e7e9ee;
+    --muted:#9aa4b2; --line:#262b34; --accent:#34c17f; --chip:#1f242c;
+    --shadow:0 1px 3px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);} }
+
+  /* Validated data-viz palette (see dataviz skill: references/palette.md).
+     Roles referenced throughout; light/dark swap in one place. */
+  .viz { color-scheme: light;
+    --surface-1:#fcfcfb; --text-primary:#0b0b0b; --text-secondary:#52514e;
+    --muted-ink:#898781; --gridline:#e1e0d9; --baseline:#c3c2b7;
+    --series-1:#2a78d6; --series-2:#eb6834; --series-3:#1baf7a; }
+  @media (prefers-color-scheme: dark){
+    :root:where(:not([data-theme="light"])) .viz { color-scheme:dark;
+      --surface-1:#1a1a19; --text-primary:#ffffff; --text-secondary:#c3c2b7;
+      --muted-ink:#898781; --gridline:#2c2c2a; --baseline:#383835;
+      --series-1:#3987e5; --series-2:#d95926; --series-3:#199e70; } }
+
+  *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);
+    font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+  .wrap{max-width:960px;margin:0 auto;padding:2rem 1.2rem 4rem}
+  a{color:var(--accent)} h1{margin:0 0 .2rem;font-size:1.6rem} .sub{color:var(--muted);margin:0 0 1rem}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);
+    padding:1.1rem 1.2rem;margin-top:1.2rem}
+  .card h2{margin:.1rem 0 .3rem;font-size:1.1rem}
+  .card p.hint{color:var(--muted);font-size:.85rem;margin:.2rem 0 .8rem}
+  .status{color:var(--muted);margin-top:.4rem}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+  @media (max-width:760px){ .grid{grid-template-columns:1fr} }
+
+  /* Chart chrome */
+  .chart{width:100%;background:var(--surface-1);border-radius:10px}
+  .legend{display:flex;gap:1rem;flex-wrap:wrap;margin:.1rem 0 .5rem;font-size:.85rem;color:var(--text-secondary)}
+  .legend span{display:inline-flex;align-items:center;gap:.35rem}
+  .swatch{width:11px;height:11px;border-radius:3px;display:inline-block}
+  .empty{color:var(--muted);font-size:.9rem;padding:.6rem 0}
+  svg text{font-family:system-ui,-apple-system,Segoe UI,sans-serif}
+  .g-grid{stroke:var(--gridline);stroke-width:1}
+  .g-base{stroke:var(--baseline);stroke-width:1}
+  .g-axis{fill:var(--muted-ink);font-size:11px}
+  .g-lbl{fill:var(--text-primary);font-size:11px;font-variant-numeric:tabular-nums}
+  .g-cat{fill:var(--text-secondary);font-size:11.5px}
+</style>
+</head>
+<body>
+<div class="wrap viz">
+  <h1>📊 Analytics</h1>
+  <p class="sub"><a href="/">← Dashboard</a> · <a href="/history.html">🕓 History</a> · Trends across your stored screens.</p>
+  <div class="status" id="status">Loading…</div>
+
+  <div class="card">
+    <h2>Screened vs. passing, per run</h2>
+    <p class="hint">Companies screened and strategy matches for each stored run, oldest to newest.</p>
+    <div class="legend">
+      <span><i class="swatch" style="background:var(--series-1)"></i>Screened</span>
+      <span><i class="swatch" style="background:var(--series-2)"></i>Passing</span>
+    </div>
+    <div id="c-runs"></div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Most frequently passing</h2>
+      <p class="hint">Tickers that clear a strategy in the most runs.</p>
+      <div id="c-tickers"></div>
+    </div>
+    <div class="card">
+      <h2>Passing by sector</h2>
+      <p class="hint">Where the matches cluster (from the universe catalog).</p>
+      <div id="c-sectors"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>News-sentiment grades</h2>
+    <p class="hint">Distribution of A–F sentiment grades from queued full analyses.</p>
+    <div id="c-sentiment"></div>
+  </div>
+
+  <p class="sub" style="margin-top:1.4rem">
+    Backed by <code>/api/analytics</code>. Educational tool only — not investment advice.
+  </p>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const NS = "http://www.w3.org/2000/svg";
+const esc = s => (s==null?"":String(s)).replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const el = (n, attrs={}, txt) => {
+  const e = document.createElementNS(NS, n);
+  for (const k in attrs) e.setAttribute(k, attrs[k]);
+  if (txt != null) e.textContent = txt;
+  return e;
+};
+function svg(w, h){
+  const s = el("svg", {viewBox:`0 0 ${w} ${h}`, width:"100%", class:"chart",
+    role:"img", preserveAspectRatio:"xMidYMid meet"});
+  s.style.height = h + "px";
+  return s;
+}
+const empty = (id, msg) => { $(id).innerHTML = `<div class="empty">${esc(msg)}</div>`; };
+const niceMax = v => { if (v<=0) return 1; const p=Math.pow(10,Math.floor(Math.log10(v)));
+  const n=v/p; const m=n<=1?1:n<=2?2:n<=5?5:10; return m*p; };
+
+// Grouped vertical bars: two series per run.
+function groupedBars(id, rows){
+  const host = $(id); host.innerHTML = "";
+  if (!rows.length){ empty(id, "No runs stored yet."); return; }
+  const W=880, H=280, mL=42, mR=12, mT=10, mB=44;
+  const iw=W-mL-mR, ih=H-mT-mB;
+  const max = niceMax(Math.max(1, ...rows.map(r=>Math.max(r.ticker_count, r.passing_count))));
+  const s = svg(W, H);
+  // gridlines + y ticks
+  for (let t=0;t<=4;t++){ const val=max*t/4; const y=mT+ih-(val/max)*ih;
+    s.appendChild(el("line",{x1:mL,y1:y,x2:W-mR,y2:y,class:t?"g-grid":"g-base"}));
+    s.appendChild(el("text",{x:mL-6,y:y+3,"text-anchor":"end",class:"g-axis"}, Math.round(val))); }
+  const band = iw/rows.length, bw = Math.min(26, band*0.34);
+  rows.forEach((r,i)=>{
+    const cx = mL + band*i + band/2;
+    const draw = (val, color, dx) => {
+      const h = (val/max)*ih, x = cx+dx, y = mT+ih-h;
+      if (h>0) s.appendChild(el("rect",{x, y, width:bw, height:h, rx:4, ry:4, fill:color}));
+    };
+    draw(r.ticker_count, "var(--series-1)", -bw-1);
+    draw(r.passing_count, "var(--series-2)", 1);
+    // sparse x labels to avoid collision
+    if (rows.length<=16 || i%Math.ceil(rows.length/16)===0){
+      const d = new Date(r.created_at);
+      const lbl = isNaN(d) ? ("#"+r.id) : (d.getMonth()+1)+"/"+d.getDate();
+      s.appendChild(el("text",{x:cx,y:H-mB+16,"text-anchor":"middle",class:"g-axis"}, lbl));
+    }
+  });
+  host.appendChild(s);
+}
+
+// Horizontal bars with direct value labels.
+function hBars(id, rows, {label, value, color, emptyMsg}){
+  const host = $(id); host.innerHTML = "";
+  if (!rows.length){ empty(id, emptyMsg); return; }
+  const rowH=30, gap=8, mL=118, mR=44, mT=6, mB=6;
+  const W=420, ih=rows.length*(rowH+gap)-gap, H=mT+mB+ih;
+  const max = Math.max(1, ...rows.map(value));
+  const iw = W-mL-mR;
+  const s = svg(W, H);
+  rows.forEach((r,i)=>{
+    const y = mT + i*(rowH+gap);
+    const v = value(r), w = Math.max(2, (v/max)*iw);
+    s.appendChild(el("text",{x:mL-8,y:y+rowH/2+4,"text-anchor":"end",class:"g-cat"}, label(r)));
+    s.appendChild(el("rect",{x:mL,y,width:w,height:rowH,rx:4,ry:4,fill:color}));
+    s.appendChild(el("text",{x:mL+w+6,y:y+rowH/2+4,class:"g-lbl"}, v));
+  });
+  host.appendChild(s);
+}
+
+function render(d){
+  groupedBars("#c-runs", d.runs || []);
+  hBars("#c-tickers", d.top_tickers || [], {
+    label:r=>r.ticker, value:r=>r.passes, color:"var(--series-1)",
+    emptyMsg:"No passing results yet." });
+  hBars("#c-sectors", d.sectors || [], {
+    label:r=>r.sector, value:r=>r.count, color:"var(--series-3)",
+    emptyMsg:"No sector data yet." });
+  hBars("#c-sentiment", d.sentiment || [], {
+    label:r=>"Grade "+r.grade, value:r=>r.count, color:"var(--series-1)",
+    emptyMsg:"No analyses with sentiment yet — queue a ticker from the dashboard." });
+}
+
+fetch("/api/analytics").then(r=>r.json()).then(d=>{
+  if (d && d.storage_enabled === false){
+    $("#status").textContent = "No database configured — analytics appear once a DATABASE_URL is set and runs are stored.";
+  } else if (d && d.error){
+    $("#status").textContent = "Error loading analytics: " + d.error;
+  } else {
+    const n = (d.runs||[]).length;
+    $("#status").textContent = n ? `Across ${n} stored run${n===1?"":"s"}.` : "No runs stored yet.";
+  }
+  render(d || {});
+}).catch(e=>{
+  $("#status").textContent = "Failed to load analytics: " + e;
+  render({});
+});
+</script>
+</body>
+</html>

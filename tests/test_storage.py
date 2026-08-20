@@ -50,3 +50,9 @@ def test_raw_row_serializes_company(strong_company):
     assert len(annuals) == len(strong_company.annuals)
     quote = json.loads(row[4])
     assert quote["price"] == 40.0
+
+
+def test_null_storage_analytics_shape():
+    data = NullStorage().analytics()
+    assert set(data) == {"runs", "top_tickers", "sectors", "sentiment"}
+    assert all(data[k] == [] for k in data)

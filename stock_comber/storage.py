@@ -177,6 +177,9 @@ class NullStorage:
     def mark_queue(self, ticker, status, run_id=None, note=None) -> None:
         return None
 
+    def analytics(self, run_limit: int = 30) -> dict:
+        return {"runs": [], "top_tickers": [], "sectors": [], "sentiment": []}
+
 
 class PostgresStorage:
     """Postgres-backed persistence (psycopg 3). Connections are per-operation,
@@ -282,6 +285,62 @@ class PostgresStorage:
         with self._connect() as conn:
             self._ensure_schema(conn)
             return self._run_payload(conn, run_id)
+
+    # -- analytics -------------------------------------------------------
+    def analytics(self, run_limit: int = 30) -> dict:
+        """Aggregations for the analytics dashboard.
+
+        All read-only, non-sensitive counts:
+          - runs: screened vs. passing per run over time (oldest→newest)
+          - top_tickers: tickers that pass most often across runs
+          - sectors: passing results grouped by universe sector
+          - sentiment: distribution of stored news-sentiment grades
+        """
+        with self._connect() as conn:
+            self._ensure_schema(conn)
+            with conn.cursor() as cur:
+                # Runs over time (fetch newest N, then present oldest→newest).
+                cur.execute(
+                    "SELECT id, created_at, ticker_count, passing_count "
+                    "FROM screen_runs ORDER BY created_at DESC LIMIT %s",
+                    (run_limit,))
+                runs = [
+                    {"id": r[0], "created_at": r[1].isoformat(),
+                     "ticker_count": r[2], "passing_count": r[3]}
+                    for r in cur.fetchall()
+                ]
+                runs.reverse()
+
+                # Tickers that pass most often (distinct runs they passed in).
+                cur.execute(
+                    "SELECT ticker, MAX(name) AS name, "
+                    "COUNT(DISTINCT run_id) AS passes "
+                    "FROM screen_results WHERE passed "
+                    "GROUP BY ticker ORDER BY passes DESC, ticker ASC LIMIT 15")
+                top_tickers = [
+                    {"ticker": r[0], "name": r[1], "passes": r[2]}
+                    for r in cur.fetchall()
+                ]
+
+                # Passing results by sector (join the universe catalog).
+                cur.execute(
+                    "SELECT COALESCE(NULLIF(u.sector, ''), 'Unknown') AS sector, "
+                    "COUNT(*) AS n FROM screen_results sr "
+                    "LEFT JOIN universe u ON u.ticker = sr.ticker "
+                    "WHERE sr.passed GROUP BY sector ORDER BY n DESC, sector ASC "
+                    "LIMIT 12")
+                sectors = [{"sector": r[0], "count": r[1]} for r in cur.fetchall()]
+
+                # News-sentiment grade distribution from stored analyses.
+                cur.execute(
+                    "SELECT finnhub->'sentiment'->>'grade' AS grade, COUNT(*) AS n "
+                    "FROM raw_fundamentals "
+                    "WHERE finnhub->'sentiment'->>'grade' IS NOT NULL "
+                    "GROUP BY grade ORDER BY grade ASC")
+                sentiment = [{"grade": r[0], "count": r[1]} for r in cur.fetchall()]
+
+        return {"runs": runs, "top_tickers": top_tickers,
+                "sectors": sectors, "sentiment": sentiment}
 
     # -- settings --------------------------------------------------------
     def get_settings(self) -> dict:

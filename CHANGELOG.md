@@ -4,6 +4,20 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.8.0] - 2026-08-20
+
+### Added
+- **Analytics view** (`/analytics.html`) — a charts page over the stored
+  history: screened-vs-passing per run (grouped bars, oldest→newest), the
+  most-frequently-passing tickers, passing results by sector, and the news
+  sentiment-grade distribution. Backed by a new read-only `GET /api/analytics`
+  endpoint (`PostgresStorage.analytics`) that aggregates runs, results, the
+  universe catalog and stored sentiment. Self-contained inline SVG, theme-aware,
+  no external dependencies; linked from the dashboard and History page. Charts
+  use the validated categorical palette with direct value labels.
+
+[0.8.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.8.0
+
 ## [0.7.1] - 2026-08-20
 
 ### Added
