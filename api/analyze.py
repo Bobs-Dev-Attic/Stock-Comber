@@ -26,12 +26,15 @@ from stock_comber.analysis import _full_config, analyze_ticker  # noqa: E402
 from stock_comber.config import load_config  # noqa: E402
 from stock_comber.screener import Screener  # noqa: E402
 from stock_comber.storage import get_storage  # noqa: E402
+from stock_comber.universe import effective_config  # noqa: E402
 
 _TICKER = re.compile(r"^[A-Z][A-Z0-9.\-]{0,9}$")
 
 
 def run_analysis(ticker: str, news_days: int = 14) -> dict:
-    cfg = _full_config(load_config())
+    # Merge DB-stored settings (tuned thresholds + a stored Finnhub key) over the
+    # file defaults so the settings page drives live analysis too.
+    cfg = _full_config(effective_config(load_config(), get_storage()))
     # Serverless filesystem is read-only except /tmp; be quick and polite.
     cfg["data"]["cache_dir"] = "/tmp/stock_comber_cache"
     cfg["data"]["request_delay_seconds"] = 0

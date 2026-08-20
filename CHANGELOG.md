@@ -4,6 +4,25 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.16.0] - 2026-08-20
+
+### Added
+- **Store your Finnhub key from the Settings page.** A write-only key field on
+  `/settings.html` saves the Finnhub API key into your database (under
+  `data.finnhub_api_key`), authorized by the existing `STOCK_COMBER_API_KEY`.
+  The key is **never returned** by `GET /api/settings` (redacted), a blank field
+  never wipes a stored key, and the status pill reflects env **or** DB. Only the
+  Finnhub key is storable — `DATABASE_URL` and `STOCK_COMBER_API_KEY` stay
+  environment-only by necessity/design.
+
+### Changed
+- **Live endpoints honor DB settings.** `GET /api/screen` and `GET /api/analyze`
+  now merge database-stored settings over the file defaults (via
+  `effective_config`), so tuned thresholds and a stored Finnhub key drive live
+  screens and deep-dives — not just the nightly job.
+
+[0.16.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.16.0
+
 ## [0.15.4] - 2026-08-20
 
 ### Changed

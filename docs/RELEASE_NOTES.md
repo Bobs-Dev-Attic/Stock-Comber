@@ -1,5 +1,27 @@
 # Release notes
 
+## v0.16.0 — Store your Finnhub key from Settings (2026-08-20)
+
+The Settings page now has a **key-entry field** that saves your **Finnhub API
+key into the database** — a convenient alternative to setting it as an
+environment variable. It powers news, sentiment, and enrichment.
+
+Handled safely:
+
+- **Write-only** — the key is never shown back; `GET /api/settings` redacts it.
+- A **blank field never wipes** a stored key (blank = leave unchanged).
+- Saving requires your **Export/API key** (`STOCK_COMBER_API_KEY`), the same gate
+  as other settings; the status pill shows "Finnhub configured" from an env var
+  **or** a stored key.
+
+Only the Finnhub key is storable: `DATABASE_URL` is needed *to reach* the
+database (so it can't live inside it), and `STOCK_COMBER_API_KEY` is the gate
+that authorizes saving — both remain environment variables.
+
+**Also:** live `/api/screen` and `/api/analyze` now merge your database-stored
+settings over the defaults, so your tuned thresholds and stored key drive live
+screens and deep-dives too — previously only the nightly job did.
+
 ## v0.15.4 — Settings page covers all six analysts (2026-08-20)
 
 The **Settings page** (⚙️ from the dashboard) already let you set your keys'

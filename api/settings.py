@@ -8,8 +8,11 @@ Writing requires a database (`DATABASE_URL`) and the `STOCK_COMBER_API_KEY`
 booleans indicating which keys are configured.
 """
 
+from __future__ import annotations   # `dict | None` annotations on Python 3.9
+
 from http.server import BaseHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs
+import copy
 import hmac
 import json
 import os
@@ -22,12 +25,48 @@ from stock_comber.storage import get_storage  # noqa: E402
 from stock_comber.universe import effective_config  # noqa: E402
 
 
-def _status():
+# Secret config paths that must never be returned to the browser. Stored in the
+# database (via the key-entry field) but write-only over the API.
+_SECRET_PATHS = (("data", "finnhub_api_key"),)
+
+
+def _redact(cfg: dict) -> dict:
+    """Return a copy of ``cfg`` with stored secrets blanked out."""
+    safe = copy.deepcopy(cfg)
+    for path in _SECRET_PATHS:
+        node = safe
+        for key in path[:-1]:
+            node = node.get(key) if isinstance(node, dict) else None
+            if node is None:
+                break
+        if isinstance(node, dict) and node.get(path[-1]):
+            node[path[-1]] = ""   # present-but-hidden
+    return safe
+
+
+def _strip_blank_secrets(incoming: dict) -> dict:
+    """Remove secret paths whose value is blank so an empty form field never
+    wipes a stored key (blank = leave unchanged). Mutates and returns ``incoming``."""
+    for path in _SECRET_PATHS:
+        node = incoming
+        for key in path[:-1]:
+            node = node.get(key) if isinstance(node, dict) else None
+            if node is None:
+                break
+        if isinstance(node, dict) and node.get(path[-1], None) == "":
+            node.pop(path[-1], None)
+    return incoming
+
+
+def _status(cfg: dict | None = None):
+    data = (cfg or {}).get("data") or {}
     return {
         "storage_enabled": bool(os.environ.get("DATABASE_URL")
                                 or os.environ.get("POSTGRES_URL")),
         "keys": {
-            "finnhub": bool(os.environ.get("FINNHUB_API_KEY")),
+            # Configured if set as an env var OR stored in the database.
+            "finnhub": bool(os.environ.get("FINNHUB_API_KEY")
+                            or data.get("finnhub_api_key")),
             "database": bool(os.environ.get("DATABASE_URL")
                              or os.environ.get("POSTGRES_URL")),
             "export_api": bool(os.environ.get("STOCK_COMBER_API_KEY")),
@@ -39,7 +78,8 @@ class handler(BaseHTTPRequestHandler):
     def do_GET(self):
         store = get_storage()
         cfg = effective_config(load_config(), store)
-        self._json(200, {"config": cfg, **_status()})
+        # Compute key status from the real config, then hide secret values.
+        self._json(200, {"config": _redact(cfg), **_status(cfg)})
 
     def do_POST(self):
         configured = os.environ.get("STOCK_COMBER_API_KEY")
@@ -67,6 +107,10 @@ class handler(BaseHTTPRequestHandler):
             self._json(400, {"error": f"bad JSON body: {exc}"})
             return
 
+        # A blank secret field means "leave the stored value unchanged" — never
+        # let an empty form field wipe a stored key.
+        _strip_blank_secrets(incoming)
+
         # Validate the merged result before saving.
         problems = validate_config(_deep_merge(load_config(), incoming))
         if problems:
@@ -79,7 +123,8 @@ class handler(BaseHTTPRequestHandler):
         except Exception as exc:
             self._json(502, {"error": f"could not save settings: {exc}"})
             return
-        self._json(200, {"saved": True, "settings": merged, **_status()})
+        self._json(200, {"saved": True, "settings": _redact(merged),
+                         **_status(merged)})
 
     def _json(self, code, obj):
         body = json.dumps(obj, default=str).encode("utf-8")
