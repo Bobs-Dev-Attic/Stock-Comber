@@ -4,6 +4,17 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.19.2] - 2026-08-20
+
+### Added
+- **Health-score chart on Analytics.** A new "Health-score grades" chart buckets
+  the composite 0–100 health of passing companies into A–F bands (one count per
+  ticker, colored green/amber/red), alongside the news-sentiment chart. Backed
+  by a `health` aggregation added to `/api/analytics`
+  (`PostgresStorage.analytics`).
+
+[0.19.2]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.19.2
+
 ## [0.19.1] - 2026-08-20
 
 ### Changed

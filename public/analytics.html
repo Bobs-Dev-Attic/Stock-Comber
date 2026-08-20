@@ -85,10 +85,17 @@
     </div>
   </div>
 
-  <div class="card">
-    <h2>News-sentiment grades</h2>
-    <p class="hint">Distribution of A–F sentiment grades from queued full analyses.</p>
-    <div id="c-sentiment"></div>
+  <div class="grid">
+    <div class="card">
+      <h2>Health-score grades</h2>
+      <p class="hint">Composite 0–100 health of passing companies, bucketed A–F (one count per ticker). Green = A/B, amber = C, red = D/F.</p>
+      <div id="c-health"></div>
+    </div>
+    <div class="card">
+      <h2>News-sentiment grades</h2>
+      <p class="hint">Distribution of A–F sentiment grades from queued full analyses.</p>
+      <div id="c-sentiment"></div>
+    </div>
   </div>
 
   <p class="sub" style="margin-top:1.4rem">
@@ -163,8 +170,9 @@ function hBars(id, rows, {label, value, color, emptyMsg}){
   rows.forEach((r,i)=>{
     const y = mT + i*(rowH+gap);
     const v = value(r), w = Math.max(2, (v/max)*iw);
+    const fill = (typeof color === "function") ? color(r) : color;
     s.appendChild(el("text",{x:mL-8,y:y+rowH/2+4,"text-anchor":"end",class:"g-cat"}, label(r)));
-    s.appendChild(el("rect",{x:mL,y,width:w,height:rowH,rx:4,ry:4,fill:color}));
+    s.appendChild(el("rect",{x:mL,y,width:w,height:rowH,rx:4,ry:4,fill:fill}));
     s.appendChild(el("text",{x:mL+w+6,y:y+rowH/2+4,class:"g-lbl"}, v));
   });
   host.appendChild(s);
@@ -181,6 +189,12 @@ function render(d){
   hBars("#c-sentiment", d.sentiment || [], {
     label:r=>"Grade "+r.grade, value:r=>r.count, color:"var(--series-1)",
     emptyMsg:"No analyses with sentiment yet — queue a ticker from the dashboard." });
+  const healthColor = r => (r.band==="A"||r.band==="B") ? "#0ca30c"
+    : (r.band==="C" ? "#eda100" : "#d03b3b");
+  hBars("#c-health", d.health || [], {
+    label:r=>"Health "+r.band+(r.avg!=null?" (~"+Math.round(r.avg)+")":""),
+    value:r=>r.count, color:healthColor,
+    emptyMsg:"No health scores yet — run a nightly screen (v0.19.1+)." });
 }
 
 fetch("/api/analytics").then(r=>r.json()).then(d=>{

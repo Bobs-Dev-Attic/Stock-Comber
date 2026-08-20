@@ -195,7 +195,8 @@ class NullStorage:
         return None
 
     def analytics(self, run_limit: int = 30) -> dict:
-        return {"runs": [], "top_tickers": [], "sectors": [], "sentiment": []}
+        return {"runs": [], "top_tickers": [], "sectors": [], "sentiment": [],
+                "health": []}
 
     # -- theses (no-op) --
     def create_thesis(self, ticker, note, conditions, baseline) -> Optional[int]:
@@ -398,8 +399,27 @@ class PostgresStorage:
                     "GROUP BY grade ORDER BY grade ASC")
                 sentiment = [{"grade": r[0], "count": r[1]} for r in cur.fetchall()]
 
+                # Composite health-score distribution (A–F bands), over distinct
+                # passing tickers so a company counted once regardless of how
+                # many strategies it cleared. Same grade cut-offs as scoring.py.
+                cur.execute(
+                    "WITH h AS ("
+                    "  SELECT DISTINCT ON (ticker) ticker, "
+                    "    (metrics->>'health_score')::float AS score "
+                    "  FROM screen_results "
+                    "  WHERE passed AND metrics ? 'health_score' "
+                    "    AND (metrics->>'health_score') ~ '^-?[0-9.]+$' "
+                    "  ORDER BY ticker, run_id DESC) "
+                    "SELECT CASE "
+                    "  WHEN score >= 80 THEN 'A' WHEN score >= 65 THEN 'B' "
+                    "  WHEN score >= 50 THEN 'C' WHEN score >= 35 THEN 'D' "
+                    "  ELSE 'F' END AS band, COUNT(*) AS n, ROUND(AVG(score)::numeric,1) "
+                    "FROM h GROUP BY band ORDER BY band ASC")
+                health = [{"band": r[0], "count": r[1], "avg": float(r[2])}
+                          for r in cur.fetchall()]
+
         return {"runs": runs, "top_tickers": top_tickers,
-                "sectors": sectors, "sentiment": sentiment}
+                "sectors": sectors, "sentiment": sentiment, "health": health}
 
     # -- theses ----------------------------------------------------------
     _THESIS_COLS = ("id", "ticker", "note", "conditions", "baseline", "status",
