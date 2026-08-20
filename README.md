@@ -157,6 +157,7 @@ serverless API — configured in [`vercel.json`](vercel.json).
 | `/settings.html` · `/api/settings` | Settings page + API (edit parameters; `POST` needs `DATABASE_URL` + `STOCK_COMBER_API_KEY`) |
 | `/history.html` · `/api/runs` | Activity log — stored runs + ad-hoc searches |
 | `/api/tickers?q=AAP` | Ticker autocomplete (powers the dashboard search box) |
+| `/analytics.html` · `/api/analytics` | Charts over stored history — runs over time, top passers, sectors, sentiment grades |
 
 ### Persistence, Finnhub & the export API (all optional)
 

@@ -1,5 +1,21 @@
 # Release notes
 
+## v0.8.0 — Analytics & charts (2026-08-20)
+
+A new **Analytics** page (`/analytics.html`, linked from the dashboard and
+History) visualises your stored screening history:
+
+- **Screened vs. passing per run** — grouped bars over time, oldest to newest.
+- **Most frequently passing tickers** — which names clear a strategy most often.
+- **Passing by sector** — where the matches cluster, joined to the universe catalog.
+- **News-sentiment grades** — the A–F distribution from queued full analyses.
+
+Powered by a new read-only `GET /api/analytics` endpoint that aggregates runs,
+results, the universe catalog and stored sentiment. Charts are self-contained
+inline SVG (no external libraries), theme-aware, and use a colorblind-validated
+palette with direct value labels. Everything degrades gracefully to empty
+states when no database is configured.
+
 ## v0.7.0 — Analysis queue, news & sentiment (2026-08-20)
 
 - **Queue for deeper analysis.** Screen a ticker and it's queued; a worker runs
