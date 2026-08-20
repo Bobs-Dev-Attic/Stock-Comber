@@ -13,6 +13,7 @@ email; supply one via ``config.data.user_agent``.
 
 from __future__ import annotations
 
+import re
 import time
 from typing import Any, Optional
 
@@ -26,6 +27,11 @@ from .cache import FileCache
 
 TICKERS_URL = "https://www.sec.gov/files/company_tickers.json"
 FACTS_URL = "https://data.sec.gov/api/xbrl/companyfacts/CIK{cik:010d}.json"
+# Authoritative "which CIK files 10-Ks for this ticker" lookup, used as a
+# fallback when company_tickers.json maps a ticker to an entity that has no
+# XBRL company-facts (e.g. a newer registrant sharing the ticker).
+FILER_URL = ("https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany"
+             "&ticker={ticker}&type=10-K&dateb=&owner=include&count=1&output=atom")
 
 # Concept fallbacks, in priority order, per logical field. The unit key differs
 # by concept (dollars vs. shares vs. per-share dollars).
@@ -217,6 +223,39 @@ class SecEdgarSource:
             self.cache.set(namespace, key, data)
         return data
 
+    def _get_text(self, url: str, namespace: str, key: str) -> Optional[str]:
+        if self.cache is not None:
+            cached = self.cache.get(namespace, key)
+            if cached is not None:
+                return cached
+        if self.session is None:  # pragma: no cover
+            raise RuntimeError("requests is not available; cannot fetch data")
+        resp = self.session.get(
+            url, headers={"User-Agent": self.user_agent}, timeout=self.timeout)
+        if self.delay:
+            time.sleep(self.delay)
+        if resp.status_code == 404:
+            return None
+        resp.raise_for_status()
+        text = resp.text
+        if self.cache is not None:
+            self.cache.set(namespace, key, text)
+        return text
+
+    def filer_cik(self, ticker: str) -> Optional[int]:
+        """The CIK that actually files 10-Ks for ``ticker`` per EDGAR's company
+        search — the authoritative source when the ticker map is misdirected.
+        Returns None if the lookup fails or finds nothing."""
+        try:
+            text = self._get_text(
+                FILER_URL.format(ticker=ticker.upper()), "sec_filer", ticker.upper())
+        except Exception:  # network/lookup issues must never break the screen
+            return None
+        if not text:
+            return None
+        m = re.search(r"<CIK>\s*(\d+)\s*</CIK>", text, re.IGNORECASE)
+        return int(m.group(1)) if m else None
+
     # -- Public API ------------------------------------------------------
     def ticker_map(self) -> dict[str, dict[str, Any]]:
         """Return {TICKER: {"cik": int, "name": str}} for all SEC filers."""
@@ -253,11 +292,23 @@ class SecEdgarSource:
         if not info:
             return None
         cik = info["cik"]
-        url = FACTS_URL.format(cik=cik)
-        facts = self._get_json(url, "sec_facts", str(cik))
+        facts = self._get_json(FACTS_URL.format(cik=cik), "sec_facts", str(cik))
+        annuals = extract_annuals(facts) if facts else []
+
+        # The ticker map sometimes points to an entity with no XBRL facts (a
+        # newer registrant sharing the ticker). If we got nothing, ask EDGAR
+        # which CIK actually files 10-Ks for this ticker and use that instead.
+        if not annuals:
+            alt = self.filer_cik(ticker)
+            if alt and alt != cik:
+                alt_facts = self._get_json(
+                    FACTS_URL.format(cik=alt), "sec_facts", str(alt))
+                alt_annuals = extract_annuals(alt_facts) if alt_facts else []
+                if alt_annuals:
+                    cik, facts, annuals = alt, alt_facts, alt_annuals
+
         if not facts:
             return Company(ticker=ticker.upper(), cik=str(cik), name=info.get("name"))
-        annuals = extract_annuals(facts)
         return Company(
             ticker=ticker.upper(),
             cik=str(cik),

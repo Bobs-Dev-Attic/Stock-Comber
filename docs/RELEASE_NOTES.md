@@ -1,5 +1,27 @@
 # Release notes
 
+## v0.10.0 — Real data for "wrong-CIK" tickers + honest analysis states (2026-08-20)
+
+**Why did XOM say "near miss" with a 0/0 score?** It wasn't a near miss — the
+app couldn't get Exxon's fundamentals. SEC's ticker→CIK map pointed **XOM** at a
+registrant (CIK 2115436) that has no XBRL 10-K financials, while Exxon's actual
+filings live under CIK 34088. With no annual data, every criterion was skipped
+and the empty result was mislabeled "near miss."
+
+Two fixes:
+
+- **CIK fallback.** When the mapped CIK returns no annual fundamentals, the app
+  now asks EDGAR's company search which CIK actually files 10-Ks for that ticker
+  and re-fetches that entity's `companyfacts`. So XOM (and any similarly
+  misdirected ticker) gets a real Graham + Buffett breakdown. The fallback only
+  fires when the primary lookup comes back empty.
+- **Honest states + explanations.** Even when a stock *doesn't fit*, you now get
+  the full per-criterion breakdown (actual vs. target, pass/fail, plain-English
+  note). The modal distinguishes **PASS** / **did not pass** ("met N of M
+  criteria") from **not analyzed**, and when fundamentals genuinely can't be
+  retrieved it says so plainly instead of showing a blank score. News sentiment
+  still runs either way.
+
 ## v0.9.1 — Fix: autocomplete blocked the action buttons (2026-08-20)
 
 The ticker autocomplete opened as an overlay that could sit on top of the
