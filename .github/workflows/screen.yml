@@ -41,11 +41,16 @@ jobs:
         run: |
           stock-comber --config config/default.yaml screen --limit "$LIMIT" --verbose
 
+      - name: Publish latest report to the dashboard
+        run: |
+          mkdir -p public/data
+          cp reports/latest.json public/data/latest.json
+
       - name: Commit reports
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add reports/latest.* reports/screen-*.* 2>/dev/null || true
+          git add reports/latest.* reports/screen-*.* public/data/latest.json 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No report changes to commit."
           else
