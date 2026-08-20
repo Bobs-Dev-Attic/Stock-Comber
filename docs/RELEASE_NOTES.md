@@ -1,5 +1,20 @@
 # Release notes
 
+## v0.9.0 — Manual "Analyze now" button (2026-08-20)
+
+The dashboard now has an **Analyze now** button beside "Screen live". Enter a
+ticker and it runs the *full* analysis on demand — all strategies, Finnhub
+enrichment, and recent company news scored into an **A–F sentiment grade** —
+without waiting for the ~20-minute queue worker.
+
+- Results open in a modal: each strategy's pass/fail (tap for the full
+  criterion breakdown), a sentiment summary (grade, net score, headline count),
+  and the recent news headlines.
+- When a database is configured the analysis is **stored as its own run**, so it
+  also shows up on the History and Analytics pages.
+- Backed by a new `GET /api/analyze?ticker=…` endpoint. News + sentiment need a
+  `FINNHUB_API_KEY`; without one the screen still runs, just without news.
+
 ## v0.8.0 — Analytics & charts (2026-08-20)
 
 A new **Analytics** page (`/analytics.html`, linked from the dashboard and
