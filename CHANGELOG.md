@@ -4,6 +4,17 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.1] - 2026-08-20
+
+### Added
+- **Selectable columns** in the dashboard — a Columns menu to toggle any of the
+  17 metrics (plus strategy/pass/score) on or off; the choice persists in
+  `localStorage`. Sorting works on whichever columns are shown.
+- **Export button** — download the current results as CSV or JSON (client-side),
+  with a pointer to the key-protected `/api/export` endpoint for programmatic use.
+
+[0.4.1]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.4.1
+
 ## [0.4.0] - 2026-08-20
 
 ### Added
