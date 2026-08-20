@@ -4,6 +4,19 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.20.0] - 2026-08-20
+
+### Changed
+- **Dashboard organized into tabs.** The main card now has three tabs, each
+  keeping its own results and status: **📅 Scheduled report** (the latest nightly
+  "hidden gems" shortlist, auto-loaded, with a Refresh button), **⚙️ Custom jobs**
+  (build your own `metric op value` rules over tickers or an index template and
+  run them), and **🔍 Manual searches** (the ticker search + Analyze + strategy
+  picker). Templates moved into Custom jobs; manual searches no longer mix in
+  custom criteria.
+
+[0.20.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.20.0
+
 ## [0.19.2] - 2026-08-20
 
 ### Added

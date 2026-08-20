@@ -30,6 +30,13 @@
   .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px;
     box-shadow: var(--shadow); padding: 1.1rem 1.2rem; margin-top: 1.4rem; }
   .controls { display: flex; gap: .6rem; flex-wrap: wrap; align-items: center; }
+  /* tabs */
+  .tabs { display: flex; gap: .2rem; border-bottom: 1px solid var(--line); margin-bottom: 1rem; flex-wrap: wrap; }
+  .tab { border: 0; background: transparent; color: var(--muted); padding: .55rem .85rem; cursor: pointer;
+    font-size: .95rem; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+  .tab[aria-selected=true] { color: var(--ink); border-bottom-color: var(--accent); font-weight: 600; }
+  .tabpanel { margin-bottom: .3rem; }
+  .paneln { display: flex; gap: .6rem; align-items: center; flex-wrap: wrap; }
   input[type=text], input[type=number], select {
     padding: .55rem .6rem; font-size: 1rem; border: 1px solid var(--line);
     border-radius: 9px; background: var(--bg); color: var(--ink); }
@@ -176,37 +183,59 @@
   </header>
 
   <section class="card">
-    <div class="controls">
-      <div class="acwrap">
-        <input id="tickers" type="text" placeholder="Tickers, e.g. AAPL, MSFT, JNJ, KO" autocomplete="off"
-               role="combobox" aria-expanded="false" aria-controls="ac" aria-autocomplete="list">
-        <button id="run" class="iconbtn" aria-label="Analyze"
-                title="Analyze — one ticker → full deep-dive (all six analysts + news &amp; sentiment); several tickers → compare them in a table using the ticked strategies.">🔍</button>
-      </div>
-      <div class="menu" id="strat-menu">
-        <button class="btn ghost" id="strat-btn" aria-haspopup="true" aria-expanded="false"
-                title="Choose which value frameworks the Screen table runs">Strategies ▾</button>
-        <div class="panel-pop" id="strat-pop"></div>
-      </div>
-      <div class="menu" id="tmpl-menu">
-        <button class="btn ghost" id="tmpl-btn" aria-haspopup="true" aria-expanded="false"
-                title="Load a slice of an index (Dow / Nasdaq-100 / S&amp;P 500), filtered by sector">Templates ▾</button>
-        <div class="panel-pop" id="tmpl-pop" style="min-width:250px"></div>
+    <div class="tabs" role="tablist" aria-label="Views">
+      <button class="tab" role="tab" data-tab="scheduled" aria-selected="true">📅 Scheduled report</button>
+      <button class="tab" role="tab" data-tab="custom" aria-selected="false">⚙️ Custom jobs</button>
+      <button class="tab" role="tab" data-tab="manual" aria-selected="false">🔍 Manual searches</button>
+    </div>
+
+    <!-- Scheduled report -->
+    <div class="tabpanel" data-panel="scheduled" role="tabpanel">
+      <div class="paneln">
+        <div class="hint" style="flex:1;min-width:200px">The latest scheduled “hidden gems” shortlist, ranked by composite health. It refreshes automatically after each scheduled run.</div>
+        <button class="btn ghost" id="refresh-sched">↻ Refresh</button>
       </div>
     </div>
-    <div id="ac" class="ac-dd" role="listbox"></div>
 
-    <details class="custom">
-      <summary>Custom criteria <span id="custom-count" class="hint" style="display:inline"></span></summary>
-      <div class="hint">Add your own rules — each is <code>metric op value</code>. They run as a “custom” strategy (all rules must pass by default) alongside your live screen.</div>
-      <div id="crit-list"></div>
-      <div style="margin-top:.7rem;display:flex;gap:.5rem">
+    <!-- Custom jobs -->
+    <div class="tabpanel" data-panel="custom" role="tabpanel" hidden>
+      <div class="hint">Build a reusable screen — your own <code>metric op value</code> rules over a set of tickers or an index template. Runs your rules (plus any strategies ticked under Manual searches).</div>
+      <div id="crit-list" style="margin-top:.6rem"></div>
+      <div class="row" style="margin:.6rem 0;display:flex;gap:.5rem;flex-wrap:wrap;align-items:center">
         <button id="add-crit" class="btn ghost">+ Add criterion</button>
         <button id="clear-crit" class="btn ghost">Clear</button>
+        <span id="custom-count" class="hint"></span>
       </div>
-    </details>
+      <div class="controls">
+        <input id="job-tickers" type="text" placeholder="Tickers, e.g. AAPL, MSFT — or load a template →"
+               autocomplete="off" style="flex:1 1 260px;min-width:200px">
+        <div class="menu" id="tmpl-menu">
+          <button class="btn ghost" id="tmpl-btn" aria-haspopup="true" aria-expanded="false"
+                  title="Load a slice of an index (Dow / Nasdaq-100 / S&amp;P 500), filtered by sector">Templates ▾</button>
+          <div class="panel-pop" id="tmpl-pop" style="min-width:250px"></div>
+        </div>
+        <button id="run-job" class="btn">Run job</button>
+      </div>
+    </div>
 
-    <div class="hint">Enter <b>one ticker</b> for a full deep-dive — all six analysts plus recent news &amp; a sentiment grade, in a detail view. Enter <b>several</b> (up to 10) to compare them in a sortable table using the strategies you tick above. Leave the box empty and press <b>Analyze</b> to reload the latest scheduled report.</div>
+    <!-- Manual searches -->
+    <div class="tabpanel" data-panel="manual" role="tabpanel" hidden>
+      <div class="controls">
+        <div class="acwrap">
+          <input id="tickers" type="text" placeholder="Tickers, e.g. AAPL, MSFT, JNJ, KO" autocomplete="off"
+                 role="combobox" aria-expanded="false" aria-controls="ac" aria-autocomplete="list">
+          <button id="run" class="iconbtn" aria-label="Analyze"
+                  title="Analyze — one ticker → full deep-dive (all six analysts + news &amp; sentiment); several tickers → compare them in a table using the ticked strategies.">🔍</button>
+        </div>
+        <div class="menu" id="strat-menu">
+          <button class="btn ghost" id="strat-btn" aria-haspopup="true" aria-expanded="false"
+                  title="Choose which value frameworks the Screen table runs">Strategies ▾</button>
+          <div class="panel-pop" id="strat-pop"></div>
+        </div>
+      </div>
+      <div id="ac" class="ac-dd" role="listbox"></div>
+      <div class="hint">Enter <b>one ticker</b> for a full deep-dive — all six analysts plus recent news &amp; a sentiment grade. Enter <b>several</b> (up to 10) to compare them in a table using the ticked strategies.</div>
+    </div>
 
     <div class="toolbar">
       <div id="status" class="status" style="margin:0"></div>
@@ -249,6 +278,25 @@ const STRAT_LABEL = {graham:"Graham (defensive)", buffett:"Buffett (quality)",
   lynch:"Lynch (GARP)", netnet:"Graham Net-Net (NCAV)", custom:"Custom criteria"};
 const stratLabel = s => STRAT_LABEL[s] || s;
 let rows = [], sortK = "score_pct", sortDir = -1;
+
+/* ---- tabs: each view keeps its own rows + status ---- */
+const tabRows = {scheduled: [], custom: [], manual: []};
+const tabStatus = {scheduled: "", custom: "", manual: ""};
+let activeTab = "scheduled";
+let schedLoaded = false;
+function setStatus(tab, text) {
+  tabStatus[tab] = text;
+  if (tab === activeTab) $("#status").textContent = text;
+}
+function showTab(tab) {
+  activeTab = tab;
+  document.querySelectorAll(".tab").forEach(b => b.setAttribute("aria-selected", b.dataset.tab === tab));
+  document.querySelectorAll(".tabpanel").forEach(p => p.hidden = p.dataset.panel !== tab);
+  rows = tabRows[tab];
+  $("#status").textContent = tabStatus[tab];
+  render();
+  if (tab === "scheduled" && !schedLoaded) { schedLoaded = true; loadLatest(); }
+}
 
 const METRICS = [
   ["health_score","Health 0–100"],
@@ -358,9 +406,9 @@ async function buildTmplMenu() {
       const d = await (await fetch("/api/universe?" + p.toString())).json();
       const tks = (d.results || []).map(r => r.ticker);
       if (!tks.length) { note.textContent = "No matching constituents."; return; }
-      $("#tickers").value = tks.join(", ");
+      $("#job-tickers").value = tks.join(", ");
       $("#tmpl-menu").classList.remove("open");
-      runLive();
+      runJob();
     } catch(e) { note.textContent = "Failed: " + e.message; }
     finally { go.disabled = false; go.textContent = "Load into search"; }
   };
@@ -565,59 +613,72 @@ $("#overlay").addEventListener("click", e => { if (e.target.id === "overlay") cl
 document.addEventListener("keydown", e => { if (e.key === "Escape") closeDetail(); });
 
 /* ---- data loading ---- */
-function setRows(payload, note) {
-  rows = (payload && payload.results) || [];
-  const passing = rows.filter(r => r.passed).length;
+function setRows(payload, note, tab) {
+  tab = tab || activeTab;
+  const rws = (payload && payload.results) || [];
+  const passing = rws.filter(r => r.passed).length;
   const when = payload && payload.generated_at ? new Date(payload.generated_at).toLocaleString() : "";
   const err = payload && payload.error ? " · " + payload.error : "";
-  $("#status").textContent = rows.length ? `${note} · ${rows.length} rows · ${passing} passing${when?" · "+when:""}` : `${note} · no results${err}`;
-  render();
+  tabRows[tab] = rws;
+  setStatus(tab, rws.length ? `${note} · ${rws.length} rows · ${passing} passing${when?" · "+when:""}` : `${note} · no results${err}`);
+  if (tab === activeTab) { rows = rws; render(); }
 }
 async function loadLatest() {
-  $("#status").textContent = "Loading latest report…";
+  setStatus("scheduled", "Loading latest report…");
   try {
     let res = await fetch("/data/latest.json", {cache:"no-store"});
     if (!res.ok) res = await fetch("/api/latest");
-    setRows(await res.json(), "Latest scheduled report");
-  } catch (e) { $("#status").textContent = "Could not load the latest report."; }
+    setRows(await res.json(), "Latest scheduled report", "scheduled");
+  } catch (e) { setStatus("scheduled", "Could not load the latest report."); }
 }
+/* Manual searches: compare several tickers in a table (no custom criteria). */
 async function runLive() {
   closeAC();
-  const raw = $("#tickers").value.trim(); const criteria = readCriteria();
-  if (!raw) { if (!criteria.length) return loadLatest(); $("#status").textContent = "Enter tickers to screen your custom criteria."; return; }
-  if (!selectedStrats.length && !criteria.length) {
-    $("#status").textContent = "Pick at least one strategy (or add custom criteria) to screen.";
-    return;
-  }
+  const raw = $("#tickers").value.trim();
+  if (!raw) { setStatus("manual", "Enter one or more tickers."); return; }
+  if (!selectedStrats.length) { setStatus("manual", "Pick at least one strategy (under Strategies)."); return; }
   const params = new URLSearchParams(); params.set("tickers", raw);
   selectedStrats.forEach(s => params.append("strategy", s));
-  if (criteria.length) params.set("custom", JSON.stringify(criteria));
   const btn = $("#run"); const label = btn.textContent;
   btn.disabled = true; btn.textContent = "⏳";
-  $("#status").textContent = "Combing SEC EDGAR + Yahoo/Stooq…";
+  setStatus("manual", "Combing SEC EDGAR + Yahoo/Stooq…");
   try {
     const res = await fetch("/api/screen?" + params.toString()); const data = await res.json();
-    if (data.error && !(data.results||[]).length) $("#status").textContent = "Error: " + data.error;
-    else {
-      setRows(data, "Live screen");
-      enqueueForAnalysis(raw);  // queue these tickers for a deeper analysis
-    }
-  } catch (e) { $("#status").textContent = "Live screen failed: " + e.message; }
+    if (data.error && !(data.results||[]).length) setStatus("manual", "Error: " + data.error);
+    else { setRows(data, "Live screen", "manual"); enqueueForAnalysis(raw); }
+  } catch (e) { setStatus("manual", "Live screen failed: " + e.message); }
   finally { btn.disabled = false; btn.textContent = label; }
 }
 /* One button: a single ticker gets the deep-dive; several get the compare table. */
 function runSmart() {
   closeAC();
-  const criteria = readCriteria();
   const tickers = $("#tickers").value.split(",").map(t => t.trim()).filter(Boolean);
-  if (!tickers.length) {
-    if (criteria.length) { $("#status").textContent = "Enter a ticker to screen your custom criteria."; return; }
-    return loadLatest();
-  }
-  if (tickers.length === 1 && !criteria.length) return analyzeNow();
+  if (!tickers.length) { setStatus("manual", "Enter a ticker to analyze."); $("#tickers").focus(); return; }
+  if (tickers.length === 1) return analyzeNow();
   return runLive();
 }
 $("#run").onclick = runSmart;
+
+/* Custom jobs: your metric rules over tickers or a template. */
+async function runJob() {
+  const raw = $("#job-tickers").value.trim();
+  const criteria = readCriteria();
+  if (!criteria.length) { setStatus("custom", "Add at least one criterion for the job."); return; }
+  if (!raw) { setStatus("custom", "Enter tickers (or load a template) to run the job on."); return; }
+  const params = new URLSearchParams(); params.set("tickers", raw);
+  selectedStrats.forEach(s => params.append("strategy", s));
+  params.set("custom", JSON.stringify(criteria));
+  const btn = $("#run-job"); const label = btn.textContent;
+  btn.disabled = true; btn.textContent = "Running…";
+  setStatus("custom", "Running your custom job…");
+  try {
+    const res = await fetch("/api/screen?" + params.toString()); const data = await res.json();
+    if (data.error && !(data.results||[]).length) setStatus("custom", "Error: " + data.error);
+    else { setRows(data, "Custom job", "custom"); enqueueForAnalysis(raw); }
+  } catch (e) { setStatus("custom", "Job failed: " + e.message); }
+  finally { btn.disabled = false; btn.textContent = label; }
+}
+$("#run-job").onclick = runJob;
 
 /* ---- manual full analysis (news + sentiment), on demand ---- */
 const GRADE_TXT = {A:"Positive", B:"Mildly positive", C:"Neutral", D:"Mildly negative", F:"Negative"};
@@ -752,12 +813,12 @@ function openAnalysis(data) {
     const r = results.find(x => x.strategy === el.dataset.s); if (r) openDetail(r);
   });
   $("#modal").querySelectorAll(".peer[data-t]").forEach(el => el.onclick = (e) => {
-    e.preventDefault(); closeDetail();
+    e.preventDefault(); closeDetail(); showTab("manual");
     $("#tickers").value = el.dataset.t; analyzeNow();
   });
   const cmp = $("#cmp-peers");
   if (cmp) cmp.onclick = () => {
-    closeDetail();
+    closeDetail(); showTab("manual");
     $("#tickers").value = [...new Set([data.ticker, ...peers])].slice(0, 10).join(", ");
     runLive();
   };
@@ -767,23 +828,24 @@ async function analyzeNow() {
   closeAC();
   const raw = $("#tickers").value.trim();
   const ticker = raw.split(",").map(t=>t.trim()).filter(Boolean)[0];
-  if (!ticker) { $("#status").textContent = "Enter a ticker to analyze."; $("#tickers").focus(); return; }
+  if (!ticker) { setStatus("manual", "Enter a ticker to analyze."); $("#tickers").focus(); return; }
   const btn = $("#run"); const label = btn.textContent;
   btn.disabled = true; btn.textContent = "⏳";
-  $("#status").textContent = `Full analysis of ${ticker.toUpperCase()} — strategies, news & sentiment…`;
+  setStatus("manual", `Full analysis of ${ticker.toUpperCase()} — strategies, news & sentiment…`);
   try {
     const res = await fetch("/api/analyze?ticker=" + encodeURIComponent(ticker));
     const data = await res.json();
-    if (data.error) { $("#status").textContent = "Analysis failed: " + data.error; return; }
-    if (data.results && data.results.length) setRows(data, "Manual analysis");
+    if (data.error) { setStatus("manual", "Analysis failed: " + data.error); return; }
+    if (data.results && data.results.length) setRows(data, "Manual analysis", "manual");
     openAnalysis(data);
-    $("#status").textContent = `Analyzed ${data.ticker} · ${data.passing} passing`+
+    setStatus("manual", `Analyzed ${data.ticker} · ${data.passing} passing`+
       (data.signal&&data.signal.action&&data.signal.action!=="N/A"?` · signal ${data.signal.action}`:"")+
       (data.sentiment&&data.sentiment.grade?` · sentiment ${data.sentiment.grade}`:"")+
-      (data.run_id?` · stored run #${data.run_id}`:"");
-  } catch (e) { $("#status").textContent = "Analysis failed: " + e.message; }
+      (data.run_id?` · stored run #${data.run_id}`:""));
+  } catch (e) { setStatus("manual", "Analysis failed: " + e.message); }
   finally { btn.disabled = false; btn.textContent = label; }
 }
+$("#job-tickers").addEventListener("keydown", e => { if (e.key === "Enter") runJob(); });
 
 /* queue searched tickers for a deeper (news + sentiment) analysis */
 async function enqueueForAnalysis(raw) {
@@ -864,9 +926,14 @@ tickersInput.addEventListener("keydown", e => {
 });
 tickersInput.addEventListener("blur", () => setTimeout(closeAC, 120));
 
+/* tabs */
+document.querySelectorAll(".tab").forEach(b => b.onclick = () => showTab(b.dataset.tab));
+$("#refresh-sched").onclick = () => loadLatest();
+
 /* init */
 wireMenu("cols-menu"); wireMenu("export-menu"); wireMenu("strat-menu"); wireMenu("tmpl-menu");
-buildColsMenu(); buildStratMenu(); renderHead(); loadLatest();
+buildColsMenu(); buildStratMenu(); renderHead();
+showTab("scheduled");   // loads the latest scheduled report on first view
 // Lazily build the Templates menu the first time it's opened.
 $("#tmpl-btn").addEventListener("click", () => { if (!tmplBuilt) { tmplBuilt = true; buildTmplMenu(); } }, true);
 </script>
