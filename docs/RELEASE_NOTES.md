@@ -1,5 +1,13 @@
 # Release notes
 
+## v0.15.3 — Recent searches on focus (2026-08-20)
+
+Click into the ticker box (while it's empty) and your **recent searches** now
+drop down — deduplicated and labelled by source (🕓 analyze / live) — so you can
+re-run a prior ticker or comparison set with a single tap. Start typing and it
+switches back to the usual ticker autocomplete. Backed by the existing
+`/api/runs` search log.
+
 ## v0.15.2 — Analyze as a search icon in the ticker field (2026-08-20)
 
 The Analyze button now lives **inside the ticker field**, on the same row —

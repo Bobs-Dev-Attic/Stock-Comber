@@ -4,6 +4,16 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.15.3] - 2026-08-20
+
+### Added
+- **Recent searches on focus.** Focusing the (empty) ticker field now drops down
+  your recent searches — deduplicated, labelled by source (🕓 analyze / live) —
+  so you can re-run a prior ticker or set with one tap. Backed by the existing
+  `/api/runs` search log; typing switches straight back to ticker autocomplete.
+
+[0.15.3]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.15.3
+
 ## [0.15.2] - 2026-08-20
 
 ### Changed
