@@ -1,5 +1,13 @@
 # Release notes
 
+## v0.2.2 — Vercel build fix (explicit builds) (2026-08-20)
+
+Vercel CLI 59's zero-config Python builder wants a single entrypoint and
+rejected our two `/api` functions. Switched `vercel.json` to explicit legacy
+`builds` + `routes` (one Python lambda per file, plus a static build for
+`public/`), which bypasses framework auto-detection and restores the
+static + serverless-functions layout. This supersedes the v0.2.1 approach.
+
 ## v0.2.1 — Vercel build fix (2026-08-20)
 
 Fixes the Vercel deployment so the app actually builds and serves.
