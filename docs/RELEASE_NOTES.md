@@ -1,5 +1,18 @@
 # Release notes
 
+## v0.20.0 — Tabbed dashboard (2026-08-20)
+
+The dashboard is now organized into three tabs, each with its own results and
+status so they no longer overwrite each other:
+
+- **📅 Scheduled report** — the latest nightly "hidden gems" shortlist (ranked by
+  health), loaded automatically, with a Refresh button.
+- **⚙️ Custom jobs** — build a reusable screen from your own `metric op value`
+  rules over a set of tickers or an index template (Dow / Nasdaq-100 / S&P 500),
+  then Run job. Templates now live here.
+- **🔍 Manual searches** — the ticker search box, Analyze deep-dive, and strategy
+  picker, with recent-searches-on-focus.
+
 ## v0.19.2 — Health score on the Analytics page (2026-08-20)
 
 The **Analytics** page gains a **Health-score grades** chart: the composite
