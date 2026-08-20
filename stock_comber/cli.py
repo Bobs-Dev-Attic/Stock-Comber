@@ -25,6 +25,11 @@ def _build_parser() -> argparse.ArgumentParser:
     sub = p.add_subparsers(dest="command", required=True)
 
     ps = sub.add_parser("screen", help="Run the screen over the universe.")
+    # Accept --verbose after the subcommand too (argparse otherwise only allows
+    # the global flag before it). SUPPRESS keeps it from resetting the global
+    # value when omitted, so both orderings work.
+    ps.add_argument("-v", "--verbose", action="store_true",
+                    default=argparse.SUPPRESS, help="Verbose logging.")
     ps.add_argument("tickers", nargs="*", help="Explicit tickers (overrides config universe).")
     ps.add_argument("--limit", type=int, help="Cap the SEC ticker universe.")
     ps.add_argument("--strategy", action="append", choices=["graham", "buffett", "custom"],
