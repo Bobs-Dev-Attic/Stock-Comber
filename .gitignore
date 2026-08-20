@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+.venv/
+venv/
+env/
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+.DS_Store
+# Generated screening reports (keep the dir, ignore artifacts). The Actions
+# workflow commits reports/latest.* explicitly.
+reports/screen-*.json
+reports/screen-*.csv
+reports/screen-*.md
+reports/screen-*.html
