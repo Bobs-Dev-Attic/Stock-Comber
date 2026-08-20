@@ -4,6 +4,20 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.15.4] - 2026-08-20
+
+### Changed
+- **Settings page covers all six analysts.** The Settings page (`/settings.html`)
+  now lets you select and tune every strategy — the four newer lenses
+  (Piotroski F-Score, Greenblatt Magic Formula, Lynch/GARP, Graham Net-Net) gain
+  editable threshold cards alongside Graham and Buffett, and the custom-criteria
+  metric list picks up the newer metrics (ROA, return-on-capital, earnings
+  yield, NCAV/share, earnings CAGR). Saves to the database and drives the
+  nightly screen, same as before. (Keys stay read-only status pills — secrets
+  are set as environment variables, never entered in the browser.)
+
+[0.15.4]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.15.4
+
 ## [0.15.3] - 2026-08-20
 
 ### Added

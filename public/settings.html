@@ -70,6 +70,10 @@
 
   <div class="card"><h2>Graham thresholds</h2><div class="grid" id="graham"></div></div>
   <div class="card"><h2>Buffett thresholds</h2><div class="grid" id="buffett"></div></div>
+  <div class="card"><h2>Piotroski F-Score</h2><div class="grid" id="piotroski"></div></div>
+  <div class="card"><h2>Greenblatt Magic Formula</h2><div class="grid" id="greenblatt"></div></div>
+  <div class="card"><h2>Lynch (GARP)</h2><div class="grid" id="lynch"></div></div>
+  <div class="card"><h2>Graham Net-Net (NCAV)</h2><div class="grid" id="netnet"></div></div>
 
   <div class="card">
     <h2>Nightly “hidden gems” universe</h2>
@@ -125,6 +129,22 @@ const BUFFETT = [
   ["buffett.require_positive_fcf","Require positive FCF",B],["buffett.min_fcf_years","FCF years",I],
   ["buffett.pass_ratio","Pass ratio (0-1)",N],
 ];
+const PIOTROSKI = [
+  ["piotroski.min_score","Min F-Score (0–9) to pass",I],
+];
+const GREENBLATT = [
+  ["greenblatt.min_earnings_yield_pct","Min earnings yield %",N],
+  ["greenblatt.min_return_on_capital_pct","Min return on capital %",N],
+  ["greenblatt.pass_ratio","Pass ratio (0-1)",N],
+];
+const LYNCH = [
+  ["lynch.max_peg","Max PEG",N],["lynch.min_growth_pct","Min growth %/yr",N],
+  ["lynch.max_growth_pct","Max growth %/yr",N],["lynch.max_debt_to_equity","Max debt/equity",N],
+  ["lynch.pass_ratio","Pass ratio (0-1)",N],
+];
+const NETNET = [
+  ["netnet.discount","NCAV discount (e.g. 0.667 = 2/3 rule)",N],
+];
 const UNIVERSE = [
   ["universe.mode","Mode",SEL,["list","nightly"]],
   ["universe.nightly.cap","Nightly count",I],
@@ -166,7 +186,7 @@ function renderFields(container, schema){ const c=$("#"+container); c.innerHTML=
 // strategies
 function renderStrategies(){ const c=$("#strategies"); c.innerHTML="";
   const cur=new Set(get(cfg,"strategies")||[]);
-  ["graham","buffett","custom"].forEach(s=>{
+  ["graham","buffett","piotroski","greenblatt","lynch","netnet","custom"].forEach(s=>{
     const w=document.createElement("label"); w.className="pill";
     const cb=document.createElement("input"); cb.type="checkbox"; cb.checked=cur.has(s); cb.dataset.strat=s;
     cb.style.marginRight=".4rem"; w.append(cb, document.createTextNode(s)); c.appendChild(w);
@@ -175,7 +195,8 @@ function renderStrategies(){ const c=$("#strategies"); c.innerHTML="";
 // custom criteria
 const METRICS=["pe_ratio","pb_ratio","roe_pct","net_margin_pct","current_ratio","debt_to_equity",
   "long_term_debt_to_equity","graham_number","free_cash_flow","eps","book_value_per_share","revenue",
-  "net_income","working_capital","price","earnings_growth_5y_pct","revenue_growth_5y_pct"];
+  "net_income","working_capital","price","earnings_growth_5y_pct","revenue_growth_5y_pct",
+  "roa_pct","return_on_capital_pct","earnings_yield_pct","ncav_per_share","earnings_cagr_5y_pct"];
 const OPS=["<=","<",">=",">","==","!="];
 function addCrit(metric="pe_ratio",op="<=",value=""){ const list=$("#crit-list");
   const row=document.createElement("div"); row.className="crit-row";
@@ -237,6 +258,8 @@ async function load(){
   try{ const r=await fetch("/api/settings"); const d=await r.json();
     cfg=d.config||{}; renderKeys(d);
     renderStrategies(); renderFields("graham",GRAHAM); renderFields("buffett",BUFFETT);
+    renderFields("piotroski",PIOTROSKI); renderFields("greenblatt",GREENBLATT);
+    renderFields("lynch",LYNCH); renderFields("netnet",NETNET);
     renderFields("universe",UNIVERSE); renderFields("output",OUTPUT);
     $("#crit-list").innerHTML=""; (get(cfg,"custom.criteria")||[]).forEach(c=>addCrit(c.metric,c.op,c.value));
     $("#custom_pass").value=get(cfg,"custom.pass_ratio")??"";
