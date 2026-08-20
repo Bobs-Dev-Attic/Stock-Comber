@@ -1,0 +1,96 @@
+"""Vercel serverless function: run a full analysis on one ticker on demand.
+
+  GET /api/analyze?ticker=AAPL[&news_days=14]
+
+Unlike /api/screen (quick, no enrichment) this runs the *deep* analysis a
+queued ticker would get: all strategies, Finnhub metric enrichment, and recent
+company news scored into an A–F sentiment grade. The result is returned inline
+and — when a database is configured — stored as its own run (so it also shows
+up in History and Analytics). This backs the dashboard's "Analyze now" button.
+
+Kept to a single ticker to fit the function time budget; news + sentiment need
+a FINNHUB_API_KEY (the screen still returns without one, just no news).
+"""
+
+from http.server import BaseHTTPRequestHandler
+from urllib.parse import urlparse, parse_qs
+import json
+import os
+import re
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from stock_comber import __version__  # noqa: E402
+from stock_comber.analysis import _full_config, analyze_ticker  # noqa: E402
+from stock_comber.config import load_config  # noqa: E402
+from stock_comber.screener import Screener  # noqa: E402
+from stock_comber.storage import get_storage  # noqa: E402
+
+_TICKER = re.compile(r"^[A-Z][A-Z0-9.\-]{0,9}$")
+
+
+def run_analysis(ticker: str, news_days: int = 14) -> dict:
+    cfg = _full_config(load_config())
+    # Serverless filesystem is read-only except /tmp; be quick and polite.
+    cfg["data"]["cache_dir"] = "/tmp/stock_comber_cache"
+    cfg["data"]["request_delay_seconds"] = 0
+    cfg["data"]["request_timeout"] = 25
+
+    store = get_storage(cfg)
+    screener = Screener(cfg)
+    screener.store = store
+    results, company = analyze_ticker(ticker, screener, news_days=news_days)
+
+    extra = getattr(company, "extra", None) or {}
+    news = extra.get("news", [])
+    sentiment = extra.get("sentiment")
+
+    run_id = None
+    if getattr(store, "enabled", False):
+        try:
+            run_id = store.save_run(results, screener.last_companies,
+                                    meta={"source": "manual", "ticker": ticker.upper()})
+            store.enqueue([ticker.upper()])
+            store.mark_queue(ticker.upper(), "done", run_id=run_id)
+        except Exception:  # persistence must never fail the analysis
+            run_id = None
+
+    return {
+        "version": __version__,
+        "ticker": ticker.upper(),
+        "run_id": run_id,
+        "finnhub_enabled": screener.finnhub is not None,
+        "count": len({r.ticker for r in results}),
+        "passing": sum(1 for r in results if r.passed),
+        "results": [r.to_dict() for r in results],
+        "news": news,
+        "sentiment": sentiment,
+    }
+
+
+class handler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        params = parse_qs(urlparse(self.path).query)
+        ticker = (params.get("ticker", [""])[0] or "").strip().upper()
+        try:
+            news_days = min(30, max(1, int(params.get("news_days", ["14"])[0])))
+        except (ValueError, TypeError):
+            news_days = 14
+
+        if not ticker or not _TICKER.match(ticker):
+            self._send(400, {"error": "Provide a valid ?ticker=AAPL."})
+            return
+        try:
+            self._send(200, run_analysis(ticker, news_days))
+        except Exception as exc:  # never leak a stack trace to the client
+            self._send(502, {"error": f"analysis failed: {exc}"})
+
+    def _send(self, code, obj):
+        body = json.dumps(obj, default=str).encode("utf-8")
+        self.send_response(code)
+        self.send_header("Content-Type", "application/json; charset=utf-8")
+        self.send_header("Access-Control-Allow-Origin", "*")
+        self.send_header("Cache-Control", "no-store")
+        self.end_headers()
+        self.wfile.write(body)

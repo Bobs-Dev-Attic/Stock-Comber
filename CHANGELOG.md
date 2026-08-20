@@ -4,6 +4,20 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.9.0] - 2026-08-20
+
+### Added
+- **Manual analysis button.** An **"Analyze now"** button on the dashboard runs
+  the full, deep analysis on the first entered ticker immediately — all
+  strategies, Finnhub enrichment, and recent news scored into an A–F sentiment
+  grade — instead of waiting for the ~20-min queue worker. Results open in a
+  modal (per-strategy pass/fail, sentiment summary, and news headlines) and,
+  when a database is configured, the analysis is stored as its own run so it
+  also appears in History and Analytics. Backed by a new `GET /api/analyze?ticker=…`
+  endpoint (`run_analysis`, reusing `analysis.analyze_ticker`).
+
+[0.9.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.9.0
+
 ## [0.8.0] - 2026-08-20
 
 ### Added

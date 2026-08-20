@@ -126,6 +126,7 @@
         <button data-strat="buffett" aria-pressed="false">Buffett</button>
       </div>
       <button id="run" class="btn">Screen live</button>
+      <button id="analyze" class="btn ghost" title="Full analysis of the first ticker: all strategies + news &amp; sentiment">Analyze now</button>
     </div>
 
     <details class="custom">
@@ -166,7 +167,7 @@
   <p class="foot">
     Educational tool only — not investment advice. Data from SEC EDGAR, Yahoo &amp; Stooq may be delayed or incomplete.<br>
     <a href="/history.html">🕓 History</a> · <a href="/analytics.html">📊 Analytics</a> · <a href="/settings.html">⚙️ Settings</a> ·
-    API: <code>/api/latest</code> · <code>/api/screen</code> · <code>/api/export</code> · <code>/api/runs</code> ·
+    API: <code>/api/latest</code> · <code>/api/screen</code> · <code>/api/analyze</code> · <code>/api/export</code> · <code>/api/runs</code> ·
     <a href="https://github.com/Bobs-Dev-Attic/Stock-Comber">source</a>
   </p>
 </div>
@@ -439,6 +440,68 @@ async function runLive() {
   finally { $("#run").disabled = false; }
 }
 $("#run").onclick = runLive;
+
+/* ---- manual full analysis (news + sentiment), on demand ---- */
+const GRADE_TXT = {A:"Positive", B:"Mildly positive", C:"Neutral", D:"Mildly negative", F:"Negative"};
+function openAnalysis(data) {
+  const results = data.results || [];
+  const s = data.sentiment, news = data.news || [];
+  const grade = s && s.grade ? s.grade : "—";
+  const stratRows = results.map(r =>
+    `<div class="crit ${r.passed?'ok':'no'}" data-t="${r.ticker}" data-s="${r.strategy}" style="cursor:pointer">`+
+    `<div class="ic">${r.passed?'✔':'✕'}</div><div class="body">`+
+    `<div class="cname">${r.strategy} <span class="badge ${r.passed?'pass':'near'}">${r.passed?'PASS':'near miss'}</span></div>`+
+    `<div class="vals">score ${(r.score_pct??0).toFixed(0)}% (${r.score}/${r.max_score}) · tap for full breakdown</div>`+
+    `</div></div>`).join("") || '<div class="hint">No strategy results.</div>';
+
+  let sentHtml;
+  if (s && s.article_count) {
+    sentHtml = `<div class="mgrid"><div class="m"><b>${grade}</b><span>Grade — ${GRADE_TXT[grade]||""}</span></div>`+
+      `<div class="m"><b>${(s.score>0?'+':'')}${(s.score??0).toFixed(2)}</b><span>Net score</span></div>`+
+      `<div class="m"><b>${s.positive||0}/${s.negative||0}</b><span>Pos / neg hits</span></div>`+
+      `<div class="m"><b>${s.article_count}</b><span>Headlines</span></div></div>`;
+  } else if (data.finnhub_enabled === false) {
+    sentHtml = `<div class="hint">News &amp; sentiment need a <code>FINNHUB_API_KEY</code> (not configured).</div>`;
+  } else {
+    sentHtml = `<div class="hint">No recent news found for this ticker.</div>`;
+  }
+  const newsHtml = news.length
+    ? `<div class="links" style="flex-direction:column;align-items:flex-start">`+
+      news.slice(0,10).map(n => `<a href="${n.url||'#'}" target="_blank" rel="noopener">${(n.headline||"(untitled)")} ↗</a>`).join("")+`</div>`
+    : "";
+  const first = results[0] || {};
+  $("#modal").innerHTML =
+    `<button class="close" aria-label="Close">×</button>`+
+    `<h2>${data.ticker} <span class="badge ${data.passing?'pass':'near'}">${data.passing?data.passing+' passing':'no pass'}</span></h2>`+
+    `<div class="sub">${first.name||""} · full analysis${data.run_id?` · stored as run #${data.run_id}`:""}</div>`+
+    `<div class="sec-h">Strategies</div>${stratRows}`+
+    `<div class="sec-h">News sentiment</div>${sentHtml}${newsHtml}`;
+  $("#modal .close").onclick = closeDetail;
+  $("#modal").querySelectorAll(".crit[data-t]").forEach(el => el.onclick = () => {
+    const r = results.find(x => x.strategy === el.dataset.s); if (r) openDetail(r);
+  });
+  $("#overlay").classList.add("open");
+}
+async function analyzeNow() {
+  const raw = $("#tickers").value.trim();
+  const ticker = raw.split(",").map(t=>t.trim()).filter(Boolean)[0];
+  if (!ticker) { $("#status").textContent = "Enter a ticker to analyze."; $("#tickers").focus(); return; }
+  const btn = $("#analyze"); const label = btn.textContent;
+  btn.disabled = true; btn.textContent = "Analyzing…";
+  $("#status").textContent = `Full analysis of ${ticker.toUpperCase()} — strategies, news & sentiment…`;
+  try {
+    const res = await fetch("/api/analyze?ticker=" + encodeURIComponent(ticker));
+    const data = await res.json();
+    if (data.error) { $("#status").textContent = "Analysis failed: " + data.error; return; }
+    $("#status").textContent = `Analyzed ${data.ticker} · ${data.passing} passing`+
+      (data.sentiment&&data.sentiment.grade?` · sentiment ${data.sentiment.grade}`:"")+
+      (data.run_id?` · stored run #${data.run_id}`:"");
+    if (data.results && data.results.length) setRows(data, "Manual analysis");
+    openAnalysis(data);
+  } catch (e) { $("#status").textContent = "Analysis failed: " + e.message; }
+  finally { btn.disabled = false; btn.textContent = label; }
+}
+$("#analyze").onclick = analyzeNow;
 
 /* queue searched tickers for a deeper (news + sentiment) analysis */
 async function enqueueForAnalysis(raw) {
