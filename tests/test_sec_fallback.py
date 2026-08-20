@@ -51,20 +51,32 @@ class FakeSession:
         return FakeResp(status=404)
 
 
-def _src():
+def _src(ticker="ZZZ"):
+    # Default to a ticker NOT in the mega-cap override so the browse-edgar
+    # fallback path is exercised; pass "XOM" to test the override.
     src = SecEdgarSource("test@example.com", cache=None, delay=0, session=FakeSession())
-    src._ticker_map = {"XOM": {"cik": 2115436, "name": "XOM SHELL CO"}}
+    src._ticker_map = {ticker: {"cik": 2115436, "name": "SHELL CO"}}
     return src
 
 
 def test_fetch_company_falls_back_to_10k_filer_cik():
-    src = _src()
-    company = src.fetch_company("XOM")
+    src = _src("ZZZ")  # not a mega-cap → must consult EDGAR's company search
+    company = src.fetch_company("ZZZ")
     assert company is not None
     assert company.cik == "34088"                      # used the real filer CIK
     assert company.name == "Exxon Mobil Corporation"   # from the good facts
     assert [a.fiscal_year for a in company.annuals] == [2023]
     assert company.latest.revenue == 344000000000
+    assert any("browse-edgar" in u for u in src.session.calls)  # lookup happened
+
+
+def test_megacap_override_resolves_without_network_lookup():
+    src = _src("XOM")  # mapped to the empty shell CIK, but XOM is in the override
+    company = src.fetch_company("XOM")
+    assert company.cik == "34088"                      # override supplied it
+    assert company.latest.revenue == 344000000000
+    # The curated override short-circuits before any browse-edgar network call.
+    assert not any("browse-edgar" in u for u in src.session.calls)
 
 
 def test_filer_cik_parses_atom():

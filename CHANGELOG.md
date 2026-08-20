@@ -4,6 +4,18 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.15.1] - 2026-08-20
+
+### Changed
+- **Mega-cap CIK override** hardens SEC resolution for ~45 of the most-searched
+  tickers (AAPL, MSFT, XOM, BRK.B, …). It is consulted only when the ticker
+  map's CIK yields no annual fundamentals — the same trigger as the browse-edgar
+  fallback — and is tried first, so those names resolve instantly without a
+  network lookup. Because it fires only on an already-failing ticker, a wrong
+  entry can never regress a ticker that currently resolves correctly.
+
+[0.15.1]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.15.1
+
 ## [0.15.0] - 2026-08-20
 
 ### Added

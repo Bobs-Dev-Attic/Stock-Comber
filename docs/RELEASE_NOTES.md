@@ -1,5 +1,18 @@
 # Release notes
 
+## v0.15.1 — Mega-cap CIK override (2026-08-20)
+
+Hardens SEC fundamentals resolution for the largest, most-searched tickers
+(Apple, Microsoft, Exxon, Berkshire, and ~40 more). SEC's ticker→CIK file
+occasionally points a big name at a newer registrant that has no 10-K XBRL data;
+a curated override now supplies the correct filing CIK for those names.
+
+It's a safety net, not the primary resolver: it only kicks in when the mapped
+CIK returns no fundamentals (the same trigger as the existing EDGAR fallback),
+and it's tried before the network lookup — so these names resolve instantly.
+Because it fires only on an already-failing ticker, a wrong entry can never
+regress a ticker that already resolves correctly.
+
 ## v0.15.0 — Backtest (2026-08-20)
 
 The second half of the algo-trading thread: a **Backtest** page
