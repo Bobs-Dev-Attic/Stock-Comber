@@ -1,5 +1,22 @@
 # Release notes
 
+## v0.14.0 — Signals & alerts (2026-08-20)
+
+The six value lenses now roll up into one plain-language call per company:
+
+- **BUY / WATCH / AVOID** — a transparent, rules-based read of how many lenses
+  clear the company and how strongly (blended into a 0–100 signal score). It
+  shows as a colored banner at the top of the **Analyze** deep-dive, with the
+  reasoning spelled out.
+- **Alerts list** on the **History** page — the most recently analyzed tickers,
+  actionable ones (BUY/WATCH) first, from the new `GET /api/signals`.
+
+This is a summary of the checklists you can already see — **educational, not
+investment advice** — and a user's ad-hoc "custom" lens is deliberately excluded
+so it can't skew the consensus.
+
+_Next up in this thread: a backtest view (strategy signal vs. forward return)._
+
 ## v0.13.0 — Similar companies in the same sector (2026-08-20)
 
 The **Analyze** deep-dive now includes a **Similar companies (same sector)**

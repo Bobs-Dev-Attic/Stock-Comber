@@ -48,6 +48,15 @@
   </div>
 
   <div class="card">
+    <h2>Signals <span class="pill" id="sig-count"></span></h2>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Signal</th><th>Ticker</th><th>Name</th><th class="r">Score</th><th>Why</th><th>When</th></tr></thead>
+      <tbody id="signals"></tbody>
+    </table></div>
+    <p class="hint">A plain BUY / WATCH read across the six value lenses for the most recently analyzed tickers (from <code>/api/signals</code>). Educational summary of the checklists — <b>not investment advice</b>.</p>
+  </div>
+
+  <div class="card">
     <h2>Analysis queue</h2>
     <div class="tablewrap"><table>
       <thead><tr><th>Ticker</th><th>Status</th><th>Requested</th><th>Run</th></tr></thead>
@@ -109,12 +118,29 @@ function renderQueue(rows) {
     + `<td>${q.run_id ? "#" + q.run_id : (q.note ? esc(q.note).slice(0,40) : "—")}</td></tr>`
   ).join("") || `<tr><td colspan="4" class="hint">Queue is empty.</td></tr>`;
 }
+const SIG_CLS = {BUY:"pass", WATCH:"pill", AVOID:"pill"};
+function renderSignals(rows) {
+  const chip = a => {
+    const bg = a==="BUY" ? "#0ca30c" : a==="WATCH" ? "#eda100" : "var(--chip)";
+    const fg = a==="BUY" ? "#fff" : a==="WATCH" ? "#1a1a19" : "var(--muted)";
+    return `<span class="pill" style="background:${bg};color:${fg};font-weight:700">${esc(a)}</span>`;
+  };
+  $("#sig-count").textContent = rows.length ? rows.length + " actionable" : "";
+  $("#signals").innerHTML = rows.map(s =>
+    `<tr><td>${chip(s.action)}</td><td><strong>${esc(s.ticker)}</strong></td>`
+    + `<td>${esc((s.name||"").slice(0,28))}</td><td class="r">${s.score??"—"}</td>`
+    + `<td class="hint" style="white-space:normal;max-width:320px">${esc(s.reason||"")}</td>`
+    + `<td>${fmtDate(s.created_at)}</td></tr>`
+  ).join("") || `<tr><td colspan="6" class="hint">No BUY/WATCH signals yet — analyze a few tickers.</td></tr>`;
+}
 async function load() {
   try {
-    const [r, q] = await Promise.all([fetch("/api/runs?limit=50"), fetch("/api/queue?limit=50")]);
+    const [r, q, sg] = await Promise.all([
+      fetch("/api/runs?limit=50"), fetch("/api/queue?limit=50"), fetch("/api/signals?runs=40")]);
     const d = await r.json();
     RUNS = d.runs || []; renderRuns(); renderSearches(d.searches || []);
     try { renderQueue((await q.json()).queue || []); } catch(e){ renderQueue([]); }
+    try { renderSignals((await sg.json()).signals || []); } catch(e){ renderSignals([]); }
     $("#status").textContent = d.storage_enabled
       ? `${RUNS.length} runs · ${(d.searches||[]).length} searches`
       : "No database configured — set DATABASE_URL in Vercel to record history.";

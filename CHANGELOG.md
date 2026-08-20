@@ -4,6 +4,19 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.14.0] - 2026-08-20
+
+### Added
+- **Signals & alerts.** The analyst checklists now roll up into one plain
+  **BUY / WATCH / AVOID** signal per company (transparent, rules-based:
+  how many of the six value lenses clear it and how strongly — `stock_comber.signals`).
+  Shown as a banner in the Analyze deep-dive and surfaced as an **alerts list**
+  on the History page (most recently analyzed tickers, actionable first). New
+  read-only `GET /api/signals` and `PostgresStorage.recent_results`. Educational
+  summary — explicitly not investment advice.
+
+[0.14.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.14.0
+
 ## [0.13.0] - 2026-08-20
 
 ### Added

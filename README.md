@@ -176,6 +176,7 @@ serverless API — configured in [`vercel.json`](vercel.json).
 | `/history.html` · `/api/runs` | Activity log — stored runs + ad-hoc searches |
 | `/api/tickers?q=AAP` | Ticker autocomplete (powers the dashboard search box) |
 | `/analytics.html` · `/api/analytics` | Charts over stored history — runs over time, top passers, sectors, sentiment grades |
+| `/api/signals[?action=BUY,WATCH]` | Plain BUY / WATCH / AVOID signal per recently-analyzed ticker, summarising the six value lenses (shown on History). Educational, not advice |
 
 ### Persistence, Finnhub & the export API (all optional)
 

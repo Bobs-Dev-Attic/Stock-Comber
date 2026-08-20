@@ -140,6 +140,9 @@ class NullStorage:
     def get_run(self, run_id: int) -> Optional[dict]:
         return None
 
+    def recent_results(self, limit_runs: int = 30) -> list[dict]:
+        return []
+
     def get_settings(self) -> dict:
         return {}
 
@@ -285,6 +288,32 @@ class PostgresStorage:
         with self._connect() as conn:
             self._ensure_schema(conn)
             return self._run_payload(conn, run_id)
+
+    def recent_results(self, limit_runs: int = 30) -> list[dict]:
+        """Per-strategy results from the most recent ``limit_runs`` runs.
+
+        Rows: {run_id, created_at, ticker, name, strategy, passed, score_pct,
+        max_score}. Ordered newest-run first. Used to compute per-ticker signals.
+        """
+        with self._connect() as conn:
+            self._ensure_schema(conn)
+            with conn.cursor() as cur:
+                cur.execute(
+                    "SELECT sr.run_id, r.created_at, sr.ticker, sr.name, "
+                    "sr.strategy, sr.passed, sr.score_pct, sr.max_score "
+                    "FROM screen_results sr JOIN screen_runs r ON r.id = sr.run_id "
+                    "WHERE sr.run_id IN ("
+                    "  SELECT id FROM screen_runs ORDER BY created_at DESC LIMIT %s) "
+                    "ORDER BY r.created_at DESC, sr.ticker ASC",
+                    (limit_runs,))
+                cols = ["run_id", "created_at", "ticker", "name", "strategy",
+                        "passed", "score_pct", "max_score"]
+                out = []
+                for row in cur.fetchall():
+                    d = dict(zip(cols, row))
+                    d["created_at"] = d["created_at"].isoformat()
+                    out.append(d)
+                return out
 
     # -- analytics -------------------------------------------------------
     def analytics(self, run_limit: int = 30) -> dict:
