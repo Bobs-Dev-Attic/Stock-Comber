@@ -1,5 +1,19 @@
 # Release notes
 
+## v0.12.0 — One "Analyze" button (2026-08-20)
+
+Screen and Analyze now are merged into a **single Analyze button** that does the
+right thing based on what you type:
+
+- **One ticker** → the full deep-dive: all six analysts + Finnhub enrichment +
+  recent news and a sentiment grade, in the detail view (and stored to history).
+- **Several tickers** (up to 10) → compare them side by side in the sortable
+  table, using the strategies you tick.
+- **Empty box** → reloads the latest scheduled report.
+
+Pressing Enter in the search box does the same. The ticked **Strategies** apply
+to the multi-ticker table; a single-ticker deep-dive always runs every analyst.
+
 ## v0.11.1 — Multi-select strategies + clearer Screen vs. Analyze (2026-08-20)
 
 - The strategy chooser under the search box is now a **Strategies ▾ dropdown with

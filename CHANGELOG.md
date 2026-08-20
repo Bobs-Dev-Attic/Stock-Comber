@@ -4,6 +4,17 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.12.0] - 2026-08-20
+
+### Changed
+- **One button.** "Screen" and "Analyze now" are folded into a single **Analyze**
+  button that adapts to input: **one ticker** runs the full deep-dive (all six
+  analysts + news & sentiment, in the detail modal); **several tickers** compare
+  them in the sortable table using the ticked strategies; an **empty box**
+  reloads the latest scheduled report. The Enter key follows the same logic.
+
+[0.12.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.12.0
+
 ## [0.11.1] - 2026-08-20
 
 ### Changed
