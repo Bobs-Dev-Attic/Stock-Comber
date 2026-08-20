@@ -22,7 +22,7 @@ def evaluate_buffett(company: Company, cfg: dict[str, Any]) -> ScreenResult:
 
     if latest is None:
         return ScreenResult(
-            ticker=company.ticker, name=company.name, strategy="buffett",
+            ticker=company.ticker, name=company.name, cik=company.cik, strategy="buffett",
             passed=False, score=0.0, max_score=0.0, metrics=m,
             errors=["no annual fundamentals available"],
         )
@@ -91,7 +91,7 @@ def evaluate_buffett(company: Company, cfg: dict[str, Any]) -> ScreenResult:
     passed = max_score > 0 and (score / max_score) >= pass_ratio
 
     return ScreenResult(
-        ticker=company.ticker, name=company.name, strategy="buffett",
+        ticker=company.ticker, name=company.name, cik=company.cik, strategy="buffett",
         passed=passed, score=score, max_score=max_score,
         metrics=m, criteria=results, errors=[],
     )

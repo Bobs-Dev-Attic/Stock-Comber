@@ -27,7 +27,7 @@ def _build_parser() -> argparse.ArgumentParser:
     ps = sub.add_parser("screen", help="Run the screen over the universe.")
     ps.add_argument("tickers", nargs="*", help="Explicit tickers (overrides config universe).")
     ps.add_argument("--limit", type=int, help="Cap the SEC ticker universe.")
-    ps.add_argument("--strategy", action="append", choices=["graham", "buffett"],
+    ps.add_argument("--strategy", action="append", choices=["graham", "buffett", "custom"],
                     help="Restrict to specific strategies (repeatable).")
     ps.add_argument("--only-passing", action="store_true", help="Report only passing rows.")
     ps.add_argument("--no-write", action="store_true", help="Print to stdout, don't write files.")

@@ -46,6 +46,36 @@ of that strategy's criteria. **Every number above lives in
 [`config/default.yaml`](config/default.yaml)** — copy it, tune it, and pass it
 with `--config`.
 
+### Custom criteria
+
+Beyond the two built-in strategies you can define your own rules — each a simple
+`metric op value` — and run them as a `custom` strategy. Set them in config:
+
+```yaml
+strategies: [graham, buffett, custom]
+custom:
+  pass_ratio: 1.0        # all rules must pass (lower it to allow misses)
+  criteria:
+    - {name: "Cheap earnings", metric: pe_ratio, op: "<=", value: 12}
+    - {name: "High quality",   metric: roe_pct,  op: ">=", value: 20}
+    - {metric: debt_to_equity, op: "<=", value: 0.5}
+```
+
+`op` is one of `<= < >= > == !=`. `metric` is any key of the computed metric
+bundle: `price, revenue, net_income, eps, book_value_per_share, current_ratio,
+working_capital, debt_to_equity, long_term_debt_to_equity, roe_pct,
+net_margin_pct, free_cash_flow, graham_number, pe_ratio, pb_ratio,
+earnings_growth_5y_pct, revenue_growth_5y_pct`. On the web dashboard there's a
+**Custom criteria** builder that does the same thing interactively.
+
+### Explaining a result
+
+In the dashboard, **click any row** to open a detailed breakdown: every criterion
+with its pass/fail, the actual value vs. the target, a plain-English note, the key
+metrics, and links to the underlying **SEC EDGAR** filings and the exact
+`companyfacts` data used, plus Stooq, Yahoo Finance, Finviz and Google Finance for
+additional context.
+
 ---
 
 ## Install
@@ -121,6 +151,7 @@ serverless API — configured in [`vercel.json`](vercel.json).
 | `/` | Dashboard: latest shortlist + live-screen box |
 | `/api/latest` | Most recent scheduled report (JSON) |
 | `/api/screen?tickers=AAPL,MSFT&strategy=graham` | Live screen for ≤10 tickers |
+| `/api/screen?tickers=AAPL&custom=[{"metric":"pe_ratio","op":"<=","value":12}]` | Live screen with custom criteria (URL-encode the JSON) |
 
 The scheduled GitHub Actions job publishes each run to
 `public/data/latest.json`, so the deployed dashboard refreshes automatically.

@@ -49,6 +49,19 @@ buffett:
   min_fcf_years: 3
   pass_ratio: 0.8
 
+# User-defined custom criteria. Add "custom" to `strategies` above to run them.
+# metric: any key from the computed metric bundle, e.g. pe_ratio, pb_ratio,
+#   roe_pct, net_margin_pct, current_ratio, debt_to_equity, graham_number,
+#   free_cash_flow, eps, revenue, earnings_growth_5y_pct, revenue_growth_5y_pct.
+# op: one of <= < >= > == !=
+custom:
+  pass_ratio: 1.0
+  criteria: []
+  # criteria:
+  #   - {name: "Cheap earnings", metric: pe_ratio, op: "<=", value: 12}
+  #   - {name: "High quality", metric: roe_pct, op: ">=", value: 20}
+  #   - {metric: debt_to_equity, op: "<=", value: 0.5}
+
 output:
   dir: "reports"
   formats: [json, csv, markdown]

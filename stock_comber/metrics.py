@@ -105,6 +105,16 @@ def pb_ratio(price: Optional[float], a: AnnualFacts) -> Optional[float]:
     return price / b
 
 
+# The metric keys that custom criteria may target (also drives the UI builder).
+METRIC_KEYS = [
+    "price", "revenue", "net_income", "eps", "book_value_per_share",
+    "current_ratio", "working_capital", "debt_to_equity",
+    "long_term_debt_to_equity", "roe_pct", "net_margin_pct", "free_cash_flow",
+    "graham_number", "pe_ratio", "pb_ratio",
+    "earnings_growth_5y_pct", "revenue_growth_5y_pct",
+]
+
+
 def compute_metrics(company: Company) -> dict[str, Optional[float]]:
     """Compute the full metric bundle used by the screening strategies."""
     latest = company.latest
@@ -127,4 +137,6 @@ def compute_metrics(company: Company) -> dict[str, Optional[float]]:
         "graham_number": graham_number(latest),
         "pe_ratio": pe_ratio(price, latest),
         "pb_ratio": pb_ratio(price, latest),
+        "earnings_growth_5y_pct": cumulative_growth_pct(company.annuals, 5, "net_income"),
+        "revenue_growth_5y_pct": cumulative_growth_pct(company.annuals, 5, "revenue"),
     }

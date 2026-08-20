@@ -8,15 +8,17 @@
   :root {
     --bg: #f6f7f9; --panel: #ffffff; --ink: #1a1d23; --muted: #5b6472;
     --line: #e3e6ea; --accent: #1f7a4d; --accent-ink: #0c3a24;
-    --pass-bg: #e6f5ec; --pass-ink: #1f7a4d; --near: #8a93a2;
+    --pass-bg: #e6f5ec; --pass-ink: #1f7a4d; --fail-ink: #b3542a; --near: #8a93a2;
     --chip: #eef1f4; --shadow: 0 1px 3px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.04);
+    --overlay: rgba(20,24,30,.45);
   }
   @media (prefers-color-scheme: dark) {
     :root {
       --bg: #0f1115; --panel: #171a20; --ink: #e7e9ee; --muted: #9aa4b2;
       --line: #262b34; --accent: #34c17f; --accent-ink: #bff2d6;
-      --pass-bg: #12321e; --pass-ink: #57d999; --near: #6b7583;
+      --pass-bg: #12321e; --pass-ink: #57d999; --fail-ink: #e0966a; --near: #6b7583;
       --chip: #1f242c; --shadow: 0 1px 3px rgba(0,0,0,.4), 0 10px 30px rgba(0,0,0,.35);
+      --overlay: rgba(0,0,0,.6);
     }
   }
   * { box-sizing: border-box; }
@@ -32,26 +34,26 @@
     box-shadow: var(--shadow); padding: 1.1rem 1.2rem; margin-top: 1.4rem;
   }
   .controls { display: flex; gap: .6rem; flex-wrap: wrap; align-items: center; }
-  input[type=text] {
-    flex: 1 1 260px; min-width: 200px; padding: .6rem .7rem; font-size: 1rem;
-    border: 1px solid var(--line); border-radius: 9px; background: var(--bg); color: var(--ink);
+  input[type=text], input[type=number], select {
+    padding: .55rem .6rem; font-size: 1rem; border: 1px solid var(--line);
+    border-radius: 9px; background: var(--bg); color: var(--ink);
   }
+  #tickers { flex: 1 1 260px; min-width: 200px; }
   .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 9px; overflow: hidden; }
   .seg button { border: 0; background: var(--panel); color: var(--muted); padding: .55rem .8rem; cursor: pointer; font-size: .9rem; }
   .seg button[aria-pressed=true] { background: var(--accent); color: #fff; }
-  .btn {
-    border: 0; background: var(--accent); color: #fff; padding: .6rem 1.1rem;
-    border-radius: 9px; font-size: 1rem; cursor: pointer; font-weight: 600;
-  }
+  .btn { border: 0; background: var(--accent); color: #fff; padding: .6rem 1.1rem; border-radius: 9px; font-size: 1rem; cursor: pointer; font-weight: 600; }
+  .btn.ghost { background: transparent; color: var(--accent); border: 1px solid var(--line); font-weight: 500; padding: .45rem .8rem; font-size: .9rem; }
   .btn:disabled { opacity: .6; cursor: default; }
   .hint { color: var(--muted); font-size: .85rem; margin-top: .5rem; }
   .status { margin-top: 1rem; color: var(--muted); }
   .tablewrap { overflow-x: auto; margin-top: .4rem; }
-  table { border-collapse: collapse; width: 100%; min-width: 720px; }
+  table { border-collapse: collapse; width: 100%; min-width: 760px; }
   th, td { padding: .55rem .6rem; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
   th { color: var(--muted); font-weight: 600; font-size: .82rem; text-transform: uppercase; letter-spacing: .03em; cursor: pointer; }
   th:first-child, td:first-child, th.l, td.l { text-align: left; }
-  tbody tr:hover { background: color-mix(in srgb, var(--accent) 6%, transparent); }
+  tbody tr { cursor: pointer; }
+  tbody tr:hover { background: color-mix(in srgb, var(--accent) 8%, transparent); }
   .tick { font-weight: 700; }
   .name { color: var(--muted); font-size: .85rem; }
   .badge { display: inline-block; padding: .1rem .5rem; border-radius: 999px; font-size: .78rem; font-weight: 700; }
@@ -62,13 +64,43 @@
   .foot { margin-top: 2rem; color: var(--muted); font-size: .82rem; }
   .foot code { background: var(--chip); padding: .1rem .35rem; border-radius: 5px; }
   a { color: var(--accent); }
+
+  /* custom criteria builder */
+  details.custom { margin-top: 1rem; border-top: 1px solid var(--line); padding-top: .8rem; }
+  details.custom summary { cursor: pointer; font-weight: 600; }
+  .crit-row { display: flex; gap: .5rem; margin-top: .6rem; flex-wrap: wrap; align-items: center; }
+  .crit-row select.metric { flex: 1 1 200px; }
+  .crit-row .rm { border: 0; background: transparent; color: var(--fail-ink); cursor: pointer; font-size: 1.2rem; line-height: 1; }
+
+  /* detail modal */
+  .overlay { position: fixed; inset: 0; background: var(--overlay); display: none; align-items: flex-start; justify-content: center; padding: 4vh 1rem; overflow-y: auto; z-index: 20; }
+  .overlay.open { display: flex; }
+  .modal { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow); width: min(720px, 100%); padding: 1.4rem 1.5rem; }
+  .modal h2 { margin: 0 0 .1rem; font-size: 1.35rem; }
+  .modal .sub { color: var(--muted); margin-bottom: 1rem; }
+  .modal .close { float: right; border: 0; background: var(--chip); color: var(--ink); width: 34px; height: 34px; border-radius: 9px; cursor: pointer; font-size: 1.1rem; }
+  .crit { display: flex; gap: .6rem; padding: .55rem 0; border-bottom: 1px solid var(--line); }
+  .crit .ic { flex: 0 0 1.3rem; font-size: 1rem; }
+  .crit .body { flex: 1; }
+  .crit .cname { font-weight: 600; }
+  .crit .vals { color: var(--muted); font-size: .88rem; }
+  .crit .det { color: var(--muted); font-size: .85rem; }
+  .crit.ok .ic { color: var(--pass-ink); }
+  .crit.no .ic { color: var(--fail-ink); }
+  .mgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: .5rem; margin: .9rem 0; }
+  .mgrid .m { background: var(--bg); border: 1px solid var(--line); border-radius: 9px; padding: .45rem .6rem; }
+  .mgrid .m b { display: block; font-size: 1rem; }
+  .mgrid .m span { color: var(--muted); font-size: .78rem; }
+  .links { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .4rem; }
+  .links a { background: var(--chip); border-radius: 999px; padding: .35rem .7rem; text-decoration: none; font-size: .85rem; }
+  .sec-h { font-weight: 700; margin: 1rem 0 .3rem; font-size: .95rem; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
     <h1>📈 Stock-Comber</h1>
-    <p>Companies that fit Benjamin Graham &amp; Warren Buffett value criteria.</p>
+    <p>Companies that fit Benjamin Graham &amp; Warren Buffett value criteria. Click any row for the full breakdown.</p>
   </header>
 
   <section class="card">
@@ -81,7 +113,18 @@
       </div>
       <button id="run" class="btn">Screen live</button>
     </div>
-    <div class="hint">Live screen combs SEC EDGAR + Stooq for up to 10 tickers. Leave empty and press “Screen live” to reload the latest scheduled report.</div>
+
+    <details class="custom">
+      <summary>Custom criteria <span id="custom-count" class="hint" style="display:inline"></span></summary>
+      <div class="hint">Add your own rules — each is <code>metric op value</code>. They run as a “custom” strategy (all rules must pass by default) alongside your live screen.</div>
+      <div id="crit-list"></div>
+      <div style="margin-top:.7rem;display:flex;gap:.5rem">
+        <button id="add-crit" class="btn ghost">+ Add criterion</button>
+        <button id="clear-crit" class="btn ghost">Clear</button>
+      </div>
+    </details>
+
+    <div class="hint">Live screen combs SEC EDGAR + Stooq for up to 10 tickers. Leave tickers empty and press “Screen live” to reload the latest scheduled report.</div>
     <div id="status" class="status">Loading latest report…</div>
     <div class="tablewrap"><table id="tbl" hidden>
       <thead><tr>
@@ -107,23 +150,78 @@
   </p>
 </div>
 
+<div id="overlay" class="overlay" role="dialog" aria-modal="true">
+  <div class="modal" id="modal"></div>
+</div>
+
 <script>
 const $ = s => document.querySelector(s);
 let strat = "both", rows = [], sortK = "score_pct", sortDir = -1;
 
+const METRICS = [
+  ["pe_ratio","P/E ratio"], ["pb_ratio","P/B ratio"], ["roe_pct","ROE %"],
+  ["net_margin_pct","Net margin %"], ["current_ratio","Current ratio"],
+  ["debt_to_equity","Debt / equity"], ["long_term_debt_to_equity","LT debt / equity"],
+  ["graham_number","Graham number"], ["free_cash_flow","Free cash flow"],
+  ["eps","EPS"], ["book_value_per_share","Book value / share"],
+  ["revenue","Revenue"], ["net_income","Net income"], ["working_capital","Working capital"],
+  ["price","Price"], ["earnings_growth_5y_pct","Earnings growth 5y %"],
+  ["revenue_growth_5y_pct","Revenue growth 5y %"],
+];
+const METRIC_LABEL = Object.fromEntries(METRICS);
+const OPS = ["<=","<",">=",">","==","!="];
+
+/* ---- strategy segmented control ---- */
 document.querySelectorAll(".seg button").forEach(b => b.onclick = () => {
   strat = b.dataset.strat;
   document.querySelectorAll(".seg button").forEach(x => x.setAttribute("aria-pressed", x === b));
 });
 
+/* ---- number formatting ---- */
 const num = v => (v === null || v === undefined || v === "" || v === "—") ? null : Number(v);
 function fmt(v) {
   const n = num(v); if (n === null || Number.isNaN(n)) return "—";
-  if (Math.abs(n) >= 1e6) return (n/1e6).toFixed(0) + "M";
+  if (Math.abs(n) >= 1e9) return (n/1e9).toFixed(2) + "B";
+  if (Math.abs(n) >= 1e6) return (n/1e6).toFixed(1) + "M";
   if (Math.abs(n) >= 100) return n.toFixed(0);
   return n.toFixed(2);
 }
+const humanize = s => s.replace(/_/g," ").replace(/\bpct\b/,"%").replace(/^\w/, c => c.toUpperCase());
 
+/* ---- custom criteria builder ---- */
+function addCritRow(metric="pe_ratio", op="<=", value="") {
+  const list = $("#crit-list");
+  const row = document.createElement("div"); row.className = "crit-row";
+  const msel = document.createElement("select"); msel.className = "metric";
+  for (const [k,l] of METRICS) { const o = document.createElement("option"); o.value=k; o.textContent=l; if (k===metric) o.selected=true; msel.appendChild(o); }
+  const osel = document.createElement("select");
+  for (const o of OPS) { const opt = document.createElement("option"); opt.value=o; opt.textContent=o; if (o===op) opt.selected=true; osel.appendChild(opt); }
+  const val = document.createElement("input"); val.type="number"; val.step="any"; val.placeholder="value"; val.value=value; val.style.width="110px";
+  const rm = document.createElement("button"); rm.className="rm"; rm.title="Remove"; rm.textContent="×";
+  rm.onclick = () => { row.remove(); updateCustomCount(); };
+  [msel,osel,val,rm].forEach(el => row.appendChild(el));
+  list.appendChild(row);
+  updateCustomCount();
+}
+function readCriteria() {
+  const out = [];
+  document.querySelectorAll("#crit-list .crit-row").forEach(r => {
+    const metric = r.querySelector("select.metric").value;
+    const op = r.querySelectorAll("select")[1].value;
+    const value = r.querySelector("input").value;
+    if (value !== "" && !Number.isNaN(Number(value)))
+      out.push({ metric, op, value: Number(value) });
+  });
+  return out;
+}
+function updateCustomCount() {
+  const n = document.querySelectorAll("#crit-list .crit-row").length;
+  $("#custom-count").textContent = n ? `(${n} active)` : "";
+}
+$("#add-crit").onclick = () => addCritRow();
+$("#clear-crit").onclick = () => { $("#crit-list").innerHTML=""; updateCustomCount(); };
+
+/* ---- table render ---- */
 function render() {
   const tbody = $("#tbl tbody"); tbody.innerHTML = "";
   const sorted = [...rows].sort((a,b) => {
@@ -132,9 +230,10 @@ function render() {
     if (av === null) return 1; if (bv === null) return -1;
     return (av > bv ? 1 : -1) * sortDir;
   });
-  for (const r of sorted) {
+  sorted.forEach((r, i) => {
     const m = r.metrics || {};
     const tr = document.createElement("tr");
+    tr.onclick = () => openDetail(r);
     tr.innerHTML =
       `<td class="l"><span class="tick">${r.ticker}</span><div class="name">${(r.name||"").slice(0,32)}</div></td>`+
       `<td class="l">${r.strategy}</td>`+
@@ -143,7 +242,7 @@ function render() {
       `<td>${fmt(m.price)}</td><td>${fmt(m.pe_ratio)}</td><td>${fmt(m.pb_ratio)}</td>`+
       `<td>${fmt(m.roe_pct)}</td><td>${fmt(m.current_ratio)}</td><td>${fmt(m.debt_to_equity)}</td>`;
     tbody.appendChild(tr);
-  }
+  });
   $("#tbl").hidden = sorted.length === 0;
 }
 function sortField(r) {
@@ -158,46 +257,107 @@ document.querySelectorAll("#tbl th").forEach(th => th.onclick = () => {
   render();
 });
 
+/* ---- detail modal ---- */
+function extLinks(r) {
+  const t = encodeURIComponent(r.ticker);
+  const links = [];
+  if (r.cik && String(r.cik) !== "0") {
+    const cik = String(r.cik).replace(/\D/g,"");
+    const cik10 = cik.padStart(10, "0");
+    links.push([`SEC EDGAR filings`, `https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=${cik}&type=10-K&dateb=&owner=include&count=40`]);
+    links.push([`SEC data used (companyfacts)`, `https://data.sec.gov/api/xbrl/companyfacts/CIK${cik10}.json`]);
+  }
+  links.push([`Stooq price`, `https://stooq.com/q/?s=${r.ticker.toLowerCase()}.us`]);
+  links.push([`Yahoo Finance`, `https://finance.yahoo.com/quote/${t}`]);
+  links.push([`Finviz`, `https://finviz.com/quote.ashx?t=${t}`]);
+  links.push([`Google Finance`, `https://www.google.com/search?q=${t}+stock`]);
+  return links;
+}
+function openDetail(r) {
+  const m = r.metrics || {};
+  const crits = (r.criteria || []).map(c => {
+    const cls = c.passed ? "ok" : "no";
+    const ic = c.passed ? "✔" : "✕";
+    const a = c.actual === null || c.actual === undefined ? "—" : fmt(c.actual);
+    const th = c.threshold === null || c.threshold === undefined ? null : fmt(c.threshold);
+    const vals = th !== null ? `actual ${a} · target ${th}` : `actual ${a}`;
+    return `<div class="crit ${cls}"><div class="ic">${ic}</div><div class="body">`+
+      `<div class="cname">${humanize(c.name)}</div>`+
+      `<div class="vals">${vals}</div>`+
+      (c.detail ? `<div class="det">${c.detail}</div>` : "")+
+      `</div></div>`;
+  }).join("");
+
+  const metricCells = [
+    ["Price","price"],["P/E","pe_ratio"],["P/B","pb_ratio"],["ROE %","roe_pct"],
+    ["Net margin %","net_margin_pct"],["Current ratio","current_ratio"],
+    ["Debt/Equity","debt_to_equity"],["Graham #","graham_number"],
+    ["Free cash flow","free_cash_flow"],["EPS","eps"],
+    ["Earnings 5y %","earnings_growth_5y_pct"],["Revenue","revenue"],
+  ].map(([lab,k]) => `<div class="m"><b>${fmt(m[k])}</b><span>${lab}</span></div>`).join("");
+
+  const links = extLinks(r).map(([lab,href]) =>
+    `<a href="${href}" target="_blank" rel="noopener">${lab} ↗</a>`).join("");
+
+  const errs = (r.errors && r.errors.length)
+    ? `<div class="hint" style="color:var(--fail-ink)">Notes: ${r.errors.join("; ")}</div>` : "";
+
+  $("#modal").innerHTML =
+    `<button class="close" aria-label="Close">×</button>`+
+    `<h2>${r.ticker} <span class="badge ${r.passed?'pass':'near'}">${r.passed?'PASS':'near miss'}</span></h2>`+
+    `<div class="sub">${r.name || ""} · <b>${r.strategy}</b> strategy · `+
+      `score ${(r.score_pct??0).toFixed(0)}% (${r.score}/${r.max_score})</div>`+
+    errs+
+    `<div class="sec-h">Criteria</div>${crits || '<div class="hint">No criteria evaluated.</div>'}`+
+    `<div class="sec-h">Key metrics</div><div class="mgrid">${metricCells}</div>`+
+    `<div class="sec-h">Data sources &amp; additional context</div>`+
+    `<div class="hint">Fundamentals come from SEC EDGAR; the price from Stooq. Verify and dig deeper here:</div>`+
+    `<div class="links">${links}</div>`;
+  $("#modal .close").onclick = closeDetail;
+  $("#overlay").classList.add("open");
+}
+function closeDetail() { $("#overlay").classList.remove("open"); }
+$("#overlay").addEventListener("click", e => { if (e.target.id === "overlay") closeDetail(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeDetail(); });
+
+/* ---- data loading ---- */
 function setRows(payload, note) {
   rows = (payload && payload.results) || [];
   const passing = rows.filter(r => r.passed).length;
   const when = payload && payload.generated_at ? new Date(payload.generated_at).toLocaleString() : "";
+  const err = payload && payload.error ? " · " + payload.error : "";
   $("#status").textContent = rows.length
     ? `${note} · ${rows.length} rows · ${passing} passing${when ? " · "+when : ""}`
-    : `${note} · no results`;
+    : `${note} · no results${err}`;
   render();
 }
-
 async function loadLatest() {
   $("#status").textContent = "Loading latest report…";
   try {
     let res = await fetch("/data/latest.json", {cache: "no-store"});
     if (!res.ok) res = await fetch("/api/latest");
-    const data = await res.json();
-    setRows(data, "Latest scheduled report");
-  } catch (e) {
-    $("#status").textContent = "Could not load the latest report.";
-  }
+    setRows(await res.json(), "Latest scheduled report");
+  } catch (e) { $("#status").textContent = "Could not load the latest report."; }
 }
-
 async function runLive() {
   const raw = $("#tickers").value.trim();
-  if (!raw) return loadLatest();
+  const criteria = readCriteria();
+  if (!raw) { if (!criteria.length) return loadLatest(); }
+  if (!raw && criteria.length) { $("#status").textContent = "Enter tickers to screen your custom criteria."; return; }
   const params = new URLSearchParams();
   params.set("tickers", raw);
   if (strat !== "both") params.append("strategy", strat);
   else { params.append("strategy","graham"); params.append("strategy","buffett"); }
+  if (criteria.length) params.set("custom", JSON.stringify(criteria));
   $("#run").disabled = true; $("#status").textContent = "Combing SEC EDGAR + Stooq…";
   try {
     const res = await fetch("/api/screen?" + params.toString());
     const data = await res.json();
-    if (data.error) { $("#status").textContent = "Error: " + data.error; }
+    if (data.error && !(data.results||[]).length) $("#status").textContent = "Error: " + data.error;
     else setRows(data, "Live screen");
-  } catch (e) {
-    $("#status").textContent = "Live screen failed: " + e.message;
-  } finally { $("#run").disabled = false; }
+  } catch (e) { $("#status").textContent = "Live screen failed: " + e.message; }
+  finally { $("#run").disabled = false; }
 }
-
 $("#run").onclick = runLive;
 $("#tickers").addEventListener("keydown", e => { if (e.key === "Enter") runLive(); });
 loadLatest();

@@ -1,5 +1,18 @@
 # Release notes
 
+## v0.3.0 — Explanations, source links & custom criteria (2026-08-20)
+
+Three new user-facing capabilities on the dashboard and API:
+
+- **Click any result** to see a full breakdown — each criterion's pass/fail,
+  actual vs. target, and a plain-English note, plus the key metrics.
+- **Data-source & context links** on every company: SEC EDGAR filings and the
+  exact `companyfacts` data used, plus Stooq, Yahoo Finance, Finviz and Google
+  Finance.
+- **Custom criteria** — define your own `metric op value` rules and run them as
+  a `custom` strategy. Available in config, the CLI (`--strategy custom`), the
+  API (`?custom=<json>`), and an interactive builder in the dashboard.
+
 ## v0.2.2 — Vercel build fix (explicit builds) (2026-08-20)
 
 Vercel CLI 59's zero-config Python builder wants a single entrypoint and
