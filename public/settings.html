@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stock-Comber · Settings</title>
+<style>
+  :root { --bg:#f6f7f9; --panel:#fff; --ink:#1a1d23; --muted:#5b6472; --line:#e3e6ea;
+    --accent:#1f7a4d; --chip:#eef1f4; --ok:#1f7a4d; --bad:#b3542a;
+    --shadow:0 1px 3px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.04); }
+  @media (prefers-color-scheme: dark){ :root{ --bg:#0f1115; --panel:#171a20; --ink:#e7e9ee;
+    --muted:#9aa4b2; --line:#262b34; --accent:#34c17f; --chip:#1f242c; --ok:#57d999; --bad:#e0966a;
+    --shadow:0 1px 3px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);} }
+  *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);
+    font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+  .wrap{max-width:900px;margin:0 auto;padding:2rem 1.2rem 5rem}
+  a{color:var(--accent)} h1{margin:0 0 .2rem;font-size:1.6rem} .sub{color:var(--muted);margin:0 0 1rem}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);
+    padding:1.1rem 1.2rem;margin-top:1.2rem}
+  .card h2{margin:.1rem 0 .8rem;font-size:1.1rem}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:.7rem}
+  .f{display:flex;flex-direction:column;gap:.25rem}
+  .f label{font-size:.82rem;color:var(--muted)}
+  input,select{padding:.5rem .55rem;font-size:.95rem;border:1px solid var(--line);border-radius:8px;
+    background:var(--bg);color:var(--ink)}
+  input[type=checkbox]{width:auto}
+  .chk{flex-direction:row;align-items:center;gap:.5rem}
+  .row{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;margin-top:.5rem}
+  .btn{border:0;background:var(--accent);color:#fff;padding:.6rem 1.1rem;border-radius:9px;
+    font-size:1rem;cursor:pointer;font-weight:600}
+  .btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--line);font-weight:500;padding:.5rem .9rem;font-size:.9rem}
+  .status{margin-top:.8rem;color:var(--muted);min-height:1.2em}
+  .keys{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.3rem}
+  .pill{border-radius:999px;padding:.25rem .7rem;font-size:.85rem;background:var(--chip)}
+  .pill.on{color:var(--ok)} .pill.off{color:var(--bad)}
+  .crit-row{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;margin-top:.5rem}
+  .crit-row .rm{border:0;background:transparent;color:var(--bad);cursor:pointer;font-size:1.2rem}
+  .hint{color:var(--muted);font-size:.85rem}
+  code{background:var(--chip);padding:.1rem .35rem;border-radius:5px}
+  .bar{position:sticky;bottom:0;background:var(--panel);border-top:1px solid var(--line);
+    margin:1.2rem -1.2rem -5rem;padding:1rem 1.2rem;display:flex;gap:.6rem;align-items:center;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>⚙️ Settings</h1>
+  <p class="sub"><a href="/">← Dashboard</a> · Parameters, preferences &amp; key status. Saving writes to your database and drives the nightly screen.</p>
+
+  <div class="card">
+    <h2>Keys &amp; status <span class="hint">(read-only — set these as environment variables)</span></h2>
+    <div class="keys" id="keys"></div>
+    <p class="hint">Secrets are never shown here. Set <code>FINNHUB_API_KEY</code>, <code>DATABASE_URL</code> and
+      <code>STOCK_COMBER_API_KEY</code> in Vercel → Settings → Environment Variables (and as GitHub Actions
+      secrets for the nightly job).</p>
+  </div>
+
+  <div class="card">
+    <h2>Strategies</h2>
+    <div class="row" id="strategies"></div>
+  </div>
+
+  <div class="card"><h2>Graham thresholds</h2><div class="grid" id="graham"></div></div>
+  <div class="card"><h2>Buffett thresholds</h2><div class="grid" id="buffett"></div></div>
+
+  <div class="card">
+    <h2>Nightly “hidden gems” universe</h2>
+    <div class="grid" id="universe"></div>
+  </div>
+
+  <div class="card">
+    <h2>Custom criteria</h2>
+    <div class="hint">Each rule is <code>metric op value</code>; runs as the “custom” strategy.</div>
+    <div id="crit-list"></div>
+    <div class="row"><button class="btn ghost" id="add-crit">+ Add criterion</button>
+      <div class="f" style="max-width:160px"><label>Pass ratio</label><input id="custom_pass" type="number" step="any"></div></div>
+  </div>
+
+  <div class="card"><h2>Output</h2><div class="grid" id="output"></div></div>
+
+  <div class="bar">
+    <div class="f" style="max-width:280px"><label>Export/API key (to save)</label>
+      <input id="apikey" type="password" placeholder="STOCK_COMBER_API_KEY"></div>
+    <button class="btn" id="save">Save to database</button>
+    <button class="btn ghost" id="download">Download as YAML</button>
+    <span class="status" id="status"></span>
+  </div>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+let cfg = {};
+
+// --- nested get/set by dotted path ---
+const get = (o, p) => p.split(".").reduce((x, k) => (x == null ? x : x[k]), o);
+function setPath(o, p, v) {
+  const ks = p.split("."); let x = o;
+  for (let i = 0; i < ks.length - 1; i++) { x[ks[i]] = x[ks[i]] || {}; x = x[ks[i]]; }
+  x[ks[ks.length - 1]] = v;
+}
+
+// --- field schema ---
+const N="number", I="int", B="bool", CSV="csv", SEL="select";
+const GRAHAM = [
+  ["graham.min_revenue","Min revenue ($)",N],["graham.min_current_ratio","Min current ratio",N],
+  ["graham.max_debt_to_equity","Max debt/equity",N],["graham.positive_earnings_years","Positive-earnings yrs",I],
+  ["graham.min_earnings_growth_pct","Min earnings growth %",N],["graham.earnings_growth_years","Growth window (yrs)",I],
+  ["graham.max_pe","Max P/E",N],["graham.max_pb","Max P/B",N],["graham.max_pe_times_pb","Max P/E×P/B",N],
+  ["graham.pass_ratio","Pass ratio (0-1)",N],["graham.require_dividend","Require dividend",B],
+  ["graham.long_term_debt_under_working_capital","LT debt ≤ working capital",B],
+  ["graham.require_positive_book_value","Require positive book value",B],
+];
+const BUFFETT = [
+  ["buffett.min_roe_pct","Min ROE %",N],["buffett.roe_consistency_years","ROE consistency yrs",I],
+  ["buffett.max_debt_to_equity","Max debt/equity",N],["buffett.min_net_margin_pct","Min net margin %",N],
+  ["buffett.min_earnings_growth_pct","Min earnings growth %",N],["buffett.earnings_growth_years","Growth window (yrs)",I],
+  ["buffett.require_positive_fcf","Require positive FCF",B],["buffett.min_fcf_years","FCF years",I],
+  ["buffett.pass_ratio","Pass ratio (0-1)",N],
+];
+const UNIVERSE = [
+  ["universe.mode","Mode",SEL,["list","nightly"]],
+  ["universe.nightly.cap","Nightly count",I],
+  ["universe.nightly.market_cap_min","Market cap min ($)",N],
+  ["universe.nightly.market_cap_max","Market cap max ($)",N],
+  ["universe.nightly.min_avg_volume","Min avg volume (shares/day)",N],
+  ["universe.nightly.max_per_sector","Max per sector",I],
+  ["universe.nightly.enrich_per_run","Finnhub enrich/night",I],
+  ["universe.nightly.include_unknown","Screen not-yet-enriched",B],
+  ["universe.nightly.sectors","Only sectors (comma)",CSV],
+  ["universe.nightly.exclude_sectors","Exclude sectors (comma)",CSV],
+  ["universe.nightly.countries","Only countries (comma)",CSV],
+  ["universe.extra_tickers","Extra tickers (comma)",CSV],
+];
+const OUTPUT = [
+  ["output.formats","Formats (comma)",CSV],["output.top_n","Top N rows",I],
+  ["output.only_passing","Only passing",B],["output.sort_by","Sort by","text"],
+];
+
+function fieldEl(path, label, type, opts) {
+  const wrap = document.createElement("div");
+  wrap.className = "f" + (type===B ? " chk" : "");
+  const val = get(cfg, path);
+  let input;
+  if (type===B) { input=document.createElement("input"); input.type="checkbox"; input.checked=!!val; }
+  else if (type===SEL) { input=document.createElement("select");
+    (opts||[]).forEach(o=>{const op=document.createElement("option");op.value=o;op.textContent=o;if(o===val)op.selected=true;input.appendChild(op);}); }
+  else { input=document.createElement("input");
+    input.type=(type===N||type===I)?"number":"text"; if(type===N)input.step="any";
+    input.value = type===CSV ? (Array.isArray(val)?val.join(", "):(val||"")) : (val==null?"":val); }
+  input.dataset.path=path; input.dataset.type=type;
+  const lab=document.createElement("label"); lab.textContent=label;
+  if (type===B){ wrap.append(input, lab); } else { wrap.append(lab, input); }
+  return wrap;
+}
+function renderFields(container, schema){ const c=$("#"+container); c.innerHTML="";
+  schema.forEach(([p,l,t,o])=>c.appendChild(fieldEl(p,l,t,o))); }
+
+// strategies
+function renderStrategies(){ const c=$("#strategies"); c.innerHTML="";
+  const cur=new Set(get(cfg,"strategies")||[]);
+  ["graham","buffett","custom"].forEach(s=>{
+    const w=document.createElement("label"); w.className="pill";
+    const cb=document.createElement("input"); cb.type="checkbox"; cb.checked=cur.has(s); cb.dataset.strat=s;
+    cb.style.marginRight=".4rem"; w.append(cb, document.createTextNode(s)); c.appendChild(w);
+  });
+}
+// custom criteria
+const METRICS=["pe_ratio","pb_ratio","roe_pct","net_margin_pct","current_ratio","debt_to_equity",
+  "long_term_debt_to_equity","graham_number","free_cash_flow","eps","book_value_per_share","revenue",
+  "net_income","working_capital","price","earnings_growth_5y_pct","revenue_growth_5y_pct"];
+const OPS=["<=","<",">=",">","==","!="];
+function addCrit(metric="pe_ratio",op="<=",value=""){ const list=$("#crit-list");
+  const row=document.createElement("div"); row.className="crit-row";
+  const m=document.createElement("select"); m.className="metric";
+  METRICS.forEach(k=>{const o=document.createElement("option");o.value=k;o.textContent=k;if(k===metric)o.selected=true;m.appendChild(o);});
+  const o=document.createElement("select");
+  OPS.forEach(x=>{const op2=document.createElement("option");op2.value=x;op2.textContent=x;if(x===op)op2.selected=true;o.appendChild(op2);});
+  const v=document.createElement("input"); v.type="number"; v.step="any"; v.placeholder="value"; v.value=value; v.style.width="110px";
+  const rm=document.createElement("button"); rm.className="rm"; rm.textContent="×"; rm.onclick=()=>row.remove();
+  row.append(m,o,v,rm); list.appendChild(row);
+}
+function readCrit(){ const out=[];
+  document.querySelectorAll("#crit-list .crit-row").forEach(r=>{
+    const metric=r.querySelector("select.metric").value; const op=r.querySelectorAll("select")[1].value;
+    const value=r.querySelector("input").value;
+    if(value!==""&&!Number.isNaN(Number(value))) out.push({metric,op,value:Number(value)});
+  }); return out; }
+
+function renderKeys(s){ const c=$("#keys"); c.innerHTML="";
+  const items=[["Finnhub",s.keys.finnhub],["Database",s.keys.database],["Export API key",s.keys.export_api]];
+  items.forEach(([n,on])=>{const p=document.createElement("span");p.className="pill "+(on?"on":"off");
+    p.textContent=(on?"✓ ":"✕ ")+n+(on?" configured":" not set");c.appendChild(p);});
+}
+
+// build settings object from the form
+function collect(){
+  const out={};
+  document.querySelectorAll("input[data-path],select[data-path]").forEach(el=>{
+    const p=el.dataset.path, t=el.dataset.type; let v;
+    if(t===B) v=el.checked;
+    else if(t===I) { if(el.value==="")return; v=parseInt(el.value,10); }
+    else if(t===N) { if(el.value==="")return; v=parseFloat(el.value); }
+    else if(t===CSV) v=el.value.split(",").map(x=>x.trim()).filter(Boolean);
+    else v=el.value;
+    if(v!==undefined && !(typeof v==="number"&&Number.isNaN(v))) setPath(out,p,v);
+  });
+  // strategies
+  const strat=[...document.querySelectorAll("#strategies input[data-strat]")].filter(c=>c.checked).map(c=>c.dataset.strat);
+  if(strat.length) out.strategies=strat;
+  // custom criteria
+  const crit=readCrit();
+  out.custom={...(out.custom||{}), criteria:crit};
+  const cp=$("#custom_pass").value; if(cp!=="") out.custom.pass_ratio=parseFloat(cp);
+  return out;
+}
+
+// naive YAML for download
+function toYAML(o, ind=0){ const pad="  ".repeat(ind); let s="";
+  for(const k in o){ const v=o[k];
+    if(Array.isArray(v)){ if(v.length&&typeof v[0]==="object"){ s+=`${pad}${k}:\n`; v.forEach(it=>{ s+=`${pad}  - ${JSON.stringify(it)}\n`; }); }
+      else s+=`${pad}${k}: [${v.map(x=>JSON.stringify(x)).join(", ")}]\n`; }
+    else if(v&&typeof v==="object"){ s+=`${pad}${k}:\n`+toYAML(v,ind+1); }
+    else s+=`${pad}${k}: ${typeof v==="string"?JSON.stringify(v):v}\n`; }
+  return s;
+}
+
+async function load(){
+  $("#status").textContent="Loading…";
+  try{ const r=await fetch("/api/settings"); const d=await r.json();
+    cfg=d.config||{}; renderKeys(d);
+    renderStrategies(); renderFields("graham",GRAHAM); renderFields("buffett",BUFFETT);
+    renderFields("universe",UNIVERSE); renderFields("output",OUTPUT);
+    $("#crit-list").innerHTML=""; (get(cfg,"custom.criteria")||[]).forEach(c=>addCrit(c.metric,c.op,c.value));
+    $("#custom_pass").value=get(cfg,"custom.pass_ratio")??"";
+    $("#apikey").value=sessionStorage.getItem("sc_key")||"";
+    $("#status").textContent = d.storage_enabled ? "Loaded." : "Loaded (no database — saving needs DATABASE_URL; you can still Download as YAML).";
+  }catch(e){ $("#status").textContent="Failed to load settings: "+e.message; }
+}
+$("#add-crit").onclick=()=>addCrit();
+$("#download").onclick=()=>{ const y=toYAML(collect()); const b=new Blob([y],{type:"text/yaml"});
+  const a=document.createElement("a"); a.href=URL.createObjectURL(b); a.download="stock-comber-settings.yaml"; a.click(); URL.revokeObjectURL(a.href); };
+$("#save").onclick=async()=>{
+  const key=$("#apikey").value.trim(); if(key) sessionStorage.setItem("sc_key",key);
+  $("#status").textContent="Saving…";
+  try{ const r=await fetch("/api/settings?key="+encodeURIComponent(key),{method:"POST",
+      headers:{"Content-Type":"application/json"}, body:JSON.stringify(collect())});
+    const d=await r.json();
+    if(!r.ok){ $("#status").textContent="Error: "+(d.error||r.status)+(d.problems?" — "+d.problems.join("; "):""); }
+    else $("#status").textContent="Saved. The next nightly run uses these settings.";
+  }catch(e){ $("#status").textContent="Save failed: "+e.message; }
+};
+load();
+</script>
+</body>
+</html>
