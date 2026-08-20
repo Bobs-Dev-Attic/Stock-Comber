@@ -4,6 +4,24 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2026-08-20
+
+### Added
+- **Click-through result explanations.** Clicking a row in the dashboard opens a
+  detail panel: every criterion with pass/fail, actual vs. target, a plain-English
+  note, the key metrics, and any data notes.
+- **Data-source & context links** per company: SEC EDGAR filings, the exact
+  `companyfacts` JSON used, Stooq, Yahoo Finance, Finviz, and Google Finance.
+- **Custom criteria.** A new `custom` strategy evaluates user-defined
+  `metric op value` rules (`stock_comber/criteria/custom.py`), configurable via
+  `config.custom.criteria`, the `--strategy custom` CLI flag, the
+  `/api/screen?...&custom=<json>` parameter, and an interactive builder in the
+  dashboard. Validated in `validate_config`.
+- Two new metrics in the bundle: `earnings_growth_5y_pct`, `revenue_growth_5y_pct`.
+- `cik` is now included on every result (drives the SEC links).
+
+[0.3.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.3.0
+
 ## [0.2.2] - 2026-08-20
 
 ### Fixed

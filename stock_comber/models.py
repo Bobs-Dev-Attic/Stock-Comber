@@ -79,6 +79,7 @@ class ScreenResult:
     passed: bool
     score: float
     max_score: float
+    cik: Optional[str] = None
     metrics: dict[str, Optional[float]] = field(default_factory=dict)
     criteria: list[CriterionResult] = field(default_factory=list)
     errors: list[str] = field(default_factory=list)

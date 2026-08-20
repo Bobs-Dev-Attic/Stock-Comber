@@ -1,6 +1,11 @@
 """Vercel serverless function: run a live value screen on demand.
 
-GET /api/screen?tickers=AAPL,MSFT,JNJ&strategy=graham&strategy=buffett
+  GET /api/screen?tickers=AAPL,MSFT,JNJ&strategy=graham&strategy=buffett
+  GET /api/screen?tickers=AAPL&strategy=custom&custom=<url-encoded JSON array>
+
+`custom` is a JSON array of rules like
+  [{"name":"Cheap","metric":"pe_ratio","op":"<=","value":12}]
+When present, the "custom" strategy is added automatically.
 
 Combs SEC EDGAR + Stooq live for the requested tickers (capped) and returns the
 scored results as JSON. Kept small so it fits inside the function time budget;
@@ -17,17 +22,29 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from stock_comber import __version__  # noqa: E402
-from stock_comber.config import load_config  # noqa: E402
+from stock_comber.config import load_config, validate_config  # noqa: E402
 from stock_comber.screener import Screener  # noqa: E402
 
 MAX_TICKERS = 10
-VALID_STRATEGIES = ("graham", "buffett")
+MAX_CUSTOM = 15
+VALID_STRATEGIES = ("graham", "buffett", "custom")
 
 
-def run_screen(tickers, strategies):
+def run_screen(tickers, strategies, custom_criteria=None):
     cfg = load_config()
-    chosen = [s for s in strategies if s in VALID_STRATEGIES] or list(VALID_STRATEGIES)
+    chosen = [s for s in strategies if s in VALID_STRATEGIES]
+    if custom_criteria:
+        cfg["custom"]["criteria"] = custom_criteria[:MAX_CUSTOM]
+        if "custom" not in chosen:
+            chosen.append("custom")
+    if not chosen:
+        chosen = ["graham", "buffett"]
     cfg["strategies"] = chosen
+
+    problems = validate_config(cfg)
+    if problems:
+        return {"error": "invalid criteria: " + "; ".join(problems), "results": []}
+
     # Serverless filesystem is read-only except /tmp; be quick and polite.
     cfg["data"]["cache_dir"] = "/tmp/stock_comber_cache"
     cfg["data"]["request_delay_seconds"] = 0
@@ -47,7 +64,17 @@ class handler(BaseHTTPRequestHandler):
         params = parse_qs(urlparse(self.path).query)
         raw = ",".join(params.get("tickers", []))
         tickers = [t.strip().upper() for t in raw.split(",") if t.strip()]
-        strategies = params.get("strategy") or list(VALID_STRATEGIES)
+        strategies = params.get("strategy") or ["graham", "buffett"]
+
+        custom_criteria = None
+        if params.get("custom"):
+            try:
+                custom_criteria = json.loads(params["custom"][0])
+                if not isinstance(custom_criteria, list):
+                    raise ValueError("custom must be a JSON array")
+            except (ValueError, json.JSONDecodeError) as exc:
+                self._send(400, {"error": f"bad custom criteria: {exc}"})
+                return
 
         if not tickers:
             self._send(400, {"error": f"Provide ?tickers=AAPL,MSFT (max {MAX_TICKERS})."})
@@ -55,7 +82,7 @@ class handler(BaseHTTPRequestHandler):
 
         tickers = tickers[:MAX_TICKERS]
         try:
-            self._send(200, run_screen(tickers, strategies))
+            self._send(200, run_screen(tickers, strategies, custom_criteria))
         except Exception as exc:  # never leak a stack trace to the client
             self._send(502, {"error": f"screen failed: {exc}"})
 

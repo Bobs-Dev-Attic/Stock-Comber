@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "stock-comber"
-version = "0.2.2"
+version = "0.3.0"
 description = "Find publicly traded companies that fit Graham and Buffett value-investing criteria, using free data sources."
 readme = "README.md"
 requires-python = ">=3.9"

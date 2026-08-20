@@ -14,6 +14,7 @@
       "passed": true,
       "score": 6.0,
       "max_score": 6.0,
+      "cik": null,
       "metrics": {
         "price": 42.0,
         "revenue": 32000000000.0,
@@ -29,7 +30,9 @@
         "free_cash_flow": 8000000000.0,
         "graham_number": 73.94254526319743,
         "pe_ratio": 4.666666666666667,
-        "pb_ratio": 1.5555555555555556
+        "pb_ratio": 1.5555555555555556,
+        "earnings_growth_5y_pct": 60.0,
+        "revenue_growth_5y_pct": 60.0
       },
       "criteria": [
         {
@@ -91,6 +94,7 @@
       "passed": true,
       "score": 6.0,
       "max_score": 6.0,
+      "cik": null,
       "metrics": {
         "price": 55.0,
         "revenue": 32000000000.0,
@@ -106,7 +110,9 @@
         "free_cash_flow": 8000000000.0,
         "graham_number": 65.72670690061993,
         "pe_ratio": 6.875,
-        "pb_ratio": 2.2916666666666665
+        "pb_ratio": 2.2916666666666665,
+        "earnings_growth_5y_pct": 60.0,
+        "revenue_growth_5y_pct": 60.0
       },
       "criteria": [
         {
@@ -168,6 +174,7 @@
       "passed": true,
       "score": 8.0,
       "max_score": 9.0,
+      "cik": null,
       "metrics": {
         "price": 42.0,
         "revenue": 32000000000.0,
@@ -183,7 +190,9 @@
         "free_cash_flow": 8000000000.0,
         "graham_number": 73.94254526319743,
         "pe_ratio": 4.666666666666667,
-        "pb_ratio": 1.5555555555555556
+        "pb_ratio": 1.5555555555555556,
+        "earnings_growth_5y_pct": 60.0,
+        "revenue_growth_5y_pct": 60.0
       },
       "criteria": [
         {
@@ -269,6 +278,7 @@
       "passed": true,
       "score": 8.0,
       "max_score": 9.0,
+      "cik": null,
       "metrics": {
         "price": 55.0,
         "revenue": 32000000000.0,
@@ -284,7 +294,9 @@
         "free_cash_flow": 8000000000.0,
         "graham_number": 65.72670690061993,
         "pe_ratio": 6.875,
-        "pb_ratio": 2.2916666666666665
+        "pb_ratio": 2.2916666666666665,
+        "earnings_growth_5y_pct": 60.0,
+        "revenue_growth_5y_pct": 60.0
       },
       "criteria": [
         {
@@ -370,6 +382,7 @@
       "passed": false,
       "score": 3.0,
       "max_score": 9.0,
+      "cik": null,
       "metrics": {
         "price": 480.0,
         "revenue": 1200000000.0,
@@ -385,7 +398,9 @@
         "free_cash_flow": -24000000.0,
         "graham_number": 1.6770509831248424,
         "pe_ratio": 960.0,
-        "pb_ratio": 1920.0
+        "pb_ratio": 1920.0,
+        "earnings_growth_5y_pct": -40.0,
+        "revenue_growth_5y_pct": -40.0
       },
       "criteria": [
         {
@@ -471,6 +486,7 @@
       "passed": false,
       "score": 2.0,
       "max_score": 6.0,
+      "cik": null,
       "metrics": {
         "price": 480.0,
         "revenue": 1200000000.0,
@@ -486,7 +502,9 @@
         "free_cash_flow": -24000000.0,
         "graham_number": 1.6770509831248424,
         "pe_ratio": 960.0,
-        "pb_ratio": 1920.0
+        "pb_ratio": 1920.0,
+        "earnings_growth_5y_pct": -40.0,
+        "revenue_growth_5y_pct": -40.0
       },
       "criteria": [
         {

@@ -66,6 +66,16 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "min_fcf_years": 3,
         "pass_ratio": 0.8,
     },
+    # User-defined custom criteria. Add rules of the form {metric} {op} {value};
+    # include "custom" in `strategies` to run them. Metrics are the keys of the
+    # computed metric bundle (see stock_comber/metrics.py METRIC_KEYS).
+    "custom": {
+        "pass_ratio": 1.0,   # by default every custom rule must pass
+        "criteria": [
+            # {"name": "Cheap", "metric": "pe_ratio", "op": "<=", "value": 12},
+            # {"metric": "roe_pct", "op": ">=", "value": 20},
+        ],
+    },
     # Output/reporting knobs.
     "output": {
         "dir": "reports",
@@ -121,7 +131,7 @@ def load_config(path: Optional[str] = None) -> dict[str, Any]:
 def validate_config(cfg: dict[str, Any]) -> list[str]:
     """Return a list of human-readable problems (empty means valid)."""
     problems: list[str] = []
-    valid_strategies = {"graham", "buffett"}
+    valid_strategies = {"graham", "buffett", "custom"}
     strategies = cfg.get("strategies", [])
     if not strategies:
         problems.append("strategies must list at least one strategy")
@@ -129,10 +139,16 @@ def validate_config(cfg: dict[str, Any]) -> list[str]:
         if s not in valid_strategies:
             problems.append(f"unknown strategy: {s!r}")
 
-    for strat in ("graham", "buffett"):
+    for strat in ("graham", "buffett", "custom"):
         pr = cfg.get(strat, {}).get("pass_ratio")
         if pr is not None and not (0.0 < pr <= 1.0):
             problems.append(f"{strat}.pass_ratio must be in (0, 1]")
+
+    # Validate any custom criteria (lazy import avoids a cycle at module load).
+    custom_criteria = cfg.get("custom", {}).get("criteria", [])
+    if custom_criteria:
+        from .criteria.custom import validate_criteria
+        problems.extend(validate_criteria(custom_criteria))
 
     valid_formats = {"json", "csv", "markdown", "html"}
     for fmt in cfg.get("output", {}).get("formats", []):
