@@ -1,5 +1,13 @@
 # Release notes
 
+## v0.3.2 — Reliable prices (Yahoo fallback) (2026-08-20)
+
+Added a Yahoo Finance price source (keyless) as the primary price feed, with
+Stooq as a fallback. Stooq rate-limits shared server IPs, which was leaving
+price, P/E, P/B and the Graham number blank on the hosted app; Yahoo's chart
+endpoint works reliably from servers, so price-based (Graham) screening now
+computes.
+
 ## v0.3.1 — Live-screen production fix (2026-08-20)
 
 The live screen was returning HTML instead of JSON in production. Fixed two

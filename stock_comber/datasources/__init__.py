@@ -3,5 +3,6 @@
 from .cache import FileCache
 from .sec_edgar import SecEdgarSource
 from .stooq import StooqSource
+from .yahoo import YahooSource
 
-__all__ = ["FileCache", "SecEdgarSource", "StooqSource"]
+__all__ = ["FileCache", "SecEdgarSource", "StooqSource", "YahooSource"]

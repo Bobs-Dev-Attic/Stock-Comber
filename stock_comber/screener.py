@@ -6,8 +6,8 @@ import logging
 from typing import Any, Callable, Optional
 
 from .criteria import STRATEGIES
-from .datasources import FileCache, SecEdgarSource, StooqSource
-from .models import Company, ScreenResult
+from .datasources import FileCache, SecEdgarSource, StooqSource, YahooSource
+from .models import Company, Quote, ScreenResult
 
 log = logging.getLogger("stock_comber")
 
@@ -20,6 +20,7 @@ class Screener:
         config: dict[str, Any],
         sec: Optional[SecEdgarSource] = None,
         stooq: Optional[StooqSource] = None,
+        price_sources: Optional[list] = None,
     ) -> None:
         self.config = config
         data = config.get("data", {})
@@ -33,11 +34,36 @@ class Screener:
             timeout=data.get("request_timeout", 30),
             delay=data.get("request_delay_seconds", 0.2),
         )
-        self.stooq = stooq or StooqSource(
-            cache=cache,
-            timeout=data.get("request_timeout", 30),
-            delay=data.get("request_delay_seconds", 0.2),
-        )
+        # Price sources are tried in order until one returns a price. Yahoo is
+        # primary (reliable from server IPs); Stooq is the fallback.
+        timeout = data.get("request_timeout", 30)
+        delay = data.get("request_delay_seconds", 0.2)
+        if price_sources is not None:
+            self.price_sources = price_sources
+        elif stooq is not None:
+            self.price_sources = [stooq]
+        else:
+            self.price_sources = [
+                YahooSource(cache=cache, timeout=timeout, delay=0.0),
+                StooqSource(cache=cache, timeout=timeout, delay=delay),
+            ]
+        # Back-compat alias.
+        self.stooq = stooq or (self.price_sources[-1] if self.price_sources else None)
+
+    def fetch_price(self, ticker: str) -> Quote:
+        """Try each price source in order; return the first quote with a price."""
+        last = Quote(ticker=ticker.upper())
+        for src in self.price_sources:
+            try:
+                quote = src.fetch_quote(ticker)
+            except Exception as exc:
+                log.warning("price source %s failed for %s: %s",
+                            type(src).__name__, ticker, exc)
+                continue
+            if quote and quote.price is not None:
+                return quote
+            last = quote or last
+        return last
 
     # -- universe --------------------------------------------------------
     def resolve_universe(self) -> list[str]:
@@ -66,7 +92,7 @@ class Screener:
         # Price is only needed for price-based strategies (Graham). Fetch it
         # lazily but never let a price failure sink the whole ticker.
         try:
-            company.quote = self.stooq.fetch_quote(ticker)
+            company.quote = self.fetch_price(ticker)
         except Exception as exc:
             log.warning("failed to fetch price for %s: %s", ticker, exc)
 
