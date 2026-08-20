@@ -4,6 +4,21 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.15.0] - 2026-08-20
+
+### Added
+- **Backtest.** A new **Backtest** page (`/backtest.html`) and `GET /api/backtest`
+  replay each value lens across a company's fiscal-year history: for every year
+  it re-evaluates the lens using only the fundamentals known *then* plus that
+  year-end price, and compares its PASS vs. FAIL years to the **following year's**
+  return — surfacing which lens had an "edge" for that name. Includes a
+  per-year diverging bar chart and a ranked lens-edge table. New
+  `stock_comber.backtest` and `YahooSource.fetch_history` (year-end closes).
+  Point-in-time SEC fundamentals + Yahoo prices, one name at a time, no
+  dividends/costs — explicitly educational, not a track record or advice.
+
+[0.15.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.15.0
+
 ## [0.14.0] - 2026-08-20
 
 ### Added

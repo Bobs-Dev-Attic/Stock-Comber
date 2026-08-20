@@ -177,6 +177,7 @@ serverless API — configured in [`vercel.json`](vercel.json).
 | `/api/tickers?q=AAP` | Ticker autocomplete (powers the dashboard search box) |
 | `/analytics.html` · `/api/analytics` | Charts over stored history — runs over time, top passers, sectors, sentiment grades |
 | `/api/signals[?action=BUY,WATCH]` | Plain BUY / WATCH / AVOID signal per recently-analyzed ticker, summarising the six value lenses (shown on History). Educational, not advice |
+| `/backtest.html` · `/api/backtest?ticker=XOM` | Per-ticker signal backtest — did each lens's PASS years precede better forward returns? Point-in-time fundamentals + Yahoo year-end prices. Educational, not a track record |
 
 ### Persistence, Finnhub & the export API (all optional)
 

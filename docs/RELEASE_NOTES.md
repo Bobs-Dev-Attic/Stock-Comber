@@ -1,5 +1,27 @@
 # Release notes
 
+## v0.15.0 — Backtest (2026-08-20)
+
+The second half of the algo-trading thread: a **Backtest** page
+(`/backtest.html`) that asks a simple, honest question — *did each lens's verdict
+precede better returns for this company?*
+
+- For every fiscal year, each lens is re-scored using only the fundamentals
+  known **through that year** plus the year-end price, then compared to the
+  **next year's** return.
+- A ranked table shows each lens's **edge** (average forward return in its PASS
+  years minus its FAIL years), pass hit-rate, and year counts; the best lens is
+  highlighted.
+- A per-year diverging bar chart shows the forward return each year, solid where
+  the lens said PASS and faint where it said FAIL.
+- Deep-linked from the **Analyze** deep-dive (a "🧪 backtest" link) and the
+  dashboard footer. Backed by `GET /api/backtest?ticker=…`.
+
+**Honesty note:** free data means annual fundamentals + Yahoo year-end prices,
+one name at a time, with no dividends, costs, or survivorship control. It's
+directional colour on a signal — **not a research backtest, not a track record,
+and not investment advice.**
+
 ## v0.14.0 — Signals & alerts (2026-08-20)
 
 The six value lenses now roll up into one plain-language call per company:

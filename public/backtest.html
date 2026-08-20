@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stock-Comber · Backtest</title>
+<style>
+  :root { --bg:#f6f7f9; --panel:#fff; --ink:#1a1d23; --muted:#5b6472; --line:#e3e6ea;
+    --accent:#1f7a4d; --chip:#eef1f4; --pos:#0ca30c; --neg:#d03b3b;
+    --shadow:0 1px 3px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.04); }
+  @media (prefers-color-scheme: dark){ :root{ --bg:#0f1115; --panel:#171a20; --ink:#e7e9ee;
+    --muted:#9aa4b2; --line:#262b34; --accent:#34c17f; --chip:#1f242c; --pos:#0ca30c; --neg:#e34948;
+    --shadow:0 1px 3px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);} }
+  *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);
+    font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+  .wrap{max-width:960px;margin:0 auto;padding:2rem 1.2rem 4rem}
+  a{color:var(--accent)} h1{margin:0 0 .2rem;font-size:1.6rem} .sub{color:var(--muted);margin:0 0 1rem}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);
+    padding:1.1rem 1.2rem;margin-top:1.2rem}
+  .card h2{margin:.1rem 0 .3rem;font-size:1.1rem}
+  .row{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center}
+  input{padding:.55rem .6rem;font-size:1rem;border:1px solid var(--line);border-radius:9px;background:var(--bg);color:var(--ink)}
+  .btn{padding:.55rem .9rem;font-size:.95rem;border:1px solid var(--line);border-radius:9px;background:var(--accent);color:#fff;cursor:pointer}
+  .btn.ghost{background:transparent;color:var(--ink)}
+  .status{color:var(--muted);margin-top:.6rem}
+  table{border-collapse:collapse;width:100%} th,td{padding:.5rem .55rem;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+  th{color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.03em}
+  td.r,th.r{text-align:right;font-variant-numeric:tabular-nums}
+  .tablewrap{overflow-x:auto}
+  .pos{color:var(--pos);font-weight:600} .neg{color:var(--neg);font-weight:600}
+  .pill{display:inline-block;background:var(--chip);border-radius:999px;padding:.05rem .5rem;font-size:.8rem}
+  .best{background:color-mix(in srgb,var(--accent) 16%,transparent)}
+  .hint{color:var(--muted);font-size:.85rem}
+  select{padding:.4rem .5rem;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+  .bar{height:16px;border-radius:4px;display:inline-block;vertical-align:middle}
+  .barwrap{display:flex;align-items:center;gap:.5rem}
+  .axis0{border-left:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🧪 Backtest</h1>
+  <p class="sub"><a href="/">← Dashboard</a> · <a href="/analytics.html">📊 Analytics</a> · Did a lens's verdict precede better returns?</p>
+
+  <div class="card">
+    <div class="row">
+      <input id="ticker" type="text" placeholder="Ticker, e.g. XOM" style="flex:1;min-width:180px" autocomplete="off">
+      <button id="run" class="btn">Backtest</button>
+    </div>
+    <div class="status" id="status">Enter a ticker and press Backtest.</div>
+    <p class="hint">For each fiscal year we ask what each value lens would have said using only the fundamentals known <i>then</i> (plus that year-end price), and compare its PASS years vs. FAIL years to the <b>following year's</b> return. SEC fundamentals + Yahoo year-end prices, one name at a time, no dividends or costs — <b>educational, not a track record, not advice</b>.</p>
+  </div>
+
+  <div class="card" id="summary-card" hidden>
+    <h2>Which lens had an edge? <span class="pill" id="subject"></span></h2>
+    <p class="hint">“Edge” = average forward return in the lens's PASS years minus its FAIL years. Higher is better; the top row is highlighted.</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Lens</th><th class="r">Years</th><th class="r">Pass yrs</th>
+        <th class="r">Avg ret · PASS</th><th class="r">Avg ret · FAIL</th><th class="r">Edge</th><th class="r">Pass hit-rate</th></tr></thead>
+      <tbody id="summary"></tbody>
+    </table></div>
+  </div>
+
+  <div class="card" id="detail-card" hidden>
+    <div class="row" style="justify-content:space-between">
+      <h2 style="margin:0">Year by year</h2>
+      <label class="hint">Lens <select id="lens"></select></label>
+    </div>
+    <div id="chart" style="margin:.7rem 0"></div>
+    <div class="tablewrap"><table>
+      <thead><tr><th class="r">FY</th><th class="r">Year-end price</th><th>Verdict</th>
+        <th class="r">Score</th><th class="r">Next-yr price</th><th class="r">Forward return</th></tr></thead>
+      <tbody id="years"></tbody>
+    </table></div>
+  </div>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => (s==null?"":String(s)).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const NS = "http://www.w3.org/2000/svg";
+const LABELS = {graham:"Graham", buffett:"Buffett", piotroski:"Piotroski",
+  greenblatt:"Greenblatt", lynch:"Lynch", netnet:"Net-Net"};
+const pct = v => v==null ? "—" : (v>0?"+":"") + v.toFixed(1) + "%";
+const cls = v => v==null ? "" : (v>=0 ? "pos" : "neg");
+let DATA = null;
+
+function renderSummary(d) {
+  const rows = Object.entries(d.strategies).map(([k,v]) => ({key:k, ...v.summary}));
+  rows.sort((a,b) => (b.edge_pct ?? -1e9) - (a.edge_pct ?? -1e9));
+  $("#subject").textContent = `${d.ticker}${d.name?" · "+d.name:""}`;
+  $("#summary").innerHTML = rows.map((r,i) =>
+    `<tr class="${i===0 && r.edge_pct!=null?'best':''}"><td><b>${LABELS[r.key]||r.key}</b></td>`
+    + `<td class="r">${r.evaluated_years}</td><td class="r">${r.pass_years}</td>`
+    + `<td class="r ${cls(r.avg_forward_return_pass)}">${pct(r.avg_forward_return_pass)}</td>`
+    + `<td class="r ${cls(r.avg_forward_return_fail)}">${pct(r.avg_forward_return_fail)}</td>`
+    + `<td class="r ${cls(r.edge_pct)}">${r.edge_pct==null?"—":pct(r.edge_pct)}</td>`
+    + `<td class="r">${r.pass_hit_rate_pct==null?"—":r.pass_hit_rate_pct.toFixed(0)+"%"}</td></tr>`
+  ).join("");
+  $("#summary-card").hidden = false;
+  // Lens selector defaults to the best-edge lens.
+  const sel = $("#lens");
+  sel.innerHTML = rows.map(r => `<option value="${r.key}">${LABELS[r.key]||r.key}</option>`).join("");
+  sel.value = rows[0].key;
+  renderDetail(rows[0].key);
+}
+
+function chart(years) {
+  const host = $("#chart"); host.innerHTML = "";
+  if (!years.length) { host.innerHTML = `<div class="hint">No overlapping fundamentals + prices to chart.</div>`; return; }
+  const W=880, rowH=26, gap=6, mL=52, mR=60, mT=8, mB=8;
+  const H = mT+mB+years.length*(rowH+gap)-gap;
+  const maxAbs = Math.max(10, ...years.map(y=>Math.abs(y.forward_return_pct)));
+  const mid = mL + (W-mL-mR)/2, half = (W-mL-mR)/2;
+  const svg = document.createElementNS(NS,"svg");
+  svg.setAttribute("viewBox",`0 0 ${W} ${H}`); svg.setAttribute("width","100%");
+  svg.style.height="auto"; svg.style.maxHeight=H+"px"; svg.style.aspectRatio=W+" / "+H;
+  const line = document.createElementNS(NS,"line");
+  line.setAttribute("x1",mid); line.setAttribute("x2",mid); line.setAttribute("y1",mT); line.setAttribute("y2",H-mB);
+  line.setAttribute("stroke","var(--line)"); svg.appendChild(line);
+  years.forEach((y,i)=>{
+    const cy = mT + i*(rowH+gap);
+    const w = Math.max(2, Math.abs(y.forward_return_pct)/maxAbs*half);
+    const x = y.forward_return_pct>=0 ? mid : mid-w;
+    const rect = document.createElementNS(NS,"rect");
+    rect.setAttribute("x",x); rect.setAttribute("y",cy); rect.setAttribute("width",w);
+    rect.setAttribute("height",rowH); rect.setAttribute("rx",4);
+    rect.setAttribute("fill", y.forward_return_pct>=0 ? "var(--pos)" : "var(--neg)");
+    rect.setAttribute("opacity", y.passed ? "1" : "0.45");
+    svg.appendChild(rect);
+    const yr = document.createElementNS(NS,"text");
+    yr.setAttribute("x",mL-8); yr.setAttribute("y",cy+rowH/2+4); yr.setAttribute("text-anchor","end");
+    yr.setAttribute("fill","var(--muted)"); yr.setAttribute("font-size","11"); yr.textContent = y.year;
+    svg.appendChild(yr);
+    const val = document.createElementNS(NS,"text");
+    const vx = y.forward_return_pct>=0 ? x+w+5 : x-5;
+    val.setAttribute("x",vx); val.setAttribute("y",cy+rowH/2+4);
+    val.setAttribute("text-anchor", y.forward_return_pct>=0?"start":"end");
+    val.setAttribute("fill","var(--ink)"); val.setAttribute("font-size","11");
+    val.textContent = (y.passed?"✓ ":"✗ ") + pct(y.forward_return_pct);
+    svg.appendChild(val);
+  });
+  host.appendChild(svg);
+  const leg = document.createElement("div"); leg.className="hint";
+  leg.style.marginTop=".3rem"; leg.innerHTML = "Solid bar = lens said PASS that year · faint = FAIL · length/side = next-year return.";
+  host.appendChild(leg);
+}
+
+function renderDetail(key) {
+  const st = DATA.strategies[key]; const years = (st && st.years) || [];
+  chart(years);
+  $("#years").innerHTML = years.map(y =>
+    `<tr><td class="r">${y.year}</td><td class="r">${y.price}</td>`
+    + `<td>${y.passed==null?'<span class="pill">n/a</span>':y.passed?'<span class="pill" style="background:color-mix(in srgb,var(--pos) 20%,transparent)">PASS</span>':'<span class="pill">fail</span>'}</td>`
+    + `<td class="r">${y.score_pct==null?"—":y.score_pct.toFixed(0)+"%"}</td>`
+    + `<td class="r">${y.next_price}</td>`
+    + `<td class="r ${cls(y.forward_return_pct)}">${pct(y.forward_return_pct)}</td></tr>`
+  ).join("") || `<tr><td colspan="6" class="hint">No overlapping fundamentals + prices for this lens.</td></tr>`;
+  $("#detail-card").hidden = false;
+}
+
+async function run() {
+  const t = $("#ticker").value.trim().toUpperCase();
+  if (!t) { $("#status").textContent = "Enter a ticker."; return; }
+  $("#run").disabled = true; $("#status").textContent = `Backtesting ${t} across the value lenses…`;
+  try {
+    const res = await fetch("/api/backtest?ticker=" + encodeURIComponent(t));
+    const d = await res.json();
+    if (d.error) { $("#status").textContent = "Backtest failed: " + d.error;
+      $("#summary-card").hidden = true; $("#detail-card").hidden = true; return; }
+    DATA = d;
+    const yrs = (d.price_years||[]).length;
+    $("#status").textContent = `${d.ticker}${d.name?" · "+d.name:""} · ${yrs} years of prices.`;
+    renderSummary(d);
+  } catch(e) { $("#status").textContent = "Backtest failed: " + e.message; }
+  finally { $("#run").disabled = false; }
+}
+$("#run").onclick = run;
+$("#ticker").addEventListener("keydown", e => { if (e.key === "Enter") run(); });
+$("#lens").addEventListener("change", e => renderDetail(e.target.value));
+// Deep-link: /backtest.html?ticker=XOM
+const q = new URLSearchParams(location.search).get("ticker");
+if (q) { $("#ticker").value = q.toUpperCase(); run(); }
+</script>
+</body>
+</html>
