@@ -1,0 +1,19 @@
+# Keep Vercel on the classic static + /api serverless-functions model.
+#
+# Vercel CLI 59+ treats a root pyproject.toml as a single-entrypoint Python
+# "backend framework", which conflicts with our two independent /api functions.
+# Hiding the Python packaging files from the Vercel build (they are only needed
+# for local install / CI) restores classic detection: public/ is served
+# statically and each api/*.py is its own serverless function. The functions
+# install their deps from api/requirements.txt and bundle the stock_comber
+# source via the includeFiles glob in vercel.json.
+pyproject.toml
+requirements.txt
+
+# Nothing below is needed at the edge.
+tests/
+docs/
+config/
+stock_comber.egg-info/
+reports/screen-*
+.github/

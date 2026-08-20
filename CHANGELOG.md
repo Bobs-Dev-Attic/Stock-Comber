@@ -4,6 +4,18 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.1] - 2026-08-20
+
+### Fixed
+- **Vercel build failure** ("No python entrypoint found"). Vercel CLI 59+
+  classified the repo as a single-entrypoint Python backend because of the root
+  `pyproject.toml`, which conflicts with our two independent `/api` serverless
+  functions. Added `.vercelignore` to hide the Python packaging files from the
+  Vercel build, restoring the classic static + `/api` functions model. Local
+  install and CI are unaffected (they still use `pyproject.toml`).
+
+[0.2.1]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.2.1
+
 ## [0.2.0] - 2026-08-20
 
 ### Added

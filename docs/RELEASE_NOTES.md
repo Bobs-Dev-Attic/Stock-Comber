@@ -1,5 +1,14 @@
 # Release notes
 
+## v0.2.1 — Vercel build fix (2026-08-20)
+
+Fixes the Vercel deployment so the app actually builds and serves.
+
+- Vercel CLI 59+ mistook the root `pyproject.toml` for a single-entrypoint
+  Python backend and failed with "No python entrypoint found." Added
+  `.vercelignore` to keep Vercel on the classic **static + `/api` serverless
+  functions** model. Local install and CI still use `pyproject.toml` unchanged.
+
 ## v0.2.0 — Deployable web app (2026-08-20)
 
 Stock-Comber is now a deployable web app, not just a CLI.
