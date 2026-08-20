@@ -1,0 +1,40 @@
+name: Analysis queue worker
+
+# Processes tickers users submitted for a full analysis (news + sentiment +
+# full screen). Runs frequently; each run handles a small batch.
+on:
+  schedule:
+    - cron: "*/20 * * * *"   # every 20 minutes
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Max tickers to process this run"
+        required: false
+        default: "5"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: analysis-queue
+  cancel-in-progress: false
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[storage]"
+      - name: Process queue
+        env:
+          LIMIT: ${{ github.event.inputs.limit || '5' }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+        run: |
+          stock-comber --config config/default.yaml --verbose analyze-queue --limit "$LIMIT"

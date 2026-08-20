@@ -113,6 +113,37 @@ class FinnhubSource:
             return None
         return data.get("metric") or data
 
+    def fetch_news(self, ticker: str, days: int = 14, limit: int = 20,
+                   today: Optional[str] = None) -> list[dict]:
+        """Return recent company news [{headline, datetime, url, source, summary}].
+
+        ``today`` is an ISO date (YYYY-MM-DD); when omitted it is computed now.
+        Finnhub's /company-news is available on the free tier for US symbols.
+        """
+        import datetime as _dt
+        end = (_dt.date.fromisoformat(today) if today else _dt.date.today())
+        start = end - _dt.timedelta(days=days)
+        symbol = ticker.upper()
+        try:
+            data = self._get(
+                "/company-news",
+                {"symbol": symbol, "from": start.isoformat(), "to": end.isoformat()},
+                "finnhub_news", f"{symbol}:{start}:{end}")
+        except Exception:
+            return []
+        if not isinstance(data, list):
+            return []
+        out = []
+        for a in data[:limit]:
+            out.append({
+                "headline": a.get("headline"),
+                "datetime": a.get("datetime"),
+                "url": a.get("url"),
+                "source": a.get("source"),
+                "summary": (a.get("summary") or "")[:280],
+            })
+        return out
+
     def fetch_profile(self, ticker: str, with_volume: bool = False) -> Optional[dict]:
         """Return {market_cap, sector, country, exchange, name, avg_volume}.
 

@@ -47,6 +47,10 @@ def _build_parser() -> argparse.ArgumentParser:
 
     psch = sub.add_parser("schedule", help="Run the screen on a recurring local schedule.")
     psch.add_argument("--once", action="store_true", help="Run one cycle then exit.")
+
+    paq = sub.add_parser("analyze-queue",
+                         help="Process queued tickers with a full analysis (news + sentiment).")
+    paq.add_argument("--limit", type=int, default=5, help="Max tickers to process.")
     return p
 
 
@@ -141,12 +145,32 @@ def cmd_schedule(args) -> int:
     return run_schedule(cfg, once=args.once)
 
 
+def cmd_analyze_queue(args) -> int:
+    from .analysis import process_queue
+    from .storage import get_storage
+    cfg = _load(args)
+    store = get_storage(cfg)
+    if not getattr(store, "enabled", False):
+        print("No database configured (set DATABASE_URL); nothing to process.",
+              file=sys.stderr)
+        return 0
+    summary = process_queue(cfg, store, limit=args.limit)
+    print(f"Processed {summary.get('processed', 0)} queued ticker(s).")
+    for item in summary.get("tickers", []):
+        if "error" in item:
+            print(f"  {item['ticker']}: error — {item['error']}")
+        else:
+            print(f"  {item['ticker']}: analysed → run #{item['run_id']}")
+    return 0
+
+
 COMMANDS = {
     "screen": cmd_screen,
     "config": cmd_config,
     "validate": cmd_validate,
     "tickers": cmd_tickers,
     "schedule": cmd_schedule,
+    "analyze-queue": cmd_analyze_queue,
 }
 
 

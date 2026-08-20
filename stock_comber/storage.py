@@ -87,6 +87,15 @@ CREATE TABLE IF NOT EXISTS searches (
     passing_count INTEGER
 );
 CREATE INDEX IF NOT EXISTS idx_searches_created ON searches(created_at DESC);
+CREATE TABLE IF NOT EXISTS analysis_queue (
+    ticker       TEXT PRIMARY KEY,
+    status       TEXT NOT NULL DEFAULT 'pending',  -- pending|processing|done|error
+    requested_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    updated_at   TIMESTAMPTZ NOT NULL DEFAULT now(),
+    run_id       BIGINT,
+    note         TEXT
+);
+CREATE INDEX IF NOT EXISTS idx_queue_status ON analysis_queue(status, requested_at);
 """
 
 
@@ -155,6 +164,18 @@ class NullStorage:
 
     def list_searches(self, limit: int = 25) -> list[dict]:
         return []
+
+    def enqueue(self, tickers) -> int:
+        return 0
+
+    def list_queue(self, limit: int = 50) -> list[dict]:
+        return []
+
+    def pop_pending(self, limit: int = 5) -> list[str]:
+        return []
+
+    def mark_queue(self, ticker, status, run_id=None, note=None) -> None:
+        return None
 
 
 class PostgresStorage:
@@ -368,6 +389,64 @@ class PostgresStorage:
                     d["created_at"] = d["created_at"].isoformat()
                     out.append(d)
                 return out
+
+    # -- analysis queue --------------------------------------------------
+    def enqueue(self, tickers) -> int:
+        rows = [(t.upper(),) for t in tickers if t]
+        if not rows:
+            return 0
+        with self._connect() as conn:
+            self._ensure_schema(conn)
+            with conn.cursor() as cur:
+                cur.executemany(
+                    "INSERT INTO analysis_queue (ticker, status, requested_at, "
+                    "updated_at) VALUES (%s, 'pending', now(), now()) "
+                    "ON CONFLICT (ticker) DO UPDATE SET status='pending', "
+                    "requested_at=now(), updated_at=now() "
+                    "WHERE analysis_queue.status <> 'processing'", rows)
+            conn.commit()
+        return len(rows)
+
+    def list_queue(self, limit: int = 50) -> list[dict]:
+        with self._connect() as conn:
+            self._ensure_schema(conn)
+            with conn.cursor() as cur:
+                cur.execute(
+                    "SELECT ticker, status, requested_at, updated_at, run_id, note "
+                    "FROM analysis_queue ORDER BY requested_at DESC LIMIT %s",
+                    (limit,))
+                cols = ["ticker", "status", "requested_at", "updated_at",
+                        "run_id", "note"]
+                out = []
+                for r in cur.fetchall():
+                    d = dict(zip(cols, r))
+                    d["requested_at"] = d["requested_at"].isoformat()
+                    d["updated_at"] = d["updated_at"].isoformat()
+                    out.append(d)
+                return out
+
+    def pop_pending(self, limit: int = 5) -> list[str]:
+        with self._connect() as conn:
+            self._ensure_schema(conn)
+            with conn.cursor() as cur:
+                cur.execute(
+                    "UPDATE analysis_queue SET status='processing', updated_at=now() "
+                    "WHERE ticker IN (SELECT ticker FROM analysis_queue "
+                    "WHERE status='pending' ORDER BY requested_at LIMIT %s) "
+                    "RETURNING ticker", (limit,))
+                tickers = [r[0] for r in cur.fetchall()]
+            conn.commit()
+        return tickers
+
+    def mark_queue(self, ticker, status, run_id=None, note=None) -> None:
+        with self._connect() as conn:
+            self._ensure_schema(conn)
+            with conn.cursor() as cur:
+                cur.execute(
+                    "UPDATE analysis_queue SET status=%s, run_id=%s, note=%s, "
+                    "updated_at=now() WHERE ticker=%s",
+                    (status, run_id, note, ticker.upper()))
+            conn.commit()
 
 
 def resolve_dsn(config: Optional[dict] = None) -> Optional[str]:

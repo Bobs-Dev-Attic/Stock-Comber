@@ -431,11 +431,28 @@ async function runLive() {
   try {
     const res = await fetch("/api/screen?" + params.toString()); const data = await res.json();
     if (data.error && !(data.results||[]).length) $("#status").textContent = "Error: " + data.error;
-    else setRows(data, "Live screen");
+    else {
+      setRows(data, "Live screen");
+      enqueueForAnalysis(raw);  // queue these tickers for a deeper analysis
+    }
   } catch (e) { $("#status").textContent = "Live screen failed: " + e.message; }
   finally { $("#run").disabled = false; }
 }
 $("#run").onclick = runLive;
+
+/* queue searched tickers for a deeper (news + sentiment) analysis */
+async function enqueueForAnalysis(raw) {
+  const tickers = raw.split(",").map(t => t.trim().toUpperCase()).filter(Boolean);
+  if (!tickers.length) return;
+  try {
+    const r = await fetch("/api/queue", {method: "POST",
+      headers: {"Content-Type": "application/json"}, body: JSON.stringify({tickers})});
+    if (r.ok) {
+      const d = await r.json();
+      if (d.queued) $("#status").textContent += ` · queued ${d.queued} for full analysis`;
+    }
+  } catch (e) { /* best-effort; ignore */ }
+}
 
 /* ---- ticker autocomplete ---- */
 const acBox = $("#ac"); const tickersInput = $("#tickers");

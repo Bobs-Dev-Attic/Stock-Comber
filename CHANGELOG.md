@@ -4,6 +4,28 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.7.0] - 2026-08-20
+
+### Added
+- **Analysis queue.** Tickers a user screens are enqueued (`analysis_queue`
+  table, `POST /api/queue`) and processed out-of-band by a new
+  `analyze` GitHub Actions worker (every ~20 min) that runs a full analysis:
+  all strategies, Finnhub metric enrichment, and recent **news + a sentiment
+  grade**. Each processed ticker is stored as its own run. CLI:
+  `stock-comber analyze-queue`. Queue status shows on the History page.
+- **News & sentiment.** `FinnhubSource.fetch_news` pulls recent company news
+  (free tier); `stock_comber/sentiment.py` scores headlines with a transparent
+  finance lexicon into an A–F **sentiment grade** (no paid API, no ML dep),
+  stored alongside the analysis.
+- `GET /api/queue` (view) / `POST /api/queue` (enqueue, capped + de-duplicated).
+
+### Notes
+- Dataroma-style superinvestor ownership is a useful gem signal but has no free
+  official API (scraping is fragile / against ToS); SEC 13F filings are the
+  free, official alternative and a candidate for a future enrichment.
+
+[0.7.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.7.0
+
 ## [0.6.0] - 2026-08-20
 
 ### Added
