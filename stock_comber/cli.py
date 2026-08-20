@@ -54,6 +54,10 @@ def _build_parser() -> argparse.ArgumentParser:
                          help="Process queued tickers with a full analysis (news + sentiment).")
     paq.add_argument("--limit", type=int, default=5, help="Max tickers to process.")
     paq.add_argument("--seed", help="Comma-separated tickers to enqueue first (analyse on demand).")
+
+    pct = sub.add_parser("check-theses",
+                         help="Re-check stored investment theses against fresh metrics.")
+    pct.add_argument("--limit", type=int, default=100, help="Max theses to check.")
     return p
 
 
@@ -174,6 +178,28 @@ def cmd_analyze_queue(args) -> int:
     return 0
 
 
+def cmd_check_theses(args) -> int:
+    from .thesis import check_theses
+    from .storage import get_storage
+    cfg = _load(args)
+    store = get_storage(cfg)
+    if not getattr(store, "enabled", False):
+        print("No database configured (set DATABASE_URL); no theses to check.",
+              file=sys.stderr)
+        return 0
+    screener = Screener(cfg)
+    screener.store = store
+    summary = check_theses(store, screener, limit=args.limit)
+    print(f"Checked {summary.get('checked', 0)} thesis(es).")
+    for item in summary.get("theses", []):
+        if "error" in item:
+            print(f"  #{item['id']} {item['ticker']}: error — {item['error']}")
+        else:
+            flag = " ← changed" if item.get("changed") else ""
+            print(f"  #{item['id']} {item['ticker']}: {item['status']}{flag}")
+    return 0
+
+
 COMMANDS = {
     "screen": cmd_screen,
     "config": cmd_config,
@@ -181,6 +207,7 @@ COMMANDS = {
     "tickers": cmd_tickers,
     "schedule": cmd_schedule,
     "analyze-queue": cmd_analyze_queue,
+    "check-theses": cmd_check_theses,
 }
 
 

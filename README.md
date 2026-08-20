@@ -178,6 +178,7 @@ serverless API — configured in [`vercel.json`](vercel.json).
 | `/analytics.html` · `/api/analytics` | Charts over stored history — runs over time, top passers, sectors, sentiment grades |
 | `/api/signals[?action=BUY,WATCH]` | Plain BUY / WATCH / AVOID signal per recently-analyzed ticker, summarising the six value lenses (shown on History). Educational, not advice |
 | `/backtest.html` · `/api/backtest?ticker=XOM` | Per-ticker signal backtest — did each lens's PASS years precede better forward returns? Point-in-time fundamentals + Yahoo year-end prices. Educational, not a track record |
+| `/thesis.html` · `/api/thesis` | **Investment thesis tracker** — write why you'd buy as measurable conditions; the nightly job re-checks and flags **intact / weakening / broken** with per-condition drift from the baseline. `POST`/`DELETE` need `STOCK_COMBER_API_KEY` |
 
 ### Persistence, Finnhub & the export API (all optional)
 

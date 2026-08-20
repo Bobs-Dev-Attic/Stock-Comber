@@ -233,7 +233,7 @@
 
   <p class="foot">
     Educational tool only — not investment advice. Data from SEC EDGAR, Yahoo &amp; Stooq may be delayed or incomplete.<br>
-    <a href="/history.html">🕓 History</a> · <a href="/analytics.html">📊 Analytics</a> · <a href="/backtest.html">🧪 Backtest</a> · <a href="/settings.html">⚙️ Settings</a> ·
+    <a href="/history.html">🕓 History</a> · <a href="/analytics.html">📊 Analytics</a> · <a href="/backtest.html">🧪 Backtest</a> · <a href="/thesis.html">🎯 Theses</a> · <a href="/settings.html">⚙️ Settings</a> ·
     API: <code>/api/latest</code> · <code>/api/screen</code> · <code>/api/analyze</code> · <code>/api/universe</code> · <code>/api/export</code> · <code>/api/runs</code> ·
     <a href="https://github.com/Bobs-Dev-Attic/Stock-Comber">source</a>
   </p>
@@ -738,7 +738,8 @@ function openAnalysis(data) {
     `<h2>${data.ticker} <span class="badge ${data.passing?'pass':anyEvaluated?'near':'warn'}">`+
     `${data.passing?data.passing+' passing':anyEvaluated?'no pass':'not analyzed'}</span></h2>`+
     `<div class="sub">${first.name||""} · full analysis${data.run_id?` · stored as run #${data.run_id}`:""}`+
-    ` · <a href="/backtest.html?ticker=${encodeURIComponent(data.ticker)}" target="_blank" rel="noopener">🧪 backtest ↗</a></div>`+
+    ` · <a href="/backtest.html?ticker=${encodeURIComponent(data.ticker)}" target="_blank" rel="noopener">🧪 backtest ↗</a>`+
+    ` · <a href="/thesis.html?ticker=${encodeURIComponent(data.ticker)}" target="_blank" rel="noopener">🎯 track thesis ↗</a></div>`+
     snapshotHtml(data.profile)+
     signalHtml+
     `<div class="sec-h">Scores</div>${scoresHtml(data.scores)}`+

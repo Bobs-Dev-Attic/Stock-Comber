@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stock-Comber · Thesis Tracker</title>
+<style>
+  :root { --bg:#f6f7f9; --panel:#fff; --ink:#1a1d23; --muted:#5b6472; --line:#e3e6ea;
+    --accent:#1f7a4d; --chip:#eef1f4; --shadow:0 1px 3px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.04);
+    --ok:#0ca30c; --warn:#c98500; --bad:#b3542a; }
+  @media (prefers-color-scheme: dark){ :root{ --bg:#0f1115; --panel:#171a20; --ink:#e7e9ee;
+    --muted:#9aa4b2; --line:#262b34; --accent:#34c17f; --chip:#1f242c;
+    --ok:#34c17f; --warn:#eda100; --bad:#e0966a;
+    --shadow:0 1px 3px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);} }
+  *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);
+    font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+  .wrap{max-width:900px;margin:0 auto;padding:2rem 1.2rem 5rem}
+  a{color:var(--accent)} h1{margin:0 0 .2rem;font-size:1.6rem} .sub{color:var(--muted);margin:0 0 1rem}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);
+    padding:1.1rem 1.2rem;margin-top:1.2rem}
+  .card h2{margin:.1rem 0 .6rem;font-size:1.1rem}
+  label{font-size:.82rem;color:var(--muted)}
+  input,select,textarea{padding:.5rem .55rem;font-size:.95rem;border:1px solid var(--line);border-radius:8px;
+    background:var(--bg);color:var(--ink);font-family:inherit}
+  textarea{width:100%;min-height:3rem;resize:vertical}
+  .row{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;margin-top:.5rem}
+  .btn{border:0;background:var(--accent);color:#fff;padding:.55rem 1rem;border-radius:9px;font-size:.95rem;cursor:pointer;font-weight:600}
+  .btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--line);font-weight:500;padding:.45rem .8rem;font-size:.9rem}
+  .btn.danger{background:transparent;color:var(--bad);border:1px solid var(--line);font-weight:500;padding:.35rem .7rem;font-size:.85rem}
+  .status{margin-top:.7rem;color:var(--muted);min-height:1.2em}
+  .cond{display:flex;gap:.4rem;flex-wrap:wrap;align-items:center;margin-top:.4rem}
+  .cond .rm{border:0;background:transparent;color:var(--bad);cursor:pointer;font-size:1.2rem}
+  .pill{display:inline-block;border-radius:999px;padding:.15rem .6rem;font-size:.8rem;font-weight:700}
+  .pill.intact{background:color-mix(in srgb,var(--ok) 16%,transparent);color:var(--ok)}
+  .pill.weakening{background:color-mix(in srgb,var(--warn) 20%,transparent);color:var(--warn)}
+  .pill.broken{background:color-mix(in srgb,var(--bad) 16%,transparent);color:var(--bad)}
+  .th{border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem;margin-top:.9rem}
+  .th .head{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
+  .th .tk{font-weight:800;font-size:1.05rem}
+  .th .note{color:var(--muted);margin:.4rem 0 .2rem;font-style:italic}
+  .tablewrap{overflow-x:auto;margin-top:.5rem}
+  table{border-collapse:collapse;width:100%;font-size:.9rem} th,td{padding:.35rem .5rem;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+  th{color:var(--muted);font-size:.75rem;text-transform:uppercase;letter-spacing:.03em}
+  td.r,th.r{text-align:right;font-variant-numeric:tabular-nums}
+  .ok{color:var(--ok)} .no{color:var(--bad)}
+  .hint{color:var(--muted);font-size:.85rem}
+  code{background:var(--chip);padding:.1rem .35rem;border-radius:5px}
+  .spacer{flex:1}
+  @media (max-width:640px){ .wrap{padding:1.2rem .8rem 4rem} h1{font-size:1.35rem}
+    .card,.th{padding:.9rem .85rem} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🎯 Thesis Tracker</h1>
+  <p class="sub"><a href="/">← Dashboard</a> · Write <em>why</em> you'd buy a stock as measurable conditions; we watch the fundamentals and flag when the thesis breaks.</p>
+
+  <div class="card">
+    <h2>New thesis</h2>
+    <div class="row">
+      <div style="display:flex;flex-direction:column;gap:.2rem">
+        <label for="ticker">Ticker</label>
+        <input id="ticker" style="width:120px" placeholder="AAPL" autocomplete="off">
+      </div>
+      <div style="flex:1;min-width:220px;display:flex;flex-direction:column;gap:.2rem">
+        <label for="note">Why you'd buy (free text)</label>
+        <textarea id="note" placeholder="e.g. Cloud revenue growing ~25%/yr and margins expanding; conservative balance sheet."></textarea>
+      </div>
+    </div>
+    <label style="display:block;margin-top:.7rem">Conditions that must hold</label>
+    <div id="conds"></div>
+    <div class="row">
+      <button class="btn ghost" id="add-cond">+ Add condition</button>
+      <div class="spacer"></div>
+      <input id="key" type="password" placeholder="STOCK_COMBER_API_KEY" style="width:220px">
+      <button class="btn" id="save">Track this thesis</button>
+    </div>
+    <div class="hint" style="margin-top:.4rem">Creating snapshots today's metrics as the <b>baseline</b>; the nightly job re-checks and updates the status. Saving needs the API key (same one as Settings/Export).</div>
+    <div class="status" id="status"></div>
+  </div>
+
+  <div class="card">
+    <h2>Tracked theses</h2>
+    <div id="list"><div class="hint">Loading…</div></div>
+  </div>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => (s==null?"":String(s)).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const METRICS=["pe_ratio","pb_ratio","roe_pct","roa_pct","return_on_capital_pct","net_margin_pct",
+  "current_ratio","debt_to_equity","long_term_debt_to_equity","graham_number","free_cash_flow","eps",
+  "book_value_per_share","revenue","net_income","working_capital","price","earnings_yield_pct",
+  "ncav_per_share","earnings_cagr_5y_pct","earnings_growth_5y_pct","revenue_growth_5y_pct"];
+const OPS=[">=",">","<=","<","==","!="];
+const fmt = v => (v==null||v===""||Number.isNaN(Number(v))) ? "—" :
+  (Math.abs(v)>=1e9?(v/1e9).toFixed(2)+"B":Math.abs(v)>=1e6?(v/1e6).toFixed(1)+"M":Math.abs(v)>=100?Number(v).toFixed(0):Number(v).toFixed(2));
+
+function addCond(metric="revenue_growth_5y_pct", op=">=", value=""){
+  const wrap=document.createElement("div"); wrap.className="cond";
+  const m=document.createElement("select"); m.className="metric";
+  METRICS.forEach(k=>{const o=document.createElement("option");o.value=k;o.textContent=k;if(k===metric)o.selected=true;m.appendChild(o);});
+  const o=document.createElement("select");
+  OPS.forEach(x=>{const e=document.createElement("option");e.value=x;e.textContent=x;if(x===op)e.selected=true;o.appendChild(e);});
+  const v=document.createElement("input"); v.type="number"; v.step="any"; v.placeholder="value"; v.value=value; v.style.width="120px";
+  const rm=document.createElement("button"); rm.className="rm"; rm.textContent="×"; rm.title="remove"; rm.onclick=()=>wrap.remove();
+  wrap.append(m,o,v,rm); $("#conds").appendChild(wrap);
+}
+function readConds(){ const out=[];
+  document.querySelectorAll("#conds .cond").forEach(r=>{
+    const metric=r.querySelector("select.metric").value, op=r.querySelectorAll("select")[1].value, value=r.querySelector("input").value;
+    if(value!==""&&!Number.isNaN(Number(value))) out.push({metric,op,value:Number(value)});
+  }); return out; }
+
+function condTable(th){
+  const checks = th.last_checks || th.conditions.map(c=>({...c, actual:null, passed:null, baseline:(th.baseline||{})[c.metric], drift:null}));
+  const rows = checks.map(c=>{
+    const pass = c.passed===true?`<span class="ok">✔</span>`:c.passed===false?`<span class="no">✕</span>`:"—";
+    const drift = c.drift==null?"—":(c.drift>0?"+":"")+fmt(c.drift);
+    return `<tr><td>${pass}</td><td>${esc(c.metric)}</td><td>${esc(c.op)} ${esc(c.value)}</td>`+
+      `<td class="r">${fmt(c.actual)}</td><td class="r">${fmt(c.baseline)}</td><td class="r">${drift}</td></tr>`;
+  }).join("");
+  return `<div class="tablewrap"><table><thead><tr><th></th><th>Metric</th><th>Condition</th>`+
+    `<th class="r">Now</th><th class="r">Baseline</th><th class="r">Drift</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+}
+function render(theses){
+  const host=$("#list");
+  if(!theses.length){ host.innerHTML=`<div class="hint">No theses yet — write one above.</div>`; return; }
+  host.innerHTML = theses.map(th=>{
+    const st=(th.status||"intact");
+    const when = th.checked_at ? new Date(th.checked_at).toLocaleString() : "—";
+    return `<div class="th"><div class="head">`+
+      `<span class="tk">${esc(th.ticker)}</span>`+
+      `<span class="pill ${st}">${st}</span>`+
+      `<span class="hint">checked ${esc(when)}</span>`+
+      `<span class="spacer"></span>`+
+      `<button class="btn danger" data-del="${th.id}">Delete</button></div>`+
+      (th.note?`<div class="note">“${esc(th.note)}”</div>`:"")+
+      condTable(th)+`</div>`;
+  }).join("");
+  host.querySelectorAll("[data-del]").forEach(b=>b.onclick=()=>del(b.dataset.del));
+}
+
+async function load(){
+  try{ const r=await fetch("/api/thesis"); const d=await r.json();
+    if(d.storage_enabled===false){ $("#list").innerHTML=`<div class="hint">No database configured — set <code>DATABASE_URL</code> to store theses.</div>`; return; }
+    render(d.theses||[]);
+  }catch(e){ $("#list").innerHTML=`<div class="hint">Failed to load: ${esc(e.message)}</div>`; }
+}
+async function save(){
+  const ticker=$("#ticker").value.trim().toUpperCase();
+  const conditions=readConds();
+  const key=$("#key").value.trim();
+  if(!ticker){ $("#status").textContent="Enter a ticker."; return; }
+  if(!conditions.length){ $("#status").textContent="Add at least one condition."; return; }
+  if(!key){ $("#status").textContent="Enter the API key to save."; return; }
+  sessionStorage.setItem("sc_key",key);
+  $("#save").disabled=true; $("#status").textContent=`Snapshotting ${ticker}…`;
+  try{
+    const r=await fetch("/api/thesis?key="+encodeURIComponent(key),{method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({ticker,note:$("#note").value.trim(),conditions})});
+    const d=await r.json();
+    if(!r.ok){ $("#status").textContent="Error: "+(d.error||r.status)+(d.problems?" — "+d.problems.join("; "):""); }
+    else { $("#status").textContent=`Tracking ${d.ticker} — thesis ${d.status}.`; $("#note").value=""; load(); }
+  }catch(e){ $("#status").textContent="Save failed: "+e.message; }
+  finally{ $("#save").disabled=false; }
+}
+async function del(id){
+  const key=$("#key").value.trim()||sessionStorage.getItem("sc_key")||"";
+  if(!key){ $("#status").textContent="Enter the API key to delete."; return; }
+  try{ const r=await fetch("/api/thesis?id="+encodeURIComponent(id)+"&key="+encodeURIComponent(key),{method:"DELETE"});
+    if(r.ok) load(); else { const d=await r.json(); $("#status").textContent="Delete failed: "+(d.error||r.status); }
+  }catch(e){ $("#status").textContent="Delete failed: "+e.message; }
+}
+$("#add-cond").onclick=()=>addCond();
+$("#save").onclick=save;
+
+/* init: prefill ticker from ?ticker=, restore key, seed one condition */
+const q=new URLSearchParams(location.search);
+if(q.get("ticker")) $("#ticker").value=q.get("ticker").toUpperCase();
+$("#key").value=sessionStorage.getItem("sc_key")||"";
+addCond();
+load();
+</script>
+</body>
+</html>

@@ -54,6 +54,12 @@ jobs:
             stock-comber --config config/default.yaml --verbose screen --nightly
           fi
 
+      - name: Re-check investment theses
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+        run: stock-comber --config config/default.yaml --verbose check-theses
+
       - name: Publish latest report to the dashboard
         run: |
           mkdir -p public/data
