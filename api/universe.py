@@ -1,0 +1,105 @@
+"""Vercel serverless function: index universe templates.
+
+  GET /api/universe                         -> available templates
+  GET /api/universe?index=sp500&sector=...  -> a filtered slice of an index
+
+Returns constituents of a bundled index template (Dow 30 / Nasdaq-100 / S&P 500)
+filtered by sector, industry, market-cap band and volume, ranked by market cap.
+Market cap / volume come from the stored universe catalog (Finnhub-enriched)
+when available; sector + industry come from the bundled snapshot. Read-only,
+no secrets.
+"""
+
+from http.server import BaseHTTPRequestHandler
+from urllib.parse import urlparse, parse_qs
+import json
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from stock_comber.indices import INDEXES, index_rows, SNAPSHOT_DATE  # noqa: E402
+from stock_comber.storage import get_storage  # noqa: E402
+
+MAX_LIMIT = 30
+
+
+def _num(params, key):
+    try:
+        v = params.get(key, [""])[0]
+        return float(v) if v not in ("", None) else None
+    except (ValueError, TypeError):
+        return None
+
+
+def build_slice(params) -> dict:
+    index = (params.get("index", [""])[0] or "").lower()
+    if not index or index not in INDEXES:
+        return {"templates": [{"key": k, "name": v["name"], "count": len(v["tickers"])}
+                              for k, v in INDEXES.items()],
+                "snapshot_date": SNAPSHOT_DATE}
+
+    sector = (params.get("sector", [""])[0] or "").strip()
+    industry = (params.get("industry", [""])[0] or "").strip()
+    mc_min, mc_max = _num(params, "market_cap_min"), _num(params, "market_cap_max")
+    vol_min = _num(params, "min_avg_volume")
+    try:
+        limit = min(MAX_LIMIT, max(1, int(params.get("limit", ["10"])[0])))
+    except (ValueError, TypeError):
+        limit = 10
+
+    # Enrichment (market cap / volume) from the stored catalog, if any.
+    catalog = {}
+    store = get_storage()
+    if getattr(store, "enabled", False):
+        try:
+            catalog = {r["ticker"]: r for r in store.get_universe()}
+        except Exception:
+            catalog = {}
+
+    rows = []
+    for ticker, gics_sector, gics_industry in index_rows(index):
+        cat = catalog.get(ticker, {})
+        mc = cat.get("market_cap")
+        vol = cat.get("avg_volume")
+        sec = cat.get("sector") or gics_sector
+        if sector and sec != sector:
+            continue
+        if industry and gics_industry != industry:
+            continue
+        if mc is not None and mc_min is not None and mc < mc_min:
+            continue
+        if mc is not None and mc_max is not None and mc > mc_max:
+            continue
+        if vol is not None and vol_min is not None and vol < vol_min:
+            continue
+        rows.append({"ticker": ticker, "sector": sec, "industry": gics_industry,
+                     "market_cap": mc, "avg_volume": vol})
+
+    # Rank by market cap desc; unknown caps sort last but stay included.
+    rows.sort(key=lambda r: (r["market_cap"] is None, -(r["market_cap"] or 0), r["ticker"]))
+    return {
+        "index": index, "name": INDEXES[index]["name"],
+        "snapshot_date": SNAPSHOT_DATE,
+        "total": len(rows), "count": min(limit, len(rows)),
+        "results": rows[:limit],
+        "sectors": sorted({r["sector"] for r in rows if r["sector"]}),
+    }
+
+
+class handler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        params = parse_qs(urlparse(self.path).query)
+        try:
+            self._send(200, build_slice(params))
+        except Exception as exc:
+            self._send(502, {"error": f"universe failed: {exc}"})
+
+    def _send(self, code, obj):
+        body = json.dumps(obj, default=str).encode("utf-8")
+        self.send_response(code)
+        self.send_header("Content-Type", "application/json; charset=utf-8")
+        self.send_header("Access-Control-Allow-Origin", "*")
+        self.send_header("Cache-Control", "public, max-age=300")
+        self.end_headers()
+        self.wfile.write(body)

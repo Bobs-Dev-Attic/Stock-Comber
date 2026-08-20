@@ -4,6 +4,23 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.17.0] - 2026-08-20
+
+### Added
+- **Index universe templates.** Screen the **Dow 30**, **Nasdaq-100** or
+  **S&P 500** as a universe, filtered by market-cap band, volume, **sector** and
+  **industry** (GICS sub-industry). Constituents ship as dated snapshots
+  (`stock_comber/indices.py`).
+  - **Nightly job:** set `universe.index` (+ the new `universe.nightly.industries`
+    filter) in Settings; the capped, sector-diversified, rotating engine then
+    draws from that index for full coverage over successive nights.
+  - **Dashboard:** a **Templates** menu loads a filtered top-by-market-cap slice
+    into the search box for a live side-by-side compare.
+  - New read-only `GET /api/universe` returns the templates and filtered slices;
+    the industry filter is honoured by `universe._passes`.
+
+[0.17.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.17.0
+
 ## [0.16.0] - 2026-08-20
 
 ### Added

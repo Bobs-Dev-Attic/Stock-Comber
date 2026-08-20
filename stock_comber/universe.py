@@ -58,6 +58,10 @@ def _passes(row: dict, n: dict) -> bool:
 
     if row.get("sector") in (n.get("exclude_sectors") or []):
         return False
+
+    industries = n.get("industries") or []
+    if industries and row.get("industry") not in industries:
+        return False
     return True
 
 
@@ -87,10 +91,21 @@ def _diversify(order: list[str], meta: dict, cap: int, n: dict) -> list[str]:
 def _candidates(config: dict, store) -> tuple[list[str], dict]:
     u = config.get("universe", {})
     meta: dict[str, dict] = {}
-    # Seed hints first.
-    for t, sector, region in SEED_UNIVERSE:
-        meta[t] = {"ticker": t, "sector": sector, "country": region}
-    cands = list(seed_tickers())
+    cands: list[str] = []
+    # An index template (Dow / Nasdaq-100 / S&P 500), when chosen, is the seed
+    # universe — its constituents carry sector + industry hints. Otherwise use
+    # the curated diversified seed list.
+    index = (u.get("index") or "").lower()
+    if index:
+        from .indices import index_rows
+        for t, sector, industry in index_rows(index):
+            meta[t] = {"ticker": t, "sector": sector or None,
+                       "industry": industry or None, "country": "US"}
+            cands.append(t)
+    else:
+        for t, sector, region in SEED_UNIVERSE:
+            meta[t] = {"ticker": t, "sector": sector, "country": region}
+        cands = list(seed_tickers())
     for t in u.get("extra_tickers", []) or []:
         cands.append(str(t).upper())
     if store is not None and getattr(store, "enabled", False):

@@ -1,5 +1,20 @@
 # Release notes
 
+## v0.17.0 — Index universe templates (2026-08-20)
+
+Screen a whole index — the **Dow 30**, **Nasdaq-100**, or **S&P 500** — filtered
+by market-cap band, volume, **sector** and **industry**:
+
+- **Templates menu** on the dashboard: pick an index and (optionally) a sector,
+  and it loads the top-by-market-cap slice into the search box for a live
+  side-by-side compare.
+- **Nightly job:** choose an **Index template** in Settings (plus the new
+  *Only industries* filter). The nightly "hidden gems" engine then draws its
+  capped, sector-diversified, rotating pick from that index — so the full index
+  is covered across successive nights.
+- Backed by a new read-only `GET /api/universe`. Constituents are periodic
+  snapshots bundled with the app (educational, not a live index feed).
+
 ## v0.16.0 — Store your Finnhub key from Settings (2026-08-20)
 
 The Settings page now has a **key-entry field** that saves your **Finnhub API
