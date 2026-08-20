@@ -4,6 +4,20 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.2] - 2026-08-20
+
+### Fixed
+- **Finnhub free-tier rate limiting (429s).** The first nightly run made ~200
+  Finnhub calls and hit the ~60/min limit. Now Finnhub's budget is reserved for
+  universe enrichment: it's dropped to **last** in the price chain (Yahoo/Stooq
+  cover prices), per-ticker metric enrichment is **off by default**
+  (`data.finnhub_enrich_results`), `fetch_profile` is a **single call** (volume
+  is opt-in), calls are **throttled** (`data.finnhub_min_interval`, ~1.1s), and a
+  circuit breaker stops calling Finnhub after repeated 429s in a run. A nightly
+  run now uses ~1 Finnhub call per enriched name, within the free tier.
+
+[0.5.2]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.5.2
+
 ## [0.5.1] - 2026-08-20
 
 ### Added
