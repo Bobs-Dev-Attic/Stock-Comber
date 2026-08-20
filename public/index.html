@@ -67,6 +67,18 @@
   .badge.pass { background: var(--pass-bg); color: var(--pass-ink); }
   .badge.near { background: var(--chip); color: var(--near); }
   .badge.warn { background: color-mix(in srgb, var(--fail-ink) 16%, transparent); color: var(--fail-ink); }
+  /* Signal banner (educational summary, not advice) */
+  .signal { display: flex; align-items: center; gap: .7rem; padding: .7rem .8rem; border-radius: 10px;
+    border: 1px solid var(--line); margin: .2rem 0 .4rem; }
+  .signal .act { font-weight: 800; font-size: 1rem; letter-spacing: .02em; padding: .15rem .55rem; border-radius: 8px; }
+  .signal .rz { color: var(--muted); font-size: .85rem; }
+  .signal.buy { background: color-mix(in srgb, #0ca30c 12%, transparent); }
+  .signal.buy .act { background: #0ca30c; color: #fff; }
+  .signal.watch { background: color-mix(in srgb, #eda100 16%, transparent); }
+  .signal.watch .act { background: #eda100; color: #1a1a19; }
+  .signal.avoid { background: color-mix(in srgb, var(--fail-ink) 12%, transparent); }
+  .signal.avoid .act { background: var(--fail-ink); color: #fff; }
+  .signal.na .act { background: var(--chip); color: var(--muted); }
   .bar { height: 7px; width: 70px; background: var(--chip); border-radius: 999px; overflow: hidden; display: inline-block; vertical-align: middle; }
   .bar > i { display: block; height: 100%; background: var(--accent); }
   .foot { margin-top: 2rem; color: var(--muted); font-size: .82rem; }
@@ -533,8 +545,17 @@ $("#run").onclick = runSmart;
 
 /* ---- manual full analysis (news + sentiment), on demand ---- */
 const GRADE_TXT = {A:"Positive", B:"Mildly positive", C:"Neutral", D:"Mildly negative", F:"Negative"};
+const SIG_CLS = {BUY:"buy", WATCH:"watch", AVOID:"avoid", "N/A":"na"};
+function signalBanner(sig) {
+  if (!sig || !sig.action) return "";
+  const cls = SIG_CLS[sig.action] || "na";
+  return `<div class="signal ${cls}"><span class="act">${escHtml(sig.action)}</span>`+
+    `<div><div><b>${escHtml(sig.label||"")}</b>${sig.score?` · signal ${sig.score}/100`:""}</div>`+
+    `<div class="rz">${escHtml(sig.reason||"")} <em>Educational summary — not advice.</em></div></div></div>`;
+}
 function openAnalysis(data) {
   const results = data.results || [];
+  const signalHtml = signalBanner(data.signal);
   const s = data.sentiment, news = data.news || [];
   const grade = s && s.grade ? s.grade : "—";
   const stratRows = results.map(r => {
@@ -598,6 +619,7 @@ function openAnalysis(data) {
     `<h2>${data.ticker} <span class="badge ${data.passing?'pass':anyEvaluated?'near':'warn'}">`+
     `${data.passing?data.passing+' passing':anyEvaluated?'no pass':'not analyzed'}</span></h2>`+
     `<div class="sub">${first.name||""} · full analysis${data.run_id?` · stored as run #${data.run_id}`:""}</div>`+
+    signalHtml+
     `<div class="sec-h">Strategies</div>${stratRows}${dataNote}`+
     `<div class="sec-h">Similar companies (same sector)</div>${peersHtml}`+
     `<div class="sec-h">News sentiment</div>${sentHtml}${newsHtml}`;
@@ -629,11 +651,12 @@ async function analyzeNow() {
     const res = await fetch("/api/analyze?ticker=" + encodeURIComponent(ticker));
     const data = await res.json();
     if (data.error) { $("#status").textContent = "Analysis failed: " + data.error; return; }
-    $("#status").textContent = `Analyzed ${data.ticker} · ${data.passing} passing`+
-      (data.sentiment&&data.sentiment.grade?` · sentiment ${data.sentiment.grade}`:"")+
-      (data.run_id?` · stored run #${data.run_id}`:"");
     if (data.results && data.results.length) setRows(data, "Manual analysis");
     openAnalysis(data);
+    $("#status").textContent = `Analyzed ${data.ticker} · ${data.passing} passing`+
+      (data.signal&&data.signal.action&&data.signal.action!=="N/A"?` · signal ${data.signal.action}`:"")+
+      (data.sentiment&&data.sentiment.grade?` · sentiment ${data.sentiment.grade}`:"")+
+      (data.run_id?` · stored run #${data.run_id}`:"");
   } catch (e) { $("#status").textContent = "Analysis failed: " + e.message; }
   finally { btn.disabled = false; btn.textContent = label; }
 }

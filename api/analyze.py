@@ -46,6 +46,8 @@ def run_analysis(ticker: str, news_days: int = 14) -> dict:
     news = extra.get("news", [])
     sentiment = extra.get("sentiment")
     peers = extra.get("peers", [])
+    from stock_comber.signals import compute_signal
+    signal = compute_signal(results)
 
     run_id = None
     passing = sum(1 for r in results if r.passed)
@@ -75,6 +77,7 @@ def run_analysis(ticker: str, news_days: int = 14) -> dict:
         "news": news,
         "sentiment": sentiment,
         "peers": peers,
+        "signal": signal,
     }
 
 
