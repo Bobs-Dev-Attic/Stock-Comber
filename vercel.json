@@ -12,6 +12,11 @@
       "memory": 256,
       "maxDuration": 10,
       "includeFiles": "public/data/latest.json"
+    },
+    "api/export.py": {
+      "memory": 512,
+      "maxDuration": 30,
+      "includeFiles": "{stock_comber/**,public/data/latest.json}"
     }
   }
 }

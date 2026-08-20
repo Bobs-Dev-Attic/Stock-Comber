@@ -6,7 +6,10 @@ import logging
 from typing import Any, Callable, Optional
 
 from .criteria import STRATEGIES
-from .datasources import FileCache, SecEdgarSource, StooqSource, YahooSource
+from .datasources import (
+    FileCache, FinnhubSource, SecEdgarSource, StooqSource, YahooSource,
+)
+from .datasources.finnhub import resolve_api_key
 from .models import Company, Quote, ScreenResult
 
 log = logging.getLogger("stock_comber")
@@ -34,21 +37,30 @@ class Screener:
             timeout=data.get("request_timeout", 30),
             delay=data.get("request_delay_seconds", 0.2),
         )
-        # Price sources are tried in order until one returns a price. Yahoo is
-        # primary (reliable from server IPs); Stooq is the fallback.
+        # Optional Finnhub source, active only when an API key is configured.
         timeout = data.get("request_timeout", 30)
         delay = data.get("request_delay_seconds", 0.2)
+        self.finnhub: Optional[FinnhubSource] = None
+        fh_key = resolve_api_key(config)
+        if fh_key:
+            self.finnhub = FinnhubSource(fh_key, cache=cache, timeout=timeout)
+
+        # Price sources are tried in order until one returns a price. Finnhub
+        # (when configured) first, then Yahoo (reliable from servers), then Stooq.
         if price_sources is not None:
             self.price_sources = price_sources
         elif stooq is not None:
             self.price_sources = [stooq]
         else:
-            self.price_sources = [
-                YahooSource(cache=cache, timeout=timeout, delay=0.0),
-                StooqSource(cache=cache, timeout=timeout, delay=delay),
-            ]
+            self.price_sources = []
+            if self.finnhub is not None:
+                self.price_sources.append(self.finnhub)
+            self.price_sources.append(YahooSource(cache=cache, timeout=timeout, delay=0.0))
+            self.price_sources.append(StooqSource(cache=cache, timeout=timeout, delay=delay))
         # Back-compat alias.
         self.stooq = stooq or (self.price_sources[-1] if self.price_sources else None)
+        # Companies fetched during the most recent run(), for persistence.
+        self.last_companies: dict[str, Company] = {}
 
     def fetch_price(self, ticker: str) -> Quote:
         """Try each price source in order; return the first quote with a price."""
@@ -96,6 +108,14 @@ class Screener:
         except Exception as exc:
             log.warning("failed to fetch price for %s: %s", ticker, exc)
 
+        # Supplementary Finnhub metrics (stored alongside the analysis).
+        if self.finnhub is not None:
+            try:
+                company.extra = self.finnhub.fetch_metrics(ticker)
+            except Exception as exc:
+                log.warning("finnhub metrics failed for %s: %s", ticker, exc)
+
+        self.last_companies[company.ticker] = company
         for strat in self.config.get("strategies", []):
             evaluate: Callable[[Company, dict], ScreenResult] = STRATEGIES[strat]
             res = evaluate(company, self.config)
@@ -109,6 +129,7 @@ class Screener:
             progress: Optional[Callable[[int, int, str], None]] = None
             ) -> list[ScreenResult]:
         universe = tickers or self.resolve_universe()
+        self.last_companies = {}
         all_results: list[ScreenResult] = []
         total = len(universe)
         for i, ticker in enumerate(universe, 1):

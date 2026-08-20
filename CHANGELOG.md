@@ -4,6 +4,30 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.0] - 2026-08-20
+
+### Added
+- **Persistence (Postgres / Neon).** New `stock_comber/storage.py` stores each
+  screen run, its per-company results, and the raw retrieved fundamentals in a
+  Postgres database. Activated when `DATABASE_URL` / `POSTGRES_URL` (or
+  `config.storage.dsn`) is set; a no-op backend keeps the app working otherwise.
+  The scheduled job persists runs when `DATABASE_URL` is configured.
+- **Finnhub source** (`stock_comber/datasources/finnhub.py`), an extra source
+  alongside SEC/Yahoo: added to the price chain and used to enrich each company
+  with Finnhub's precomputed metrics (stored as raw data). Enabled via
+  `FINNHUB_API_KEY` / `config.data.finnhub_api_key`; skipped without a key.
+- **Key-protected export API** — `GET /api/export?key=…&format=csv|json[&run=<id>]`
+  serves stored runs, guarded by the `STOCK_COMBER_API_KEY` env var
+  (query `key` or `X-API-Key` header). Falls back to the committed report when no
+  database is configured.
+- `Company.extra` field for supplementary source data.
+
+### Notes
+- On a large universe, Finnhub's free-tier rate limit (~60 req/min) will throttle
+  per-ticker metric calls; failures are caught and the screen continues.
+
+[0.4.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.4.0
+
 ## [0.3.2] - 2026-08-20
 
 ### Added

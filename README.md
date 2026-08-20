@@ -153,6 +153,22 @@ serverless API — configured in [`vercel.json`](vercel.json).
 | `/api/latest` | Most recent scheduled report (JSON) |
 | `/api/screen?tickers=AAPL,MSFT&strategy=graham` | Live screen for ≤10 tickers |
 | `/api/screen?tickers=AAPL&custom=[{"metric":"pe_ratio","op":"<=","value":12}]` | Live screen with custom criteria (URL-encode the JSON) |
+| `/api/export?key=KEY&format=csv` | **Key-protected** export of the latest stored run (`format=json` also; `&run=<id>` for a specific run) |
+
+### Persistence, Finnhub & the export API (all optional)
+
+Set these environment variables (in Vercel and as GitHub Actions secrets) to
+turn on the extras — the app runs without any of them:
+
+| Variable | Enables |
+|----------|---------|
+| `DATABASE_URL` | Store each run + raw data in Postgres (e.g. a free [Neon](https://neon.tech) database). |
+| `FINNHUB_API_KEY` | Use [Finnhub](https://finnhub.io) as an extra price + metrics source. |
+| `STOCK_COMBER_API_KEY` | Protect `/api/export`; pass it as `?key=` or the `X-API-Key` header. |
+
+When `DATABASE_URL` is set, the scheduled job persists every run into the
+`screen_runs`, `screen_results` and `raw_fundamentals` tables (schema created
+automatically), and `/api/export` serves them.
 
 The scheduled GitHub Actions job publishes each run to
 `public/data/latest.json`, so the deployed dashboard refreshes automatically.

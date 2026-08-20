@@ -38,6 +38,9 @@ jobs:
       - name: Run screen
         env:
           LIMIT: ${{ github.event.inputs.limit || '500' }}
+          # Optional: set these repo secrets to persist runs / enable Finnhub.
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
         run: |
           stock-comber --config config/default.yaml screen --limit "$LIMIT" --verbose
 
