@@ -48,7 +48,7 @@ def run_screen(tickers, strategies, custom_criteria=None):
     # Serverless filesystem is read-only except /tmp; be quick and polite.
     cfg["data"]["cache_dir"] = "/tmp/stock_comber_cache"
     cfg["data"]["request_delay_seconds"] = 0
-    cfg["data"]["request_timeout"] = 15
+    cfg["data"]["request_timeout"] = 25
     results = Screener(cfg).run(tickers)
     return {
         "version": __version__,

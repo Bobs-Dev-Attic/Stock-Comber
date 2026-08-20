@@ -51,16 +51,17 @@ class Screener:
     # -- single ticker ---------------------------------------------------
     def screen_ticker(self, ticker: str) -> list[ScreenResult]:
         results: list[ScreenResult] = []
+        company_error = None
         try:
             company = self.sec.fetch_company(ticker)
+            if company is None:
+                company_error = f"{ticker.upper()} not found in SEC ticker list"
         except Exception as exc:  # network/parse errors shouldn't abort the run
             log.warning("failed to fetch %s: %s", ticker, exc)
             company = None
+            company_error = f"SEC fetch failed: {type(exc).__name__}: {exc}"
         if company is None:
             company = Company(ticker=ticker.upper())
-            company_error = "ticker not found on SEC EDGAR"
-        else:
-            company_error = None
 
         # Price is only needed for price-based strategies (Graham). Fetch it
         # lazily but never let a price failure sink the whole ticker.

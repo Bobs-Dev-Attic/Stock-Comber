@@ -1,21 +1,17 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "public/**", "use": "@vercel/static" },
-    {
-      "src": "api/latest.py",
-      "use": "@vercel/python",
-      "config": { "includeFiles": ["public/data/latest.json"] }
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "outputDirectory": "public",
+  "functions": {
+    "api/screen.py": {
+      "memory": 1024,
+      "maxDuration": 60,
+      "includeFiles": "stock_comber/**"
     },
-    {
-      "src": "api/screen.py",
-      "use": "@vercel/python",
-      "config": { "includeFiles": ["stock_comber/**"] }
+    "api/latest.py": {
+      "memory": 256,
+      "maxDuration": 10,
+      "includeFiles": "public/data/latest.json"
     }
-  ],
-  "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1" },
-    { "src": "/", "dest": "/public/index.html" },
-    { "src": "/(.*)", "dest": "/public/$1" }
-  ]
+  }
 }
