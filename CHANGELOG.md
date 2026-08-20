@@ -4,6 +4,23 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0] - 2026-08-20
+
+### Added
+- **Deployable web app on Vercel.**
+  - Static dashboard (`public/index.html`): theme-aware, responsive, sortable
+    results table; loads the latest scheduled report and runs live screens.
+  - Serverless API `GET /api/screen?tickers=…&strategy=…` runs a live screen for
+    up to 10 tickers against SEC EDGAR + Stooq.
+  - Serverless API `GET /api/latest` serves the most recent committed report.
+  - `vercel.json` wiring (`public` output, Python functions with bundled
+    package, root rewrite).
+- Scheduled workflow now publishes `reports/latest.json` to
+  `public/data/latest.json` so the deployed dashboard refreshes automatically.
+- Seed `public/data/latest.json` so the dashboard renders on first deploy.
+
+[0.2.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.2.0
+
 ## [0.1.0] - 2026-08-20
 
 ### Added

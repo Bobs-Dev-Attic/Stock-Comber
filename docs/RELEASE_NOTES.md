@@ -1,5 +1,25 @@
 # Release notes
 
+## v0.2.0 — Deployable web app (2026-08-20)
+
+Stock-Comber is now a deployable web app, not just a CLI.
+
+### Highlights
+- **Dashboard** (`public/index.html`) — a clean, theme-aware page that shows the
+  latest shortlist and lets you run a live screen on any tickers.
+- **Serverless API** on Vercel:
+  - `GET /api/screen?tickers=AAPL,MSFT&strategy=graham` — live screen (≤10 tickers).
+  - `GET /api/latest` — the most recent scheduled report.
+- **Auto-refresh** — the scheduled GitHub Actions job publishes each run to
+  `public/data/latest.json`, so the deployed dashboard updates itself.
+
+### Deploy
+Import the repo on Vercel (zero config — `vercel.json` is included) and deploy.
+The dashboard renders immediately from seed data; the scheduled job keeps it
+current.
+
+> Educational tool only — not investment advice.
+
 ## v0.1.0 — Initial release (2026-08-20)
 
 Stock-Comber's first release: a value-investing stock screener that combs free

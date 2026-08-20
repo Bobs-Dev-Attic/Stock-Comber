@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stock-Comber</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --panel: #ffffff; --ink: #1a1d23; --muted: #5b6472;
+    --line: #e3e6ea; --accent: #1f7a4d; --accent-ink: #0c3a24;
+    --pass-bg: #e6f5ec; --pass-ink: #1f7a4d; --near: #8a93a2;
+    --chip: #eef1f4; --shadow: 0 1px 3px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.04);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1115; --panel: #171a20; --ink: #e7e9ee; --muted: #9aa4b2;
+      --line: #262b34; --accent: #34c17f; --accent-ink: #bff2d6;
+      --pass-bg: #12321e; --pass-ink: #57d999; --near: #6b7583;
+      --chip: #1f242c; --shadow: 0 1px 3px rgba(0,0,0,.4), 0 10px 30px rgba(0,0,0,.35);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 15px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 2rem 1.2rem 4rem; }
+  header h1 { margin: 0 0 .2rem; font-size: 1.7rem; letter-spacing: -.01em; }
+  header p { margin: 0; color: var(--muted); }
+  .card {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 14px;
+    box-shadow: var(--shadow); padding: 1.1rem 1.2rem; margin-top: 1.4rem;
+  }
+  .controls { display: flex; gap: .6rem; flex-wrap: wrap; align-items: center; }
+  input[type=text] {
+    flex: 1 1 260px; min-width: 200px; padding: .6rem .7rem; font-size: 1rem;
+    border: 1px solid var(--line); border-radius: 9px; background: var(--bg); color: var(--ink);
+  }
+  .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 9px; overflow: hidden; }
+  .seg button { border: 0; background: var(--panel); color: var(--muted); padding: .55rem .8rem; cursor: pointer; font-size: .9rem; }
+  .seg button[aria-pressed=true] { background: var(--accent); color: #fff; }
+  .btn {
+    border: 0; background: var(--accent); color: #fff; padding: .6rem 1.1rem;
+    border-radius: 9px; font-size: 1rem; cursor: pointer; font-weight: 600;
+  }
+  .btn:disabled { opacity: .6; cursor: default; }
+  .hint { color: var(--muted); font-size: .85rem; margin-top: .5rem; }
+  .status { margin-top: 1rem; color: var(--muted); }
+  .tablewrap { overflow-x: auto; margin-top: .4rem; }
+  table { border-collapse: collapse; width: 100%; min-width: 720px; }
+  th, td { padding: .55rem .6rem; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
+  th { color: var(--muted); font-weight: 600; font-size: .82rem; text-transform: uppercase; letter-spacing: .03em; cursor: pointer; }
+  th:first-child, td:first-child, th.l, td.l { text-align: left; }
+  tbody tr:hover { background: color-mix(in srgb, var(--accent) 6%, transparent); }
+  .tick { font-weight: 700; }
+  .name { color: var(--muted); font-size: .85rem; }
+  .badge { display: inline-block; padding: .1rem .5rem; border-radius: 999px; font-size: .78rem; font-weight: 700; }
+  .badge.pass { background: var(--pass-bg); color: var(--pass-ink); }
+  .badge.near { background: var(--chip); color: var(--near); }
+  .bar { height: 7px; width: 90px; background: var(--chip); border-radius: 999px; overflow: hidden; display: inline-block; vertical-align: middle; }
+  .bar > i { display: block; height: 100%; background: var(--accent); }
+  .foot { margin-top: 2rem; color: var(--muted); font-size: .82rem; }
+  .foot code { background: var(--chip); padding: .1rem .35rem; border-radius: 5px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>📈 Stock-Comber</h1>
+    <p>Companies that fit Benjamin Graham &amp; Warren Buffett value criteria.</p>
+  </header>
+
+  <section class="card">
+    <div class="controls">
+      <input id="tickers" type="text" placeholder="Tickers, e.g. AAPL, MSFT, JNJ, KO" autocomplete="off">
+      <div class="seg" role="group" aria-label="Strategy">
+        <button data-strat="both" aria-pressed="true">Both</button>
+        <button data-strat="graham" aria-pressed="false">Graham</button>
+        <button data-strat="buffett" aria-pressed="false">Buffett</button>
+      </div>
+      <button id="run" class="btn">Screen live</button>
+    </div>
+    <div class="hint">Live screen combs SEC EDGAR + Stooq for up to 10 tickers. Leave empty and press “Screen live” to reload the latest scheduled report.</div>
+    <div id="status" class="status">Loading latest report…</div>
+    <div class="tablewrap"><table id="tbl" hidden>
+      <thead><tr>
+        <th class="l" data-k="ticker">Ticker</th>
+        <th class="l" data-k="strategy">Strategy</th>
+        <th data-k="passed">Pass</th>
+        <th data-k="score_pct">Score</th>
+        <th data-k="price">Price</th>
+        <th data-k="pe_ratio">P/E</th>
+        <th data-k="pb_ratio">P/B</th>
+        <th data-k="roe_pct">ROE%</th>
+        <th data-k="current_ratio">Curr</th>
+        <th data-k="debt_to_equity">D/E</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table></div>
+  </section>
+
+  <p class="foot">
+    Educational tool only — not investment advice. Data from SEC EDGAR &amp; Stooq may be delayed or incomplete.<br>
+    API: <code>/api/latest</code> · <code>/api/screen?tickers=AAPL,MSFT&amp;strategy=graham</code> ·
+    <a href="https://github.com/Bobs-Dev-Attic/Stock-Comber">source</a>
+  </p>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+let strat = "both", rows = [], sortK = "score_pct", sortDir = -1;
+
+document.querySelectorAll(".seg button").forEach(b => b.onclick = () => {
+  strat = b.dataset.strat;
+  document.querySelectorAll(".seg button").forEach(x => x.setAttribute("aria-pressed", x === b));
+});
+
+const num = v => (v === null || v === undefined || v === "" || v === "—") ? null : Number(v);
+function fmt(v) {
+  const n = num(v); if (n === null || Number.isNaN(n)) return "—";
+  if (Math.abs(n) >= 1e6) return (n/1e6).toFixed(0) + "M";
+  if (Math.abs(n) >= 100) return n.toFixed(0);
+  return n.toFixed(2);
+}
+
+function render() {
+  const tbody = $("#tbl tbody"); tbody.innerHTML = "";
+  const sorted = [...rows].sort((a,b) => {
+    const av = sortField(a), bv = sortField(b);
+    if (av === bv) return 0;
+    if (av === null) return 1; if (bv === null) return -1;
+    return (av > bv ? 1 : -1) * sortDir;
+  });
+  for (const r of sorted) {
+    const m = r.metrics || {};
+    const tr = document.createElement("tr");
+    tr.innerHTML =
+      `<td class="l"><span class="tick">${r.ticker}</span><div class="name">${(r.name||"").slice(0,32)}</div></td>`+
+      `<td class="l">${r.strategy}</td>`+
+      `<td><span class="badge ${r.passed?'pass':'near'}">${r.passed?'PASS':'—'}</span></td>`+
+      `<td><span class="bar"><i style="width:${Math.max(0,Math.min(100,r.score_pct||0))}%"></i></span> ${(r.score_pct??0).toFixed(0)}%</td>`+
+      `<td>${fmt(m.price)}</td><td>${fmt(m.pe_ratio)}</td><td>${fmt(m.pb_ratio)}</td>`+
+      `<td>${fmt(m.roe_pct)}</td><td>${fmt(m.current_ratio)}</td><td>${fmt(m.debt_to_equity)}</td>`;
+    tbody.appendChild(tr);
+  }
+  $("#tbl").hidden = sorted.length === 0;
+}
+function sortField(r) {
+  if (sortK === "ticker" || sortK === "strategy") return r[sortK] || "";
+  if (sortK === "passed") return r.passed ? 1 : 0;
+  if (sortK === "score_pct") return r.score_pct ?? null;
+  return num((r.metrics||{})[sortK]);
+}
+document.querySelectorAll("#tbl th").forEach(th => th.onclick = () => {
+  const k = th.dataset.k;
+  if (k === sortK) sortDir *= -1; else { sortK = k; sortDir = -1; }
+  render();
+});
+
+function setRows(payload, note) {
+  rows = (payload && payload.results) || [];
+  const passing = rows.filter(r => r.passed).length;
+  const when = payload && payload.generated_at ? new Date(payload.generated_at).toLocaleString() : "";
+  $("#status").textContent = rows.length
+    ? `${note} · ${rows.length} rows · ${passing} passing${when ? " · "+when : ""}`
+    : `${note} · no results`;
+  render();
+}
+
+async function loadLatest() {
+  $("#status").textContent = "Loading latest report…";
+  try {
+    let res = await fetch("/data/latest.json", {cache: "no-store"});
+    if (!res.ok) res = await fetch("/api/latest");
+    const data = await res.json();
+    setRows(data, "Latest scheduled report");
+  } catch (e) {
+    $("#status").textContent = "Could not load the latest report.";
+  }
+}
+
+async function runLive() {
+  const raw = $("#tickers").value.trim();
+  if (!raw) return loadLatest();
+  const params = new URLSearchParams();
+  params.set("tickers", raw);
+  if (strat !== "both") params.append("strategy", strat);
+  else { params.append("strategy","graham"); params.append("strategy","buffett"); }
+  $("#run").disabled = true; $("#status").textContent = "Combing SEC EDGAR + Stooq…";
+  try {
+    const res = await fetch("/api/screen?" + params.toString());
+    const data = await res.json();
+    if (data.error) { $("#status").textContent = "Error: " + data.error; }
+    else setRows(data, "Live screen");
+  } catch (e) {
+    $("#status").textContent = "Live screen failed: " + e.message;
+  } finally { $("#run").disabled = false; }
+}
+
+$("#run").onclick = runLive;
+$("#tickers").addEventListener("keydown", e => { if (e.key === "Enter") runLive(); });
+loadLatest();
+</script>
+</body>
+</html>

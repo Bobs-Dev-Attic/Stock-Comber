@@ -1,0 +1,546 @@
+{
+  "generated_at": "2026-08-20T06:30:00+00:00",
+  "strategies": [
+    "graham",
+    "buffett"
+  ],
+  "count": 6,
+  "passing": 4,
+  "results": [
+    {
+      "ticker": "VALU",
+      "name": "Value Industries Inc.",
+      "strategy": "buffett",
+      "passed": true,
+      "score": 6.0,
+      "max_score": 6.0,
+      "metrics": {
+        "price": 42.0,
+        "revenue": 32000000000.0,
+        "net_income": 8000000000.0,
+        "eps": 9.0,
+        "book_value_per_share": 27.0,
+        "current_ratio": 2.5,
+        "working_capital": 9600000000.0,
+        "debt_to_equity": 0.36666666666666664,
+        "long_term_debt_to_equity": 0.1,
+        "roe_pct": 33.33333333333333,
+        "net_margin_pct": 25.0,
+        "free_cash_flow": 8000000000.0,
+        "graham_number": 73.94254526319743,
+        "pe_ratio": 4.666666666666667,
+        "pb_ratio": 1.5555555555555556
+      },
+      "criteria": [
+        {
+          "name": "high_roe",
+          "passed": true,
+          "actual": 33.33333333333333,
+          "threshold": 15.0,
+          "detail": "Return on equity above 15.0%.",
+          "weight": 1.0
+        },
+        {
+          "name": "consistent_roe",
+          "passed": true,
+          "actual": 5.0,
+          "threshold": 5.0,
+          "detail": "ROE above target in each of the last 5 years.",
+          "weight": 1.0
+        },
+        {
+          "name": "low_debt",
+          "passed": true,
+          "actual": 0.36666666666666664,
+          "threshold": 0.5,
+          "detail": "Total-liabilities/equity below 0.5.",
+          "weight": 1.0
+        },
+        {
+          "name": "strong_margin",
+          "passed": true,
+          "actual": 25.0,
+          "threshold": 10.0,
+          "detail": "Net profit margin above 10.0%.",
+          "weight": 1.0
+        },
+        {
+          "name": "earnings_growth",
+          "passed": true,
+          "actual": 60.0,
+          "threshold": 50.0,
+          "detail": "Net income grew at least 50.0% over 5y.",
+          "weight": 1.0
+        },
+        {
+          "name": "positive_fcf",
+          "passed": true,
+          "actual": 3.0,
+          "threshold": 3.0,
+          "detail": "Positive free cash flow in each of the last 3 years.",
+          "weight": 1.0
+        }
+      ],
+      "errors": [],
+      "score_pct": 100.0
+    },
+    {
+      "ticker": "MOAT",
+      "name": "Wide Moat Brands Co.",
+      "strategy": "buffett",
+      "passed": true,
+      "score": 6.0,
+      "max_score": 6.0,
+      "metrics": {
+        "price": 55.0,
+        "revenue": 32000000000.0,
+        "net_income": 8000000000.0,
+        "eps": 8.0,
+        "book_value_per_share": 24.0,
+        "current_ratio": 2.5,
+        "working_capital": 9600000000.0,
+        "debt_to_equity": 0.36666666666666664,
+        "long_term_debt_to_equity": 0.1,
+        "roe_pct": 33.33333333333333,
+        "net_margin_pct": 25.0,
+        "free_cash_flow": 8000000000.0,
+        "graham_number": 65.72670690061993,
+        "pe_ratio": 6.875,
+        "pb_ratio": 2.2916666666666665
+      },
+      "criteria": [
+        {
+          "name": "high_roe",
+          "passed": true,
+          "actual": 33.33333333333333,
+          "threshold": 15.0,
+          "detail": "Return on equity above 15.0%.",
+          "weight": 1.0
+        },
+        {
+          "name": "consistent_roe",
+          "passed": true,
+          "actual": 5.0,
+          "threshold": 5.0,
+          "detail": "ROE above target in each of the last 5 years.",
+          "weight": 1.0
+        },
+        {
+          "name": "low_debt",
+          "passed": true,
+          "actual": 0.36666666666666664,
+          "threshold": 0.5,
+          "detail": "Total-liabilities/equity below 0.5.",
+          "weight": 1.0
+        },
+        {
+          "name": "strong_margin",
+          "passed": true,
+          "actual": 25.0,
+          "threshold": 10.0,
+          "detail": "Net profit margin above 10.0%.",
+          "weight": 1.0
+        },
+        {
+          "name": "earnings_growth",
+          "passed": true,
+          "actual": 60.0,
+          "threshold": 50.0,
+          "detail": "Net income grew at least 50.0% over 5y.",
+          "weight": 1.0
+        },
+        {
+          "name": "positive_fcf",
+          "passed": true,
+          "actual": 3.0,
+          "threshold": 3.0,
+          "detail": "Positive free cash flow in each of the last 3 years.",
+          "weight": 1.0
+        }
+      ],
+      "errors": [],
+      "score_pct": 100.0
+    },
+    {
+      "ticker": "VALU",
+      "name": "Value Industries Inc.",
+      "strategy": "graham",
+      "passed": true,
+      "score": 8.0,
+      "max_score": 9.0,
+      "metrics": {
+        "price": 42.0,
+        "revenue": 32000000000.0,
+        "net_income": 8000000000.0,
+        "eps": 9.0,
+        "book_value_per_share": 27.0,
+        "current_ratio": 2.5,
+        "working_capital": 9600000000.0,
+        "debt_to_equity": 0.36666666666666664,
+        "long_term_debt_to_equity": 0.1,
+        "roe_pct": 33.33333333333333,
+        "net_margin_pct": 25.0,
+        "free_cash_flow": 8000000000.0,
+        "graham_number": 73.94254526319743,
+        "pe_ratio": 4.666666666666667,
+        "pb_ratio": 1.5555555555555556
+      },
+      "criteria": [
+        {
+          "name": "adequate_size",
+          "passed": true,
+          "actual": 32000000000.0,
+          "threshold": 700000000,
+          "detail": "Annual revenue above the minimum size floor.",
+          "weight": 1.0
+        },
+        {
+          "name": "current_ratio",
+          "passed": true,
+          "actual": 2.5,
+          "threshold": 2.0,
+          "detail": "Current assets at least N times current liabilities.",
+          "weight": 1.0
+        },
+        {
+          "name": "ltd_under_working_capital",
+          "passed": true,
+          "actual": 2400000000.0,
+          "threshold": 9600000000.0,
+          "detail": "Long-term debt does not exceed working capital.",
+          "weight": 1.0
+        },
+        {
+          "name": "earnings_stability",
+          "passed": true,
+          "actual": 5.0,
+          "threshold": 5.0,
+          "detail": "Positive net income in each of the last 5 years.",
+          "weight": 1.0
+        },
+        {
+          "name": "earnings_growth",
+          "passed": true,
+          "actual": 60.0,
+          "threshold": 33.0,
+          "detail": "Net income grew at least 33.0% over 5y.",
+          "weight": 1.0
+        },
+        {
+          "name": "moderate_pe",
+          "passed": true,
+          "actual": 4.666666666666667,
+          "threshold": 15.0,
+          "detail": "Price/earnings below the value ceiling.",
+          "weight": 1.0
+        },
+        {
+          "name": "moderate_pb",
+          "passed": false,
+          "actual": 1.5555555555555556,
+          "threshold": 1.5,
+          "detail": "Price/book below the value ceiling.",
+          "weight": 1.0
+        },
+        {
+          "name": "graham_number",
+          "passed": true,
+          "actual": 7.2592592592592595,
+          "threshold": 22.5,
+          "detail": "P/E times P/B within Graham's 22.5 ceiling.",
+          "weight": 1.0
+        },
+        {
+          "name": "positive_book_value",
+          "passed": true,
+          "actual": 24000000000.0,
+          "threshold": 0.0,
+          "detail": "Positive shareholder equity.",
+          "weight": 1.0
+        }
+      ],
+      "errors": [],
+      "score_pct": 88.9
+    },
+    {
+      "ticker": "MOAT",
+      "name": "Wide Moat Brands Co.",
+      "strategy": "graham",
+      "passed": true,
+      "score": 8.0,
+      "max_score": 9.0,
+      "metrics": {
+        "price": 55.0,
+        "revenue": 32000000000.0,
+        "net_income": 8000000000.0,
+        "eps": 8.0,
+        "book_value_per_share": 24.0,
+        "current_ratio": 2.5,
+        "working_capital": 9600000000.0,
+        "debt_to_equity": 0.36666666666666664,
+        "long_term_debt_to_equity": 0.1,
+        "roe_pct": 33.33333333333333,
+        "net_margin_pct": 25.0,
+        "free_cash_flow": 8000000000.0,
+        "graham_number": 65.72670690061993,
+        "pe_ratio": 6.875,
+        "pb_ratio": 2.2916666666666665
+      },
+      "criteria": [
+        {
+          "name": "adequate_size",
+          "passed": true,
+          "actual": 32000000000.0,
+          "threshold": 700000000,
+          "detail": "Annual revenue above the minimum size floor.",
+          "weight": 1.0
+        },
+        {
+          "name": "current_ratio",
+          "passed": true,
+          "actual": 2.5,
+          "threshold": 2.0,
+          "detail": "Current assets at least N times current liabilities.",
+          "weight": 1.0
+        },
+        {
+          "name": "ltd_under_working_capital",
+          "passed": true,
+          "actual": 2400000000.0,
+          "threshold": 9600000000.0,
+          "detail": "Long-term debt does not exceed working capital.",
+          "weight": 1.0
+        },
+        {
+          "name": "earnings_stability",
+          "passed": true,
+          "actual": 5.0,
+          "threshold": 5.0,
+          "detail": "Positive net income in each of the last 5 years.",
+          "weight": 1.0
+        },
+        {
+          "name": "earnings_growth",
+          "passed": true,
+          "actual": 60.0,
+          "threshold": 33.0,
+          "detail": "Net income grew at least 33.0% over 5y.",
+          "weight": 1.0
+        },
+        {
+          "name": "moderate_pe",
+          "passed": true,
+          "actual": 6.875,
+          "threshold": 15.0,
+          "detail": "Price/earnings below the value ceiling.",
+          "weight": 1.0
+        },
+        {
+          "name": "moderate_pb",
+          "passed": false,
+          "actual": 2.2916666666666665,
+          "threshold": 1.5,
+          "detail": "Price/book below the value ceiling.",
+          "weight": 1.0
+        },
+        {
+          "name": "graham_number",
+          "passed": true,
+          "actual": 15.755208333333332,
+          "threshold": 22.5,
+          "detail": "P/E times P/B within Graham's 22.5 ceiling.",
+          "weight": 1.0
+        },
+        {
+          "name": "positive_book_value",
+          "passed": true,
+          "actual": 24000000000.0,
+          "threshold": 0.0,
+          "detail": "Positive shareholder equity.",
+          "weight": 1.0
+        }
+      ],
+      "errors": [],
+      "score_pct": 88.9
+    },
+    {
+      "ticker": "HYPE",
+      "name": "Hype Growth Corp.",
+      "strategy": "graham",
+      "passed": false,
+      "score": 3.0,
+      "max_score": 9.0,
+      "metrics": {
+        "price": 480.0,
+        "revenue": 1200000000.0,
+        "net_income": 60000000.0,
+        "eps": 0.5,
+        "book_value_per_share": 0.25,
+        "current_ratio": 0.3333333333333333,
+        "working_capital": -60000000.0,
+        "debt_to_equity": 13.0,
+        "long_term_debt_to_equity": 10.0,
+        "roe_pct": 200.0,
+        "net_margin_pct": 5.0,
+        "free_cash_flow": -24000000.0,
+        "graham_number": 1.6770509831248424,
+        "pe_ratio": 960.0,
+        "pb_ratio": 1920.0
+      },
+      "criteria": [
+        {
+          "name": "adequate_size",
+          "passed": true,
+          "actual": 1200000000.0,
+          "threshold": 700000000,
+          "detail": "Annual revenue above the minimum size floor.",
+          "weight": 1.0
+        },
+        {
+          "name": "current_ratio",
+          "passed": false,
+          "actual": 0.3333333333333333,
+          "threshold": 2.0,
+          "detail": "Current assets at least N times current liabilities.",
+          "weight": 1.0
+        },
+        {
+          "name": "ltd_under_working_capital",
+          "passed": false,
+          "actual": 300000000.0,
+          "threshold": -60000000.0,
+          "detail": "Long-term debt does not exceed working capital.",
+          "weight": 1.0
+        },
+        {
+          "name": "earnings_stability",
+          "passed": true,
+          "actual": 5.0,
+          "threshold": 5.0,
+          "detail": "Positive net income in each of the last 5 years.",
+          "weight": 1.0
+        },
+        {
+          "name": "earnings_growth",
+          "passed": false,
+          "actual": -40.0,
+          "threshold": 33.0,
+          "detail": "Net income grew at least 33.0% over 5y.",
+          "weight": 1.0
+        },
+        {
+          "name": "moderate_pe",
+          "passed": false,
+          "actual": 960.0,
+          "threshold": 15.0,
+          "detail": "Price/earnings below the value ceiling.",
+          "weight": 1.0
+        },
+        {
+          "name": "moderate_pb",
+          "passed": false,
+          "actual": 1920.0,
+          "threshold": 1.5,
+          "detail": "Price/book below the value ceiling.",
+          "weight": 1.0
+        },
+        {
+          "name": "graham_number",
+          "passed": false,
+          "actual": 1843200.0,
+          "threshold": 22.5,
+          "detail": "P/E times P/B within Graham's 22.5 ceiling.",
+          "weight": 1.0
+        },
+        {
+          "name": "positive_book_value",
+          "passed": true,
+          "actual": 30000000.0,
+          "threshold": 0.0,
+          "detail": "Positive shareholder equity.",
+          "weight": 1.0
+        }
+      ],
+      "errors": [],
+      "score_pct": 33.3
+    },
+    {
+      "ticker": "HYPE",
+      "name": "Hype Growth Corp.",
+      "strategy": "buffett",
+      "passed": false,
+      "score": 2.0,
+      "max_score": 6.0,
+      "metrics": {
+        "price": 480.0,
+        "revenue": 1200000000.0,
+        "net_income": 60000000.0,
+        "eps": 0.5,
+        "book_value_per_share": 0.25,
+        "current_ratio": 0.3333333333333333,
+        "working_capital": -60000000.0,
+        "debt_to_equity": 13.0,
+        "long_term_debt_to_equity": 10.0,
+        "roe_pct": 200.0,
+        "net_margin_pct": 5.0,
+        "free_cash_flow": -24000000.0,
+        "graham_number": 1.6770509831248424,
+        "pe_ratio": 960.0,
+        "pb_ratio": 1920.0
+      },
+      "criteria": [
+        {
+          "name": "high_roe",
+          "passed": true,
+          "actual": 200.0,
+          "threshold": 15.0,
+          "detail": "Return on equity above 15.0%.",
+          "weight": 1.0
+        },
+        {
+          "name": "consistent_roe",
+          "passed": true,
+          "actual": 5.0,
+          "threshold": 5.0,
+          "detail": "ROE above target in each of the last 5 years.",
+          "weight": 1.0
+        },
+        {
+          "name": "low_debt",
+          "passed": false,
+          "actual": 13.0,
+          "threshold": 0.5,
+          "detail": "Total-liabilities/equity below 0.5.",
+          "weight": 1.0
+        },
+        {
+          "name": "strong_margin",
+          "passed": false,
+          "actual": 5.0,
+          "threshold": 10.0,
+          "detail": "Net profit margin above 10.0%.",
+          "weight": 1.0
+        },
+        {
+          "name": "earnings_growth",
+          "passed": false,
+          "actual": -40.0,
+          "threshold": 50.0,
+          "detail": "Net income grew at least 50.0% over 5y.",
+          "weight": 1.0
+        },
+        {
+          "name": "positive_fcf",
+          "passed": false,
+          "actual": 0.0,
+          "threshold": 3.0,
+          "detail": "Positive free cash flow in each of the last 3 years.",
+          "weight": 1.0
+        }
+      ],
+      "errors": [],
+      "score_pct": 33.3
+    }
+  ],
+  "note": "Sample data for first deploy. The scheduled job overwrites this with live SEC/Stooq results."
+}

@@ -108,6 +108,26 @@ stock-comber schedule            # runs on config.schedule.cron
 stock-comber schedule --once     # single cycle, then exit
 ```
 
+## Deploy (Vercel)
+
+The repo ships a deployable web app — a static dashboard plus a Python
+serverless API — configured in [`vercel.json`](vercel.json).
+
+1. Import the repository on [Vercel](https://vercel.com/new) (zero config).
+2. Deploy. The dashboard renders immediately from seed data.
+
+| Route | What it does |
+|-------|--------------|
+| `/` | Dashboard: latest shortlist + live-screen box |
+| `/api/latest` | Most recent scheduled report (JSON) |
+| `/api/screen?tickers=AAPL,MSFT&strategy=graham` | Live screen for ≤10 tickers |
+
+The scheduled GitHub Actions job publishes each run to
+`public/data/latest.json`, so the deployed dashboard refreshes automatically.
+Live `/api/screen` calls reach SEC EDGAR + Stooq at request time and are capped
+to keep within the serverless time budget; full-universe sweeps belong in the
+scheduled job.
+
 ## Architecture
 
 ```
@@ -126,6 +146,12 @@ stock_comber/
   report.py         # json / csv / markdown / html
   cli.py            # command-line entry point
   scheduler.py      # optional local cron
+api/
+  screen.py         # serverless: live screen for given tickers
+  latest.py         # serverless: serve latest committed report
+public/
+  index.html        # dashboard
+  data/latest.json  # latest report (refreshed by the scheduled job)
 ```
 
 ## Development
