@@ -144,6 +144,29 @@ class FinnhubSource:
             })
         return out
 
+    def fetch_peers(self, ticker: str, limit: int = 8) -> list[str]:
+        """Return same-sector peer tickers for a symbol (Finnhub /stock/peers).
+
+        The endpoint lists the company itself first; we drop it and cap the
+        rest. Free tier, one call. Returns [] on any error / no data.
+        """
+        symbol = ticker.upper()
+        try:
+            data = self._get("/stock/peers", {"symbol": symbol},
+                             "finnhub_peers", symbol)
+        except Exception:
+            return []
+        if not isinstance(data, list):
+            return []
+        peers = []
+        for p in data:
+            t = str(p or "").upper().strip()
+            if t and t != symbol and t not in peers:
+                peers.append(t)
+            if len(peers) >= limit:
+                break
+        return peers
+
     def fetch_profile(self, ticker: str, with_volume: bool = False) -> Optional[dict]:
         """Return {market_cap, sector, country, exchange, name, avg_volume}.
 

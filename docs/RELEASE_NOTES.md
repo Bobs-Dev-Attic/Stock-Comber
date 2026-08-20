@@ -1,5 +1,20 @@
 # Release notes
 
+## v0.13.0 — Similar companies in the same sector (2026-08-20)
+
+The **Analyze** deep-dive now includes a **Similar companies (same sector)**
+section. It pulls the company's peers from Finnhub's free `/stock/peers`
+endpoint and lets you:
+
+- **Tap a peer** to run a full deep-dive on it, or
+- **Compare all in a table** — drops the whole peer group (plus the original
+  ticker) into the batch screen so you see them scored side by side against the
+  strategies you've ticked.
+
+Peers need a `FINNHUB_API_KEY` (already configured on the hosted app); without
+one the section shows a short note. Also available programmatically as the
+`peers` field on `/api/analyze`.
+
 ## v0.12.1 — Mobile responsiveness (2026-08-20)
 
 Fixes the **Strategies dropdown opening off-screen on phones** and makes every

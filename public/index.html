@@ -573,6 +573,18 @@ function openAnalysis(data) {
     ? `<div class="links" style="flex-direction:column;align-items:flex-start">`+
       news.slice(0,10).map(n => `<a href="${encodeURI(n.url||'#')}" target="_blank" rel="noopener">${escHtml(n.headline||"(untitled)")} ↗</a>`).join("")+`</div>`
     : "";
+  const peers = data.peers || [];
+  let peersHtml;
+  if (peers.length) {
+    peersHtml = `<div class="links" style="margin-bottom:.5rem">`+
+      peers.map(p => `<a href="#" class="peer" data-t="${escHtml(p)}">${escHtml(p)} ↗</a>`).join("")+`</div>`+
+      `<button class="btn ghost" id="cmp-peers">Compare all in a table</button>`+
+      `<div class="hint" style="margin-top:.4rem">Tap a peer to deep-dive it, or compare the whole group side by side.</div>`;
+  } else if (data.finnhub_enabled === false) {
+    peersHtml = `<div class="hint">Peer lookup needs a <code>FINNHUB_API_KEY</code> (not configured).</div>`;
+  } else {
+    peersHtml = `<div class="hint">No same-sector peer list was available for this ticker.</div>`;
+  }
   const first = results[0] || {};
   const anyEvaluated = results.some(r => (r.max_score || 0) > 0);
   const dataNote = !anyEvaluated
@@ -587,11 +599,22 @@ function openAnalysis(data) {
     `${data.passing?data.passing+' passing':anyEvaluated?'no pass':'not analyzed'}</span></h2>`+
     `<div class="sub">${first.name||""} · full analysis${data.run_id?` · stored as run #${data.run_id}`:""}</div>`+
     `<div class="sec-h">Strategies</div>${stratRows}${dataNote}`+
+    `<div class="sec-h">Similar companies (same sector)</div>${peersHtml}`+
     `<div class="sec-h">News sentiment</div>${sentHtml}${newsHtml}`;
   $("#modal .close").onclick = closeDetail;
   $("#modal").querySelectorAll(".crit[data-s]").forEach(el => el.onclick = () => {
     const r = results.find(x => x.strategy === el.dataset.s); if (r) openDetail(r);
   });
+  $("#modal").querySelectorAll(".peer[data-t]").forEach(el => el.onclick = (e) => {
+    e.preventDefault(); closeDetail();
+    $("#tickers").value = el.dataset.t; analyzeNow();
+  });
+  const cmp = $("#cmp-peers");
+  if (cmp) cmp.onclick = () => {
+    closeDetail();
+    $("#tickers").value = [...new Set([data.ticker, ...peers])].slice(0, 10).join(", ");
+    runLive();
+  };
   $("#overlay").classList.add("open");
 }
 async function analyzeNow() {

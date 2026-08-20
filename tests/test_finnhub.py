@@ -78,3 +78,21 @@ def test_fetch_profile_is_single_call_by_default():
     assert sess.calls == 1               # profile only, no metric call
     assert prof["market_cap"] == 1.5e9   # normalised to dollars
     assert prof["avg_volume"] is None
+
+
+def test_fetch_peers_drops_self_and_caps():
+    from stock_comber.datasources.finnhub import FinnhubSource
+    # Finnhub lists the company itself first; we drop it and de-dup.
+    sess = _FakeSession(["XOM", "CVX", "COP", "cvx", "SHEL", "BP", "TTE", "E", "EQNR", "IMO"])
+    fh = FinnhubSource("k", session=sess)
+    peers = fh.fetch_peers("XOM", limit=8)
+    assert "XOM" not in peers            # self dropped
+    assert peers[0] == "CVX"
+    assert len(peers) == 8               # capped
+    assert peers.count("CVX") == 1       # de-duplicated (case-insensitive)
+
+
+def test_fetch_peers_handles_bad_payload():
+    from stock_comber.datasources.finnhub import FinnhubSource
+    fh = FinnhubSource("k", session=_FakeSession({"not": "a list"}))
+    assert fh.fetch_peers("XOM") == []
