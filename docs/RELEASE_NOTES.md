@@ -1,5 +1,22 @@
 # Release notes
 
+## v0.28.0 — See & fine-tune scheduled-report strategies (2026-08-21)
+
+**Where are the scheduled report's parameters?** They live on the **Settings** page
+(☰ menu → Settings) — the strategies checklist plus every Graham / Buffett /
+Piotroski / Greenblatt / Lynch / Net-Net threshold, the nightly-universe knobs, and
+custom criteria, all saved to the database that drives the nightly run.
+
+This release makes that reachable straight from the Scheduled report:
+
+- The **Scheduled report** card now lists the strategies the nightly run uses.
+- The schedule dialog shows them as clickable **chips** that jump to that strategy's
+  thresholds in Settings — e.g. click **Buffett** to fine-tune its min ROE, or
+  **Graham** for its max P/E — with an "edit all in Settings" link too.
+
+Nothing about how thresholds are stored changed; this just surfaces and links the
+existing editor.
+
 ## v0.27.1 — Job results preview in the dialog (2026-08-21)
 
 Clicking **▶ Run now** in the custom-job dialog now shows a **preview of the
