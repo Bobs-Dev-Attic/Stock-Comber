@@ -4,6 +4,21 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.21.0] - 2026-08-21
+
+### Added
+- **Saved custom jobs.** Name a custom job (its `metric op value` criteria,
+  tickers, and ticked strategies) and save it to the database from the **Custom
+  jobs** tab — then Load it back or Delete it. Jobs persist server-side in the
+  settings blob (read publicly via `GET /api/settings`; saving is key-gated via
+  `POST /api/settings`), so they survive reloads and follow you across devices.
+  A new top-level `jobs` config key holds the list, validated by
+  `validate_config` (each job needs a unique non-empty name and, if present,
+  valid criteria/strategies). No new serverless function — stays within the
+  12-function limit.
+
+[0.21.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.21.0
+
 ## [0.20.1] - 2026-08-20
 
 ### Added

@@ -150,6 +150,15 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "cron": "0 6 * * 1-5",   # 06:00 on weekdays
         "timezone": "UTC",
     },
+    # Named custom jobs saved from the dashboard. Each job bundles a set of
+    # tickers, the custom {metric, op, value} criteria, and which strategies to
+    # run, so it can be re-loaded and re-run later. Persisted in the settings
+    # blob (no dedicated table/endpoint). Each entry:
+    #   {"name": "Cheap large-caps",
+    #    "tickers": "AAPL, MSFT",
+    #    "criteria": [{"metric": "pe_ratio", "op": "<=", "value": 15}],
+    #    "strategies": ["graham", "buffett"]}
+    "jobs": [],
 }
 
 
@@ -226,4 +235,39 @@ def validate_config(cfg: dict[str, Any]) -> list[str]:
             problems.append(
                 f"unknown universe.index: {index!r} "
                 f"(choose from {', '.join(index_keys())} or leave blank)")
+
+    problems.extend(_validate_jobs(cfg.get("jobs", []), valid_strategies))
+    return problems
+
+
+def _validate_jobs(jobs: Any, valid_strategies: set) -> list[str]:
+    """Validate the saved-jobs list (see ``DEFAULT_CONFIG['jobs']``)."""
+    problems: list[str] = []
+    if jobs in (None, []):
+        return problems
+    if not isinstance(jobs, list):
+        return ["jobs must be a list"]
+    seen: set = set()
+    for i, job in enumerate(jobs):
+        where = f"jobs[{i}]"
+        if not isinstance(job, dict):
+            problems.append(f"{where} must be an object")
+            continue
+        name = job.get("name")
+        if not isinstance(name, str) or not name.strip():
+            problems.append(f"{where}.name must be a non-empty string")
+        else:
+            key = name.strip().lower()
+            if key in seen:
+                problems.append(f"duplicate job name: {name!r}")
+            seen.add(key)
+        if "tickers" in job and not isinstance(job["tickers"], str):
+            problems.append(f"{where}.tickers must be a string")
+        for s in job.get("strategies", []) or []:
+            if s not in valid_strategies:
+                problems.append(f"{where}: unknown strategy {s!r}")
+        criteria = job.get("criteria", []) or []
+        if criteria:
+            from .criteria.custom import validate_criteria
+            problems.extend(f"{where}: {p}" for p in validate_criteria(criteria))
     return problems
