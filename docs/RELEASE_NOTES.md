@@ -1,5 +1,20 @@
 # Release notes
 
+## v0.27.0 — Redesigned Jobs tab with dialogs (2026-08-21)
+
+The **Jobs** tab is now a clean overview of the three job types, each a card with a
+single action button — and the parameters open in a **dialog window** when you click:
+
+- **📅 Scheduled report** shows a live summary (enabled · time · days) and a
+  **Configure** button that opens the schedule dialog.
+- **🧮 Custom jobs** lists your configured jobs (name + summary) with **▶ Run**,
+  **Edit**, and **Delete** on each. **+ Add job** opens the builder dialog (criteria,
+  tickers, index templates, strategies); **Edit** reopens a saved job in it.
+- **🔍 Manual search** opens a dialog with the ticker box and strategy picker.
+
+The **countdown to the next scheduled run** now appears on the Jobs tab as well as
+the Full list, so you can see it wherever you are.
+
 ## v0.26.0 — Next-run countdown & index filter (2026-08-21)
 
 - **Countdown to the next scheduled run.** The **Full list** tab now shows a live

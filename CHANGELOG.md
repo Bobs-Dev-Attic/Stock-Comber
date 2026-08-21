@@ -4,6 +4,22 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.27.0] - 2026-08-21
+
+### Changed
+- **Redesigned the Jobs tab.** It's now a clean overview of the three job types —
+  Scheduled report, Custom jobs, Manual search — each a card with an action button.
+  Job parameters have moved into **dialog windows**: **Configure** opens the schedule
+  dialog, **+ Add job** opens the custom-job builder (criteria, tickers, templates,
+  strategies), and **Analyze…** opens the manual-search dialog. Configured custom
+  jobs are listed on the overview (name + summary) with **▶ Run / Edit / Delete**;
+  Edit reopens a job in the dialog. The scheduled-report card shows a live summary
+  (enabled · time · days).
+- **Countdown shown on the Jobs tab too.** The next-scheduled-run countdown now
+  appears on both the Full list and the Jobs tab.
+
+[0.27.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.27.0
+
 ## [0.26.0] - 2026-08-21
 
 ### Added
