@@ -20,6 +20,7 @@ def test_csv_has_header_and_row(strong_company, config):
     out = to_csv(_results(strong_company, config), config)
     lines = out.strip().splitlines()
     assert lines[0].startswith("ticker,name,strategy")
+    assert "avg_volume" in lines[0].split(",")
     assert "STRONG" in lines[1]
 
 
