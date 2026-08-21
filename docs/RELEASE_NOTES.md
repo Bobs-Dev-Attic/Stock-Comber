@@ -1,5 +1,12 @@
 # Release notes
 
+## v0.30.2 — Show dollar volume by default (2026-08-21)
+
+The **$ volume / day** column now also appears in the results table by default, next to
+**Avg volume** — so both liquidity gauges are visible at a glance. If you've customised
+your columns, your layout is untouched; use the column picker's reset to adopt the new
+default.
+
 ## v0.30.1 — Show average volume by default (2026-08-21)
 
 The **Avg volume** column now appears in the results table out of the box, so you can see
