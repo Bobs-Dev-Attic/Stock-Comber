@@ -37,6 +37,7 @@ class Quote:
     price: Optional[float] = None
     as_of: Optional[str] = None
     source: Optional[str] = None
+    volume: Optional[float] = None  # latest regular-market share volume, if known
 
 
 @dataclass

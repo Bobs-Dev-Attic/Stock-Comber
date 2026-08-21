@@ -4,6 +4,23 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.30.0] - 2026-08-21
+
+### Added
+- **Volume / liquidity custom metrics.** Two new metrics are now computed for every
+  screened company and available as custom-criterion targets:
+  - `avg_volume` — average daily share volume (Finnhub's smoothed 3-month/10-day figure
+    on enriched analyses, otherwise the latest day's volume from the price quote).
+  - `dollar_volume` — average daily **dollar** volume (price × average share volume), the
+    standard liquidity gauge. Screen out thinly-traded names with e.g.
+    `dollar_volume >= 5000000`.
+  Volume is parsed from the existing Yahoo price fetch (`Quote.volume`), so the live
+  screen picks it up with no new API calls or serverless functions. Both metrics appear
+  in the custom-criteria builders (dashboard, Settings, Thesis), the results-table column
+  picker, and the glossary.
+
+[0.30.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.30.0
+
 ## [0.29.2] - 2026-08-21
 
 ### Added

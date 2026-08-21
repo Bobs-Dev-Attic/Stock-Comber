@@ -169,6 +169,42 @@ def pb_ratio(price: Optional[float], a: AnnualFacts) -> Optional[float]:
     return price / b
 
 
+def _finnhub_avg_volume(extra: Optional[dict]) -> Optional[float]:
+    """Average daily share volume from a Finnhub metric bundle (reported in
+    millions of shares), preferring the smoothed 3-month figure. None if absent."""
+    if not extra:
+        return None
+    for key in ("3MonthAverageTradingVolume", "10DayAverageTradingVolume"):
+        val = extra.get(key)
+        if val:
+            try:
+                return float(val) * 1e6
+            except (TypeError, ValueError):
+                pass
+    return None
+
+
+def average_volume(company: Company) -> Optional[float]:
+    """Average daily share volume. Uses Finnhub's smoothed 3-month/10-day figure
+    when the result is enriched, otherwise the latest day's volume from the price
+    quote. None when no volume is available."""
+    v = _finnhub_avg_volume(company.extra)
+    if v is not None:
+        return v
+    q = company.quote
+    return q.volume if q is not None else None
+
+
+def dollar_volume(company: Company) -> Optional[float]:
+    """Average daily dollar volume (price x average share volume) — the standard
+    liquidity gauge: higher means the stock is easier to trade in size."""
+    vol = average_volume(company)
+    price = company.quote.price if company.quote else None
+    if vol is None or price is None:
+        return None
+    return price * vol
+
+
 # The metric keys that custom criteria may target (also drives the UI builder).
 METRIC_KEYS = [
     "price", "revenue", "net_income", "eps", "book_value_per_share",
@@ -178,6 +214,7 @@ METRIC_KEYS = [
     "earnings_growth_5y_pct", "revenue_growth_5y_pct",
     "roa_pct", "return_on_capital_pct", "earnings_yield_pct",
     "ncav_per_share", "earnings_cagr_5y_pct",
+    "avg_volume", "dollar_volume",
 ]
 
 
@@ -186,7 +223,8 @@ def compute_metrics(company: Company) -> dict[str, Optional[float]]:
     latest = company.latest
     price = company.quote.price if company.quote else None
     if latest is None:
-        return {"price": price}
+        return {"price": price, "avg_volume": average_volume(company),
+                "dollar_volume": dollar_volume(company)}
     return {
         "price": price,
         "revenue": latest.revenue,
@@ -210,4 +248,6 @@ def compute_metrics(company: Company) -> dict[str, Optional[float]]:
         "earnings_yield_pct": earnings_yield(price, latest),
         "ncav_per_share": ncav_per_share(latest),
         "earnings_cagr_5y_pct": cagr_pct(company.annuals, 5, "net_income"),
+        "avg_volume": average_volume(company),
+        "dollar_volume": dollar_volume(company),
     }

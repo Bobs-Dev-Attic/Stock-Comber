@@ -1,5 +1,23 @@
 # Release notes
 
+## v0.30.0 — Volume / liquidity custom metrics (2026-08-21)
+
+You can now screen on **how actively a stock trades**. Two new metrics are computed for
+every company and can be used in any custom criterion:
+
+- **Avg volume** (`avg_volume`) — average daily share volume. Uses the smoothed
+  3-month/10-day figure on enriched (deep-dive) analyses, otherwise the latest day's
+  volume.
+- **$ volume / day** (`dollar_volume`) — average daily **dollar** volume (price ×
+  average share volume). This is the standard liquidity measure: higher means you can buy
+  or sell size without moving the price.
+
+Build a rule like `dollar_volume >= 5000000` in the custom-strategy builder (dashboard,
+Settings, or Thesis) to skip illiquid names, or add the columns from the results-table
+picker to eyeball liquidity. Volume comes from the price fetch we already do, so it works
+on the live screen with no new API calls — and there's no new serverless function
+(still 12). See the **Liquidity** section of the glossary for details.
+
 ## v0.29.2 — Screen the whole next-run pool at once (2026-08-21)
 
 The next-run preview (Jobs → Scheduled report → Configure) now has a **"▶ Screen all
