@@ -1140,6 +1140,7 @@ function fmtDur(ms) {
 }
 const DOW3 = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 let schedCron = "30 6 * * 1-5", schedEnabled = true, countdownTarget = null, countdownTimer = null;
+let schedStrategies = [];
 async function loadCountdown() {
   try {
     const d = await (await fetch("/api/settings")).json();
@@ -1405,6 +1406,7 @@ async function loadSchedule() {
       : "Nightly run is disabled. Enable and Save to resume it.");
     // Strategies the nightly run uses, each linking to its thresholds in Settings.
     const strats = (d.config && d.config.strategies) || [];
+    schedStrategies = strats.slice();
     renderSchedStrats(strats);
     // Overview summary card.
     const enabled = configured ? !!sc.enabled : true;
@@ -1434,10 +1436,14 @@ async function previewNightly() {
       el.innerHTML = `The next run (<b>${escHtml(d.date || "")}</b>) has no eligible candidates yet — the universe is built from Finnhub enrichment + the seed list; check the nightly filters in <a href="/settings.html#sec-strategies">Settings</a>.`;
       return;
     }
-    const chips = rows.map(r => `<a href="#" class="pill preview-tick" data-t="${escHtml(r.ticker)}" title="${escHtml(r.sector || "")} — tap for a deep-dive preview">${escHtml(r.ticker)}</a>`).join(" ");
+    nightlyTickers = rows.map(r => r.ticker);
+    const cap = Math.min(nightlyTickers.length, NIGHTLY_SCREEN_CAP);
+    const chips = rows.map(r => `<a href="#" class="pill preview-tick" data-t="${escHtml(r.ticker)}" title="${escHtml(r.sector || "")} — tap to deep-dive this one">${escHtml(r.ticker)}</a>`).join(" ");
     el.innerHTML = `<div style="margin-bottom:.35rem">The next run (<b>${escHtml(d.date || "")}</b>) will screen `
       + `<b>${d.count}</b> stock${d.count === 1 ? "" : "s"}${d.index ? ` from the ${escHtml(String(d.index).toUpperCase())}` : ""}`
-      + `${d.count >= d.cap ? ` (nightly cap ${d.cap})` : ""} — tap any ticker to preview its deep-dive analysis:</div>`
+      + `${d.count >= d.cap ? ` (nightly cap ${d.cap})` : ""}:</div>`
+      + `<div class="controls" style="margin-bottom:.4rem"><button class="btn" id="screen-all-nightly">▶ Screen all ${cap}${nightlyTickers.length > cap ? ` of ${nightlyTickers.length}` : ""}</button>`
+      + `<span class="hint" style="margin:0">or tap one ticker for its full deep-dive (news &amp; sentiment)</span></div>`
       + `<div class="pillwrap">${chips}</div>`;
     el.querySelectorAll(".preview-tick").forEach(a => a.onclick = e => {
       e.preventDefault();
@@ -1445,9 +1451,30 @@ async function previewNightly() {
       $("#tickers").value = a.dataset.t;
       analyzeNow();
     });
+    $("#screen-all-nightly").onclick = screenNightlyAll;
   } catch (e) { el.textContent = "Preview failed: " + e.message; }
 }
 $("#preview-nightly").onclick = previewNightly;
+/* Batch-screen the whole next-run pool (up to the cap) with the scheduled
+   strategies, then show every ticker's result together in the table. */
+const NIGHTLY_SCREEN_CAP = 40;   // keep the live screen under the 60s function limit
+let nightlyTickers = [];
+async function screenNightlyAll() {
+  const tks = nightlyTickers.slice(0, NIGHTLY_SCREEN_CAP);
+  if (!tks.length) return;
+  const strats = (schedStrategies && schedStrategies.length) ? schedStrategies : ["graham", "buffett"];
+  const params = new URLSearchParams(); params.set("tickers", tks.join(","));
+  strats.forEach(s => params.append("strategy", s));
+  closeJobDialog(); showTab("jobs");
+  showBanner(`Screening ${tks.length} next-run pick(s) — this can take a moment…`);
+  setStatus("jobs", `Screening ${tks.length} of the next run's ${nightlyTickers.length} picks with ${strats.map(stratLabel).join(", ")}…`);
+  try {
+    const data = await (await fetch("/api/screen?" + params.toString())).json();
+    if (data.error && !(data.results || []).length) setStatus("jobs", "Preview failed: " + data.error);
+    else { setRows(data, `Next-run preview (${tks.length} of ${nightlyTickers.length})`, "jobs"); enqueueForAnalysis(tks.join(",")); }
+  } catch (e) { setStatus("jobs", "Preview failed: " + e.message); }
+  finally { hideBanner(); }
+}
 function renderSchedStrats(strats) {
   const el = $("#sched-strats"); if (!el) return;
   if (!strats || !strats.length) { el.innerHTML = '<span class="none">None selected — pick strategies in Settings.</span>'; return; }
