@@ -159,6 +159,14 @@
   .crit .vals, .crit .det { color: var(--muted); font-size: .85rem; }
   .crit.ok .ic { color: var(--pass-ink); } .crit.no .ic { color: var(--fail-ink); }
   .crit.na .ic { color: var(--fail-ink); font-weight: 700; }
+  /* "Why it didn't pass" failed-criteria explanations */
+  .fails { border: 1px solid color-mix(in srgb, var(--fail-ink) 30%, var(--line)); border-radius: 10px;
+    background: color-mix(in srgb, var(--fail-ink) 7%, transparent); padding: .2rem .7rem; }
+  .fail-item { display: flex; gap: .6rem; padding: .5rem 0; }
+  .fail-item + .fail-item { border-top: 1px solid color-mix(in srgb, var(--fail-ink) 18%, transparent); }
+  .fail-item .ic { flex: 0 0 1.2rem; color: var(--fail-ink); font-weight: 700; }
+  .fail-item .cname { font-weight: 600; }
+  .fail-item .det { color: var(--muted); font-size: .85rem; }
   .mgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: .5rem; margin: .9rem 0; }
   .mgrid .m { background: var(--bg); border: 1px solid var(--line); border-radius: 9px; padding: .45rem .6rem; }
   .mgrid .m b { display: block; font-size: 1rem; } .mgrid .m span { color: var(--muted); font-size: .78rem; }
@@ -216,6 +224,9 @@
     border-radius: 999px; padding: .2rem .6rem; font-size: .85rem; text-decoration: none; }
   .strat-chips a:hover { background: color-mix(in srgb, var(--accent) 14%, transparent); border-color: var(--accent); }
   .strat-chips .none { color: var(--muted); font-size: .85rem; }
+  .pillwrap { display: flex; flex-wrap: wrap; gap: .3rem; max-height: 180px; overflow-y: auto;
+    border: 1px solid var(--line); border-radius: 10px; padding: .5rem; }
+  .pillwrap .pill { font-weight: 600; }
   /* in-dialog job results preview */
   .preview-tbl { font-size: .88rem; }
   .preview-tbl th, .preview-tbl td { padding: .35rem .5rem; }
@@ -456,6 +467,9 @@
       <label class="dlg-l">Strategies &amp; thresholds</label>
       <div id="sched-strats" class="strat-chips"></div>
       <div class="hint" style="margin:.3rem 0 .2rem">These run each night. Click one to fine-tune its thresholds (e.g. Buffett's min ROE, Graham's max P/E), or <a href="/settings.html">edit all in Settings ↗</a>.</div>
+      <label class="dlg-l" style="display:flex;align-items:center;gap:.6rem;justify-content:space-between">What the next run will screen
+        <button class="btn ghost" id="preview-nightly" style="font-weight:400">↻ Refresh</button></label>
+      <div id="nightly-preview" class="hint"></div>
       <div class="dlg-acts">
         <button class="btn" id="save-sched">Save schedule</button>
         <button class="btn ghost" id="view-sched">View latest ↗</button>
@@ -940,6 +954,27 @@ function extLinks(r) {
   links.push(["Google Finance", `https://www.google.com/search?q=${t}+stock`]);
   return links;
 }
+// Plain-language reason a single criterion failed.
+function critExplain(c) {
+  const a = c.actual == null ? "—" : fmt(c.actual);
+  const th = c.threshold == null ? null : fmt(c.threshold);
+  const base = (c.detail || humanize(c.name)).replace(/\.\s*$/, "");
+  return base + (th !== null ? ` — actual ${a} vs target ${th}` : ` — actual ${a}`) + ".";
+}
+// "Why it didn't pass": lists only the failed criteria, with an explanation.
+function failuresBlock(r) {
+  const evaluated = (r.max_score || 0) > 0;
+  const fails = (r.criteria || []).filter(c => !c.passed);
+  if (!evaluated || r.passed || !fails.length) return "";
+  const items = fails.map(c =>
+    `<div class="fail-item"><div class="ic">✕</div><div class="body">`
+    + `<div class="cname">${humanize(c.name)}</div>`
+    + `<div class="det">${escHtml(critExplain(c))}</div></div></div>`).join("");
+  const n = fails.length, tot = (r.criteria || []).length;
+  return `<div class="sec-h">Why it didn't pass</div>`
+    + `<div class="hint" style="margin:-.1rem 0 .4rem">Failed ${n} of ${tot} check${n===1?"":"s"} — each one and why:</div>`
+    + `<div class="fails">${items}</div>`;
+}
 function openDetail(r) {
   const m = r.metrics || {};
   const crits = (r.criteria||[]).map(c => {
@@ -964,7 +999,7 @@ function openDetail(r) {
     `<button class="close" aria-label="Close">×</button>`+
     `<h2>${r.ticker} <span class="badge ${badgeCls}">${badge}</span></h2>`+
     `<div class="sub">${r.name||""} · <b>${stratLabel(r.strategy)}</b> · score ${(r.score_pct??0).toFixed(0)}% (${r.score}/${r.max_score})</div>`+
-    errs+`<div class="sec-h">Criteria</div>${crits||emptyCrit}`+
+    errs+failuresBlock(r)+`<div class="sec-h">Criteria</div>${crits||emptyCrit}`+
     `<div class="sec-h">Key metrics</div><div class="mgrid">${mcells}</div>`+
     `<div class="sec-h">Data sources &amp; additional context</div>`+
     `<div class="hint">Fundamentals from SEC EDGAR; price from Yahoo/Stooq. Verify and dig deeper here:</div>`+
@@ -1380,6 +1415,30 @@ async function loadSchedule() {
     }
   } catch (e) { schedHint("Couldn't load the schedule.", true); }
 }
+// Proleptic-Gregorian ordinal (matches Python date.toordinal) for the next run's UTC date.
+function nextRunOrdinal() {
+  const t = countdownTarget || (typeof nextScheduledRun === "function" && nextScheduledRun(schedCron, new Date())) || new Date();
+  return Math.floor(Date.UTC(t.getUTCFullYear(), t.getUTCMonth(), t.getUTCDate()) / 86400000) + 719163;
+}
+async function previewNightly() {
+  const el = $("#nightly-preview"); if (!el) return;
+  el.textContent = "Loading the next run's candidate pool…";
+  try {
+    const d = await (await fetch("/api/universe?nightly=1&ordinal=" + nextRunOrdinal())).json();
+    if (d.error) { el.textContent = "Couldn't load preview: " + d.error; return; }
+    const rows = d.results || [];
+    if (!rows.length) {
+      el.innerHTML = `The next run (<b>${escHtml(d.date || "")}</b>) has no eligible candidates yet — the universe is built from Finnhub enrichment + the seed list; check the nightly filters in <a href="/settings.html#sec-strategies">Settings</a>.`;
+      return;
+    }
+    const chips = rows.map(r => `<span class="pill" title="${escHtml(r.sector || "")}">${escHtml(r.ticker)}</span>`).join(" ");
+    el.innerHTML = `<div style="margin-bottom:.35rem">The next run (<b>${escHtml(d.date || "")}</b>) will screen `
+      + `<b>${d.count}</b> stock${d.count === 1 ? "" : "s"}${d.index ? ` from the ${escHtml(String(d.index).toUpperCase())}` : ""}`
+      + `${d.count >= d.cap ? ` (nightly cap ${d.cap})` : ""} — hover a ticker for its sector:</div>`
+      + `<div class="pillwrap">${chips}</div>`;
+  } catch (e) { el.textContent = "Preview failed: " + e.message; }
+}
+$("#preview-nightly").onclick = previewNightly;
 function renderSchedStrats(strats) {
   const el = $("#sched-strats"); if (!el) return;
   if (!strats || !strats.length) { el.innerHTML = '<span class="none">None selected — pick strategies in Settings.</span>'; return; }
@@ -1424,7 +1483,7 @@ $("#view-sched").onclick = async () => {
 function openJobDialog(mode) {
   document.querySelectorAll("#job-overlay .dlg").forEach(d => { d.hidden = d.dataset.dlg !== mode; });
   $("#job-overlay").classList.add("open");
-  if (mode === "sched") loadSchedule();
+  if (mode === "sched") { loadSchedule(); previewNightly(); }
   if (mode === "custom") { buildStratMenu(); if (!tmplBuilt) { tmplBuilt = true; buildTmplMenu(); } }
   if (mode === "manual") { buildStratMenu(); setTimeout(() => $("#tickers").focus(), 60); }
 }

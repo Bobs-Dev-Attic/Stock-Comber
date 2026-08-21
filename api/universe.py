@@ -24,6 +24,49 @@ from stock_comber.storage import get_storage  # noqa: E402
 MAX_LIMIT = 30
 
 
+def build_nightly_preview(params) -> dict:
+    """Preview the capped, diversified, rotated ticker pool the nightly
+    'hidden gems' run will screen for a given day (defaults to today).
+
+    Rotation depends only on the day ordinal, so the dashboard passes the next
+    scheduled run's date. No Finnhub calls (finnhub=None) — uses the stored
+    universe catalog + bundled seed, exactly like the hosted run's inputs.
+    """
+    import datetime
+    from stock_comber.config import load_config
+    from stock_comber.universe import build_nightly, effective_config
+
+    store = get_storage()
+    cfg = effective_config(load_config(), store)
+    try:
+        ordinal = int(params.get("ordinal", [""])[0])
+    except (ValueError, TypeError):
+        ordinal = datetime.date.today().toordinal()
+
+    tickers = build_nightly(cfg, store, finnhub=None, day_ordinal=ordinal)
+
+    catalog = {}
+    if getattr(store, "enabled", False):
+        try:
+            catalog = {r["ticker"]: r for r in store.get_universe()}
+        except Exception:
+            catalog = {}
+    rows = [{"ticker": t, "sector": (catalog.get(t) or {}).get("sector"),
+             "market_cap": (catalog.get(t) or {}).get("market_cap")} for t in tickers]
+
+    n = cfg.get("universe", {}).get("nightly", {})
+    return {
+        "nightly": True,
+        "ordinal": ordinal,
+        "date": datetime.date.fromordinal(ordinal).isoformat(),
+        "cap": int(n.get("cap", 75)),
+        "index": (cfg.get("universe", {}).get("index") or ""),
+        "count": len(rows),
+        "results": rows,
+        "enriched": bool(catalog),
+    }
+
+
 def _num(params, key):
     try:
         v = params.get(key, [""])[0]
@@ -91,7 +134,10 @@ class handler(BaseHTTPRequestHandler):
     def do_GET(self):
         params = parse_qs(urlparse(self.path).query)
         try:
-            self._send(200, build_slice(params))
+            if params.get("nightly", [""])[0] in ("1", "true", "yes"):
+                self._send(200, build_nightly_preview(params))
+            else:
+                self._send(200, build_slice(params))
         except Exception as exc:
             self._send(502, {"error": f"universe failed: {exc}"})
 
