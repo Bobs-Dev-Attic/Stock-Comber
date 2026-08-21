@@ -4,6 +4,20 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.26.0] - 2026-08-21
+
+### Added
+- **Countdown to the next scheduled run.** The Full list tab shows a live countdown
+  (updating every second) to the next hosted run, computed from the stored schedule
+  — e.g. "Next scheduled run in 2h 14m 03s · Fri 06:30 UTC". Shows an off state when
+  the nightly run is disabled, and refreshes when you save a new schedule.
+- **Index filter on the Full list.** A dropdown (All indexes / Dow 30 / Nasdaq-100 /
+  S&P 500, from `/api/universe`) filters the full list to a chosen index's
+  constituents, composable with the text filter and "passing only". The status line
+  shows "showing N of M".
+
+[0.26.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.26.0
+
 ## [0.25.2] - 2026-08-21
 
 ### Changed

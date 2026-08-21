@@ -276,11 +276,15 @@
     <!-- Full list (landing): every company across all stored runs -->
     <div class="tabpanel" data-panel="full" role="tabpanel">
       <div class="paneln">
-        <div class="hint" style="flex:1;min-width:220px">Every company Stock-Comber has screened, across all stored runs — deduped to each name's most recent result. Click a row for the full breakdown.</div>
-        <input id="full-filter" type="search" placeholder="Filter ticker / name…" autocomplete="off" style="flex:0 1 200px">
+        <div class="hint" style="flex:1;min-width:200px">Every company Stock-Comber has screened, across all stored runs — deduped to each name's most recent result. Click a row for the full breakdown.</div>
+        <select id="full-index" title="Filter to an index's constituents (e.g. the Dow 30)" style="flex:0 1 160px">
+          <option value="">All indexes</option>
+        </select>
+        <input id="full-filter" type="search" placeholder="Filter ticker / name…" autocomplete="off" style="flex:0 1 180px">
         <label class="hint" style="display:flex;align-items:center;gap:.35rem;margin:0"><input type="checkbox" id="full-passing"> Passing only</label>
         <button class="btn ghost" id="refresh-full">↻ Refresh</button>
       </div>
+      <div id="next-run" class="hint" style="margin-top:.5rem"></div>
     </div>
 
     <!-- Jobs: configure & run the different job types -->
@@ -497,7 +501,8 @@ function showTab(tab) {
   $("#results-area").hidden = (tab === "history" || tab === "api");
   $("#status").textContent = tabStatus[tab] || "";
   if (tab === "full") {
-    if (!fullLoaded) { fullLoaded = true; loadFullList(); } else applyFull();
+    if (!fullLoaded) { fullLoaded = true; loadFullList(); loadIndexOptions(); loadCountdown(); }
+    else applyFull();
   } else if (tab === "jobs") {
     rows = tabRows.jobs; render();
     if (!jobsLoaded) loadSavedJobs();
@@ -892,36 +897,140 @@ function setRows(payload, note, tab) {
 /* Full list (landing): every company across all stored runs, deduped to latest.
    Falls back to the static nightly report when no database is configured. */
 let fullAll = [];
+let fullSource = "db";
 async function loadFullList() {
   setStatus("full", "Loading all screened companies…");
   try {
     const d = await (await fetch("/api/runs?results=all&limit=1000")).json();
     if (d.storage_enabled && (d.results || []).length) {
-      fullAll = d.results;
-      setStatus("full", `All screened companies · ${fullAll.length} rows (deduped to latest)`);
+      fullAll = d.results; fullSource = "db";
     } else {
       let res = await fetch("/data/latest.json", {cache:"no-store"});
       if (!res.ok) res = await fetch("/api/latest");
       const ld = await res.json();
-      fullAll = ld.results || [];
-      setStatus("full", fullAll.length
-        ? `Latest scheduled report · ${fullAll.length} rows${d.storage_enabled?"":" · connect a database to keep full history"}`
-        : "No stored results yet — run a job (Jobs tab) or wait for the nightly run.");
+      fullAll = ld.results || []; fullSource = "latest";
     }
-  } catch (e) { fullAll = []; setStatus("full", "Could not load the full list: " + e.message); }
+  } catch (e) { fullAll = []; setStatus("full", "Could not load the full list: " + e.message); return; }
   if (activeTab === "full") applyFull();
+}
+/* ---- index-template filter (Dow / Nasdaq-100 / S&P 500) ---- */
+let fullIndexSet = null;              // Set of tickers when an index is selected
+const indexCache = {};
+async function loadIndexOptions() {
+  try {
+    const d = await (await fetch("/api/universe")).json();
+    const sel = $("#full-index");
+    (d.templates || []).forEach(t => {
+      const o = document.createElement("option");
+      o.value = t.key; o.textContent = t.name + (t.count ? ` (${t.count})` : "");
+      sel.appendChild(o);
+    });
+  } catch (e) {}
+}
+async function setIndexFilter(key) {
+  if (!key) { fullIndexSet = null; applyFull(); return; }
+  if (!indexCache[key]) {
+    setStatus("full", "Loading constituents…");
+    try {
+      const d = await (await fetch("/api/universe?index=" + encodeURIComponent(key) + "&limit=600")).json();
+      indexCache[key] = new Set((d.results || []).map(r => (r.ticker || "").toUpperCase()));
+    } catch (e) { indexCache[key] = new Set(); }
+  }
+  fullIndexSet = indexCache[key];
+  applyFull();
+}
+function fullStatus(shown) {
+  const total = fullAll.length;
+  if (!total) return "No stored results yet — run a job (Jobs tab) or wait for the nightly run.";
+  const base = fullSource === "latest" ? "Latest scheduled report" : "All screened companies";
+  const filtered = !!fullIndexSet || !!($("#full-filter").value || "").trim() || $("#full-passing").checked;
+  return filtered ? `${base} · showing ${shown} of ${total}` : `${base} · ${total} rows`;
 }
 function applyFull() {
   let rws = fullAll;
   const q = ($("#full-filter").value || "").trim().toLowerCase();
+  if (fullIndexSet) rws = rws.filter(r => fullIndexSet.has((r.ticker || "").toUpperCase()));
   if ($("#full-passing").checked) rws = rws.filter(r => r.passed);
   if (q) rws = rws.filter(r => ((r.ticker || "") + " " + (r.name || "")).toLowerCase().includes(q));
   tabRows.full = rws;
-  if (activeTab === "full") { rows = rws; render(); }
+  if (activeTab === "full") { rows = rws; render(); setStatus("full", fullStatus(rws.length)); }
 }
 $("#full-filter").addEventListener("input", () => { if (activeTab === "full") applyFull(); });
 $("#full-passing").addEventListener("change", () => { if (activeTab === "full") applyFull(); });
+$("#full-index").addEventListener("change", e => { if (activeTab === "full") setIndexFilter(e.target.value); });
 $("#refresh-full").onclick = () => loadFullList();
+
+/* ---- countdown to the next scheduled run ---- */
+function cronFieldMatch(val, spec, lo, hi) {
+  spec = (spec || "*").trim();
+  return spec.split(",").some(part => {
+    part = part.trim(); if (!part) return false;
+    let step = 1, body = part;
+    if (part.includes("/")) { const p = part.split("/"); body = p[0]; step = Math.max(1, parseInt(p[1]) || 1); }
+    let a, b;
+    if (body === "*") { a = lo; b = hi; }
+    else if (body.includes("-")) { const p = body.split("-"); a = parseInt(p[0]); b = parseInt(p[1]); }
+    else { a = b = parseInt(body); }
+    if (isNaN(a) || isNaN(b)) return false;
+    return val >= a && val <= b && (val - a) % step === 0;
+  });
+}
+function cronFires(cron, d) {   // d: Date — does the 5-min heartbeat at d fire this cron?
+  const f = String(cron || "").trim().split(/\s+/); if (f.length < 5) return false;
+  const bucket = Math.floor(d.getUTCMinutes() / 5) * 5;
+  let minuteOk = false;
+  for (let m = bucket; m < bucket + 5; m++) { if (cronFieldMatch(m, f[0], 0, 59)) { minuteOk = true; break; } }
+  const cdow = d.getUTCDay();   // 0=Sun..6=Sat, matches cron dow
+  return minuteOk && cronFieldMatch(d.getUTCHours(), f[1], 0, 23)
+    && cronFieldMatch(d.getUTCDate(), f[2], 1, 31)
+    && cronFieldMatch(d.getUTCMonth() + 1, f[3], 1, 12)
+    && (cronFieldMatch(cdow, f[4], 0, 6) || (cronFieldMatch(7, f[4], 0, 7) && cdow === 0));
+}
+function nextScheduledRun(cron, from) {
+  const d = new Date(from); d.setUTCSeconds(0, 0);
+  d.setUTCMinutes(d.getUTCMinutes() - (d.getUTCMinutes() % 5));   // floor to 5-min heartbeat
+  if (d <= from) d.setUTCMinutes(d.getUTCMinutes() + 5);
+  for (let i = 0; i <= 8 * 24 * 12; i++) {   // search up to 8 days of 5-min ticks
+    if (cronFires(cron, d)) return new Date(d);
+    d.setUTCMinutes(d.getUTCMinutes() + 5);
+  }
+  return null;
+}
+function fmtDur(ms) {
+  let s = Math.max(0, Math.floor(ms / 1000));
+  const d = Math.floor(s / 86400); s -= d * 86400;
+  const h = Math.floor(s / 3600); s -= h * 3600;
+  const m = Math.floor(s / 60); s -= m * 60;
+  const parts = [];
+  if (d) parts.push(d + "d");
+  if (d || h) parts.push(h + "h");
+  parts.push(m + "m");
+  if (!d) parts.push(String(s).padStart(2, "0") + "s");
+  return parts.join(" ");
+}
+const DOW3 = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+let schedCron = "30 6 * * 1-5", schedEnabled = true, countdownTarget = null, countdownTimer = null;
+async function loadCountdown() {
+  try {
+    const d = await (await fetch("/api/settings")).json();
+    const sc = (d.config && d.config.schedule) || {};
+    const configured = !!d.schedule_configured;
+    schedEnabled = configured ? !!sc.enabled : true;
+    schedCron = (configured && sc.cron) ? sc.cron : "30 6 * * 1-5";
+  } catch (e) { schedEnabled = false; }
+  countdownTarget = null; tickCountdown();
+  if (!countdownTimer) countdownTimer = setInterval(tickCountdown, 1000);
+}
+function tickCountdown() {
+  const el = $("#next-run"); if (!el) return;
+  if (!schedEnabled) { el.textContent = "⏱ Scheduled run is off — enable it under Jobs → Scheduled report."; return; }
+  const now = new Date();
+  if (!countdownTarget || countdownTarget <= now) countdownTarget = nextScheduledRun(schedCron, now);
+  if (!countdownTarget) { el.textContent = ""; return; }
+  const w = countdownTarget;
+  const at = `${DOW3[w.getUTCDay()]} ${String(w.getUTCHours()).padStart(2,"0")}:${String(w.getUTCMinutes()).padStart(2,"0")} UTC`;
+  el.textContent = `⏱ Next scheduled run in ${fmtDur(w - now)} · ${at}`;
+}
 
 /* Manual searches: compare several tickers in a table (no custom criteria). */
 async function runLive() {
@@ -1133,6 +1242,7 @@ $("#save-sched").onclick = async () => {
     const d = await res.json().catch(() => ({}));
     schedHint(res.ok ? `Saved — the hosted nightly run is now ${schedule.enabled ? "enabled at " + $("#sched-time").value + " UTC" : "disabled"} (${schedule.cron}). The 5-minute heartbeat picks this up automatically.`
       : "Save failed: " + (d.error || res.status) + (d.problems ? " — " + d.problems.join("; ") : ""), !res.ok);
+    if (res.ok) loadCountdown();   // refresh the Full-list countdown with the new schedule
   } catch (e) { schedHint("Save failed: " + e.message, true); }
   finally { btn.disabled = false; btn.textContent = label; }
 };

@@ -1,5 +1,17 @@
 # Release notes
 
+## v0.26.0 — Next-run countdown & index filter (2026-08-21)
+
+- **Countdown to the next scheduled run.** The **Full list** tab now shows a live
+  countdown to the next hosted run — e.g. *"Next scheduled run in 2h 14m 03s · Fri
+  06:30 UTC"* — computed from your saved schedule and ticking every second. If the
+  nightly run is turned off it says so, and it updates immediately when you change
+  and save the schedule.
+- **Filter the Full list by index.** A new dropdown lets you narrow the list to the
+  constituents of an index — **Dow 30**, **Nasdaq-100**, or **S&P 500** — so you can
+  see just those names. It combines with the ticker/name filter and "passing only",
+  and the status line shows how many of the total are showing.
+
 ## v0.25.2 — Queued & running jobs on the History tab (2026-08-21)
 
 The History tab's analysis-queue card is now **Queued & running**. Jobs are ordered
