@@ -1,5 +1,17 @@
 # Release notes
 
+## v0.29.0 — Preview the next run's picks & explain failures (2026-08-21)
+
+- **See what the next scheduled analysis will screen.** Open **Jobs → Scheduled
+  report → Configure** and there's now a "What the next run will screen" preview: the
+  actual capped, diversified, rotating list of tickers the nightly run will analyze
+  on its next date (hover any ticker for its sector). It runs the real nightly
+  universe-selection logic, so it matches what the hosted run will do.
+- **"Why it didn't pass."** When you open a stock's expanded breakdown, it now leads
+  with a clear section listing just the criteria it failed and why — the rule plus
+  the company's actual value against the target (e.g. "Net profit margin above 10% —
+  actual 8 vs target 10"). The full pass/fail checklist still follows underneath.
+
 ## v0.28.0 — See & fine-tune scheduled-report strategies (2026-08-21)
 
 **Where are the scheduled report's parameters?** They live on the **Settings** page

@@ -4,6 +4,22 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.29.0] - 2026-08-21
+
+### Added
+- **Preview what the next scheduled run will analyze.** The Scheduled report dialog
+  now shows the capped, sector-diversified, rotated ticker pool the next nightly run
+  will screen (for the next run's date), as a scrollable list of tickers with their
+  sector on hover. Backed by `GET /api/universe?nightly=1[&ordinal=N]` (reuses the
+  existing function — still 12), which runs the real nightly universe selection with
+  no Finnhub calls.
+- **"Why it didn't pass" in the expanded stock view.** The detail modal now leads
+  with a dedicated section listing only the failed criteria, each with a plain
+  explanation — the rule plus its actual-vs-target values (e.g. "Return on equity
+  above 15.0% — actual 12 vs target 15"). The full criteria list still follows.
+
+[0.29.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.29.0
+
 ## [0.28.0] - 2026-08-21
 
 ### Added
