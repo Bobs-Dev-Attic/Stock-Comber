@@ -1,5 +1,14 @@
 # Release notes
 
+## v0.29.2 — Screen the whole next-run pool at once (2026-08-21)
+
+The next-run preview (Jobs → Scheduled report → Configure) now has a **"▶ Screen all
+N"** button. Instead of tapping tickers one at a time, click it once to run a live
+fundamentals screen over the entire next-run pool — using the nightly run's own
+configured strategies — and see every result in the Jobs-tab table. Tapping an
+individual ticker still opens its full deep-dive (news &amp; sentiment). The batch is
+capped at 40 tickers to stay within the serverless time limit, and adds no new function.
+
 ## v0.29.1 — Deep-dive preview from the next-run list (2026-08-21)
 
 The next-run preview (Jobs → Scheduled report → Configure) now lets you **tap any

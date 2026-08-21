@@ -4,6 +4,18 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.29.2] - 2026-08-21
+
+### Added
+- **Screen the whole next-run pool at once.** The Scheduled report dialog's next-run
+  preview now has a **"▶ Screen all N"** button that runs a live fundamentals screen
+  over the entire (capped) nightly pool in one shot, using the nightly run's own
+  configured strategies, and drops the results into the Jobs-tab results table. Tapping
+  a single ticker still opens its full deep-dive. Capped at 40 tickers per batch to stay
+  under the serverless time limit; no new function (still 12).
+
+[0.29.2]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.29.2
+
 ## [0.29.1] - 2026-08-21
 
 ### Added
