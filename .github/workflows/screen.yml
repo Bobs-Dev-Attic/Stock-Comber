@@ -2,14 +2,17 @@ name: Scheduled screen
 
 # Combs free data sources and commits the fresh reports. The *stored* schedule
 # (Jobs tab → Scheduled report, saved to the database) decides when this fires:
-# the cron below is an hourly heartbeat, and the `schedule-gate` step checks the
-# stored schedule each hour and only proceeds on a matching hour. When no
-# schedule is stored (or no DATABASE_URL is set), it defaults to 06:xx UTC on
-# weekdays — the original behaviour. A manual dispatch always runs.
+# the cron below is a 5-minute heartbeat, and the `schedule-gate` step checks the
+# stored schedule each tick and only proceeds when the configured time matches
+# (to a 5-minute resolution — GitHub's minimum). When no schedule is stored (or
+# no DATABASE_URL is set), it defaults to 06:30 UTC on weekdays — the original
+# behaviour. A manual dispatch always runs.
 on:
   schedule:
-    # Hourly heartbeat — schedule-gate decides whether to actually run.
-    - cron: "0 * * * *"
+    # Every 5 minutes (GitHub's finest schedule resolution) — schedule-gate
+    # decides whether this tick actually runs. Keep in sync with
+    # stock_comber/schedule.py HEARTBEAT_MINUTES.
+    - cron: "*/5 * * * *"
   workflow_dispatch:
     inputs:
       nightly:

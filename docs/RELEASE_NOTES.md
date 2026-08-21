@@ -1,5 +1,17 @@
 # Release notes
 
+## v0.24.0 — Minute-precise schedule, API tab, no footer (2026-08-21)
+
+- **The nightly schedule now honours the minute.** The hosted job runs every
+  5 minutes and fires at the exact configured time — a run set for 06:15 UTC runs
+  at 06:15, not the top of the hour. Five minutes is GitHub Actions' finest
+  schedule resolution, so the time picker steps in 5-minute increments.
+- **New 🔌 API tab** documenting every endpoint — public reads and key-gated
+  writes — with method, path, and description. This replaces the API links that
+  used to sit in the footer.
+- **The footer is gone.** Navigation is in the ☰ side menu, the API reference is in
+  the API tab, and the disclaimer and data sources live on the About page.
+
 ## v0.23.0 — Schedule drives the hosted run; side-drawer menu (2026-08-21)
 
 **The nightly schedule you set in the app now actually controls the hosted run.**

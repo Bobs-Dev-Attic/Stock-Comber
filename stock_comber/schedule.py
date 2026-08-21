@@ -6,17 +6,23 @@ time. So the workflow instead runs on a frequent (hourly) heartbeat and calls
 dashboard (``settings.schedule`` in the database) and answers yes/no for the
 current hour. This makes the *stored* schedule drive the hosted run.
 
-Because the heartbeat is hourly, the cron ``minute`` field is ignored — a run
-fires at the top of its configured hour. The other fields (hour, day-of-month,
-month, day-of-week) are matched against the current UTC time.
+The heartbeat runs every :data:`HEARTBEAT_MINUTES` minutes, and the cron
+``minute`` field is honoured to that resolution — a run fires on the heartbeat
+whose window contains the configured minute. GitHub Actions' minimum schedule
+interval is 5 minutes, so that is as precise as the hosted cron can get; keep the
+workflow's ``*/5 * * * *`` schedule in sync with this constant. All cron fields
+(minute, hour, day-of-month, month, day-of-week) are matched against UTC.
 
 When no schedule is stored (or no database is configured), the built-in default
-preserves the original hosted behaviour: 06:xx UTC on weekdays.
+preserves the original hosted behaviour: 06:30 UTC on weekdays.
 """
 
 from __future__ import annotations
 
 from typing import Optional, Tuple
+
+# Must match the workflow heartbeat (screen.yml: cron "*/5 * * * *").
+HEARTBEAT_MINUTES = 5
 
 # Preserves the pre-scheduling hosted behaviour when nothing is stored.
 DEFAULT_SCHEDULE = {"enabled": True, "cron": "30 6 * * 1-5"}
@@ -73,14 +79,22 @@ def should_run_now(stored_settings: Optional[dict], now) -> Tuple[bool, str]:
     fields = str(sched.get("cron") or "").split()
     if len(fields) < 5:
         return False, f"invalid cron: {sched.get('cron')!r}"
-    _minute, hour, dom, month, dow = fields[:5]  # minute ignored (hourly heartbeat)
+    minute, hour, dom, month, dow = fields[:5]
+
+    # The minute is honoured to the heartbeat's resolution: a run fires on the
+    # heartbeat whose window contains the configured minute. (GitHub Actions'
+    # minimum schedule interval is 5 minutes, so :07 lands in the 05–09 window.)
+    bucket_start = (now.minute // HEARTBEAT_MINUTES) * HEARTBEAT_MINUTES
+    minute_ok = any(_match_field(m, minute, 0, 59)
+                    for m in range(bucket_start, bucket_start + HEARTBEAT_MINUTES))
 
     # cron day-of-week: 0 or 7 = Sunday, 1 = Monday … 6 = Saturday.
     cron_dow = now.isoweekday() % 7  # Mon..Sat = 1..6, Sun = 0
-    ok = (_match_field(now.hour, hour, 0, 23)
+    ok = (minute_ok
+          and _match_field(now.hour, hour, 0, 23)
           and _match_field(now.day, dom, 1, 31)
           and _match_field(now.month, month, 1, 12)
           and (_match_field(cron_dow, dow, 0, 6)
                or _match_field(7, dow, 0, 7) and cron_dow == 0))
-    when = now.strftime("%Y-%m-%d %H:00 UTC")
+    when = now.strftime("%Y-%m-%d %H:%M UTC")
     return (ok, f"cron {sched['cron']!r} {'matches' if ok else 'does not match'} {when} (dow {cron_dow})")

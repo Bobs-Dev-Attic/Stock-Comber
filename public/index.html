@@ -194,6 +194,19 @@
   .histcard h3 { margin: 0 0 .5rem; font-size: 1rem; }
   .histcard td, .histcard th { text-align: left; }
   .pill { display: inline-block; background: var(--chip); border-radius: 999px; padding: .05rem .5rem; font-size: .8rem; }
+  /* API tab */
+  .apiref { display: flex; flex-direction: column; gap: .1rem; }
+  .api-grp { font-weight: 700; font-size: .82rem; text-transform: uppercase; letter-spacing: .03em;
+    color: var(--muted); margin: 1rem 0 .3rem; }
+  .api-grp:first-child { margin-top: 0; }
+  .api-ep { display: flex; gap: .6rem; align-items: baseline; padding: .5rem .2rem; border-bottom: 1px solid var(--line); }
+  .api-ep code.api-path { background: var(--chip); padding: .1rem .4rem; border-radius: 5px; font-size: .86rem; word-break: break-word; }
+  .api-d { color: var(--muted); font-size: .85rem; margin-top: .25rem; }
+  .api-m { flex: 0 0 auto; font-size: .68rem; font-weight: 800; letter-spacing: .04em; padding: .12rem .4rem;
+    border-radius: 6px; color: #fff; }
+  .api-m.get { background: var(--accent); }
+  .api-m.post { background: #2d6cdf; }
+  .api-m.del { background: var(--fail-ink); }
 
   /* ---- Narrow screens (phones) ---- */
   @media (max-width: 640px) {
@@ -239,6 +252,7 @@
       <button class="tab" role="tab" data-tab="full" aria-selected="true">📋 Full list</button>
       <button class="tab" role="tab" data-tab="jobs" aria-selected="false">⚙️ Jobs</button>
       <button class="tab" role="tab" data-tab="history" aria-selected="false">🕓 History</button>
+      <button class="tab" role="tab" data-tab="api" aria-selected="false">🔌 API</button>
     </div>
 
     <!-- Full list (landing): every company across all stored runs -->
@@ -258,7 +272,7 @@
         <div class="jobsec-h">📅 Scheduled report <span class="hint" style="margin:0">— the nightly “hidden gems” run</span></div>
         <div class="controls">
           <label class="hint" style="display:flex;align-items:center;gap:.35rem;margin:0"><input type="checkbox" id="sched-enabled"> Enabled</label>
-          <label class="hint" style="display:flex;align-items:center;gap:.35rem;margin:0">Time (UTC) <input id="sched-time" type="time" value="06:30"></label>
+          <label class="hint" style="display:flex;align-items:center;gap:.35rem;margin:0">Time (UTC) <input id="sched-time" type="time" step="300" value="06:30" title="5-minute steps — GitHub's finest schedule resolution"></label>
           <label class="hint" style="display:flex;align-items:center;gap:.35rem;margin:0">Days
             <select id="sched-days">
               <option value="1-5">Weekdays</option>
@@ -359,6 +373,32 @@
       </div>
     </div>
 
+    <!-- API: the HTTP endpoints behind the dashboard -->
+    <div class="tabpanel" data-panel="api" role="tabpanel" hidden>
+      <div class="hint" style="margin-bottom:.6rem">Stock-Comber is backed by a small JSON API — the same endpoints this dashboard uses. <b>GET</b> endpoints are public; writes are gated by <code>STOCK_COMBER_API_KEY</code> (pass <code>?key=…</code> or an <code>X-API-Key</code> header). Base URL is this site.</div>
+      <div class="apiref">
+        <div class="api-grp">Read (public)</div>
+        <div class="api-ep"><span class="api-m get">GET</span><div><code class="api-path">/api/latest</code><div class="api-d">The latest scheduled “hidden gems” report (JSON).</div></div></div>
+        <div class="api-ep"><span class="api-m get">GET</span><div><code class="api-path">/api/screen?tickers=AAPL,MSFT&amp;strategy=graham&amp;custom=[…]</code><div class="api-d">Run a live screen over the given tickers. <code>strategy</code> repeatable; <code>custom</code> is a JSON array of <code>{metric,op,value}</code> rules.</div></div></div>
+        <div class="api-ep"><span class="api-m get">GET</span><div><code class="api-path">/api/analyze?ticker=AAPL</code><div class="api-d">Full deep-dive for one ticker — all six lenses, composite scores, news &amp; sentiment. Stores a run when a database is configured.</div></div></div>
+        <div class="api-ep"><span class="api-m get">GET</span><div><code class="api-path">/api/runs?limit=50</code> · <code class="api-path">/api/runs?results=all</code><div class="api-d">Run &amp; search history; <code>results=all</code> returns every company across all runs, deduped to its latest result.</div></div></div>
+        <div class="api-ep"><span class="api-m get">GET</span><div><code class="api-path">/api/universe?index=sp500&amp;sector=Health%20Care&amp;limit=10</code><div class="api-d">Index templates (Dow / Nasdaq-100 / S&amp;P 500) and universe slices.</div></div></div>
+        <div class="api-ep"><span class="api-m get">GET</span><div><code class="api-path">/api/tickers?q=app&amp;limit=8</code><div class="api-d">Ticker search / autocomplete.</div></div></div>
+        <div class="api-ep"><span class="api-m get">GET</span><div><code class="api-path">/api/queue?limit=50</code><div class="api-d">The analysis queue (tickers awaiting a full analysis).</div></div></div>
+        <div class="api-ep"><span class="api-m get">GET</span><div><code class="api-path">/api/signals?runs=40</code><div class="api-d">Plain BUY / WATCH / AVOID reads for recently analyzed tickers.</div></div></div>
+        <div class="api-ep"><span class="api-m get">GET</span><div><code class="api-path">/api/analytics</code><div class="api-d">Aggregate analytics (runs over time, top tickers, sectors, sentiment, health bands).</div></div></div>
+        <div class="api-ep"><span class="api-m get">GET</span><div><code class="api-path">/api/settings</code><div class="api-d">Effective configuration and key/DB status. Secrets are never returned.</div></div></div>
+        <div class="api-ep"><span class="api-m get">GET</span><div><code class="api-path">/api/thesis</code> · <code class="api-path">/api/backtest?ticker=AAPL</code><div class="api-d">Tracked investment theses; historical backtest for a ticker.</div></div></div>
+
+        <div class="api-grp">Write (needs <code>STOCK_COMBER_API_KEY</code>)</div>
+        <div class="api-ep"><span class="api-m get">GET</span><div><code class="api-path">/api/export?format=csv&amp;run=51&amp;key=…</code><div class="api-d">Export a run's full per-company results as CSV or JSON.</div></div></div>
+        <div class="api-ep"><span class="api-m post">POST</span><div><code class="api-path">/api/settings?key=…</code><div class="api-d">Save settings — thresholds, saved <code>jobs</code>, and the nightly <code>schedule</code>. Merges over stored settings.</div></div></div>
+        <div class="api-ep"><span class="api-m post">POST</span><div><code class="api-path">/api/queue?key=…</code><div class="api-d">Enqueue tickers for a full analysis by the background worker.</div></div></div>
+        <div class="api-ep"><span class="api-m post">POST</span> <span class="api-m del">DELETE</span><div><code class="api-path">/api/thesis?key=…</code><div class="api-d">Create or delete a tracked thesis.</div></div></div>
+      </div>
+      <div class="hint" style="margin-top:.7rem">Educational tool only — not investment advice. Data from SEC EDGAR, Yahoo &amp; Stooq may be delayed or incomplete. <a href="https://github.com/Bobs-Dev-Attic/Stock-Comber" target="_blank" rel="noopener">Source ↗</a></div>
+    </div>
+
     <div id="results-area">
       <div class="toolbar">
         <div id="status" class="status" style="margin:0"></div>
@@ -383,13 +423,6 @@
       </table></div>
     </div>
   </section>
-
-  <p class="foot">
-    Educational tool only — not investment advice. Data from SEC EDGAR, Yahoo &amp; Stooq may be delayed or incomplete.<br>
-    <a href="/about.html">ℹ️ About</a> · <a href="/glossary.html">📖 Definitions</a> · <a href="/strategies.html">🎯 Strategies</a> · <a href="/analytics.html">📊 Analytics</a> · <a href="/backtest.html">🧪 Backtest</a> · <a href="/thesis.html">🎯 Theses</a> · <a href="/settings.html">⚙️ Settings</a> ·
-    API: <code>/api/screen</code> · <code>/api/analyze</code> · <code>/api/runs</code> · <code>/api/export</code> ·
-    <a href="https://github.com/Bobs-Dev-Attic/Stock-Comber">source</a>
-  </p>
 </div>
 
 <div id="overlay" class="overlay" role="dialog" aria-modal="true"><div class="modal" id="modal"></div></div>
@@ -434,7 +467,7 @@ let rows = [], sortK = "score_pct", sortDir = -1;
 /* "full" = every company across all runs (landing); "jobs" = results of a
    custom job / manual analysis. History renders its own tables. */
 const tabRows = {full: [], jobs: []};
-const tabStatus = {full: "", jobs: "", history: ""};
+const tabStatus = {full: "", jobs: "", history: "", api: ""};
 let activeTab = "full";
 let fullLoaded = false, schedLoaded = false, histLoaded = false;
 function setStatus(tab, text) {
@@ -445,8 +478,8 @@ function showTab(tab) {
   activeTab = tab;
   document.querySelectorAll(".tab").forEach(b => b.setAttribute("aria-selected", b.dataset.tab === tab));
   document.querySelectorAll(".tabpanel").forEach(p => p.hidden = p.dataset.panel !== tab);
-  // The shared results table serves Full list + Jobs; History has its own cards.
-  $("#results-area").hidden = (tab === "history");
+  // The shared results table serves Full list + Jobs; History & API have their own content.
+  $("#results-area").hidden = (tab === "history" || tab === "api");
   $("#status").textContent = tabStatus[tab] || "";
   if (tab === "full") {
     if (!fullLoaded) { fullLoaded = true; loadFullList(); } else applyFull();
@@ -995,7 +1028,7 @@ async function loadSchedule() {
     if (!d.storage_enabled) schedHint("Connect a database (Settings) to save a schedule.");
     else if (!configured) schedHint("Using the default nightly run (06:30 UTC, weekdays). Adjust and Save to change when it runs.");
     else schedHint(sc.enabled
-      ? "This schedule drives the hosted nightly run — an hourly job checks it and runs on a matching hour (minute is approximate)."
+      ? "This schedule drives the hosted nightly run — a job checks it every 5 minutes and runs at the configured time (GitHub's finest schedule resolution)."
       : "Nightly run is disabled. Enable and Save to resume it.");
   } catch (e) { schedHint("Couldn't load the schedule.", true); }
 }
@@ -1011,7 +1044,7 @@ $("#save-sched").onclick = async () => {
       { method: "POST", headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ schedule }) });
     const d = await res.json().catch(() => ({}));
-    schedHint(res.ok ? `Saved — the hosted nightly run is now ${schedule.enabled ? "enabled at " + $("#sched-time").value + " UTC" : "disabled"} (${schedule.cron}). The hourly job picks this up automatically.`
+    schedHint(res.ok ? `Saved — the hosted nightly run is now ${schedule.enabled ? "enabled at " + $("#sched-time").value + " UTC" : "disabled"} (${schedule.cron}). The 5-minute heartbeat picks this up automatically.`
       : "Save failed: " + (d.error || res.status) + (d.problems ? " — " + d.problems.join("; ") : ""), !res.ok);
   } catch (e) { schedHint("Save failed: " + e.message, true); }
   finally { btn.disabled = false; btn.textContent = label; }
