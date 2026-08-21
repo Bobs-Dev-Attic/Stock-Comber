@@ -227,6 +227,9 @@
   .pillwrap { display: flex; flex-wrap: wrap; gap: .3rem; max-height: 180px; overflow-y: auto;
     border: 1px solid var(--line); border-radius: 10px; padding: .5rem; }
   .pillwrap .pill { font-weight: 600; }
+  a.preview-tick { text-decoration: none; color: var(--ink); cursor: pointer; border: 1px solid transparent; }
+  a.preview-tick:hover, a.preview-tick:focus { background: color-mix(in srgb, var(--accent) 16%, transparent);
+    border-color: var(--accent); color: var(--accent-ink); outline: none; }
   /* in-dialog job results preview */
   .preview-tbl { font-size: .88rem; }
   .preview-tbl th, .preview-tbl td { padding: .35rem .5rem; }
@@ -1431,11 +1434,17 @@ async function previewNightly() {
       el.innerHTML = `The next run (<b>${escHtml(d.date || "")}</b>) has no eligible candidates yet — the universe is built from Finnhub enrichment + the seed list; check the nightly filters in <a href="/settings.html#sec-strategies">Settings</a>.`;
       return;
     }
-    const chips = rows.map(r => `<span class="pill" title="${escHtml(r.sector || "")}">${escHtml(r.ticker)}</span>`).join(" ");
+    const chips = rows.map(r => `<a href="#" class="pill preview-tick" data-t="${escHtml(r.ticker)}" title="${escHtml(r.sector || "")} — tap for a deep-dive preview">${escHtml(r.ticker)}</a>`).join(" ");
     el.innerHTML = `<div style="margin-bottom:.35rem">The next run (<b>${escHtml(d.date || "")}</b>) will screen `
       + `<b>${d.count}</b> stock${d.count === 1 ? "" : "s"}${d.index ? ` from the ${escHtml(String(d.index).toUpperCase())}` : ""}`
-      + `${d.count >= d.cap ? ` (nightly cap ${d.cap})` : ""} — hover a ticker for its sector:</div>`
+      + `${d.count >= d.cap ? ` (nightly cap ${d.cap})` : ""} — tap any ticker to preview its deep-dive analysis:</div>`
       + `<div class="pillwrap">${chips}</div>`;
+    el.querySelectorAll(".preview-tick").forEach(a => a.onclick = e => {
+      e.preventDefault();
+      closeJobDialog();           // hand off to the deep-dive analysis modal
+      $("#tickers").value = a.dataset.t;
+      analyzeNow();
+    });
   } catch (e) { el.textContent = "Preview failed: " + e.message; }
 }
 $("#preview-nightly").onclick = previewNightly;

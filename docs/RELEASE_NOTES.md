@@ -1,5 +1,12 @@
 # Release notes
 
+## v0.29.1 — Deep-dive preview from the next-run list (2026-08-21)
+
+The next-run preview (Jobs → Scheduled report → Configure) now lets you **tap any
+ticker to preview its full deep-dive analysis** — all six value/quality lenses plus
+news &amp; sentiment — before the nightly run gets to it. Tapping a ticker closes the
+schedule dialog and opens that stock's analysis.
+
 ## v0.29.0 — Preview the next run's picks & explain failures (2026-08-21)
 
 - **See what the next scheduled analysis will screen.** Open **Jobs → Scheduled

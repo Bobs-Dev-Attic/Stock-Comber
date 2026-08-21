@@ -4,6 +4,16 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.29.1] - 2026-08-21
+
+### Added
+- **Deep-dive preview from the next-run list.** In the Scheduled report dialog's
+  "what the next run will screen" preview, each ticker is now clickable — tapping one
+  closes the dialog and opens that stock's full deep-dive analysis (all six lenses +
+  news &amp; sentiment), so you can preview any candidate before the nightly run.
+
+[0.29.1]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.29.1
+
 ## [0.29.0] - 2026-08-21
 
 ### Added
