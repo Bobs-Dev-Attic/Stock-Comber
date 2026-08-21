@@ -1,5 +1,13 @@
 # Release notes
 
+## v0.27.1 — Job results preview in the dialog (2026-08-21)
+
+Clicking **▶ Run now** in the custom-job dialog now shows a **preview of the
+results right there** — a compact table of the top names (by health) with a
+"X results · Y passing" summary — instead of closing the dialog. An **Open full
+results →** button jumps to the complete table when you want it. Running a saved
+job from its card on the overview still goes straight to the full table.
+
 ## v0.27.0 — Redesigned Jobs tab with dialogs (2026-08-21)
 
 The **Jobs** tab is now a clean overview of the three job types, each a card with a
