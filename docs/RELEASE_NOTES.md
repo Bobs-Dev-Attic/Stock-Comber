@@ -1,5 +1,17 @@
 # Release notes
 
+## v0.25.0 — Remembered table sort & column order (2026-08-21)
+
+The results table now keeps your view the way you left it:
+
+- **Sort is remembered.** The column you sort by and its direction persist across
+  reloads, rather than snapping back to Score (descending) each time.
+- **Columns are draggable.** Drag a column header to reorder the table; the order is
+  saved and restored on your next visit. Ticker stays pinned as the first column.
+
+Both are stored per-browser (`localStorage`), alongside the existing remembered
+column selection.
+
 ## v0.24.0 — Minute-precise schedule, API tab, no footer (2026-08-21)
 
 - **The nightly schedule now honours the minute.** The hosted job runs every

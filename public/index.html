@@ -81,6 +81,9 @@
   table { border-collapse: collapse; width: 100%; }
   th, td { padding: .55rem .6rem; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
   th { color: var(--muted); font-weight: 600; font-size: .82rem; text-transform: uppercase; letter-spacing: .03em; cursor: pointer; user-select: none; }
+  th[draggable=true] { cursor: grab; }
+  th.dragging { opacity: .45; }
+  th.dragover { box-shadow: inset 2px 0 0 var(--accent); }
   th.l, td.l { text-align: left; }
   th .arrow { opacity: .5; font-size: .7rem; }
   tbody tr { cursor: pointer; }
@@ -522,6 +525,17 @@ function loadCols() {
 }
 function saveCols() { try { localStorage.setItem("sc_cols", JSON.stringify(selectedCols)); } catch(e){} }
 
+/* ---- persisted sort (column + direction) ---- */
+function saveSort() { try { localStorage.setItem("sc_sort", JSON.stringify({k: sortK, dir: sortDir})); } catch(e){} }
+(function loadSort() {
+  try {
+    const s = JSON.parse(localStorage.getItem("sc_sort"));
+    if (s && typeof s.k === "string" && (s.k === "ticker" || ALL_COLUMNS.some(c => c.key === s.k))) {
+      sortK = s.k; sortDir = s.dir === 1 ? 1 : -1;
+    }
+  } catch(e){}
+})();
+
 /* strategy multi-select dropdown */
 const STRATS = [
   ["graham","Graham (defensive)"], ["buffett","Buffett (quality)"],
@@ -643,7 +657,8 @@ function buildColsMenu() {
   def.onclick = () => { selectedCols = DEFAULT_COLS.slice(); saveCols(); buildColsMenu(); renderHead(); render(); };
   mini.append(all, def); pop.appendChild(mini);
 }
-function orderedCols() { return ALL_COLUMNS.filter(c => selectedCols.includes(c.key)); }
+// Order follows selectedCols (drag-reorderable, persisted), not the ALL_COLUMNS order.
+function orderedCols() { return selectedCols.map(k => ALL_COLUMNS.find(c => c.key === k)).filter(Boolean); }
 
 /* menu open/close */
 function wireMenu(id) {
@@ -667,11 +682,56 @@ function renderHead() {
     th.innerHTML = c.label + " " + arrow(c.key);
     head.appendChild(th);
   });
-  head.querySelectorAll("th").forEach(th => th.onclick = () => {
-    const k = th.dataset.k;
-    if (k === sortK) sortDir *= -1; else { sortK = k; sortDir = -1; }
-    renderHead(); render();
+  head.querySelectorAll("th").forEach(th => {
+    th.onclick = () => {
+      // Ignore the click that immediately follows a drag-reorder.
+      if (performance.now() - lastColDrop < 300) return;
+      const k = th.dataset.k;
+      if (k === sortK) sortDir *= -1; else { sortK = k; sortDir = -1; }
+      saveSort(); renderHead(); render();
+    };
+    // Every non-ticker header is draggable to reorder columns (ticker is pinned).
+    if (th.dataset.k !== "ticker") {
+      th.draggable = true;
+      th.addEventListener("dragstart", thDragStart);
+      th.addEventListener("dragover", thDragOver);
+      th.addEventListener("dragleave", thDragLeave);
+      th.addEventListener("drop", thDrop);
+      th.addEventListener("dragend", thDragEnd);
+    }
   });
+}
+
+/* ---- drag-to-reorder columns (order persisted in sc_cols) ---- */
+let dragColKey = null, lastColDrop = 0;
+function thDragStart(e) {
+  dragColKey = e.currentTarget.dataset.k;
+  e.dataTransfer.effectAllowed = "move";
+  try { e.dataTransfer.setData("text/plain", dragColKey); } catch(_){}
+  e.currentTarget.classList.add("dragging");
+}
+function thDragOver(e) {
+  if (!dragColKey) return;
+  e.preventDefault(); e.dataTransfer.dropEffect = "move";
+  if (e.currentTarget.dataset.k !== dragColKey) e.currentTarget.classList.add("dragover");
+}
+function thDragLeave(e) { e.currentTarget.classList.remove("dragover"); }
+function thDrop(e) {
+  e.preventDefault(); e.stopPropagation();
+  const to = e.currentTarget.dataset.k;
+  if (dragColKey && to && dragColKey !== to) { lastColDrop = performance.now(); reorderCol(dragColKey, to); }
+}
+function thDragEnd() {
+  document.querySelectorAll("#head th.dragging, #head th.dragover")
+    .forEach(t => t.classList.remove("dragging", "dragover"));
+  dragColKey = null;
+}
+function reorderCol(from, to) {
+  const arr = selectedCols.filter(k => k !== from);
+  const ti = arr.indexOf(to);
+  if (ti < 0) return;                 // e.g. dropped on the pinned Ticker column
+  arr.splice(ti, 0, from);            // place the dragged column just before the drop target
+  selectedCols = arr; saveCols(); renderHead(); render();
 }
 const arrow = k => k === sortK ? `<span class="arrow">${sortDir<0?"▼":"▲"}</span>` : "";
 

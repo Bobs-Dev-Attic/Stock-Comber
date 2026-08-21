@@ -4,6 +4,18 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.25.0] - 2026-08-21
+
+### Added
+- **Persistent sort.** The results table now remembers the column you sorted by and
+  the direction across reloads (in `localStorage` under `sc_sort`), instead of
+  resetting to Score ▼ every time.
+- **Drag-to-reorder columns.** Drag any column header to reorder the table; the
+  order is saved (`sc_cols`) and restored on reload. The Ticker column stays pinned
+  first. `orderedCols()` now follows the saved column order rather than a fixed one.
+
+[0.25.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.25.0
+
 ## [0.24.0] - 2026-08-21
 
 ### Added
