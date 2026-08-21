@@ -4,6 +4,16 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.30.1] - 2026-08-21
+
+### Changed
+- **`avg_volume` is now a default results column.** The average-daily-volume metric
+  (added in 0.30.0) is shown out of the box in the results table, so liquidity is visible
+  without opening the column picker. (Existing saved column layouts are unchanged; reset
+  columns to pick up the new default.)
+
+[0.30.1]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.30.1
+
 ## [0.30.0] - 2026-08-21
 
 ### Added
