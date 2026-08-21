@@ -631,7 +631,7 @@ const ALL_COLUMNS = [
   {key:"score_pct", label:"Score", base:true},
   ...METRICS.map(([key,label]) => ({key, label, base:false})),
 ];
-const DEFAULT_COLS = ["strategy","passed","score_pct","health_score","price","pe_ratio","pb_ratio","roe_pct","current_ratio","debt_to_equity","avg_volume"];
+const DEFAULT_COLS = ["strategy","passed","score_pct","health_score","price","pe_ratio","pb_ratio","roe_pct","current_ratio","debt_to_equity","avg_volume","dollar_volume"];
 let selectedCols = loadCols();
 
 function loadCols() {
