@@ -1,5 +1,27 @@
 # Release notes
 
+## v0.23.0 — Schedule drives the hosted run; side-drawer menu (2026-08-21)
+
+**The nightly schedule you set in the app now actually controls the hosted run.**
+Previously the Jobs-tab schedule only recorded a preference while the hosted run
+fired on a fixed GitHub Actions cron. Now the workflow runs on an hourly heartbeat
+and checks the schedule stored in the database each hour, running only on a
+matching hour. Set the time and days in **Jobs → Scheduled report**, click Save,
+and the change takes effect automatically — no code or YAML edits.
+
+- When no schedule has been saved (or no database is connected), it falls back to
+  the original default: 06:xx UTC on weekdays.
+- Because the check runs hourly, the run fires at the top of the configured hour
+  (the minute is approximate). A manual run from GitHub Actions always fires.
+- Under the hood: a new `schedule-gate` CLI command and `should_run_now()` logic,
+  plus a `schedule_configured` flag on `/api/settings` so the form shows the true
+  hosted default before you've saved anything.
+
+**Header menu is now a slide-in side drawer.** The ☰ menu opens a panel that slides
+in from the right with a dimmed backdrop, closable with ×, the backdrop, or Esc —
+replacing the popover that previously docked to the bottom of the screen on narrow
+viewports.
+
 ## v0.22.0 — Dashboard reorganized: Full list, Jobs & History (2026-08-21)
 
 The dashboard is now built around three tabs, with a navigation menu in the header.

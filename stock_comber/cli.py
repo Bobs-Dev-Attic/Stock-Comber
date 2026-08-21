@@ -50,6 +50,11 @@ def _build_parser() -> argparse.ArgumentParser:
     psch = sub.add_parser("schedule", help="Run the screen on a recurring local schedule.")
     psch.add_argument("--once", action="store_true", help="Run one cycle then exit.")
 
+    sub.add_parser(
+        "schedule-gate",
+        help="Decide whether the stored schedule says the hosted run should fire "
+             "now (for the hourly GitHub Actions heartbeat).")
+
     paq = sub.add_parser("analyze-queue",
                          help="Process queued tickers with a full analysis (news + sentiment).")
     paq.add_argument("--limit", type=int, default=5, help="Max tickers to process.")
@@ -157,6 +162,32 @@ def cmd_schedule(args) -> int:
     return run_schedule(cfg, once=args.once)
 
 
+def cmd_schedule_gate(args) -> int:
+    """Print (and export to $GITHUB_OUTPUT) whether the hosted run should fire
+    now, per the schedule stored in the database. Exit code is always 0 so the
+    workflow can branch on the ``run`` output rather than on failure."""
+    import datetime
+    import os
+    from .schedule import should_run_now
+    from .storage import get_storage
+    cfg = load_config(args.config)
+    store = get_storage(cfg)
+    try:
+        stored = store.get_settings() or {}
+    except Exception as exc:  # never fail the gate on a DB hiccup
+        print(f"schedule-gate: could not read settings ({exc}); using default",
+              file=sys.stderr)
+        stored = {}
+    now = datetime.datetime.now(datetime.timezone.utc)
+    run, reason = should_run_now(stored, now)
+    print(f"schedule-gate: run={str(run).lower()} — {reason}")
+    out = os.environ.get("GITHUB_OUTPUT")
+    if out:
+        with open(out, "a", encoding="utf-8") as fh:
+            fh.write(f"run={'true' if run else 'false'}\n")
+    return 0
+
+
 def cmd_analyze_queue(args) -> int:
     from .analysis import process_queue
     from .storage import get_storage
@@ -211,6 +242,7 @@ COMMANDS = {
     "validate": cmd_validate,
     "tickers": cmd_tickers,
     "schedule": cmd_schedule,
+    "schedule-gate": cmd_schedule_gate,
     "analyze-queue": cmd_analyze_queue,
     "check-theses": cmd_check_theses,
 }

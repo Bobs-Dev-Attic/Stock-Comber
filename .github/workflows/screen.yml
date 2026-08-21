@@ -1,11 +1,15 @@
 name: Scheduled screen
 
-# Combs free data sources on a schedule and commits the fresh reports.
-# Adjust the cron below, or edit config/default.yaml to tune the criteria.
+# Combs free data sources and commits the fresh reports. The *stored* schedule
+# (Jobs tab → Scheduled report, saved to the database) decides when this fires:
+# the cron below is an hourly heartbeat, and the `schedule-gate` step checks the
+# stored schedule each hour and only proceeds on a matching hour. When no
+# schedule is stored (or no DATABASE_URL is set), it defaults to 06:xx UTC on
+# weekdays — the original behaviour. A manual dispatch always runs.
 on:
   schedule:
-    # 06:30 UTC every weekday. Change to taste.
-    - cron: "30 6 * * 1-5"
+    # Hourly heartbeat — schedule-gate decides whether to actually run.
+    - cron: "0 * * * *"
   workflow_dispatch:
     inputs:
       nightly:
@@ -40,7 +44,22 @@ jobs:
           # [storage] pulls psycopg so runs persist when DATABASE_URL is set.
           pip install -e ".[storage]"
 
+      # Consult the stored schedule. On a manual dispatch we always run; on the
+      # hourly heartbeat we run only when the stored schedule matches this hour.
+      - name: Schedule gate
+        id: gate
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "Manual dispatch — running regardless of the stored schedule."
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            stock-comber --config config/default.yaml schedule-gate
+          fi
+
       - name: Run screen
+        if: steps.gate.outputs.run == 'true'
         env:
           NIGHTLY: ${{ github.event.inputs.nightly || 'true' }}
           LIMIT: ${{ github.event.inputs.limit || '50' }}
@@ -55,17 +74,20 @@ jobs:
           fi
 
       - name: Re-check investment theses
+        if: steps.gate.outputs.run == 'true'
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
         run: stock-comber --config config/default.yaml --verbose check-theses
 
       - name: Publish latest report to the dashboard
+        if: steps.gate.outputs.run == 'true'
         run: |
           mkdir -p public/data
           cp reports/latest.json public/data/latest.json
 
       - name: Commit reports
+        if: steps.gate.outputs.run == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
