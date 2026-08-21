@@ -207,7 +207,8 @@ function renderStrategies(){ const c=$("#strategies"); c.innerHTML="";
 const METRICS=["pe_ratio","pb_ratio","roe_pct","net_margin_pct","current_ratio","debt_to_equity",
   "long_term_debt_to_equity","graham_number","free_cash_flow","eps","book_value_per_share","revenue",
   "net_income","working_capital","price","earnings_growth_5y_pct","revenue_growth_5y_pct",
-  "roa_pct","return_on_capital_pct","earnings_yield_pct","ncav_per_share","earnings_cagr_5y_pct"];
+  "roa_pct","return_on_capital_pct","earnings_yield_pct","ncav_per_share","earnings_cagr_5y_pct",
+  "avg_volume","dollar_volume"];
 const OPS=["<=","<",">=",">","==","!="];
 function addCrit(metric="pe_ratio",op="<=",value=""){ const list=$("#crit-list");
   const row=document.createElement("div"); row.className="crit-row";

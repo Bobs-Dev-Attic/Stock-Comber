@@ -52,3 +52,33 @@ def test_cumulative_growth():
         AnnualFacts(fiscal_year=2023, net_income=200),
     ]
     assert metrics.cumulative_growth_pct(annuals, 2, "net_income") == 100.0
+
+
+def test_average_and_dollar_volume_from_quote():
+    from stock_comber.models import Company, Quote
+    c = Company(ticker="AAA", annuals=[_facts(net_income=100)],
+                quote=Quote(ticker="AAA", price=20.0, volume=1_000_000))
+    assert metrics.average_volume(c) == 1_000_000
+    assert metrics.dollar_volume(c) == 20_000_000
+    m = metrics.compute_metrics(c)
+    assert m["avg_volume"] == 1_000_000
+    assert m["dollar_volume"] == 20_000_000
+
+
+def test_average_volume_prefers_finnhub_smoothed_figure():
+    from stock_comber.models import Company, Quote
+    # Finnhub reports trading volume in millions of shares; 3-month wins.
+    c = Company(ticker="BBB", annuals=[_facts(net_income=1)],
+                quote=Quote(ticker="BBB", price=5.0, volume=999),
+                extra={"3MonthAverageTradingVolume": 2.5,
+                       "10DayAverageTradingVolume": 4.0})
+    assert metrics.average_volume(c) == 2_500_000
+    assert metrics.dollar_volume(c) == 12_500_000
+
+
+def test_volume_metrics_none_when_unavailable():
+    from stock_comber.models import Company, Quote
+    c = Company(ticker="CCC", annuals=[_facts(net_income=1)],
+                quote=Quote(ticker="CCC", price=5.0))
+    assert metrics.average_volume(c) is None
+    assert metrics.dollar_volume(c) is None

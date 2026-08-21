@@ -6,7 +6,21 @@ from stock_comber.screener import Screener
 def test_parse_chart_extracts_price():
     data = {"chart": {"result": [{"meta": {
         "regularMarketPrice": 226.5, "regularMarketTime": 1735000000}}], "error": None}}
-    assert parse_chart(data) == ("1735000000", 226.5)
+    assert parse_chart(data) == ("1735000000", 226.5, None)
+
+
+def test_parse_chart_extracts_volume_from_meta():
+    data = {"chart": {"result": [{"meta": {
+        "regularMarketPrice": 226.5, "regularMarketTime": 1735000000,
+        "regularMarketVolume": 54321000}}], "error": None}}
+    assert parse_chart(data) == ("1735000000", 226.5, 54321000.0)
+
+
+def test_parse_chart_falls_back_to_volume_series():
+    data = {"chart": {"result": [{
+        "meta": {"regularMarketPrice": 10.0, "regularMarketTime": 1},
+        "indicators": {"quote": [{"volume": [100, 200, None]}]}}], "error": None}}
+    assert parse_chart(data) == ("1", 10.0, 200.0)
 
 
 def test_parse_chart_handles_missing():

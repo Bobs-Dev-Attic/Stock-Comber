@@ -91,7 +91,8 @@ const esc = s => (s==null?"":String(s)).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"
 const METRICS=["pe_ratio","pb_ratio","roe_pct","roa_pct","return_on_capital_pct","net_margin_pct",
   "current_ratio","debt_to_equity","long_term_debt_to_equity","graham_number","free_cash_flow","eps",
   "book_value_per_share","revenue","net_income","working_capital","price","earnings_yield_pct",
-  "ncav_per_share","earnings_cagr_5y_pct","earnings_growth_5y_pct","revenue_growth_5y_pct"];
+  "ncav_per_share","earnings_cagr_5y_pct","earnings_growth_5y_pct","revenue_growth_5y_pct",
+  "avg_volume","dollar_volume"];
 const OPS=[">=",">","<=","<","==","!="];
 const fmt = v => (v==null||v===""||Number.isNaN(Number(v))) ? "—" :
   (Math.abs(v)>=1e9?(v/1e9).toFixed(2)+"B":Math.abs(v)>=1e6?(v/1e6).toFixed(1)+"M":Math.abs(v)>=100?Number(v).toFixed(0):Number(v).toFixed(2));

@@ -24,8 +24,13 @@ CHART_URL = "https://query1.finance.yahoo.com/v8/finance/chart/{symbol}"
 _UA = "Mozilla/5.0 (compatible; Stock-Comber/1.0)"
 
 
-def parse_chart(data: dict) -> Optional[tuple[str, float]]:
-    """Return (as_of, price) from a Yahoo chart payload, or None."""
+def parse_chart(data: dict) -> Optional[tuple[str, float, Optional[float]]]:
+    """Return (as_of, price, volume) from a Yahoo chart payload, or None.
+
+    ``volume`` is the latest regular-market share volume (``regularMarketVolume``
+    from the chart meta, falling back to the last non-null bar in the volume
+    series), or ``None`` when the payload doesn't carry it.
+    """
     try:
         result = data["chart"]["result"][0]
         meta = result["meta"]
@@ -34,9 +39,30 @@ def parse_chart(data: dict) -> Optional[tuple[str, float]]:
             return None
         ts = meta.get("regularMarketTime")
         as_of = str(ts) if ts is not None else ""
-        return as_of, float(price)
+        return as_of, float(price), _parse_volume(result, meta)
     except (KeyError, IndexError, TypeError, ValueError):
         return None
+
+
+def _parse_volume(result: dict, meta: dict) -> Optional[float]:
+    """Latest share volume from a chart payload: meta first, then the series."""
+    v = meta.get("regularMarketVolume")
+    if v:
+        try:
+            return float(v)
+        except (TypeError, ValueError):
+            pass
+    try:
+        bars = result["indicators"]["quote"][0].get("volume") or []
+    except (KeyError, IndexError, TypeError):
+        return None
+    for val in reversed(bars):
+        if val is not None:
+            try:
+                return float(val)
+            except (TypeError, ValueError):
+                return None
+    return None
 
 
 def parse_history(data: dict) -> dict:
@@ -111,8 +137,9 @@ class YahooSource:
         parsed = parse_chart(data or {})
         if parsed is None:
             return Quote(ticker=symbol, source="yahoo")
-        as_of, price = parsed
-        return Quote(ticker=symbol, price=price, as_of=as_of, source="yahoo")
+        as_of, price, volume = parsed
+        return Quote(ticker=symbol, price=price, as_of=as_of, source="yahoo",
+                     volume=volume)
 
     def fetch_history(self, ticker: str, years: int = 10) -> dict:
         """Return {year: year-end close} for the last ``years`` years, or {}."""

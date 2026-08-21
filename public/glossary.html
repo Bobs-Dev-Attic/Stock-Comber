@@ -87,6 +87,19 @@
       <dt>Market cap</dt><dd>Share price × shares outstanding — the market's total price tag on the equity.</dd>
     </dl>
 
+    <h2>Liquidity</h2>
+    <dl>
+      <dt>Average volume <span class="k">avg_volume</span></dt>
+      <dd>Average daily share volume — how many shares change hands on a typical day.
+      Uses the smoothed 3-month/10-day figure when the analysis is enriched, otherwise the
+      latest day's volume. A rough measure of how actively a stock trades.</dd>
+      <dt>$ volume / day <span class="k">dollar_volume</span></dt>
+      <dd>Average daily dollar volume = price × average share volume — the dollars of stock
+      that trade on a typical day. The standard <em>liquidity</em> gauge: higher means you can
+      buy or sell size without moving the price. Screen with e.g. <code>dollar_volume &gt;= 5000000</code>
+      to skip thinly-traded names.</dd>
+    </dl>
+
     <h2>Stock-Comber scores</h2>
     <dl>
       <dt>Health score 0–100 <span class="k">health_score</span></dt>
