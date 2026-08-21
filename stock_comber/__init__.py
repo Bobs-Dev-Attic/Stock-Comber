@@ -5,5 +5,5 @@ criteria of Benjamin Graham (the "defensive investor") and Warren Buffett
 (durable, high-quality compounders), using free online data sources.
 """
 
-__version__ = "0.25.1"
+__version__ = "0.25.2"
 __all__ = ["__version__"]
