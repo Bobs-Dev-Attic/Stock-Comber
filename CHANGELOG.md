@@ -4,6 +4,29 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.23.0] - 2026-08-21
+
+### Added
+- **The stored schedule now drives the hosted nightly run.** The GitHub Actions
+  workflow runs on an hourly heartbeat and a new `schedule-gate` step consults the
+  schedule saved from the dashboard (Jobs tab → Scheduled report, in the database)
+  to decide whether *this* hour should run. So changing the time/days in the UI and
+  saving actually changes when the hosted run fires — no YAML edits. New
+  `stock_comber/schedule.py` (`should_run_now`) + `stock-comber schedule-gate` CLI
+  command. When no schedule is stored (or no `DATABASE_URL`), it defaults to
+  06:xx UTC on weekdays — the previous behaviour. Because the heartbeat is hourly,
+  the run fires at the top of the configured hour (minute is approximate). A manual
+  `workflow_dispatch` always runs.
+- `GET /api/settings` now returns `schedule_configured` so the dashboard shows the
+  true hosted default when a schedule hasn't been saved yet.
+
+### Changed
+- **Header menu is now a slide-in side drawer.** The ☰ menu opens as a panel that
+  slides in from the right with a backdrop (closable via ×, the backdrop, or Esc),
+  instead of a popover that fell back to a bottom sheet on narrow screens.
+
+[0.23.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.23.0
+
 ## [0.22.0] - 2026-08-21
 
 ### Added

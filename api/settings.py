@@ -78,8 +78,15 @@ class handler(BaseHTTPRequestHandler):
     def do_GET(self):
         store = get_storage()
         cfg = effective_config(load_config(), store)
+        # Whether the user has actually saved a schedule (vs. the config default).
+        # Lets the dashboard show the true hosted default when unconfigured.
+        try:
+            schedule_configured = bool((store.get_settings() or {}).get("schedule"))
+        except Exception:
+            schedule_configured = False
         # Compute key status from the real config, then hide secret values.
-        self._json(200, {"config": _redact(cfg), **_status(cfg)})
+        self._json(200, {"config": _redact(cfg), "schedule_configured": schedule_configured,
+                         **_status(cfg)})
 
     def do_POST(self):
         configured = os.environ.get("STOCK_COMBER_API_KEY")

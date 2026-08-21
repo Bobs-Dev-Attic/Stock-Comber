@@ -162,14 +162,27 @@
   .links { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .4rem; }
   .links a { background: var(--chip); border-radius: 999px; padding: .35rem .7rem; text-decoration: none; font-size: .85rem; }
   .sec-h { font-weight: 700; margin: 1rem 0 .3rem; font-size: .95rem; }
-  /* header top bar + nav menu */
+  /* header top bar + nav button */
   .topbar { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
   .navbtn { border: 1px solid var(--line); background: var(--panel); color: var(--ink); width: 2.4rem;
     height: 2.4rem; border-radius: 10px; font-size: 1.2rem; cursor: pointer; flex: 0 0 auto; line-height: 1; }
-  #nav-pop { padding: .4rem; min-width: 220px; }
-  .navlink { display: block; padding: .5rem .6rem; border-radius: 8px; text-decoration: none; color: var(--ink); font-size: .92rem; }
-  .navlink:hover { background: color-mix(in srgb, var(--accent) 12%, transparent); }
-  .navdiv { height: 1px; background: var(--line); margin: .35rem .2rem; }
+  /* nav side drawer: slides in from the right */
+  .navdrawer { position: fixed; inset: 0; z-index: 60; visibility: hidden; }
+  .navdrawer.open { visibility: visible; }
+  .navback { position: absolute; inset: 0; background: var(--overlay); opacity: 0; transition: opacity .22s ease; }
+  .navdrawer.open .navback { opacity: 1; }
+  .navpane { position: absolute; top: 0; right: 0; height: 100%; width: min(320px, 86vw);
+    background: var(--panel); border-left: 1px solid var(--line); box-shadow: var(--shadow);
+    padding: .8rem; display: flex; flex-direction: column; gap: .1rem; overflow-y: auto;
+    transform: translateX(100%); transition: transform .22s ease; }
+  .navdrawer.open .navpane { transform: none; }
+  .navpane-h { display: flex; align-items: center; justify-content: space-between; margin-bottom: .5rem; font-weight: 700; }
+  .navclose { border: 1px solid var(--line); background: var(--panel); color: var(--ink); width: 2rem; height: 2rem;
+    border-radius: 8px; cursor: pointer; font-size: 1.15rem; line-height: 1; }
+  .navlink { display: block; padding: .6rem .6rem; border-radius: 8px; text-decoration: none; color: var(--ink); font-size: .95rem; }
+  .navlink:hover, .navlink:focus { background: color-mix(in srgb, var(--accent) 12%, transparent); outline: none; }
+  .navdiv { height: 1px; background: var(--line); margin: .4rem .2rem; }
+  @media (prefers-reduced-motion: reduce){ .navback, .navpane { transition: none; } }
   /* Jobs tab sections */
   .jobsec { padding: .2rem 0 1rem; border-bottom: 1px solid var(--line); margin-bottom: 1rem; }
   .jobsec:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: .2rem; }
@@ -216,19 +229,8 @@
         <h1>📈 Stock-Comber</h1>
         <p>Companies that fit Benjamin Graham &amp; Warren Buffett value criteria. Click any row for the full breakdown.</p>
       </div>
-      <div class="menu" id="nav-menu">
-        <button class="navbtn" id="nav-btn" aria-haspopup="true" aria-expanded="false" aria-label="Menu" title="Menu">☰</button>
-        <div class="panel-pop" id="nav-pop">
-          <a class="navlink" href="/settings.html">⚙️ Settings</a>
-          <a class="navlink" href="/about.html">ℹ️ About</a>
-          <a class="navlink" href="/glossary.html">📖 Definition of terms</a>
-          <a class="navlink" href="/strategies.html">🎯 Strategies</a>
-          <div class="navdiv"></div>
-          <a class="navlink" href="/analytics.html">📊 Analytics</a>
-          <a class="navlink" href="/backtest.html">🧪 Backtest</a>
-          <a class="navlink" href="/thesis.html">🎯 Theses</a>
-        </div>
-      </div>
+      <button class="navbtn" id="nav-btn" aria-haspopup="true" aria-expanded="false"
+              aria-controls="nav-drawer" aria-label="Menu" title="Menu">☰</button>
     </div>
   </header>
 
@@ -391,6 +393,22 @@
 </div>
 
 <div id="overlay" class="overlay" role="dialog" aria-modal="true"><div class="modal" id="modal"></div></div>
+
+<!-- Slide-in navigation drawer -->
+<div class="navdrawer" id="nav-drawer" aria-hidden="true">
+  <div class="navback" id="nav-back"></div>
+  <nav class="navpane" role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="navpane-h"><span>Menu</span><button class="navclose" id="nav-close" aria-label="Close menu">×</button></div>
+    <a class="navlink" href="/settings.html">⚙️ Settings</a>
+    <a class="navlink" href="/about.html">ℹ️ About</a>
+    <a class="navlink" href="/glossary.html">📖 Definition of terms</a>
+    <a class="navlink" href="/strategies.html">🎯 Strategies</a>
+    <div class="navdiv"></div>
+    <a class="navlink" href="/analytics.html">📊 Analytics</a>
+    <a class="navlink" href="/backtest.html">🧪 Backtest</a>
+    <a class="navlink" href="/thesis.html">🎯 Theses</a>
+  </nav>
+</div>
 
 <script>
 const $ = s => document.querySelector(s);
@@ -963,16 +981,22 @@ async function loadSchedule() {
   try {
     const d = await (await fetch("/api/settings")).json();
     const sc = (d.config && d.config.schedule) || {};
-    $("#sched-enabled").checked = !!sc.enabled;
-    const f = cronToForm(sc.cron);
+    // When nothing is stored yet, show the hosted default (enabled, 06:30
+    // weekdays) so the form reflects what the nightly run actually does.
+    const configured = !!d.schedule_configured;
+    const cron = configured && sc.cron ? sc.cron : "30 6 * * 1-5";
+    $("#sched-enabled").checked = configured ? !!sc.enabled : true;
+    const f = cronToForm(cron);
     if (f) {
       $("#sched-time").value = f.time;
       const opt = Array.from($("#sched-days").options).find(o => o.value === f.days);
-      if (opt) $("#sched-days").value = f.days;
+      $("#sched-days").value = opt ? f.days : "1-5";
     }
-    schedHint(d.storage_enabled
-      ? "The hosted nightly run is triggered by the repo's GitHub Actions schedule; this saves your preferred cadence and drives the local scheduler."
-      : "Connect a database (Settings) to save a schedule preference.");
+    if (!d.storage_enabled) schedHint("Connect a database (Settings) to save a schedule.");
+    else if (!configured) schedHint("Using the default nightly run (06:30 UTC, weekdays). Adjust and Save to change when it runs.");
+    else schedHint(sc.enabled
+      ? "This schedule drives the hosted nightly run — an hourly job checks it and runs on a matching hour (minute is approximate)."
+      : "Nightly run is disabled. Enable and Save to resume it.");
   } catch (e) { schedHint("Couldn't load the schedule.", true); }
 }
 $("#save-sched").onclick = async () => {
@@ -987,7 +1011,7 @@ $("#save-sched").onclick = async () => {
       { method: "POST", headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ schedule }) });
     const d = await res.json().catch(() => ({}));
-    schedHint(res.ok ? `Saved — nightly ${schedule.enabled ? "enabled" : "disabled"} at ${$("#sched-time").value} UTC (${schedule.cron}).`
+    schedHint(res.ok ? `Saved — the hosted nightly run is now ${schedule.enabled ? "enabled at " + $("#sched-time").value + " UTC" : "disabled"} (${schedule.cron}). The hourly job picks this up automatically.`
       : "Save failed: " + (d.error || res.status) + (d.problems ? " — " + d.problems.join("; ") : ""), !res.ok);
   } catch (e) { schedHint("Save failed: " + e.message, true); }
   finally { btn.disabled = false; btn.textContent = label; }
@@ -1299,8 +1323,24 @@ tickersInput.addEventListener("blur", () => setTimeout(closeAC, 120));
 document.querySelectorAll(".tab").forEach(b => b.onclick = () => showTab(b.dataset.tab));
 $("#refresh-hist").onclick = () => loadHistory(true);
 
+/* nav side drawer */
+function openNav() {
+  $("#nav-drawer").classList.add("open");
+  $("#nav-drawer").setAttribute("aria-hidden", "false");
+  $("#nav-btn").setAttribute("aria-expanded", "true");
+}
+function closeNav() {
+  $("#nav-drawer").classList.remove("open");
+  $("#nav-drawer").setAttribute("aria-hidden", "true");
+  $("#nav-btn").setAttribute("aria-expanded", "false");
+}
+$("#nav-btn").onclick = e => { e.stopPropagation(); openNav(); };
+$("#nav-back").onclick = closeNav;
+$("#nav-close").onclick = closeNav;
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeNav(); });
+
 /* init */
-wireMenu("cols-menu"); wireMenu("export-menu"); wireMenu("strat-menu"); wireMenu("tmpl-menu"); wireMenu("nav-menu");
+wireMenu("cols-menu"); wireMenu("export-menu"); wireMenu("strat-menu"); wireMenu("tmpl-menu");
 buildColsMenu(); buildStratMenu(); renderHead();
 showTab("full");   // landing: every company across all stored runs
 // Lazily build the Templates menu the first time it's opened.
