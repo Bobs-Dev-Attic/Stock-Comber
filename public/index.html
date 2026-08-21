@@ -211,6 +211,9 @@
   .dlg-l { display: block; font-weight: 600; font-size: .9rem; margin: .9rem 0 .35rem; }
   .dlg-acts { display: flex; gap: .5rem; flex-wrap: wrap; margin-top: 1.1rem; }
   .next-run { color: var(--muted); }
+  /* in-dialog job results preview */
+  .preview-tbl { font-size: .88rem; }
+  .preview-tbl th, .preview-tbl td { padding: .35rem .5rem; }
   /* History tab */
   .histgrid { display: grid; gap: 1rem; margin-top: .6rem; }
   .histcard { border: 1px solid var(--line); border-radius: 12px; padding: .8rem 1rem; }
@@ -488,6 +491,7 @@
         <button class="btn ghost" data-close>Cancel</button>
       </div>
       <div id="jobs-dlg-hint" class="hint" style="margin-top:.5rem"></div>
+      <div id="job-preview" style="margin-top:.4rem"></div>
     </div>
 
     <!-- Manual search dialog -->
@@ -1149,26 +1153,58 @@ function runSmart() {
 $("#run").onclick = () => { closeJobDialog(); runSmart(); };
 
 /* Custom jobs: your metric rules over tickers or a template. */
-async function runJob() {
+async function runJob(preview) {
+  const say = preview ? (m, bad) => jobsHint(m, bad) : (m) => setStatus("jobs", m);
   const raw = $("#job-tickers").value.trim();
   const criteria = readCriteria();
-  if (!criteria.length) { setStatus("jobs", "Add at least one criterion for the job."); return; }
-  if (!raw) { setStatus("jobs", "Enter tickers (or load a template) to run the job on."); return; }
+  if (!criteria.length) { say("Add at least one criterion for the job.", true); return; }
+  if (!raw) { say("Enter tickers (or load a template) to run the job on.", true); return; }
   const params = new URLSearchParams(); params.set("tickers", raw);
   selectedStrats.forEach(s => params.append("strategy", s));
   params.set("custom", JSON.stringify(criteria));
   const btn = $("#run-job"); const label = btn.textContent;
   btn.disabled = true; btn.textContent = "Running…";
   showBanner("Running custom job…");
-  setStatus("jobs", "Running your custom job…");
+  say("Running your custom job…");
+  if (preview) $("#job-preview").innerHTML = '<div class="hint">Running…</div>';
   try {
     const res = await fetch("/api/screen?" + params.toString()); const data = await res.json();
-    if (data.error && !(data.results||[]).length) setStatus("jobs", "Error: " + data.error);
-    else { setRows(data, "Custom job", "jobs"); enqueueForAnalysis(raw); }
-  } catch (e) { setStatus("jobs", "Job failed: " + e.message); }
+    if (data.error && !(data.results||[]).length) { say("Error: " + data.error, true); if (preview) renderJobPreview(data); }
+    else {
+      setRows(data, "Custom job", "jobs");   // also populates the full results table
+      enqueueForAnalysis(raw);
+      if (preview) { jobsHint(""); renderJobPreview(data); }
+    }
+  } catch (e) { say("Job failed: " + e.message, true); if (preview) $("#job-preview").innerHTML = ""; }
   finally { btn.disabled = false; btn.textContent = label; hideBanner(); }
 }
-$("#run-job").onclick = () => { closeJobDialog(); runJob(); };
+// In the dialog, Run now previews results inline (keeps the dialog open).
+$("#run-job").onclick = () => runJob(true);
+function renderJobPreview(data) {
+  const el = $("#job-preview"); if (!el) return;
+  const rws = (data && data.results) || [];
+  if (data && data.error && !rws.length) {
+    el.innerHTML = `<div class="hint" style="color:var(--fail-ink)">Error: ${escHtml(data.error)}</div>`; return;
+  }
+  if (!rws.length) { el.innerHTML = `<div class="hint">No results.</div>`; return; }
+  const passing = rws.filter(r => r.passed).length;
+  const score = r => { const m = r.metrics || {}; const v = m.health_score; return (v === null || v === undefined) ? (r.score_pct ?? -1) : v; };
+  const top = [...rws].sort((a, b) => score(b) - score(a)).slice(0, 8);
+  const body = top.map(r => {
+    const m = r.metrics || {};
+    const badge = r.passed ? '<span class="badge pass">PASS</span>' : '<span class="badge near">—</span>';
+    return `<tr><td class="l"><b>${escHtml(r.ticker)}</b></td><td>${badge}</td>`
+      + `<td class="r">${fmt(m.health_score)}</td><td class="r">${fmt(m.pe_ratio)}</td><td class="r">${fmt(m.roe_pct)}</td></tr>`;
+  }).join("");
+  el.innerHTML =
+    `<div class="hint" style="margin:.1rem 0 .4rem">${rws.length} result(s) · ${passing} passing`
+    + `${rws.length > top.length ? ` · showing top ${top.length}` : ""}</div>`
+    + `<div class="tablewrap"><table class="preview-tbl">`
+    + `<thead><tr><th class="l">Ticker</th><th>Pass</th><th class="r">Health</th><th class="r">P/E</th><th class="r">ROE %</th></tr></thead>`
+    + `<tbody>${body}</tbody></table></div>`
+    + `<button class="btn ghost" id="preview-open" style="margin-top:.5rem">Open full results →</button>`;
+  $("#preview-open").onclick = () => { closeJobDialog(); showTab("jobs"); };
+}
 
 /* ---- saved jobs (persisted server-side in the settings blob) ---- */
 let savedJobs = [];
@@ -1235,7 +1271,7 @@ function editJob(name) {
   if (!job) return;
   applyJob(job);
   $("#custom-dlg-title").textContent = "🧮 Edit job";
-  jobsHint("");
+  jobsHint(""); $("#job-preview").innerHTML = "";
   openJobDialog("custom");
 }
 /* Run: load the saved job into the builder and run it immediately (no dialog). */
@@ -1376,7 +1412,7 @@ function newCustomJob() {
   $("#custom-dlg-title").textContent = "🧮 New custom job";
   $("#job-name").value = ""; $("#job-tickers").value = "";
   $("#crit-list").innerHTML = ""; addCritRow(); updateCustomCount();
-  jobsHint("");
+  jobsHint(""); $("#job-preview").innerHTML = "";
 }
 $("#open-sched").onclick = () => openJobDialog("sched");
 $("#open-custom").onclick = () => { newCustomJob(); openJobDialog("custom"); };
