@@ -1,5 +1,13 @@
 # Release notes
 
+## v0.25.1 — Saved jobs shown on the Jobs tab (2026-08-21)
+
+The **Jobs** tab now lists your configured jobs instead of hiding them in a
+dropdown. Each saved job is a card showing its name and a summary — tickers, how
+many rules it has, and which strategies it runs — with its own **▶ Run**, **Load**,
+and **Delete** buttons. Saving a new job or deleting one updates the list right
+away.
+
 ## v0.25.0 — Remembered table sort & column order (2026-08-21)
 
 The results table now keeps your view the way you left it:

@@ -191,6 +191,15 @@
   .jobsec:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: .2rem; }
   .jobsec-h { font-weight: 700; font-size: 1rem; margin: .2rem 0 .7rem; display: flex; gap: .5rem; align-items: baseline; flex-wrap: wrap; }
   .jobsec-h code { background: var(--chip); padding: .05rem .3rem; border-radius: 5px; font-weight: 400; }
+  /* saved-jobs list */
+  .jobs-list { display: flex; flex-direction: column; gap: .5rem; margin-top: .3rem; }
+  .job-card { display: flex; gap: .6rem; align-items: center; justify-content: space-between; flex-wrap: wrap;
+    border: 1px solid var(--line); border-radius: 10px; padding: .55rem .7rem; background: var(--bg); }
+  .job-main { min-width: 0; flex: 1 1 220px; }
+  .job-name { font-weight: 700; }
+  .job-sub { color: var(--muted); font-size: .82rem; overflow: hidden; text-overflow: ellipsis; }
+  .job-acts { display: flex; gap: .4rem; flex-wrap: wrap; }
+  .job-acts .btn { padding: .35rem .7rem; font-size: .85rem; }
   /* History tab */
   .histgrid { display: grid; gap: 1rem; margin-top: .6rem; }
   .histcard { border: 1px solid var(--line); border-radius: 12px; padding: .8rem 1rem; }
@@ -309,15 +318,11 @@
           </div>
           <button id="run-job" class="btn">Run job</button>
         </div>
+        <div class="jobsec-h" style="margin-top:.8rem;font-size:.92rem">Saved jobs</div>
+        <div id="saved-jobs-list" class="jobs-list"></div>
         <div class="controls" style="margin-top:.5rem;align-items:center">
-          <select id="saved-jobs" title="Your saved jobs" style="flex:1 1 200px;min-width:180px">
-            <option value="">— Saved jobs —</option>
-          </select>
-          <button id="run-saved" class="btn" title="Load and run the selected saved job now">▶ Run</button>
-          <button id="load-job" class="btn ghost" title="Fill the builder from the selected saved job">Load</button>
-          <button id="delete-job" class="btn ghost" title="Delete the selected saved job">Delete</button>
           <input id="job-name" type="text" placeholder="Name this job to save it" autocomplete="off"
-                 style="flex:1 1 160px;min-width:140px">
+                 style="flex:1 1 200px;min-width:160px">
           <button id="save-job" class="btn" title="Save the current criteria, tickers &amp; strategies to the database">Save job</button>
         </div>
         <div id="jobs-hint" class="hint" style="margin-top:.35rem"></div>
@@ -969,23 +974,43 @@ function jobsHint(msg, bad) {
   const el = $("#jobs-hint"); el.textContent = msg || "";
   el.style.color = bad ? "var(--fail-ink)" : "var(--muted)";
 }
-function renderJobsSelect() {
-  const sel = $("#saved-jobs"); const cur = sel.value;
-  sel.innerHTML = '<option value="">— Saved jobs —</option>';
+function jobSummary(j) {
+  const parts = [];
+  const tk = (j.tickers || "").trim();
+  parts.push(tk ? (tk.length > 48 ? tk.slice(0, 48) + "…" : tk) : "no tickers");
+  const n = (j.criteria || []).length;
+  parts.push(n + " rule" + (n === 1 ? "" : "s"));
+  const st = (j.strategies || []).map(stratLabel);
+  if (st.length) parts.push(st.join(", "));
+  return parts.join(" · ");
+}
+function renderJobsList() {
+  const wrap = $("#saved-jobs-list"); wrap.innerHTML = "";
   savedJobs.forEach(j => {
-    const o = document.createElement("option"); o.value = j.name; o.textContent = j.name;
-    sel.appendChild(o);
+    const card = document.createElement("div"); card.className = "job-card";
+    const main = document.createElement("div"); main.className = "job-main";
+    const nm = document.createElement("div"); nm.className = "job-name"; nm.textContent = j.name;
+    const sub = document.createElement("div"); sub.className = "job-sub"; sub.textContent = jobSummary(j);
+    main.append(nm, sub);
+    const acts = document.createElement("div"); acts.className = "job-acts";
+    const run = document.createElement("button"); run.className = "btn"; run.textContent = "▶ Run";
+    run.title = "Run this job now"; run.onclick = () => runSavedJob(j.name);
+    const load = document.createElement("button"); load.className = "btn ghost"; load.textContent = "Load";
+    load.title = "Fill the builder from this job"; load.onclick = () => loadJob(j.name);
+    const del = document.createElement("button"); del.className = "btn ghost"; del.textContent = "Delete";
+    del.title = "Delete this saved job"; del.onclick = () => deleteJob(j.name);
+    acts.append(run, load, del);
+    card.append(main, acts); wrap.appendChild(card);
   });
-  if (savedJobs.some(j => j.name === cur)) sel.value = cur;
 }
 async function loadSavedJobs() {
   jobsLoaded = true;
   try {
     const d = await (await fetch("/api/settings")).json();
     savedJobs = Array.isArray(d.config && d.config.jobs) ? d.config.jobs : [];
-    renderJobsSelect();
+    renderJobsList();
     if (d.storage_enabled === false) jobsHint("Connect a database (Settings) to save jobs across devices.");
-    else jobsHint(savedJobs.length ? "" : "No saved jobs yet — build one above and give it a name.");
+    else jobsHint(savedJobs.length ? "" : "No saved jobs yet — build one above, name it, and Save job.");
   } catch (e) { jobsHint("Couldn't load saved jobs.", true); }
 }
 function applyJob(job) {
@@ -997,22 +1022,24 @@ function applyJob(job) {
   const strats = (job.strategies || []).filter(k => STRAT_KEYS.includes(k));
   if (strats.length) { selectedStrats = strats; saveStrats(); buildStratMenu(); updateStratBtn(); }
 }
-$("#load-job").onclick = () => {
-  const name = $("#saved-jobs").value;
+function loadJob(name) {
   const job = savedJobs.find(j => j.name === name);
-  if (!job) { jobsHint("Pick a saved job to load.", true); return; }
+  if (!job) return;
   applyJob(job);
   setStatus("jobs", `Loaded “${job.name}”. Adjust and Run job, or Save to update it.`);
-};
-/* Run: load the selected saved job into the builder and run it immediately. */
-$("#run-saved").onclick = () => {
-  const name = $("#saved-jobs").value;
+}
+/* Run: load the saved job into the builder and run it immediately. */
+function runSavedJob(name) {
   const job = savedJobs.find(j => j.name === name);
-  if (!job) { jobsHint("Pick a saved job to run.", true); return; }
+  if (!job) return;
   applyJob(job);
   jobsHint(`Running “${job.name}”…`);
   runJob();
-};
+}
+async function deleteJob(name) {
+  if (!confirm(`Delete saved job “${name}”?`)) return;
+  await persistJobs(savedJobs.filter(j => j.name !== name), `Deleted “${name}”.`);
+}
 function apiKey() {
   let key = sessionStorage.getItem("sc_key") || "";
   if (!key) key = (prompt("Enter your API key to save jobs to the database:") || "").trim();
@@ -1029,7 +1056,7 @@ async function persistJobs(jobs, okMsg) {
     const d = await res.json().catch(() => ({}));
     if (!res.ok) { jobsHint("Save failed: " + (d.error || res.status)
       + (d.problems ? " — " + d.problems.join("; ") : ""), true); return false; }
-    savedJobs = jobs; renderJobsSelect(); jobsHint(okMsg);
+    savedJobs = jobs; renderJobsList(); jobsHint(okMsg);
     return true;
   } catch (e) { jobsHint("Save failed: " + e.message, true); return false; }
 }
@@ -1044,14 +1071,7 @@ $("#save-job").onclick = async () => {
   const btn = $("#save-job"); const label = btn.textContent;
   btn.disabled = true; btn.textContent = "Saving…";
   await persistJobs([...others, job], `Saved “${name}”.`);
-  $("#saved-jobs").value = name;
   btn.disabled = false; btn.textContent = label;
-};
-$("#delete-job").onclick = async () => {
-  const name = $("#saved-jobs").value;
-  if (!name) { jobsHint("Pick a saved job to delete.", true); return; }
-  if (!confirm(`Delete saved job “${name}”?`)) return;
-  await persistJobs(savedJobs.filter(j => j.name !== name), `Deleted “${name}”.`);
 };
 
 /* ---- nightly schedule config (stored in settings.schedule) ---- */
