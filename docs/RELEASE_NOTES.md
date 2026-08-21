@@ -1,5 +1,22 @@
 # Release notes
 
+## v0.21.0 — Saved custom jobs (2026-08-21)
+
+Custom jobs can now be **saved to the database and re-run later**. In the
+**Custom jobs** tab, give your builder a name and click **Save job** to persist
+its criteria, tickers, and ticked strategies; pick one from the **Saved jobs**
+dropdown and **Load** it to refill the builder, or **Delete** it. Jobs are stored
+server-side (in the settings blob, under a new `jobs` config key) rather than in
+the browser, so they survive reloads and are shared across devices.
+
+- Reading the saved jobs is public (`GET /api/settings`); saving/deleting is
+  gated by the same API key as other write endpoints (`POST /api/settings`), so
+  the browser prompts for it once and remembers it for the session.
+- Each job is validated on save — a unique, non-empty name, and (when present)
+  valid custom criteria and strategy names.
+- Implemented without adding a serverless function, keeping the Vercel Hobby
+  12-function budget intact.
+
 ## v0.20.1 — Activity banner (2026-08-20)
 
 A sticky banner now appears at the top of the dashboard while work is in

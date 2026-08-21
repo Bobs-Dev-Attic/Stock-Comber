@@ -25,3 +25,42 @@ def test_validate_flags_bad_pass_ratio():
     cfg = load_config()
     cfg["graham"]["pass_ratio"] = 1.5
     assert any("pass_ratio" in p for p in validate_config(cfg))
+
+
+def test_jobs_default_is_empty_list():
+    assert load_config()["jobs"] == []
+
+
+def test_valid_job_passes():
+    cfg = load_config()
+    cfg["jobs"] = [{
+        "name": "Cheap large-caps",
+        "tickers": "AAPL, MSFT",
+        "criteria": [{"metric": "pe_ratio", "op": "<=", "value": 15}],
+        "strategies": ["graham", "buffett"],
+    }]
+    assert validate_config(cfg) == []
+
+
+def test_job_requires_name():
+    cfg = load_config()
+    cfg["jobs"] = [{"criteria": [{"metric": "pe_ratio", "op": "<=", "value": 15}]}]
+    assert any("name" in p for p in validate_config(cfg))
+
+
+def test_job_flags_bad_criteria_and_strategy():
+    cfg = load_config()
+    cfg["jobs"] = [{
+        "name": "Bad",
+        "criteria": [{"metric": "not_a_metric", "op": "<=", "value": 15}],
+        "strategies": ["nonsense"],
+    }]
+    problems = validate_config(cfg)
+    assert any("metric" in p for p in problems)
+    assert any("nonsense" in p for p in problems)
+
+
+def test_job_flags_duplicate_names():
+    cfg = load_config()
+    cfg["jobs"] = [{"name": "Dupe"}, {"name": "dupe"}]
+    assert any("duplicate job name" in p for p in validate_config(cfg))

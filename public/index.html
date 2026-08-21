@@ -230,6 +230,17 @@
         </div>
         <button id="run-job" class="btn">Run job</button>
       </div>
+      <div class="controls" style="margin-top:.5rem;align-items:center">
+        <select id="saved-jobs" title="Load one of your saved jobs" style="flex:1 1 200px;min-width:180px">
+          <option value="">— Saved jobs —</option>
+        </select>
+        <button id="load-job" class="btn ghost" title="Fill the builder from the selected saved job">Load</button>
+        <button id="delete-job" class="btn ghost" title="Delete the selected saved job">Delete</button>
+        <input id="job-name" type="text" placeholder="Name this job to save it" autocomplete="off"
+               style="flex:1 1 160px;min-width:140px">
+        <button id="save-job" class="btn" title="Save the current criteria, tickers &amp; strategies to the database">Save job</button>
+      </div>
+      <div id="jobs-hint" class="hint" style="margin-top:.35rem"></div>
     </div>
 
     <!-- Manual searches -->
@@ -321,6 +332,7 @@ function showTab(tab) {
   $("#status").textContent = tabStatus[tab];
   render();
   if (tab === "scheduled" && !schedLoaded) { schedLoaded = true; loadLatest(); }
+  if (tab === "custom" && !jobsLoaded) loadSavedJobs();
 }
 
 const METRICS = [
@@ -706,6 +718,89 @@ async function runJob() {
   finally { btn.disabled = false; btn.textContent = label; hideBanner(); }
 }
 $("#run-job").onclick = runJob;
+
+/* ---- saved jobs (persisted server-side in the settings blob) ---- */
+let savedJobs = [];
+let jobsLoaded = false;
+function jobsHint(msg, bad) {
+  const el = $("#jobs-hint"); el.textContent = msg || "";
+  el.style.color = bad ? "var(--fail-ink)" : "var(--muted)";
+}
+function renderJobsSelect() {
+  const sel = $("#saved-jobs"); const cur = sel.value;
+  sel.innerHTML = '<option value="">— Saved jobs —</option>';
+  savedJobs.forEach(j => {
+    const o = document.createElement("option"); o.value = j.name; o.textContent = j.name;
+    sel.appendChild(o);
+  });
+  if (savedJobs.some(j => j.name === cur)) sel.value = cur;
+}
+async function loadSavedJobs() {
+  jobsLoaded = true;
+  try {
+    const d = await (await fetch("/api/settings")).json();
+    savedJobs = Array.isArray(d.config && d.config.jobs) ? d.config.jobs : [];
+    renderJobsSelect();
+    if (d.storage_enabled === false) jobsHint("Connect a database (Settings) to save jobs across devices.");
+    else jobsHint(savedJobs.length ? "" : "No saved jobs yet — build one above and give it a name.");
+  } catch (e) { jobsHint("Couldn't load saved jobs.", true); }
+}
+function applyJob(job) {
+  $("#job-tickers").value = job.tickers || "";
+  $("#job-name").value = job.name || "";
+  $("#crit-list").innerHTML = "";
+  (job.criteria || []).forEach(c => addCritRow(c.metric, c.op, c.value));
+  updateCustomCount();
+  const strats = (job.strategies || []).filter(k => STRAT_KEYS.includes(k));
+  if (strats.length) { selectedStrats = strats; saveStrats(); buildStratMenu(); updateStratBtn(); }
+}
+$("#load-job").onclick = () => {
+  const name = $("#saved-jobs").value;
+  const job = savedJobs.find(j => j.name === name);
+  if (!job) { jobsHint("Pick a saved job to load.", true); return; }
+  applyJob(job);
+  setStatus("custom", `Loaded “${job.name}”. Adjust and Run job, or Save to update it.`);
+};
+function apiKey() {
+  let key = sessionStorage.getItem("sc_key") || "";
+  if (!key) key = (prompt("Enter your API key to save jobs to the database:") || "").trim();
+  if (key) sessionStorage.setItem("sc_key", key);
+  return key;
+}
+async function persistJobs(jobs, okMsg) {
+  const key = apiKey();
+  if (!key) { jobsHint("An API key is required to save jobs.", true); return false; }
+  try {
+    const res = await fetch("/api/settings?key=" + encodeURIComponent(key),
+      { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ jobs }) });
+    const d = await res.json().catch(() => ({}));
+    if (!res.ok) { jobsHint("Save failed: " + (d.error || res.status)
+      + (d.problems ? " — " + d.problems.join("; ") : ""), true); return false; }
+    savedJobs = jobs; renderJobsSelect(); jobsHint(okMsg);
+    return true;
+  } catch (e) { jobsHint("Save failed: " + e.message, true); return false; }
+}
+$("#save-job").onclick = async () => {
+  const name = $("#job-name").value.trim();
+  if (!name) { jobsHint("Give the job a name first.", true); $("#job-name").focus(); return; }
+  const criteria = readCriteria();
+  if (!criteria.length) { jobsHint("Add at least one criterion before saving.", true); return; }
+  const job = { name, tickers: $("#job-tickers").value.trim(),
+    criteria, strategies: selectedStrats.slice() };
+  const others = savedJobs.filter(j => j.name.toLowerCase() !== name.toLowerCase());
+  const btn = $("#save-job"); const label = btn.textContent;
+  btn.disabled = true; btn.textContent = "Saving…";
+  await persistJobs([...others, job], `Saved “${name}”.`);
+  $("#saved-jobs").value = name;
+  btn.disabled = false; btn.textContent = label;
+};
+$("#delete-job").onclick = async () => {
+  const name = $("#saved-jobs").value;
+  if (!name) { jobsHint("Pick a saved job to delete.", true); return; }
+  if (!confirm(`Delete saved job “${name}”?`)) return;
+  await persistJobs(savedJobs.filter(j => j.name !== name), `Deleted “${name}”.`);
+};
 
 /* ---- manual full analysis (news + sentiment), on demand ---- */
 const GRADE_TXT = {A:"Positive", B:"Mildly positive", C:"Neutral", D:"Mildly negative", F:"Negative"};
