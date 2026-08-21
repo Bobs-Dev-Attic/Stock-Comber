@@ -1,5 +1,12 @@
 # Release notes
 
+## v0.30.1 — Show average volume by default (2026-08-21)
+
+The **Avg volume** column now appears in the results table out of the box, so you can see
+each stock's liquidity at a glance without adding it from the column picker. If you've
+previously customised your columns, your layout is untouched — use the column picker's
+reset to adopt the new default.
+
 ## v0.30.0 — Volume / liquidity custom metrics (2026-08-21)
 
 You can now screen on **how actively a stock trades**. Two new metrics are computed for
