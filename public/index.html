@@ -200,6 +200,17 @@
   .job-sub { color: var(--muted); font-size: .82rem; overflow: hidden; text-overflow: ellipsis; }
   .job-acts { display: flex; gap: .4rem; flex-wrap: wrap; }
   .job-acts .btn { padding: .35rem .7rem; font-size: .85rem; }
+  /* Jobs overview cards + dialogs */
+  .jobcard-lg { border: 1px solid var(--line); border-radius: 12px; padding: .9rem 1rem; margin-bottom: 1rem; }
+  .jc-head { display: flex; gap: .8rem; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; }
+  .jc-title { font-weight: 700; font-size: 1.05rem; }
+  .jc-head .hint { margin: .15rem 0 0; }
+  .jc-body { margin-top: .7rem; }
+  .dlg h2 { margin: 0 0 .1rem; font-size: 1.3rem; }
+  .dlg .sub { color: var(--muted); margin-bottom: 1rem; }
+  .dlg-l { display: block; font-weight: 600; font-size: .9rem; margin: .9rem 0 .35rem; }
+  .dlg-acts { display: flex; gap: .5rem; flex-wrap: wrap; margin-top: 1.1rem; }
+  .next-run { color: var(--muted); }
   /* History tab */
   .histgrid { display: grid; gap: 1rem; margin-top: .6rem; }
   .histcard { border: 1px solid var(--line); border-radius: 12px; padding: .8rem 1rem; }
@@ -284,78 +295,47 @@
         <label class="hint" style="display:flex;align-items:center;gap:.35rem;margin:0"><input type="checkbox" id="full-passing"> Passing only</label>
         <button class="btn ghost" id="refresh-full">↻ Refresh</button>
       </div>
-      <div id="next-run" class="hint" style="margin-top:.5rem"></div>
+      <div id="next-run" class="next-run hint" style="margin-top:.5rem"></div>
     </div>
 
-    <!-- Jobs: configure & run the different job types -->
+    <!-- Jobs: overview of the job types; parameters live in dialogs -->
     <div class="tabpanel" data-panel="jobs" role="tabpanel" hidden>
-      <!-- 1. Nightly scheduled report -->
-      <div class="jobsec">
-        <div class="jobsec-h">📅 Scheduled report <span class="hint" style="margin:0">— the nightly “hidden gems” run</span></div>
-        <div class="controls">
-          <label class="hint" style="display:flex;align-items:center;gap:.35rem;margin:0"><input type="checkbox" id="sched-enabled"> Enabled</label>
-          <label class="hint" style="display:flex;align-items:center;gap:.35rem;margin:0">Time (UTC) <input id="sched-time" type="time" step="300" value="06:30" title="5-minute steps — GitHub's finest schedule resolution"></label>
-          <label class="hint" style="display:flex;align-items:center;gap:.35rem;margin:0">Days
-            <select id="sched-days">
-              <option value="1-5">Weekdays</option>
-              <option value="*">Every day</option>
-              <option value="0,6">Weekends</option>
-              <option value="1">Mondays</option>
-            </select>
-          </label>
-          <button class="btn ghost" id="save-sched">Save schedule</button>
-          <button class="btn ghost" id="view-sched">View latest ↗</button>
+      <div id="jobs-next-run" class="next-run hint" style="margin-bottom:.8rem"></div>
+
+      <!-- Scheduled report -->
+      <div class="jobcard-lg">
+        <div class="jc-head">
+          <div>
+            <span class="jc-title">📅 Scheduled report</span>
+            <div class="hint">The nightly “hidden gems” run.</div>
+          </div>
+          <button class="btn ghost" id="open-sched">Configure</button>
         </div>
-        <div id="sched-hint" class="hint"></div>
+        <div id="sched-summary" class="hint jc-body"></div>
       </div>
 
-      <!-- 2. Custom jobs -->
-      <div class="jobsec">
-        <div class="jobsec-h">🧮 Custom job <span class="hint" style="margin:0">— your own <code>metric op value</code> rules over tickers or an index template</span></div>
-        <div id="crit-list"></div>
-        <div class="row" style="margin:.6rem 0;display:flex;gap:.5rem;flex-wrap:wrap;align-items:center">
-          <button id="add-crit" class="btn ghost">+ Add criterion</button>
-          <button id="clear-crit" class="btn ghost">Clear</button>
-          <span id="custom-count" class="hint"></span>
-        </div>
-        <div class="controls">
-          <input id="job-tickers" type="text" placeholder="Tickers, e.g. AAPL, MSFT — or load a template →"
-                 autocomplete="off" style="flex:1 1 260px;min-width:200px">
-          <div class="menu" id="tmpl-menu">
-            <button class="btn ghost" id="tmpl-btn" aria-haspopup="true" aria-expanded="false"
-                    title="Load a slice of an index (Dow / Nasdaq-100 / S&amp;P 500), filtered by sector">Templates ▾</button>
-            <div class="panel-pop" id="tmpl-pop" style="min-width:250px"></div>
+      <!-- Custom jobs -->
+      <div class="jobcard-lg">
+        <div class="jc-head">
+          <div>
+            <span class="jc-title">🧮 Custom jobs</span>
+            <div class="hint">Reusable <code>metric op value</code> screens over tickers or an index.</div>
           </div>
-          <button id="run-job" class="btn">Run job</button>
+          <button class="btn" id="open-custom">+ Add job</button>
         </div>
-        <div class="jobsec-h" style="margin-top:.8rem;font-size:.92rem">Saved jobs</div>
-        <div id="saved-jobs-list" class="jobs-list"></div>
-        <div class="controls" style="margin-top:.5rem;align-items:center">
-          <input id="job-name" type="text" placeholder="Name this job to save it" autocomplete="off"
-                 style="flex:1 1 200px;min-width:160px">
-          <button id="save-job" class="btn" title="Save the current criteria, tickers &amp; strategies to the database">Save job</button>
-        </div>
+        <div id="saved-jobs-list" class="jobs-list jc-body"></div>
         <div id="jobs-hint" class="hint" style="margin-top:.35rem"></div>
       </div>
 
-      <!-- 3. Manual search -->
-      <div class="jobsec">
-        <div class="jobsec-h">🔍 Manual search <span class="hint" style="margin:0">— one ticker for a full deep-dive, or several to compare</span></div>
-        <div class="controls">
-          <div class="acwrap">
-            <input id="tickers" type="text" placeholder="Tickers, e.g. AAPL, MSFT, JNJ, KO" autocomplete="off"
-                   role="combobox" aria-expanded="false" aria-controls="ac" aria-autocomplete="list">
-            <button id="run" class="iconbtn" aria-label="Analyze"
-                    title="Analyze — one ticker → full deep-dive (all six analysts + news &amp; sentiment); several tickers → compare them in a table using the ticked strategies.">🔍</button>
+      <!-- Manual search -->
+      <div class="jobcard-lg">
+        <div class="jc-head">
+          <div>
+            <span class="jc-title">🔍 Manual search</span>
+            <div class="hint">One ticker for a full deep-dive, or several to compare.</div>
           </div>
-          <div class="menu" id="strat-menu">
-            <button class="btn ghost" id="strat-btn" aria-haspopup="true" aria-expanded="false"
-                    title="Choose which value frameworks the Screen table runs">Strategies ▾</button>
-            <div class="panel-pop" id="strat-pop"></div>
-          </div>
+          <button class="btn ghost" id="open-manual">Analyze…</button>
         </div>
-        <div id="ac" class="ac-dd" role="listbox"></div>
-        <div class="hint">Enter <b>one ticker</b> for a full deep-dive — all six analysts plus recent news &amp; a sentiment grade. Enter <b>several</b> (up to 10) to compare them in a table using the ticked strategies.</div>
       </div>
     </div>
 
@@ -446,6 +426,93 @@
 
 <div id="overlay" class="overlay" role="dialog" aria-modal="true"><div class="modal" id="modal"></div></div>
 
+<!-- Job parameter dialogs (schedule / custom job / manual search) -->
+<div id="job-overlay" class="overlay" role="dialog" aria-modal="true">
+  <div class="modal">
+    <button class="close" id="jobdlg-close" aria-label="Close">×</button>
+
+    <!-- Schedule dialog -->
+    <div class="dlg" data-dlg="sched" hidden>
+      <h2>📅 Scheduled report</h2>
+      <div class="sub">When the hosted nightly “hidden gems” run fires.</div>
+      <label class="dlg-l" style="display:flex;align-items:center;gap:.5rem;font-weight:600"><input type="checkbox" id="sched-enabled"> Enabled</label>
+      <label class="dlg-l">Time (UTC)</label>
+      <input id="sched-time" type="time" step="300" value="06:30" title="5-minute steps — GitHub's finest schedule resolution">
+      <label class="dlg-l">Days</label>
+      <select id="sched-days">
+        <option value="1-5">Weekdays</option>
+        <option value="*">Every day</option>
+        <option value="0,6">Weekends</option>
+        <option value="1">Mondays</option>
+      </select>
+      <div class="dlg-acts">
+        <button class="btn" id="save-sched">Save schedule</button>
+        <button class="btn ghost" id="view-sched">View latest ↗</button>
+        <button class="btn ghost" data-close>Cancel</button>
+      </div>
+      <div id="sched-hint" class="hint" style="margin-top:.6rem"></div>
+    </div>
+
+    <!-- Custom job dialog -->
+    <div class="dlg" data-dlg="custom" hidden>
+      <h2 id="custom-dlg-title">🧮 Custom job</h2>
+      <div class="sub">Your own <code>metric op value</code> rules over a set of tickers or an index template.</div>
+      <label class="dlg-l" for="job-name">Name</label>
+      <input id="job-name" type="text" placeholder="Name this job to save it" autocomplete="off" style="width:100%">
+      <label class="dlg-l">Criteria</label>
+      <div id="crit-list"></div>
+      <div class="row" style="margin:.6rem 0;display:flex;gap:.5rem;flex-wrap:wrap;align-items:center">
+        <button id="add-crit" class="btn ghost">+ Add criterion</button>
+        <button id="clear-crit" class="btn ghost">Clear</button>
+        <span id="custom-count" class="hint"></span>
+      </div>
+      <label class="dlg-l">Tickers</label>
+      <div class="controls">
+        <input id="job-tickers" type="text" placeholder="Tickers, e.g. AAPL, MSFT — or load a template →"
+               autocomplete="off" style="flex:1 1 260px;min-width:200px">
+        <div class="menu" id="tmpl-menu">
+          <button class="btn ghost" id="tmpl-btn" aria-haspopup="true" aria-expanded="false"
+                  title="Load a slice of an index (Dow / Nasdaq-100 / S&amp;P 500), filtered by sector">Templates ▾</button>
+          <div class="panel-pop" id="tmpl-pop" style="min-width:250px"></div>
+        </div>
+      </div>
+      <label class="dlg-l">Strategies</label>
+      <div class="menu" id="cstrat-menu">
+        <button class="btn ghost" id="cstrat-btn" aria-haspopup="true" aria-expanded="false"
+                title="Which value frameworks this job runs alongside your rules">Strategies ▾</button>
+        <div class="panel-pop" id="cstrat-pop"></div>
+      </div>
+      <div class="dlg-acts">
+        <button class="btn" id="save-job" title="Save the criteria, tickers &amp; strategies to the database">Save job</button>
+        <button class="btn" id="run-job">▶ Run now</button>
+        <button class="btn ghost" data-close>Cancel</button>
+      </div>
+      <div id="jobs-dlg-hint" class="hint" style="margin-top:.5rem"></div>
+    </div>
+
+    <!-- Manual search dialog -->
+    <div class="dlg" data-dlg="manual" hidden>
+      <h2>🔍 Manual search</h2>
+      <div class="sub">Enter <b>one ticker</b> for a full deep-dive (all six analysts + news &amp; sentiment), or <b>several</b> (up to 10) to compare in a table using the ticked strategies.</div>
+      <div class="controls">
+        <div class="acwrap">
+          <input id="tickers" type="text" placeholder="Tickers, e.g. AAPL, MSFT, JNJ, KO" autocomplete="off"
+                 role="combobox" aria-expanded="false" aria-controls="ac" aria-autocomplete="list">
+          <button id="run" class="iconbtn" aria-label="Analyze"
+                  title="Analyze — one ticker → full deep-dive; several → compare using the ticked strategies.">🔍</button>
+        </div>
+        <div class="menu" id="strat-menu">
+          <button class="btn ghost" id="strat-btn" aria-haspopup="true" aria-expanded="false"
+                  title="Choose which value frameworks the compare table runs">Strategies ▾</button>
+          <div class="panel-pop" id="strat-pop"></div>
+        </div>
+      </div>
+      <div id="ac" class="ac-dd" role="listbox"></div>
+      <div class="dlg-acts"><button class="btn ghost" data-close>Close</button></div>
+    </div>
+  </div>
+</div>
+
 <!-- Slide-in navigation drawer -->
 <div class="navdrawer" id="nav-drawer" aria-hidden="true">
   <div class="navback" id="nav-back"></div>
@@ -507,6 +574,7 @@ function showTab(tab) {
     rows = tabRows.jobs; render();
     if (!jobsLoaded) loadSavedJobs();
     if (!schedLoaded) { schedLoaded = true; loadSchedule(); }
+    if (!countdownTimer) loadCountdown();   // ensure the countdown is live here too
   } else if (tab === "history") {
     loadHistory();
   }
@@ -567,30 +635,41 @@ function loadStrats() {
 }
 let selectedStrats = loadStrats();
 function saveStrats() { try { localStorage.setItem("sc_strats", JSON.stringify(selectedStrats)); } catch(e){} }
+// Two strategy pickers reflect the same selectedStrats: one in the Manual
+// dialog (#strat-*) and one in the Custom-job dialog (#cstrat-*).
+const STRAT_BTNS = ["#strat-btn", "#cstrat-btn"];
+const STRAT_POPS = ["#strat-pop", "#cstrat-pop"];
 function updateStratBtn() {
   const n = selectedStrats.length;
-  $("#strat-btn").textContent = (n === 0 ? "Strategies" : `Strategies (${n})`) + " ▾";
+  const t = (n === 0 ? "Strategies" : `Strategies (${n})`) + " ▾";
+  STRAT_BTNS.forEach(sel => { const el = $(sel); if (el) el.textContent = t; });
 }
-function buildStratMenu() {
-  const pop = $("#strat-pop"); pop.innerHTML = "";
+function buildStratPop(pop, idPrefix) {
+  pop.innerHTML = "";
   STRATS.forEach(([key,label]) => {
     const row = document.createElement("div"); row.className = "colrow";
-    const cb = document.createElement("input"); cb.type = "checkbox"; cb.id = "strat_"+key;
+    const cb = document.createElement("input"); cb.type = "checkbox"; cb.id = idPrefix + key;
     cb.checked = selectedStrats.includes(key);
     cb.onchange = () => {
       if (cb.checked) { if (!selectedStrats.includes(key)) selectedStrats.push(key); }
       else selectedStrats = selectedStrats.filter(k => k !== key);
-      saveStrats(); updateStratBtn();
+      saveStrats(); buildStratMenu();   // rebuild both pickers so they stay in sync
     };
     const lab = document.createElement("label"); lab.htmlFor = cb.id; lab.textContent = label;
     row.append(cb, lab); pop.appendChild(row);
   });
   const mini = document.createElement("div"); mini.className = "mini";
   const all = document.createElement("button"); all.className = "btn ghost"; all.textContent = "All";
-  all.onclick = () => { selectedStrats = STRAT_KEYS.slice(); saveStrats(); buildStratMenu(); updateStratBtn(); };
+  all.onclick = () => { selectedStrats = STRAT_KEYS.slice(); saveStrats(); buildStratMenu(); };
   const def = document.createElement("button"); def.className = "btn ghost"; def.textContent = "Reset";
-  def.onclick = () => { selectedStrats = ["graham","buffett"]; saveStrats(); buildStratMenu(); updateStratBtn(); };
+  def.onclick = () => { selectedStrats = ["graham","buffett"]; saveStrats(); buildStratMenu(); };
   mini.append(all, def); pop.appendChild(mini);
+}
+function buildStratMenu() {
+  STRAT_POPS.forEach(sel => {
+    const pop = $(sel); if (!pop) return;
+    buildStratPop(pop, "strat_" + sel.replace(/\W/g, "") + "_");
+  });
   updateStratBtn();
 }
 
@@ -633,7 +712,7 @@ async function buildTmplMenu() {
       if (!tks.length) { note.textContent = "No matching constituents."; return; }
       $("#job-tickers").value = tks.join(", ");
       $("#tmpl-menu").classList.remove("open");
-      runJob();
+      note.textContent = `Loaded ${tks.length} tickers — add criteria, then Run now.`;
     } catch(e) { note.textContent = "Failed: " + e.message; }
     finally { go.disabled = false; go.textContent = "Load into search"; }
   };
@@ -686,6 +765,7 @@ document.addEventListener("click", () => document.querySelectorAll(".menu").forE
 $("#cols-pop").addEventListener("click", e => e.stopPropagation());
 $("#export-menu .panel-pop").addEventListener("click", e => e.stopPropagation());
 $("#strat-pop").addEventListener("click", e => e.stopPropagation());
+$("#cstrat-pop").addEventListener("click", e => e.stopPropagation());
 $("#tmpl-pop").addEventListener("click", e => e.stopPropagation());
 
 /* ---- table ---- */
@@ -1022,14 +1102,21 @@ async function loadCountdown() {
   if (!countdownTimer) countdownTimer = setInterval(tickCountdown, 1000);
 }
 function tickCountdown() {
-  const el = $("#next-run"); if (!el) return;
-  if (!schedEnabled) { el.textContent = "⏱ Scheduled run is off — enable it under Jobs → Scheduled report."; return; }
-  const now = new Date();
-  if (!countdownTarget || countdownTarget <= now) countdownTarget = nextScheduledRun(schedCron, now);
-  if (!countdownTarget) { el.textContent = ""; return; }
-  const w = countdownTarget;
-  const at = `${DOW3[w.getUTCDay()]} ${String(w.getUTCHours()).padStart(2,"0")}:${String(w.getUTCMinutes()).padStart(2,"0")} UTC`;
-  el.textContent = `⏱ Next scheduled run in ${fmtDur(w - now)} · ${at}`;
+  const els = document.querySelectorAll(".next-run"); if (!els.length) return;
+  let text;
+  if (!schedEnabled) {
+    text = "⏱ Scheduled run is off — enable it under Jobs → Scheduled report.";
+  } else {
+    const now = new Date();
+    if (!countdownTarget || countdownTarget <= now) countdownTarget = nextScheduledRun(schedCron, now);
+    if (!countdownTarget) { text = ""; }
+    else {
+      const w = countdownTarget;
+      const at = `${DOW3[w.getUTCDay()]} ${String(w.getUTCHours()).padStart(2,"0")}:${String(w.getUTCMinutes()).padStart(2,"0")} UTC`;
+      text = `⏱ Next scheduled run in ${fmtDur(w - now)} · ${at}`;
+    }
+  }
+  els.forEach(el => el.textContent = text);
 }
 
 /* Manual searches: compare several tickers in a table (no custom criteria). */
@@ -1059,7 +1146,7 @@ function runSmart() {
   if (tickers.length === 1) return analyzeNow();
   return runLive();
 }
-$("#run").onclick = runSmart;
+$("#run").onclick = () => { closeJobDialog(); runSmart(); };
 
 /* Custom jobs: your metric rules over tickers or a template. */
 async function runJob() {
@@ -1081,14 +1168,18 @@ async function runJob() {
   } catch (e) { setStatus("jobs", "Job failed: " + e.message); }
   finally { btn.disabled = false; btn.textContent = label; hideBanner(); }
 }
-$("#run-job").onclick = runJob;
+$("#run-job").onclick = () => { closeJobDialog(); runJob(); };
 
 /* ---- saved jobs (persisted server-side in the settings blob) ---- */
 let savedJobs = [];
 let jobsLoaded = false;
 function jobsHint(msg, bad) {
-  const el = $("#jobs-hint"); el.textContent = msg || "";
-  el.style.color = bad ? "var(--fail-ink)" : "var(--muted)";
+  // Mirror to the overview hint and the custom-job dialog hint.
+  ["#jobs-hint", "#jobs-dlg-hint"].forEach(sel => {
+    const el = $(sel); if (!el) return;
+    el.textContent = msg || "";
+    el.style.color = bad ? "var(--fail-ink)" : "var(--muted)";
+  });
 }
 function jobSummary(j) {
   const parts = [];
@@ -1111,8 +1202,8 @@ function renderJobsList() {
     const acts = document.createElement("div"); acts.className = "job-acts";
     const run = document.createElement("button"); run.className = "btn"; run.textContent = "▶ Run";
     run.title = "Run this job now"; run.onclick = () => runSavedJob(j.name);
-    const load = document.createElement("button"); load.className = "btn ghost"; load.textContent = "Load";
-    load.title = "Fill the builder from this job"; load.onclick = () => loadJob(j.name);
+    const load = document.createElement("button"); load.className = "btn ghost"; load.textContent = "Edit";
+    load.title = "Open this job to edit its parameters"; load.onclick = () => editJob(j.name);
     const del = document.createElement("button"); del.className = "btn ghost"; del.textContent = "Delete";
     del.title = "Delete this saved job"; del.onclick = () => deleteJob(j.name);
     acts.append(run, load, del);
@@ -1126,7 +1217,7 @@ async function loadSavedJobs() {
     savedJobs = Array.isArray(d.config && d.config.jobs) ? d.config.jobs : [];
     renderJobsList();
     if (d.storage_enabled === false) jobsHint("Connect a database (Settings) to save jobs across devices.");
-    else jobsHint(savedJobs.length ? "" : "No saved jobs yet — build one above, name it, and Save job.");
+    else jobsHint(savedJobs.length ? "" : "No saved jobs yet — click “+ Add job” to create one.");
   } catch (e) { jobsHint("Couldn't load saved jobs.", true); }
 }
 function applyJob(job) {
@@ -1138,13 +1229,16 @@ function applyJob(job) {
   const strats = (job.strategies || []).filter(k => STRAT_KEYS.includes(k));
   if (strats.length) { selectedStrats = strats; saveStrats(); buildStratMenu(); updateStratBtn(); }
 }
-function loadJob(name) {
+/* Edit: open the custom-job dialog pre-filled from a saved job. */
+function editJob(name) {
   const job = savedJobs.find(j => j.name === name);
   if (!job) return;
   applyJob(job);
-  setStatus("jobs", `Loaded “${job.name}”. Adjust and Run job, or Save to update it.`);
+  $("#custom-dlg-title").textContent = "🧮 Edit job";
+  jobsHint("");
+  openJobDialog("custom");
 }
-/* Run: load the saved job into the builder and run it immediately. */
+/* Run: load the saved job into the builder and run it immediately (no dialog). */
 function runSavedJob(name) {
   const job = savedJobs.find(j => j.name === name);
   if (!job) return;
@@ -1186,8 +1280,9 @@ $("#save-job").onclick = async () => {
   const others = savedJobs.filter(j => j.name.toLowerCase() !== name.toLowerCase());
   const btn = $("#save-job"); const label = btn.textContent;
   btn.disabled = true; btn.textContent = "Saving…";
-  await persistJobs([...others, job], `Saved “${name}”.`);
+  const ok = await persistJobs([...others, job], `Saved “${name}”.`);
   btn.disabled = false; btn.textContent = label;
+  if (ok) closeJobDialog();
 };
 
 /* ---- nightly schedule config (stored in settings.schedule) ---- */
@@ -1226,8 +1321,16 @@ async function loadSchedule() {
     else schedHint(sc.enabled
       ? "This schedule drives the hosted nightly run — a job checks it every 5 minutes and runs at the configured time (GitHub's finest schedule resolution)."
       : "Nightly run is disabled. Enable and Save to resume it.");
+    // Overview summary card.
+    const enabled = configured ? !!sc.enabled : true;
+    const g = cronToForm(cron) || { time: "06:30", days: "1-5" };
+    const summary = $("#sched-summary");
+    if (summary) summary.textContent = enabled
+      ? `Enabled · ${g.time} UTC · ${SCHED_DAYS[g.days] || g.days}${configured ? "" : " (default)"}`
+      : "Disabled — the nightly run won't fire until you enable it.";
   } catch (e) { schedHint("Couldn't load the schedule.", true); }
 }
+const SCHED_DAYS = { "1-5": "weekdays", "*": "every day", "0,6": "weekends", "1": "Mondays" };
 $("#save-sched").onclick = async () => {
   const key = apiKey();
   if (!key) { schedHint("An API key is required to save the schedule.", true); return; }
@@ -1242,12 +1345,13 @@ $("#save-sched").onclick = async () => {
     const d = await res.json().catch(() => ({}));
     schedHint(res.ok ? `Saved — the hosted nightly run is now ${schedule.enabled ? "enabled at " + $("#sched-time").value + " UTC" : "disabled"} (${schedule.cron}). The 5-minute heartbeat picks this up automatically.`
       : "Save failed: " + (d.error || res.status) + (d.problems ? " — " + d.problems.join("; ") : ""), !res.ok);
-    if (res.ok) loadCountdown();   // refresh the Full-list countdown with the new schedule
+    if (res.ok) { loadCountdown(); loadSchedule(); setTimeout(closeJobDialog, 900); }  // refresh countdown + summary
   } catch (e) { schedHint("Save failed: " + e.message, true); }
   finally { btn.disabled = false; btn.textContent = label; }
 };
 $("#view-sched").onclick = async () => {
   // Jump to the Full list and reload from the nightly report.
+  closeJobDialog();
   showTab("full");
   document.querySelector('.tab[data-tab="full"]').focus();
   try {
@@ -1258,6 +1362,29 @@ $("#view-sched").onclick = async () => {
     applyFull();
   } catch (e) {}
 };
+
+/* ---- Job parameter dialogs (schedule / custom / manual) ---- */
+function openJobDialog(mode) {
+  document.querySelectorAll("#job-overlay .dlg").forEach(d => { d.hidden = d.dataset.dlg !== mode; });
+  $("#job-overlay").classList.add("open");
+  if (mode === "sched") loadSchedule();
+  if (mode === "custom") { buildStratMenu(); if (!tmplBuilt) { tmplBuilt = true; buildTmplMenu(); } }
+  if (mode === "manual") { buildStratMenu(); setTimeout(() => $("#tickers").focus(), 60); }
+}
+function closeJobDialog() { $("#job-overlay").classList.remove("open"); }
+function newCustomJob() {
+  $("#custom-dlg-title").textContent = "🧮 New custom job";
+  $("#job-name").value = ""; $("#job-tickers").value = "";
+  $("#crit-list").innerHTML = ""; addCritRow(); updateCustomCount();
+  jobsHint("");
+}
+$("#open-sched").onclick = () => openJobDialog("sched");
+$("#open-custom").onclick = () => { newCustomJob(); openJobDialog("custom"); };
+$("#open-manual").onclick = () => openJobDialog("manual");
+$("#jobdlg-close").onclick = closeJobDialog;
+$("#job-overlay").addEventListener("click", e => { if (e.target.id === "job-overlay") closeJobDialog(); });
+document.querySelectorAll("#job-overlay [data-close]").forEach(b => b.onclick = closeJobDialog);
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeJobDialog(); });
 
 /* ---- History tab: analysis queue + past runs & searches ---- */
 const fmtWhen = s => { try { return new Date(s).toLocaleString(); } catch(e){ return s || ""; } };
@@ -1557,7 +1684,7 @@ tickersInput.addEventListener("keydown", e => {
     if (e.key === "Enter" && acActive >= 0) { e.preventDefault(); pickAC(acActive); return; }
     if (e.key === "Escape") { closeAC(); return; }
   }
-  if (e.key === "Enter") runSmart();
+  if (e.key === "Enter") { closeJobDialog(); runSmart(); }
 });
 tickersInput.addEventListener("blur", () => setTimeout(closeAC, 120));
 
@@ -1582,7 +1709,7 @@ $("#nav-close").onclick = closeNav;
 document.addEventListener("keydown", e => { if (e.key === "Escape") closeNav(); });
 
 /* init */
-wireMenu("cols-menu"); wireMenu("export-menu"); wireMenu("strat-menu"); wireMenu("tmpl-menu");
+wireMenu("cols-menu"); wireMenu("export-menu"); wireMenu("strat-menu"); wireMenu("cstrat-menu"); wireMenu("tmpl-menu");
 buildColsMenu(); buildStratMenu(); renderHead();
 showTab("full");   // landing: every company across all stored runs
 // Lazily build the Templates menu the first time it's opened.
