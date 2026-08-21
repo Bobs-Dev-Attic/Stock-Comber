@@ -1,5 +1,13 @@
 # Release notes
 
+## v0.20.1 — Activity banner (2026-08-20)
+
+A sticky banner now appears at the top of the dashboard while work is in
+progress: **running** (a custom job, a manual screen, or a deep analysis — shown
+in the accent color with a spinner) and **queued** (when tickers are added to the
+~20-minute deep-analysis worker — shown in amber and auto-dismissing). It respects
+the reduced-motion setting.
+
 ## v0.20.0 — Tabbed dashboard (2026-08-20)
 
 The dashboard is now organized into three tabs, each with its own results and

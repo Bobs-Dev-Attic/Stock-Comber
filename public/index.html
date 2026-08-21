@@ -30,6 +30,17 @@
   .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px;
     box-shadow: var(--shadow); padding: 1.1rem 1.2rem; margin-top: 1.4rem; }
   .controls { display: flex; gap: .6rem; flex-wrap: wrap; align-items: center; }
+  /* activity banner */
+  .banner { position: sticky; top: 0; z-index: 40; display: flex; align-items: center; gap: .6rem;
+    padding: .6rem 1rem; font-size: .92rem; font-weight: 600; color: #fff; background: var(--accent);
+    box-shadow: 0 2px 8px rgba(0,0,0,.15); }
+  .banner.queued { background: #eda100; color: #1a1a19; }
+  .banner .spin { width: 15px; height: 15px; border-radius: 50%; border: 2px solid rgba(255,255,255,.45);
+    border-top-color: #fff; animation: spin .7s linear infinite; flex: 0 0 auto; }
+  .banner.queued .spin { border-color: rgba(0,0,0,.25); border-top-color: #1a1a19; }
+  .banner.queued .spin { display: none; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce){ .banner .spin { animation: none; } }
   /* tabs */
   .tabs { display: flex; gap: .2rem; border-bottom: 1px solid var(--line); margin-bottom: 1rem; flex-wrap: wrap; }
   .tab { border: 0; background: transparent; color: var(--muted); padding: .55rem .85rem; cursor: pointer;
@@ -176,6 +187,9 @@
 </style>
 </head>
 <body>
+<div id="banner" class="banner" role="status" aria-live="polite" hidden>
+  <span class="spin" aria-hidden="true"></span><span id="banner-msg"></span>
+</div>
 <div class="wrap">
   <header>
     <h1>📈 Stock-Comber</h1>
@@ -273,6 +287,17 @@
 <script>
 const $ = s => document.querySelector(s);
 const escHtml = v => (v==null?"":String(v)).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+/* ---- top activity banner (running / queued) ---- */
+let bannerTimer = null;
+function showBanner(msg, kind) {
+  clearTimeout(bannerTimer);
+  $("#banner-msg").textContent = msg;
+  $("#banner").className = "banner" + (kind === "queued" ? " queued" : "");
+  $("#banner").hidden = false;
+  if (kind === "queued") bannerTimer = setTimeout(hideBanner, 4500);
+}
+function hideBanner() { clearTimeout(bannerTimer); $("#banner").hidden = true; }
 const STRAT_LABEL = {graham:"Graham (defensive)", buffett:"Buffett (quality)",
   piotroski:"Piotroski F-Score", greenblatt:"Greenblatt Magic Formula",
   lynch:"Lynch (GARP)", netnet:"Graham Net-Net (NCAV)", custom:"Custom criteria"};
@@ -641,13 +666,14 @@ async function runLive() {
   selectedStrats.forEach(s => params.append("strategy", s));
   const btn = $("#run"); const label = btn.textContent;
   btn.disabled = true; btn.textContent = "⏳";
+  showBanner("Screening " + raw.split(",").filter(t=>t.trim()).length + " ticker(s)…");
   setStatus("manual", "Combing SEC EDGAR + Yahoo/Stooq…");
   try {
     const res = await fetch("/api/screen?" + params.toString()); const data = await res.json();
     if (data.error && !(data.results||[]).length) setStatus("manual", "Error: " + data.error);
     else { setRows(data, "Live screen", "manual"); enqueueForAnalysis(raw); }
   } catch (e) { setStatus("manual", "Live screen failed: " + e.message); }
-  finally { btn.disabled = false; btn.textContent = label; }
+  finally { btn.disabled = false; btn.textContent = label; hideBanner(); }
 }
 /* One button: a single ticker gets the deep-dive; several get the compare table. */
 function runSmart() {
@@ -670,13 +696,14 @@ async function runJob() {
   params.set("custom", JSON.stringify(criteria));
   const btn = $("#run-job"); const label = btn.textContent;
   btn.disabled = true; btn.textContent = "Running…";
+  showBanner("Running custom job…");
   setStatus("custom", "Running your custom job…");
   try {
     const res = await fetch("/api/screen?" + params.toString()); const data = await res.json();
     if (data.error && !(data.results||[]).length) setStatus("custom", "Error: " + data.error);
     else { setRows(data, "Custom job", "custom"); enqueueForAnalysis(raw); }
   } catch (e) { setStatus("custom", "Job failed: " + e.message); }
-  finally { btn.disabled = false; btn.textContent = label; }
+  finally { btn.disabled = false; btn.textContent = label; hideBanner(); }
 }
 $("#run-job").onclick = runJob;
 
@@ -831,6 +858,7 @@ async function analyzeNow() {
   if (!ticker) { setStatus("manual", "Enter a ticker to analyze."); $("#tickers").focus(); return; }
   const btn = $("#run"); const label = btn.textContent;
   btn.disabled = true; btn.textContent = "⏳";
+  showBanner(`Analyzing ${ticker.toUpperCase()} — strategies, news & sentiment…`);
   setStatus("manual", `Full analysis of ${ticker.toUpperCase()} — strategies, news & sentiment…`);
   try {
     const res = await fetch("/api/analyze?ticker=" + encodeURIComponent(ticker));
@@ -843,7 +871,7 @@ async function analyzeNow() {
       (data.sentiment&&data.sentiment.grade?` · sentiment ${data.sentiment.grade}`:"")+
       (data.run_id?` · stored run #${data.run_id}`:""));
   } catch (e) { setStatus("manual", "Analysis failed: " + e.message); }
-  finally { btn.disabled = false; btn.textContent = label; }
+  finally { btn.disabled = false; btn.textContent = label; hideBanner(); }
 }
 $("#job-tickers").addEventListener("keydown", e => { if (e.key === "Enter") runJob(); });
 
@@ -856,7 +884,10 @@ async function enqueueForAnalysis(raw) {
       headers: {"Content-Type": "application/json"}, body: JSON.stringify({tickers})});
     if (r.ok) {
       const d = await r.json();
-      if (d.queued) $("#status").textContent += ` · queued ${d.queued} for full analysis`;
+      if (d.queued) {
+        $("#status").textContent += ` · queued ${d.queued} for full analysis`;
+        showBanner(`Queued ${d.queued} ticker(s) for a full analysis — the worker runs every ~20 min.`, "queued");
+      }
     }
   } catch (e) { /* best-effort; ignore */ }
 }
