@@ -4,6 +4,16 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.20.1] - 2026-08-20
+
+### Added
+- **Activity banner.** A sticky banner at the top of the dashboard shows while a
+  job is **running** (custom job / manual screen / analysis — accent, with a
+  spinner) and when tickers are **queued** for the ~20-min deep-analysis worker
+  (amber, auto-dismissing). Respects reduced-motion.
+
+[0.20.1]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.20.1
+
 ## [0.20.0] - 2026-08-20
 
 ### Changed
