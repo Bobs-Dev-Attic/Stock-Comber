@@ -4,6 +4,25 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.28.0] - 2026-08-21
+
+### Added
+- **See & fine-tune the scheduled report's strategies.** The Scheduled report
+  card/dialog (Jobs tab) now shows which strategies the nightly run uses; the
+  overview summary lists them, and the schedule dialog renders them as chips that
+  deep-link to their threshold editors in Settings (e.g. Buffett's min ROE,
+  Graham's max P/E), plus an "edit all in Settings" link. Settings' strategy cards
+  gained anchor ids (`#sec-graham`, `#sec-buffett`, …) for the deep links.
+
+### Notes
+- The full parameter editor already lived on the **Settings** page (☰ menu →
+  Settings): the strategies checklist, every Graham/Buffett/Piotroski/Greenblatt/
+  Lynch/Net-Net threshold, the nightly-universe knobs, and custom criteria — all
+  saved to the database that drives the nightly screen. This change makes it
+  discoverable and editable straight from the Scheduled report.
+
+[0.28.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.28.0
+
 ## [0.27.1] - 2026-08-21
 
 ### Added

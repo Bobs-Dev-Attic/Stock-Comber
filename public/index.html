@@ -211,6 +211,11 @@
   .dlg-l { display: block; font-weight: 600; font-size: .9rem; margin: .9rem 0 .35rem; }
   .dlg-acts { display: flex; gap: .5rem; flex-wrap: wrap; margin-top: 1.1rem; }
   .next-run { color: var(--muted); }
+  .strat-chips { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .1rem; }
+  .strat-chips a { background: var(--chip); color: var(--ink); border: 1px solid var(--line);
+    border-radius: 999px; padding: .2rem .6rem; font-size: .85rem; text-decoration: none; }
+  .strat-chips a:hover { background: color-mix(in srgb, var(--accent) 14%, transparent); border-color: var(--accent); }
+  .strat-chips .none { color: var(--muted); font-size: .85rem; }
   /* in-dialog job results preview */
   .preview-tbl { font-size: .88rem; }
   .preview-tbl th, .preview-tbl td { padding: .35rem .5rem; }
@@ -448,6 +453,9 @@
         <option value="0,6">Weekends</option>
         <option value="1">Mondays</option>
       </select>
+      <label class="dlg-l">Strategies &amp; thresholds</label>
+      <div id="sched-strats" class="strat-chips"></div>
+      <div class="hint" style="margin:.3rem 0 .2rem">These run each night. Click one to fine-tune its thresholds (e.g. Buffett's min ROE, Graham's max P/E), or <a href="/settings.html">edit all in Settings ↗</a>.</div>
       <div class="dlg-acts">
         <button class="btn" id="save-sched">Save schedule</button>
         <button class="btn ghost" id="view-sched">View latest ↗</button>
@@ -1357,14 +1365,27 @@ async function loadSchedule() {
     else schedHint(sc.enabled
       ? "This schedule drives the hosted nightly run — a job checks it every 5 minutes and runs at the configured time (GitHub's finest schedule resolution)."
       : "Nightly run is disabled. Enable and Save to resume it.");
+    // Strategies the nightly run uses, each linking to its thresholds in Settings.
+    const strats = (d.config && d.config.strategies) || [];
+    renderSchedStrats(strats);
     // Overview summary card.
     const enabled = configured ? !!sc.enabled : true;
     const g = cronToForm(cron) || { time: "06:30", days: "1-5" };
     const summary = $("#sched-summary");
-    if (summary) summary.textContent = enabled
-      ? `Enabled · ${g.time} UTC · ${SCHED_DAYS[g.days] || g.days}${configured ? "" : " (default)"}`
-      : "Disabled — the nightly run won't fire until you enable it.";
+    if (summary) {
+      const stratTxt = strats.length ? " · " + strats.map(stratLabel).join(", ") : "";
+      summary.textContent = enabled
+        ? `Enabled · ${g.time} UTC · ${SCHED_DAYS[g.days] || g.days}${configured ? "" : " (default)"}${stratTxt}`
+        : "Disabled — the nightly run won't fire until you enable it." + (stratTxt ? " Strategies:" + stratTxt.replace(" ·", "") : "");
+    }
   } catch (e) { schedHint("Couldn't load the schedule.", true); }
+}
+function renderSchedStrats(strats) {
+  const el = $("#sched-strats"); if (!el) return;
+  if (!strats || !strats.length) { el.innerHTML = '<span class="none">None selected — pick strategies in Settings.</span>'; return; }
+  el.innerHTML = strats.map(s =>
+    `<a href="/settings.html#sec-${escHtml(s)}" title="Fine-tune ${escHtml(stratLabel(s))} thresholds in Settings">${escHtml(stratLabel(s))}</a>`
+  ).join("");
 }
 const SCHED_DAYS = { "1-5": "weekdays", "*": "every day", "0,6": "weekends", "1": "Mondays" };
 $("#save-sched").onclick = async () => {
