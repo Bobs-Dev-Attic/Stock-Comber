@@ -4,6 +4,25 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.24.0] - 2026-08-21
+
+### Added
+- **API tab.** A new 🔌 API tab on the dashboard documents every endpoint (public
+  reads and key-gated writes) with method, path, and a short description —
+  replacing the small API list that used to live in the footer.
+
+### Changed
+- **The nightly schedule now honours the minute.** The hosted heartbeat runs every
+  5 minutes (`*/5 * * * *`) and `schedule-gate` matches the configured minute to
+  that slot, so a run set for 06:15 fires at 06:15 — not the top of the hour. Five
+  minutes is GitHub Actions' finest schedule resolution; the time picker now steps
+  in 5-minute increments and `HEARTBEAT_MINUTES` keeps the gate and the workflow in
+  sync.
+- **Removed the dashboard footer.** Navigation lives in the ☰ menu, the API
+  reference in the new API tab, and the disclaimer/data-sources on the About page.
+
+[0.24.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.24.0
+
 ## [0.23.0] - 2026-08-21
 
 ### Added
