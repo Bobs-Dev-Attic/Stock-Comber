@@ -56,3 +56,8 @@ def test_null_storage_analytics_shape():
     data = NullStorage().analytics()
     assert set(data) == {"runs", "top_tickers", "sectors", "sentiment", "health"}
     assert all(data[k] == [] for k in data)
+
+
+def test_null_storage_list_all_results_empty():
+    assert NullStorage().list_all_results() == []
+    assert NullStorage().list_all_results(limit=10) == []

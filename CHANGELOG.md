@@ -4,6 +4,42 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.22.0] - 2026-08-21
+
+### Added
+- **Reorganized dashboard around three tabs.** The landing view is now a **📋 Full
+  list** — every company screened across all stored runs, deduped to each name's
+  most recent result, with a live ticker/name filter and a "passing only" toggle.
+  A **⚙️ Jobs** tab gathers the different job types in one place: the nightly
+  scheduled report (enable/disable + time-of-day + days), the custom-job builder
+  with saved jobs, and manual search. A **🕓 History** tab shows the analysis
+  queue plus every past run and search.
+- **Run a saved job in one click.** Saved custom jobs now have a **▶ Run** button
+  (alongside Load / Delete) that loads the job into the builder and runs it
+  immediately.
+- **Nightly schedule preference.** The Jobs tab persists `schedule.enabled` and a
+  derived cron (time + days) to the settings blob (key-gated). The hosted nightly
+  run is still triggered by GitHub Actions; this records the preferred cadence and
+  drives the optional local scheduler.
+- **Navigation menu.** A ☰ menu in the header links to Settings, About, Definition
+  of terms, and Strategies (plus Analytics / Backtest / Theses).
+- **New reference pages** (static, no serverless functions): `about.html`,
+  `glossary.html` (searchable definition of terms), and `strategies.html` (the six
+  value/quality lenses + custom criteria).
+- **`GET /api/runs?results=all`** returns a deduped per-company roll-up
+  (`{results: [...]}`) across all stored runs, backed by a new
+  `storage.list_all_results()`. No new serverless function — still 12.
+
+### Notes
+- **Where results are saved:** a deep-dive analysis (`/api/analyze`) and the
+  nightly run store full per-company results (`screen_runs` + `screen_results` +
+  `raw_fundamentals`); quick screens (`/api/screen`, used by custom jobs and
+  multi-ticker compares) log a search summary and enqueue tickers for the ~20-min
+  worker, which then stores a full run. All persistence requires a database
+  (`DATABASE_URL`).
+
+[0.22.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.22.0
+
 ## [0.21.0] - 2026-08-21
 
 ### Added

@@ -162,6 +162,25 @@
   .links { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .4rem; }
   .links a { background: var(--chip); border-radius: 999px; padding: .35rem .7rem; text-decoration: none; font-size: .85rem; }
   .sec-h { font-weight: 700; margin: 1rem 0 .3rem; font-size: .95rem; }
+  /* header top bar + nav menu */
+  .topbar { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
+  .navbtn { border: 1px solid var(--line); background: var(--panel); color: var(--ink); width: 2.4rem;
+    height: 2.4rem; border-radius: 10px; font-size: 1.2rem; cursor: pointer; flex: 0 0 auto; line-height: 1; }
+  #nav-pop { padding: .4rem; min-width: 220px; }
+  .navlink { display: block; padding: .5rem .6rem; border-radius: 8px; text-decoration: none; color: var(--ink); font-size: .92rem; }
+  .navlink:hover { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+  .navdiv { height: 1px; background: var(--line); margin: .35rem .2rem; }
+  /* Jobs tab sections */
+  .jobsec { padding: .2rem 0 1rem; border-bottom: 1px solid var(--line); margin-bottom: 1rem; }
+  .jobsec:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: .2rem; }
+  .jobsec-h { font-weight: 700; font-size: 1rem; margin: .2rem 0 .7rem; display: flex; gap: .5rem; align-items: baseline; flex-wrap: wrap; }
+  .jobsec-h code { background: var(--chip); padding: .05rem .3rem; border-radius: 5px; font-weight: 400; }
+  /* History tab */
+  .histgrid { display: grid; gap: 1rem; margin-top: .6rem; }
+  .histcard { border: 1px solid var(--line); border-radius: 12px; padding: .8rem 1rem; }
+  .histcard h3 { margin: 0 0 .5rem; font-size: 1rem; }
+  .histcard td, .histcard th { text-align: left; }
+  .pill { display: inline-block; background: var(--chip); border-radius: 999px; padding: .05rem .5rem; font-size: .8rem; }
 
   /* ---- Narrow screens (phones) ---- */
   @media (max-width: 640px) {
@@ -192,103 +211,181 @@
 </div>
 <div class="wrap">
   <header>
-    <h1>📈 Stock-Comber</h1>
-    <p>Companies that fit Benjamin Graham &amp; Warren Buffett value criteria. Click any row for the full breakdown.</p>
+    <div class="topbar">
+      <div>
+        <h1>📈 Stock-Comber</h1>
+        <p>Companies that fit Benjamin Graham &amp; Warren Buffett value criteria. Click any row for the full breakdown.</p>
+      </div>
+      <div class="menu" id="nav-menu">
+        <button class="navbtn" id="nav-btn" aria-haspopup="true" aria-expanded="false" aria-label="Menu" title="Menu">☰</button>
+        <div class="panel-pop" id="nav-pop">
+          <a class="navlink" href="/settings.html">⚙️ Settings</a>
+          <a class="navlink" href="/about.html">ℹ️ About</a>
+          <a class="navlink" href="/glossary.html">📖 Definition of terms</a>
+          <a class="navlink" href="/strategies.html">🎯 Strategies</a>
+          <div class="navdiv"></div>
+          <a class="navlink" href="/analytics.html">📊 Analytics</a>
+          <a class="navlink" href="/backtest.html">🧪 Backtest</a>
+          <a class="navlink" href="/thesis.html">🎯 Theses</a>
+        </div>
+      </div>
+    </div>
   </header>
 
   <section class="card">
     <div class="tabs" role="tablist" aria-label="Views">
-      <button class="tab" role="tab" data-tab="scheduled" aria-selected="true">📅 Scheduled report</button>
-      <button class="tab" role="tab" data-tab="custom" aria-selected="false">⚙️ Custom jobs</button>
-      <button class="tab" role="tab" data-tab="manual" aria-selected="false">🔍 Manual searches</button>
+      <button class="tab" role="tab" data-tab="full" aria-selected="true">📋 Full list</button>
+      <button class="tab" role="tab" data-tab="jobs" aria-selected="false">⚙️ Jobs</button>
+      <button class="tab" role="tab" data-tab="history" aria-selected="false">🕓 History</button>
     </div>
 
-    <!-- Scheduled report -->
-    <div class="tabpanel" data-panel="scheduled" role="tabpanel">
+    <!-- Full list (landing): every company across all stored runs -->
+    <div class="tabpanel" data-panel="full" role="tabpanel">
       <div class="paneln">
-        <div class="hint" style="flex:1;min-width:200px">The latest scheduled “hidden gems” shortlist, ranked by composite health. It refreshes automatically after each scheduled run.</div>
-        <button class="btn ghost" id="refresh-sched">↻ Refresh</button>
+        <div class="hint" style="flex:1;min-width:220px">Every company Stock-Comber has screened, across all stored runs — deduped to each name's most recent result. Click a row for the full breakdown.</div>
+        <input id="full-filter" type="search" placeholder="Filter ticker / name…" autocomplete="off" style="flex:0 1 200px">
+        <label class="hint" style="display:flex;align-items:center;gap:.35rem;margin:0"><input type="checkbox" id="full-passing"> Passing only</label>
+        <button class="btn ghost" id="refresh-full">↻ Refresh</button>
       </div>
     </div>
 
-    <!-- Custom jobs -->
-    <div class="tabpanel" data-panel="custom" role="tabpanel" hidden>
-      <div class="hint">Build a reusable screen — your own <code>metric op value</code> rules over a set of tickers or an index template. Runs your rules (plus any strategies ticked under Manual searches).</div>
-      <div id="crit-list" style="margin-top:.6rem"></div>
-      <div class="row" style="margin:.6rem 0;display:flex;gap:.5rem;flex-wrap:wrap;align-items:center">
-        <button id="add-crit" class="btn ghost">+ Add criterion</button>
-        <button id="clear-crit" class="btn ghost">Clear</button>
-        <span id="custom-count" class="hint"></span>
-      </div>
-      <div class="controls">
-        <input id="job-tickers" type="text" placeholder="Tickers, e.g. AAPL, MSFT — or load a template →"
-               autocomplete="off" style="flex:1 1 260px;min-width:200px">
-        <div class="menu" id="tmpl-menu">
-          <button class="btn ghost" id="tmpl-btn" aria-haspopup="true" aria-expanded="false"
-                  title="Load a slice of an index (Dow / Nasdaq-100 / S&amp;P 500), filtered by sector">Templates ▾</button>
-          <div class="panel-pop" id="tmpl-pop" style="min-width:250px"></div>
+    <!-- Jobs: configure & run the different job types -->
+    <div class="tabpanel" data-panel="jobs" role="tabpanel" hidden>
+      <!-- 1. Nightly scheduled report -->
+      <div class="jobsec">
+        <div class="jobsec-h">📅 Scheduled report <span class="hint" style="margin:0">— the nightly “hidden gems” run</span></div>
+        <div class="controls">
+          <label class="hint" style="display:flex;align-items:center;gap:.35rem;margin:0"><input type="checkbox" id="sched-enabled"> Enabled</label>
+          <label class="hint" style="display:flex;align-items:center;gap:.35rem;margin:0">Time (UTC) <input id="sched-time" type="time" value="06:30"></label>
+          <label class="hint" style="display:flex;align-items:center;gap:.35rem;margin:0">Days
+            <select id="sched-days">
+              <option value="1-5">Weekdays</option>
+              <option value="*">Every day</option>
+              <option value="0,6">Weekends</option>
+              <option value="1">Mondays</option>
+            </select>
+          </label>
+          <button class="btn ghost" id="save-sched">Save schedule</button>
+          <button class="btn ghost" id="view-sched">View latest ↗</button>
         </div>
-        <button id="run-job" class="btn">Run job</button>
+        <div id="sched-hint" class="hint"></div>
       </div>
-      <div class="controls" style="margin-top:.5rem;align-items:center">
-        <select id="saved-jobs" title="Load one of your saved jobs" style="flex:1 1 200px;min-width:180px">
-          <option value="">— Saved jobs —</option>
-        </select>
-        <button id="load-job" class="btn ghost" title="Fill the builder from the selected saved job">Load</button>
-        <button id="delete-job" class="btn ghost" title="Delete the selected saved job">Delete</button>
-        <input id="job-name" type="text" placeholder="Name this job to save it" autocomplete="off"
-               style="flex:1 1 160px;min-width:140px">
-        <button id="save-job" class="btn" title="Save the current criteria, tickers &amp; strategies to the database">Save job</button>
+
+      <!-- 2. Custom jobs -->
+      <div class="jobsec">
+        <div class="jobsec-h">🧮 Custom job <span class="hint" style="margin:0">— your own <code>metric op value</code> rules over tickers or an index template</span></div>
+        <div id="crit-list"></div>
+        <div class="row" style="margin:.6rem 0;display:flex;gap:.5rem;flex-wrap:wrap;align-items:center">
+          <button id="add-crit" class="btn ghost">+ Add criterion</button>
+          <button id="clear-crit" class="btn ghost">Clear</button>
+          <span id="custom-count" class="hint"></span>
+        </div>
+        <div class="controls">
+          <input id="job-tickers" type="text" placeholder="Tickers, e.g. AAPL, MSFT — or load a template →"
+                 autocomplete="off" style="flex:1 1 260px;min-width:200px">
+          <div class="menu" id="tmpl-menu">
+            <button class="btn ghost" id="tmpl-btn" aria-haspopup="true" aria-expanded="false"
+                    title="Load a slice of an index (Dow / Nasdaq-100 / S&amp;P 500), filtered by sector">Templates ▾</button>
+            <div class="panel-pop" id="tmpl-pop" style="min-width:250px"></div>
+          </div>
+          <button id="run-job" class="btn">Run job</button>
+        </div>
+        <div class="controls" style="margin-top:.5rem;align-items:center">
+          <select id="saved-jobs" title="Your saved jobs" style="flex:1 1 200px;min-width:180px">
+            <option value="">— Saved jobs —</option>
+          </select>
+          <button id="run-saved" class="btn" title="Load and run the selected saved job now">▶ Run</button>
+          <button id="load-job" class="btn ghost" title="Fill the builder from the selected saved job">Load</button>
+          <button id="delete-job" class="btn ghost" title="Delete the selected saved job">Delete</button>
+          <input id="job-name" type="text" placeholder="Name this job to save it" autocomplete="off"
+                 style="flex:1 1 160px;min-width:140px">
+          <button id="save-job" class="btn" title="Save the current criteria, tickers &amp; strategies to the database">Save job</button>
+        </div>
+        <div id="jobs-hint" class="hint" style="margin-top:.35rem"></div>
       </div>
-      <div id="jobs-hint" class="hint" style="margin-top:.35rem"></div>
+
+      <!-- 3. Manual search -->
+      <div class="jobsec">
+        <div class="jobsec-h">🔍 Manual search <span class="hint" style="margin:0">— one ticker for a full deep-dive, or several to compare</span></div>
+        <div class="controls">
+          <div class="acwrap">
+            <input id="tickers" type="text" placeholder="Tickers, e.g. AAPL, MSFT, JNJ, KO" autocomplete="off"
+                   role="combobox" aria-expanded="false" aria-controls="ac" aria-autocomplete="list">
+            <button id="run" class="iconbtn" aria-label="Analyze"
+                    title="Analyze — one ticker → full deep-dive (all six analysts + news &amp; sentiment); several tickers → compare them in a table using the ticked strategies.">🔍</button>
+          </div>
+          <div class="menu" id="strat-menu">
+            <button class="btn ghost" id="strat-btn" aria-haspopup="true" aria-expanded="false"
+                    title="Choose which value frameworks the Screen table runs">Strategies ▾</button>
+            <div class="panel-pop" id="strat-pop"></div>
+          </div>
+        </div>
+        <div id="ac" class="ac-dd" role="listbox"></div>
+        <div class="hint">Enter <b>one ticker</b> for a full deep-dive — all six analysts plus recent news &amp; a sentiment grade. Enter <b>several</b> (up to 10) to compare them in a table using the ticked strategies.</div>
+      </div>
     </div>
 
-    <!-- Manual searches -->
-    <div class="tabpanel" data-panel="manual" role="tabpanel" hidden>
-      <div class="controls">
-        <div class="acwrap">
-          <input id="tickers" type="text" placeholder="Tickers, e.g. AAPL, MSFT, JNJ, KO" autocomplete="off"
-                 role="combobox" aria-expanded="false" aria-controls="ac" aria-autocomplete="list">
-          <button id="run" class="iconbtn" aria-label="Analyze"
-                  title="Analyze — one ticker → full deep-dive (all six analysts + news &amp; sentiment); several tickers → compare them in a table using the ticked strategies.">🔍</button>
-        </div>
-        <div class="menu" id="strat-menu">
-          <button class="btn ghost" id="strat-btn" aria-haspopup="true" aria-expanded="false"
-                  title="Choose which value frameworks the Screen table runs">Strategies ▾</button>
-          <div class="panel-pop" id="strat-pop"></div>
-        </div>
+    <!-- History: analysis queue + all past runs & searches -->
+    <div class="tabpanel" data-panel="history" role="tabpanel" hidden>
+      <div class="paneln">
+        <div class="hint" style="flex:1;min-width:220px">Jobs waiting in the analysis queue, plus every past run &amp; search. Deep-dive analyses are stored in full; quick screens are logged as a summary.</div>
+        <button class="btn ghost" id="refresh-hist">↻ Refresh</button>
       </div>
-      <div id="ac" class="ac-dd" role="listbox"></div>
-      <div class="hint">Enter <b>one ticker</b> for a full deep-dive — all six analysts plus recent news &amp; a sentiment grade. Enter <b>several</b> (up to 10) to compare them in a table using the ticked strategies.</div>
-    </div>
-
-    <div class="toolbar">
-      <div id="status" class="status" style="margin:0"></div>
-      <div class="spacer"></div>
-      <div class="menu" id="cols-menu">
-        <button class="btn ghost" id="cols-btn">Columns ▾</button>
-        <div class="panel-pop" id="cols-pop"></div>
-      </div>
-      <div class="menu" id="export-menu">
-        <button class="btn ghost" id="export-btn">Export ▾</button>
-        <div class="panel-pop">
-          <div class="colrow"><button class="btn ghost" id="exp-csv" style="width:100%">Download CSV</button></div>
-          <div class="colrow"><button class="btn ghost" id="exp-json" style="width:100%">Download JSON</button></div>
-          <div class="hint" style="margin:.3rem .3rem 0">Programmatic export: <code>/api/export?key=…&amp;format=csv</code></div>
+      <div id="hist-status" class="hint"></div>
+      <div class="histgrid">
+        <div class="histcard">
+          <h3>Analysis queue</h3>
+          <div class="tablewrap"><table>
+            <thead><tr><th>Ticker</th><th>Status</th><th>Requested</th><th>Run</th></tr></thead>
+            <tbody id="h-queue"></tbody>
+          </table></div>
+        </div>
+        <div class="histcard">
+          <h3>Past runs</h3>
+          <div class="tablewrap"><table>
+            <thead><tr><th>#</th><th>When</th><th>Strategies</th><th class="r">Companies</th><th class="r">Passing</th></tr></thead>
+            <tbody id="h-runs"></tbody>
+          </table></div>
+        </div>
+        <div class="histcard">
+          <h3>Searches</h3>
+          <div class="tablewrap"><table>
+            <thead><tr><th>When</th><th>Source</th><th>Tickers</th><th class="r">Results</th><th class="r">Passing</th></tr></thead>
+            <tbody id="h-searches"></tbody>
+          </table></div>
         </div>
       </div>
     </div>
 
-    <div class="tablewrap"><table id="tbl" hidden>
-      <thead><tr id="head"></tr></thead>
-      <tbody></tbody>
-    </table></div>
+    <div id="results-area">
+      <div class="toolbar">
+        <div id="status" class="status" style="margin:0"></div>
+        <div class="spacer"></div>
+        <div class="menu" id="cols-menu">
+          <button class="btn ghost" id="cols-btn">Columns ▾</button>
+          <div class="panel-pop" id="cols-pop"></div>
+        </div>
+        <div class="menu" id="export-menu">
+          <button class="btn ghost" id="export-btn">Export ▾</button>
+          <div class="panel-pop">
+            <div class="colrow"><button class="btn ghost" id="exp-csv" style="width:100%">Download CSV</button></div>
+            <div class="colrow"><button class="btn ghost" id="exp-json" style="width:100%">Download JSON</button></div>
+            <div class="hint" style="margin:.3rem .3rem 0">Programmatic export: <code>/api/export?key=…&amp;format=csv</code></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tablewrap"><table id="tbl" hidden>
+        <thead><tr id="head"></tr></thead>
+        <tbody></tbody>
+      </table></div>
+    </div>
   </section>
 
   <p class="foot">
     Educational tool only — not investment advice. Data from SEC EDGAR, Yahoo &amp; Stooq may be delayed or incomplete.<br>
-    <a href="/history.html">🕓 History</a> · <a href="/analytics.html">📊 Analytics</a> · <a href="/backtest.html">🧪 Backtest</a> · <a href="/thesis.html">🎯 Theses</a> · <a href="/settings.html">⚙️ Settings</a> ·
-    API: <code>/api/latest</code> · <code>/api/screen</code> · <code>/api/analyze</code> · <code>/api/universe</code> · <code>/api/export</code> · <code>/api/runs</code> ·
+    <a href="/about.html">ℹ️ About</a> · <a href="/glossary.html">📖 Definitions</a> · <a href="/strategies.html">🎯 Strategies</a> · <a href="/analytics.html">📊 Analytics</a> · <a href="/backtest.html">🧪 Backtest</a> · <a href="/thesis.html">🎯 Theses</a> · <a href="/settings.html">⚙️ Settings</a> ·
+    API: <code>/api/screen</code> · <code>/api/analyze</code> · <code>/api/runs</code> · <code>/api/export</code> ·
     <a href="https://github.com/Bobs-Dev-Attic/Stock-Comber">source</a>
   </p>
 </div>
@@ -315,11 +412,13 @@ const STRAT_LABEL = {graham:"Graham (defensive)", buffett:"Buffett (quality)",
 const stratLabel = s => STRAT_LABEL[s] || s;
 let rows = [], sortK = "score_pct", sortDir = -1;
 
-/* ---- tabs: each view keeps its own rows + status ---- */
-const tabRows = {scheduled: [], custom: [], manual: []};
-const tabStatus = {scheduled: "", custom: "", manual: ""};
-let activeTab = "scheduled";
-let schedLoaded = false;
+/* ---- tabs ---- */
+/* "full" = every company across all runs (landing); "jobs" = results of a
+   custom job / manual analysis. History renders its own tables. */
+const tabRows = {full: [], jobs: []};
+const tabStatus = {full: "", jobs: "", history: ""};
+let activeTab = "full";
+let fullLoaded = false, schedLoaded = false, histLoaded = false;
 function setStatus(tab, text) {
   tabStatus[tab] = text;
   if (tab === activeTab) $("#status").textContent = text;
@@ -328,11 +427,18 @@ function showTab(tab) {
   activeTab = tab;
   document.querySelectorAll(".tab").forEach(b => b.setAttribute("aria-selected", b.dataset.tab === tab));
   document.querySelectorAll(".tabpanel").forEach(p => p.hidden = p.dataset.panel !== tab);
-  rows = tabRows[tab];
-  $("#status").textContent = tabStatus[tab];
-  render();
-  if (tab === "scheduled" && !schedLoaded) { schedLoaded = true; loadLatest(); }
-  if (tab === "custom" && !jobsLoaded) loadSavedJobs();
+  // The shared results table serves Full list + Jobs; History has its own cards.
+  $("#results-area").hidden = (tab === "history");
+  $("#status").textContent = tabStatus[tab] || "";
+  if (tab === "full") {
+    if (!fullLoaded) { fullLoaded = true; loadFullList(); } else applyFull();
+  } else if (tab === "jobs") {
+    rows = tabRows.jobs; render();
+    if (!jobsLoaded) loadSavedJobs();
+    if (!schedLoaded) { schedLoaded = true; loadSchedule(); }
+  } else if (tab === "history") {
+    loadHistory();
+  }
 }
 
 const METRICS = [
@@ -660,38 +766,64 @@ function setRows(payload, note, tab) {
   setStatus(tab, rws.length ? `${note} · ${rws.length} rows · ${passing} passing${when?" · "+when:""}` : `${note} · no results${err}`);
   if (tab === activeTab) { rows = rws; render(); }
 }
-async function loadLatest() {
-  setStatus("scheduled", "Loading latest report…");
+/* Full list (landing): every company across all stored runs, deduped to latest.
+   Falls back to the static nightly report when no database is configured. */
+let fullAll = [];
+async function loadFullList() {
+  setStatus("full", "Loading all screened companies…");
   try {
-    let res = await fetch("/data/latest.json", {cache:"no-store"});
-    if (!res.ok) res = await fetch("/api/latest");
-    setRows(await res.json(), "Latest scheduled report", "scheduled");
-  } catch (e) { setStatus("scheduled", "Could not load the latest report."); }
+    const d = await (await fetch("/api/runs?results=all&limit=1000")).json();
+    if (d.storage_enabled && (d.results || []).length) {
+      fullAll = d.results;
+      setStatus("full", `All screened companies · ${fullAll.length} rows (deduped to latest)`);
+    } else {
+      let res = await fetch("/data/latest.json", {cache:"no-store"});
+      if (!res.ok) res = await fetch("/api/latest");
+      const ld = await res.json();
+      fullAll = ld.results || [];
+      setStatus("full", fullAll.length
+        ? `Latest scheduled report · ${fullAll.length} rows${d.storage_enabled?"":" · connect a database to keep full history"}`
+        : "No stored results yet — run a job (Jobs tab) or wait for the nightly run.");
+    }
+  } catch (e) { fullAll = []; setStatus("full", "Could not load the full list: " + e.message); }
+  if (activeTab === "full") applyFull();
 }
+function applyFull() {
+  let rws = fullAll;
+  const q = ($("#full-filter").value || "").trim().toLowerCase();
+  if ($("#full-passing").checked) rws = rws.filter(r => r.passed);
+  if (q) rws = rws.filter(r => ((r.ticker || "") + " " + (r.name || "")).toLowerCase().includes(q));
+  tabRows.full = rws;
+  if (activeTab === "full") { rows = rws; render(); }
+}
+$("#full-filter").addEventListener("input", () => { if (activeTab === "full") applyFull(); });
+$("#full-passing").addEventListener("change", () => { if (activeTab === "full") applyFull(); });
+$("#refresh-full").onclick = () => loadFullList();
+
 /* Manual searches: compare several tickers in a table (no custom criteria). */
 async function runLive() {
   closeAC();
   const raw = $("#tickers").value.trim();
-  if (!raw) { setStatus("manual", "Enter one or more tickers."); return; }
-  if (!selectedStrats.length) { setStatus("manual", "Pick at least one strategy (under Strategies)."); return; }
+  if (!raw) { setStatus("jobs", "Enter one or more tickers."); return; }
+  if (!selectedStrats.length) { setStatus("jobs", "Pick at least one strategy (under Strategies)."); return; }
   const params = new URLSearchParams(); params.set("tickers", raw);
   selectedStrats.forEach(s => params.append("strategy", s));
   const btn = $("#run"); const label = btn.textContent;
   btn.disabled = true; btn.textContent = "⏳";
   showBanner("Screening " + raw.split(",").filter(t=>t.trim()).length + " ticker(s)…");
-  setStatus("manual", "Combing SEC EDGAR + Yahoo/Stooq…");
+  setStatus("jobs", "Combing SEC EDGAR + Yahoo/Stooq…");
   try {
     const res = await fetch("/api/screen?" + params.toString()); const data = await res.json();
-    if (data.error && !(data.results||[]).length) setStatus("manual", "Error: " + data.error);
-    else { setRows(data, "Live screen", "manual"); enqueueForAnalysis(raw); }
-  } catch (e) { setStatus("manual", "Live screen failed: " + e.message); }
+    if (data.error && !(data.results||[]).length) setStatus("jobs", "Error: " + data.error);
+    else { setRows(data, "Live screen", "jobs"); enqueueForAnalysis(raw); }
+  } catch (e) { setStatus("jobs", "Live screen failed: " + e.message); }
   finally { btn.disabled = false; btn.textContent = label; hideBanner(); }
 }
 /* One button: a single ticker gets the deep-dive; several get the compare table. */
 function runSmart() {
   closeAC();
   const tickers = $("#tickers").value.split(",").map(t => t.trim()).filter(Boolean);
-  if (!tickers.length) { setStatus("manual", "Enter a ticker to analyze."); $("#tickers").focus(); return; }
+  if (!tickers.length) { setStatus("jobs", "Enter a ticker to analyze."); $("#tickers").focus(); return; }
   if (tickers.length === 1) return analyzeNow();
   return runLive();
 }
@@ -701,20 +833,20 @@ $("#run").onclick = runSmart;
 async function runJob() {
   const raw = $("#job-tickers").value.trim();
   const criteria = readCriteria();
-  if (!criteria.length) { setStatus("custom", "Add at least one criterion for the job."); return; }
-  if (!raw) { setStatus("custom", "Enter tickers (or load a template) to run the job on."); return; }
+  if (!criteria.length) { setStatus("jobs", "Add at least one criterion for the job."); return; }
+  if (!raw) { setStatus("jobs", "Enter tickers (or load a template) to run the job on."); return; }
   const params = new URLSearchParams(); params.set("tickers", raw);
   selectedStrats.forEach(s => params.append("strategy", s));
   params.set("custom", JSON.stringify(criteria));
   const btn = $("#run-job"); const label = btn.textContent;
   btn.disabled = true; btn.textContent = "Running…";
   showBanner("Running custom job…");
-  setStatus("custom", "Running your custom job…");
+  setStatus("jobs", "Running your custom job…");
   try {
     const res = await fetch("/api/screen?" + params.toString()); const data = await res.json();
-    if (data.error && !(data.results||[]).length) setStatus("custom", "Error: " + data.error);
-    else { setRows(data, "Custom job", "custom"); enqueueForAnalysis(raw); }
-  } catch (e) { setStatus("custom", "Job failed: " + e.message); }
+    if (data.error && !(data.results||[]).length) setStatus("jobs", "Error: " + data.error);
+    else { setRows(data, "Custom job", "jobs"); enqueueForAnalysis(raw); }
+  } catch (e) { setStatus("jobs", "Job failed: " + e.message); }
   finally { btn.disabled = false; btn.textContent = label; hideBanner(); }
 }
 $("#run-job").onclick = runJob;
@@ -759,7 +891,16 @@ $("#load-job").onclick = () => {
   const job = savedJobs.find(j => j.name === name);
   if (!job) { jobsHint("Pick a saved job to load.", true); return; }
   applyJob(job);
-  setStatus("custom", `Loaded “${job.name}”. Adjust and Run job, or Save to update it.`);
+  setStatus("jobs", `Loaded “${job.name}”. Adjust and Run job, or Save to update it.`);
+};
+/* Run: load the selected saved job into the builder and run it immediately. */
+$("#run-saved").onclick = () => {
+  const name = $("#saved-jobs").value;
+  const job = savedJobs.find(j => j.name === name);
+  if (!job) { jobsHint("Pick a saved job to run.", true); return; }
+  applyJob(job);
+  jobsHint(`Running “${job.name}”…`);
+  runJob();
 };
 function apiKey() {
   let key = sessionStorage.getItem("sc_key") || "";
@@ -801,6 +942,108 @@ $("#delete-job").onclick = async () => {
   if (!confirm(`Delete saved job “${name}”?`)) return;
   await persistJobs(savedJobs.filter(j => j.name !== name), `Deleted “${name}”.`);
 };
+
+/* ---- nightly schedule config (stored in settings.schedule) ---- */
+function schedHint(msg, bad) {
+  const el = $("#sched-hint"); el.textContent = msg || "";
+  el.style.color = bad ? "var(--fail-ink)" : "var(--muted)";
+}
+// cron "M H D Mo Dow" -> {time:"HH:MM", days:"Dow"} and back (minute+hour only).
+function cronToForm(cron) {
+  const p = String(cron || "").trim().split(/\s+/);
+  if (p.length < 5) return null;
+  const m = String(p[0]).padStart(2,"0"), h = String(p[1]).padStart(2,"0");
+  return { time: `${h}:${m}`, days: p[4] };
+}
+function formToCron(time, days) {
+  const [h, m] = (time || "06:30").split(":");
+  return `${parseInt(m,10)||0} ${parseInt(h,10)||0} * * ${days || "1-5"}`;
+}
+async function loadSchedule() {
+  try {
+    const d = await (await fetch("/api/settings")).json();
+    const sc = (d.config && d.config.schedule) || {};
+    $("#sched-enabled").checked = !!sc.enabled;
+    const f = cronToForm(sc.cron);
+    if (f) {
+      $("#sched-time").value = f.time;
+      const opt = Array.from($("#sched-days").options).find(o => o.value === f.days);
+      if (opt) $("#sched-days").value = f.days;
+    }
+    schedHint(d.storage_enabled
+      ? "The hosted nightly run is triggered by the repo's GitHub Actions schedule; this saves your preferred cadence and drives the local scheduler."
+      : "Connect a database (Settings) to save a schedule preference.");
+  } catch (e) { schedHint("Couldn't load the schedule.", true); }
+}
+$("#save-sched").onclick = async () => {
+  const key = apiKey();
+  if (!key) { schedHint("An API key is required to save the schedule.", true); return; }
+  const schedule = { enabled: $("#sched-enabled").checked,
+    cron: formToCron($("#sched-time").value, $("#sched-days").value) };
+  const btn = $("#save-sched"); const label = btn.textContent;
+  btn.disabled = true; btn.textContent = "Saving…";
+  try {
+    const res = await fetch("/api/settings?key=" + encodeURIComponent(key),
+      { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ schedule }) });
+    const d = await res.json().catch(() => ({}));
+    schedHint(res.ok ? `Saved — nightly ${schedule.enabled ? "enabled" : "disabled"} at ${$("#sched-time").value} UTC (${schedule.cron}).`
+      : "Save failed: " + (d.error || res.status) + (d.problems ? " — " + d.problems.join("; ") : ""), !res.ok);
+  } catch (e) { schedHint("Save failed: " + e.message, true); }
+  finally { btn.disabled = false; btn.textContent = label; }
+};
+$("#view-sched").onclick = async () => {
+  // Jump to the Full list and reload from the nightly report.
+  showTab("full");
+  document.querySelector('.tab[data-tab="full"]').focus();
+  try {
+    let res = await fetch("/data/latest.json", {cache:"no-store"});
+    if (!res.ok) res = await fetch("/api/latest");
+    fullAll = (await res.json()).results || [];
+    setStatus("full", `Latest scheduled report · ${fullAll.length} rows`);
+    applyFull();
+  } catch (e) {}
+};
+
+/* ---- History tab: analysis queue + past runs & searches ---- */
+const fmtWhen = s => { try { return new Date(s).toLocaleString(); } catch(e){ return s || ""; } };
+function renderHistQueue(rows) {
+  $("#h-queue").innerHTML = rows.map(q =>
+    `<tr><td class="l"><strong>${escHtml(q.ticker)}</strong></td>`
+    + `<td class="l"><span class="pill">${escHtml(q.status)}</span></td>`
+    + `<td class="l">${fmtWhen(q.requested_at)}</td>`
+    + `<td class="l">${q.run_id ? "#" + q.run_id : (q.note ? escHtml(String(q.note)).slice(0,40) : "—")}</td></tr>`
+  ).join("") || `<tr><td colspan="4" class="hint">Queue is empty.</td></tr>`;
+}
+function renderHistRuns(rows) {
+  $("#h-runs").innerHTML = rows.map(r =>
+    `<tr><td>${r.id}</td><td>${fmtWhen(r.created_at)}</td>`
+    + `<td>${(r.strategies||[]).map(s=>`<span class="pill">${escHtml(s)}</span>`).join(" ")}</td>`
+    + `<td class="r">${r.ticker_count??"—"}</td><td class="r">${r.passing_count??"—"}</td></tr>`
+  ).join("") || `<tr><td colspan="5" class="hint">No runs yet.</td></tr>`;
+}
+function renderHistSearches(rows) {
+  $("#h-searches").innerHTML = rows.map(s => {
+    const t = (s.tickers||[]).join(", ");
+    return `<tr><td>${fmtWhen(s.created_at)}</td><td><span class="pill">${escHtml(s.source||"")}</span></td>`
+      + `<td>${escHtml(t).slice(0,60)}</td><td class="r">${s.result_count??"—"}</td><td class="r">${s.passing_count??"—"}</td></tr>`;
+  }).join("") || `<tr><td colspan="5" class="hint">No searches yet.</td></tr>`;
+}
+async function loadHistory(force) {
+  if (histLoaded && !force) return;
+  histLoaded = true;
+  $("#hist-status").textContent = "Loading activity…";
+  try {
+    const [rRes, qRes] = await Promise.all([
+      fetch("/api/runs?limit=50"), fetch("/api/queue?limit=50")]);
+    const rd = await rRes.json();
+    renderHistRuns(rd.runs || []); renderHistSearches(rd.searches || []);
+    try { renderHistQueue((await qRes.json()).queue || []); } catch(e){ renderHistQueue([]); }
+    $("#hist-status").textContent = rd.storage_enabled
+      ? `${(rd.runs||[]).length} runs · ${(rd.searches||[]).length} searches`
+      : "No database configured — set DATABASE_URL in Vercel to record history.";
+  } catch (e) { $("#hist-status").textContent = "Failed to load history: " + e.message; }
+}
 
 /* ---- manual full analysis (news + sentiment), on demand ---- */
 const GRADE_TXT = {A:"Positive", B:"Mildly positive", C:"Neutral", D:"Mildly negative", F:"Negative"};
@@ -935,12 +1178,12 @@ function openAnalysis(data) {
     const r = results.find(x => x.strategy === el.dataset.s); if (r) openDetail(r);
   });
   $("#modal").querySelectorAll(".peer[data-t]").forEach(el => el.onclick = (e) => {
-    e.preventDefault(); closeDetail(); showTab("manual");
+    e.preventDefault(); closeDetail(); showTab("jobs");
     $("#tickers").value = el.dataset.t; analyzeNow();
   });
   const cmp = $("#cmp-peers");
   if (cmp) cmp.onclick = () => {
-    closeDetail(); showTab("manual");
+    closeDetail(); showTab("jobs");
     $("#tickers").value = [...new Set([data.ticker, ...peers])].slice(0, 10).join(", ");
     runLive();
   };
@@ -950,22 +1193,22 @@ async function analyzeNow() {
   closeAC();
   const raw = $("#tickers").value.trim();
   const ticker = raw.split(",").map(t=>t.trim()).filter(Boolean)[0];
-  if (!ticker) { setStatus("manual", "Enter a ticker to analyze."); $("#tickers").focus(); return; }
+  if (!ticker) { setStatus("jobs", "Enter a ticker to analyze."); $("#tickers").focus(); return; }
   const btn = $("#run"); const label = btn.textContent;
   btn.disabled = true; btn.textContent = "⏳";
   showBanner(`Analyzing ${ticker.toUpperCase()} — strategies, news & sentiment…`);
-  setStatus("manual", `Full analysis of ${ticker.toUpperCase()} — strategies, news & sentiment…`);
+  setStatus("jobs", `Full analysis of ${ticker.toUpperCase()} — strategies, news & sentiment…`);
   try {
     const res = await fetch("/api/analyze?ticker=" + encodeURIComponent(ticker));
     const data = await res.json();
-    if (data.error) { setStatus("manual", "Analysis failed: " + data.error); return; }
-    if (data.results && data.results.length) setRows(data, "Manual analysis", "manual");
+    if (data.error) { setStatus("jobs", "Analysis failed: " + data.error); return; }
+    if (data.results && data.results.length) setRows(data, "Manual analysis", "jobs");
     openAnalysis(data);
-    setStatus("manual", `Analyzed ${data.ticker} · ${data.passing} passing`+
+    setStatus("jobs", `Analyzed ${data.ticker} · ${data.passing} passing`+
       (data.signal&&data.signal.action&&data.signal.action!=="N/A"?` · signal ${data.signal.action}`:"")+
       (data.sentiment&&data.sentiment.grade?` · sentiment ${data.sentiment.grade}`:"")+
       (data.run_id?` · stored run #${data.run_id}`:""));
-  } catch (e) { setStatus("manual", "Analysis failed: " + e.message); }
+  } catch (e) { setStatus("jobs", "Analysis failed: " + e.message); }
   finally { btn.disabled = false; btn.textContent = label; hideBanner(); }
 }
 $("#job-tickers").addEventListener("keydown", e => { if (e.key === "Enter") runJob(); });
@@ -1054,12 +1297,12 @@ tickersInput.addEventListener("blur", () => setTimeout(closeAC, 120));
 
 /* tabs */
 document.querySelectorAll(".tab").forEach(b => b.onclick = () => showTab(b.dataset.tab));
-$("#refresh-sched").onclick = () => loadLatest();
+$("#refresh-hist").onclick = () => loadHistory(true);
 
 /* init */
-wireMenu("cols-menu"); wireMenu("export-menu"); wireMenu("strat-menu"); wireMenu("tmpl-menu");
+wireMenu("cols-menu"); wireMenu("export-menu"); wireMenu("strat-menu"); wireMenu("tmpl-menu"); wireMenu("nav-menu");
 buildColsMenu(); buildStratMenu(); renderHead();
-showTab("scheduled");   // loads the latest scheduled report on first view
+showTab("full");   // landing: every company across all stored runs
 // Lazily build the Templates menu the first time it's opened.
 $("#tmpl-btn").addEventListener("click", () => { if (!tmplBuilt) { tmplBuilt = true; buildTmplMenu(); } }, true);
 </script>
