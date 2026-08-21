@@ -157,6 +157,9 @@ class NullStorage:
     def recent_results(self, limit_runs: int = 30) -> list[dict]:
         return []
 
+    def list_all_results(self, limit: int = 500) -> list[dict]:
+        return []
+
     def get_settings(self) -> dict:
         return {}
 
@@ -319,6 +322,36 @@ class PostgresStorage:
         with self._connect() as conn:
             self._ensure_schema(conn)
             return self._run_payload(conn, run_id)
+
+    def list_all_results(self, limit: int = 500) -> list[dict]:
+        """Every company across all stored runs, deduped to the latest result
+        per (ticker, strategy). Full per-company payload (metrics, criteria) so
+        the dashboard's "Full list" can render and sort it like any screen.
+        Ordered most-recent-run first, then by score."""
+        cols = ["ticker", "name", "cik", "strategy", "passed", "score",
+                "max_score", "score_pct", "metrics", "criteria", "errors",
+                "run_id", "created_at"]
+        with self._connect() as conn:
+            self._ensure_schema(conn)
+            with conn.cursor() as cur:
+                cur.execute(
+                    "SELECT * FROM ("
+                    "  SELECT DISTINCT ON (sr.ticker, sr.strategy) "
+                    "    sr.ticker, sr.name, sr.cik, sr.strategy, sr.passed, "
+                    "    sr.score, sr.max_score, sr.score_pct, sr.metrics, "
+                    "    sr.criteria, sr.errors, sr.run_id, r.created_at "
+                    "  FROM screen_results sr "
+                    "  JOIN screen_runs r ON r.id = sr.run_id "
+                    "  ORDER BY sr.ticker, sr.strategy, r.created_at DESC"
+                    ") x ORDER BY x.created_at DESC, x.score_pct DESC NULLS LAST "
+                    "LIMIT %s", (limit,))
+                out = []
+                for row in cur.fetchall():
+                    d = dict(zip(cols, row))
+                    if hasattr(d["created_at"], "isoformat"):
+                        d["created_at"] = d["created_at"].isoformat()
+                    out.append(d)
+                return out
 
     def recent_results(self, limit_runs: int = 30) -> list[dict]:
         """Per-strategy results from the most recent ``limit_runs`` runs.

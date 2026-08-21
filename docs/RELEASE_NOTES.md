@@ -1,5 +1,33 @@
 # Release notes
 
+## v0.22.0 — Dashboard reorganized: Full list, Jobs & History (2026-08-21)
+
+The dashboard is now built around three tabs, with a navigation menu in the header.
+
+- **📋 Full list (landing).** The page now opens on the complete list of every
+  company Stock-Comber has screened, across all stored runs — deduped to each
+  name's most recent result. Filter by ticker/name and toggle "passing only". When
+  no database is connected, it falls back to the latest nightly report.
+- **⚙️ Jobs.** One place to set up and run the different job types:
+  - **Scheduled report** — enable/disable the nightly run and set its time &amp; days.
+    (The hosted run is triggered by GitHub Actions; this saves your preferred
+    cadence.)
+  - **Custom job** — the `metric op value` builder, index templates, and your
+    **saved jobs** with a new **▶ Run** button that loads and runs a saved job in
+    one click (alongside Load / Delete / Save).
+  - **Manual search** — one ticker for a full deep-dive, or several to compare.
+- **🕓 History.** The analysis queue (jobs waiting for the ~20-min worker) plus
+  every past run and search.
+- **☰ Menu** in the header links to **Settings**, **About**, **Definition of
+  terms**, and **Strategies** (plus Analytics / Backtest / Theses). Three new
+  reference pages explain what the tool is, define every metric (searchable), and
+  lay out the six value/quality strategies.
+
+**On saving results:** deep-dive analyses and the nightly run are stored in full
+(and now surfaced in the Full list &amp; History); quick screens are logged as a
+summary and enqueue their tickers for a full analysis. All persistence requires a
+database (`DATABASE_URL`).
+
 ## v0.21.0 — Saved custom jobs (2026-08-21)
 
 Custom jobs can now be **saved to the database and re-run later**. In the

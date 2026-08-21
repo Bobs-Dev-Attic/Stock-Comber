@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stock-Comber · Definitions</title>
+<style>
+  :root { --bg:#f6f7f9; --panel:#fff; --ink:#1a1d23; --muted:#5b6472; --line:#e3e6ea;
+    --accent:#1f7a4d; --chip:#eef1f4; --shadow:0 1px 3px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.04); }
+  @media (prefers-color-scheme: dark){ :root{ --bg:#0f1115; --panel:#171a20; --ink:#e7e9ee;
+    --muted:#9aa4b2; --line:#262b34; --accent:#34c17f; --chip:#1f242c;
+    --shadow:0 1px 3px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);} }
+  *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);
+    font:15px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+  .wrap{max-width:860px;margin:0 auto;padding:2rem 1.2rem 4rem}
+  a{color:var(--accent)} h1{margin:0 0 .2rem;font-size:1.7rem} .sub{color:var(--muted);margin:0 0 1rem}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);
+    padding:.6rem 1.4rem 1.2rem;margin-top:1.2rem}
+  .card h2{margin:1rem 0 .2rem;font-size:1.1rem;color:var(--accent)}
+  dt{font-weight:700;margin-top:.8rem} dd{margin:.15rem 0 0;color:var(--muted)}
+  dd code, dt code{background:var(--chip);color:var(--ink);padding:.05rem .35rem;border-radius:5px;font-size:.88em}
+  .k{color:var(--muted);font-weight:400;font-size:.85em;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+  input{width:100%;padding:.6rem .7rem;border:1px solid var(--line);border-radius:9px;background:var(--bg);
+    color:var(--ink);font-size:1rem;margin-top:.4rem}
+  .hidden{display:none}
+  .note{border-left:3px solid var(--accent);padding:.3rem 0 .3rem .8rem;color:var(--muted);margin-top:1.2rem}
+  @media (max-width:640px){ .wrap{padding:1.2rem .8rem 3rem} h1{font-size:1.4rem} .card{padding:.5rem 1rem 1rem} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>📖 Definition of terms</h1>
+  <p class="sub"><a href="/">← Dashboard</a> · <a href="/strategies.html">🎯 Strategies</a> · <a href="/about.html">ℹ️ About</a></p>
+  <input id="filter" type="search" placeholder="Filter terms… (e.g. ROE, current ratio, PEG)" autocomplete="off" aria-label="Filter terms">
+
+  <div class="card" id="terms">
+    <h2>Valuation</h2>
+    <dl>
+      <dt>P/E ratio <span class="k">pe_ratio</span></dt>
+      <dd>Price ÷ earnings per share. How many dollars you pay per dollar of annual profit. Lower can mean cheaper — or slower growth.</dd>
+      <dt>P/B ratio <span class="k">pb_ratio</span></dt>
+      <dd>Price ÷ book value per share. Below <code>1.0</code> means the market values the company under its accounting net worth.</dd>
+      <dt>Graham number <span class="k">graham_number</span></dt>
+      <dd>√(22.5 × EPS × book value/share) — Graham's rough ceiling for a defensive purchase price. Price below it suggests a margin of safety.</dd>
+      <dt>Earnings yield <span class="k">earnings_yield_pct</span></dt>
+      <dd>Operating earnings ÷ enterprise value, the inverse of a P/E. Higher = cheaper. Half of Greenblatt's Magic Formula.</dd>
+      <dt>PEG ratio <span class="k">peg</span></dt>
+      <dd>P/E ÷ earnings growth rate. Near or below <code>1.0</code> suggests growth you aren't overpaying for (Lynch's GARP test).</dd>
+      <dt>NCAV <span class="k">net_current_asset_value</span></dt>
+      <dd>Net current asset value = current assets − <em>all</em> liabilities. Graham's "net-net" buys below two-thirds of it.</dd>
+    </dl>
+
+    <h2>Profitability &amp; quality</h2>
+    <dl>
+      <dt>ROE % <span class="k">roe_pct</span></dt>
+      <dd>Return on equity = net income ÷ shareholders' equity. How much profit the company earns on each dollar owners have invested.</dd>
+      <dt>Return on capital % <span class="k">return_on_capital_pct</span></dt>
+      <dd>Operating profit ÷ (net working capital + net fixed assets). Greenblatt's measure of how productively capital is deployed.</dd>
+      <dt>Net margin % <span class="k">net_margin_pct</span></dt>
+      <dd>Net income ÷ revenue — the share of each sales dollar that becomes profit.</dd>
+      <dt>Free cash flow <span class="k">free_cash_flow</span></dt>
+      <dd>Operating cash flow − capital expenditures. The cash left over after keeping the business running; funds dividends, buybacks, debt paydown.</dd>
+      <dt>Piotroski F-Score</dt>
+      <dd>A 0–9 financial-strength score. 8–9 is strong, ≤ 2 is weak. See <a href="/strategies.html">Strategies</a>.</dd>
+    </dl>
+
+    <h2>Financial health</h2>
+    <dl>
+      <dt>Current ratio <span class="k">current_ratio</span></dt>
+      <dd>Current assets ÷ current liabilities. Above <code>2.0</code> is Graham's mark of a strong short-term position.</dd>
+      <dt>Debt / equity <span class="k">debt_to_equity</span></dt>
+      <dd>Total (or long-term) debt ÷ equity. Lower means less leverage and less financial risk.</dd>
+      <dt>Working capital <span class="k">working_capital</span></dt>
+      <dd>Current assets − current liabilities. A cushion of short-term resources over short-term obligations.</dd>
+      <dt>Book value per share <span class="k">book_value_per_share</span></dt>
+      <dd>Shareholders' equity ÷ shares outstanding — the per-share accounting net worth.</dd>
+    </dl>
+
+    <h2>Growth &amp; size</h2>
+    <dl>
+      <dt>Revenue <span class="k">revenue</span></dt><dd>Total annual sales — a proxy for company size.</dd>
+      <dt>EPS <span class="k">eps</span></dt><dd>Earnings per share = net income ÷ shares outstanding.</dd>
+      <dt>Earnings growth 5y % <span class="k">earnings_growth_5y_pct</span></dt>
+      <dd>Cumulative growth in earnings over the last five years.</dd>
+      <dt>Revenue growth 5y % <span class="k">revenue_growth_5y_pct</span></dt>
+      <dd>Cumulative growth in revenue over the last five years.</dd>
+      <dt>Market cap</dt><dd>Share price × shares outstanding — the market's total price tag on the equity.</dd>
+    </dl>
+
+    <h2>Stock-Comber scores</h2>
+    <dl>
+      <dt>Health score 0–100 <span class="k">health_score</span></dt>
+      <dd>A blended composite of <strong>Value</strong>, <strong>Quality</strong>, and <strong>Growth</strong> sub-scores
+      (each 0–100), used to rank the nightly shortlist. Higher is healthier on balance — a summary, not a verdict.</dd>
+      <dt>Score %</dt>
+      <dd>For a given strategy, the fraction of that checklist's rules the company passed (weighted). Drives "pass / did not pass."</dd>
+      <dt>Signal (BUY / WATCH / AVOID)</dt>
+      <dd>A plain-language read across the six lenses for recently analyzed tickers. An educational summary of the checklists — <strong>not advice</strong>.</dd>
+    </dl>
+    <p id="nomatch" class="hidden note">No terms match your filter.</p>
+  </div>
+
+  <p class="note">Definitions are simplified for learning. Exact formulas follow each company's SEC filings and may
+  vary with available data. <strong>Not investment advice.</strong></p>
+</div>
+<script>
+  const filter = document.getElementById("filter");
+  const groups = Array.from(document.querySelectorAll("#terms h2"));
+  const items = Array.from(document.querySelectorAll("#terms dt")).map(dt => ({dt, dd: dt.nextElementSibling}));
+  const nomatch = document.getElementById("nomatch");
+  filter.addEventListener("input", () => {
+    const q = filter.value.trim().toLowerCase();
+    let anyVisible = false;
+    items.forEach(({dt, dd}) => {
+      const hit = !q || (dt.textContent + " " + dd.textContent).toLowerCase().includes(q);
+      dt.classList.toggle("hidden", !hit); dd.classList.toggle("hidden", !hit);
+      if (hit) anyVisible = true;
+    });
+    // Hide a section heading when all of its terms are filtered out.
+    groups.forEach(h2 => {
+      let el = h2.nextElementSibling, visible = false;
+      while (el && el.tagName === "DL") {
+        if (el.querySelector("dt:not(.hidden)")) visible = true;
+        el = el.nextElementSibling;
+      }
+      h2.classList.toggle("hidden", q && !visible);
+    });
+    nomatch.classList.toggle("hidden", anyVisible);
+  });
+</script>
+</body>
+</html>

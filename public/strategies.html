@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stock-Comber · Strategies</title>
+<style>
+  :root { --bg:#f6f7f9; --panel:#fff; --ink:#1a1d23; --muted:#5b6472; --line:#e3e6ea;
+    --accent:#1f7a4d; --chip:#eef1f4; --shadow:0 1px 3px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.04); }
+  @media (prefers-color-scheme: dark){ :root{ --bg:#0f1115; --panel:#171a20; --ink:#e7e9ee;
+    --muted:#9aa4b2; --line:#262b34; --accent:#34c17f; --chip:#1f242c;
+    --shadow:0 1px 3px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);} }
+  *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);
+    font:15px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+  .wrap{max-width:900px;margin:0 auto;padding:2rem 1.2rem 4rem}
+  a{color:var(--accent)} h1{margin:0 0 .2rem;font-size:1.7rem} .sub{color:var(--muted);margin:0 0 1rem}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);
+    padding:1.2rem 1.4rem;margin-top:1.2rem}
+  .card h2{margin:.1rem 0 .3rem;font-size:1.2rem}
+  .who{color:var(--muted);font-size:.9rem;margin:0 0 .6rem}
+  .card p{margin:.5rem 0} ul{margin:.4rem 0 .4rem 1.1rem;padding:0} li{margin:.25rem 0}
+  code{background:var(--chip);padding:.1rem .35rem;border-radius:5px;font-size:.9em}
+  .tag{display:inline-block;background:var(--chip);color:var(--muted);border-radius:999px;
+    padding:.05rem .55rem;font-size:.78rem;margin-left:.4rem;vertical-align:middle}
+  .note{border-left:3px solid var(--accent);padding:.3rem 0 .3rem .8rem;color:var(--muted)}
+  @media (max-width:640px){ .wrap{padding:1.2rem .8rem 3rem} h1{font-size:1.4rem} .card{padding:1rem} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🎯 Strategies</h1>
+  <p class="sub"><a href="/">← Dashboard</a> · <a href="/glossary.html">📖 Definitions</a> · <a href="/about.html">ℹ️ About</a></p>
+  <p>Each strategy is a checklist of pass/fail rules over a company's fundamentals. A company "passes" a
+  strategy when it clears at least the strategy's <em>pass ratio</em> of its rules. Thresholds below are the
+  defaults — every number is adjustable in <a href="/settings.html">Settings</a>.</p>
+
+  <div class="card">
+    <h2>Graham — Defensive Investor <span class="tag">value</span></h2>
+    <p class="who">Benjamin Graham, <em>The Intelligent Investor</em> — buy sound companies at a margin of safety.</p>
+    <ul>
+      <li>Adequate size — revenue ≥ <code>$700M</code>.</li>
+      <li>Strong financial condition — current ratio ≥ <code>2.0</code>; long-term debt under working capital.</li>
+      <li>Earnings stability — positive earnings each of the last <code>5</code> years.</li>
+      <li>Earnings growth — ≥ <code>33%</code> cumulative over 5 years.</li>
+      <li>Moderate price — P/E ≤ <code>15</code>, P/B ≤ <code>1.5</code>, and P/E × P/B ≤ <code>22.5</code> (the "Graham number").</li>
+    </ul>
+    <p>Passes at <strong>80%</strong> of rules met.</p>
+  </div>
+
+  <div class="card">
+    <h2>Buffett — Quality &amp; Moat <span class="tag">quality</span></h2>
+    <p class="who">Warren Buffett — wonderful businesses that compound at high returns on capital.</p>
+    <ul>
+      <li>High, consistent returns — ROE ≥ <code>15%</code> for <code>5</code> straight years.</li>
+      <li>Low leverage — debt / equity ≤ <code>0.5</code>.</li>
+      <li>Fat margins — net margin ≥ <code>10%</code>.</li>
+      <li>Durable growth — earnings up ≥ <code>50%</code> cumulatively over 5 years.</li>
+      <li>Cash generative — positive free cash flow in ≥ <code>3</code> of the recent years.</li>
+    </ul>
+    <p>Passes at <strong>80%</strong> of rules met.</p>
+  </div>
+
+  <div class="card">
+    <h2>Piotroski F-Score <span class="tag">quality</span></h2>
+    <p class="who">Joseph Piotroski — a 9-point financial-strength scorecard for separating improving firms from deteriorating ones.</p>
+    <p>Nine binary signals across profitability (positive net income &amp; operating cash flow, rising ROA,
+    cash flow &gt; earnings), leverage/liquidity (falling long-term debt, rising current ratio, no dilution),
+    and efficiency (rising margin &amp; asset turnover). <strong>Passes with a score ≥ 7 / 9.</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>Greenblatt — Magic Formula <span class="tag">value</span></h2>
+    <p class="who">Joel Greenblatt, <em>The Little Book That Beats the Market</em> — cheap <em>and</em> productive.</p>
+    <ul>
+      <li>Earnings yield ≥ <code>8%</code> (cheap relative to operating earnings).</li>
+      <li>Return on capital ≥ <code>20%</code> (productive use of capital).</li>
+    </ul>
+    <p>Threshold-adapted here (the original ranks the whole market). <strong>Both rules must pass.</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>Lynch — GARP <span class="tag">growth at a reasonable price</span></h2>
+    <p class="who">Peter Lynch, <em>One Up on Wall Street</em> — fair prices for real growth.</p>
+    <ul>
+      <li>PEG ≤ <code>1.0</code> (price/earnings not outrunning growth).</li>
+      <li>Earnings growth between <code>15%</code> and <code>50%</code> (real, but not a fad).</li>
+      <li>Debt / equity ≤ <code>0.8</code>.</li>
+    </ul>
+    <p>Passes at <strong>75%</strong> of rules met.</p>
+  </div>
+
+  <div class="card">
+    <h2>Graham Net-Net (NCAV) <span class="tag">deep value</span></h2>
+    <p class="who">Graham's deepest-value screen — buying below liquidation value.</p>
+    <p>Passes when the market cap is below <strong>two-thirds of net current asset value</strong>
+    (current assets minus <em>all</em> liabilities). Rare, and usually found in small, unloved names.</p>
+  </div>
+
+  <div class="card">
+    <h2>Custom criteria <span class="tag">your rules</span></h2>
+    <p>Build your own screen from <code>metric op value</code> rules (e.g. <code>pe_ratio &lt;= 12</code>,
+    <code>roe_pct &gt;= 20</code>) over any of the computed metrics. Save named custom jobs and re-run them from
+    the <strong>Jobs</strong> tab. Every metric is defined in <a href="/glossary.html">Definitions</a>.</p>
+  </div>
+
+  <p class="note">These checklists summarize well-known public frameworks for educational purposes. Passing a
+  screen is a starting point for research — <strong>not investment advice</strong>.</p>
+</div>
+</body>
+</html>
