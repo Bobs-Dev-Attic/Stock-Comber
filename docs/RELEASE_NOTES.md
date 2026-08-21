@@ -1,5 +1,12 @@
 # Release notes
 
+## v0.25.2 — Queued & running jobs on the History tab (2026-08-21)
+
+The History tab's analysis-queue card is now **Queued & running**. Jobs are ordered
+with anything **running** first, then **queued**, then finished/failed, each with a
+color-coded status badge so active work stands out. An "active" count (running +
+queued) appears in the card header and in the tab's status line.
+
 ## v0.25.1 — Saved jobs shown on the Jobs tab (2026-08-21)
 
 The **Jobs** tab now lists your configured jobs instead of hiding them in a
