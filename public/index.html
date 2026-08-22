@@ -1948,6 +1948,29 @@ function scoresHtml(sc) {
     `(transparent bands, higher is better): <b>Value</b> = cheapness, <b>Quality</b> = `+
     `profitability &amp; balance sheet, <b>Growth</b> = 5-year trends.</div>`;
 }
+// Compact per-strategy backtest summary folded into the analysis report.
+function backtestHtml(bt) {
+  if (!bt || !bt.strategies) return "";
+  const pct = v => (v == null || Number.isNaN(+v)) ? "—" : (v > 0 ? "+" : "") + (+v).toFixed(1) + "%";
+  const rows = Object.values(bt.strategies).filter(s => s && s.summary && s.summary.evaluated_years);
+  const link = `<a href="/backtest.html?ticker=${encodeURIComponent(bt.ticker || "")}" target="_blank" rel="noopener">Full backtest ↗</a>`;
+  if (!rows.length)
+    return `<div class="sec-h">Backtest</div><div class="hint">Not enough price + fundamental history to backtest this ticker. ${link}</div>`;
+  const body = rows.map(s => {
+    const m = s.summary, edge = m.edge_pct;
+    const ec = edge == null ? "var(--muted)" : (edge > 0 ? "var(--pass-ink)" : "var(--fail-ink)");
+    return `<tr><td class="l">${stratLabel(s.strategy)}</td>`
+      + `<td class="r">${(m.pass_years || 0)}/${(m.evaluated_years || 0)}</td>`
+      + `<td class="r">${pct(m.avg_forward_return_pass)}</td>`
+      + `<td class="r" style="color:${ec};font-weight:600">${pct(edge)}</td>`
+      + `<td class="r">${m.pass_hit_rate_pct == null ? "—" : Math.round(m.pass_hit_rate_pct) + "%"}</td></tr>`;
+  }).join("");
+  return `<div class="sec-h">Backtest — did PASS verdicts pay off?</div>`
+    + `<div class="tablewrap"><table class="preview-tbl"><thead><tr>`
+    + `<th class="l">Strategy</th><th class="r">PASS yrs</th><th class="r">Avg fwd (PASS)</th><th class="r">Edge</th><th class="r">Hit rate</th>`
+    + `</tr></thead><tbody>${body}</tbody></table></div>`
+    + `<div class="hint" style="margin-top:.3rem">“Edge” = average next-year return after a PASS minus after a fail (SEC fundamentals + Yahoo year-end prices; educational, not advice). ${link}</div>`;
+}
 function openAnalysis(data) {
   hideBanner();   // the "Analyzing…" toast is redundant (and would cover the ✕) once the dialog is up
   const results = data.results || [];
@@ -2020,6 +2043,7 @@ function openAnalysis(data) {
     snapshotHtml(data.profile)+
     signalHtml+
     `<div class="sec-h">Scores</div>${scoresHtml(data.scores)}`+
+    backtestHtml(data.backtest)+
     `<div class="sec-h">Strategies</div>${stratRows}${dataNote}`+
     `<div class="sec-h">Similar companies (same sector)</div>${peersHtml}`+
     `<div class="sec-h">News sentiment</div>${sentHtml}${newsHtml}`;

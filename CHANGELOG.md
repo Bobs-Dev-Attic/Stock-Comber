@@ -4,6 +4,20 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.36.0] - 2026-08-22
+
+### Added
+- **Backtest folded into the analysis report (on by default).** A full deep-dive analysis
+  now also runs a per-strategy backtest and shows it inline in the report — for each value
+  lens: PASS-years, average next-year return after a PASS, the **edge** (avg return after a
+  PASS minus after a fail, colored), and the PASS hit-rate — with a link to the full
+  backtest. `GET /api/analyze` returns a new `backtest` object.
+- **Settings toggle.** A new **Settings → Analysis → “Run a backtest in each analysis”**
+  switch (`data.backtest_on_analysis`, default on) turns it off to skip the extra
+  price-history fetch. The backtest never blocks or fails the analysis.
+
+[0.36.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.36.0
+
 ## [0.35.1] - 2026-08-22
 
 ### Added

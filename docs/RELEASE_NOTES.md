@@ -1,5 +1,16 @@
 # Release notes
 
+## v0.36.0 — Backtest built into every analysis (2026-08-22)
+
+Every deep-dive analysis now includes a **backtest** right in the report. For each value
+lens you'll see how its historical PASS verdicts actually played out: how many years it
+passed, the average next-year return after a PASS, its **edge** (that return minus the
+return after a fail), and the PASS hit-rate — plus a link to the full backtest page.
+
+It's **on by default**; if you'd rather keep analyses fast, turn it off under **Settings →
+Analysis → “Run a backtest in each analysis.”** The backtest is educational (SEC
+fundamentals + Yahoo year-end prices, not advice) and never blocks the analysis.
+
 ## v0.35.1 — See your next scheduled runs (2026-08-22)
 
 The Scheduled report dialog now lists the **next five run times** for the schedule you're

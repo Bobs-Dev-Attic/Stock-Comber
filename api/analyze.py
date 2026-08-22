@@ -61,6 +61,20 @@ def run_analysis(ticker: str, news_days: int = 14) -> dict:
         except Exception:
             profile = None
 
+    # Optional per-strategy backtest, folded into the report (default on). One
+    # extra price-history fetch; never let it fail the analysis.
+    backtest = None
+    if cfg.get("data", {}).get("backtest_on_analysis", True):
+        try:
+            from stock_comber.backtest import backtest_all
+            from stock_comber.datasources import YahooSource
+            if company is not None and company.annuals:
+                price_by_year = YahooSource(timeout=25).fetch_history(ticker, years=10)
+                if price_by_year:
+                    backtest = backtest_all(company, price_by_year, cfg)
+        except Exception:
+            backtest = None
+
     run_id = None
     passing = sum(1 for r in results if r.passed)
     if getattr(store, "enabled", False):
@@ -92,6 +106,7 @@ def run_analysis(ticker: str, news_days: int = 14) -> dict:
         "signal": signal,
         "scores": scores,
         "profile": profile,
+        "backtest": backtest,
     }
 
 
