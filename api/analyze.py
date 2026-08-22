@@ -67,9 +67,9 @@ def run_analysis(ticker: str, news_days: int = 14) -> dict:
     if cfg.get("data", {}).get("backtest_on_analysis", True):
         try:
             from stock_comber.backtest import backtest_all
-            from stock_comber.datasources import YahooSource
+            from stock_comber.datasources import make_history_source
             if company is not None and company.annuals:
-                price_by_year = YahooSource(timeout=25).fetch_history(ticker, years=10)
+                price_by_year = make_history_source(cfg, timeout=25).fetch_history(ticker, years=10)
                 if price_by_year:
                     backtest = backtest_all(company, price_by_year, cfg)
         except Exception:
