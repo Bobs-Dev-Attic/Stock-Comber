@@ -4,6 +4,20 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.45.1] - 2026-08-22
+
+### Changed
+- **`mypy` is now an enforced (blocking) CI gate** for the `stock_comber` package. The package
+  type-checks clean and the `typecheck` job no longer swallows failures, so any *new* type error
+  fails CI. Cleared the existing findings with real fixes (implicit-`Optional` defaults on
+  `apiguard.guard`/`_MemoryLimiter.hit`, a `None`-narrowing list comp in the Buffett FCF check
+  and the news-sentiment call, an explicit `Optional[Company]` in `screen_ticker`, and clearer
+  tuple unpacking in the nightly backtest loop). The config stays lenient (untyped bodies
+  allowed), so this gates regressions without a full annotation sweep; `api/` handlers and
+  `tests/` remain out of scope. `mypy` added to the `dev` extra. No runtime behavior change.
+
+[0.45.1]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.45.1
+
 ## [0.45.0] - 2026-08-22
 
 ### Added

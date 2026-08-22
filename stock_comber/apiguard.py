@@ -46,7 +46,7 @@ class _MemoryLimiter:
     def __init__(self) -> None:
         self._buckets: "OrderedDict[str, deque]" = OrderedDict()
 
-    def hit(self, client: str, limit: int, window: int, now: float = None):
+    def hit(self, client: str, limit: int, window: int, now: "float | None" = None):
         """Record a request for ``client`` and report ``(over_limit, count)``.
 
         A request that is already over the limit is *not* recorded, so a
@@ -142,8 +142,8 @@ def client_id(handler, scope: str) -> str:
     return "ip:" + _client_ip(handler)
 
 
-def guard(handler, endpoint: str, method: str = None, store=None,
-          cfg: dict[str, Any] = None):
+def guard(handler, endpoint: str, method: "str | None" = None, store=None,
+          cfg: "dict[str, Any] | None" = None):
     """Record the request and enforce the configured rate limit.
 
     Returns ``(ok, meta)`` where ``ok`` is False when the caller should reject

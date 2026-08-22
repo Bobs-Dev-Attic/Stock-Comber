@@ -75,8 +75,8 @@ def evaluate_buffett(company: Company, cfg: dict[str, Any]) -> ScreenResult:
     # 6. Positive free cash flow ("owner earnings") over recent years.
     if b.get("require_positive_fcf", True):
         need_fcf = b["min_fcf_years"]
-        fcfs = [metrics.free_cash_flow(a) for a in company.annuals
-                if metrics.free_cash_flow(a) is not None]
+        fcfs = [v for v in (metrics.free_cash_flow(a) for a in company.annuals)
+                if v is not None]
         recent_fcf = fcfs[-need_fcf:]
         positive = len(fcfs) >= need_fcf and all(f > 0 for f in recent_fcf)
         results.append(CriterionResult(

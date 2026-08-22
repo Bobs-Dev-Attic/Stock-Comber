@@ -1,5 +1,12 @@
 # Release notes
 
+## v0.45.1 — Type-checking is now enforced (2026-08-22)
+
+Internal quality: `mypy` runs as a **blocking** check in CI for the core `stock_comber` package,
+which now type-checks clean. Previously it ran but couldn't fail the build; now a new type error
+stops a bad change before it lands. Clearing the backlog also fixed a handful of latent
+`None`-handling rough edges. No change to how the app behaves.
+
 ## v0.45.0 — Trailing-twelve-month figures (2026-08-22)
 
 Building on the quarterly data, Stock-Comber now computes **trailing-twelve-month (TTM)** revenue

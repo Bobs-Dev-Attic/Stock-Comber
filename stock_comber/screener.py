@@ -116,6 +116,7 @@ class Screener:
     # -- single ticker ---------------------------------------------------
     def screen_ticker(self, ticker: str) -> list[ScreenResult]:
         results: list[ScreenResult] = []
+        company: Optional[Company] = None
         company_error = None
         # Reject malformed symbols before any upstream fetch (SSRF guard). Still
         # return one error result per strategy so the run stays well-formed.

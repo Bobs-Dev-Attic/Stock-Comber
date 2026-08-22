@@ -37,7 +37,8 @@ def analyze_ticker(ticker: str, screener: Screener, news_days: int = 14):
         except Exception as exc:
             log.warning("news fetch failed for %s: %s", ticker, exc)
             news = []
-        sentiment = compute_sentiment([n.get("headline") for n in news])
+        sentiment = compute_sentiment(
+            [h for h in (n.get("headline") for n in news) if h])
         try:
             peers = screener.finnhub.fetch_peers(ticker)
         except Exception as exc:

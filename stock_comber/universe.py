@@ -70,7 +70,9 @@ def _diversify(order: list[str], meta: dict, cap: int, n: dict) -> list[str]:
     max_per = n.get("max_per_sector")
     if not max_per:
         max_per = max(1, math.ceil(cap / 6))
-    selected, leftovers, counts = [], [], {}
+    selected: list = []
+    leftovers: list = []
+    counts: dict = {}
     for t in order:
         sector = (meta.get(t) or {}).get("sector") or "Unknown"
         if counts.get(sector, 0) < max_per:
