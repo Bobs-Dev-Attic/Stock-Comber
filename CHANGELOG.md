@@ -4,6 +4,17 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.32.3] - 2026-08-22
+
+### Fixed
+- **Analysis dialog close button hidden behind the banner.** The "Analyzing…" activity
+  banner could overlap the ✕ that closes the stock-analysis dialog (notably on mobile).
+  The banner is now dismissed the moment the dialog opens, and the dialog overlay renders
+  above the banner (raised z-index) as a safety net, so the ✕ is always visible and
+  tappable.
+
+[0.32.3]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.32.3
+
 ## [0.32.2] - 2026-08-22
 
 ### Changed

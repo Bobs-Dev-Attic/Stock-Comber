@@ -1,5 +1,12 @@
 # Release notes
 
+## v0.32.3 — Fix hidden close button on the analysis dialog (2026-08-22)
+
+On phones, the green "Analyzing…" banner could sit on top of the **✕** that closes a
+stock's analysis dialog, making it hard to dismiss. The banner now disappears as soon as
+the dialog opens, and the dialog is layered above the banner regardless — so the close
+button is always visible and tappable.
+
 ## v0.32.2 — Responsive History tab (2026-08-22)
 
 The History tab now adapts to the window width: its cards (Queued & running, Past runs,
