@@ -68,3 +68,7 @@ def test_null_storage_api_audit_noop():
     assert s.record_api_call("screen", "GET", 200, "ip", "ip:1.2.3.4") is None
     assert s.list_api_audit() == []
     assert s.count_api_calls("ip:1.2.3.4", 60) == 0
+
+
+def test_null_storage_recently_screened_empty():
+    assert NullStorage().recently_screened(90) == set()

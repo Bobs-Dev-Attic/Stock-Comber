@@ -162,6 +162,24 @@ def build_nightly(config: dict, store=None, finnhub=None,
     _enrich(cands, meta, n, finnhub, store, day_ordinal)
 
     eligible = sorted(t for t in cands if _passes(meta.get(t, {"ticker": t}), n))
+
+    # Don't let the scheduled report re-screen a name it already covered within
+    # the cooldown window (manual analyses are exempt — see recently_screened).
+    cooldown = int(n.get("reanalyze_cooldown_days", 0) or 0)
+    if cooldown > 0 and store is not None and getattr(store, "enabled", False):
+        recent = getattr(store, "recently_screened", None)
+        if callable(recent):
+            try:
+                skip = recent(cooldown) or set()
+                if skip:
+                    filtered = [t for t in eligible if t not in skip]
+                    # Never return an empty pool solely because everything is on
+                    # cooldown — fall back to the unfiltered set in that edge case.
+                    if filtered:
+                        eligible = filtered
+            except Exception as exc:
+                log.warning("cooldown lookup failed: %s", exc)
+
     if not eligible:
         return []
     off = (day_ordinal * cap) % len(eligible)
