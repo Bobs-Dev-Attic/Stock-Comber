@@ -1515,9 +1515,20 @@ async function previewNightly() {
     nightlyTickers = rows.map(r => r.ticker);
     const cap = Math.min(nightlyTickers.length, NIGHTLY_SCREEN_CAP);
     const chips = rows.map(r => `<a href="#" class="pill preview-tick" data-t="${escHtml(r.ticker)}" title="${escHtml(r.sector || "")} — tap to deep-dive this one">${escHtml(r.ticker)}</a>`).join(" ");
+    const cd = d.cooldown_days
+      ? `<div class="hint" style="margin:.15rem 0 .5rem">🕒 <b>${d.cooldown_days}-day</b> re-analysis cooldown active`
+        + (d.on_cooldown_count
+            ? ` — <b>${d.on_cooldown_count}</b> recently-screened stock${d.on_cooldown_count === 1 ? "" : "s"} held back`
+              + (d.on_cooldown && d.on_cooldown.length
+                  ? ` <span style="cursor:help;text-decoration:underline dotted" title="On cooldown: ${escHtml(d.on_cooldown.join(", "))}${d.on_cooldown_count > d.on_cooldown.length ? ", …" : ""}">(hover)</span>`
+                  : "")
+            : " — nothing on cooldown yet")
+        + `. Manual analyses are exempt.</div>`
+      : "";
     el.innerHTML = `<div style="margin-bottom:.35rem">The next run (<b>${escHtml(d.date || "")}</b>) will screen `
       + `<b>${d.count}</b> stock${d.count === 1 ? "" : "s"}${d.index ? ` from the ${escHtml(String(d.index).toUpperCase())}` : ""}`
       + `${d.count >= d.cap ? ` (nightly cap ${d.cap})` : ""}:</div>`
+      + cd
       + `<div class="controls" style="margin-bottom:.4rem"><button class="btn" id="screen-all-nightly">▶ Screen all ${cap}${nightlyTickers.length > cap ? ` of ${nightlyTickers.length}` : ""}</button>`
       + `<span class="hint" style="margin:0">or tap one ticker for its full deep-dive (news &amp; sentiment)</span></div>`
       + `<div class="pillwrap">${chips}</div>`;

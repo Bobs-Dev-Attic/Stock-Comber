@@ -55,6 +55,15 @@ def build_nightly_preview(params) -> dict:
              "market_cap": (catalog.get(t) or {}).get("market_cap")} for t in tickers]
 
     n = cfg.get("universe", {}).get("nightly", {})
+    # Cooldown status: how many recently-screened names the nightly is holding
+    # back (already excluded from `rows` by build_nightly).
+    cooldown_days = int(n.get("reanalyze_cooldown_days", 0) or 0)
+    on_cooldown: list = []
+    if cooldown_days > 0 and getattr(store, "enabled", False):
+        try:
+            on_cooldown = sorted(store.recently_screened(cooldown_days))
+        except Exception:
+            on_cooldown = []
     return {
         "nightly": True,
         "ordinal": ordinal,
@@ -64,6 +73,9 @@ def build_nightly_preview(params) -> dict:
         "count": len(rows),
         "results": rows,
         "enriched": bool(catalog),
+        "cooldown_days": cooldown_days,
+        "on_cooldown_count": len(on_cooldown),
+        "on_cooldown": on_cooldown[:60],   # a capped sample for display
     }
 
 

@@ -4,6 +4,17 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.34.1] - 2026-08-22
+
+### Added
+- **Cooldown status in the next-run preview.** The Scheduled report dialog's "what the next
+  run will screen" preview now shows the active re-analysis cooldown — the window in days
+  and how many recently-screened stocks are being held back (hover to see the tickers), with
+  a reminder that manual analyses are exempt. `GET /api/universe?nightly=1` now returns
+  `cooldown_days`, `on_cooldown_count`, and a capped `on_cooldown` sample.
+
+[0.34.1]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.34.1
+
 ## [0.34.0] - 2026-08-22
 
 ### Added
