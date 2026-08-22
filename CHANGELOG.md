@@ -4,6 +4,23 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.31.0] - 2026-08-21
+
+### Added
+- **Click a History row to open its full analysis.** In the History tab, rows in the
+  **Queued & running** list (and single-ticker rows in **Searches**) are now clickable —
+  clicking one opens that ticker's full deep-dive dialog (all six lenses + news &
+  sentiment), fetched via `/api/analyze`. Multi-ticker searches and run summaries stay
+  non-clickable.
+
+### Changed
+- **History list is more responsive.** Clickable rows get a clear hover/underline
+  affordance and active (queued/processing) rows are dimmed, and the queue now
+  auto-refreshes every ~12s while anything is still queued or running (stopping on its own
+  once idle or when you leave the tab), so finished analyses appear without a manual refresh.
+
+[0.31.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.31.0
+
 ## [0.30.3] - 2026-08-21
 
 ### Added

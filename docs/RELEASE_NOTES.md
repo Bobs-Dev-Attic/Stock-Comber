@@ -1,5 +1,17 @@
 # Release notes
 
+## v0.31.0 — Click History rows to open the analysis (2026-08-21)
+
+The **History** tab is now interactive. Click any row in **Queued & running** (or a
+single-ticker row under **Searches**) to open that stock's full analysis dialog — all six
+value/quality lenses plus news & sentiment — without retyping the ticker. Rows highlight
+and underline on hover so it's clear they're clickable; run summaries and multi-ticker
+searches stay as read-only rows.
+
+The queue is also more responsive: while any job is still queued or running, the list
+auto-refreshes every ~12 seconds and dims in-flight rows, so a finished deep-dive shows up
+on its own — the refresh stops once everything is done or you leave the tab.
+
 ## v0.30.3 — Average volume in the nightly reports (2026-08-21)
 
 The generated nightly report now carries an **Avg volume** column in every human-readable
