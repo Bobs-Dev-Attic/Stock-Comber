@@ -4,12 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Stock-Comber · Definitions</title>
+<script>/* apply the saved theme before first paint to avoid a flash */
+try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.documentElement.setAttribute("data-theme",_t);}catch(e){}</script>
 <style>
   :root { --bg:#f6f7f9; --panel:#fff; --ink:#1a1d23; --muted:#5b6472; --line:#e3e6ea;
     --accent:#1f7a4d; --chip:#eef1f4; --shadow:0 1px 3px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.04); }
-  @media (prefers-color-scheme: dark){ :root{ --bg:#0f1115; --panel:#171a20; --ink:#e7e9ee;
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --bg:#0f1115; --panel:#171a20; --ink:#e7e9ee;
     --muted:#9aa4b2; --line:#262b34; --accent:#34c17f; --chip:#1f242c;
     --shadow:0 1px 3px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);} }
+  :root[data-theme="dark"]{ --bg:#0f1115; --panel:#171a20; --ink:#e7e9ee;
+    --muted:#9aa4b2; --line:#262b34; --accent:#34c17f; --chip:#1f242c;
+    --shadow:0 1px 3px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);}
   *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);
     font:15px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
   .wrap{max-width:860px;margin:0 auto;padding:2rem 1.2rem 4rem}

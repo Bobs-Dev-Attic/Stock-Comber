@@ -4,6 +4,23 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.33.1] - 2026-08-22
+
+### Fixed
+- **Activity banner really closes now.** The banner's `.banner { display:flex }` class rule
+  was overriding the `[hidden]` attribute, so `hideBanner()` set `hidden` but the banner
+  stayed visible — it never actually closed (and briefly showed on load). Added
+  `.banner[hidden] { display:none }`, so tap-to-dismiss, the auto-hide, and dialog-open all
+  hide it as intended.
+
+### Changed
+- **Theme preference carries across pages.** The dark/light choice from the dashboard menu
+  now applies to every sub-page too (Settings, About, Definitions, Strategies, Analytics,
+  Backtest, Theses): each honors the saved `data-theme` (applied before first paint) while
+  "System" still follows the OS.
+
+[0.33.1]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.33.1
+
 ## [0.33.0] - 2026-08-22
 
 ### Added
