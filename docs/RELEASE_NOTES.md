@@ -1,5 +1,16 @@
 # Release notes
 
+## v0.37.2 — Project docs for contributors and AI agents (2026-08-22)
+
+Groundwork, not a feature: four documentation files that make the project faster and cheaper
+to work on. **`ARCHITECTURE.md`** maps the codebase — the 12-serverless-function cap, what
+each endpoint and library module does, and the theming/config/secrets contracts.
+**`AGENTS.md`** captures the house rules: the one-feature-per-PR release process, the hard
+constraints (never a 13th function, secrets stay write-only, no model IDs in artifacts), and
+the gotchas learned the hard way. **`docs/DATASOURCES.md`** documents each upstream provider,
+its terms-of-service posture, and how to swap it. **`TODO.md`** is a prioritized backlog from
+a security/reliability/UX/product review. No code or behavior changed.
+
 ## v0.37.1 — Hover any metric to learn what it means (2026-08-22)
 
 Every metric in the results table now explains itself. Hover a column header (they're
