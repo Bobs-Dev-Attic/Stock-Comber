@@ -245,6 +245,14 @@
   .qb.queued { background: #eda100; color: #1a1a19; }
   .qb.done { background: var(--pass-bg); color: var(--pass-ink); }
   .qb.err { background: color-mix(in srgb, var(--fail-ink) 18%, transparent); color: var(--fail-ink); }
+  /* clickable history rows open the full analysis dialog; summary rows don't */
+  .histcard tbody tr.rowlink { cursor: pointer; transition: background .12s ease; }
+  .histcard tbody tr.rowlink:hover { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+  .histcard tbody tr.rowlink:hover td:first-child { text-decoration: underline; text-underline-offset: 2px; }
+  .histcard tbody tr.rowlink:active { background: color-mix(in srgb, var(--accent) 20%, transparent); }
+  .histcard tbody tr.norow { cursor: default; }
+  .histcard tbody tr.norow:hover { background: transparent; }
+  .histcard tbody tr.busy { opacity: .55; }
   /* API tab */
   .apiref { display: flex; flex-direction: column; gap: .1rem; }
   .api-grp { font-weight: 700; font-size: .82rem; text-transform: uppercase; letter-spacing: .03em;
@@ -584,7 +592,7 @@ let rows = [], sortK = "score_pct", sortDir = -1;
 const tabRows = {full: [], jobs: []};
 const tabStatus = {full: "", jobs: "", history: "", api: ""};
 let activeTab = "full";
-let fullLoaded = false, schedLoaded = false, histLoaded = false;
+let fullLoaded = false, schedLoaded = false, histLoaded = false, histTimer = null;
 function setStatus(tab, text) {
   tabStatus[tab] = text;
   if (tab === activeTab) $("#status").textContent = text;
@@ -607,6 +615,8 @@ function showTab(tab) {
   } else if (tab === "history") {
     loadHistory();
   }
+  // The live queue poll only runs while the History tab is visible.
+  if (tab !== "history") stopHistPoll();
 }
 
 const METRICS = [
@@ -1550,28 +1560,59 @@ function queueActive(rows) { return rows.filter(q => q.status === "pending" || q
 function renderHistQueue(rows) {
   // Show running first, then queued, then finished/failed.
   const sorted = [...rows].sort((a, b) => (QRANK[a.status] ?? 9) - (QRANK[b.status] ?? 9));
-  $("#h-queue").innerHTML = sorted.map(q =>
-    `<tr><td class="l"><strong>${escHtml(q.ticker)}</strong></td>`
-    + `<td class="l">${queueBadge(q.status)}</td>`
-    + `<td class="l">${fmtWhen(q.requested_at)}</td>`
-    + `<td class="l">${q.run_id ? "#" + q.run_id : (q.note ? escHtml(String(q.note)).slice(0,40) : "—")}</td></tr>`
-  ).join("") || `<tr><td colspan="4" class="hint">Nothing queued or running.</td></tr>`;
+  $("#h-queue").innerHTML = sorted.map(q => {
+    const busy = (q.status === "pending" || q.status === "processing");
+    return `<tr class="rowlink${busy ? " busy" : ""}" data-t="${escHtml(q.ticker)}" title="Open the full analysis for ${escHtml(q.ticker)}">`
+      + `<td class="l"><strong>${escHtml(q.ticker)}</strong></td>`
+      + `<td class="l">${queueBadge(q.status)}</td>`
+      + `<td class="l">${fmtWhen(q.requested_at)}</td>`
+      + `<td class="l">${q.run_id ? "#" + q.run_id : (q.note ? escHtml(String(q.note)).slice(0,40) : "—")}</td></tr>`;
+  }).join("") || `<tr><td colspan="4" class="hint">Nothing queued or running.</td></tr>`;
+  wireHistRows("#h-queue");
   const active = queueActive(rows);
   $("#q-active").textContent = active ? `· ${active} active` : "";
 }
 function renderHistRuns(rows) {
   $("#h-runs").innerHTML = rows.map(r =>
-    `<tr><td>${r.id}</td><td>${fmtWhen(r.created_at)}</td>`
+    `<tr class="norow"><td>${r.id}</td><td>${fmtWhen(r.created_at)}</td>`
     + `<td>${(r.strategies||[]).map(s=>`<span class="pill">${escHtml(s)}</span>`).join(" ")}</td>`
     + `<td class="r">${r.ticker_count??"—"}</td><td class="r">${r.passing_count??"—"}</td></tr>`
   ).join("") || `<tr><td colspan="5" class="hint">No runs yet.</td></tr>`;
 }
 function renderHistSearches(rows) {
   $("#h-searches").innerHTML = rows.map(s => {
-    const t = (s.tickers||[]).join(", ");
-    return `<tr><td>${fmtWhen(s.created_at)}</td><td><span class="pill">${escHtml(s.source||"")}</span></td>`
+    const tickers = (s.tickers||[]);
+    const t = tickers.join(", ");
+    // A search of a single ticker opens that ticker's full analysis on click.
+    const one = tickers.length === 1 ? tickers[0] : "";
+    const cls = one ? "rowlink" : "norow";
+    const attr = one ? ` data-t="${escHtml(one)}" title="Open the full analysis for ${escHtml(one)}"` : "";
+    return `<tr class="${cls}"${attr}><td>${fmtWhen(s.created_at)}</td><td><span class="pill">${escHtml(s.source||"")}</span></td>`
       + `<td>${escHtml(t).slice(0,60)}</td><td class="r">${s.result_count??"—"}</td><td class="r">${s.passing_count??"—"}</td></tr>`;
   }).join("") || `<tr><td colspan="5" class="hint">No searches yet.</td></tr>`;
+  wireHistRows("#h-searches");
+}
+// Wire clickable history rows to open the full analysis dialog for their ticker.
+function wireHistRows(sel) {
+  document.querySelectorAll(`${sel} tr.rowlink[data-t]`).forEach(tr => {
+    tr.onclick = () => openAnalysisFor(tr.dataset.t);
+  });
+}
+// Fetch a ticker's full analysis (strategies + news + sentiment) and open the dialog.
+async function openAnalysisFor(ticker) {
+  const t = (ticker || "").toUpperCase();
+  if (!t) return;
+  const hs = $("#hist-status"); const prev = hs ? hs.textContent : "";
+  showBanner(`Analyzing ${t} — strategies, news & sentiment…`);
+  if (hs) hs.textContent = `Opening full analysis of ${t}…`;
+  try {
+    const res = await fetch("/api/analyze?ticker=" + encodeURIComponent(t));
+    const data = await res.json();
+    if (data.error) { if (hs) hs.textContent = "Analysis failed: " + data.error; return; }
+    openAnalysis(data);
+    if (hs) hs.textContent = prev;
+  } catch (e) { if (hs) hs.textContent = "Analysis failed: " + e.message; }
+  finally { hideBanner(); }
 }
 async function loadHistory(force) {
   if (histLoaded && !force) return;
@@ -1588,8 +1629,20 @@ async function loadHistory(force) {
     $("#hist-status").textContent = rd.storage_enabled
       ? `${queueActive(queue)} queued/running · ${(rd.runs||[]).length} runs · ${(rd.searches||[]).length} searches`
       : "No database configured — set DATABASE_URL in Vercel to record history.";
+    // Keep the list live while anything is still queued or running.
+    if (queueActive(queue) > 0) startHistPoll(); else stopHistPoll();
   } catch (e) { $("#hist-status").textContent = "Failed to load history: " + e.message; }
 }
+// Poll the queue every ~12s while jobs are active, so finished analyses appear
+// without a manual refresh. Stops itself once nothing is active or the tab is left.
+function startHistPoll() {
+  if (histTimer) return;
+  histTimer = setInterval(() => {
+    if (activeTab !== "history") { stopHistPoll(); return; }
+    loadHistory(true);
+  }, 12000);
+}
+function stopHistPoll() { if (histTimer) { clearInterval(histTimer); histTimer = null; } }
 
 /* ---- manual full analysis (news + sentiment), on demand ---- */
 const GRADE_TXT = {A:"Positive", B:"Mildly positive", C:"Neutral", D:"Mildly negative", F:"Negative"};
