@@ -1,5 +1,13 @@
 # Release notes
 
+## v0.34.1 — See the cooldown in the next-run preview (2026-08-22)
+
+The "what the next run will screen" preview (Jobs → Scheduled report → Configure) now spells
+out the re-analysis cooldown: how long the window is (e.g. 90 days) and how many
+recently-screened stocks are being held back this run — hover the count to see which tickers.
+It also reminds you that manual analyses are exempt. When the cooldown is turned off, the
+line simply doesn't appear.
+
 ## v0.34.0 — Nightly re-analysis cooldown (2026-08-22)
 
 The scheduled nightly report no longer re-analyzes the same stock too often. Once a name
