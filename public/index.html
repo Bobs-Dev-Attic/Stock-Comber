@@ -754,6 +754,8 @@ const METRICS = [
   ["revenue_growth_5y_pct","Revenue growth 5y %"],
   ["avg_volume","Avg volume"], ["dollar_volume","$ volume/day"],
   ["backtest_edge_pct","Backtest edge %"],
+  ["q_revenue","Qtr revenue"], ["q_net_income","Qtr net income"],
+  ["q_eps","Qtr EPS"], ["q_current_ratio","Qtr current ratio"],
 ];
 const METRIC_LABEL = Object.fromEntries(METRICS);
 // Why each column matters and what it indicates — shown as a hover tooltip on
@@ -785,6 +787,10 @@ const METRIC_INFO = {
   dollar_volume: "Average daily dollar volume (price × avg volume) — the standard liquidity gauge. Higher means you can trade size without moving the price.",
   backtest_edge_pct: "Historical edge: the average next-year return after this name's value-lens PASS verdicts minus after its fails, meaned across lenses. Directional evidence that its signals mattered — educational, not a track record.",
   last_analyzed: "The date of the most recent screening run that produced this result — i.e. when this ticker was last analyzed. Blank for rows not drawn from a stored run.",
+  q_revenue: "Most recent quarter's revenue (from the latest SEC 10-Q) — a fresher read than the annual figure, which can be up to a year stale.",
+  q_net_income: "Most recent quarter's net income (from the latest SEC 10-Q). Fresher than the annual figure; a single quarter can be lumpy, so read it alongside the annual trend.",
+  q_eps: "Most recent quarter's diluted EPS (from the latest SEC 10-Q).",
+  q_current_ratio: "Current assets ÷ current liabilities as of the most recent quarter end (10-Q) — the freshest liquidity snapshot.",
 };
 const OPS = ["<=","<",">=",">","==","!="];
 
@@ -2118,6 +2124,7 @@ function openAnalysis(data) {
     `<h2>${data.ticker} <span class="badge ${data.passing?'pass':anyEvaluated?'near':'warn'}">`+
     `${data.passing?data.passing+' passing':anyEvaluated?'no pass':'not analyzed'}</span></h2>`+
     `<div class="sub">${first.name||""} · full analysis${data.run_id?` · stored as run #${data.run_id}`:""}`+
+    ((first.metrics&&first.metrics.latest_quarter)?` · latest 10-Q ${escHtml(first.metrics.latest_quarter)}`:"")+
     ` · <a href="/backtest.html?ticker=${encodeURIComponent(data.ticker)}" target="_blank" rel="noopener">🧪 backtest ↗</a>`+
     ` · <a href="/thesis.html?ticker=${encodeURIComponent(data.ticker)}" target="_blank" rel="noopener">🎯 track thesis ↗</a></div>`+
     snapshotHtml(data.profile)+

@@ -4,6 +4,19 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.43.0] - 2026-08-22
+
+### Added
+- **SEC 10-Q quarterly fundamentals.** `extract_quarters` reduces the same EDGAR companyfacts
+  document to the latest reported quarter — the quarter's own 3-month revenue, net income, and
+  diluted EPS, plus the balance sheet as of quarter end — attached to `Company.quarters`
+  (`QuarterFacts`). Surfaced as fresher, pickable columns **Qtr revenue / Qtr net income /
+  Qtr EPS / Qtr current ratio** (`q_*` metrics) and a **"latest 10-Q &lt;date&gt;"** line in the
+  deep-dive dialog. The annual-based strategy scoring is **unchanged** — this is a fresher read,
+  not a new pass/fail input. (TTM roll-forward remains a documented follow-up.)
+
+[0.43.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.43.0
+
 ## [0.42.3] - 2026-08-22
 
 ### Added

@@ -22,7 +22,7 @@ try:
 except Exception:  # pragma: no cover
     requests = None  # type: ignore
 
-from ..models import AnnualFacts, Company
+from ..models import AnnualFacts, Company, QuarterFacts
 from ..validation import is_valid_ticker
 from .cache import FileCache
 
@@ -200,6 +200,123 @@ def extract_annuals(facts_json: dict[str, Any]) -> list[AnnualFacts]:
     return annuals
 
 
+# -- quarterly (10-Q) extraction ---------------------------------------------
+# Income-statement / cash-flow flows are the quarter's own ~3-month period;
+# balance-sheet items are point-in-time snapshots.
+_Q_FLOW_FIELDS = ("revenue", "net_income", "eps", "operating_cash_flow")
+_Q_INSTANT_FIELDS = ("total_assets", "total_liabilities", "stockholders_equity",
+                     "current_assets", "current_liabilities", "shares_outstanding")
+
+
+def _concept_entries(gaap: dict, unit_key: str, candidates: list[str]) -> list[dict]:
+    """First candidate concept that has datapoints under ``unit_key`` (with a
+    case-insensitive USD fallback), as a flat list of entries."""
+    for name in candidates:
+        concept = gaap.get(name)
+        if not concept:
+            continue
+        units = concept.get("units", {})
+        entries = units.get(unit_key)
+        if not entries and unit_key == _USD:
+            for k, v in units.items():
+                if k.upper() == _USD:
+                    entries = v
+                    break
+        if entries:
+            return entries
+    return []
+
+
+def _days_between(start: str, end: str) -> Optional[int]:
+    try:
+        import datetime as _dt
+        a = _dt.date.fromisoformat(start)
+        b = _dt.date.fromisoformat(end)
+        return (b - a).days
+    except Exception:
+        return None
+
+
+def _quarter_flows(entries: list[dict]) -> dict[str, float]:
+    """{period_end: value} for ~3-month 10-Q datapoints; latest filing wins."""
+    best: dict[str, tuple[str, float]] = {}
+    for e in entries:
+        if not str(e.get("form", "")).startswith("10-Q"):
+            continue
+        start, end, val = e.get("start"), e.get("end"), e.get("val")
+        if not start or not end or val is None:
+            continue
+        days = _days_between(start, end)
+        if days is None or days < 60 or days > 100:   # keep only single quarters
+            continue
+        filed = e.get("filed", "")
+        prev = best.get(end)
+        if prev is None or filed >= prev[0]:
+            best[end] = (filed, float(val))
+    return {end: v for end, (_f, v) in best.items()}
+
+
+def _instant_by_date(entries: list[dict]) -> dict[str, float]:
+    """{date: value} for instant (balance-sheet) datapoints; latest filing wins."""
+    best: dict[str, tuple[str, float]] = {}
+    for e in entries:
+        if e.get("start"):        # instant datapoints have no start period
+            continue
+        end, val = e.get("end"), e.get("val")
+        if not end or val is None:
+            continue
+        filed = e.get("filed", "")
+        prev = best.get(end)
+        if prev is None or filed >= prev[0]:
+            best[end] = (filed, float(val))
+    return {end: v for end, (_f, v) in best.items()}
+
+
+def extract_quarters(facts_json: dict[str, Any]) -> list[QuarterFacts]:
+    """Reduce a companyfacts document to a sorted list of QuarterFacts (10-Q).
+
+    Quarter end dates come from the reported quarterly revenue (or net income)
+    flow; balance-sheet values are taken as of the closest available date at or
+    before each quarter end.
+    """
+    gaap = facts_json.get("facts", {}).get("us-gaap", {})
+    flows: dict[str, dict[str, float]] = {}
+    for f in _Q_FLOW_FIELDS:
+        unit_key, candidates = CONCEPTS[f]
+        flows[f] = _quarter_flows(_concept_entries(gaap, unit_key, candidates))
+    instants: dict[str, dict[str, float]] = {}
+    for f in _Q_INSTANT_FIELDS:
+        unit_key, candidates = CONCEPTS[f]
+        instants[f] = _instant_by_date(_concept_entries(gaap, unit_key, candidates))
+
+    # Quarter periods are those with a reported quarterly revenue or net income.
+    ends = sorted(set(flows["revenue"]) | set(flows["net_income"]))
+    if not ends:
+        return []
+
+    def _instant_asof(field_name: str, end: str) -> Optional[float]:
+        dates = [d for d in instants[field_name] if d <= end]
+        return instants[field_name][max(dates)] if dates else None
+
+    quarters: list[QuarterFacts] = []
+    for end in ends:
+        quarters.append(QuarterFacts(
+            period_end=end,
+            fiscal_year=(int(end[:4]) if end[:4].isdigit() else None),
+            revenue=flows["revenue"].get(end),
+            net_income=flows["net_income"].get(end),
+            eps=flows["eps"].get(end),
+            operating_cash_flow=flows["operating_cash_flow"].get(end),
+            total_assets=_instant_asof("total_assets", end),
+            total_liabilities=_instant_asof("total_liabilities", end),
+            stockholders_equity=_instant_asof("stockholders_equity", end),
+            current_assets=_instant_asof("current_assets", end),
+            current_liabilities=_instant_asof("current_liabilities", end),
+            shares_outstanding=_instant_asof("shares_outstanding", end),
+        ))
+    return quarters
+
+
 class SecEdgarSource:
     """Fetches ticker->CIK mapping and company fundamentals from SEC EDGAR."""
 
@@ -352,4 +469,5 @@ class SecEdgarSource:
             cik=str(cik),
             name=facts.get("entityName") or info.get("name"),
             annuals=annuals,
+            quarters=extract_quarters(facts),
         )

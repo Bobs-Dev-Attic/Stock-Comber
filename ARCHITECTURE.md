@@ -57,8 +57,9 @@ Vercel Pro — a deliberate milestone, not an accident.
 - **`config.py`** — `DEFAULT_CONFIG` documents every knob; YAML/env loading and
   per-section validators (`_validate_api`, nightly, data). Config is a deep-merge
   of file/defaults ← DB-stored settings.
-- **`models.py`** — dataclasses: `Company`, `AnnualFacts`, `Quote` (incl.
-  `volume`), `ScreenResult`.
+- **`models.py`** — dataclasses: `Company` (with `annuals` + `quarters`),
+  `AnnualFacts`, `QuarterFacts` (latest 10-Q snapshot), `Quote` (incl. `volume`),
+  `ScreenResult`.
 - **`criteria/`** + **`scoring.py`** — the value lenses. `STRATEGIES` maps a key
   to an evaluate fn. Six ship: `graham`, `buffett`, `piotroski`, `greenblatt`,
   `lynch`, `netnet`, plus custom.

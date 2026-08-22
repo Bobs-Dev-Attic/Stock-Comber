@@ -20,6 +20,12 @@ jobs don't hammer the free endpoints.
 ### SEC EDGAR
 - Endpoints: `https://www.sec.gov/files/company_tickers.json`,
   `https://data.sec.gov/api/xbrl/companyfacts/CIK##########.json`.
+- **What we parse:** `extract_annuals` reduces the XBRL companyfacts to yearly
+  (10-K) fundamentals used by the strategies; `extract_quarters` reduces the same
+  document to the latest **quarterly (10-Q)** figures — the quarter's own 3-month
+  revenue/net-income/EPS/operating-cash-flow plus the balance sheet as of quarter
+  end. The quarterly read is surfaced as fresher `q_*` metrics and a
+  `latest_quarter` date; it does **not** change the annual-based scoring.
 - **ToS:** the SEC requires a descriptive `User-Agent` with a contact email
   (set `config.data.user_agent`) and rate-limits to ~10 req/s. Public-domain data;
   the main obligation is the honest User-Agent and the rate limit.
