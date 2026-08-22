@@ -60,3 +60,27 @@ def test_resolve_universe_uses_explicit_tickers(config):
     config["universe"]["tickers"] = ["aapl", "msft"]
     screener = Screener(config, sec=FakeSec([]), stooq=FakeStooq())
     assert screener.resolve_universe() == ["AAPL", "MSFT"]
+
+
+def test_iter_results_streams_without_retaining_companies(strong_company,
+                                                          weak_company, config):
+    config["universe"]["tickers"] = ["STRONG", "WEAK"]
+    config["strategies"] = ["graham"]
+    screener = Screener(config, sec=FakeSec([strong_company, weak_company]),
+                        stooq=FakeStooq())
+    screener.retain_companies = False
+    seen = []
+    for batch in screener.iter_results():
+        assert len(batch) == 1                 # one strategy → one result
+        seen.append(batch[0].ticker)
+        # Companies are never buffered, so peak memory stays O(1).
+        assert screener.last_companies == {}
+    assert seen == ["STRONG", "WEAK"]
+
+
+def test_run_still_retains_companies_by_default(strong_company, config):
+    config["universe"]["tickers"] = ["STRONG"]
+    config["strategies"] = ["graham"]
+    screener = Screener(config, sec=FakeSec([strong_company]), stooq=FakeStooq())
+    screener.run()
+    assert "STRONG" in screener.last_companies   # persistence path unchanged

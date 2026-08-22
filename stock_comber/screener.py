@@ -66,7 +66,12 @@ class Screener:
                 self.price_sources.append(self.finnhub)
         # Back-compat alias.
         self.stooq = stooq or (self.price_sources[-1] if self.price_sources else None)
-        # Companies fetched during the most recent run(), for persistence.
+        # Companies fetched during the most recent run(), for persistence. When
+        # ``retain_companies`` is False they are not accumulated, so a memory-
+        # conscious caller streaming results keeps peak memory O(1) in the number
+        # of tickers (at the cost of raw-fundamentals persistence, which needs
+        # them). ``run()`` keeps the default True so persistence is unchanged.
+        self.retain_companies = True
         self.last_companies: dict[str, Company] = {}
         # Optional storage (for the nightly universe catalog / rotation).
         self.store = None
@@ -116,7 +121,8 @@ class Screener:
         # return one error result per strategy so the run stays well-formed.
         if not is_valid_ticker(ticker):
             company = Company(ticker=str(ticker)[:10].upper())
-            self.last_companies[company.ticker] = company
+            if self.retain_companies:
+                self.last_companies[company.ticker] = company
             for strat in self.config.get("strategies", []):
                 res = STRATEGIES[strat](company, self.config)
                 res.errors.append(f"invalid ticker symbol: {str(ticker)[:20]!r}")
@@ -149,7 +155,8 @@ class Screener:
             except Exception as exc:
                 log.warning("finnhub metrics failed for %s: %s", ticker, exc)
 
-        self.last_companies[company.ticker] = company
+        if self.retain_companies:
+            self.last_companies[company.ticker] = company
         for strat in self.config.get("strategies", []):
             evaluate: Callable[[Company, dict], ScreenResult] = STRATEGIES[strat]
             res = evaluate(company, self.config)
@@ -171,6 +178,24 @@ class Screener:
                 progress(i, total, ticker)
             all_results.extend(self.screen_ticker(ticker))
         return self.rank(all_results)
+
+    def iter_results(self, tickers: Optional[list[str]] = None,
+                     progress: Optional[Callable[[int, int, str], None]] = None):
+        """Stream per-ticker results without buffering the whole run.
+
+        Yields the list of :class:`ScreenResult` for each ticker in turn. With
+        ``retain_companies=False`` the source ``Company`` for each ticker is
+        released before the next is fetched, so peak memory stays O(1) in the
+        universe size — for large list-mode screens that don't need the run
+        persisted or globally ranked. (``run()`` remains the buffered, ranked,
+        persistence-friendly path.)
+        """
+        universe = tickers or self.resolve_universe()
+        total = len(universe)
+        for i, ticker in enumerate(universe, 1):
+            if progress:
+                progress(i, total, ticker)
+            yield self.screen_ticker(ticker)
 
     # -- ranking ---------------------------------------------------------
     def rank(self, results: list[ScreenResult]) -> list[ScreenResult]:

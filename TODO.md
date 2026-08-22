@@ -52,14 +52,23 @@ Legend: **P0** ship first · **P1** reliability/cost · **P2** memory/scale · *
       now exposed as `rate_limit_degraded` on `GET /api/runs?audit=1`, so a silent DB outage
       is visible rather than looking like "no limiting."
 
-## P2 — Memory & scale
-- [ ] **Stream the nightly build.** `build_nightly` + `_attach_backtest_edge` hold every
-      `Company`/`AnnualFacts` in memory at once. Yield `ScreenResult` per ticker and discard
-      the source object before the next — peak memory O(1) instead of O(universe).
-- [ ] **Bounded concurrency for per-ticker backtest history fetches** (small thread pool,
-      respecting upstream rate limits) to cut nightly wall-clock.
-- [ ] **Stream report writers** to the file handle instead of `"".join(body)` for large
-      universes (CSV/HTML).
+## P2 — Memory & scale ✅ shipped in v0.40.0
+- [x] **Streaming path for the screen loop.** Correction from the original note: `build_nightly`
+      returns only ticker *strings* — the peak-memory driver is `Screener.run` accumulating
+      full `Company`/`AnnualFacts` in `last_companies` (needed by `save_run`). Added
+      `Screener.iter_results()` + a `retain_companies` flag so a memory-conscious caller can
+      stream per-ticker results with O(1) company memory; `run()` keeps the buffered, ranked,
+      persistence-friendly default. `cmd_screen` now also releases `last_companies` right after
+      persistence so report rendering doesn't hold it. (A full streaming-persistence rewrite of
+      `save_run` was judged too risky for the current ~75-name nightly scale.)
+- [x] **Bounded concurrency for per-ticker backtest history fetches.** `_attach_backtest_edge`
+      now fetches Yahoo histories on a small bounded thread pool (`data.backtest_fetch_workers`,
+      default 4, clamped 1–16; 1 = serial), cutting nightly wall-clock while staying polite;
+      per-ticker failures stay isolated.
+- [x] **Streaming report writers.** `report.py` gained `stream_csv` / `stream_html` that write
+      row-by-row to a file handle; `write_reports` streams the stamped file and `shutil.copyfile`s
+      it to `latest`, so a large universe is never held in memory twice. The string renderers
+      (`to_csv`/`to_html`, used by the API) are now thin wrappers over the streamers.
 
 ## P3 — UX & quality
 - [ ] **First-run onboarding / empty states** pointing new users to About + Glossary.

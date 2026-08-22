@@ -77,6 +77,10 @@ DEFAULT_CONFIG: dict[str, Any] = {
         # "hidden gems" report (one extra price-history fetch each). On by
         # default; toggle off in Settings to keep the nightly run lean.
         "backtest_in_nightly": True,
+        # How many nightly backtest price-history fetches run concurrently.
+        # Bounded (1–16) so we speed up the nightly run without hammering the
+        # free price endpoint. 1 = fully serial (the old behaviour).
+        "backtest_fetch_workers": 4,
     },
     # Persistence. Leave dsn null to read DATABASE_URL/POSTGRES_URL from the
     # environment (e.g. a free Neon Postgres). Without any DSN, runs are not

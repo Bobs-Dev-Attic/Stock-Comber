@@ -6,8 +6,9 @@ import csv
 import io
 import json
 import os
+import shutil
 from datetime import datetime, timezone
-from typing import Any, Optional
+from typing import Any, Optional, TextIO
 
 from .models import ScreenResult
 
@@ -44,10 +45,11 @@ def to_json(results: list[ScreenResult], cfg: dict[str, Any]) -> str:
     return json.dumps(payload, indent=2, default=str)
 
 
-def to_csv(results: list[ScreenResult], cfg: dict[str, Any]) -> str:
+def stream_csv(results: list[ScreenResult], cfg: dict[str, Any], fh: TextIO) -> None:
+    """Write the CSV report directly to a file handle, one row at a time, so a
+    large universe never materialises the whole rendered string in memory."""
     rows = _filtered(results, cfg)
-    buf = io.StringIO()
-    writer = csv.writer(buf)
+    writer = csv.writer(fh)
     writer.writerow([
         "ticker", "name", "strategy", "passed", "score", "max_score",
         "score_pct", "price", "pe_ratio", "pb_ratio", "roe_pct",
@@ -64,6 +66,11 @@ def to_csv(results: list[ScreenResult], cfg: dict[str, Any]) -> str:
             _fmt(m.get("debt_to_equity")), _fmt(m.get("graham_number")),
             _fmt(m.get("avg_volume")), _fmt(m.get("backtest_edge_pct")),
         ])
+
+
+def to_csv(results: list[ScreenResult], cfg: dict[str, Any]) -> str:
+    buf = io.StringIO()
+    stream_csv(results, cfg, buf)
     return buf.getvalue()
 
 
@@ -101,22 +108,7 @@ def to_markdown(results: list[ScreenResult], cfg: dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
-def to_html(results: list[ScreenResult], cfg: dict[str, Any]) -> str:
-    rows = _filtered(results, cfg)
-    generated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    body = []
-    for r in rows:
-        m = r.metrics
-        cls = "pass" if r.passed else "near"
-        body.append(
-            f"<tr class='{cls}'><td>{r.ticker}</td><td>{(r.name or '')}</td>"
-            f"<td>{r.strategy}</td><td>{'✔' if r.passed else '·'}</td>"
-            f"<td>{r.score_pct:.0f}%</td><td>{_fmt(m.get('price'))}</td>"
-            f"<td>{_fmt(m.get('pe_ratio'))}</td><td>{_fmt(m.get('pb_ratio'))}</td>"
-            f"<td>{_fmt(m.get('roe_pct'))}</td><td>{_fmt(m.get('avg_volume'))}</td>"
-            f"<td>{_fmt(m.get('backtest_edge_pct'))}</td></tr>"
-        )
-    return f"""<!doctype html>
+_HTML_HEAD = """<!doctype html>
 <html><head><meta charset='utf-8'><title>Stock-Comber report</title>
 <style>
  body{{font-family:system-ui,sans-serif;margin:2rem;background:#0f1115;color:#e6e6e6}}
@@ -128,12 +120,39 @@ def to_html(results: list[ScreenResult], cfg: dict[str, Any]) -> str:
  footer{{margin-top:1rem;color:#889;font-size:.85rem}}
 </style></head><body>
 <h1>Stock-Comber screening report</h1>
-<div class='meta'>Generated {generated} · strategies: {', '.join(cfg.get('strategies', []))}</div>
+<div class='meta'>Generated {generated} · strategies: {strategies}</div>
 <table><thead><tr><th>Ticker</th><th>Company</th><th>Strategy</th><th>Pass</th>
 <th>Score</th><th>Price</th><th>P/E</th><th>P/B</th><th>ROE%</th><th>Vol</th><th>Edge%</th></tr></thead>
-<tbody>{''.join(body)}</tbody></table>
+<tbody>"""
+
+_HTML_TAIL = """</tbody></table>
 <footer>Educational tool only — not investment advice.</footer>
 </body></html>"""
+
+
+def stream_html(results: list[ScreenResult], cfg: dict[str, Any], fh: TextIO) -> None:
+    """Write the HTML report to a file handle, one row at a time (bounded memory)."""
+    generated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    fh.write(_HTML_HEAD.format(generated=generated,
+                               strategies=", ".join(cfg.get("strategies", []))))
+    for r in _filtered(results, cfg):
+        m = r.metrics
+        cls = "pass" if r.passed else "near"
+        fh.write(
+            f"<tr class='{cls}'><td>{r.ticker}</td><td>{(r.name or '')}</td>"
+            f"<td>{r.strategy}</td><td>{'✔' if r.passed else '·'}</td>"
+            f"<td>{r.score_pct:.0f}%</td><td>{_fmt(m.get('price'))}</td>"
+            f"<td>{_fmt(m.get('pe_ratio'))}</td><td>{_fmt(m.get('pb_ratio'))}</td>"
+            f"<td>{_fmt(m.get('roe_pct'))}</td><td>{_fmt(m.get('avg_volume'))}</td>"
+            f"<td>{_fmt(m.get('backtest_edge_pct'))}</td></tr>"
+        )
+    fh.write(_HTML_TAIL)
+
+
+def to_html(results: list[ScreenResult], cfg: dict[str, Any]) -> str:
+    buf = io.StringIO()
+    stream_html(results, cfg, buf)
+    return buf.getvalue()
 
 
 RENDERERS = {
@@ -143,24 +162,37 @@ RENDERERS = {
     "html": (to_html, "html"),
 }
 
+# Streaming writers write directly to a file handle. csv/html stream row-by-row
+# (bounded memory for large universes); json/markdown wrap the string renderers
+# (their payloads are already compact). Same output as RENDERERS, less peak RAM.
+STREAMERS = {
+    "json": (lambda r, c, fh: fh.write(to_json(r, c)), "json"),
+    "csv": (stream_csv, "csv"),
+    "markdown": (lambda r, c, fh: fh.write(to_markdown(r, c)), "md"),
+    "html": (stream_html, "html"),
+}
+
 
 def write_reports(results: list[ScreenResult], cfg: dict[str, Any]) -> list[str]:
-    """Write all configured report formats; return the list of file paths."""
+    """Write all configured report formats; return the list of file paths.
+
+    The stamped file is streamed to disk; the stable ``latest`` copy is a
+    filesystem copy of it, so the rendered report is never held in memory twice.
+    """
     out = cfg.get("output", {})
     out_dir = out.get("dir", "reports")
     os.makedirs(out_dir, exist_ok=True)
     stamp = datetime.now(timezone.utc).strftime("%Y%m%d")
     written: list[str] = []
     for fmt in out.get("formats", ["json"]):
-        renderer, ext = RENDERERS[fmt]
-        content = renderer(results, cfg)
+        stream_fn, ext = STREAMERS[fmt]
         path = os.path.join(out_dir, f"screen-{stamp}.{ext}")
         with open(path, "w", encoding="utf-8") as fh:
-            fh.write(content)
+            stream_fn(results, cfg, fh)
         written.append(path)
-        # Also keep a stable "latest" copy for dashboards.
+        # Keep a stable "latest" copy for dashboards — copy the file, don't
+        # re-render or buffer the whole report again.
         latest = os.path.join(out_dir, f"latest.{ext}")
-        with open(latest, "w", encoding="utf-8") as fh:
-            fh.write(content)
+        shutil.copyfile(path, latest)
         written.append(latest)
     return written
