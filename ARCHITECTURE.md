@@ -79,6 +79,10 @@ Vercel Pro — a deliberate milestone, not an accident.
   `list_runs`, `get_run`, the `api_audit` table (`record_api_call` /
   `list_api_audit` / `count_api_calls`), and `recently_screened(days)`
   (scheduled runs only — excludes `meta.source` in `manual`/`queue`).
+  `get_settings` is served from a DSN-keyed in-process TTL cache
+  (`STOCK_COMBER_SETTINGS_TTL`, default 30s), refreshed on `save_settings`.
+  `resolve_dsn` prefers `STOCK_COMBER_DATABASE_URL_POOLED` (Neon PgBouncer host)
+  when set. Connections are per-operation (suits serverless).
 - **`apiguard.py`** — **library, not an endpoint.** `guard(handler, endpoint)`
   audits + rate-limits every request; **fails open** on any error, but with a
   bounded per-instance in-memory limiter (`_MemoryLimiter`) as a floor when the

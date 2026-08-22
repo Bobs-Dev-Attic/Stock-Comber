@@ -1,5 +1,17 @@
 # Release notes
 
+## v0.39.0 — Reliability & cost (2026-08-22)
+
+The review backlog's P1 batch — quieter than a feature, but it makes the hosted app cheaper
+and steadier under load. The **settings blob is now cached in-process** (default 30s), so the
+dashboard's near-constant settings reads no longer hit the database on every request. On
+Neon/Vercel you can point **`STOCK_COMBER_DATABASE_URL_POOLED`** at the PgBouncer `-pooler`
+host and the app will prefer it, so bursts don't exhaust direct connections. A new **covering
+index** keeps the nightly cooldown lookup off a full scan, the last naive `utcnow()` is now
+timezone-aware, and **`/api/runs?audit=1` reports `rate_limit_degraded`** so a degrading
+database path is visible instead of silently looking like "no rate limiting." No behavior
+change for callers.
+
 ## v0.38.0 — Security hardening (2026-08-22)
 
 The first batch of the review backlog's top-priority security items. **Rate limiting no

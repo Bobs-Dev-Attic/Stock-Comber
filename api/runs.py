@@ -55,8 +55,13 @@ class handler(BaseHTTPRequestHandler):
                 except Exception as exc:
                     self._send(502, {"error": str(exc), "audit": []})
                     return
+            # Surface how often the rate limiter has had to fall back to its
+            # in-memory floor — a non-zero, growing value signals the DB audit
+            # path is degrading (an outage would otherwise look like "no limit").
+            from stock_comber.apiguard import degraded_count
             self._send(200, {"storage_enabled": enabled, "audit": audit,
-                             "count": len(audit), "rate_limit": _rl})
+                             "count": len(audit), "rate_limit": _rl,
+                             "rate_limit_degraded": degraded_count()})
             return
 
         if want_results:

@@ -4,6 +4,30 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.39.0] - 2026-08-22
+
+### Changed
+- **In-process settings cache.** The settings singleton — read on nearly every request — is
+  now served from a short-lived (default 30s, `STOCK_COMBER_SETTINGS_TTL`) in-process cache
+  keyed by DSN, refreshed immediately on save and returned as a copy so callers can't corrupt
+  it. Removes a database round-trip from the per-request hot path on warm serverless instances.
+- **Pooled connection preference.** `resolve_dsn` now prefers `STOCK_COMBER_DATABASE_URL_POOLED`
+  when set (point it at Neon's PgBouncer `-pooler` host) so per-invocation connects don't
+  exhaust direct connections under burst; falls back to the existing variables unchanged.
+- **Timezone-aware datetimes.** The last `datetime.utcnow()` (`screener.resolve_universe`) is
+  now `datetime.now(timezone.utc)`.
+
+### Performance
+- Added a covering index `idx_results_run_ticker (run_id, ticker)` so the nightly cooldown
+  lookup (`recently_screened`) and the Full-list DISTINCT ON stay off a full table scan.
+
+### Observability
+- `GET /api/runs?audit=1` now returns `rate_limit_degraded` — how often the rate limiter has
+  fallen back to its in-memory floor — so a degrading database audit path is visible rather
+  than looking like "no rate limiting."
+
+[0.39.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.39.0
+
 ## [0.38.0] - 2026-08-22
 
 ### Security
