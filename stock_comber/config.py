@@ -159,6 +159,18 @@ DEFAULT_CONFIG: dict[str, Any] = {
     #    "criteria": [{"metric": "pe_ratio", "op": "<=", "value": 15}],
     #    "strategies": ["graham", "buffett"]}
     "jobs": [],
+    # HTTP API behaviour: an access/audit log and a configurable per-client
+    # rate limit. Both are enforced only when a database is configured (the
+    # audit rows and the recent-request count both live in Postgres).
+    "api": {
+        "audit": True,                 # record every API request in api_audit
+        "rate_limit": {
+            "enabled": True,
+            "max_requests": 120,       # allowed requests per window, per client
+            "window_seconds": 60,      # sliding window length
+            "scope": "ip",             # bucket by "ip" | "key" | "global"
+        },
+    },
 }
 
 
@@ -237,6 +249,30 @@ def validate_config(cfg: dict[str, Any]) -> list[str]:
                 f"(choose from {', '.join(index_keys())} or leave blank)")
 
     problems.extend(_validate_jobs(cfg.get("jobs", []), valid_strategies))
+    problems.extend(_validate_api(cfg.get("api", {})))
+    return problems
+
+
+def _validate_api(api: Any) -> list[str]:
+    """Validate the ``api`` block (audit flag + rate-limit settings)."""
+    problems: list[str] = []
+    if api in (None, {}):
+        return problems
+    if not isinstance(api, dict):
+        return ["api must be an object"]
+    rl = api.get("rate_limit", {})
+    if rl:
+        if not isinstance(rl, dict):
+            return ["api.rate_limit must be an object"]
+        mx = rl.get("max_requests")
+        if mx is not None and (not isinstance(mx, (int, float)) or mx < 1):
+            problems.append("api.rate_limit.max_requests must be >= 1")
+        win = rl.get("window_seconds")
+        if win is not None and (not isinstance(win, (int, float)) or win < 1):
+            problems.append("api.rate_limit.window_seconds must be >= 1")
+        scope = rl.get("scope")
+        if scope is not None and scope not in ("ip", "key", "global"):
+            problems.append("api.rate_limit.scope must be one of ip, key, global")
     return problems
 
 

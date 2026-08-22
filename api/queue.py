@@ -23,8 +23,15 @@ MAX_ENQUEUE = 25
 _TICKER = re.compile(r"^[A-Z][A-Z0-9.\-]{0,9}$")
 
 
+from stock_comber.apiguard import guard  # noqa: E402
+
+
 class handler(BaseHTTPRequestHandler):
     def do_GET(self):
+        ok, _rl = guard(self, "queue")
+        if not ok:
+            self._send(429, {"error": "rate limit exceeded — slow down", **_rl})
+            return
         params = parse_qs(urlparse(self.path).query)
         try:
             limit = min(100, max(1, int(params.get("limit", ["50"])[0])))
@@ -42,6 +49,10 @@ class handler(BaseHTTPRequestHandler):
                          "queue": items})
 
     def do_POST(self):
+        ok, _rl = guard(self, "queue")
+        if not ok:
+            self._send(429, {"error": "rate limit exceeded — slow down", **_rl})
+            return
         store = get_storage()
         if not getattr(store, "enabled", False):
             self._send(503, {"error": "no database configured (set DATABASE_URL)"})

@@ -75,8 +75,15 @@ def run_screen(tickers, strategies, custom_criteria=None):
     }
 
 
+from stock_comber.apiguard import guard  # noqa: E402
+
+
 class handler(BaseHTTPRequestHandler):
     def do_GET(self):
+        ok, _rl = guard(self, "screen")
+        if not ok:
+            self._send(429, {"error": "rate limit exceeded — slow down", **_rl})
+            return
         params = parse_qs(urlparse(self.path).query)
         raw = ",".join(params.get("tickers", []))
         tickers = [t.strip().upper() for t in raw.split(",") if t.strip()]

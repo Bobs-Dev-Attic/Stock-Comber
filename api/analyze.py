@@ -95,8 +95,15 @@ def run_analysis(ticker: str, news_days: int = 14) -> dict:
     }
 
 
+from stock_comber.apiguard import guard  # noqa: E402
+
+
 class handler(BaseHTTPRequestHandler):
     def do_GET(self):
+        ok, _rl = guard(self, "analyze")
+        if not ok:
+            self._send(429, {"error": "rate limit exceeded — slow down", **_rl})
+            return
         params = parse_qs(urlparse(self.path).query)
         ticker = (params.get("ticker", [""])[0] or "").strip().upper()
         try:

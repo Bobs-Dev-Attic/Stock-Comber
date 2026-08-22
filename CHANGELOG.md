@@ -4,6 +4,29 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.32.0] - 2026-08-22
+
+### Added
+- **API access / audit log.** Every API request is now recorded in a new `api_audit`
+  table — endpoint, method, resulting status, timestamp, and a **non-secret** client id
+  (IP, or a short SHA-256 fingerprint of the API key; the key itself is never stored). A
+  shared `stock_comber/apiguard.py` guard is wired into all 12 serverless handlers. View
+  it on the dashboard's **API tab** (filterable by endpoint) or via
+  `GET /api/runs?audit=1[&endpoint=…]`.
+- **Configurable rate limit.** A per-client sliding-window rate limit (default 120
+  requests / 60s, bucketed by IP) returns HTTP `429` when exceeded and logs the rejection.
+  Tune it under **Settings → API access & rate limit**: toggle enforcement, set
+  max-requests/window, and choose the bucket (`ip` / `key` / `global`). New config block
+  `config.api` with validation.
+
+### Notes
+- Both features are backed by Postgres and are active only when a database is configured;
+  the guard **fails open** (never blocks or errors the API) if logging/limiting hits a
+  problem. No new serverless function — the audit view reuses `/api/runs` and the guard is
+  a shared library, so the deployment stays within the 12-function cap.
+
+[0.32.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.32.0
+
 ## [0.31.0] - 2026-08-21
 
 ### Added

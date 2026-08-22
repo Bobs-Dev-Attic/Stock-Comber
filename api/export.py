@@ -64,8 +64,15 @@ def _to_csv(results):
     return buf.getvalue()
 
 
+from stock_comber.apiguard import guard  # noqa: E402
+
+
 class handler(BaseHTTPRequestHandler):
     def do_GET(self):
+        ok, _rl = guard(self, "export")
+        if not ok:
+            self._json(429, {"error": "rate limit exceeded — slow down", **_rl})
+            return
         params = parse_qs(urlparse(self.path).query)
         configured = os.environ.get("STOCK_COMBER_API_KEY")
         if not configured:

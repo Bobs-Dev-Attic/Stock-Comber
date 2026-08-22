@@ -405,12 +405,28 @@
     <!-- API: the HTTP endpoints behind the dashboard -->
     <div class="tabpanel" data-panel="api" role="tabpanel" hidden>
       <div class="hint" style="margin-bottom:.6rem">Stock-Comber is backed by a small JSON API — the same endpoints this dashboard uses. <b>GET</b> endpoints are public; writes are gated by <code>STOCK_COMBER_API_KEY</code> (pass <code>?key=…</code> or an <code>X-API-Key</code> header). Base URL is this site.</div>
+
+      <div class="histcard" style="margin-bottom:1rem">
+        <div class="paneln" style="margin:0 0 .5rem">
+          <h3 style="margin:0;flex:1;min-width:180px">API access log <span id="audit-status" class="hint" style="font-weight:400"></span></h3>
+          <select id="audit-endpoint" class="tmpl-select" title="Filter by endpoint" style="max-width:170px">
+            <option value="">All endpoints</option>
+          </select>
+          <button class="btn ghost" id="refresh-audit">↻ Refresh</button>
+        </div>
+        <div class="tablewrap"><table>
+          <thead><tr><th>When</th><th>Endpoint</th><th>Method</th><th class="r">Status</th><th>Client</th><th>Note</th></tr></thead>
+          <tbody id="audit-rows"></tbody>
+        </table></div>
+        <p class="hint">Every API request is recorded here (when a database is configured), with the caller's method, the resulting status, and a non-secret client id (IP, or a key fingerprint). Requests over the configured rate limit are logged with status <code>429</code>. Tune the limit under <a href="/settings.html#sec-api">Settings → API</a>.</p>
+      </div>
+
       <div class="apiref">
         <div class="api-grp">Read (public)</div>
         <div class="api-ep"><span class="api-m get">GET</span><div><code class="api-path">/api/latest</code><div class="api-d">The latest scheduled “hidden gems” report (JSON).</div></div></div>
         <div class="api-ep"><span class="api-m get">GET</span><div><code class="api-path">/api/screen?tickers=AAPL,MSFT&amp;strategy=graham&amp;custom=[…]</code><div class="api-d">Run a live screen over the given tickers. <code>strategy</code> repeatable; <code>custom</code> is a JSON array of <code>{metric,op,value}</code> rules.</div></div></div>
         <div class="api-ep"><span class="api-m get">GET</span><div><code class="api-path">/api/analyze?ticker=AAPL</code><div class="api-d">Full deep-dive for one ticker — all six lenses, composite scores, news &amp; sentiment. Stores a run when a database is configured.</div></div></div>
-        <div class="api-ep"><span class="api-m get">GET</span><div><code class="api-path">/api/runs?limit=50</code> · <code class="api-path">/api/runs?results=all</code><div class="api-d">Run &amp; search history; <code>results=all</code> returns every company across all runs, deduped to its latest result.</div></div></div>
+        <div class="api-ep"><span class="api-m get">GET</span><div><code class="api-path">/api/runs?limit=50</code> · <code class="api-path">/api/runs?results=all</code> · <code class="api-path">/api/runs?audit=1</code><div class="api-d">Run &amp; search history; <code>results=all</code> returns every company across all runs, deduped to its latest result; <code>audit=1</code> returns the API access log (optionally filter with <code>&amp;endpoint=screen</code>).</div></div></div>
         <div class="api-ep"><span class="api-m get">GET</span><div><code class="api-path">/api/universe?index=sp500&amp;sector=Health%20Care&amp;limit=10</code><div class="api-d">Index templates (Dow / Nasdaq-100 / S&amp;P 500) and universe slices.</div></div></div>
         <div class="api-ep"><span class="api-m get">GET</span><div><code class="api-path">/api/tickers?q=app&amp;limit=8</code><div class="api-d">Ticker search / autocomplete.</div></div></div>
         <div class="api-ep"><span class="api-m get">GET</span><div><code class="api-path">/api/queue?limit=50</code><div class="api-d">The analysis queue (tickers awaiting a full analysis).</div></div></div>
@@ -614,6 +630,8 @@ function showTab(tab) {
     if (!countdownTimer) loadCountdown();   // ensure the countdown is live here too
   } else if (tab === "history") {
     loadHistory();
+  } else if (tab === "api") {
+    loadAudit();
   }
   // The live queue poll only runs while the History tab is visible.
   if (tab !== "history") stopHistPoll();
@@ -1644,6 +1662,44 @@ function startHistPoll() {
 }
 function stopHistPoll() { if (histTimer) { clearInterval(histTimer); histTimer = null; } }
 
+/* ---- API tab: access / audit log ---- */
+let auditLoaded = false;
+const API_ENDPOINTS = ["analytics","analyze","backtest","export","queue","runs",
+  "screen","settings","signals","thesis","tickers","universe"];
+function statusBadge(code) {
+  const c = +code || 0;
+  const cls = c >= 500 ? "err" : (c === 429 ? "queued" : (c >= 400 ? "err" : "done"));
+  return `<span class="pill qb ${cls}">${escHtml(String(code))}</span>`;
+}
+function renderAudit(rows) {
+  $("#audit-rows").innerHTML = (rows||[]).map(a =>
+    `<tr><td class="l">${fmtWhen(a.ts)}</td>`
+    + `<td class="l"><code>${escHtml(a.endpoint||"")}</code></td>`
+    + `<td class="l">${escHtml(a.method||"")}</td>`
+    + `<td class="r">${statusBadge(a.status)}</td>`
+    + `<td class="l">${escHtml(a.client||"—")}</td>`
+    + `<td class="l">${a.note ? escHtml(String(a.note)).slice(0,40) : ""}</td></tr>`
+  ).join("") || `<tr><td colspan="6" class="hint">No API calls recorded yet.</td></tr>`;
+}
+async function loadAudit() {
+  // Populate the endpoint filter once.
+  const sel = $("#audit-endpoint");
+  if (sel && sel.options.length <= 1) {
+    API_ENDPOINTS.forEach(e => { const o = document.createElement("option"); o.value = e; o.textContent = e; sel.appendChild(o); });
+  }
+  const ep = sel ? sel.value : "";
+  $("#audit-status").textContent = "Loading…";
+  try {
+    const url = "/api/runs?audit=1&limit=100" + (ep ? "&endpoint=" + encodeURIComponent(ep) : "");
+    const d = await (await fetch(url)).json();
+    renderAudit(d.audit || []);
+    $("#audit-status").textContent = d.storage_enabled
+      ? `· ${(d.audit||[]).length} recent request${(d.audit||[]).length===1?"":"s"}${ep?` to /api/${ep}`:""}`
+      : "· no database configured — the audit log needs DATABASE_URL";
+    auditLoaded = true;
+  } catch (e) { $("#audit-status").textContent = "· failed to load: " + e.message; }
+}
+
 /* ---- manual full analysis (news + sentiment), on demand ---- */
 const GRADE_TXT = {A:"Positive", B:"Mildly positive", C:"Neutral", D:"Mildly negative", F:"Negative"};
 const SIG_CLS = {BUY:"buy", WATCH:"watch", AVOID:"avoid", "N/A":"na"};
@@ -1897,6 +1953,8 @@ tickersInput.addEventListener("blur", () => setTimeout(closeAC, 120));
 /* tabs */
 document.querySelectorAll(".tab").forEach(b => b.onclick = () => showTab(b.dataset.tab));
 $("#refresh-hist").onclick = () => loadHistory(true);
+$("#refresh-audit").onclick = () => loadAudit();
+$("#audit-endpoint").onchange = () => loadAudit();
 
 /* nav side drawer */
 function openNav() {

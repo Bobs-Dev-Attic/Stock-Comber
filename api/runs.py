@@ -2,6 +2,7 @@
 
   GET /api/runs[?limit=N]
   GET /api/runs?results=all[&limit=N]   -> deduped per-company roll-up
+  GET /api/runs?audit=1[&endpoint=screen&limit=N]  -> API access/audit log
 
 Returns run metadata (date, strategies, counts) and the recent ad-hoc search
 log. With ``results=all`` it instead returns ``{results: [...]}`` — every
@@ -22,10 +23,18 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from stock_comber.storage import get_storage  # noqa: E402
 
 
+from stock_comber.apiguard import guard  # noqa: E402
+
+
 class handler(BaseHTTPRequestHandler):
     def do_GET(self):
+        ok, _rl = guard(self, "runs")
+        if not ok:
+            self._send(429, {"error": "rate limit exceeded — slow down", **_rl})
+            return
         params = parse_qs(urlparse(self.path).query)
         want_results = params.get("results", [""])[0] == "all"
+        want_audit = params.get("audit", [""])[0] in ("1", "true", "yes")
         default_limit = "500" if want_results else "25"
         cap = 2000 if want_results else 100
         try:
@@ -35,6 +44,20 @@ class handler(BaseHTTPRequestHandler):
 
         store = get_storage()
         enabled = getattr(store, "enabled", False)
+
+        if want_audit:
+            # The API access/audit log (endpoint, method, status, client, time).
+            audit = []
+            if enabled:
+                try:
+                    ep = (params.get("endpoint", [""])[0] or "").strip() or None
+                    audit = store.list_api_audit(min(500, limit if limit else 100), ep)
+                except Exception as exc:
+                    self._send(502, {"error": str(exc), "audit": []})
+                    return
+            self._send(200, {"storage_enabled": enabled, "audit": audit,
+                             "count": len(audit)})
+            return
 
         if want_results:
             results = []
