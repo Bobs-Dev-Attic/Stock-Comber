@@ -4,6 +4,22 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.35.0] - 2026-08-22
+
+### Added
+- **Sub-daily schedules ("every N hours").** The Scheduled report dialog now has a
+  **Frequency** control: *Once a day* (as before) or *Every N hours* (1/2/3/4/6/8/12h),
+  which saves an `M */N * * DOW` cron. The hosted 5-minute heartbeat already honors full
+  cron, so these fire down to 5-minute resolution.
+- **Per-run universe rotation.** The nightly rotation seed now advances **every hour**
+  (`schedule.rotation_tick`), so a shorter-than-daily schedule screens *fresh* names on each
+  run instead of repeating the same day's pool. The "what the next run will screen" preview
+  passes the next run's hour (`/api/universe?nightly=1&hour=…`) so it matches what will
+  actually run. Combined with the 90-day cooldown, frequent runs now spread coverage rather
+  than churn.
+
+[0.35.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.35.0
+
 ## [0.34.1] - 2026-08-22
 
 ### Added

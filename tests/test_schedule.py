@@ -82,3 +82,22 @@ def test_step_field():
     stored = {"schedule": {"enabled": True, "cron": "0 */2 * * *"}}
     assert run(stored, at(2026, 8, 21, 6, 0)) is True    # 6 is even
     assert run(stored, at(2026, 8, 21, 9, 0)) is False   # 9 is odd
+
+
+def test_rotation_tick_advances_each_hour_and_day():
+    from stock_comber.schedule import rotation_tick
+    base = at(2026, 8, 21, 6, 30)
+    t6 = rotation_tick(base)
+    t10 = rotation_tick(at(2026, 8, 21, 10, 30))
+    t_next = rotation_tick(at(2026, 8, 22, 6, 30))
+    assert t10 == t6 + 4            # +4 hours -> +4 ticks (fresh names each run)
+    assert t_next == t6 + 24        # next day at same hour -> +24
+
+
+def test_every_n_hours_cron_fires_on_matching_hours():
+    # 00/04/08/12/16/20:30 on weekdays.
+    stored = {"schedule": {"enabled": True, "cron": "30 */4 * * 1-5"}}
+    assert should_run_now(stored, at(2026, 8, 21, 8, 30))[0] is True    # Fri 08:30 ✓
+    assert should_run_now(stored, at(2026, 8, 21, 12, 30))[0] is True   # Fri 12:30 ✓
+    assert should_run_now(stored, at(2026, 8, 21, 10, 30))[0] is False  # 10 not a step
+    assert should_run_now(stored, at(2026, 8, 22, 8, 30))[0] is False   # Saturday
