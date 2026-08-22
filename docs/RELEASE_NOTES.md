@@ -1,5 +1,17 @@
 # Release notes
 
+## v0.40.0 — Memory & scale (2026-08-22)
+
+The review backlog's P2 batch: making the nightly run faster and leaner as the universe grows.
+The nightly **backtest fetches now run concurrently** on a small bounded pool
+(`data.backtest_fetch_workers`, default 4) instead of one-at-a-time, so the report finishes
+sooner without hammering the price source. **Reports stream to disk** row-by-row and copy the
+dated file to `latest` at the filesystem level, so a big screen never holds the whole rendered
+report in memory twice. And a new **streaming screen path** (`Screener.iter_results()` +
+`retain_companies`) lets a memory-conscious caller process results without buffering every
+company's fundamentals — the default `run()` is unchanged, and the CLI now frees the heavy
+company objects as soon as a run is persisted. No behavior change to the reports themselves.
+
 ## v0.39.0 — Reliability & cost (2026-08-22)
 
 The review backlog's P1 batch — quieter than a feature, but it makes the hosted app cheaper

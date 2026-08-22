@@ -1,7 +1,10 @@
+import io
 import json
 
 from stock_comber.criteria import evaluate_graham
-from stock_comber.report import to_csv, to_html, to_json, to_markdown, write_reports
+from stock_comber.report import (
+    stream_csv, stream_html, to_csv, to_html, to_json, to_markdown, write_reports,
+)
 
 
 def _results(strong_company, config):
@@ -29,6 +32,26 @@ def test_markdown_and_html_render(strong_company, config):
     assert "Stock-Comber screening report" in md
     html = to_html(_results(strong_company, config), config)
     assert "<table>" in html and "STRONG" in html
+
+
+def test_streaming_writers_match_string_renderers(strong_company, config):
+    results = _results(strong_company, config)
+    buf = io.StringIO()
+    stream_csv(results, config, buf)
+    assert buf.getvalue() == to_csv(results, config)
+    buf = io.StringIO()
+    stream_html(results, config, buf)
+    assert buf.getvalue() == to_html(results, config)
+
+
+def test_write_reports_latest_matches_stamped(tmp_path, strong_company, config):
+    config["output"]["dir"] = str(tmp_path)
+    config["output"]["formats"] = ["csv", "html"]
+    write_reports(_results(strong_company, config), config)
+    for ext in ("csv", "html"):
+        stamped = list(tmp_path.glob(f"screen-*.{ext}"))[0].read_text()
+        latest = (tmp_path / f"latest.{ext}").read_text()
+        assert stamped == latest and "STRONG" in stamped
 
 
 def test_write_reports(tmp_path, strong_company, config):

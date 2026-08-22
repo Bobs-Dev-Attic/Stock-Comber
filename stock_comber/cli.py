@@ -94,28 +94,55 @@ def _progress(i: int, total: int, ticker: str) -> None:
 
 def _attach_backtest_edge(results, screener, cfg) -> None:
     """Inject a per-name ``backtest_edge_pct`` into each result's metrics (nightly
-    report). One year-end price-history fetch per distinct ticker; failures are
-    skipped so they never sink the run."""
+    report). One year-end price-history fetch per distinct ticker; the fetches run
+    on a small bounded thread pool (``data.backtest_fetch_workers``) so the nightly
+    run isn't serialised on network latency. Failures are skipped so they never
+    sink the run."""
+    from concurrent.futures import ThreadPoolExecutor, as_completed
     from .backtest import overall_edge
     from .datasources import YahooSource
     data = cfg.get("data", {})
     yahoo = YahooSource(cache=getattr(screener.sec, "cache", None),
                         timeout=data.get("request_timeout", 25),
                         delay=data.get("request_delay_seconds", 0.0))
-    tickers = sorted({r.ticker for r in results})
-    edges: dict[str, float] = {}
-    for i, t in enumerate(tickers, 1):
-        company = screener.last_companies.get(t)
-        if company is None or not company.annuals:
-            continue
+    # Only names we actually have fundamentals for can be backtested.
+    todo = [t for t in sorted({r.ticker for r in results})
+            if getattr(screener.last_companies.get(t), "annuals", None)]
+    if not todo:
+        return
+    try:
+        workers = int(data.get("backtest_fetch_workers", 4))
+    except (TypeError, ValueError):
+        workers = 4
+    workers = max(1, min(workers, 16, len(todo)))
+
+    def _fetch(t):
         try:
-            hist = yahoo.fetch_history(t, years=10)
+            return t, yahoo.fetch_history(t, years=10), None
+        except Exception as exc:  # isolate a single ticker's failure
+            return t, None, exc
+
+    edges: dict[str, float] = {}
+
+    def _record(t, hist, err, i):
+        if err is not None:
+            print(f"  backtest edge failed for {t}: {err}", file=sys.stderr)
+        else:
+            company = screener.last_companies.get(t)
             edge = overall_edge(company, hist, cfg) if hist else None
             if edge is not None:
                 edges[t] = edge
-        except Exception as exc:
-            print(f"  backtest edge failed for {t}: {exc}", file=sys.stderr)
-        print(f"  backtest {i}/{len(tickers)} {t}", file=sys.stderr)
+        print(f"  backtest {i}/{len(todo)} {t}", file=sys.stderr)
+
+    if workers == 1:
+        for i, t in enumerate(todo, 1):
+            _record(*_fetch(t), i)
+    else:
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            futures = {pool.submit(_fetch, t): t for t in todo}
+            for i, fut in enumerate(as_completed(futures), 1):
+                _record(*fut.result(), i)
+
     for r in results:
         e = edges.get(r.ticker)
         if e is not None and r.metrics is not None:
@@ -154,6 +181,11 @@ def cmd_screen(args) -> int:
                 print(f"Stored run #{run_id} in the database.")
             except Exception as exc:  # persistence must never fail the screen
                 print(f"Warning: could not store run: {exc}", file=sys.stderr)
+
+    # The heavy Company objects (annuals, quotes, raw payloads) are no longer
+    # needed once the run is persisted and the edge attached — release them so
+    # report rendering doesn't hold them alongside the results.
+    screener.last_companies = {}
 
     if args.no_write:
         print(to_markdown(results, cfg))

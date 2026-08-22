@@ -66,7 +66,13 @@ Vercel Pro — a deliberate milestone, not an accident.
   metrics `avg_volume` / `dollar_volume`.
 - **`screener.py`** — `Screener` orchestrates fetch → evaluate → rank;
   `resolve_universe` chooses list vs. nightly (nightly seeds rotation with
-  `schedule.rotation_tick(utcnow)`).
+  `schedule.rotation_tick(utcnow)`). `run()` buffers + ranks + retains companies
+  for persistence; `iter_results()` + `retain_companies=False` stream per-ticker
+  results at O(1) company memory.
+- **`report.py`** — string renderers (`to_json/csv/markdown/html`) plus
+  `stream_csv`/`stream_html` that write row-by-row to a file handle;
+  `write_reports` streams the dated file and `copyfile`s it to `latest`
+  (report columns include `avg_volume` and `backtest_edge_pct`).
 - **`universe.py`** — `build_nightly(config, store, finnhub, day_ordinal)`: the
   capped, sector-diversified, rotating "hidden gems" pool, with a
   `recently_screened` cooldown filter.
@@ -93,10 +99,8 @@ Vercel Pro — a deliberate milestone, not an accident.
   (`is_valid_ticker` / `normalize_ticker`, `^[A-Z][A-Z0-9.\-]{0,9}$`). Enforced
   in the screener and the Yahoo/SEC data sources before any URL is built
   (SSRF/path-injection guard), and mirrored by the API handlers at the boundary.
-- **`report.py`** — `to_json/csv/markdown/html` renderers; columns include
-  `avg_volume` and `backtest_edge_pct`.
 - **`cli.py`** — entry point (`stock-comber`); `cmd_screen`,
-  `_attach_backtest_edge` (nightly edge injection).
+  `_attach_backtest_edge` (nightly edge injection, bounded-concurrency fetch).
 
 ## Frontend (`public/`)
 - **`index.html`** — the SPA: tabs (Full list / Jobs / History / API), analysis &

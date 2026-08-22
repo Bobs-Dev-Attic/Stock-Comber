@@ -4,6 +4,26 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.40.0] - 2026-08-22
+
+### Performance
+- **Concurrent nightly backtest fetches.** The nightly "hidden gems" backtest-edge step now
+  fetches per-name price histories on a small bounded thread pool
+  (`data.backtest_fetch_workers`, default 4, clamped 1–16; set 1 for the old serial behaviour),
+  cutting wall-clock while staying polite to the free price endpoint. Per-ticker failures stay
+  isolated.
+- **Streaming report writers.** CSV and HTML reports are now written row-by-row straight to the
+  file (`stream_csv` / `stream_html`); `write_reports` streams the dated file and copies it to
+  `latest` at the filesystem level, so a large universe's report is never buffered in memory
+  twice. The string renderers (`to_csv` / `to_html`) are unchanged wrappers over the streamers.
+- **Bounded-memory screen streaming.** New `Screener.iter_results()` + a `retain_companies`
+  flag let a caller stream per-ticker results without accumulating every `Company`/`AnnualFacts`
+  (peak memory O(1) in universe size); `run()` keeps the buffered, ranked, persistence-friendly
+  default. The CLI screen releases the retained companies right after persistence so report
+  rendering doesn't hold them.
+
+[0.40.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.40.0
+
 ## [0.39.0] - 2026-08-22
 
 ### Changed
