@@ -1,5 +1,11 @@
 # Release notes
 
+## v0.30.3 — Average volume in the nightly reports (2026-08-21)
+
+The generated nightly report now carries an **Avg volume** column in every human-readable
+format (CSV, Markdown, HTML), so each pick's liquidity is right there in the report
+alongside price, P/E and ROE. (The JSON report already included every metric.)
+
 ## v0.30.2 — Show dollar volume by default (2026-08-21)
 
 The **$ volume / day** column now also appears in the results table by default, next to
