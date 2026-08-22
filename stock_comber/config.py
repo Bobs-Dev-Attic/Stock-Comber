@@ -62,6 +62,11 @@ DEFAULT_CONFIG: dict[str, Any] = {
         "request_timeout": 30,
         "request_delay_seconds": 0.2,  # be polite to free endpoints
         "min_annual_years": 3,  # need at least this many years of data
+        # Optional Tiingo API key (or set TIINGO_API_KEY). Tiingo is a *licensed*
+        # price provider (real ToS + SLA); when a key is present it becomes the
+        # primary price source ahead of the free Yahoo/Stooq chain. Secret:
+        # env/DB write-only, never returned to the browser.
+        "tiingo_api_key": None,
         # Optional Finnhub API key (or set FINNHUB_API_KEY). When present,
         # Finnhub enriches the universe (market cap / sector / country).
         "finnhub_api_key": None,

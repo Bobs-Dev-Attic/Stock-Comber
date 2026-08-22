@@ -70,9 +70,15 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
         <label>Finnhub API key — store in your database</label>
         <input id="finnhub_key" type="password" autocomplete="off" placeholder="leave blank to keep current">
       </div>
+      <div class="f" style="max-width:340px">
+        <label>Tiingo API key — store in your database</label>
+        <input id="tiingo_key" type="password" autocomplete="off" placeholder="leave blank to keep current">
+      </div>
     </div>
-    <p class="hint">Optional: store your <b>Finnhub</b> key in the database instead of an environment
-      variable — it powers news, sentiment &amp; enrichment. It's <b>write-only</b> here (never shown back),
+    <p class="hint">Optional: store your <b>Tiingo</b> key to use it as the <b>primary</b> price source — a
+      licensed provider with a real terms-of-service, ahead of the free Yahoo/Stooq fallbacks. And your
+      <b>Finnhub</b> key in the database instead of an environment
+      variable — it powers news, sentiment &amp; enrichment. Both are <b>write-only</b> here (never shown back),
       and saving it needs the Export/API key below. <code>DATABASE_URL</code> and
       <code>STOCK_COMBER_API_KEY</code> can't be stored in the database — set those (and, if you prefer, the
       Finnhub key) as environment variables in Vercel → Settings → Environment Variables (and as GitHub
@@ -265,7 +271,7 @@ function readCrit(){ const out=[];
   }); return out; }
 
 function renderKeys(s){ const c=$("#keys"); c.innerHTML="";
-  const items=[["Finnhub",s.keys.finnhub],["Database",s.keys.database],["Export API key",s.keys.export_api]];
+  const items=[["Tiingo",s.keys.tiingo],["Finnhub",s.keys.finnhub],["Database",s.keys.database],["Export API key",s.keys.export_api]];
   items.forEach(([n,on])=>{const p=document.createElement("span");p.className="pill "+(on?"on":"off");
     p.textContent=(on?"✓ ":"✕ ")+n+(on?" configured":" not set");c.appendChild(p);});
 }
@@ -289,9 +295,11 @@ function collect(){
   const crit=readCrit();
   out.custom={...(out.custom||{}), criteria:crit};
   const cp=$("#custom_pass").value; if(cp!=="") out.custom.pass_ratio=parseFloat(cp);
-  // stored Finnhub key — only send when the user typed one (blank = keep current)
+  // stored keys — only send when the user typed one (blank = keep current)
   const fk=$("#finnhub_key").value.trim();
   if(fk){ out.data={...(out.data||{}), finnhub_api_key:fk}; }
+  const tk=$("#tiingo_key").value.trim();
+  if(tk){ out.data={...(out.data||{}), tiingo_api_key:tk}; }
   return out;
 }
 
@@ -330,7 +338,7 @@ $("#save").onclick=async()=>{
       headers:{"Content-Type":"application/json"}, body:JSON.stringify(collect())});
     const d=await r.json();
     if(!r.ok){ $("#status").textContent="Error: "+(d.error||r.status)+(d.problems?" — "+d.problems.join("; "):""); }
-    else { $("#finnhub_key").value=""; if(d.keys) renderKeys(d);
+    else { $("#finnhub_key").value=""; $("#tiingo_key").value=""; if(d.keys) renderKeys(d);
       $("#status").textContent="Saved. Live screens and the nightly run now use these settings."; }
   }catch(e){ $("#status").textContent="Save failed: "+e.message; }
 };

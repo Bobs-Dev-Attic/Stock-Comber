@@ -7,9 +7,11 @@ from typing import Any, Callable, Optional
 
 from .criteria import STRATEGIES
 from .datasources import (
-    FileCache, FinnhubSource, SecEdgarSource, StooqSource, YahooSource,
+    FileCache, FinnhubSource, SecEdgarSource, StooqSource, TiingoSource,
+    YahooSource,
 )
 from .datasources.finnhub import resolve_api_key
+from .datasources.tiingo import resolve_api_key as resolve_tiingo_key
 from .models import Company, Quote, ScreenResult
 from .validation import is_valid_ticker
 
@@ -49,8 +51,18 @@ class Screener:
                 fh_key, cache=cache, timeout=timeout,
                 delay=data.get("finnhub_min_interval", 1.1))
 
-        # Price sources are tried in order until one returns a price. Yahoo is
-        # primary (reliable, unmetered from servers), Stooq the fallback, and
+        # Optional Tiingo source, active only when an API key is configured.
+        # Tiingo is a *licensed* provider (real ToS + SLA), so when a key is
+        # present it becomes the primary price source ahead of the free chain.
+        self.tiingo: Optional[TiingoSource] = None
+        tg_key = resolve_tiingo_key(config)
+        if tg_key:
+            self.tiingo = TiingoSource(
+                tg_key, cache=cache, timeout=timeout, delay=delay)
+
+        # Price sources are tried in order until one returns a price. When a
+        # Tiingo key is configured it leads (licensed, reliable); otherwise Yahoo
+        # is primary (unmetered from servers) with Stooq as the free fallback and
         # Finnhub only as a last resort — Finnhub's budget is reserved for
         # universe enrichment, not per-ticker prices.
         if price_sources is not None:
@@ -58,7 +70,10 @@ class Screener:
         elif stooq is not None:
             self.price_sources = [stooq]
         else:
-            self.price_sources = [
+            self.price_sources = []
+            if self.tiingo is not None:
+                self.price_sources.append(self.tiingo)
+            self.price_sources += [
                 YahooSource(cache=cache, timeout=timeout, delay=0.0),
                 StooqSource(cache=cache, timeout=timeout, delay=delay),
             ]

@@ -115,8 +115,11 @@ Legend: **P0** ship first · **P1** reliability/cost · **P2** memory/scale · *
       differentiators (multi-lens consensus, backtested edge, nightly hidden gems).
 
 ### P4 follow-ups (deferred, not blocking)
-- [ ] Actually migrate price data to a licensed provider (only needed for a public/commercial
-      launch — the plan is documented; the code change is scoped but not done).
+- [x] Migrate price data to a licensed provider (v0.46.0). `datasources/tiingo.py` (`TiingoSource`)
+      is a licensed price feed with a real ToS; when `config.data.tiingo_api_key` / `TIINGO_API_KEY`
+      is set it leads the price chain ahead of the free Yahoo/Stooq fallbacks. Key is write-only
+      (env/DB), redacted by the settings API, and travels only in the `Authorization` header.
+      Follow-up: route the backtest **history** fetch through Tiingo too (still on Yahoo).
 - [ ] Opt-in nightly digest (RSS/email) — would trigger the privacy/unsubscribe work noted in
       `PRIVACY.md`.
 - [x] Ratchet `mypy` from non-blocking → **enforced** (v0.45.1). The `stock_comber` package
