@@ -4,6 +4,16 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.42.2] - 2026-08-22
+
+### Added
+- **The active dashboard tab is remembered across page refreshes.** `showTab` persists the
+  current tab (Full list / Jobs / History / API) to `localStorage` (`sc_tab`), and the page
+  restores it on load — falling back to the Full-list landing when nothing (or an unrecognized
+  value) is stored. Frontend-only.
+
+[0.42.2]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.42.2
+
 ## [0.42.1] - 2026-08-22
 
 ### Security

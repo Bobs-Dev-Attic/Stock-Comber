@@ -1,5 +1,11 @@
 # Release notes
 
+## v0.42.2 — Remember the open tab (2026-08-22)
+
+Refreshing the dashboard used to always drop you back on the Full list. Now it keeps you on
+whichever tab you were viewing — Full list, Jobs, History, or API — remembered per browser. A
+first visit (or anything unexpected in storage) still lands on the Full list as before.
+
 ## v0.42.1 — Content-Security-Policy (2026-08-22)
 
 The dashboard now ships a hardened **Content-Security-Policy**. Everything is locked to the
