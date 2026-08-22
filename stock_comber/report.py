@@ -52,6 +52,7 @@ def to_csv(results: list[ScreenResult], cfg: dict[str, Any]) -> str:
         "ticker", "name", "strategy", "passed", "score", "max_score",
         "score_pct", "price", "pe_ratio", "pb_ratio", "roe_pct",
         "current_ratio", "debt_to_equity", "graham_number", "avg_volume",
+        "backtest_edge_pct",
     ])
     for r in rows:
         m = r.metrics
@@ -61,7 +62,7 @@ def to_csv(results: list[ScreenResult], cfg: dict[str, Any]) -> str:
             _fmt(m.get("price")), _fmt(m.get("pe_ratio")), _fmt(m.get("pb_ratio")),
             _fmt(m.get("roe_pct")), _fmt(m.get("current_ratio")),
             _fmt(m.get("debt_to_equity")), _fmt(m.get("graham_number")),
-            _fmt(m.get("avg_volume")),
+            _fmt(m.get("avg_volume")), _fmt(m.get("backtest_edge_pct")),
         ])
     return buf.getvalue()
 
@@ -79,8 +80,8 @@ def to_markdown(results: list[ScreenResult], cfg: dict[str, Any]) -> str:
         f"Screened **{len({r.ticker for r in results})}** companies · "
         f"**{passing}** strategy matches passed.",
         "",
-        "| Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol |",
-        "|--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|",
+        "| Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |",
+        "|--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|",
     ]
     for r in rows:
         m = r.metrics
@@ -90,7 +91,7 @@ def to_markdown(results: list[ScreenResult], cfg: dict[str, Any]) -> str:
             f"{r.score_pct:.0f}% | {_fmt(m.get('price'))} | {_fmt(m.get('pe_ratio'))} | "
             f"{_fmt(m.get('pb_ratio'))} | {_fmt(m.get('roe_pct'))} | "
             f"{_fmt(m.get('current_ratio'))} | {_fmt(m.get('debt_to_equity'))} | "
-            f"{_fmt(m.get('avg_volume'))} |"
+            f"{_fmt(m.get('avg_volume'))} | {_fmt(m.get('backtest_edge_pct'))} |"
         )
     lines.append("")
     lines.append(
@@ -112,7 +113,8 @@ def to_html(results: list[ScreenResult], cfg: dict[str, Any]) -> str:
             f"<td>{r.strategy}</td><td>{'✔' if r.passed else '·'}</td>"
             f"<td>{r.score_pct:.0f}%</td><td>{_fmt(m.get('price'))}</td>"
             f"<td>{_fmt(m.get('pe_ratio'))}</td><td>{_fmt(m.get('pb_ratio'))}</td>"
-            f"<td>{_fmt(m.get('roe_pct'))}</td><td>{_fmt(m.get('avg_volume'))}</td></tr>"
+            f"<td>{_fmt(m.get('roe_pct'))}</td><td>{_fmt(m.get('avg_volume'))}</td>"
+            f"<td>{_fmt(m.get('backtest_edge_pct'))}</td></tr>"
         )
     return f"""<!doctype html>
 <html><head><meta charset='utf-8'><title>Stock-Comber report</title>
@@ -128,7 +130,7 @@ def to_html(results: list[ScreenResult], cfg: dict[str, Any]) -> str:
 <h1>Stock-Comber screening report</h1>
 <div class='meta'>Generated {generated} · strategies: {', '.join(cfg.get('strategies', []))}</div>
 <table><thead><tr><th>Ticker</th><th>Company</th><th>Strategy</th><th>Pass</th>
-<th>Score</th><th>Price</th><th>P/E</th><th>P/B</th><th>ROE%</th><th>Vol</th></tr></thead>
+<th>Score</th><th>Price</th><th>P/E</th><th>P/B</th><th>ROE%</th><th>Vol</th><th>Edge%</th></tr></thead>
 <tbody>{''.join(body)}</tbody></table>
 <footer>Educational tool only — not investment advice.</footer>
 </body></html>"""

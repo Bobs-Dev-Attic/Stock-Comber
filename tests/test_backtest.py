@@ -65,3 +65,22 @@ def test_parse_history_keeps_year_end_close():
 def test_parse_history_bad_payload():
     assert parse_history({}) == {}
     assert parse_history({"chart": {"result": []}}) == {}
+
+
+def test_overall_edge_averages_measurable_lenses(config):
+    from stock_comber.backtest import overall_edge, VALUE_STRATEGIES, backtest_strategy
+    prices = {2019: 30.0, 2020: 36.0, 2021: 40.0, 2022: 44.0, 2023: 50.0}
+    edge = overall_edge(_company(), prices, config)
+    # Mean of each lens's edge_pct across lenses that produced one.
+    got = [backtest_strategy(_company(), prices, s, config)["summary"].get("edge_pct")
+           for s in VALUE_STRATEGIES]
+    got = [e for e in got if e is not None]
+    if got:
+        assert edge == round(sum(got) / len(got), 2)
+    else:
+        assert edge is None
+
+
+def test_overall_edge_none_without_history(config):
+    from stock_comber.backtest import overall_edge
+    assert overall_edge(_company(), {2019: 30.0, 2021: 40.0}, config) is None

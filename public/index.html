@@ -719,6 +719,7 @@ const METRICS = [
   ["price","Price"], ["earnings_growth_5y_pct","Earnings growth 5y %"],
   ["revenue_growth_5y_pct","Revenue growth 5y %"],
   ["avg_volume","Avg volume"], ["dollar_volume","$ volume/day"],
+  ["backtest_edge_pct","Backtest edge %"],
 ];
 const METRIC_LABEL = Object.fromEntries(METRICS);
 const OPS = ["<=","<",">=",">","==","!="];
@@ -730,7 +731,7 @@ const ALL_COLUMNS = [
   {key:"score_pct", label:"Score", base:true},
   ...METRICS.map(([key,label]) => ({key, label, base:false})),
 ];
-const DEFAULT_COLS = ["strategy","passed","score_pct","health_score","price","pe_ratio","pb_ratio","roe_pct","current_ratio","debt_to_equity","avg_volume","dollar_volume"];
+const DEFAULT_COLS = ["strategy","passed","score_pct","health_score","price","pe_ratio","pb_ratio","roe_pct","current_ratio","debt_to_equity","avg_volume","dollar_volume","backtest_edge_pct"];
 let selectedCols = loadCols();
 
 function loadCols() {

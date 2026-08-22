@@ -85,3 +85,17 @@ def backtest_all(company: Company, price_by_year: dict, cfg: dict,
         "price_years": [{"year": y, "close": round(price_by_year[y], 2)} for y in price_years],
         "strategies": out,
     }
+
+
+def overall_edge(company: Company, price_by_year: dict, cfg: dict,
+                 strategies: Optional[list] = None) -> Optional[float]:
+    """A single per-name "backtest edge": the mean of each value lens's edge
+    (avg forward return after a PASS minus after a fail), across lenses that had
+    enough history to measure one. ``None`` when nothing could be measured."""
+    strategies = strategies or VALUE_STRATEGIES
+    edges = []
+    for s in strategies:
+        e = backtest_strategy(company, price_by_year, s, cfg).get("summary", {}).get("edge_pct")
+        if e is not None:
+            edges.append(e)
+    return _avg(edges)
