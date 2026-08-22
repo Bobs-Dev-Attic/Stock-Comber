@@ -88,13 +88,15 @@ jobs:
         run: |
           mkdir -p public/data
           cp reports/latest.json public/data/latest.json
+          # Publish the nightly RSS digest at a clean /feed.xml path.
+          cp reports/latest.xml public/feed.xml 2>/dev/null || true
 
       - name: Commit reports
         if: steps.gate.outputs.run == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add reports/latest.* reports/screen-*.* public/data/latest.json 2>/dev/null || true
+          git add reports/latest.* reports/screen-*.* public/data/latest.json public/feed.xml 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No report changes to commit."
           else

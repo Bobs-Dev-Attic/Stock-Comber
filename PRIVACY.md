@@ -47,12 +47,22 @@ Because the audit log and results live in a database **you** configure, a
 self-hosted deployment keeps its data entirely under the operator's control. Run
 without a `DATABASE_URL` and nothing is persisted at all.
 
+## Nightly digest (RSS)
+
+Stock-Comber publishes a nightly digest of the passing "hidden gems" as a static
+**RSS feed** at `/feed.xml`. This collects **no personal data**: there is no
+sign-up, no email address, no subscriber list, and nothing to unsubscribe from —
+your reader simply fetches a public file. It carries only public screening
+results (tickers, company names, metrics), the same data already shown on the
+dashboard.
+
 ## Future features
 
 If an opt-in feature that collects personal data is ever added (for example an
-email digest of the nightly "hidden gems"), this document will be updated first
-to describe exactly what is collected, how to unsubscribe, and the applicable
-obligations (e.g. CAN-SPAM / GDPR). No such feature exists today.
+**email** digest, which — unlike the RSS feed above — would require storing an
+address), this document will be updated first to describe exactly what is
+collected, how to unsubscribe, and the applicable obligations (e.g. CAN-SPAM /
+GDPR). No such feature exists today.
 
 ## Contact
 

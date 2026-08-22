@@ -64,10 +64,13 @@ custom:
 
 output:
   dir: "reports"
-  formats: [json, csv, markdown]
+  formats: [json, csv, markdown, rss]
   only_passing: false
   top_n: 50
   sort_by: score_pct
+  # Absolute base URL used for links in the nightly RSS digest (reports/latest.xml,
+  # published to /feed.xml). Point this at your deployed dashboard.
+  site_url: "https://github.com/Bobs-Dev-Attic/Stock-Comber"
 
 # Local scheduler (see stock_comber/scheduler.py). For hosted scheduling use the
 # GitHub Actions workflow instead.
