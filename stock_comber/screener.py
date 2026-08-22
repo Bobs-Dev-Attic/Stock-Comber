@@ -93,11 +93,14 @@ class Screener:
         if tickers:
             return tickers
         if uni.get("mode") == "nightly":
-            from datetime import date
+            from datetime import datetime
             from .universe import build_nightly
+            from .schedule import rotation_tick
+            # The rotation seed advances every hour, so shorter-than-daily
+            # schedules screen fresh names each run (not just each day).
             return build_nightly(
                 self.config, store=self.store, finnhub=self.finnhub,
-                day_ordinal=date.today().toordinal(),
+                day_ordinal=rotation_tick(datetime.utcnow()),
             )
         limit = uni.get("limit") or None
         return self.sec.list_tickers(limit=limit)

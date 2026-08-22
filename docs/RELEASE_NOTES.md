@@ -1,5 +1,18 @@
 # Release notes
 
+## v0.35.0 — Run the scheduled report more than once a day (2026-08-22)
+
+The scheduled report can now run on a **sub-daily** cadence. In Jobs → Scheduled report →
+Configure, the new **Frequency** control lets you choose *Once a day* (as before) or *Every
+N hours* (1, 2, 3, 4, 6, 8 or 12 hours) at a chosen minute past the hour, on the days you
+pick. Resolution is down to 5 minutes (the hosting platform's finest).
+
+Crucially, each run now covers **fresh names**: the universe rotation advances every hour,
+so running e.g. every 4 hours spreads coverage across the candidate pool through the day
+instead of re-screening the same list — and the next-run preview reflects exactly what each
+run will pick. Together with the 90-day re-analysis cooldown, frequent runs broaden coverage
+rather than repeat work.
+
 ## v0.34.1 — See the cooldown in the next-run preview (2026-08-22)
 
 The "what the next run will screen" preview (Jobs → Scheduled report → Configure) now spells

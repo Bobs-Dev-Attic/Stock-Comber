@@ -519,8 +519,24 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
       <h2>📅 Scheduled report</h2>
       <div class="sub">When the hosted nightly “hidden gems” run fires.</div>
       <label class="dlg-l" style="display:flex;align-items:center;gap:.5rem;font-weight:600"><input type="checkbox" id="sched-enabled"> Enabled</label>
-      <label class="dlg-l">Time (UTC)</label>
+      <label class="dlg-l">Frequency</label>
+      <select id="sched-freq">
+        <option value="daily">Once a day</option>
+        <option value="interval">Every N hours</option>
+      </select>
+      <label class="dlg-l" id="sched-interval-l" hidden>Every</label>
+      <select id="sched-interval" hidden>
+        <option value="1">1 hour</option>
+        <option value="2">2 hours</option>
+        <option value="3">3 hours</option>
+        <option value="4" selected>4 hours</option>
+        <option value="6">6 hours</option>
+        <option value="8">8 hours</option>
+        <option value="12">12 hours</option>
+      </select>
+      <label class="dlg-l" id="sched-time-l">Time (UTC)</label>
       <input id="sched-time" type="time" step="300" value="06:30" title="5-minute steps — GitHub's finest schedule resolution">
+      <div class="hint" id="sched-min-hint" hidden style="margin:.1rem 0 0">Runs at this many minutes past every Nth hour (the hour part is ignored in interval mode).</div>
       <label class="dlg-l">Days</label>
       <select id="sched-days">
         <option value="1-5">Weekdays</option>
@@ -1449,16 +1465,46 @@ function schedHint(msg, bad) {
   const el = $("#sched-hint"); el.textContent = msg || "";
   el.style.color = bad ? "var(--fail-ink)" : "var(--muted)";
 }
-// cron "M H D Mo Dow" -> {time:"HH:MM", days:"Dow"} and back (minute+hour only).
+// cron "M H D Mo Dow" <-> form. Supports "once a day" (M H) and "every N hours"
+// (hour field "*/N"); the minute is honoured in both modes.
 function cronToForm(cron) {
   const p = String(cron || "").trim().split(/\s+/);
   if (p.length < 5) return null;
-  const m = String(p[0]).padStart(2,"0"), h = String(p[1]).padStart(2,"0");
-  return { time: `${h}:${m}`, days: p[4] };
+  const mm = String(parseInt(p[0], 10) || 0).padStart(2, "0");
+  const hourField = String(p[1] || "*");
+  const stepM = hourField.match(/^\*\/(\d+)$/);
+  if (stepM) {
+    return { mode: "interval", interval: Math.max(1, parseInt(stepM[1], 10) || 1),
+             time: `00:${mm}`, days: p[4] };
+  }
+  const h = String(parseInt(p[1], 10) || 0).padStart(2, "0");
+  return { mode: "daily", interval: 4, time: `${h}:${mm}`, days: p[4] };
 }
-function formToCron(time, days) {
+function formToCron(mode, time, interval, days) {
   const [h, m] = (time || "06:30").split(":");
-  return `${parseInt(m,10)||0} ${parseInt(h,10)||0} * * ${days || "1-5"}`;
+  const min = parseInt(m, 10) || 0, dow = days || "1-5";
+  if (mode === "interval") {
+    const n = Math.max(1, Math.min(23, parseInt(interval, 10) || 4));
+    return `${min} */${n} * * ${dow}`;
+  }
+  return `${min} ${parseInt(h, 10) || 0} * * ${dow}`;
+}
+// Show the interval picker (and the minute-only hint) only in interval mode.
+function syncSchedFreq() {
+  const interval = $("#sched-freq").value === "interval";
+  $("#sched-interval").hidden = !interval;
+  $("#sched-interval-l").hidden = !interval;
+  $("#sched-min-hint").hidden = !interval;
+  $("#sched-time-l").textContent = interval ? "Minute past the hour (UTC)" : "Time (UTC)";
+}
+// A human summary of a schedule form (for the overview card / save message).
+function schedFormSummary(f) {
+  const days = SCHED_DAYS[f.days] || f.days;
+  if (f.mode === "interval") {
+    const mm = (f.time || "00:00").split(":")[1] || "00";
+    return `every ${f.interval}h at :${mm} · ${days}`;
+  }
+  return `${f.time} UTC · ${days}`;
 }
 async function loadSchedule() {
   try {
@@ -1471,9 +1517,15 @@ async function loadSchedule() {
     $("#sched-enabled").checked = configured ? !!sc.enabled : true;
     const f = cronToForm(cron);
     if (f) {
+      $("#sched-freq").value = f.mode === "interval" ? "interval" : "daily";
+      if (f.mode === "interval") {
+        const io = Array.from($("#sched-interval").options).find(o => +o.value === f.interval);
+        $("#sched-interval").value = io ? String(f.interval) : "4";
+      }
       $("#sched-time").value = f.time;
       const opt = Array.from($("#sched-days").options).find(o => o.value === f.days);
       $("#sched-days").value = opt ? f.days : "1-5";
+      syncSchedFreq();
     }
     if (!d.storage_enabled) schedHint("Connect a database (Settings) to save a schedule.");
     else if (!configured) schedHint("Using the default nightly run (06:30 UTC, weekdays). Adjust and Save to change when it runs.");
@@ -1486,26 +1538,30 @@ async function loadSchedule() {
     renderSchedStrats(strats);
     // Overview summary card.
     const enabled = configured ? !!sc.enabled : true;
-    const g = cronToForm(cron) || { time: "06:30", days: "1-5" };
+    const g = cronToForm(cron) || { mode: "daily", time: "06:30", interval: 4, days: "1-5" };
     const summary = $("#sched-summary");
     if (summary) {
       const stratTxt = strats.length ? " · " + strats.map(stratLabel).join(", ") : "";
       summary.textContent = enabled
-        ? `Enabled · ${g.time} UTC · ${SCHED_DAYS[g.days] || g.days}${configured ? "" : " (default)"}${stratTxt}`
+        ? `Enabled · ${schedFormSummary(g)}${configured ? "" : " (default)"}${stratTxt}`
         : "Disabled — the nightly run won't fire until you enable it." + (stratTxt ? " Strategies:" + stratTxt.replace(" ·", "") : "");
     }
   } catch (e) { schedHint("Couldn't load the schedule.", true); }
 }
 // Proleptic-Gregorian ordinal (matches Python date.toordinal) for the next run's UTC date.
+function nextRunTarget() {
+  return countdownTarget || (typeof nextScheduledRun === "function" && nextScheduledRun(schedCron, new Date())) || new Date();
+}
 function nextRunOrdinal() {
-  const t = countdownTarget || (typeof nextScheduledRun === "function" && nextScheduledRun(schedCron, new Date())) || new Date();
+  const t = nextRunTarget();
   return Math.floor(Date.UTC(t.getUTCFullYear(), t.getUTCMonth(), t.getUTCDate()) / 86400000) + 719163;
 }
+function nextRunHour() { return nextRunTarget().getUTCHours(); }
 async function previewNightly() {
   const el = $("#nightly-preview"); if (!el) return;
   el.textContent = "Loading the next run's candidate pool…";
   try {
-    const d = await (await fetch("/api/universe?nightly=1&ordinal=" + nextRunOrdinal())).json();
+    const d = await (await fetch("/api/universe?nightly=1&ordinal=" + nextRunOrdinal() + "&hour=" + nextRunHour())).json();
     if (d.error) { el.textContent = "Couldn't load preview: " + d.error; return; }
     const rows = d.results || [];
     if (!rows.length) {
@@ -1542,6 +1598,7 @@ async function previewNightly() {
   } catch (e) { el.textContent = "Preview failed: " + e.message; }
 }
 $("#preview-nightly").onclick = previewNightly;
+$("#sched-freq").onchange = syncSchedFreq;
 /* Batch-screen the whole next-run pool (up to the cap) with the scheduled
    strategies, then show every ticker's result together in the table. */
 const NIGHTLY_SCREEN_CAP = 40;   // keep the live screen under the 60s function limit
@@ -1574,7 +1631,9 @@ $("#save-sched").onclick = async () => {
   const key = apiKey();
   if (!key) { schedHint("An API key is required to save the schedule.", true); return; }
   const schedule = { enabled: $("#sched-enabled").checked,
-    cron: formToCron($("#sched-time").value, $("#sched-days").value) };
+    cron: formToCron($("#sched-freq").value, $("#sched-time").value,
+                     $("#sched-interval").value, $("#sched-days").value) };
+  const when = schedFormSummary(cronToForm(schedule.cron) || {});
   const btn = $("#save-sched"); const label = btn.textContent;
   btn.disabled = true; btn.textContent = "Saving…";
   try {
@@ -1582,7 +1641,7 @@ $("#save-sched").onclick = async () => {
       { method: "POST", headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ schedule }) });
     const d = await res.json().catch(() => ({}));
-    schedHint(res.ok ? `Saved — the hosted nightly run is now ${schedule.enabled ? "enabled at " + $("#sched-time").value + " UTC" : "disabled"} (${schedule.cron}). The 5-minute heartbeat picks this up automatically.`
+    schedHint(res.ok ? `Saved — the hosted nightly run is now ${schedule.enabled ? "enabled: " + when : "disabled"} (${schedule.cron}). The 5-minute heartbeat picks this up automatically.`
       : "Save failed: " + (d.error || res.status) + (d.problems ? " — " + d.problems.join("; ") : ""), !res.ok);
     if (res.ok) { loadCountdown(); loadSchedule(); setTimeout(closeJobDialog, 900); }  // refresh countdown + summary
   } catch (e) { schedHint("Save failed: " + e.message, true); }

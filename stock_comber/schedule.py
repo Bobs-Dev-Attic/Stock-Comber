@@ -28,6 +28,14 @@ HEARTBEAT_MINUTES = 5
 DEFAULT_SCHEDULE = {"enabled": True, "cron": "30 6 * * 1-5"}
 
 
+def rotation_tick(now) -> int:
+    """Seed for the nightly universe rotation that advances every hour, so a
+    shorter-than-daily schedule (e.g. every 4 hours) screens fresh names on each
+    run rather than repeating the same day's pool. Deterministic from the run's
+    UTC time, so the dashboard preview can reproduce it for the next run."""
+    return now.toordinal() * 24 + now.hour
+
+
 def _match_field(value: int, spec: str, lo: int, hi: int) -> bool:
     """Match a single cron field. Supports ``*``, ``a``, ``a,b``, ``a-b`` and
     ``*/n`` / ``a-b/n`` steps, bounded to ``[lo, hi]``."""

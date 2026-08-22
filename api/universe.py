@@ -42,8 +42,15 @@ def build_nightly_preview(params) -> dict:
         ordinal = int(params.get("ordinal", [""])[0])
     except (ValueError, TypeError):
         ordinal = datetime.date.today().toordinal()
+    try:
+        hour = min(23, max(0, int(params.get("hour", [""])[0])))
+    except (ValueError, TypeError):
+        hour = 0
 
-    tickers = build_nightly(cfg, store, finnhub=None, day_ordinal=ordinal)
+    # Rotation advances hourly (see schedule.rotation_tick), so the preview seeds
+    # the pool by the next run's date *and* hour to match what will actually run.
+    tick = ordinal * 24 + hour
+    tickers = build_nightly(cfg, store, finnhub=None, day_ordinal=tick)
 
     catalog = {}
     if getattr(store, "enabled", False):
