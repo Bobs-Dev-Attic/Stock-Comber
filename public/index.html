@@ -147,7 +147,7 @@
   .crit-row select.metric { flex: 1 1 200px; }
   .crit-row .rm { border: 0; background: transparent; color: var(--fail-ink); cursor: pointer; font-size: 1.2rem; line-height: 1; }
   /* detail modal */
-  .overlay { position: fixed; inset: 0; background: var(--overlay); display: none; align-items: flex-start; justify-content: center; padding: 4vh 1rem; overflow-y: auto; z-index: 20; }
+  .overlay { position: fixed; inset: 0; background: var(--overlay); display: none; align-items: flex-start; justify-content: center; padding: 4vh 1rem; overflow-y: auto; z-index: 50; }
   .overlay.open { display: flex; }
   .modal { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow); width: min(720px, 100%); padding: 1.4rem 1.5rem; }
   .modal h2 { margin: 0 0 .1rem; font-size: 1.35rem; }
@@ -1029,6 +1029,7 @@ function failuresBlock(r) {
     + `<div class="fails">${items}</div>`;
 }
 function openDetail(r) {
+  hideBanner();
   const m = r.metrics || {};
   const crits = (r.criteria||[]).map(c => {
     const a = c.actual==null?"—":fmt(c.actual); const th = c.threshold==null?null:fmt(c.threshold);
@@ -1808,6 +1809,7 @@ function scoresHtml(sc) {
     `profitability &amp; balance sheet, <b>Growth</b> = 5-year trends.</div>`;
 }
 function openAnalysis(data) {
+  hideBanner();   // the "Analyzing…" toast is redundant (and would cover the ✕) once the dialog is up
   const results = data.results || [];
   const signalHtml = signalBanner(data.signal);
   const s = data.sentiment, news = data.news || [];
