@@ -4,6 +4,19 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.37.2] - 2026-08-22
+
+### Added
+- **Project documentation for contributors and AI agents.** New `ARCHITECTURE.md` (codebase
+  map, the 12-serverless-function cap, module index, theming/config/secrets contracts),
+  `AGENTS.md` (the standing per-feature release process, hard constraints, and hard-won
+  gotchas), `docs/DATASOURCES.md` (each upstream provider, its endpoints, terms-of-service
+  posture, and the source-swap procedure), and a prioritized `TODO.md` distilled from a
+  multi-perspective review (security, reliability, memory/scale, UX, product). Documentation
+  only — no code or behavior changes.
+
+[0.37.2]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.37.2
+
 ## [0.37.1] - 2026-08-22
 
 ### Added
