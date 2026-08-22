@@ -74,8 +74,15 @@ def _status(cfg: dict | None = None):
     }
 
 
+from stock_comber.apiguard import guard  # noqa: E402
+
+
 class handler(BaseHTTPRequestHandler):
     def do_GET(self):
+        ok, _rl = guard(self, "settings")
+        if not ok:
+            self._json(429, {"error": "rate limit exceeded — slow down", **_rl})
+            return
         store = get_storage()
         cfg = effective_config(load_config(), store)
         # Whether the user has actually saved a schedule (vs. the config default).
@@ -89,6 +96,10 @@ class handler(BaseHTTPRequestHandler):
                          **_status(cfg)})
 
     def do_POST(self):
+        ok, _rl = guard(self, "settings")
+        if not ok:
+            self._json(429, {"error": "rate limit exceeded — slow down", **_rl})
+            return
         configured = os.environ.get("STOCK_COMBER_API_KEY")
         if not configured:
             self._json(503, {"error": "settings API not configured "

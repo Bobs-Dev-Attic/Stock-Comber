@@ -32,8 +32,15 @@ def _ticker_map():
     return _MAP
 
 
+from stock_comber.apiguard import guard  # noqa: E402
+
+
 class handler(BaseHTTPRequestHandler):
     def do_GET(self):
+        ok, _rl = guard(self, "tickers")
+        if not ok:
+            self._send(429, {"error": "rate limit exceeded — slow down", **_rl})
+            return
         params = parse_qs(urlparse(self.path).query)
         q = params.get("q", [""])[0]
         try:

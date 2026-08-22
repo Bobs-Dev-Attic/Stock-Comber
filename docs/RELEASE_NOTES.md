@@ -1,5 +1,23 @@
 # Release notes
 
+## v0.32.0 — API audit log & configurable rate limit (2026-08-22)
+
+**See who's calling the API.** Every request to the JSON API is now recorded in an access
+log — the endpoint, method, resulting status, time, and a **non-secret** client id (the
+caller's IP, or a short fingerprint of the API key; the key itself is never stored).
+Browse it on the dashboard's **API** tab, filter by endpoint, or fetch it with
+`GET /api/runs?audit=1`.
+
+**Throttle abusive callers.** A configurable per-client rate limit protects the API:
+by default 120 requests per 60 seconds, bucketed by IP. Over-limit requests get an HTTP
+`429` (and are logged as such). Adjust everything under **Settings → API access & rate
+limit** — turn enforcement on/off, set the request count and window, and pick how clients
+are bucketed (by IP, by API key, or globally).
+
+Both features kick in only when a database is configured, and they're built to be safe:
+the guard **fails open**, so a logging or rate-limit hiccup can never take the API down.
+No new serverless function was added — the app stays within its hosting limits.
+
 ## v0.31.0 — Click History rows to open the analysis (2026-08-21)
 
 The **History** tab is now interactive. Click any row in **Queued & running** (or a

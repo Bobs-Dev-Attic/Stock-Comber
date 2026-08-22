@@ -64,3 +64,27 @@ def test_job_flags_duplicate_names():
     cfg = load_config()
     cfg["jobs"] = [{"name": "Dupe"}, {"name": "dupe"}]
     assert any("duplicate job name" in p for p in validate_config(cfg))
+
+
+def test_default_config_has_api_block():
+    cfg = load_config()
+    rl = cfg["api"]["rate_limit"]
+    assert cfg["api"]["audit"] is True
+    assert rl["enabled"] is True and rl["max_requests"] >= 1
+    assert rl["scope"] in ("ip", "key", "global")
+
+
+def test_validate_flags_bad_rate_limit():
+    cfg = load_config()
+    cfg["api"]["rate_limit"]["max_requests"] = 0
+    cfg["api"]["rate_limit"]["scope"] = "planet"
+    problems = validate_config(cfg)
+    assert any("max_requests" in p for p in problems)
+    assert any("scope" in p for p in problems)
+
+
+def test_validate_accepts_tuned_rate_limit():
+    cfg = load_config()
+    cfg["api"]["rate_limit"] = {"enabled": False, "max_requests": 30,
+                                "window_seconds": 10, "scope": "key"}
+    assert validate_config(cfg) == []

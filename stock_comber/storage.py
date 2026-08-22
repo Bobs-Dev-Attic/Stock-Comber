@@ -110,6 +110,18 @@ CREATE TABLE IF NOT EXISTS theses (
 );
 CREATE INDEX IF NOT EXISTS idx_theses_ticker ON theses(ticker);
 CREATE INDEX IF NOT EXISTS idx_theses_created ON theses(created_at DESC);
+CREATE TABLE IF NOT EXISTS api_audit (
+    id        BIGSERIAL PRIMARY KEY,
+    ts        TIMESTAMPTZ NOT NULL DEFAULT now(),
+    endpoint  TEXT NOT NULL,        -- e.g. 'screen', 'settings'
+    method    TEXT NOT NULL,        -- GET | POST
+    status    INTEGER NOT NULL,     -- HTTP-ish status recorded for the call
+    scope     TEXT,                 -- rate-limit bucket: ip | key | global
+    client    TEXT,                 -- non-secret client id (ip or key fingerprint)
+    note      TEXT
+);
+CREATE INDEX IF NOT EXISTS idx_audit_ts ON api_audit(ts DESC);
+CREATE INDEX IF NOT EXISTS idx_audit_client ON api_audit(client, ts DESC);
 """
 
 
@@ -216,6 +228,17 @@ class NullStorage:
 
     def delete_thesis(self, thesis_id: int) -> bool:
         return False
+
+    # -- API audit / rate limit (no-op) --
+    def record_api_call(self, endpoint, method, status, scope=None,
+                        client=None, note=None) -> None:
+        return None
+
+    def list_api_audit(self, limit: int = 100, endpoint=None) -> list[dict]:
+        return []
+
+    def count_api_calls(self, client: str, window_seconds: int) -> int:
+        return 0
 
 
 class PostgresStorage:
@@ -520,6 +543,53 @@ class PostgresStorage:
                 deleted = cur.rowcount > 0
             conn.commit()
         return deleted
+
+    # -- API audit / rate limit -----------------------------------------
+    def record_api_call(self, endpoint, method, status, scope=None,
+                        client=None, note=None) -> None:
+        with self._connect() as conn:
+            self._ensure_schema(conn)
+            with conn.cursor() as cur:
+                cur.execute(
+                    "INSERT INTO api_audit (endpoint, method, status, scope, "
+                    "client, note) VALUES (%s,%s,%s,%s,%s,%s)",
+                    (str(endpoint)[:64], str(method)[:8], int(status),
+                     (str(scope)[:16] if scope else None),
+                     (str(client)[:80] if client else None),
+                     (str(note)[:200] if note else None)))
+            conn.commit()
+
+    def list_api_audit(self, limit: int = 100, endpoint=None) -> list[dict]:
+        with self._connect() as conn:
+            self._ensure_schema(conn)
+            with conn.cursor() as cur:
+                if endpoint:
+                    cur.execute(
+                        "SELECT ts, endpoint, method, status, scope, client, note "
+                        "FROM api_audit WHERE endpoint = %s "
+                        "ORDER BY ts DESC LIMIT %s", (endpoint, limit))
+                else:
+                    cur.execute(
+                        "SELECT ts, endpoint, method, status, scope, client, note "
+                        "FROM api_audit ORDER BY ts DESC LIMIT %s", (limit,))
+                cols = ["ts", "endpoint", "method", "status", "scope", "client", "note"]
+                out = []
+                for r in cur.fetchall():
+                    d = dict(zip(cols, r))
+                    d["ts"] = d["ts"].isoformat() if d["ts"] else None
+                    out.append(d)
+                return out
+
+    def count_api_calls(self, client: str, window_seconds: int) -> int:
+        with self._connect() as conn:
+            self._ensure_schema(conn)
+            with conn.cursor() as cur:
+                cur.execute(
+                    "SELECT count(*) FROM api_audit WHERE client = %s "
+                    "AND ts > now() - make_interval(secs => %s)",
+                    (client, float(window_seconds)))
+                row = cur.fetchone()
+                return int(row[0]) if row else 0
 
     # -- settings --------------------------------------------------------
     def get_settings(self) -> dict:

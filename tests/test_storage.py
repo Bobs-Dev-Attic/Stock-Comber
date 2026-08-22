@@ -61,3 +61,10 @@ def test_null_storage_analytics_shape():
 def test_null_storage_list_all_results_empty():
     assert NullStorage().list_all_results() == []
     assert NullStorage().list_all_results(limit=10) == []
+
+
+def test_null_storage_api_audit_noop():
+    s = NullStorage()
+    assert s.record_api_call("screen", "GET", 200, "ip", "ip:1.2.3.4") is None
+    assert s.list_api_audit() == []
+    assert s.count_api_calls("ip:1.2.3.4", 60) == 0
