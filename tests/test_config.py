@@ -96,3 +96,9 @@ def test_default_cooldown_and_validation():
     assert validate_config(cfg) == []
     cfg["universe"]["nightly"]["reanalyze_cooldown_days"] = -5
     assert any("reanalyze_cooldown_days" in p for p in validate_config(cfg))
+
+
+def test_backtest_on_analysis_default_on():
+    cfg = load_config()
+    assert cfg["data"]["backtest_on_analysis"] is True
+    assert validate_config(cfg) == []

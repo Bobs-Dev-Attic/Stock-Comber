@@ -106,6 +106,12 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
 
   <div class="card"><h2>Output</h2><div class="grid" id="output"></div></div>
 
+  <div class="card" id="sec-analysis">
+    <h2>Analysis</h2>
+    <p class="hint" style="margin-top:0">Options for the deep-dive analysis (the “Analyze now” report and queued analyses).</p>
+    <div class="grid" id="analysis"></div>
+  </div>
+
   <div class="card" id="sec-api">
     <h2>API access &amp; rate limit</h2>
     <p class="hint" style="margin-top:0">Record every API request in the access log (shown on the dashboard's API tab) and cap how many requests one client may make per time window. Both apply only when a database is configured. Requests over the limit get an HTTP <code>429</code>.</p>
@@ -187,6 +193,9 @@ const UNIVERSE = [
 const OUTPUT = [
   ["output.formats","Formats (comma)",CSV],["output.top_n","Top N rows",I],
   ["output.only_passing","Only passing",B],["output.sort_by","Sort by","text"],
+];
+const ANALYSIS = [
+  ["data.backtest_on_analysis","Run a backtest in each analysis",B],
 ];
 const API = [
   ["api.audit","Record API access log",B],
@@ -297,7 +306,7 @@ async function load(){
     renderFields("piotroski",PIOTROSKI); renderFields("greenblatt",GREENBLATT);
     renderFields("lynch",LYNCH); renderFields("netnet",NETNET);
     renderFields("universe",UNIVERSE); renderFields("output",OUTPUT);
-    renderFields("api",API);
+    renderFields("analysis",ANALYSIS); renderFields("api",API);
     $("#crit-list").innerHTML=""; (get(cfg,"custom.criteria")||[]).forEach(c=>addCrit(c.metric,c.op,c.value));
     $("#custom_pass").value=get(cfg,"custom.pass_ratio")??"";
     $("#apikey").value=sessionStorage.getItem("sc_key")||"";

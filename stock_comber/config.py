@@ -70,6 +70,9 @@ DEFAULT_CONFIG: dict[str, Any] = {
         # Fetch Finnhub's metric bundle for every screened company (1 extra call
         # per ticker). Off by default to conserve the free-tier rate limit.
         "finnhub_enrich_results": False,
+        # Run a per-strategy backtest as part of a full deep-dive analysis (one
+        # extra price-history fetch). On by default; toggle off in Settings.
+        "backtest_on_analysis": True,
     },
     # Persistence. Leave dsn null to read DATABASE_URL/POSTGRES_URL from the
     # environment (e.g. a free Neon Postgres). Without any DSN, runs are not
