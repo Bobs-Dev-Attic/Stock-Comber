@@ -1,5 +1,15 @@
 # Release notes
 
+## v0.41.0 — UX & accessibility (2026-08-22)
+
+The review backlog's P3 batch, all in the dashboard. New visitors get a **dismissible welcome
+note** that says what the tool is — a research shortlist, not advice — and points to the About
+and Glossary pages. The **dialogs are now keyboard-accessible**: opening one moves focus inside
+it, Tab stays trapped within it, **Escape** closes it, and focus returns to wherever you were;
+the view tabs also navigate with the arrow keys. The layout was checked at phone width (375px)
+with no horizontal overflow, and the **"not investment advice" footer** now appears on the
+Settings and Thesis pages too. No functional changes to screening.
+
 ## v0.40.0 — Memory & scale (2026-08-22)
 
 The review backlog's P2 batch: making the nightly run faster and leaner as the universe grows.

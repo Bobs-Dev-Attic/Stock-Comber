@@ -4,6 +4,25 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.41.0] - 2026-08-22
+
+### Added
+- **First-run welcome.** A dismissible note on the dashboard explains what Stock-Comber is
+  (a research shortlist, not investment advice) and links to the About and Glossary pages;
+  the dismissal is remembered per browser.
+- **"Not investment advice" footers** added to the Settings and Thesis sub-pages (the two that
+  lacked the caveat the other pages already carried).
+
+### Accessibility
+- **Modal focus management.** The analysis dialog, job dialog, and nav drawer now share a
+  focus-trap layer: focus moves into the dialog on open, Tab / Shift-Tab cycle within it,
+  **Escape** closes the top-most dialog, and focus returns to the element that opened it.
+- **Keyboard tab navigation.** The view tabs (Full list / Jobs / History / API) respond to
+  ←/→/↑/↓ and Home/End.
+- Verified at 375px width — the dashboard and sub-pages have no horizontal body overflow.
+
+[0.41.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.41.0
+
 ## [0.40.0] - 2026-08-22
 
 ### Performance
