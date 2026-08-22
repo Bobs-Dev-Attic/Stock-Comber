@@ -719,6 +719,7 @@ function setStatus(tab, text) {
 }
 function showTab(tab) {
   activeTab = tab;
+  try { localStorage.setItem("sc_tab", tab); } catch (e) {}   // remember across refreshes
   document.querySelectorAll(".tab").forEach(b => b.setAttribute("aria-selected", b.dataset.tab === tab));
   document.querySelectorAll(".tabpanel").forEach(p => p.hidden = p.dataset.panel !== tab);
   // The shared results table serves Full list + Jobs; History & API have their own content.
@@ -2371,7 +2372,13 @@ $("#theme-toggle").onclick = cycleTheme;
 /* init */
 wireMenu("cols-menu"); wireMenu("export-menu"); wireMenu("strat-menu"); wireMenu("cstrat-menu"); wireMenu("tmpl-menu");
 buildColsMenu(); buildStratMenu(); renderHead();
-showTab("full");   // landing: every company across all stored runs
+// Restore the last-viewed tab across refreshes (default to the Full-list landing).
+(function () {
+  const TABS = ["full", "jobs", "history", "api"];
+  let saved = "full";
+  try { const s = localStorage.getItem("sc_tab"); if (TABS.includes(s)) saved = s; } catch (e) {}
+  showTab(saved);
+})();
 // Lazily build the Templates menu the first time it's opened.
 $("#tmpl-btn").addEventListener("click", () => { if (!tmplBuilt) { tmplBuilt = true; buildTmplMenu(); } }, true);
 </script>
