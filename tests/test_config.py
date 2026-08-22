@@ -102,3 +102,9 @@ def test_backtest_on_analysis_default_on():
     cfg = load_config()
     assert cfg["data"]["backtest_on_analysis"] is True
     assert validate_config(cfg) == []
+
+
+def test_backtest_in_nightly_default_on():
+    cfg = load_config()
+    assert cfg["data"]["backtest_in_nightly"] is True
+    assert validate_config(cfg) == []

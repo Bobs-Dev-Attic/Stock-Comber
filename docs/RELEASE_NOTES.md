@@ -1,5 +1,18 @@
 # Release notes
 
+## v0.37.0 — Backtest edge in the nightly report (2026-08-22)
+
+The nightly "hidden gems" report now carries a **Backtest edge %** for each stock — a single
+number summarising how that name's value-lens PASS verdicts have historically played out
+(the average, across lenses, of "next-year return after a PASS minus after a fail"). It
+appears as a default column in the dashboard's Full list and in the downloadable CSV /
+Markdown / HTML reports.
+
+It's on by default; turn it off under **Settings → Analysis → "Show a backtest edge in the
+nightly report"** if you'd rather keep the nightly run lean. Educational only (SEC
+fundamentals + Yahoo year-end prices, not advice). If you've customised your columns, use
+the column picker's reset to bring the new one in.
+
 ## v0.36.0 — Backtest built into every analysis (2026-08-22)
 
 Every deep-dive analysis now includes a **backtest** right in the report. For each value

@@ -4,6 +4,20 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.37.0] - 2026-08-22
+
+### Added
+- **Backtest edge in the nightly report.** The nightly "hidden gems" run now computes a
+  per-name **backtest edge** — the mean, across value lenses, of each lens's edge (avg
+  next-year return after a PASS minus after a fail) — and attaches it as `backtest_edge_pct`.
+  It shows as a default **"Backtest edge %"** column in the dashboard's Full list and in the
+  generated CSV/Markdown/HTML reports. On by default; toggle at **Settings → Analysis →
+  "Show a backtest edge in the nightly report"** (`data.backtest_in_nightly`). One extra
+  year-end price-history fetch per name; failures are skipped and never sink the run.
+  (Existing saved column layouts are unchanged — reset columns to pick up the new default.)
+
+[0.37.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.37.0
+
 ## [0.36.0] - 2026-08-22
 
 ### Added

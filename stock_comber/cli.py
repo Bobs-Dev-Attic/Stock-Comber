@@ -92,6 +92,36 @@ def _progress(i: int, total: int, ticker: str) -> None:
     print(f"  [{i}/{total}] {ticker}", file=sys.stderr)
 
 
+def _attach_backtest_edge(results, screener, cfg) -> None:
+    """Inject a per-name ``backtest_edge_pct`` into each result's metrics (nightly
+    report). One year-end price-history fetch per distinct ticker; failures are
+    skipped so they never sink the run."""
+    from .backtest import overall_edge
+    from .datasources import YahooSource
+    data = cfg.get("data", {})
+    yahoo = YahooSource(cache=getattr(screener.sec, "cache", None),
+                        timeout=data.get("request_timeout", 25),
+                        delay=data.get("request_delay_seconds", 0.0))
+    tickers = sorted({r.ticker for r in results})
+    edges: dict[str, float] = {}
+    for i, t in enumerate(tickers, 1):
+        company = screener.last_companies.get(t)
+        if company is None or not company.annuals:
+            continue
+        try:
+            hist = yahoo.fetch_history(t, years=10)
+            edge = overall_edge(company, hist, cfg) if hist else None
+            if edge is not None:
+                edges[t] = edge
+        except Exception as exc:
+            print(f"  backtest edge failed for {t}: {exc}", file=sys.stderr)
+        print(f"  backtest {i}/{len(tickers)} {t}", file=sys.stderr)
+    for r in results:
+        e = edges.get(r.ticker)
+        if e is not None and r.metrics is not None:
+            r.metrics["backtest_edge_pct"] = e
+
+
 def cmd_screen(args) -> int:
     cfg = _load(args)
     problems = validate_config(cfg)
@@ -106,6 +136,12 @@ def cmd_screen(args) -> int:
     screener.store = store  # share store for the nightly universe/rotation
     tickers = [t.upper() for t in args.tickers] or None
     results = screener.run(tickers, progress=_progress)
+
+    # For the nightly "hidden gems" report, attach a per-name backtest edge so it
+    # shows alongside the fundamentals (one extra price-history fetch per name).
+    if (cfg.get("universe", {}).get("mode") == "nightly"
+            and cfg.get("data", {}).get("backtest_in_nightly", True)):
+        _attach_backtest_edge(results, screener, cfg)
 
     # Persist the run when a database is configured.
     if cfg.get("storage", {}).get("persist_runs", True):

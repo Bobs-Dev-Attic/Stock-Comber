@@ -73,6 +73,10 @@ DEFAULT_CONFIG: dict[str, Any] = {
         # Run a per-strategy backtest as part of a full deep-dive analysis (one
         # extra price-history fetch). On by default; toggle off in Settings.
         "backtest_on_analysis": True,
+        # Also compute a per-name "backtest edge" for every stock in the nightly
+        # "hidden gems" report (one extra price-history fetch each). On by
+        # default; toggle off in Settings to keep the nightly run lean.
+        "backtest_in_nightly": True,
     },
     # Persistence. Leave dsn null to read DATABASE_URL/POSTGRES_URL from the
     # environment (e.g. a free Neon Postgres). Without any DSN, runs are not
