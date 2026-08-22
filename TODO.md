@@ -6,24 +6,32 @@ come first. Check items off as they ship; keep the ordering logical rather than 
 
 Legend: **P0** ship first · **P1** reliability/cost · **P2** memory/scale · **P3** UX/quality · **P4** product/strategy.
 
-## P0 — Security & correctness
-- [ ] **In-memory fallback rate limiter.** `apiguard.guard()` fails open when the DB is
-      unreachable (correct for availability), but that leaves *no* limit during an outage.
-      Add a per-warm-instance token bucket so a floor of protection survives DB failure.
-- [ ] **Bucket anonymous (no-key) requests.** Requests with no API key should be limited
-      by a coarse client signal (`apiguard._client_ip` already exists) so one anonymous
-      flood can't exhaust a shared bucket for everyone.
-- [ ] **Strict ticker validation** (`^[A-Z.\-]{1,10}$`) before any ticker is interpolated
-      into an upstream URL (Yahoo/Finnhub/SEC) — closes an SSRF/redirect vector.
-- [ ] **SQL parameterization audit + secret-leak test.** Confirm every `storage.py` query
-      uses psycopg params (never f-string SQL). Add a test asserting no `/api/*` response
-      body contains a known secret-shaped substring.
-- [ ] **Security headers** via `vercel.json`: `X-Content-Type-Options: nosniff`,
-      `Referrer-Policy`, `X-Frame-Options: DENY` (or CSP `frame-ancestors 'none'`).
-      A full CSP needs script nonces/hashes given the inline-heavy SPA — stage that later.
-- [ ] **Surface the "not investment advice" disclaimer in the UI** (page footer + the
-      analysis dialog), not only in generated reports — it must be visible at the point of
-      decision.
+## P0 — Security & correctness ✅ shipped in v0.38.0
+- [x] **In-memory fallback rate limiter.** `apiguard.guard()` now falls back to a bounded
+      per-warm-instance sliding-window limiter (`_MemoryLimiter`) when the DB count call
+      fails, so a database outage can't turn rate limiting fully off. A `degraded_count()`
+      counter + a warning log make the fallback visible.
+- [x] **Bucket anonymous (no-key) requests.** `client_id` buckets keyless requests by IP
+      under every scope (incl. `key`), so one anonymous flood can't exhaust a shared bucket.
+      Covered by a regression test.
+- [x] **Strict ticker validation.** New `stock_comber/validation.py` (`is_valid_ticker` /
+      `normalize_ticker`, `^[A-Z][A-Z0-9.\-]{0,9}$`) is enforced in `Screener.screen_ticker`
+      / `fetch_price` and defensively in the Yahoo + SEC-EDGAR fetchers before any URL is
+      built — closing the SSRF/path-injection vector. API handlers already validated at the
+      boundary.
+- [x] **SQL parameterization audit + secret-leak test.** Audited `storage.py` — every query
+      uses psycopg params (no f-string SQL). Added `tests/test_secrets_leak.py` asserting the
+      settings endpoint's `_redact`/`_status` never return the Finnhub key, DB URL, or export
+      key.
+- [x] **Security headers** via `vercel.json`: `X-Content-Type-Options: nosniff`,
+      `X-Frame-Options: DENY`, `Referrer-Policy`, `Permissions-Policy`, HSTS, and COOP.
+      (A full CSP still needs script nonces/hashes given the inline-heavy SPA — see P3.)
+- [x] **Surface the "not investment advice" disclaimer in the UI** — persistent page footer
+      on the SPA + a disclaimer line in the analysis dialog (verified via Playwright).
+
+### P0 follow-ups (deferred)
+- [ ] Strict Content-Security-Policy with script nonces/hashes (inline-heavy SPA).
+- [ ] Add the disclaimer footer to the 7 sub-pages too (SPA + dialog done).
 
 ## P1 — Reliability & cost
 - [ ] **Neon pooled connection string** + a module-level lazy connection reused across warm

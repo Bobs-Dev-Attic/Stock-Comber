@@ -105,5 +105,46 @@ def test_guard_never_raises_on_storage_error():
             raise RuntimeError("db down")
         def record_api_call(self, *a, **k):
             raise RuntimeError("db down")
+    apiguard._FALLBACK.reset()
     ok, meta = apiguard.guard(FakeHandler(), "screen", store=Boom(), cfg=_cfg())
-    assert ok is True   # count error -> treated as 0 -> allowed; record error swallowed
+    assert ok is True   # single call under limit -> allowed via in-memory fallback
+
+
+class BoomCount:
+    """DB configured but its count call always fails (simulated DB outage)."""
+    enabled = True
+    def count_api_calls(self, *a):
+        raise RuntimeError("db down")
+    def record_api_call(self, *a, **k):
+        return None
+
+
+def test_in_memory_fallback_enforces_floor_when_db_count_fails():
+    # With the DB count unavailable, the per-instance limiter must still block a
+    # flood past the configured limit (fails open, but not fully off).
+    apiguard._FALLBACK.reset()
+    before = apiguard.degraded_count()
+    store = BoomCount()
+    cfg = _cfg(max_requests=3)
+    results = [apiguard.guard(FakeHandler(), "screen", store=store, cfg=cfg)[0]
+               for _ in range(5)]
+    assert results[:3] == [True, True, True]      # first 3 allowed
+    assert results[3] is False and results[4] is False  # then blocked
+    assert apiguard.degraded_count() >= before + 5      # every call fell back
+
+
+def test_anonymous_request_buckets_by_ip_under_key_scope():
+    store = FakeStore(count=0)
+    h = FakeHandler(path="/api/screen?tickers=AAPL")  # no ?key=
+    ok, _ = apiguard.guard(h, "screen", store=store, cfg=_cfg(scope="key"))
+    assert ok is True
+    assert store.recorded[-1]["client"].startswith("ip:")
+
+
+def test_memory_limiter_prunes_and_bounds_buckets():
+    lim = apiguard._MemoryLimiter()
+    # Same client past the window resets the count (sliding window).
+    over, n = lim.hit("c", limit=2, window=60, now=0.0)
+    assert over is False and n == 1
+    over, n = lim.hit("c", limit=2, window=60, now=100.0)  # old hit pruned
+    assert over is False and n == 1

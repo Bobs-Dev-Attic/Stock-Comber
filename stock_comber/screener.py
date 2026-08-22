@@ -11,6 +11,7 @@ from .datasources import (
 )
 from .datasources.finnhub import resolve_api_key
 from .models import Company, Quote, ScreenResult
+from .validation import is_valid_ticker
 
 log = logging.getLogger("stock_comber")
 
@@ -72,6 +73,8 @@ class Screener:
 
     def fetch_price(self, ticker: str) -> Quote:
         """Try each price source in order; return the first quote with a price."""
+        if not is_valid_ticker(ticker):
+            return Quote(ticker=str(ticker)[:10].upper())
         last = Quote(ticker=ticker.upper())
         for src in self.price_sources:
             try:
@@ -109,6 +112,16 @@ class Screener:
     def screen_ticker(self, ticker: str) -> list[ScreenResult]:
         results: list[ScreenResult] = []
         company_error = None
+        # Reject malformed symbols before any upstream fetch (SSRF guard). Still
+        # return one error result per strategy so the run stays well-formed.
+        if not is_valid_ticker(ticker):
+            company = Company(ticker=str(ticker)[:10].upper())
+            self.last_companies[company.ticker] = company
+            for strat in self.config.get("strategies", []):
+                res = STRATEGIES[strat](company, self.config)
+                res.errors.append(f"invalid ticker symbol: {str(ticker)[:20]!r}")
+                results.append(res)
+            return results
         try:
             company = self.sec.fetch_company(ticker)
             if company is None:

@@ -80,9 +80,15 @@ Vercel Pro — a deliberate milestone, not an accident.
   `list_api_audit` / `count_api_calls`), and `recently_screened(days)`
   (scheduled runs only — excludes `meta.source` in `manual`/`queue`).
 - **`apiguard.py`** — **library, not an endpoint.** `guard(handler, endpoint)`
-  audits + rate-limits every request; **fails open** on any error; keys are
+  audits + rate-limits every request; **fails open** on any error, but with a
+  bounded per-instance in-memory limiter (`_MemoryLimiter`) as a floor when the
+  DB count is unavailable (`degraded_count()` surfaces how often). Keys are
   bucketed only by a SHA-256 fingerprint (`_fingerprint`) — the raw key is never
-  stored. `_client_ip` exists for anonymous bucketing.
+  stored; keyless requests bucket by IP (`_client_ip`).
+- **`validation.py`** — single source of truth for valid ticker symbols
+  (`is_valid_ticker` / `normalize_ticker`, `^[A-Z][A-Z0-9.\-]{0,9}$`). Enforced
+  in the screener and the Yahoo/SEC data sources before any URL is built
+  (SSRF/path-injection guard), and mirrored by the API handlers at the boundary.
 - **`report.py`** — `to_json/csv/markdown/html` renderers; columns include
   `avg_volume` and `backtest_edge_pct`.
 - **`cli.py`** — entry point (`stock-comber`); `cmd_screen`,
