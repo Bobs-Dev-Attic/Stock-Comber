@@ -30,6 +30,33 @@ class AnnualFacts:
 
 
 @dataclass
+class QuarterFacts:
+    """A single fiscal quarter (10-Q) of extracted fundamentals for one company.
+
+    Flow items (revenue, net income, EPS, operating cash flow) are the quarter's
+    own 3-month figures; balance-sheet items are the point-in-time snapshot as of
+    ``period_end``. Used for a fresher-than-annual read, not for the annual-based
+    strategy scoring.
+    """
+
+    period_end: str                       # ISO date, e.g. "2024-09-30"
+    fiscal_year: Optional[int] = None
+    revenue: Optional[float] = None
+    net_income: Optional[float] = None
+    eps: Optional[float] = None
+    operating_cash_flow: Optional[float] = None
+    total_assets: Optional[float] = None
+    total_liabilities: Optional[float] = None
+    stockholders_equity: Optional[float] = None
+    current_assets: Optional[float] = None
+    current_liabilities: Optional[float] = None
+    shares_outstanding: Optional[float] = None
+
+    def to_dict(self) -> dict[str, Any]:
+        return asdict(self)
+
+
+@dataclass
 class Quote:
     """Latest market price for a security."""
 
@@ -48,12 +75,17 @@ class Company:
     cik: Optional[str] = None
     name: Optional[str] = None
     annuals: list[AnnualFacts] = field(default_factory=list)
+    quarters: list["QuarterFacts"] = field(default_factory=list)
     quote: Optional[Quote] = None
     extra: Optional[dict] = None  # supplementary data (e.g. Finnhub metrics)
 
     @property
     def latest(self) -> Optional[AnnualFacts]:
         return self.annuals[-1] if self.annuals else None
+
+    @property
+    def latest_quarter(self) -> Optional["QuarterFacts"]:
+        return self.quarters[-1] if self.quarters else None
 
 
 @dataclass

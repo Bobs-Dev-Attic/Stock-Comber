@@ -215,7 +215,28 @@ METRIC_KEYS = [
     "roa_pct", "return_on_capital_pct", "earnings_yield_pct",
     "ncav_per_share", "earnings_cagr_5y_pct",
     "avg_volume", "dollar_volume",
+    # Latest reported quarter (10-Q) — fresher than the annual figures above.
+    "q_revenue", "q_net_income", "q_eps", "q_current_ratio",
 ]
+
+
+def quarterly_metrics(company: Company) -> dict:
+    """Latest-quarter (10-Q) figures, plus a ``latest_quarter`` end-date string.
+
+    Kept separate from the annual metrics so the strategy scoring (annual-based)
+    is unchanged — these are surfaced only for a fresher read on the dashboard.
+    """
+    q = company.latest_quarter
+    if q is None:
+        return {"q_revenue": None, "q_net_income": None, "q_eps": None,
+                "q_current_ratio": None, "latest_quarter": None}
+    return {
+        "q_revenue": q.revenue,
+        "q_net_income": q.net_income,
+        "q_eps": q.eps,
+        "q_current_ratio": _safe_div(q.current_assets, q.current_liabilities),
+        "latest_quarter": q.period_end,   # date string (not a numeric column)
+    }
 
 
 def compute_metrics(company: Company) -> dict[str, Optional[float]]:
@@ -224,9 +245,11 @@ def compute_metrics(company: Company) -> dict[str, Optional[float]]:
     price = company.quote.price if company.quote else None
     if latest is None:
         return {"price": price, "avg_volume": average_volume(company),
-                "dollar_volume": dollar_volume(company)}
+                "dollar_volume": dollar_volume(company),
+                **quarterly_metrics(company)}
     return {
         "price": price,
+        **quarterly_metrics(company),
         "revenue": latest.revenue,
         "net_income": latest.net_income,
         "eps": eps(latest),

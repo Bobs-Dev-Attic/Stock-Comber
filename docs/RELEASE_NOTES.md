@@ -1,5 +1,15 @@
 # Release notes
 
+## v0.43.0 — Quarterly (10-Q) fundamentals (2026-08-22)
+
+Annual filings can be nearly a year stale; this adds the **latest quarter** from each company's
+SEC **10-Q**. Stock-Comber now parses the most recent quarter's revenue, net income, and EPS
+(plus the quarter-end balance sheet) straight from the same EDGAR data it already uses — no new
+key or provider. You get four new optional columns — **Qtr revenue, Qtr net income, Qtr EPS,
+Qtr current ratio** — and the deep-dive dialog shows which quarter the figures are from. The
+strategy pass/fail logic still runs on the audited annual numbers; the quarterly view is there
+for a fresher read alongside it.
+
 ## v0.42.3 — "Last analyzed" column (2026-08-22)
 
 The Full list now has a **Last analyzed** column showing when each name was last screened (the
