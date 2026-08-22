@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Stock-Comber</title>
+<script>/* apply the saved theme before first paint to avoid a flash */
+try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.documentElement.setAttribute("data-theme",_t);}catch(e){}</script>
 <style>
   :root {
     --bg: #f6f7f9; --panel: #ffffff; --ink: #1a1d23; --muted: #5b6472;
@@ -12,14 +14,23 @@
     --chip: #eef1f4; --shadow: 0 1px 3px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.04);
     --overlay: rgba(20,24,30,.45);
   }
+  /* Dark palette — applied when the system prefers dark AND the user hasn't
+     forced light, or when the user explicitly picks dark from the menu. */
   @media (prefers-color-scheme: dark) {
-    :root {
+    :root:not([data-theme="light"]) {
       --bg: #0f1115; --panel: #171a20; --ink: #e7e9ee; --muted: #9aa4b2;
       --line: #262b34; --accent: #34c17f; --accent-ink: #bff2d6;
       --pass-bg: #12321e; --pass-ink: #57d999; --fail-ink: #e0966a; --near: #6b7583;
       --chip: #1f242c; --shadow: 0 1px 3px rgba(0,0,0,.4), 0 10px 30px rgba(0,0,0,.35);
       --overlay: rgba(0,0,0,.6);
     }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1115; --panel: #171a20; --ink: #e7e9ee; --muted: #9aa4b2;
+    --line: #262b34; --accent: #34c17f; --accent-ink: #bff2d6;
+    --pass-bg: #12321e; --pass-ink: #57d999; --fail-ink: #e0966a; --near: #6b7583;
+    --chip: #1f242c; --shadow: 0 1px 3px rgba(0,0,0,.4), 0 10px 30px rgba(0,0,0,.35);
+    --overlay: rgba(0,0,0,.6);
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--ink);
@@ -33,7 +44,8 @@
   /* activity banner */
   .banner { position: sticky; top: 0; z-index: 40; display: flex; align-items: center; gap: .6rem;
     padding: .6rem 1rem; font-size: .92rem; font-weight: 600; color: #fff; background: var(--accent);
-    box-shadow: 0 2px 8px rgba(0,0,0,.15); }
+    box-shadow: 0 2px 8px rgba(0,0,0,.15); cursor: pointer; }
+  .banner .dismiss { margin-left: auto; opacity: .85; font-weight: 700; flex: 0 0 auto; }
   .banner.queued { background: #eda100; color: #1a1a19; }
   .banner .spin { width: 15px; height: 15px; border-radius: 50%; border: 2px solid rgba(255,255,255,.45);
     border-top-color: #fff; animation: spin .7s linear infinite; flex: 0 0 auto; }
@@ -192,6 +204,8 @@
     border-radius: 8px; cursor: pointer; font-size: 1.15rem; line-height: 1; }
   .navlink { display: block; padding: .6rem .6rem; border-radius: 8px; text-decoration: none; color: var(--ink); font-size: .95rem; }
   .navlink:hover, .navlink:focus { background: color-mix(in srgb, var(--accent) 12%, transparent); outline: none; }
+  .navtheme { width: 100%; text-align: left; border: 0; background: transparent;
+    font: inherit; cursor: pointer; }
   .navdiv { height: 1px; background: var(--line); margin: .4rem .2rem; }
   @media (prefers-reduced-motion: reduce){ .navback, .navpane { transition: none; } }
   /* Jobs tab sections */
@@ -311,8 +325,9 @@
 </style>
 </head>
 <body>
-<div id="banner" class="banner" role="status" aria-live="polite" hidden>
+<div id="banner" class="banner" role="status" aria-live="polite" title="Tap to dismiss" hidden>
   <span class="spin" aria-hidden="true"></span><span id="banner-msg"></span>
+  <span class="dismiss" aria-hidden="true">✕</span>
 </div>
 <div class="wrap">
   <header>
@@ -600,6 +615,10 @@
     <a class="navlink" href="/analytics.html">📊 Analytics</a>
     <a class="navlink" href="/backtest.html">🧪 Backtest</a>
     <a class="navlink" href="/thesis.html">🎯 Theses</a>
+    <div class="navdiv"></div>
+    <button class="navlink navtheme" id="theme-toggle" type="button" aria-label="Toggle color theme">
+      <span id="theme-icon" aria-hidden="true">🌓</span> <span id="theme-label">Theme: System</span>
+    </button>
   </nav>
 </div>
 
@@ -614,9 +633,14 @@ function showBanner(msg, kind) {
   $("#banner-msg").textContent = msg;
   $("#banner").className = "banner" + (kind === "queued" ? " queued" : "");
   $("#banner").hidden = false;
-  if (kind === "queued") bannerTimer = setTimeout(hideBanner, 4500);
+  // Always auto-hide as a safety net so the banner can never appear "stuck":
+  // a quick 4.5s for queued toasts, a generous 45s ceiling for in-flight work
+  // (the op's own finally hides it sooner on success/failure).
+  bannerTimer = setTimeout(hideBanner, kind === "queued" ? 4500 : 45000);
 }
 function hideBanner() { clearTimeout(bannerTimer); $("#banner").hidden = true; }
+// Tapping the banner dismisses it (the request keeps running in the background).
+$("#banner").addEventListener("click", hideBanner);
 const STRAT_LABEL = {graham:"Graham (defensive)", buffett:"Buffett (quality)",
   piotroski:"Piotroski F-Score", greenblatt:"Greenblatt Magic Formula",
   lynch:"Lynch (GARP)", netnet:"Graham Net-Net (NCAV)", custom:"Custom criteria"};
@@ -2026,6 +2050,23 @@ $("#nav-btn").onclick = e => { e.stopPropagation(); openNav(); };
 $("#nav-back").onclick = closeNav;
 $("#nav-close").onclick = closeNav;
 document.addEventListener("keydown", e => { if (e.key === "Escape") closeNav(); });
+
+/* ---- color theme (System → Light → Dark) ---- */
+const THEMES = ["system", "light", "dark"];
+const THEME_META = { system: {icon:"🌓", label:"System"}, light: {icon:"☀️", label:"Light"}, dark: {icon:"🌙", label:"Dark"} };
+function currentTheme() { try { return localStorage.getItem("theme") || "system"; } catch(e) { return "system"; } }
+function applyTheme(t) {
+  const root = document.documentElement;
+  if (t === "light" || t === "dark") root.setAttribute("data-theme", t);
+  else root.removeAttribute("data-theme");
+  try { if (t === "system") localStorage.removeItem("theme"); else localStorage.setItem("theme", t); } catch(e) {}
+  const m = THEME_META[t] || THEME_META.system;
+  const lab = $("#theme-label"); if (lab) lab.textContent = "Theme: " + m.label;
+  const ic = $("#theme-icon"); if (ic) ic.textContent = m.icon;
+}
+function cycleTheme() { const i = THEMES.indexOf(currentTheme()); applyTheme(THEMES[(i + 1) % THEMES.length]); }
+applyTheme(currentTheme());   // sync the menu label with the (pre-applied) theme
+$("#theme-toggle").onclick = cycleTheme;
 
 /* init */
 wireMenu("cols-menu"); wireMenu("export-menu"); wireMenu("strat-menu"); wireMenu("cstrat-menu"); wireMenu("tmpl-menu");
