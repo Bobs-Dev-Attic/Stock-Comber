@@ -41,6 +41,9 @@ jobs:
         run: pip-audit --strict || true
 
   # Static type check. Lenient + non-blocking to start; ratchet stricter over time.
+  # Enforced (blocking): the stock_comber package must type-check clean. The
+  # config stays lenient (untyped bodies allowed) so this gates *new* type
+  # errors without requiring a full annotation sweep.
   typecheck:
     runs-on: ubuntu-latest
     steps:
@@ -53,4 +56,4 @@ jobs:
           python -m pip install --upgrade pip
           pip install -e ".[dev]" mypy
       - name: mypy
-        run: mypy stock_comber || true
+        run: mypy stock_comber

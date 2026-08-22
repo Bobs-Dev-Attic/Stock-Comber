@@ -81,6 +81,7 @@ with tooling, never by hand; re-test; push.
 - Data providers + ToS notes: `docs/DATASOURCES.md`
 - Scaling / Hobby→Pro decision: `docs/SCALING.md`
 - Privacy posture (no PII, secrets write-only): `PRIVACY.md`
-- CI (tests 3.9/3.11/3.12 + non-blocking `pip-audit` & `mypy`): `.github/workflows/ci.yml`;
-  dependency updates: `.github/dependabot.yml`
+- CI (tests 3.9/3.11/3.12; **enforced** `mypy stock_comber`; non-blocking `pip-audit`):
+  `.github/workflows/ci.yml`; dependency updates: `.github/dependabot.yml`. Run `mypy stock_comber`
+  before pushing — it now blocks CI.
 - Backlog: `TODO.md`

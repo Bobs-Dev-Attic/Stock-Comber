@@ -119,7 +119,10 @@ Legend: **P0** ship first · **P1** reliability/cost · **P2** memory/scale · *
       launch — the plan is documented; the code change is scoped but not done).
 - [ ] Opt-in nightly digest (RSS/email) — would trigger the privacy/unsubscribe work noted in
       `PRIVACY.md`.
-- [ ] Ratchet `mypy` from non-blocking → enforced, per-module.
+- [x] Ratchet `mypy` from non-blocking → **enforced** (v0.45.1). The `stock_comber` package
+      type-checks clean and the CI `typecheck` job now blocks on it (config stays lenient so it
+      gates *new* type errors without a full annotation sweep; `api/` handlers + `tests/` remain
+      out of scope for now).
 
 ## Cross-cutting
 - [x] Content-Security-Policy — a hardened same-origin CSP ships in v0.42.1 (see P0 follow-ups).

@@ -53,7 +53,9 @@ def validate_criteria(criteria: list) -> list[str]:
             problems.append(
                 f"custom.criteria[{i}].op must be one of {sorted(OPS)}")
         try:
-            float(c.get("value"))
+            # value is user-supplied and may be None/non-numeric — float() raises,
+            # which we turn into a validation message below.
+            float(c.get("value"))  # type: ignore[arg-type]
         except (TypeError, ValueError):
             problems.append(f"custom.criteria[{i}].value must be a number")
     return problems

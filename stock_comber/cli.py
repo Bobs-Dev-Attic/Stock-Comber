@@ -149,12 +149,14 @@ def _attach_backtest_edge(results, screener, cfg) -> None:
 
     if workers == 1:
         for i, t in enumerate(todo, 1):
-            _record(*_fetch(t), i)
+            tt, hist, err = _fetch(t)
+            _record(tt, hist, err, i)
     else:
         with ThreadPoolExecutor(max_workers=workers) as pool:
             futures = {pool.submit(_fetch, t): t for t in todo}
             for i, fut in enumerate(as_completed(futures), 1):
-                _record(*fut.result(), i)
+                tt, hist, err = fut.result()
+                _record(tt, hist, err, i)
 
     for r in results:
         e = edges.get(r.ticker)
