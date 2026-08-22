@@ -4,6 +4,21 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.42.1] - 2026-08-22
+
+### Security
+- **Content-Security-Policy.** Every response now carries a hardened, same-origin CSP
+  (`vercel.json`): `default-src 'self'` with external script/connect/frame/object/base-uri all
+  blocked, `form-action 'self'`, `frame-ancestors 'none'`, and `img-src 'self' data: https:` so
+  external company logos still load. `script-src`/`style-src` keep `'unsafe-inline'` — required
+  for a static, inline-heavy SPA served from the CDN (no request passes through a server to mint
+  a per-request nonce); no `'unsafe-eval'` is granted. Validated with Playwright (0 violations,
+  0 page errors; dialogs, theme toggle, and the logo path all work). A nonce/hash-strict policy
+  that drops `'unsafe-inline'` is tracked in `TODO.md` as a larger follow-up (edge middleware or
+  a build-step externalization of all inline JS/CSS + inline `style=`/`onerror`).
+
+[0.42.1]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.42.1
+
 ## [0.42.0] - 2026-08-22
 
 ### Added
