@@ -784,6 +784,7 @@ const METRIC_INFO = {
   avg_volume: "Average daily share volume — how actively the stock trades. A liquidity indicator: thinly-traded names are harder to enter or exit.",
   dollar_volume: "Average daily dollar volume (price × avg volume) — the standard liquidity gauge. Higher means you can trade size without moving the price.",
   backtest_edge_pct: "Historical edge: the average next-year return after this name's value-lens PASS verdicts minus after its fails, meaned across lenses. Directional evidence that its signals mattered — educational, not a track record.",
+  last_analyzed: "The date of the most recent screening run that produced this result — i.e. when this ticker was last analyzed. Blank for rows not drawn from a stored run.",
 };
 const OPS = ["<=","<",">=",">","==","!="];
 
@@ -793,8 +794,9 @@ const ALL_COLUMNS = [
   {key:"passed", label:"Pass", base:true},
   {key:"score_pct", label:"Score", base:true},
   ...METRICS.map(([key,label]) => ({key, label, base:false})),
+  {key:"last_analyzed", label:"Last analyzed", base:true},
 ];
-const DEFAULT_COLS = ["strategy","passed","score_pct","health_score","price","pe_ratio","pb_ratio","roe_pct","current_ratio","debt_to_equity","avg_volume","dollar_volume","backtest_edge_pct"];
+const DEFAULT_COLS = ["strategy","passed","score_pct","health_score","price","pe_ratio","pb_ratio","roe_pct","current_ratio","debt_to_equity","avg_volume","dollar_volume","backtest_edge_pct","last_analyzed"];
 let selectedCols = loadCols();
 
 function loadCols() {
@@ -921,8 +923,13 @@ function fmt(v) {
   return n.toFixed(2);
 }
 const humanize = s => s.replace(/_/g," ").replace(/\bpct\b/,"%").replace(/^\w/, c => c.toUpperCase());
-const cellValue = (r, key) => (key === "strategy" || key === "passed" || key === "score_pct")
-  ? r[key] : (r.metrics || {})[key];
+const cellValue = (r, key) =>
+  (key === "strategy" || key === "passed" || key === "score_pct") ? r[key]
+  : key === "last_analyzed" ? r.created_at
+  : (r.metrics || {})[key];
+// Compact date for the "Last analyzed" column (falls back to a dash).
+const fmtDate = s => { try { return s ? new Date(s).toLocaleDateString(undefined,
+  {year:"numeric", month:"short", day:"numeric"}) : "—"; } catch(e){ return "—"; } };
 
 /* ---- columns menu ---- */
 function buildColsMenu() {
@@ -1031,6 +1038,7 @@ const arrow = k => k === sortK ? `<span class="arrow">${sortDir<0?"▼":"▲"}</
 function sortField(r) {
   if (sortK === "ticker" || sortK === "strategy") return String(cellValue(r, sortK) || "");
   if (sortK === "passed") return r.passed ? 1 : 0;
+  if (sortK === "last_analyzed") { const t = Date.parse(r.created_at); return Number.isNaN(t) ? null : t; }
   return num(cellValue(r, sortK));
 }
 function render() {
@@ -1056,12 +1064,13 @@ function cell(r, key) {
   if (key === "strategy") return `<span class="l">${r.strategy}</span>`;
   if (key === "passed") return `<span class="badge ${r.passed?'pass':'near'}">${r.passed?'PASS':'—'}</span>`;
   if (key === "score_pct") return `<span class="bar"><i style="width:${Math.max(0,Math.min(100,r.score_pct||0))}%"></i></span> ${(r.score_pct??0).toFixed(0)}%`;
+  if (key === "last_analyzed") return fmtDate(r.created_at);
   return fmt((r.metrics||{})[key]);
 }
 
 /* ---- export ---- */
 const EXPORT_COLS = ["ticker","name","cik","strategy","passed","score","max_score","score_pct",
-  ...METRICS.map(m=>m[0])];
+  ...METRICS.map(m=>m[0]), "last_analyzed"];
 function download(filename, text, type) {
   const blob = new Blob([text], {type}); const url = URL.createObjectURL(blob);
   const a = document.createElement("a"); a.href = url; a.download = filename;
@@ -1074,6 +1083,7 @@ function toCSV(data) {
     const m = r.metrics || {};
     lines.push(EXPORT_COLS.map(k => {
       if (["ticker","name","cik","strategy","passed","score","max_score","score_pct"].includes(k)) return esc(r[k]);
+      if (k === "last_analyzed") return esc(r.created_at || "");
       return esc(m[k]);
     }).join(","));
   });

@@ -4,6 +4,16 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.42.3] - 2026-08-22
+
+### Added
+- **"Last analyzed" column on the Full list.** Shows the date of the most recent screening run
+  that produced each row (from the stored run's timestamp), sortable like any other column and
+  included in the CSV/JSON export. Rows not drawn from a stored run show "—". On by default;
+  toggle it from the Columns menu. Frontend-only.
+
+[0.42.3]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.42.3
+
 ## [0.42.2] - 2026-08-22
 
 ### Added
