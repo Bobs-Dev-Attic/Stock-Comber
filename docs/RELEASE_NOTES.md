@@ -1,5 +1,15 @@
 # Release notes
 
+## v0.33.0 — Theme toggle & un-stuck activity banner (2026-08-22)
+
+**Pick your theme.** The ☰ menu now has a theme switch that cycles **System → Light →
+Dark**. Your choice is remembered and applied instantly on the next visit (no flash), and
+"System" just follows your device's setting.
+
+**No more "stuck" banner.** The green activity banner at the top now always clears itself —
+it auto-hides after at most 45 seconds even if a request is slow, and you can tap it to
+dismiss it right away (the analysis keeps running in the background).
+
 ## v0.32.3 — Fix hidden close button on the analysis dialog (2026-08-22)
 
 On phones, the green "Analyzing…" banner could sit on top of the **✕** that closes a

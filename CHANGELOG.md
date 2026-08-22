@@ -4,6 +4,21 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.33.0] - 2026-08-22
+
+### Added
+- **Dark / light theme toggle in the menu.** The ☰ menu now has a theme control that
+  cycles **System → Light → Dark**; the choice is saved (localStorage) and applied before
+  first paint on reload, so there's no flash. "System" follows the OS preference. Built on
+  a `data-theme` override layered over the existing `prefers-color-scheme` palette.
+
+### Fixed
+- **Activity banner could look "stuck analyzing."** The top banner now always auto-hides
+  (a 45s safety ceiling for in-flight work, 4.5s for queued toasts) and can be dismissed by
+  tapping it, so a slow or hung request can never leave it showing indefinitely.
+
+[0.33.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.33.0
+
 ## [0.32.3] - 2026-08-22
 
 ### Fixed
