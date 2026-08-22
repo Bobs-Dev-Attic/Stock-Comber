@@ -240,6 +240,9 @@ class NullStorage:
     def count_api_calls(self, client: str, window_seconds: int) -> int:
         return 0
 
+    def recently_screened(self, days: int) -> set:
+        return set()
+
 
 class PostgresStorage:
     """Postgres-backed persistence (psycopg 3). Connections are per-operation,
@@ -590,6 +593,24 @@ class PostgresStorage:
                     (client, float(window_seconds)))
                 row = cur.fetchone()
                 return int(row[0]) if row else 0
+
+    def recently_screened(self, days: int) -> set:
+        """Tickers screened by a *scheduled* run within the last ``days`` — used to
+        keep the nightly report from re-analyzing the same stock too often. Manual
+        analyses (meta.source manual/queue) are excluded, so they neither count
+        toward the cooldown nor get suppressed by it."""
+        if not days or days <= 0:
+            return set()
+        with self._connect() as conn:
+            self._ensure_schema(conn)
+            with conn.cursor() as cur:
+                cur.execute(
+                    "SELECT DISTINCT res.ticker FROM screen_results res "
+                    "JOIN screen_runs run ON run.id = res.run_id "
+                    "WHERE run.created_at > now() - make_interval(days => %s) "
+                    "AND COALESCE(run.meta->>'source','') NOT IN ('manual','queue')",
+                    (float(days),))
+                return {r[0].upper() for r in cur.fetchall() if r[0]}
 
     # -- settings --------------------------------------------------------
     def get_settings(self) -> dict:

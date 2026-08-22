@@ -4,6 +4,21 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.34.0] - 2026-08-22
+
+### Added
+- **Nightly re-analysis cooldown.** The scheduled "hidden gems" run now skips any stock it
+  already screened within a configurable window (default **90 days**), so the same names
+  aren't re-analyzed every few nights and coverage spreads to fresh candidates. Manual
+  analyses are exempt — they can be run anytime and never count toward the cooldown.
+  Backed by `PostgresStorage.recently_screened(days)` (scheduled runs only — `manual`/`queue`
+  runs are excluded) and applied in `build_nightly`; the "what the next run will screen"
+  preview reflects it too. New setting `universe.nightly.reanalyze_cooldown_days` (0 = off),
+  editable under **Settings → nightly universe**. If every eligible name is on cooldown, the
+  run falls back to the unfiltered pool rather than producing an empty report.
+
+[0.34.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.34.0
+
 ## [0.33.2] - 2026-08-22
 
 ### Added

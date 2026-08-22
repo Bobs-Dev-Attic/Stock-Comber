@@ -1,5 +1,18 @@
 # Release notes
 
+## v0.34.0 — Nightly re-analysis cooldown (2026-08-22)
+
+The scheduled nightly report no longer re-analyzes the same stock too often. Once a name
+has been screened by a scheduled run, it's skipped by the nightly for a configurable window
+(default **90 days**), so each night's picks spread across fresh candidates instead of
+repeating recent ones. **Manual analyses are exempt** — you can deep-dive any ticker on
+demand whenever you like, and those runs don't start (or count toward) the cooldown.
+
+Tune it under **Settings → nightly universe → Re-analyze cooldown (days)** (set 0 to turn
+it off). The "what the next run will screen" preview honors the cooldown too. And if every
+eligible name happens to be on cooldown, the run still produces a report rather than coming
+back empty.
+
 ## v0.33.2 — Theme toggle on every page (2026-08-22)
 
 Every sub-page (Settings, About, Definitions, Strategies, Analytics, Backtest, Theses) now

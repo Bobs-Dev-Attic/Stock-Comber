@@ -88,3 +88,11 @@ def test_validate_accepts_tuned_rate_limit():
     cfg["api"]["rate_limit"] = {"enabled": False, "max_requests": 30,
                                 "window_seconds": 10, "scope": "key"}
     assert validate_config(cfg) == []
+
+
+def test_default_cooldown_and_validation():
+    cfg = load_config()
+    assert cfg["universe"]["nightly"]["reanalyze_cooldown_days"] == 90
+    assert validate_config(cfg) == []
+    cfg["universe"]["nightly"]["reanalyze_cooldown_days"] = -5
+    assert any("reanalyze_cooldown_days" in p for p in validate_config(cfg))

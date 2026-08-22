@@ -47,6 +47,10 @@ DEFAULT_CONFIG: dict[str, Any] = {
             "enrich_per_run": 40,            # Finnhub profiles to fetch per night
             "include_unknown": True,         # screen not-yet-enriched names too
             "industries": [],                # empty = all (GICS sub-industry)
+            # Skip a name the scheduled run already screened within this many days,
+            # so the nightly report doesn't re-analyze the same stock too often
+            # (0 disables). Manual analyses ignore this and never count toward it.
+            "reanalyze_cooldown_days": 90,
         },
     },
     # Data-source knobs.
@@ -239,6 +243,10 @@ def validate_config(cfg: dict[str, Any]) -> list[str]:
     limit = cfg.get("universe", {}).get("limit")
     if limit is not None and limit < 0:
         problems.append("universe.limit must be >= 0")
+
+    cooldown = cfg.get("universe", {}).get("nightly", {}).get("reanalyze_cooldown_days")
+    if cooldown is not None and (not isinstance(cooldown, (int, float)) or cooldown < 0):
+        problems.append("universe.nightly.reanalyze_cooldown_days must be >= 0")
 
     index = cfg.get("universe", {}).get("index")
     if index:

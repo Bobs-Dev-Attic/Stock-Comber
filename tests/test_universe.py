@@ -114,3 +114,47 @@ def test_effective_config_merges_store_settings():
     merged = effective_config(load_config(), store)
     assert merged["graham"]["max_pe"] == 10.0
     assert merged["buffett"]["min_roe_pct"] == 15.0  # untouched
+
+
+class FakeStoreCooldown(FakeStore):
+    def __init__(self, universe=None, settings=None, recent=None):
+        super().__init__(universe, settings)
+        self._recent = set(recent or [])
+        self.recent_days = None
+
+    def recently_screened(self, days):
+        self.recent_days = days
+        return set(self._recent)
+
+
+def test_nightly_skips_recently_scheduled_tickers():
+    uni = [{"ticker": "AAA", "sector": "Tech", "country": "US", "market_cap": 2e9, "avg_volume": 1e6},
+           {"ticker": "BBB", "sector": "Energy", "country": "US", "market_cap": 3e9, "avg_volume": 1e6}]
+    cfg = _cfg(cap=50, reanalyze_cooldown_days=90, include_unknown=False,
+               market_cap_min=1e8, market_cap_max=20e9)
+    store = FakeStoreCooldown(universe=uni, recent={"AAA"})
+    tickers = build_nightly(cfg, store=store, day_ordinal=0)
+    assert "AAA" not in tickers and "BBB" in tickers
+    assert store.recent_days == 90
+
+
+def test_nightly_cooldown_disabled_when_zero():
+    uni = [{"ticker": "AAA", "sector": "Tech", "country": "US", "market_cap": 2e9, "avg_volume": 1e6}]
+    cfg = _cfg(cap=50, reanalyze_cooldown_days=0, include_unknown=False,
+               market_cap_min=1e8, market_cap_max=20e9)
+    store = FakeStoreCooldown(universe=uni, recent={"AAA"})
+    tickers = build_nightly(cfg, store=store, day_ordinal=0)
+    assert "AAA" in tickers                 # cooldown off -> not filtered
+    assert store.recent_days is None        # never consulted
+
+
+def test_nightly_cooldown_falls_back_when_all_on_cooldown():
+    uni = [{"ticker": "AAA", "sector": "Tech", "country": "US", "market_cap": 2e9, "avg_volume": 1e6}]
+    cfg = _cfg(cap=50, reanalyze_cooldown_days=90, include_unknown=False,
+               market_cap_min=1e8, market_cap_max=20e9)
+    # Everything eligible is on cooldown -> don't return an empty report.
+    store = FakeStoreCooldown(universe=uni, recent={"AAA"})
+    # Restrict the seed out by using an index-less cfg with only the catalog name.
+    cfg["universe"]["extra_tickers"] = []
+    tickers = build_nightly(cfg, store=store, day_ordinal=0)
+    assert "AAA" in tickers                 # fallback keeps the pool non-empty
