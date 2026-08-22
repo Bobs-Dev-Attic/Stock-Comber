@@ -217,26 +217,36 @@ METRIC_KEYS = [
     "avg_volume", "dollar_volume",
     # Latest reported quarter (10-Q) — fresher than the annual figures above.
     "q_revenue", "q_net_income", "q_eps", "q_current_ratio",
+    # Trailing-twelve-month roll-forward (FY + current YTD − prior-year YTD).
+    "ttm_revenue", "ttm_net_income",
 ]
 
 
 def quarterly_metrics(company: Company) -> dict:
-    """Latest-quarter (10-Q) figures, plus a ``latest_quarter`` end-date string.
+    """Latest-quarter (10-Q) figures + trailing-twelve-month roll-forward, plus a
+    ``latest_quarter`` end-date string.
 
     Kept separate from the annual metrics so the strategy scoring (annual-based)
     is unchanged — these are surfaced only for a fresher read on the dashboard.
     """
+    ttm = company.ttm or {}
+    out = {
+        "ttm_revenue": ttm.get("ttm_revenue"),
+        "ttm_net_income": ttm.get("ttm_net_income"),
+    }
     q = company.latest_quarter
     if q is None:
-        return {"q_revenue": None, "q_net_income": None, "q_eps": None,
-                "q_current_ratio": None, "latest_quarter": None}
-    return {
+        out.update({"q_revenue": None, "q_net_income": None, "q_eps": None,
+                    "q_current_ratio": None, "latest_quarter": None})
+        return out
+    out.update({
         "q_revenue": q.revenue,
         "q_net_income": q.net_income,
         "q_eps": q.eps,
         "q_current_ratio": _safe_div(q.current_assets, q.current_liabilities),
         "latest_quarter": q.period_end,   # date string (not a numeric column)
-    }
+    })
+    return out
 
 
 def compute_metrics(company: Company) -> dict[str, Optional[float]]:

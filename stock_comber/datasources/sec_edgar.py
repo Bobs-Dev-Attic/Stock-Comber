@@ -13,6 +13,7 @@ email; supply one via ``config.data.user_agent``.
 
 from __future__ import annotations
 
+import datetime as _dt
 import re
 import time
 from typing import Any, Optional
@@ -317,6 +318,112 @@ def extract_quarters(facts_json: dict[str, Any]) -> list[QuarterFacts]:
     return quarters
 
 
+# -- trailing-twelve-month (TTM) roll-forward --------------------------------
+# TTM = last full fiscal year + current year-to-date − prior-year same YTD.
+# Everything is matched by *dates* (not calendar-year labels) so companies with
+# off-calendar fiscal years roll forward correctly.
+_TTM_FIELDS = (("revenue", "ttm_revenue"),
+               ("net_income", "ttm_net_income"),
+               ("operating_cash_flow", "ttm_operating_cash_flow"))
+
+
+def _date(s: str):
+    try:
+        return _dt.date.fromisoformat(s)
+    except Exception:
+        return None
+
+
+def _annual_by_end(entries: list[dict]) -> dict[str, float]:
+    """Full-year (10-K, ~365-day) flow values keyed by period end; latest filing wins."""
+    best: dict[str, tuple[str, float]] = {}
+    for e in entries:
+        if e.get("fp") != "FY" or not str(e.get("form", "")).startswith("10-K"):
+            continue
+        start, end, val = e.get("start"), e.get("end"), e.get("val")
+        if not start or not end or val is None:
+            continue
+        d = _days_between(start, end)
+        if d is None or d < 350 or d > 380:
+            continue
+        filed = e.get("filed", "")
+        prev = best.get(end)
+        if prev is None or filed >= prev[0]:
+            best[end] = (filed, float(val))
+    return {end: v for end, (_f, v) in best.items()}
+
+
+def _ytd_by_end(entries: list[dict]) -> dict[str, tuple[int, float]]:
+    """Cumulative year-to-date (10-Q) flow values keyed by period end. For each
+    end the *longest-duration* entry is kept (the YTD, not the 3-month quarter)."""
+    best: dict[str, tuple[int, str, float]] = {}
+    for e in entries:
+        if not str(e.get("form", "")).startswith("10-Q"):
+            continue
+        start, end, val = e.get("start"), e.get("end"), e.get("val")
+        if not start or not end or val is None:
+            continue
+        d = _days_between(start, end)
+        if d is None or d < 60:
+            continue
+        cur = best.get(end)
+        if cur is None or d > cur[0] or (d == cur[0] and e.get("filed", "") >= cur[1]):
+            best[end] = (d, e.get("filed", ""), float(val))
+    return {end: (dur, val) for end, (dur, _f, val) in best.items()}
+
+
+def _ttm_from(annual_by_end: dict, ytd_by_end: dict) -> Optional[float]:
+    """Roll a full year forward by the latest partial year-to-date."""
+    if not ytd_by_end:
+        # No partial data — the latest full year is the best trailing figure.
+        return round(annual_by_end[max(annual_by_end)], 2) if annual_by_end else None
+    cur_end = max(ytd_by_end)
+    cur_dur, cur_val = ytd_by_end[cur_end]
+    if cur_dur >= 350:                    # the "YTD" already spans a full year
+        return round(cur_val, 2)
+    ce = _date(cur_end)
+    if ce is None:
+        return None
+
+    # Prior-year YTD: same period length, ending ~1 year earlier.
+    prior_val, best_gap = None, 999
+    for end, (dur, val) in ytd_by_end.items():
+        ed = _date(end)
+        if end == cur_end or ed is None:
+            continue
+        gap = abs((ce - ed).days - 365)
+        if gap <= 30 and abs(dur - cur_dur) <= 30 and gap < best_gap:
+            best_gap, prior_val = gap, val
+    if prior_val is None:
+        return None
+
+    # Full year ending at the current fiscal year's start (~ cur_end − cur_dur).
+    fy_target = ce - _dt.timedelta(days=cur_dur)
+    fy_val, best_g2 = None, 999
+    for end, val in annual_by_end.items():
+        ed = _date(end)
+        if ed is None:
+            continue
+        g = abs((ed - fy_target).days)
+        if g <= 30 and g < best_g2:
+            best_g2, fy_val = g, val
+    if fy_val is None:
+        return None
+    return round(fy_val + cur_val - prior_val, 2)
+
+
+def extract_ttm(facts_json: dict[str, Any]) -> dict[str, Optional[float]]:
+    """Trailing-twelve-month revenue / net income / operating cash flow, or
+    ``None`` per field when the roll-forward components aren't available."""
+    gaap = facts_json.get("facts", {}).get("us-gaap", {})
+    out: dict[str, Optional[float]] = {}
+    for field, key in _TTM_FIELDS:
+        unit_key, candidates = CONCEPTS[field]
+        entries = _concept_entries(gaap, unit_key, candidates)
+        out[key] = _ttm_from(_annual_by_end(entries), _ytd_by_end(entries))
+    return out
+
+
 class SecEdgarSource:
     """Fetches ticker->CIK mapping and company fundamentals from SEC EDGAR."""
 
@@ -470,4 +577,5 @@ class SecEdgarSource:
             name=facts.get("entityName") or info.get("name"),
             annuals=annuals,
             quarters=extract_quarters(facts),
+            ttm=extract_ttm(facts),
         )

@@ -26,6 +26,10 @@ jobs don't hammer the free endpoints.
   revenue/net-income/EPS/operating-cash-flow plus the balance sheet as of quarter
   end. The quarterly read is surfaced as fresher `q_*` metrics and a
   `latest_quarter` date; it does **not** change the annual-based scoring.
+  `extract_ttm` additionally computes **trailing-twelve-month** revenue / net
+  income / operating cash flow via the standard roll-forward (last full fiscal
+  year + current year-to-date − prior-year same year-to-date), matched by period
+  *dates* so off-calendar fiscal years roll forward correctly.
 - **ToS:** the SEC requires a descriptive `User-Agent` with a contact email
   (set `config.data.user_agent`) and rate-limits to ~10 req/s. Public-domain data;
   the main obligation is the honest User-Agent and the rate limit.

@@ -1,5 +1,15 @@
 # Release notes
 
+## v0.45.0 — Trailing-twelve-month figures (2026-08-22)
+
+Building on the quarterly data, Stock-Comber now computes **trailing-twelve-month (TTM)** revenue
+and net income — a rolling one-year figure that stays current between annual filings. It uses the
+standard roll-forward (last full fiscal year, plus this year's results so far, minus the same
+period last year) and matches everything by date, so it's correct even for companies whose fiscal
+year doesn't end in December. Add the **TTM revenue / TTM net income** columns from the Columns
+menu; they show a dash when a company hasn't filed enough interim data to compute them. Also: you
+can now **group the Full list by Ticker**, which collapses a company's per-strategy rows together.
+
 ## v0.44.0 — Group the Full list (2026-08-22)
 
 The Full list gets a **Group by** dropdown. Pick a column — Strategy, Pass/Fail, Last analyzed,

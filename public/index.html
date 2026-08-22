@@ -764,6 +764,7 @@ const METRICS = [
   ["backtest_edge_pct","Backtest edge %"],
   ["q_revenue","Qtr revenue"], ["q_net_income","Qtr net income"],
   ["q_eps","Qtr EPS"], ["q_current_ratio","Qtr current ratio"],
+  ["ttm_revenue","TTM revenue"], ["ttm_net_income","TTM net income"],
 ];
 const METRIC_LABEL = Object.fromEntries(METRICS);
 // Why each column matters and what it indicates — shown as a hover tooltip on
@@ -799,6 +800,8 @@ const METRIC_INFO = {
   q_net_income: "Most recent quarter's net income (from the latest SEC 10-Q). Fresher than the annual figure; a single quarter can be lumpy, so read it alongside the annual trend.",
   q_eps: "Most recent quarter's diluted EPS (from the latest SEC 10-Q).",
   q_current_ratio: "Current assets ÷ current liabilities as of the most recent quarter end (10-Q) — the freshest liquidity snapshot.",
+  ttm_revenue: "Trailing-twelve-month revenue: last full fiscal year + current year-to-date − prior-year same year-to-date. A rolling annual figure that stays current between 10-K filings.",
+  ttm_net_income: "Trailing-twelve-month net income (last full fiscal year + current YTD − prior-year same YTD) — a rolling annual profit figure, fresher than the last 10-K.",
 };
 const OPS = ["<=","<",">=",">","==","!="];
 
@@ -1067,11 +1070,13 @@ function saveGroup() { try { localStorage.setItem("sc_group", groupBy); } catch(
 function buildGroupMenu() {
   const sel = $("#full-group"); if (!sel) return;
   sel.innerHTML = '<option value="">No grouping</option>' +
+    '<option value="ticker">Ticker</option>' +
     ALL_COLUMNS.map(c => `<option value="${c.key}">${escHtml(c.label)}</option>`).join("");
   sel.value = groupBy;
 }
 // A human label for the value a row falls under when grouped by `key`.
 function groupLabel(r, key) {
+  if (key === "ticker") return r.ticker || "—";
   if (key === "strategy") return stratLabel(r.strategy) || r.strategy || "—";
   if (key === "passed") return r.passed ? "Passing" : "Not passing";
   if (key === "last_analyzed") return r.created_at ? fmtDate(r.created_at) : "Never";
