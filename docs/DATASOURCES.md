@@ -1,18 +1,25 @@
 # Data sources
 
-Stock-Comber combines four upstream providers, all free and mostly key-less. This
-documents what each is used for, its endpoint shape, its terms-of-service posture,
-and how to swap it out. Anything touching provider terms is a **legal**
-consideration — treat the ToS column as a real obligation, not a footnote.
+Stock-Comber combines several upstream providers. The default set is free and
+mostly key-less; an optional **licensed** price feed (Tiingo) can lead the price
+chain when a key is configured. This documents what each is used for, its endpoint
+shape, its terms-of-service posture, and how to swap it out. Anything touching
+provider terms is a **legal** consideration — treat the ToS column as a real
+obligation, not a footnote.
 
 ## The providers
 
 | Source | Key? | Used for | Module |
 |---|---|---|---|
 | **SEC EDGAR** | No | Ticker→CIK map + XBRL `companyfacts` → annual fundamentals | `datasources/sec_edgar.py` |
-| **Yahoo Finance** | No | Latest price + volume (primary price source) | `datasources/yahoo.py` |
+| **Tiingo** | Yes (licensed) | Latest EOD price + volume + adjusted history — **primary price source when a key is set** | `datasources/tiingo.py` |
+| **Yahoo Finance** | No | Latest price + volume (primary when no Tiingo key; else first free fallback) | `datasources/yahoo.py` |
 | **Stooq** | No | Daily close (fallback price source) | `datasources/stooq.py` |
 | **Finnhub** | Yes (free tier) | Real-time-ish quote + precomputed metrics; nightly market-cap/sector/country/volume enrichment | `datasources/finnhub.py` |
+
+**Price chain order:** Tiingo (if a key is set) → Yahoo → Stooq → Finnhub. The
+first source to return a price wins. With no Tiingo key the chain is the original
+Yahoo → Stooq → Finnhub, unchanged.
 
 All fetches pass through a TTL **file cache** (`datasources/cache.py`) so scheduled
 jobs don't hammer the free endpoints.
@@ -40,6 +47,21 @@ jobs don't hammer the free endpoints.
 - **ToS risk (highest):** this is an **unofficial** endpoint with no SLA and terms
   that discourage scraping/redistribution. It can break without notice. This is the
   most likely provider to need replacing — see "Swapping a source".
+
+### Tiingo (licensed, optional)
+- Endpoint: `https://api.tiingo.com/tiingo/daily/{ticker}/prices` — latest EOD bar for a quote;
+  `?startDate=YYYY-MM-DD&resampleFreq=monthly` for year-end history.
+- **What we parse:** `fetch_quote` returns the latest `close` + `volume` as a `Quote`;
+  `fetch_history` returns `{year: adjClose}` using the dividend/split-**adjusted** close so an annual
+  backtest isn't distorted by splits. Symbols are lower-cased with `.`→`-` (e.g. `BRK.B`→`brk-b`).
+- Enabled only when a key is present (`config.data.tiingo_api_key` or `TIINGO_API_KEY`); skipped
+  entirely otherwise. When set, it leads the price chain (primary), keeping Yahoo/Stooq as fallbacks.
+- **The key is a secret** — sent only in the `Authorization: Token …` header (never the URL, the
+  cache key, or a log line), env/DB write-only, never returned to the browser; the settings API
+  redacts it and reports only a boolean.
+- **ToS:** a licensed feed with an explicit terms-of-service and redistribution policy. Review the
+  current plan's request limits and redistribution/caching terms before public/commercial use — but
+  unlike the Yahoo endpoint it is a *supported* API with an SLA.
 
 ### Stooq
 - Endpoint: `https://stooq.com/q/d/l/?s={symbol}&i=d` (US tickers use a `.us` suffix).

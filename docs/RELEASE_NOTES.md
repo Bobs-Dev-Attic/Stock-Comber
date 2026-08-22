@@ -1,5 +1,17 @@
 # Release notes
 
+## v0.46.0 — Licensed price provider (Tiingo) (2026-08-22)
+
+Stock-Comber can now get its prices from **Tiingo**, a licensed market-data provider with a real
+terms-of-service and reliability guarantee — a proper alternative to the free, unofficial Yahoo
+endpoint that has always carried the highest terms-of-service risk. Add a **Tiingo API key** in
+Settings (or set `TIINGO_API_KEY`), and it becomes the **primary** price source: screening quotes
+come from the licensed feed, with the free Yahoo → Stooq chain kept as automatic fallbacks. If you
+don't add a key, nothing changes — the free sources work exactly as before. The key is write-only
+and never shown back, like the Finnhub key. This closes the "migrate price data to a licensed
+provider" item that was documented as a plan in `docs/DATASOURCES.md`. (Prices route through Tiingo
+now; the historical backtest still uses Yahoo — a scoped follow-up.)
+
 ## v0.45.2 — Fix: grouping the Full list by Ticker (2026-08-22)
 
 Grouping the Full list by **Ticker** was showing a blank table. The Full list already keeps just

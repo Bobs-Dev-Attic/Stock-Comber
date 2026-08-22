@@ -28,14 +28,26 @@ def test_redact_blanks_finnhub_key():
     assert safe["data"]["cache_ttl_hours"] == 24          # non-secrets kept
 
 
+def test_redact_blanks_tiingo_key():
+    m = _load_settings_module()
+    cfg = {"data": {"tiingo_api_key": "tiingo-secret-value", "cache_ttl_hours": 24}}
+    safe = m._redact(cfg)
+    assert safe["data"]["tiingo_api_key"] == ""           # blanked
+    assert cfg["data"]["tiingo_api_key"] == "tiingo-secret-value"  # original untouched
+
+
 def test_status_reports_booleans_never_values(monkeypatch):
     m = _load_settings_module()
     monkeypatch.setenv("FINNHUB_API_KEY", "env-secret-123")
     monkeypatch.setenv("STOCK_COMBER_API_KEY", "api-secret-456")
-    cfg = {"data": {"finnhub_api_key": "stored-secret-789"}}
+    monkeypatch.setenv("TIINGO_API_KEY", "tiingo-secret-abc")
+    cfg = {"data": {"finnhub_api_key": "stored-secret-789",
+                    "tiingo_api_key": "stored-tiingo-000"}}
     status = m._status(cfg)
     flat = repr(status)
-    for secret in ("env-secret-123", "api-secret-456", "stored-secret-789"):
+    for secret in ("env-secret-123", "api-secret-456", "stored-secret-789",
+                   "tiingo-secret-abc", "stored-tiingo-000"):
         assert secret not in flat
     assert status["keys"]["finnhub"] is True              # reported as present
+    assert status["keys"]["tiingo"] is True               # reported as present
     assert isinstance(status["keys"]["export_api"], bool)

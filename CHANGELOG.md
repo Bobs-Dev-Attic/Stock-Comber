@@ -4,6 +4,32 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.46.0] - 2026-08-22
+
+### Added
+- **Tiingo licensed price provider.** New `datasources/tiingo.py` (`TiingoSource`) fetches the latest
+  end-of-day price + volume and year-end **dividend/split-adjusted** history from
+  [Tiingo](https://www.tiingo.com/), a licensed provider with a real terms-of-service and SLA — unlike
+  the unofficial Yahoo endpoint. Enabled only when a key is configured (`config.data.tiingo_api_key`
+  or the `TIINGO_API_KEY` env var); when present it becomes the **primary** price source ahead of the
+  free Yahoo → Stooq → Finnhub chain, so screening quotes come from a licensed feed while the free
+  sources stay as resilient fallbacks. With no key, the chain is byte-for-byte unchanged.
+- **Store the Tiingo key in Settings.** The Settings page gained a write-only Tiingo key field and a
+  "Tiingo" chip in Keys & status, mirroring the Finnhub key handling.
+
+### Security
+- The Tiingo key is a **secret**: it travels only in the request `Authorization` header (never the
+  URL, the cache key, or a log line), is redacted by the settings API (`_SECRET_PATHS`), and is
+  reported to the browser only as a boolean. Covered by `tests/test_secrets_leak.py` and
+  `tests/test_tiingo.py` (asserts the key never appears in the request URL/params).
+
+### Notes
+- Scope is the **price/quote chain** (what screening and the Full list use). `TiingoSource` also
+  implements `fetch_history`; routing the nightly/deep-dive backtest through it (currently Yahoo) is
+  a scoped follow-up so the threaded history path stays untouched here.
+
+[0.46.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.46.0
+
 ## [0.45.2] - 2026-08-22
 
 ### Fixed

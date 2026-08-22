@@ -4,8 +4,10 @@ from .cache import FileCache
 from .finnhub import FinnhubSource
 from .sec_edgar import SecEdgarSource
 from .stooq import StooqSource
+from .tiingo import TiingoSource
 from .yahoo import YahooSource
 
 __all__ = [
-    "FileCache", "FinnhubSource", "SecEdgarSource", "StooqSource", "YahooSource",
+    "FileCache", "FinnhubSource", "SecEdgarSource", "StooqSource",
+    "TiingoSource", "YahooSource",
 ]

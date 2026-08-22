@@ -27,7 +27,7 @@ from stock_comber.universe import effective_config  # noqa: E402
 
 # Secret config paths that must never be returned to the browser. Stored in the
 # database (via the key-entry field) but write-only over the API.
-_SECRET_PATHS = (("data", "finnhub_api_key"),)
+_SECRET_PATHS = (("data", "finnhub_api_key"), ("data", "tiingo_api_key"))
 
 
 def _redact(cfg: dict) -> dict:
@@ -67,6 +67,8 @@ def _status(cfg: dict | None = None):
             # Configured if set as an env var OR stored in the database.
             "finnhub": bool(os.environ.get("FINNHUB_API_KEY")
                             or data.get("finnhub_api_key")),
+            "tiingo": bool(os.environ.get("TIINGO_API_KEY")
+                           or data.get("tiingo_api_key")),
             "database": bool(os.environ.get("DATABASE_URL")
                              or os.environ.get("POSTGRES_URL")),
             "export_api": bool(os.environ.get("STOCK_COMBER_API_KEY")),
