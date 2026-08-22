@@ -4,6 +4,16 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.32.2] - 2026-08-22
+
+### Changed
+- **Responsive History tab.** The History cards (Queued & running, Past runs, Searches)
+  now flow into multiple columns on wide screens and collapse to a single column on
+  narrow ones (`auto-fit` grid), so the tab uses the available width instead of three
+  stacked full-width cards. No horizontal overflow at any width.
+
+[0.32.2]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.32.2
+
 ## [0.32.1] - 2026-08-22
 
 ### Added

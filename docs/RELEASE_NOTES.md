@@ -1,5 +1,11 @@
 # Release notes
 
+## v0.32.2 — Responsive History tab (2026-08-22)
+
+The History tab now adapts to the window width: its cards (Queued & running, Past runs,
+Searches) sit side by side on wide screens and stack into a single column on narrow ones,
+instead of always being three full-width rows. Nothing overflows the page at any size.
+
 ## v0.32.1 — Rate-limit indicator on the API tab (2026-08-22)
 
 The **API** tab now shows, at a glance, where you stand against the rate limit: a
