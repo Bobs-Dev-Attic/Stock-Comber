@@ -1,5 +1,16 @@
 # Release notes
 
+## v0.33.1 — Banner really closes + theme everywhere (2026-08-22)
+
+Two fixes on top of v0.33.0:
+
+- **The top banner now truly closes.** A CSS rule was keeping it on screen even after it
+  was told to hide, so it looked stuck. That's fixed — tapping it, the auto-hide, and
+  opening a dialog all dismiss it for real.
+- **Your theme choice applies everywhere.** Picking Light or Dark from the dashboard menu
+  now carries to every other page (Settings, About, Definitions, Strategies, Analytics,
+  Backtest, Theses); "System" continues to follow your device.
+
 ## v0.33.0 — Theme toggle & un-stuck activity banner (2026-08-22)
 
 **Pick your theme.** The ☰ menu now has a theme switch that cycles **System → Light →
