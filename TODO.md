@@ -33,17 +33,24 @@ Legend: **P0** ship first · **P1** reliability/cost · **P2** memory/scale · *
 - [ ] Strict Content-Security-Policy with script nonces/hashes (inline-heavy SPA).
 - [ ] Add the disclaimer footer to the 7 sub-pages too (SPA + dialog done).
 
-## P1 — Reliability & cost
-- [ ] **Neon pooled connection string** + a module-level lazy connection reused across warm
-      invocations, so bursts don't exhaust Postgres connections.
-- [ ] **Cache the settings singleton in-process** with a short TTL and write-invalidation, to
-      drop a DB round-trip from the hot path (settings are read on nearly every request).
-- [ ] **Index the `recently_screened` lookup** (runs by finished/created time) so cooldown
-      filtering doesn't degrade linearly with history.
-- [ ] **Uniform timezone-aware datetimes.** Migrate remaining `datetime.utcnow()` (e.g.
-      `screener.resolve_universe`) to `datetime.now(timezone.utc)` — `report.py` already does.
-- [ ] **Structured logging + degradation counter.** Emit a JSON log/counter when `guard`
-      fails open, so a silent DB outage is visible rather than looking like "no limiting."
+## P1 — Reliability & cost ✅ shipped in v0.39.0
+- [x] **Pooled connection preference.** `resolve_dsn` now prefers
+      `STOCK_COMBER_DATABASE_URL_POOLED` (point it at Neon's PgBouncer `-pooler` host) so
+      per-invocation connects don't exhaust direct connections under burst; falls back to the
+      existing variables unchanged. (A module-level connection *reuse* refactor was deemed too
+      risky against the per-op `with self._connect()` pattern — pooled endpoint is the
+      recommended Neon fix and captures the win.)
+- [x] **In-process settings cache.** `PostgresStorage.get_settings` serves the settings blob
+      from a DSN-keyed TTL cache (`STOCK_COMBER_SETTINGS_TTL`, default 30s), refreshed on
+      `save_settings`, returning a copy so callers can't corrupt it — removing a DB round-trip
+      from the per-request hot path.
+- [x] **Cooldown index.** Added a covering `idx_results_run_ticker (run_id, ticker)` so
+      `recently_screened` and the Full-list DISTINCT ON stay off a full scan.
+- [x] **Uniform timezone-aware datetimes.** `screener.resolve_universe` now uses
+      `datetime.now(timezone.utc)` (the last remaining `utcnow()`).
+- [x] **Degradation surfaced.** `apiguard.guard` already logs + counts fallbacks; the count is
+      now exposed as `rate_limit_degraded` on `GET /api/runs?audit=1`, so a silent DB outage
+      is visible rather than looking like "no limiting."
 
 ## P2 — Memory & scale
 - [ ] **Stream the nightly build.** `build_nightly` + `_attach_backtest_edge` hold every

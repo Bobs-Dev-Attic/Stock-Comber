@@ -72,3 +72,72 @@ def test_null_storage_api_audit_noop():
 
 def test_null_storage_recently_screened_empty():
     assert NullStorage().recently_screened(90) == set()
+
+
+def test_resolve_dsn_prefers_pooled_endpoint(monkeypatch):
+    for var in ("DATABASE_URL", "POSTGRES_URL", "POSTGRES_PRISMA_URL",
+                "STOCK_COMBER_DATABASE_URL", "STOCK_COMBER_DATABASE_URL_POOLED"):
+        monkeypatch.delenv(var, raising=False)
+    monkeypatch.setenv("DATABASE_URL", "postgresql://direct/db")
+    monkeypatch.setenv("STOCK_COMBER_DATABASE_URL_POOLED", "postgresql://pooler/db")
+    assert resolve_dsn() == "postgresql://pooler/db"
+    # Without the pooled var, the usual DATABASE_URL still wins.
+    monkeypatch.delenv("STOCK_COMBER_DATABASE_URL_POOLED", raising=False)
+    assert resolve_dsn() == "postgresql://direct/db"
+
+
+class _FakeCursor:
+    def __init__(self, row):
+        self._row = row
+    def __enter__(self):
+        return self
+    def __exit__(self, *a):
+        return False
+    def execute(self, *a, **k):
+        return None
+    def fetchone(self):
+        return self._row
+
+
+class _FakeConn:
+    def __init__(self, row):
+        self._row = row
+    def __enter__(self):
+        return self
+    def __exit__(self, *a):
+        return False
+    def cursor(self):
+        return _FakeCursor(self._row)
+    def commit(self):
+        return None
+
+
+def test_settings_cache_serves_and_refreshes(monkeypatch):
+    from stock_comber import storage
+    storage._SETTINGS_CACHE.clear()
+    monkeypatch.setattr(storage, "_SETTINGS_TTL", 30.0)
+    store = PostgresStorage("postgresql://u:p@host/cachedb")
+    store._schema_ready = True
+
+    calls = {"n": 0}
+
+    def fake_connect():
+        calls["n"] += 1
+        return _FakeConn(({"strategies": ["graham"]},))
+    monkeypatch.setattr(store, "_connect", fake_connect)
+
+    first = store.get_settings()
+    assert first == {"strategies": ["graham"]}
+    assert calls["n"] == 1
+    # Second read within the TTL is served from cache — no new DB hit.
+    second = store.get_settings()
+    assert second == {"strategies": ["graham"]}
+    assert calls["n"] == 1
+    # Mutating the returned dict must not corrupt the cache.
+    second["strategies"].append("buffett")
+    assert store.get_settings()["strategies"] == ["graham"]
+
+    # A save refreshes the cache so the next read sees the new value (no DB hit).
+    store.save_settings({"strategies": ["lynch"]})
+    assert store.get_settings() == {"strategies": ["lynch"]}
+    assert calls["n"] == 2  # only the save connected; the read was cached

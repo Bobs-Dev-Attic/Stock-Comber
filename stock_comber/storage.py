@@ -13,11 +13,27 @@ a no-op backend is used so the app runs unchanged. The backend is chosen by
 
 from __future__ import annotations
 
+import copy
 import json
+import logging
 import os
+import time
 from typing import Any, Optional
 
 from .models import Company, ScreenResult
+
+log = logging.getLogger("stock_comber.storage")
+
+# In-process cache of the settings singleton, keyed by DSN. The settings blob is
+# read on nearly every request (effective_config), so a short TTL removes that
+# DB round-trip from the hot path on a warm serverless instance. Writes in the
+# same process refresh it immediately; cross-instance staleness is bounded by
+# the TTL. Set STOCK_COMBER_SETTINGS_TTL=0 to disable.
+_SETTINGS_CACHE: dict[str, "tuple[float, dict]"] = {}
+try:
+    _SETTINGS_TTL = float(os.environ.get("STOCK_COMBER_SETTINGS_TTL", "30"))
+except (TypeError, ValueError):
+    _SETTINGS_TTL = 30.0
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS screen_runs (
@@ -54,6 +70,9 @@ CREATE TABLE IF NOT EXISTS raw_fundamentals (
 );
 CREATE INDEX IF NOT EXISTS idx_results_run ON screen_results(run_id);
 CREATE INDEX IF NOT EXISTS idx_results_ticker ON screen_results(ticker);
+-- Covering index for the nightly cooldown lookup (recently_screened) and the
+-- Full-list DISTINCT ON (ticker per recent run): keeps them off a full scan.
+CREATE INDEX IF NOT EXISTS idx_results_run_ticker ON screen_results(run_id, ticker);
 CREATE INDEX IF NOT EXISTS idx_runs_created ON screen_runs(created_at DESC);
 CREATE TABLE IF NOT EXISTS settings (
     id         INTEGER PRIMARY KEY DEFAULT 1,
@@ -614,12 +633,22 @@ class PostgresStorage:
 
     # -- settings --------------------------------------------------------
     def get_settings(self) -> dict:
+        # Serve from the in-process cache when fresh (removes a DB round-trip
+        # from the per-request hot path). Return a copy so callers can't mutate
+        # the cached blob.
+        if _SETTINGS_TTL > 0:
+            hit = _SETTINGS_CACHE.get(self.dsn)
+            if hit is not None and (time.time() - hit[0]) < _SETTINGS_TTL:
+                return copy.deepcopy(hit[1])
         with self._connect() as conn:
             self._ensure_schema(conn)
             with conn.cursor() as cur:
                 cur.execute("SELECT data FROM settings WHERE id = 1")
                 row = cur.fetchone()
-        return row[0] if row and isinstance(row[0], dict) else {}
+        data = row[0] if row and isinstance(row[0], dict) else {}
+        if _SETTINGS_TTL > 0:
+            _SETTINGS_CACHE[self.dsn] = (time.time(), copy.deepcopy(data))
+        return data
 
     def save_settings(self, data: dict) -> None:
         with self._connect() as conn:
@@ -631,6 +660,9 @@ class PostgresStorage:
                     "SET data = EXCLUDED.data, updated_at = now()",
                     (json.dumps(data, default=str),))
             conn.commit()
+        # Refresh the cache so a read right after a write sees the new value
+        # (and other warm instances catch up within the TTL).
+        _SETTINGS_CACHE[self.dsn] = (time.time(), copy.deepcopy(data))
 
     # -- universe catalog ------------------------------------------------
     def get_universe(self) -> list[dict]:
@@ -779,12 +811,20 @@ class PostgresStorage:
 
 
 def resolve_dsn(config: Optional[dict] = None) -> Optional[str]:
-    """Find a Postgres connection string from config or the environment."""
+    """Find a Postgres connection string from config or the environment.
+
+    Prefers an explicitly *pooled* endpoint when one is configured. Serverless
+    functions open a connection per invocation, so on Neon/Vercel you should
+    point ``STOCK_COMBER_DATABASE_URL_POOLED`` at the PgBouncer ``-pooler`` host
+    to avoid exhausting direct connections under burst traffic; when it's unset
+    the resolver falls back to the usual variables unchanged.
+    """
     if config:
         dsn = config.get("storage", {}).get("dsn")
         if dsn:
             return dsn
-    for var in ("DATABASE_URL", "POSTGRES_URL", "POSTGRES_PRISMA_URL",
+    for var in ("STOCK_COMBER_DATABASE_URL_POOLED", "DATABASE_URL",
+                "POSTGRES_URL", "POSTGRES_PRISMA_URL",
                 "STOCK_COMBER_DATABASE_URL"):
         val = os.environ.get(var)
         if val:
