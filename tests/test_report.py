@@ -54,6 +54,42 @@ def test_write_reports_latest_matches_stamped(tmp_path, strong_company, config):
         assert stamped == latest and "STRONG" in stamped
 
 
+def test_html_escapes_company_name(config):
+    from stock_comber.models import ScreenResult
+    r = ScreenResult(ticker="TST", name="AT&T <script>x</script>",
+                     strategy="graham", passed=True, score=8, max_score=10, metrics={})
+    html = to_html([r], config)
+    assert "AT&amp;T" in html
+    assert "<script>" not in html            # escaped, not live markup
+    assert "&lt;script&gt;" in html
+
+
+def test_write_reports_leaves_no_tmp_and_no_partial_on_error(tmp_path, strong_company, config):
+    from stock_comber import report
+    config["output"]["dir"] = str(tmp_path)
+    config["output"]["formats"] = ["csv"]
+    # A streamer that writes some bytes then raises must not leave a stamped file
+    # or a stray .tmp; and any prior "latest" stays intact.
+    (tmp_path / "latest.csv").write_text("PREVIOUS")
+    def boom(results, cfg, fh):
+        fh.write("partial")
+        raise RuntimeError("mid-stream failure")
+    orig = report.STREAMERS["csv"]
+    report.STREAMERS["csv"] = (boom, "csv")
+    try:
+        raised = False
+        try:
+            report.write_reports(_results(strong_company, config), config)
+        except RuntimeError:
+            raised = True
+        assert raised
+        assert list(tmp_path.glob("*.tmp")) == []          # temp cleaned up
+        assert list(tmp_path.glob("screen-*.csv")) == []    # no truncated stamped file
+        assert (tmp_path / "latest.csv").read_text() == "PREVIOUS"  # latest untouched
+    finally:
+        report.STREAMERS["csv"] = orig
+
+
 def test_write_reports(tmp_path, strong_company, config):
     config["output"]["dir"] = str(tmp_path)
     config["output"]["formats"] = ["json", "csv", "markdown", "html"]
