@@ -1,5 +1,13 @@
 # Release notes
 
+## v0.32.1 — Rate-limit indicator on the API tab (2026-08-22)
+
+The **API** tab now shows, at a glance, where you stand against the rate limit: a
+usage meter (green → amber → red) with **used / limit**, how many requests are left in
+the current window, and how requests are bucketed (by IP, key, or global). If the limit
+is turned off, or no database is configured, the indicator says so plainly. It refreshes
+whenever you refresh or filter the access log.
+
 ## v0.32.0 — API audit log & configurable rate limit (2026-08-22)
 
 **See who's calling the API.** Every request to the JSON API is now recorded in an access

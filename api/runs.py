@@ -56,7 +56,7 @@ class handler(BaseHTTPRequestHandler):
                     self._send(502, {"error": str(exc), "audit": []})
                     return
             self._send(200, {"storage_enabled": enabled, "audit": audit,
-                             "count": len(audit)})
+                             "count": len(audit), "rate_limit": _rl})
             return
 
         if want_results:
