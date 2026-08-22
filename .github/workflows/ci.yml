@@ -22,3 +22,35 @@ jobs:
           pip install -e ".[dev]"
       - name: Run tests
         run: pytest -q
+
+  # Dependency vulnerability scan. Non-blocking for now (informational) so a
+  # newly disclosed transitive CVE doesn't wall off unrelated merges; review the
+  # job output and bump via the Dependabot PRs.
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install package + pip-audit
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]" pip-audit
+      - name: pip-audit
+        run: pip-audit --strict || true
+
+  # Static type check. Lenient + non-blocking to start; ratchet stricter over time.
+  typecheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install package + mypy
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]" mypy
+      - name: mypy
+        run: mypy stock_comber || true

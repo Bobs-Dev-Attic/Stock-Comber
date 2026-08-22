@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "stock-comber"
-version = "0.41.0"
+version = "0.42.0"
 description = "Find publicly traded companies that fit Graham and Buffett value-investing criteria, using free data sources."
 readme = "README.md"
 requires-python = ">=3.9"
@@ -32,3 +32,14 @@ include = ["stock_comber*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+# Lenient to start (the codebase predates type hints); CI runs mypy non-blocking.
+# Ratchet these on over time: ignore_missing_imports -> typed stubs, then enable
+# disallow_untyped_defs per-module.
+[tool.mypy]
+python_version = "3.9"
+ignore_missing_imports = true
+warn_unused_ignores = false
+warn_redundant_casts = true
+no_implicit_optional = true
+check_untyped_defs = false
