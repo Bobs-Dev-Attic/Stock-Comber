@@ -233,9 +233,12 @@
   /* in-dialog job results preview */
   .preview-tbl { font-size: .88rem; }
   .preview-tbl th, .preview-tbl td { padding: .35rem .5rem; }
-  /* History tab */
-  .histgrid { display: grid; gap: 1rem; margin-top: .6rem; }
-  .histcard { border: 1px solid var(--line); border-radius: 12px; padding: .8rem 1rem; }
+  /* History tab — cards flow into as many columns as the width allows
+     (auto-fit), so wide screens use the horizontal space and narrow screens
+     collapse to a single column. */
+  .histgrid { display: grid; gap: 1rem; margin-top: .6rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 430px), 1fr)); align-items: start; }
+  .histcard { border: 1px solid var(--line); border-radius: 12px; padding: .8rem 1rem; min-width: 0; }
   .histcard h3 { margin: 0 0 .5rem; font-size: 1rem; }
   .histcard td, .histcard th { text-align: left; }
   .pill { display: inline-block; background: var(--chip); border-radius: 999px; padding: .05rem .5rem; font-size: .8rem; }
