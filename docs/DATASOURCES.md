@@ -55,7 +55,9 @@ jobs don't hammer the free endpoints.
   `fetch_history` returns `{year: adjClose}` using the dividend/split-**adjusted** close so an annual
   backtest isn't distorted by splits. Symbols are lower-cased with `.`→`-` (e.g. `BRK.B`→`brk-b`).
 - Enabled only when a key is present (`config.data.tiingo_api_key` or `TIINGO_API_KEY`); skipped
-  entirely otherwise. When set, it leads the price chain (primary), keeping Yahoo/Stooq as fallbacks.
+  entirely otherwise. When set, it leads the price chain (primary), keeping Yahoo/Stooq as fallbacks,
+  **and** serves the backtest history fetch via `datasources.make_history_source` (adjusted closes) —
+  so quotes and backtests both use the licensed feed. Without a key, both stay on the free chain.
 - **The key is a secret** — sent only in the `Authorization: Token …` header (never the URL, the
   cache key, or a log line), env/DB write-only, never returned to the browser; the settings API
   redacts it and reports only a boolean.

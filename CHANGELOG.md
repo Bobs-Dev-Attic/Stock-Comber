@@ -4,6 +4,20 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.47.0] - 2026-08-22
+
+### Changed
+- **Backtest price history now routes through Tiingo when a key is configured.** New
+  `datasources.make_history_source(cfg, …)` returns a `TiingoSource` (dividend/split-**adjusted**
+  closes) when `data.tiingo_api_key` / `TIINGO_API_KEY` is set, else the free `YahooSource` — both
+  expose an identical `fetch_history(ticker, years) → {year: close}`. Wired into all three history
+  call sites: the nightly per-name backtest edge (`cli._attach_backtest_edge`, per-worker-thread),
+  the deep-dive analysis backtest (`api/analyze.py`), and the `/api/backtest` endpoint. With no key,
+  history stays on Yahoo exactly as before. This completes the licensed-provider migration started in
+  v0.46.0 (quotes) — Tiingo now serves both quotes and backtest history.
+
+[0.47.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.47.0
+
 ## [0.46.0] - 2026-08-22
 
 ### Added

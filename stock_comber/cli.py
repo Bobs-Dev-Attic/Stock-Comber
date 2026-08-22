@@ -101,22 +101,23 @@ def _attach_backtest_edge(results, screener, cfg) -> None:
     import threading
     from concurrent.futures import ThreadPoolExecutor, as_completed
     from .backtest import overall_edge
-    from .datasources import YahooSource
+    from .datasources import make_history_source
     data = cfg.get("data", {})
     cache = getattr(screener.sec, "cache", None)
     timeout = data.get("request_timeout", 25)
     delay = data.get("request_delay_seconds", 0.0)
-    # A YahooSource (and its requests.Session) is not guaranteed thread-safe, so
-    # each worker thread gets its own — created lazily and reused within that
-    # thread. The file cache is safe to share (distinct tickers → distinct keys).
+    # The history source (Tiingo when a key is set, else Yahoo) owns a
+    # requests.Session that is not guaranteed thread-safe, so each worker thread
+    # gets its own — created lazily and reused within that thread. The file cache
+    # is safe to share (distinct tickers → distinct keys).
     _local = threading.local()
 
-    def _yahoo():
-        y = getattr(_local, "yahoo", None)
-        if y is None:
-            y = YahooSource(cache=cache, timeout=timeout, delay=delay)
-            _local.yahoo = y
-        return y
+    def _hist():
+        h = getattr(_local, "hist", None)
+        if h is None:
+            h = make_history_source(cfg, cache=cache, timeout=timeout, delay=delay)
+            _local.hist = h
+        return h
 
     # Only names we actually have fundamentals for can be backtested.
     todo = [t for t in sorted({r.ticker for r in results})
@@ -131,7 +132,7 @@ def _attach_backtest_edge(results, screener, cfg) -> None:
 
     def _fetch(t):
         try:
-            return t, _yahoo().fetch_history(t, years=10), None
+            return t, _hist().fetch_history(t, years=10), None
         except Exception as exc:  # isolate a single ticker's failure
             return t, None, exc
 

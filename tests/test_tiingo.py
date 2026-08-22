@@ -143,3 +143,24 @@ def test_no_tiingo_source_without_key(config):
     scr = Screener(config, sec=object())
     assert isinstance(scr.price_sources[0], YahooSource)    # unchanged free chain
     assert not any(isinstance(s, TiingoSource) for s in scr.price_sources)
+
+
+# -- history source factory (backtest) -------------------------------------
+def test_make_history_source_prefers_tiingo_when_key_set(monkeypatch):
+    monkeypatch.delenv("TIINGO_API_KEY", raising=False)
+    from stock_comber.datasources import TiingoSource, make_history_source
+    src = make_history_source({"data": {"tiingo_api_key": "k"}})
+    assert isinstance(src, TiingoSource)
+
+
+def test_make_history_source_falls_back_to_yahoo(monkeypatch):
+    monkeypatch.delenv("TIINGO_API_KEY", raising=False)
+    from stock_comber.datasources import YahooSource, make_history_source
+    assert isinstance(make_history_source({"data": {}}), YahooSource)
+    assert isinstance(make_history_source(None), YahooSource)
+
+
+def test_make_history_source_reads_env_key(monkeypatch):
+    monkeypatch.setenv("TIINGO_API_KEY", "env-key")
+    from stock_comber.datasources import TiingoSource, make_history_source
+    assert isinstance(make_history_source({"data": {}}), TiingoSource)

@@ -22,7 +22,7 @@ from stock_comber import __version__  # noqa: E402
 from stock_comber.analysis import _full_config  # noqa: E402
 from stock_comber.backtest import backtest_all  # noqa: E402
 from stock_comber.config import load_config  # noqa: E402
-from stock_comber.datasources import YahooSource  # noqa: E402
+from stock_comber.datasources import make_history_source  # noqa: E402
 from stock_comber.screener import Screener  # noqa: E402
 
 _TICKER = re.compile(r"^[A-Z][A-Z0-9.\-]{0,9}$")
@@ -42,9 +42,9 @@ def run_backtest(ticker: str, years: int = 10) -> dict:
         return {"error": "no annual fundamentals available for this ticker",
                 "ticker": ticker.upper(), "name": company.name, "strategies": {}}
 
-    yahoo = YahooSource(timeout=25)
+    hist = make_history_source(cfg, timeout=25)
     try:
-        price_by_year = yahoo.fetch_history(ticker, years=years)
+        price_by_year = hist.fetch_history(ticker, years=years)
     except Exception as exc:
         return {"error": f"could not fetch price history: {exc}",
                 "ticker": ticker.upper(), "name": company.name, "strategies": {}}

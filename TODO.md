@@ -119,7 +119,8 @@ Legend: **P0** ship first · **P1** reliability/cost · **P2** memory/scale · *
       is a licensed price feed with a real ToS; when `config.data.tiingo_api_key` / `TIINGO_API_KEY`
       is set it leads the price chain ahead of the free Yahoo/Stooq fallbacks. Key is write-only
       (env/DB), redacted by the settings API, and travels only in the `Authorization` header.
-      Follow-up: route the backtest **history** fetch through Tiingo too (still on Yahoo).
+      **Backtest history** also routes through Tiingo (adjusted closes) when a key is set (v0.47.0),
+      via `datasources.make_history_source` — quotes and backtests both use the licensed feed.
 - [ ] Opt-in nightly digest (RSS/email) — would trigger the privacy/unsubscribe work noted in
       `PRIVACY.md`.
 - [x] Ratchet `mypy` from non-blocking → **enforced** (v0.45.1). The `stock_comber` package

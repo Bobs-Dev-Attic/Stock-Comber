@@ -1,5 +1,14 @@
 # Release notes
 
+## v0.47.0 — Backtests use the licensed feed too (2026-08-22)
+
+Following v0.46.0 (which made Tiingo the primary source for live **prices**), the historical
+**backtest** now also uses Tiingo when a key is configured — with dividend/split-**adjusted** closes,
+so split events don't distort year-over-year returns. This covers all three places a backtest pulls
+price history: the nightly "hidden gems" edge, a full deep-dive analysis, and the standalone backtest
+endpoint. If you haven't set a Tiingo key, nothing changes — backtests keep using the free Yahoo
+history. Tiingo now backs both quotes and backtests end-to-end.
+
 ## v0.46.0 — Licensed price provider (Tiingo) (2026-08-22)
 
 Stock-Comber can now get its prices from **Tiingo**, a licensed market-data provider with a real
