@@ -18,6 +18,7 @@ except Exception:  # pragma: no cover
     requests = None  # type: ignore
 
 from ..models import Quote
+from ..validation import normalize_ticker
 from .cache import FileCache
 
 CHART_URL = "https://query1.finance.yahoo.com/v8/finance/chart/{symbol}"
@@ -113,7 +114,9 @@ class YahooSource:
             self.session = None
 
     def fetch_quote(self, ticker: str) -> Quote:
-        symbol = ticker.upper()
+        symbol = normalize_ticker(ticker)
+        if symbol is None:  # never interpolate a malformed symbol into the URL
+            return Quote(ticker=str(ticker)[:10].upper(), source="yahoo")
         data: Optional[dict] = None
         if self.cache is not None:
             cached = self.cache.get("yahoo", symbol)
@@ -143,7 +146,9 @@ class YahooSource:
 
     def fetch_history(self, ticker: str, years: int = 10) -> dict:
         """Return {year: year-end close} for the last ``years`` years, or {}."""
-        symbol = ticker.upper()
+        symbol = normalize_ticker(ticker)
+        if symbol is None:  # never interpolate a malformed symbol into the URL
+            return {}
         data: Optional[dict] = None
         ns_key = f"{symbol}:hist:{years}"
         if self.cache is not None:

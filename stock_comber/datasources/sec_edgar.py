@@ -23,6 +23,7 @@ except Exception:  # pragma: no cover
     requests = None  # type: ignore
 
 from ..models import AnnualFacts, Company
+from ..validation import is_valid_ticker
 from .cache import FileCache
 
 TICKERS_URL = "https://www.sec.gov/files/company_tickers.json"
@@ -268,6 +269,8 @@ class SecEdgarSource:
         """The CIK that actually files 10-Ks for ``ticker`` per EDGAR's company
         search — the authoritative source when the ticker map is misdirected.
         Returns None if the lookup fails or finds nothing."""
+        if not is_valid_ticker(ticker):  # never interpolate a bad symbol into the URL
+            return None
         try:
             text = self._get_text(
                 FILER_URL.format(ticker=ticker.upper()), "sec_filer", ticker.upper())
@@ -310,6 +313,8 @@ class SecEdgarSource:
 
     def fetch_company(self, ticker: str) -> Optional[Company]:
         """Fetch and reduce fundamentals for one ticker (no price)."""
+        if not is_valid_ticker(ticker):
+            return None
         info = self.resolve(ticker)
         if not info:
             return None

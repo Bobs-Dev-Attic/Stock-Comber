@@ -4,6 +4,33 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.38.0] - 2026-08-22
+
+### Security
+- **In-memory fallback rate limiter.** The shared API guard (`apiguard.guard`) now falls back
+  to a bounded, per-warm-instance sliding-window limiter when the database rate-limit count is
+  unavailable, so a DB outage can no longer disable rate limiting entirely (it fails open only
+  down to a floor, not off). A `degraded_count()` and a warning log make the degradation
+  visible. Keyless (anonymous) requests are bucketed by client IP under every scope so one
+  flood can't exhaust a shared bucket.
+- **Strict ticker validation (SSRF/path-injection guard).** New `stock_comber/validation.py`
+  is the single source of truth for valid symbols (`^[A-Z][A-Z0-9.\-]{0,9}$`) and is enforced
+  in the screener and defensively in the Yahoo and SEC-EDGAR data sources *before* any ticker
+  is interpolated into an upstream URL.
+- **Security headers** are now sent for every response via `vercel.json`:
+  `X-Content-Type-Options: nosniff`, `X-Frame-Options: DENY`, `Referrer-Policy`,
+  `Permissions-Policy`, `Strict-Transport-Security`, and `Cross-Origin-Opener-Policy`.
+- **Secret-leak regression test** (`tests/test_secrets_leak.py`) locks in that the settings
+  endpoint returns only booleans for configured keys — never the Finnhub key, database URL,
+  or export key.
+
+### Added
+- **"Not investment advice" disclaimer in the UI** — a persistent page footer on the dashboard
+  and a disclaimer line at the foot of the stock-analysis dialog, so the caveat is visible at
+  the point of decision (previously only in generated reports).
+
+[0.38.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.38.0
+
 ## [0.37.2] - 2026-08-22
 
 ### Added

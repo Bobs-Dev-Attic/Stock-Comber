@@ -87,6 +87,11 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
   .btn.ghost { background: transparent; color: var(--accent); border: 1px solid var(--line); font-weight: 500; padding: .45rem .8rem; font-size: .9rem; }
   .btn:disabled { opacity: .6; cursor: default; }
   .hint { color: var(--muted); font-size: .85rem; margin-top: .5rem; }
+  .site-foot { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: .82rem; line-height: 1.5; }
+  .site-foot strong { color: var(--ink); }
+  .modal-disc { margin-top: 1.1rem; padding-top: .6rem; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: .82rem; }
   .status { margin-top: 1rem; color: var(--muted); }
   .toolbar { display: flex; gap: .5rem; flex-wrap: wrap; align-items: center; margin-top: 1rem; }
   .toolbar .spacer { flex: 1; }
@@ -514,6 +519,14 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
     </div>
   </section>
 </div>
+
+<footer class="site-foot">
+  ⚠️ <strong>Educational tool only — not investment advice.</strong>
+  Stock-Comber screens public fundamentals against classic value criteria; it does not
+  recommend buying or selling anything. Data from SEC EDGAR, Yahoo &amp; Stooq may be
+  delayed, incomplete, or wrong. Always do your own research.
+  <a href="https://github.com/Bobs-Dev-Attic/Stock-Comber" target="_blank" rel="noopener">Source ↗</a>
+</footer>
 
 <div id="overlay" class="overlay" role="dialog" aria-modal="true"><div class="modal" id="modal"></div></div>
 
@@ -2083,7 +2096,9 @@ function openAnalysis(data) {
     backtestHtml(data.backtest)+
     `<div class="sec-h">Strategies</div>${stratRows}${dataNote}`+
     `<div class="sec-h">Similar companies (same sector)</div>${peersHtml}`+
-    `<div class="sec-h">News sentiment</div>${sentHtml}${newsHtml}`;
+    `<div class="sec-h">News sentiment</div>${sentHtml}${newsHtml}`+
+    `<div class="modal-disc">⚠️ Educational analysis only — not investment advice. `+
+    `Figures are drawn from free, possibly delayed or incomplete data; verify independently before acting.</div>`;
   $("#modal .close").onclick = closeDetail;
   $("#modal").querySelectorAll(".crit[data-s]").forEach(el => el.onclick = () => {
     const r = results.find(x => x.strategy === el.dataset.s); if (r) openDetail(r);

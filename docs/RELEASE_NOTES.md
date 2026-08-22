@@ -1,5 +1,18 @@
 # Release notes
 
+## v0.38.0 — Security hardening (2026-08-22)
+
+The first batch of the review backlog's top-priority security items. **Rate limiting no
+longer fully fails open:** if the database counter is unreachable, the API guard falls back to
+a bounded in-memory limiter per instance, so an outage can't silently switch protection off —
+and keyless requests are each limited by IP so one flood can't drain a shared bucket.
+**Malformed tickers are rejected before any upstream fetch** through a single shared validator,
+closing an SSRF/path-injection vector in the Yahoo and SEC data sources. Every response now
+carries hardening **security headers** (nosniff, frame-deny, referrer-policy, HSTS, COOP). A
+new test locks in that **no secret is ever returned to the browser**. And the **"not investment
+advice" disclaimer** now appears in the dashboard footer and the analysis dialog, not just in
+generated reports. No behavior changes for well-formed requests.
+
 ## v0.37.2 — Project docs for contributors and AI agents (2026-08-22)
 
 Groundwork, not a feature: four documentation files that make the project faster and cheaper
