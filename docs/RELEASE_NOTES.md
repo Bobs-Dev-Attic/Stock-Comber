@@ -1,5 +1,12 @@
 # Release notes
 
+## v0.35.1 — See your next scheduled runs (2026-08-22)
+
+The Scheduled report dialog now lists the **next five run times** for the schedule you're
+setting up, each with a countdown, and it updates as you tweak the frequency, interval,
+time, or days. Handy for confirming a sub-daily cadence (or a weekday-only rule) does what
+you expect before you save.
+
 ## v0.35.0 — Run the scheduled report more than once a day (2026-08-22)
 
 The scheduled report can now run on a **sub-daily** cadence. In Jobs → Scheduled report →

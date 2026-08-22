@@ -4,6 +4,16 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.35.1] - 2026-08-22
+
+### Added
+- **"Next runs" list in the schedule dialog.** The Scheduled report dialog now shows the
+  next five fire times for the schedule you're editing (with a relative countdown for each),
+  updating live as you change the frequency, interval, time, or days — so a sub-daily cadence
+  is easy to sanity-check before saving. Client-side only (reuses the cron matcher).
+
+[0.35.1]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.35.1
+
 ## [0.35.0] - 2026-08-22
 
 ### Added
