@@ -29,9 +29,11 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
     padding:.05rem .55rem;font-size:.78rem;margin-left:.4rem;vertical-align:middle}
   .note{border-left:3px solid var(--accent);padding:.3rem 0 .3rem .8rem;color:var(--muted)}
   @media (max-width:640px){ .wrap{padding:1.2rem .8rem 3rem} h1{font-size:1.4rem} .card{padding:1rem} }
+  .theme-fab{position:fixed;top:.7rem;right:.7rem;z-index:50;border:1px solid var(--line);background:var(--panel);color:var(--ink);width:2.2rem;height:2.2rem;border-radius:8px;cursor:pointer;font-size:1.1rem;line-height:1;box-shadow:var(--shadow)}
 </style>
 </head>
 <body>
+<button id="theme-toggle" class="theme-fab" type="button" aria-label="Toggle color theme" title="Theme">🌓</button>
 <div class="wrap">
   <h1>🎯 Strategies</h1>
   <p class="sub"><a href="/">← Dashboard</a> · <a href="/glossary.html">📖 Definitions</a> · <a href="/about.html">ℹ️ About</a></p>
@@ -111,5 +113,12 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
   <p class="note">These checklists summarize well-known public frameworks for educational purposes. Passing a
   screen is a starting point for research — <strong>not investment advice</strong>.</p>
 </div>
+<script>/* theme toggle (System -> Light -> Dark), shared key with the dashboard */
+(function(){var T=["system","light","dark"],M={system:"🌓",light:"☀️",dark:"🌙"};
+function cur(){try{return localStorage.getItem("theme")||"system"}catch(e){return "system"}}
+function apply(t){var r=document.documentElement;if(t==="light"||t==="dark")r.setAttribute("data-theme",t);else r.removeAttribute("data-theme");
+try{if(t==="system")localStorage.removeItem("theme");else localStorage.setItem("theme",t)}catch(e){}
+var b=document.getElementById("theme-toggle");if(b){b.textContent=M[t]||M.system;b.title="Theme: "+t.charAt(0).toUpperCase()+t.slice(1)}}
+var btn=document.getElementById("theme-toggle");if(btn){apply(cur());btn.addEventListener("click",function(){var i=T.indexOf(cur());apply(T[(i+1)%3])})}})();</script>
 </body>
 </html>

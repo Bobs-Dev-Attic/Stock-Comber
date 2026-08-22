@@ -1,5 +1,12 @@
 # Release notes
 
+## v0.33.2 — Theme toggle on every page (2026-08-22)
+
+Every sub-page (Settings, About, Definitions, Strategies, Analytics, Backtest, Theses) now
+has its own theme switch — a small button in the top-right corner that cycles **System →
+Light → Dark** and shares your choice with the dashboard. Change your theme from wherever
+you happen to be.
+
 ## v0.33.1 — Banner really closes + theme everywhere (2026-08-22)
 
 Two fixes on top of v0.33.0:
