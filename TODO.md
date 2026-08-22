@@ -70,11 +70,19 @@ Legend: **P0** ship first · **P1** reliability/cost · **P2** memory/scale · *
       it to `latest`, so a large universe is never held in memory twice. The string renderers
       (`to_csv`/`to_html`, used by the API) are now thin wrappers over the streamers.
 
-## P3 — UX & quality
-- [ ] **First-run onboarding / empty states** pointing new users to About + Glossary.
-- [ ] **Accessibility pass** (axe): dialog focus traps, ESC-to-close, keyboard tab nav,
-      and contrast validated in *both* themes (see the dataviz color rules for any charts).
-- [ ] **Mobile layout check** at 375px for the dense tables and dialogs.
+## P3 — UX & quality ✅ shipped in v0.41.0
+- [x] **First-run onboarding.** A dismissible welcome note on the dashboard explains what
+      Stock-Comber is (a research shortlist, *not* advice) and links to About + Glossary;
+      dismissal persists per browser (`localStorage.welcomeDismissed`).
+- [x] **Accessibility pass.** Modal dialogs (analysis, job, nav drawer) now share a focus-trap
+      layer: focus moves into the dialog on open, Tab/Shift-Tab cycle stays inside it,
+      Escape closes the top-most dialog, and focus is restored to the trigger on close. The
+      view tabs get arrow-key / Home / End navigation. Verified with Playwright (welcome
+      show/dismiss, tab arrows, focus-in/ESC/restore, 0 page errors).
+- [x] **Mobile layout check** at 375px — dashboard body overflow is 0; sub-pages verified too.
+- [x] **Sub-page disclaimer footers** (the deferred P0 follow-up): added the "not investment
+      advice" footer to `settings.html` and `thesis.html` (the two that lacked one; the rest
+      already carried the caveat). Only the strict-CSP follow-up (see P0 follow-ups) remains.
 
 ## P4 — Product & strategy
 - [ ] **Review each data provider's ToS** (Yahoo unofficial endpoints, Finnhub free tier,

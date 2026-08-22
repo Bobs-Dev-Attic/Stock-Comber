@@ -87,6 +87,15 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
   .btn.ghost { background: transparent; color: var(--accent); border: 1px solid var(--line); font-weight: 500; padding: .45rem .8rem; font-size: .9rem; }
   .btn:disabled { opacity: .6; cursor: default; }
   .hint { color: var(--muted); font-size: .85rem; margin-top: .5rem; }
+  .welcome { position: relative; margin: 0 0 1rem; padding: .8rem 2.2rem .8rem .9rem;
+    border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 10px;
+    background: color-mix(in srgb, var(--accent) 7%, var(--panel)); color: var(--ink);
+    font-size: .9rem; line-height: 1.5; }
+  .welcome a { color: var(--accent); }
+  .welcome-x { position: absolute; top: .35rem; right: .4rem; border: 0; background: transparent;
+    color: var(--muted); font-size: 1.2rem; line-height: 1; cursor: pointer; padding: .2rem .4rem;
+    border-radius: 6px; }
+  .welcome-x:hover, .welcome-x:focus { background: color-mix(in srgb, var(--accent) 14%, transparent); color: var(--ink); outline: none; }
   .site-foot { margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--line);
     color: var(--muted); font-size: .82rem; line-height: 1.5; }
   .site-foot strong { color: var(--ink); }
@@ -361,6 +370,16 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
       <button class="tab" role="tab" data-tab="jobs" aria-selected="false">⚙️ Jobs</button>
       <button class="tab" role="tab" data-tab="history" aria-selected="false">🕓 History</button>
       <button class="tab" role="tab" data-tab="api" aria-selected="false">🔌 API</button>
+    </div>
+
+    <!-- First-run welcome (dismissible; hidden after the user closes it once) -->
+    <div id="welcome" class="welcome" role="note" hidden>
+      <button class="welcome-x" id="welcome-close" type="button" aria-label="Dismiss welcome">×</button>
+      <strong>👋 New here?</strong> Stock-Comber screens public companies against classic
+      value-investing checklists (Graham, Buffett, and more) using free data — a research
+      shortlist, <em>not</em> buy/sell advice. Start on <strong>Full list</strong>, click any
+      row for the full breakdown, or read the
+      <a href="/about.html">About</a> and <a href="/glossary.html">Glossary</a> pages.
     </div>
 
     <!-- Full list (landing): every company across all stored runs -->
@@ -1777,7 +1796,7 @@ $("#open-manual").onclick = () => openJobDialog("manual");
 $("#jobdlg-close").onclick = closeJobDialog;
 $("#job-overlay").addEventListener("click", e => { if (e.target.id === "job-overlay") closeJobDialog(); });
 document.querySelectorAll("#job-overlay [data-close]").forEach(b => b.onclick = closeJobDialog);
-document.addEventListener("keydown", e => { if (e.key === "Escape") closeJobDialog(); });
+// (Escape-to-close is handled centrally by the modal focus-trap layer.)
 
 /* ---- History tab: analysis queue + past runs & searches ---- */
 const fmtWhen = s => { try { return new Date(s).toLocaleString(); } catch(e){ return s || ""; } };
@@ -2241,7 +2260,96 @@ function closeNav() {
 $("#nav-btn").onclick = e => { e.stopPropagation(); openNav(); };
 $("#nav-back").onclick = closeNav;
 $("#nav-close").onclick = closeNav;
-document.addEventListener("keydown", e => { if (e.key === "Escape") closeNav(); });
+
+/* ---- accessibility: modal focus trap, Escape-to-close, focus restore ---- */
+(function () {
+  const FOCUSABLE = 'a[href],button:not([disabled]),input:not([disabled]),' +
+    'select:not([disabled]),textarea:not([disabled]),[tabindex]:not([tabindex="-1"])';
+  let lastFocus = null, hadModal = false;
+
+  // The topmost open modal's focusable container (drawer > job dialog > detail).
+  function topModal() {
+    const nav = $("#nav-drawer"), job = $("#job-overlay"), ov = $("#overlay");
+    if (nav && nav.classList.contains("open")) return nav.querySelector(".navpane") || nav;
+    if (job && job.classList.contains("open")) return job.querySelector(".modal") || job;
+    if (ov && ov.classList.contains("open")) return ov.querySelector(".modal") || ov;
+    return null;
+  }
+  function visibleFocusable(container) {
+    return Array.from(container.querySelectorAll(FOCUSABLE))
+      .filter(el => el.offsetParent !== null || el === document.activeElement);
+  }
+  // Remember where focus was before a modal grabs it (so we can restore on close).
+  document.addEventListener("focusin", e => { if (!topModal()) lastFocus = e.target; });
+
+  // React to any overlay opening/closing (class="open" toggled by the openers).
+  const obs = new MutationObserver(() => {
+    const m = topModal();
+    if (m) {
+      hadModal = true;
+      if (!m.contains(document.activeElement)) {
+        const f = visibleFocusable(m)[0] || m;
+        setTimeout(() => { try { f.focus(); } catch (_) {} }, 0);
+      }
+    } else if (hadModal) {
+      hadModal = false;
+      if (lastFocus) setTimeout(() => { try { lastFocus.focus(); } catch (_) {} }, 0);
+    }
+  });
+  ["overlay", "job-overlay", "nav-drawer"].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) obs.observe(el, { attributes: true, attributeFilter: ["class"] });
+  });
+
+  document.addEventListener("keydown", e => {
+    const m = topModal();
+    if (!m) return;
+    if (e.key === "Escape") {
+      e.preventDefault();
+      if ($("#nav-drawer").classList.contains("open")) closeNav();
+      else if ($("#job-overlay").classList.contains("open")) closeJobDialog();
+      else closeDetail();
+      return;
+    }
+    if (e.key === "Tab") {
+      const els = visibleFocusable(m);
+      if (!els.length) return;
+      const first = els[0], last = els[els.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+})();
+
+/* ---- accessibility: arrow-key navigation across the view tabs ---- */
+(function () {
+  const tablist = document.querySelector(".tabs[role=tablist]");
+  if (!tablist) return;
+  tablist.addEventListener("keydown", e => {
+    const tabs = Array.from(tablist.querySelectorAll(".tab"));
+    const i = tabs.indexOf(document.activeElement);
+    if (i < 0) return;
+    let j = null;
+    if (e.key === "ArrowRight" || e.key === "ArrowDown") j = (i + 1) % tabs.length;
+    else if (e.key === "ArrowLeft" || e.key === "ArrowUp") j = (i - 1 + tabs.length) % tabs.length;
+    else if (e.key === "Home") j = 0;
+    else if (e.key === "End") j = tabs.length - 1;
+    if (j !== null) { e.preventDefault(); tabs[j].focus(); tabs[j].click(); }
+  });
+})();
+
+/* ---- first-run welcome (shown once, dismissed forever per browser) ---- */
+(function () {
+  const el = $("#welcome");
+  if (!el) return;
+  let dismissed = false;
+  try { dismissed = localStorage.getItem("welcomeDismissed") === "1"; } catch (_) {}
+  if (!dismissed) el.hidden = false;
+  $("#welcome-close").onclick = () => {
+    el.hidden = true;
+    try { localStorage.setItem("welcomeDismissed", "1"); } catch (_) {}
+  };
+})();
 
 /* ---- color theme (System → Light → Dark) ---- */
 const THEMES = ["system", "light", "dark"];
