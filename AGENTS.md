@@ -79,4 +79,8 @@ with tooling, never by hand; re-test; push.
 - Config schema + validators: `stock_comber/config.py` (`DEFAULT_CONFIG`)
 - Dashboard: `public/index.html` (+ 7 sub-pages)
 - Data providers + ToS notes: `docs/DATASOURCES.md`
+- Scaling / Hobby→Pro decision: `docs/SCALING.md`
+- Privacy posture (no PII, secrets write-only): `PRIVACY.md`
+- CI (tests 3.9/3.11/3.12 + non-blocking `pip-audit` & `mypy`): `.github/workflows/ci.yml`;
+  dependency updates: `.github/dependabot.yml`
 - Backlog: `TODO.md`

@@ -182,6 +182,9 @@ def guard(handler, endpoint: str, method: str = None, store=None,
                             "fallback (degraded=%d): %s",
                             endpoint, _DEGRADED["count"], exc)
                 over, count = _FALLBACK.hit(client, limit, window)
+                # hit() counts the in-flight request; the DB path counts only
+                # prior calls, so drop 1 for a consistent `remaining` reading.
+                count = max(0, count - 1)
                 if over:
                     ok, retry_after = False, window
             else:

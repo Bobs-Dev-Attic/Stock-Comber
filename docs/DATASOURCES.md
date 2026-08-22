@@ -44,6 +44,25 @@ jobs don't hammer the free endpoints.
 - **ToS:** free tier has request-rate and redistribution limits. Review before
   caching/redistributing metrics.
 
+## Terms-of-service review (summary)
+
+A per-provider read of the compliance posture. **This is an engineering summary,
+not legal advice** — confirm current terms before any public or commercial launch,
+since these can change.
+
+| Provider | Key? | Data | Redistribution / caching | Risk | Action |
+|---|---|---|---|---|---|
+| **SEC EDGAR** | No | Public-domain filings | Permitted; honest `User-Agent` + ~10 req/s required | **Low** | Keep the contact-email User-Agent and rate limit. Compliant. |
+| **Yahoo Finance** | No | Prices/volume (unofficial endpoint) | Terms **discourage** scraping/redistribution; no SLA | **High** | Treat as best-effort; plan a licensed replacement for any public/commercial use. |
+| **Stooq** | No | Daily closes (CSV) | Free; bulk/automated use should be verified | **Medium** | Fallback only; low volume. Verify terms before heavy use. |
+| **Finnhub** | Yes (free tier) | Quote + metrics | Free tier limits request rate **and** redistribution | **Medium** | Key is secret; respect rate limit; don't redistribute raw metrics beyond the app. |
+
+**Bottom line:** the only high-risk dependency is Yahoo's unofficial endpoint —
+both for reliability (no SLA) and terms (discourages scraping). For a personal /
+educational deployment the current setup is reasonable; for a public or commercial
+launch, move price data to a **licensed** provider (see below) and re-check each
+provider's terms.
+
 ## Swapping a source
 
 The `datasources/` package is the seam. Each source is a small class with a narrow

@@ -84,17 +84,32 @@ Legend: **P0** ship first · **P1** reliability/cost · **P2** memory/scale · *
       advice" footer to `settings.html` and `thesis.html` (the two that lacked one; the rest
       already carried the caveat). Only the strict-CSP follow-up (see P0 follow-ups) remains.
 
-## P4 — Product & strategy
-- [ ] **Review each data provider's ToS** (Yahoo unofficial endpoints, Finnhub free tier,
-      SEC EDGAR, Stooq) for permitted use, caching/redistribution limits, and attribution.
-      See `docs/DATASOURCES.md`.
-- [ ] **Plan a licensed market-data source swap** (FMP / Alpha Vantage / Tiingo / Polygon)
-      behind the existing `datasources/` abstraction — Yahoo's unofficial API has no SLA.
-- [ ] **`LICENSE` presence check + privacy-policy stub** (pre-req for any future email digest,
-      which adds CAN-SPAM/GDPR obligations).
-- [ ] **Decide the Hobby→Pro tier trigger.** The 12-serverless-function cap is a growth wall;
-      document the milestone at which lifting it is worth $20/mo.
-- [ ] **CI hardening:** add `pip-audit` and Dependabot for dependency CVEs; add `mypy`
-      (non-blocking first, then ratchet).
-- [ ] **Marketing:** lead with the differentiators — multi-lens value consensus + backtested
-      edge + "hidden gems" surfacing. Consider an opt-in nightly digest (RSS/email).
+## P4 — Product & strategy ✅ shipped in v0.42.0
+- [x] **Data-provider ToS review.** `docs/DATASOURCES.md` now has a per-provider ToS-review
+      summary table (permitted use, redistribution/caching, risk, action). Yahoo's unofficial
+      endpoint is the one high-risk dependency (no SLA, discourages scraping).
+- [x] **Licensed-source swap plan.** The swap procedure (behind the `datasources/` seam) and
+      candidate licensed providers (FMP / Alpha Vantage / Tiingo / Polygon) are documented in
+      `docs/DATASOURCES.md`.
+- [x] **`LICENSE` + privacy stub.** `LICENSE` confirmed present (MIT). Added `PRIVACY.md`
+      documenting that no personal data is collected, secrets are write-only, and the future-
+      digest obligations (CAN-SPAM/GDPR) that would apply.
+- [x] **Hobby→Pro tier trigger.** `docs/SCALING.md` documents the 12-function cap, the other
+      Hobby limits, and the concrete triggers that justify a Pro upgrade — plus cheaper
+      alternatives (Upstash, Neon pooling) to reach for first.
+- [x] **CI hardening.** Added `pip-audit` (dependency CVE scan) and `mypy` (lenient,
+      non-blocking) jobs to `ci.yml`, a lenient `[tool.mypy]` config, and `.github/dependabot.yml`
+      for the pip + github-actions ecosystems.
+- [x] **Marketing.** README gained a "Why Stock-Comber" section leading with the three
+      differentiators (multi-lens consensus, backtested edge, nightly hidden gems).
+
+### P4 follow-ups (deferred, not blocking)
+- [ ] Actually migrate price data to a licensed provider (only needed for a public/commercial
+      launch — the plan is documented; the code change is scoped but not done).
+- [ ] Opt-in nightly digest (RSS/email) — would trigger the privacy/unsubscribe work noted in
+      `PRIVACY.md`.
+- [ ] Ratchet `mypy` from non-blocking → enforced, per-module.
+
+## Cross-cutting deferred item
+- [ ] Strict Content-Security-Policy with script nonces/hashes for the inline-heavy SPA
+      (deferred from P0/P3 — the other security headers already ship).

@@ -11,6 +11,27 @@ on a schedule so you get a fresh shortlist without lifting a finger.
 > ⚠️ **Educational tool only — not investment advice.** Data from free sources
 > can be delayed, incomplete, or wrong. Always do your own research.
 
+## Why Stock-Comber
+
+Most free screeners give you one filter over live prices. Stock-Comber is built
+around three things they don't:
+
+- **Multi-lens value _consensus_.** Every company is scored against six classic
+  value frameworks at once — Graham, Buffett, Piotroski F-Score, Greenblatt Magic
+  Formula, Lynch (GARP), and Graham Net-Net — plus your own custom lens. A name
+  that clears several independent frameworks is more interesting than one that
+  squeaks past a single filter.
+- **A backtested edge on every pick.** Each result carries a transparent,
+  point-in-time **backtest edge** — did this lens's PASS verdicts historically
+  precede stronger forward returns for this name? It's directional colour, shown
+  right next to the fundamentals (see [the caveats](#more-investor-lenses)).
+- **A nightly "hidden gems" engine.** Instead of re-screening the mega-caps every
+  night, a capped, sector-diversified, rotating scan surfaces overlooked
+  small-and-mid-cap names across industries and geographies.
+
+All of it runs key-less on free data, on a schedule, and stays comfortably inside
+a single free Vercel Hobby project.
+
 ---
 
 ## What it screens for
@@ -241,6 +262,10 @@ CI runs the suite on Python 3.9 / 3.11 / 3.12 for every push and PR.
 This repo is configured (in [`.claude/settings.json`](.claude/settings.json))
 to default to **Claude Opus 4.8** with **medium reasoning effort**.
 
-## License
+## License & privacy
 
-MIT — see [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE). The app collects no personal data; see
+[PRIVACY.md](PRIVACY.md) for what the hosted version does and doesn't record, and
+[docs/DATASOURCES.md](docs/DATASOURCES.md) for the upstream providers and their
+terms. Scaling and the Vercel Hobby→Pro decision are documented in
+[docs/SCALING.md](docs/SCALING.md).

@@ -133,6 +133,15 @@ def test_in_memory_fallback_enforces_floor_when_db_count_fails():
     assert apiguard.degraded_count() >= before + 5      # every call fell back
 
 
+def test_fallback_remaining_matches_db_path_semantics():
+    # In the degraded path, `remaining` should count prior calls only (like the
+    # DB path) — the in-flight request must not be double-counted.
+    apiguard._FALLBACK.reset()
+    _, meta = apiguard.guard(FakeHandler(), "screen", store=BoomCount(),
+                             cfg=_cfg(max_requests=3))
+    assert meta["limit"] == 3 and meta["remaining"] == 2   # first call → 2 left
+
+
 def test_anonymous_request_buckets_by_ip_under_key_scope():
     store = FakeStore(count=0)
     h = FakeHandler(path="/api/screen?tickers=AAPL")  # no ?key=

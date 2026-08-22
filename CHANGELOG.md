@@ -4,6 +4,39 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.42.0] - 2026-08-22
+
+### Added
+- **`PRIVACY.md`** — documents that the app collects no personal data, that secrets are
+  write-only (only key fingerprints and coarse IPs are logged, for rate limiting), and the
+  obligations any future email-digest feature would carry.
+- **`docs/SCALING.md`** — the 12-serverless-function Hobby cap, the other Hobby limits, and the
+  concrete triggers that justify a Vercel Pro upgrade (plus cheaper alternatives to try first).
+- **README "Why Stock-Comber"** section leading with the three differentiators: multi-lens
+  value consensus, a backtested edge per pick, and the nightly "hidden gems" engine.
+- **`docs/DATASOURCES.md`** ToS-review summary table (per-provider permitted use, redistribution
+  limits, risk, and action) alongside the existing source-swap procedure.
+
+### CI / tooling
+- Added a **`pip-audit`** dependency-vulnerability job and a lenient, non-blocking **`mypy`**
+  type-check job to `ci.yml`, a `[tool.mypy]` config, and **`.github/dependabot.yml`** for the
+  pip and github-actions ecosystems. Both new CI jobs are informational for now (`|| true`),
+  to be ratcheted stricter over time.
+
+### Fixed (post-update review)
+- **HTML reports now escape** ticker/company/strategy values, so names like "AT&T" or any
+  stray angle bracket can't break the markup or inject content into the served report.
+- **`write_reports` is now atomic** — it streams to a temp file and `os.replace`s it into place,
+  so a mid-render error can't leave a truncated report or a `latest.*` out of sync.
+- **Nightly backtest fetches use a per-thread `YahooSource`** (thread-local), since
+  `requests.Session` isn't guaranteed thread-safe under the bounded worker pool.
+- **`Screener.iter_results` resets `last_companies`** per call (matching `run()`), preventing
+  stale-company accumulation across successive streaming calls.
+- **Rate-limiter `remaining`** is consistent between the DB and in-memory-fallback paths (the
+  in-flight request is no longer double-counted in the degraded path).
+
+[0.42.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.42.0
+
 ## [0.41.0] - 2026-08-22
 
 ### Added

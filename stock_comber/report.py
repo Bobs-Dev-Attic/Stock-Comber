@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import csv
+import html
 import io
 import json
 import os
@@ -11,6 +12,15 @@ from datetime import datetime, timezone
 from typing import Any, Optional, TextIO
 
 from .models import ScreenResult
+
+
+def _esc(v: Any) -> str:
+    """HTML-escape a value for safe interpolation into the report markup.
+
+    Company names and (defensively) tickers/strategies come from upstream data —
+    'AT&T', 'Procter & Gamble', or any '<'/'>' would otherwise break the markup
+    or inject live HTML into the served report."""
+    return html.escape("" if v is None else str(v))
 
 
 def _fmt(v: Optional[float]) -> str:
@@ -133,14 +143,15 @@ _HTML_TAIL = """</tbody></table>
 def stream_html(results: list[ScreenResult], cfg: dict[str, Any], fh: TextIO) -> None:
     """Write the HTML report to a file handle, one row at a time (bounded memory)."""
     generated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    fh.write(_HTML_HEAD.format(generated=generated,
-                               strategies=", ".join(cfg.get("strategies", []))))
+    fh.write(_HTML_HEAD.format(
+        generated=_esc(generated),
+        strategies=_esc(", ".join(cfg.get("strategies", [])))))
     for r in _filtered(results, cfg):
         m = r.metrics
         cls = "pass" if r.passed else "near"
         fh.write(
-            f"<tr class='{cls}'><td>{r.ticker}</td><td>{(r.name or '')}</td>"
-            f"<td>{r.strategy}</td><td>{'✔' if r.passed else '·'}</td>"
+            f"<tr class='{cls}'><td>{_esc(r.ticker)}</td><td>{_esc(r.name or '')}</td>"
+            f"<td>{_esc(r.strategy)}</td><td>{'✔' if r.passed else '·'}</td>"
             f"<td>{r.score_pct:.0f}%</td><td>{_fmt(m.get('price'))}</td>"
             f"<td>{_fmt(m.get('pe_ratio'))}</td><td>{_fmt(m.get('pb_ratio'))}</td>"
             f"<td>{_fmt(m.get('roe_pct'))}</td><td>{_fmt(m.get('avg_volume'))}</td>"
@@ -187,8 +198,17 @@ def write_reports(results: list[ScreenResult], cfg: dict[str, Any]) -> list[str]
     for fmt in out.get("formats", ["json"]):
         stream_fn, ext = STREAMERS[fmt]
         path = os.path.join(out_dir, f"screen-{stamp}.{ext}")
-        with open(path, "w", encoding="utf-8") as fh:
-            stream_fn(results, cfg, fh)
+        tmp = path + ".tmp"
+        # Stream to a temp file, then atomically move it into place — so a
+        # mid-stream render error can't leave a truncated report or a "latest"
+        # that's out of sync with the stamped file. Still bounded memory.
+        try:
+            with open(tmp, "w", encoding="utf-8") as fh:
+                stream_fn(results, cfg, fh)
+            os.replace(tmp, path)
+        finally:
+            if os.path.exists(tmp):
+                os.remove(tmp)
         written.append(path)
         # Keep a stable "latest" copy for dashboards — copy the file, don't
         # re-render or buffer the whole report again.

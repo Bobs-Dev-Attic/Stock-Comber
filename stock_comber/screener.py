@@ -191,6 +191,7 @@ class Screener:
         persistence-friendly path.)
         """
         universe = tickers or self.resolve_universe()
+        self.last_companies = {}   # reset per call, like run()
         total = len(universe)
         for i, ticker in enumerate(universe, 1):
             if progress:

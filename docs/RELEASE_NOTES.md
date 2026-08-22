@@ -1,5 +1,16 @@
 # Release notes
 
+## v0.42.0 — Product & strategy (2026-08-22)
+
+The review backlog's final P4 batch — mostly docs and tooling, no app-behavior change. New
+**`PRIVACY.md`** spells out that the app collects no personal data and keeps secrets write-only.
+New **`docs/SCALING.md`** records how the project stays inside Vercel's free 12-function cap and
+exactly what would justify upgrading to Pro. The README opens with a **"Why Stock-Comber"**
+section leading with the real differentiators — multi-lens value consensus, a backtested edge on
+every pick, and the nightly hidden-gems engine — and **`docs/DATASOURCES.md`** gains a
+per-provider terms-of-service review. On the tooling side, CI now runs **`pip-audit`** and a
+lenient **`mypy`** (both non-blocking for now), and **Dependabot** keeps dependencies patched.
+
 ## v0.41.0 — UX & accessibility (2026-08-22)
 
 The review backlog's P3 batch, all in the dashboard. New visitors get a **dismissible welcome
