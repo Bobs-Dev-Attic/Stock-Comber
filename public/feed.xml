@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version='2.0' xmlns:atom='http://www.w3.org/2005/Atom'>
+<channel>
+<title>Stock-Comber — Nightly Hidden Gems</title>
+<link>https://github.com/Bobs-Dev-Attic/Stock-Comber</link>
+<atom:link href='https://github.com/Bobs-Dev-Attic/Stock-Comber/feed.xml' rel='self' type='application/rss+xml'/>
+<description>Value stocks that passed Stock-Comber's Graham &amp; Buffett screens in the latest nightly run. Educational research shortlist — not investment advice.</description>
+<language>en-us</language>
+<lastBuildDate>Sat, 22 Aug 2026 23:15:41 +0000</lastBuildDate>
+<generator>Stock-Comber</generator>
+<item>
+<title>MLI — MUELLER INDUSTRIES INC (buffett) · 100%</title>
+<link>https://github.com/Bobs-Dev-Attic/Stock-Comber</link>
+<guid isPermaLink='false'>stock-comber:MLI:buffett:2026-08-22</guid>
+<pubDate>Sat, 22 Aug 2026 23:15:41 +0000</pubDate>
+<description>Passed the buffett screen with a 100% score. Price 61.96. P/E 9.03. Educational only — not investment advice.</description>
+</item>
+<item>
+<title>MLI — MUELLER INDUSTRIES INC (graham) · 89%</title>
+<link>https://github.com/Bobs-Dev-Attic/Stock-Comber</link>
+<guid isPermaLink='false'>stock-comber:MLI:graham:2026-08-22</guid>
+<pubDate>Sat, 22 Aug 2026 23:15:41 +0000</pubDate>
+<description>Passed the graham screen with a 89% score. Price 61.96. P/E 9.03. Educational only — not investment advice.</description>
+</item>
+<item>
+<title>EVR — EVERCORE INC. (buffett) · 83%</title>
+<link>https://github.com/Bobs-Dev-Attic/Stock-Comber</link>
+<guid isPermaLink='false'>stock-comber:EVR:buffett:2026-08-22</guid>
+<pubDate>Sat, 22 Aug 2026 23:15:41 +0000</pubDate>
+<description>Passed the buffett screen with a 83% score. Price 287. P/E 20.43. Educational only — not investment advice.</description>
+</item>
+<item>
+<title>GGG — GRACO INC. (buffett) · 83%</title>
+<link>https://github.com/Bobs-Dev-Attic/Stock-Comber</link>
+<guid isPermaLink='false'>stock-comber:GGG:buffett:2026-08-22</guid>
+<pubDate>Sat, 22 Aug 2026 23:15:41 +0000</pubDate>
+<description>Passed the buffett screen with a 83% score. Price 81.71. P/E 26.53. Educational only — not investment advice.</description>
+</item>
+<item>
+<title>HALO — HALOZYME THERAPEUTICS, INC. (buffett) · 83%</title>
+<link>https://github.com/Bobs-Dev-Attic/Stock-Comber</link>
+<guid isPermaLink='false'>stock-comber:HALO:buffett:2026-08-22</guid>
+<pubDate>Sat, 22 Aug 2026 23:15:41 +0000</pubDate>
+<description>Passed the buffett screen with a 83% score. Price 106. P/E 41.45. Educational only — not investment advice.</description>
+</item>
+<item>
+<title>MEDP — Medpace Holdings, Inc. (buffett) · 83%</title>
+<link>https://github.com/Bobs-Dev-Attic/Stock-Comber</link>
+<guid isPermaLink='false'>stock-comber:MEDP:buffett:2026-08-22</guid>
+<pubDate>Sat, 22 Aug 2026 23:15:41 +0000</pubDate>
+<description>Passed the buffett screen with a 83% score. Price 613. P/E 40.09. Educational only — not investment advice.</description>
+</item>
+</channel>
+</rss>

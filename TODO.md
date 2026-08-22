@@ -121,8 +121,12 @@ Legend: **P0** ship first · **P1** reliability/cost · **P2** memory/scale · *
       (env/DB), redacted by the settings API, and travels only in the `Authorization` header.
       **Backtest history** also routes through Tiingo (adjusted closes) when a key is set (v0.47.0),
       via `datasources.make_history_source` — quotes and backtests both use the licensed feed.
-- [ ] Opt-in nightly digest (RSS/email) — would trigger the privacy/unsubscribe work noted in
-      `PRIVACY.md`.
+- [x] Opt-in nightly digest — shipped as an **RSS feed** (v0.48.0). The nightly job emits an
+      `rss` report (`report.stream_rss`) published at `/feed.xml` and linked from the dashboard.
+      RSS was chosen over email precisely because it's a static, no-PII feed: no subscriber list,
+      no unsubscribe flow, no mail-provider secret, and no new serverless function (stays at the
+      12-cap). An **email** digest (which would add the PII/unsubscribe/CAN-SPAM surface in
+      `PRIVACY.md`) remains deferred — it needs the function-cap/Pro-tier decision first.
 - [x] Ratchet `mypy` from non-blocking → **enforced** (v0.45.1). The `stock_comber` package
       type-checks clean and the CI `typecheck` job now blocks on it (config stays lenient so it
       gates *new* type errors without a full annotation sweep; `api/` handlers + `tests/` remain

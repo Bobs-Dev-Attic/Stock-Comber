@@ -4,6 +4,21 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.48.0] - 2026-08-22
+
+### Added
+- **Opt-in nightly digest as an RSS feed.** A new `rss` output format (`report.stream_rss`) emits an
+  RSS 2.0 feed of the passing "hidden gems" from the latest nightly run. The scheduled workflow
+  publishes it at **`/feed.xml`**, and the dashboard links it (a `<link rel="alternate">` in the head
+  plus a footer link) so any reader can subscribe. Each item carries the ticker, company, strategy,
+  score, and key metrics (price, P/E, backtest edge) with the standard "not investment advice"
+  caveat. Feed links use a configurable `output.site_url` (defaults to the project homepage). Chosen
+  over an email digest deliberately: RSS is a **static, no-PII** feed — no subscriber list, no
+  unsubscribe flow, no mail-provider secret, and no new serverless function (we stay at the 12-cap).
+  Streamed item-by-item and fully XML-escaped.
+
+[0.48.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.48.0
+
 ## [0.47.0] - 2026-08-22
 
 ### Changed

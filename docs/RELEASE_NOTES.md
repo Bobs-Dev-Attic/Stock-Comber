@@ -1,5 +1,15 @@
 # Release notes
 
+## v0.48.0 — Nightly digest (RSS) (2026-08-22)
+
+Stock-Comber now publishes a **nightly digest** you can subscribe to: an RSS feed of the value
+stocks that passed the screens in the latest run, at **`/feed.xml`**. Point any feed reader at it (or
+click "Nightly digest (RSS)" in the dashboard footer) and you'll get the fresh "hidden gems" each
+night — ticker, company, strategy, score, and headline metrics — with the usual not-investment-advice
+caveat. We deliberately chose RSS over email: it's a static, public feed with **no sign-up, no email
+address to hand over, and nothing to unsubscribe from** — so it adds no privacy burden. If you self-host,
+set `output.site_url` to your dashboard's address so the feed's links point at the right place.
+
 ## v0.47.0 — Backtests use the licensed feed too (2026-08-22)
 
 Following v0.46.0 (which made Tiingo the primary source for live **prices**), the historical

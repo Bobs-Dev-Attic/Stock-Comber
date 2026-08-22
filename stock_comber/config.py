@@ -158,10 +158,15 @@ DEFAULT_CONFIG: dict[str, Any] = {
     # Output/reporting knobs.
     "output": {
         "dir": "reports",
-        "formats": ["json", "csv", "markdown"],  # any of json/csv/markdown/html
+        # any of json/csv/markdown/html/rss. "rss" emits a nightly digest feed
+        # (latest.xml) of the passing "hidden gems" — a static, no-PII feed.
+        "formats": ["json", "csv", "markdown", "rss"],
         "only_passing": False,   # include near-misses in reports
         "top_n": 50,             # cap rows in human-readable reports
         "sort_by": "score_pct",
+        # Absolute base URL used for links in the RSS digest. Point it at your
+        # deployed dashboard; defaults to the project homepage.
+        "site_url": "https://github.com/Bobs-Dev-Attic/Stock-Comber",
     },
     # Scheduling knobs for local (APScheduler) runs. GitHub Actions uses its
     # own cron in .github/workflows/screen.yml.
@@ -251,7 +256,7 @@ def validate_config(cfg: dict[str, Any]) -> list[str]:
         from .criteria.custom import validate_criteria
         problems.extend(validate_criteria(custom_criteria))
 
-    valid_formats = {"json", "csv", "markdown", "html"}
+    valid_formats = {"json", "csv", "markdown", "html", "rss"}
     for fmt in cfg.get("output", {}).get("formats", []):
         if fmt not in valid_formats:
             problems.append(f"unknown output format: {fmt!r}")

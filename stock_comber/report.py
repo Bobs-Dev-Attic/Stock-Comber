@@ -166,11 +166,85 @@ def to_html(results: list[ScreenResult], cfg: dict[str, Any]) -> str:
     return buf.getvalue()
 
 
+def _rss_date(dt: datetime) -> str:
+    """RFC 822 date (what RSS 2.0 pubDate/lastBuildDate expect)."""
+    from email.utils import format_datetime
+    return format_datetime(dt)
+
+
+def _digest_rows(results: list[ScreenResult], cfg: dict[str, Any]) -> list[ScreenResult]:
+    """The nightly digest is the shortlist: passing matches only, capped by
+    ``output.top_n``. Ranking order is preserved from the caller."""
+    rows = [r for r in results if r.passed]
+    top_n = cfg.get("output", {}).get("top_n")
+    if top_n:
+        rows = rows[:top_n]
+    return rows
+
+
+def stream_rss(results: list[ScreenResult], cfg: dict[str, Any], fh: TextIO) -> None:
+    """Write an RSS 2.0 feed of the nightly "hidden gems" (passing matches).
+
+    Streamed item-by-item so a large universe never materialises the whole feed
+    in memory. Every interpolated value is XML-escaped. No personal data is
+    involved — this is a static feed of public screening results, so it carries
+    none of the subscriber/unsubscribe obligations an email digest would.
+    """
+    out = cfg.get("output", {})
+    site = str(out.get("site_url") or "https://github.com/Bobs-Dev-Attic/Stock-Comber")
+    now = datetime.now(timezone.utc)
+    built = _rss_date(now)
+    strategies = ", ".join(cfg.get("strategies", [])) or "value strategies"
+    rows = _digest_rows(results, cfg)
+    fh.write("<?xml version='1.0' encoding='UTF-8'?>\n")
+    fh.write("<rss version='2.0' xmlns:atom='http://www.w3.org/2005/Atom'>\n<channel>\n")
+    fh.write(f"<title>Stock-Comber — Nightly Hidden Gems</title>\n")
+    fh.write(f"<link>{_esc(site)}</link>\n")
+    fh.write(f"<atom:link href='{_esc(site.rstrip('/'))}/feed.xml' rel='self' "
+             "type='application/rss+xml'/>\n")
+    fh.write("<description>Value stocks that passed Stock-Comber's Graham &amp; "
+             "Buffett screens in the latest nightly run. Educational research "
+             "shortlist — not investment advice.</description>\n")
+    fh.write("<language>en-us</language>\n")
+    fh.write(f"<lastBuildDate>{built}</lastBuildDate>\n")
+    fh.write(f"<generator>Stock-Comber</generator>\n")
+    for r in rows:
+        m = r.metrics
+        title = f"{r.ticker} — {(r.name or r.ticker)} ({r.strategy}) · {r.score_pct:.0f}%"
+        bits = [f"Passed the {_esc(r.strategy)} screen with a "
+                f"{r.score_pct:.0f}% score."]
+        if m.get("price") is not None:
+            bits.append(f"Price {_fmt(m.get('price'))}.")
+        if m.get("pe_ratio") is not None:
+            bits.append(f"P/E {_fmt(m.get('pe_ratio'))}.")
+        if m.get("backtest_edge_pct") is not None:
+            bits.append(f"Backtest edge {_fmt(m.get('backtest_edge_pct'))}%.")
+        desc = " ".join(bits) + " Educational only — not investment advice."
+        # Stable-per-day guid so a reader dedupes within a run but shows a fresh
+        # item each night; not a resolvable URL (isPermaLink=false).
+        guid = f"stock-comber:{r.ticker}:{r.strategy}:{now.strftime('%Y-%m-%d')}"
+        fh.write("<item>\n")
+        fh.write(f"<title>{_esc(title)}</title>\n")
+        fh.write(f"<link>{_esc(site)}</link>\n")
+        fh.write(f"<guid isPermaLink='false'>{_esc(guid)}</guid>\n")
+        fh.write(f"<pubDate>{built}</pubDate>\n")
+        fh.write(f"<description>{_esc(desc)}</description>\n")
+        fh.write("</item>\n")
+    fh.write("</channel>\n</rss>\n")
+
+
+def to_rss(results: list[ScreenResult], cfg: dict[str, Any]) -> str:
+    buf = io.StringIO()
+    stream_rss(results, cfg, buf)
+    return buf.getvalue()
+
+
 RENDERERS = {
     "json": (to_json, "json"),
     "csv": (to_csv, "csv"),
     "markdown": (to_markdown, "md"),
     "html": (to_html, "html"),
+    "rss": (to_rss, "xml"),
 }
 
 # Streaming writers write directly to a file handle. csv/html stream row-by-row
@@ -181,6 +255,7 @@ STREAMERS = {
     "csv": (stream_csv, "csv"),
     "markdown": (lambda r, c, fh: fh.write(to_markdown(r, c)), "md"),
     "html": (stream_html, "html"),
+    "rss": (stream_rss, "xml"),
 }
 
 
