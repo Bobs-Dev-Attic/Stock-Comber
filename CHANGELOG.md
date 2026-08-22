@@ -4,6 +4,18 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.32.1] - 2026-08-22
+
+### Added
+- **Rate-limit indicator on the API tab.** The API tab now shows a live indicator of the
+  caller's current standing against the configured rate limit — used / limit, a colored
+  usage meter (green → amber → red), requests remaining in the window, and the bucket
+  scope. It also clearly reflects the "limiting off" and "no database" states.
+  `GET /api/runs?audit=1` now returns a `rate_limit` block (limit / remaining / scope /
+  retry_after) for the requesting client.
+
+[0.32.1]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.32.1
+
 ## [0.32.0] - 2026-08-22
 
 ### Added

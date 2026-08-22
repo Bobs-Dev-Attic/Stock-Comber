@@ -253,6 +253,23 @@
   .histcard tbody tr.norow { cursor: default; }
   .histcard tbody tr.norow:hover { background: transparent; }
   .histcard tbody tr.busy { opacity: .55; }
+  /* API rate-limit indicator */
+  .rl-ind { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap;
+    margin: 0 0 .7rem; padding: .5rem .7rem; border: 1px solid var(--line);
+    border-radius: 9px; background: var(--panel); font-size: .88rem; }
+  .rl-ind .rl-dot { width: .6rem; height: .6rem; border-radius: 50%; flex: 0 0 auto; background: var(--muted); }
+  .rl-ind.ok .rl-dot { background: var(--pass-ink); }
+  .rl-ind.warn .rl-dot { background: #eda100; }
+  .rl-ind.hot .rl-dot { background: var(--fail-ink); }
+  .rl-ind.off .rl-dot, .rl-ind.none .rl-dot { background: var(--muted); }
+  .rl-ind .rl-txt { font-weight: 600; }
+  .rl-ind .rl-sub { color: var(--muted); }
+  .rl-meter { flex: 1 1 140px; min-width: 120px; max-width: 320px; height: 8px;
+    border-radius: 999px; background: var(--chip); overflow: hidden; }
+  .rl-meter > i { display: block; height: 100%; width: 0;
+    background: var(--pass-ink); transition: width .2s ease; }
+  .rl-ind.warn .rl-meter > i { background: #eda100; }
+  .rl-ind.hot .rl-meter > i { background: var(--fail-ink); }
   /* API tab */
   .apiref { display: flex; flex-direction: column; gap: .1rem; }
   .api-grp { font-weight: 700; font-size: .82rem; text-transform: uppercase; letter-spacing: .03em;
@@ -414,6 +431,7 @@
           </select>
           <button class="btn ghost" id="refresh-audit">↻ Refresh</button>
         </div>
+        <div id="ratelimit-ind" class="rl-ind" hidden></div>
         <div class="tablewrap"><table>
           <thead><tr><th>When</th><th>Endpoint</th><th>Method</th><th class="r">Status</th><th>Client</th><th>Note</th></tr></thead>
           <tbody id="audit-rows"></tbody>
@@ -1681,6 +1699,37 @@ function renderAudit(rows) {
     + `<td class="l">${a.note ? escHtml(String(a.note)).slice(0,40) : ""}</td></tr>`
   ).join("") || `<tr><td colspan="6" class="hint">No API calls recorded yet.</td></tr>`;
 }
+// Render the live rate-limit indicator from the guard meta returned with the
+// audit fetch. `rl` is {limit, remaining, scope, retry_after} for THIS client
+// (computed for the audit request itself), {} when no database is configured.
+function renderRateLimit(rl, storageEnabled) {
+  const el = $("#ratelimit-ind"); if (!el) return;
+  el.hidden = false;
+  const scopeTxt = {ip: "per IP", key: "per API key", global: "global"};
+  if (!storageEnabled) {
+    el.className = "rl-ind none";
+    el.innerHTML = `<span class="rl-dot"></span><span class="rl-txt">Rate limit inactive</span>`
+      + `<span class="rl-sub">no database configured — limiting & the audit log need <code>DATABASE_URL</code>.</span>`;
+    return;
+  }
+  const limit = rl && rl.limit;
+  if (!limit) {   // null/0 → limiting disabled (but auditing may still be on)
+    el.className = "rl-ind off";
+    el.innerHTML = `<span class="rl-dot"></span><span class="rl-txt">Rate limiting off</span>`
+      + `<span class="rl-sub">requests are logged but not throttled. Enable it under <a href="/settings.html#sec-api">Settings → API</a>.</span>`;
+    return;
+  }
+  const remaining = Math.max(0, rl.remaining == null ? limit : rl.remaining);
+  const used = Math.max(0, limit - remaining);
+  const frac = limit ? used / limit : 0;
+  const cls = frac >= 0.9 ? "hot" : (frac >= 0.7 ? "warn" : "ok");
+  el.className = "rl-ind " + cls;
+  el.innerHTML = `<span class="rl-dot"></span>`
+    + `<span class="rl-txt">${used} / ${limit} used</span>`
+    + `<div class="rl-meter"><i style="width:${Math.min(100, Math.round(frac*100))}%"></i></div>`
+    + `<span class="rl-sub">${remaining} left this window · ${escHtml(scopeTxt[rl.scope] || rl.scope || "")}`
+    + `${cls==="hot" && rl.retry_after ? ` · retry in ~${rl.retry_after}s` : ""}</span>`;
+}
 async function loadAudit() {
   // Populate the endpoint filter once.
   const sel = $("#audit-endpoint");
@@ -1693,6 +1742,7 @@ async function loadAudit() {
     const url = "/api/runs?audit=1&limit=100" + (ep ? "&endpoint=" + encodeURIComponent(ep) : "");
     const d = await (await fetch(url)).json();
     renderAudit(d.audit || []);
+    renderRateLimit(d.rate_limit || {}, !!d.storage_enabled);
     $("#audit-status").textContent = d.storage_enabled
       ? `· ${(d.audit||[]).length} recent request${(d.audit||[]).length===1?"":"s"}${ep?` to /api/${ep}`:""}`
       : "· no database configured — the audit log needs DATABASE_URL";
