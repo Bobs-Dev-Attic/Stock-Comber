@@ -76,6 +76,7 @@ class Company:
     name: Optional[str] = None
     annuals: list[AnnualFacts] = field(default_factory=list)
     quarters: list["QuarterFacts"] = field(default_factory=list)
+    ttm: Optional[dict] = None     # trailing-twelve-month roll-forward figures
     quote: Optional[Quote] = None
     extra: Optional[dict] = None  # supplementary data (e.g. Finnhub metrics)
 

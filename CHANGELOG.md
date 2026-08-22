@@ -4,6 +4,21 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.45.0] - 2026-08-22
+
+### Added
+- **Trailing-twelve-month (TTM) figures.** `sec_edgar.extract_ttm` rolls a full fiscal year
+  forward by the latest interim results — **last full fiscal year + current year-to-date −
+  prior-year same year-to-date** — for revenue, net income, and operating cash flow. All periods
+  are matched by their actual **dates** (not calendar-year labels), so companies with off-calendar
+  fiscal years roll forward correctly. Attached to `Company.ttm` and surfaced as optional
+  **TTM revenue / TTM net income** columns; `None` when the roll-forward components aren't all
+  present. Annual-based strategy scoring is unchanged.
+- **Group the Full list by Ticker.** Added a *Ticker* option to the Group-by dropdown, so a
+  company's per-strategy rows collapse under one expandable group.
+
+[0.45.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.45.0
+
 ## [0.44.0] - 2026-08-22
 
 ### Added
