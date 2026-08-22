@@ -1,5 +1,12 @@
 # Release notes
 
+## v0.42.3 — "Last analyzed" column (2026-08-22)
+
+The Full list now has a **Last analyzed** column showing when each name was last screened (the
+date of the most recent stored run that produced it). It's on by default, sortable — so you can
+sort newest- or oldest-analyzed first — and included in exports. Rows that don't come from a
+stored run show a dash. Hide it any time from the Columns menu.
+
 ## v0.42.2 — Remember the open tab (2026-08-22)
 
 Refreshing the dashboard used to always drop you back on the Full list. Now it keeps you on
