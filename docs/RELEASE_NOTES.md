@@ -1,5 +1,13 @@
 # Release notes
 
+## v0.37.1 — Hover any metric to learn what it means (2026-08-22)
+
+Every metric in the results table now explains itself. Hover a column header (they're
+dotted-underlined to hint at it) or any value and you'll get a plain-language tooltip on
+what the metric measures and why it matters — from P/E and ROE to liquidity, the health
+score and the backtest edge. The same explanations appear on the Key-metrics tiles in a
+stock's expanded breakdown. No more guessing what a column is telling you.
+
 ## v0.37.0 — Backtest edge in the nightly report (2026-08-22)
 
 The nightly "hidden gems" report now carries a **Backtest edge %** for each stock — a single

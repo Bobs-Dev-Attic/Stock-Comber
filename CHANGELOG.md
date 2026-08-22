@@ -4,6 +4,17 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.37.1] - 2026-08-22
+
+### Added
+- **Explanatory tooltips on every metric.** Hovering a results-table column header (now
+  dotted-underlined) or any value cell shows a plain-language explanation of what the metric
+  measures and why it matters as an indicator — for all columns (P/E, ROE, margins,
+  liquidity, health score, backtest edge, etc.). The deep-dive detail modal's Key-metrics
+  tiles get the same tooltips. Frontend-only.
+
+[0.37.1]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.37.1
+
 ## [0.37.0] - 2026-08-22
 
 ### Added

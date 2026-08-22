@@ -94,6 +94,7 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
   table { border-collapse: collapse; width: 100%; }
   th, td { padding: .55rem .6rem; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
   th { color: var(--muted); font-weight: 600; font-size: .82rem; text-transform: uppercase; letter-spacing: .03em; cursor: pointer; user-select: none; }
+  th.hasinfo { text-decoration: underline dotted color-mix(in srgb, var(--muted) 55%, transparent); text-underline-offset: 4px; }
   th[draggable=true] { cursor: grab; }
   th.dragging { opacity: .45; }
   th.dragover { box-shadow: inset 2px 0 0 var(--accent); }
@@ -722,6 +723,35 @@ const METRICS = [
   ["backtest_edge_pct","Backtest edge %"],
 ];
 const METRIC_LABEL = Object.fromEntries(METRICS);
+// Why each column matters and what it indicates — shown as a hover tooltip on
+// the header and every value cell.
+const METRIC_INFO = {
+  ticker: "The stock's ticker symbol. Click a row for the full breakdown.",
+  strategy: "Which value/quality lens produced this row (Graham, Buffett, …). Each judges the same company by different rules.",
+  passed: "Whether the company met this strategy's full checklist. A quick yes/no verdict, not a price target.",
+  score_pct: "Share of the strategy's weighted rules the company passed — how close it came to a full PASS.",
+  health_score: "Blended 0–100 composite of Value, Quality and Growth. A summary of overall business strength used to rank the nightly shortlist; higher is healthier.",
+  pe_ratio: "Price ÷ earnings per share — how many dollars you pay per dollar of annual profit. A core valuation gauge: lower can mean cheaper, or slower growth. Undefined when earnings are negative.",
+  pb_ratio: "Price ÷ book value per share. Below 1.0 means the market prices the company under its accounting net worth — a classic deep-value signal.",
+  roe_pct: "Return on equity: profit earned per dollar of shareholders' equity. A key profitability/quality indicator; consistently high ROE signals a durable, efficient business.",
+  net_margin_pct: "Net profit as a share of revenue — how much of each sales dollar becomes profit. Higher margins indicate pricing power and cost discipline.",
+  current_ratio: "Current assets ÷ current liabilities — short-term liquidity. Above ~2.0 is Graham's mark of a comfortable safety cushion; below 1.0 flags stress.",
+  debt_to_equity: "Total (or long-term) debt ÷ equity — financial leverage and risk. Lower means a sturdier balance sheet that better withstands downturns.",
+  long_term_debt_to_equity: "Long-term debt relative to equity — structural leverage. A lower reading means less reliance on borrowed money.",
+  graham_number: "√(22.5 × EPS × book value/share) — Graham's rough fair-value ceiling for a defensive buy. A price below it suggests a margin of safety.",
+  free_cash_flow: "Operating cash flow − capital expenditures — the real cash a business throws off. Funds dividends, buybacks and debt paydown; a stronger quality signal than reported earnings.",
+  eps: "Earnings per share — profit attributable to each share. The denominator behind P/E and a building block of most valuations.",
+  book_value_per_share: "Shareholders' equity ÷ shares — the per-share accounting net worth, and the anchor for the P/B ratio.",
+  revenue: "Total annual sales — a proxy for company size and the top line growth is measured against.",
+  net_income: "Bottom-line annual profit after all costs and taxes — the earnings that drive EPS, ROE and margins.",
+  working_capital: "Current assets − current liabilities — the short-term cushion of resources over obligations that keeps operations funded.",
+  price: "Latest market price per share. Combined with fundamentals to derive the valuation ratios above.",
+  earnings_growth_5y_pct: "Cumulative growth in earnings over ~5 years — the trajectory of the bottom line. Rising earnings support a durable thesis.",
+  revenue_growth_5y_pct: "Cumulative growth in revenue over ~5 years — is the business actually expanding, not just cutting costs.",
+  avg_volume: "Average daily share volume — how actively the stock trades. A liquidity indicator: thinly-traded names are harder to enter or exit.",
+  dollar_volume: "Average daily dollar volume (price × avg volume) — the standard liquidity gauge. Higher means you can trade size without moving the price.",
+  backtest_edge_pct: "Historical edge: the average next-year return after this name's value-lens PASS verdicts minus after its fails, meaned across lenses. Directional evidence that its signals mattered — educational, not a track record.",
+};
 const OPS = ["<=","<",">=",">","==","!="];
 
 // Column model: base columns + one per metric. `ticker` is always shown.
@@ -902,11 +932,14 @@ $("#tmpl-pop").addEventListener("click", e => e.stopPropagation());
 function renderHead() {
   const head = $("#head"); head.innerHTML = "";
   const th0 = document.createElement("th"); th0.className = "l"; th0.dataset.k = "ticker";
-  th0.innerHTML = "Ticker " + arrow("ticker"); head.appendChild(th0);
+  th0.innerHTML = "Ticker " + arrow("ticker");
+  if (METRIC_INFO.ticker) th0.title = METRIC_INFO.ticker;
+  head.appendChild(th0);
   orderedCols().forEach(c => {
     const th = document.createElement("th"); th.dataset.k = c.key;
     if (c.key === "strategy") th.className = "l";
     th.innerHTML = c.label + " " + arrow(c.key);
+    if (METRIC_INFO[c.key]) { th.title = METRIC_INFO[c.key]; th.classList.add("hasinfo"); }
     head.appendChild(th);
   });
   head.querySelectorAll("th").forEach(th => {
@@ -978,7 +1011,10 @@ function render() {
   sorted.forEach(r => {
     const tr = document.createElement("tr"); tr.onclick = () => openDetail(r);
     let html = `<td class="l"><span class="tick">${r.ticker}</span><div class="name">${(r.name||"").slice(0,30)}</div></td>`;
-    for (const c of cols) html += "<td>" + cell(r, c.key) + "</td>";
+    for (const c of cols) {
+      const info = METRIC_INFO[c.key];
+      html += `<td${info ? ` title="${escHtml(info)}"` : ""}>` + cell(r, c.key) + "</td>";
+    }
     tr.innerHTML = html; tbody.appendChild(tr);
   });
   $("#tbl").hidden = sorted.length === 0;
@@ -1092,7 +1128,7 @@ function openDetail(r) {
     ["Net margin %","net_margin_pct"],["Current ratio","current_ratio"],["Debt/Equity","debt_to_equity"],
     ["Graham #","graham_number"],["Free cash flow","free_cash_flow"],["EPS","eps"],
     ["Earnings 5y %","earnings_growth_5y_pct"],["Revenue","revenue"]]
-    .map(([lab,k])=>`<div class="m"><b>${fmt(m[k])}</b><span>${lab}</span></div>`).join("");
+    .map(([lab,k])=>`<div class="m"${METRIC_INFO[k]?` title="${escHtml(METRIC_INFO[k])}" style="cursor:help"`:""}><b>${fmt(m[k])}</b><span>${lab}</span></div>`).join("");
   const links = extLinks(r).map(([lab,href])=>`<a href="${href}" target="_blank" rel="noopener">${lab} ↗</a>`).join("");
   const errs = (r.errors&&r.errors.length)?`<div class="hint" style="color:var(--fail-ink)">Notes: ${r.errors.join("; ")}</div>`:"";
   const evaluated = (r.max_score || 0) > 0;
