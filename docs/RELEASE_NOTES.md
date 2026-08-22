@@ -1,5 +1,14 @@
 # Release notes
 
+## v0.42.1 — Content-Security-Policy (2026-08-22)
+
+The dashboard now ships a hardened **Content-Security-Policy**. Everything is locked to the
+site's own origin — no third-party scripts, no data exfiltration to other hosts, no framing, no
+plugin/base-tag tricks — while still allowing the external company logos the analysis dialog
+shows. Inline scripts and styles remain allowed (`'unsafe-inline'`), which is unavoidable for a
+static single-file app on a CDN; a fully nonce-strict policy would need an edge middleware or a
+build step and is tracked as a future item. Validated against the live app with zero violations.
+
 ## v0.42.0 — Product & strategy (2026-08-22)
 
 The review backlog's final P4 batch — mostly docs and tooling, no app-behavior change. New

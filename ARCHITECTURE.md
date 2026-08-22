@@ -119,6 +119,11 @@ Vercel Pro — a deliberate milestone, not an accident.
   per-strategy blocks. Writes go through `config.py` validators.
 - **Secrets** (API keys, `DATABASE_URL`) live in env / DB **write-only** and are
   **never returned to the browser**. The audit log stores only key fingerprints.
+- **HTTP security headers** are set for every response in `vercel.json`: a hardened
+  same-origin **CSP** (external script/connect/frame/object/base blocked; `img-src`
+  allows `https:` for logos; `'unsafe-inline'` retained for the static inline-heavy
+  SPA — no nonce is possible without an edge middleware), plus `nosniff`,
+  `X-Frame-Options`, `Referrer-Policy`, `Permissions-Policy`, HSTS, and COOP.
 
 ## Testing
 `pytest` (171 tests). The upstream data providers are blocked from this dev

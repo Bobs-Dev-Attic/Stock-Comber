@@ -29,9 +29,20 @@ Legend: **P0** ship first · **P1** reliability/cost · **P2** memory/scale · *
 - [x] **Surface the "not investment advice" disclaimer in the UI** — persistent page footer
       on the SPA + a disclaimer line in the analysis dialog (verified via Playwright).
 
-### P0 follow-ups (deferred)
-- [ ] Strict Content-Security-Policy with script nonces/hashes (inline-heavy SPA).
-- [ ] Add the disclaimer footer to the 7 sub-pages too (SPA + dialog done).
+### P0 follow-ups
+- [x] **Content-Security-Policy** (v0.42.1). Shipped a hardened same-origin CSP in `vercel.json`:
+      `default-src 'self'`, external script/connect/frame/object/base all blocked, `img-src`
+      allows `https:` (external company logos) + `data:`. `script-src`/`style-src` retain
+      `'unsafe-inline'` — unavoidable for a static, inline-heavy SPA on Vercel's CDN (no request
+      passes through a server to mint a nonce). Validated with Playwright: 0 violations, 0 page
+      errors, dialogs/theme/logo all work. **Nonce/hash-strict** (dropping `'unsafe-inline'`)
+      remains a larger effort — see the deferred item below.
+- [x] Disclaimer footer on the sub-pages (done in v0.41.0 — settings + thesis; others already had it).
+
+### Deferred (larger efforts, not blocking)
+- [ ] **Nonce/hash-strict CSP** (drop `'unsafe-inline'`). Needs either a Vercel Edge Middleware to
+      inject a per-request nonce, or a build step that externalizes every inline `<script>`/`<style>`
+      **and** removes all inline `style="…"` attributes (87) and the one inline `onerror=` handler.
 
 ## P1 — Reliability & cost ✅ shipped in v0.39.0
 - [x] **Pooled connection preference.** `resolve_dsn` now prefers
@@ -110,6 +121,6 @@ Legend: **P0** ship first · **P1** reliability/cost · **P2** memory/scale · *
       `PRIVACY.md`.
 - [ ] Ratchet `mypy` from non-blocking → enforced, per-module.
 
-## Cross-cutting deferred item
-- [ ] Strict Content-Security-Policy with script nonces/hashes for the inline-heavy SPA
-      (deferred from P0/P3 — the other security headers already ship).
+## Cross-cutting
+- [x] Content-Security-Policy — a hardened same-origin CSP ships in v0.42.1 (see P0 follow-ups).
+      The remaining nonce/hash-strict variant is tracked under "Deferred (larger efforts)" above.
