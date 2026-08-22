@@ -4,6 +4,17 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.44.0] - 2026-08-22
+
+### Added
+- **Group the Full list by any column.** A new **Group by** dropdown groups the table by a chosen
+  column (Strategy, Pass, Last analyzed, any metric, …). Grouped rows collapse under a header
+  showing the group value and member count; click a group's **▸ / ▾** to expand or collapse it.
+  Groups appear in the current sort order and members sort within each group. The choice is
+  remembered across refreshes (`sc_group`). Frontend-only.
+
+[0.44.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.44.0
+
 ## [0.43.0] - 2026-08-22
 
 ### Added
