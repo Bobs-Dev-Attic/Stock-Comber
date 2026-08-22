@@ -116,6 +116,11 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
   th .arrow { opacity: .5; font-size: .7rem; }
   tbody tr { cursor: pointer; }
   tbody tr:hover { background: color-mix(in srgb, var(--accent) 8%, transparent); }
+  tbody tr.grouphdr { background: color-mix(in srgb, var(--accent) 10%, var(--panel)); font-weight: 600; }
+  tbody tr.grouphdr:hover { background: color-mix(in srgb, var(--accent) 16%, var(--panel)); }
+  tbody tr.grouphdr td { border-bottom: 1px solid var(--line); }
+  .gtoggle { display: inline-block; width: 1.1em; color: var(--accent); }
+  .gcount { color: var(--muted); font-weight: 400; font-size: .85em; margin-left: .3rem; }
   .tick { font-weight: 700; }
   .name { color: var(--muted); font-size: .85rem; }
   .badge { display: inline-block; padding: .1rem .5rem; border-radius: 999px; font-size: .78rem; font-weight: 700; }
@@ -390,6 +395,9 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
           <option value="">All indexes</option>
         </select>
         <input id="full-filter" type="search" placeholder="Filter ticker / name…" autocomplete="off" style="flex:0 1 180px">
+        <select id="full-group" title="Group the list by a column" style="flex:0 1 160px">
+          <option value="">No grouping</option>
+        </select>
         <label class="hint" style="display:flex;align-items:center;gap:.35rem;margin:0"><input type="checkbox" id="full-passing"> Passing only</label>
         <button class="btn ghost" id="refresh-full">↻ Refresh</button>
       </div>
@@ -1047,23 +1055,74 @@ function sortField(r) {
   if (sortK === "last_analyzed") { const t = Date.parse(r.created_at); return Number.isNaN(t) ? null : t; }
   return num(cellValue(r, sortK));
 }
-function render() {
-  const tbody = $("#tbl tbody"); tbody.innerHTML = "";
-  const cols = orderedCols();
-  const sorted = [...rows].sort((a,b) => {
+/* ---- grouping (Full list) ---- */
+let groupBy = loadGroup();
+const expandedGroups = new Set();
+function loadGroup() {
+  try { const g = localStorage.getItem("sc_group");
+    if (g && (g === "ticker" || ALL_COLUMNS.some(c => c.key === g))) return g; } catch(e){}
+  return "";
+}
+function saveGroup() { try { localStorage.setItem("sc_group", groupBy); } catch(e){} }
+function buildGroupMenu() {
+  const sel = $("#full-group"); if (!sel) return;
+  sel.innerHTML = '<option value="">No grouping</option>' +
+    ALL_COLUMNS.map(c => `<option value="${c.key}">${escHtml(c.label)}</option>`).join("");
+  sel.value = groupBy;
+}
+// A human label for the value a row falls under when grouped by `key`.
+function groupLabel(r, key) {
+  if (key === "strategy") return stratLabel(r.strategy) || r.strategy || "—";
+  if (key === "passed") return r.passed ? "Passing" : "Not passing";
+  if (key === "last_analyzed") return r.created_at ? fmtDate(r.created_at) : "Never";
+  const v = cellValue(r, key);
+  return (v === null || v === undefined || v === "") ? "—" : fmt(v);
+}
+function _sortRows(list) {
+  return [...list].sort((a,b) => {
     const av = sortField(a), bv = sortField(b);
     if (av === bv) return 0; if (av === null) return 1; if (bv === null) return -1;
     return (av > bv ? 1 : -1) * sortDir;
   });
-  sorted.forEach(r => {
-    const tr = document.createElement("tr"); tr.onclick = () => openDetail(r);
-    let html = `<td class="l"><span class="tick">${r.ticker}</span><div class="name">${(r.name||"").slice(0,30)}</div></td>`;
-    for (const c of cols) {
-      const info = METRIC_INFO[c.key];
-      html += `<td${info ? ` title="${escHtml(info)}"` : ""}>` + cell(r, c.key) + "</td>";
-    }
-    tr.innerHTML = html; tbody.appendChild(tr);
-  });
+}
+function buildRow(r, cols) {
+  const tr = document.createElement("tr"); tr.onclick = () => openDetail(r);
+  let html = `<td class="l"><span class="tick">${r.ticker}</span><div class="name">${(r.name||"").slice(0,30)}</div></td>`;
+  for (const c of cols) {
+    const info = METRIC_INFO[c.key];
+    html += `<td${info ? ` title="${escHtml(info)}"` : ""}>` + cell(r, c.key) + "</td>";
+  }
+  tr.innerHTML = html; return tr;
+}
+function render() {
+  const tbody = $("#tbl tbody"); tbody.innerHTML = "";
+  const cols = orderedCols();
+  const sorted = _sortRows(rows);
+  const grouping = groupBy && activeTab === "full";
+  if (!grouping) {
+    sorted.forEach(r => tbody.appendChild(buildRow(r, cols)));
+    $("#tbl").hidden = sorted.length === 0;
+    return;
+  }
+  // Group in the current sort order (a group appears where its first member sorts).
+  const order = [], groups = new Map();
+  for (const r of sorted) {
+    const label = groupLabel(r, groupBy);
+    if (!groups.has(label)) { groups.set(label, []); order.push(label); }
+    groups.get(label).push(r);
+  }
+  const span = cols.length + 1;
+  for (const label of order) {
+    const members = groups.get(label);
+    const open = expandedGroups.has(label);
+    const hdr = document.createElement("tr");
+    hdr.className = "grouphdr";
+    hdr.innerHTML = `<td colspan="${span}"><span class="gtoggle">${open ? "▾" : "▸"}</span>`+
+      `<b>${escHtml(label)}</b> <span class="gcount">${members.length}</span></td>`;
+    hdr.onclick = () => { if (open) expandedGroups.delete(label); else expandedGroups.add(label); render(); };
+    tbody.appendChild(hdr);
+    if (open) members.forEach(r => tbody.appendChild(buildRow(r, cols)));
+  }
   $("#tbl").hidden = sorted.length === 0;
 }
 function cell(r, key) {
@@ -1275,6 +1334,10 @@ function applyFull() {
 $("#full-filter").addEventListener("input", () => { if (activeTab === "full") applyFull(); });
 $("#full-passing").addEventListener("change", () => { if (activeTab === "full") applyFull(); });
 $("#full-index").addEventListener("change", e => { if (activeTab === "full") setIndexFilter(e.target.value); });
+$("#full-group").addEventListener("change", e => {
+  groupBy = e.target.value; saveGroup(); expandedGroups.clear();
+  if (activeTab === "full") render();
+});
 $("#refresh-full").onclick = () => loadFullList();
 
 /* ---- countdown to the next scheduled run ---- */
@@ -2388,7 +2451,7 @@ $("#theme-toggle").onclick = cycleTheme;
 
 /* init */
 wireMenu("cols-menu"); wireMenu("export-menu"); wireMenu("strat-menu"); wireMenu("cstrat-menu"); wireMenu("tmpl-menu");
-buildColsMenu(); buildStratMenu(); renderHead();
+buildColsMenu(); buildStratMenu(); buildGroupMenu(); renderHead();
 // Restore the last-viewed tab across refreshes (default to the Full-list landing).
 (function () {
   const TABS = ["full", "jobs", "history", "api"];

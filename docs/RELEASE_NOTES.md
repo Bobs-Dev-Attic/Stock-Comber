@@ -1,5 +1,14 @@
 # Release notes
 
+## v0.44.0 — Group the Full list (2026-08-22)
+
+The Full list gets a **Group by** dropdown. Pick a column — Strategy, Pass/Fail, Last analyzed,
+or any metric — and the table collapses into groups, each with a header showing the value and how
+many names are in it. Click a group's arrow to expand it and see its rows, click again to
+collapse. It's handy for questions like "how many names pass under Buffett vs. Graham?" or
+"which were analyzed today?" Your grouping choice sticks across refreshes; choose **No grouping**
+to go back to the flat list.
+
 ## v0.43.0 — Quarterly (10-Q) fundamentals (2026-08-22)
 
 Annual filings can be nearly a year stale; this adds the **latest quarter** from each company's
