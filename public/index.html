@@ -234,6 +234,13 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
   .dlg-l { display: block; font-weight: 600; font-size: .9rem; margin: .9rem 0 .35rem; }
   .dlg-acts { display: flex; gap: .5rem; flex-wrap: wrap; margin-top: 1.1rem; }
   .next-run { color: var(--muted); }
+  .nextruns { list-style: none; margin: .2rem 0 0; padding: 0; display: flex; flex-direction: column; gap: .2rem; }
+  .nextruns li { display: flex; gap: .5rem; align-items: baseline; font-size: .9rem;
+    padding: .3rem .55rem; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); }
+  .nextruns li .when { font-weight: 600; }
+  .nextruns li .rel { color: var(--muted); margin-left: auto; font-variant-numeric: tabular-nums; }
+  .nextruns li.first { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); }
+  .nextruns .hint { border: 0; background: transparent; padding: .2rem 0; }
   .strat-chips { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .1rem; }
   .strat-chips a { background: var(--chip); color: var(--ink); border: 1px solid var(--line);
     border-radius: 999px; padding: .2rem .6rem; font-size: .85rem; text-decoration: none; }
@@ -544,6 +551,8 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
         <option value="0,6">Weekends</option>
         <option value="1">Mondays</option>
       </select>
+      <label class="dlg-l">Next runs</label>
+      <ol id="sched-nextruns" class="nextruns"></ol>
       <label class="dlg-l">Strategies &amp; thresholds</label>
       <div id="sched-strats" class="strat-chips"></div>
       <div class="hint" style="margin:.3rem 0 .2rem">These run each night. Click one to fine-tune its thresholds (e.g. Buffett's min ROE, Graham's max P/E), or <a href="/settings.html">edit all in Settings ↗</a>.</div>
@@ -1496,6 +1505,38 @@ function syncSchedFreq() {
   $("#sched-interval-l").hidden = !interval;
   $("#sched-min-hint").hidden = !interval;
   $("#sched-time-l").textContent = interval ? "Minute past the hour (UTC)" : "Time (UTC)";
+  renderNextRuns();
+}
+// The next `count` fire times of a cron, from `from` (default now).
+function upcomingRuns(cron, count, from) {
+  const out = []; let cursor = from || new Date();
+  for (let i = 0; i < count; i++) {
+    const d = nextScheduledRun(cron, cursor);
+    if (!d) break;
+    out.push(d);
+    cursor = new Date(d.getTime() + 60000);   // step past this run to find the next
+  }
+  return out;
+}
+const MON3 = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function fmtRunWhen(d) {
+  return `${DOW3[d.getUTCDay()]} ${d.getUTCDate()} ${MON3[d.getUTCMonth()]}, `
+    + `${String(d.getUTCHours()).padStart(2,"0")}:${String(d.getUTCMinutes()).padStart(2,"0")} UTC`;
+}
+// Live-preview the next few fire times from the current (unsaved) form.
+function renderNextRuns() {
+  const el = $("#sched-nextruns"); if (!el) return;
+  if (!$("#sched-enabled").checked) {
+    el.innerHTML = `<li class="hint">Disabled — enable to see upcoming runs.</li>`; return;
+  }
+  const cron = formToCron($("#sched-freq").value, $("#sched-time").value,
+                          $("#sched-interval").value, $("#sched-days").value);
+  const now = new Date();
+  const runs = upcomingRuns(cron, 5, now);
+  if (!runs.length) { el.innerHTML = `<li class="hint">No upcoming runs match this schedule.</li>`; return; }
+  el.innerHTML = runs.map((d, i) =>
+    `<li${i === 0 ? ' class="first"' : ''}><span class="when">${fmtRunWhen(d)}</span>`
+    + `<span class="rel">in ${fmtDur(d - now)}</span></li>`).join("");
 }
 // A human summary of a schedule form (for the overview card / save message).
 function schedFormSummary(f) {
@@ -1599,6 +1640,10 @@ async function previewNightly() {
 }
 $("#preview-nightly").onclick = previewNightly;
 $("#sched-freq").onchange = syncSchedFreq;
+["#sched-time", "#sched-days", "#sched-interval"].forEach(sel => {
+  const el = $(sel); if (el) el.addEventListener("change", renderNextRuns);
+});
+$("#sched-enabled").addEventListener("change", renderNextRuns);
 /* Batch-screen the whole next-run pool (up to the cap) with the scheduled
    strategies, then show every ticker's result together in the table. */
 const NIGHTLY_SCREEN_CAP = 40;   // keep the live screen under the 60s function limit
