@@ -1119,12 +1119,16 @@ function render() {
   const span = cols.length + 1;
   for (const label of order) {
     const members = groups.get(label);
-    const open = expandedGroups.has(label);
+    // A single-member group (e.g. every group when grouping by Ticker, which the
+    // Full list dedupes to one row per name) has nothing to collapse — always
+    // show its row and drop the toggle, so grouping never hides the only result.
+    const single = members.length === 1;
+    const open = single || expandedGroups.has(label);
     const hdr = document.createElement("tr");
     hdr.className = "grouphdr";
-    hdr.innerHTML = `<td colspan="${span}"><span class="gtoggle">${open ? "▾" : "▸"}</span>`+
+    hdr.innerHTML = `<td colspan="${span}"><span class="gtoggle">${single ? "" : (open ? "▾" : "▸")}</span>`+
       `<b>${escHtml(label)}</b> <span class="gcount">${members.length}</span></td>`;
-    hdr.onclick = () => { if (open) expandedGroups.delete(label); else expandedGroups.add(label); render(); };
+    if (!single) hdr.onclick = () => { if (open) expandedGroups.delete(label); else expandedGroups.add(label); render(); };
     tbody.appendChild(hdr);
     if (open) members.forEach(r => tbody.appendChild(buildRow(r, cols)));
   }

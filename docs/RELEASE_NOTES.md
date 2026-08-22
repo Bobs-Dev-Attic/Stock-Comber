@@ -1,5 +1,14 @@
 # Release notes
 
+## v0.45.2 — Fix: grouping the Full list by Ticker (2026-08-22)
+
+Grouping the Full list by **Ticker** was showing a blank table. The Full list already keeps just
+one row per company, so grouping by Ticker made a group for every single row — and because groups
+start collapsed, every row was hidden behind its own toggle. Now a group that holds a single
+company always shows that row (with no pointless expand arrow), so grouping by Ticker displays the
+data as expected. Groups that actually hold several rows — grouping by Strategy or Passing, say —
+still start collapsed and expand on click, exactly as before.
+
 ## v0.45.1 — Type-checking is now enforced (2026-08-22)
 
 Internal quality: `mypy` runs as a **blocking** check in CI for the core `stock_comber` package,
