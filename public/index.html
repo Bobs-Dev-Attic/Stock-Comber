@@ -1706,17 +1706,16 @@ async function deleteJob(name) {
   if (!confirm(`Delete saved job “${name}”?`)) return;
   await persistJobs(savedJobs.filter(j => j.name !== name), `Deleted “${name}”.`);
 }
+/* A key is no longer prompted for — the API accepts saves without one, and a
+   remembered key (set on the Settings page) is attached silently if present. */
 function apiKey() {
-  let key = sessionStorage.getItem("sc_key") || "";
-  if (!key) key = (prompt("Enter your API key to save jobs to the database:") || "").trim();
-  if (key) sessionStorage.setItem("sc_key", key);
-  return key;
+  return sessionStorage.getItem("sc_key") || localStorage.getItem("sc_key") || "";
 }
 async function persistJobs(jobs, okMsg) {
   const key = apiKey();
-  if (!key) { jobsHint("An API key is required to save jobs.", true); return false; }
+  const url = "/api/settings" + (key ? "?key=" + encodeURIComponent(key) : "");
   try {
-    const res = await fetch("/api/settings?key=" + encodeURIComponent(key),
+    const res = await fetch(url,
       { method: "POST", headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ jobs }) });
     const d = await res.json().catch(() => ({}));
