@@ -1,5 +1,17 @@
 # Release notes
 
+## v0.64.0 — Save settings without an API key (2026-08-23)
+
+**Save settings** now works without entering the Export / API key. That key
+(`STOCK_COMBER_API_KEY`) was previously required for every save; now it's optional — the
+dashboard saves straight to your database (which still has to be configured, and saves are
+still rate-limited). The key is now only needed for the CSV/JSON export endpoints and other
+API access.
+
+Heads-up: this means the settings-save endpoint is open to anyone who can reach your site
+(within the rate limit). For a personal deployment that's usually fine; if you'd rather lock
+writes down, let me know and I can put a key check back.
+
 ## v0.63.0 — Settings tells you when a save fails (2026-08-23)
 
 If **Save settings** doesn't go through, you'll now get a clear pop-up explaining why —

@@ -105,15 +105,17 @@ class handler(BaseHTTPRequestHandler):
         if not ok:
             self._json(429, {"error": "rate limit exceeded — slow down", **_rl})
             return
+        # Settings writes intentionally do NOT require STOCK_COMBER_API_KEY — the
+        # dashboard saves without it. Writes stay gated by the per-client rate
+        # limiter (above) and by requiring a configured database (below). If a key
+        # is both configured and supplied it must still match (so a typo is caught),
+        # but a missing/blank key is accepted. STOCK_COMBER_API_KEY still gates the
+        # other write/export endpoints (e.g. /api/export, /api/queue).
         configured = os.environ.get("STOCK_COMBER_API_KEY")
-        if not configured:
-            self._json(503, {"error": "settings API not configured "
-                                      "(set STOCK_COMBER_API_KEY)"})
-            return
         params = parse_qs(urlparse(self.path).query)
         supplied = params.get("key", [None])[0] or self.headers.get("X-API-Key")
-        if not supplied or not hmac.compare_digest(str(supplied), str(configured)):
-            self._json(401, {"error": "invalid or missing API key"})
+        if configured and supplied and not hmac.compare_digest(str(supplied), str(configured)):
+            self._json(401, {"error": "invalid API key"})
             return
 
         store = get_storage()

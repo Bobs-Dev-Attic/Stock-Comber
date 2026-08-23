@@ -4,6 +4,24 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.64.0] - 2026-08-23
+
+### Changed
+- **Saving settings no longer requires `STOCK_COMBER_API_KEY`.** The settings write
+  endpoint (`POST /api/settings`) previously rejected any save without the matching
+  key; it now accepts saves without one, so the dashboard's **Save settings** works
+  out of the box. Writes are still gated by the per-client **rate limiter** and by
+  requiring a configured **database** (`DATABASE_URL`). If `STOCK_COMBER_API_KEY` is
+  set *and* a key is supplied it must still match (a typo is caught), but a
+  missing/blank key is accepted. The key still gates the other write/export
+  endpoints (`/api/export`, `/api/queue`). The client no longer blocks the save when
+  the Export / API key field is blank, and the key field is now labelled optional.
+
+  **Security note:** this makes the settings-write endpoint open to anyone who can
+  reach it (rate-limited, DB-required). That's fine for a personal/educational
+  deployment; if you need writes locked down, keep the previous behavior by reverting
+  this change or re-adding the key check.
+
 ## [0.63.0] - 2026-08-23
 
 ### Added
