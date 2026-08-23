@@ -4,6 +4,18 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.74.0] - 2026-08-23
+
+### Added
+- **Per-column filters on the Full list.** A filter row under the column headers lets
+  you filter each column by value or formula. Text columns (Ticker, Strategy, Sector,
+  Pass, Last analyzed) match by substring; numeric columns accept comparison operators
+  (`>`, `<`, `>=`, `<=`, `=`, `!=`), ranges (`10..20` or `10-20`), the magnitude
+  suffixes `k`/`m`/`b`/`t` and `%`, and a bare value falls back to a substring match on
+  the shown cell. Prefix any filter with `!` to exclude. Filters combine (all must
+  match) with the existing index / ticker-name / "Passing only" filters, persist in
+  `localStorage`, and a **Clear filters** button appears while any are active.
+
 ## [0.73.0] - 2026-08-23
 
 ### Removed

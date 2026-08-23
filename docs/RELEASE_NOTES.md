@@ -1,5 +1,18 @@
 # Release notes
 
+## v0.74.0 — Filter any column on the Full list (2026-08-23)
+
+The Full list now has a **filter row** under the headers, so you can narrow each column
+on its own. Type into a column to filter it:
+
+- **Text** columns (Ticker, Strategy, Sector, …) match by what they *contain*.
+- **Number** columns take formulas — `>20`, `<=15`, `=0`, `!=0`, a range like `10..20`,
+  and magnitude suffixes (`>1b`, `>=500m`). A plain number just matches text.
+- Start any filter with `!` to **exclude** matches.
+
+Filters stack with the index / search / "Passing only" controls, are remembered between
+visits, and a **Clear filters** button shows up whenever any are set.
+
 ## v0.73.0 — Custom job dialog loses the Criteria field (2026-08-23)
 
 Custom jobs no longer have a **Criteria** section — since they stopped producing "custom"
