@@ -4,6 +4,17 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.50.1] - 2026-08-23
+
+### Fixed
+- **Full list is now scrollable side-to-side from the top.** The wide table's only horizontal
+  scrollbar sat at the bottom of a long (hundreds-of-rows) table, so reaching it meant scrolling all
+  the way down. Added a slim horizontal scrollbar mirrored **above** the table, synced both ways with
+  the table's own scroll; it appears only when the columns overflow and tracks column/width changes
+  and window resizes.
+
+[0.50.1]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.50.1
+
 ## [0.50.0] - 2026-08-23
 
 ### Added

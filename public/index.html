@@ -106,6 +106,11 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
   .toolbar { display: flex; gap: .5rem; flex-wrap: wrap; align-items: center; margin-top: 1rem; }
   .toolbar .spacer { flex: 1; }
   .tablewrap { overflow-x: auto; margin-top: .5rem; }
+  /* A slim horizontal scrollbar mirrored above the table, so the wide Full list
+     can be scrolled side-to-side from the top without scrolling to the bottom. */
+  .xscroll-top { overflow-x: auto; overflow-y: hidden; margin-top: .5rem; }
+  .xscroll-top > div { height: 1px; }
+  .xscroll-top + .tablewrap { margin-top: .2rem; }
   table { border-collapse: collapse; width: 100%; }
   th, td { padding: .55rem .6rem; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
   th { color: var(--muted); font-weight: 600; font-size: .82rem; text-transform: uppercase; letter-spacing: .03em; cursor: pointer; user-select: none; }
@@ -540,7 +545,8 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
         </div>
       </div>
 
-      <div class="tablewrap"><table id="tbl" hidden>
+      <div class="xscroll-top" id="xtop" hidden aria-hidden="true"><div id="xtop-inner"></div></div>
+      <div class="tablewrap" id="tblwrap"><table id="tbl" hidden>
         <thead><tr id="head"></tr></thead>
         <tbody></tbody>
       </table></div>
@@ -1128,6 +1134,7 @@ function render() {
   if (!grouping) {
     sorted.forEach(r => tbody.appendChild(buildRow(r, cols)));
     $("#tbl").hidden = sorted.length === 0;
+    syncTopScroll();
     return;
   }
   // Group in the current sort order (a group appears where its first member sorts).
@@ -1155,7 +1162,25 @@ function render() {
     if (open) members.forEach(r => tbody.appendChild(buildRow(r, cols)));
   }
   $("#tbl").hidden = sorted.length === 0;
+  syncTopScroll();
 }
+// Keep the mirrored top scrollbar's width and visibility in sync with the table.
+function syncTopScroll() {
+  const t = $("#tbl"), wrap = $("#tblwrap"), xtop = $("#xtop"), inner = $("#xtop-inner");
+  if (!t || !wrap || !xtop || !inner) return;
+  if (t.hidden) { xtop.hidden = true; return; }
+  const sw = t.scrollWidth;
+  inner.style.width = sw + "px";
+  xtop.hidden = sw <= wrap.clientWidth + 1;   // hide when nothing overflows
+}
+(function wireTopScroll() {
+  const wrap = $("#tblwrap"), xtop = $("#xtop");
+  if (!wrap || !xtop) return;
+  let lock = false;                            // avoid the two scroll handlers fighting
+  xtop.addEventListener("scroll", () => { if (lock) return; lock = true; wrap.scrollLeft = xtop.scrollLeft; lock = false; });
+  wrap.addEventListener("scroll", () => { if (lock) return; lock = true; xtop.scrollLeft = wrap.scrollLeft; lock = false; });
+  window.addEventListener("resize", syncTopScroll);
+})();
 function cell(r, key) {
   if (key === "strategy") return `<span class="l">${r.strategy}</span>`;
   if (key === "passed") return `<span class="badge ${r.passed?'pass':'near'}">${r.passed?'PASS':'—'}</span>`;
