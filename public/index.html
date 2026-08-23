@@ -179,12 +179,6 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
   .menu .colrow label { flex: 1; cursor: pointer; }
   .menu .mini { display: flex; gap: .4rem; margin-top: .4rem; }
   .menu .mini button { flex: 1; }
-  /* custom criteria */
-  details.custom { margin-top: 1rem; border-top: 1px solid var(--line); padding-top: .8rem; }
-  details.custom summary { cursor: pointer; font-weight: 600; }
-  .crit-row { display: flex; gap: .5rem; margin-top: .6rem; flex-wrap: wrap; align-items: center; }
-  .crit-row select.metric { flex: 1 1 200px; }
-  .crit-row .rm { border: 0; background: transparent; color: var(--fail-ink); cursor: pointer; font-size: 1.2rem; line-height: 1; }
   /* detail modal */
   .overlay { position: fixed; inset: 0; background: var(--overlay); display: none; align-items: flex-start; justify-content: center; padding: 4vh 1rem; overflow-y: auto; z-index: 50; }
   .overlay.open { display: flex; }
@@ -660,7 +654,7 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
     <!-- Custom job dialog -->
     <div class="dlg" data-dlg="custom" hidden>
       <h2 id="custom-dlg-title">🧮 Custom job</h2>
-      <div class="sub">Runs your selected <b>strategies</b> (and optional <code>metric op value</code> criteria) against a <b>pool of tickers</b> — optionally a random pick from the pool each run.</div>
+      <div class="sub">Runs your selected <b>strategies</b> against a <b>pool of tickers</b> — optionally a random pick from the pool each run.</div>
       <label class="dlg-l" for="job-name">Name</label>
       <input id="job-name" type="text" placeholder="Name this job to save it" autocomplete="off" style="width:100%">
       <label class="dlg-l">Ticker pool</label>
@@ -678,21 +672,14 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
         <input id="job-pick" type="number" min="0" step="1" placeholder="all" style="width:90px" title="How many tickers to randomly draw from the pool each run — blank/0 = the whole pool">
         <span class="hint" style="margin:0">from the pool each run (blank = whole pool).</span>
       </div>
-      <label class="dlg-l">Criteria <span class="hint" style="font-weight:400">(optional)</span></label>
-      <div id="crit-list"></div>
-      <div class="row" style="margin:.6rem 0;display:flex;gap:.5rem;flex-wrap:wrap;align-items:center">
-        <button id="add-crit" class="btn ghost">+ Add criterion</button>
-        <button id="clear-crit" class="btn ghost">Clear</button>
-        <span id="custom-count" class="hint"></span>
-      </div>
       <label class="dlg-l">Strategies</label>
       <div class="menu" id="cstrat-menu">
         <button class="btn ghost" id="cstrat-btn" aria-haspopup="true" aria-expanded="false"
-                title="Which value frameworks this job runs alongside your rules">Strategies ▾</button>
+                title="Which value frameworks this job screens the pool with">Strategies ▾</button>
         <div class="panel-pop" id="cstrat-pop"></div>
       </div>
       <div class="dlg-acts">
-        <button class="btn" id="save-job" title="Save the criteria, tickers &amp; strategies to the database">Save job</button>
+        <button class="btn" id="save-job" title="Save the ticker pool &amp; strategies to the database">Save job</button>
         <button class="btn" id="run-job">▶ Run now</button>
         <button class="btn ghost" data-close>Cancel</button>
       </div>
@@ -986,7 +973,7 @@ async function buildTmplMenu() {
       if (!tks.length) { note.textContent = "No matching constituents."; return; }
       $("#job-tickers").value = tks.join(", ");
       $("#tmpl-menu").classList.remove("open");
-      note.textContent = `Loaded ${tks.length} tickers — add criteria, then Run now.`;
+      note.textContent = `Loaded ${tks.length} tickers — pick strategies, then Run now.`;
     } catch(e) { note.textContent = "Failed: " + e.message; }
     finally { go.disabled = false; go.textContent = "Load into search"; }
   };
@@ -1271,36 +1258,6 @@ const stamp = () => new Date().toISOString().slice(0,10);
 $("#exp-csv").onclick = () => { if (rows.length) download(`stock-comber-${stamp()}.csv`, toCSV(rows), "text/csv"); };
 $("#exp-json").onclick = () => { if (rows.length) download(`stock-comber-${stamp()}.json`, JSON.stringify(rows, null, 2), "application/json"); };
 
-/* ---- custom criteria builder ---- */
-function addCritRow(metric="pe_ratio", op="<=", value="") {
-  const list = $("#crit-list");
-  const row = document.createElement("div"); row.className = "crit-row";
-  const msel = document.createElement("select"); msel.className = "metric";
-  for (const [k,l] of METRICS) { const o=document.createElement("option"); o.value=k; o.textContent=l; if(k===metric)o.selected=true; msel.appendChild(o); }
-  const osel = document.createElement("select");
-  for (const o of OPS) { const opt=document.createElement("option"); opt.value=o; opt.textContent=o; if(o===op)opt.selected=true; osel.appendChild(opt); }
-  const val = document.createElement("input"); val.type="number"; val.step="any"; val.placeholder="value"; val.value=value; val.style.width="110px";
-  const rm = document.createElement("button"); rm.className="rm"; rm.title="Remove"; rm.textContent="×";
-  rm.onclick = () => { row.remove(); updateCustomCount(); };
-  [msel,osel,val,rm].forEach(el => row.appendChild(el)); list.appendChild(row); updateCustomCount();
-}
-function readCriteria() {
-  const out = [];
-  document.querySelectorAll("#crit-list .crit-row").forEach(r => {
-    const metric = r.querySelector("select.metric").value;
-    const op = r.querySelectorAll("select")[1].value;
-    const value = r.querySelector("input").value;
-    if (value !== "" && !Number.isNaN(Number(value))) out.push({metric, op, value:Number(value)});
-  });
-  return out;
-}
-function updateCustomCount() {
-  const n = document.querySelectorAll("#crit-list .crit-row").length;
-  $("#custom-count").textContent = n ? `(${n} active)` : "";
-}
-$("#add-crit").onclick = () => addCritRow();
-$("#clear-crit").onclick = () => { $("#crit-list").innerHTML=""; updateCustomCount(); };
-
 /* ---- detail modal ---- */
 function extLinks(r) {
   const t = encodeURIComponent(r.ticker); const links = [];
@@ -1573,14 +1530,12 @@ function samplePool(raw, pick) {
 async function runJob(preview) {
   const say = preview ? (m, bad) => jobsHint(m, bad) : (m) => setStatus("jobs", m);
   const rawPool = $("#job-tickers").value.trim();
-  const criteria = readCriteria();   // optional now
   if (!rawPool) { say("Enter a ticker pool (or load a template) to run the job on.", true); return; }
   const pickRaw = $("#job-pick").value.trim();
   const pick = pickRaw === "" ? 0 : Math.max(0, parseInt(pickRaw, 10) || 0);
   const raw = samplePool(rawPool, pick);   // random draw from the pool for this run
   const params = new URLSearchParams(); params.set("tickers", raw);
   selectedStrats.forEach(s => params.append("strategy", s));
-  if (criteria.length) params.set("custom", JSON.stringify(criteria));
   const btn = $("#run-job"); const label = btn.textContent;
   btn.disabled = true; btn.textContent = "Running…";
   showBanner("Running custom job…");
@@ -1640,8 +1595,7 @@ function jobSummary(j) {
   const parts = [];
   const tk = (j.tickers || "").trim();
   parts.push(tk ? (tk.length > 48 ? tk.slice(0, 48) + "…" : tk) : "no tickers");
-  const n = (j.criteria || []).length;
-  parts.push(n + " rule" + (n === 1 ? "" : "s"));
+  if (j.pick) parts.push("pick " + j.pick);
   const st = (j.strategies || []).map(stratLabel);
   if (st.length) parts.push(st.join(", "));
   return parts.join(" · ");
@@ -1679,9 +1633,6 @@ function applyJob(job) {
   $("#job-tickers").value = job.tickers || "";
   $("#job-pick").value = job.pick || "";
   $("#job-name").value = job.name || "";
-  $("#crit-list").innerHTML = "";
-  (job.criteria || []).forEach(c => addCritRow(c.metric, c.op, c.value));
-  updateCustomCount();
   const strats = (job.strategies || []).filter(k => STRAT_KEYS.includes(k));
   if (strats.length) { selectedStrats = strats; saveStrats(); buildStratMenu(); updateStratBtn(); }
 }
@@ -1728,12 +1679,11 @@ async function persistJobs(jobs, okMsg) {
 $("#save-job").onclick = async () => {
   const name = $("#job-name").value.trim();
   if (!name) { jobsHint("Give the job a name first.", true); $("#job-name").focus(); return; }
-  const criteria = readCriteria();   // optional now
   const tickers = $("#job-tickers").value.trim();
-  if (!tickers && !criteria.length) { jobsHint("Add a ticker pool (or at least one criterion) before saving.", true); return; }
+  if (!tickers) { jobsHint("Add a ticker pool before saving.", true); return; }
   const pickRaw = $("#job-pick").value.trim();
   const pick = pickRaw === "" ? 0 : Math.max(0, parseInt(pickRaw, 10) || 0);
-  const job = { name, tickers, criteria, strategies: selectedStrats.slice() };
+  const job = { name, tickers, strategies: selectedStrats.slice() };
   if (pick > 0) job.pick = pick;   // random pick from the pool each run
   const others = savedJobs.filter(j => j.name.toLowerCase() !== name.toLowerCase());
   const btn = $("#save-job"); const label = btn.textContent;
@@ -2070,7 +2020,6 @@ function closeJobDialog() { $("#job-overlay").classList.remove("open"); }
 function newCustomJob() {
   $("#custom-dlg-title").textContent = "🧮 New custom job";
   $("#job-name").value = ""; $("#job-tickers").value = ""; $("#job-pick").value = "";
-  $("#crit-list").innerHTML = ""; updateCustomCount();   // criteria optional — start empty
   jobsHint(""); $("#job-preview").innerHTML = "";
 }
 $("#open-sched").onclick = () => openJobDialog("sched");
@@ -2182,8 +2131,7 @@ function jobScreens(job) {
   const tks = (job.tickers || []).filter(Boolean);
   if (job.index) return `Template · ${escHtml(String(job.index).toUpperCase())}`;
   if (tks.length) return escHtml(tks.slice(0, 6).join(", ")) + (tks.length > 6 ? ` +${tks.length - 6}` : "");
-  const crit = (job.criteria || []).length;
-  return crit ? `${crit} custom criteri${crit === 1 ? "on" : "a"}` : "—";
+  return "—";
 }
 function renderUpcoming(cfg, configured) {
   const tb = $("#h-upcoming"); if (!tb) return;

@@ -4,6 +4,17 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.73.0] - 2026-08-23
+
+### Removed
+- **The Criteria field is gone from the Custom job dialog.** Since custom jobs no
+  longer emit a `custom` strategy row (v0.72.0), the `metric op value` criteria
+  builder was inert, so it's been removed from the dashboard: a custom job is now
+  just a name, a ticker pool (with the optional random "pick"), and the chosen
+  strategies. The criteria builder (`addCritRow`/`readCriteria`/`updateCustomCount`),
+  its markup and styles are removed; save/run/edit no longer read or send criteria.
+  The `/api/screen` `custom=` parameter is unchanged (still available to the API).
+
 ## [0.72.0] - 2026-08-23
 
 ### Changed

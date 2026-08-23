@@ -1,5 +1,12 @@
 # Release notes
 
+## v0.73.0 — Custom job dialog loses the Criteria field (2026-08-23)
+
+Custom jobs no longer have a **Criteria** section — since they stopped producing "custom"
+rows (v0.72.0), those `metric op value` rules didn't do anything. A custom job is now
+simply a **name**, a **ticker pool** (with the optional random pick), and the **strategies**
+it screens with. Cleaner and less confusing.
+
 ## v0.72.0 — Custom jobs stop writing "custom" rows (2026-08-23)
 
 Custom jobs now screen their ticker pool with the built-in strategies you pick (or the
