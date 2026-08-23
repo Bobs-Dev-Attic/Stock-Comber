@@ -128,7 +128,7 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
       <div class="keyrow">
         <span class="kname">Export / API key</span>
         <span id="st-export" class="pill off">✕ not set</span>
-        <input id="apikey" type="password" autocomplete="off" placeholder="STOCK_COMBER_API_KEY — required to save">
+        <input id="apikey" type="password" autocomplete="off" placeholder="STOCK_COMBER_API_KEY — optional (for API access & exports)">
       </div>
     </div>
     <div class="row" style="margin-top:.8rem">
@@ -136,10 +136,11 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
       <button class="btn ghost" id="download">Download as YAML</button>
       <span class="status" id="keys-status"></span>
     </div>
-    <p class="hint">The <b>Export / API key</b> (<code>STOCK_COMBER_API_KEY</code>) authorizes writes and CSV/JSON
-      exports. It's <b>write-only</b> (never shown back), so enter the value you set in Vercel → Settings →
-      Environment Variables; it's then remembered in this browser. <b>Save settings</b> writes this whole page
-      (keys, thresholds &amp; preferences) to your database — <code>STOCK_COMBER_API_KEY</code> itself is env-only.</p>
+    <p class="hint"><b>Saving no longer requires this key.</b> The <b>Export / API key</b>
+      (<code>STOCK_COMBER_API_KEY</code>) is only needed for the CSV/JSON <b>export</b> endpoints and other
+      API access; it's optional here. If you have one, enter the value you set in Vercel → Settings →
+      Environment Variables (it's write-only and remembered in this browser). <b>Save settings</b> writes this
+      whole page (keys, thresholds &amp; preferences) to your database.</p>
   </div>
 
   <div class="card" id="sec-strategies">
@@ -496,13 +497,9 @@ async function doSave(statusSel, btnSel){
   if(typed) rememberKey(typed);
   // Fall back to the key remembered in this browser when the field is blank, so a
   // blank-but-"configured" export key still saves (as long as it was entered once).
+  // Saving no longer requires the Export / API key — send it only if we have one
+  // (still used for API access & exports). A blank key is fine.
   const key=typed || rememberedKey();
-  if(!key){
-    const m="Enter your Export / API key (STOCK_COMBER_API_KEY) to save. It's write-only, so it isn't "
-      +"pre-filled here even when it shows as configured — it's remembered in this browser after you enter it once.";
-    st.textContent=m; showError("⚠️ Export / API key required", m);
-    return;
-  }
   // Live feedback: disable every Save button and show progress on the clicked one
   // while the request is in flight, then refresh the Status chips from the response.
   const label=btn?btn.textContent:"";
