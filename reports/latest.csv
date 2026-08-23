@@ -1,51 +1,51 @@
-ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number
-MLI,MUELLER INDUSTRIES INC,buffett,True,6,6,100.0,61.96,9.03,2.15,23.84,5.92,0.15,66.66
-MLI,MUELLER INDUSTRIES INC,graham,True,8,9,88.9,61.96,9.03,2.15,23.84,5.92,0.15,66.66
-EVR,EVERCORE INC.,buffett,True,5,6,83.3,287,20.43,5.95,29.14,2.16,1.50,123
-GGG,GRACO INC.,buffett,True,5,6,83.3,81.71,26.53,5.21,19.66,3.15,—,32.97
-HALO,"HALOZYME THERAPEUTICS, INC.",buffett,True,5,6,83.3,106,41.45,269,649,4.66,50.73,4.76
-MEDP,"Medpace Holdings, Inc.",buffett,True,5,6,83.3,613,40.09,39.40,98.27,0.74,3.30,73.11
-PIPR,PIPER SANDLER COMPANIES,graham,False,7,9,77.8,72.86,4.61,0.95,20.52,—,0.74,166
-PIPR,PIPER SANDLER COMPANIES,buffett,False,3,6,50.0,72.86,4.61,0.95,20.52,—,0.74,166
-POWL,"Powell Industries, Inc.",graham,False,7,9,77.8,197,13.28,3.75,28.21,2.09,0.73,133
-POWL,"Powell Industries, Inc.",buffett,False,4,6,66.7,197,13.28,3.75,28.21,2.09,0.73,133
-MGY,Magnolia Oil & Gas Corp,buffett,False,3,6,50.0,28.22,16.10,2.62,16.27,1.54,—,20.61
-MGY,Magnolia Oil & Gas Corp,graham,False,3,9,33.3,28.22,16.10,2.62,16.27,1.54,—,20.61
-WING,WINGSTOP INC.,buffett,False,4,6,66.7,114,18.30,—,-23.65,3.26,-1.94,—
-WING,WINGSTOP INC.,graham,False,3,9,33.3,114,18.30,—,-23.65,3.26,-1.94,—
-BOOT,"Boot Barn Holdings, Inc.",graham,False,6,9,66.7,160,21.80,3.73,17.13,2.65,0.86,84.23
-BOOT,"Boot Barn Holdings, Inc.",buffett,False,4,6,66.7,160,21.80,3.73,17.13,2.65,0.86,84.23
-FHI,"Federated Hermes, Inc.",graham,False,6,9,66.7,63.13,12.31,3.96,33.69,2.75,0.81,42.89
-FHI,"Federated Hermes, Inc.",buffett,False,4,6,66.7,63.13,12.31,3.96,33.69,2.75,0.81,42.89
-LNTH,"LANTHEUS HOLDINGS, INC.",buffett,False,3,6,50.0,100,29.40,6.30,21.43,2.70,1.04,34.95
-LNTH,"LANTHEUS HOLDINGS, INC.",graham,False,3,9,33.3,100,29.40,6.30,21.43,2.70,1.04,34.95
-EVR,EVERCORE INC.,graham,False,6,9,66.7,287,20.43,5.95,29.14,2.16,1.50,123
-PATH,"UiPath, Inc.",graham,False,4,9,44.4,15.92,30.62,4.17,13.56,2.48,0.53,6.69
-PATH,"UiPath, Inc.",buffett,False,2,6,33.3,15.92,30.62,4.17,13.56,2.48,0.53,6.69
-GGG,GRACO INC.,graham,False,6,9,66.7,81.71,26.53,5.21,19.66,3.15,—,32.97
-CRC,California Resources Corp,graham,False,6,9,66.7,53.41,12.87,1.27,9.88,0.89,—,62.65
-CRC,California Resources Corp,buffett,False,2,6,33.3,53.41,12.87,1.27,9.88,0.89,—,62.65
-ALRM,"ALARM.COM HOLDINGS, INC.",buffett,False,4,6,66.7,57.06,23.20,3.96,15.52,1.92,1.47,28.23
-ALRM,"ALARM.COM HOLDINGS, INC.",graham,False,5,9,55.6,57.06,23.20,3.96,15.52,1.92,1.47,28.23
-HALO,"HALOZYME THERAPEUTICS, INC.",graham,False,5,9,55.6,106,41.45,269,649,4.66,50.73,4.76
-HLI,"HOULIHAN LOKEY, INC.",buffett,False,4,6,66.7,128,20.59,3.74,18.17,—,0.79,69.21
-HLI,"HOULIHAN LOKEY, INC.",graham,False,4,9,44.4,128,20.59,3.74,18.17,—,0.79,69.21
-MEDP,"Medpace Holdings, Inc.",graham,False,4,9,44.4,613,40.09,39.40,98.27,0.74,3.30,73.11
-PCTY,PAYLOCITY HOLDING CORPORATION,buffett,False,4,6,66.7,152,30.97,6.83,22.08,1.09,3.00,49.69
-PCTY,PAYLOCITY HOLDING CORPORATION,graham,False,5,9,55.6,152,30.97,6.83,22.08,1.09,3.00,49.69
-YETI,"YETI Holdings, Inc.",buffett,False,3,6,50.0,44.00,21.67,5.52,25.43,1.98,0.90,19.08
-YETI,"YETI Holdings, Inc.",graham,False,4,9,44.4,44.00,21.67,5.52,25.43,1.98,0.90,19.08
-APPF,"AppFolio, Inc.",buffett,False,4,6,66.7,219,56.40,14.65,25.97,3.31,0.27,36.11
-APPF,"AppFolio, Inc.",graham,False,4,9,44.4,219,56.40,14.65,25.97,3.31,0.27,36.11
-UFPI,"UFP INDUSTRIES, INC.",graham,False,5,9,55.6,88.12,17.62,1.63,9.63,4.59,0.31,77.88
-UFPI,"UFP INDUSTRIES, INC.",buffett,False,2,6,33.3,88.12,17.62,1.63,9.63,4.59,0.31,77.88
-FIGS,"FIGS, Inc.",graham,False,3,9,33.3,14.41,75.84,5.91,7.83,4.94,0.33,3.23
-FIGS,"FIGS, Inc.",buffett,False,2,6,33.3,14.41,75.84,5.91,7.83,4.94,0.33,3.23
-CAKE,THE CHEESECAKE FACTORY INCORPORATED,buffett,False,3,6,50.0,107,34.81,11.85,34.01,0.59,6.47,24.88
-CAKE,THE CHEESECAKE FACTORY INCORPORATED,graham,False,3,9,33.3,107,34.81,11.85,34.01,0.59,6.47,24.88
-AMR,"ALPHA METALLURGICAL RESOURCES, INC.",graham,False,4,9,44.4,194,—,1.63,-3.99,4.47,0.48,—
-AMR,"ALPHA METALLURGICAL RESOURCES, INC.",buffett,False,2,6,33.3,194,—,1.63,-3.99,4.47,0.48,—
-AAON,"AAON, INC.",graham,False,6,9,66.7,80.84,62.67,7.51,12.02,2.63,—,17.68
-AAON,"AAON, INC.",buffett,False,1,6,16.7,80.84,62.67,7.51,12.02,2.63,—,17.68
-BL,"BlackLine, Inc.",graham,False,3,9,33.3,31.92,81.85,6.33,7.38,1.47,4.18,6.65
-BL,"BlackLine, Inc.",buffett,False,1,6,16.7,31.92,81.85,6.33,7.38,1.47,4.18,6.65
+ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
+MLI,MUELLER INDUSTRIES INC,buffett,True,6,6,100.0,63.22,9.22,2.20,23.84,5.92,0.15,66.66,1M,21.65
+MLI,MUELLER INDUSTRIES INC,greenblatt,True,3,3,100.0,63.22,9.22,2.20,23.84,5.92,0.15,66.66,1M,21.65
+MLI,MUELLER INDUSTRIES INC,lynch,True,4,4,100.0,63.22,9.22,2.20,23.84,5.92,0.15,66.66,1M,21.65
+MLI,MUELLER INDUSTRIES INC,graham,True,8,9,88.9,63.22,9.22,2.20,23.84,5.92,0.15,66.66,1M,21.65
+MLI,MUELLER INDUSTRIES INC,piotroski,True,7,9,77.8,63.22,9.22,2.20,23.84,5.92,0.15,66.66,1M,21.65
+PIPR,PIPER SANDLER COMPANIES,greenblatt,True,3,3,100.0,75.02,4.74,0.97,20.52,—,0.74,166,"343,202",-36.11
+PIPR,PIPER SANDLER COMPANIES,lynch,True,4,4,100.0,75.02,4.74,0.97,20.52,—,0.74,166,"343,202",-36.11
+PIPR,PIPER SANDLER COMPANIES,piotroski,True,8,9,88.9,75.02,4.74,0.97,20.52,—,0.74,166,"343,202",-36.11
+POWL,"Powell Industries, Inc.",piotroski,True,7,9,77.8,198,13.30,3.75,28.21,2.09,0.73,133,"411,861",-1.68
+POWL,"Powell Industries, Inc.",lynch,True,3,4,75.0,198,13.30,3.75,28.21,2.09,0.73,133,"411,861",-1.68
+WING,WINGSTOP INC.,lynch,True,4,4,100.0,115,18.59,—,-23.65,3.26,-1.94,—,1M,-33.47
+BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,166,22.53,3.86,17.13,2.65,0.86,84.23,"454,784",-3.67
+BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,166,22.53,3.86,17.13,2.65,0.86,84.23,"454,784",-3.67
+FHI,"Federated Hermes, Inc.",greenblatt,True,3,3,100.0,63.70,12.42,4.00,33.69,2.75,0.81,42.89,"325,146",-6.96
+FHI,"Federated Hermes, Inc.",piotroski,True,8,9,88.9,63.70,12.42,4.00,33.69,2.75,0.81,42.89,"325,146",-6.96
+EVR,EVERCORE INC.,buffett,True,5,6,83.3,292,20.78,6.05,29.14,2.16,1.50,123,"341,923",-14.65
+EVR,EVERCORE INC.,piotroski,True,7,9,77.8,292,20.78,6.05,29.14,2.16,1.50,123,"341,923",-14.65
+GGG,GRACO INC.,piotroski,True,8,9,88.9,80.64,26.18,5.14,19.66,3.15,—,32.97,1M,-0.17
+GGG,GRACO INC.,buffett,True,5,6,83.3,80.64,26.18,5.14,19.66,3.15,—,32.97,1M,-0.17
+PATH,"UiPath, Inc.",piotroski,True,8,9,88.9,16.39,31.52,4.29,13.56,2.48,0.53,6.69,49M,-25.19
+ALRM,"ALARM.COM HOLDINGS, INC.",piotroski,True,7,9,77.8,57.51,23.38,4.00,15.52,1.92,1.47,28.23,"335,892",26.34
+HALO,"HALOZYME THERAPEUTICS, INC.",buffett,True,5,6,83.3,108,42.25,275,649,4.66,50.73,4.76,1M,-10.17
+MEDP,"Medpace Holdings, Inc.",buffett,True,5,6,83.3,621,40.62,39.93,98.27,0.74,3.30,73.11,"214,646",17.65
+MEDP,"Medpace Holdings, Inc.",piotroski,True,7,9,77.8,621,40.62,39.93,98.27,0.74,3.30,73.11,"214,646",17.65
+PCTY,PAYLOCITY HOLDING CORPORATION,piotroski,True,8,9,88.9,153,31.17,6.88,22.08,1.09,3.00,49.69,"376,135",-12.76
+FIGS,"FIGS, Inc.",piotroski,True,8,9,88.9,14.68,77.26,6.02,7.83,4.94,0.33,3.23,2M,29.16
+FROG,JFrog Ltd.,piotroski,True,7,9,77.8,92.13,—,12.06,-8.09,2.14,0.51,—,2M,31.76
+OMCL,"OMNICELL, INC",piotroski,True,7,9,77.8,35.58,889,1.34,0.17,1.43,0.60,4.89,"736,933",-40.64
+MLI,MUELLER INDUSTRIES INC,netnet,False,2,4,50.0,63.22,9.22,2.20,23.84,5.92,0.15,66.66,1M,21.65
+MLI,MUELLER INDUSTRIES INC,custom,False,0,0,0.0,63.22,9.22,2.20,23.84,5.92,0.15,66.66,1M,21.65
+PIPR,PIPER SANDLER COMPANIES,graham,False,7,9,77.8,75.02,4.74,0.97,20.52,—,0.74,166,"343,202",-36.11
+PIPR,PIPER SANDLER COMPANIES,buffett,False,3,6,50.0,75.02,4.74,0.97,20.52,—,0.74,166,"343,202",-36.11
+PIPR,PIPER SANDLER COMPANIES,netnet,False,1,4,25.0,75.02,4.74,0.97,20.52,—,0.74,166,"343,202",-36.11
+PIPR,PIPER SANDLER COMPANIES,custom,False,0,0,0.0,75.02,4.74,0.97,20.52,—,0.74,166,"343,202",-36.11
+POWL,"Powell Industries, Inc.",graham,False,7,9,77.8,198,13.30,3.75,28.21,2.09,0.73,133,"411,861",-1.68
+POWL,"Powell Industries, Inc.",buffett,False,4,6,66.7,198,13.30,3.75,28.21,2.09,0.73,133,"411,861",-1.68
+POWL,"Powell Industries, Inc.",greenblatt,False,2,3,66.7,198,13.30,3.75,28.21,2.09,0.73,133,"411,861",-1.68
+POWL,"Powell Industries, Inc.",netnet,False,2,4,50.0,198,13.30,3.75,28.21,2.09,0.73,133,"411,861",-1.68
+POWL,"Powell Industries, Inc.",custom,False,0,0,0.0,198,13.30,3.75,28.21,2.09,0.73,133,"411,861",-1.68
+MGY,Magnolia Oil & Gas Corp,piotroski,False,6,9,66.7,28.14,16.06,2.61,16.27,1.54,—,20.61,3M,-32.61
+MGY,Magnolia Oil & Gas Corp,buffett,False,3,6,50.0,28.14,16.06,2.61,16.27,1.54,—,20.61,3M,-32.61
+MGY,Magnolia Oil & Gas Corp,graham,False,3,9,33.3,28.14,16.06,2.61,16.27,1.54,—,20.61,3M,-32.61
+MGY,Magnolia Oil & Gas Corp,greenblatt,False,1,3,33.3,28.14,16.06,2.61,16.27,1.54,—,20.61,3M,-32.61
+MGY,Magnolia Oil & Gas Corp,lynch,False,1,4,25.0,28.14,16.06,2.61,16.27,1.54,—,20.61,3M,-32.61
+MGY,Magnolia Oil & Gas Corp,netnet,False,1,4,25.0,28.14,16.06,2.61,16.27,1.54,—,20.61,3M,-32.61
+MGY,Magnolia Oil & Gas Corp,custom,False,0,0,0.0,28.14,16.06,2.61,16.27,1.54,—,20.61,3M,-32.61
+WING,WINGSTOP INC.,buffett,False,4,6,66.7,115,18.59,—,-23.65,3.26,-1.94,—,1M,-33.47
+WING,WINGSTOP INC.,piotroski,False,6,9,66.7,115,18.59,—,-23.65,3.26,-1.94,—,1M,-33.47
+WING,WINGSTOP INC.,greenblatt,False,2,3,66.7,115,18.59,—,-23.65,3.26,-1.94,—,1M,-33.47
+WING,WINGSTOP INC.,graham,False,3,9,33.3,115,18.59,—,-23.65,3.26,-1.94,—,1M,-33.47

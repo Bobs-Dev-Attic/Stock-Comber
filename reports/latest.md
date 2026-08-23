@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-08-21 07:25 UTC_ · strategies: **graham, buffett**
+_Generated 2026-08-23 09:16 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **57** companies · **6** strategy matches passed.
+Screened **57** companies · **28** strategy matches passed.
 
-| Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E |
-|--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|
-| MLI | MUELLER INDUSTRIES INC | buffett | ✅ | 100% | 61.96 | 9.03 | 2.15 | 23.84 | 5.92 | 0.15 |
-| MLI | MUELLER INDUSTRIES INC | graham | ✅ | 89% | 61.96 | 9.03 | 2.15 | 23.84 | 5.92 | 0.15 |
-| EVR | EVERCORE INC. | buffett | ✅ | 83% | 287 | 20.43 | 5.95 | 29.14 | 2.16 | 1.50 |
-| GGG | GRACO INC. | buffett | ✅ | 83% | 81.71 | 26.53 | 5.21 | 19.66 | 3.15 | — |
-| HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 106 | 41.45 | 269 | 649 | 4.66 | 50.73 |
-| MEDP | Medpace Holdings, Inc. | buffett | ✅ | 83% | 613 | 40.09 | 39.40 | 98.27 | 0.74 | 3.30 |
-| PIPR | PIPER SANDLER COMPANIES | graham | ▫️ | 78% | 72.86 | 4.61 | 0.95 | 20.52 | — | 0.74 |
-| PIPR | PIPER SANDLER COMPANIES | buffett | ▫️ | 50% | 72.86 | 4.61 | 0.95 | 20.52 | — | 0.74 |
-| POWL | Powell Industries, Inc. | graham | ▫️ | 78% | 197 | 13.28 | 3.75 | 28.21 | 2.09 | 0.73 |
-| POWL | Powell Industries, Inc. | buffett | ▫️ | 67% | 197 | 13.28 | 3.75 | 28.21 | 2.09 | 0.73 |
-| MGY | Magnolia Oil & Gas Corp | buffett | ▫️ | 50% | 28.22 | 16.10 | 2.62 | 16.27 | 1.54 | — |
-| MGY | Magnolia Oil & Gas Corp | graham | ▫️ | 33% | 28.22 | 16.10 | 2.62 | 16.27 | 1.54 | — |
-| WING | WINGSTOP INC. | buffett | ▫️ | 67% | 114 | 18.30 | — | -23.65 | 3.26 | -1.94 |
-| WING | WINGSTOP INC. | graham | ▫️ | 33% | 114 | 18.30 | — | -23.65 | 3.26 | -1.94 |
-| BOOT | Boot Barn Holdings, Inc. | graham | ▫️ | 67% | 160 | 21.80 | 3.73 | 17.13 | 2.65 | 0.86 |
-| BOOT | Boot Barn Holdings, Inc. | buffett | ▫️ | 67% | 160 | 21.80 | 3.73 | 17.13 | 2.65 | 0.86 |
-| FHI | Federated Hermes, Inc. | graham | ▫️ | 67% | 63.13 | 12.31 | 3.96 | 33.69 | 2.75 | 0.81 |
-| FHI | Federated Hermes, Inc. | buffett | ▫️ | 67% | 63.13 | 12.31 | 3.96 | 33.69 | 2.75 | 0.81 |
-| LNTH | LANTHEUS HOLDINGS, INC. | buffett | ▫️ | 50% | 100 | 29.40 | 6.30 | 21.43 | 2.70 | 1.04 |
-| LNTH | LANTHEUS HOLDINGS, INC. | graham | ▫️ | 33% | 100 | 29.40 | 6.30 | 21.43 | 2.70 | 1.04 |
-| EVR | EVERCORE INC. | graham | ▫️ | 67% | 287 | 20.43 | 5.95 | 29.14 | 2.16 | 1.50 |
-| PATH | UiPath, Inc. | graham | ▫️ | 44% | 15.92 | 30.62 | 4.17 | 13.56 | 2.48 | 0.53 |
-| PATH | UiPath, Inc. | buffett | ▫️ | 33% | 15.92 | 30.62 | 4.17 | 13.56 | 2.48 | 0.53 |
-| GGG | GRACO INC. | graham | ▫️ | 67% | 81.71 | 26.53 | 5.21 | 19.66 | 3.15 | — |
-| CRC | California Resources Corp | graham | ▫️ | 67% | 53.41 | 12.87 | 1.27 | 9.88 | 0.89 | — |
-| CRC | California Resources Corp | buffett | ▫️ | 33% | 53.41 | 12.87 | 1.27 | 9.88 | 0.89 | — |
-| ALRM | ALARM.COM HOLDINGS, INC. | buffett | ▫️ | 67% | 57.06 | 23.20 | 3.96 | 15.52 | 1.92 | 1.47 |
-| ALRM | ALARM.COM HOLDINGS, INC. | graham | ▫️ | 56% | 57.06 | 23.20 | 3.96 | 15.52 | 1.92 | 1.47 |
-| HALO | HALOZYME THERAPEUTICS, INC. | graham | ▫️ | 56% | 106 | 41.45 | 269 | 649 | 4.66 | 50.73 |
-| HLI | HOULIHAN LOKEY, INC. | buffett | ▫️ | 67% | 128 | 20.59 | 3.74 | 18.17 | — | 0.79 |
-| HLI | HOULIHAN LOKEY, INC. | graham | ▫️ | 44% | 128 | 20.59 | 3.74 | 18.17 | — | 0.79 |
-| MEDP | Medpace Holdings, Inc. | graham | ▫️ | 44% | 613 | 40.09 | 39.40 | 98.27 | 0.74 | 3.30 |
-| PCTY | PAYLOCITY HOLDING CORPORATIO | buffett | ▫️ | 67% | 152 | 30.97 | 6.83 | 22.08 | 1.09 | 3.00 |
-| PCTY | PAYLOCITY HOLDING CORPORATIO | graham | ▫️ | 56% | 152 | 30.97 | 6.83 | 22.08 | 1.09 | 3.00 |
-| YETI | YETI Holdings, Inc. | buffett | ▫️ | 50% | 44.00 | 21.67 | 5.52 | 25.43 | 1.98 | 0.90 |
-| YETI | YETI Holdings, Inc. | graham | ▫️ | 44% | 44.00 | 21.67 | 5.52 | 25.43 | 1.98 | 0.90 |
-| APPF | AppFolio, Inc. | buffett | ▫️ | 67% | 219 | 56.40 | 14.65 | 25.97 | 3.31 | 0.27 |
-| APPF | AppFolio, Inc. | graham | ▫️ | 44% | 219 | 56.40 | 14.65 | 25.97 | 3.31 | 0.27 |
-| UFPI | UFP INDUSTRIES, INC. | graham | ▫️ | 56% | 88.12 | 17.62 | 1.63 | 9.63 | 4.59 | 0.31 |
-| UFPI | UFP INDUSTRIES, INC. | buffett | ▫️ | 33% | 88.12 | 17.62 | 1.63 | 9.63 | 4.59 | 0.31 |
-| FIGS | FIGS, Inc. | graham | ▫️ | 33% | 14.41 | 75.84 | 5.91 | 7.83 | 4.94 | 0.33 |
-| FIGS | FIGS, Inc. | buffett | ▫️ | 33% | 14.41 | 75.84 | 5.91 | 7.83 | 4.94 | 0.33 |
-| CAKE | THE CHEESECAKE FACTORY INCOR | buffett | ▫️ | 50% | 107 | 34.81 | 11.85 | 34.01 | 0.59 | 6.47 |
-| CAKE | THE CHEESECAKE FACTORY INCOR | graham | ▫️ | 33% | 107 | 34.81 | 11.85 | 34.01 | 0.59 | 6.47 |
-| AMR | ALPHA METALLURGICAL RESOURCE | graham | ▫️ | 44% | 194 | — | 1.63 | -3.99 | 4.47 | 0.48 |
-| AMR | ALPHA METALLURGICAL RESOURCE | buffett | ▫️ | 33% | 194 | — | 1.63 | -3.99 | 4.47 | 0.48 |
-| AAON | AAON, INC. | graham | ▫️ | 67% | 80.84 | 62.67 | 7.51 | 12.02 | 2.63 | — |
-| AAON | AAON, INC. | buffett | ▫️ | 17% | 80.84 | 62.67 | 7.51 | 12.02 | 2.63 | — |
-| BL | BlackLine, Inc. | graham | ▫️ | 33% | 31.92 | 81.85 | 6.33 | 7.38 | 1.47 | 4.18 |
-| BL | BlackLine, Inc. | buffett | ▫️ | 17% | 31.92 | 81.85 | 6.33 | 7.38 | 1.47 | 4.18 |
+| Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
+|--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
+| MLI | MUELLER INDUSTRIES INC | buffett | ✅ | 100% | 63.22 | 9.22 | 2.20 | 23.84 | 5.92 | 0.15 | 1M | 21.65 |
+| MLI | MUELLER INDUSTRIES INC | greenblatt | ✅ | 100% | 63.22 | 9.22 | 2.20 | 23.84 | 5.92 | 0.15 | 1M | 21.65 |
+| MLI | MUELLER INDUSTRIES INC | lynch | ✅ | 100% | 63.22 | 9.22 | 2.20 | 23.84 | 5.92 | 0.15 | 1M | 21.65 |
+| MLI | MUELLER INDUSTRIES INC | graham | ✅ | 89% | 63.22 | 9.22 | 2.20 | 23.84 | 5.92 | 0.15 | 1M | 21.65 |
+| MLI | MUELLER INDUSTRIES INC | piotroski | ✅ | 78% | 63.22 | 9.22 | 2.20 | 23.84 | 5.92 | 0.15 | 1M | 21.65 |
+| PIPR | PIPER SANDLER COMPANIES | greenblatt | ✅ | 100% | 75.02 | 4.74 | 0.97 | 20.52 | — | 0.74 | 343,202 | -36.11 |
+| PIPR | PIPER SANDLER COMPANIES | lynch | ✅ | 100% | 75.02 | 4.74 | 0.97 | 20.52 | — | 0.74 | 343,202 | -36.11 |
+| PIPR | PIPER SANDLER COMPANIES | piotroski | ✅ | 89% | 75.02 | 4.74 | 0.97 | 20.52 | — | 0.74 | 343,202 | -36.11 |
+| POWL | Powell Industries, Inc. | piotroski | ✅ | 78% | 198 | 13.30 | 3.75 | 28.21 | 2.09 | 0.73 | 411,861 | -1.68 |
+| POWL | Powell Industries, Inc. | lynch | ✅ | 75% | 198 | 13.30 | 3.75 | 28.21 | 2.09 | 0.73 | 411,861 | -1.68 |
+| WING | WINGSTOP INC. | lynch | ✅ | 100% | 115 | 18.59 | — | -23.65 | 3.26 | -1.94 | 1M | -33.47 |
+| BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 166 | 22.53 | 3.86 | 17.13 | 2.65 | 0.86 | 454,784 | -3.67 |
+| BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 166 | 22.53 | 3.86 | 17.13 | 2.65 | 0.86 | 454,784 | -3.67 |
+| FHI | Federated Hermes, Inc. | greenblatt | ✅ | 100% | 63.70 | 12.42 | 4.00 | 33.69 | 2.75 | 0.81 | 325,146 | -6.96 |
+| FHI | Federated Hermes, Inc. | piotroski | ✅ | 89% | 63.70 | 12.42 | 4.00 | 33.69 | 2.75 | 0.81 | 325,146 | -6.96 |
+| EVR | EVERCORE INC. | buffett | ✅ | 83% | 292 | 20.78 | 6.05 | 29.14 | 2.16 | 1.50 | 341,923 | -14.65 |
+| EVR | EVERCORE INC. | piotroski | ✅ | 78% | 292 | 20.78 | 6.05 | 29.14 | 2.16 | 1.50 | 341,923 | -14.65 |
+| GGG | GRACO INC. | piotroski | ✅ | 89% | 80.64 | 26.18 | 5.14 | 19.66 | 3.15 | — | 1M | -0.17 |
+| GGG | GRACO INC. | buffett | ✅ | 83% | 80.64 | 26.18 | 5.14 | 19.66 | 3.15 | — | 1M | -0.17 |
+| PATH | UiPath, Inc. | piotroski | ✅ | 89% | 16.39 | 31.52 | 4.29 | 13.56 | 2.48 | 0.53 | 49M | -25.19 |
+| ALRM | ALARM.COM HOLDINGS, INC. | piotroski | ✅ | 78% | 57.51 | 23.38 | 4.00 | 15.52 | 1.92 | 1.47 | 335,892 | 26.34 |
+| HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 108 | 42.25 | 275 | 649 | 4.66 | 50.73 | 1M | -10.17 |
+| MEDP | Medpace Holdings, Inc. | buffett | ✅ | 83% | 621 | 40.62 | 39.93 | 98.27 | 0.74 | 3.30 | 214,646 | 17.65 |
+| MEDP | Medpace Holdings, Inc. | piotroski | ✅ | 78% | 621 | 40.62 | 39.93 | 98.27 | 0.74 | 3.30 | 214,646 | 17.65 |
+| PCTY | PAYLOCITY HOLDING CORPORATIO | piotroski | ✅ | 89% | 153 | 31.17 | 6.88 | 22.08 | 1.09 | 3.00 | 376,135 | -12.76 |
+| FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 14.68 | 77.26 | 6.02 | 7.83 | 4.94 | 0.33 | 2M | 29.16 |
+| FROG | JFrog Ltd. | piotroski | ✅ | 78% | 92.13 | — | 12.06 | -8.09 | 2.14 | 0.51 | 2M | 31.76 |
+| OMCL | OMNICELL, INC | piotroski | ✅ | 78% | 35.58 | 889 | 1.34 | 0.17 | 1.43 | 0.60 | 736,933 | -40.64 |
+| MLI | MUELLER INDUSTRIES INC | netnet | ▫️ | 50% | 63.22 | 9.22 | 2.20 | 23.84 | 5.92 | 0.15 | 1M | 21.65 |
+| MLI | MUELLER INDUSTRIES INC | custom | ▫️ | 0% | 63.22 | 9.22 | 2.20 | 23.84 | 5.92 | 0.15 | 1M | 21.65 |
+| PIPR | PIPER SANDLER COMPANIES | graham | ▫️ | 78% | 75.02 | 4.74 | 0.97 | 20.52 | — | 0.74 | 343,202 | -36.11 |
+| PIPR | PIPER SANDLER COMPANIES | buffett | ▫️ | 50% | 75.02 | 4.74 | 0.97 | 20.52 | — | 0.74 | 343,202 | -36.11 |
+| PIPR | PIPER SANDLER COMPANIES | netnet | ▫️ | 25% | 75.02 | 4.74 | 0.97 | 20.52 | — | 0.74 | 343,202 | -36.11 |
+| PIPR | PIPER SANDLER COMPANIES | custom | ▫️ | 0% | 75.02 | 4.74 | 0.97 | 20.52 | — | 0.74 | 343,202 | -36.11 |
+| POWL | Powell Industries, Inc. | graham | ▫️ | 78% | 198 | 13.30 | 3.75 | 28.21 | 2.09 | 0.73 | 411,861 | -1.68 |
+| POWL | Powell Industries, Inc. | buffett | ▫️ | 67% | 198 | 13.30 | 3.75 | 28.21 | 2.09 | 0.73 | 411,861 | -1.68 |
+| POWL | Powell Industries, Inc. | greenblatt | ▫️ | 67% | 198 | 13.30 | 3.75 | 28.21 | 2.09 | 0.73 | 411,861 | -1.68 |
+| POWL | Powell Industries, Inc. | netnet | ▫️ | 50% | 198 | 13.30 | 3.75 | 28.21 | 2.09 | 0.73 | 411,861 | -1.68 |
+| POWL | Powell Industries, Inc. | custom | ▫️ | 0% | 198 | 13.30 | 3.75 | 28.21 | 2.09 | 0.73 | 411,861 | -1.68 |
+| MGY | Magnolia Oil & Gas Corp | piotroski | ▫️ | 67% | 28.14 | 16.06 | 2.61 | 16.27 | 1.54 | — | 3M | -32.61 |
+| MGY | Magnolia Oil & Gas Corp | buffett | ▫️ | 50% | 28.14 | 16.06 | 2.61 | 16.27 | 1.54 | — | 3M | -32.61 |
+| MGY | Magnolia Oil & Gas Corp | graham | ▫️ | 33% | 28.14 | 16.06 | 2.61 | 16.27 | 1.54 | — | 3M | -32.61 |
+| MGY | Magnolia Oil & Gas Corp | greenblatt | ▫️ | 33% | 28.14 | 16.06 | 2.61 | 16.27 | 1.54 | — | 3M | -32.61 |
+| MGY | Magnolia Oil & Gas Corp | lynch | ▫️ | 25% | 28.14 | 16.06 | 2.61 | 16.27 | 1.54 | — | 3M | -32.61 |
+| MGY | Magnolia Oil & Gas Corp | netnet | ▫️ | 25% | 28.14 | 16.06 | 2.61 | 16.27 | 1.54 | — | 3M | -32.61 |
+| MGY | Magnolia Oil & Gas Corp | custom | ▫️ | 0% | 28.14 | 16.06 | 2.61 | 16.27 | 1.54 | — | 3M | -32.61 |
+| WING | WINGSTOP INC. | buffett | ▫️ | 67% | 115 | 18.59 | — | -23.65 | 3.26 | -1.94 | 1M | -33.47 |
+| WING | WINGSTOP INC. | piotroski | ▫️ | 67% | 115 | 18.59 | — | -23.65 | 3.26 | -1.94 | 1M | -33.47 |
+| WING | WINGSTOP INC. | greenblatt | ▫️ | 67% | 115 | 18.59 | — | -23.65 | 3.26 | -1.94 | 1M | -33.47 |
+| WING | WINGSTOP INC. | graham | ▫️ | 33% | 115 | 18.59 | — | -23.65 | 3.26 | -1.94 | 1M | -33.47 |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
