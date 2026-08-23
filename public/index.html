@@ -750,7 +750,9 @@ function showTab(tab) {
     if (!schedLoaded) { schedLoaded = true; loadSchedule(); }
     if (!countdownTimer) loadCountdown();   // ensure the countdown is live here too
   } else if (tab === "history") {
-    loadHistory();
+    // Always re-fetch on open so runs/jobs created since the last view show up
+    // (the tab used to cache its first load and go stale until ↻ Refresh).
+    loadHistory(true);
   } else if (tab === "api") {
     loadAudit();
   }
