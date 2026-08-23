@@ -197,6 +197,9 @@ class NullStorage:
     def tickers_with_strategy(self, strategy: str, limit: int = 500) -> list[str]:
         return []
 
+    def delete_results_by_strategy(self, strategy: str) -> dict:
+        return {"results_deleted": 0, "empty_runs_deleted": 0}
+
     def get_settings(self) -> dict:
         return {}
 
@@ -433,6 +436,22 @@ class PostgresStorage:
                     "ORDER BY MAX(r.created_at) DESC "
                     "LIMIT %s", (strategy, limit))
                 return [row[0] for row in cur.fetchall()]
+
+    def delete_results_by_strategy(self, strategy: str) -> dict:
+        """Permanently delete every stored result under ``strategy`` (e.g. ``custom``),
+        then drop any run left with no results at all. Returns the counts removed."""
+        with self._connect() as conn:
+            self._ensure_schema(conn)
+            with conn.cursor() as cur:
+                cur.execute("DELETE FROM screen_results WHERE strategy = %s",
+                            (strategy,))
+                results_deleted = cur.rowcount
+                cur.execute(
+                    "DELETE FROM screen_runs r WHERE NOT EXISTS ("
+                    "  SELECT 1 FROM screen_results sr WHERE sr.run_id = r.id)")
+                runs_deleted = cur.rowcount
+            conn.commit()
+        return {"results_deleted": results_deleted, "empty_runs_deleted": runs_deleted}
 
     def recent_results(self, limit_runs: int = 30) -> list[dict]:
         """Per-strategy results from the most recent ``limit_runs`` runs.

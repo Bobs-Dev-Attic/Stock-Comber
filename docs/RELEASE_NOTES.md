@@ -1,5 +1,13 @@
 # Release notes
 
+## v0.71.0 — Clear a strategy's results off the Full list (2026-08-23)
+
+Added a way to permanently remove all stored results for a given strategy. The **Maintenance**
+workflow takes a `purge_strategy` input (e.g. `custom`) that deletes every result under that
+strategy and any now-empty run — so the ad-hoc **custom** rows can be cleared from the Full
+list for good. On the CLI: `purge-strategy --strategy custom --yes`. (A custom job would
+re-create custom rows the next time it runs.)
+
 ## v0.70.0 — Re-run every ticker on a strategy on demand (2026-08-23)
 
 You can now refresh a whole strategy's worth of tickers at once. The analysis worker

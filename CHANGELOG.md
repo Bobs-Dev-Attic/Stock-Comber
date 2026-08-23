@@ -4,6 +4,16 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.71.0] - 2026-08-23
+
+### Added
+- **Purge all stored results for a strategy.** New `purge-strategy --strategy <name> --yes`
+  CLI command (and a manual **Maintenance** workflow with a `purge_strategy` dispatch
+  input) permanently deletes every stored result under that strategy — e.g. `custom` —
+  and drops any run left with no results. Destructive and gated behind `--yes`. New
+  `Storage.delete_results_by_strategy(strategy)`. Used to clear the ad-hoc `custom`
+  rows off the Full list.
+
 ## [0.70.0] - 2026-08-23
 
 ### Added

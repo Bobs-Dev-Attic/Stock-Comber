@@ -108,6 +108,41 @@ def test_analyze_queue_reseed_strategy_enqueues_matches(monkeypatch):
     assert captured["limit"] >= 3   # limit widened to cover all reseeded tickers
 
 
+def test_purge_strategy_requires_confirmation(monkeypatch):
+    from types import SimpleNamespace
+    from stock_comber import cli
+    import stock_comber.storage as storage
+
+    class _Store:
+        enabled = True
+
+        def __init__(self):
+            self.purged = None
+
+        def delete_results_by_strategy(self, strategy):
+            self.purged = strategy
+            return {"results_deleted": 7, "empty_runs_deleted": 2}
+
+    store = _Store()
+    monkeypatch.setattr(cli, "_load", lambda args: {})
+    monkeypatch.setattr(storage, "get_storage", lambda cfg=None: store)
+
+    # Without --yes it refuses and deletes nothing.
+    no = SimpleNamespace(config=None, strategy="custom", yes=False)
+    assert cli.cmd_purge_strategy(no) == 2
+    assert store.purged is None
+
+    # With --yes it deletes.
+    yes = SimpleNamespace(config=None, strategy="custom", yes=True)
+    assert cli.cmd_purge_strategy(yes) == 0
+    assert store.purged == "custom"
+
+
+def test_null_storage_purge_stub():
+    assert NullStorage().delete_results_by_strategy("custom") == {
+        "results_deleted": 0, "empty_runs_deleted": 0}
+
+
 def test_null_storage_queue_stubs():
     s = NullStorage()
     assert s.enqueue(["AAPL"]) == 0
