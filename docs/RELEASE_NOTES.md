@@ -1,5 +1,21 @@
 # Release notes
 
+## v0.54.0 — Polygon.io enrichment, rate-limited to 5 calls/min (2026-08-23)
+
+Have a **Polygon.io** API key? You can now store it (Settings → API keys, or the
+`POLYGON_API_KEY` env var) and the nightly "hidden gems" run will use it to figure
+out each candidate's **sector, market-cap size, and volume** — exactly the signals
+the new stratified pick needs to spread across sizes. If you have both a Polygon and
+a Finnhub key, Polygon is used for this; a Polygon key on its own is enough, so you
+don't need Finnhub just to classify names.
+
+It respects Polygon's **free-tier limit of 5 calls per minute** automatically —
+calls are spaced ~12 seconds apart and back off if the API starts rejecting them, so
+you won't blow through your quota. (Turn off the extra per-name volume lookup with
+`data.polygon_enrich_volume: false` to spend half as many calls.) As with the other
+keys, it's stored write-only, sent only in an `Authorization` header, and never shown
+back to the browser or written to logs.
+
 ## v0.53.0 — Nightly picks a random, well-spread set across the market (2026-08-23)
 
 The scheduled screen now does what you'd expect a "hidden gems" hunt to do: each run picks a

@@ -36,18 +36,30 @@ def test_redact_blanks_tiingo_key():
     assert cfg["data"]["tiingo_api_key"] == "tiingo-secret-value"  # original untouched
 
 
+def test_redact_blanks_polygon_key():
+    m = _load_settings_module()
+    cfg = {"data": {"polygon_api_key": "polygon-secret-value", "cache_ttl_hours": 24}}
+    safe = m._redact(cfg)
+    assert safe["data"]["polygon_api_key"] == ""          # blanked
+    assert cfg["data"]["polygon_api_key"] == "polygon-secret-value"  # original untouched
+
+
 def test_status_reports_booleans_never_values(monkeypatch):
     m = _load_settings_module()
     monkeypatch.setenv("FINNHUB_API_KEY", "env-secret-123")
     monkeypatch.setenv("STOCK_COMBER_API_KEY", "api-secret-456")
     monkeypatch.setenv("TIINGO_API_KEY", "tiingo-secret-abc")
+    monkeypatch.setenv("POLYGON_API_KEY", "polygon-secret-xyz")
     cfg = {"data": {"finnhub_api_key": "stored-secret-789",
-                    "tiingo_api_key": "stored-tiingo-000"}}
+                    "tiingo_api_key": "stored-tiingo-000",
+                    "polygon_api_key": "stored-polygon-111"}}
     status = m._status(cfg)
     flat = repr(status)
     for secret in ("env-secret-123", "api-secret-456", "stored-secret-789",
-                   "tiingo-secret-abc", "stored-tiingo-000"):
+                   "tiingo-secret-abc", "stored-tiingo-000",
+                   "polygon-secret-xyz", "stored-polygon-111"):
         assert secret not in flat
     assert status["keys"]["finnhub"] is True              # reported as present
     assert status["keys"]["tiingo"] is True               # reported as present
+    assert status["keys"]["polygon"] is True              # reported as present
     assert isinstance(status["keys"]["export_api"], bool)

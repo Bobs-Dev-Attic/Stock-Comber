@@ -4,6 +4,7 @@ from typing import Any, Optional
 
 from .cache import FileCache
 from .finnhub import FinnhubSource
+from .polygon import PolygonSource
 from .sec_edgar import SecEdgarSource
 from .stooq import StooqSource
 from .tiingo import TiingoSource
@@ -11,8 +12,8 @@ from .tiingo import resolve_api_key as _resolve_tiingo_key
 from .yahoo import YahooSource
 
 __all__ = [
-    "FileCache", "FinnhubSource", "SecEdgarSource", "StooqSource",
-    "TiingoSource", "YahooSource", "make_history_source",
+    "FileCache", "FinnhubSource", "PolygonSource", "SecEdgarSource",
+    "StooqSource", "TiingoSource", "YahooSource", "make_history_source",
 ]
 
 
