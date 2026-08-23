@@ -36,8 +36,17 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
   .btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--line);font-weight:500;padding:.5rem .9rem;font-size:.9rem}
   .status{margin-top:.8rem;color:var(--muted);min-height:1.2em}
   .keys{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.3rem}
-  .pill{border-radius:999px;padding:.25rem .7rem;font-size:.85rem;background:var(--chip)}
+  .pill{border-radius:999px;padding:.25rem .7rem;font-size:.85rem;background:var(--chip);white-space:nowrap}
   .pill.on{color:var(--ok)} .pill.off{color:var(--bad)}
+  /* Keys & status: one row per provider — name · status chip · key input */
+  .keygrid{margin-top:.4rem}
+  .keyrow{display:grid;grid-template-columns:130px 130px minmax(0,1fr);gap:.7rem;align-items:center;padding:.35rem 0;border-bottom:1px solid var(--line)}
+  .keyrow:last-child{border-bottom:0}
+  .keyrow.keyhead{font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);border-bottom:1px solid var(--line)}
+  .keyrow .kname{font-weight:600}
+  .keyrow input{width:100%}
+  @media(max-width:640px){ .keyrow{grid-template-columns:1fr auto;gap:.35rem .5rem}
+    .keyrow input{grid-column:1/-1} .keyrow.keyhead{display:none} }
   .crit-row{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;margin-top:.5rem}
   .crit-row .rm{border:0;background:transparent;color:var(--bad);cursor:pointer;font-size:1.2rem}
   .hint{color:var(--muted);font-size:.85rem}
@@ -64,31 +73,46 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
 
   <div class="card">
     <h2>Keys &amp; status</h2>
-    <div class="keys" id="keys"></div>
-    <div class="row" style="margin-top:.7rem">
-      <div class="f" style="max-width:340px">
-        <label>Finnhub API key — store in your database</label>
+    <div class="keygrid">
+      <div class="keyrow keyhead"><span>Provider</span><span>Status</span><span>Key (write-only)</span></div>
+      <div class="keyrow">
+        <span class="kname">Finnhub</span>
+        <span id="st-finnhub" class="pill off">✕ not set</span>
         <input id="finnhub_key" type="password" autocomplete="off" placeholder="leave blank to keep current">
       </div>
-      <div class="f" style="max-width:340px">
-        <label>Tiingo API key — store in your database</label>
+      <div class="keyrow">
+        <span class="kname">Tiingo</span>
+        <span id="st-tiingo" class="pill off">✕ not set</span>
         <input id="tiingo_key" type="password" autocomplete="off" placeholder="leave blank to keep current">
       </div>
-      <div class="f" style="max-width:340px">
-        <label>Polygon.io API key — store in your database</label>
+      <div class="keyrow">
+        <span class="kname">Polygon.io</span>
+        <span id="st-polygon" class="pill off">✕ not set</span>
         <input id="polygon_key" type="password" autocomplete="off" placeholder="leave blank to keep current">
       </div>
+      <div class="keyrow">
+        <span class="kname">Export / API key</span>
+        <span id="st-export" class="pill off">✕ not set</span>
+        <input id="apikey" type="password" autocomplete="off" placeholder="STOCK_COMBER_API_KEY — required to save">
+      </div>
+      <div class="keyrow">
+        <span class="kname">Database</span>
+        <span id="st-database" class="pill off">✕ not set</span>
+        <span class="hint">Set <code>DATABASE_URL</code> in Vercel (environment only)</span>
+      </div>
     </div>
-    <p class="hint">Optional: store your <b>Polygon.io</b> key to enrich the nightly universe (sector,
-      market cap &amp; volume — throttled to the free tier's 5 calls/min; preferred over Finnhub for
-      enrichment). Store your <b>Tiingo</b> key to use it as the <b>primary</b> price source — a
-      licensed provider with a real terms-of-service, ahead of the free Yahoo/Stooq fallbacks. And your
-      <b>Finnhub</b> key in the database instead of an environment
-      variable — it powers news, sentiment &amp; enrichment. Both are <b>write-only</b> here (never shown back),
-      and saving it needs the Export/API key below. <code>DATABASE_URL</code> and
-      <code>STOCK_COMBER_API_KEY</code> can't be stored in the database — set those (and, if you prefer, the
-      Finnhub key) as environment variables in Vercel → Settings → Environment Variables (and as GitHub
-      Actions secrets for the nightly job).</p>
+    <div class="row" style="margin-top:.8rem">
+      <button class="btn" id="save-keys">Save keys</button>
+      <span class="status" id="keys-status"></span>
+    </div>
+    <p class="hint">Each provider key is stored in your database and is <b>write-only</b> here (never shown back).
+      <b>Polygon.io</b> enriches the nightly universe (sector, market cap &amp; volume — throttled to the free
+      tier's 5 calls/min; preferred over Finnhub for enrichment). <b>Tiingo</b> becomes the <b>primary</b>
+      price source when set (a licensed provider, ahead of the free Yahoo/Stooq fallbacks). <b>Finnhub</b>
+      powers news, sentiment &amp; enrichment. Saving any of them requires the <b>Export / API key</b>
+      (<code>STOCK_COMBER_API_KEY</code>) above. <code>DATABASE_URL</code> and <code>STOCK_COMBER_API_KEY</code>
+      can't be stored in the database — set those (and, if you prefer, the Finnhub key) as environment
+      variables in Vercel → Settings → Environment Variables (and as GitHub Actions secrets for the nightly job).</p>
   </div>
 
   <div class="card" id="sec-strategies">
@@ -131,11 +155,10 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
   </div>
 
   <div class="bar">
-    <div class="f" style="max-width:280px"><label>Export/API key (to save)</label>
-      <input id="apikey" type="password" placeholder="STOCK_COMBER_API_KEY"></div>
     <button class="btn" id="save">Save to database</button>
     <button class="btn ghost" id="download">Download as YAML</button>
     <span class="status" id="status"></span>
+    <span class="hint" style="margin-left:auto">Saving uses the Export / API key set in <b>Keys &amp; status</b> above.</span>
   </div>
 </div>
 
@@ -276,10 +299,12 @@ function readCrit(){ const out=[];
     if(value!==""&&!Number.isNaN(Number(value))) out.push({metric,op,value:Number(value)});
   }); return out; }
 
-function renderKeys(s){ const c=$("#keys"); c.innerHTML="";
-  const items=[["Tiingo",s.keys.tiingo],["Finnhub",s.keys.finnhub],["Polygon",s.keys.polygon],["Database",s.keys.database],["Export API key",s.keys.export_api]];
-  items.forEach(([n,on])=>{const p=document.createElement("span");p.className="pill "+(on?"on":"off");
-    p.textContent=(on?"✓ ":"✕ ")+n+(on?" configured":" not set");c.appendChild(p);});
+function renderKeys(s){
+  const k=(s&&s.keys)||{};
+  const set=(id,on)=>{const el=$(id); if(!el)return;
+    el.className="pill "+(on?"on":"off"); el.textContent=(on?"✓ configured":"✕ not set");};
+  set("#st-finnhub",k.finnhub); set("#st-tiingo",k.tiingo); set("#st-polygon",k.polygon);
+  set("#st-export",k.export_api); set("#st-database",k.database);
 }
 
 // build settings object from the form
@@ -339,17 +364,22 @@ async function load(){
 $("#add-crit").onclick=()=>addCrit();
 $("#download").onclick=()=>{ const y=toYAML(collect()); const b=new Blob([y],{type:"text/yaml"});
   const a=document.createElement("a"); a.href=URL.createObjectURL(b); a.download="stock-comber-settings.yaml"; a.click(); URL.revokeObjectURL(a.href); };
-$("#save").onclick=async()=>{
+// Persist the whole form (thresholds + typed keys). Both the Keys-card and the
+// bottom bar trigger this; `statusSel` picks which status line reports progress.
+async function doSave(statusSel){
+  const st=$(statusSel);
   const key=$("#apikey").value.trim(); if(key) sessionStorage.setItem("sc_key",key);
-  $("#status").textContent="Saving…";
+  st.textContent="Saving…";
   try{ const r=await fetch("/api/settings?key="+encodeURIComponent(key),{method:"POST",
       headers:{"Content-Type":"application/json"}, body:JSON.stringify(collect())});
     const d=await r.json();
-    if(!r.ok){ $("#status").textContent="Error: "+(d.error||r.status)+(d.problems?" — "+d.problems.join("; "):""); }
+    if(!r.ok){ st.textContent="Error: "+(d.error||r.status)+(d.problems?" — "+d.problems.join("; "):""); }
     else { $("#finnhub_key").value=""; $("#tiingo_key").value=""; $("#polygon_key").value=""; if(d.keys) renderKeys(d);
-      $("#status").textContent="Saved. Live screens and the nightly run now use these settings."; }
-  }catch(e){ $("#status").textContent="Save failed: "+e.message; }
-};
+      st.textContent="Saved. Live screens and the nightly run now use these settings."; }
+  }catch(e){ st.textContent="Save failed: "+e.message; }
+}
+$("#save").onclick=()=>doSave("#status");
+$("#save-keys").onclick=()=>doSave("#keys-status");
 load();
 </script>
 <script>/* theme toggle (System -> Light -> Dark), shared key with the dashboard */

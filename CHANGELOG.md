@@ -4,6 +4,18 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.58.0] - 2026-08-23
+
+### Changed
+- **Settings → Keys & status redesigned into per-provider rows.** Each provider
+  (Finnhub, Tiingo, Polygon.io) now has its own row showing its name, a status chip
+  (configured / not set), and its write-only key field — instead of a chip cloud
+  above three side-by-side inputs. The **Export / API key** (`STOCK_COMBER_API_KEY`)
+  moved into this section as its own row (with a Database status row alongside), and a
+  dedicated **Save keys** button now lives in the card, so keys can be saved without
+  scrolling to the bottom bar. The bottom **Save to database** button still saves the
+  whole form and reuses the same Export / API key.
+
 ## [0.57.0] - 2026-08-23
 
 ### Added

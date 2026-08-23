@@ -1,5 +1,14 @@
 # Release notes
 
+## v0.58.0 — Settings' Keys & status, tidied up (2026-08-23)
+
+The **Keys & status** section on Settings is clearer: each provider — Finnhub, Tiingo,
+Polygon.io — now has its **own row** with its name, a configured / not-set chip, and its
+key field, instead of a row of chips over three side-by-side inputs. The **Export / API
+key** now lives in this section too (as its own row, next to a Database status row), and
+there's a **Save keys** button right there — so you can update your keys without scrolling
+to the bottom of the page. The bottom "Save to database" button still saves everything.
+
 ## v0.57.0 — Sector column, a menu on every page, full-width History (2026-08-23)
 
 The **Full list** gains a **Sector** column (on by default, after Score) so you can sort,
