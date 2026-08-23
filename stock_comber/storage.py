@@ -179,6 +179,9 @@ class NullStorage:
     def latest_run(self) -> Optional[dict]:
         return None
 
+    def last_scheduled_run_at(self):
+        return None
+
     def list_runs(self, limit: int = 20) -> list[dict]:
         return []
 
@@ -362,6 +365,21 @@ class PostgresStorage:
                      "ticker_count": r[3], "passing_count": r[4]}
                     for r in cur.fetchall()
                 ]
+
+    def last_scheduled_run_at(self):
+        """Timestamp (tz-aware) of the most recent *scheduled* run, or None.
+
+        Scheduled runs are tagged ``meta.source = 'schedule'`` (see cli.cmd_screen),
+        so a manual analysis doesn't count as the schedule having fired — the
+        catch-up gate uses this to run each slot exactly once."""
+        with self._connect() as conn:
+            self._ensure_schema(conn)
+            with conn.cursor() as cur:
+                cur.execute(
+                    "SELECT max(created_at) FROM screen_runs "
+                    "WHERE meta->>'source' = 'schedule'")
+                row = cur.fetchone()
+                return row[0] if row else None
 
     def get_run(self, run_id: int) -> Optional[dict]:
         with self._connect() as conn:

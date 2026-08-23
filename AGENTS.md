@@ -66,7 +66,11 @@ with tooling, never by hand; re-test; push.
 - **CSS `[hidden]` can be overridden** by an author `display:` rule. When hiding
   an element by attribute, also assert computed `display:none` (a past banner bug:
   `.banner{display:flex}` beat `[hidden]`; fixed with `.banner[hidden]{display:none}`).
-- `should_run_now` expects `{"schedule": {...}}`, not a bare schedule dict.
+- `should_run_now(stored, now, last_run=None)` expects `{"schedule": {...}}`, not a bare schedule
+  dict. It's **catch-up**: it fires on the first heartbeat at/after a scheduled slot and de-dupes on
+  `last_run` (the last scheduled run's time, from `storage.last_scheduled_run_at()`) — because GitHub
+  throttles the `*/5` cron and would otherwise miss the exact-minute window. Scheduled runs are tagged
+  `meta.source="schedule"`.
 - Keep the three theme palettes in sync (`:root`, the `prefers-color-scheme`
   block, and `:root[data-theme="dark"]`).
 - Prefer `datetime.now(timezone.utc)` over the deprecated `datetime.utcnow()`.

@@ -1,5 +1,16 @@
 # Release notes
 
+## v0.51.0 — Scheduled report actually runs on time (2026-08-23)
+
+The nightly/scheduled screen was quietly missing its slot. GitHub only lets scheduled workflows fire
+so often and, in practice, throttles them to every 20–40 minutes — so the run, which only triggered
+if a heartbeat landed in the exact minute you configured, kept getting skipped. The workflow still
+reported success (it just did nothing), which is why no new scheduled run showed up for days. Now the
+gate is **catch-up**: the first check at or after your scheduled time runs the report, and it's
+tracked so it still fires exactly once even when GitHub is late. Manual analyses no longer count as
+"the schedule already ran." No change needed on your end — set your schedule in Jobs → Scheduled
+report as before.
+
 ## v0.50.2 — History tab shows the latest activity (2026-08-23)
 
 The History tab used to load once and then keep showing that first snapshot, so a run or job that
