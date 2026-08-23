@@ -71,6 +71,13 @@ def _build_parser() -> argparse.ArgumentParser:
     sub.add_parser("run-jobs",
                    help="Run every saved custom job (from the dashboard) and store each "
                         "as its own run. Used by the scheduled workflow.")
+
+    pp = sub.add_parser("purge-strategy",
+                        help="Permanently delete all stored results for a strategy.")
+    pp.add_argument("--strategy", required=True,
+                    help="Strategy whose results to delete (e.g. 'custom').")
+    pp.add_argument("--yes", action="store_true",
+                    help="Confirm the destructive purge (required).")
     return p
 
 
@@ -334,6 +341,27 @@ def cmd_analyze_queue(args) -> int:
     return 0
 
 
+def cmd_purge_strategy(args) -> int:
+    from .storage import get_storage
+    cfg = _load(args)
+    store = get_storage(cfg)
+    if not getattr(store, "enabled", False):
+        print("No database configured (set DATABASE_URL); nothing to purge.",
+              file=sys.stderr)
+        return 0
+    strat = (args.strategy or "").strip()
+    if not strat:
+        print("Provide --strategy NAME.", file=sys.stderr)
+        return 2
+    if not getattr(args, "yes", False):
+        print(f"Refusing to purge {strat!r} results without --yes.", file=sys.stderr)
+        return 2
+    out = store.delete_results_by_strategy(strat)
+    print(f"Purged {out['results_deleted']} {strat!r} result(s); "
+          f"removed {out['empty_runs_deleted']} now-empty run(s).")
+    return 0
+
+
 def cmd_check_theses(args) -> int:
     from .thesis import check_theses
     from .storage import get_storage
@@ -463,6 +491,7 @@ COMMANDS = {
     "analyze-queue": cmd_analyze_queue,
     "check-theses": cmd_check_theses,
     "run-jobs": cmd_run_jobs,
+    "purge-strategy": cmd_purge_strategy,
 }
 
 
