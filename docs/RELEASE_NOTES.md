@@ -1,5 +1,12 @@
 # Release notes
 
+## v0.69.0 — A custom job's strategy sticks through a deep analysis (2026-08-23)
+
+When a ticker screened by a **custom job** got deep-analyzed, its **Custom criteria**
+strategy used to vanish from the **Full list** — the analysis only ran the six built-in
+lenses. Now the analysis also re-checks that job's criteria (for any saved job whose
+ticker pool includes the stock), so the strategy the job used still shows up.
+
 ## v0.68.0 — Saving a custom job no longer asks for a key (2026-08-23)
 
 Saving a **Custom Job** used to pop up a prompt asking for your API key. That's gone —
