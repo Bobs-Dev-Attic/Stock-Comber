@@ -1,5 +1,18 @@
 # Release notes
 
+## v0.49.0 — Value entry zone (2026-08-23)
+
+A full deep-dive analysis now shows a **value entry zone** — an illustrative reference range for
+where a classic margin-of-safety buyer might start looking, not a price target and **not investment
+advice**. It starts from the Graham fair value, takes a base discount (25%), and then adjusts that
+discount using the signals you already see on the page: a stronger **backtest edge** trims it (more
+historical confidence), positive **news sentiment** trims it a little, and unusually heavy **volume**
+widens it (more uncertainty). You get a low–high range, a midpoint, a confidence badge, whether the
+stock is currently below/within/above the zone, and — importantly — a line-by-line breakdown of every
+input and how many percentage points it moved the discount, so nothing is a black box. If a company
+has no Graham fair value (needs positive earnings and book value), the app says so instead of
+inventing a number. Tune the base discount and bounds under `config.entry`.
+
 ## v0.48.0 — Nightly digest (RSS) (2026-08-22)
 
 Stock-Comber now publishes a **nightly digest** you can subscribe to: an RSS feed of the value
