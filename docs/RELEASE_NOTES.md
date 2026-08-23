@@ -1,5 +1,13 @@
 # Release notes
 
+## v0.70.0 — Re-run every ticker on a strategy on demand (2026-08-23)
+
+You can now refresh a whole strategy's worth of tickers at once. The analysis worker
+accepts a **`reseed_strategy`** input (e.g. `custom`) that finds every ticker currently
+carrying that strategy and re-analyses it — so tickers stuck showing only a **custom**
+result get their real strategy rows back. On the CLI this is
+`analyze-queue --reseed-strategy custom`.
+
 ## v0.69.0 — A custom job's strategy sticks through a deep analysis (2026-08-23)
 
 When a ticker screened by a **custom job** got deep-analyzed, its **Custom criteria**

@@ -15,6 +15,10 @@ on:
         description: "Comma-separated tickers to analyse on demand (optional)"
         required: false
         default: ""
+      reseed_strategy:
+        description: "Re-analyse every ticker currently on this strategy (e.g. 'custom')"
+        required: false
+        default: ""
 
 permissions:
   contents: read
@@ -39,11 +43,11 @@ jobs:
         env:
           LIMIT: ${{ github.event.inputs.limit || '5' }}
           SEED: ${{ github.event.inputs.seed || '' }}
+          RESEED_STRATEGY: ${{ github.event.inputs.reseed_strategy || '' }}
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
         run: |
-          if [ -n "$SEED" ]; then
-            stock-comber --config config/default.yaml --verbose analyze-queue --limit "$LIMIT" --seed "$SEED"
-          else
-            stock-comber --config config/default.yaml --verbose analyze-queue --limit "$LIMIT"
-          fi
+          ARGS="--limit $LIMIT"
+          [ -n "$SEED" ] && ARGS="$ARGS --seed $SEED"
+          [ -n "$RESEED_STRATEGY" ] && ARGS="$ARGS --reseed-strategy $RESEED_STRATEGY"
+          stock-comber --config config/default.yaml --verbose analyze-queue $ARGS

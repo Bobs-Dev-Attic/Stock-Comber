@@ -194,6 +194,9 @@ class NullStorage:
     def list_all_results(self, limit: int = 500) -> list[dict]:
         return []
 
+    def tickers_with_strategy(self, strategy: str, limit: int = 500) -> list[str]:
+        return []
+
     def get_settings(self) -> dict:
         return {}
 
@@ -415,6 +418,21 @@ class PostgresStorage:
                         d["created_at"] = d["created_at"].isoformat()
                     out.append(d)
                 return out
+
+    def tickers_with_strategy(self, strategy: str, limit: int = 500) -> list[str]:
+        """Distinct tickers that have at least one stored result under ``strategy``
+        (e.g. ``custom``), most-recent first — used to re-analyse them on demand."""
+        with self._connect() as conn:
+            self._ensure_schema(conn)
+            with conn.cursor() as cur:
+                cur.execute(
+                    "SELECT sr.ticker FROM screen_results sr "
+                    "JOIN screen_runs r ON r.id = sr.run_id "
+                    "WHERE sr.strategy = %s "
+                    "GROUP BY sr.ticker "
+                    "ORDER BY MAX(r.created_at) DESC "
+                    "LIMIT %s", (strategy, limit))
+                return [row[0] for row in cur.fetchall()]
 
     def recent_results(self, limit_runs: int = 30) -> list[dict]:
         """Per-strategy results from the most recent ``limit_runs`` runs.

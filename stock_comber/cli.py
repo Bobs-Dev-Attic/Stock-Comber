@@ -60,6 +60,9 @@ def _build_parser() -> argparse.ArgumentParser:
                          help="Process queued tickers with a full analysis (news + sentiment).")
     paq.add_argument("--limit", type=int, default=5, help="Max tickers to process.")
     paq.add_argument("--seed", help="Comma-separated tickers to enqueue first (analyse on demand).")
+    paq.add_argument("--reseed-strategy",
+                     help="Enqueue every ticker currently on this strategy (e.g. 'custom') "
+                          "for a fresh full analysis.")
 
     pct = sub.add_parser("check-theses",
                          help="Re-check stored investment theses against fresh metrics.")
@@ -311,6 +314,16 @@ def cmd_analyze_queue(args) -> int:
             store.enqueue(seed)
             print(f"Seeded {len(seed)} ticker(s) into the queue.")
             limit = max(limit, len(seed))
+    reseed = getattr(args, "reseed_strategy", None)
+    if reseed:
+        stale = store.tickers_with_strategy(reseed.strip())
+        if stale:
+            store.enqueue(stale)
+            print(f"Re-seeded {len(stale)} ticker(s) currently on the "
+                  f"{reseed!r} strategy into the queue.")
+            limit = max(limit, len(stale))
+        else:
+            print(f"No tickers found on the {reseed!r} strategy.")
     summary = process_queue(cfg, store, limit=limit)
     print(f"Processed {summary.get('processed', 0)} queued ticker(s).")
     for item in summary.get("tickers", []):

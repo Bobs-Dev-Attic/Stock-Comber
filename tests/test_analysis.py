@@ -70,6 +70,44 @@ def test_process_queue_noop_without_db():
     assert out["processed"] == 0
 
 
+def test_analyze_queue_reseed_strategy_enqueues_matches(monkeypatch):
+    """`analyze-queue --reseed-strategy custom` enqueues every ticker on that
+    strategy and processes at least that many."""
+    from types import SimpleNamespace
+    from stock_comber import cli
+    import stock_comber.storage as storage
+
+    class _Store:
+        enabled = True
+
+        def __init__(self):
+            self.enqueued = []
+
+        def tickers_with_strategy(self, strategy, limit=500):
+            assert strategy == "custom"
+            return ["CVX", "HON", "IBM"]
+
+        def enqueue(self, tickers):
+            self.enqueued.extend(tickers)
+            return len(tickers)
+
+    store = _Store()
+    captured = {}
+    monkeypatch.setattr(cli, "_load", lambda args: {})
+    monkeypatch.setattr(storage, "get_storage", lambda cfg=None: store)
+
+    def _fake_process(cfg, st, limit=5):
+        captured["limit"] = limit
+        return {"processed": len(store.enqueued), "tickers": []}
+
+    monkeypatch.setattr("stock_comber.analysis.process_queue", _fake_process)
+
+    args = SimpleNamespace(config=None, limit=5, seed=None, reseed_strategy="custom")
+    assert cli.cmd_analyze_queue(args) == 0
+    assert store.enqueued == ["CVX", "HON", "IBM"]
+    assert captured["limit"] >= 3   # limit widened to cover all reseeded tickers
+
+
 def test_null_storage_queue_stubs():
     s = NullStorage()
     assert s.enqueue(["AAPL"]) == 0
