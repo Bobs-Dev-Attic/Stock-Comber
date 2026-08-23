@@ -37,7 +37,7 @@
 <body>
 <div class="wrap">
   <h1>🕓 Activity log</h1>
-  <p class="sub"><a href="/">← Dashboard</a> · <a href="/analytics.html">📊 Analytics</a> · Stored nightly runs and ad-hoc searches.</p>
+  <p class="sub">Stored nightly runs and ad-hoc searches.</p>
 
   <div class="card">
     <div style="display:flex;gap:.6rem;flex-wrap:wrap;align-items:center">
@@ -151,5 +151,6 @@ try { $("#key").value = sessionStorage.getItem("sc_key") || ""; } catch(e){}
 $("#key").addEventListener("change", () => { try { sessionStorage.setItem("sc_key", $("#key").value.trim()); } catch(e){} });
 load();
 </script>
+  <script src="/nav.js" defer></script>
 </body>
 </html>

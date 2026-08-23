@@ -215,3 +215,30 @@ def test_build_nightly_spans_cap_tiers_when_enriched():
     cfg = _cfg(cap=3, include_unknown=False, market_cap_min=1e8, market_cap_max=20e9)
     tickers = build_nightly(cfg, store=store, day_ordinal=3)
     assert set(tickers) == {"SM", "MD", "LG"}   # one from each cap tier
+
+
+def test_attach_sectors_sets_from_catalog():
+    from stock_comber.universe import attach_sectors
+    from stock_comber.models import ScreenResult
+    store = FakeStore(universe=[
+        {"ticker": "AAA", "sector": "Technology"},
+        {"ticker": "BBB", "sector": "Health Care"},
+    ])
+    results = [
+        ScreenResult(ticker="AAA", name="A", strategy="graham", passed=True, score=1, max_score=1),
+        ScreenResult(ticker="BBB", name="B", strategy="graham", passed=False, score=0, max_score=1),
+        ScreenResult(ticker="CCC", name="C", strategy="graham", passed=False, score=0, max_score=1),
+    ]
+    attach_sectors(results, store)
+    assert results[0].sector == "Technology"
+    assert results[1].sector == "Health Care"
+    assert results[2].sector is None            # not in catalog → left unset
+    assert results[0].to_dict()["sector"] == "Technology"   # flows into the report JSON
+
+
+def test_attach_sectors_noop_without_store():
+    from stock_comber.universe import attach_sectors
+    from stock_comber.models import ScreenResult
+    r = ScreenResult(ticker="AAA", name="A", strategy="graham", passed=True, score=1, max_score=1)
+    attach_sectors([r], None)                   # no store → no error, no change
+    assert r.sector is None

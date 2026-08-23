@@ -69,6 +69,17 @@ class handler(BaseHTTPRequestHandler):
             if enabled:
                 try:
                     results = store.list_all_results(limit)
+                    # Sector isn't stored per-result — join it from the universe
+                    # catalog so the Full list can show a Sector column (always
+                    # reflecting the latest enrichment).
+                    try:
+                        catalog = {r["ticker"]: r for r in store.get_universe()}
+                        for row in results:
+                            sec = (catalog.get(row.get("ticker")) or {}).get("sector")
+                            if sec and not row.get("sector"):
+                                row["sector"] = sec
+                    except Exception:
+                        pass
                 except Exception as exc:
                     self._send(502, {"error": str(exc), "results": []})
                     return

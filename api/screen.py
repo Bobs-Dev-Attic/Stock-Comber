@@ -57,10 +57,14 @@ def run_screen(tickers, strategies, custom_criteria=None):
     results = Screener(cfg).run(tickers)
     passing = sum(1 for r in results if r.passed)
 
-    # Log the ad-hoc search to the activity log (best-effort, when a DB exists).
+    # Log the ad-hoc search to the activity log (best-effort, when a DB exists),
+    # and tag each result with its sector from the universe catalog so the Full
+    # list's Sector column is populated for live screens too.
     try:
         store = get_storage(cfg)
         if getattr(store, "enabled", False):
+            from stock_comber.universe import attach_sectors
+            attach_sectors(results, store)
             store.log_search("live", tickers, chosen, custom_criteria,
                              len({r.ticker for r in results}), passing)
     except Exception:
