@@ -4,6 +4,19 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.69.0] - 2026-08-23
+
+### Fixed
+- **A deep analysis no longer drops a custom job's strategy from the Full list.**
+  The deep "Analyze" pass ran only the six built-in lenses, so a ticker that a
+  custom job had screened with its own criteria lost that **Custom criteria** row
+  once it was analyzed. Now, if the ticker belongs to a saved custom job's ticker
+  pool, that job's criteria are re-evaluated as part of the analysis (the union of
+  criteria across every job whose pool contains it, de-duplicated), so the strategy
+  the job used stays reflected. New helpers `analysis._jobs_criteria_for()` and an
+  optional `criteria` argument to `analysis._full_config()`; applied on both the
+  queue worker (`process_queue`) and the on-demand `/api/analyze` endpoint.
+
 ## [0.68.0] - 2026-08-23
 
 ### Changed
