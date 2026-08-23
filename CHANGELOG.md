@@ -4,6 +4,17 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.77.0] - 2026-08-23
+
+### Changed
+- **History tables now use the same filter icon + fly-out menu as the Full list.** The
+  inline filter row on the Upcoming scheduled jobs, Activity, and Searches tables is
+  replaced by a filter icon in each header; clicking it opens the shared operator menu
+  (Contains, Does not contain, Greater than, Less than, Between, Equals, Not equal), each
+  flying out to a value input. The filter-menu implementation is refactored into a shared
+  `showFilterMenu()` used by both the Full list and History; the now-unused inline
+  filter-row CSS was removed.
+
 ## [0.76.0] - 2026-08-23
 
 ### Changed

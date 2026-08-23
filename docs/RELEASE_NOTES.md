@@ -1,5 +1,12 @@
 # Release notes
 
+## v0.77.0 — History tables get the same filter menu (2026-08-23)
+
+The **History** tab's tables now match the Full list: instead of an inline row of filter
+boxes, each column header has a **filter icon** that opens the same menu of options
+(Contains, Greater than, Between, …), each flying out to an input. One consistent filtering
+experience across the whole dashboard.
+
 ## v0.76.0 — Full-list filters move into a per-column menu (2026-08-23)
 
 Instead of a row of filter boxes, each Full-list column header now has a small **filter
