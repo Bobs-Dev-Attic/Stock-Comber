@@ -1,6 +1,6 @@
 from stock_comber.sentiment import compute_sentiment
 from stock_comber.storage import NullStorage
-from stock_comber.analysis import process_queue, _full_config, _jobs_criteria_for
+from stock_comber.analysis import process_queue, _full_config
 from stock_comber.config import load_config
 
 
@@ -37,32 +37,11 @@ def test_full_config_enables_enrichment():
     assert {"graham", "buffett", "piotroski", "greenblatt", "lynch", "netnet"} <= set(cfg["strategies"])
 
 
-def test_full_config_without_criteria_has_no_custom_lens():
+def test_full_config_never_runs_custom_lens():
+    # A deep analysis runs only the six built-in lenses — never "custom".
     cfg = _full_config(load_config())
     assert "custom" not in cfg["strategies"]
-
-
-def test_full_config_appends_custom_when_criteria_given():
-    crit = [{"metric": "pe_ratio", "op": "<=", "value": 15}]
-    cfg = _full_config(load_config(), criteria=crit)
-    # The six built-ins remain, plus the custom lens, with the criteria attached.
     assert {"graham", "buffett", "piotroski", "greenblatt", "lynch", "netnet"} <= set(cfg["strategies"])
-    assert cfg["strategies"][-1] == "custom"
-    assert cfg["custom"]["criteria"] == crit
-
-
-def test_jobs_criteria_for_matches_pool_and_dedupes():
-    c1 = {"metric": "pe_ratio", "op": "<=", "value": 15}
-    c2 = {"metric": "roe_pct", "op": ">=", "value": 20}
-    cfg = {"jobs": [
-        {"name": "cheap", "tickers": "aapl, msft", "criteria": [c1]},
-        {"name": "quality", "tickers": "MSFT , KO", "criteria": [c2, c1]},
-        {"name": "other", "tickers": "TSLA", "criteria": [{"metric": "pb_ratio", "op": "<", "value": 1}]},
-    ]}
-    # MSFT is in two pools -> union of both jobs' criteria, de-duplicated, order-kept.
-    assert _jobs_criteria_for("msft", cfg) == [c1, c2]
-    assert _jobs_criteria_for("AAPL", cfg) == [c1]
-    assert _jobs_criteria_for("NVDA", cfg) == []   # in no pool
 
 
 def test_process_queue_noop_without_db():

@@ -11,15 +11,23 @@ def _base():
 
 
 # -- _job_config mapping (pure, no network) --------------------------------
-def test_job_config_criteria_adds_custom_strategy():
+def test_job_config_never_emits_custom_strategy():
+    # Custom jobs no longer produce a "custom" strategy row — the selected
+    # built-in strategies drive the screen; saved criteria are not scored.
     job = {"name": "cheap", "tickers": "aapl, msft",
            "criteria": [{"metric": "pe_ratio", "op": "<=", "value": 15}],
            "strategies": ["graham"]}
     cfg, tickers = cli._job_config(job, _base())
     assert tickers == ["AAPL", "MSFT"]                       # parsed + upper-cased
-    assert "custom" in cfg["strategies"] and "graham" in cfg["strategies"]
-    assert cfg["custom"]["criteria"] == job["criteria"]
+    assert cfg["strategies"] == ["graham"]                   # no "custom" appended
+    assert "custom" not in cfg["strategies"]
     assert cfg["universe"] == {"mode": "list", "tickers": ["AAPL", "MSFT"]}
+
+
+def test_job_config_drops_custom_even_if_selected():
+    job = {"name": "x", "tickers": "T", "strategies": ["graham", "custom"]}
+    cfg, _ = cli._job_config(job, _base())
+    assert cfg["strategies"] == ["graham"]
 
 
 def test_job_config_strategies_only():

@@ -392,12 +392,10 @@ def _job_config(job: dict, base_cfg: dict) -> "tuple[dict, list]":
     from .criteria import STRATEGIES
     tickers = [t.strip().upper() for t in (job.get("tickers") or "").split(",") if t.strip()]
     cfg = copy.deepcopy(base_cfg)
-    chosen = [s for s in (job.get("strategies") or []) if s in STRATEGIES]
-    criteria = job.get("criteria") or []
-    if criteria:
-        cfg.setdefault("custom", {})["criteria"] = criteria
-        if "custom" not in chosen:
-            chosen.append("custom")
+    # Custom jobs screen their pool with the selected built-in strategies (or the
+    # defaults). They no longer emit a "custom" strategy row — any saved criteria
+    # are not scored into a persisted result.
+    chosen = [s for s in (job.get("strategies") or []) if s in STRATEGIES and s != "custom"]
     cfg["strategies"] = chosen or ["graham", "buffett"]
     cfg["universe"] = {"mode": "list", "tickers": tickers}
     return cfg, tickers

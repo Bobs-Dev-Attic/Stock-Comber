@@ -1,5 +1,13 @@
 # Release notes
 
+## v0.72.0 — Custom jobs stop writing "custom" rows (2026-08-23)
+
+Custom jobs now screen their ticker pool with the built-in strategies you pick (or the
+Graham + Buffett defaults) and no longer add a **custom** strategy row — so the Full list
+stays clear of ad-hoc "custom" entries. Deep analysis likewise only ever runs the six
+built-in lenses now. (Together with the v0.71.0 purge, once you clear the existing custom
+rows they won't come back.)
+
 ## v0.71.0 — Clear a strategy's results off the Full list (2026-08-23)
 
 Added a way to permanently remove all stored results for a given strategy. The **Maintenance**
