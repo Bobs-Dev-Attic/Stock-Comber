@@ -4,6 +4,15 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.68.0] - 2026-08-23
+
+### Changed
+- **Saving a Custom Job no longer prompts for an API key.** The settings-write
+  endpoint already accepts saves without a key, so the dashboard now saves jobs
+  directly — no more "Enter your API key to save jobs" pop-up. A key remembered on
+  the Settings page is still attached silently when present; if none is stored, the
+  save proceeds keyless (rate-limited and DB-gated as before).
+
 ## [0.67.0] - 2026-08-23
 
 ### Changed

@@ -1,5 +1,11 @@
 # Release notes
 
+## v0.68.0 — Saving a custom job no longer asks for a key (2026-08-23)
+
+Saving a **Custom Job** used to pop up a prompt asking for your API key. That's gone —
+the dashboard now saves jobs directly. If you've saved a key on the **Settings** page it's
+still sent along quietly; if not, the save just works.
+
 ## v0.67.0 — Custom jobs: optional criteria + a random draw from a ticker pool (2026-08-23)
 
 Custom jobs now work the way you pictured them. The **Tickers** field is a **pool** the job
