@@ -4,6 +4,31 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.53.0] - 2026-08-23
+
+### Changed
+- **Nightly universe is now a seeded stratified-random sample across the whole market.** The pick used
+  to be a deterministic *alphabetical* window rotated by time over a ~67-name seed list — so it didn't
+  span market-cap or volume sizes and wasn't random. Now `build_nightly` takes a **stratified random
+  sample** that spans **sectors × market-cap tiers × volume tiers** (`_stratified_pick`), seeded by the
+  run's rotation ordinal so it's **different every run (e.g. every 6h) yet reproducible** for the
+  dashboard preview. Classified names (known sector/cap/volume) are preferred; unclassified names are
+  backfill only. Tier edges are configurable (`universe.nightly.mcap_tier_edges`, `volume_tier_edges`).
+- **Candidate pool widened to the whole market.** With `universe.nightly.include_sec_universe` (default
+  on), the full **SEC ticker list** (thousands of names) joins the pool; `build_nightly` accepts a
+  `sec` source (the scheduled run passes it). Unclassified names are steadily filled in (sector / market
+  cap / volume) by the rotating Finnhub enrichment over time — so coverage grows toward the whole
+  market. (Classifying by cap/volume needs a `FINNHUB_API_KEY`; without one, the sample spans sectors
+  from the seed only.)
+
+### Notes
+- The dashboard "next run" preview stays lightweight (it doesn't pull the full SEC list), so it
+  reproduces the run's stratified pick over the already-classified pool; the live run additionally
+  reaches unclassified SEC names as backfill. The legacy `_diversify` helper is retained (still tested)
+  but no longer drives the pick.
+
+[0.53.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.53.0
+
 ## [0.52.0] - 2026-08-23
 
 ### Added

@@ -43,9 +43,17 @@ DEFAULT_CONFIG: dict[str, Any] = {
             "sectors": [],                   # empty = all industries
             "exclude_sectors": [],
             "countries": [],                 # empty = all (incl. international)
-            "max_per_sector": 12,            # diversify: cap names per sector
+            "max_per_sector": 12,            # (legacy diversify helper; see below)
             "enrich_per_run": 40,            # Finnhub profiles to fetch per night
             "include_unknown": True,         # screen not-yet-enriched names too
+            # Widen the candidate pool to the whole market: add the full SEC ticker
+            # list (thousands of names). They start unclassified and get sector/
+            # cap/volume filled in by the rotating enrichment over time.
+            "include_sec_universe": True,
+            # The nightly pick is a seeded stratified-random sample spanning
+            # sectors × market-cap tiers × volume tiers. Tier edges (ascending):
+            "mcap_tier_edges": [2_000_000_000, 10_000_000_000],   # small/mid/large
+            "volume_tier_edges": [500_000, 2_000_000],            # low/mid/high
             "industries": [],                # empty = all (GICS sub-industry)
             # Skip a name the scheduled run already screened within this many days,
             # so the nightly report doesn't re-analyze the same stock too often

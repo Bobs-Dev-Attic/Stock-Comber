@@ -124,6 +124,7 @@ class Screener:
             return build_nightly(
                 self.config, store=self.store, finnhub=self.finnhub,
                 day_ordinal=rotation_tick(datetime.now(timezone.utc)),
+                sec=self.sec,   # widen the pool to the whole SEC ticker list
             )
         limit = uni.get("limit") or None
         return self.sec.list_tickers(limit=limit)
