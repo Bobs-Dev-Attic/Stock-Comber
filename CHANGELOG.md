@@ -4,6 +4,20 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.62.0] - 2026-08-23
+
+### Added
+- **Separate Save button in Keys & status.** The Keys & status card gets its own
+  **Save settings** button (with its own status line) so provider keys can be saved
+  from there; the Export / API key card keeps its Save button too. Both trigger the
+  same whole-page save, disable each other while a save is in flight, and refresh
+  the Status chips.
+- **API key generator.** The API access & rate limit card gains a **🔑 Generate**
+  button that mints a strong random key (`sc_` + 32 url-safe random bytes) and a
+  **Copy** button. Set the generated value as `STOCK_COMBER_API_KEY` in Vercel
+  (and the GitHub Actions secret), then enter the same value in Export / API key to
+  authorize saves. It's env-only — generating here doesn't store or activate it.
+
 ## [0.61.0] - 2026-08-23
 
 ### Changed

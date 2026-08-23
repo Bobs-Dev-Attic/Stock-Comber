@@ -109,6 +109,10 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
         <span class="hint">Set <code>DATABASE_URL</code> in Vercel (environment only)</span>
       </div>
     </div>
+    <div class="row" style="margin-top:.8rem">
+      <button class="btn save-btn" id="save-keys-2">Save settings</button>
+      <span class="status" id="keys-status-2"></span>
+    </div>
     <p class="hint">Each provider key is stored in your database and is <b>write-only</b> here (never shown back).
       <b>Polygon.io</b> enriches the nightly universe (sector, market cap &amp; volume — throttled to the free
       tier's 5 calls/min; preferred over Finnhub for enrichment). <b>Tiingo</b> becomes the <b>primary</b>
@@ -128,7 +132,7 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
       </div>
     </div>
     <div class="row" style="margin-top:.8rem">
-      <button class="btn" id="save-keys">Save settings</button>
+      <button class="btn save-btn" id="save-keys">Save settings</button>
       <button class="btn ghost" id="download">Download as YAML</button>
       <span class="status" id="keys-status"></span>
     </div>
@@ -178,6 +182,19 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
     <h2>API access &amp; rate limit</h2>
     <p class="hint" style="margin-top:0">Record every API request in the access log (shown on the dashboard's API tab) and cap how many requests one client may make per time window. Both apply only when a database is configured. Requests over the limit get an HTTP <code>429</code>.</p>
     <div class="grid" id="api"></div>
+    <div class="row" style="margin-top:.9rem;align-items:flex-end">
+      <div class="f" style="flex:1;min-width:220px">
+        <label>API key (value for <code>STOCK_COMBER_API_KEY</code>)</label>
+        <input id="gen-key" type="text" readonly placeholder="click Generate to mint a strong key…">
+      </div>
+      <button class="btn ghost" id="gen-btn" type="button">🔑 Generate</button>
+      <button class="btn ghost" id="gen-copy" type="button">Copy</button>
+      <span class="status" id="gen-status"></span>
+    </div>
+    <p class="hint">Generates a strong random key for API access &amp; exports. Set it as
+      <code>STOCK_COMBER_API_KEY</code> in Vercel → Settings → Environment Variables (and as a GitHub
+      Actions secret for the nightly job), redeploy, then enter the <b>same value</b> in <b>Export / API key</b>
+      above to authorize saves. It's env-only — generating here doesn't store or activate it.</p>
   </div>
 
 </div>
@@ -444,11 +461,13 @@ function rememberKey(k){
   try{ localStorage.setItem("sc_key",k); }catch(e){}
   try{ sessionStorage.setItem("sc_key",k); }catch(e){}
 }
-// Persist the whole form (thresholds + typed keys). Both the Keys-card and the
-// bottom bar trigger this; `statusSel` picks which status line reports progress.
-async function doSave(statusSel){
+// Persist the whole form (thresholds + typed keys). Both the Keys & status and
+// Export / API key cards have a Save button; `statusSel`/`btnSel` pick which
+// status line and button report progress for the one that was clicked.
+async function doSave(statusSel, btnSel){
   const st=$(statusSel);
-  const btn=$("#save-keys");
+  const btn=btnSel?$(btnSel):null;
+  const saveBtns=[...document.querySelectorAll(".save-btn")];
   const typed=$("#apikey").value.trim();
   if(typed) rememberKey(typed);
   // Fall back to the key remembered in this browser when the field is blank, so a
@@ -459,10 +478,10 @@ async function doSave(statusSel){
       +"so it isn't pre-filled here even when it shows as configured. It's remembered in this browser after you enter it once.";
     return;
   }
-  // Live feedback: disable the button and show progress while the request is in
-  // flight, then refresh the per-provider Status chips from the save response.
+  // Live feedback: disable every Save button and show progress on the clicked one
+  // while the request is in flight, then refresh the Status chips from the response.
   const label=btn?btn.textContent:"";
-  if(btn){ btn.disabled=true; btn.textContent="Saving…"; }
+  saveBtns.forEach(b=>b.disabled=true); if(btn) btn.textContent="Saving…";
   st.textContent="Saving…";
   try{ const r=await fetch("/api/settings?key="+encodeURIComponent(key),{method:"POST",
       headers:{"Content-Type":"application/json"}, body:JSON.stringify(collect())});
@@ -487,9 +506,23 @@ async function doSave(statusSel){
       st.textContent=`✓ Saved at ${t} — Status updated. Live screens and the nightly run now use these settings.`;
     }
   }catch(e){ st.textContent="Save failed: "+e.message; }
-  finally{ if(btn){ btn.disabled=false; btn.textContent=label; } }
+  finally{ saveBtns.forEach(b=>b.disabled=false); if(btn) btn.textContent=label; }
 }
-$("#save-keys").onclick=()=>doSave("#keys-status");
+$("#save-keys").onclick=()=>doSave("#keys-status","#save-keys");
+$("#save-keys-2").onclick=()=>doSave("#keys-status-2","#save-keys-2");
+
+// --- generate a strong API key (a value the user sets as STOCK_COMBER_API_KEY) ---
+function genApiKey(){
+  const a=new Uint8Array(32); (crypto||window.crypto).getRandomValues(a);
+  let b64=btoa(String.fromCharCode.apply(null, Array.from(a)));
+  return "sc_"+b64.replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"");   // url-safe, no padding
+}
+$("#gen-btn").onclick=()=>{ $("#gen-key").value=genApiKey(); $("#gen-status").textContent="Generated — copy it, then set it as STOCK_COMBER_API_KEY in Vercel."; };
+$("#gen-copy").onclick=async()=>{
+  const v=$("#gen-key").value; if(!v){ $("#gen-status").textContent="Click Generate first."; return; }
+  try{ await navigator.clipboard.writeText(v); $("#gen-status").textContent="Copied to clipboard."; }
+  catch(e){ const el=$("#gen-key"); el.focus(); el.select(); try{ document.execCommand("copy"); $("#gen-status").textContent="Copied."; }catch(_){ $("#gen-status").textContent="Press Ctrl/Cmd+C to copy."; } }
+};
 load();
 </script>
 <script>/* theme toggle (System -> Light -> Dark), shared key with the dashboard */

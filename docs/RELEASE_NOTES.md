@@ -1,5 +1,15 @@
 # Release notes
 
+## v0.62.0 — Settings: a Save button in Keys & status + an API-key generator (2026-08-23)
+
+**Keys & status** now has its own **Save settings** button, so you can save your provider keys
+right there without scrolling to the Export / API key section (which keeps its Save button too).
+
+The **API access & rate limit** section gains a **🔑 Generate** button that creates a strong
+random key plus a **Copy** button — a quick way to mint a value for `STOCK_COMBER_API_KEY`. Set it
+in Vercel → Environment Variables (and the GitHub Actions secret), redeploy, then enter the same
+value in **Export / API key** to authorize saves.
+
 ## v0.61.0 — Settings: strategy Edit dialogs, own key section, key-reject fix (2026-08-23)
 
 The **Settings** page is tidier. **Strategies** is now a simple list — each strategy has an
