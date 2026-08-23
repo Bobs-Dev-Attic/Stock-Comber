@@ -1,5 +1,16 @@
 # Release notes
 
+## v0.65.0 — Nightly universe now lives in the Scheduled-report Configure dialog (2026-08-23)
+
+The **Nightly "hidden gems" universe** settings — the candidate pool and gem profile (count,
+market-cap & volume bands, sector filters, cooldown, extra tickers, and so on) — now live
+right in **Jobs → Scheduled report → Configure**, alongside the schedule they drive, and save
+together. They've been taken off the Settings page. (Strategy thresholds still open from the
+Strategies list on Settings.)
+
+The **Next runs** preview inside that dialog is gone — the same upcoming runs already appear on
+the **History** tab under *Upcoming scheduled jobs*, so it was showing the same thing twice.
+
 ## v0.64.0 — Save settings without an API key (2026-08-23)
 
 **Save settings** now works without entering the Export / API key. That key
