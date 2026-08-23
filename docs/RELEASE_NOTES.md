@@ -1,5 +1,12 @@
 # Release notes
 
+## v0.50.1 — Scroll the Full list sideways from the top (2026-08-23)
+
+The Full list has a lot of columns, and until now the only way to scroll it left-and-right was the
+scrollbar at the very bottom — out of reach unless you scrolled past every row. There's now a matching
+horizontal scrollbar **above** the table too, so you can move sideways right from the top. It only
+shows up when the columns are wider than the screen.
+
 ## v0.50.0 — Entry zone on the Full list (2026-08-23)
 
 The **value entry zone** now appears as a column on the Full list, so you can scan a reference entry
