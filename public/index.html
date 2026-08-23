@@ -128,6 +128,30 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
   tr.colfilters input.colf:focus { outline: none; border-color: var(--accent); }
   tr.colfilters input.colf.active { border-color: var(--accent);
     background: color-mix(in srgb, var(--accent) 12%, transparent); }
+  /* per-column filter icon + fly-out menu (Full list) */
+  .colfilt-btn { border: 0; background: transparent; cursor: pointer; color: var(--muted);
+    font-size: .78rem; line-height: 1; padding: 0 2px; opacity: .55; vertical-align: middle; }
+  th:hover .colfilt-btn { opacity: .9; }
+  .colfilt-btn.active { color: var(--accent); opacity: 1; }
+  .colmenu { position: absolute; z-index: 60; background: var(--panel); border: 1px solid var(--line);
+    border-radius: 9px; box-shadow: 0 10px 30px rgba(0,0,0,.28); min-width: 176px; padding: .3rem;
+    font-size: .82rem; text-transform: none; letter-spacing: 0; font-weight: 400; }
+  .colmenu .mtitle { font-weight: 600; padding: .25rem .45rem .35rem; color: var(--muted); }
+  .colmenu .op { position: relative; display: flex; justify-content: space-between; align-items: center;
+    gap: .6rem; padding: .38rem .5rem; border-radius: 6px; cursor: pointer; color: var(--ink, inherit); }
+  .colmenu .op:hover { background: color-mix(in srgb, var(--accent) 13%, transparent); }
+  .colmenu .op .car { opacity: .45; font-size: .7rem; }
+  .colmenu .op.clear { color: var(--fail-ink); cursor: pointer; }
+  .colmenu .op.clear .cur { color: var(--muted); font-size: .74rem; }
+  .colmenu .flyout { position: absolute; left: 100%; top: -.3rem; margin-left: .25rem; display: none;
+    background: var(--panel); border: 1px solid var(--line); border-radius: 9px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.28); padding: .4rem; white-space: nowrap; align-items: center; gap: .3rem; }
+  .colmenu .op:hover > .flyout, .colmenu .op:focus-within > .flyout { display: flex; }
+  .colmenu .flyout input.fv { width: 96px; font: inherit; font-size: .78rem; padding: 3px 6px;
+    border: 1px solid var(--line); border-radius: 5px; background: var(--bg, transparent); color: var(--ink, inherit); }
+  .colmenu .flyout .dash { color: var(--muted); }
+  .colmenu .flyout .go { font: inherit; font-size: .74rem; padding: 3px 8px; border: 0; border-radius: 5px;
+    background: var(--accent); color: #fff; cursor: pointer; }
   tbody tr { cursor: pointer; }
   tbody tr:hover { background: color-mix(in srgb, var(--accent) 8%, transparent); }
   tbody tr.grouphdr { background: color-mix(in srgb, var(--accent) 10%, var(--panel)); font-weight: 600; }
@@ -574,7 +598,7 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
 
       <div class="xscroll-top" id="xtop" hidden aria-hidden="true"><div id="xtop-inner"></div></div>
       <div class="tablewrap" id="tblwrap"><table id="tbl" hidden>
-        <thead><tr id="head"></tr><tr id="head-filters" class="colfilters"></tr></thead>
+        <thead><tr id="head"></tr></thead>
         <tbody></tbody>
       </table></div>
     </div>
@@ -1073,32 +1097,89 @@ function matchColFilter(r, key, raw){
   if (expr[0] === "!") return !text.includes(expr.slice(1).trim().toLowerCase());
   return text.includes(expr.toLowerCase());
 }
-function renderColFilterRow(){
-  const row = $("#head-filters"); if (!row) return;
-  row.innerHTML = "";
-  const mk = (key) => {
-    const th = document.createElement("th");
-    if (key === "ticker" || key === "strategy") th.className = "l";
-    const inp = document.createElement("input");
-    inp.type = "text"; inp.className = "colf"; inp.dataset.k = key;
-    inp.value = colFilters[key] || "";
-    if (inp.value.trim()) inp.classList.add("active");
-    inp.placeholder = TEXT_FILTER_KEYS.has(key) ? "filter…" : "> < 10..20";
-    inp.title = "Filter this column. Text: matches contain. Numbers: > < >= <= = != , ranges like 10..20, suffixes k/m/b/t and %. Prefix ! to exclude.";
-    inp.addEventListener("input", () => {
-      colFilters[key] = inp.value; saveColFilters();
-      inp.classList.toggle("active", inp.value.trim() !== "");
-      if (activeTab === "full") applyFull();
-    });
-    inp.addEventListener("click", e => e.stopPropagation());
-    th.appendChild(inp); return th;
+/* A funnel icon in each Full-list header opens a per-column filter menu whose
+   operator items fly out to an input. The stored filter is the same expression
+   string matchColFilter() understands, so numeric and text columns share it. */
+const NUM_OPS = [
+  {label:"Greater than", op:">"}, {label:"Greater or equal", op:">="},
+  {label:"Less than", op:"<"}, {label:"Less or equal", op:"<="},
+  {label:"Equals", op:"="}, {label:"Not equal", op:"!="},
+  {label:"Between", op:"between"}, {label:"Contains text", op:"contains"},
+];
+const TEXT_OPS = [{label:"Contains", op:"contains"}, {label:"Does not contain", op:"!contains"}];
+function buildFilterExpr(op, a, b){
+  a = String(a || "").trim(); b = String(b || "").trim();
+  if (op === "between") return (a && b) ? `${a}..${b}` : "";
+  if (op === "contains") return a;
+  if (op === "!contains") return a ? `!${a}` : "";
+  return a ? `${op}${a}` : "";
+}
+let openColMenuEl = null;
+function closeColMenu(){ if (openColMenuEl){ openColMenuEl.remove(); openColMenuEl = null;
+  document.removeEventListener("click", onColMenuOutside, true); } }
+function onColMenuOutside(e){ if (openColMenuEl && !openColMenuEl.contains(e.target)) closeColMenu(); }
+function addFilterIcon(th, key, label){
+  const btn = document.createElement("button");
+  btn.type = "button"; btn.className = "colfilt-btn"; btn.textContent = "⧩";
+  btn.title = "Filter " + label;
+  if ((colFilters[key] || "").trim()) btn.classList.add("active");
+  btn.draggable = false;
+  btn.addEventListener("mousedown", e => e.stopPropagation());
+  btn.addEventListener("click", e => { e.stopPropagation(); openColMenu(key, label, btn); });
+  th.appendChild(document.createTextNode(" "));
+  th.appendChild(btn);
+}
+function openColMenu(key, label, anchor){
+  const wasThis = openColMenuEl && openColMenuEl.dataset.k === key;
+  closeColMenu();
+  if (wasThis) return;                                  // click again to toggle closed
+  const numeric = !TEXT_FILTER_KEYS.has(key);
+  const menu = document.createElement("div");
+  menu.className = "colmenu"; menu.dataset.k = key;
+  const cur = (colFilters[key] || "").trim();
+  let html = `<div class="mtitle">Filter · ${escHtml(label)}</div>`;
+  if (cur) html += `<div class="op clear" data-act="clear">Clear filter <span class="cur">${escHtml(cur)}</span></div>`;
+  (numeric ? NUM_OPS : TEXT_OPS).forEach((o, i) => {
+    const two = o.op === "between";
+    const ph = numeric ? (o.op === "contains" ? "text" : "e.g. 20, 1b, 5%") : "text";
+    html += `<div class="op" data-op="${o.op}">${o.label} <span class="car">▸</span>`
+      + `<div class="flyout"><input class="fv fa" type="text" autocomplete="off" placeholder="${ph}">`
+      + (two ? `<span class="dash">–</span><input class="fv fb" type="text" autocomplete="off" placeholder="${ph}">` : "")
+      + `<button type="button" class="go">Apply</button></div></div>`;
+  });
+  menu.innerHTML = html;
+  document.body.appendChild(menu);
+  const rect = anchor.getBoundingClientRect();
+  menu.style.top = (window.scrollY + rect.bottom + 4) + "px";
+  menu.style.left = Math.min(window.scrollX + rect.left, window.scrollX + document.documentElement.clientWidth - menu.offsetWidth - 8) + "px";
+  const apply = (op) => {
+    const wrap = menu.querySelector(`.op[data-op="${op}"]`);
+    const a = wrap.querySelector(".fa").value, bEl = wrap.querySelector(".fb");
+    const expr = buildFilterExpr(op, a, bEl ? bEl.value : "");
+    if (!expr) return;
+    colFilters[key] = expr; saveColFilters();
+    if (activeTab === "full") applyFull();
+    anchor.classList.add("active");
+    closeColMenu();
   };
-  row.appendChild(mk("ticker"));
-  orderedCols().forEach(c => row.appendChild(mk(c.key)));
+  menu.querySelectorAll(".op[data-op]").forEach(row => {
+    const op = row.dataset.op;
+    row.querySelector(".go").addEventListener("click", e => { e.stopPropagation(); apply(op); });
+    row.querySelectorAll(".fv").forEach(inp => inp.addEventListener("keydown", e => {
+      if (e.key === "Enter") { e.preventDefault(); apply(op); } }));
+  });
+  const clr = menu.querySelector('[data-act="clear"]');
+  if (clr) clr.addEventListener("click", () => {
+    delete colFilters[key]; saveColFilters();
+    if (activeTab === "full") applyFull();
+    anchor.classList.remove("active"); closeColMenu();
+  });
+  openColMenuEl = menu;
+  setTimeout(() => document.addEventListener("click", onColMenuOutside, true), 0);
 }
 function clearColFilters(){
-  colFilters = {}; saveColFilters(); renderColFilterRow();
-  if (activeTab === "full") applyFull();
+  colFilters = {}; saveColFilters(); closeColMenu();
+  if (activeTab === "full") { renderHead(); applyFull(); }
 }
 
 /* ---- generic per-column filters for static tables (History) ----
@@ -1208,12 +1289,14 @@ function renderHead() {
   const th0 = document.createElement("th"); th0.className = "l"; th0.dataset.k = "ticker";
   th0.innerHTML = "Ticker " + arrow("ticker");
   if (METRIC_INFO.ticker) th0.title = METRIC_INFO.ticker;
+  addFilterIcon(th0, "ticker", "Ticker");
   head.appendChild(th0);
   orderedCols().forEach(c => {
     const th = document.createElement("th"); th.dataset.k = c.key;
     if (c.key === "strategy") th.className = "l";
     th.innerHTML = c.label + " " + arrow(c.key);
     if (METRIC_INFO[c.key]) { th.title = METRIC_INFO[c.key]; th.classList.add("hasinfo"); }
+    addFilterIcon(th, c.key, c.label);
     head.appendChild(th);
   });
   head.querySelectorAll("th").forEach(th => {
@@ -1234,7 +1317,6 @@ function renderHead() {
       th.addEventListener("dragend", thDragEnd);
     }
   });
-  renderColFilterRow();
 }
 
 /* ---- drag-to-reorder columns (order persisted in sc_cols) ---- */
