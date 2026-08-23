@@ -4,6 +4,20 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.67.0] - 2026-08-23
+
+### Changed
+- **Custom jobs: criteria are now optional and Tickers is a random-draw pool.** A
+  saved job's **Ticker pool** is the set of names it may screen, and a new
+  **Randomly pick** count (optional) draws that many at random from the pool on each
+  run — the job's selected strategies (plus optional `metric op value` criteria) are
+  applied to the drawn set. Blank/0 keeps the whole pool. The Custom-job dialog no
+  longer requires a criterion (it starts empty); saving needs a name plus a pool (or
+  at least one criterion). Scheduled runs draw a different subset each time, seeded by
+  the rotation tick + job name so a workflow retry screens the same set; "Run now"
+  draws a fresh random subset client-side. New job field `pick` (validated as a
+  non-negative integer).
+
 ## [0.66.0] - 2026-08-23
 
 ### Changed

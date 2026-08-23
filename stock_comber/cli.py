@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import random
 import sys
 from typing import Optional
 
@@ -361,14 +362,40 @@ def _job_config(job: dict, base_cfg: dict) -> "tuple[dict, list]":
     return cfg, tickers
 
 
+def _name_seed(name: str) -> int:
+    """A stable (PYTHONHASHSEED-independent) integer seed from a job name."""
+    s = 0
+    for ch in (name or ""):
+        s = (s * 131 + ord(ch)) & 0xFFFFFFFF
+    return s
+
+
+def _sample_pool(pool: list, job: dict) -> list:
+    """Randomly draw ``job['pick']`` tickers from the pool — a different subset each
+    scheduled run, yet reproducible within a run window (seeded by the rotation tick
+    plus the job name) so a workflow retry screens the same set. Blank/0/≥size keeps
+    the whole pool."""
+    try:
+        pick = int(job.get("pick") or 0)
+    except (TypeError, ValueError):
+        pick = 0
+    if pick <= 0 or pick >= len(pool):
+        return pool
+    from datetime import datetime, timezone
+    from .schedule import rotation_tick
+    seed = rotation_tick(datetime.now(timezone.utc)) * 1_000_003 + _name_seed(job.get("name") or "")
+    return random.Random(seed).sample(pool, pick)
+
+
 def _run_one_job(job: dict, base_cfg: dict, store) -> "Optional[int]":
     """Run a single saved custom job and persist it as its own run. Returns the
     run id (or None)."""
     name = (job.get("name") or "unnamed").strip()
-    cfg, tickers = _job_config(job, base_cfg)
-    if not tickers:
+    cfg, pool = _job_config(job, base_cfg)
+    if not pool:
         print(f"  job {name!r}: no tickers — skipped", file=sys.stderr)
         return None
+    tickers = _sample_pool(pool, job)   # random draw from the pool when `pick` is set
     screener = Screener(cfg)
     screener.store = store
     results = screener.run(tickers, progress=_progress)
@@ -382,8 +409,10 @@ def _run_one_job(job: dict, base_cfg: dict, store) -> "Optional[int]":
                 # job name so the run is attributable to this job.
                 meta={"source": "schedule", "job": name,
                       "universe": len({r.ticker for r in results})})
+            picked = (f"{len(tickers)} of {len(pool)}" if len(tickers) < len(pool)
+                      else f"{len(tickers)}")
             print(f"  job {name!r}: stored run #{run_id} — "
-                  f"{len(tickers)} tickers, {passing} passing")
+                  f"{picked} tickers, {passing} passing")
         except Exception as exc:  # persistence must never sink the batch
             print(f"  job {name!r}: could not store run: {exc}", file=sys.stderr)
     screener.last_companies = {}
