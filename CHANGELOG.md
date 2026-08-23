@@ -4,6 +4,18 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.49.1] - 2026-08-23
+
+### Fixed
+- **Grouping the Full list by Ticker no longer looks blank (real fix).** The Full list is deduped per
+  **(ticker, strategy)**, so a ticker has several rows (one per strategy) — grouping by Ticker
+  therefore makes multi-member groups, and those were rendering **collapsed by default**, hiding
+  every data row. Groups now render **expanded by default** (data always visible); clicking a group
+  header collapses it, and a single-row group shows its row with no toggle. Supersedes the v0.45.2
+  singleton-only fix, which wrongly assumed one row per ticker.
+
+[0.49.1]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.49.1
+
 ## [0.49.0] - 2026-08-23
 
 ### Added

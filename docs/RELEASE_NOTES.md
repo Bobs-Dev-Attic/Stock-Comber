@@ -1,5 +1,13 @@
 # Release notes
 
+## v0.49.1 — Fix: grouping the Full list by Ticker (2026-08-23)
+
+Grouping the Full list by **Ticker** was still showing a blank table. The list keeps one row per
+company *per strategy*, so each ticker has several rows — and grouped rows were starting **collapsed**,
+which hid them all. Groups now start **expanded**, so the data shows immediately; click a group's
+header to collapse it. (An earlier fix only handled the case of one row per ticker, which isn't how
+the list actually works.)
+
 ## v0.49.0 — Value entry zone (2026-08-23)
 
 A full deep-dive analysis now shows a **value entry zone** — an illustrative reference range for
