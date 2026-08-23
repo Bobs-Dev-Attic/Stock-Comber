@@ -358,11 +358,11 @@ class PostgresStorage:
             self._ensure_schema(conn)
             with conn.cursor() as cur:
                 cur.execute(
-                    "SELECT id, created_at, strategies, ticker_count, passing_count "
+                    "SELECT id, created_at, strategies, ticker_count, passing_count, meta "
                     "FROM screen_runs ORDER BY created_at DESC LIMIT %s", (limit,))
                 return [
                     {"id": r[0], "created_at": r[1].isoformat(), "strategies": r[2],
-                     "ticker_count": r[3], "passing_count": r[4]}
+                     "ticker_count": r[3], "passing_count": r[4], "meta": r[5] or {}}
                     for r in cur.fetchall()
                 ]
 

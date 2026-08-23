@@ -63,6 +63,10 @@ def _build_parser() -> argparse.ArgumentParser:
     pct = sub.add_parser("check-theses",
                          help="Re-check stored investment theses against fresh metrics.")
     pct.add_argument("--limit", type=int, default=100, help="Max theses to check.")
+
+    sub.add_parser("run-jobs",
+                   help="Run every saved custom job (from the dashboard) and store each "
+                        "as its own run. Used by the scheduled workflow.")
     return p
 
 
@@ -333,6 +337,75 @@ def cmd_check_theses(args) -> int:
     return 0
 
 
+def _job_config(job: dict, base_cfg: dict) -> "tuple[dict, list]":
+    """Build the (cfg, tickers) for a saved custom job. Pure: mirrors the on-demand
+    screen path (api/screen.run_screen) — the job's strategies + custom criteria
+    over its ticker list — without touching the network."""
+    import copy
+    from .criteria import STRATEGIES
+    tickers = [t.strip().upper() for t in (job.get("tickers") or "").split(",") if t.strip()]
+    cfg = copy.deepcopy(base_cfg)
+    chosen = [s for s in (job.get("strategies") or []) if s in STRATEGIES]
+    criteria = job.get("criteria") or []
+    if criteria:
+        cfg.setdefault("custom", {})["criteria"] = criteria
+        if "custom" not in chosen:
+            chosen.append("custom")
+    cfg["strategies"] = chosen or ["graham", "buffett"]
+    cfg["universe"] = {"mode": "list", "tickers": tickers}
+    return cfg, tickers
+
+
+def _run_one_job(job: dict, base_cfg: dict, store) -> "Optional[int]":
+    """Run a single saved custom job and persist it as its own run. Returns the
+    run id (or None)."""
+    name = (job.get("name") or "unnamed").strip()
+    cfg, tickers = _job_config(job, base_cfg)
+    if not tickers:
+        print(f"  job {name!r}: no tickers — skipped", file=sys.stderr)
+        return None
+    screener = Screener(cfg)
+    screener.store = store
+    results = screener.run(tickers, progress=_progress)
+    passing = sum(1 for r in results if r.passed)
+    run_id = None
+    if cfg.get("storage", {}).get("persist_runs", True) and getattr(store, "enabled", False):
+        try:
+            run_id = store.save_run(
+                results, screener.last_companies,
+                # Tagged scheduled (so the catch-up gate/History see it) plus the
+                # job name so the run is attributable to this job.
+                meta={"source": "schedule", "job": name,
+                      "universe": len({r.ticker for r in results})})
+            print(f"  job {name!r}: stored run #{run_id} — "
+                  f"{len(tickers)} tickers, {passing} passing")
+        except Exception as exc:  # persistence must never sink the batch
+            print(f"  job {name!r}: could not store run: {exc}", file=sys.stderr)
+    screener.last_companies = {}
+    return run_id
+
+
+def cmd_run_jobs(args) -> int:
+    """Run every saved custom job (stored in the settings blob) and persist each
+    as its own run. Invoked by the scheduled workflow alongside the nightly screen."""
+    cfg = _load(args)
+    jobs = cfg.get("jobs") or []
+    if not jobs:
+        print("No saved custom jobs to run.")
+        return 0
+    from .storage import get_storage
+    store = get_storage(cfg)
+    ran = 0
+    for job in jobs:
+        try:
+            _run_one_job(job, cfg, store)
+            ran += 1
+        except Exception as exc:  # never let one job sink the rest
+            print(f"  job {job.get('name')!r} failed: {exc}", file=sys.stderr)
+    print(f"Ran {ran} of {len(jobs)} saved custom job(s).")
+    return 0
+
+
 COMMANDS = {
     "screen": cmd_screen,
     "config": cmd_config,
@@ -342,6 +415,7 @@ COMMANDS = {
     "schedule-gate": cmd_schedule_gate,
     "analyze-queue": cmd_analyze_queue,
     "check-theses": cmd_check_theses,
+    "run-jobs": cmd_run_jobs,
 }
 
 

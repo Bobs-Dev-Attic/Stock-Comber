@@ -470,7 +470,7 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
         <div class="histcard">
           <h3>Past runs</h3>
           <div class="tablewrap"><table>
-            <thead><tr><th>#</th><th>When</th><th>Strategies</th><th class="r">Companies</th><th class="r">Passing</th></tr></thead>
+            <thead><tr><th>#</th><th>When</th><th>Source</th><th>Strategies</th><th class="r">Companies</th><th class="r">Passing</th></tr></thead>
             <tbody id="h-runs"></tbody>
           </table></div>
         </div>
@@ -1961,12 +1961,21 @@ function renderHistQueue(rows) {
   const active = queueActive(rows);
   $("#q-active").textContent = active ? `· ${active} active` : "";
 }
+// Human label for a run's origin, from its stored meta.
+function runSource(meta) {
+  const m = meta || {};
+  if (m.job) return escHtml(m.job);                       // a saved custom job
+  if (m.source === "schedule") return "Scheduled";        // the nightly hidden-gems screen
+  if (m.source === "manual" || m.source === "queue") return "Manual";
+  return "—";
+}
 function renderHistRuns(rows) {
   $("#h-runs").innerHTML = rows.map(r =>
     `<tr class="norow"><td>${r.id}</td><td>${fmtWhen(r.created_at)}</td>`
+    + `<td>${runSource(r.meta)}</td>`
     + `<td>${(r.strategies||[]).map(s=>`<span class="pill">${escHtml(s)}</span>`).join(" ")}</td>`
     + `<td class="r">${r.ticker_count??"—"}</td><td class="r">${r.passing_count??"—"}</td></tr>`
-  ).join("") || `<tr><td colspan="5" class="hint">No runs yet.</td></tr>`;
+  ).join("") || `<tr><td colspan="6" class="hint">No runs yet.</td></tr>`;
 }
 function renderHistSearches(rows) {
   $("#h-searches").innerHTML = rows.map(s => {

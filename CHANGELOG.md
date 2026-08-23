@@ -4,6 +4,21 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.52.0] - 2026-08-23
+
+### Added
+- **Saved custom jobs now run on the schedule.** Previously the scheduled workflow only ran the
+  nightly "hidden gems" screen (+ thesis re-check); saved custom jobs were stored but only ran when
+  you clicked *Run now*. New `stock-comber run-jobs` CLI command runs every saved job (its
+  tickers + strategies + custom criteria, mirroring the on-demand screen path) and stores each as its
+  own run, tagged `meta={"source":"schedule","job":<name>}`. It's wired into `screen.yml` right after
+  the nightly screen, gated on the same schedule.
+- **History → Past runs shows a "Source" column** — the job name for a custom-job run, "Scheduled"
+  for the nightly screen, or "Manual" for an on-demand analysis. `storage.list_runs` now returns each
+  run's `meta`.
+
+[0.52.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.52.0
+
 ## [0.51.0] - 2026-08-23
 
 ### Fixed
