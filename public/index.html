@@ -468,19 +468,12 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
           <p class="hint">Each scheduled fire runs the nightly “hidden gems” screen, then every saved custom job. Edit under <a href="#" id="upc-edit-sched">Jobs → Scheduled report</a>.</p>
         </div>
         <div class="histcard">
-          <h3>Queued &amp; running <span id="q-active" class="hint" style="font-weight:400"></span></h3>
+          <h3>Activity <span id="q-active" class="hint" style="font-weight:400"></span></h3>
           <div class="tablewrap"><table>
-            <thead><tr><th>Ticker</th><th>Status</th><th>Requested</th><th>Run</th></tr></thead>
-            <tbody id="h-queue"></tbody>
+            <thead><tr><th>When</th><th>Item</th><th>Kind</th><th>Strategies / detail</th><th class="r">Passing</th></tr></thead>
+            <tbody id="h-activity"></tbody>
           </table></div>
-          <p class="hint">Tickers you screen are queued here and analyzed in full (news + sentiment) by a worker that runs every ~20 min; each finished job links to its stored run.</p>
-        </div>
-        <div class="histcard">
-          <h3>Past runs</h3>
-          <div class="tablewrap"><table>
-            <thead><tr><th>#</th><th>When</th><th>Source</th><th>Strategies</th><th class="r">Companies</th><th class="r">Passing</th></tr></thead>
-            <tbody id="h-runs"></tbody>
-          </table></div>
+          <p class="hint">One timeline: tickers queued for a full deep-dive (news + sentiment) by the worker that runs every ~20 min appear on top while active; completed screens &amp; jobs — the nightly “hidden gems” run, saved custom jobs, and manual searches — follow below. Click a single-ticker row to open its full analysis.</p>
         </div>
         <div class="histcard">
           <h3>Searches</h3>
@@ -784,6 +777,7 @@ const METRICS = [
   ["revenue","Revenue"], ["net_income","Net income"], ["working_capital","Working capital"],
   ["price","Price"], ["earnings_growth_5y_pct","Earnings growth 5y %"],
   ["revenue_growth_5y_pct","Revenue growth 5y %"],
+  ["market_cap","Market cap"],
   ["avg_volume","Avg volume"], ["dollar_volume","$ volume/day"],
   ["backtest_edge_pct","Backtest edge %"],
   ["q_revenue","Qtr revenue"], ["q_net_income","Qtr net income"],
@@ -816,6 +810,7 @@ const METRIC_INFO = {
   price: "Latest market price per share. Combined with fundamentals to derive the valuation ratios above.",
   earnings_growth_5y_pct: "Cumulative growth in earnings over ~5 years — the trajectory of the bottom line. Rising earnings support a durable thesis.",
   revenue_growth_5y_pct: "Cumulative growth in revenue over ~5 years — is the business actually expanding, not just cutting costs.",
+  market_cap: "Market capitalization — share price × shares outstanding (price from the latest quote, shares from the most recent SEC filing). The company's total equity value; blank when price or share count is unavailable.",
   avg_volume: "Average daily share volume — how actively the stock trades. A liquidity indicator: thinly-traded names are harder to enter or exit.",
   dollar_volume: "Average daily dollar volume (price × avg volume) — the standard liquidity gauge. Higher means you can trade size without moving the price.",
   backtest_edge_pct: "Historical edge: the average next-year return after this name's value-lens PASS verdicts minus after its fails, meaned across lenses. Directional evidence that its signals mattered — educational, not a track record.",
@@ -839,7 +834,7 @@ const ALL_COLUMNS = [
   {key:"entry_zone", label:"Entry zone", base:true},
   {key:"last_analyzed", label:"Last analyzed", base:true},
 ];
-const DEFAULT_COLS = ["strategy","passed","score_pct","health_score","price","pe_ratio","pb_ratio","roe_pct","current_ratio","debt_to_equity","avg_volume","dollar_volume","backtest_edge_pct","entry_zone","last_analyzed"];
+const DEFAULT_COLS = ["strategy","passed","score_pct","health_score","price","market_cap","pe_ratio","pb_ratio","roe_pct","current_ratio","debt_to_equity","avg_volume","dollar_volume","backtest_edge_pct","entry_zone","last_analyzed"];
 let selectedCols = loadCols();
 
 function loadCols() {
@@ -1985,36 +1980,56 @@ const QSTATE = { processing:{c:"run", t:"running"}, pending:{c:"queued", t:"queu
 const QRANK = { processing:0, pending:1, done:2, error:3 };
 function queueBadge(s) { const m = QSTATE[s] || {c:"done", t:s || "—"}; return `<span class="pill qb ${m.c}">${escHtml(m.t)}</span>`; }
 function queueActive(rows) { return rows.filter(q => q.status === "pending" || q.status === "processing").length; }
-function renderHistQueue(rows) {
-  // Show running first, then queued, then finished/failed.
-  const sorted = [...rows].sort((a, b) => (QRANK[a.status] ?? 9) - (QRANK[b.status] ?? 9));
-  $("#h-queue").innerHTML = sorted.map(q => {
-    const busy = (q.status === "pending" || q.status === "processing");
-    return `<tr class="rowlink${busy ? " busy" : ""}" data-t="${escHtml(q.ticker)}" title="Open the full analysis for ${escHtml(q.ticker)}">`
-      + `<td class="l"><strong>${escHtml(q.ticker)}</strong></td>`
-      + `<td class="l">${queueBadge(q.status)}</td>`
-      + `<td class="l">${fmtWhen(q.requested_at)}</td>`
-      + `<td class="l">${q.run_id ? "#" + q.run_id : (q.note ? escHtml(String(q.note)).slice(0,40) : "—")}</td></tr>`;
-  }).join("") || `<tr><td colspan="4" class="hint">Nothing queued or running.</td></tr>`;
-  wireHistRows("#h-queue");
-  const active = queueActive(rows);
-  $("#q-active").textContent = active ? `· ${active} active` : "";
-}
 // Human label for a run's origin, from its stored meta.
 function runSource(meta) {
   const m = meta || {};
   if (m.job) return escHtml(m.job);                       // a saved custom job
   if (m.source === "schedule") return "Scheduled";        // the nightly hidden-gems screen
   if (m.source === "manual" || m.source === "queue") return "Manual";
-  return "—";
+  return "Run";
 }
-function renderHistRuns(rows) {
-  $("#h-runs").innerHTML = rows.map(r =>
-    `<tr class="norow"><td>${r.id}</td><td>${fmtWhen(r.created_at)}</td>`
-    + `<td>${runSource(r.meta)}</td>`
-    + `<td>${(r.strategies||[]).map(s=>`<span class="pill">${escHtml(s)}</span>`).join(" ")}</td>`
-    + `<td class="r">${r.ticker_count??"—"}</td><td class="r">${r.passing_count??"—"}</td></tr>`
-  ).join("") || `<tr><td colspan="6" class="hint">No runs yet.</td></tr>`;
+// Icon-badge for a run's origin (nightly / job / manual).
+function runKindBadge(meta) {
+  const m = meta || {};
+  if (m.source === "schedule") return `<span class="pill">🌙 Nightly</span>`;
+  if (m.job) return `<span class="pill">🧮 ${escHtml(m.job)}</span>`;
+  return `<span class="pill">🔍 Manual</span>`;
+}
+// One unified activity timeline: active/failed deep-dive queue items pinned on
+// top, then completed runs (nightly / jobs / manual screens) newest-first.
+// Finished ("done") queue items are omitted — each is already recorded as a run.
+function renderActivity(runs, queue) {
+  const ts = s => { const t = Date.parse(s); return Number.isNaN(t) ? 0 : t; };
+  const active = (queue || []).filter(q => q.status === "pending" || q.status === "processing");
+  active.sort((a, b) => (QRANK[a.status] ?? 9) - (QRANK[b.status] ?? 9) || ts(b.requested_at) - ts(a.requested_at));
+  const failed = (queue || []).filter(q => q.status === "error");
+
+  const queueRow = q => {
+    const busy = (q.status === "pending" || q.status === "processing");
+    return `<tr class="rowlink${busy ? " busy" : ""}" data-t="${escHtml(q.ticker)}" title="Open the full analysis for ${escHtml(q.ticker)}">`
+      + `<td class="l">${fmtWhen(q.requested_at)}</td>`
+      + `<td class="l"><strong>${escHtml(q.ticker)}</strong></td>`
+      + `<td class="l">${queueBadge(q.status)}</td>`
+      + `<td class="l">${q.run_id ? "→ run #" + q.run_id : (q.note ? escHtml(String(q.note)).slice(0,40) : "full deep-dive")}</td>`
+      + `<td class="r">—</td></tr>`;
+  };
+  const runRow = r =>
+    `<tr class="norow"><td class="l">${fmtWhen(r.created_at)}</td>`
+    + `<td class="l">#${r.id}</td>`
+    + `<td class="l">${runKindBadge(r.meta)}</td>`
+    + `<td class="l">${(r.strategies||[]).map(s=>`<span class="pill">${escHtml(stratLabel(s))}</span>`).join(" ")}</td>`
+    + `<td class="r">${r.passing_count??"—"}${r.ticker_count!=null?` / ${r.ticker_count}`:""}</td></tr>`;
+
+  // Timeline (below the pinned active items): failed queue items + runs, newest first.
+  const timeline = [
+    ...failed.map(q => ({ t: ts(q.requested_at), html: queueRow(q) })),
+    ...(runs || []).map(r => ({ t: ts(r.created_at), html: runRow(r) })),
+  ].sort((a, b) => b.t - a.t).map(x => x.html);
+
+  const html = active.map(queueRow).concat(timeline).join("");
+  $("#h-activity").innerHTML = html || `<tr><td colspan="5" class="hint">No activity yet — run a job (Jobs tab) or wait for the nightly run.</td></tr>`;
+  wireHistRows("#h-activity");
+  $("#q-active").textContent = active.length ? `· ${active.length} active` : "";
 }
 function renderHistSearches(rows) {
   $("#h-searches").innerHTML = rows.map(s => {
@@ -2099,14 +2114,14 @@ async function loadHistory(force) {
     const [rRes, qRes, sRes] = await Promise.all([
       fetch("/api/runs?limit=50"), fetch("/api/queue?limit=50"), fetch("/api/settings")]);
     const rd = await rRes.json();
-    renderHistRuns(rd.runs || []); renderHistSearches(rd.searches || []);
+    renderHistSearches(rd.searches || []);
     try { const sd = await sRes.json(); renderUpcoming(sd.config || {}, !!sd.schedule_configured); }
     catch (e) { /* leave upcoming as-is on a settings hiccup */ }
     let queue = [];
     try { queue = (await qRes.json()).queue || []; } catch(e){ queue = []; }
-    renderHistQueue(queue);
+    renderActivity(rd.runs || [], queue);
     $("#hist-status").textContent = rd.storage_enabled
-      ? `${queueActive(queue)} queued/running · ${(rd.runs||[]).length} runs · ${(rd.searches||[]).length} searches`
+      ? `${queueActive(queue)} active · ${(rd.runs||[]).length} runs · ${(rd.searches||[]).length} searches`
       : "No database configured — set DATABASE_URL in Vercel to record history.";
     // Keep the list live while anything is still queued or running.
     if (queueActive(queue) > 0) startHistPoll(); else stopHistPoll();

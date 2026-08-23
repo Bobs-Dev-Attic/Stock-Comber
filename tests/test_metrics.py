@@ -65,6 +65,18 @@ def test_average_and_dollar_volume_from_quote():
     assert m["dollar_volume"] == 20_000_000
 
 
+def test_market_cap_in_compute_metrics():
+    from stock_comber.models import Company, Quote
+    c = Company(ticker="AAA", annuals=[_facts(net_income=100, shares_outstanding=250)],
+                quote=Quote(ticker="AAA", price=20.0))
+    m = metrics.compute_metrics(c)
+    assert m["market_cap"] == 5000.0            # 20 × 250
+    # Missing price or share count → None, not an error.
+    c2 = Company(ticker="BBB", annuals=[_facts(net_income=1, shares_outstanding=None)],
+                 quote=Quote(ticker="BBB", price=10.0))
+    assert metrics.compute_metrics(c2)["market_cap"] is None
+
+
 def test_average_volume_prefers_finnhub_smoothed_figure():
     from stock_comber.models import Company, Quote
     # Finnhub reports trading volume in millions of shares; 3-month wins.

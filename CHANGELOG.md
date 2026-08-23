@@ -4,6 +4,25 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.56.0] - 2026-08-23
+
+### Added
+- **Market cap column in the Full list.** `compute_metrics` now includes
+  `market_cap` (share price × shares outstanding — price from the latest quote,
+  shares from the most recent SEC filing), exposed as a Full-list column (in the
+  default set, after Price) and a custom-criteria target. Renders in the compact
+  B/M format and is sortable, groupable and exportable like any other metric;
+  blank when price or share count is unavailable.
+
+### Changed
+- **History tab: "Queued & running" and "Past runs" merged into one Activity
+  timeline.** They overlapped — a finished queue item just becomes a run — so they
+  are now a single card: active/failed deep-dive queue items pinned on top, then
+  completed screens (nightly / saved jobs / manual searches) newest-first, with a
+  Kind badge (🌙 Nightly / 🧮 job / 🔍 Manual, or the queue status). Finished queue
+  items are omitted since each is already recorded as its run, removing the
+  duplication. Searches keep their own card.
+
 ## [0.55.0] - 2026-08-23
 
 ### Added
