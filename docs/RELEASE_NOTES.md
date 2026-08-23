@@ -1,5 +1,18 @@
 # Release notes
 
+## v0.61.0 — Settings: strategy Edit dialogs, own key section, key-reject fix (2026-08-23)
+
+The **Settings** page is tidier. **Strategies** is now a simple list — each strategy has an
+on/off toggle and an **✏️ Edit** button that pops open just that strategy's thresholds in a
+dialog, instead of six long cards stacked down the page. (Your dashboard "fine-tune
+thresholds" links open the right dialog directly.) The **Export / API key** now has its own
+section, separate from the provider keys.
+
+And a fix for the save problem: if your **Export / API key** is rejected, the page now
+**clears the saved key and asks you to re-enter it** — before, a wrong key could get
+remembered and quietly fail every save. Enter the exact `STOCK_COMBER_API_KEY` from your
+Vercel environment variables and Save again.
+
 ## v0.60.0 — Settings save shows live status (2026-08-23)
 
 Clicking **Save settings** now gives immediate feedback: the button shows **Saving…**
