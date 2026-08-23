@@ -460,6 +460,14 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
       <div id="hist-status" class="hint"></div>
       <div class="histgrid">
         <div class="histcard">
+          <h3>Upcoming scheduled jobs <span id="u-when" class="hint" style="font-weight:400"></span></h3>
+          <div class="tablewrap"><table>
+            <thead><tr><th>Job</th><th>What it screens</th><th>Strategies</th><th>Next run (UTC)</th></tr></thead>
+            <tbody id="h-upcoming"></tbody>
+          </table></div>
+          <p class="hint">Each scheduled fire runs the nightly “hidden gems” screen, then every saved custom job. Edit under <a href="#" id="upc-edit-sched">Jobs → Scheduled report</a>.</p>
+        </div>
+        <div class="histcard">
           <h3>Queued &amp; running <span id="q-active" class="hint" style="font-weight:400"></span></h3>
           <div class="tablewrap"><table>
             <thead><tr><th>Ticker</th><th>Status</th><th>Requested</th><th>Run</th></tr></thead>
@@ -573,7 +581,10 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
     <!-- Schedule dialog -->
     <div class="dlg" data-dlg="sched" hidden>
       <h2>📅 Scheduled report</h2>
-      <div class="sub">When the hosted nightly “hidden gems” run fires.</div>
+      <div class="sub">When the hosted nightly “hidden gems” run fires. Each run draws a fresh
+        <b>seeded stratified-random</b> set from the <b>whole market</b> — spread across sectors,
+        market-cap sizes and volume sizes — so a different, well-balanced pool is screened every run.
+        Sizes come from Polygon.io or Finnhub enrichment when a key is set (Settings → API keys).</div>
       <label class="dlg-l" style="display:flex;align-items:center;gap:.5rem;font-weight:600"><input type="checkbox" id="sched-enabled"> Enabled</label>
       <label class="dlg-l">Frequency</label>
       <select id="sched-freq">
@@ -605,8 +616,11 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
       <label class="dlg-l">Strategies &amp; thresholds</label>
       <div id="sched-strats" class="strat-chips"></div>
       <div class="hint" style="margin:.3rem 0 .2rem">These run each night. Click one to fine-tune its thresholds (e.g. Buffett's min ROE, Graham's max P/E), or <a href="/settings.html">edit all in Settings ↗</a>.</div>
-      <label class="dlg-l" style="display:flex;align-items:center;gap:.6rem;justify-content:space-between">What the next run will screen
-        <button class="btn ghost" id="preview-nightly" style="font-weight:400">↻ Refresh</button></label>
+      <label class="dlg-l" style="display:flex;align-items:center;gap:.6rem;justify-content:space-between;flex-wrap:wrap">What the next run will screen
+        <span style="display:flex;gap:.4rem;font-weight:400">
+          <button class="btn ghost" id="remix-nightly" title="Re-draw a different well-spread random set from the whole market">🎲 Remix</button>
+          <button class="btn ghost" id="preview-nightly" title="Reload the actual next-run pool">↻ Refresh</button>
+        </span></label>
       <div id="nightly-preview" class="hint"></div>
       <div class="dlg-acts">
         <button class="btn" id="save-sched">Save schedule</button>
@@ -1807,19 +1821,32 @@ function nextRunOrdinal() {
   return Math.floor(Date.UTC(t.getUTCFullYear(), t.getUTCMonth(), t.getUTCDate()) / 86400000) + 719163;
 }
 function nextRunHour() { return nextRunTarget().getUTCHours(); }
+let remixSalt = 0;   // 0 = the actual next-run pool; >0 = an alternative random draw
 async function previewNightly() {
   const el = $("#nightly-preview"); if (!el) return;
-  el.textContent = "Loading the next run's candidate pool…";
+  el.textContent = remixSalt ? "Drawing a fresh random set…" : "Loading the next run's candidate pool…";
   try {
-    const d = await (await fetch("/api/universe?nightly=1&ordinal=" + nextRunOrdinal() + "&hour=" + nextRunHour())).json();
+    const d = await (await fetch("/api/universe?nightly=1&ordinal=" + nextRunOrdinal()
+      + "&hour=" + nextRunHour() + "&remix=" + remixSalt)).json();
     if (d.error) { el.textContent = "Couldn't load preview: " + d.error; return; }
     const rows = d.results || [];
     if (!rows.length) {
-      el.innerHTML = `The next run (<b>${escHtml(d.date || "")}</b>) has no eligible candidates yet — the universe is built from Finnhub enrichment + the seed list; check the nightly filters in <a href="/settings.html#sec-strategies">Settings</a>.`;
+      el.innerHTML = `The next run (<b>${escHtml(d.date || "")}</b>) has no eligible candidates yet — the pool is a `
+        + `stratified-random sample across the whole market, sized by Polygon.io/Finnhub enrichment; `
+        + `check the nightly filters in <a href="/settings.html#sec-strategies">Settings</a>.`;
       return;
     }
     nightlyTickers = rows.map(r => r.ticker);
     const cap = Math.min(nightlyTickers.length, NIGHTLY_SCREEN_CAP);
+    // Spread summary — how many distinct sectors/market-cap sizes this pool spans.
+    const sectors = new Set(rows.map(r => r.sector).filter(Boolean));
+    const capBands = new Set(rows.map(r => mcapBand(r.market_cap)).filter(Boolean));
+    const spread = `<div class="hint" style="margin:.1rem 0 .4rem">Spans <b>${sectors.size}</b> sector${sectors.size === 1 ? "" : "s"}`
+      + (capBands.size ? ` · <b>${capBands.size}</b> market-cap size${capBands.size === 1 ? "" : "s"}` : "")
+      + ` across <b>${rows.length}</b> name${rows.length === 1 ? "" : "s"}.</div>`;
+    const remixNote = remixSalt
+      ? `<div class="hint" style="margin:.1rem 0 .4rem">🎲 Showing an <b>alternative random draw</b> (remix #${remixSalt}) — the actual scheduled run uses the ↻ Refresh set. “Screen all” below will screen this shown set.</div>`
+      : "";
     const chips = rows.map(r => `<a href="#" class="pill preview-tick" data-t="${escHtml(r.ticker)}" title="${escHtml(r.sector || "")} — tap to deep-dive this one">${escHtml(r.ticker)}</a>`).join(" ");
     const cd = d.cooldown_days
       ? `<div class="hint" style="margin:.15rem 0 .5rem">🕒 <b>${d.cooldown_days}-day</b> re-analysis cooldown active`
@@ -1831,9 +1858,10 @@ async function previewNightly() {
             : " — nothing on cooldown yet")
         + `. Manual analyses are exempt.</div>`
       : "";
-    el.innerHTML = `<div style="margin-bottom:.35rem">The next run (<b>${escHtml(d.date || "")}</b>) will screen `
+    el.innerHTML = `<div style="margin-bottom:.35rem">${remixSalt ? "This draw is" : `The next run (<b>${escHtml(d.date || "")}</b>) will screen`} `
       + `<b>${d.count}</b> stock${d.count === 1 ? "" : "s"}${d.index ? ` from the ${escHtml(String(d.index).toUpperCase())}` : ""}`
       + `${d.count >= d.cap ? ` (nightly cap ${d.cap})` : ""}:</div>`
+      + remixNote + spread
       + cd
       + `<div class="controls" style="margin-bottom:.4rem"><button class="btn" id="screen-all-nightly">▶ Screen all ${cap}${nightlyTickers.length > cap ? ` of ${nightlyTickers.length}` : ""}</button>`
       + `<span class="hint" style="margin:0">or tap one ticker for its full deep-dive (news &amp; sentiment)</span></div>`
@@ -1847,7 +1875,17 @@ async function previewNightly() {
     $("#screen-all-nightly").onclick = screenNightlyAll;
   } catch (e) { el.textContent = "Preview failed: " + e.message; }
 }
-$("#preview-nightly").onclick = previewNightly;
+// Coarse market-cap size label for the spread summary (nano→mega).
+function mcapBand(mc) {
+  if (mc == null || !(mc > 0)) return null;
+  if (mc < 3e8) return "micro";
+  if (mc < 2e9) return "small";
+  if (mc < 1e10) return "mid";
+  if (mc < 2e11) return "large";
+  return "mega";
+}
+$("#preview-nightly").onclick = () => { remixSalt = 0; previewNightly(); };   // back to the real next-run pool
+$("#remix-nightly").onclick = () => { remixSalt += 1; previewNightly(); };    // re-draw a different set
 $("#sched-freq").onchange = syncSchedFreq;
 ["#sched-time", "#sched-days", "#sched-interval"].forEach(sel => {
   const el = $(sel); if (el) el.addEventListener("change", renderNextRuns);
@@ -1919,7 +1957,7 @@ $("#view-sched").onclick = async () => {
 function openJobDialog(mode) {
   document.querySelectorAll("#job-overlay .dlg").forEach(d => { d.hidden = d.dataset.dlg !== mode; });
   $("#job-overlay").classList.add("open");
-  if (mode === "sched") { loadSchedule(); previewNightly(); }
+  if (mode === "sched") { remixSalt = 0; loadSchedule(); previewNightly(); }
   if (mode === "custom") { buildStratMenu(); if (!tmplBuilt) { tmplBuilt = true; buildTmplMenu(); } }
   if (mode === "manual") { buildStratMenu(); setTimeout(() => $("#tickers").focus(), 60); }
 }
@@ -1931,6 +1969,7 @@ function newCustomJob() {
   jobsHint(""); $("#job-preview").innerHTML = "";
 }
 $("#open-sched").onclick = () => openJobDialog("sched");
+$("#upc-edit-sched").onclick = (e) => { e.preventDefault(); openJobDialog("sched"); };
 $("#open-custom").onclick = () => { newCustomJob(); openJobDialog("custom"); };
 $("#open-manual").onclick = () => openJobDialog("manual");
 $("#jobdlg-close").onclick = closeJobDialog;
@@ -2012,15 +2051,57 @@ async function openAnalysisFor(ticker) {
   } catch (e) { if (hs) hs.textContent = "Analysis failed: " + e.message; }
   finally { hideBanner(); }
 }
+// Upcoming scheduled jobs: the nightly "hidden gems" screen + every saved custom
+// job, all firing together at the next scheduled run (see .github/workflows/screen.yml).
+function jobScreens(job) {
+  const tks = (job.tickers || []).filter(Boolean);
+  if (job.index) return `Template · ${escHtml(String(job.index).toUpperCase())}`;
+  if (tks.length) return escHtml(tks.slice(0, 6).join(", ")) + (tks.length > 6 ? ` +${tks.length - 6}` : "");
+  const crit = (job.criteria || []).length;
+  return crit ? `${crit} custom criteri${crit === 1 ? "on" : "a"}` : "—";
+}
+function renderUpcoming(cfg, configured) {
+  const tb = $("#h-upcoming"); if (!tb) return;
+  const sc = (cfg && cfg.schedule) || {};
+  const enabled = configured ? !!sc.enabled : true;
+  const cron = (configured && sc.cron) ? sc.cron : "30 6 * * 1-5";
+  const strats = (cfg && cfg.strategies && cfg.strategies.length) ? cfg.strategies : ["graham", "buffett"];
+  if (!enabled) {
+    tb.innerHTML = `<tr><td colspan="4" class="hint">Scheduled run is off — enable it under Jobs → Scheduled report.</td></tr>`;
+    $("#u-when").textContent = "";
+    return;
+  }
+  const next = nextScheduledRun(cron, new Date());
+  const when = next
+    ? `${DOW3[next.getUTCDay()]} ${String(next.getUTCHours()).padStart(2,"0")}:${String(next.getUTCMinutes()).padStart(2,"0")} UTC`
+    : "—";
+  $("#u-when").textContent = next ? `· next in ${fmtDur(next - new Date())}` : "";
+  const stratPills = ss => (ss || []).map(s => `<span class="pill">${escHtml(stratLabel(s))}</span>`).join(" ");
+  const rows = [
+    `<tr class="norow"><td class="l"><strong>🌙 Nightly “hidden gems”</strong></td>`
+      + `<td class="l">Stratified-random pick across the whole market</td>`
+      + `<td class="l">${stratPills(strats)}</td><td class="l">${when}</td></tr>`
+  ];
+  const jobs = (cfg && cfg.jobs) || [];
+  jobs.forEach(j => {
+    rows.push(`<tr class="norow"><td class="l"><strong>🧮 ${escHtml(j.name || "Custom job")}</strong></td>`
+      + `<td class="l">${jobScreens(j)}</td>`
+      + `<td class="l">${stratPills((j.strategies && j.strategies.length) ? j.strategies : strats)}</td>`
+      + `<td class="l">${when}</td></tr>`);
+  });
+  tb.innerHTML = rows.join("");
+}
 async function loadHistory(force) {
   if (histLoaded && !force) return;
   histLoaded = true;
   $("#hist-status").textContent = "Loading activity…";
   try {
-    const [rRes, qRes] = await Promise.all([
-      fetch("/api/runs?limit=50"), fetch("/api/queue?limit=50")]);
+    const [rRes, qRes, sRes] = await Promise.all([
+      fetch("/api/runs?limit=50"), fetch("/api/queue?limit=50"), fetch("/api/settings")]);
     const rd = await rRes.json();
     renderHistRuns(rd.runs || []); renderHistSearches(rd.searches || []);
+    try { const sd = await sRes.json(); renderUpcoming(sd.config || {}, !!sd.schedule_configured); }
+    catch (e) { /* leave upcoming as-is on a settings hiccup */ }
     let queue = [];
     try { queue = (await qRes.json()).queue || []; } catch(e){ queue = []; }
     renderHistQueue(queue);

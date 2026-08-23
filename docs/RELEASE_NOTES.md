@@ -1,5 +1,20 @@
 # Release notes
 
+## v0.55.0 — Remix the nightly pool + see upcoming scheduled jobs (2026-08-23)
+
+The **Scheduled report** dialog now matches how the nightly run actually works: every
+run draws a fresh, well-spread random set from the *whole market* — across sectors,
+market-cap sizes and volume sizes. The "what the next run will screen" preview shows a
+quick spread summary, and a new **🎲 Remix** button re-rolls a *different* balanced set
+whenever you want to see (or hand-screen) another slice. **↻ Refresh** always snaps back
+to the exact pool the next scheduled run will use; "Screen all" on a remixed set screens
+what's shown.
+
+The **History** tab gains an **Upcoming scheduled jobs** card so you can see what's
+queued to run next — the nightly "hidden gems" screen plus each of your saved custom
+jobs — with what each screens, its strategies, and the next run time. If the schedule is
+off, it says so.
+
 ## v0.54.0 — Polygon.io enrichment, rate-limited to 5 calls/min (2026-08-23)
 
 Have a **Polygon.io** API key? You can now store it (Settings → API keys, or the
