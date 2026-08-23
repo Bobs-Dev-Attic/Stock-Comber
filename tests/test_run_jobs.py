@@ -55,6 +55,7 @@ class _FakeScreener:
         self.last_companies = {}
 
     def run(self, tickers, progress=None):
+        _FakeScreener.ran_tickers = list(tickers)   # what was actually screened
         return [ScreenResult(ticker=t, name=t, strategy="graham", passed=True,
                              score=8, max_score=10) for t in tickers]
 
@@ -111,3 +112,31 @@ def test_cmd_run_jobs_runs_each(monkeypatch, capsys):
     names = sorted(m["job"] for m in store.saved)
     assert names == ["a", "b"]
     assert "Ran 2 of 2" in capsys.readouterr().out
+
+
+# -- pool sampling (random pick) -------------------------------------------
+def test_sample_pool_no_pick_returns_whole_pool():
+    pool = ["A", "B", "C", "D"]
+    assert cli._sample_pool(pool, {"name": "x"}) == pool
+    assert cli._sample_pool(pool, {"name": "x", "pick": 0}) == pool
+    assert cli._sample_pool(pool, {"name": "x", "pick": 9}) == pool     # >= size => all
+
+
+def test_sample_pool_draws_subset_and_is_seeded():
+    pool = [f"T{i}" for i in range(20)]
+    a = cli._sample_pool(pool, {"name": "job", "pick": 5})
+    b = cli._sample_pool(pool, {"name": "job", "pick": 5})
+    assert len(a) == 5 and set(a) <= set(pool)
+    assert a == b                                    # reproducible within the run window
+    c = cli._sample_pool(pool, {"name": "other", "pick": 5})
+    assert a != c or set(a) != set(c)                # different job name -> different draw
+
+
+def test_run_one_job_samples_the_pool(monkeypatch):
+    monkeypatch.setattr(cli, "Screener", _FakeScreener)
+    store = _FakeStore()
+    pool = ", ".join(f"T{i}" for i in range(30))
+    job = {"name": "pick3", "tickers": pool, "pick": 3, "strategies": ["graham"]}
+    cli._run_one_job(job, _base(), store)
+    screened = _FakeScreener.ran_tickers          # the sampled subset actually screened
+    assert len(screened) == 3 and set(screened) <= {f"T{i}" for i in range(30)}

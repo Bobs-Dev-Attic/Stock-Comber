@@ -1,5 +1,14 @@
 # Release notes
 
+## v0.67.0 — Custom jobs: optional criteria + a random draw from a ticker pool (2026-08-23)
+
+Custom jobs now work the way you pictured them. The **Tickers** field is a **pool** the job
+can draw from, and a new **Randomly pick** count lets the job screen a random handful from that
+pool on each run (leave it blank to use the whole pool). Your selected **strategies** — plus
+**optional** criteria — are applied to whatever gets drawn. Criteria are no longer required: a
+job just needs a name and a pool (or a criterion). Scheduled runs pick a different subset each
+time; "Run now" draws a fresh one too.
+
 ## v0.66.0 — Scheduled-report dialog looks tidier (2026-08-23)
 
 Small polish on the **Scheduled report** dialog: **Enabled** is now a pill toggle switch, and

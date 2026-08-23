@@ -660,25 +660,30 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
     <!-- Custom job dialog -->
     <div class="dlg" data-dlg="custom" hidden>
       <h2 id="custom-dlg-title">🧮 Custom job</h2>
-      <div class="sub">Your own <code>metric op value</code> rules over a set of tickers or an index template.</div>
+      <div class="sub">Runs your selected <b>strategies</b> (and optional <code>metric op value</code> criteria) against a <b>pool of tickers</b> — optionally a random pick from the pool each run.</div>
       <label class="dlg-l" for="job-name">Name</label>
       <input id="job-name" type="text" placeholder="Name this job to save it" autocomplete="off" style="width:100%">
-      <label class="dlg-l">Criteria</label>
-      <div id="crit-list"></div>
-      <div class="row" style="margin:.6rem 0;display:flex;gap:.5rem;flex-wrap:wrap;align-items:center">
-        <button id="add-crit" class="btn ghost">+ Add criterion</button>
-        <button id="clear-crit" class="btn ghost">Clear</button>
-        <span id="custom-count" class="hint"></span>
-      </div>
-      <label class="dlg-l">Tickers</label>
+      <label class="dlg-l">Ticker pool</label>
       <div class="controls">
-        <input id="job-tickers" type="text" placeholder="Tickers, e.g. AAPL, MSFT — or load a template →"
+        <input id="job-tickers" type="text" placeholder="Tickers, e.g. AAPL, MSFT, JNJ — or load a template →"
                autocomplete="off" style="flex:1 1 260px;min-width:200px">
         <div class="menu" id="tmpl-menu">
           <button class="btn ghost" id="tmpl-btn" aria-haspopup="true" aria-expanded="false"
                   title="Load a slice of an index (Dow / Nasdaq-100 / S&amp;P 500), filtered by sector">Templates ▾</button>
           <div class="panel-pop" id="tmpl-pop" style="min-width:250px"></div>
         </div>
+      </div>
+      <div class="row" style="margin:.5rem 0 .2rem;display:flex;gap:.5rem;flex-wrap:wrap;align-items:center">
+        <label class="dlg-l" for="job-pick" style="margin:0">Randomly pick</label>
+        <input id="job-pick" type="number" min="0" step="1" placeholder="all" style="width:90px" title="How many tickers to randomly draw from the pool each run — blank/0 = the whole pool">
+        <span class="hint" style="margin:0">from the pool each run (blank = whole pool).</span>
+      </div>
+      <label class="dlg-l">Criteria <span class="hint" style="font-weight:400">(optional)</span></label>
+      <div id="crit-list"></div>
+      <div class="row" style="margin:.6rem 0;display:flex;gap:.5rem;flex-wrap:wrap;align-items:center">
+        <button id="add-crit" class="btn ghost">+ Add criterion</button>
+        <button id="clear-crit" class="btn ghost">Clear</button>
+        <span id="custom-count" class="hint"></span>
       </div>
       <label class="dlg-l">Strategies</label>
       <div class="menu" id="cstrat-menu">
@@ -1558,15 +1563,24 @@ function runSmart() {
 $("#run").onclick = () => { closeJobDialog(); runSmart(); };
 
 /* Custom jobs: your metric rules over tickers or a template. */
+// Random subset of a comma-separated pool (Fisher–Yates); pick<=0/≥size => whole pool.
+function samplePool(raw, pick) {
+  const arr = raw.split(",").map(s => s.trim()).filter(Boolean);
+  if (!pick || pick <= 0 || pick >= arr.length) return arr.join(", ");
+  for (let i = arr.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [arr[i], arr[j]] = [arr[j], arr[i]]; }
+  return arr.slice(0, pick).join(", ");
+}
 async function runJob(preview) {
   const say = preview ? (m, bad) => jobsHint(m, bad) : (m) => setStatus("jobs", m);
-  const raw = $("#job-tickers").value.trim();
-  const criteria = readCriteria();
-  if (!criteria.length) { say("Add at least one criterion for the job.", true); return; }
-  if (!raw) { say("Enter tickers (or load a template) to run the job on.", true); return; }
+  const rawPool = $("#job-tickers").value.trim();
+  const criteria = readCriteria();   // optional now
+  if (!rawPool) { say("Enter a ticker pool (or load a template) to run the job on.", true); return; }
+  const pickRaw = $("#job-pick").value.trim();
+  const pick = pickRaw === "" ? 0 : Math.max(0, parseInt(pickRaw, 10) || 0);
+  const raw = samplePool(rawPool, pick);   // random draw from the pool for this run
   const params = new URLSearchParams(); params.set("tickers", raw);
   selectedStrats.forEach(s => params.append("strategy", s));
-  params.set("custom", JSON.stringify(criteria));
+  if (criteria.length) params.set("custom", JSON.stringify(criteria));
   const btn = $("#run-job"); const label = btn.textContent;
   btn.disabled = true; btn.textContent = "Running…";
   showBanner("Running custom job…");
@@ -1663,6 +1677,7 @@ async function loadSavedJobs() {
 }
 function applyJob(job) {
   $("#job-tickers").value = job.tickers || "";
+  $("#job-pick").value = job.pick || "";
   $("#job-name").value = job.name || "";
   $("#crit-list").innerHTML = "";
   (job.criteria || []).forEach(c => addCritRow(c.metric, c.op, c.value));
@@ -1714,10 +1729,13 @@ async function persistJobs(jobs, okMsg) {
 $("#save-job").onclick = async () => {
   const name = $("#job-name").value.trim();
   if (!name) { jobsHint("Give the job a name first.", true); $("#job-name").focus(); return; }
-  const criteria = readCriteria();
-  if (!criteria.length) { jobsHint("Add at least one criterion before saving.", true); return; }
-  const job = { name, tickers: $("#job-tickers").value.trim(),
-    criteria, strategies: selectedStrats.slice() };
+  const criteria = readCriteria();   // optional now
+  const tickers = $("#job-tickers").value.trim();
+  if (!tickers && !criteria.length) { jobsHint("Add a ticker pool (or at least one criterion) before saving.", true); return; }
+  const pickRaw = $("#job-pick").value.trim();
+  const pick = pickRaw === "" ? 0 : Math.max(0, parseInt(pickRaw, 10) || 0);
+  const job = { name, tickers, criteria, strategies: selectedStrats.slice() };
+  if (pick > 0) job.pick = pick;   // random pick from the pool each run
   const others = savedJobs.filter(j => j.name.toLowerCase() !== name.toLowerCase());
   const btn = $("#save-job"); const label = btn.textContent;
   btn.disabled = true; btn.textContent = "Saving…";
@@ -2052,8 +2070,8 @@ function openJobDialog(mode) {
 function closeJobDialog() { $("#job-overlay").classList.remove("open"); }
 function newCustomJob() {
   $("#custom-dlg-title").textContent = "🧮 New custom job";
-  $("#job-name").value = ""; $("#job-tickers").value = "";
-  $("#crit-list").innerHTML = ""; addCritRow(); updateCustomCount();
+  $("#job-name").value = ""; $("#job-tickers").value = ""; $("#job-pick").value = "";
+  $("#crit-list").innerHTML = ""; updateCustomCount();   // criteria optional — start empty
   jobsHint(""); $("#job-preview").innerHTML = "";
 }
 $("#open-sched").onclick = () => openJobDialog("sched");

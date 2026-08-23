@@ -355,6 +355,12 @@ def _validate_jobs(jobs: Any, valid_strategies: set) -> list[str]:
             seen.add(key)
         if "tickers" in job and not isinstance(job["tickers"], str):
             problems.append(f"{where}.tickers must be a string")
+        if job.get("pick") not in (None, ""):
+            try:
+                if int(job["pick"]) < 0:
+                    raise ValueError
+            except (TypeError, ValueError):
+                problems.append(f"{where}.pick must be a non-negative integer")
         for s in job.get("strategies", []) or []:
             if s not in valid_strategies:
                 problems.append(f"{where}: unknown strategy {s!r}")
