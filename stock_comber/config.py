@@ -78,6 +78,17 @@ DEFAULT_CONFIG: dict[str, Any] = {
         # Optional Finnhub API key (or set FINNHUB_API_KEY). When present,
         # Finnhub enriches the universe (market cap / sector / country).
         "finnhub_api_key": None,
+        # Optional Polygon.io API key (or set POLYGON_API_KEY). When present,
+        # Polygon enriches the nightly universe (sector / market cap / volume) —
+        # preferred over Finnhub for enrichment when both are set. Secret:
+        # env/DB write-only, never returned to the browser.
+        "polygon_api_key": None,
+        # Seconds between Polygon calls (free tier is ~5/min → 12s).
+        "polygon_min_interval": 12.0,
+        # Spend a second Polygon call per name on the prior-day volume (for the
+        # nightly volume-tier spread). Off halves the call budget but drops the
+        # volume signal.
+        "polygon_enrich_volume": True,
         # Seconds between Finnhub calls (free tier is ~60/min → ~1.1s).
         "finnhub_min_interval": 1.1,
         # Fetch Finnhub's metric bundle for every screened company (1 extra call

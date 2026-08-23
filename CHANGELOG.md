@@ -4,6 +4,26 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.54.0] - 2026-08-23
+
+### Added
+- **Optional Polygon.io universe enrichment.** Store a Polygon.io API key (settings
+  page, or the `POLYGON_API_KEY` env var) to classify nightly candidate names by
+  **sector, market cap and volume** — the signals the seeded stratified pick
+  (v0.53.0) needs to span sizes. New `datasources/polygon.py` (`PolygonSource`)
+  reads Ticker Details v3 for market cap / SIC sector / name / exchange / locale and
+  the previous-close endpoint for a volume signal, exposing the same
+  `fetch_profile(ticker)` contract as Finnhub. When a Polygon key is set it is
+  **preferred over Finnhub** as the nightly enricher, so a Polygon key alone is
+  enough to classify by size even without a Finnhub key.
+- **Free-tier rate limiting (5 calls/min).** The source throttles to a minimum
+  interval between calls (`data.polygon_min_interval`, default **12s** = 5/min) and
+  trips a circuit breaker after repeated HTTP 429s so a run doesn't burn time on
+  guaranteed rejections. `data.polygon_enrich_volume` (default on) toggles the
+  second (volume) call per name. The key is sent only in the `Authorization: Bearer`
+  header — never the URL, cache key, or a log line — and is env/DB write-only,
+  redacted from the settings API like the Finnhub and Tiingo keys.
+
 ## [0.53.0] - 2026-08-23
 
 ### Changed

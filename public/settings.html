@@ -74,8 +74,14 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
         <label>Tiingo API key — store in your database</label>
         <input id="tiingo_key" type="password" autocomplete="off" placeholder="leave blank to keep current">
       </div>
+      <div class="f" style="max-width:340px">
+        <label>Polygon.io API key — store in your database</label>
+        <input id="polygon_key" type="password" autocomplete="off" placeholder="leave blank to keep current">
+      </div>
     </div>
-    <p class="hint">Optional: store your <b>Tiingo</b> key to use it as the <b>primary</b> price source — a
+    <p class="hint">Optional: store your <b>Polygon.io</b> key to enrich the nightly universe (sector,
+      market cap &amp; volume — throttled to the free tier's 5 calls/min; preferred over Finnhub for
+      enrichment). Store your <b>Tiingo</b> key to use it as the <b>primary</b> price source — a
       licensed provider with a real terms-of-service, ahead of the free Yahoo/Stooq fallbacks. And your
       <b>Finnhub</b> key in the database instead of an environment
       variable — it powers news, sentiment &amp; enrichment. Both are <b>write-only</b> here (never shown back),
@@ -271,7 +277,7 @@ function readCrit(){ const out=[];
   }); return out; }
 
 function renderKeys(s){ const c=$("#keys"); c.innerHTML="";
-  const items=[["Tiingo",s.keys.tiingo],["Finnhub",s.keys.finnhub],["Database",s.keys.database],["Export API key",s.keys.export_api]];
+  const items=[["Tiingo",s.keys.tiingo],["Finnhub",s.keys.finnhub],["Polygon",s.keys.polygon],["Database",s.keys.database],["Export API key",s.keys.export_api]];
   items.forEach(([n,on])=>{const p=document.createElement("span");p.className="pill "+(on?"on":"off");
     p.textContent=(on?"✓ ":"✕ ")+n+(on?" configured":" not set");c.appendChild(p);});
 }
@@ -300,6 +306,8 @@ function collect(){
   if(fk){ out.data={...(out.data||{}), finnhub_api_key:fk}; }
   const tk=$("#tiingo_key").value.trim();
   if(tk){ out.data={...(out.data||{}), tiingo_api_key:tk}; }
+  const pk=$("#polygon_key").value.trim();
+  if(pk){ out.data={...(out.data||{}), polygon_api_key:pk}; }
   return out;
 }
 
@@ -338,7 +346,7 @@ $("#save").onclick=async()=>{
       headers:{"Content-Type":"application/json"}, body:JSON.stringify(collect())});
     const d=await r.json();
     if(!r.ok){ $("#status").textContent="Error: "+(d.error||r.status)+(d.problems?" — "+d.problems.join("; "):""); }
-    else { $("#finnhub_key").value=""; $("#tiingo_key").value=""; if(d.keys) renderKeys(d);
+    else { $("#finnhub_key").value=""; $("#tiingo_key").value=""; $("#polygon_key").value=""; if(d.keys) renderKeys(d);
       $("#status").textContent="Saved. Live screens and the nightly run now use these settings."; }
   }catch(e){ $("#status").textContent="Save failed: "+e.message; }
 };

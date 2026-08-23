@@ -11,6 +11,7 @@ from .datasources import (
     YahooSource,
 )
 from .datasources.finnhub import resolve_api_key
+from .datasources.polygon import resolve_api_key as resolve_polygon_key
 from .datasources.tiingo import resolve_api_key as resolve_tiingo_key
 from .models import Company, Quote, ScreenResult
 from .validation import is_valid_ticker
@@ -50,6 +51,18 @@ class Screener:
             self.finnhub = FinnhubSource(
                 fh_key, cache=cache, timeout=timeout,
                 delay=data.get("finnhub_min_interval", 1.1))
+
+        # Optional Polygon.io enrichment source (sector / market cap / volume for
+        # the nightly universe), active only when an API key is configured.
+        # Throttled to the free tier's ~5 req/min.
+        self.polygon = None
+        pg_key = resolve_polygon_key(config)
+        if pg_key:
+            from .datasources import PolygonSource
+            self.polygon = PolygonSource(
+                pg_key, cache=cache, timeout=timeout,
+                delay=data.get("polygon_min_interval", 12.0),
+                with_volume=data.get("polygon_enrich_volume", True))
 
         # Optional Tiingo source, active only when an API key is configured.
         # Tiingo is a *licensed* provider (real ToS + SLA), so when a key is
@@ -121,8 +134,11 @@ class Screener:
             from .schedule import rotation_tick
             # The rotation seed advances every hour, so shorter-than-daily
             # schedules screen fresh names each run (not just each day).
+            # Prefer Polygon for enrichment when configured, else Finnhub; both
+            # expose fetch_profile(ticker) → sector/market_cap/avg_volume.
+            enricher = self.polygon or self.finnhub
             return build_nightly(
-                self.config, store=self.store, finnhub=self.finnhub,
+                self.config, store=self.store, finnhub=enricher,
                 day_ordinal=rotation_tick(datetime.now(timezone.utc)),
                 sec=self.sec,   # widen the pool to the whole SEC ticker list
             )

@@ -16,6 +16,7 @@ obligation, not a footnote.
 | **Yahoo Finance** | No | Latest price + volume (primary when no Tiingo key; else first free fallback) | `datasources/yahoo.py` |
 | **Stooq** | No | Daily close (fallback price source) | `datasources/stooq.py` |
 | **Finnhub** | Yes (free tier) | Real-time-ish quote + precomputed metrics; nightly market-cap/sector/country/volume enrichment | `datasources/finnhub.py` |
+| **Polygon.io** | Yes (free tier) | Nightly market-cap/sector/volume enrichment only (preferred over Finnhub when a key is set) | `datasources/polygon.py` |
 
 **Price chain order:** Tiingo (if a key is set) → Yahoo → Stooq → Finnhub. The
 first source to return a price wins. With no Tiingo key the chain is the original
@@ -78,6 +79,25 @@ jobs don't hammer the free endpoints.
 - **ToS:** free tier has request-rate and redistribution limits. Review before
   caching/redistributing metrics.
 
+### Polygon.io (enrichment, optional)
+- Endpoints: Ticker Details v3 (`/v3/reference/tickers/{ticker}`) → market cap,
+  SIC description (used as the sector label), name, primary exchange, locale;
+  Previous close (`/v2/aggs/ticker/{ticker}/prev`) → the last trading day's volume
+  (a tiering signal; free tier is end-of-day). Used **only** to classify names for
+  the nightly stratified pick — never for per-ticker prices.
+- Enabled only when a key is present (`config.data.polygon_api_key` or
+  `POLYGON_API_KEY`). When set it is **preferred over Finnhub** as the nightly
+  enricher (both expose the same `fetch_profile(ticker)` contract), so a Polygon
+  key alone is enough to classify names by sector / market cap / volume even
+  without a Finnhub key.
+- **Rate limit:** the free tier allows ~**5 calls/minute**, so the source throttles
+  to a minimum interval between calls (`data.polygon_min_interval`, default **12s**
+  = 5/min) and trips a circuit breaker after repeated HTTP 429s. Set
+  `data.polygon_enrich_volume: false` to skip the second (volume) call per name and
+  halve the budget spent. **The key is a secret** — sent only in the
+  `Authorization: Bearer` header (never the URL, cache key, or a log line), env/DB
+  write-only, never returned to the browser.
+
 ## Terms-of-service review (summary)
 
 A per-provider read of the compliance posture. **This is an engineering summary,
@@ -90,6 +110,7 @@ since these can change.
 | **Yahoo Finance** | No | Prices/volume (unofficial endpoint) | Terms **discourage** scraping/redistribution; no SLA | **High** | Treat as best-effort; plan a licensed replacement for any public/commercial use. |
 | **Stooq** | No | Daily closes (CSV) | Free; bulk/automated use should be verified | **Medium** | Fallback only; low volume. Verify terms before heavy use. |
 | **Finnhub** | Yes (free tier) | Quote + metrics | Free tier limits request rate **and** redistribution | **Medium** | Key is secret; respect rate limit; don't redistribute raw metrics beyond the app. |
+| **Polygon.io** | Yes (free tier) | Ticker details + prev-close volume | Free tier limits request rate (~5/min) and redistribution | **Medium** | Key is secret; throttle to 5/min (built in); enrichment only, don't redistribute raw data beyond the app. |
 
 **Bottom line:** the only high-risk dependency is Yahoo's unofficial endpoint —
 both for reliability (no SLA) and terms (discourages scraping). For a personal /
