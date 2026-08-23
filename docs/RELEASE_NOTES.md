@@ -1,5 +1,15 @@
 # Release notes
 
+## v0.76.0 — Full-list filters move into a per-column menu (2026-08-23)
+
+Instead of a row of filter boxes, each Full-list column header now has a small **filter
+icon**. Click it to open a menu of options — **Greater than, Less than, Between, Equals,
+Not equal, Contains** (and **Does not contain** for text) — each of which flies out to an
+input where you type the value and hit Apply. The icon highlights when a filter is active,
+and every menu has a **Clear filter** option. Everything else about filtering is the same
+(suffixes like `1b`/`5%`, the global Clear filters button). The History tables keep their
+inline filter row.
+
 ## v0.75.0 — Filter the History tables too (2026-08-23)
 
 The **History** tab's tables — Upcoming scheduled jobs, Activity, and Searches — now have

@@ -4,6 +4,19 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.76.0] - 2026-08-23
+
+### Changed
+- **Full-list column filters are now a per-column funnel icon + fly-out menu.** The
+  always-visible filter row is replaced by a small filter icon in each column header.
+  Clicking it opens a menu of filtering options; each operator (Greater than, Less than,
+  Between, Equals, Not equal, Contains, … for numbers; Contains / Does not contain for
+  text) flies out to an input where you enter the value(s) and Apply. The active icon is
+  highlighted, and each menu offers a Clear filter item. The underlying filter expression
+  and matching are unchanged (so k/m/b/t and % suffixes still work), and the global Clear
+  filters button still resets everything. (The History tables keep their inline filter
+  row.)
+
 ## [0.75.0] - 2026-08-23
 
 ### Added
