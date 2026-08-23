@@ -120,15 +120,7 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
   th.dragover { box-shadow: inset 2px 0 0 var(--accent); }
   th.l, td.l { text-align: left; }
   th .arrow { opacity: .5; font-size: .7rem; }
-  /* per-column filter row under the headers */
-  tr.colfilters th { padding: 2px 4px 5px; cursor: default; text-transform: none; letter-spacing: 0; }
-  tr.colfilters input.colf { width: 100%; min-width: 54px; box-sizing: border-box;
-    font: inherit; font-size: .74rem; padding: 2px 5px; border: 1px solid var(--line);
-    border-radius: 5px; background: var(--bg, transparent); color: var(--ink, inherit); }
-  tr.colfilters input.colf:focus { outline: none; border-color: var(--accent); }
-  tr.colfilters input.colf.active { border-color: var(--accent);
-    background: color-mix(in srgb, var(--accent) 12%, transparent); }
-  /* per-column filter icon + fly-out menu (Full list) */
+  /* per-column filter icon + fly-out menu (Full list & History) */
   .colfilt-btn { border: 0; background: transparent; cursor: pointer; color: var(--muted);
     font-size: .78rem; line-height: 1; padding: 0 2px; opacity: .55; vertical-align: middle; }
   th:hover .colfilt-btn { opacity: .9; }
@@ -1107,6 +1099,11 @@ const NUM_OPS = [
   {label:"Between", op:"between"}, {label:"Contains text", op:"contains"},
 ];
 const TEXT_OPS = [{label:"Contains", op:"contains"}, {label:"Does not contain", op:"!contains"}];
+// The History tables are free-text cells that may be numeric, so they offer both.
+const ALL_OPS = [...TEXT_OPS,
+  {label:"Greater than", op:">"}, {label:"Greater or equal", op:">="},
+  {label:"Less than", op:"<"}, {label:"Less or equal", op:"<="},
+  {label:"Equals", op:"="}, {label:"Not equal", op:"!="}, {label:"Between", op:"between"}];
 function buildFilterExpr(op, a, b){
   a = String(a || "").trim(); b = String(b || "").trim();
   if (op === "between") return (a && b) ? `${a}..${b}` : "";
@@ -1129,19 +1126,20 @@ function addFilterIcon(th, key, label){
   th.appendChild(document.createTextNode(" "));
   th.appendChild(btn);
 }
-function openColMenu(key, label, anchor){
-  const wasThis = openColMenuEl && openColMenuEl.dataset.k === key;
+/* Generic column-filter menu: a title, an optional Clear item, and one row per
+   operator that flies out to its value input(s). onApply gets the built expression;
+   onClear removes it. Shared by the Full list and the History tables. */
+function showFilterMenu(anchor, { label, ops, current, onApply, onClear }){
+  const wasThis = openColMenuEl && openColMenuEl.__anchor === anchor;
   closeColMenu();
-  if (wasThis) return;                                  // click again to toggle closed
-  const numeric = !TEXT_FILTER_KEYS.has(key);
+  if (wasThis) return;                                  // click the same icon to toggle closed
   const menu = document.createElement("div");
-  menu.className = "colmenu"; menu.dataset.k = key;
-  const cur = (colFilters[key] || "").trim();
+  menu.className = "colmenu"; menu.__anchor = anchor;
   let html = `<div class="mtitle">Filter · ${escHtml(label)}</div>`;
-  if (cur) html += `<div class="op clear" data-act="clear">Clear filter <span class="cur">${escHtml(cur)}</span></div>`;
-  (numeric ? NUM_OPS : TEXT_OPS).forEach((o, i) => {
+  if (current) html += `<div class="op clear" data-act="clear">Clear filter <span class="cur">${escHtml(current)}</span></div>`;
+  ops.forEach(o => {
     const two = o.op === "between";
-    const ph = numeric ? (o.op === "contains" ? "text" : "e.g. 20, 1b, 5%") : "text";
+    const ph = o.op === "contains" || o.op === "!contains" ? "text" : "e.g. 20, 1b, 5%";
     html += `<div class="op" data-op="${o.op}">${o.label} <span class="car">▸</span>`
       + `<div class="flyout"><input class="fv fa" type="text" autocomplete="off" placeholder="${ph}">`
       + (two ? `<span class="dash">–</span><input class="fv fb" type="text" autocomplete="off" placeholder="${ph}">` : "")
@@ -1157,10 +1155,7 @@ function openColMenu(key, label, anchor){
     const a = wrap.querySelector(".fa").value, bEl = wrap.querySelector(".fb");
     const expr = buildFilterExpr(op, a, bEl ? bEl.value : "");
     if (!expr) return;
-    colFilters[key] = expr; saveColFilters();
-    if (activeTab === "full") applyFull();
-    anchor.classList.add("active");
-    closeColMenu();
+    onApply(expr); closeColMenu();
   };
   menu.querySelectorAll(".op[data-op]").forEach(row => {
     const op = row.dataset.op;
@@ -1169,13 +1164,19 @@ function openColMenu(key, label, anchor){
       if (e.key === "Enter") { e.preventDefault(); apply(op); } }));
   });
   const clr = menu.querySelector('[data-act="clear"]');
-  if (clr) clr.addEventListener("click", () => {
-    delete colFilters[key]; saveColFilters();
-    if (activeTab === "full") applyFull();
-    anchor.classList.remove("active"); closeColMenu();
-  });
+  if (clr) clr.addEventListener("click", () => { if (onClear) onClear(); closeColMenu(); });
   openColMenuEl = menu;
   setTimeout(() => document.addEventListener("click", onColMenuOutside, true), 0);
+}
+function openColMenu(key, label, anchor){
+  showFilterMenu(anchor, {
+    label, ops: TEXT_FILTER_KEYS.has(key) ? TEXT_OPS : NUM_OPS,
+    current: (colFilters[key] || "").trim(),
+    onApply: expr => { colFilters[key] = expr; saveColFilters();
+      if (activeTab === "full") applyFull(); anchor.classList.add("active"); },
+    onClear: () => { delete colFilters[key]; saveColFilters();
+      if (activeTab === "full") applyFull(); anchor.classList.remove("active"); },
+  });
 }
 function clearColFilters(){
   colFilters = {}; saveColFilters(); closeColMenu();
@@ -1222,18 +1223,20 @@ function attachStaticTableFilters(table){
   if (!table || !table.tHead || table.dataset.colf) return;
   const headRow = table.tHead.rows[0];
   const state = new Array(headRow.cells.length).fill("");
-  const frow = table.tHead.insertRow(-1); frow.className = "colfilters";
   [...headRow.cells].forEach((th, i) => {
-    const fth = document.createElement("th");
-    if (th.classList.contains("l")) fth.className = "l";
-    const inp = document.createElement("input"); inp.type = "text"; inp.className = "colf";
-    inp.placeholder = "filter…";
-    inp.title = "Filter this column. Text: matches contain. Numbers: > < >= <= = != , ranges like 10..20. Prefix ! to exclude.";
-    inp.addEventListener("input", () => {
-      state[i] = inp.value; inp.classList.toggle("active", inp.value.trim() !== "");
-      applyStaticTableFilters(table, state);
+    const label = th.textContent.trim();
+    const btn = document.createElement("button");
+    btn.type = "button"; btn.className = "colfilt-btn"; btn.textContent = "⧩";
+    btn.title = "Filter " + label; btn.draggable = false;
+    btn.addEventListener("click", e => {
+      e.stopPropagation();
+      showFilterMenu(btn, {
+        label, ops: ALL_OPS, current: (state[i] || "").trim(),
+        onApply: expr => { state[i] = expr; btn.classList.add("active"); applyStaticTableFilters(table, state); },
+        onClear: () => { state[i] = ""; btn.classList.remove("active"); applyStaticTableFilters(table, state); },
+      });
     });
-    fth.appendChild(inp); frow.appendChild(fth);
+    th.appendChild(document.createTextNode(" ")); th.appendChild(btn);
   });
   table.dataset.colf = "1";
   const tbody = table.tBodies[0];
