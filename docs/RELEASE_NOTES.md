@@ -1,5 +1,12 @@
 # Release notes
 
+## v0.75.0 — Filter the History tables too (2026-08-23)
+
+The **History** tab's tables — Upcoming scheduled jobs, Activity, and Searches — now have
+the same per-column filter row as the Full list. Type into a column to narrow it: text
+matches by contains, numbers take formulas (`>1`, `>=3`, `10..20`), and `!` excludes.
+Filters stay applied as the History view refreshes.
+
 ## v0.74.0 — Filter any column on the Full list (2026-08-23)
 
 The Full list now has a **filter row** under the headers, so you can narrow each column
