@@ -373,6 +373,7 @@ function rememberKey(k){
 // bottom bar trigger this; `statusSel` picks which status line reports progress.
 async function doSave(statusSel){
   const st=$(statusSel);
+  const btn=$("#save-keys");
   const typed=$("#apikey").value.trim();
   if(typed) rememberKey(typed);
   // Fall back to the key remembered in this browser when the field is blank, so a
@@ -383,14 +384,23 @@ async function doSave(statusSel){
       +"so it isn't pre-filled here even when it shows as configured. It's remembered in this browser after you enter it once.";
     return;
   }
+  // Live feedback: disable the button and show progress while the request is in
+  // flight, then refresh the per-provider Status chips from the save response.
+  const label=btn?btn.textContent:"";
+  if(btn){ btn.disabled=true; btn.textContent="Saving…"; }
   st.textContent="Saving…";
   try{ const r=await fetch("/api/settings?key="+encodeURIComponent(key),{method:"POST",
       headers:{"Content-Type":"application/json"}, body:JSON.stringify(collect())});
     const d=await r.json();
     if(!r.ok){ st.textContent="Error: "+(d.error||r.status)+(d.problems?" — "+d.problems.join("; "):""); }
-    else { $("#finnhub_key").value=""; $("#tiingo_key").value=""; $("#polygon_key").value=""; if(d.keys) renderKeys(d);
-      st.textContent="Saved. Live screens and the nightly run now use these settings."; }
+    else {
+      $("#finnhub_key").value=""; $("#tiingo_key").value=""; $("#polygon_key").value="";
+      if(d.keys) renderKeys(d);           // flip the Status chips to the just-saved state
+      const t=new Date().toLocaleTimeString();
+      st.textContent=`✓ Saved at ${t} — Status updated. Live screens and the nightly run now use these settings.`;
+    }
   }catch(e){ st.textContent="Save failed: "+e.message; }
+  finally{ if(btn){ btn.disabled=false; btn.textContent=label; } }
 }
 $("#save-keys").onclick=()=>doSave("#keys-status");
 load();
