@@ -120,6 +120,14 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
   th.dragover { box-shadow: inset 2px 0 0 var(--accent); }
   th.l, td.l { text-align: left; }
   th .arrow { opacity: .5; font-size: .7rem; }
+  /* per-column filter row under the headers */
+  tr.colfilters th { padding: 2px 4px 5px; cursor: default; text-transform: none; letter-spacing: 0; }
+  tr.colfilters input.colf { width: 100%; min-width: 54px; box-sizing: border-box;
+    font: inherit; font-size: .74rem; padding: 2px 5px; border: 1px solid var(--line);
+    border-radius: 5px; background: var(--bg, transparent); color: var(--ink, inherit); }
+  tr.colfilters input.colf:focus { outline: none; border-color: var(--accent); }
+  tr.colfilters input.colf.active { border-color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 12%, transparent); }
   tbody tr { cursor: pointer; }
   tbody tr:hover { background: color-mix(in srgb, var(--accent) 8%, transparent); }
   tbody tr.grouphdr { background: color-mix(in srgb, var(--accent) 10%, var(--panel)); font-weight: 600; }
@@ -422,6 +430,7 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
           <option value="">No grouping</option>
         </select>
         <label class="hint" style="display:flex;align-items:center;gap:.35rem;margin:0"><input type="checkbox" id="full-passing"> Passing only</label>
+        <button class="btn ghost" id="clear-colf" hidden title="Clear all per-column filters">⌫ Clear filters</button>
         <button class="btn ghost" id="refresh-full">↻ Refresh</button>
       </div>
       <div id="next-run" class="next-run hint" style="margin-top:.5rem"></div>
@@ -565,7 +574,7 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
 
       <div class="xscroll-top" id="xtop" hidden aria-hidden="true"><div id="xtop-inner"></div></div>
       <div class="tablewrap" id="tblwrap"><table id="tbl" hidden>
-        <thead><tr id="head"></tr></thead>
+        <thead><tr id="head"></tr><tr id="head-filters" class="colfilters"></tr></thead>
         <tbody></tbody>
       </table></div>
     </div>
@@ -1015,6 +1024,83 @@ const cellValue = (r, key) =>
 const fmtDate = s => { try { return s ? new Date(s).toLocaleDateString(undefined,
   {year:"numeric", month:"short", day:"numeric"}) : "—"; } catch(e){ return "—"; } };
 
+/* ---- per-column filters (value or formula) ----
+   Text columns match by substring; numeric columns accept comparison operators
+   (> < >= <= = !=), ranges (10..20 or 10-20), the suffixes k/m/b/t and %, and a
+   leading ! to negate. A bare value falls back to a substring match on the shown
+   cell (so "2" in P/E matches any P/E containing 2). Persisted in localStorage. */
+const TEXT_FILTER_KEYS = new Set(["ticker","strategy","sector","passed","last_analyzed","entry_zone"]);
+let colFilters = loadColFilters();
+function loadColFilters(){ try { const o = JSON.parse(localStorage.getItem("sc_colfilters")); return (o && typeof o === "object") ? o : {}; } catch(e){ return {}; } }
+function saveColFilters(){ try { localStorage.setItem("sc_colfilters", JSON.stringify(colFilters)); } catch(e){} }
+function activeColFilters(){
+  const shown = new Set(["ticker", ...selectedCols]);
+  return Object.entries(colFilters).filter(([k,v]) => shown.has(k) && String(v).trim() !== "");
+}
+function colText(r, key){
+  if (key === "ticker") return (r.ticker || "") + " " + (r.name || "");
+  if (key === "strategy") return stratLabel(r.strategy) || r.strategy || "";
+  if (key === "passed") return r.passed ? "passing pass yes" : "not passing fail no";
+  if (key === "sector") return r.sector || "";
+  if (key === "last_analyzed") return r.created_at ? fmtDate(r.created_at) : "never";
+  if (key === "entry_zone") { const z = entryZoneLite(r.metrics); return z ? `${fmt(z.low)}-${fmt(z.high)}` : ""; }
+  const v = cellValue(r, key);
+  return (v === null || v === undefined || v === "") ? "" : (fmt(v) + " " + String(v));
+}
+function parseNumTok(tok){
+  const m = String(tok).trim().match(/^(-?\d+(?:\.\d+)?)\s*([kmbt%]?)$/i);
+  if (!m) return null;
+  let n = parseFloat(m[1]); const s = (m[2] || "").toLowerCase();
+  if (s === "k") n *= 1e3; else if (s === "m") n *= 1e6; else if (s === "b") n *= 1e9; else if (s === "t") n *= 1e12;
+  return n;
+}
+function matchColFilter(r, key, raw){
+  const expr = String(raw || "").trim(); if (!expr) return true;
+  if (!TEXT_FILTER_KEYS.has(key)) {
+    const nv = num(cellValue(r, key));
+    const cmp = expr.match(/^(>=|<=|!=|==|=|>|<)\s*(.+)$/);
+    if (cmp) { const t = parseNumTok(cmp[2]);
+      if (t !== null) { if (nv === null) return false;
+        switch (cmp[1]) { case ">": return nv > t; case "<": return nv < t;
+          case ">=": return nv >= t; case "<=": return nv <= t;
+          case "!=": return nv !== t; default: return nv === t; } } }
+    const rng = expr.match(/^(-?\d+(?:\.\d+)?[kmbt%]?)\s*(?:\.\.|–|—|-)\s*(\d+(?:\.\d+)?[kmbt%]?)$/i);
+    if (rng) { const lo = parseNumTok(rng[1]), hi = parseNumTok(rng[2]);
+      if (lo !== null && hi !== null) { if (nv === null) return false;
+        return nv >= Math.min(lo,hi) && nv <= Math.max(lo,hi); } }
+  }
+  const text = colText(r, key).toLowerCase();
+  if (expr[0] === "!") return !text.includes(expr.slice(1).trim().toLowerCase());
+  return text.includes(expr.toLowerCase());
+}
+function renderColFilterRow(){
+  const row = $("#head-filters"); if (!row) return;
+  row.innerHTML = "";
+  const mk = (key) => {
+    const th = document.createElement("th");
+    if (key === "ticker" || key === "strategy") th.className = "l";
+    const inp = document.createElement("input");
+    inp.type = "text"; inp.className = "colf"; inp.dataset.k = key;
+    inp.value = colFilters[key] || "";
+    if (inp.value.trim()) inp.classList.add("active");
+    inp.placeholder = TEXT_FILTER_KEYS.has(key) ? "filter…" : "> < 10..20";
+    inp.title = "Filter this column. Text: matches contain. Numbers: > < >= <= = != , ranges like 10..20, suffixes k/m/b/t and %. Prefix ! to exclude.";
+    inp.addEventListener("input", () => {
+      colFilters[key] = inp.value; saveColFilters();
+      inp.classList.toggle("active", inp.value.trim() !== "");
+      if (activeTab === "full") applyFull();
+    });
+    inp.addEventListener("click", e => e.stopPropagation());
+    th.appendChild(inp); return th;
+  };
+  row.appendChild(mk("ticker"));
+  orderedCols().forEach(c => row.appendChild(mk(c.key)));
+}
+function clearColFilters(){
+  colFilters = {}; saveColFilters(); renderColFilterRow();
+  if (activeTab === "full") applyFull();
+}
+
 /* ---- columns menu ---- */
 function buildColsMenu() {
   const pop = $("#cols-pop"); pop.innerHTML = "";
@@ -1084,6 +1170,7 @@ function renderHead() {
       th.addEventListener("dragend", thDragEnd);
     }
   });
+  renderColFilterRow();
 }
 
 /* ---- drag-to-reorder columns (order persisted in sc_cols) ---- */
@@ -1389,7 +1476,8 @@ function fullStatus(shown) {
   const total = fullAll.length;
   if (!total) return "No stored results yet — run a job (Jobs tab) or wait for the nightly run.";
   const base = fullSource === "latest" ? "Latest scheduled report" : "All screened companies";
-  const filtered = !!fullIndexSet || !!($("#full-filter").value || "").trim() || $("#full-passing").checked;
+  const filtered = !!fullIndexSet || !!($("#full-filter").value || "").trim()
+    || $("#full-passing").checked || activeColFilters().length > 0;
   return filtered ? `${base} · showing ${shown} of ${total}` : `${base} · ${total} rows`;
 }
 function applyFull() {
@@ -1398,11 +1486,15 @@ function applyFull() {
   if (fullIndexSet) rws = rws.filter(r => fullIndexSet.has((r.ticker || "").toUpperCase()));
   if ($("#full-passing").checked) rws = rws.filter(r => r.passed);
   if (q) rws = rws.filter(r => ((r.ticker || "") + " " + (r.name || "")).toLowerCase().includes(q));
+  const cfs = activeColFilters();
+  if (cfs.length) rws = rws.filter(r => cfs.every(([k,v]) => matchColFilter(r, k, v)));
+  const clr = $("#clear-colf"); if (clr) clr.hidden = cfs.length === 0;
   tabRows.full = rws;
   if (activeTab === "full") { rows = rws; render(); setStatus("full", fullStatus(rws.length)); }
 }
 $("#full-filter").addEventListener("input", () => { if (activeTab === "full") applyFull(); });
 $("#full-passing").addEventListener("change", () => { if (activeTab === "full") applyFull(); });
+$("#clear-colf").addEventListener("click", clearColFilters);
 $("#full-index").addEventListener("change", e => { if (activeTab === "full") setIndexFilter(e.target.value); });
 $("#full-group").addEventListener("change", e => {
   groupBy = e.target.value; saveGroup(); collapsedGroups.clear();
