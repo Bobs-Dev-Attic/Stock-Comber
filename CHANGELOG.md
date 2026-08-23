@@ -4,6 +4,15 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.60.0] - 2026-08-23
+
+### Changed
+- **Settings → Save gives live status feedback.** Clicking **Save settings** now
+  disables the button and shows a **Saving…** state while the request is in flight,
+  then reports **✓ Saved at HH:MM:SS — Status updated** and refreshes the
+  per-provider **Status** chips from the save response (so a just-added key flips
+  from "not set" to "configured" immediately). The button re-enables when done.
+
 ## [0.59.0] - 2026-08-23
 
 ### Changed

@@ -1,5 +1,12 @@
 # Release notes
 
+## v0.60.0 — Settings save shows live status (2026-08-23)
+
+Clicking **Save settings** now gives immediate feedback: the button shows **Saving…**
+while it works, then **✓ Saved** with the time, and the **Status** chips next to each
+provider refresh right away — so a key you just added flips from "not set" to
+"configured" the moment the save lands.
+
 ## v0.59.0 — Settings saves without re-typing your key, one Save button (2026-08-23)
 
 Saving on the Settings page is smoother. Your **Export / API key** is write-only — it's
