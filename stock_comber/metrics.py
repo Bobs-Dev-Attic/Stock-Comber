@@ -214,7 +214,7 @@ METRIC_KEYS = [
     "earnings_growth_5y_pct", "revenue_growth_5y_pct",
     "roa_pct", "return_on_capital_pct", "earnings_yield_pct",
     "ncav_per_share", "earnings_cagr_5y_pct",
-    "avg_volume", "dollar_volume",
+    "market_cap", "avg_volume", "dollar_volume",
     # Latest reported quarter (10-Q) — fresher than the annual figures above.
     "q_revenue", "q_net_income", "q_eps", "q_current_ratio",
     # Trailing-twelve-month roll-forward (FY + current YTD − prior-year YTD).
@@ -283,4 +283,5 @@ def compute_metrics(company: Company) -> dict[str, Optional[float]]:
         "earnings_cagr_5y_pct": cagr_pct(company.annuals, 5, "net_income"),
         "avg_volume": average_volume(company),
         "dollar_volume": dollar_volume(company),
+        "market_cap": market_cap(price, latest),
     }

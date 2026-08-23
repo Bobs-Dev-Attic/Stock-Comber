@@ -1,5 +1,17 @@
 # Release notes
 
+## v0.56.0 — Market cap column + a single History activity timeline (2026-08-23)
+
+The **Full list** now has a **Market cap** column (on by default, right after Price) — share
+price × shares outstanding, in the usual B/M shorthand. Sort, group, filter and export on it
+like any other column; it's blank only when the price or share count isn't available.
+
+The **History** tab is simpler: "Queued & running" and "Past runs" were really two views of
+the same thing — a queued deep-dive just turns into a run when it finishes — so they're now one
+**Activity** timeline. Tickers still being deep-dived (or that failed) sit on top; finished
+screens — the nightly run, your saved jobs, and manual searches — flow below, newest first,
+each tagged with what it was (🌙 Nightly / 🧮 job / 🔍 Manual). Searches keep their own list.
+
 ## v0.55.0 — Remix the nightly pool + see upcoming scheduled jobs (2026-08-23)
 
 The **Scheduled report** dialog now matches how the nightly run actually works: every
