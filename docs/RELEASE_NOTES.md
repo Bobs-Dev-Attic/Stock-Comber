@@ -1,5 +1,16 @@
 # Release notes
 
+## v0.50.0 — Entry zone on the Full list (2026-08-23)
+
+The **value entry zone** now appears as a column on the Full list, so you can scan a reference entry
+range (low–high) across every screened company at once and sort or group by it. It's computed from
+each row's own figures — the Graham fair value, discounted by a margin of safety and nudged by the
+backtest edge — and is included when you export. It shows a dash when a company has no Graham fair
+value. This Full-list version is a quick estimate; the complete zone, which also weighs news sentiment
+and volume and shows exactly how each input moved the number, still lives in the per-company deep-dive.
+As always: a reference, not a price target or investment advice. If the column doesn't show up, enable
+it from the **Columns** menu (your saved column choices take precedence over the new default).
+
 ## v0.49.1 — Fix: grouping the Full list by Ticker (2026-08-23)
 
 Grouping the Full list by **Ticker** was still showing a blank table. The list keeps one row per
