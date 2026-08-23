@@ -18,7 +18,7 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
     --shadow:0 1px 3px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);}
   *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);
     font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-  .wrap{max-width:900px;margin:0 auto;padding:2rem 1.2rem 5rem}
+  .wrap{max-width:900px;margin:0 auto;padding:2rem 1.2rem 3rem}
   a{color:var(--accent)} h1{margin:0 0 .2rem;font-size:1.6rem} .sub{color:var(--muted);margin:0 0 1rem}
   .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);
     padding:1.1rem 1.2rem;margin-top:1.2rem}
@@ -51,16 +51,13 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
   .crit-row .rm{border:0;background:transparent;color:var(--bad);cursor:pointer;font-size:1.2rem}
   .hint{color:var(--muted);font-size:.85rem}
   code{background:var(--chip);padding:.1rem .35rem;border-radius:5px}
-  .bar{position:sticky;bottom:0;background:var(--panel);border-top:1px solid var(--line);
-    margin:1.2rem -1.2rem -5rem;padding:1rem 1.2rem;display:flex;gap:.6rem;align-items:center;flex-wrap:wrap}
   .f input,.f select{width:100%}
   @media (max-width:640px){
-    .wrap{padding:1.2rem .8rem 5rem}
+    .wrap{padding:1.2rem .8rem 3rem}
     h1{font-size:1.35rem}
     .card{padding:.9rem .85rem;border-radius:12px}
     .grid{grid-template-columns:1fr}
     .f[style*="max-width"]{max-width:none !important}
-    .bar{margin:1.2rem -.85rem -5rem;padding:.9rem .85rem}
   }
   .theme-fab{position:fixed;top:.7rem;right:.7rem;z-index:50;border:1px solid var(--line);background:var(--panel);color:var(--ink);width:2.2rem;height:2.2rem;border-radius:8px;cursor:pointer;font-size:1.1rem;line-height:1;box-shadow:var(--shadow)}
 </style>
@@ -102,7 +99,8 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
       </div>
     </div>
     <div class="row" style="margin-top:.8rem">
-      <button class="btn" id="save-keys">Save keys</button>
+      <button class="btn" id="save-keys">Save settings</button>
+      <button class="btn ghost" id="download">Download as YAML</button>
       <span class="status" id="keys-status"></span>
     </div>
     <p class="hint">Each provider key is stored in your database and is <b>write-only</b> here (never shown back).
@@ -112,7 +110,8 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
       powers news, sentiment &amp; enrichment. Saving any of them requires the <b>Export / API key</b>
       (<code>STOCK_COMBER_API_KEY</code>) above. <code>DATABASE_URL</code> and <code>STOCK_COMBER_API_KEY</code>
       can't be stored in the database — set those (and, if you prefer, the Finnhub key) as environment
-      variables in Vercel → Settings → Environment Variables (and as GitHub Actions secrets for the nightly job).</p>
+      variables in Vercel → Settings → Environment Variables (and as GitHub Actions secrets for the nightly job).
+      <b>Save settings</b> writes this whole page (keys, thresholds &amp; preferences) to your database.</p>
   </div>
 
   <div class="card" id="sec-strategies">
@@ -154,12 +153,6 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
     <div class="grid" id="api"></div>
   </div>
 
-  <div class="bar">
-    <button class="btn" id="save">Save to database</button>
-    <button class="btn ghost" id="download">Download as YAML</button>
-    <span class="status" id="status"></span>
-    <span class="hint" style="margin-left:auto">Saving uses the Export / API key set in <b>Keys &amp; status</b> above.</span>
-  </div>
 </div>
 
 <footer style="max-width:820px;margin:2rem auto 1rem;padding:1rem 1rem 0;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem;line-height:1.5">
@@ -347,7 +340,7 @@ function toYAML(o, ind=0){ const pad="  ".repeat(ind); let s="";
 }
 
 async function load(){
-  $("#status").textContent="Loading…";
+  $("#keys-status").textContent="Loading…";
   try{ const r=await fetch("/api/settings"); const d=await r.json();
     cfg=d.config||{}; renderKeys(d);
     renderStrategies(); renderFields("graham",GRAHAM); renderFields("buffett",BUFFETT);
@@ -357,18 +350,39 @@ async function load(){
     renderFields("analysis",ANALYSIS); renderFields("api",API);
     $("#crit-list").innerHTML=""; (get(cfg,"custom.criteria")||[]).forEach(c=>addCrit(c.metric,c.op,c.value));
     $("#custom_pass").value=get(cfg,"custom.pass_ratio")??"";
-    $("#apikey").value=sessionStorage.getItem("sc_key")||"";
-    $("#status").textContent = d.storage_enabled ? "Loaded." : "Loaded (no database — saving needs DATABASE_URL; you can still Download as YAML).";
-  }catch(e){ $("#status").textContent="Failed to load settings: "+e.message; }
+    $("#apikey").value=rememberedKey();
+    $("#keys-status").textContent = d.storage_enabled ? "Loaded." : "Loaded (no database — saving needs DATABASE_URL; you can still Download as YAML).";
+  }catch(e){ $("#keys-status").textContent="Failed to load settings: "+e.message; }
 }
 $("#add-crit").onclick=()=>addCrit();
 $("#download").onclick=()=>{ const y=toYAML(collect()); const b=new Blob([y],{type:"text/yaml"});
   const a=document.createElement("a"); a.href=URL.createObjectURL(b); a.download="stock-comber-settings.yaml"; a.click(); URL.revokeObjectURL(a.href); };
+// The Export / API key is write-only server-side (never sent back to the browser,
+// even when "configured"), so the field can't be pre-filled from the server. We
+// remember what you type in THIS browser instead, and reuse it when the field is
+// left blank — so Save keeps working across visits without re-typing the key.
+function rememberedKey(){
+  try{ return localStorage.getItem("sc_key") || sessionStorage.getItem("sc_key") || ""; }
+  catch(e){ try{ return sessionStorage.getItem("sc_key")||""; }catch(_){ return ""; } }
+}
+function rememberKey(k){
+  try{ localStorage.setItem("sc_key",k); }catch(e){}
+  try{ sessionStorage.setItem("sc_key",k); }catch(e){}
+}
 // Persist the whole form (thresholds + typed keys). Both the Keys-card and the
 // bottom bar trigger this; `statusSel` picks which status line reports progress.
 async function doSave(statusSel){
   const st=$(statusSel);
-  const key=$("#apikey").value.trim(); if(key) sessionStorage.setItem("sc_key",key);
+  const typed=$("#apikey").value.trim();
+  if(typed) rememberKey(typed);
+  // Fall back to the key remembered in this browser when the field is blank, so a
+  // blank-but-"configured" export key still saves (as long as it was entered once).
+  const key=typed || rememberedKey();
+  if(!key){
+    st.textContent="Enter your Export / API key (STOCK_COMBER_API_KEY) to save — it's write-only, "
+      +"so it isn't pre-filled here even when it shows as configured. It's remembered in this browser after you enter it once.";
+    return;
+  }
   st.textContent="Saving…";
   try{ const r=await fetch("/api/settings?key="+encodeURIComponent(key),{method:"POST",
       headers:{"Content-Type":"application/json"}, body:JSON.stringify(collect())});
@@ -378,7 +392,6 @@ async function doSave(statusSel){
       st.textContent="Saved. Live screens and the nightly run now use these settings."; }
   }catch(e){ st.textContent="Save failed: "+e.message; }
 }
-$("#save").onclick=()=>doSave("#status");
 $("#save-keys").onclick=()=>doSave("#keys-status");
 load();
 </script>

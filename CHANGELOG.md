@@ -4,6 +4,22 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.59.0] - 2026-08-23
+
+### Changed
+- **Settings save works without re-typing the Export / API key.** The key is
+  write-only server-side (never sent back, even when it shows "configured"), so the
+  field can't be pre-filled from the server. It's now remembered in the browser
+  (localStorage) after you enter it once, and **Save** falls back to that remembered
+  value when the field is left blank — so a blank-but-configured export key still
+  saves. When nothing is remembered yet, the status line explains what to enter
+  instead of showing a raw "invalid or missing API key" error.
+- **Consolidated the Settings save controls.** Removed the sticky bottom bar's
+  duplicate **Save to database** button (the Keys & status card's button already
+  saves the whole page); its **Download as YAML** action moved up into the Keys &
+  status card. The card's button is now labelled **Save settings** (it writes the
+  whole page — keys, thresholds & preferences — to the database).
+
 ## [0.58.0] - 2026-08-23
 
 ### Changed
