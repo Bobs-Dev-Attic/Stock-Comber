@@ -4,6 +4,16 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.75.0] - 2026-08-23
+
+### Added
+- **Per-column filter rows on the History tables.** The **Upcoming scheduled jobs**,
+  **Activity**, and **Searches** tables each get a filter row under their headers, using
+  the same value/formula syntax as the Full list (text substring; numeric `>`, `<`,
+  `>=`, `<=`, `=`, `!=`; ranges `10..20`; `!` to exclude) matched against each cell's
+  rendered text. A `MutationObserver` re-applies active filters when a table refreshes
+  its rows in place.
+
 ## [0.74.0] - 2026-08-23
 
 ### Added

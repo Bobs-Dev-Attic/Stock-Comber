@@ -1101,6 +1101,70 @@ function clearColFilters(){
   if (activeTab === "full") applyFull();
 }
 
+/* ---- generic per-column filters for static tables (History) ----
+   Same value/formula syntax as the Full list, but matched against each cell's
+   rendered text. A MutationObserver re-applies the active filters whenever the
+   table re-renders (History refreshes its tbody in place). */
+function tableCellNumber(text){
+  const m = String(text).replace(/[,$\s]/g, "").match(/-?\d+(?:\.\d+)?[kmbt%]?/i);
+  return m ? parseNumTok(m[0]) : null;
+}
+function matchCellText(text, raw){
+  const expr = String(raw || "").trim(); if (!expr) return true;
+  const cmp = expr.match(/^(>=|<=|!=|==|=|>|<)\s*(.+)$/);
+  const rng = expr.match(/^(-?\d+(?:\.\d+)?[kmbt%]?)\s*(?:\.\.|–|—|-)\s*(\d+(?:\.\d+)?[kmbt%]?)$/i);
+  if (cmp || rng) {
+    const nv = tableCellNumber(text);
+    if (nv === null) return false;
+    if (cmp) { const t = parseNumTok(cmp[2]); if (t !== null) {
+      switch (cmp[1]) { case ">": return nv > t; case "<": return nv < t;
+        case ">=": return nv >= t; case "<=": return nv <= t;
+        case "!=": return nv !== t; default: return nv === t; } } }
+    if (rng) { const lo = parseNumTok(rng[1]), hi = parseNumTok(rng[2]);
+      if (lo !== null && hi !== null) return nv >= Math.min(lo,hi) && nv <= Math.max(lo,hi); }
+  }
+  const t = String(text).toLowerCase();
+  if (expr[0] === "!") return !t.includes(expr.slice(1).trim().toLowerCase());
+  return t.includes(expr.toLowerCase());
+}
+function applyStaticTableFilters(table, state){
+  const tbody = table.tBodies[0]; if (!tbody) return;
+  const ncol = table.tHead.rows[0].cells.length;
+  const active = state.map((v,i) => [i,v]).filter(([i,v]) => v && String(v).trim() !== "");
+  for (const tr of tbody.rows) {
+    if (tr.cells.length < ncol) { tr.style.display = ""; continue; }  // spanning/empty rows always show
+    const show = active.every(([i,v]) => matchCellText(tr.cells[i] ? tr.cells[i].textContent : "", v));
+    tr.style.display = show ? "" : "none";
+  }
+}
+function attachStaticTableFilters(table){
+  if (!table || !table.tHead || table.dataset.colf) return;
+  const headRow = table.tHead.rows[0];
+  const state = new Array(headRow.cells.length).fill("");
+  const frow = table.tHead.insertRow(-1); frow.className = "colfilters";
+  [...headRow.cells].forEach((th, i) => {
+    const fth = document.createElement("th");
+    if (th.classList.contains("l")) fth.className = "l";
+    const inp = document.createElement("input"); inp.type = "text"; inp.className = "colf";
+    inp.placeholder = "filter…";
+    inp.title = "Filter this column. Text: matches contain. Numbers: > < >= <= = != , ranges like 10..20. Prefix ! to exclude.";
+    inp.addEventListener("input", () => {
+      state[i] = inp.value; inp.classList.toggle("active", inp.value.trim() !== "");
+      applyStaticTableFilters(table, state);
+    });
+    fth.appendChild(inp); frow.appendChild(fth);
+  });
+  table.dataset.colf = "1";
+  const tbody = table.tBodies[0];
+  if (tbody) new MutationObserver(() => applyStaticTableFilters(table, state)).observe(tbody, {childList:true});
+}
+function initHistoryFilters(){
+  ["h-upcoming","h-activity","h-searches"].forEach(id => {
+    const tb = document.getElementById(id), tbl = tb && tb.closest("table");
+    if (tbl) attachStaticTableFilters(tbl);
+  });
+}
+
 /* ---- columns menu ---- */
 function buildColsMenu() {
   const pop = $("#cols-pop"); pop.innerHTML = "";
@@ -2805,6 +2869,7 @@ $("#theme-toggle").onclick = cycleTheme;
 wireMenu("cols-menu"); wireMenu("export-menu"); wireMenu("strat-menu"); wireMenu("cstrat-menu"); wireMenu("tmpl-menu");
 buildColsMenu(); buildStratMenu(); buildGroupMenu(); renderHead();
 // Restore the last-viewed tab across refreshes (default to the Full-list landing).
+initHistoryFilters();   // add per-column filter rows to the History tables
 (function () {
   const TABS = ["full", "jobs", "history", "api"];
   let saved = "full";
