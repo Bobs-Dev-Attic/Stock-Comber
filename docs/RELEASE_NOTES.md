@@ -1,5 +1,13 @@
 # Release notes
 
+## v0.63.0 — Settings tells you when a save fails (2026-08-23)
+
+If **Save settings** doesn't go through, you'll now get a clear pop-up explaining why —
+a rejected Export / API key, a validation problem (with the field named), a server error,
+a missing key, or an unreachable server — instead of a small status message that's easy to
+miss. Successful saves work exactly as before (no pop-up; the status line and Status chips
+update). This should make it obvious what's blocking a save when one doesn't take.
+
 ## v0.62.0 — Settings: a Save button in Keys & status + an API-key generator (2026-08-23)
 
 **Keys & status** now has its own **Save settings** button, so you can save your provider keys
