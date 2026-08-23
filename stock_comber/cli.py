@@ -190,9 +190,14 @@ def cmd_screen(args) -> int:
     if cfg.get("storage", {}).get("persist_runs", True):
         if getattr(store, "enabled", False):
             try:
+                # Tag nightly runs as the scheduled report so the catch-up gate
+                # can tell them from manual analyses (see schedule.should_run_now).
+                is_scheduled = cfg.get("universe", {}).get("mode") == "nightly"
+                run_meta: dict = {"universe": len({r.ticker for r in results})}
+                if is_scheduled:
+                    run_meta["source"] = "schedule"
                 run_id = store.save_run(
-                    results, screener.last_companies,
-                    meta={"universe": len({r.ticker for r in results})},
+                    results, screener.last_companies, meta=run_meta,
                 )
                 print(f"Stored run #{run_id} in the database.")
             except Exception as exc:  # persistence must never fail the screen
@@ -262,8 +267,16 @@ def cmd_schedule_gate(args) -> int:
         print(f"schedule-gate: could not read settings ({exc}); using default",
               file=sys.stderr)
         stored = {}
+    # The last scheduled run de-duplicates catch-up: a slot fires only once even
+    # when the heartbeat that triggers it is (as GitHub often is) minutes late.
+    try:
+        last_run = store.last_scheduled_run_at()
+    except Exception as exc:
+        print(f"schedule-gate: could not read last run ({exc}); assuming none",
+              file=sys.stderr)
+        last_run = None
     now = datetime.datetime.now(datetime.timezone.utc)
-    run, reason = should_run_now(stored, now)
+    run, reason = should_run_now(stored, now, last_run)
     print(f"schedule-gate: run={str(run).lower()} — {reason}")
     out = os.environ.get("GITHUB_OUTPUT")
     if out:

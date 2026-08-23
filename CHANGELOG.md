@@ -4,6 +4,21 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.51.0] - 2026-08-23
+
+### Fixed
+- **Scheduled screen no longer silently skips its slot.** The gate required a GitHub Actions
+  heartbeat to land inside the exact minute of a scheduled slot, but GitHub throttles the `*/5`
+  cron hard (often firing only every 20–40 min), so it routinely missed the window and the run was
+  skipped — the workflow went green having done nothing, and no scheduled run had persisted for days.
+  `schedule.should_run_now` is now **catch-up**: it fires on the first heartbeat *at or after* a
+  scheduled slot and de-duplicates on the last scheduled run so a slot runs exactly once even when the
+  triggering heartbeat is late. Scheduled runs are tagged `meta.source="schedule"` and the gate reads
+  the last such run via new `storage.last_scheduled_run_at()` (so a manual analysis doesn't count as
+  the schedule having fired). `should_run_now(stored, now, last_run=None)` gains the `last_run` arg.
+
+[0.51.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.51.0
+
 ## [0.50.2] - 2026-08-23
 
 ### Fixed
