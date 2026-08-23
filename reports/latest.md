@@ -1,8 +1,8 @@
 # Stock-Comber screening report
 
-_Generated 2026-08-23 09:37 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-08-23 12:43 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **57** companies · **28** strategy matches passed.
+Screened **75** companies · **29** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
@@ -28,6 +28,7 @@ Screened **57** companies · **28** strategy matches passed.
 | PATH | UiPath, Inc. | piotroski | ✅ | 89% | 16.39 | 31.52 | 4.29 | 13.56 | 2.48 | 0.53 | 49M | -25.19 |
 | ALRM | ALARM.COM HOLDINGS, INC. | piotroski | ✅ | 78% | 57.51 | 23.38 | 4.00 | 15.52 | 1.92 | 1.47 | 335,892 | 26.34 |
 | HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 108 | 42.25 | 275 | 649 | 4.66 | 50.73 | 1M | -10.17 |
+| BFH-PA | BREAD FINANCIAL HOLDINGS, IN | lynch | ✅ | 75% | 25.27 | 2.32 | 0.36 | 15.57 | — | 5.81 | 4,597 | — |
 | MEDP | Medpace Holdings, Inc. | buffett | ✅ | 83% | 621 | 40.62 | 39.93 | 98.27 | 0.74 | 3.30 | 214,646 | 17.65 |
 | MEDP | Medpace Holdings, Inc. | piotroski | ✅ | 78% | 621 | 40.62 | 39.93 | 98.27 | 0.74 | 3.30 | 214,646 | 17.65 |
 | PCTY | PAYLOCITY HOLDING CORPORATIO | piotroski | ✅ | 89% | 153 | 31.17 | 6.88 | 22.08 | 1.09 | 3.00 | 376,135 | -12.76 |
@@ -55,6 +56,5 @@ Screened **57** companies · **28** strategy matches passed.
 | WING | WINGSTOP INC. | buffett | ▫️ | 67% | 115 | 18.59 | — | -23.65 | 3.26 | -1.94 | 1M | -33.47 |
 | WING | WINGSTOP INC. | piotroski | ▫️ | 67% | 115 | 18.59 | — | -23.65 | 3.26 | -1.94 | 1M | -33.47 |
 | WING | WINGSTOP INC. | greenblatt | ▫️ | 67% | 115 | 18.59 | — | -23.65 | 3.26 | -1.94 | 1M | -33.47 |
-| WING | WINGSTOP INC. | graham | ▫️ | 33% | 115 | 18.59 | — | -23.65 | 3.26 | -1.94 | 1M | -33.47 |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
