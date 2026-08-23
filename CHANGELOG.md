@@ -4,6 +4,27 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.61.0] - 2026-08-23
+
+### Changed
+- **Settings: strategy thresholds moved into per-strategy Edit dialogs.** The six
+  standalone threshold cards (Graham, Buffett, Piotroski, Greenblatt, Lynch,
+  Net-Net) plus Custom criteria are gone from the page; the **Strategies** section
+  is now a list — one row per strategy with an on/off toggle and an **✏️ Edit**
+  button that opens that strategy's thresholds in a dialog. The fields stay in the
+  DOM (moved in/out of the dialog), so **Save settings** still collects every value
+  across all strategies. Deep-links like `/settings.html#sec-graham` now open the
+  matching strategy dialog.
+- **Export / API key gets its own section.** Moved out of the Keys & status
+  provider rows into a dedicated **Export / API key** card that holds the key field,
+  its status chip, and the **Save settings** / **Download as YAML** buttons.
+
+### Fixed
+- **A rejected Export / API key no longer keeps silently failing.** On an
+  `invalid or missing API key` (HTTP 401) save, the page now clears the
+  remembered key and the field and prompts you to re-enter the correct
+  `STOCK_COMBER_API_KEY`, instead of reusing the stale wrong value on every retry.
+
 ## [0.60.0] - 2026-08-23
 
 ### Changed

@@ -52,6 +52,22 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
   .hint{color:var(--muted);font-size:.85rem}
   code{background:var(--chip);padding:.1rem .35rem;border-radius:5px}
   .f input,.f select{width:100%}
+  /* Strategies list — one row per strategy with an Edit button that opens a dialog */
+  #strategies{display:flex;flex-direction:column;gap:0}
+  .stratrow{display:flex;align-items:center;justify-content:space-between;gap:.6rem;padding:.5rem 0;border-bottom:1px solid var(--line)}
+  .stratrow:last-child{border-bottom:0}
+  .stratname{display:flex;align-items:center;gap:.5rem;font-weight:600}
+  .stratname input{width:auto}
+  .editbtn{font-size:.85rem;padding:.35rem .8rem;white-space:nowrap}
+  /* strategy-threshold dialog */
+  .overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);display:flex;align-items:flex-start;
+    justify-content:center;padding:5vh 1rem;z-index:70;overflow:auto}
+  .overlay[hidden]{display:none}
+  .modal{background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);
+    padding:1.1rem 1.2rem;max-width:640px;width:100%}
+  .modal-h{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:.7rem}
+  .modal-h h2{margin:0;font-size:1.15rem}
+  .modal .close{border:none;background:none;color:var(--ink);font-size:1.5rem;line-height:1;cursor:pointer}
   @media (max-width:640px){
     .wrap{padding:1.2rem .8rem 3rem}
     h1{font-size:1.35rem}
@@ -88,14 +104,27 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
         <input id="polygon_key" type="password" autocomplete="off" placeholder="leave blank to keep current">
       </div>
       <div class="keyrow">
-        <span class="kname">Export / API key</span>
-        <span id="st-export" class="pill off">✕ not set</span>
-        <input id="apikey" type="password" autocomplete="off" placeholder="STOCK_COMBER_API_KEY — required to save">
-      </div>
-      <div class="keyrow">
         <span class="kname">Database</span>
         <span id="st-database" class="pill off">✕ not set</span>
         <span class="hint">Set <code>DATABASE_URL</code> in Vercel (environment only)</span>
+      </div>
+    </div>
+    <p class="hint">Each provider key is stored in your database and is <b>write-only</b> here (never shown back).
+      <b>Polygon.io</b> enriches the nightly universe (sector, market cap &amp; volume — throttled to the free
+      tier's 5 calls/min; preferred over Finnhub for enrichment). <b>Tiingo</b> becomes the <b>primary</b>
+      price source when set (a licensed provider, ahead of the free Yahoo/Stooq fallbacks). <b>Finnhub</b>
+      powers news, sentiment &amp; enrichment. <code>DATABASE_URL</code> can't be stored in the database — set it as
+      an environment variable in Vercel → Settings → Environment Variables (and as a GitHub Actions secret for
+      the nightly job).</p>
+  </div>
+
+  <div class="card" id="sec-export">
+    <h2>Export / API key</h2>
+    <div class="keygrid">
+      <div class="keyrow">
+        <span class="kname">Export / API key</span>
+        <span id="st-export" class="pill off">✕ not set</span>
+        <input id="apikey" type="password" autocomplete="off" placeholder="STOCK_COMBER_API_KEY — required to save">
       </div>
     </div>
     <div class="row" style="margin-top:.8rem">
@@ -103,40 +132,38 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
       <button class="btn ghost" id="download">Download as YAML</button>
       <span class="status" id="keys-status"></span>
     </div>
-    <p class="hint">Each provider key is stored in your database and is <b>write-only</b> here (never shown back).
-      <b>Polygon.io</b> enriches the nightly universe (sector, market cap &amp; volume — throttled to the free
-      tier's 5 calls/min; preferred over Finnhub for enrichment). <b>Tiingo</b> becomes the <b>primary</b>
-      price source when set (a licensed provider, ahead of the free Yahoo/Stooq fallbacks). <b>Finnhub</b>
-      powers news, sentiment &amp; enrichment. Saving any of them requires the <b>Export / API key</b>
-      (<code>STOCK_COMBER_API_KEY</code>) above. <code>DATABASE_URL</code> and <code>STOCK_COMBER_API_KEY</code>
-      can't be stored in the database — set those (and, if you prefer, the Finnhub key) as environment
-      variables in Vercel → Settings → Environment Variables (and as GitHub Actions secrets for the nightly job).
-      <b>Save settings</b> writes this whole page (keys, thresholds &amp; preferences) to your database.</p>
+    <p class="hint">The <b>Export / API key</b> (<code>STOCK_COMBER_API_KEY</code>) authorizes writes and CSV/JSON
+      exports. It's <b>write-only</b> (never shown back), so enter the value you set in Vercel → Settings →
+      Environment Variables; it's then remembered in this browser. <b>Save settings</b> writes this whole page
+      (keys, thresholds &amp; preferences) to your database — <code>STOCK_COMBER_API_KEY</code> itself is env-only.</p>
   </div>
 
   <div class="card" id="sec-strategies">
     <h2>Strategies</h2>
-    <div class="row" id="strategies"></div>
+    <p class="hint" style="margin-top:0">Toggle a strategy on or off for screening; click <b>Edit</b> to tune its thresholds.</p>
+    <div id="strategies"></div>
   </div>
 
-  <div class="card" id="sec-graham"><h2>Graham thresholds</h2><div class="grid" id="graham"></div></div>
-  <div class="card" id="sec-buffett"><h2>Buffett thresholds</h2><div class="grid" id="buffett"></div></div>
-  <div class="card" id="sec-piotroski"><h2>Piotroski F-Score</h2><div class="grid" id="piotroski"></div></div>
-  <div class="card" id="sec-greenblatt"><h2>Greenblatt Magic Formula</h2><div class="grid" id="greenblatt"></div></div>
-  <div class="card" id="sec-lynch"><h2>Lynch (GARP)</h2><div class="grid" id="lynch"></div></div>
-  <div class="card" id="sec-netnet"><h2>Graham Net-Net (NCAV)</h2><div class="grid" id="netnet"></div></div>
+  <!-- Per-strategy field grids live here (hidden) and are moved into the Edit
+       dialog on demand; they stay in the DOM so Save collects every value. -->
+  <div id="strat-holder" hidden>
+    <div class="grid" id="graham"></div>
+    <div class="grid" id="buffett"></div>
+    <div class="grid" id="piotroski"></div>
+    <div class="grid" id="greenblatt"></div>
+    <div class="grid" id="lynch"></div>
+    <div class="grid" id="netnet"></div>
+    <div id="custombody">
+      <div class="hint">Each rule is <code>metric op value</code>; runs as the “custom” strategy.</div>
+      <div id="crit-list"></div>
+      <div class="row"><button class="btn ghost" id="add-crit">+ Add criterion</button>
+        <div class="f" style="max-width:160px"><label>Pass ratio</label><input id="custom_pass" type="number" step="any"></div></div>
+    </div>
+  </div>
 
   <div class="card">
     <h2>Nightly “hidden gems” universe</h2>
     <div class="grid" id="universe"></div>
-  </div>
-
-  <div class="card" id="sec-custom">
-    <h2>Custom criteria</h2>
-    <div class="hint">Each rule is <code>metric op value</code>; runs as the “custom” strategy.</div>
-    <div id="crit-list"></div>
-    <div class="row"><button class="btn ghost" id="add-crit">+ Add criterion</button>
-      <div class="f" style="max-width:160px"><label>Pass ratio</label><input id="custom_pass" type="number" step="any"></div></div>
   </div>
 
   <div class="card"><h2>Output</h2><div class="grid" id="output"></div></div>
@@ -153,6 +180,21 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
     <div class="grid" id="api"></div>
   </div>
 
+</div>
+
+<!-- Strategy threshold editor dialog -->
+<div id="strat-overlay" class="overlay" role="dialog" aria-modal="true" aria-labelledby="strat-dlg-title" hidden>
+  <div class="modal">
+    <div class="modal-h">
+      <h2 id="strat-dlg-title">Edit strategy</h2>
+      <button class="close" id="strat-close" type="button" aria-label="Close">×</button>
+    </div>
+    <div id="strat-dlg-body"></div>
+    <div class="row" style="margin-top:1rem">
+      <button class="btn" id="strat-dlg-done" type="button">Done</button>
+      <span class="hint">Changes apply when you <b>Save settings</b>.</span>
+    </div>
+  </div>
 </div>
 
 <footer style="max-width:820px;margin:2rem auto 1rem;padding:1rem 1rem 0;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem;line-height:1.5">
@@ -259,15 +301,44 @@ function fieldEl(path, label, type, opts) {
 function renderFields(container, schema){ const c=$("#"+container); c.innerHTML="";
   schema.forEach(([p,l,t,o])=>c.appendChild(fieldEl(p,l,t,o))); }
 
-// strategies
+// strategies — a list with per-strategy Edit buttons that open a threshold dialog
+const STRAT_META={ graham:"Graham (defensive)", buffett:"Buffett (quality)", piotroski:"Piotroski F-Score",
+  greenblatt:"Greenblatt Magic Formula", lynch:"Lynch (GARP)", netnet:"Graham Net-Net (NCAV)", custom:"Custom criteria" };
+// Which hidden field-grid each strategy's Edit dialog shows.
+const STRAT_BODY={ graham:"graham", buffett:"buffett", piotroski:"piotroski", greenblatt:"greenblatt",
+  lynch:"lynch", netnet:"netnet", custom:"custombody" };
 function renderStrategies(){ const c=$("#strategies"); c.innerHTML="";
   const cur=new Set(get(cfg,"strategies")||[]);
-  ["graham","buffett","piotroski","greenblatt","lynch","netnet","custom"].forEach(s=>{
-    const w=document.createElement("label"); w.className="pill";
+  Object.keys(STRAT_META).forEach(s=>{
+    const row=document.createElement("div"); row.className="stratrow";
+    const lab=document.createElement("label"); lab.className="stratname";
     const cb=document.createElement("input"); cb.type="checkbox"; cb.checked=cur.has(s); cb.dataset.strat=s;
-    cb.style.marginRight=".4rem"; w.append(cb, document.createTextNode(s)); c.appendChild(w);
+    lab.append(cb, document.createTextNode(STRAT_META[s]));
+    const edit=document.createElement("button"); edit.type="button"; edit.className="btn ghost editbtn";
+    edit.textContent="✏️ Edit"; edit.title="Edit "+STRAT_META[s]+(s==="custom"?" criteria":" thresholds");
+    edit.onclick=()=>openStrat(s);
+    row.append(lab, edit); c.appendChild(row);
   });
 }
+// Move the strategy's hidden field-grid into the dialog (and back on close), so
+// every field stays in the DOM for collect() regardless of which dialog is open.
+let openStratKey=null;
+function openStrat(s){
+  closeStrat();                                   // return any open grid to the holder first
+  const node=$("#"+STRAT_BODY[s]); if(!node) return;
+  $("#strat-dlg-title").textContent=STRAT_META[s]+(s==="custom"?" — criteria":" — thresholds");
+  $("#strat-dlg-body").appendChild(node);
+  openStratKey=s; $("#strat-overlay").hidden=false;
+  const cl=$("#strat-close"); if(cl) cl.focus();
+}
+function closeStrat(){
+  if(openStratKey){ const node=$("#"+STRAT_BODY[openStratKey]); if(node) $("#strat-holder").appendChild(node); openStratKey=null; }
+  $("#strat-overlay").hidden=true;
+}
+$("#strat-close").onclick=closeStrat;
+$("#strat-dlg-done").onclick=closeStrat;
+$("#strat-overlay").addEventListener("click",e=>{ if(e.target.id==="strat-overlay") closeStrat(); });
+document.addEventListener("keydown",e=>{ if(e.key==="Escape" && !$("#strat-overlay").hidden) closeStrat(); });
 // custom criteria
 const METRICS=["pe_ratio","pb_ratio","roe_pct","net_margin_pct","current_ratio","debt_to_equity",
   "long_term_debt_to_equity","graham_number","free_cash_flow","eps","book_value_per_share","revenue",
@@ -352,6 +423,10 @@ async function load(){
     $("#custom_pass").value=get(cfg,"custom.pass_ratio")??"";
     $("#apikey").value=rememberedKey();
     $("#keys-status").textContent = d.storage_enabled ? "Loaded." : "Loaded (no database — saving needs DATABASE_URL; you can still Download as YAML).";
+    // Deep-link: /settings.html#sec-<strategy> opens that strategy's Edit dialog
+    // (the dashboard links here to "fine-tune thresholds").
+    const h=(location.hash||"").replace(/^#sec-/,"");
+    if(h && STRAT_META[h]) openStrat(h);
   }catch(e){ $("#keys-status").textContent="Failed to load settings: "+e.message; }
 }
 $("#add-crit").onclick=()=>addCrit();
@@ -392,7 +467,19 @@ async function doSave(statusSel){
   try{ const r=await fetch("/api/settings?key="+encodeURIComponent(key),{method:"POST",
       headers:{"Content-Type":"application/json"}, body:JSON.stringify(collect())});
     const d=await r.json();
-    if(!r.ok){ st.textContent="Error: "+(d.error||r.status)+(d.problems?" — "+d.problems.join("; "):""); }
+    if(!r.ok){
+      if(r.status===401){
+        // The Export/API key was rejected — clear the (wrong) remembered key so a
+        // stale value can't keep silently failing, and prompt for a fresh one.
+        try{ localStorage.removeItem("sc_key"); }catch(e){}
+        try{ sessionStorage.removeItem("sc_key"); }catch(e){}
+        $("#apikey").value="";
+        st.textContent="That Export / API key was rejected — I've cleared the saved key. Re-enter your "
+          +"STOCK_COMBER_API_KEY (from Vercel → Environment Variables) and Save again.";
+      } else {
+        st.textContent="Error: "+(d.error||r.status)+(d.problems?" — "+d.problems.join("; "):"");
+      }
+    }
     else {
       $("#finnhub_key").value=""; $("#tiingo_key").value=""; $("#polygon_key").value="";
       if(d.keys) renderKeys(d);           // flip the Status chips to the just-saved state
