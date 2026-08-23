@@ -1,5 +1,18 @@
 # Release notes
 
+## v0.59.0 — Settings saves without re-typing your key, one Save button (2026-08-23)
+
+Saving on the Settings page is smoother. Your **Export / API key** is write-only — it's
+never shown back to the browser, even when it reads "configured" — so the field can't be
+pre-filled. Now it's **remembered in your browser** after you enter it once, and **Save**
+reuses that remembered key when the field is blank. So once you've entered it, saving keeps
+working without re-typing; if nothing's remembered yet, the page tells you what to enter
+instead of a cryptic error.
+
+The save controls are consolidated too: the duplicate **Save to database** button at the
+bottom is gone (the **Save settings** button in *Keys & status* already saves the whole
+page), and **Download as YAML** moved up next to it.
+
 ## v0.58.0 — Settings' Keys & status, tidied up (2026-08-23)
 
 The **Keys & status** section on Settings is clearer: each provider — Finnhub, Tiingo,
