@@ -214,6 +214,18 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
   </div>
 </div>
 
+<!-- Save-error dialog -->
+<div id="err-overlay" class="overlay" role="alertdialog" aria-modal="true" aria-labelledby="err-title" hidden>
+  <div class="modal" style="max-width:520px">
+    <div class="modal-h">
+      <h2 id="err-title">⚠️ Couldn't save settings</h2>
+      <button class="close" id="err-close" type="button" aria-label="Close">×</button>
+    </div>
+    <p id="err-body" style="margin:.2rem 0 0;white-space:pre-wrap;line-height:1.5"></p>
+    <div class="row" style="margin-top:1rem"><button class="btn" id="err-ok" type="button">OK</button></div>
+  </div>
+</div>
+
 <footer style="max-width:820px;margin:2rem auto 1rem;padding:1rem 1rem 0;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem;line-height:1.5">
   ⚠️ <strong style="color:var(--ink)">Educational tool only — not investment advice.</strong>
   Settings tune how the screener scores companies; they don't constitute a recommendation.
@@ -464,6 +476,18 @@ function rememberKey(k){
 // Persist the whole form (thresholds + typed keys). Both the Keys & status and
 // Export / API key cards have a Save button; `statusSel`/`btnSel` pick which
 // status line and button report progress for the one that was clicked.
+// --- save-error dialog ---
+function showError(title, msg){
+  $("#err-title").textContent=title||"⚠️ Couldn't save settings";
+  $("#err-body").textContent=msg||"An unknown error occurred.";
+  $("#err-overlay").hidden=false;
+  const ok=$("#err-ok"); if(ok) ok.focus();
+}
+function closeError(){ $("#err-overlay").hidden=true; }
+$("#err-close").onclick=closeError; $("#err-ok").onclick=closeError;
+$("#err-overlay").addEventListener("click",e=>{ if(e.target.id==="err-overlay") closeError(); });
+document.addEventListener("keydown",e=>{ if(e.key==="Escape" && !$("#err-overlay").hidden) closeError(); });
+
 async function doSave(statusSel, btnSel){
   const st=$(statusSel);
   const btn=btnSel?$(btnSel):null;
@@ -474,8 +498,9 @@ async function doSave(statusSel, btnSel){
   // blank-but-"configured" export key still saves (as long as it was entered once).
   const key=typed || rememberedKey();
   if(!key){
-    st.textContent="Enter your Export / API key (STOCK_COMBER_API_KEY) to save — it's write-only, "
-      +"so it isn't pre-filled here even when it shows as configured. It's remembered in this browser after you enter it once.";
+    const m="Enter your Export / API key (STOCK_COMBER_API_KEY) to save. It's write-only, so it isn't "
+      +"pre-filled here even when it shows as configured — it's remembered in this browser after you enter it once.";
+    st.textContent=m; showError("⚠️ Export / API key required", m);
     return;
   }
   // Live feedback: disable every Save button and show progress on the clicked one
@@ -483,9 +508,12 @@ async function doSave(statusSel, btnSel){
   const label=btn?btn.textContent:"";
   saveBtns.forEach(b=>b.disabled=true); if(btn) btn.textContent="Saving…";
   st.textContent="Saving…";
-  try{ const r=await fetch("/api/settings?key="+encodeURIComponent(key),{method:"POST",
+  try{
+    const r=await fetch("/api/settings?key="+encodeURIComponent(key),{method:"POST",
       headers:{"Content-Type":"application/json"}, body:JSON.stringify(collect())});
-    const d=await r.json();
+    // Parse defensively — an error response may not be JSON (e.g. an HTML 5xx page).
+    let d={}; const raw=await r.text();
+    try{ d=raw?JSON.parse(raw):{}; }catch(_){ d={error:(raw||"").slice(0,300)}; }
     if(!r.ok){
       if(r.status===401){
         // The Export/API key was rejected — clear the (wrong) remembered key so a
@@ -493,10 +521,13 @@ async function doSave(statusSel, btnSel){
         try{ localStorage.removeItem("sc_key"); }catch(e){}
         try{ sessionStorage.removeItem("sc_key"); }catch(e){}
         $("#apikey").value="";
-        st.textContent="That Export / API key was rejected — I've cleared the saved key. Re-enter your "
-          +"STOCK_COMBER_API_KEY (from Vercel → Environment Variables) and Save again.";
+        const m="That Export / API key was rejected. I've cleared the saved key — re-enter your "
+          +"STOCK_COMBER_API_KEY (the value set in Vercel → Environment Variables) and Save again.";
+        st.textContent=m; showError("⚠️ API key rejected (HTTP 401)", m);
       } else {
-        st.textContent="Error: "+(d.error||r.status)+(d.problems?" — "+d.problems.join("; "):"");
+        const detail=(d.error||("HTTP "+r.status))+(d.problems?"\n\n• "+d.problems.join("\n• "):"");
+        st.textContent="Error: "+detail.replace(/\n+/g," ");
+        showError("⚠️ Couldn't save settings", detail);
       }
     }
     else {
@@ -505,7 +536,10 @@ async function doSave(statusSel, btnSel){
       const t=new Date().toLocaleTimeString();
       st.textContent=`✓ Saved at ${t} — Status updated. Live screens and the nightly run now use these settings.`;
     }
-  }catch(e){ st.textContent="Save failed: "+e.message; }
+  }catch(e){
+    const m="Couldn't reach the server: "+e.message+". Check your connection and that the site is deployed, then try again.";
+    st.textContent="Save failed: "+e.message; showError("⚠️ Save failed", m);
+  }
   finally{ saveBtns.forEach(b=>b.disabled=false); if(btn) btn.textContent=label; }
 }
 $("#save-keys").onclick=()=>doSave("#keys-status","#save-keys");

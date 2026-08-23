@@ -4,6 +4,21 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.63.0] - 2026-08-23
+
+### Added
+- **Save-error dialog on Settings.** Any failed **Save settings** now raises a
+  prominent modal explaining what went wrong — a rejected Export / API key
+  (HTTP 401), validation problems (with the offending fields listed), a server
+  error, a missing key, or an unreachable server — instead of only a small status
+  line that's easy to miss. Successful saves are unchanged (no dialog; the status
+  line and Status chips update).
+
+### Fixed
+- **Non-JSON error responses no longer surface as a confusing parse error.** The
+  save handler now reads the response defensively (falling back to text when it
+  isn't JSON), so an HTML 5xx page shows its real status/body in the error dialog.
+
 ## [0.62.0] - 2026-08-23
 
 ### Added
