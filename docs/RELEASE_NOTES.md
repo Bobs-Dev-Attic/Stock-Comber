@@ -1,5 +1,11 @@
 # Release notes
 
+## v0.66.0 — Scheduled-report dialog looks tidier (2026-08-23)
+
+Small polish on the **Scheduled report** dialog: **Enabled** is now a pill toggle switch, and
+**Frequency, Every, Time,** and **Days** sit side by side in two columns — which fold down to a
+single column on phones.
+
 ## v0.65.0 — Nightly universe now lives in the Scheduled-report Configure dialog (2026-08-23)
 
 The **Nightly "hidden gems" universe** settings — the candidate pool and gem profile (count,
