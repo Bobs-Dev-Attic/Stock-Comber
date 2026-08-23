@@ -260,6 +260,22 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
   .dlg-l { display: block; font-weight: 600; font-size: .9rem; margin: .9rem 0 .35rem; }
   .dlg-acts { display: flex; gap: .5rem; flex-wrap: wrap; margin-top: 1.1rem; }
   .next-run { color: var(--muted); }
+  /* Scheduled-report dialog: pill toggle + responsive 2-column field grid */
+  .switch-l { display: flex; align-items: center; gap: .55rem; margin: .3rem 0 .2rem; cursor: pointer; }
+  .switch { position: relative; display: inline-block; width: 42px; height: 24px; flex: none; }
+  .switch input { position: absolute; opacity: 0; width: 0; height: 0; }
+  .switch .knob { position: absolute; inset: 0; background: var(--line); border-radius: 999px; transition: background .2s; }
+  .switch .knob::before { content: ""; position: absolute; height: 18px; width: 18px; left: 3px; top: 3px;
+    background: #fff; border-radius: 50%; transition: transform .2s; box-shadow: 0 1px 2px rgba(0,0,0,.3); }
+  .switch input:checked + .knob { background: var(--accent); }
+  .switch input:checked + .knob::before { transform: translateX(18px); }
+  .switch input:focus-visible + .knob { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .sched-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem 1rem; margin: .2rem 0 .3rem; }
+  .sched-grid .sf { display: flex; flex-direction: column; gap: .2rem; min-width: 0; }
+  .sched-grid .sf[hidden] { display: none; }   /* let the hidden attr win over display:flex */
+  .sched-grid .sf .dlg-l { margin: 0; }
+  .sched-grid .sf select, .sched-grid .sf input { width: 100%; }
+  @media (max-width: 520px) { .sched-grid { grid-template-columns: 1fr; } }
   /* Nightly universe editor inside the Scheduled-report dialog */
   .uni-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); gap: .5rem; margin: .2rem 0 .3rem; }
   .uni-f { display: flex; flex-direction: column; gap: .2rem; min-width: 0; }
@@ -585,32 +601,42 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
         <b>seeded stratified-random</b> set from the <b>whole market</b> — spread across sectors,
         market-cap sizes and volume sizes — so a different, well-balanced pool is screened every run.
         Sizes come from Polygon.io or Finnhub enrichment when a key is set (Settings → API keys).</div>
-      <label class="dlg-l" style="display:flex;align-items:center;gap:.5rem;font-weight:600"><input type="checkbox" id="sched-enabled"> Enabled</label>
-      <label class="dlg-l">Frequency</label>
-      <select id="sched-freq">
-        <option value="daily">Once a day</option>
-        <option value="interval">Every N hours</option>
-      </select>
-      <label class="dlg-l" id="sched-interval-l" hidden>Every</label>
-      <select id="sched-interval" hidden>
-        <option value="1">1 hour</option>
-        <option value="2">2 hours</option>
-        <option value="3">3 hours</option>
-        <option value="4" selected>4 hours</option>
-        <option value="6">6 hours</option>
-        <option value="8">8 hours</option>
-        <option value="12">12 hours</option>
-      </select>
-      <label class="dlg-l" id="sched-time-l">Time (UTC)</label>
-      <input id="sched-time" type="time" step="300" value="06:30" title="5-minute steps — GitHub's finest schedule resolution">
-      <div class="hint" id="sched-min-hint" hidden style="margin:.1rem 0 0">Runs at this many minutes past every Nth hour (the hour part is ignored in interval mode).</div>
-      <label class="dlg-l">Days</label>
-      <select id="sched-days">
-        <option value="1-5">Weekdays</option>
-        <option value="*">Every day</option>
-        <option value="0,6">Weekends</option>
-        <option value="1">Mondays</option>
-      </select>
+      <label class="switch-l"><span class="switch"><input type="checkbox" id="sched-enabled"><span class="knob"></span></span> <b>Enabled</b></label>
+      <div class="sched-grid">
+        <div class="sf">
+          <label class="dlg-l">Frequency</label>
+          <select id="sched-freq">
+            <option value="daily">Once a day</option>
+            <option value="interval">Every N hours</option>
+          </select>
+        </div>
+        <div class="sf" id="sf-interval" hidden>
+          <label class="dlg-l" id="sched-interval-l">Every</label>
+          <select id="sched-interval">
+            <option value="1">1 hour</option>
+            <option value="2">2 hours</option>
+            <option value="3">3 hours</option>
+            <option value="4" selected>4 hours</option>
+            <option value="6">6 hours</option>
+            <option value="8">8 hours</option>
+            <option value="12">12 hours</option>
+          </select>
+        </div>
+        <div class="sf">
+          <label class="dlg-l" id="sched-time-l">Time (UTC)</label>
+          <input id="sched-time" type="time" step="300" value="06:30" title="5-minute steps — GitHub's finest schedule resolution">
+          <div class="hint" id="sched-min-hint" hidden style="margin:.1rem 0 0">Minutes past every Nth hour (the hour part is ignored in interval mode).</div>
+        </div>
+        <div class="sf">
+          <label class="dlg-l">Days</label>
+          <select id="sched-days">
+            <option value="1-5">Weekdays</option>
+            <option value="*">Every day</option>
+            <option value="0,6">Weekends</option>
+            <option value="1">Mondays</option>
+          </select>
+        </div>
+      </div>
       <label class="dlg-l">Strategies &amp; thresholds</label>
       <div id="sched-strats" class="strat-chips"></div>
       <div class="hint" style="margin:.3rem 0 .2rem">These run each night. Click one to fine-tune its thresholds (e.g. Buffett's min ROE, Graham's max P/E), or <a href="/settings.html">edit all in Settings ↗</a>.</div>
@@ -1732,8 +1758,7 @@ function formToCron(mode, time, interval, days) {
 // Show the interval picker (and the minute-only hint) only in interval mode.
 function syncSchedFreq() {
   const interval = $("#sched-freq").value === "interval";
-  $("#sched-interval").hidden = !interval;
-  $("#sched-interval-l").hidden = !interval;
+  $("#sf-interval").hidden = !interval;            // show/hide the whole "Every" cell
   $("#sched-min-hint").hidden = !interval;
   $("#sched-time-l").textContent = interval ? "Minute past the hour (UTC)" : "Time (UTC)";
   renderNextRuns();
