@@ -503,7 +503,7 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
         <div class="api-grp">Read (public)</div>
         <div class="api-ep"><span class="api-m get">GET</span><div><code class="api-path">/api/latest</code><div class="api-d">The latest scheduled “hidden gems” report (JSON).</div></div></div>
         <div class="api-ep"><span class="api-m get">GET</span><div><code class="api-path">/api/screen?tickers=AAPL,MSFT&amp;strategy=graham&amp;custom=[…]</code><div class="api-d">Run a live screen over the given tickers. <code>strategy</code> repeatable; <code>custom</code> is a JSON array of <code>{metric,op,value}</code> rules.</div></div></div>
-        <div class="api-ep"><span class="api-m get">GET</span><div><code class="api-path">/api/analyze?ticker=AAPL</code><div class="api-d">Full deep-dive for one ticker — all six lenses, composite scores, news &amp; sentiment. Stores a run when a database is configured.</div></div></div>
+        <div class="api-ep"><span class="api-m get">GET</span><div><code class="api-path">/api/analyze?ticker=AAPL</code><div class="api-d">Full deep-dive for one ticker — all six lenses, composite scores, news &amp; sentiment, and an illustrative value entry zone. Stores a run when a database is configured.</div></div></div>
         <div class="api-ep"><span class="api-m get">GET</span><div><code class="api-path">/api/runs?limit=50</code> · <code class="api-path">/api/runs?results=all</code> · <code class="api-path">/api/runs?audit=1</code><div class="api-d">Run &amp; search history; <code>results=all</code> returns every company across all runs, deduped to its latest result; <code>audit=1</code> returns the API access log (optionally filter with <code>&amp;endpoint=screen</code>).</div></div></div>
         <div class="api-ep"><span class="api-m get">GET</span><div><code class="api-path">/api/universe?index=sp500&amp;sector=Health%20Care&amp;limit=10</code><div class="api-d">Index templates (Dow / Nasdaq-100 / S&amp;P 500) and universe slices.</div></div></div>
         <div class="api-ep"><span class="api-m get">GET</span><div><code class="api-path">/api/tickers?q=app&amp;limit=8</code><div class="api-d">Ticker search / autocomplete.</div></div></div>
@@ -2131,6 +2131,42 @@ function backtestHtml(bt) {
     + `</tr></thead><tbody>${body}</tbody></table></div>`
     + `<div class="hint" style="margin-top:.3rem">“Edge” = average next-year return after a PASS minus after a fail (SEC fundamentals + Yahoo year-end prices; educational, not advice). ${link}</div>`;
 }
+// Illustrative "value entry zone" — a transparent margin-of-safety reference
+// (fair value discounted, nudged by backtest edge / sentiment / volume). Not advice.
+function entryZoneHtml(z) {
+  if (!z) return "";
+  if (!z.available) {
+    return `<div class="sec-h">Value entry zone</div>`
+      + `<div class="hint">${escHtml(z.reason || "Not enough data to compute an entry zone.")} `
+      + `<span style="opacity:.8">${escHtml(z.disclaimer || "")}</span></div>`;
+  }
+  const money = v => (v == null) ? "—" : "$" + (+v).toFixed(2);
+  const vs = z.vs_price;
+  const vsTxt = vs === "below" ? `Currently ${money(z.price)} — already below the zone`
+    : vs === "within" ? `Currently ${money(z.price)} — within the zone`
+    : vs === "above" ? `Currently ${money(z.price)} — trading above the zone`
+    : "";
+  const cCls = z.confidence === "high" ? "pass" : z.confidence === "medium" ? "near" : "warn";
+  const factors = (z.factors || []).map(f => {
+    let cell = `<td class="r">—</td>`;
+    if (f.effect_pp != null) {
+      const col = f.effect_pp < 0 ? "var(--pass-ink)" : f.effect_pp > 0 ? "var(--fail-ink)" : "var(--muted)";
+      cell = `<td class="r" style="color:${col};font-weight:600">${f.effect_pp > 0 ? "+" : ""}${f.effect_pp} pp</td>`;
+    }
+    return `<tr><td class="l">${escHtml(f.name)}</td><td>${escHtml(f.detail)}</td>${cell}</tr>`;
+  }).join("");
+  return `<div class="sec-h">Value entry zone <span class="badge ${cCls}">${escHtml(z.confidence)} confidence</span></div>`
+    + `<div class="mgrid">`
+    + `<div class="m"><b>${money(z.low)}–${money(z.high)}</b><span>Reference entry zone</span></div>`
+    + `<div class="m"><b>${money(z.fair_value)}</b><span>Fair value (Graham)</span></div>`
+    + `<div class="m"><b>${z.margin_of_safety_pct}%</b><span>Margin of safety</span></div>`
+    + `<div class="m"><b>${money(z.mid)}</b><span>Zone midpoint</span></div></div>`
+    + (vsTxt ? `<div class="hint" style="margin-top:.3rem">${vsTxt}.</div>` : "")
+    + `<div class="tablewrap" style="margin-top:.4rem"><table class="preview-tbl"><thead><tr>`
+    + `<th class="l">Input</th><th>How it moves the discount</th><th class="r">Effect</th>`
+    + `</tr></thead><tbody>${factors}</tbody></table></div>`
+    + `<div class="hint" style="margin-top:.3rem">${escHtml(z.disclaimer)}</div>`;
+}
 function openAnalysis(data) {
   hideBanner();   // the "Analyzing…" toast is redundant (and would cover the ✕) once the dialog is up
   const results = data.results || [];
@@ -2205,6 +2241,7 @@ function openAnalysis(data) {
     signalHtml+
     `<div class="sec-h">Scores</div>${scoresHtml(data.scores)}`+
     backtestHtml(data.backtest)+
+    entryZoneHtml(data.entry_zone)+
     `<div class="sec-h">Strategies</div>${stratRows}${dataNote}`+
     `<div class="sec-h">Similar companies (same sector)</div>${peersHtml}`+
     `<div class="sec-h">News sentiment</div>${sentHtml}${newsHtml}`+

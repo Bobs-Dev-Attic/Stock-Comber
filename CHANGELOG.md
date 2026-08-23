@@ -4,6 +4,28 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.49.0] - 2026-08-23
+
+### Added
+- **Illustrative "value entry zone" in the deep-dive analysis.** A new `stock_comber/entry.py`
+  (`suggest_entry_zone`) computes a transparent reference entry range for a full analysis: it anchors
+  on the Graham fair value, applies a base margin of safety (default 25%), then nudges that discount —
+  in percentage points — by the **backtest edge** (more historical edge → less discount), **news
+  sentiment** (positive tone → less discount), and **volume velocity** (heavy recent volume vs.
+  average → more discount and a wider band). Returns a low/mid/high zone, the final margin of safety,
+  a confidence label (from how many signals were available), whether the current price sits
+  below/within/above the zone, and a full per-factor breakdown so the number is auditable. Surfaced
+  as a "Value entry zone" card in the analysis dialog (`/api/analyze` gains an `entry_zone` field).
+  Knobs live under `config.entry`.
+
+### Notes
+- This is explicitly **not a price target and not investment advice** — it's a deterministic
+  margin-of-safety reference over public fundamentals, carrying the same educational caveat as the
+  rest of the app, and it degrades gracefully (no Graham fair value → no zone, with the reason shown).
+  Scoped to the deep-dive analysis only; the Full list is unchanged.
+
+[0.49.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.49.0
+
 ## [0.48.0] - 2026-08-22
 
 ### Added

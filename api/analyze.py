@@ -75,6 +75,16 @@ def run_analysis(ticker: str, news_days: int = 14) -> dict:
         except Exception:
             backtest = None
 
+    # Illustrative value entry zone (transparent margin-of-safety reference, not
+    # advice). Derived from the fair value + backtest edge + sentiment + volume;
+    # never let it fail the analysis.
+    entry_zone = None
+    try:
+        from stock_comber.entry import suggest_entry_zone
+        entry_zone = suggest_entry_zone(company, backtest, sentiment, cfg)
+    except Exception:
+        entry_zone = None
+
     run_id = None
     passing = sum(1 for r in results if r.passed)
     if getattr(store, "enabled", False):
@@ -107,6 +117,7 @@ def run_analysis(ticker: str, news_days: int = 14) -> dict:
         "scores": scores,
         "profile": profile,
         "backtest": backtest,
+        "entry_zone": entry_zone,
     }
 
 

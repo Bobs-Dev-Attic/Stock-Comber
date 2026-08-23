@@ -73,6 +73,7 @@ with tooling, never by hand; re-test; push.
 
 ## Where things live (quick index)
 - Screening/metrics/backtest: `stock_comber/{screener,metrics,backtest}.py`
+- Value entry zone (deep-dive reference range, not advice): `stock_comber/entry.py`
 - Nightly universe: `stock_comber/universe.py`, seeded via `schedule.rotation_tick`
 - Persistence + audit: `stock_comber/storage.py`
 - API guard (audit + rate limit): `stock_comber/apiguard.py`

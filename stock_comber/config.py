@@ -168,6 +168,14 @@ DEFAULT_CONFIG: dict[str, Any] = {
         # deployed dashboard; defaults to the project homepage.
         "site_url": "https://github.com/Bobs-Dev-Attic/Stock-Comber",
     },
+    # Illustrative "value entry zone" shown in a deep-dive analysis (not advice —
+    # a transparent margin-of-safety reference; see stock_comber/entry.py).
+    "entry": {
+        "enabled": True,
+        "base_margin_of_safety": 0.25,   # base discount to the Graham fair value
+        "min_margin_of_safety": 0.05,    # clamp floor after signal adjustments
+        "max_margin_of_safety": 0.40,    # clamp cap after signal adjustments
+    },
     # Scheduling knobs for local (APScheduler) runs. GitHub Actions uses its
     # own cron in .github/workflows/screen.yml.
     "schedule": {
