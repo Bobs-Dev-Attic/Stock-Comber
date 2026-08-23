@@ -1,5 +1,17 @@
 # Release notes
 
+## v0.53.0 — Nightly picks a random, well-spread set across the market (2026-08-23)
+
+The scheduled screen now does what you'd expect a "hidden gems" hunt to do: each run picks a
+**random set that spans different sectors, market-cap sizes, and volume sizes**, and picks a
+**different set every run** (e.g. every 6 hours). Under the hood it's a *seeded* random sample — random
+enough to vary each run, but reproducible so the dashboard's "next run" preview still matches what
+actually runs. The candidate pool also grew from a ~67-name curated list to the **whole SEC ticker
+list (thousands of names)**; names start out unclassified and get their sector / market cap / volume
+filled in over time by the nightly enrichment, so the spread across sizes keeps improving. Note:
+classifying by market cap and volume needs a Finnhub API key — without one, the sample still spans
+sectors but not sizes. Tune the size bands under `universe.nightly` if you want different tiers.
+
 ## v0.52.0 — Custom jobs run on the schedule too (2026-08-23)
 
 Your saved **custom jobs** now run automatically on your schedule — not just the nightly "hidden

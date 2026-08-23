@@ -158,3 +158,60 @@ def test_nightly_cooldown_falls_back_when_all_on_cooldown():
     cfg["universe"]["extra_tickers"] = []
     tickers = build_nightly(cfg, store=store, day_ordinal=0)
     assert "AAA" in tickers                 # fallback keeps the pool non-empty
+
+
+# -- stratified-random selection (v0.53.0) ---------------------------------
+def _mk(sector, mc, vol):
+    return {"sector": sector, "market_cap": mc, "avg_volume": vol}
+
+
+def test_stratified_pick_spans_sectors_caps_and_volumes():
+    from stock_comber.universe import _stratified_pick
+    # 3 sectors × 3 cap tiers × 2 vol tiers, several names each.
+    meta, elig = {}, []
+    caps = {"small": 1e9, "mid": 5e9, "large": 15e9}
+    vols = {"lo": 200_000, "hi": 3_000_000}
+    for s in ("Tech", "Health", "Energy"):
+        for cn, cv in caps.items():
+            for vn, vv in vols.items():
+                for i in range(3):
+                    t = f"{s}{cn}{vn}{i}"
+                    meta[t] = _mk(s, cv, vv); elig.append(t)
+    pick = _stratified_pick(sorted(elig), meta, cap=18, n={}, seed=1)
+    assert len(pick) == 18
+    sectors = {meta[t]["sector"] for t in pick}
+    cap_tiers = {("s" if meta[t]["market_cap"] < 2e9 else "l") for t in pick}
+    vol_tiers = {("lo" if meta[t]["avg_volume"] < 5e5 else "hi") for t in pick}
+    assert len(sectors) == 3          # spans all sectors
+    assert len(cap_tiers) == 2        # spans small and large
+    assert len(vol_tiers) == 2        # spans low and high volume
+
+
+def test_stratified_pick_is_seed_reproducible_and_varies():
+    from stock_comber.universe import _stratified_pick
+    meta = {t: _mk("Tech", 5e9, 1e6) for t in (f"T{i}" for i in range(40))}
+    elig = sorted(meta)
+    a1 = _stratified_pick(elig, meta, cap=10, n={}, seed=7)
+    a2 = _stratified_pick(elig, meta, cap=10, n={}, seed=7)
+    b = _stratified_pick(elig, meta, cap=10, n={}, seed=8)
+    assert a1 == a2                   # same seed → identical (preview reproduces run)
+    assert a1 != b                    # different seed (next 6h) → different pick
+
+
+def test_stratified_pick_prefers_classified_over_unknown():
+    from stock_comber.universe import _stratified_pick
+    meta = {"AAA": _mk("Tech", 5e9, 1e6), "BBB": _mk("Health", 3e9, 2e6)}
+    meta.update({t: {"ticker": t} for t in ("U1", "U2", "U3")})  # unclassified
+    pick = _stratified_pick(sorted(meta), meta, cap=2, n={}, seed=1)
+    assert set(pick) == {"AAA", "BBB"}   # classified names fill the cap first
+
+
+def test_build_nightly_spans_cap_tiers_when_enriched():
+    store = FakeStore(universe=[
+        {"ticker": "SM", "sector": "Tech", "country": "US", "market_cap": 1e9, "avg_volume": 1e6},
+        {"ticker": "MD", "sector": "Tech", "country": "US", "market_cap": 5e9, "avg_volume": 1e6},
+        {"ticker": "LG", "sector": "Tech", "country": "US", "market_cap": 15e9, "avg_volume": 1e6},
+    ])
+    cfg = _cfg(cap=3, include_unknown=False, market_cap_min=1e8, market_cap_max=20e9)
+    tickers = build_nightly(cfg, store=store, day_ordinal=3)
+    assert set(tickers) == {"SM", "MD", "LG"}   # one from each cap tier

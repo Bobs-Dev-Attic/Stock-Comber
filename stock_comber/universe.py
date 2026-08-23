@@ -1,18 +1,23 @@
-"""Nightly "hidden gems" universe: a capped, sector-diversified, rotating pick.
+"""Nightly "hidden gems" universe: a capped, **seeded stratified-random** pick.
 
-The candidate pool is the curated seed (``seed_universe.py``) plus any tickers a
-Finnhub-backed catalog has accumulated and any ``extra_tickers`` from settings.
-Each night we (optionally) enrich a rotating batch of names via Finnhub (market
-cap, sector, country, volume), filter by the configured gem profile, spread the
-pick across sectors, cap the count, and rotate the window so coverage spreads
-over days — so we hunt long-term value across industries and geographies without
-re-screening every listed company nightly.
+The candidate pool is the whole market — the full SEC ticker list (thousands of
+names) plus the curated seed (``seed_universe.py``), any Finnhub-enriched catalog
+rows, and ``extra_tickers`` from settings. Each run we (optionally) enrich a
+rotating batch of names via Finnhub (market cap, sector, country, volume), filter
+by the configured gem profile, then take a **stratified random sample** that spans
+sectors × market-cap tiers × volume tiers. The sample is seeded by the run's
+rotation ordinal, so it's different every run (e.g. every 6 hours) yet
+reproducible for the dashboard's "next run" preview. Names not yet classified
+(no sector/cap/volume) are used only as backfill and are steadily classified by
+the rotating enrichment over time — so coverage grows toward the whole market
+without re-screening every listed company each run.
 """
 
 from __future__ import annotations
 
 import logging
 import math
+import random
 from typing import Any, Optional
 
 from .config import _deep_merge
@@ -90,7 +95,65 @@ def _diversify(order: list[str], meta: dict, cap: int, n: dict) -> list[str]:
     return selected[:cap]
 
 
-def _candidates(config: dict, store) -> tuple[list[str], dict]:
+def _tier(value: Optional[float], edges: list) -> Optional[int]:
+    """Bucket a value into a tier index by the ascending ``edges`` (e.g. market-cap
+    or volume bands). ``None`` (unknown) stays None so it doesn't fake a tier."""
+    if value is None:
+        return None
+    for i, edge in enumerate(edges):
+        if value < edge:
+            return i
+    return len(edges)
+
+
+def _stratified_pick(eligible: list[str], meta: dict, cap: int, n: dict,
+                     seed: int) -> list[str]:
+    """Pick up to ``cap`` names as a **seeded stratified random** sample that spans
+    sectors × market-cap tiers × volume tiers.
+
+    Names are bucketed by (sector, mcap-tier, vol-tier); we round-robin across the
+    buckets — so the pick spreads across every dimension we know — taking a
+    seeded-random name from each. Names with no sector/cap/volume signal are used
+    only as backfill. ``seed`` (the run's rotation ordinal) makes it deterministic
+    so the dashboard preview reproduces the run, yet different every run.
+    """
+    mcap_edges = n.get("mcap_tier_edges") or [2_000_000_000, 10_000_000_000]
+    vol_edges = n.get("volume_tier_edges") or [500_000, 2_000_000]
+    rng = random.Random(seed)
+    classified: dict = {}
+    unclassified: list = []
+    for t in eligible:                       # ``eligible`` is pre-sorted → stable
+        m = meta.get(t) or {}
+        sector = m.get("sector")
+        mc_t = _tier(m.get("market_cap"), mcap_edges)
+        vol_t = _tier(m.get("avg_volume"), vol_edges)
+        if sector is None and mc_t is None and vol_t is None:
+            unclassified.append(t)
+        else:
+            classified.setdefault((sector or "Unknown", mc_t, vol_t), []).append(t)
+    keys = sorted(classified, key=lambda k: (str(k[0]), str(k[1]), str(k[2])))
+    rng.shuffle(keys)
+    for k in keys:
+        rng.shuffle(classified[k])
+    rng.shuffle(unclassified)
+    picked: list = []
+    active = [k for k in keys if classified[k]]
+    while active and len(picked) < cap:       # round-robin one per bucket per pass
+        for k in list(active):
+            if not classified[k]:
+                active.remove(k)
+                continue
+            picked.append(classified[k].pop())
+            if len(picked) >= cap:
+                break
+    for t in unclassified:                    # backfill only if the cap isn't met
+        if len(picked) >= cap:
+            break
+        picked.append(t)
+    return picked[:cap]
+
+
+def _candidates(config: dict, store, sec=None) -> tuple[list[str], dict]:
     u = config.get("universe", {})
     meta: dict[str, dict] = {}
     cands: list[str] = []
@@ -117,6 +180,20 @@ def _candidates(config: dict, store) -> tuple[list[str], dict]:
                 cands.append(row["ticker"])
         except Exception as exc:
             log.warning("could not load universe catalog: %s", exc)
+    # Grow the pool to the whole market: add the full SEC ticker list (thousands
+    # of names, unclassified until enrichment fills in sector/cap/volume). They
+    # give the rotating enrichment a real backlog to work through and let the
+    # nightly reach names beyond the curated seed. Only when a SEC source is
+    # supplied (the real run) — the lightweight preview skips this fetch.
+    n = u.get("nightly", {})
+    if sec is not None and n.get("include_sec_universe", True):
+        try:
+            for t in sec.ticker_map().keys():
+                up = str(t).upper()
+                cands.append(up)
+                meta.setdefault(up, {"ticker": up})
+        except Exception as exc:
+            log.warning("could not load SEC universe: %s", exc)
     # De-dup, preserve order, uppercase.
     seen, ordered = set(), []
     for t in (c.upper() for c in cands):
@@ -156,11 +233,13 @@ def _enrich(cands: list[str], meta: dict, n: dict, finnhub, store,
 
 
 def build_nightly(config: dict, store=None, finnhub=None,
-                  day_ordinal: int = 0) -> list[str]:
-    """Return the capped, sector-diversified, rotated ticker list for tonight."""
+                  day_ordinal: int = 0, sec=None) -> list[str]:
+    """Return the capped ticker list for this run: a seeded **stratified random**
+    sample spanning sectors × market-cap tiers × volume tiers, different every run.
+    Pass ``sec`` (a SEC source) to widen the candidate pool to the whole market."""
     n = config.get("universe", {}).get("nightly", {})
     cap = int(n.get("cap", 75))
-    cands, meta = _candidates(config, store)
+    cands, meta = _candidates(config, store, sec)
     _enrich(cands, meta, n, finnhub, store, day_ordinal)
 
     eligible = sorted(t for t in cands if _passes(meta.get(t, {"ticker": t}), n))
@@ -184,6 +263,4 @@ def build_nightly(config: dict, store=None, finnhub=None,
 
     if not eligible:
         return []
-    off = (day_ordinal * cap) % len(eligible)
-    rotated = eligible[off:] + eligible[:off]
-    return _diversify(rotated, meta, cap, n)
+    return _stratified_pick(eligible, meta, cap, n, day_ordinal)
