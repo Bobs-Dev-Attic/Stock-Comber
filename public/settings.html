@@ -166,11 +166,6 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
     </div>
   </div>
 
-  <div class="card">
-    <h2>Nightly “hidden gems” universe</h2>
-    <div class="grid" id="universe"></div>
-  </div>
-
   <div class="card"><h2>Output</h2><div class="grid" id="output"></div></div>
 
   <div class="card" id="sec-analysis">
@@ -447,7 +442,7 @@ async function load(){
     renderStrategies(); renderFields("graham",GRAHAM); renderFields("buffett",BUFFETT);
     renderFields("piotroski",PIOTROSKI); renderFields("greenblatt",GREENBLATT);
     renderFields("lynch",LYNCH); renderFields("netnet",NETNET);
-    renderFields("universe",UNIVERSE); renderFields("output",OUTPUT);
+    renderFields("output",OUTPUT);   // (nightly universe moved to Jobs → Scheduled report → Configure)
     renderFields("analysis",ANALYSIS); renderFields("api",API);
     $("#crit-list").innerHTML=""; (get(cfg,"custom.criteria")||[]).forEach(c=>addCrit(c.metric,c.op,c.value));
     $("#custom_pass").value=get(cfg,"custom.pass_ratio")??"";

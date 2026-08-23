@@ -4,6 +4,22 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.65.0] - 2026-08-23
+
+### Changed
+- **Nightly "hidden gems" universe settings moved into the Scheduled-report
+  Configure dialog.** The candidate-pool / gem-profile fields (mode, index
+  template, nightly count, market-cap & volume bands, cooldown, per-sector cap,
+  enrichment budget, sector/industry/country filters, extra tickers) now live in
+  **Jobs → Scheduled report → Configure**, next to the schedule itself, and are
+  saved with it. They're removed from the Settings page. (The strategy thresholds
+  still open from the Strategies list on Settings.)
+- **Removed the "Next runs" list from the Scheduled-report dialog** — the same
+  upcoming runs are shown on the History tab's *Upcoming scheduled jobs* card, so
+  the in-dialog list was redundant.
+- The Scheduled-report **Save** no longer requires an API key (consistent with
+  v0.64.0's open settings save); it sends one only if this browser has it stored.
+
 ## [0.64.0] - 2026-08-23
 
 ### Changed
