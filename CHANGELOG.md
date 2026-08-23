@@ -4,6 +4,29 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.55.0] - 2026-08-23
+
+### Added
+- **🎲 Remix the nightly pool.** The Scheduled-report dialog's "What the next run will
+  screen" preview gains a **Remix** button that re-draws a *different* well-spread
+  stratified-random set from the whole market, without changing the run's date/hour.
+  Each click yields a fresh alternative draw (seed offset by a large prime,
+  `/api/universe?nightly=1&remix=N`); **↻ Refresh** returns to the exact pool the next
+  scheduled run will screen. "Screen all" on a remixed preview screens the shown set,
+  so you can hand-run a different random slice now. The preview also shows a **spread
+  summary** (how many sectors / market-cap sizes the pool spans).
+- **Upcoming scheduled jobs in History.** The History tab gains an **Upcoming scheduled
+  jobs** card listing what fires at the next scheduled run — the nightly "hidden gems"
+  screen plus every saved custom job — each with what it screens, its strategies, and
+  the next run time (or a note when the schedule is off).
+
+### Changed
+- **Scheduled-report dialog copy refreshed** to reflect the current (v0.53+) behavior:
+  each run draws a seeded stratified-random set across the whole market spanning
+  sectors, market-cap sizes and volume sizes, sized by Polygon.io or Finnhub
+  enrichment. The stale "built from Finnhub enrichment + the seed list" empty-state
+  text is updated accordingly.
+
 ## [0.54.0] - 2026-08-23
 
 ### Added

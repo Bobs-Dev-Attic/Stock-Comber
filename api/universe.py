@@ -46,10 +46,19 @@ def build_nightly_preview(params) -> dict:
         hour = min(23, max(0, int(params.get("hour", [""])[0])))
     except (ValueError, TypeError):
         hour = 0
+    # Optional "remix" offset: re-draw a *different* stratified-random pool without
+    # changing the run's date/hour. remix=0 (default) reproduces the exact pool the
+    # next scheduled run will screen; remix>0 shifts the seed by a large prime so
+    # each click yields a fresh, well-spread alternative draw (used by the dashboard's
+    # 🎲 Remix button, e.g. to hand-screen a different set now).
+    try:
+        remix = max(0, int(params.get("remix", ["0"])[0]))
+    except (ValueError, TypeError):
+        remix = 0
 
     # Rotation advances hourly (see schedule.rotation_tick), so the preview seeds
     # the pool by the next run's date *and* hour to match what will actually run.
-    tick = ordinal * 24 + hour
+    tick = ordinal * 24 + hour + remix * 100003
     tickers = build_nightly(cfg, store, finnhub=None, day_ordinal=tick)
 
     catalog = {}
@@ -74,6 +83,7 @@ def build_nightly_preview(params) -> dict:
     return {
         "nightly": True,
         "ordinal": ordinal,
+        "remix": remix,
         "date": datetime.date.fromordinal(ordinal).isoformat(),
         "cap": int(n.get("cap", 75)),
         "index": (cfg.get("universe", {}).get("index") or ""),
