@@ -1,5 +1,19 @@
 # Release notes
 
+## v0.57.0 — Sector column, a menu on every page, full-width History (2026-08-23)
+
+The **Full list** gains a **Sector** column (on by default, after Score) so you can sort,
+group and filter by sector at a glance — it's filled in from the same enrichment that
+sizes the nightly picks, and blank only for names not yet classified.
+
+Every page now shares the same **☰ menu**: the sub-pages (About, Settings, Glossary,
+Strategies, Analytics, Backtest, History, Theses) get the same slide-in navigation as the
+dashboard, and the old "← Dashboard · …" breadcrumb links under each title are gone —
+navigation lives in the menu now.
+
+On the **History** tab, each section now spans the full page width (stacked in one column)
+instead of squeezing into side-by-side columns on wide screens, so the tables have room.
+
 ## v0.56.0 — Market cap column + a single History activity timeline (2026-08-23)
 
 The **Full list** now has a **Market cap** column (on by default, right after Price) — share

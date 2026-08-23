@@ -4,6 +4,28 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.57.0] - 2026-08-23
+
+### Added
+- **Sector column in the Full list.** Each result now carries its `sector` (from the
+  universe catalog / Polygon.io–Finnhub enrichment), surfaced as a Full-list column
+  (in the default set, after Score) that sorts, groups and exports like the others.
+  `ScreenResult` gained a `sector` field; `attach_sectors` joins it from the catalog
+  for the nightly report and live screens, and `/api/runs?results=all` (the Full
+  list's primary source) joins it too, so it always reflects the latest enrichment.
+  Blank for names not yet classified.
+- **Shared navigation menu (☰) on every page.** A new `public/nav.js` injects a
+  consistent slide-in menu on all sub-pages (About, Settings, Glossary, Strategies,
+  Analytics, Backtest, History, Theses), matching the dashboard's drawer.
+
+### Changed
+- **Sub-page breadcrumbs removed.** The "← Dashboard · …" breadcrumb links under each
+  sub-page title are gone (navigation now lives in the ☰ menu); a page's descriptive
+  subtitle, where it had one, is kept.
+- **History tab sections span the full page width.** The History cards now stack in a
+  single full-width column instead of flowing into side-by-side columns on wide
+  screens, giving the Activity / Upcoming / Searches tables the whole width.
+
 ## [0.56.0] - 2026-08-23
 
 ### Added

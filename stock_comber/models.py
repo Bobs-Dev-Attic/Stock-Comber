@@ -115,6 +115,7 @@ class ScreenResult:
     score: float
     max_score: float
     cik: Optional[str] = None
+    sector: Optional[str] = None   # from the universe catalog (enrichment), if known
     metrics: dict[str, Optional[float]] = field(default_factory=dict)
     criteria: list[CriterionResult] = field(default_factory=list)
     errors: list[str] = field(default_factory=list)

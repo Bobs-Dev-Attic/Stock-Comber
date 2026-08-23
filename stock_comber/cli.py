@@ -184,6 +184,11 @@ def cmd_screen(args) -> int:
     tickers = [t.upper() for t in args.tickers] or None
     results = screener.run(tickers, progress=_progress)
 
+    # Tag each result with its sector from the universe catalog so the report
+    # (and the Full list) can show a Sector column.
+    from .universe import attach_sectors
+    attach_sectors(results, store)
+
     # For the nightly "hidden gems" report, attach a per-name backtest edge so it
     # shows alongside the fundamentals (one extra price-history fetch per name).
     if (cfg.get("universe", {}).get("mode") == "nightly"

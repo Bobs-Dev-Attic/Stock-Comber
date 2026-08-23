@@ -281,11 +281,11 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
   /* in-dialog job results preview */
   .preview-tbl { font-size: .88rem; }
   .preview-tbl th, .preview-tbl td { padding: .35rem .5rem; }
-  /* History tab — cards flow into as many columns as the width allows
-     (auto-fit), so wide screens use the horizontal space and narrow screens
-     collapse to a single column. */
+  /* History tab — each card is stacked in a single column so every section
+     spans the full page width (wide browsers included), giving the tables the
+     whole width to breathe rather than squeezing into side-by-side columns. */
   .histgrid { display: grid; gap: 1rem; margin-top: .6rem;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 430px), 1fr)); align-items: start; }
+    grid-template-columns: 1fr; align-items: start; }
   .histcard { border: 1px solid var(--line); border-radius: 12px; padding: .8rem 1rem; min-width: 0; }
   .histcard h3 { margin: 0 0 .5rem; font-size: 1rem; }
   .histcard td, .histcard th { text-align: left; }
@@ -810,6 +810,7 @@ const METRIC_INFO = {
   price: "Latest market price per share. Combined with fundamentals to derive the valuation ratios above.",
   earnings_growth_5y_pct: "Cumulative growth in earnings over ~5 years — the trajectory of the bottom line. Rising earnings support a durable thesis.",
   revenue_growth_5y_pct: "Cumulative growth in revenue over ~5 years — is the business actually expanding, not just cutting costs.",
+  sector: "Sector — the company's industry classification, from the universe catalog (Polygon.io / Finnhub enrichment). Handy for grouping the list by sector; blank for names not yet classified.",
   market_cap: "Market capitalization — share price × shares outstanding (price from the latest quote, shares from the most recent SEC filing). The company's total equity value; blank when price or share count is unavailable.",
   avg_volume: "Average daily share volume — how actively the stock trades. A liquidity indicator: thinly-traded names are harder to enter or exit.",
   dollar_volume: "Average daily dollar volume (price × avg volume) — the standard liquidity gauge. Higher means you can trade size without moving the price.",
@@ -830,11 +831,12 @@ const ALL_COLUMNS = [
   {key:"strategy", label:"Strategy", base:true},
   {key:"passed", label:"Pass", base:true},
   {key:"score_pct", label:"Score", base:true},
+  {key:"sector", label:"Sector", base:true},
   ...METRICS.map(([key,label]) => ({key, label, base:false})),
   {key:"entry_zone", label:"Entry zone", base:true},
   {key:"last_analyzed", label:"Last analyzed", base:true},
 ];
-const DEFAULT_COLS = ["strategy","passed","score_pct","health_score","price","market_cap","pe_ratio","pb_ratio","roe_pct","current_ratio","debt_to_equity","avg_volume","dollar_volume","backtest_edge_pct","entry_zone","last_analyzed"];
+const DEFAULT_COLS = ["strategy","passed","score_pct","sector","health_score","price","market_cap","pe_ratio","pb_ratio","roe_pct","current_ratio","debt_to_equity","avg_volume","dollar_volume","backtest_edge_pct","entry_zone","last_analyzed"];
 let selectedCols = loadCols();
 
 function loadCols() {
@@ -979,6 +981,7 @@ function entryZoneLite(m) {
 }
 const cellValue = (r, key) =>
   (key === "strategy" || key === "passed" || key === "score_pct") ? r[key]
+  : key === "sector" ? r.sector
   : key === "last_analyzed" ? r.created_at
   : key === "entry_zone" ? (entryZoneLite(r.metrics) || {}).mid
   : (r.metrics || {})[key];
@@ -1091,7 +1094,7 @@ function reorderCol(from, to) {
 const arrow = k => k === sortK ? `<span class="arrow">${sortDir<0?"▼":"▲"}</span>` : "";
 
 function sortField(r) {
-  if (sortK === "ticker" || sortK === "strategy") return String(cellValue(r, sortK) || "");
+  if (sortK === "ticker" || sortK === "strategy" || sortK === "sector") return String(cellValue(r, sortK) || "");
   if (sortK === "passed") return r.passed ? 1 : 0;
   if (sortK === "last_analyzed") { const t = Date.parse(r.created_at); return Number.isNaN(t) ? null : t; }
   return num(cellValue(r, sortK));
@@ -1117,6 +1120,7 @@ function groupLabel(r, key) {
   if (key === "ticker") return r.ticker || "—";
   if (key === "strategy") return stratLabel(r.strategy) || r.strategy || "—";
   if (key === "passed") return r.passed ? "Passing" : "Not passing";
+  if (key === "sector") return r.sector || "—";
   if (key === "last_analyzed") return r.created_at ? fmtDate(r.created_at) : "Never";
   const v = cellValue(r, key);
   return (v === null || v === undefined || v === "") ? "—" : fmt(v);
@@ -1196,13 +1200,14 @@ function cell(r, key) {
   if (key === "strategy") return `<span class="l">${r.strategy}</span>`;
   if (key === "passed") return `<span class="badge ${r.passed?'pass':'near'}">${r.passed?'PASS':'—'}</span>`;
   if (key === "score_pct") return `<span class="bar"><i style="width:${Math.max(0,Math.min(100,r.score_pct||0))}%"></i></span> ${(r.score_pct??0).toFixed(0)}%`;
+  if (key === "sector") return escHtml(r.sector || "—");
   if (key === "last_analyzed") return fmtDate(r.created_at);
   if (key === "entry_zone") { const z = entryZoneLite(r.metrics); return z ? `${fmt(z.low)}–${fmt(z.high)}` : "—"; }
   return fmt((r.metrics||{})[key]);
 }
 
 /* ---- export ---- */
-const EXPORT_COLS = ["ticker","name","cik","strategy","passed","score","max_score","score_pct",
+const EXPORT_COLS = ["ticker","name","cik","sector","strategy","passed","score","max_score","score_pct",
   ...METRICS.map(m=>m[0]), "entry_zone", "last_analyzed"];
 function download(filename, text, type) {
   const blob = new Blob([text], {type}); const url = URL.createObjectURL(blob);
@@ -1215,7 +1220,7 @@ function toCSV(data) {
   data.forEach(r => {
     const m = r.metrics || {};
     lines.push(EXPORT_COLS.map(k => {
-      if (["ticker","name","cik","strategy","passed","score","max_score","score_pct"].includes(k)) return esc(r[k]);
+      if (["ticker","name","cik","sector","strategy","passed","score","max_score","score_pct"].includes(k)) return esc(r[k]);
       if (k === "last_analyzed") return esc(r.created_at || "");
       if (k === "entry_zone") { const z = entryZoneLite(m); return esc(z ? `${z.low.toFixed(2)}-${z.high.toFixed(2)}` : ""); }
       return esc(m[k]);

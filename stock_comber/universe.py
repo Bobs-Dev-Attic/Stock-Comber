@@ -26,6 +26,23 @@ from .seed_universe import SEED_UNIVERSE, seed_tickers
 log = logging.getLogger("stock_comber.universe")
 
 
+def attach_sectors(results, store) -> None:
+    """Set ``result.sector`` from the stored universe catalog (enrichment) for
+    every result whose ticker is classified. One catalog read; a no-op without a
+    database. Leaves ``sector`` as ``None`` for names the catalog doesn't know."""
+    if not results or store is None or not getattr(store, "enabled", False):
+        return
+    try:
+        catalog = {r["ticker"]: r for r in store.get_universe()}
+    except Exception as exc:
+        log.warning("could not load universe catalog for sectors: %s", exc)
+        return
+    for r in results:
+        sec = (catalog.get(getattr(r, "ticker", None)) or {}).get("sector")
+        if sec:
+            r.sector = sec
+
+
 def effective_config(base_cfg: dict, store=None) -> dict:
     """Deep-merge DB-stored settings over the file/default config."""
     if store is None:

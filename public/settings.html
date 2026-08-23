@@ -60,7 +60,7 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
 <button id="theme-toggle" class="theme-fab" type="button" aria-label="Toggle color theme" title="Theme">🌓</button>
 <div class="wrap">
   <h1>⚙️ Settings</h1>
-  <p class="sub"><a href="/">← Dashboard</a> · Parameters, preferences &amp; key status. Saving writes to your database and drives the nightly screen.</p>
+  <p class="sub">Parameters, preferences &amp; key status. Saving writes to your database and drives the nightly screen.</p>
 
   <div class="card">
     <h2>Keys &amp; status</h2>
@@ -359,5 +359,6 @@ function apply(t){var r=document.documentElement;if(t==="light"||t==="dark")r.se
 try{if(t==="system")localStorage.removeItem("theme");else localStorage.setItem("theme",t)}catch(e){}
 var b=document.getElementById("theme-toggle");if(b){b.textContent=M[t]||M.system;b.title="Theme: "+t.charAt(0).toUpperCase()+t.slice(1)}}
 var btn=document.getElementById("theme-toggle");if(btn){apply(cur());btn.addEventListener("click",function(){var i=T.indexOf(cur());apply(T[(i+1)%3])})}})();</script>
+  <script src="/nav.js" defer></script>
 </body>
 </html>
