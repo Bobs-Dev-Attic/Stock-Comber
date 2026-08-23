@@ -1,5 +1,15 @@
 # Release notes
 
+## v0.52.0 — Custom jobs run on the schedule too (2026-08-23)
+
+Your saved **custom jobs** now run automatically on your schedule — not just the nightly "hidden
+gems" screen. Each scheduled fire runs every job you've saved (its tickers, strategies and criteria)
+and records each as its own entry in History → Past runs, so you'll actually see them there. To make
+that legible, Past runs gained a **Source** column that shows where each run came from: the job's name
+for a custom job, "Scheduled" for the nightly screen, or "Manual" for an analysis you kicked off. If
+you save a lot of jobs, remember they now all run on every scheduled fire (6× a day on the default
+schedule) — trim any you don't need from the Jobs tab.
+
 ## v0.51.0 — Scheduled report actually runs on time (2026-08-23)
 
 The nightly/scheduled screen was quietly missing its slot. GitHub only lets scheduled workflows fire

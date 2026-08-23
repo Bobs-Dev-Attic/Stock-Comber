@@ -1,6 +1,8 @@
 name: Scheduled screen
 
-# Combs free data sources and commits the fresh reports. The *stored* schedule
+# Combs free data sources and commits the fresh reports. Each scheduled fire runs
+# the nightly "hidden gems" screen, then every saved custom job (`run-jobs`), then
+# the thesis re-check. The *stored* schedule
 # (Jobs tab → Scheduled report, saved to the database) decides when this fires:
 # the cron below is a 5-minute heartbeat, and the `schedule-gate` step checks the
 # stored schedule each tick and only proceeds when the configured time matches
@@ -75,6 +77,13 @@ jobs:
           else
             stock-comber --config config/default.yaml --verbose screen --nightly
           fi
+
+      - name: Run saved custom jobs
+        if: steps.gate.outputs.run == 'true'
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+        run: stock-comber --config config/default.yaml --verbose run-jobs
 
       - name: Re-check investment theses
         if: steps.gate.outputs.run == 'true'
