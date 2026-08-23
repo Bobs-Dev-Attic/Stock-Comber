@@ -21,36 +21,14 @@ log = logging.getLogger("stock_comber.analysis")
 _BUILTIN_LENSES = ["graham", "buffett", "piotroski", "greenblatt", "lynch", "netnet"]
 
 
-def _full_config(base: dict, criteria: "Optional[list]" = None) -> dict:
+def _full_config(base: dict) -> dict:
     cfg = copy.deepcopy(base)
     cfg.setdefault("data", {})["finnhub_enrich_results"] = True
-    # A manual/queued analysis runs every built-in investor lens.
-    strategies = list(_BUILTIN_LENSES)
-    # When the ticker came from a custom job, re-evaluate that job's criteria too
-    # so the "Custom criteria" strategy the job used still appears on the Full list
-    # after a deep analysis (instead of only the six built-in lenses).
-    if criteria:
-        cfg.setdefault("custom", {})["criteria"] = criteria
-        strategies.append("custom")
-    cfg["strategies"] = strategies
+    # A manual/queued analysis runs every built-in investor lens — never the
+    # "custom" pseudo-strategy (custom jobs no longer emit custom rows).
+    cfg["strategies"] = list(_BUILTIN_LENSES)
     cfg["universe"] = {**cfg.get("universe", {}), "mode": "list"}
     return cfg
-
-
-def _jobs_criteria_for(ticker: str, cfg: dict) -> list:
-    """Union of custom criteria across every saved job whose ticker pool includes
-    ``ticker`` — so a deep analysis reflects the criteria that job screened it with.
-    Order-preserving and de-duplicated across jobs."""
-    want = (ticker or "").strip().upper()
-    out: list = []
-    for job in cfg.get("jobs", []) or []:
-        pool = {t.strip().upper()
-                for t in (job.get("tickers") or "").split(",") if t.strip()}
-        if want in pool:
-            for c in (job.get("criteria") or []):
-                if c not in out:
-                    out.append(c)
-    return out
 
 
 def analyze_ticker(ticker: str, screener: Screener, news_days: int = 14):
@@ -84,20 +62,11 @@ def process_queue(cfg: dict, store, limit: int = 5,
     if not tickers:
         return {"processed": 0, "tickers": []}
 
-    shared = screener or Screener(_full_config(cfg))
-    shared.store = store
+    scr = screener or Screener(_full_config(cfg))
+    scr.store = store
     done = []
     for t in tickers:
         try:
-            # If this ticker belongs to a custom job's pool, run that job's criteria
-            # as well so its "Custom criteria" strategy stays on the Full list. A
-            # test-injected screener is always used as-is (deterministic).
-            crit = _jobs_criteria_for(t, cfg)
-            if crit and screener is None:
-                scr = Screener(_full_config(cfg, criteria=crit))
-                scr.store = store
-            else:
-                scr = shared
             results, _company = analyze_ticker(t, scr)
             run_id = store.save_run(results, scr.last_companies,
                                     meta={"source": "queue", "ticker": t})

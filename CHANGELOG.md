@@ -4,6 +4,19 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.72.0] - 2026-08-23
+
+### Changed
+- **Custom jobs no longer write a `custom` strategy row.** A saved custom job now
+  screens its ticker pool with the selected built-in strategies (or the Graham +
+  Buffett defaults) only — it no longer emits the `custom` pseudo-strategy, so the
+  Full list stays free of ad-hoc `custom` rows. Any criteria saved on a job are kept
+  but no longer scored into a persisted result. This supersedes v0.69.0: the deep
+  analysis (`analysis._full_config`, `process_queue`, `/api/analyze`) reverts to the
+  six built-in lenses only and no longer re-adds `custom` for job-pool tickers
+  (`_jobs_criteria_for` removed). `_job_config` drops `custom` even if explicitly
+  selected.
+
 ## [0.71.0] - 2026-08-23
 
 ### Added
