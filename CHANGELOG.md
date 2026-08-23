@@ -4,6 +4,21 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.50.0] - 2026-08-23
+
+### Added
+- **"Entry zone" column on the Full list.** A new sortable/groupable column shows each row's value
+  entry zone as a `low–high` range, computed client-side from the row's own figures — the Graham fair
+  value discounted by a base margin of safety, nudged by the backtest edge. It mirrors the metrics-only
+  path of the server's `entry.py`; because Full-list rows carry no news sentiment or intraday volume,
+  those signals are omitted (the band stays at its 5% default). Included in CSV export; shows `—` when
+  a row has no Graham fair value. On by default for new sessions (toggle it in the **Columns** menu if
+  you have saved column preferences). The fully-transparent zone — which also factors sentiment and
+  volume velocity, with a per-input breakdown — remains in the deep-dive analysis dialog. Not a price
+  target or investment advice.
+
+[0.50.0]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.50.0
+
 ## [0.49.1] - 2026-08-23
 
 ### Fixed
