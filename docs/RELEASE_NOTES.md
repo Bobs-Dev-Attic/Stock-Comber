@@ -1,5 +1,12 @@
 # Release notes
 
+## v0.50.2 — History tab shows the latest activity (2026-08-23)
+
+The History tab used to load once and then keep showing that first snapshot, so a run or job that
+happened after you'd already glanced at History — like today's scheduled run or an analysis you just
+queued — wouldn't appear until you pressed ↻ Refresh or reloaded the page. Now it refreshes itself
+every time you open the tab, so today's activity is always there.
+
 ## v0.50.1 — Scroll the Full list sideways from the top (2026-08-23)
 
 The Full list has a lot of columns, and until now the only way to scroll it left-and-right was the

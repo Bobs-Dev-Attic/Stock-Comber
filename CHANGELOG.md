@@ -4,6 +4,17 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.50.2] - 2026-08-23
+
+### Fixed
+- **History tab now refreshes every time it's opened.** It used to load once per page session and then
+  serve that first snapshot (`histLoaded` guard), so runs/jobs/searches created *after* the first view
+  didn't appear until you hit ↻ Refresh or reloaded — e.g. today's nightly run or a just-queued
+  analysis looked missing. Switching to the History tab now always re-fetches. (The live queue poll
+  while something is running is unchanged.)
+
+[0.50.2]: https://github.com/Bobs-Dev-Attic/Stock-Comber/releases/tag/v0.50.2
+
 ## [0.50.1] - 2026-08-23
 
 ### Fixed
