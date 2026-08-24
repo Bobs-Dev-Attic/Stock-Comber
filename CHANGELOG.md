@@ -4,6 +4,18 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.78.0] - 2026-08-23
+
+### Added
+- **Saved filter presets on the Full list.** A new **★ Presets** menu lets you save the
+  current set of column filters under a name and re-apply it later (or delete it). Presets
+  are stored in `localStorage` (`sc_filterpresets`).
+
+### Changed
+- **The active column-filter icon stands out more.** A column with a filter now shows its
+  funnel icon in bold with an accent-tinted background and outline, so filtered columns are
+  easy to spot at a glance.
+
 ## [0.77.0] - 2026-08-23
 
 ### Changed
