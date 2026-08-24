@@ -4,6 +4,15 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.96.0] - 2026-08-24
+
+### Fixed
+- **History tab no longer errors with "(job.tickers || []).filter is not a function".** A saved
+  custom job whose `tickers` (or `strategies`) were stored as a string rather than an array crashed
+  the whole History load once the scheduled runs were folded into Activity (v0.91.0). `jobScreens`
+  now accepts array- or string-valued tickers, the strategy pills coerce non-arrays, and the
+  upcoming-rows build is wrapped so one malformed job can never break the History tab again.
+
 ## [0.95.0] - 2026-08-24
 
 ### Added
