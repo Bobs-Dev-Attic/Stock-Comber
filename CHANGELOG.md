@@ -4,6 +4,17 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.83.0] - 2026-08-24
+
+### Changed
+- **The Full-list pager now also shows above the table.** With more than 250 rows the
+  ← Prev / Next → pager appears both above and below the list, so pagination is visible
+  without scrolling to the bottom.
+- **Export is clearer about exporting the current filtered view.** The **Export** menu's
+  CSV/JSON items are relabelled "Download CSV/JSON (current view)" and note that they export
+  every row matching the current filters & sort — not just the visible page. (This was
+  already the behaviour; the labels just make it explicit.)
+
 ## [0.82.0] - 2026-08-24
 
 ### Added

@@ -641,13 +641,14 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
         <div class="menu" id="export-menu">
           <button class="btn ghost" id="export-btn">Export ▾</button>
           <div class="panel-pop">
-            <div class="colrow"><button class="btn ghost" id="exp-csv" style="width:100%">Download CSV</button></div>
-            <div class="colrow"><button class="btn ghost" id="exp-json" style="width:100%">Download JSON</button></div>
-            <div class="hint" style="margin:.3rem .3rem 0">Programmatic export: <code>/api/export?key=…&amp;format=csv</code></div>
+            <div class="colrow"><button class="btn ghost" id="exp-csv" style="width:100%">⭳ Download CSV (current view)</button></div>
+            <div class="colrow"><button class="btn ghost" id="exp-json" style="width:100%">⭳ Download JSON (current view)</button></div>
+            <div class="hint" style="margin:.3rem .3rem 0">Exports the list as currently filtered &amp; sorted (all matching rows, not just this page). Programmatic export: <code>/api/export?key=…&amp;format=csv</code></div>
           </div>
         </div>
       </div>
 
+      <div id="pager-top" class="pager" hidden></div>
       <div class="xscroll-top" id="xtop" hidden aria-hidden="true"><div id="xtop-inner"></div></div>
       <div class="tablewrap" id="tblwrap"><table id="tbl" hidden>
         <thead><tr id="head"></tr></thead>
@@ -1558,16 +1559,21 @@ function render() {
   $("#tbl").hidden = sorted.length === 0;
   syncTopScroll();
 }
+// A pager is shown both above and below the Full list so it's visible without
+// scrolling past 250 rows. Both are filled identically.
 function renderPager(total, start, end){
-  const el = $("#pager"); if (!el) return;
-  if (activeTab !== "full" || total <= PAGE_SIZE){ el.hidden = true; el.innerHTML = ""; return; }
-  const pages = Math.ceil(total / PAGE_SIZE);
+  const pages = (activeTab === "full" && total > PAGE_SIZE) ? Math.ceil(total / PAGE_SIZE) : 0;
+  ["#pager-top", "#pager"].forEach(sel => fillPager(sel, total, start, end, pages));
+}
+function fillPager(sel, total, start, end, pages){
+  const el = $(sel); if (!el) return;
+  if (!pages){ el.hidden = true; el.innerHTML = ""; return; }
   el.hidden = false;
-  el.innerHTML = `<button class="btn ghost" id="pg-prev"${fullPage <= 0 ? " disabled" : ""}>← Prev</button>`
+  el.innerHTML = `<button class="btn ghost pg-prev"${fullPage <= 0 ? " disabled" : ""}>← Prev</button>`
     + `<span class="pg-info">Page ${fullPage + 1} of ${pages} · rows ${start + 1}–${end} of ${total}</span>`
-    + `<button class="btn ghost" id="pg-next"${fullPage >= pages - 1 ? " disabled" : ""}>Next →</button>`;
-  $("#pg-prev").onclick = () => { if (fullPage > 0){ fullPage--; render(); $("#tblwrap").scrollIntoView({ block: "nearest" }); } };
-  $("#pg-next").onclick = () => { if (fullPage < pages - 1){ fullPage++; render(); $("#tblwrap").scrollIntoView({ block: "nearest" }); } };
+    + `<button class="btn ghost pg-next"${fullPage >= pages - 1 ? " disabled" : ""}>Next →</button>`;
+  el.querySelector(".pg-prev").onclick = () => { if (fullPage > 0){ fullPage--; render(); $("#tblwrap").scrollIntoView({ block: "nearest" }); } };
+  el.querySelector(".pg-next").onclick = () => { if (fullPage < pages - 1){ fullPage++; render(); $("#tblwrap").scrollIntoView({ block: "nearest" }); } };
 }
 // Total record count under the table (Full list). Shows the filtered count of the
 // grand total when a filter is narrowing the list.
