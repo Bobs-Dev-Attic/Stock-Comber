@@ -1,5 +1,11 @@
 # Release notes
 
+## v0.87.0 — Buy/sell targets show % from current price (2026-08-24)
+
+The Portfolio analysis table now prints each **Buy below** and **Sell above** target with its
+signed distance from today's price beneath it (e.g. `$190.00 / −5.0%` and `$220.00 / +10.0%`),
+so you can see how far a name has to move to reach the band without doing the math.
+
 ## v0.86.0 — Ticker autocomplete in the Portfolio dialog (2026-08-24)
 
 Adding holdings is quicker: each ticker field in the Portfolio **✎ Edit** dialog now
