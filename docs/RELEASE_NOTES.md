@@ -1,5 +1,13 @@
 # Release notes
 
+## v0.91.0 — Scheduled runs folded into the Activity timeline (2026-08-24)
+
+The History tab drops the separate **Upcoming scheduled jobs** card. The next scheduled runs — the
+nightly "hidden gems" screen and each saved custom job — now show as **⏰ scheduled** rows pinned
+at the top of the one **Activity** list, above the pending deep-dive queue and the completed runs,
+jobs and searches. One timeline instead of two; the Activity heading counts scheduled and active
+items, and you can still jump to the schedule editor from the note beneath it.
+
 ## v0.90.0 — Funds "Saved analyses" section always shows (2026-08-24)
 
 Fixes a discoverability gap from v0.89.0: the **Saved analyses** section on the Funds tab was

@@ -380,6 +380,10 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
   .histcard tbody tr.norow { cursor: default; }
   .histcard tbody tr.norow:hover { background: transparent; }
   .histcard tbody tr.busy { opacity: .55; }
+  /* Next scheduled runs, pinned at the top of the Activity timeline. */
+  .histcard tbody tr.upcoming-row td { background: color-mix(in srgb, var(--accent) 6%, transparent); }
+  .histcard tbody tr.upcoming-row .rel { color: var(--muted); margin-left: .4rem; font-variant-numeric: tabular-nums; }
+  .pill.sched { background: color-mix(in srgb, var(--accent) 18%, var(--chip)); font-weight: 600; }
   /* API rate-limit indicator */
   .rl-ind { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap;
     margin: 0 0 .7rem; padding: .5rem .7rem; border: 1px solid var(--line);
@@ -606,20 +610,12 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
       <div id="hist-status" class="hint"></div>
       <div class="histgrid">
         <div class="histcard">
-          <h3>Upcoming scheduled jobs <span id="u-when" class="hint" style="font-weight:400"></span></h3>
-          <div class="tablewrap"><table>
-            <thead><tr><th>Job</th><th>What it screens</th><th>Strategies</th><th>Next run (UTC)</th></tr></thead>
-            <tbody id="h-upcoming"></tbody>
-          </table></div>
-          <p class="hint">Each scheduled fire runs the nightly “hidden gems” screen, then every saved custom job. Edit under <a href="#" id="upc-edit-sched">Jobs → Scheduled report</a>.</p>
-        </div>
-        <div class="histcard">
           <h3>Activity <span id="q-active" class="hint" style="font-weight:400"></span></h3>
           <div class="tablewrap"><table>
             <thead><tr><th>When</th><th>Item</th><th>Kind</th><th>Strategies / detail</th><th class="r">Passing</th></tr></thead>
             <tbody id="h-activity"></tbody>
           </table></div>
-          <p class="hint">One timeline: tickers queued for a full deep-dive (news + sentiment) by the worker that runs every ~20 min appear on top while active; completed screens &amp; jobs — the nightly “hidden gems” run, saved custom jobs, and manual searches — follow below. Click a single-ticker row to open its full analysis.</p>
+          <p class="hint">One timeline: the next scheduled runs (the nightly “hidden gems” screen + saved custom jobs) sit on top, then tickers queued for a full deep-dive by the worker that runs every ~20 min while active, then completed screens, jobs &amp; manual searches. Click a single-ticker row to open its full analysis. Edit the schedule under <a href="#" id="upc-edit-sched">Jobs → Scheduled report</a>.</p>
         </div>
         <div class="histcard">
           <h3>Searches</h3>
@@ -1468,7 +1464,7 @@ function attachStaticTableFilters(table){
   if (tbody) new MutationObserver(() => applyStaticTableFilters(table, state)).observe(tbody, {childList:true});
 }
 function initHistoryFilters(){
-  ["h-upcoming","h-activity","h-searches"].forEach(id => {
+  ["h-activity","h-searches"].forEach(id => {
     const tb = document.getElementById(id), tbl = tb && tb.closest("table");
     if (tbl) attachStaticTableFilters(tbl);
   });
@@ -2564,8 +2560,9 @@ function runKindBadge(meta) {
 // One unified activity timeline: active/failed deep-dive queue items pinned on
 // top, then completed runs (nightly / jobs / manual screens) newest-first.
 // Finished ("done") queue items are omitted — each is already recorded as a run.
-function renderActivity(runs, queue) {
+function renderActivity(runs, queue, cfg, configured) {
   const ts = s => { const t = Date.parse(s); return Number.isNaN(t) ? 0 : t; };
+  const upcoming = upcomingRows(cfg || {}, !!configured);
   const active = (queue || []).filter(q => q.status === "pending" || q.status === "processing");
   active.sort((a, b) => (QRANK[a.status] ?? 9) - (QRANK[b.status] ?? 9) || ts(b.requested_at) - ts(a.requested_at));
   const failed = (queue || []).filter(q => q.status === "error");
@@ -2592,10 +2589,13 @@ function renderActivity(runs, queue) {
     ...(runs || []).map(r => ({ t: ts(r.created_at), html: runRow(r) })),
   ].sort((a, b) => b.t - a.t).map(x => x.html);
 
-  const html = active.map(queueRow).concat(timeline).join("");
+  const html = upcoming.concat(active.map(queueRow)).concat(timeline).join("");
   $("#h-activity").innerHTML = html || `<tr><td colspan="5" class="hint">No activity yet — run a job (Jobs tab) or wait for the nightly run.</td></tr>`;
   wireHistRows("#h-activity");
-  $("#q-active").textContent = active.length ? `· ${active.length} active` : "";
+  const bits = [];
+  if (upcoming.length) bits.push(`${upcoming.length} scheduled`);
+  if (active.length) bits.push(`${active.length} active`);
+  $("#q-active").textContent = bits.length ? `· ${bits.join(" · ")}` : "";
 }
 function renderHistSearches(rows) {
   $("#h-searches").innerHTML = rows.map(s => {
@@ -2632,44 +2632,39 @@ async function openAnalysisFor(ticker) {
   } catch (e) { if (hs) hs.textContent = "Analysis failed: " + e.message; }
   finally { hideBanner(); }
 }
-// Upcoming scheduled jobs: the nightly "hidden gems" screen + every saved custom
-// job, all firing together at the next scheduled run (see .github/workflows/screen.yml).
+// What a scheduled job screens (used by the upcoming rows atop Activity): the
+// nightly "hidden gems" screen + every saved custom job fire together at the next
+// scheduled run (see .github/workflows/screen.yml).
 function jobScreens(job) {
   const tks = (job.tickers || []).filter(Boolean);
   if (job.index) return `Template · ${escHtml(String(job.index).toUpperCase())}`;
   if (tks.length) return escHtml(tks.slice(0, 6).join(", ")) + (tks.length > 6 ? ` +${tks.length - 6}` : "");
   return "—";
 }
-function renderUpcoming(cfg, configured) {
-  const tb = $("#h-upcoming"); if (!tb) return;
+// The next scheduled runs (nightly "hidden gems" + saved custom jobs), shaped as
+// rows for the Activity table so they sit on top of the timeline.
+function upcomingRows(cfg, configured) {
   const sc = (cfg && cfg.schedule) || {};
   const enabled = configured ? !!sc.enabled : true;
+  if (!enabled) return [];
   const cron = (configured && sc.cron) ? sc.cron : "30 6 * * 1-5";
   const strats = (cfg && cfg.strategies && cfg.strategies.length) ? cfg.strategies : ["graham", "buffett"];
-  if (!enabled) {
-    tb.innerHTML = `<tr><td colspan="4" class="hint">Scheduled run is off — enable it under Jobs → Scheduled report.</td></tr>`;
-    $("#u-when").textContent = "";
-    return;
-  }
   const next = nextScheduledRun(cron, new Date());
-  const when = next
-    ? `${DOW3[next.getUTCDay()]} ${String(next.getUTCHours()).padStart(2,"0")}:${String(next.getUTCMinutes()).padStart(2,"0")} UTC`
-    : "—";
-  $("#u-when").textContent = next ? `· next in ${fmtDur(next - new Date())}` : "";
+  if (!next) return [];
+  const when = `${DOW3[next.getUTCDay()]} ${String(next.getUTCHours()).padStart(2,"0")}:${String(next.getUTCMinutes()).padStart(2,"0")} UTC`;
+  const rel = `<span class="rel">in ${fmtDur(next - new Date())}</span>`;
   const stratPills = ss => (ss || []).map(s => `<span class="pill">${escHtml(stratLabel(s))}</span>`).join(" ");
-  const rows = [
-    `<tr class="norow"><td class="l"><strong>🌙 Nightly “hidden gems”</strong></td>`
-      + `<td class="l">Stratified-random pick across the whole market</td>`
-      + `<td class="l">${stratPills(strats)}</td><td class="l">${when}</td></tr>`
-  ];
-  const jobs = (cfg && cfg.jobs) || [];
-  jobs.forEach(j => {
-    rows.push(`<tr class="norow"><td class="l"><strong>🧮 ${escHtml(j.name || "Custom job")}</strong></td>`
-      + `<td class="l">${jobScreens(j)}</td>`
-      + `<td class="l">${stratPills((j.strategies && j.strategies.length) ? j.strategies : strats)}</td>`
-      + `<td class="l">${when}</td></tr>`);
-  });
-  tb.innerHTML = rows.join("");
+  const mk = (item, detail, ss) => `<tr class="norow upcoming-row">`
+    + `<td class="l">${when} ${rel}</td>`
+    + `<td class="l"><strong>${item}</strong></td>`
+    + `<td class="l"><span class="pill sched">⏰ scheduled</span></td>`
+    + `<td class="l">${stratPills(ss)}${detail ? ` · ${detail}` : ""}</td>`
+    + `<td class="r">—</td></tr>`;
+  const rows = [mk("🌙 Nightly “hidden gems”", "stratified-random market pick", strats)];
+  ((cfg && cfg.jobs) || []).forEach(j => rows.push(
+    mk(`🧮 ${escHtml(j.name || "Custom job")}`, jobScreens(j),
+       (j.strategies && j.strategies.length) ? j.strategies : strats)));
+  return rows;
 }
 async function loadHistory(force) {
   if (histLoaded && !force) return;
@@ -2680,11 +2675,12 @@ async function loadHistory(force) {
       fetch("/api/runs?limit=50"), fetch("/api/queue?limit=50"), fetch("/api/settings")]);
     const rd = await rRes.json();
     renderHistSearches(rd.searches || []);
-    try { const sd = await sRes.json(); renderUpcoming(sd.config || {}, !!sd.schedule_configured); }
-    catch (e) { /* leave upcoming as-is on a settings hiccup */ }
+    let cfg = {}, configured = false;
+    try { const sd = await sRes.json(); cfg = sd.config || {}; configured = !!sd.schedule_configured; }
+    catch (e) { /* leave schedule out on a settings hiccup */ }
     let queue = [];
     try { queue = (await qRes.json()).queue || []; } catch(e){ queue = []; }
-    renderActivity(rd.runs || [], queue);
+    renderActivity(rd.runs || [], queue, cfg, configured);
     $("#hist-status").textContent = rd.storage_enabled
       ? `${queueActive(queue)} active · ${(rd.runs||[]).length} runs · ${(rd.searches||[]).length} searches`
       : "No database configured — set DATABASE_URL in Vercel to record history.";
