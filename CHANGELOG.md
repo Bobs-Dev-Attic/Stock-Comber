@@ -4,6 +4,15 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.91.0] - 2026-08-24
+
+### Changed
+- **History: the "Upcoming scheduled jobs" card is gone; its runs now sit atop Activity.** The
+  next scheduled runs (the nightly "hidden gems" screen + each saved custom job) appear as
+  ⏰ scheduled rows pinned at the top of the single Activity timeline, above the pending deep-dive
+  queue and the completed runs/jobs/searches — one list instead of two. The Activity heading now
+  counts both scheduled and active items, and the schedule-edit link moved into the Activity note.
+
 ## [0.90.0] - 2026-08-24
 
 ### Fixed
