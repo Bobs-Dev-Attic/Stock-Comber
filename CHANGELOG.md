@@ -4,6 +4,14 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.89.0] - 2026-08-24
+
+### Added
+- **Saved fund analyses.** Every Fund X-ray is now saved and retrievable — a **Saved analyses**
+  card on the Funds tab lists past runs (when, fund, score, grade, coverage); click one to reopen
+  the exact read-out, delete individual entries, or clear all. Kept in this browser
+  (`localStorage` `sc_fundhistory`, capped at 30) — the fund equivalent of the portfolio history.
+
 ## [0.88.0] - 2026-08-24
 
 ### Added

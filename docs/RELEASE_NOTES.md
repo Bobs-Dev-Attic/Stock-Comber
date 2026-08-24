@@ -1,5 +1,12 @@
 # Release notes
 
+## v0.89.0 — Saved, retrievable fund analyses (2026-08-24)
+
+Fund X-rays are now kept. Each analysis you run is saved to a **Saved analyses** card on the
+Funds tab — when, fund, score, grade and coverage — and clicking a row reopens the full read-out
+exactly as it was. Delete individual entries or clear the lot; the list is kept in this browser
+(capped at 30), the fund counterpart to the portfolio analysis history.
+
 ## v0.88.0 — Fund X-ray: deconstruct & score an ETF or mutual fund (2026-08-24)
 
 A new **🧩 Funds** tab breaks a fund down into its top holdings and grades it. Pick a bundled
