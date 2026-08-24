@@ -4,6 +4,21 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.79.0] - 2026-08-23
+
+### Added
+- **Portfolio Advisor.** A new **💼 Portfolio** tab lets you build one or more portfolios
+  of holdings (ticker + shares) and score them against the strategies you pick. The analysis
+  shows a value-weighted **portfolio score**, total value and how many holdings pass, and a
+  per-holding table with **weight**, score, a valuation verdict, and **buy-below / sell-above
+  target prices** derived from Graham fair value (buy ≥25% below, trim ≥10% above). It also
+  surfaces **balance suggestions** (single-position and sector concentration, over/undervalued
+  names, weak scorers, diversification) and **suggested target weights** tilted toward
+  higher-scoring holdings. Portfolios are saved in settings (`portfolios`), and the analysis
+  runs through the existing `/api/screen` endpoint via a new `portfolio=` parameter (no new
+  serverless function). New pure module `stock_comber/portfolio.py`; educational only — not
+  investment advice.
+
 ## [0.78.0] - 2026-08-23
 
 ### Added

@@ -1,5 +1,20 @@
 # Release notes
 
+## v0.79.0 — Portfolio Advisor (2026-08-23)
+
+A new **💼 Portfolio** tab. Build one or more portfolios of the stocks you own (ticker +
+shares), pick the strategies to judge them by, and hit **Analyze** to get:
+
+- a **portfolio score** (value-weighted), total value, and how many holdings pass;
+- a per-holding table with each position's **weight**, score, valuation (undervalued / fair /
+  overvalued), and **buy-below / sell-above target prices** from Graham fair value;
+- **suggestions** for a more balanced mix — flagging over-concentrated positions or sectors,
+  over/undervalued names, and weak scorers;
+- **suggested target weights** tilted toward the higher-scoring holdings.
+
+Portfolios are saved to your settings so you can revisit them. Educational only — **not
+investment advice.**
+
 ## v0.78.0 — Saved filter presets + clearer active filters (2026-08-23)
 
 Two Full-list touches: a new **★ Presets** menu remembers a set of column filters under a

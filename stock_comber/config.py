@@ -211,6 +211,11 @@ DEFAULT_CONFIG: dict[str, Any] = {
     #    "criteria": [{"metric": "pe_ratio", "op": "<=", "value": 15}],
     #    "strategies": ["graham", "buffett"]}
     "jobs": [],
+    # Saved portfolios for the Portfolio Advisor. Each bundles a name, the
+    # holdings ({ticker, shares}) and which strategies to score against:
+    #   {"name": "Core", "holdings": [{"ticker": "AAPL", "shares": 10}],
+    #    "strategies": ["graham", "buffett"]}
+    "portfolios": [],
     # HTTP API behaviour: an access/audit log and a configurable per-client
     # rate limit. Both are enforced only when a database is configured (the
     # audit rows and the recent-request count both live in Postgres).
@@ -305,7 +310,51 @@ def validate_config(cfg: dict[str, Any]) -> list[str]:
                 f"(choose from {', '.join(index_keys())} or leave blank)")
 
     problems.extend(_validate_jobs(cfg.get("jobs", []), valid_strategies))
+    problems.extend(_validate_portfolios(cfg.get("portfolios", []), valid_strategies))
     problems.extend(_validate_api(cfg.get("api", {})))
+    return problems
+
+
+def _validate_portfolios(portfolios: Any, valid_strategies: set) -> list[str]:
+    """Validate the saved Portfolio Advisor list: each has a name, a list of
+    holdings ({ticker, shares}) and optional strategies."""
+    problems: list[str] = []
+    if portfolios in (None, []):
+        return problems
+    if not isinstance(portfolios, list):
+        return ["portfolios must be a list"]
+    seen: set = set()
+    for i, pf in enumerate(portfolios):
+        where = f"portfolios[{i}]"
+        if not isinstance(pf, dict):
+            problems.append(f"{where} must be an object")
+            continue
+        name = pf.get("name")
+        if not isinstance(name, str) or not name.strip():
+            problems.append(f"{where}.name must be a non-empty string")
+        else:
+            key = name.strip().lower()
+            if key in seen:
+                problems.append(f"duplicate portfolio name: {name!r}")
+            seen.add(key)
+        holdings = pf.get("holdings", [])
+        if not isinstance(holdings, list):
+            problems.append(f"{where}.holdings must be a list")
+        else:
+            for j, h in enumerate(holdings):
+                if not isinstance(h, dict) or not str(h.get("ticker", "")).strip():
+                    problems.append(f"{where}.holdings[{j}] must have a ticker")
+                    continue
+                shares = h.get("shares")
+                if shares not in (None, ""):
+                    try:
+                        if float(shares) < 0:
+                            raise ValueError
+                    except (TypeError, ValueError):
+                        problems.append(f"{where}.holdings[{j}].shares must be a non-negative number")
+        for s in pf.get("strategies", []) or []:
+            if s not in valid_strategies:
+                problems.append(f"{where}: unknown strategy {s!r}")
     return problems
 
 

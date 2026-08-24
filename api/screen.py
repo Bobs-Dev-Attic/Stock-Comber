@@ -103,13 +103,33 @@ class handler(BaseHTTPRequestHandler):
                 self._send(400, {"error": f"bad custom criteria: {exc}"})
                 return
 
+        # Portfolio Advisor: ?portfolio=<JSON [{ticker,shares},…]> scores the holdings
+        # against the chosen strategies (targets + balance suggestions folded in).
+        holdings = None
+        if params.get("portfolio"):
+            try:
+                holdings = json.loads(params["portfolio"][0])
+                if not isinstance(holdings, list):
+                    raise ValueError("portfolio must be a JSON array")
+            except (ValueError, json.JSONDecodeError) as exc:
+                self._send(400, {"error": f"bad portfolio: {exc}"})
+                return
+            for h in holdings:
+                t = str((h or {}).get("ticker", "")).strip().upper()
+                if t and t not in tickers:
+                    tickers.append(t)
+
         if not tickers:
             self._send(400, {"error": f"Provide ?tickers=AAPL,MSFT (max {MAX_TICKERS})."})
             return
 
         tickers = tickers[:MAX_TICKERS]
         try:
-            self._send(200, run_screen(tickers, strategies, custom_criteria))
+            out = run_screen(tickers, strategies, custom_criteria)
+            if holdings is not None:
+                from stock_comber.portfolio import analyze
+                out["portfolio"] = analyze(holdings, out.get("results", []), strategies)
+            self._send(200, out)
         except Exception as exc:  # never leak a stack trace to the client
             self._send(502, {"error": f"screen failed: {exc}"})
 
