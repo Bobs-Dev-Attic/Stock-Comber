@@ -1,5 +1,12 @@
 # Release notes
 
+## v0.94.0 — Saved fund analyses on the History tab (2026-08-24)
+
+The Fund X-rays you run now appear on the **History** tab as well, in a new **Saved fund analyses**
+card alongside Activity and Searches — each with its when, fund, score, grade and coverage. It's the
+same browser-kept store as the Funds tab, so anything you've saved shows in both places; click a row
+to reopen the full analysis on the Funds tab.
+
 ## v0.93.0 — Fund analysis JSON export (2026-08-24)
 
 The Fund X-ray read-out gains a **⭳ JSON** button next to ⭳ CSV. It downloads the full analysis
