@@ -3325,6 +3325,17 @@ async function savePortfolios(list, okMsg){
 }
 function money(v){ return v == null ? "—" : "$" + Number(v).toLocaleString(undefined, { maximumFractionDigits: 0 }); }
 function pfPct(w){ return (Number(w) * 100).toFixed(1) + "%"; }
+// A buy-below / sell-above cell: the target price plus its signed distance from
+// the current price (e.g. $190.00 / −5.0%), so the gap to act on is obvious.
+function pfTargetCell(target, price){
+  if (target == null) return "—";
+  let sub = "";
+  if (price != null && price > 0){
+    const d = (target - price) / price * 100;
+    sub = `<div class="hint" style="font-size:.8em">${(d >= 0 ? "+" : "−") + Math.abs(d).toFixed(1)}%</div>`;
+  }
+  return `$${target.toFixed(2)}${sub}`;
+}
 function pfErr(msg){ $("#pf-result").innerHTML = `<div class="hint" style="color:var(--fail-ink)">${escHtml(msg)}</div>`; }
 async function analyzePortfolio(){
   const holdings = (pfState.holdings || []).filter(h => h.ticker);
@@ -3355,8 +3366,8 @@ function renderPfAnalysis(pa){
     + `<td class="r">${pfPct(h.weight)}</td>`
     + `<td class="r">${h.score != null ? h.score.toFixed(0) : "—"}</td>`
     + `<td>${badge(h.verdict)}</td>`
-    + `<td class="r">${h.buy_below != null ? "$" + h.buy_below.toFixed(2) : "—"}</td>`
-    + `<td class="r">${h.sell_above != null ? "$" + h.sell_above.toFixed(2) : "—"}</td>`
+    + `<td class="r">${pfTargetCell(h.buy_below, h.price)}</td>`
+    + `<td class="r">${pfTargetCell(h.sell_above, h.price)}</td>`
     + `<td>${escHtml(h.action || "")}</td></tr>`).join("");
   const tw = pa.target_weights || {};
   const twRows = Object.entries(tw).sort((a,b) => b[1] - a[1]).map(([t, w]) => {
@@ -3376,7 +3387,7 @@ function renderPfAnalysis(pa){
        <tbody>${rows}</tbody></table></div>`
     + (sugg ? `<div class="histcard" style="margin-top:.6rem"><h3>Suggestions</h3><ul class="pf-sugg">${sugg}</ul></div>` : "")
     + (twRows ? `<div class="histcard" style="margin-top:.6rem"><h3>Suggested target weights <span class="hint" style="font-weight:400">(tilted toward higher scores)</span></h3><div class="tablewrap"><table><thead><tr><th class="l">Ticker</th><th class="r">Current</th><th class="r">Target</th><th class="r">Δ</th></tr></thead><tbody>${twRows}</tbody></table></div></div>` : "")
-    + `<div class="hint" style="margin-top:.5rem">Buy-below / sell-above are actionable bands around the current price (tighter on the buy side when a name looks cheap, on the sell side when it looks rich); the valuation verdict compares price to Graham fair value. Educational only — <b>not investment advice.</b></div>`;
+    + `<div class="hint" style="margin-top:.5rem">Buy-below / sell-above are actionable bands around the current price, each shown with its % distance from today's price (tighter on the buy side when a name looks cheap, on the sell side when it looks rich); the valuation verdict compares price to Graham fair value. Educational only — <b>not investment advice.</b></div>`;
 }
 $("#pf-edit").onclick = () => openPfDialog();
 $("#pf-new").onclick = () => newPortfolio(true);
