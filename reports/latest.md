@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-08-24 08:55 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-08-24 21:10 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **27** strategy matches passed.
+Screened **75** companies · **26** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| PD | PAGERDUTY, INC. | greenblatt | ✅ | 100% | 12.32 | 6.59 | 4.52 | 68.37 | 2.01 | 2.84 | 2M | — |
-| SLV | iShares Silver Trust | lynch | ✅ | 75% | 62.72 | 1.53 | — | — | — | — | 23M | — |
-| SM | SM ENERGY CO | piotroski | ✅ | 78% | 37.20 | 6.60 | 0.89 | 13.47 | 0.69 | — | 3M | — |
-| DAKT | Daktronics, Inc. | piotroski | ✅ | 89% | 19.20 | 20.87 | 3.15 | 15.09 | 2.31 | — | 321,461 | — |
-| DAKT | Daktronics, Inc. | lynch | ✅ | 75% | 19.20 | 20.87 | 3.15 | 15.09 | 2.31 | — | 321,461 | — |
+| POWL | Powell Industries, Inc. | piotroski | ✅ | 78% | 198 | 13.30 | 3.75 | 28.21 | 2.09 | 0.73 | 430,833 | — |
+| POWL | Powell Industries, Inc. | lynch | ✅ | 75% | 198 | 13.30 | 3.75 | 28.21 | 2.09 | 0.73 | 430,833 | — |
+| SON | Sonoco Products Company | piotroski | ✅ | 89% | 57.49 | 5.71 | 1.58 | 27.75 | 1.05 | 2.08 | 1M | — |
+| SON | Sonoco Products Company | lynch | ✅ | 75% | 57.49 | 5.71 | 1.58 | 27.75 | 1.05 | 2.08 | 1M | — |
+| CRUS | CIRRUS LOGIC, INC. | piotroski | ✅ | 89% | 115 | 14.69 | 2.86 | 19.47 | 7.37 | — | 613,451 | — |
+| PRI | Primerica, Inc. | piotroski | ✅ | 89% | 300 | 13.09 | 4.01 | 30.71 | — | 5.14 | 134,922 | — |
+| BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 166 | 22.53 | 3.86 | 17.13 | 2.65 | 0.86 | 573,570 | — |
+| BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 166 | 22.53 | 3.86 | 17.13 | 2.65 | 0.86 | 573,570 | — |
+| AROC | Archrock, Inc. | piotroski | ✅ | 89% | 30.70 | 16.78 | 3.60 | 21.61 | 1.54 | 1.92 | 3M | — |
+| FHI | Federated Hermes, Inc. | greenblatt | ✅ | 100% | 64.72 | 12.62 | 4.06 | 33.69 | 2.75 | 0.81 | 516,130 | — |
+| FHI | Federated Hermes, Inc. | piotroski | ✅ | 89% | 64.72 | 12.62 | 4.06 | 33.69 | 2.75 | 0.81 | 516,130 | — |
 | EVR | EVERCORE INC. | buffett | ✅ | 83% | 292 | 20.78 | 6.05 | 29.14 | 2.16 | 1.50 | 483,261 | — |
 | EVR | EVERCORE INC. | piotroski | ✅ | 78% | 292 | 20.78 | 6.05 | 29.14 | 2.16 | 1.50 | 483,261 | — |
-| MTCH | Match Group, Inc. | piotroski | ✅ | 89% | 40.87 | 17.17 | — | -242 | 1.42 | — | 2M | — |
-| GGG | GRACO INC. | piotroski | ✅ | 89% | 80.64 | 26.18 | 5.14 | 19.66 | 3.15 | — | 2M | — |
-| GGG | GRACO INC. | buffett | ✅ | 83% | 80.64 | 26.18 | 5.14 | 19.66 | 3.15 | — | 2M | — |
-| MTCH | Match Group, Inc. | lynch | ✅ | 75% | 40.87 | 17.17 | — | -242 | 1.42 | — | 2M | — |
-| VICR | VICOR CORPORATION | piotroski | ✅ | 89% | 201 | 76.84 | 12.81 | 16.66 | 8.99 | 0.10 | 513,745 | — |
-| VICR | VICOR CORPORATION | buffett | ✅ | 83% | 201 | 76.84 | 12.81 | 16.66 | 8.99 | 0.10 | 513,745 | — |
-| VICR | VICOR CORPORATION | lynch | ✅ | 75% | 201 | 76.84 | 12.81 | 16.66 | 8.99 | 0.10 | 513,745 | — |
+| GGG | GRACO INC. | piotroski | ✅ | 89% | 80.16 | 26.03 | 5.11 | 19.66 | 3.15 | — | 2M | — |
+| GGG | GRACO INC. | buffett | ✅ | 83% | 80.16 | 26.03 | 5.11 | 19.66 | 3.15 | — | 2M | — |
 | HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 108 | 42.25 | 275 | 649 | 4.66 | 50.73 | 1M | — |
-| MEDP | Medpace Holdings, Inc. | buffett | ✅ | 83% | 621 | 40.62 | 39.93 | 98.27 | 0.74 | 3.30 | 225,882 | — |
-| MEDP | Medpace Holdings, Inc. | piotroski | ✅ | 78% | 621 | 40.62 | 39.93 | 98.27 | 0.74 | 3.30 | 225,882 | — |
-| FCFS | FIRSTCASH HOLDINGS, INC. | piotroski | ✅ | 78% | 225 | 30.36 | 4.41 | 14.51 | 4.55 | 1.33 | 625,524 | — |
-| PCTY | PAYLOCITY HOLDING CORPORATIO | piotroski | ✅ | 89% | 153 | 31.17 | 6.88 | 22.08 | 1.09 | 3.00 | 408,795 | — |
-| CTRE | CareTrust REIT, Inc. | lynch | ✅ | 100% | 39.58 | 25.21 | 2.00 | 7.94 | — | 0.27 | 2M | — |
-| SIRI | SIRIUS XM HOLDINGS INC. | lynch | ✅ | 75% | 28.69 | 12.87 | 0.89 | 6.96 | 0.30 | 1.36 | 3M | — |
-| KRT | Karat Packaging Inc. | piotroski | ✅ | 78% | 48.05 | 30.80 | 6.49 | 21.07 | 2.30 | 0.88 | 200,916 | — |
-| KNTK | KINETIK HOLDINGS INC. | lynch | ✅ | 75% | 54.50 | 20.72 | — | -31.53 | 0.69 | -7.37 | 1M | — |
+| MEDP | Medpace Holdings, Inc. | buffett | ✅ | 83% | 620 | 40.58 | 39.88 | 98.27 | 0.74 | 3.30 | 171,010 | — |
+| MEDP | Medpace Holdings, Inc. | piotroski | ✅ | 78% | 620 | 40.58 | 39.88 | 98.27 | 0.74 | 3.30 | 171,010 | — |
+| NJR | NEW JERSEY RESOURCES CORPORA | piotroski | ✅ | 78% | 53.74 | 16.14 | 2.26 | 14.03 | 0.73 | — | 362,609 | — |
+| HAFC | HANMI FINANCIAL CORPORATION | piotroski | ✅ | 89% | 31.11 | 12.39 | 1.17 | 9.55 | — | 8.88 | 339,237 | — |
+| BCPC | Balchem Corporation | piotroski | ✅ | 100% | 181 | 38.16 | 4.70 | 12.31 | 2.07 | 0.34 | 137,885 | — |
 | FMNB | FARMERS NATIONAL BANC CORP / | piotroski | ✅ | 89% | 15.69 | 10.82 | 1.22 | 11.24 | — | 9.80 | 524,510 | — |
-| FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 14.68 | 77.26 | 6.02 | 7.83 | 4.94 | 0.33 | 3M | — |
-| MCS | MARCUS CORP | piotroski | ✅ | 78% | 29.57 | 72.88 | 2.02 | 2.77 | 0.40 | — | 403,597 | — |
-| WGO | WINNEBAGO INDUSTRIES, INC. | piotroski | ✅ | 89% | 31.78 | 34.92 | 0.73 | 2.10 | 2.42 | 0.76 | 326,902 | — |
-| PD | PAGERDUTY, INC. | piotroski | ▫️ | 67% | 12.32 | 6.59 | 4.52 | 68.37 | 2.01 | 2.84 | 2M | — |
-| PD | PAGERDUTY, INC. | buffett | ▫️ | 50% | 12.32 | 6.59 | 4.52 | 68.37 | 2.01 | 2.84 | 2M | — |
-| PD | PAGERDUTY, INC. | graham | ▫️ | 33% | 12.32 | 6.59 | 4.52 | 68.37 | 2.01 | 2.84 | 2M | — |
-| PD | PAGERDUTY, INC. | lynch | ▫️ | 25% | 12.32 | 6.59 | 4.52 | 68.37 | 2.01 | 2.84 | 2M | — |
-| PD | PAGERDUTY, INC. | netnet | ▫️ | 25% | 12.32 | 6.59 | 4.52 | 68.37 | 2.01 | 2.84 | 2M | — |
-| PD | PAGERDUTY, INC. | custom | ▫️ | 0% | 12.32 | 6.59 | 4.52 | 68.37 | 2.01 | 2.84 | 2M | — |
-| SLV | iShares Silver Trust | greenblatt | ▫️ | 33% | 62.72 | 1.53 | — | — | — | — | 23M | — |
-| SLV | iShares Silver Trust | netnet | ▫️ | 25% | 62.72 | 1.53 | — | — | — | — | 23M | — |
-| SLV | iShares Silver Trust | graham | ▫️ | 22% | 62.72 | 1.53 | — | — | — | — | 23M | — |
-| SLV | iShares Silver Trust | buffett | ▫️ | 17% | 62.72 | 1.53 | — | — | — | — | 23M | — |
-| SLV | iShares Silver Trust | piotroski | ▫️ | 0% | 62.72 | 1.53 | — | — | — | — | 23M | — |
-| SLV | iShares Silver Trust | custom | ▫️ | 0% | 62.72 | 1.53 | — | — | — | — | 23M | — |
-| SM | SM ENERGY CO | graham | ▫️ | 67% | 37.20 | 6.60 | 0.89 | 13.47 | 0.69 | — | 3M | — |
-| SM | SM ENERGY CO | greenblatt | ▫️ | 67% | 37.20 | 6.60 | 0.89 | 13.47 | 0.69 | — | 3M | — |
-| SM | SM ENERGY CO | lynch | ▫️ | 25% | 37.20 | 6.60 | 0.89 | 13.47 | 0.69 | — | 3M | — |
-| SM | SM ENERGY CO | netnet | ▫️ | 25% | 37.20 | 6.60 | 0.89 | 13.47 | 0.69 | — | 3M | — |
-| SM | SM ENERGY CO | buffett | ▫️ | 17% | 37.20 | 6.60 | 0.89 | 13.47 | 0.69 | — | 3M | — |
-| SM | SM ENERGY CO | custom | ▫️ | 0% | 37.20 | 6.60 | 0.89 | 13.47 | 0.69 | — | 3M | — |
-| LNTH | LANTHEUS HOLDINGS, INC. | piotroski | ▫️ | 56% | 99.97 | 29.32 | 6.28 | 21.43 | 2.70 | 1.04 | 1M | — |
-| LNTH | LANTHEUS HOLDINGS, INC. | buffett | ▫️ | 50% | 99.97 | 29.32 | 6.28 | 21.43 | 2.70 | 1.04 | 1M | — |
-| LNTH | LANTHEUS HOLDINGS, INC. | graham | ▫️ | 33% | 99.97 | 29.32 | 6.28 | 21.43 | 2.70 | 1.04 | 1M | — |
-| LNTH | LANTHEUS HOLDINGS, INC. | greenblatt | ▫️ | 33% | 99.97 | 29.32 | 6.28 | 21.43 | 2.70 | 1.04 | 1M | — |
-| LNTH | LANTHEUS HOLDINGS, INC. | lynch | ▫️ | 25% | 99.97 | 29.32 | 6.28 | 21.43 | 2.70 | 1.04 | 1M | — |
+| FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 15.21 | 80.05 | 6.24 | 7.83 | 4.94 | 0.33 | 3M | — |
+| MCS | MARCUS CORP | piotroski | ✅ | 78% | 30.91 | 76.18 | 2.11 | 2.77 | 0.40 | — | 243,437 | — |
+| FROG | JFrog Ltd. | piotroski | ✅ | 78% | 90.14 | — | 11.80 | -8.09 | 2.14 | 0.51 | 1M | — |
+| WGO | WINNEBAGO INDUSTRIES, INC. | piotroski | ✅ | 89% | 32.14 | 35.32 | 0.74 | 2.10 | 2.42 | 0.76 | 582,176 | — |
+| POWL | Powell Industries, Inc. | graham | ▫️ | 78% | 198 | 13.30 | 3.75 | 28.21 | 2.09 | 0.73 | 430,833 | — |
+| POWL | Powell Industries, Inc. | buffett | ▫️ | 67% | 198 | 13.30 | 3.75 | 28.21 | 2.09 | 0.73 | 430,833 | — |
+| POWL | Powell Industries, Inc. | greenblatt | ▫️ | 67% | 198 | 13.30 | 3.75 | 28.21 | 2.09 | 0.73 | 430,833 | — |
+| POWL | Powell Industries, Inc. | netnet | ▫️ | 50% | 198 | 13.30 | 3.75 | 28.21 | 2.09 | 0.73 | 430,833 | — |
+| POWL | Powell Industries, Inc. | custom | ▫️ | 0% | 198 | 13.30 | 3.75 | 28.21 | 2.09 | 0.73 | 430,833 | — |
+| SON | Sonoco Products Company | buffett | ▫️ | 67% | 57.49 | 5.71 | 1.58 | 27.75 | 1.05 | 2.08 | 1M | — |
+| SON | Sonoco Products Company | greenblatt | ▫️ | 67% | 57.49 | 5.71 | 1.58 | 27.75 | 1.05 | 2.08 | 1M | — |
+| SON | Sonoco Products Company | graham | ▫️ | 56% | 57.49 | 5.71 | 1.58 | 27.75 | 1.05 | 2.08 | 1M | — |
+| SON | Sonoco Products Company | netnet | ▫️ | 25% | 57.49 | 5.71 | 1.58 | 27.75 | 1.05 | 2.08 | 1M | — |
+| SON | Sonoco Products Company | custom | ▫️ | 0% | 57.49 | 5.71 | 1.58 | 27.75 | 1.05 | 2.08 | 1M | — |
+| UNG | United States Natural Gas Fu | piotroski | ▫️ | 56% | 10.15 | — | — | — | — | — | 10M | — |
+| UNG | United States Natural Gas Fu | greenblatt | ▫️ | 33% | 10.15 | — | — | — | — | — | 10M | — |
+| UNG | United States Natural Gas Fu | lynch | ▫️ | 25% | 10.15 | — | — | — | — | — | 10M | — |
+| UNG | United States Natural Gas Fu | netnet | ▫️ | 25% | 10.15 | — | — | — | — | — | 10M | — |
+| UNG | United States Natural Gas Fu | buffett | ▫️ | 17% | 10.15 | — | — | — | — | — | 10M | — |
+| UNG | United States Natural Gas Fu | graham | ▫️ | 0% | 10.15 | — | — | — | — | — | 10M | — |
+| UNG | United States Natural Gas Fu | custom | ▫️ | 0% | 10.15 | — | — | — | — | — | 10M | — |
+| CRUS | CIRRUS LOGIC, INC. | graham | ▫️ | 78% | 115 | 14.69 | 2.86 | 19.47 | 7.37 | — | 613,451 | — |
+| CRUS | CIRRUS LOGIC, INC. | buffett | ▫️ | 67% | 115 | 14.69 | 2.86 | 19.47 | 7.37 | — | 613,451 | — |
+| CRUS | CIRRUS LOGIC, INC. | greenblatt | ▫️ | 33% | 115 | 14.69 | 2.86 | 19.47 | 7.37 | — | 613,451 | — |
+| CRUS | CIRRUS LOGIC, INC. | lynch | ▫️ | 25% | 115 | 14.69 | 2.86 | 19.47 | 7.37 | — | 613,451 | — |
+| CRUS | CIRRUS LOGIC, INC. | netnet | ▫️ | 25% | 115 | 14.69 | 2.86 | 19.47 | 7.37 | — | 613,451 | — |
+| CRUS | CIRRUS LOGIC, INC. | custom | ▫️ | 0% | 115 | 14.69 | 2.86 | 19.47 | 7.37 | — | 613,451 | — |
+| MGY | Magnolia Oil & Gas Corp | piotroski | ▫️ | 67% | 27.22 | 15.53 | 2.53 | 16.27 | 1.54 | — | 4M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.

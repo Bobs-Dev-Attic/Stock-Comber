@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-PD,"PAGERDUTY, INC.",greenblatt,True,3,3,100.0,12.32,6.59,4.52,68.37,2.01,2.84,10.71,2M,—
-SLV,iShares Silver Trust,lynch,True,3,4,75.0,62.72,1.53,—,—,—,—,—,23M,—
-SM,SM ENERGY CO,piotroski,True,7,9,77.8,37.20,6.60,0.89,13.47,0.69,—,72.85,3M,—
-DAKT,"Daktronics, Inc.",piotroski,True,8,9,88.9,19.20,20.87,3.15,15.09,2.31,—,11.23,"321,461",—
-DAKT,"Daktronics, Inc.",lynch,True,3,4,75.0,19.20,20.87,3.15,15.09,2.31,—,11.23,"321,461",—
+POWL,"Powell Industries, Inc.",piotroski,True,7,9,77.8,198,13.30,3.75,28.21,2.09,0.73,133,"430,833",—
+POWL,"Powell Industries, Inc.",lynch,True,3,4,75.0,198,13.30,3.75,28.21,2.09,0.73,133,"430,833",—
+SON,Sonoco Products Company,piotroski,True,8,9,88.9,57.49,5.71,1.58,27.75,1.05,2.08,90.68,1M,—
+SON,Sonoco Products Company,lynch,True,3,4,75.0,57.49,5.71,1.58,27.75,1.05,2.08,90.68,1M,—
+CRUS,"CIRRUS LOGIC, INC.",piotroski,True,8,9,88.9,115,14.69,2.86,19.47,7.37,—,84.35,"613,451",—
+PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,300,13.09,4.01,30.71,—,5.14,196,"134,922",—
+BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,166,22.53,3.86,17.13,2.65,0.86,84.23,"573,570",—
+BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,166,22.53,3.86,17.13,2.65,0.86,84.23,"573,570",—
+AROC,"Archrock, Inc.",piotroski,True,8,9,88.9,30.70,16.78,3.60,21.61,1.54,1.92,18.75,3M,—
+FHI,"Federated Hermes, Inc.",greenblatt,True,3,3,100.0,64.72,12.62,4.06,33.69,2.75,0.81,42.89,"516,130",—
+FHI,"Federated Hermes, Inc.",piotroski,True,8,9,88.9,64.72,12.62,4.06,33.69,2.75,0.81,42.89,"516,130",—
 EVR,EVERCORE INC.,buffett,True,5,6,83.3,292,20.78,6.05,29.14,2.16,1.50,123,"483,261",—
 EVR,EVERCORE INC.,piotroski,True,7,9,77.8,292,20.78,6.05,29.14,2.16,1.50,123,"483,261",—
-MTCH,"Match Group, Inc.",piotroski,True,8,9,88.9,40.87,17.17,—,-242,1.42,—,—,2M,—
-GGG,GRACO INC.,piotroski,True,8,9,88.9,80.64,26.18,5.14,19.66,3.15,—,32.97,2M,—
-GGG,GRACO INC.,buffett,True,5,6,83.3,80.64,26.18,5.14,19.66,3.15,—,32.97,2M,—
-MTCH,"Match Group, Inc.",lynch,True,3,4,75.0,40.87,17.17,—,-242,1.42,—,—,2M,—
-VICR,VICOR CORPORATION,piotroski,True,8,9,88.9,201,76.84,12.81,16.66,8.99,0.10,30.32,"513,745",—
-VICR,VICOR CORPORATION,buffett,True,5,6,83.3,201,76.84,12.81,16.66,8.99,0.10,30.32,"513,745",—
-VICR,VICOR CORPORATION,lynch,True,3,4,75.0,201,76.84,12.81,16.66,8.99,0.10,30.32,"513,745",—
+GGG,GRACO INC.,piotroski,True,8,9,88.9,80.16,26.03,5.11,19.66,3.15,—,32.97,2M,—
+GGG,GRACO INC.,buffett,True,5,6,83.3,80.16,26.03,5.11,19.66,3.15,—,32.97,2M,—
 HALO,"HALOZYME THERAPEUTICS, INC.",buffett,True,5,6,83.3,108,42.25,275,649,4.66,50.73,4.76,1M,—
-MEDP,"Medpace Holdings, Inc.",buffett,True,5,6,83.3,621,40.62,39.93,98.27,0.74,3.30,73.11,"225,882",—
-MEDP,"Medpace Holdings, Inc.",piotroski,True,7,9,77.8,621,40.62,39.93,98.27,0.74,3.30,73.11,"225,882",—
-FCFS,"FIRSTCASH HOLDINGS, INC.",piotroski,True,7,9,77.8,225,30.36,4.41,14.51,4.55,1.33,92.39,"625,524",—
-PCTY,PAYLOCITY HOLDING CORPORATION,piotroski,True,8,9,88.9,153,31.17,6.88,22.08,1.09,3.00,49.69,"408,795",—
-CTRE,"CareTrust REIT, Inc.",lynch,True,4,4,100.0,39.58,25.21,2.00,7.94,—,0.27,26.43,2M,—
-SIRI,SIRIUS XM HOLDINGS INC.,lynch,True,3,4,75.0,28.69,12.87,0.89,6.96,0.30,1.36,40.31,3M,—
-KRT,Karat Packaging Inc.,piotroski,True,7,9,77.8,48.05,30.80,6.49,21.07,2.30,0.88,16.12,"200,916",—
-KNTK,KINETIK HOLDINGS INC.,lynch,True,3,4,75.0,54.50,20.72,—,-31.53,0.69,-7.37,—,1M,—
+MEDP,"Medpace Holdings, Inc.",buffett,True,5,6,83.3,620,40.58,39.88,98.27,0.74,3.30,73.11,"171,010",—
+MEDP,"Medpace Holdings, Inc.",piotroski,True,7,9,77.8,620,40.58,39.88,98.27,0.74,3.30,73.11,"171,010",—
+NJR,NEW JERSEY RESOURCES CORPORATION,piotroski,True,7,9,77.8,53.74,16.14,2.26,14.03,0.73,—,42.17,"362,609",—
+HAFC,HANMI FINANCIAL CORPORATION,piotroski,True,8,9,88.9,31.11,12.39,1.17,9.55,—,8.88,38.69,"339,237",—
+BCPC,Balchem Corporation,piotroski,True,9,9,100.0,181,38.16,4.70,12.31,2.07,0.34,64.20,"137,885",—
 FMNB,FARMERS NATIONAL BANC CORP /OH/,piotroski,True,8,9,88.9,15.69,10.82,1.22,11.24,—,9.80,20.52,"524,510",—
-FIGS,"FIGS, Inc.",piotroski,True,8,9,88.9,14.68,77.26,6.02,7.83,4.94,0.33,3.23,3M,—
-MCS,MARCUS CORP,piotroski,True,7,9,77.8,29.57,72.88,2.02,2.77,0.40,—,11.55,"403,597",—
-WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,8,9,88.9,31.78,34.92,0.73,2.10,2.42,0.76,29.77,"326,902",—
-PD,"PAGERDUTY, INC.",piotroski,False,6,9,66.7,12.32,6.59,4.52,68.37,2.01,2.84,10.71,2M,—
-PD,"PAGERDUTY, INC.",buffett,False,3,6,50.0,12.32,6.59,4.52,68.37,2.01,2.84,10.71,2M,—
-PD,"PAGERDUTY, INC.",graham,False,3,9,33.3,12.32,6.59,4.52,68.37,2.01,2.84,10.71,2M,—
-PD,"PAGERDUTY, INC.",lynch,False,1,4,25.0,12.32,6.59,4.52,68.37,2.01,2.84,10.71,2M,—
-PD,"PAGERDUTY, INC.",netnet,False,1,4,25.0,12.32,6.59,4.52,68.37,2.01,2.84,10.71,2M,—
-PD,"PAGERDUTY, INC.",custom,False,0,0,0.0,12.32,6.59,4.52,68.37,2.01,2.84,10.71,2M,—
-SLV,iShares Silver Trust,greenblatt,False,1,3,33.3,62.72,1.53,—,—,—,—,—,23M,—
-SLV,iShares Silver Trust,netnet,False,1,4,25.0,62.72,1.53,—,—,—,—,—,23M,—
-SLV,iShares Silver Trust,graham,False,2,9,22.2,62.72,1.53,—,—,—,—,—,23M,—
-SLV,iShares Silver Trust,buffett,False,1,6,16.7,62.72,1.53,—,—,—,—,—,23M,—
-SLV,iShares Silver Trust,piotroski,False,0,9,0.0,62.72,1.53,—,—,—,—,—,23M,—
-SLV,iShares Silver Trust,custom,False,0,0,0.0,62.72,1.53,—,—,—,—,—,23M,—
-SM,SM ENERGY CO,graham,False,6,9,66.7,37.20,6.60,0.89,13.47,0.69,—,72.85,3M,—
-SM,SM ENERGY CO,greenblatt,False,2,3,66.7,37.20,6.60,0.89,13.47,0.69,—,72.85,3M,—
-SM,SM ENERGY CO,lynch,False,1,4,25.0,37.20,6.60,0.89,13.47,0.69,—,72.85,3M,—
-SM,SM ENERGY CO,netnet,False,1,4,25.0,37.20,6.60,0.89,13.47,0.69,—,72.85,3M,—
-SM,SM ENERGY CO,buffett,False,1,6,16.7,37.20,6.60,0.89,13.47,0.69,—,72.85,3M,—
-SM,SM ENERGY CO,custom,False,0,0,0.0,37.20,6.60,0.89,13.47,0.69,—,72.85,3M,—
-LNTH,"LANTHEUS HOLDINGS, INC.",piotroski,False,5,9,55.6,99.97,29.32,6.28,21.43,2.70,1.04,34.95,1M,—
-LNTH,"LANTHEUS HOLDINGS, INC.",buffett,False,3,6,50.0,99.97,29.32,6.28,21.43,2.70,1.04,34.95,1M,—
-LNTH,"LANTHEUS HOLDINGS, INC.",graham,False,3,9,33.3,99.97,29.32,6.28,21.43,2.70,1.04,34.95,1M,—
-LNTH,"LANTHEUS HOLDINGS, INC.",greenblatt,False,1,3,33.3,99.97,29.32,6.28,21.43,2.70,1.04,34.95,1M,—
-LNTH,"LANTHEUS HOLDINGS, INC.",lynch,False,1,4,25.0,99.97,29.32,6.28,21.43,2.70,1.04,34.95,1M,—
+FIGS,"FIGS, Inc.",piotroski,True,8,9,88.9,15.21,80.05,6.24,7.83,4.94,0.33,3.23,3M,—
+MCS,MARCUS CORP,piotroski,True,7,9,77.8,30.91,76.18,2.11,2.77,0.40,—,11.55,"243,437",—
+FROG,JFrog Ltd.,piotroski,True,7,9,77.8,90.14,—,11.80,-8.09,2.14,0.51,—,1M,—
+WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,8,9,88.9,32.14,35.32,0.74,2.10,2.42,0.76,29.77,"582,176",—
+POWL,"Powell Industries, Inc.",graham,False,7,9,77.8,198,13.30,3.75,28.21,2.09,0.73,133,"430,833",—
+POWL,"Powell Industries, Inc.",buffett,False,4,6,66.7,198,13.30,3.75,28.21,2.09,0.73,133,"430,833",—
+POWL,"Powell Industries, Inc.",greenblatt,False,2,3,66.7,198,13.30,3.75,28.21,2.09,0.73,133,"430,833",—
+POWL,"Powell Industries, Inc.",netnet,False,2,4,50.0,198,13.30,3.75,28.21,2.09,0.73,133,"430,833",—
+POWL,"Powell Industries, Inc.",custom,False,0,0,0.0,198,13.30,3.75,28.21,2.09,0.73,133,"430,833",—
+SON,Sonoco Products Company,buffett,False,4,6,66.7,57.49,5.71,1.58,27.75,1.05,2.08,90.68,1M,—
+SON,Sonoco Products Company,greenblatt,False,2,3,66.7,57.49,5.71,1.58,27.75,1.05,2.08,90.68,1M,—
+SON,Sonoco Products Company,graham,False,5,9,55.6,57.49,5.71,1.58,27.75,1.05,2.08,90.68,1M,—
+SON,Sonoco Products Company,netnet,False,1,4,25.0,57.49,5.71,1.58,27.75,1.05,2.08,90.68,1M,—
+SON,Sonoco Products Company,custom,False,0,0,0.0,57.49,5.71,1.58,27.75,1.05,2.08,90.68,1M,—
+UNG,"United States Natural Gas Fund, LP",piotroski,False,5,9,55.6,10.15,—,—,—,—,—,—,10M,—
+UNG,"United States Natural Gas Fund, LP",greenblatt,False,1,3,33.3,10.15,—,—,—,—,—,—,10M,—
+UNG,"United States Natural Gas Fund, LP",lynch,False,1,4,25.0,10.15,—,—,—,—,—,—,10M,—
+UNG,"United States Natural Gas Fund, LP",netnet,False,1,4,25.0,10.15,—,—,—,—,—,—,10M,—
+UNG,"United States Natural Gas Fund, LP",buffett,False,1,6,16.7,10.15,—,—,—,—,—,—,10M,—
+UNG,"United States Natural Gas Fund, LP",graham,False,0,9,0.0,10.15,—,—,—,—,—,—,10M,—
+UNG,"United States Natural Gas Fund, LP",custom,False,0,0,0.0,10.15,—,—,—,—,—,—,10M,—
+CRUS,"CIRRUS LOGIC, INC.",graham,False,7,9,77.8,115,14.69,2.86,19.47,7.37,—,84.35,"613,451",—
+CRUS,"CIRRUS LOGIC, INC.",buffett,False,4,6,66.7,115,14.69,2.86,19.47,7.37,—,84.35,"613,451",—
+CRUS,"CIRRUS LOGIC, INC.",greenblatt,False,1,3,33.3,115,14.69,2.86,19.47,7.37,—,84.35,"613,451",—
+CRUS,"CIRRUS LOGIC, INC.",lynch,False,1,4,25.0,115,14.69,2.86,19.47,7.37,—,84.35,"613,451",—
+CRUS,"CIRRUS LOGIC, INC.",netnet,False,1,4,25.0,115,14.69,2.86,19.47,7.37,—,84.35,"613,451",—
+CRUS,"CIRRUS LOGIC, INC.",custom,False,0,0,0.0,115,14.69,2.86,19.47,7.37,—,84.35,"613,451",—
+MGY,Magnolia Oil & Gas Corp,piotroski,False,6,9,66.7,27.22,15.53,2.53,16.27,1.54,—,20.61,4M,—
