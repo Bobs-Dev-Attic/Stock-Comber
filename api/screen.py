@@ -93,6 +93,46 @@ class handler(BaseHTTPRequestHandler):
         tickers = [t.strip().upper() for t in raw.split(",") if t.strip()]
         strategies = params.get("strategy") or ["graham", "buffett"]
 
+        # Fund X-ray catalog: ?funds=1 lists the bundled ETF/fund snapshots.
+        if params.get("funds"):
+            from stock_comber.funds import list_funds
+            self._send(200, {"funds": list_funds()})
+            return
+
+        # Fund X-ray: ?fund=SPY (bundled snapshot) or ?fund_holdings=<JSON
+        # [{ticker,weight},…]> deconstructs a fund and scores it fund-weighted
+        # against the strategies. Reads only the *stored* screened universe (no
+        # upstream calls → no rate limit); unscreened holdings come back as
+        # "pending" for the caller to enqueue.
+        if params.get("fund") or params.get("fund_holdings"):
+            from stock_comber.funds import analyze_fund, get_fund
+            meta = {}
+            if params.get("fund_holdings"):
+                try:
+                    fh = json.loads(params["fund_holdings"][0])
+                    if not isinstance(fh, list):
+                        raise ValueError("fund_holdings must be a JSON array")
+                except (ValueError, json.JSONDecodeError) as exc:
+                    self._send(400, {"error": f"bad fund_holdings: {exc}"})
+                    return
+                fund_holdings = fh
+                meta = {"symbol": (params.get("fund", [""])[0] or "").strip().upper(),
+                        "name": "Custom fund"}
+            else:
+                fund = get_fund(params["fund"][0])
+                if not fund:
+                    self._send(404, {"error": f"unknown fund '{params['fund'][0]}' — pass ?fund_holdings=… to analyze a custom one"})
+                    return
+                fund_holdings = fund["holdings"]
+                meta = {k: fund[k] for k in ("symbol", "name", "category", "snapshot")}
+            try:
+                store = get_storage()
+                results = store.list_all_results(500) if getattr(store, "enabled", False) else []
+                self._send(200, {"fund": analyze_fund(fund_holdings, results, strategies, meta=meta)})
+            except Exception as exc:
+                self._send(502, {"error": f"fund analysis failed: {exc}"})
+            return
+
         custom_criteria = None
         if params.get("custom"):
             try:

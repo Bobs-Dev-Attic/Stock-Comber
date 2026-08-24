@@ -1,5 +1,23 @@
 # Release notes
 
+## v0.88.0 — Fund X-ray: deconstruct & score an ETF or mutual fund (2026-08-24)
+
+A new **🧩 Funds** tab breaks a fund down into its top holdings and grades it. Pick a bundled
+snapshot (SPY, VOO, IVV, VTI, QQQ, SCHD, DIA, VUG, VTV, VYM) — or paste your own
+`TICKER, weight%` holdings — choose your strategies, and Analyze. You get:
+
+- an **overall 0–100 score and letter grade** (65% fund-weighted strategy quality + 35%
+  diversification),
+- a **diversity & balance** read-out — sector bars, top-10 weight, effective number of holdings
+  and sectors, heaviest sector,
+- a **holdings table** with each name's weight, sector, strategy score and valuation verdict.
+
+Scoring is **fund-weighted**, so big positions move the score the way they move the fund. To dodge
+API rate limits, the analysis reads only the already-screened universe — holdings not screened
+yet appear as **pending** with a one-click **Queue** that hands them to the background worker;
+re-analyze in a few minutes for fuller coverage. Bundled snapshots are approximate top-holdings —
+**educational only, not investment advice.**
+
 ## v0.87.0 — Buy/sell targets show % from current price (2026-08-24)
 
 The Portfolio analysis table now prints each **Buy below** and **Sell above** target with its
