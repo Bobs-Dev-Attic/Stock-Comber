@@ -1,5 +1,14 @@
 # Release notes
 
+## v0.85.0 — Portfolio holdings in a dialog, with history (2026-08-24)
+
+The Portfolio page is tidier. Holdings now live in an **✎ Edit** dialog instead of inline: the
+page shows a compact summary card (name, holdings, strategies) and the dialog is where you add
+holdings and pick strategies — matching the Jobs modal. The dialog gains **Save As…** (keep the
+original, save a copy under a new name) beside **Save** and **Delete**. Each portfolio also keeps
+its own **Analysis history** — every analysis is logged (when, score, total value, passing count)
+in this browser, with a **Clear** button.
+
 ## v0.84.0 — Saved column layouts + tidier toolbar (2026-08-24)
 
 The Full list gets a **▦ Layouts** menu next to Columns: pick the columns you want, then
