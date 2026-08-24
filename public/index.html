@@ -113,6 +113,7 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
   .xscroll-top + .tablewrap { margin-top: .2rem; }
   .pager { display: flex; gap: .7rem; align-items: center; justify-content: center; margin: .7rem 0 .2rem; flex-wrap: wrap; }
   .pager .pg-info { color: var(--muted); font-size: .85rem; }
+  .toolbar .pager { margin: 0; }   /* the top pager sits inline on the toolbar row */
   .listcount { text-align: center; margin: .35rem 0 .2rem; font-size: .85rem; }
   table { border-collapse: collapse; width: 100%; }
   th, td { padding: .55rem .6rem; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
@@ -634,9 +635,14 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
       <div class="toolbar">
         <div id="status" class="status" style="margin:0"></div>
         <div class="spacer"></div>
+        <div id="pager-top" class="pager" hidden></div>
         <div class="menu" id="cols-menu">
           <button class="btn ghost" id="cols-btn">Columns ▾</button>
           <div class="panel-pop" id="cols-pop"></div>
+        </div>
+        <div class="menu" id="colpreset-menu">
+          <button class="btn ghost" id="colpreset-btn" title="Save &amp; apply column layouts">▦ Layouts ▾</button>
+          <div class="panel-pop" id="colpreset-pop" style="min-width:210px"></div>
         </div>
         <div class="menu" id="export-menu">
           <button class="btn ghost" id="export-btn">Export ▾</button>
@@ -648,7 +654,6 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
         </div>
       </div>
 
-      <div id="pager-top" class="pager" hidden></div>
       <div class="xscroll-top" id="xtop" hidden aria-hidden="true"><div id="xtop-inner"></div></div>
       <div class="tablewrap" id="tblwrap"><table id="tbl" hidden>
         <thead><tr id="head"></tr></thead>
@@ -1288,6 +1293,44 @@ function buildPresetMenu(){
   });
 }
 
+/* ---- saved column layouts (a named snapshot of the visible columns + order) ---- */
+function loadColPresets(){ try { const o = JSON.parse(localStorage.getItem("sc_colpresets")); return (o && typeof o === "object") ? o : {}; } catch(e){ return {}; } }
+function saveColPresets(){ try { localStorage.setItem("sc_colpresets", JSON.stringify(colPresets)); } catch(e){} }
+let colPresets = loadColPresets();
+function applyColPreset(name){
+  const cols = colPresets[name]; if (!Array.isArray(cols)) return;
+  const valid = cols.filter(k => ALL_COLUMNS.some(c => c.key === k));
+  if (!valid.length) return;
+  selectedCols = valid; saveCols(); buildColsMenu(); renderHead(); render();
+}
+function buildColPresetMenu(){
+  const pop = $("#colpreset-pop"); if (!pop) return;
+  pop.innerHTML = "";
+  const saveRow = document.createElement("div"); saveRow.className = "colrow";
+  const savBtn = document.createElement("button"); savBtn.className = "btn ghost"; savBtn.style.width = "100%";
+  savBtn.textContent = "＋ Save current columns…";
+  savBtn.onclick = () => {
+    const name = (prompt("Name this column layout:") || "").trim();
+    if (!name) return;
+    colPresets[name] = selectedCols.slice(); saveColPresets(); buildColPresetMenu();
+    setStatus("full", `Saved layout “${name}”.`);
+  };
+  saveRow.appendChild(savBtn); pop.appendChild(saveRow);
+  const names = Object.keys(colPresets).sort((a,b) => a.localeCompare(b));
+  const lbl = document.createElement("div"); lbl.className = "hint"; lbl.style.padding = ".35rem .45rem .15rem";
+  lbl.textContent = names.length ? "Apply a layout:" : "No saved layouts yet.";
+  pop.appendChild(lbl);
+  names.forEach(n => {
+    const row = document.createElement("div"); row.className = "colrow"; row.style.justifyContent = "space-between";
+    const a = document.createElement("button"); a.className = "btn ghost"; a.style.flex = "1"; a.style.textAlign = "left";
+    a.textContent = n; a.title = "Apply this column layout";
+    a.onclick = () => { applyColPreset(n); $("#colpreset-menu").classList.remove("open"); };
+    const del = document.createElement("button"); del.className = "btn ghost"; del.textContent = "✕"; del.title = "Delete layout";
+    del.onclick = e => { e.stopPropagation(); delete colPresets[n]; saveColPresets(); buildColPresetMenu(); };
+    row.append(a, del); pop.appendChild(row);
+  });
+}
+
 /* ---- generic per-column filters for static tables (History) ----
    Same value/formula syntax as the Full list, but matched against each cell's
    rendered text. A MutationObserver re-applies the active filters whenever the
@@ -1391,6 +1434,7 @@ $("#strat-pop").addEventListener("click", e => e.stopPropagation());
 $("#cstrat-pop").addEventListener("click", e => e.stopPropagation());
 $("#tmpl-pop").addEventListener("click", e => e.stopPropagation());
 $("#preset-pop").addEventListener("click", e => e.stopPropagation());
+$("#colpreset-pop").addEventListener("click", e => e.stopPropagation());
 
 /* ---- table ---- */
 function renderHead() {
@@ -3242,9 +3286,9 @@ $("#pf-del").onclick = async () => {
   if (ok) newPortfolio();
 };
 
-wireMenu("cols-menu"); wireMenu("export-menu"); wireMenu("strat-menu"); wireMenu("cstrat-menu"); wireMenu("tmpl-menu"); wireMenu("preset-menu"); wireMenu("pfstrat-menu");
+wireMenu("cols-menu"); wireMenu("export-menu"); wireMenu("strat-menu"); wireMenu("cstrat-menu"); wireMenu("tmpl-menu"); wireMenu("preset-menu"); wireMenu("colpreset-menu"); wireMenu("pfstrat-menu");
 $("#pfstrat-pop").addEventListener("click", e => e.stopPropagation());
-buildPresetMenu();
+buildPresetMenu(); buildColPresetMenu();
 buildColsMenu(); buildStratMenu(); buildGroupMenu(); renderHead();
 // Restore the last-viewed tab across refreshes (default to the Full-list landing).
 initHistoryFilters();   // add per-column filter rows to the History tables

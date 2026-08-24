@@ -1,5 +1,12 @@
 # Release notes
 
+## v0.84.0 — Saved column layouts + tidier toolbar (2026-08-24)
+
+The Full list gets a **▦ Layouts** menu next to Columns: pick the columns you want, then
+**Save current columns…** under a name to recall that exact set and order later in one click —
+just like the filter presets. And the **← Prev / Next →** pager now lives on the same toolbar
+row as the Columns and Export menus, rather than on its own line.
+
 ## v0.83.0 — Pager on top + clearer filtered export (2026-08-24)
 
 Two Full-list tweaks:
