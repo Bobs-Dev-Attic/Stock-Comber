@@ -178,6 +178,7 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
   .fund-sec-w { flex: 0 0 54px; text-align: right; font-variant-numeric: tabular-nums; font-size: .85rem; }
   tr.pending-row { opacity: .55; }
   tr.pending-row:hover { background: transparent; }
+  .fund-hist-del { border: 0; background: transparent; color: var(--fail-ink); cursor: pointer; font-size: 1.1rem; line-height: 1; padding: 0 .2rem; }
   tbody tr { cursor: pointer; }
   tbody tr:hover { background: color-mix(in srgb, var(--accent) 8%, transparent); }
   tbody tr.grouphdr { background: color-mix(in srgb, var(--accent) 10%, var(--panel)); font-weight: 600; }
@@ -585,6 +586,15 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
       </div>
 
       <div id="fund-result"></div>
+
+      <div class="jobcard-lg" id="fund-history-card" hidden>
+        <div class="jc-head">
+          <div><span class="jc-title">🕘 Saved analyses</span>
+            <div class="hint">Past fund analyses (kept in this browser). Click one to reopen it.</div></div>
+          <button class="btn ghost" id="fund-hist-clear" title="Clear all saved fund analyses">Clear</button>
+        </div>
+        <div id="fund-history"></div>
+      </div>
     </div>
 
     <!-- History: analysis queue + all past runs & searches -->
@@ -3494,6 +3504,7 @@ async function loadFunds(){
   const o = document.createElement("option"); o.value = CUSTOM_FUND; o.textContent = "✎ Custom holdings…"; sel.appendChild(o);
   buildFundStratMenu();
   fundSelectChanged();
+  renderFundHistory();
 }
 function fundSelectChanged(){ $("#fund-custom").hidden = $("#fund-select").value !== CUSTOM_FUND; }
 function buildFundStratMenu(){
@@ -3540,7 +3551,7 @@ async function analyzeFund(){
   try {
     const res = await fetch("/api/screen?" + params.toString()); const data = await res.json();
     if (data.error){ fundErr("Error: " + data.error); }
-    else renderFundAnalysis(data.fund || {});
+    else { renderFundAnalysis(data.fund || {}); recordFundHistory(data.fund || {}); }
   } catch(e){ fundErr("Analysis failed: " + e.message); }
   finally { btn.disabled = false; btn.textContent = label; hideBanner(); }
 }
@@ -3590,6 +3601,51 @@ function renderFundAnalysis(fa){
   const qb = $("#fund-queue");
   if (qb) qb.onclick = () => { enqueueForAnalysis((fa.pending || []).join(",")); qb.disabled = true; qb.textContent = "Queued — re-analyze in a few minutes"; };
 }
+/* ---- saved fund analyses (retrievable, kept in this browser) ---- */
+function loadFundHist(){ try { const a = JSON.parse(localStorage.getItem("sc_fundhistory")); return Array.isArray(a) ? a : []; } catch(e){ return []; } }
+function saveFundHist(){ try { localStorage.setItem("sc_fundhistory", JSON.stringify(fundHist)); } catch(e){} }
+let fundHist = loadFundHist();
+function fundWhen(iso){ try { return new Date(iso).toLocaleString(); } catch(e){ return iso; } }
+// Save the whole analysis so a saved row reopens the exact same read-out.
+function recordFundHistory(fa){
+  if (!fa || !fa.count) return;
+  fundHist.unshift({ at: new Date().toISOString(),
+    label: fa.name || fa.symbol || "Custom fund", symbol: fa.symbol || "",
+    score: fa.score, grade: fa.grade, coverage: fa.coverage,
+    strategies: fa.strategies || [], fa });
+  if (fundHist.length > 30) fundHist.length = 30;
+  saveFundHist(); renderFundHistory();
+}
+function renderFundHistory(){
+  const card = $("#fund-history-card"), el = $("#fund-history"); if (!el) return;
+  if (!fundHist.length){ card.hidden = true; el.innerHTML = ""; return; }
+  card.hidden = false;
+  el.innerHTML = `<div class="tablewrap"><table><thead><tr><th class="l">When</th><th class="l">Fund</th><th class="r">Score</th><th>Grade</th><th class="r">Coverage</th><th></th></tr></thead><tbody>`
+    + fundHist.map((h, i) => `<tr data-i="${i}" class="fund-hist-row">`
+      + `<td class="l">${escHtml(fundWhen(h.at))}</td>`
+      + `<td class="l">${escHtml(h.label)}${h.symbol ? ` <span class="hint">(${escHtml(h.symbol)})</span>` : ""}</td>`
+      + `<td class="r">${h.score != null ? Number(h.score).toFixed(0) : "—"}</td>`
+      + `<td>${escHtml(h.grade || "—")}</td>`
+      + `<td class="r">${h.coverage != null ? (h.coverage * 100).toFixed(0) + "%" : "—"}</td>`
+      + `<td class="r"><button class="fund-hist-del" data-i="${i}" title="Delete this saved analysis" aria-label="Delete">×</button></td></tr>`).join("")
+    + `</tbody></table></div>`;
+  el.querySelectorAll(".fund-hist-row").forEach(tr => tr.onclick = e => {
+    if (e.target.classList.contains("fund-hist-del")) return;
+    viewFundHistory(+tr.dataset.i);
+  });
+  el.querySelectorAll(".fund-hist-del").forEach(b => b.onclick = e => { e.stopPropagation(); deleteFundHistory(+b.dataset.i); });
+}
+function viewFundHistory(i){
+  const h = fundHist[i]; if (!h || !h.fa) return;
+  renderFundAnalysis(h.fa);
+  try { $("#fund-result").scrollIntoView({ behavior: "smooth", block: "start" }); } catch(e){}
+}
+function deleteFundHistory(i){ fundHist.splice(i, 1); saveFundHist(); renderFundHistory(); }
+$("#fund-hist-clear").onclick = () => {
+  if (!fundHist.length) return;
+  if (!confirm("Clear all saved fund analyses?")) return;
+  fundHist = []; saveFundHist(); renderFundHistory();
+};
 $("#fund-select").onchange = fundSelectChanged;
 $("#fund-analyze").onclick = analyzeFund;
 
