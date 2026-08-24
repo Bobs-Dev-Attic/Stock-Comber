@@ -2578,7 +2578,9 @@ function runKindBadge(meta) {
 // Finished ("done") queue items are omitted — each is already recorded as a run.
 function renderActivity(runs, queue, cfg, configured) {
   const ts = s => { const t = Date.parse(s); return Number.isNaN(t) ? 0 : t; };
-  const upcoming = upcomingRows(cfg || {}, !!configured);
+  // Never let a malformed saved job/schedule break the whole History load.
+  let upcoming = [];
+  try { upcoming = upcomingRows(cfg || {}, !!configured); } catch (e) { upcoming = []; }
   const active = (queue || []).filter(q => q.status === "pending" || q.status === "processing");
   active.sort((a, b) => (QRANK[a.status] ?? 9) - (QRANK[b.status] ?? 9) || ts(b.requested_at) - ts(a.requested_at));
   const failed = (queue || []).filter(q => q.status === "error");
@@ -2653,8 +2655,11 @@ async function openAnalysisFor(ticker) {
 // nightly "hidden gems" screen + every saved custom job fire together at the next
 // scheduled run (see .github/workflows/screen.yml).
 function jobScreens(job) {
-  const tks = (job.tickers || []).filter(Boolean);
   if (job.index) return `Template · ${escHtml(String(job.index).toUpperCase())}`;
+  // tickers may be stored as an array or a comma/space-separated string.
+  const raw = job.tickers;
+  const arr = Array.isArray(raw) ? raw : (typeof raw === "string" ? raw.split(/[,\s]+/) : []);
+  const tks = arr.map(t => String(t).trim()).filter(Boolean);
   if (tks.length) return escHtml(tks.slice(0, 6).join(", ")) + (tks.length > 6 ? ` +${tks.length - 6}` : "");
   return "—";
 }
@@ -2679,9 +2684,10 @@ function upcomingRows(cfg, configured) {
     + `<td class="l">${stratPills(ss)}${detail ? ` · ${detail}` : ""}</td>`
     + `<td class="r">—</td></tr>`;
   const rows = [mk("🌙 Nightly “hidden gems”", "stratified-random market pick", strats)];
-  ((cfg && cfg.jobs) || []).forEach(j => rows.push(
-    mk(`🧮 ${escHtml(j.name || "Custom job")}`, jobScreens(j),
-       (j.strategies && j.strategies.length) ? j.strategies : strats)));
+  const jobs = Array.isArray(cfg && cfg.jobs) ? cfg.jobs : [];
+  jobs.forEach(j => rows.push(
+    mk(`🧮 ${escHtml((j && j.name) || "Custom job")}`, jobScreens(j || {}),
+       (Array.isArray(j && j.strategies) && j.strategies.length) ? j.strategies : strats)));
   return rows;
 }
 async function loadHistory(force) {

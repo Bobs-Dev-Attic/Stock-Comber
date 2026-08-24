@@ -1,5 +1,13 @@
 # Release notes
 
+## v0.96.0 — Fix History tab crash on string-valued job tickers (2026-08-24)
+
+Fixes a **"Failed to load history: (job.tickers || []).filter is not a function"** error some users
+hit on the History tab. A saved custom job whose tickers were stored as a comma-separated string
+(rather than a list) broke the whole tab once the scheduled runs moved into the Activity list. The
+job read-out now handles either shape, the strategy tags tolerate the same, and a single malformed
+job can no longer take down the History tab.
+
 ## v0.95.0 — Portfolio analyses on the History tab (2026-08-24)
 
 The History tab gains a **Portfolio analyses** card alongside Activity, Searches and Saved fund
