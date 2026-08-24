@@ -1,5 +1,12 @@
 # Release notes
 
+## v0.90.0 — Funds "Saved analyses" section always shows (2026-08-24)
+
+Fixes a discoverability gap from v0.89.0: the **Saved analyses** section on the Funds tab was
+hidden until you'd saved your first analysis, so it looked like the feature wasn't there. It now
+always appears — with a "No saved analyses yet…" hint when empty — and the **Clear** button only
+shows once you have saved analyses.
+
 ## v0.89.0 — Saved, retrievable fund analyses (2026-08-24)
 
 Fund X-rays are now kept. Each analysis you run is saved to a **Saved analyses** card on the

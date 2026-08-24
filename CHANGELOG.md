@@ -4,6 +4,14 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.90.0] - 2026-08-24
+
+### Fixed
+- **The Funds "Saved analyses" section is now always visible.** It previously stayed hidden until
+  the first analysis was saved, so the feature looked absent. It now shows on the Funds tab with an
+  empty-state hint ("No saved analyses yet…") and reveals the **Clear** button only once there are
+  entries.
+
 ## [0.89.0] - 2026-08-24
 
 ### Added
