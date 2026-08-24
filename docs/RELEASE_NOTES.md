@@ -1,5 +1,13 @@
 # Release notes
 
+## v0.92.0 — Export a fund analysis as CSV (2026-08-24)
+
+The Fund X-ray read-out now has a **⭳ CSV** button. It downloads the whole analysis: a fund-level
+summary block (overall score, grade, fund-weighted quality, diversification, coverage, top-10
+weight, effective holdings, heaviest sector) followed by the full holdings table — ticker, weight,
+sector, strategy score, pass/fail, valuation and whether the name is covered. It works on a fresh
+analysis or one you reopen from Saved analyses.
+
 ## v0.91.0 — Scheduled runs folded into the Activity timeline (2026-08-24)
 
 The History tab drops the separate **Upcoming scheduled jobs** card. The next scheduled runs — the
