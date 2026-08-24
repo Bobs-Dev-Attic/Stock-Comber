@@ -1,5 +1,12 @@
 # Release notes
 
+## v0.93.0 — Fund analysis JSON export (2026-08-24)
+
+The Fund X-ray read-out gains a **⭳ JSON** button next to ⭳ CSV. It downloads the full analysis
+object — every score, the coverage and concentration stats, the sector breakdown, the holdings and
+the suggestions — as `stock-comber-fund-<symbol>-<date>.json`, handy for feeding the result into
+another tool.
+
 ## v0.92.0 — Export a fund analysis as CSV (2026-08-24)
 
 The Fund X-ray read-out now has a **⭳ CSV** button. It downloads the whole analysis: a fund-level
