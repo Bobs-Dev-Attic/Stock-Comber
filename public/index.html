@@ -3618,8 +3618,9 @@ function recordFundHistory(fa){
 }
 function renderFundHistory(){
   const card = $("#fund-history-card"), el = $("#fund-history"); if (!el) return;
-  if (!fundHist.length){ card.hidden = true; el.innerHTML = ""; return; }
-  card.hidden = false;
+  card.hidden = false;   // always show the section so it's discoverable
+  $("#fund-hist-clear").style.display = fundHist.length ? "" : "none";
+  if (!fundHist.length){ el.innerHTML = '<div class="hint">No saved analyses yet — run an analysis above and it will be listed here to reopen later.</div>'; return; }
   el.innerHTML = `<div class="tablewrap"><table><thead><tr><th class="l">When</th><th class="l">Fund</th><th class="r">Score</th><th>Grade</th><th class="r">Coverage</th><th></th></tr></thead><tbody>`
     + fundHist.map((h, i) => `<tr data-i="${i}" class="fund-hist-row">`
       + `<td class="l">${escHtml(fundWhen(h.at))}</td>`
