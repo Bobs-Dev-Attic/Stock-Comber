@@ -3392,11 +3392,12 @@ function renderPfHistory(){
   if (!list.length){ card.hidden = true; el.innerHTML = ""; return; }
   card.hidden = false;
   el.innerHTML = `<div class="tablewrap"><table><thead><tr><th class="l">When</th><th class="r">Score</th><th class="r">Value</th><th class="r">Passing</th></tr></thead><tbody>`
-    + list.map(h => `<tr><td class="l">${escHtml(pfWhen(h.at))}</td>`
+    + list.map(h => `<tr class="rowlink" title="Edit this portfolio's holdings"><td class="l">${escHtml(pfWhen(h.at))}</td>`
         + `<td class="r">${h.score != null ? Number(h.score).toFixed(0) : "—"}</td>`
         + `<td class="r">${money(h.total_value)}</td>`
         + `<td class="r">${h.passing}/${h.count}</td></tr>`).join("")
     + `</tbody></table></div>`;
+  el.querySelectorAll("tr.rowlink").forEach(tr => tr.onclick = () => openPfDialog());
 }
 function buildPfStratMenu(){
   const pop = $("#pfstrat-pop"); pop.innerHTML = "";
