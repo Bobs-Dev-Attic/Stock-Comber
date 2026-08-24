@@ -4,6 +4,23 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.88.0] - 2026-08-24
+
+### Added
+- **Fund X-ray tab.** A new **🧩 Funds** tab deconstructs an ETF or mutual fund into its top
+  holdings and scores it **fund-weighted** against the selected strategies, with a diversity &
+  balance read-out (sector spread, top-10 weight, effective holdings/sectors) and an overall
+  0–100 score + letter grade. Overall = 65% fund-weighted strategy quality + 35%
+  diversification.
+- **Bundled fund snapshots + custom paste.** Ten popular funds ship as curated top-holdings
+  snapshots (SPY, VOO, IVV, VTI, QQQ, SCHD, DIA, VUG, VTV, VYM); any other fund can be analyzed
+  by pasting `TICKER, weight%` holdings.
+- **Reads the stored universe (no rate limits) + queue the gaps.** Fund analysis scores against
+  already-screened results only — no upstream calls — so it never hits an API rate limit.
+  Holdings not yet screened show as **pending** with a one-click **Queue** that enqueues them for
+  the background worker; re-analyze later for fuller coverage. New `stock_comber/funds.py`
+  (pure, tested) served via `/api/screen?funds=1` and `?fund=SYM` / `?fund_holdings=[…]`.
+
 ## [0.87.0] - 2026-08-24
 
 ### Changed
