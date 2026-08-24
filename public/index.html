@@ -113,6 +113,7 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
   .xscroll-top + .tablewrap { margin-top: .2rem; }
   .pager { display: flex; gap: .7rem; align-items: center; justify-content: center; margin: .7rem 0 .2rem; flex-wrap: wrap; }
   .pager .pg-info { color: var(--muted); font-size: .85rem; }
+  .listcount { text-align: center; margin: .35rem 0 .2rem; font-size: .85rem; }
   table { border-collapse: collapse; width: 100%; }
   th, td { padding: .55rem .6rem; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
   th { color: var(--muted); font-weight: 600; font-size: .82rem; text-transform: uppercase; letter-spacing: .03em; cursor: pointer; user-select: none; }
@@ -653,6 +654,7 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
         <tbody></tbody>
       </table></div>
       <div id="pager" class="pager" hidden></div>
+      <div id="full-count" class="listcount hint" hidden></div>
     </div>
   </section>
 </div>
@@ -1522,6 +1524,7 @@ function render() {
     view = sorted.slice(start, end);
   } else { fullPage = 0; }
   renderPager(activeTab === "full" ? sorted.length : 0, start, end);
+  renderFullCount(sorted.length);
   if (!grouping) {
     view.forEach(r => tbody.appendChild(buildRow(r, cols)));
     $("#tbl").hidden = sorted.length === 0;
@@ -1565,6 +1568,16 @@ function renderPager(total, start, end){
     + `<button class="btn ghost" id="pg-next"${fullPage >= pages - 1 ? " disabled" : ""}>Next →</button>`;
   $("#pg-prev").onclick = () => { if (fullPage > 0){ fullPage--; render(); $("#tblwrap").scrollIntoView({ block: "nearest" }); } };
   $("#pg-next").onclick = () => { if (fullPage < pages - 1){ fullPage++; render(); $("#tblwrap").scrollIntoView({ block: "nearest" }); } };
+}
+// Total record count under the table (Full list). Shows the filtered count of the
+// grand total when a filter is narrowing the list.
+function renderFullCount(shown){
+  const el = $("#full-count"); if (!el) return;
+  const total = (typeof fullAll !== "undefined" && fullAll) ? fullAll.length : shown;
+  if (activeTab !== "full" || !total){ el.hidden = true; el.textContent = ""; return; }
+  el.hidden = false;
+  const n = shown.toLocaleString(), t = total.toLocaleString();
+  el.textContent = shown < total ? `${n} of ${t} records` : `${t} record${total === 1 ? "" : "s"}`;
 }
 // Keep the mirrored top scrollbar's width and visibility in sync with the table.
 function syncTopScroll() {
