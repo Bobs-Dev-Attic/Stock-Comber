@@ -3248,6 +3248,7 @@ let portfolios = [], pfCurrent = null, pfLoaded = false;
 let pfState = { name: "", holdings: [], strategies: ["graham", "buffett"] };
 let pfStrats = ["graham", "buffett"];   // the dialog's working strategy set
 let pfPreferred = null;   // a portfolio name to open on next load (set from the History tab)
+let pfAfterLoad = null;   // a callback to run once loadPortfolios settles (e.g. reopen an analysis)
 function pfHint(msg, bad){ const el = $("#pf-hint"); if (!el) return; el.textContent = msg || ""; el.style.color = bad ? "var(--fail-ink)" : "var(--muted)"; }
 async function loadPortfolios(){
   pfLoaded = true;
@@ -3259,6 +3260,7 @@ async function loadPortfolios(){
   const pick = (pfPreferred && portfolios.find(p => p.name === pfPreferred)) || portfolios[0];
   pfPreferred = null;
   if (pick) loadPfInto(pick); else newPortfolio(false);
+  if (pfAfterLoad){ const fn = pfAfterLoad; pfAfterLoad = null; try { fn(); } catch(e){} }   // e.g. reopen a saved analysis
 }
 function renderPfSelect(){
   const sel = $("#pf-select"); sel.innerHTML = "";
@@ -3361,7 +3363,8 @@ function pfWhen(iso){ try { return new Date(iso).toLocaleString(); } catch(e){ r
 function recordPfHistory(pa){
   if (!pfCurrent || !pa || !pa.holdings || !pa.holdings.length) return;   // only for saved portfolios
   const list = pfHist[pfCurrent] || (pfHist[pfCurrent] = []);
-  list.unshift({ at: new Date().toISOString(), score: pa.score, total_value: pa.total_value, passing: pa.passing, count: pa.count });
+  // Keep the full analysis (pa) so a saved row can reopen the exact read-out.
+  list.unshift({ at: new Date().toISOString(), score: pa.score, total_value: pa.total_value, passing: pa.passing, count: pa.count, pa });
   if (list.length > 50) list.length = 50;
   savePfHist(); renderPfHistory(); renderHistPortfolioAnalyses();
 }
@@ -3374,17 +3377,23 @@ function renderHistPortfolioAnalyses(){
   rows.sort((a, b) => (Date.parse(b.at) || 0) - (Date.parse(a.at) || 0));
   const w = $("#h-pf-when"); if (w) w.textContent = rows.length ? `· ${rows.length} saved` : "";
   if (!rows.length){ el.innerHTML = `<tr><td colspan="5" class="hint">No portfolio analyses yet — run one on the Portfolio tab.</td></tr>`; return; }
-  el.innerHTML = rows.map(h => `<tr class="rowlink" data-pf="${escHtml(h.name)}" title="Open ${escHtml(h.name)} on the Portfolio tab">`
+  el.innerHTML = rows.map(h => `<tr class="rowlink" data-pf="${escHtml(h.name)}" data-at="${escHtml(h.at)}" title="Reopen this analysis on the Portfolio tab">`
     + `<td class="l">${escHtml(pfWhen(h.at))}</td>`
     + `<td class="l"><strong>${escHtml(h.name)}</strong></td>`
     + `<td class="r">${h.score != null ? Number(h.score).toFixed(0) : "—"}</td>`
     + `<td class="r">${money(h.total_value)}</td>`
     + `<td class="r">${h.passing}/${h.count}</td></tr>`).join("");
-  el.querySelectorAll("tr.rowlink[data-pf]").forEach(tr => tr.onclick = () => openPfFromHistory(tr.dataset.pf));
+  el.querySelectorAll("tr.rowlink[data-pf]").forEach(tr => tr.onclick = () => openPfFromHistory(tr.dataset.pf, tr.dataset.at));
 }
-function openPfFromHistory(name){
-  if (pfLoaded){ showTab("portfolio"); const p = (portfolios || []).find(x => x.name === name); if (p) loadPfInto(p); }
-  else { pfPreferred = name; showTab("portfolio"); }   // loadPortfolios (fired by showTab) opens the preferred one
+// Open a portfolio on the Portfolio tab; when `at` names a saved analysis with a
+// stored read-out, reopen that analysis too.
+function openPfFromHistory(name, at){
+  const showAnalysis = () => {
+    const entry = (pfHist[name] || []).find(e => e.at === at);
+    if (entry && entry.pa){ renderPfAnalysis(entry.pa); try { $("#pf-result").scrollIntoView({ behavior: "smooth", block: "start" }); } catch(e){} }
+  };
+  if (pfLoaded){ showTab("portfolio"); const p = (portfolios || []).find(x => x.name === name); if (p) loadPfInto(p); showAnalysis(); }
+  else { pfPreferred = name; pfAfterLoad = showAnalysis; showTab("portfolio"); }   // render after loadPortfolios settles
 }
 function renderPfHistory(){
   const card = $("#pf-history-card"), el = $("#pf-history"); if (!el) return;
@@ -3392,12 +3401,20 @@ function renderPfHistory(){
   if (!list.length){ card.hidden = true; el.innerHTML = ""; return; }
   card.hidden = false;
   el.innerHTML = `<div class="tablewrap"><table><thead><tr><th class="l">When</th><th class="r">Score</th><th class="r">Value</th><th class="r">Passing</th></tr></thead><tbody>`
-    + list.map(h => `<tr class="rowlink" title="Edit this portfolio's holdings"><td class="l">${escHtml(pfWhen(h.at))}</td>`
+    + list.map((h, i) => `<tr class="rowlink" data-i="${i}" title="Reopen this analysis"><td class="l">${escHtml(pfWhen(h.at))}</td>`
         + `<td class="r">${h.score != null ? Number(h.score).toFixed(0) : "—"}</td>`
         + `<td class="r">${money(h.total_value)}</td>`
         + `<td class="r">${h.passing}/${h.count}</td></tr>`).join("")
     + `</tbody></table></div>`;
-  el.querySelectorAll("tr.rowlink").forEach(tr => tr.onclick = () => openPfDialog());
+  el.querySelectorAll("tr.rowlink[data-i]").forEach(tr => tr.onclick = () => viewPfHistory(+tr.dataset.i));
+}
+// Reopen a saved analysis into the read-out; older entries (pre-save) lack the
+// stored analysis, so fall back to the holdings editor.
+function viewPfHistory(i){
+  const list = pfCurrent ? (pfHist[pfCurrent] || []) : [];
+  const h = list[i]; if (!h) return;
+  if (h.pa){ renderPfAnalysis(h.pa); try { $("#pf-result").scrollIntoView({ behavior: "smooth", block: "start" }); } catch(e){} }
+  else openPfDialog();
 }
 function buildPfStratMenu(){
   const pop = $("#pfstrat-pop"); pop.innerHTML = "";

@@ -1,10 +1,16 @@
 # Release notes
 
+## v0.99.0 — Analysis-history rows reopen the analysis (2026-08-24)
+
+Clicking a row in the **Analysis history** now reopens that exact analysis read-out — score cards,
+holdings table, targets and suggestions — rather than the holdings editor. This applies both on the
+Portfolio tab and in the History tab's Portfolio-analyses card. Portfolio analyses are now saved in
+full to make this possible; rows saved before this change (summary-only) still open the editor.
+
 ## v0.98.0 — Portfolio history rows open the holdings editor (2026-08-24)
 
-On the Portfolio tab, clicking a row in the **Analysis history** card now opens that portfolio's
-**Edit** dialog with its holdings, so you can jump straight from a past analysis to tweaking the
-positions. The rows used to be inert.
+On the Portfolio tab, clicking a row in the **Analysis history** card opened that portfolio's
+**Edit** dialog with its holdings. (Superseded by v0.99.0, which reopens the analysis instead.)
 
 ## v0.97.0 — Export a portfolio analysis (2026-08-24)
 
