@@ -1,22 +1,19 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-MLI,MUELLER INDUSTRIES INC,buffett,True,6,6,100.0,63.22,9.22,2.20,23.84,5.92,0.15,66.66,1M,—
-MLI,MUELLER INDUSTRIES INC,greenblatt,True,3,3,100.0,63.22,9.22,2.20,23.84,5.92,0.15,66.66,1M,—
-MLI,MUELLER INDUSTRIES INC,lynch,True,4,4,100.0,63.22,9.22,2.20,23.84,5.92,0.15,66.66,1M,—
-MLI,MUELLER INDUSTRIES INC,graham,True,8,9,88.9,63.22,9.22,2.20,23.84,5.92,0.15,66.66,1M,—
-MLI,MUELLER INDUSTRIES INC,piotroski,True,7,9,77.8,63.22,9.22,2.20,23.84,5.92,0.15,66.66,1M,—
 POWL,"Powell Industries, Inc.",piotroski,True,7,9,77.8,198,13.30,3.75,28.21,2.09,0.73,133,"430,833",—
 POWL,"Powell Industries, Inc.",lynch,True,3,4,75.0,198,13.30,3.75,28.21,2.09,0.73,133,"430,833",—
-PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,296,12.91,3.95,30.71,—,5.14,196,"118,302",—
+PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,296,12.91,3.95,30.71,—,5.14,196,"157,875",—
 RRC,RANGE RESOURCES CORP,piotroski,True,8,9,88.9,41.06,14.99,2.28,15.24,0.67,0.72,33.32,2M,—
-BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,166,22.53,3.86,17.13,2.65,0.86,84.23,"454,784",—
-BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,166,22.53,3.86,17.13,2.65,0.86,84.23,"454,784",—
+BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,166,22.53,3.86,17.13,2.65,0.86,84.23,"573,570",—
+BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,166,22.53,3.86,17.13,2.65,0.86,84.23,"573,570",—
 FHI,"Federated Hermes, Inc.",greenblatt,True,3,3,100.0,63.70,12.42,4.00,33.69,2.75,0.81,42.89,"454,058",—
 FHI,"Federated Hermes, Inc.",piotroski,True,8,9,88.9,63.70,12.42,4.00,33.69,2.75,0.81,42.89,"454,058",—
 EVR,EVERCORE INC.,buffett,True,5,6,83.3,292,20.78,6.05,29.14,2.16,1.50,123,"483,261",—
 EVR,EVERCORE INC.,piotroski,True,7,9,77.8,292,20.78,6.05,29.14,2.16,1.50,123,"483,261",—
+GGG,GRACO INC.,piotroski,True,8,9,88.9,80.64,26.18,5.14,19.66,3.15,—,32.97,2M,—
 MTCH,"Match Group, Inc.",piotroski,True,8,9,88.9,40.87,17.17,—,-242,1.42,—,—,2M,—
+GGG,GRACO INC.,buffett,True,5,6,83.3,80.64,26.18,5.14,19.66,3.15,—,32.97,2M,—
 MTCH,"Match Group, Inc.",lynch,True,3,4,75.0,40.87,17.17,—,-242,1.42,—,—,2M,—
-ALRM,"ALARM.COM HOLDINGS, INC.",piotroski,True,7,9,77.8,57.51,23.38,4.00,15.52,1.92,1.47,28.23,"350,907",—
+PATH,"UiPath, Inc.",piotroski,True,8,9,88.9,16.39,31.52,4.29,13.56,2.48,0.53,6.69,52M,—
 VICR,VICOR CORPORATION,piotroski,True,8,9,88.9,201,76.84,12.81,16.66,8.99,0.10,30.32,"513,745",—
 VICR,VICOR CORPORATION,buffett,True,5,6,83.3,201,76.84,12.81,16.66,8.99,0.10,30.32,"513,745",—
 VICR,VICOR CORPORATION,lynch,True,3,4,75.0,201,76.84,12.81,16.66,8.99,0.10,30.32,"513,745",—
@@ -25,13 +22,13 @@ MEDP,"Medpace Holdings, Inc.",buffett,True,5,6,83.3,621,40.62,39.93,98.27,0.74,3
 MEDP,"Medpace Holdings, Inc.",piotroski,True,7,9,77.8,621,40.62,39.93,98.27,0.74,3.30,73.11,"225,882",—
 FCFS,"FIRSTCASH HOLDINGS, INC.",piotroski,True,7,9,77.8,225,30.36,4.41,14.51,4.55,1.33,92.39,"625,524",—
 PCTY,PAYLOCITY HOLDING CORPORATION,piotroski,True,8,9,88.9,153,31.17,6.88,22.08,1.09,3.00,49.69,"408,795",—
+CTRE,"CareTrust REIT, Inc.",lynch,True,4,4,100.0,39.58,25.21,2.00,7.94,—,0.27,26.43,3M,—
 SIRI,SIRIUS XM HOLDINGS INC.,lynch,True,3,4,75.0,28.69,12.87,0.89,6.96,0.30,1.36,40.31,3M,—
-R,RYDER SYSTEM INC,piotroski,True,9,9,100.0,250,20.92,3.42,16.35,0.89,4.37,140,"368,725",—
+R,RYDER SYSTEM INC,piotroski,True,9,9,100.0,250,20.92,3.42,16.35,0.89,4.37,140,"300,680",—
 KNTK,KINETIK HOLDINGS INC.,lynch,True,3,4,75.0,54.50,20.72,—,-31.53,0.69,-7.37,—,1M,—
 FIGS,"FIGS, Inc.",piotroski,True,8,9,88.9,14.68,77.26,6.02,7.83,4.94,0.33,3.23,3M,—
-FROG,JFrog Ltd.,piotroski,True,7,9,77.8,92.13,—,12.06,-8.09,2.14,0.51,—,2M,—
-MLI,MUELLER INDUSTRIES INC,netnet,False,2,4,50.0,63.22,9.22,2.20,23.84,5.92,0.15,66.66,1M,—
-MLI,MUELLER INDUSTRIES INC,custom,False,0,0,0.0,63.22,9.22,2.20,23.84,5.92,0.15,66.66,1M,—
+MSGS,MADISON SQUARE GARDEN SPORTS CORP.,piotroski,True,9,9,100.0,406,"1,269",—,-2.95,0.50,-6.84,—,"188,768",—
+OMCL,"OMNICELL, INC",piotroski,True,7,9,77.8,35.58,889,1.34,0.17,1.43,0.60,4.89,"777,115",—
 POWL,"Powell Industries, Inc.",graham,False,7,9,77.8,198,13.30,3.75,28.21,2.09,0.73,133,"430,833",—
 POWL,"Powell Industries, Inc.",buffett,False,4,6,66.7,198,13.30,3.75,28.21,2.09,0.73,133,"430,833",—
 POWL,"Powell Industries, Inc.",greenblatt,False,2,3,66.7,198,13.30,3.75,28.21,2.09,0.73,133,"430,833",—
@@ -44,8 +41,11 @@ MGY,Magnolia Oil & Gas Corp,greenblatt,False,1,3,33.3,28.14,16.06,2.61,16.27,1.5
 MGY,Magnolia Oil & Gas Corp,lynch,False,1,4,25.0,28.14,16.06,2.61,16.27,1.54,—,20.61,3M,—
 MGY,Magnolia Oil & Gas Corp,netnet,False,1,4,25.0,28.14,16.06,2.61,16.27,1.54,—,20.61,3M,—
 MGY,Magnolia Oil & Gas Corp,custom,False,0,0,0.0,28.14,16.06,2.61,16.27,1.54,—,20.61,3M,—
-PRI,"Primerica, Inc.",buffett,False,4,6,66.7,296,12.91,3.95,30.71,—,5.14,196,"118,302",—
-PRI,"Primerica, Inc.",greenblatt,False,2,3,66.7,296,12.91,3.95,30.71,—,5.14,196,"118,302",—
-PRI,"Primerica, Inc.",graham,False,5,9,55.6,296,12.91,3.95,30.71,—,5.14,196,"118,302",—
-PRI,"Primerica, Inc.",lynch,False,2,4,50.0,296,12.91,3.95,30.71,—,5.14,196,"118,302",—
-PRI,"Primerica, Inc.",netnet,False,1,4,25.0,296,12.91,3.95,30.71,—,5.14,196,"118,302",—
+PRI,"Primerica, Inc.",buffett,False,4,6,66.7,296,12.91,3.95,30.71,—,5.14,196,"157,875",—
+PRI,"Primerica, Inc.",greenblatt,False,2,3,66.7,296,12.91,3.95,30.71,—,5.14,196,"157,875",—
+PRI,"Primerica, Inc.",graham,False,5,9,55.6,296,12.91,3.95,30.71,—,5.14,196,"157,875",—
+PRI,"Primerica, Inc.",lynch,False,2,4,50.0,296,12.91,3.95,30.71,—,5.14,196,"157,875",—
+PRI,"Primerica, Inc.",netnet,False,1,4,25.0,296,12.91,3.95,30.71,—,5.14,196,"157,875",—
+PRI,"Primerica, Inc.",custom,False,0,0,0.0,296,12.91,3.95,30.71,—,5.14,196,"157,875",—
+RRC,RANGE RESOURCES CORP,buffett,False,3,6,50.0,41.06,14.99,2.28,15.24,0.67,0.72,33.32,2M,—
+RRC,RANGE RESOURCES CORP,lynch,False,2,4,50.0,41.06,14.99,2.28,15.24,0.67,0.72,33.32,2M,—
