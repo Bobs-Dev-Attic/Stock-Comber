@@ -1,5 +1,12 @@
 # Release notes
 
+## v0.78.0 — Saved filter presets + clearer active filters (2026-08-23)
+
+Two Full-list touches: a new **★ Presets** menu remembers a set of column filters under a
+name so you can re-apply it in one click, and a column that's currently being filtered now
+shows a **bolder, highlighted** filter icon so it's obvious at a glance which columns are
+narrowing the list.
+
 ## v0.77.0 — History tables get the same filter menu (2026-08-23)
 
 The **History** tab's tables now match the Full list: instead of an inline row of filter

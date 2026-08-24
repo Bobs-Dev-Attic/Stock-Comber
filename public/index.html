@@ -124,7 +124,10 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
   .colfilt-btn { border: 0; background: transparent; cursor: pointer; color: var(--muted);
     font-size: .78rem; line-height: 1; padding: 0 2px; opacity: .55; vertical-align: middle; }
   th:hover .colfilt-btn { opacity: .9; }
-  .colfilt-btn.active { color: var(--accent); opacity: 1; }
+  .colfilt-btn.active { color: var(--accent); opacity: 1; font-weight: 700;
+    background: color-mix(in srgb, var(--accent) 22%, transparent);
+    border: 1px solid color-mix(in srgb, var(--accent) 55%, transparent);
+    border-radius: 5px; padding: 0 3px; }
   .colmenu { position: absolute; z-index: 60; background: var(--panel); border: 1px solid var(--line);
     border-radius: 9px; box-shadow: 0 10px 30px rgba(0,0,0,.28); min-width: 176px; padding: .3rem;
     font-size: .82rem; text-transform: none; letter-spacing: 0; font-weight: 400; }
@@ -446,6 +449,10 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
           <option value="">No grouping</option>
         </select>
         <label class="hint" style="display:flex;align-items:center;gap:.35rem;margin:0"><input type="checkbox" id="full-passing"> Passing only</label>
+        <div class="menu" id="preset-menu">
+          <button class="btn ghost" id="preset-btn" aria-haspopup="true" aria-expanded="false" title="Save &amp; apply column-filter presets">★ Presets ▾</button>
+          <div class="panel-pop" id="preset-pop" style="min-width:210px"></div>
+        </div>
         <button class="btn ghost" id="clear-colf" hidden title="Clear all per-column filters">⌫ Clear filters</button>
         <button class="btn ghost" id="refresh-full">↻ Refresh</button>
       </div>
@@ -1183,6 +1190,45 @@ function clearColFilters(){
   if (activeTab === "full") { renderHead(); applyFull(); }
 }
 
+/* ---- saved filter presets (a named snapshot of the column filters) ---- */
+function loadPresets(){ try { const o = JSON.parse(localStorage.getItem("sc_filterpresets")); return (o && typeof o === "object") ? o : {}; } catch(e){ return {}; } }
+function savePresets(){ try { localStorage.setItem("sc_filterpresets", JSON.stringify(filterPresets)); } catch(e){} }
+let filterPresets = loadPresets();
+function applyPreset(name){
+  const p = filterPresets[name]; if (!p) return;
+  colFilters = { ...p }; saveColFilters();
+  if (activeTab === "full") { renderHead(); applyFull(); }
+}
+function buildPresetMenu(){
+  const pop = $("#preset-pop"); if (!pop) return;
+  pop.innerHTML = "";
+  const saveRow = document.createElement("div"); saveRow.className = "colrow";
+  const savBtn = document.createElement("button"); savBtn.className = "btn ghost"; savBtn.style.width = "100%";
+  savBtn.textContent = "＋ Save current filters…";
+  savBtn.onclick = () => {
+    const active = activeColFilters();
+    if (!active.length) { setStatus("full", "Set some column filters first, then save them as a preset."); return; }
+    const name = (prompt("Name this filter preset:") || "").trim();
+    if (!name) return;
+    filterPresets[name] = Object.fromEntries(active); savePresets(); buildPresetMenu();
+    setStatus("full", `Saved preset “${name}”.`);
+  };
+  saveRow.appendChild(savBtn); pop.appendChild(saveRow);
+  const names = Object.keys(filterPresets).sort((a,b) => a.localeCompare(b));
+  const lbl = document.createElement("div"); lbl.className = "hint"; lbl.style.padding = ".35rem .45rem .15rem";
+  lbl.textContent = names.length ? "Apply a preset:" : "No saved presets yet.";
+  pop.appendChild(lbl);
+  names.forEach(n => {
+    const row = document.createElement("div"); row.className = "colrow"; row.style.justifyContent = "space-between";
+    const a = document.createElement("button"); a.className = "btn ghost"; a.style.flex = "1"; a.style.textAlign = "left";
+    a.textContent = n; a.title = "Apply this preset";
+    a.onclick = () => { applyPreset(n); $("#preset-menu").classList.remove("open"); };
+    const del = document.createElement("button"); del.className = "btn ghost"; del.textContent = "✕"; del.title = "Delete preset";
+    del.onclick = e => { e.stopPropagation(); delete filterPresets[n]; savePresets(); buildPresetMenu(); };
+    row.append(a, del); pop.appendChild(row);
+  });
+}
+
 /* ---- generic per-column filters for static tables (History) ----
    Same value/formula syntax as the Full list, but matched against each cell's
    rendered text. A MutationObserver re-applies the active filters whenever the
@@ -1285,6 +1331,7 @@ $("#export-menu .panel-pop").addEventListener("click", e => e.stopPropagation())
 $("#strat-pop").addEventListener("click", e => e.stopPropagation());
 $("#cstrat-pop").addEventListener("click", e => e.stopPropagation());
 $("#tmpl-pop").addEventListener("click", e => e.stopPropagation());
+$("#preset-pop").addEventListener("click", e => e.stopPropagation());
 
 /* ---- table ---- */
 function renderHead() {
@@ -2951,7 +2998,8 @@ applyTheme(currentTheme());   // sync the menu label with the (pre-applied) them
 $("#theme-toggle").onclick = cycleTheme;
 
 /* init */
-wireMenu("cols-menu"); wireMenu("export-menu"); wireMenu("strat-menu"); wireMenu("cstrat-menu"); wireMenu("tmpl-menu");
+wireMenu("cols-menu"); wireMenu("export-menu"); wireMenu("strat-menu"); wireMenu("cstrat-menu"); wireMenu("tmpl-menu"); wireMenu("preset-menu");
+buildPresetMenu();
 buildColsMenu(); buildStratMenu(); buildGroupMenu(); renderHead();
 // Restore the last-viewed tab across refreshes (default to the Full-list landing).
 initHistoryFilters();   // add per-column filter rows to the History tables
