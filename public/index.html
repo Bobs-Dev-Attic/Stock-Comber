@@ -3579,7 +3579,10 @@ function renderFundAnalysis(fa){
          <span class="jc-title">🧩 ${escHtml(fa.name || fa.symbol || "Fund")} ${fa.symbol ? `<span class="hint">(${escHtml(fa.symbol)})</span>` : ""}</span>
          <div class="hint">${escHtml(fa.category || "")}${fa.snapshot ? ` · snapshot ${escHtml(fa.snapshot)}` : ""} · scored on ${escHtml((fa.strategies || []).map(stratLabel).join(", ") || "—")}</div>
        </div>
-       <div class="fund-grade ${fundGradeClass(fa.grade)}">${escHtml(fa.grade)}</div></div>
+       <div style="display:flex;gap:.6rem;align-items:center">
+         <button class="btn ghost" id="fund-export" title="Download this fund analysis as CSV">⭳ CSV</button>
+         <div class="fund-grade ${fundGradeClass(fa.grade)}">${escHtml(fa.grade)}</div>
+       </div></div>
        <div class="pf-cards">
          <div class="pf-stat"><div class="pf-k">Overall score</div><div class="pf-v">${fa.score != null ? fa.score.toFixed(0) : "—"}<span class="pf-u">/100</span></div></div>
          <div class="pf-stat"><div class="pf-k">Quality (fund-weighted)</div><div class="pf-v">${q}<span class="pf-u">/100</span></div></div>
@@ -3596,6 +3599,36 @@ function renderFundAnalysis(fa){
     + `<div class="hint" style="margin-top:.5rem">Overall = 65% fund-weighted strategy quality + 35% diversification (sector spread &amp; position evenness). Bundled holdings are approximate top-holding snapshots. Educational only — <b>not investment advice.</b></div>`;
   const qb = $("#fund-queue");
   if (qb) qb.onclick = () => { enqueueForAnalysis((fa.pending || []).join(",")); qb.disabled = true; qb.textContent = "Queued — re-analyze in a few minutes"; };
+  const eb = $("#fund-export");
+  if (eb) eb.onclick = () => {
+    const sym = (fa.symbol || "custom").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "custom";
+    download(`stock-comber-fund-${sym}-${stamp()}.csv`, fundToCSV(fa), "text/csv");
+  };
+}
+// A fund analysis as CSV: a fund-level summary block, a blank line, then the
+// holdings table — so the whole read-out survives the export.
+function fundToCSV(fa){
+  const esc = v => { const s = (v === null || v === undefined) ? "" : String(v); return /[",\n]/.test(s) ? `"${s.replace(/"/g,'""')}"` : s; };
+  const pct = v => v == null ? "" : (Number(v) * 100).toFixed(2) + "%";
+  const meta = [
+    ["Fund", fa.symbol || ""], ["Name", fa.name || ""], ["Category", fa.category || ""],
+    ["Snapshot", fa.snapshot || ""], ["Strategies", (fa.strategies || []).map(stratLabel).join("; ")],
+    ["Overall score", fa.score != null ? fa.score : ""], ["Grade", fa.grade || ""],
+    ["Quality (fund-weighted)", fa.quality_score != null ? fa.quality_score : ""],
+    ["Diversification", fa.diversification_score != null ? fa.diversification_score : ""],
+    ["Coverage", pct(fa.coverage)], ["Covered holdings", `${fa.covered_count}/${fa.count}`],
+    ["Top-10 weight", pct(fa.top10_weight)], ["Effective holdings", fa.effective_holdings],
+    ["Sectors", fa.sector_count], ["Top sector", `${fa.top_sector || ""} (${pct(fa.top_sector_weight)})`],
+  ];
+  const lines = meta.map(([k, v]) => `${esc(k)},${esc(v)}`);
+  lines.push("", "Ticker,Weight %,Sector,Score,Passing,Valuation,Covered");
+  (fa.holdings || []).forEach(h => lines.push([
+    esc(h.ticker), esc((Number(h.weight) * 100).toFixed(2)), esc(h.sector || ""),
+    esc(h.score != null ? Math.round(h.score) : ""),
+    esc(h.covered ? (h.passing ? "yes" : "no") : ""),
+    esc(h.covered ? (h.verdict || "") : ""), esc(h.covered ? "yes" : "no"),
+  ].join(",")));
+  return lines.join("\n");
 }
 /* ---- saved fund analyses (retrievable, kept in this browser) ---- */
 function loadFundHist(){ try { const a = JSON.parse(localStorage.getItem("sc_fundhistory")); return Array.isArray(a) ? a : []; } catch(e){ return []; } }

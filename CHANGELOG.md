@@ -4,6 +4,14 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.92.0] - 2026-08-24
+
+### Added
+- **Export a fund analysis as CSV.** The Fund X-ray read-out gains a **⭳ CSV** button that
+  downloads the analysis — a fund-level summary block (score, grade, quality, diversification,
+  coverage, concentration, top sector) followed by the full holdings table (ticker, weight,
+  sector, score, pass/fail, valuation, covered). Works on a fresh analysis or a reopened saved one.
+
 ## [0.91.0] - 2026-08-24
 
 ### Changed
