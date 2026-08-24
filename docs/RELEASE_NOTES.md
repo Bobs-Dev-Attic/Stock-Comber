@@ -1,5 +1,10 @@
 # Release notes
 
+## v0.82.0 — Record count under the Full list (2026-08-24)
+
+The Full list now shows a **total record count** beneath the table — `600 records`, or
+`10 of 600 records` when a filter is active — so you always know how many companies match.
+
 ## v0.81.0 — Full list paginated at 250 per page (2026-08-24)
 
 The Full list now shows **250 rows per page** with a simple **← Prev / Next →** pager and a

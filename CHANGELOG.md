@@ -4,6 +4,13 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.82.0] - 2026-08-24
+
+### Added
+- **Total record count under the Full list.** A line beneath the table shows the number of
+  records — e.g. `600 records`, or `10 of 600 records` when a filter is narrowing the list —
+  regardless of pagination.
+
 ## [0.81.0] - 2026-08-24
 
 ### Added
