@@ -4,6 +4,13 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.94.0] - 2026-08-24
+
+### Added
+- **Saved fund analyses now show on the History tab too.** A new **Saved fund analyses** card on
+  History lists the Fund X-rays you've run (when, fund, score, grade, coverage) — the same
+  browser-kept store as the Funds tab. Click a row to reopen the full analysis on the Funds tab.
+
 ## [0.93.0] - 2026-08-24
 
 ### Added

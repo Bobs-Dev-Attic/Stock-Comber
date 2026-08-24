@@ -624,6 +624,14 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
             <tbody id="h-searches"></tbody>
           </table></div>
         </div>
+        <div class="histcard">
+          <h3>Saved fund analyses <span id="h-funds-when" class="hint" style="font-weight:400"></span></h3>
+          <div class="tablewrap"><table>
+            <thead><tr><th>When</th><th>Fund</th><th class="r">Score</th><th>Grade</th><th class="r">Coverage</th></tr></thead>
+            <tbody id="h-funds"></tbody>
+          </table></div>
+          <p class="hint">Fund X-rays you've run (kept in this browser). Click one to reopen it on the <a href="#" id="h-funds-open">Funds</a> tab.</p>
+        </div>
       </div>
     </div>
 
@@ -2675,6 +2683,7 @@ async function loadHistory(force) {
       fetch("/api/runs?limit=50"), fetch("/api/queue?limit=50"), fetch("/api/settings")]);
     const rd = await rRes.json();
     renderHistSearches(rd.searches || []);
+    renderHistFundAnalyses();
     let cfg = {}, configured = false;
     try { const sd = await sRes.json(); cfg = sd.config || {}; configured = !!sd.schedule_configured; }
     catch (e) { /* leave schedule out on a settings hiccup */ }
@@ -3644,7 +3653,21 @@ function recordFundHistory(fa){
     score: fa.score, grade: fa.grade, coverage: fa.coverage,
     strategies: fa.strategies || [], fa });
   if (fundHist.length > 30) fundHist.length = 30;
-  saveFundHist(); renderFundHistory();
+  saveFundHist(); renderFundHistory(); renderHistFundAnalyses();
+}
+// Same saved-fund store, listed on the History tab; a row reopens it on the Funds tab.
+function renderHistFundAnalyses(){
+  const el = $("#h-funds"); if (!el) return;
+  const list = fundHist || [];
+  const w = $("#h-funds-when"); if (w) w.textContent = list.length ? `· ${list.length} saved` : "";
+  if (!list.length){ el.innerHTML = `<tr><td colspan="5" class="hint">No fund analyses yet — run one on the Funds tab.</td></tr>`; return; }
+  el.innerHTML = list.map((h, i) => `<tr class="rowlink" data-fi="${i}" title="Reopen ${escHtml(h.label || "")} on the Funds tab">`
+    + `<td class="l">${escHtml(fundWhen(h.at))}</td>`
+    + `<td class="l"><strong>${escHtml(h.label || "")}</strong>${h.symbol ? ` <span class="hint">(${escHtml(h.symbol)})</span>` : ""}</td>`
+    + `<td class="r">${h.score != null ? Number(h.score).toFixed(0) : "—"}</td>`
+    + `<td>${escHtml(h.grade || "—")}</td>`
+    + `<td class="r">${h.coverage != null ? (h.coverage * 100).toFixed(0) + "%" : "—"}</td></tr>`).join("");
+  el.querySelectorAll("tr.rowlink[data-fi]").forEach(tr => tr.onclick = () => { showTab("funds"); viewFundHistory(+tr.dataset.fi); });
 }
 function renderFundHistory(){
   const card = $("#fund-history-card"), el = $("#fund-history"); if (!el) return;
@@ -3671,12 +3694,13 @@ function viewFundHistory(i){
   renderFundAnalysis(h.fa);
   try { $("#fund-result").scrollIntoView({ behavior: "smooth", block: "start" }); } catch(e){}
 }
-function deleteFundHistory(i){ fundHist.splice(i, 1); saveFundHist(); renderFundHistory(); }
+function deleteFundHistory(i){ fundHist.splice(i, 1); saveFundHist(); renderFundHistory(); renderHistFundAnalyses(); }
 $("#fund-hist-clear").onclick = () => {
   if (!fundHist.length) return;
   if (!confirm("Clear all saved fund analyses?")) return;
-  fundHist = []; saveFundHist(); renderFundHistory();
+  fundHist = []; saveFundHist(); renderFundHistory(); renderHistFundAnalyses();
 };
+$("#h-funds-open").onclick = e => { e.preventDefault(); showTab("funds"); };
 $("#fund-select").onchange = fundSelectChanged;
 $("#fund-analyze").onclick = analyzeFund;
 
