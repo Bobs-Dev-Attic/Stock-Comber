@@ -111,6 +111,8 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
   .xscroll-top { overflow-x: auto; overflow-y: hidden; margin-top: .5rem; }
   .xscroll-top > div { height: 1px; }
   .xscroll-top + .tablewrap { margin-top: .2rem; }
+  .pager { display: flex; gap: .7rem; align-items: center; justify-content: center; margin: .7rem 0 .2rem; flex-wrap: wrap; }
+  .pager .pg-info { color: var(--muted); font-size: .85rem; }
   table { border-collapse: collapse; width: 100%; }
   th, td { padding: .55rem .6rem; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
   th { color: var(--muted); font-weight: 600; font-size: .82rem; text-transform: uppercase; letter-spacing: .03em; cursor: pointer; user-select: none; }
@@ -650,6 +652,7 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
         <thead><tr id="head"></tr></thead>
         <tbody></tbody>
       </table></div>
+      <div id="pager" class="pager" hidden></div>
     </div>
   </section>
 </div>
@@ -836,6 +839,7 @@ const STRAT_LABEL = {graham:"Graham (defensive)", buffett:"Buffett (quality)",
   lynch:"Lynch (GARP)", netnet:"Graham Net-Net (NCAV)", custom:"Custom criteria"};
 const stratLabel = s => STRAT_LABEL[s] || s;
 let rows = [], sortK = "score_pct", sortDir = -1;
+const PAGE_SIZE = 250; let fullPage = 0;   // Full-list pagination (250 rows/page)
 
 /* ---- tabs ---- */
 /* "full" = every company across all runs (landing); "jobs" = results of a
@@ -1407,7 +1411,7 @@ function renderHead() {
       if (performance.now() - lastColDrop < 300) return;
       const k = th.dataset.k;
       if (k === sortK) sortDir *= -1; else { sortK = k; sortDir = -1; }
-      saveSort(); renderHead(); render();
+      fullPage = 0; saveSort(); renderHead(); render();
     };
     // Every non-ticker header is draggable to reorder columns (ticker is pinned).
     if (th.dataset.k !== "ticker") {
@@ -1507,15 +1511,26 @@ function render() {
   const cols = orderedCols();
   const sorted = _sortRows(rows);
   const grouping = groupBy && activeTab === "full";
+  // Paginate the Full list (250 rows/page). The current page is sliced from the
+  // sorted rows first; grouping then groups just that page.
+  const paginate = activeTab === "full" && sorted.length > PAGE_SIZE;
+  let view = sorted, start = 0, end = sorted.length;
+  if (paginate) {
+    const pages = Math.ceil(sorted.length / PAGE_SIZE);
+    fullPage = Math.max(0, Math.min(fullPage, pages - 1));
+    start = fullPage * PAGE_SIZE; end = Math.min(start + PAGE_SIZE, sorted.length);
+    view = sorted.slice(start, end);
+  } else { fullPage = 0; }
+  renderPager(activeTab === "full" ? sorted.length : 0, start, end);
   if (!grouping) {
-    sorted.forEach(r => tbody.appendChild(buildRow(r, cols)));
+    view.forEach(r => tbody.appendChild(buildRow(r, cols)));
     $("#tbl").hidden = sorted.length === 0;
     syncTopScroll();
     return;
   }
   // Group in the current sort order (a group appears where its first member sorts).
   const order = [], groups = new Map();
-  for (const r of sorted) {
+  for (const r of view) {
     const label = groupLabel(r, groupBy);
     if (!groups.has(label)) { groups.set(label, []); order.push(label); }
     groups.get(label).push(r);
@@ -1539,6 +1554,17 @@ function render() {
   }
   $("#tbl").hidden = sorted.length === 0;
   syncTopScroll();
+}
+function renderPager(total, start, end){
+  const el = $("#pager"); if (!el) return;
+  if (activeTab !== "full" || total <= PAGE_SIZE){ el.hidden = true; el.innerHTML = ""; return; }
+  const pages = Math.ceil(total / PAGE_SIZE);
+  el.hidden = false;
+  el.innerHTML = `<button class="btn ghost" id="pg-prev"${fullPage <= 0 ? " disabled" : ""}>← Prev</button>`
+    + `<span class="pg-info">Page ${fullPage + 1} of ${pages} · rows ${start + 1}–${end} of ${total}</span>`
+    + `<button class="btn ghost" id="pg-next"${fullPage >= pages - 1 ? " disabled" : ""}>Next →</button>`;
+  $("#pg-prev").onclick = () => { if (fullPage > 0){ fullPage--; render(); $("#tblwrap").scrollIntoView({ block: "nearest" }); } };
+  $("#pg-next").onclick = () => { if (fullPage < pages - 1){ fullPage++; render(); $("#tblwrap").scrollIntoView({ block: "nearest" }); } };
 }
 // Keep the mirrored top scrollbar's width and visibility in sync with the table.
 function syncTopScroll() {
@@ -1729,6 +1755,7 @@ function fullStatus(shown) {
   return filtered ? `${base} · showing ${shown} of ${total}` : `${base} · ${total} rows`;
 }
 function applyFull() {
+  fullPage = 0;   // any filter change resets to the first page
   let rws = fullAll;
   const q = ($("#full-filter").value || "").trim().toLowerCase();
   if (fullIndexSet) rws = rws.filter(r => fullIndexSet.has((r.ticker || "").toUpperCase()));
@@ -1745,7 +1772,7 @@ $("#full-passing").addEventListener("change", () => { if (activeTab === "full") 
 $("#clear-colf").addEventListener("click", clearColFilters);
 $("#full-index").addEventListener("change", e => { if (activeTab === "full") setIndexFilter(e.target.value); });
 $("#full-group").addEventListener("change", e => {
-  groupBy = e.target.value; saveGroup(); collapsedGroups.clear();
+  groupBy = e.target.value; saveGroup(); collapsedGroups.clear(); fullPage = 0;
   if (activeTab === "full") render();
 });
 $("#refresh-full").onclick = () => loadFullList();

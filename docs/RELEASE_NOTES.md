@@ -1,5 +1,11 @@
 # Release notes
 
+## v0.81.0 — Full list paginated at 250 per page (2026-08-24)
+
+The Full list now shows **250 rows per page** with a simple **← Prev / Next →** pager and a
+"Page X of Y · rows a–b of N" readout beneath the table. Sorting, grouping, or filtering jumps
+back to the first page; with 250 or fewer rows there's no pager at all.
+
 ## v0.80.0 — Portfolio targets closer to the current price (2026-08-24)
 
 The Portfolio Advisor's **Buy below** and **Sell above** prices are now anchored to each

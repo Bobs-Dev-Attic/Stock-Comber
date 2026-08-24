@@ -4,6 +4,14 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.81.0] - 2026-08-24
+
+### Added
+- **The Full list is paginated at 250 rows per page.** When more than 250 rows match, a
+  pager (← Prev / Next → with a "Page X of Y · rows a–b of N" readout) appears below the
+  table. Sorting, grouping, or changing any filter resets to the first page; grouping paginates
+  the sorted rows first, then groups the current page. Fewer than 250 rows show no pager.
+
 ## [0.80.0] - 2026-08-24
 
 ### Changed
