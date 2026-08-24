@@ -1,5 +1,16 @@
 # Release notes
 
+## v0.83.0 — Pager on top + clearer filtered export (2026-08-24)
+
+Two Full-list tweaks:
+
+- The **← Prev / Next →** pager now appears **above** the table as well as below, so when
+  there are more than 250 rows you can see and use it without scrolling to the bottom.
+- The **Export** menu's CSV and JSON downloads are relabelled **"Download CSV/JSON (current
+  view)"** — they export every row matching your current filters and sort order (all pages,
+  not just the one on screen). If you don't see a pager, it means the current view has 250
+  rows or fewer.
+
 ## v0.82.0 — Record count under the Full list (2026-08-24)
 
 The Full list now shows a **total record count** beneath the table — `600 records`, or
