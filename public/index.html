@@ -632,6 +632,14 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
           </table></div>
           <p class="hint">Fund X-rays you've run (kept in this browser). Click one to reopen it on the <a href="#" id="h-funds-open">Funds</a> tab.</p>
         </div>
+        <div class="histcard">
+          <h3>Portfolio analyses <span id="h-pf-when" class="hint" style="font-weight:400"></span></h3>
+          <div class="tablewrap"><table>
+            <thead><tr><th>When</th><th>Portfolio</th><th class="r">Score</th><th class="r">Value</th><th class="r">Passing</th></tr></thead>
+            <tbody id="h-pf"></tbody>
+          </table></div>
+          <p class="hint">Portfolio analyses you've run (kept in this browser). Click one to open that portfolio on the <a href="#" id="h-pf-open">Portfolio</a> tab.</p>
+        </div>
       </div>
     </div>
 
@@ -2601,7 +2609,8 @@ function renderActivity(runs, queue, cfg, configured) {
   $("#h-activity").innerHTML = html || `<tr><td colspan="5" class="hint">No activity yet — run a job (Jobs tab) or wait for the nightly run.</td></tr>`;
   wireHistRows("#h-activity");
   const bits = [];
-  if (upcoming.length) bits.push(`${upcoming.length} scheduled`);
+  const schedCount = upcoming.filter(r => r.indexOf("⏰ scheduled") >= 0).length;
+  if (schedCount) bits.push(`${schedCount} scheduled`);
   if (active.length) bits.push(`${active.length} active`);
   $("#q-active").textContent = bits.length ? `· ${bits.join(" · ")}` : "";
 }
@@ -2654,7 +2663,8 @@ function jobScreens(job) {
 function upcomingRows(cfg, configured) {
   const sc = (cfg && cfg.schedule) || {};
   const enabled = configured ? !!sc.enabled : true;
-  if (!enabled) return [];
+  // Keep the schedule visible even when off, so Activity never reads as blank.
+  if (!enabled) return [`<tr class="norow upcoming-row"><td colspan="5" class="hint">⏰ Scheduled nightly run is off — enable it under Jobs → Scheduled report.</td></tr>`];
   const cron = (configured && sc.cron) ? sc.cron : "30 6 * * 1-5";
   const strats = (cfg && cfg.strategies && cfg.strategies.length) ? cfg.strategies : ["graham", "buffett"];
   const next = nextScheduledRun(cron, new Date());
@@ -2684,6 +2694,7 @@ async function loadHistory(force) {
     const rd = await rRes.json();
     renderHistSearches(rd.searches || []);
     renderHistFundAnalyses();
+    renderHistPortfolioAnalyses();
     let cfg = {}, configured = false;
     try { const sd = await sRes.json(); cfg = sd.config || {}; configured = !!sd.schedule_configured; }
     catch (e) { /* leave schedule out on a settings hiccup */ }
@@ -3230,6 +3241,7 @@ let portfolios = [], pfCurrent = null, pfLoaded = false;
 // dialog reads from and writes back to it.
 let pfState = { name: "", holdings: [], strategies: ["graham", "buffett"] };
 let pfStrats = ["graham", "buffett"];   // the dialog's working strategy set
+let pfPreferred = null;   // a portfolio name to open on next load (set from the History tab)
 function pfHint(msg, bad){ const el = $("#pf-hint"); if (!el) return; el.textContent = msg || ""; el.style.color = bad ? "var(--fail-ink)" : "var(--muted)"; }
 async function loadPortfolios(){
   pfLoaded = true;
@@ -3238,7 +3250,9 @@ async function loadPortfolios(){
     portfolios = Array.isArray(d.config && d.config.portfolios) ? d.config.portfolios : [];
   } catch(e){ portfolios = []; }
   renderPfSelect();
-  if (portfolios.length) loadPfInto(portfolios[0]); else newPortfolio(false);
+  const pick = (pfPreferred && portfolios.find(p => p.name === pfPreferred)) || portfolios[0];
+  pfPreferred = null;
+  if (pick) loadPfInto(pick); else newPortfolio(false);
 }
 function renderPfSelect(){
   const sel = $("#pf-select"); sel.innerHTML = "";
@@ -3343,7 +3357,28 @@ function recordPfHistory(pa){
   const list = pfHist[pfCurrent] || (pfHist[pfCurrent] = []);
   list.unshift({ at: new Date().toISOString(), score: pa.score, total_value: pa.total_value, passing: pa.passing, count: pa.count });
   if (list.length > 50) list.length = 50;
-  savePfHist(); renderPfHistory();
+  savePfHist(); renderPfHistory(); renderHistPortfolioAnalyses();
+}
+// Same saved-portfolio store, flattened across portfolios for the History tab; a
+// row opens that portfolio on the Portfolio tab.
+function renderHistPortfolioAnalyses(){
+  const el = $("#h-pf"); if (!el) return;
+  const rows = [];
+  Object.entries(pfHist || {}).forEach(([name, list]) => (list || []).forEach(h => rows.push({ name, ...h })));
+  rows.sort((a, b) => (Date.parse(b.at) || 0) - (Date.parse(a.at) || 0));
+  const w = $("#h-pf-when"); if (w) w.textContent = rows.length ? `· ${rows.length} saved` : "";
+  if (!rows.length){ el.innerHTML = `<tr><td colspan="5" class="hint">No portfolio analyses yet — run one on the Portfolio tab.</td></tr>`; return; }
+  el.innerHTML = rows.map(h => `<tr class="rowlink" data-pf="${escHtml(h.name)}" title="Open ${escHtml(h.name)} on the Portfolio tab">`
+    + `<td class="l">${escHtml(pfWhen(h.at))}</td>`
+    + `<td class="l"><strong>${escHtml(h.name)}</strong></td>`
+    + `<td class="r">${h.score != null ? Number(h.score).toFixed(0) : "—"}</td>`
+    + `<td class="r">${money(h.total_value)}</td>`
+    + `<td class="r">${h.passing}/${h.count}</td></tr>`).join("");
+  el.querySelectorAll("tr.rowlink[data-pf]").forEach(tr => tr.onclick = () => openPfFromHistory(tr.dataset.pf));
+}
+function openPfFromHistory(name){
+  if (pfLoaded){ showTab("portfolio"); const p = (portfolios || []).find(x => x.name === name); if (p) loadPfInto(p); }
+  else { pfPreferred = name; showTab("portfolio"); }   // loadPortfolios (fired by showTab) opens the preferred one
 }
 function renderPfHistory(){
   const card = $("#pf-history-card"), el = $("#pf-history"); if (!el) return;
@@ -3464,7 +3499,7 @@ async function pfSave(name, renameFrom){
   const drop = new Set([name.toLowerCase()]); if (renameFrom) drop.add(renameFrom.toLowerCase());
   const others = portfolios.filter(p => !drop.has(p.name.toLowerCase()));
   if (renameFrom && renameFrom.toLowerCase() !== name.toLowerCase() && pfHist[renameFrom]){
-    pfHist[name] = pfHist[renameFrom]; delete pfHist[renameFrom]; savePfHist();
+    pfHist[name] = pfHist[renameFrom]; delete pfHist[renameFrom]; savePfHist(); renderHistPortfolioAnalyses();
   }
   const btn = $("#pf-save"); const label = btn.textContent; btn.disabled = true; btn.textContent = "Saving…";
   const ok = await savePortfolios([...others, pf], `Saved “${name}”.`);
@@ -3483,13 +3518,14 @@ $("#pf-del").onclick = async () => {
   const name = pfCurrent;
   if (!confirm(`Delete portfolio “${name}”?`)) return;
   const ok = await savePortfolios(portfolios.filter(p => p.name.toLowerCase() !== name.toLowerCase()), `Deleted “${name}”.`);
-  if (ok){ if (pfHist[name]){ delete pfHist[name]; savePfHist(); } closePfDialog(); if (portfolios.length) loadPfInto(portfolios[0]); else newPortfolio(false); }
+  if (ok){ if (pfHist[name]){ delete pfHist[name]; savePfHist(); renderHistPortfolioAnalyses(); } closePfDialog(); if (portfolios.length) loadPfInto(portfolios[0]); else newPortfolio(false); }
 };
 $("#pf-hist-clear").onclick = () => {
   if (!pfCurrent || !(pfHist[pfCurrent] || []).length) return;
   if (!confirm(`Clear analysis history for “${pfCurrent}”?`)) return;
-  delete pfHist[pfCurrent]; savePfHist(); renderPfHistory();
+  delete pfHist[pfCurrent]; savePfHist(); renderPfHistory(); renderHistPortfolioAnalyses();
 };
+$("#h-pf-open").onclick = e => { e.preventDefault(); showTab("portfolio"); };
 
 /* ===== Fund X-ray: deconstruct an ETF / mutual fund and score its holdings ===== */
 let fundsLoaded = false, fundCatalog = [];
