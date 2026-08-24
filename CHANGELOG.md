@@ -4,6 +4,20 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.95.0] - 2026-08-24
+
+### Added
+- **Portfolio analyses now show on the History tab.** A new **Portfolio analyses** card lists the
+  portfolio analyses you've run (when, portfolio, score, value, passing) across all portfolios,
+  from the same browser-kept store as the Portfolio tab. Click a row to open that portfolio on the
+  Portfolio tab.
+
+### Fixed
+- **The Activity list no longer looks blank when the nightly schedule is off.** With the scheduled
+  run disabled and no stored runs, Activity now shows an "⏰ Scheduled nightly run is off — enable it
+  under Jobs → Scheduled report" hint instead of an empty table. The Activity heading counts only
+  real scheduled runs, not that hint.
+
 ## [0.94.0] - 2026-08-24
 
 ### Added

@@ -1,5 +1,16 @@
 # Release notes
 
+## v0.95.0 — Portfolio analyses on the History tab (2026-08-24)
+
+The History tab gains a **Portfolio analyses** card alongside Activity, Searches and Saved fund
+analyses. It lists the portfolio analyses you've run — across all your portfolios — with each
+one's when, portfolio, score, total value and passing count; click a row to open that portfolio on
+the Portfolio tab. Same browser-kept store as the Portfolio tab.
+
+Also fixes the History **Activity** list looking blank when the nightly schedule is turned off: it
+now shows a clear "⏰ Scheduled nightly run is off" hint (with where to enable it) instead of an
+empty table, and the Activity heading counts only genuine scheduled runs.
+
 ## v0.94.0 — Saved fund analyses on the History tab (2026-08-24)
 
 The Fund X-rays you run now appear on the **History** tab as well, in a new **Saved fund analyses**
