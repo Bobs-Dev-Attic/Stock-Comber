@@ -1,5 +1,13 @@
 # Release notes
 
+## v0.97.0 — Export a portfolio analysis (2026-08-24)
+
+The Portfolio Advisor read-out now has **⭳ CSV** and **⭳ JSON** buttons, matching the Fund X-ray.
+The CSV holds a summary block (portfolio, strategies, score, total value, passing), the full
+holdings table (shares, price, value, weight, score, valuation, buy-below, sell-above, action) and
+the suggested target weights; the JSON is the complete analysis object. Downloads as
+`stock-comber-portfolio-<name>-<date>`.
+
 ## v0.96.0 — Fix History tab crash on string-valued job tickers (2026-08-24)
 
 Fixes a **"Failed to load history: (job.tickers || []).filter is not a function"** error some users

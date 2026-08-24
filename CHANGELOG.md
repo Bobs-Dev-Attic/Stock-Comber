@@ -4,6 +4,15 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.97.0] - 2026-08-24
+
+### Added
+- **Export a portfolio analysis as CSV (and JSON).** The Portfolio Advisor read-out gains **⭳ CSV**
+  and **⭳ JSON** buttons — the CSV carries a summary block (portfolio, strategies, score, total
+  value, passing) followed by the holdings table (ticker, shares, price, value, weight, score,
+  valuation, buy-below, sell-above, action) and the suggested target weights; the JSON is the full
+  analysis object. Files are named `stock-comber-portfolio-<name>-<date>`.
+
 ## [0.96.0] - 2026-08-24
 
 ### Fixed

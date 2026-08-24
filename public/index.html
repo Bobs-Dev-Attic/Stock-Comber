@@ -3473,7 +3473,11 @@ function renderPfAnalysis(pa){
   }).join("");
   const sugg = (pa.suggestions || []).map(s => `<li>${escHtml(s.message)}</li>`).join("");
   $("#pf-result").innerHTML =
-    `<div class="pf-cards">
+    `<div style="display:flex;justify-content:flex-end;gap:.5rem;margin-bottom:.4rem">
+       <button class="btn ghost" id="pf-export" title="Download this portfolio analysis as CSV">⭳ CSV</button>
+       <button class="btn ghost" id="pf-export-json" title="Download this portfolio analysis as JSON">⭳ JSON</button>
+     </div>
+     <div class="pf-cards">
        <div class="pf-stat"><div class="pf-k">Portfolio score</div><div class="pf-v">${pa.score != null ? pa.score.toFixed(0) : "—"}<span class="pf-u">/100</span></div></div>
        <div class="pf-stat"><div class="pf-k">Total value</div><div class="pf-v">${money(pa.total_value)}</div></div>
        <div class="pf-stat"><div class="pf-k">Passing</div><div class="pf-v">${pa.passing}<span class="pf-u">/ ${pa.count}</span></div></div>
@@ -3484,6 +3488,41 @@ function renderPfAnalysis(pa){
     + (sugg ? `<div class="histcard" style="margin-top:.6rem"><h3>Suggestions</h3><ul class="pf-sugg">${sugg}</ul></div>` : "")
     + (twRows ? `<div class="histcard" style="margin-top:.6rem"><h3>Suggested target weights <span class="hint" style="font-weight:400">(tilted toward higher scores)</span></h3><div class="tablewrap"><table><thead><tr><th class="l">Ticker</th><th class="r">Current</th><th class="r">Target</th><th class="r">Δ</th></tr></thead><tbody>${twRows}</tbody></table></div></div>` : "")
     + `<div class="hint" style="margin-top:.5rem">Buy-below / sell-above are actionable bands around the current price, each shown with its % distance from today's price (tighter on the buy side when a name looks cheap, on the sell side when it looks rich); the valuation verdict compares price to Graham fair value. Educational only — <b>not investment advice.</b></div>`;
+  const slug = ((pfCurrent || pfState.name || "portfolio") + "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "portfolio";
+  const eb = $("#pf-export");
+  if (eb) eb.onclick = () => download(`stock-comber-portfolio-${slug}-${stamp()}.csv`, pfToCSV(pa), "text/csv");
+  const jb = $("#pf-export-json");
+  if (jb) jb.onclick = () => download(`stock-comber-portfolio-${slug}-${stamp()}.json`, JSON.stringify(pa, null, 2), "application/json");
+}
+// A portfolio analysis as CSV: a summary block, the holdings table, then the
+// suggested target weights.
+function pfToCSV(pa){
+  const esc = v => { const s = (v === null || v === undefined) ? "" : String(v); return /[",\n]/.test(s) ? `"${s.replace(/"/g,'""')}"` : s; };
+  const num = (v, d) => (v === null || v === undefined || isNaN(v)) ? "" : Number(v).toFixed(d);
+  const meta = [
+    ["Portfolio", pfCurrent || pfState.name || ""],
+    ["Strategies", (pa.strategies || []).map(stratLabel).join("; ")],
+    ["Portfolio score", pa.score != null ? pa.score : ""],
+    ["Total value", pa.total_value != null ? pa.total_value : ""],
+    ["Passing", `${pa.passing}/${pa.count}`],
+  ];
+  const lines = meta.map(([k, v]) => `${esc(k)},${esc(v)}`);
+  lines.push("", "Ticker,Shares,Price,Value,Weight %,Score,Valuation,Buy below,Sell above,Action");
+  (pa.holdings || []).forEach(h => lines.push([
+    esc(h.ticker), esc(h.shares != null ? h.shares : ""), esc(num(h.price, 2)),
+    esc(num(h.value, 2)), esc(num(Number(h.weight) * 100, 2)),
+    esc(h.score != null ? Math.round(h.score) : ""), esc(h.verdict || ""),
+    esc(num(h.buy_below, 2)), esc(num(h.sell_above, 2)), esc(h.action || ""),
+  ].join(",")));
+  const tw = Object.entries(pa.target_weights || {}).sort((a, b) => b[1] - a[1]);
+  if (tw.length){
+    lines.push("", "Suggested target weights", "Ticker,Current %,Target %");
+    tw.forEach(([t, w]) => {
+      const cur = (pa.holdings.find(h => h.ticker === t) || {}).weight || 0;
+      lines.push([esc(t), esc(num(cur * 100, 2)), esc(num(w * 100, 2))].join(","));
+    });
+  }
+  return lines.join("\n");
 }
 $("#pf-edit").onclick = () => openPfDialog();
 $("#pf-new").onclick = () => newPortfolio(true);
