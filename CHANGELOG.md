@@ -4,6 +4,17 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.80.0] - 2026-08-24
+
+### Changed
+- **Portfolio Advisor buy/sell targets now sit close to the current price.** The
+  *Buy below* / *Sell above* levels were anchored to Graham fair value and could land
+  far from where a stock actually trades. They're now anchored to the **current price**
+  as tight actionable bands — roughly a 5% dip to add on and a 10% run-up to trim into —
+  tilted by the valuation verdict (tighter on the buy side when a name looks cheap,
+  tighter on the sell side when it looks rich), and always within ~15% of the price. The
+  valuation verdict still compares price to Graham fair value.
+
 ## [0.79.0] - 2026-08-23
 
 ### Added

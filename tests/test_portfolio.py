@@ -10,18 +10,41 @@ def _res(ticker, strategy, passed, score_pct, price=None, gn=None, sector=None):
 
 
 # -- targets ---------------------------------------------------------------
-def test_targets_no_fair_value_is_na():
-    t = pf.targets(100, None)
+def test_targets_no_price_and_no_fair_value_is_na():
+    t = pf.targets(None, None)
     assert t["verdict"] == "n/a" and t["buy_below"] is None and t["sell_above"] is None
 
 
-def test_targets_bands_and_verdicts():
-    # fair value 100 -> buy_below 75, sell_above 110
-    assert pf.targets(70, 100)["verdict"] == "undervalued"   # 70 <= 75
-    assert pf.targets(120, 100)["verdict"] == "overvalued"   # 120 >= 110
-    assert pf.targets(90, 100)["verdict"] == "fair"
-    t = pf.targets(90, 100)
-    assert t["buy_below"] == 75.0 and t["sell_above"] == 110.0 and t["fair_value"] == 100.0
+def test_targets_anchor_to_price_when_no_fair_value():
+    # No fair value -> verdict n/a, but bands are still anchored close to price.
+    t = pf.targets(100, None)
+    assert t["verdict"] == "n/a"
+    assert t["buy_below"] == 95.0 and t["sell_above"] == 110.0   # 5% below / 10% above
+
+
+def test_targets_bands_are_close_to_price_with_valuation_tilt():
+    # fair value 100: verdict from the deep-value test, bands anchored to price.
+    fair = pf.targets(90, 100)      # 90 is between 75 and 110 -> fair
+    assert fair["verdict"] == "fair"
+    assert fair["buy_below"] == 85.5 and fair["sell_above"] == 99.0   # 5% below / 10% above 90
+    assert fair["fair_value"] == 100.0
+
+    under = pf.targets(70, 100)     # 70 <= 75 -> undervalued: tighter buy, wider sell
+    assert under["verdict"] == "undervalued"
+    assert under["buy_below"] == 68.25 and under["sell_above"] == 80.5   # 2.5% below / 15% above 70
+
+    over = pf.targets(120, 100)     # 120 >= 110 -> overvalued: deeper buy, tighter sell
+    assert over["verdict"] == "overvalued"
+    assert over["buy_below"] == 111.0 and over["sell_above"] == 126.0    # 7.5% below / 5% above 120
+
+
+def test_targets_stay_within_15pct_of_price():
+    for price in (12.34, 50, 100, 371.5):
+        for fv in (None, price * 0.5, price, price * 2):
+            t = pf.targets(price, fv)
+            if t["buy_below"] is not None:
+                assert 0.84 * price <= t["buy_below"] <= price
+                assert price <= t["sell_above"] <= 1.16 * price
 
 
 # -- scoring ---------------------------------------------------------------
