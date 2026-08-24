@@ -1,5 +1,13 @@
 # Release notes
 
+## v0.80.0 — Portfolio targets closer to the current price (2026-08-24)
+
+The Portfolio Advisor's **Buy below** and **Sell above** prices are now anchored to each
+stock's **current price** instead of Graham fair value, so they land near where the stock
+actually trades — about a 5% dip to add and a 10% run-up to trim, nudged tighter on the buy
+side for cheap names and the sell side for rich ones. The valuation label (undervalued /
+fair / overvalued) still reflects Graham fair value.
+
 ## v0.79.0 — Portfolio Advisor (2026-08-23)
 
 A new **💼 Portfolio** tab. Build one or more portfolios of the stocks you own (ticker +

@@ -3170,7 +3170,7 @@ function renderPfAnalysis(pa){
        <tbody>${rows}</tbody></table></div>`
     + (sugg ? `<div class="histcard" style="margin-top:.6rem"><h3>Suggestions</h3><ul class="pf-sugg">${sugg}</ul></div>` : "")
     + (twRows ? `<div class="histcard" style="margin-top:.6rem"><h3>Suggested target weights <span class="hint" style="font-weight:400">(tilted toward higher scores)</span></h3><div class="tablewrap"><table><thead><tr><th class="l">Ticker</th><th class="r">Current</th><th class="r">Target</th><th class="r">Δ</th></tr></thead><tbody>${twRows}</tbody></table></div></div>` : "")
-    + `<div class="hint" style="margin-top:.5rem">Targets use Graham fair value (buy ≥25% below, trim ≥10% above). Educational only — <b>not investment advice.</b></div>`;
+    + `<div class="hint" style="margin-top:.5rem">Buy-below / sell-above are actionable bands around the current price (tighter on the buy side when a name looks cheap, on the sell side when it looks rich); the valuation verdict compares price to Graham fair value. Educational only — <b>not investment advice.</b></div>`;
 }
 $("#pf-new").onclick = () => newPortfolio();
 $("#pf-add-holding").onclick = () => addHoldingRow();

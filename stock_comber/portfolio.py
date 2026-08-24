@@ -12,10 +12,14 @@ from __future__ import annotations
 
 from typing import Any, Optional
 
-# Value-investing guardrails for the bands around Graham fair value and the
-# balance suggestions. Deliberately conservative and fully transparent.
-BUY_MARGIN = 0.25       # "buy below" = fair value discounted by a 25% margin of safety
-SELL_PREMIUM = 0.10     # "sell/trim above" = 10% over fair value
+# Value-investing guardrails. The valuation *verdict* still compares the current
+# price to Graham fair value (a deep-value test), but the actionable buy/sell
+# targets are anchored to the *current price* so they sit close to it — a small
+# pullback to add on, a modest run-up to trim into — tilted by the verdict.
+BUY_MARGIN = 0.25       # undervalued when price is >=25% below fair value
+SELL_PREMIUM = 0.10     # overvalued when price is >=10% above fair value
+BUY_PULLBACK = 0.05     # "buy below" = a ~5% dip from the current price (default)
+SELL_RUNUP = 0.10       # "sell/trim above" = a ~10% run-up from the current price (default)
 MAX_WEIGHT = 0.25       # single-position concentration ceiling
 SECTOR_MAX = 0.40       # per-sector concentration ceiling
 WEAK_SCORE = 40.0       # a holding scoring below this is flagged for review
@@ -48,21 +52,44 @@ def holding_passes(ticker: str, results: list[dict],
 
 
 def targets(price: Any, fair_value: Any) -> dict:
-    """Buy-below / sell-above bands from Graham fair value, plus a verdict from
-    where the current price sits. Returns ``verdict='n/a'`` when there is no
-    usable fair value (e.g. negative earnings)."""
+    """Actionable buy-below / sell-above levels close to the current price, plus a
+    valuation verdict comparing the price to Graham fair value.
+
+    The bands are anchored to the current price (a small pullback to add on, a
+    modest run-up to trim into) and tilted by the verdict — tighter on the buy
+    side when a name looks cheap, tighter on the sell side when it looks rich.
+    With no current price we fall back to fair-value bands; with neither, ``n/a``.
+    """
     price_n, fv = _num(price), _num(fair_value)
-    if fv is None or fv <= 0:
-        return {"fair_value": None, "buy_below": None, "sell_above": None, "verdict": "n/a"}
-    buy = round(fv * (1 - BUY_MARGIN), 2)
-    sell = round(fv * (1 + SELL_PREMIUM), 2)
-    verdict = "fair"
-    if price_n is not None:
-        if price_n <= buy:
+
+    # Valuation verdict from the deep-value test against fair value.
+    verdict = "n/a"
+    if fv is not None and fv > 0 and price_n is not None:
+        if price_n <= fv * (1 - BUY_MARGIN):
             verdict = "undervalued"
-        elif price_n >= sell:
+        elif price_n >= fv * (1 + SELL_PREMIUM):
             verdict = "overvalued"
-    return {"fair_value": round(fv, 2), "buy_below": buy, "sell_above": sell, "verdict": verdict}
+        else:
+            verdict = "fair"
+
+    if price_n is None or price_n <= 0:
+        # No price to anchor to — fall back to the fair-value bands (or n/a).
+        if fv is None or fv <= 0:
+            return {"fair_value": None, "buy_below": None, "sell_above": None, "verdict": "n/a"}
+        return {"fair_value": round(fv, 2), "buy_below": round(fv * (1 - BUY_MARGIN), 2),
+                "sell_above": round(fv * (1 + SELL_PREMIUM), 2), "verdict": "fair"}
+
+    buy_pull, sell_run = BUY_PULLBACK, SELL_RUNUP
+    if verdict == "undervalued":       # cheap: add closer to price, let winners run further
+        buy_pull, sell_run = BUY_PULLBACK / 2, SELL_RUNUP * 1.5
+    elif verdict == "overvalued":      # rich: wait for a deeper dip, trim closer to price
+        buy_pull, sell_run = BUY_PULLBACK * 1.5, SELL_RUNUP / 2
+    return {
+        "fair_value": round(fv, 2) if fv else None,
+        "buy_below": round(price_n * (1 - buy_pull), 2),
+        "sell_above": round(price_n * (1 + sell_run), 2),
+        "verdict": verdict,
+    }
 
 
 def _metrics_for(ticker: str, results: list[dict]) -> dict:
