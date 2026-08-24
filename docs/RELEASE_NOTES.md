@@ -1,5 +1,12 @@
 # Release notes
 
+## v0.86.0 — Ticker autocomplete in the Portfolio dialog (2026-08-24)
+
+Adding holdings is quicker: each ticker field in the Portfolio **✎ Edit** dialog now
+autocompletes as you type, suggesting matching symbols with their company names (same
+`/api/tickers` source as Manual search). Use the arrow keys and Enter, or click, to pick one;
+Escape closes the suggestion list without closing the dialog.
+
 ## v0.85.0 — Portfolio holdings in a dialog, with history (2026-08-24)
 
 The Portfolio page is tidier. Holdings now live in an **✎ Edit** dialog instead of inline: the
