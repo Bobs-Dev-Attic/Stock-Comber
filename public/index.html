@@ -3581,6 +3581,7 @@ function renderFundAnalysis(fa){
        </div>
        <div style="display:flex;gap:.6rem;align-items:center">
          <button class="btn ghost" id="fund-export" title="Download this fund analysis as CSV">⭳ CSV</button>
+         <button class="btn ghost" id="fund-export-json" title="Download this fund analysis as JSON">⭳ JSON</button>
          <div class="fund-grade ${fundGradeClass(fa.grade)}">${escHtml(fa.grade)}</div>
        </div></div>
        <div class="pf-cards">
@@ -3599,11 +3600,11 @@ function renderFundAnalysis(fa){
     + `<div class="hint" style="margin-top:.5rem">Overall = 65% fund-weighted strategy quality + 35% diversification (sector spread &amp; position evenness). Bundled holdings are approximate top-holding snapshots. Educational only — <b>not investment advice.</b></div>`;
   const qb = $("#fund-queue");
   if (qb) qb.onclick = () => { enqueueForAnalysis((fa.pending || []).join(",")); qb.disabled = true; qb.textContent = "Queued — re-analyze in a few minutes"; };
+  const fundSlug = () => (fa.symbol || "custom").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "custom";
   const eb = $("#fund-export");
-  if (eb) eb.onclick = () => {
-    const sym = (fa.symbol || "custom").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "custom";
-    download(`stock-comber-fund-${sym}-${stamp()}.csv`, fundToCSV(fa), "text/csv");
-  };
+  if (eb) eb.onclick = () => download(`stock-comber-fund-${fundSlug()}-${stamp()}.csv`, fundToCSV(fa), "text/csv");
+  const jb = $("#fund-export-json");
+  if (jb) jb.onclick = () => download(`stock-comber-fund-${fundSlug()}-${stamp()}.json`, JSON.stringify(fa, null, 2), "application/json");
 }
 // A fund analysis as CSV: a fund-level summary block, a blank line, then the
 // holdings table — so the whole read-out survives the export.
