@@ -522,36 +522,30 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
       <div class="paneln">
         <div class="hint" style="flex:1;min-width:220px">Score a portfolio of holdings against your chosen strategies, see buy/sell targets from Graham fair value, and get suggestions for a more balanced mix. <b>Educational only — not investment advice.</b></div>
         <select id="pf-select" title="Choose a saved portfolio" style="flex:0 1 200px"></select>
+        <button class="btn ghost" id="pf-edit" title="Edit this portfolio's holdings">✎ Edit</button>
         <button class="btn ghost" id="pf-new">+ New</button>
-        <button class="btn ghost" id="pf-del" title="Delete this portfolio">Delete</button>
       </div>
 
-      <div class="jobcard-lg" id="pf-editor">
-        <div class="jc-head"><div>
-          <span class="jc-title">💼 <span id="pf-title">New portfolio</span></span>
-          <div class="hint">Add your holdings (ticker &amp; shares) and pick the strategies to score against.</div>
-        </div></div>
-        <label class="dlg-l" for="pf-name">Name</label>
-        <input id="pf-name" type="text" placeholder="e.g. Core, Retirement" autocomplete="off" style="width:100%;max-width:320px">
-        <label class="dlg-l">Holdings</label>
-        <div id="pf-holdings"></div>
-        <div class="row" style="margin:.5rem 0;display:flex;gap:.5rem;flex-wrap:wrap;align-items:center">
-          <button class="btn ghost" id="pf-add-holding">+ Add holding</button>
-          <span id="pf-hcount" class="hint"></span>
-        </div>
-        <label class="dlg-l">Strategies</label>
-        <div class="menu" id="pfstrat-menu">
-          <button class="btn ghost" id="pfstrat-btn" aria-haspopup="true" aria-expanded="false" title="Which strategies to score the portfolio against">Strategies ▾</button>
-          <div class="panel-pop" id="pfstrat-pop"></div>
-        </div>
-        <div class="dlg-acts" style="margin-top:.7rem">
+      <div class="jobcard-lg" id="pf-summary">
+        <div class="jc-head">
+          <div>
+            <span class="jc-title">💼 <span id="pf-title">New portfolio</span></span>
+            <div class="hint" id="pf-sub">No holdings yet — click <b>Edit</b> to add some.</div>
+          </div>
           <button class="btn" id="pf-analyze">📊 Analyze</button>
-          <button class="btn ghost" id="pf-save">Save portfolio</button>
         </div>
-        <div id="pf-hint" class="hint" style="margin-top:.4rem"></div>
       </div>
 
       <div id="pf-result"></div>
+
+      <div class="jobcard-lg" id="pf-history-card" hidden>
+        <div class="jc-head">
+          <div><span class="jc-title">🕘 Analysis history</span>
+            <div class="hint">Past analyses of this portfolio (kept in this browser).</div></div>
+          <button class="btn ghost" id="pf-hist-clear" title="Clear this portfolio's history">Clear</button>
+        </div>
+        <div id="pf-history"></div>
+      </div>
     </div>
 
     <!-- History: analysis queue + all past runs & searches -->
@@ -799,6 +793,37 @@ try{var _t=localStorage.getItem("theme");if(_t==="dark"||_t==="light")document.d
       </div>
       <div id="ac" class="ac-dd" role="listbox"></div>
       <div class="dlg-acts"><button class="btn ghost" data-close>Close</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- Portfolio editor dialog -->
+<div id="pf-overlay" class="overlay" role="dialog" aria-modal="true">
+  <div class="modal">
+    <button class="close" id="pfdlg-close" aria-label="Close">×</button>
+    <div class="dlg">
+      <h2>💼 <span id="pfdlg-title">Edit portfolio</span></h2>
+      <div class="sub">Add your holdings (ticker &amp; shares) and pick the strategies to score against.</div>
+      <label class="dlg-l" for="pf-name">Name</label>
+      <input id="pf-name" type="text" placeholder="e.g. Core, Retirement" autocomplete="off" style="width:100%;max-width:320px">
+      <label class="dlg-l">Holdings</label>
+      <div id="pf-holdings"></div>
+      <div class="row" style="margin:.5rem 0;display:flex;gap:.5rem;flex-wrap:wrap;align-items:center">
+        <button class="btn ghost" id="pf-add-holding">+ Add holding</button>
+        <span id="pf-hcount" class="hint"></span>
+      </div>
+      <label class="dlg-l">Strategies</label>
+      <div class="menu" id="pfstrat-menu">
+        <button class="btn ghost" id="pfstrat-btn" aria-haspopup="true" aria-expanded="false" title="Which strategies to score the portfolio against">Strategies ▾</button>
+        <div class="panel-pop" id="pfstrat-pop"></div>
+      </div>
+      <div class="dlg-acts" style="margin-top:.7rem">
+        <button class="btn" id="pf-save">Save</button>
+        <button class="btn ghost" id="pf-saveas">Save As…</button>
+        <button class="btn ghost" id="pf-del" title="Delete this portfolio">Delete</button>
+        <button class="btn ghost" data-close>Cancel</button>
+      </div>
+      <div id="pf-hint" class="hint" style="margin-top:.4rem"></div>
     </div>
   </div>
 </div>
@@ -3040,8 +3065,9 @@ $("#nav-close").onclick = closeNav;
 
   // The topmost open modal's focusable container (drawer > job dialog > detail).
   function topModal() {
-    const nav = $("#nav-drawer"), job = $("#job-overlay"), ov = $("#overlay");
+    const nav = $("#nav-drawer"), job = $("#job-overlay"), pf = $("#pf-overlay"), ov = $("#overlay");
     if (nav && nav.classList.contains("open")) return nav.querySelector(".navpane") || nav;
+    if (pf && pf.classList.contains("open")) return pf.querySelector(".modal") || pf;
     if (job && job.classList.contains("open")) return job.querySelector(".modal") || job;
     if (ov && ov.classList.contains("open")) return ov.querySelector(".modal") || ov;
     return null;
@@ -3067,7 +3093,7 @@ $("#nav-close").onclick = closeNav;
       if (lastFocus) setTimeout(() => { try { lastFocus.focus(); } catch (_) {} }, 0);
     }
   });
-  ["overlay", "job-overlay", "nav-drawer"].forEach(id => {
+  ["overlay", "job-overlay", "pf-overlay", "nav-drawer"].forEach(id => {
     const el = document.getElementById(id);
     if (el) obs.observe(el, { attributes: true, attributeFilter: ["class"] });
   });
@@ -3078,6 +3104,7 @@ $("#nav-close").onclick = closeNav;
     if (e.key === "Escape") {
       e.preventDefault();
       if ($("#nav-drawer").classList.contains("open")) closeNav();
+      else if ($("#pf-overlay").classList.contains("open")) closePfDialog();
       else if ($("#job-overlay").classList.contains("open")) closeJobDialog();
       else closeDetail();
       return;
@@ -3141,7 +3168,11 @@ $("#theme-toggle").onclick = cycleTheme;
 
 /* init */
 /* ---- Portfolio Advisor ---- */
-let portfolios = [], pfCurrent = null, pfStrats = ["graham", "buffett"], pfLoaded = false;
+let portfolios = [], pfCurrent = null, pfLoaded = false;
+// The selected portfolio's data (drives the summary card & analysis); the Edit
+// dialog reads from and writes back to it.
+let pfState = { name: "", holdings: [], strategies: ["graham", "buffett"] };
+let pfStrats = ["graham", "buffett"];   // the dialog's working strategy set
 function pfHint(msg, bad){ const el = $("#pf-hint"); if (!el) return; el.textContent = msg || ""; el.style.color = bad ? "var(--fail-ink)" : "var(--muted)"; }
 async function loadPortfolios(){
   pfLoaded = true;
@@ -3150,12 +3181,20 @@ async function loadPortfolios(){
     portfolios = Array.isArray(d.config && d.config.portfolios) ? d.config.portfolios : [];
   } catch(e){ portfolios = []; }
   renderPfSelect();
-  if (portfolios.length) loadPfInto(portfolios[0]); else newPortfolio();
+  if (portfolios.length) loadPfInto(portfolios[0]); else newPortfolio(false);
 }
 function renderPfSelect(){
   const sel = $("#pf-select"); sel.innerHTML = "";
   if (!portfolios.length){ const o = document.createElement("option"); o.value = ""; o.textContent = "(no saved portfolios)"; sel.appendChild(o); return; }
   portfolios.forEach(p => { const o = document.createElement("option"); o.value = p.name; o.textContent = p.name; if (p.name === pfCurrent) o.selected = true; sel.appendChild(o); });
+}
+function renderPfSummary(){
+  $("#pf-title").textContent = pfState.name || "New portfolio";
+  const n = pfState.holdings.filter(h => h.ticker).length;
+  const strat = pfState.strategies.map(stratLabel).join(", ");
+  $("#pf-sub").innerHTML = n
+    ? `${n} holding${n === 1 ? "" : "s"}${strat ? " · " + escHtml(strat) : ""}`
+    : "No holdings yet — click <b>Edit</b> to add some.";
 }
 function pfHoldingRows(){
   return [...document.querySelectorAll("#pf-holdings .pf-hrow")].map(r => ({
@@ -3172,20 +3211,63 @@ function addHoldingRow(ticker = "", shares = ""){
   $("#pf-holdings").appendChild(row); pfCount();
 }
 function pfCount(){ const n = document.querySelectorAll("#pf-holdings .pf-hrow").length; $("#pf-hcount").textContent = n ? `${n} holding${n === 1 ? "" : "s"}` : ""; }
-function newPortfolio(){
-  pfCurrent = null; $("#pf-title").textContent = "New portfolio"; $("#pf-name").value = "";
-  $("#pf-holdings").innerHTML = ""; addHoldingRow();
-  pfStrats = ["graham", "buffett"]; buildPfStratMenu();
-  $("#pf-result").innerHTML = ""; pfHint(""); renderPfSelect();
-}
 function loadPfInto(p){
-  pfCurrent = p.name; $("#pf-title").textContent = p.name || "Portfolio"; $("#pf-name").value = p.name || "";
+  pfCurrent = p.name;
+  pfState = {
+    name: p.name || "",
+    holdings: (p.holdings || []).map(h => ({ ticker: h.ticker, shares: h.shares })),
+    strategies: (p.strategies || ["graham", "buffett"]).filter(k => STRAT_KEYS.includes(k)),
+  };
+  if (!pfState.strategies.length) pfState.strategies = ["graham", "buffett"];
+  $("#pf-result").innerHTML = ""; renderPfSelect(); renderPfSummary(); renderPfHistory();
+}
+function newPortfolio(open){
+  pfCurrent = null;
+  pfState = { name: "", holdings: [], strategies: ["graham", "buffett"] };
+  $("#pf-result").innerHTML = ""; renderPfSelect(); renderPfSummary(); renderPfHistory();
+  if (open) openPfDialog();
+}
+/* ---- Edit dialog ---- */
+function openPfDialog(){
+  $("#pfdlg-title").textContent = pfCurrent ? "Edit portfolio" : "New portfolio";
+  $("#pf-name").value = pfState.name || "";
   $("#pf-holdings").innerHTML = "";
-  (p.holdings || []).forEach(h => addHoldingRow(h.ticker, h.shares != null ? h.shares : ""));
-  if (!(p.holdings || []).length) addHoldingRow();
-  pfStrats = (p.strategies || ["graham", "buffett"]).filter(k => STRAT_KEYS.includes(k));
-  if (!pfStrats.length) pfStrats = ["graham", "buffett"];
-  buildPfStratMenu(); $("#pf-result").innerHTML = ""; pfHint(""); renderPfSelect();
+  pfState.holdings.forEach(h => addHoldingRow(h.ticker, h.shares != null ? h.shares : ""));
+  if (!pfState.holdings.length) addHoldingRow();
+  pfStrats = pfState.strategies.slice(); if (!pfStrats.length) pfStrats = ["graham", "buffett"];
+  buildPfStratMenu(); pfHint("");
+  $("#pf-del").style.display = pfCurrent ? "" : "none";   // nothing to delete on a brand-new one
+  $("#pf-overlay").classList.add("open");
+  setTimeout(() => $("#pf-name").focus(), 30);
+}
+function closePfDialog(){ $("#pf-overlay").classList.remove("open"); }
+function pfFormToState(name){
+  const holdings = pfHoldingRows().map(h => ({ ticker: h.ticker, shares: h.shares === "" ? null : Number(h.shares) }));
+  return { name, holdings, strategies: pfStrats.slice() };
+}
+/* ---- analysis history (per portfolio, kept in this browser) ---- */
+function loadPfHist(){ try { const o = JSON.parse(localStorage.getItem("sc_pfhistory")); return (o && typeof o === "object") ? o : {}; } catch(e){ return {}; } }
+function savePfHist(){ try { localStorage.setItem("sc_pfhistory", JSON.stringify(pfHist)); } catch(e){} }
+let pfHist = loadPfHist();
+function pfWhen(iso){ try { return new Date(iso).toLocaleString(); } catch(e){ return iso; } }
+function recordPfHistory(pa){
+  if (!pfCurrent || !pa || !pa.holdings || !pa.holdings.length) return;   // only for saved portfolios
+  const list = pfHist[pfCurrent] || (pfHist[pfCurrent] = []);
+  list.unshift({ at: new Date().toISOString(), score: pa.score, total_value: pa.total_value, passing: pa.passing, count: pa.count });
+  if (list.length > 50) list.length = 50;
+  savePfHist(); renderPfHistory();
+}
+function renderPfHistory(){
+  const card = $("#pf-history-card"), el = $("#pf-history"); if (!el) return;
+  const list = pfCurrent ? (pfHist[pfCurrent] || []) : [];
+  if (!list.length){ card.hidden = true; el.innerHTML = ""; return; }
+  card.hidden = false;
+  el.innerHTML = `<div class="tablewrap"><table><thead><tr><th class="l">When</th><th class="r">Score</th><th class="r">Value</th><th class="r">Passing</th></tr></thead><tbody>`
+    + list.map(h => `<tr><td class="l">${escHtml(pfWhen(h.at))}</td>`
+        + `<td class="r">${h.score != null ? Number(h.score).toFixed(0) : "—"}</td>`
+        + `<td class="r">${money(h.total_value)}</td>`
+        + `<td class="r">${h.passing}/${h.count}</td></tr>`).join("")
+    + `</tbody></table></div>`;
 }
 function buildPfStratMenu(){
   const pop = $("#pfstrat-pop"); pop.innerHTML = "";
@@ -3210,20 +3292,21 @@ async function savePortfolios(list, okMsg){
 }
 function money(v){ return v == null ? "—" : "$" + Number(v).toLocaleString(undefined, { maximumFractionDigits: 0 }); }
 function pfPct(w){ return (Number(w) * 100).toFixed(1) + "%"; }
+function pfErr(msg){ $("#pf-result").innerHTML = `<div class="hint" style="color:var(--fail-ink)">${escHtml(msg)}</div>`; }
 async function analyzePortfolio(){
-  const holdings = pfHoldingRows();
-  if (!holdings.length){ pfHint("Add at least one holding to analyze.", true); return; }
-  if (!pfStrats.length){ pfHint("Pick at least one strategy.", true); return; }
-  const payload = holdings.map(h => ({ ticker: h.ticker, shares: h.shares === "" ? 0 : Number(h.shares) }));
+  const holdings = (pfState.holdings || []).filter(h => h.ticker);
+  if (!holdings.length){ pfErr("Add at least one holding — click ✎ Edit — before analyzing."); return; }
+  const strategies = pfState.strategies.length ? pfState.strategies : ["graham", "buffett"];
+  const payload = holdings.map(h => ({ ticker: h.ticker, shares: (h.shares == null || h.shares === "") ? 0 : Number(h.shares) }));
   const params = new URLSearchParams(); params.set("portfolio", JSON.stringify(payload));
-  pfStrats.forEach(s => params.append("strategy", s));
+  strategies.forEach(s => params.append("strategy", s));
   const btn = $("#pf-analyze"); const label = btn.textContent; btn.disabled = true; btn.textContent = "Analyzing…";
   $("#pf-result").innerHTML = '<div class="hint">Screening holdings…</div>'; showBanner("Analyzing portfolio…");
   try {
     const res = await fetch("/api/screen?" + params.toString()); const data = await res.json();
-    if (data.error){ pfHint("Error: " + data.error, true); $("#pf-result").innerHTML = ""; }
-    else { pfHint(""); renderPfAnalysis(data.portfolio || {}); }
-  } catch(e){ pfHint("Analysis failed: " + e.message, true); $("#pf-result").innerHTML = ""; }
+    if (data.error){ pfErr("Error: " + data.error); }
+    else { renderPfAnalysis(data.portfolio || {}); recordPfHistory(data.portfolio || {}); }
+  } catch(e){ pfErr("Analysis failed: " + e.message); }
   finally { btn.disabled = false; btn.textContent = label; hideBanner(); }
 }
 function renderPfAnalysis(pa){
@@ -3262,28 +3345,51 @@ function renderPfAnalysis(pa){
     + (twRows ? `<div class="histcard" style="margin-top:.6rem"><h3>Suggested target weights <span class="hint" style="font-weight:400">(tilted toward higher scores)</span></h3><div class="tablewrap"><table><thead><tr><th class="l">Ticker</th><th class="r">Current</th><th class="r">Target</th><th class="r">Δ</th></tr></thead><tbody>${twRows}</tbody></table></div></div>` : "")
     + `<div class="hint" style="margin-top:.5rem">Buy-below / sell-above are actionable bands around the current price (tighter on the buy side when a name looks cheap, on the sell side when it looks rich); the valuation verdict compares price to Graham fair value. Educational only — <b>not investment advice.</b></div>`;
 }
-$("#pf-new").onclick = () => newPortfolio();
+$("#pf-edit").onclick = () => openPfDialog();
+$("#pf-new").onclick = () => newPortfolio(true);
 $("#pf-add-holding").onclick = () => addHoldingRow();
 $("#pf-analyze").onclick = analyzePortfolio;
 $("#pf-select").onchange = e => { const p = portfolios.find(x => x.name === e.target.value); if (p) loadPfInto(p); };
-$("#pf-save").onclick = async () => {
-  const name = $("#pf-name").value.trim();
+$("#pfdlg-close").onclick = () => closePfDialog();
+$("#pf-overlay").addEventListener("click", e => { if (e.target.id === "pf-overlay" || e.target.hasAttribute("data-close")) closePfDialog(); });
+// Shared save: `renameFrom` (when set) is the existing portfolio being replaced,
+// so a plain Save overwrites in place and Save As… always writes a new copy.
+async function pfSave(name, renameFrom){
+  name = (name || "").trim();
   if (!name){ pfHint("Give the portfolio a name.", true); $("#pf-name").focus(); return; }
   const holdings = pfHoldingRows();
   if (!holdings.length){ pfHint("Add at least one holding.", true); return; }
+  if (renameFrom == null && portfolios.some(p => p.name.toLowerCase() === name.toLowerCase())
+      && !confirm(`A portfolio named “${name}” already exists. Overwrite it?`)) return;
   const pf = { name, holdings: holdings.map(h => ({ ticker: h.ticker, shares: h.shares === "" ? null : Number(h.shares) })), strategies: pfStrats.slice() };
-  const others = portfolios.filter(p => p.name.toLowerCase() !== name.toLowerCase());
-  pfCurrent = name;
+  const drop = new Set([name.toLowerCase()]); if (renameFrom) drop.add(renameFrom.toLowerCase());
+  const others = portfolios.filter(p => !drop.has(p.name.toLowerCase()));
+  if (renameFrom && renameFrom.toLowerCase() !== name.toLowerCase() && pfHist[renameFrom]){
+    pfHist[name] = pfHist[renameFrom]; delete pfHist[renameFrom]; savePfHist();
+  }
   const btn = $("#pf-save"); const label = btn.textContent; btn.disabled = true; btn.textContent = "Saving…";
-  await savePortfolios([...others, pf], `Saved “${name}”.`);
+  const ok = await savePortfolios([...others, pf], `Saved “${name}”.`);
   btn.disabled = false; btn.textContent = label;
+  if (ok){ const saved = portfolios.find(p => p.name === name); if (saved) loadPfInto(saved); closePfDialog(); }
+}
+$("#pf-save").onclick = () => pfSave($("#pf-name").value, pfCurrent);
+$("#pf-saveas").onclick = () => {
+  const suggested = ($("#pf-name").value.trim() || "Portfolio") + " copy";
+  const name = prompt("Save as a new portfolio named:", suggested);
+  if (name == null) return;
+  pfSave(name, null);
 };
 $("#pf-del").onclick = async () => {
-  const name = ($("#pf-name").value || pfCurrent || "").trim();
-  if (!name || !portfolios.some(p => p.name.toLowerCase() === name.toLowerCase())) { pfHint("Nothing saved to delete.", true); return; }
+  if (!pfCurrent || !portfolios.some(p => p.name.toLowerCase() === pfCurrent.toLowerCase())) { pfHint("Nothing saved to delete.", true); return; }
+  const name = pfCurrent;
   if (!confirm(`Delete portfolio “${name}”?`)) return;
   const ok = await savePortfolios(portfolios.filter(p => p.name.toLowerCase() !== name.toLowerCase()), `Deleted “${name}”.`);
-  if (ok) newPortfolio();
+  if (ok){ if (pfHist[name]){ delete pfHist[name]; savePfHist(); } closePfDialog(); if (portfolios.length) loadPfInto(portfolios[0]); else newPortfolio(false); }
+};
+$("#pf-hist-clear").onclick = () => {
+  if (!pfCurrent || !(pfHist[pfCurrent] || []).length) return;
+  if (!confirm(`Clear analysis history for “${pfCurrent}”?`)) return;
+  delete pfHist[pfCurrent]; savePfHist(); renderPfHistory();
 };
 
 wireMenu("cols-menu"); wireMenu("export-menu"); wireMenu("strat-menu"); wireMenu("cstrat-menu"); wireMenu("tmpl-menu"); wireMenu("preset-menu"); wireMenu("colpreset-menu"); wireMenu("pfstrat-menu");

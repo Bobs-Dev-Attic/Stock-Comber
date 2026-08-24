@@ -4,6 +4,21 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.85.0] - 2026-08-24
+
+### Changed
+- **Portfolio holdings now live in an Edit dialog.** The Portfolio page shows a compact
+  summary card (name, holding count, strategies) with an **✎ Edit** button that opens a
+  dialog for adding holdings and picking strategies — the same modal pattern as Jobs.
+- **Save As… and Delete.** The dialog adds **Save As…** (write the current holdings under a
+  new name, keeping the original) alongside **Save** (overwrite in place) and **Delete**
+  (remove the selected portfolio). Renaming carries that portfolio's analysis history along.
+
+### Added
+- **Per-portfolio analysis history.** Each analysis is recorded (when, score, total value,
+  passing count) under an **Analysis history** card, kept per portfolio in this browser
+  (`localStorage` `sc_pfhistory`, capped at 50 entries) with a **Clear** button.
+
 ## [0.84.0] - 2026-08-24
 
 ### Added
