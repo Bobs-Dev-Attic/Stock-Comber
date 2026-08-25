@@ -3391,6 +3391,7 @@ function openPfFromHistory(name, at){
   const showAnalysis = () => {
     const entry = (pfHist[name] || []).find(e => e.at === at);
     if (entry && entry.pa){ renderPfAnalysis(entry.pa); try { $("#pf-result").scrollIntoView({ behavior: "smooth", block: "start" }); } catch(e){} }
+    else analyzePortfolio();   // older entry with no stored read-out — run a fresh analysis
   };
   if (pfLoaded){ showTab("portfolio"); const p = (portfolios || []).find(x => x.name === name); if (p) loadPfInto(p); showAnalysis(); }
   else { pfPreferred = name; pfAfterLoad = showAnalysis; showTab("portfolio"); }   // render after loadPortfolios settles
@@ -3414,7 +3415,7 @@ function viewPfHistory(i){
   const list = pfCurrent ? (pfHist[pfCurrent] || []) : [];
   const h = list[i]; if (!h) return;
   if (h.pa){ renderPfAnalysis(h.pa); try { $("#pf-result").scrollIntoView({ behavior: "smooth", block: "start" }); } catch(e){} }
-  else openPfDialog();
+  else analyzePortfolio();   // older entry with no stored read-out — run a fresh analysis
 }
 function buildPfStratMenu(){
   const pop = $("#pfstrat-pop"); pop.innerHTML = "";

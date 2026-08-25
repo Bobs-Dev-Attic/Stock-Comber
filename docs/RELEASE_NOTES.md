@@ -1,5 +1,11 @@
 # Release notes
 
+## v0.100.0 — Every Analysis-history row opens an analysis (2026-08-24)
+
+Follow-up to v0.99.0: history rows saved before that release have no stored read-out, and were
+falling back to the holdings editor when clicked. Now they run a fresh analysis of that portfolio
+and show it — so clicking any Analysis-history row always opens an analysis, old or new.
+
 ## v0.99.0 — Analysis-history rows reopen the analysis (2026-08-24)
 
 Clicking a row in the **Analysis history** now reopens that exact analysis read-out — score cards,

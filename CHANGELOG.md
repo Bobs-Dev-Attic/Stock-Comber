@@ -4,6 +4,14 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.100.0] - 2026-08-24
+
+### Changed
+- **Older Analysis-history rows now open a fresh analysis instead of the editor.** v0.99.0 reopened
+  the stored read-out for rows saved with it, but rows recorded before that (summary-only, no stored
+  analysis) fell back to the holdings editor. They now run a fresh analysis of that portfolio and
+  show it, so clicking any history row always opens an analysis.
+
 ## [0.99.0] - 2026-08-24
 
 ### Changed
