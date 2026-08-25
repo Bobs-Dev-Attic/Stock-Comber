@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-POWL,"Powell Industries, Inc.",piotroski,True,7,9,77.8,198,13.30,3.75,28.21,2.09,0.73,133,"430,833",—
-POWL,"Powell Industries, Inc.",lynch,True,3,4,75.0,198,13.30,3.75,28.21,2.09,0.73,133,"430,833",—
-SON,Sonoco Products Company,piotroski,True,8,9,88.9,57.49,5.71,1.58,27.75,1.05,2.08,90.68,1M,—
-SON,Sonoco Products Company,lynch,True,3,4,75.0,57.49,5.71,1.58,27.75,1.05,2.08,90.68,1M,—
-CRUS,"CIRRUS LOGIC, INC.",piotroski,True,8,9,88.9,115,14.69,2.86,19.47,7.37,—,84.35,"613,451",—
-PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,300,13.09,4.01,30.71,—,5.14,196,"134,922",—
-BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,166,22.53,3.86,17.13,2.65,0.86,84.23,"573,570",—
-BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,166,22.53,3.86,17.13,2.65,0.86,84.23,"573,570",—
-AROC,"Archrock, Inc.",piotroski,True,8,9,88.9,30.70,16.78,3.60,21.61,1.54,1.92,18.75,3M,—
-FHI,"Federated Hermes, Inc.",greenblatt,True,3,3,100.0,64.72,12.62,4.06,33.69,2.75,0.81,42.89,"516,130",—
-FHI,"Federated Hermes, Inc.",piotroski,True,8,9,88.9,64.72,12.62,4.06,33.69,2.75,0.81,42.89,"516,130",—
-EVR,EVERCORE INC.,buffett,True,5,6,83.3,292,20.78,6.05,29.14,2.16,1.50,123,"483,261",—
-EVR,EVERCORE INC.,piotroski,True,7,9,77.8,292,20.78,6.05,29.14,2.16,1.50,123,"483,261",—
+GLD,SPDR® GOLD TRUST,lynch,True,3,4,75.0,427,3.84,—,—,—,—,—,19M,—
+PIPR,PIPER SANDLER COMPANIES,greenblatt,True,3,3,100.0,74.80,4.73,0.97,20.52,—,0.74,166,"342,236",—
+PIPR,PIPER SANDLER COMPANIES,lynch,True,4,4,100.0,74.80,4.73,0.97,20.52,—,0.74,166,"342,236",—
+PIPR,PIPER SANDLER COMPANIES,piotroski,True,8,9,88.9,74.80,4.73,0.97,20.52,—,0.74,166,"342,236",—
+PD,"PAGERDUTY, INC.",greenblatt,True,3,3,100.0,12.40,6.63,4.55,68.37,2.01,2.84,10.71,1M,—
+CRUS,"CIRRUS LOGIC, INC.",piotroski,True,8,9,88.9,112,14.22,2.77,19.47,7.37,—,84.35,"715,444",—
+FRSH,Freshworks Inc.,piotroski,True,8,9,88.9,13.19,20.94,3.75,17.79,2.20,0.55,7.06,4M,—
+BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,162,22.01,3.77,17.13,2.65,0.86,84.23,"727,368",—
+BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,162,22.01,3.77,17.13,2.65,0.86,84.23,"727,368",—
+DAKT,"Daktronics, Inc.",piotroski,True,8,9,88.9,19.00,20.65,3.12,15.09,2.31,—,11.23,"880,038",—
+DAKT,"Daktronics, Inc.",lynch,True,3,4,75.0,19.00,20.65,3.12,15.09,2.31,—,11.23,"880,038",—
+EVR,EVERCORE INC.,buffett,True,5,6,83.3,290,20.65,6.02,29.14,2.16,1.50,123,"499,601",—
+EVR,EVERCORE INC.,piotroski,True,7,9,77.8,290,20.65,6.02,29.14,2.16,1.50,123,"499,601",—
 GGG,GRACO INC.,piotroski,True,8,9,88.9,80.16,26.03,5.11,19.66,3.15,—,32.97,2M,—
 GGG,GRACO INC.,buffett,True,5,6,83.3,80.16,26.03,5.11,19.66,3.15,—,32.97,2M,—
-HALO,"HALOZYME THERAPEUTICS, INC.",buffett,True,5,6,83.3,108,42.25,275,649,4.66,50.73,4.76,1M,—
-MEDP,"Medpace Holdings, Inc.",buffett,True,5,6,83.3,620,40.58,39.88,98.27,0.74,3.30,73.11,"171,010",—
-MEDP,"Medpace Holdings, Inc.",piotroski,True,7,9,77.8,620,40.58,39.88,98.27,0.74,3.30,73.11,"171,010",—
-NJR,NEW JERSEY RESOURCES CORPORATION,piotroski,True,7,9,77.8,53.74,16.14,2.26,14.03,0.73,—,42.17,"362,609",—
-HAFC,HANMI FINANCIAL CORPORATION,piotroski,True,8,9,88.9,31.11,12.39,1.17,9.55,—,8.88,38.69,"339,237",—
-BCPC,Balchem Corporation,piotroski,True,9,9,100.0,181,38.16,4.70,12.31,2.07,0.34,64.20,"137,885",—
-FMNB,FARMERS NATIONAL BANC CORP /OH/,piotroski,True,8,9,88.9,15.69,10.82,1.22,11.24,—,9.80,20.52,"524,510",—
+MTCH,"Match Group, Inc.",piotroski,True,8,9,88.9,41.73,17.53,—,-242,1.42,—,—,3M,—
+MTCH,"Match Group, Inc.",lynch,True,3,4,75.0,41.73,17.53,—,-242,1.42,—,—,3M,—
+PATH,"UiPath, Inc.",piotroski,True,8,9,88.9,16.57,31.87,4.34,13.56,2.48,0.53,6.69,60M,—
+FTDR,"Frontdoor, Inc.",piotroski,True,8,9,88.9,82.75,24.20,25.47,105,1.55,—,15.81,"441,473",—
+FTDR,"Frontdoor, Inc.",buffett,True,5,6,83.3,82.75,24.20,25.47,105,1.55,—,15.81,"441,473",—
+GPK,Graphic Packaging Holding Co,lynch,True,3,4,75.0,11.45,7.74,1.03,13.31,1.30,—,19.25,4M,—
+HALO,"HALOZYME THERAPEUTICS, INC.",buffett,True,5,6,83.3,109,42.44,276,649,4.66,50.73,4.76,2M,—
+FCFS,"FIRSTCASH HOLDINGS, INC.",piotroski,True,7,9,77.8,236,31.86,4.62,14.51,4.55,1.33,92.39,1M,—
+NJR,NEW JERSEY RESOURCES CORPORATION,piotroski,True,7,9,77.8,53.74,16.14,2.26,14.03,0.73,—,42.17,"407,749",—
+SIRI,SIRIUS XM HOLDINGS INC.,lynch,True,3,4,75.0,28.45,12.76,0.88,6.96,0.30,1.36,40.31,3M,—
+BCPC,Balchem Corporation,piotroski,True,9,9,100.0,178,37.37,4.60,12.31,2.07,0.34,64.20,"279,514",—
+BKU,"BankUnited, Inc.",piotroski,True,8,9,88.9,46.28,13.11,1.13,8.79,—,10.47,57.13,"380,328",—
+R,RYDER SYSTEM INC,piotroski,True,9,9,100.0,245,20.51,3.35,16.35,0.89,4.37,140,"232,478",—
+CURB,Curbline Properties Corp.,piotroski,True,7,9,77.8,29.78,80.49,1.64,2.09,—,0.29,12.29,"896,256",—
+CURB,Curbline Properties Corp.,lynch,True,3,4,75.0,29.78,80.49,1.64,2.09,—,0.29,12.29,"896,256",—
+CBU,"COMMUNITY FINANCIAL SYSTEM, INC.",piotroski,True,8,9,88.9,63.02,15.87,1.66,10.49,—,7.63,58.24,"145,887",—
 FIGS,"FIGS, Inc.",piotroski,True,8,9,88.9,15.21,80.05,6.24,7.83,4.94,0.33,3.23,3M,—
-MCS,MARCUS CORP,piotroski,True,7,9,77.8,30.91,76.18,2.11,2.77,0.40,—,11.55,"243,437",—
+NXDR,"Nextdoor Holdings, Inc",piotroski,True,7,9,77.8,2.37,—,2.12,-12.57,14.03,0.13,—,1M,—
+MSGS,MADISON SQUARE GARDEN SPORTS CORP.,piotroski,True,9,9,100.0,403,"1,258",—,-2.95,0.50,-6.84,—,"215,401",—
 FROG,JFrog Ltd.,piotroski,True,7,9,77.8,90.14,—,11.80,-8.09,2.14,0.51,—,1M,—
 WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,8,9,88.9,32.14,35.32,0.74,2.10,2.42,0.76,29.77,"582,176",—
-POWL,"Powell Industries, Inc.",graham,False,7,9,77.8,198,13.30,3.75,28.21,2.09,0.73,133,"430,833",—
-POWL,"Powell Industries, Inc.",buffett,False,4,6,66.7,198,13.30,3.75,28.21,2.09,0.73,133,"430,833",—
-POWL,"Powell Industries, Inc.",greenblatt,False,2,3,66.7,198,13.30,3.75,28.21,2.09,0.73,133,"430,833",—
-POWL,"Powell Industries, Inc.",netnet,False,2,4,50.0,198,13.30,3.75,28.21,2.09,0.73,133,"430,833",—
-POWL,"Powell Industries, Inc.",custom,False,0,0,0.0,198,13.30,3.75,28.21,2.09,0.73,133,"430,833",—
-SON,Sonoco Products Company,buffett,False,4,6,66.7,57.49,5.71,1.58,27.75,1.05,2.08,90.68,1M,—
-SON,Sonoco Products Company,greenblatt,False,2,3,66.7,57.49,5.71,1.58,27.75,1.05,2.08,90.68,1M,—
-SON,Sonoco Products Company,graham,False,5,9,55.6,57.49,5.71,1.58,27.75,1.05,2.08,90.68,1M,—
-SON,Sonoco Products Company,netnet,False,1,4,25.0,57.49,5.71,1.58,27.75,1.05,2.08,90.68,1M,—
-SON,Sonoco Products Company,custom,False,0,0,0.0,57.49,5.71,1.58,27.75,1.05,2.08,90.68,1M,—
-UNG,"United States Natural Gas Fund, LP",piotroski,False,5,9,55.6,10.15,—,—,—,—,—,—,10M,—
-UNG,"United States Natural Gas Fund, LP",greenblatt,False,1,3,33.3,10.15,—,—,—,—,—,—,10M,—
-UNG,"United States Natural Gas Fund, LP",lynch,False,1,4,25.0,10.15,—,—,—,—,—,—,10M,—
-UNG,"United States Natural Gas Fund, LP",netnet,False,1,4,25.0,10.15,—,—,—,—,—,—,10M,—
-UNG,"United States Natural Gas Fund, LP",buffett,False,1,6,16.7,10.15,—,—,—,—,—,—,10M,—
-UNG,"United States Natural Gas Fund, LP",graham,False,0,9,0.0,10.15,—,—,—,—,—,—,10M,—
-UNG,"United States Natural Gas Fund, LP",custom,False,0,0,0.0,10.15,—,—,—,—,—,—,10M,—
-CRUS,"CIRRUS LOGIC, INC.",graham,False,7,9,77.8,115,14.69,2.86,19.47,7.37,—,84.35,"613,451",—
-CRUS,"CIRRUS LOGIC, INC.",buffett,False,4,6,66.7,115,14.69,2.86,19.47,7.37,—,84.35,"613,451",—
-CRUS,"CIRRUS LOGIC, INC.",greenblatt,False,1,3,33.3,115,14.69,2.86,19.47,7.37,—,84.35,"613,451",—
-CRUS,"CIRRUS LOGIC, INC.",lynch,False,1,4,25.0,115,14.69,2.86,19.47,7.37,—,84.35,"613,451",—
-CRUS,"CIRRUS LOGIC, INC.",netnet,False,1,4,25.0,115,14.69,2.86,19.47,7.37,—,84.35,"613,451",—
-CRUS,"CIRRUS LOGIC, INC.",custom,False,0,0,0.0,115,14.69,2.86,19.47,7.37,—,84.35,"613,451",—
-MGY,Magnolia Oil & Gas Corp,piotroski,False,6,9,66.7,27.22,15.53,2.53,16.27,1.54,—,20.61,4M,—
+GLD,SPDR® GOLD TRUST,greenblatt,False,2,3,66.7,427,3.84,—,—,—,—,—,19M,—
+GLD,SPDR® GOLD TRUST,piotroski,False,3,9,33.3,427,3.84,—,—,—,—,—,19M,—
+GLD,SPDR® GOLD TRUST,netnet,False,1,4,25.0,427,3.84,—,—,—,—,—,19M,—
+GLD,SPDR® GOLD TRUST,graham,False,2,9,22.2,427,3.84,—,—,—,—,—,19M,—
+GLD,SPDR® GOLD TRUST,buffett,False,1,6,16.7,427,3.84,—,—,—,—,—,19M,—
+GLD,SPDR® GOLD TRUST,custom,False,0,0,0.0,427,3.84,—,—,—,—,—,19M,—
+PIPR,PIPER SANDLER COMPANIES,graham,False,7,9,77.8,74.80,4.73,0.97,20.52,—,0.74,166,"342,236",—
+PIPR,PIPER SANDLER COMPANIES,buffett,False,3,6,50.0,74.80,4.73,0.97,20.52,—,0.74,166,"342,236",—
+PIPR,PIPER SANDLER COMPANIES,netnet,False,1,4,25.0,74.80,4.73,0.97,20.52,—,0.74,166,"342,236",—
+PIPR,PIPER SANDLER COMPANIES,custom,False,0,0,0.0,74.80,4.73,0.97,20.52,—,0.74,166,"342,236",—
+PD,"PAGERDUTY, INC.",piotroski,False,6,9,66.7,12.40,6.63,4.55,68.37,2.01,2.84,10.71,1M,—
+PD,"PAGERDUTY, INC.",buffett,False,3,6,50.0,12.40,6.63,4.55,68.37,2.01,2.84,10.71,1M,—
+PD,"PAGERDUTY, INC.",graham,False,3,9,33.3,12.40,6.63,4.55,68.37,2.01,2.84,10.71,1M,—
+PD,"PAGERDUTY, INC.",lynch,False,1,4,25.0,12.40,6.63,4.55,68.37,2.01,2.84,10.71,1M,—
