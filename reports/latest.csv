@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-MLI,MUELLER INDUSTRIES INC,buffett,True,6,6,100.0,63.45,9.25,2.20,23.84,5.92,0.15,66.66,1M,—
-MLI,MUELLER INDUSTRIES INC,greenblatt,True,3,3,100.0,63.45,9.25,2.20,23.84,5.92,0.15,66.66,1M,—
-MLI,MUELLER INDUSTRIES INC,lynch,True,4,4,100.0,63.45,9.25,2.20,23.84,5.92,0.15,66.66,1M,—
-MLI,MUELLER INDUSTRIES INC,graham,True,8,9,88.9,63.45,9.25,2.20,23.84,5.92,0.15,66.66,1M,—
-MLI,MUELLER INDUSTRIES INC,piotroski,True,7,9,77.8,63.45,9.25,2.20,23.84,5.92,0.15,66.66,1M,—
-PD,"PAGERDUTY, INC.",greenblatt,True,3,3,100.0,12.40,6.63,4.55,68.37,2.01,2.84,10.71,1M,—
-TREE,"LendingTree, Inc.",greenblatt,True,3,3,100.0,30.97,2.87,1.52,52.76,1.67,1.98,70.33,"203,263",—
-BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,162,22.01,3.77,17.13,2.65,0.86,84.23,"727,368",—
-BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,162,22.01,3.77,17.13,2.65,0.86,84.23,"727,368",—
-FHI,"Federated Hermes, Inc.",greenblatt,True,3,3,100.0,64.72,12.62,4.06,33.69,2.75,0.81,42.89,"516,130",—
-FHI,"Federated Hermes, Inc.",piotroski,True,8,9,88.9,64.72,12.62,4.06,33.69,2.75,0.81,42.89,"516,130",—
-ACIC,American Coastal Insurance Corporation,greenblatt,True,3,3,100.0,9.34,4.34,1.46,33.64,—,2.38,17.57,"320,544",—
-FTDR,"Frontdoor, Inc.",piotroski,True,8,9,88.9,82.75,24.20,25.47,105,1.55,—,15.81,"441,473",—
-FTDR,"Frontdoor, Inc.",buffett,True,5,6,83.3,82.75,24.20,25.47,105,1.55,—,15.81,"441,473",—
-OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,26.51,38.42,5.07,13.20,1.91,0.30,9.01,"666,277",—
-VCYT,"VERACYTE, INC.",piotroski,True,8,9,88.9,41.47,50.57,2.55,5.07,8.15,0.07,17.32,1M,—
-SIRI,SIRIUS XM HOLDINGS INC.,lynch,True,3,4,75.0,28.45,12.76,0.88,6.96,0.30,1.36,40.31,3M,—
-BCPC,Balchem Corporation,piotroski,True,9,9,100.0,178,37.37,4.60,12.31,2.07,0.34,64.20,"279,515",—
-DRH,DIAMONDROCK HOSPITALITY CO,piotroski,True,7,9,77.8,12.74,28.95,1.83,7.01,—,1.07,8.30,4M,—
-R,RYDER SYSTEM INC,piotroski,True,9,9,100.0,245,20.51,3.35,16.35,0.89,4.37,140,"261,670",—
-KNTK,KINETIK HOLDINGS INC.,lynch,True,3,4,75.0,54.70,20.80,—,-31.53,0.69,-7.37,—,1M,—
-FMNB,FARMERS NATIONAL BANC CORP /OH/,piotroski,True,8,9,88.9,15.62,10.77,1.21,11.24,—,9.80,20.52,"281,491",—
-FIGS,"FIGS, Inc.",piotroski,True,8,9,88.9,15.21,80.05,6.24,7.83,4.94,0.33,3.23,3M,—
-MCS,MARCUS CORP,piotroski,True,7,9,77.8,30.91,76.18,2.11,2.77,0.40,—,11.55,"258,726",—
-WRBY,Warby Parker Inc.,piotroski,True,7,9,77.8,26.21,"2,621",8.92,0.45,2.35,0.96,0.81,2M,—
-MLI,MUELLER INDUSTRIES INC,netnet,False,2,4,50.0,63.45,9.25,2.20,23.84,5.92,0.15,66.66,1M,—
-MLI,MUELLER INDUSTRIES INC,custom,False,0,0,0.0,63.45,9.25,2.20,23.84,5.92,0.15,66.66,1M,—
-PD,"PAGERDUTY, INC.",piotroski,False,6,9,66.7,12.40,6.63,4.55,68.37,2.01,2.84,10.71,1M,—
-PD,"PAGERDUTY, INC.",buffett,False,3,6,50.0,12.40,6.63,4.55,68.37,2.01,2.84,10.71,1M,—
-PD,"PAGERDUTY, INC.",graham,False,3,9,33.3,12.40,6.63,4.55,68.37,2.01,2.84,10.71,1M,—
-PD,"PAGERDUTY, INC.",lynch,False,1,4,25.0,12.40,6.63,4.55,68.37,2.01,2.84,10.71,1M,—
-PD,"PAGERDUTY, INC.",netnet,False,1,4,25.0,12.40,6.63,4.55,68.37,2.01,2.84,10.71,1M,—
-PD,"PAGERDUTY, INC.",custom,False,0,0,0.0,12.40,6.63,4.55,68.37,2.01,2.84,10.71,1M,—
-UNG,"United States Natural Gas Fund, LP",piotroski,False,5,9,55.6,10.15,—,—,—,—,—,—,10M,—
-UNG,"United States Natural Gas Fund, LP",greenblatt,False,1,3,33.3,10.15,—,—,—,—,—,—,10M,—
-UNG,"United States Natural Gas Fund, LP",lynch,False,1,4,25.0,10.15,—,—,—,—,—,—,10M,—
-UNG,"United States Natural Gas Fund, LP",netnet,False,1,4,25.0,10.15,—,—,—,—,—,—,10M,—
-UNG,"United States Natural Gas Fund, LP",buffett,False,1,6,16.7,10.15,—,—,—,—,—,—,10M,—
-UNG,"United States Natural Gas Fund, LP",graham,False,0,9,0.0,10.15,—,—,—,—,—,—,10M,—
-UNG,"United States Natural Gas Fund, LP",custom,False,0,0,0.0,10.15,—,—,—,—,—,—,10M,—
-TREE,"LendingTree, Inc.",piotroski,False,6,9,66.7,30.97,2.87,1.52,52.76,1.67,1.98,70.33,"203,263",—
-TREE,"LendingTree, Inc.",buffett,False,3,6,50.0,30.97,2.87,1.52,52.76,1.67,1.98,70.33,"203,263",—
-TREE,"LendingTree, Inc.",graham,False,4,9,44.4,30.97,2.87,1.52,52.76,1.67,1.98,70.33,"203,263",—
-TREE,"LendingTree, Inc.",lynch,False,1,4,25.0,30.97,2.87,1.52,52.76,1.67,1.98,70.33,"203,263",—
-TREE,"LendingTree, Inc.",netnet,False,1,4,25.0,30.97,2.87,1.52,52.76,1.67,1.98,70.33,"203,263",—
-TREE,"LendingTree, Inc.",custom,False,0,0,0.0,30.97,2.87,1.52,52.76,1.67,1.98,70.33,"203,263",—
-BOOT,"Boot Barn Holdings, Inc.",graham,False,6,9,66.7,162,22.01,3.77,17.13,2.65,0.86,84.23,"727,368",—
-BOOT,"Boot Barn Holdings, Inc.",buffett,False,4,6,66.7,162,22.01,3.77,17.13,2.65,0.86,84.23,"727,368",—
-BOOT,"Boot Barn Holdings, Inc.",greenblatt,False,1,3,33.3,162,22.01,3.77,17.13,2.65,0.86,84.23,"727,368",—
-BOOT,"Boot Barn Holdings, Inc.",netnet,False,1,4,25.0,162,22.01,3.77,17.13,2.65,0.86,84.23,"727,368",—
+SLDE,"Slide Insurance Holdings, Inc.",greenblatt,True,3,3,100.0,23.06,6.86,2.73,39.88,—,1.62,25.25,"653,658",—
+SM,SM ENERGY CO,piotroski,True,7,9,77.8,35.68,6.33,0.85,13.47,0.69,—,72.85,2M,—
+PLMR,"Palomar Holdings, Inc.",piotroski,True,7,9,77.8,132,18.38,3.84,20.91,—,2.24,74.38,"99,093",—
+PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,298,13.00,3.98,30.71,—,5.14,196,"167,561",—
+CARG,"CarGurus, Inc.",piotroski,True,8,9,88.9,36.45,23.52,9.78,41.66,2.81,0.77,11.40,"594,132",—
+AROC,"Archrock, Inc.",piotroski,True,8,9,88.9,30.71,16.78,3.60,21.61,1.54,1.92,18.75,3M,—
+AREC,AMERICAN RESOURCES CORPORATION,greenblatt,True,3,3,100.0,2.72,4.32,2.50,58.44,2.19,0.80,3.92,2M,—
+FHI,"Federated Hermes, Inc.",greenblatt,True,3,3,100.0,65.39,12.75,4.10,33.69,2.75,0.81,42.89,"377,660",—
+FHI,"Federated Hermes, Inc.",piotroski,True,8,9,88.9,65.39,12.75,4.10,33.69,2.75,0.81,42.89,"377,660",—
+GGG,GRACO INC.,piotroski,True,8,9,88.9,78.70,25.55,5.02,19.66,3.15,—,32.97,2M,—
+GGG,GRACO INC.,buffett,True,5,6,83.3,78.70,25.55,5.02,19.66,3.15,—,32.97,2M,—
+GPK,Graphic Packaging Holding Co,lynch,True,3,4,75.0,11.42,7.72,1.03,13.31,1.30,—,19.25,4M,—
+PCTY,PAYLOCITY HOLDING CORPORATION,piotroski,True,8,9,88.9,152,30.94,6.83,22.08,1.09,3.00,49.69,"407,106",—
+WLY,"JOHN WILEY & SONS, INC.",piotroski,True,9,9,100.0,53.89,12.95,3.38,26.13,0.54,2.06,38.61,"360,089",—
+BKU,"BankUnited, Inc.",piotroski,True,8,9,88.9,46.32,13.12,1.13,8.79,—,10.47,57.13,"490,522",—
+LCII,LCI INDUSTRIES,piotroski,True,8,9,88.9,105,13.84,1.91,13.83,2.85,1.33,96.57,"238,504",—
+KNTK,KINETIK HOLDINGS INC.,lynch,True,3,4,75.0,54.23,20.62,—,-31.53,0.69,-7.37,—,1M,—
+CURB,Curbline Properties Corp.,piotroski,True,7,9,77.8,30.08,81.30,1.66,2.09,—,0.29,12.29,1M,—
+CURB,Curbline Properties Corp.,lynch,True,3,4,75.0,30.08,81.30,1.66,2.09,—,0.29,12.29,1M,—
+CBU,"COMMUNITY FINANCIAL SYSTEM, INC.",piotroski,True,8,9,88.9,62.93,15.85,1.66,10.49,—,7.63,58.24,"155,767",—
+FIGS,"FIGS, Inc.",piotroski,True,8,9,88.9,14.68,77.26,6.02,7.83,4.94,0.33,3.23,3M,—
+NEOG,Neogen Corporation,piotroski,True,8,9,88.9,11.64,—,1.21,-0.38,3.82,0.60,—,"978,328",—
+APPN,APPIAN CORPORATION,piotroski,True,7,9,77.8,39.58,"1,979",—,-2.62,1.15,-15.71,—,1M,—
+WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,8,9,88.9,31.89,35.04,0.74,2.10,2.42,0.76,29.77,"443,499",—
+OMCL,"OMNICELL, INC",piotroski,True,7,9,77.8,33.22,830,1.25,0.17,1.43,0.60,4.89,"666,750",—
+SLDE,"Slide Insurance Holdings, Inc.",graham,False,4,9,44.4,23.06,6.86,2.73,39.88,—,1.62,25.25,"653,658",—
+SLDE,"Slide Insurance Holdings, Inc.",buffett,False,2,6,33.3,23.06,6.86,2.73,39.88,—,1.62,25.25,"653,658",—
+SLDE,"Slide Insurance Holdings, Inc.",piotroski,False,3,9,33.3,23.06,6.86,2.73,39.88,—,1.62,25.25,"653,658",—
+SLDE,"Slide Insurance Holdings, Inc.",lynch,False,1,4,25.0,23.06,6.86,2.73,39.88,—,1.62,25.25,"653,658",—
+SLDE,"Slide Insurance Holdings, Inc.",netnet,False,1,4,25.0,23.06,6.86,2.73,39.88,—,1.62,25.25,"653,658",—
+SLDE,"Slide Insurance Holdings, Inc.",custom,False,0,0,0.0,23.06,6.86,2.73,39.88,—,1.62,25.25,"653,658",—
+SM,SM ENERGY CO,graham,False,6,9,66.7,35.68,6.33,0.85,13.47,0.69,—,72.85,2M,—
+SM,SM ENERGY CO,greenblatt,False,2,3,66.7,35.68,6.33,0.85,13.47,0.69,—,72.85,2M,—
+SM,SM ENERGY CO,lynch,False,1,4,25.0,35.68,6.33,0.85,13.47,0.69,—,72.85,2M,—
+SM,SM ENERGY CO,netnet,False,1,4,25.0,35.68,6.33,0.85,13.47,0.69,—,72.85,2M,—
+SM,SM ENERGY CO,buffett,False,1,6,16.7,35.68,6.33,0.85,13.47,0.69,—,72.85,2M,—
+SM,SM ENERGY CO,custom,False,0,0,0.0,35.68,6.33,0.85,13.47,0.69,—,72.85,2M,—
+MGY,Magnolia Oil & Gas Corp,piotroski,False,6,9,66.7,26.44,15.09,2.45,16.27,1.54,—,20.61,2M,—
+MGY,Magnolia Oil & Gas Corp,buffett,False,3,6,50.0,26.44,15.09,2.45,16.27,1.54,—,20.61,2M,—
+MGY,Magnolia Oil & Gas Corp,graham,False,3,9,33.3,26.44,15.09,2.45,16.27,1.54,—,20.61,2M,—
+MGY,Magnolia Oil & Gas Corp,greenblatt,False,1,3,33.3,26.44,15.09,2.45,16.27,1.54,—,20.61,2M,—
+MGY,Magnolia Oil & Gas Corp,lynch,False,1,4,25.0,26.44,15.09,2.45,16.27,1.54,—,20.61,2M,—
+MGY,Magnolia Oil & Gas Corp,netnet,False,1,4,25.0,26.44,15.09,2.45,16.27,1.54,—,20.61,2M,—
+MGY,Magnolia Oil & Gas Corp,custom,False,0,0,0.0,26.44,15.09,2.45,16.27,1.54,—,20.61,2M,—
+PLMR,"Palomar Holdings, Inc.",buffett,False,4,6,66.7,132,18.38,3.84,20.91,—,2.24,74.38,"99,093",—
+PLMR,"Palomar Holdings, Inc.",greenblatt,False,2,3,66.7,132,18.38,3.84,20.91,—,2.24,74.38,"99,093",—
+PLMR,"Palomar Holdings, Inc.",lynch,False,2,4,50.0,132,18.38,3.84,20.91,—,2.24,74.38,"99,093",—
+PLMR,"Palomar Holdings, Inc.",graham,False,4,9,44.4,132,18.38,3.84,20.91,—,2.24,74.38,"99,093",—
+PLMR,"Palomar Holdings, Inc.",netnet,False,1,4,25.0,132,18.38,3.84,20.91,—,2.24,74.38,"99,093",—
+PLMR,"Palomar Holdings, Inc.",custom,False,0,0,0.0,132,18.38,3.84,20.91,—,2.24,74.38,"99,093",—
