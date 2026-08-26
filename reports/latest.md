@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-08-26 05:07 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-08-26 08:51 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **26** strategy matches passed.
+Screened **75** companies · **29** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| PD | PAGERDUTY, INC. | greenblatt | ✅ | 100% | 12.25 | 6.55 | 4.49 | 68.37 | 2.01 | 2.84 | 1M | — |
-| WING | WINGSTOP INC. | lynch | ✅ | 100% | 114 | 18.33 | — | -23.65 | 3.26 | -1.94 | 877,869 | — |
-| PRI | Primerica, Inc. | piotroski | ✅ | 89% | 298 | 13.00 | 3.98 | 30.71 | — | 5.14 | 167,563 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | piotroski | ✅ | 100% | 180 | 25.40 | 8.70 | 34.27 | 1.46 | — | 307,401 | — |
-| TRNO | Terreno Realty Corporation | lynch | ✅ | 100% | 68.38 | 17.49 | 1.69 | 9.72 | — | 0.30 | 444,804 | — |
-| AROC | Archrock, Inc. | piotroski | ✅ | 89% | 30.71 | 16.78 | 3.60 | 21.61 | 1.54 | 1.92 | 3M | — |
-| PJT | PJT Partners Inc. | buffett | ✅ | 83% | 175 | — | — | 58.43 | — | 2.71 | 502,686 | — |
-| PJT | PJT Partners Inc. | piotroski | ✅ | 78% | 175 | — | — | 58.43 | — | 2.71 | 502,686 | — |
-| ACIC | American Coastal Insurance C | greenblatt | ✅ | 100% | 9.40 | 4.37 | 1.47 | 33.64 | — | 2.38 | 264,381 | — |
-| SSD | Simpson Manufacturing Co., I | buffett | ✅ | 83% | 187 | 22.64 | 3.85 | 17.00 | 3.54 | 0.51 | 256,535 | — |
-| SSD | Simpson Manufacturing Co., I | piotroski | ✅ | 78% | 187 | 22.64 | 3.85 | 17.00 | 3.54 | 0.51 | 256,535 | — |
-| VICR | VICOR CORPORATION | piotroski | ✅ | 89% | 195 | 74.57 | 12.43 | 16.66 | 8.99 | 0.10 | 638,429 | — |
-| VICR | VICOR CORPORATION | buffett | ✅ | 83% | 195 | 74.57 | 12.43 | 16.66 | 8.99 | 0.10 | 638,429 | — |
-| VICR | VICOR CORPORATION | lynch | ✅ | 75% | 195 | 74.57 | 12.43 | 16.66 | 8.99 | 0.10 | 638,429 | — |
-| HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 109 | 42.70 | 277 | 649 | 4.66 | 50.73 | 2M | — |
-| MEDP | Medpace Holdings, Inc. | buffett | ✅ | 83% | 614 | 40.19 | 39.50 | 98.27 | 0.74 | 3.30 | 247,113 | — |
-| MEDP | Medpace Holdings, Inc. | piotroski | ✅ | 78% | 614 | 40.19 | 39.50 | 98.27 | 0.74 | 3.30 | 247,113 | — |
-| PCTY | PAYLOCITY HOLDING CORPORATIO | piotroski | ✅ | 89% | 152 | 30.94 | 6.83 | 22.08 | 1.09 | 3.00 | 407,109 | — |
-| SFM | Sprouts Farmers Market, Inc. | piotroski | ✅ | 78% | 85.95 | 16.19 | 6.05 | 37.32 | 0.93 | 1.96 | 2M | — |
-| WLY | JOHN WILEY & SONS, INC. | piotroski | ✅ | 100% | 53.89 | 12.95 | 3.38 | 26.13 | 0.54 | 2.06 | 360,091 | — |
-| KNTK | KINETIK HOLDINGS INC. | lynch | ✅ | 75% | 54.23 | 20.62 | — | -31.53 | 0.69 | -7.37 | 1M | — |
-| FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 14.68 | 77.26 | 6.02 | 7.83 | 4.94 | 0.33 | 3M | — |
+| MLI | MUELLER INDUSTRIES INC | buffett | ✅ | 100% | 61.51 | 8.97 | 2.14 | 23.84 | 5.92 | 0.15 | 2M | — |
+| MLI | MUELLER INDUSTRIES INC | greenblatt | ✅ | 100% | 61.51 | 8.97 | 2.14 | 23.84 | 5.92 | 0.15 | 2M | — |
+| MLI | MUELLER INDUSTRIES INC | lynch | ✅ | 100% | 61.51 | 8.97 | 2.14 | 23.84 | 5.92 | 0.15 | 2M | — |
+| MLI | MUELLER INDUSTRIES INC | graham | ✅ | 89% | 61.51 | 8.97 | 2.14 | 23.84 | 5.92 | 0.15 | 2M | — |
+| MLI | MUELLER INDUSTRIES INC | piotroski | ✅ | 78% | 61.51 | 8.97 | 2.14 | 23.84 | 5.92 | 0.15 | 2M | — |
+| PLMR | Palomar Holdings, Inc. | piotroski | ✅ | 78% | 132 | 18.38 | 3.84 | 20.91 | — | 2.24 | 99,097 | — |
+| PRI | Primerica, Inc. | piotroski | ✅ | 89% | 298 | 13.00 | 3.98 | 30.71 | — | 5.14 | 167,561 | — |
+| AREC | AMERICAN RESOURCES CORPORATI | greenblatt | ✅ | 100% | 2.72 | 4.32 | 2.50 | 58.44 | 2.19 | 0.80 | 2M | — |
+| SSD | Simpson Manufacturing Co., I | buffett | ✅ | 83% | 187 | 22.64 | 3.85 | 17.00 | 3.54 | 0.51 | 256,536 | — |
+| SSD | Simpson Manufacturing Co., I | piotroski | ✅ | 78% | 187 | 22.64 | 3.85 | 17.00 | 3.54 | 0.51 | 256,536 | — |
+| DAKT | Daktronics, Inc. | piotroski | ✅ | 89% | 19.11 | 20.77 | 3.14 | 15.09 | 2.31 | — | 580,838 | — |
+| DAKT | Daktronics, Inc. | lynch | ✅ | 75% | 19.11 | 20.77 | 3.14 | 15.09 | 2.31 | — | 580,838 | — |
+| GPK | Graphic Packaging Holding Co | lynch | ✅ | 75% | 11.42 | 7.72 | 1.03 | 13.31 | 1.30 | — | 4M | — |
+| BY | Byline Bancorp, Inc. | lynch | ✅ | 75% | 38.11 | 13.19 | 1.35 | 10.26 | — | 6.61 | 114,326 | — |
+| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 138 | 21.74 | 2.28 | 10.49 | 1.53 | — | 368,489 | — |
+| SIRI | SIRIUS XM HOLDINGS INC. | lynch | ✅ | 75% | 28.73 | 12.88 | 0.89 | 6.96 | 0.30 | 1.36 | 3M | — |
+| BKU | BankUnited, Inc. | piotroski | ✅ | 89% | 46.32 | 13.12 | 1.13 | 8.79 | — | 10.47 | 490,622 | — |
+| ADC | AGREE REALTY CORPORATION | lynch | ✅ | 75% | 74.32 | 41.99 | 1.32 | 3.26 | — | 0.56 | 1M | — |
+| R | RYDER SYSTEM INC | piotroski | ✅ | 100% | 246 | 20.62 | 3.37 | 16.35 | 0.89 | 4.37 | 239,567 | — |
+| CURB | Curbline Properties Corp. | piotroski | ✅ | 78% | 30.08 | 81.30 | 1.66 | 2.09 | — | 0.29 | 1M | — |
+| CURB | Curbline Properties Corp. | lynch | ✅ | 75% | 30.08 | 81.30 | 1.66 | 2.09 | — | 0.29 | 1M | — |
+| FBNC | FIRST BANCORP | piotroski | ✅ | 78% | 63.96 | 23.87 | 1.60 | 6.71 | — | 6.66 | 179,353 | — |
 | ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.50 | 20.45 | 0.80 | 3.99 | 9.18 | 0.34 | 94,033 | — |
+| WWW | WOLVERINE WORLD WIDE, INC. | piotroski | ✅ | 78% | 20.47 | 17.96 | 4.10 | 23.48 | 1.40 | — | 694,921 | — |
+| MCS | MARCUS CORP | piotroski | ✅ | 78% | 30.17 | 74.36 | 2.06 | 2.77 | 0.40 | — | 267,076 | — |
 | MOS | MOSAIC CO | piotroski | ✅ | 89% | 24.27 | 14.28 | 0.64 | 4.47 | 1.32 | — | 6M | — |
-| NEOG | Neogen Corporation | piotroski | ✅ | 89% | 11.64 | — | 1.21 | -0.38 | 3.82 | 0.60 | 978,328 | — |
-| CALX | Calix, Inc | piotroski | ✅ | 78% | 39.85 | 153 | 3.21 | 2.08 | 4.24 | 0.23 | 708,581 | — |
-| PD | PAGERDUTY, INC. | piotroski | ▫️ | 67% | 12.25 | 6.55 | 4.49 | 68.37 | 2.01 | 2.84 | 1M | — |
-| PD | PAGERDUTY, INC. | buffett | ▫️ | 50% | 12.25 | 6.55 | 4.49 | 68.37 | 2.01 | 2.84 | 1M | — |
-| PD | PAGERDUTY, INC. | graham | ▫️ | 33% | 12.25 | 6.55 | 4.49 | 68.37 | 2.01 | 2.84 | 1M | — |
-| PD | PAGERDUTY, INC. | lynch | ▫️ | 25% | 12.25 | 6.55 | 4.49 | 68.37 | 2.01 | 2.84 | 1M | — |
-| PD | PAGERDUTY, INC. | netnet | ▫️ | 25% | 12.25 | 6.55 | 4.49 | 68.37 | 2.01 | 2.84 | 1M | — |
-| PD | PAGERDUTY, INC. | custom | ▫️ | 0% | 12.25 | 6.55 | 4.49 | 68.37 | 2.01 | 2.84 | 1M | — |
-| WING | WINGSTOP INC. | buffett | ▫️ | 67% | 114 | 18.33 | — | -23.65 | 3.26 | -1.94 | 877,869 | — |
-| WING | WINGSTOP INC. | piotroski | ▫️ | 67% | 114 | 18.33 | — | -23.65 | 3.26 | -1.94 | 877,869 | — |
-| WING | WINGSTOP INC. | greenblatt | ▫️ | 67% | 114 | 18.33 | — | -23.65 | 3.26 | -1.94 | 877,869 | — |
-| WING | WINGSTOP INC. | graham | ▫️ | 33% | 114 | 18.33 | — | -23.65 | 3.26 | -1.94 | 877,869 | — |
-| WING | WINGSTOP INC. | netnet | ▫️ | 25% | 114 | 18.33 | — | -23.65 | 3.26 | -1.94 | 877,869 | — |
-| WING | WINGSTOP INC. | custom | ▫️ | 0% | 114 | 18.33 | — | -23.65 | 3.26 | -1.94 | 877,869 | — |
-| PRI | Primerica, Inc. | buffett | ▫️ | 67% | 298 | 13.00 | 3.98 | 30.71 | — | 5.14 | 167,563 | — |
-| PRI | Primerica, Inc. | greenblatt | ▫️ | 67% | 298 | 13.00 | 3.98 | 30.71 | — | 5.14 | 167,563 | — |
-| PRI | Primerica, Inc. | graham | ▫️ | 56% | 298 | 13.00 | 3.98 | 30.71 | — | 5.14 | 167,563 | — |
-| PRI | Primerica, Inc. | lynch | ▫️ | 50% | 298 | 13.00 | 3.98 | 30.71 | — | 5.14 | 167,563 | — |
-| PRI | Primerica, Inc. | netnet | ▫️ | 25% | 298 | 13.00 | 3.98 | 30.71 | — | 5.14 | 167,563 | — |
-| PRI | Primerica, Inc. | custom | ▫️ | 0% | 298 | 13.00 | 3.98 | 30.71 | — | 5.14 | 167,563 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | buffett | ▫️ | 67% | 180 | 25.40 | 8.70 | 34.27 | 1.46 | — | 307,401 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | greenblatt | ▫️ | 67% | 180 | 25.40 | 8.70 | 34.27 | 1.46 | — | 307,401 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | graham | ▫️ | 33% | 180 | 25.40 | 8.70 | 34.27 | 1.46 | — | 307,401 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | lynch | ▫️ | 25% | 180 | 25.40 | 8.70 | 34.27 | 1.46 | — | 307,401 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | netnet | ▫️ | 25% | 180 | 25.40 | 8.70 | 34.27 | 1.46 | — | 307,401 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | custom | ▫️ | 0% | 180 | 25.40 | 8.70 | 34.27 | 1.46 | — | 307,401 | — |
+| NEOG | Neogen Corporation | piotroski | ✅ | 89% | 11.64 | — | 1.21 | -0.38 | 3.82 | 0.60 | 1M | — |
+| EVCM | EverCommerce Inc. | piotroski | ✅ | 78% | 8.96 | 89.60 | 2.30 | 2.45 | 2.11 | 0.91 | 191,485 | — |
+| OMCL | OMNICELL, INC | piotroski | ✅ | 78% | 33.22 | 830 | 1.25 | 0.17 | 1.43 | 0.60 | 667,014 | — |
+| MLI | MUELLER INDUSTRIES INC | netnet | ▫️ | 50% | 61.51 | 8.97 | 2.14 | 23.84 | 5.92 | 0.15 | 2M | — |
+| MLI | MUELLER INDUSTRIES INC | custom | ▫️ | 0% | 61.51 | 8.97 | 2.14 | 23.84 | 5.92 | 0.15 | 2M | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | piotroski | ▫️ | 44% | 26.47 | — | — | — | 2.10 | — | 183,782 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | graham | ▫️ | 33% | 26.47 | — | — | — | 2.10 | — | 183,782 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | buffett | ▫️ | 33% | 26.47 | — | — | — | 2.10 | — | 183,782 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | greenblatt | ▫️ | 33% | 26.47 | — | — | — | 2.10 | — | 183,782 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | lynch | ▫️ | 25% | 26.47 | — | — | — | 2.10 | — | 183,782 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | netnet | ▫️ | 25% | 26.47 | — | — | — | 2.10 | — | 183,782 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | custom | ▫️ | 0% | 26.47 | — | — | — | 2.10 | — | 183,782 | — |
+| PLMR | Palomar Holdings, Inc. | buffett | ▫️ | 67% | 132 | 18.38 | 3.84 | 20.91 | — | 2.24 | 99,097 | — |
+| PLMR | Palomar Holdings, Inc. | greenblatt | ▫️ | 67% | 132 | 18.38 | 3.84 | 20.91 | — | 2.24 | 99,097 | — |
+| PLMR | Palomar Holdings, Inc. | lynch | ▫️ | 50% | 132 | 18.38 | 3.84 | 20.91 | — | 2.24 | 99,097 | — |
+| PLMR | Palomar Holdings, Inc. | graham | ▫️ | 44% | 132 | 18.38 | 3.84 | 20.91 | — | 2.24 | 99,097 | — |
+| PLMR | Palomar Holdings, Inc. | netnet | ▫️ | 25% | 132 | 18.38 | 3.84 | 20.91 | — | 2.24 | 99,097 | — |
+| PLMR | Palomar Holdings, Inc. | custom | ▫️ | 0% | 132 | 18.38 | 3.84 | 20.91 | — | 2.24 | 99,097 | — |
+| PRI | Primerica, Inc. | buffett | ▫️ | 67% | 298 | 13.00 | 3.98 | 30.71 | — | 5.14 | 167,561 | — |
+| PRI | Primerica, Inc. | greenblatt | ▫️ | 67% | 298 | 13.00 | 3.98 | 30.71 | — | 5.14 | 167,561 | — |
+| PRI | Primerica, Inc. | graham | ▫️ | 56% | 298 | 13.00 | 3.98 | 30.71 | — | 5.14 | 167,561 | — |
+| PRI | Primerica, Inc. | lynch | ▫️ | 50% | 298 | 13.00 | 3.98 | 30.71 | — | 5.14 | 167,561 | — |
+| PRI | Primerica, Inc. | netnet | ▫️ | 25% | 298 | 13.00 | 3.98 | 30.71 | — | 5.14 | 167,561 | — |
+| PRI | Primerica, Inc. | custom | ▫️ | 0% | 298 | 13.00 | 3.98 | 30.71 | — | 5.14 | 167,561 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.

@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-PD,"PAGERDUTY, INC.",greenblatt,True,3,3,100.0,12.25,6.55,4.49,68.37,2.01,2.84,10.71,1M,—
-WING,WINGSTOP INC.,lynch,True,4,4,100.0,114,18.33,—,-23.65,3.26,-1.94,—,"877,869",—
-PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,298,13.00,3.98,30.71,—,5.14,196,"167,563",—
-AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",piotroski,True,9,9,100.0,180,25.40,8.70,34.27,1.46,—,57.37,"307,401",—
-TRNO,Terreno Realty Corporation,lynch,True,4,4,100.0,68.38,17.49,1.69,9.72,—,0.30,59.59,"444,804",—
-AROC,"Archrock, Inc.",piotroski,True,8,9,88.9,30.71,16.78,3.60,21.61,1.54,1.92,18.75,3M,—
-PJT,PJT Partners Inc.,buffett,True,5,6,83.3,175,—,—,58.43,—,2.71,—,"502,686",—
-PJT,PJT Partners Inc.,piotroski,True,7,9,77.8,175,—,—,58.43,—,2.71,—,"502,686",—
-ACIC,American Coastal Insurance Corporation,greenblatt,True,3,3,100.0,9.40,4.37,1.47,33.64,—,2.38,17.57,"264,381",—
-SSD,"Simpson Manufacturing Co., Inc.",buffett,True,5,6,83.3,187,22.64,3.85,17.00,3.54,0.51,94.81,"256,535",—
-SSD,"Simpson Manufacturing Co., Inc.",piotroski,True,7,9,77.8,187,22.64,3.85,17.00,3.54,0.51,94.81,"256,535",—
-VICR,VICOR CORPORATION,piotroski,True,8,9,88.9,195,74.57,12.43,16.66,8.99,0.10,30.32,"638,429",—
-VICR,VICOR CORPORATION,buffett,True,5,6,83.3,195,74.57,12.43,16.66,8.99,0.10,30.32,"638,429",—
-VICR,VICOR CORPORATION,lynch,True,3,4,75.0,195,74.57,12.43,16.66,8.99,0.10,30.32,"638,429",—
-HALO,"HALOZYME THERAPEUTICS, INC.",buffett,True,5,6,83.3,109,42.70,277,649,4.66,50.73,4.76,2M,—
-MEDP,"Medpace Holdings, Inc.",buffett,True,5,6,83.3,614,40.19,39.50,98.27,0.74,3.30,73.11,"247,113",—
-MEDP,"Medpace Holdings, Inc.",piotroski,True,7,9,77.8,614,40.19,39.50,98.27,0.74,3.30,73.11,"247,113",—
-PCTY,PAYLOCITY HOLDING CORPORATION,piotroski,True,8,9,88.9,152,30.94,6.83,22.08,1.09,3.00,49.69,"407,109",—
-SFM,"Sprouts Farmers Market, Inc.",piotroski,True,7,9,77.8,85.95,16.19,6.05,37.32,0.93,1.96,41.21,2M,—
-WLY,"JOHN WILEY & SONS, INC.",piotroski,True,9,9,100.0,53.89,12.95,3.38,26.13,0.54,2.06,38.61,"360,091",—
-KNTK,KINETIK HOLDINGS INC.,lynch,True,3,4,75.0,54.23,20.62,—,-31.53,0.69,-7.37,—,1M,—
-FIGS,"FIGS, Inc.",piotroski,True,8,9,88.9,14.68,77.26,6.02,7.83,4.94,0.33,3.23,3M,—
+MLI,MUELLER INDUSTRIES INC,buffett,True,6,6,100.0,61.51,8.97,2.14,23.84,5.92,0.15,66.66,2M,—
+MLI,MUELLER INDUSTRIES INC,greenblatt,True,3,3,100.0,61.51,8.97,2.14,23.84,5.92,0.15,66.66,2M,—
+MLI,MUELLER INDUSTRIES INC,lynch,True,4,4,100.0,61.51,8.97,2.14,23.84,5.92,0.15,66.66,2M,—
+MLI,MUELLER INDUSTRIES INC,graham,True,8,9,88.9,61.51,8.97,2.14,23.84,5.92,0.15,66.66,2M,—
+MLI,MUELLER INDUSTRIES INC,piotroski,True,7,9,77.8,61.51,8.97,2.14,23.84,5.92,0.15,66.66,2M,—
+PLMR,"Palomar Holdings, Inc.",piotroski,True,7,9,77.8,132,18.38,3.84,20.91,—,2.24,74.38,"99,097",—
+PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,298,13.00,3.98,30.71,—,5.14,196,"167,561",—
+AREC,AMERICAN RESOURCES CORPORATION,greenblatt,True,3,3,100.0,2.72,4.32,2.50,58.44,2.19,0.80,3.92,2M,—
+SSD,"Simpson Manufacturing Co., Inc.",buffett,True,5,6,83.3,187,22.64,3.85,17.00,3.54,0.51,94.81,"256,536",—
+SSD,"Simpson Manufacturing Co., Inc.",piotroski,True,7,9,77.8,187,22.64,3.85,17.00,3.54,0.51,94.81,"256,536",—
+DAKT,"Daktronics, Inc.",piotroski,True,8,9,88.9,19.11,20.77,3.14,15.09,2.31,—,11.23,"580,838",—
+DAKT,"Daktronics, Inc.",lynch,True,3,4,75.0,19.11,20.77,3.14,15.09,2.31,—,11.23,"580,838",—
+GPK,Graphic Packaging Holding Co,lynch,True,3,4,75.0,11.42,7.72,1.03,13.31,1.30,—,19.25,4M,—
+BY,"Byline Bancorp, Inc.",lynch,True,3,4,75.0,38.11,13.19,1.35,10.26,—,6.61,42.77,"114,326",—
+KEX,KIRBY CORPORATION,piotroski,True,8,9,88.9,138,21.74,2.28,10.49,1.53,—,92.69,"368,489",—
+SIRI,SIRIUS XM HOLDINGS INC.,lynch,True,3,4,75.0,28.73,12.88,0.89,6.96,0.30,1.36,40.31,3M,—
+BKU,"BankUnited, Inc.",piotroski,True,8,9,88.9,46.32,13.12,1.13,8.79,—,10.47,57.13,"490,622",—
+ADC,AGREE REALTY CORPORATION,lynch,True,3,4,75.0,74.32,41.99,1.32,3.26,—,0.56,47.39,1M,—
+R,RYDER SYSTEM INC,piotroski,True,9,9,100.0,246,20.62,3.37,16.35,0.89,4.37,140,"239,567",—
+CURB,Curbline Properties Corp.,piotroski,True,7,9,77.8,30.08,81.30,1.66,2.09,—,0.29,12.29,1M,—
+CURB,Curbline Properties Corp.,lynch,True,3,4,75.0,30.08,81.30,1.66,2.09,—,0.29,12.29,1M,—
+FBNC,FIRST BANCORP,piotroski,True,7,9,77.8,63.96,23.87,1.60,6.71,—,6.66,49.05,"179,353",—
 ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.50,20.45,0.80,3.99,9.18,0.34,5.26,"94,033",—
+WWW,"WOLVERINE WORLD WIDE, INC.",piotroski,True,7,9,77.8,20.47,17.96,4.10,23.48,1.40,—,11.32,"694,921",—
+MCS,MARCUS CORP,piotroski,True,7,9,77.8,30.17,74.36,2.06,2.77,0.40,—,11.55,"267,076",—
 MOS,MOSAIC CO,piotroski,True,8,9,88.9,24.27,14.28,0.64,4.47,1.32,—,38.07,6M,—
-NEOG,Neogen Corporation,piotroski,True,8,9,88.9,11.64,—,1.21,-0.38,3.82,0.60,—,"978,328",—
-CALX,"Calix, Inc",piotroski,True,7,9,77.8,39.85,153,3.21,2.08,4.24,0.23,8.52,"708,581",—
-PD,"PAGERDUTY, INC.",piotroski,False,6,9,66.7,12.25,6.55,4.49,68.37,2.01,2.84,10.71,1M,—
-PD,"PAGERDUTY, INC.",buffett,False,3,6,50.0,12.25,6.55,4.49,68.37,2.01,2.84,10.71,1M,—
-PD,"PAGERDUTY, INC.",graham,False,3,9,33.3,12.25,6.55,4.49,68.37,2.01,2.84,10.71,1M,—
-PD,"PAGERDUTY, INC.",lynch,False,1,4,25.0,12.25,6.55,4.49,68.37,2.01,2.84,10.71,1M,—
-PD,"PAGERDUTY, INC.",netnet,False,1,4,25.0,12.25,6.55,4.49,68.37,2.01,2.84,10.71,1M,—
-PD,"PAGERDUTY, INC.",custom,False,0,0,0.0,12.25,6.55,4.49,68.37,2.01,2.84,10.71,1M,—
-WING,WINGSTOP INC.,buffett,False,4,6,66.7,114,18.33,—,-23.65,3.26,-1.94,—,"877,869",—
-WING,WINGSTOP INC.,piotroski,False,6,9,66.7,114,18.33,—,-23.65,3.26,-1.94,—,"877,869",—
-WING,WINGSTOP INC.,greenblatt,False,2,3,66.7,114,18.33,—,-23.65,3.26,-1.94,—,"877,869",—
-WING,WINGSTOP INC.,graham,False,3,9,33.3,114,18.33,—,-23.65,3.26,-1.94,—,"877,869",—
-WING,WINGSTOP INC.,netnet,False,1,4,25.0,114,18.33,—,-23.65,3.26,-1.94,—,"877,869",—
-WING,WINGSTOP INC.,custom,False,0,0,0.0,114,18.33,—,-23.65,3.26,-1.94,—,"877,869",—
-PRI,"Primerica, Inc.",buffett,False,4,6,66.7,298,13.00,3.98,30.71,—,5.14,196,"167,563",—
-PRI,"Primerica, Inc.",greenblatt,False,2,3,66.7,298,13.00,3.98,30.71,—,5.14,196,"167,563",—
-PRI,"Primerica, Inc.",graham,False,5,9,55.6,298,13.00,3.98,30.71,—,5.14,196,"167,563",—
-PRI,"Primerica, Inc.",lynch,False,2,4,50.0,298,13.00,3.98,30.71,—,5.14,196,"167,563",—
-PRI,"Primerica, Inc.",netnet,False,1,4,25.0,298,13.00,3.98,30.71,—,5.14,196,"167,563",—
-PRI,"Primerica, Inc.",custom,False,0,0,0.0,298,13.00,3.98,30.71,—,5.14,196,"167,563",—
-AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",buffett,False,4,6,66.7,180,25.40,8.70,34.27,1.46,—,57.37,"307,401",—
-AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",greenblatt,False,2,3,66.7,180,25.40,8.70,34.27,1.46,—,57.37,"307,401",—
-AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",graham,False,3,9,33.3,180,25.40,8.70,34.27,1.46,—,57.37,"307,401",—
-AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",lynch,False,1,4,25.0,180,25.40,8.70,34.27,1.46,—,57.37,"307,401",—
-AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",netnet,False,1,4,25.0,180,25.40,8.70,34.27,1.46,—,57.37,"307,401",—
-AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",custom,False,0,0,0.0,180,25.40,8.70,34.27,1.46,—,57.37,"307,401",—
+NEOG,Neogen Corporation,piotroski,True,8,9,88.9,11.64,—,1.21,-0.38,3.82,0.60,—,1M,—
+EVCM,EverCommerce Inc.,piotroski,True,7,9,77.8,8.96,89.60,2.30,2.45,2.11,0.91,2.96,"191,485",—
+OMCL,"OMNICELL, INC",piotroski,True,7,9,77.8,33.22,830,1.25,0.17,1.43,0.60,4.89,"667,014",—
+MLI,MUELLER INDUSTRIES INC,netnet,False,2,4,50.0,61.51,8.97,2.14,23.84,5.92,0.15,66.66,2M,—
+MLI,MUELLER INDUSTRIES INC,custom,False,0,0,0.0,61.51,8.97,2.14,23.84,5.92,0.15,66.66,2M,—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,piotroski,False,4,9,44.4,26.47,—,—,—,2.10,—,—,"183,782",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,graham,False,3,9,33.3,26.47,—,—,—,2.10,—,—,"183,782",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,buffett,False,2,6,33.3,26.47,—,—,—,2.10,—,—,"183,782",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,greenblatt,False,1,3,33.3,26.47,—,—,—,2.10,—,—,"183,782",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,lynch,False,1,4,25.0,26.47,—,—,—,2.10,—,—,"183,782",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,netnet,False,1,4,25.0,26.47,—,—,—,2.10,—,—,"183,782",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,custom,False,0,0,0.0,26.47,—,—,—,2.10,—,—,"183,782",—
+PLMR,"Palomar Holdings, Inc.",buffett,False,4,6,66.7,132,18.38,3.84,20.91,—,2.24,74.38,"99,097",—
+PLMR,"Palomar Holdings, Inc.",greenblatt,False,2,3,66.7,132,18.38,3.84,20.91,—,2.24,74.38,"99,097",—
+PLMR,"Palomar Holdings, Inc.",lynch,False,2,4,50.0,132,18.38,3.84,20.91,—,2.24,74.38,"99,097",—
+PLMR,"Palomar Holdings, Inc.",graham,False,4,9,44.4,132,18.38,3.84,20.91,—,2.24,74.38,"99,097",—
+PLMR,"Palomar Holdings, Inc.",netnet,False,1,4,25.0,132,18.38,3.84,20.91,—,2.24,74.38,"99,097",—
+PLMR,"Palomar Holdings, Inc.",custom,False,0,0,0.0,132,18.38,3.84,20.91,—,2.24,74.38,"99,097",—
+PRI,"Primerica, Inc.",buffett,False,4,6,66.7,298,13.00,3.98,30.71,—,5.14,196,"167,561",—
+PRI,"Primerica, Inc.",greenblatt,False,2,3,66.7,298,13.00,3.98,30.71,—,5.14,196,"167,561",—
+PRI,"Primerica, Inc.",graham,False,5,9,55.6,298,13.00,3.98,30.71,—,5.14,196,"167,561",—
+PRI,"Primerica, Inc.",lynch,False,2,4,50.0,298,13.00,3.98,30.71,—,5.14,196,"167,561",—
+PRI,"Primerica, Inc.",netnet,False,1,4,25.0,298,13.00,3.98,30.71,—,5.14,196,"167,561",—
+PRI,"Primerica, Inc.",custom,False,0,0,0.0,298,13.00,3.98,30.71,—,5.14,196,"167,561",—
