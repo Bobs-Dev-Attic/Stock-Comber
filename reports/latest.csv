@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-GLD,SPDR® GOLD TRUST,lynch,True,3,4,75.0,421,3.79,—,—,—,—,—,10M,—
-SBC,SBC Medical Group Holdings Incorporated,lynch,True,3,4,75.0,4.14,8.28,1.72,20.54,3.78,0.47,5.21,"244,402",—
+BUKS,BUTLER NATIONAL CORPOR,piotroski,True,9,9,100.0,4.09,12.03,3.24,26.75,2.14,0.73,3.11,"80,148",—
+BUKS,BUTLER NATIONAL CORPOR,greenblatt,True,3,3,100.0,4.09,12.03,3.24,26.75,2.14,0.73,3.11,"80,148",—
+BUKS,BUTLER NATIONAL CORPOR,lynch,True,3,4,75.0,4.09,12.03,3.24,26.75,2.14,0.73,3.11,"80,148",—
+PPC,PILGRIM’S PRIDE CORPORATION,piotroski,True,7,9,77.8,31.22,6.88,2.02,29.41,1.47,1.81,39.71,"348,867",—
+PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,301,13.14,4.02,30.71,—,5.14,196,"225,302",—
 TREE,"LendingTree, Inc.",greenblatt,True,3,3,100.0,29.80,2.76,1.46,52.76,1.67,1.98,70.33,"694,455",—
-ESE,ESCO TECHNOLOGIES INC.,lynch,True,3,4,75.0,283,24.52,4.76,19.42,1.35,0.56,124,"139,065",—
+CARG,"CarGurus, Inc.",piotroski,True,8,9,88.9,36.20,23.35,9.71,41.66,2.81,0.77,11.40,"837,419",—
 BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,160,21.73,3.72,17.13,2.65,0.86,84.23,"416,737",—
 BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,160,21.73,3.72,17.13,2.65,0.86,84.23,"416,737",—
-PJT,PJT Partners Inc.,buffett,True,5,6,83.3,175,—,—,58.43,—,2.71,—,"326,403",—
-PJT,PJT Partners Inc.,piotroski,True,7,9,77.8,175,—,—,58.43,—,2.71,—,"326,403",—
+FHI,"Federated Hermes, Inc.",greenblatt,True,3,3,100.0,65.09,12.69,4.08,33.69,2.75,0.81,42.89,"576,926",—
+FHI,"Federated Hermes, Inc.",piotroski,True,8,9,88.9,65.09,12.69,4.08,33.69,2.75,0.81,42.89,"576,926",—
 SSD,"Simpson Manufacturing Co., Inc.",buffett,True,5,6,83.3,185,22.44,3.81,17.00,3.54,0.51,94.81,"158,882",—
 SSD,"Simpson Manufacturing Co., Inc.",piotroski,True,7,9,77.8,185,22.44,3.81,17.00,3.54,0.51,94.81,"158,882",—
-MTCH,"Match Group, Inc.",piotroski,True,8,9,88.9,42.07,17.68,—,-242,1.42,—,—,3M,—
-MTCH,"Match Group, Inc.",lynch,True,3,4,75.0,42.07,17.68,—,-242,1.42,—,—,3M,—
-FTDR,"Frontdoor, Inc.",piotroski,True,8,9,88.9,83.68,24.47,25.76,105,1.55,—,15.81,"346,211",—
-FTDR,"Frontdoor, Inc.",buffett,True,5,6,83.3,83.68,24.47,25.76,105,1.55,—,15.81,"346,211",—
-VICR,VICOR CORPORATION,piotroski,True,8,9,88.9,197,75.57,12.60,16.66,8.99,0.10,30.32,"394,905",—
-VICR,VICOR CORPORATION,buffett,True,5,6,83.3,197,75.57,12.60,16.66,8.99,0.10,30.32,"394,905",—
-VICR,VICOR CORPORATION,lynch,True,3,4,75.0,197,75.57,12.60,16.66,8.99,0.10,30.32,"394,905",—
-FCFS,"FIRSTCASH HOLDINGS, INC.",piotroski,True,7,9,77.8,220,29.63,4.30,14.51,4.55,1.33,92.39,"762,508",—
-SHOE,"Shoe Carnival, Inc.",graham,True,8,9,88.9,14.41,7.58,0.58,7.58,3.76,0.74,32.72,"722,211",—
-HAFC,HANMI FINANCIAL CORPORATION,piotroski,True,8,9,88.9,31.08,12.38,1.17,9.55,—,8.88,38.69,"161,908",—
-AXTA,AXALTA COATING SYSTEMS LTD.,lynch,True,3,4,75.0,36.61,21.04,3.39,16.11,2.06,2.22,20.57,2M,—
-KRT,Karat Packaging Inc.,piotroski,True,7,9,77.8,49.26,31.58,6.65,21.07,2.30,0.88,16.12,"142,348",—
-BKU,"BankUnited, Inc.",piotroski,True,8,9,88.9,46.44,13.16,1.13,8.79,—,10.47,57.13,"434,174",—
-R,RYDER SYSTEM INC,piotroski,True,9,9,100.0,250,20.91,3.42,16.35,0.89,4.37,140,"255,773",—
-SSRM,SSR Mining Inc.,piotroski,True,7,9,77.8,38.09,20.59,2.36,11.28,2.08,0.51,25.94,2M,—
-CYH,"COMMUNITY HEALTH SYSTEMS, INC.",piotroski,True,8,9,88.9,2.92,0.77,—,-36.51,1.46,-10.07,—,1M,—
-MAGN,Magnera Corporation,piotroski,True,7,9,77.8,12.45,—,0.42,-14.94,2.37,2.75,—,"406,129",—
+DAKT,"Daktronics, Inc.",piotroski,True,8,9,88.9,19.51,21.21,3.20,15.09,2.31,—,11.23,"315,961",—
+DAKT,"Daktronics, Inc.",lynch,True,3,4,75.0,19.51,21.21,3.20,15.09,2.31,—,11.23,"315,961",—
+VICR,VICOR CORPORATION,piotroski,True,8,9,88.9,196,74.99,12.50,16.66,8.99,0.10,30.32,"138,793",—
+VICR,VICOR CORPORATION,buffett,True,5,6,83.3,196,74.99,12.50,16.66,8.99,0.10,30.32,"138,793",—
+FSS,FEDERAL SIGNAL CORPORATION,lynch,True,3,4,75.0,122,30.31,5.41,17.84,3.02,0.73,45.03,"288,890",—
+VICR,VICOR CORPORATION,lynch,True,3,4,75.0,196,74.99,12.50,16.66,8.99,0.10,30.32,"138,793",—
+SFM,"Sprouts Farmers Market, Inc.",piotroski,True,7,9,77.8,86.83,16.35,6.11,37.32,0.93,1.96,41.21,1M,—
+PCTY,PAYLOCITY HOLDING CORPORATION,piotroski,True,8,9,88.9,158,32.05,7.07,22.08,1.09,3.00,49.69,"165,891",—
+VCYT,"VERACYTE, INC.",piotroski,True,8,9,88.9,44.29,54.01,2.72,5.07,8.15,0.07,17.32,2M,—
+R,RYDER SYSTEM INC,piotroski,True,9,9,100.0,250,20.91,3.42,16.35,0.89,4.37,140,"263,874",—
+CURB,Curbline Properties Corp.,piotroski,True,7,9,77.8,30.12,81.41,1.66,2.09,—,0.29,12.29,"874,911",—
+CURB,Curbline Properties Corp.,lynch,True,3,4,75.0,30.12,81.41,1.66,2.09,—,0.29,12.29,"874,911",—
+CBU,"COMMUNITY FINANCIAL SYSTEM, INC.",piotroski,True,8,9,88.9,63.16,15.91,1.66,10.49,—,7.63,58.24,"174,364",—
+WWW,"WOLVERINE WORLD WIDE, INC.",piotroski,True,7,9,77.8,20.10,17.63,4.02,23.48,1.40,—,11.32,"574,257",—
 AIOT,"POWERFLEET, INC.",piotroski,True,7,9,77.8,3.01,—,0.85,-4.32,1.13,1.00,—,2M,—
-NEOG,Neogen Corporation,piotroski,True,8,9,88.9,11.70,—,1.22,-0.38,3.82,0.60,—,1M,—
-WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,8,9,88.9,30.81,33.86,0.71,2.10,2.42,0.76,29.77,"732,269",—
-GLD,SPDR® GOLD TRUST,greenblatt,False,2,3,66.7,421,3.79,—,—,—,—,—,10M,—
-GLD,SPDR® GOLD TRUST,piotroski,False,3,9,33.3,421,3.79,—,—,—,—,—,10M,—
-GLD,SPDR® GOLD TRUST,netnet,False,1,4,25.0,421,3.79,—,—,—,—,—,10M,—
-GLD,SPDR® GOLD TRUST,graham,False,2,9,22.2,421,3.79,—,—,—,—,—,10M,—
-GLD,SPDR® GOLD TRUST,buffett,False,1,6,16.7,421,3.79,—,—,—,—,—,10M,—
-GLD,SPDR® GOLD TRUST,custom,False,0,0,0.0,421,3.79,—,—,—,—,—,10M,—
-SBC,SBC Medical Group Holdings Incorporated,graham,False,6,9,66.7,4.14,8.28,1.72,20.54,3.78,0.47,5.21,"244,402",—
-SBC,SBC Medical Group Holdings Incorporated,buffett,False,4,6,66.7,4.14,8.28,1.72,20.54,3.78,0.47,5.21,"244,402",—
-SBC,SBC Medical Group Holdings Incorporated,greenblatt,False,2,3,66.7,4.14,8.28,1.72,20.54,3.78,0.47,5.21,"244,402",—
-SBC,SBC Medical Group Holdings Incorporated,netnet,False,2,4,50.0,4.14,8.28,1.72,20.54,3.78,0.47,5.21,"244,402",—
-SBC,SBC Medical Group Holdings Incorporated,piotroski,False,4,9,44.4,4.14,8.28,1.72,20.54,3.78,0.47,5.21,"244,402",—
-SBC,SBC Medical Group Holdings Incorporated,custom,False,0,0,0.0,4.14,8.28,1.72,20.54,3.78,0.47,5.21,"244,402",—
-YOU,"CLEAR SECURE, INC.",greenblatt,False,2,3,66.7,44.25,—,—,61.42,1.01,6.18,—,2M,—
-YOU,"CLEAR SECURE, INC.",piotroski,False,5,9,55.6,44.25,—,—,61.42,1.01,6.18,—,2M,—
-YOU,"CLEAR SECURE, INC.",buffett,False,3,6,50.0,44.25,—,—,61.42,1.01,6.18,—,2M,—
-YOU,"CLEAR SECURE, INC.",graham,False,3,9,33.3,44.25,—,—,61.42,1.01,6.18,—,2M,—
-YOU,"CLEAR SECURE, INC.",lynch,False,1,4,25.0,44.25,—,—,61.42,1.01,6.18,—,2M,—
-YOU,"CLEAR SECURE, INC.",netnet,False,1,4,25.0,44.25,—,—,61.42,1.01,6.18,—,2M,—
-YOU,"CLEAR SECURE, INC.",custom,False,0,0,0.0,44.25,—,—,61.42,1.01,6.18,—,2M,—
+MCS,MARCUS CORP,piotroski,True,7,9,77.8,28.99,71.45,1.98,2.77,0.40,—,11.55,"21,726",—
+MOS,MOSAIC CO,piotroski,True,8,9,88.9,24.16,14.21,0.64,4.47,1.32,—,38.07,8M,—
+BUKS,BUTLER NATIONAL CORPOR,graham,False,6,9,66.7,4.09,12.03,3.24,26.75,2.14,0.73,3.11,"80,148",—
+BUKS,BUTLER NATIONAL CORPOR,buffett,False,3,6,50.0,4.09,12.03,3.24,26.75,2.14,0.73,3.11,"80,148",—
+BUKS,BUTLER NATIONAL CORPOR,netnet,False,2,4,50.0,4.09,12.03,3.24,26.75,2.14,0.73,3.11,"80,148",—
+BUKS,BUTLER NATIONAL CORPOR,custom,False,0,0,0.0,4.09,12.03,3.24,26.75,2.14,0.73,3.11,"80,148",—
+PPC,PILGRIM’S PRIDE CORPORATION,graham,False,6,9,66.7,31.22,6.88,2.02,29.41,1.47,1.81,39.71,"348,867",—
+PPC,PILGRIM’S PRIDE CORPORATION,greenblatt,False,2,3,66.7,31.22,6.88,2.02,29.41,1.47,1.81,39.71,"348,867",—
+PPC,PILGRIM’S PRIDE CORPORATION,buffett,False,3,6,50.0,31.22,6.88,2.02,29.41,1.47,1.81,39.71,"348,867",—
+PPC,PILGRIM’S PRIDE CORPORATION,lynch,False,2,4,50.0,31.22,6.88,2.02,29.41,1.47,1.81,39.71,"348,867",—
+PPC,PILGRIM’S PRIDE CORPORATION,netnet,False,1,4,25.0,31.22,6.88,2.02,29.41,1.47,1.81,39.71,"348,867",—
+PPC,PILGRIM’S PRIDE CORPORATION,custom,False,0,0,0.0,31.22,6.88,2.02,29.41,1.47,1.81,39.71,"348,867",—
+PRI,"Primerica, Inc.",buffett,False,4,6,66.7,301,13.14,4.02,30.71,—,5.14,196,"225,302",—
+PRI,"Primerica, Inc.",greenblatt,False,2,3,66.7,301,13.14,4.02,30.71,—,5.14,196,"225,302",—
+PRI,"Primerica, Inc.",graham,False,5,9,55.6,301,13.14,4.02,30.71,—,5.14,196,"225,302",—
+PRI,"Primerica, Inc.",lynch,False,2,4,50.0,301,13.14,4.02,30.71,—,5.14,196,"225,302",—
+PRI,"Primerica, Inc.",netnet,False,1,4,25.0,301,13.14,4.02,30.71,—,5.14,196,"225,302",—
+PRI,"Primerica, Inc.",custom,False,0,0,0.0,301,13.14,4.02,30.71,—,5.14,196,"225,302",—
 TREE,"LendingTree, Inc.",piotroski,False,6,9,66.7,29.80,2.76,1.46,52.76,1.67,1.98,70.33,"694,455",—
+TREE,"LendingTree, Inc.",graham,False,5,9,55.6,29.80,2.76,1.46,52.76,1.67,1.98,70.33,"694,455",—
+TREE,"LendingTree, Inc.",buffett,False,3,6,50.0,29.80,2.76,1.46,52.76,1.67,1.98,70.33,"694,455",—
+TREE,"LendingTree, Inc.",lynch,False,1,4,25.0,29.80,2.76,1.46,52.76,1.67,1.98,70.33,"694,455",—
