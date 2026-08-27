@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-SON,Sonoco Products Company,piotroski,True,8,9,88.9,57.55,5.71,1.59,27.75,1.05,2.08,90.68,"903,979",—
-SON,Sonoco Products Company,lynch,True,3,4,75.0,57.55,5.71,1.59,27.75,1.05,2.08,90.68,"903,979",—
-AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",piotroski,True,9,9,100.0,178,25.11,8.61,34.27,1.46,—,57.37,"317,044",—
-BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,160,21.73,3.72,17.13,2.65,0.86,84.23,"399,674",—
-BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,160,21.73,3.72,17.13,2.65,0.86,84.23,"399,674",—
-AROC,"Archrock, Inc.",piotroski,True,8,9,88.9,31.67,17.31,3.71,21.61,1.54,1.92,18.75,2M,—
-PJT,PJT Partners Inc.,buffett,True,5,6,83.3,175,—,—,58.43,—,2.71,—,"326,402",—
-PJT,PJT Partners Inc.,piotroski,True,7,9,77.8,175,—,—,58.43,—,2.71,—,"326,402",—
-ACIC,American Coastal Insurance Corporation,greenblatt,True,3,3,100.0,9.51,4.42,1.49,33.64,—,2.38,17.57,"338,352",—
-DAKT,"Daktronics, Inc.",piotroski,True,8,9,88.9,19.51,21.21,3.20,15.09,2.31,—,11.23,"315,666",—
-DAKT,"Daktronics, Inc.",lynch,True,3,4,75.0,19.51,21.21,3.20,15.09,2.31,—,11.23,"315,666",—
-ALRM,"ALARM.COM HOLDINGS, INC.",piotroski,True,7,9,77.8,56.71,23.05,3.94,15.52,1.92,1.47,28.23,"273,501",—
-VICR,VICOR CORPORATION,piotroski,True,8,9,88.9,197,75.57,12.60,16.66,8.99,0.10,30.32,"385,695",—
-VICR,VICOR CORPORATION,buffett,True,5,6,83.3,197,75.57,12.60,16.66,8.99,0.10,30.32,"385,695",—
-VICR,VICOR CORPORATION,lynch,True,3,4,75.0,197,75.57,12.60,16.66,8.99,0.10,30.32,"385,695",—
-FSS,FEDERAL SIGNAL CORPORATION,lynch,True,3,4,75.0,122,30.31,5.41,17.84,3.02,0.73,45.03,"288,883",—
-HALO,"HALOZYME THERAPEUTICS, INC.",buffett,True,5,6,83.3,107,41.82,272,649,4.66,50.73,4.76,2M,—
-FCFS,"FIRSTCASH HOLDINGS, INC.",piotroski,True,7,9,77.8,220,29.63,4.30,14.51,4.55,1.33,92.39,"762,332",—
-SFM,"Sprouts Farmers Market, Inc.",piotroski,True,7,9,77.8,86.83,16.35,6.11,37.32,0.93,1.96,41.21,1M,—
-NJR,NEW JERSEY RESOURCES CORPORATION,piotroski,True,7,9,77.8,54.49,16.36,2.30,14.03,0.73,—,42.17,"542,095",—
-HAFC,HANMI FINANCIAL CORPORATION,piotroski,True,8,9,88.9,31.08,12.38,1.17,9.55,—,8.88,38.69,"161,907",—
-OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,26.47,38.36,5.06,13.20,1.91,0.30,9.01,"910,510",—
-VCYT,"VERACYTE, INC.",piotroski,True,8,9,88.9,44.29,54.01,2.72,5.07,8.15,0.07,17.32,2M,—
-BKU,"BankUnited, Inc.",piotroski,True,8,9,88.9,46.44,13.16,1.13,8.79,—,10.47,57.13,"433,892",—
-LCII,LCI INDUSTRIES,piotroski,True,8,9,88.9,103,13.61,1.88,13.83,2.85,1.33,96.57,"340,959",—
-R,RYDER SYSTEM INC,piotroski,True,9,9,100.0,250,20.91,3.42,16.35,0.89,4.37,140,"255,771",—
-FMNB,FARMERS NATIONAL BANC CORP /OH/,piotroski,True,8,9,88.9,15.66,10.80,1.21,11.24,—,9.80,20.52,"399,602",—
-KNTK,KINETIK HOLDINGS INC.,lynch,True,3,4,75.0,55.10,20.95,—,-31.53,0.69,-7.37,—,1M,—
+GLD,SPDR® GOLD TRUST,lynch,True,3,4,75.0,421,3.79,—,—,—,—,—,10M,—
+SBC,SBC Medical Group Holdings Incorporated,lynch,True,3,4,75.0,4.14,8.28,1.72,20.54,3.78,0.47,5.21,"244,402",—
+TREE,"LendingTree, Inc.",greenblatt,True,3,3,100.0,29.80,2.76,1.46,52.76,1.67,1.98,70.33,"694,455",—
+ESE,ESCO TECHNOLOGIES INC.,lynch,True,3,4,75.0,283,24.52,4.76,19.42,1.35,0.56,124,"139,065",—
+BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,160,21.73,3.72,17.13,2.65,0.86,84.23,"416,737",—
+BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,160,21.73,3.72,17.13,2.65,0.86,84.23,"416,737",—
+PJT,PJT Partners Inc.,buffett,True,5,6,83.3,175,—,—,58.43,—,2.71,—,"326,403",—
+PJT,PJT Partners Inc.,piotroski,True,7,9,77.8,175,—,—,58.43,—,2.71,—,"326,403",—
+SSD,"Simpson Manufacturing Co., Inc.",buffett,True,5,6,83.3,185,22.44,3.81,17.00,3.54,0.51,94.81,"158,882",—
+SSD,"Simpson Manufacturing Co., Inc.",piotroski,True,7,9,77.8,185,22.44,3.81,17.00,3.54,0.51,94.81,"158,882",—
+MTCH,"Match Group, Inc.",piotroski,True,8,9,88.9,42.07,17.68,—,-242,1.42,—,—,3M,—
+MTCH,"Match Group, Inc.",lynch,True,3,4,75.0,42.07,17.68,—,-242,1.42,—,—,3M,—
+FTDR,"Frontdoor, Inc.",piotroski,True,8,9,88.9,83.68,24.47,25.76,105,1.55,—,15.81,"346,211",—
+FTDR,"Frontdoor, Inc.",buffett,True,5,6,83.3,83.68,24.47,25.76,105,1.55,—,15.81,"346,211",—
+VICR,VICOR CORPORATION,piotroski,True,8,9,88.9,197,75.57,12.60,16.66,8.99,0.10,30.32,"394,905",—
+VICR,VICOR CORPORATION,buffett,True,5,6,83.3,197,75.57,12.60,16.66,8.99,0.10,30.32,"394,905",—
+VICR,VICOR CORPORATION,lynch,True,3,4,75.0,197,75.57,12.60,16.66,8.99,0.10,30.32,"394,905",—
+FCFS,"FIRSTCASH HOLDINGS, INC.",piotroski,True,7,9,77.8,220,29.63,4.30,14.51,4.55,1.33,92.39,"762,508",—
+SHOE,"Shoe Carnival, Inc.",graham,True,8,9,88.9,14.41,7.58,0.58,7.58,3.76,0.74,32.72,"722,211",—
+HAFC,HANMI FINANCIAL CORPORATION,piotroski,True,8,9,88.9,31.08,12.38,1.17,9.55,—,8.88,38.69,"161,908",—
+AXTA,AXALTA COATING SYSTEMS LTD.,lynch,True,3,4,75.0,36.61,21.04,3.39,16.11,2.06,2.22,20.57,2M,—
+KRT,Karat Packaging Inc.,piotroski,True,7,9,77.8,49.26,31.58,6.65,21.07,2.30,0.88,16.12,"142,348",—
+BKU,"BankUnited, Inc.",piotroski,True,8,9,88.9,46.44,13.16,1.13,8.79,—,10.47,57.13,"434,174",—
+R,RYDER SYSTEM INC,piotroski,True,9,9,100.0,250,20.91,3.42,16.35,0.89,4.37,140,"255,773",—
 SSRM,SSR Mining Inc.,piotroski,True,7,9,77.8,38.09,20.59,2.36,11.28,2.08,0.51,25.94,2M,—
-MCS,MARCUS CORP,piotroski,True,7,9,77.8,29.62,73.00,2.03,2.77,0.40,—,11.55,"182,951",—
-MSGS,MADISON SQUARE GARDEN SPORTS CORP.,piotroski,True,9,9,100.0,398,"1,245",—,-2.95,0.50,-6.84,—,"158,496",—
-WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,8,9,88.9,30.81,33.86,0.71,2.10,2.42,0.76,29.77,"732,113",—
-SON,Sonoco Products Company,buffett,False,4,6,66.7,57.55,5.71,1.59,27.75,1.05,2.08,90.68,"903,979",—
-SON,Sonoco Products Company,greenblatt,False,2,3,66.7,57.55,5.71,1.59,27.75,1.05,2.08,90.68,"903,979",—
-SON,Sonoco Products Company,graham,False,5,9,55.6,57.55,5.71,1.59,27.75,1.05,2.08,90.68,"903,979",—
-SON,Sonoco Products Company,netnet,False,1,4,25.0,57.55,5.71,1.59,27.75,1.05,2.08,90.68,"903,979",—
-SON,Sonoco Products Company,custom,False,0,0,0.0,57.55,5.71,1.59,27.75,1.05,2.08,90.68,"903,979",—
-ESTC,Elastic N.V.,piotroski,False,5,9,55.6,79.25,23.10,6.66,28.81,1.68,1.47,30.31,2M,—
-ESTC,Elastic N.V.,buffett,False,3,6,50.0,79.25,23.10,6.66,28.81,1.68,1.47,30.31,2M,—
-ESTC,Elastic N.V.,netnet,False,2,4,50.0,79.25,23.10,6.66,28.81,1.68,1.47,30.31,2M,—
-ESTC,Elastic N.V.,graham,False,3,9,33.3,79.25,23.10,6.66,28.81,1.68,1.47,30.31,2M,—
-ESTC,Elastic N.V.,greenblatt,False,1,3,33.3,79.25,23.10,6.66,28.81,1.68,1.47,30.31,2M,—
-ESTC,Elastic N.V.,lynch,False,1,4,25.0,79.25,23.10,6.66,28.81,1.68,1.47,30.31,2M,—
-ESTC,Elastic N.V.,custom,False,0,0,0.0,79.25,23.10,6.66,28.81,1.68,1.47,30.31,2M,—
-AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",buffett,False,4,6,66.7,178,25.11,8.61,34.27,1.46,—,57.37,"317,044",—
-AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",greenblatt,False,2,3,66.7,178,25.11,8.61,34.27,1.46,—,57.37,"317,044",—
-AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",graham,False,3,9,33.3,178,25.11,8.61,34.27,1.46,—,57.37,"317,044",—
-AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",lynch,False,1,4,25.0,178,25.11,8.61,34.27,1.46,—,57.37,"317,044",—
-AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",netnet,False,1,4,25.0,178,25.11,8.61,34.27,1.46,—,57.37,"317,044",—
-AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",custom,False,0,0,0.0,178,25.11,8.61,34.27,1.46,—,57.37,"317,044",—
+CYH,"COMMUNITY HEALTH SYSTEMS, INC.",piotroski,True,8,9,88.9,2.92,0.77,—,-36.51,1.46,-10.07,—,1M,—
+MAGN,Magnera Corporation,piotroski,True,7,9,77.8,12.45,—,0.42,-14.94,2.37,2.75,—,"406,129",—
+AIOT,"POWERFLEET, INC.",piotroski,True,7,9,77.8,3.01,—,0.85,-4.32,1.13,1.00,—,2M,—
+NEOG,Neogen Corporation,piotroski,True,8,9,88.9,11.70,—,1.22,-0.38,3.82,0.60,—,1M,—
+WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,8,9,88.9,30.81,33.86,0.71,2.10,2.42,0.76,29.77,"732,269",—
+GLD,SPDR® GOLD TRUST,greenblatt,False,2,3,66.7,421,3.79,—,—,—,—,—,10M,—
+GLD,SPDR® GOLD TRUST,piotroski,False,3,9,33.3,421,3.79,—,—,—,—,—,10M,—
+GLD,SPDR® GOLD TRUST,netnet,False,1,4,25.0,421,3.79,—,—,—,—,—,10M,—
+GLD,SPDR® GOLD TRUST,graham,False,2,9,22.2,421,3.79,—,—,—,—,—,10M,—
+GLD,SPDR® GOLD TRUST,buffett,False,1,6,16.7,421,3.79,—,—,—,—,—,10M,—
+GLD,SPDR® GOLD TRUST,custom,False,0,0,0.0,421,3.79,—,—,—,—,—,10M,—
+SBC,SBC Medical Group Holdings Incorporated,graham,False,6,9,66.7,4.14,8.28,1.72,20.54,3.78,0.47,5.21,"244,402",—
+SBC,SBC Medical Group Holdings Incorporated,buffett,False,4,6,66.7,4.14,8.28,1.72,20.54,3.78,0.47,5.21,"244,402",—
+SBC,SBC Medical Group Holdings Incorporated,greenblatt,False,2,3,66.7,4.14,8.28,1.72,20.54,3.78,0.47,5.21,"244,402",—
+SBC,SBC Medical Group Holdings Incorporated,netnet,False,2,4,50.0,4.14,8.28,1.72,20.54,3.78,0.47,5.21,"244,402",—
+SBC,SBC Medical Group Holdings Incorporated,piotroski,False,4,9,44.4,4.14,8.28,1.72,20.54,3.78,0.47,5.21,"244,402",—
+SBC,SBC Medical Group Holdings Incorporated,custom,False,0,0,0.0,4.14,8.28,1.72,20.54,3.78,0.47,5.21,"244,402",—
+YOU,"CLEAR SECURE, INC.",greenblatt,False,2,3,66.7,44.25,—,—,61.42,1.01,6.18,—,2M,—
+YOU,"CLEAR SECURE, INC.",piotroski,False,5,9,55.6,44.25,—,—,61.42,1.01,6.18,—,2M,—
+YOU,"CLEAR SECURE, INC.",buffett,False,3,6,50.0,44.25,—,—,61.42,1.01,6.18,—,2M,—
+YOU,"CLEAR SECURE, INC.",graham,False,3,9,33.3,44.25,—,—,61.42,1.01,6.18,—,2M,—
+YOU,"CLEAR SECURE, INC.",lynch,False,1,4,25.0,44.25,—,—,61.42,1.01,6.18,—,2M,—
+YOU,"CLEAR SECURE, INC.",netnet,False,1,4,25.0,44.25,—,—,61.42,1.01,6.18,—,2M,—
+YOU,"CLEAR SECURE, INC.",custom,False,0,0,0.0,44.25,—,—,61.42,1.01,6.18,—,2M,—
+TREE,"LendingTree, Inc.",piotroski,False,6,9,66.7,29.80,2.76,1.46,52.76,1.67,1.98,70.33,"694,455",—
