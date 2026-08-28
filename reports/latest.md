@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-08-27 15:43 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-08-28 00:44 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **30** strategy matches passed.
+Screened **75** companies · **25** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| BUKS | BUTLER NATIONAL CORPOR | piotroski | ✅ | 100% | 4.09 | 12.03 | 3.24 | 26.75 | 2.14 | 0.73 | 80,148 | — |
-| BUKS | BUTLER NATIONAL CORPOR | greenblatt | ✅ | 100% | 4.09 | 12.03 | 3.24 | 26.75 | 2.14 | 0.73 | 80,148 | — |
-| BUKS | BUTLER NATIONAL CORPOR | lynch | ✅ | 75% | 4.09 | 12.03 | 3.24 | 26.75 | 2.14 | 0.73 | 80,148 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | piotroski | ✅ | 78% | 31.22 | 6.88 | 2.02 | 29.41 | 1.47 | 1.81 | 348,867 | — |
-| PRI | Primerica, Inc. | piotroski | ✅ | 89% | 301 | 13.14 | 4.02 | 30.71 | — | 5.14 | 225,302 | — |
-| TREE | LendingTree, Inc. | greenblatt | ✅ | 100% | 29.80 | 2.76 | 1.46 | 52.76 | 1.67 | 1.98 | 694,455 | — |
-| CARG | CarGurus, Inc. | piotroski | ✅ | 89% | 36.20 | 23.35 | 9.71 | 41.66 | 2.81 | 0.77 | 837,419 | — |
-| BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 160 | 21.73 | 3.72 | 17.13 | 2.65 | 0.86 | 416,737 | — |
-| BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 160 | 21.73 | 3.72 | 17.13 | 2.65 | 0.86 | 416,737 | — |
-| FHI | Federated Hermes, Inc. | greenblatt | ✅ | 100% | 65.09 | 12.69 | 4.08 | 33.69 | 2.75 | 0.81 | 576,926 | — |
-| FHI | Federated Hermes, Inc. | piotroski | ✅ | 89% | 65.09 | 12.69 | 4.08 | 33.69 | 2.75 | 0.81 | 576,926 | — |
-| SSD | Simpson Manufacturing Co., I | buffett | ✅ | 83% | 185 | 22.44 | 3.81 | 17.00 | 3.54 | 0.51 | 158,882 | — |
-| SSD | Simpson Manufacturing Co., I | piotroski | ✅ | 78% | 185 | 22.44 | 3.81 | 17.00 | 3.54 | 0.51 | 158,882 | — |
-| DAKT | Daktronics, Inc. | piotroski | ✅ | 89% | 19.51 | 21.21 | 3.20 | 15.09 | 2.31 | — | 315,961 | — |
-| DAKT | Daktronics, Inc. | lynch | ✅ | 75% | 19.51 | 21.21 | 3.20 | 15.09 | 2.31 | — | 315,961 | — |
-| VICR | VICOR CORPORATION | piotroski | ✅ | 89% | 196 | 74.99 | 12.50 | 16.66 | 8.99 | 0.10 | 138,793 | — |
-| VICR | VICOR CORPORATION | buffett | ✅ | 83% | 196 | 74.99 | 12.50 | 16.66 | 8.99 | 0.10 | 138,793 | — |
-| FSS | FEDERAL SIGNAL CORPORATION | lynch | ✅ | 75% | 122 | 30.31 | 5.41 | 17.84 | 3.02 | 0.73 | 288,890 | — |
-| VICR | VICOR CORPORATION | lynch | ✅ | 75% | 196 | 74.99 | 12.50 | 16.66 | 8.99 | 0.10 | 138,793 | — |
-| SFM | Sprouts Farmers Market, Inc. | piotroski | ✅ | 78% | 86.83 | 16.35 | 6.11 | 37.32 | 0.93 | 1.96 | 1M | — |
-| PCTY | PAYLOCITY HOLDING CORPORATIO | piotroski | ✅ | 89% | 158 | 32.05 | 7.07 | 22.08 | 1.09 | 3.00 | 165,891 | — |
-| VCYT | VERACYTE, INC. | piotroski | ✅ | 89% | 44.29 | 54.01 | 2.72 | 5.07 | 8.15 | 0.07 | 2M | — |
-| R | RYDER SYSTEM INC | piotroski | ✅ | 100% | 250 | 20.91 | 3.42 | 16.35 | 0.89 | 4.37 | 263,874 | — |
-| CURB | Curbline Properties Corp. | piotroski | ✅ | 78% | 30.12 | 81.41 | 1.66 | 2.09 | — | 0.29 | 874,911 | — |
-| CURB | Curbline Properties Corp. | lynch | ✅ | 75% | 30.12 | 81.41 | 1.66 | 2.09 | — | 0.29 | 874,911 | — |
-| CBU | COMMUNITY FINANCIAL SYSTEM,  | piotroski | ✅ | 89% | 63.16 | 15.91 | 1.66 | 10.49 | — | 7.63 | 174,364 | — |
-| WWW | WOLVERINE WORLD WIDE, INC. | piotroski | ✅ | 78% | 20.10 | 17.63 | 4.02 | 23.48 | 1.40 | — | 574,257 | — |
-| AIOT | POWERFLEET, INC. | piotroski | ✅ | 78% | 3.01 | — | 0.85 | -4.32 | 1.13 | 1.00 | 2M | — |
-| MCS | MARCUS CORP | piotroski | ✅ | 78% | 28.99 | 71.45 | 1.98 | 2.77 | 0.40 | — | 21,726 | — |
-| MOS | MOSAIC CO | piotroski | ✅ | 89% | 24.16 | 14.21 | 0.64 | 4.47 | 1.32 | — | 8M | — |
-| BUKS | BUTLER NATIONAL CORPOR | graham | ▫️ | 67% | 4.09 | 12.03 | 3.24 | 26.75 | 2.14 | 0.73 | 80,148 | — |
-| BUKS | BUTLER NATIONAL CORPOR | buffett | ▫️ | 50% | 4.09 | 12.03 | 3.24 | 26.75 | 2.14 | 0.73 | 80,148 | — |
-| BUKS | BUTLER NATIONAL CORPOR | netnet | ▫️ | 50% | 4.09 | 12.03 | 3.24 | 26.75 | 2.14 | 0.73 | 80,148 | — |
-| BUKS | BUTLER NATIONAL CORPOR | custom | ▫️ | 0% | 4.09 | 12.03 | 3.24 | 26.75 | 2.14 | 0.73 | 80,148 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | graham | ▫️ | 67% | 31.22 | 6.88 | 2.02 | 29.41 | 1.47 | 1.81 | 348,867 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | greenblatt | ▫️ | 67% | 31.22 | 6.88 | 2.02 | 29.41 | 1.47 | 1.81 | 348,867 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | buffett | ▫️ | 50% | 31.22 | 6.88 | 2.02 | 29.41 | 1.47 | 1.81 | 348,867 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | lynch | ▫️ | 50% | 31.22 | 6.88 | 2.02 | 29.41 | 1.47 | 1.81 | 348,867 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | netnet | ▫️ | 25% | 31.22 | 6.88 | 2.02 | 29.41 | 1.47 | 1.81 | 348,867 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | custom | ▫️ | 0% | 31.22 | 6.88 | 2.02 | 29.41 | 1.47 | 1.81 | 348,867 | — |
-| PRI | Primerica, Inc. | buffett | ▫️ | 67% | 301 | 13.14 | 4.02 | 30.71 | — | 5.14 | 225,302 | — |
-| PRI | Primerica, Inc. | greenblatt | ▫️ | 67% | 301 | 13.14 | 4.02 | 30.71 | — | 5.14 | 225,302 | — |
-| PRI | Primerica, Inc. | graham | ▫️ | 56% | 301 | 13.14 | 4.02 | 30.71 | — | 5.14 | 225,302 | — |
-| PRI | Primerica, Inc. | lynch | ▫️ | 50% | 301 | 13.14 | 4.02 | 30.71 | — | 5.14 | 225,302 | — |
-| PRI | Primerica, Inc. | netnet | ▫️ | 25% | 301 | 13.14 | 4.02 | 30.71 | — | 5.14 | 225,302 | — |
-| PRI | Primerica, Inc. | custom | ▫️ | 0% | 301 | 13.14 | 4.02 | 30.71 | — | 5.14 | 225,302 | — |
-| TREE | LendingTree, Inc. | piotroski | ▫️ | 67% | 29.80 | 2.76 | 1.46 | 52.76 | 1.67 | 1.98 | 694,455 | — |
-| TREE | LendingTree, Inc. | graham | ▫️ | 56% | 29.80 | 2.76 | 1.46 | 52.76 | 1.67 | 1.98 | 694,455 | — |
-| TREE | LendingTree, Inc. | buffett | ▫️ | 50% | 29.80 | 2.76 | 1.46 | 52.76 | 1.67 | 1.98 | 694,455 | — |
-| TREE | LendingTree, Inc. | lynch | ▫️ | 25% | 29.80 | 2.76 | 1.46 | 52.76 | 1.67 | 1.98 | 694,455 | — |
+| NSLR | Neostellar Capital Corp. | greenblatt | ✅ | 100% | 10.29 | 5.78 | 1.44 | 23.77 | — | 0.34 | 108,834 | — |
+| SON | Sonoco Products Company | piotroski | ✅ | 89% | 56.71 | 5.63 | 1.56 | 27.75 | 1.05 | 2.08 | 767,898 | — |
+| SON | Sonoco Products Company | lynch | ✅ | 75% | 56.71 | 5.63 | 1.56 | 27.75 | 1.05 | 2.08 | 767,898 | — |
+| WING | WINGSTOP INC. | lynch | ✅ | 100% | 110 | 17.71 | — | -23.65 | 3.26 | -1.94 | 1M | — |
+| RRC | RANGE RESOURCES CORP | piotroski | ✅ | 89% | 41.64 | 15.20 | 2.31 | 15.24 | 0.67 | 0.72 | 1M | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | piotroski | ✅ | 100% | 176 | 24.80 | 8.50 | 34.27 | 1.46 | — | 243,324 | — |
+| AROC | Archrock, Inc. | piotroski | ✅ | 89% | 32.06 | 17.52 | 3.76 | 21.61 | 1.54 | 1.92 | 2M | — |
+| ACIC | American Coastal Insurance C | greenblatt | ✅ | 100% | 9.43 | 4.39 | 1.48 | 33.64 | — | 2.38 | 163,501 | — |
+| SSD | Simpson Manufacturing Co., I | buffett | ✅ | 83% | 182 | 22.15 | 3.76 | 17.00 | 3.54 | 0.51 | 153,745 | — |
+| SSD | Simpson Manufacturing Co., I | piotroski | ✅ | 78% | 182 | 22.15 | 3.76 | 17.00 | 3.54 | 0.51 | 153,745 | — |
+| DAKT | Daktronics, Inc. | piotroski | ✅ | 89% | 19.61 | 21.32 | 3.22 | 15.09 | 2.31 | — | 567,725 | — |
+| DAKT | Daktronics, Inc. | lynch | ✅ | 75% | 19.61 | 21.32 | 3.22 | 15.09 | 2.31 | — | 567,725 | — |
+| FTDR | Frontdoor, Inc. | piotroski | ✅ | 89% | 82.81 | 24.21 | 25.49 | 105 | 1.55 | — | 340,291 | — |
+| FTDR | Frontdoor, Inc. | buffett | ✅ | 83% | 82.81 | 24.21 | 25.49 | 105 | 1.55 | — | 340,291 | — |
+| FCFS | FIRSTCASH HOLDINGS, INC. | piotroski | ✅ | 78% | 224 | 30.20 | 4.38 | 14.51 | 4.55 | 1.33 | 385,822 | — |
+| PCTY | PAYLOCITY HOLDING CORPORATIO | piotroski | ✅ | 89% | 158 | 32.14 | 7.09 | 22.08 | 1.09 | 3.00 | 599,336 | — |
+| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 140 | 22.09 | 2.32 | 10.49 | 1.53 | — | 302,540 | — |
+| VCYT | VERACYTE, INC. | piotroski | ✅ | 89% | 45.25 | 55.18 | 2.78 | 5.07 | 8.15 | 0.07 | 1M | — |
+| LCII | LCI INDUSTRIES | piotroski | ✅ | 89% | 102 | 13.51 | 1.87 | 13.83 | 2.85 | 1.33 | 280,657 | — |
+| BKU | BankUnited, Inc. | piotroski | ✅ | 89% | 46.57 | 13.19 | 1.13 | 8.79 | — | 10.47 | 345,257 | — |
+| MCS | MARCUS CORP | piotroski | ✅ | 78% | 29.35 | 72.34 | 2.01 | 2.77 | 0.40 | — | 186,908 | — |
+| TRC | TEJON RANCH CO. | piotroski | ✅ | 78% | 16.14 | — | 0.92 | 0.02 | 4.14 | 0.29 | 226,376 | — |
+| NEOG | Neogen Corporation | piotroski | ✅ | 89% | 11.74 | — | 1.22 | -0.38 | 3.82 | 0.60 | 1M | — |
+| CALX | Calix, Inc | piotroski | ✅ | 78% | 37.69 | 145 | 3.04 | 2.08 | 4.24 | 0.23 | 1M | — |
+| WGO | WINNEBAGO INDUSTRIES, INC. | piotroski | ✅ | 89% | 30.37 | 33.37 | 0.70 | 2.10 | 2.42 | 0.76 | 412,337 | — |
+| NSLR | Neostellar Capital Corp. | lynch | ▫️ | 50% | 10.29 | 5.78 | 1.44 | 23.77 | — | 0.34 | 108,834 | — |
+| NSLR | Neostellar Capital Corp. | graham | ▫️ | 44% | 10.29 | 5.78 | 1.44 | 23.77 | — | 0.34 | 108,834 | — |
+| NSLR | Neostellar Capital Corp. | piotroski | ▫️ | 44% | 10.29 | 5.78 | 1.44 | 23.77 | — | 0.34 | 108,834 | — |
+| NSLR | Neostellar Capital Corp. | buffett | ▫️ | 33% | 10.29 | 5.78 | 1.44 | 23.77 | — | 0.34 | 108,834 | — |
+| NSLR | Neostellar Capital Corp. | netnet | ▫️ | 25% | 10.29 | 5.78 | 1.44 | 23.77 | — | 0.34 | 108,834 | — |
+| NSLR | Neostellar Capital Corp. | custom | ▫️ | 0% | 10.29 | 5.78 | 1.44 | 23.77 | — | 0.34 | 108,834 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | piotroski | ▫️ | 44% | 26.34 | — | — | — | 2.10 | — | 209,593 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | graham | ▫️ | 33% | 26.34 | — | — | — | 2.10 | — | 209,593 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | buffett | ▫️ | 33% | 26.34 | — | — | — | 2.10 | — | 209,593 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | greenblatt | ▫️ | 33% | 26.34 | — | — | — | 2.10 | — | 209,593 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | lynch | ▫️ | 25% | 26.34 | — | — | — | 2.10 | — | 209,593 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | netnet | ▫️ | 25% | 26.34 | — | — | — | 2.10 | — | 209,593 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | custom | ▫️ | 0% | 26.34 | — | — | — | 2.10 | — | 209,593 | — |
+| SON | Sonoco Products Company | buffett | ▫️ | 67% | 56.71 | 5.63 | 1.56 | 27.75 | 1.05 | 2.08 | 767,898 | — |
+| SON | Sonoco Products Company | greenblatt | ▫️ | 67% | 56.71 | 5.63 | 1.56 | 27.75 | 1.05 | 2.08 | 767,898 | — |
+| SON | Sonoco Products Company | graham | ▫️ | 56% | 56.71 | 5.63 | 1.56 | 27.75 | 1.05 | 2.08 | 767,898 | — |
+| SON | Sonoco Products Company | netnet | ▫️ | 25% | 56.71 | 5.63 | 1.56 | 27.75 | 1.05 | 2.08 | 767,898 | — |
+| SON | Sonoco Products Company | custom | ▫️ | 0% | 56.71 | 5.63 | 1.56 | 27.75 | 1.05 | 2.08 | 767,898 | — |
+| WING | WINGSTOP INC. | buffett | ▫️ | 67% | 110 | 17.71 | — | -23.65 | 3.26 | -1.94 | 1M | — |
+| WING | WINGSTOP INC. | piotroski | ▫️ | 67% | 110 | 17.71 | — | -23.65 | 3.26 | -1.94 | 1M | — |
+| WING | WINGSTOP INC. | greenblatt | ▫️ | 67% | 110 | 17.71 | — | -23.65 | 3.26 | -1.94 | 1M | — |
+| WING | WINGSTOP INC. | graham | ▫️ | 33% | 110 | 17.71 | — | -23.65 | 3.26 | -1.94 | 1M | — |
+| WING | WINGSTOP INC. | netnet | ▫️ | 25% | 110 | 17.71 | — | -23.65 | 3.26 | -1.94 | 1M | — |
+| WING | WINGSTOP INC. | custom | ▫️ | 0% | 110 | 17.71 | — | -23.65 | 3.26 | -1.94 | 1M | — |
+| RRC | RANGE RESOURCES CORP | buffett | ▫️ | 50% | 41.64 | 15.20 | 2.31 | 15.24 | 0.67 | 0.72 | 1M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
