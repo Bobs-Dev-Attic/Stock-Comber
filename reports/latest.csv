@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-NSLR,Neostellar Capital Corp.,greenblatt,True,3,3,100.0,10.29,5.78,1.44,23.77,—,0.34,16.90,"108,834",—
-SON,Sonoco Products Company,piotroski,True,8,9,88.9,56.71,5.63,1.56,27.75,1.05,2.08,90.68,"767,898",—
-SON,Sonoco Products Company,lynch,True,3,4,75.0,56.71,5.63,1.56,27.75,1.05,2.08,90.68,"767,898",—
-WING,WINGSTOP INC.,lynch,True,4,4,100.0,110,17.71,—,-23.65,3.26,-1.94,—,1M,—
-RRC,RANGE RESOURCES CORP,piotroski,True,8,9,88.9,41.64,15.20,2.31,15.24,0.67,0.72,33.32,1M,—
-AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",piotroski,True,9,9,100.0,176,24.80,8.50,34.27,1.46,—,57.37,"243,324",—
+NSLR,Neostellar Capital Corp.,greenblatt,True,3,3,100.0,10.29,5.78,1.44,23.77,—,0.34,16.90,"108,837",—
+SLDE,"Slide Insurance Holdings, Inc.",greenblatt,True,3,3,100.0,23.46,6.98,2.78,39.88,—,1.62,25.25,"520,853",—
+SLV,iShares Silver Trust,lynch,True,3,4,75.0,62.77,1.53,—,—,—,—,—,14M,—
+SBC,SBC Medical Group Holdings Incorporated,lynch,True,3,4,75.0,4.11,8.22,1.71,20.54,3.78,0.47,5.21,"84,903",—
+TRNO,Terreno Realty Corporation,lynch,True,4,4,100.0,67.11,17.16,1.66,9.72,—,0.30,59.59,"421,340",—
+CARG,"CarGurus, Inc.",piotroski,True,8,9,88.9,36.36,23.46,9.76,41.66,2.81,0.77,11.40,"568,164",—
 AROC,"Archrock, Inc.",piotroski,True,8,9,88.9,32.06,17.52,3.76,21.61,1.54,1.92,18.75,2M,—
-ACIC,American Coastal Insurance Corporation,greenblatt,True,3,3,100.0,9.43,4.39,1.48,33.64,—,2.38,17.57,"163,501",—
-SSD,"Simpson Manufacturing Co., Inc.",buffett,True,5,6,83.3,182,22.15,3.76,17.00,3.54,0.51,94.81,"153,745",—
-SSD,"Simpson Manufacturing Co., Inc.",piotroski,True,7,9,77.8,182,22.15,3.76,17.00,3.54,0.51,94.81,"153,745",—
-DAKT,"Daktronics, Inc.",piotroski,True,8,9,88.9,19.61,21.32,3.22,15.09,2.31,—,11.23,"567,725",—
-DAKT,"Daktronics, Inc.",lynch,True,3,4,75.0,19.61,21.32,3.22,15.09,2.31,—,11.23,"567,725",—
-FTDR,"Frontdoor, Inc.",piotroski,True,8,9,88.9,82.81,24.21,25.49,105,1.55,—,15.81,"340,291",—
-FTDR,"Frontdoor, Inc.",buffett,True,5,6,83.3,82.81,24.21,25.49,105,1.55,—,15.81,"340,291",—
-FCFS,"FIRSTCASH HOLDINGS, INC.",piotroski,True,7,9,77.8,224,30.20,4.38,14.51,4.55,1.33,92.39,"385,822",—
-PCTY,PAYLOCITY HOLDING CORPORATION,piotroski,True,8,9,88.9,158,32.14,7.09,22.08,1.09,3.00,49.69,"599,336",—
-KEX,KIRBY CORPORATION,piotroski,True,8,9,88.9,140,22.09,2.32,10.49,1.53,—,92.69,"302,540",—
-VCYT,"VERACYTE, INC.",piotroski,True,8,9,88.9,45.25,55.18,2.78,5.07,8.15,0.07,17.32,1M,—
-LCII,LCI INDUSTRIES,piotroski,True,8,9,88.9,102,13.51,1.87,13.83,2.85,1.33,96.57,"280,657",—
-BKU,"BankUnited, Inc.",piotroski,True,8,9,88.9,46.57,13.19,1.13,8.79,—,10.47,57.13,"345,257",—
-MCS,MARCUS CORP,piotroski,True,7,9,77.8,29.35,72.34,2.01,2.77,0.40,—,11.55,"186,908",—
-TRC,TEJON RANCH CO.,piotroski,True,7,9,77.8,16.14,—,0.92,0.02,4.14,0.29,—,"226,376",—
+PJT,PJT Partners Inc.,buffett,True,5,6,83.3,179,—,—,58.43,—,2.71,—,"361,796",—
+PJT,PJT Partners Inc.,piotroski,True,7,9,77.8,179,—,—,58.43,—,2.71,—,"361,796",—
+SSD,"Simpson Manufacturing Co., Inc.",buffett,True,5,6,83.3,182,22.15,3.76,17.00,3.54,0.51,94.81,"153,746",—
+SSD,"Simpson Manufacturing Co., Inc.",piotroski,True,7,9,77.8,182,22.15,3.76,17.00,3.54,0.51,94.81,"153,746",—
+EVR,EVERCORE INC.,buffett,True,5,6,83.3,292,20.79,6.06,29.14,2.16,1.50,123,"405,738",—
+EVR,EVERCORE INC.,piotroski,True,7,9,77.8,292,20.79,6.06,29.14,2.16,1.50,123,"405,738",—
+VISN,"Vistance Networks, Inc.",greenblatt,True,3,3,100.0,11.63,1.21,—,-227,3.88,-9.06,—,8M,—
+NJR,NEW JERSEY RESOURCES CORPORATION,piotroski,True,7,9,77.8,53.78,16.15,2.27,14.03,0.73,—,42.17,"441,340",—
+AXTA,AXALTA COATING SYSTEMS LTD.,lynch,True,3,4,75.0,36.69,21.09,3.39,16.11,2.06,2.22,20.57,1M,—
+FIGS,"FIGS, Inc.",piotroski,True,8,9,88.9,15.10,79.47,6.20,7.83,4.94,0.33,3.23,2M,—
+CYH,"COMMUNITY HEALTH SYSTEMS, INC.",piotroski,True,8,9,88.9,2.93,0.78,—,-36.51,1.46,-10.07,—,"762,996",—
+ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.49,20.41,0.80,3.99,9.18,0.34,5.26,"62,651",—
+FAF,FIRST AMERICAN FINANCIAL CORPORATION,piotroski,True,8,9,88.9,74.55,12.42,1.41,11.31,—,1.95,84.61,"835,980",—
+MAGN,Magnera Corporation,piotroski,True,7,9,77.8,12.33,—,0.41,-14.94,2.37,2.75,—,"362,608",—
+GSHD,"GOOSEHEAD INSURANCE, INC.",lynch,True,3,4,75.0,70.45,67.74,—,-29.14,1.60,-6.05,—,"174,750",—
+AIOT,"POWERFLEET, INC.",piotroski,True,7,9,77.8,3.00,—,0.84,-4.32,1.13,1.00,—,"919,869",—
+SPHR,SPHERE ENTERTAINMENT CO.,piotroski,True,7,9,77.8,147,199,2.99,1.50,1.09,0.89,28.65,"682,137",—
 NEOG,Neogen Corporation,piotroski,True,8,9,88.9,11.74,—,1.22,-0.38,3.82,0.60,—,1M,—
-CALX,"Calix, Inc",piotroski,True,7,9,77.8,37.69,145,3.04,2.08,4.24,0.23,8.52,1M,—
-WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,8,9,88.9,30.37,33.37,0.70,2.10,2.42,0.76,29.77,"412,337",—
-NSLR,Neostellar Capital Corp.,lynch,False,2,4,50.0,10.29,5.78,1.44,23.77,—,0.34,16.90,"108,834",—
-NSLR,Neostellar Capital Corp.,graham,False,4,9,44.4,10.29,5.78,1.44,23.77,—,0.34,16.90,"108,834",—
-NSLR,Neostellar Capital Corp.,piotroski,False,4,9,44.4,10.29,5.78,1.44,23.77,—,0.34,16.90,"108,834",—
-NSLR,Neostellar Capital Corp.,buffett,False,2,6,33.3,10.29,5.78,1.44,23.77,—,0.34,16.90,"108,834",—
-NSLR,Neostellar Capital Corp.,netnet,False,1,4,25.0,10.29,5.78,1.44,23.77,—,0.34,16.90,"108,834",—
-NSLR,Neostellar Capital Corp.,custom,False,0,0,0.0,10.29,5.78,1.44,23.77,—,0.34,16.90,"108,834",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,piotroski,False,4,9,44.4,26.34,—,—,—,2.10,—,—,"209,593",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,graham,False,3,9,33.3,26.34,—,—,—,2.10,—,—,"209,593",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,buffett,False,2,6,33.3,26.34,—,—,—,2.10,—,—,"209,593",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,greenblatt,False,1,3,33.3,26.34,—,—,—,2.10,—,—,"209,593",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,lynch,False,1,4,25.0,26.34,—,—,—,2.10,—,—,"209,593",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,netnet,False,1,4,25.0,26.34,—,—,—,2.10,—,—,"209,593",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,custom,False,0,0,0.0,26.34,—,—,—,2.10,—,—,"209,593",—
-SON,Sonoco Products Company,buffett,False,4,6,66.7,56.71,5.63,1.56,27.75,1.05,2.08,90.68,"767,898",—
-SON,Sonoco Products Company,greenblatt,False,2,3,66.7,56.71,5.63,1.56,27.75,1.05,2.08,90.68,"767,898",—
-SON,Sonoco Products Company,graham,False,5,9,55.6,56.71,5.63,1.56,27.75,1.05,2.08,90.68,"767,898",—
-SON,Sonoco Products Company,netnet,False,1,4,25.0,56.71,5.63,1.56,27.75,1.05,2.08,90.68,"767,898",—
-SON,Sonoco Products Company,custom,False,0,0,0.0,56.71,5.63,1.56,27.75,1.05,2.08,90.68,"767,898",—
-WING,WINGSTOP INC.,buffett,False,4,6,66.7,110,17.71,—,-23.65,3.26,-1.94,—,1M,—
-WING,WINGSTOP INC.,piotroski,False,6,9,66.7,110,17.71,—,-23.65,3.26,-1.94,—,1M,—
-WING,WINGSTOP INC.,greenblatt,False,2,3,66.7,110,17.71,—,-23.65,3.26,-1.94,—,1M,—
-WING,WINGSTOP INC.,graham,False,3,9,33.3,110,17.71,—,-23.65,3.26,-1.94,—,1M,—
-WING,WINGSTOP INC.,netnet,False,1,4,25.0,110,17.71,—,-23.65,3.26,-1.94,—,1M,—
-WING,WINGSTOP INC.,custom,False,0,0,0.0,110,17.71,—,-23.65,3.26,-1.94,—,1M,—
-RRC,RANGE RESOURCES CORP,buffett,False,3,6,50.0,41.64,15.20,2.31,15.24,0.67,0.72,33.32,1M,—
+APPN,APPIAN CORPORATION,piotroski,True,7,9,77.8,41.40,"2,070",—,-2.62,1.15,-15.71,—,"819,539",—
+BNED,"BARNES & NOBLE EDUCATION, INC.",piotroski,True,8,9,88.9,12.23,24.96,1.44,5.73,1.71,1.51,9.68,"344,850",—
+OMCL,"OMNICELL, INC",piotroski,True,7,9,77.8,33.41,835,1.26,0.17,1.43,0.60,4.89,"436,785",—
+NSLR,Neostellar Capital Corp.,lynch,False,2,4,50.0,10.29,5.78,1.44,23.77,—,0.34,16.90,"108,837",—
+NSLR,Neostellar Capital Corp.,graham,False,4,9,44.4,10.29,5.78,1.44,23.77,—,0.34,16.90,"108,837",—
+NSLR,Neostellar Capital Corp.,piotroski,False,4,9,44.4,10.29,5.78,1.44,23.77,—,0.34,16.90,"108,837",—
+NSLR,Neostellar Capital Corp.,buffett,False,2,6,33.3,10.29,5.78,1.44,23.77,—,0.34,16.90,"108,837",—
+NSLR,Neostellar Capital Corp.,netnet,False,1,4,25.0,10.29,5.78,1.44,23.77,—,0.34,16.90,"108,837",—
+NSLR,Neostellar Capital Corp.,custom,False,0,0,0.0,10.29,5.78,1.44,23.77,—,0.34,16.90,"108,837",—
+SLDE,"Slide Insurance Holdings, Inc.",graham,False,4,9,44.4,23.46,6.98,2.78,39.88,—,1.62,25.25,"520,853",—
+SLDE,"Slide Insurance Holdings, Inc.",buffett,False,2,6,33.3,23.46,6.98,2.78,39.88,—,1.62,25.25,"520,853",—
+SLDE,"Slide Insurance Holdings, Inc.",piotroski,False,3,9,33.3,23.46,6.98,2.78,39.88,—,1.62,25.25,"520,853",—
+SLDE,"Slide Insurance Holdings, Inc.",lynch,False,1,4,25.0,23.46,6.98,2.78,39.88,—,1.62,25.25,"520,853",—
+SLDE,"Slide Insurance Holdings, Inc.",netnet,False,1,4,25.0,23.46,6.98,2.78,39.88,—,1.62,25.25,"520,853",—
+SLDE,"Slide Insurance Holdings, Inc.",custom,False,0,0,0.0,23.46,6.98,2.78,39.88,—,1.62,25.25,"520,853",—
+SLV,iShares Silver Trust,greenblatt,False,1,3,33.3,62.77,1.53,—,—,—,—,—,14M,—
+SLV,iShares Silver Trust,netnet,False,1,4,25.0,62.77,1.53,—,—,—,—,—,14M,—
+SLV,iShares Silver Trust,graham,False,2,9,22.2,62.77,1.53,—,—,—,—,—,14M,—
+SLV,iShares Silver Trust,buffett,False,1,6,16.7,62.77,1.53,—,—,—,—,—,14M,—
+SLV,iShares Silver Trust,piotroski,False,0,9,0.0,62.77,1.53,—,—,—,—,—,14M,—
+SLV,iShares Silver Trust,custom,False,0,0,0.0,62.77,1.53,—,—,—,—,—,14M,—
+SBC,SBC Medical Group Holdings Incorporated,graham,False,6,9,66.7,4.11,8.22,1.71,20.54,3.78,0.47,5.21,"84,903",—
+SBC,SBC Medical Group Holdings Incorporated,buffett,False,4,6,66.7,4.11,8.22,1.71,20.54,3.78,0.47,5.21,"84,903",—
+SBC,SBC Medical Group Holdings Incorporated,greenblatt,False,2,3,66.7,4.11,8.22,1.71,20.54,3.78,0.47,5.21,"84,903",—
+SBC,SBC Medical Group Holdings Incorporated,netnet,False,2,4,50.0,4.11,8.22,1.71,20.54,3.78,0.47,5.21,"84,903",—
