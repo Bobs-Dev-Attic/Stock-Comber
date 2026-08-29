@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-08-29 18:26 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-08-29 21:10 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **25** strategy matches passed.
+Screened **75** companies · **23** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| PPLT | abrdn Platinum ETF Trust | greenblatt | ✅ | 100% | 16.49 | 0.16 | 0.07 | 46.86 | — | 0.00 | 6M | — |
-| PPLT | abrdn Platinum ETF Trust | lynch | ✅ | 75% | 16.49 | 0.16 | 0.07 | 46.86 | — | 0.00 | 6M | — |
-| SLDE | Slide Insurance Holdings, In | greenblatt | ✅ | 100% | 23.48 | 6.99 | 2.78 | 39.88 | — | 1.62 | 726,587 | — |
-| CASH | PATHWARD FINANCIAL, INC. | greenblatt | ✅ | 100% | 81.50 | 10.36 | 2.23 | 21.66 | — | 7.36 | 203,021 | — |
-| CASH | PATHWARD FINANCIAL, INC. | buffett | ✅ | 83% | 81.50 | 10.36 | 2.23 | 21.66 | — | 7.36 | 203,021 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | piotroski | ✅ | 100% | 175 | 24.73 | 8.48 | 34.27 | 1.46 | — | 226,008 | — |
+| SIVR | abrdn Silver ETF Trust | greenblatt | ✅ | 100% | 63.13 | 1.34 | 0.70 | 52.24 | — | 0.00 | 3M | — |
+| SIVR | abrdn Silver ETF Trust | lynch | ✅ | 75% | 63.13 | 1.34 | 0.70 | 52.24 | — | 0.00 | 3M | — |
+| SBC | SBC Medical Group Holdings I | lynch | ✅ | 75% | 4.05 | 8.10 | 1.68 | 20.54 | 3.78 | 0.47 | 92,762 | — |
+| EXLS | EXLSERVICE HOLDINGS, INC. | piotroski | ✅ | 89% | 38.40 | 24.94 | 6.84 | 27.50 | 2.56 | 0.87 | 3M | — |
+| EXLS | EXLSERVICE HOLDINGS, INC. | buffett | ✅ | 83% | 38.40 | 24.94 | 6.84 | 27.50 | 2.56 | 0.87 | 3M | — |
 | BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 155 | 21.07 | 3.61 | 17.13 | 2.65 | 0.86 | 337,944 | — |
 | BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 155 | 21.07 | 3.61 | 17.13 | 2.65 | 0.86 | 337,944 | — |
-| AIV | Apartment Investment and Man | greenblatt | ✅ | 100% | 2.55 | 0.66 | 0.99 | 151 | — | 3.10 | 2M | — |
+| GLRE | GREENLIGHT CAPITAL RE, LTD. | piotroski | ✅ | 78% | 15.37 | 7.08 | 0.75 | 10.57 | — | 2.06 | 147,288 | — |
 | AREC | AMERICAN RESOURCES CORPORATI | greenblatt | ✅ | 100% | 2.40 | 3.81 | 2.21 | 58.44 | 2.19 | 0.80 | 2M | — |
-| ACIC | American Coastal Insurance C | greenblatt | ✅ | 100% | 9.50 | 4.42 | 1.49 | 33.64 | — | 2.38 | 170,264 | — |
-| EVR | EVERCORE INC. | buffett | ✅ | 83% | 290 | 20.65 | 6.02 | 29.14 | 2.16 | 1.50 | 356,767 | — |
-| EVR | EVERCORE INC. | piotroski | ✅ | 78% | 290 | 20.65 | 6.02 | 29.14 | 2.16 | 1.50 | 356,767 | — |
-| MEDP | Medpace Holdings, Inc. | buffett | ✅ | 83% | 601 | 39.31 | 38.63 | 98.27 | 0.74 | 3.30 | 186,917 | — |
-| MEDP | Medpace Holdings, Inc. | piotroski | ✅ | 78% | 601 | 39.31 | 38.63 | 98.27 | 0.74 | 3.30 | 186,917 | — |
-| CTRE | CareTrust REIT, Inc. | lynch | ✅ | 100% | 39.03 | 24.86 | 1.97 | 7.94 | — | 0.27 | 1M | — |
-| OSW | OneSpaWorld Holdings Limited | piotroski | ✅ | 78% | 25.26 | 36.61 | 4.83 | 13.20 | 1.91 | 0.30 | 561,719 | — |
-| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 139 | 21.97 | 2.31 | 10.49 | 1.53 | — | 349,199 | — |
-| ADC | AGREE REALTY CORPORATION | lynch | ✅ | 75% | 73.20 | 41.36 | 1.30 | 3.26 | — | 0.56 | 666,403 | — |
-| KNTK | KINETIK HOLDINGS INC. | lynch | ✅ | 75% | 53.81 | 20.46 | — | -31.53 | 0.69 | -7.37 | 869,329 | — |
-| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.47 | 20.32 | 0.80 | 3.99 | 9.18 | 0.34 | 110,427 | — |
-| MOS | MOSAIC CO | piotroski | ✅ | 89% | 23.60 | 13.88 | 0.62 | 4.47 | 1.32 | — | 5M | — |
-| LW | Lamb Weston Holdings, Inc. | piotroski | ✅ | 78% | 54.98 | 26.43 | 4.19 | 15.89 | 1.42 | — | 1M | — |
+| PJT | PJT Partners Inc. | buffett | ✅ | 83% | 183 | — | — | 58.43 | — | 2.71 | 393,652 | — |
+| PJT | PJT Partners Inc. | piotroski | ✅ | 78% | 183 | — | — | 58.43 | — | 2.71 | 393,652 | — |
+| FSS | FEDERAL SIGNAL CORPORATION | lynch | ✅ | 75% | 118 | 29.46 | 5.26 | 17.84 | 3.02 | 0.73 | 422,005 | — |
+| MEDP | Medpace Holdings, Inc. | buffett | ✅ | 83% | 601 | 39.31 | 38.63 | 98.27 | 0.74 | 3.30 | 186,746 | — |
+| MEDP | Medpace Holdings, Inc. | piotroski | ✅ | 78% | 601 | 39.31 | 38.63 | 98.27 | 0.74 | 3.30 | 186,746 | — |
+| HAFC | HANMI FINANCIAL CORPORATION | piotroski | ✅ | 89% | 31.14 | 12.41 | 1.17 | 9.55 | — | 8.88 | 162,462 | — |
+| CPK | CHESAPEAKE UTILITIES CORP | piotroski | ✅ | 78% | 133 | 22.23 | 1.95 | 8.78 | 0.45 | — | 131,889 | — |
+| CBL | CBL & ASSOCIATES PROPERTIES, | piotroski | ✅ | 78% | 55.04 | 12.68 | 4.53 | 36.26 | — | 6.31 | 134,950 | — |
+| FAF | FIRST AMERICAN FINANCIAL COR | piotroski | ✅ | 89% | 74.47 | 12.41 | 1.40 | 11.31 | — | 1.95 | 889,641 | — |
+| AIOT | POWERFLEET, INC. | piotroski | ✅ | 78% | 3.05 | — | 0.86 | -4.32 | 1.13 | 1.00 | 2M | — |
+| LOCO | EL POLLO LOCO HOLDINGS, INC. | piotroski | ✅ | 89% | 15.31 | 17.01 | 1.55 | 9.10 | 0.32 | 1.08 | 162,043 | — |
+| TRC | TEJON RANCH CO. | piotroski | ✅ | 78% | 16.20 | — | 0.92 | 0.02 | 4.14 | 0.29 | 182,489 | — |
+| WGO | WINNEBAGO INDUSTRIES, INC. | piotroski | ✅ | 89% | 30.60 | 33.63 | 0.71 | 2.10 | 2.42 | 0.76 | 429,950 | — |
 | AVNW | AVIAT NETWORKS, INC. | piotroski | ✅ | 78% | 20.00 | 105 | 0.97 | 0.95 | 1.97 | 1.24 | 366,306 | — |
-| OMCL | OMNICELL, INC | piotroski | ✅ | 78% | 33.08 | 827 | 1.25 | 0.17 | 1.43 | 0.60 | 538,712 | — |
-| PPLT | abrdn Platinum ETF Trust | graham | ▫️ | 56% | 16.49 | 0.16 | 0.07 | 46.86 | — | 0.00 | 6M | — |
-| PPLT | abrdn Platinum ETF Trust | buffett | ▫️ | 50% | 16.49 | 0.16 | 0.07 | 46.86 | — | 0.00 | 6M | — |
-| PPLT | abrdn Platinum ETF Trust | piotroski | ▫️ | 33% | 16.49 | 0.16 | 0.07 | 46.86 | — | 0.00 | 6M | — |
-| PPLT | abrdn Platinum ETF Trust | netnet | ▫️ | 25% | 16.49 | 0.16 | 0.07 | 46.86 | — | 0.00 | 6M | — |
-| PPLT | abrdn Platinum ETF Trust | custom | ▫️ | 0% | 16.49 | 0.16 | 0.07 | 46.86 | — | 0.00 | 6M | — |
-| SLDE | Slide Insurance Holdings, In | graham | ▫️ | 44% | 23.48 | 6.99 | 2.78 | 39.88 | — | 1.62 | 726,587 | — |
-| SLDE | Slide Insurance Holdings, In | buffett | ▫️ | 33% | 23.48 | 6.99 | 2.78 | 39.88 | — | 1.62 | 726,587 | — |
-| SLDE | Slide Insurance Holdings, In | piotroski | ▫️ | 33% | 23.48 | 6.99 | 2.78 | 39.88 | — | 1.62 | 726,587 | — |
-| SLDE | Slide Insurance Holdings, In | lynch | ▫️ | 25% | 23.48 | 6.99 | 2.78 | 39.88 | — | 1.62 | 726,587 | — |
-| SLDE | Slide Insurance Holdings, In | netnet | ▫️ | 25% | 23.48 | 6.99 | 2.78 | 39.88 | — | 1.62 | 726,587 | — |
-| SLDE | Slide Insurance Holdings, In | custom | ▫️ | 0% | 23.48 | 6.99 | 2.78 | 39.88 | — | 1.62 | 726,587 | — |
-| CASH | PATHWARD FINANCIAL, INC. | piotroski | ▫️ | 67% | 81.50 | 10.36 | 2.23 | 21.66 | — | 7.36 | 203,021 | — |
-| CASH | PATHWARD FINANCIAL, INC. | graham | ▫️ | 56% | 81.50 | 10.36 | 2.23 | 21.66 | — | 7.36 | 203,021 | — |
-| CASH | PATHWARD FINANCIAL, INC. | lynch | ▫️ | 50% | 81.50 | 10.36 | 2.23 | 21.66 | — | 7.36 | 203,021 | — |
-| CASH | PATHWARD FINANCIAL, INC. | netnet | ▫️ | 25% | 81.50 | 10.36 | 2.23 | 21.66 | — | 7.36 | 203,021 | — |
-| CASH | PATHWARD FINANCIAL, INC. | custom | ▫️ | 0% | 81.50 | 10.36 | 2.23 | 21.66 | — | 7.36 | 203,021 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | buffett | ▫️ | 67% | 175 | 24.73 | 8.48 | 34.27 | 1.46 | — | 226,008 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | greenblatt | ▫️ | 67% | 175 | 24.73 | 8.48 | 34.27 | 1.46 | — | 226,008 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | graham | ▫️ | 33% | 175 | 24.73 | 8.48 | 34.27 | 1.46 | — | 226,008 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | lynch | ▫️ | 25% | 175 | 24.73 | 8.48 | 34.27 | 1.46 | — | 226,008 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | netnet | ▫️ | 25% | 175 | 24.73 | 8.48 | 34.27 | 1.46 | — | 226,008 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | custom | ▫️ | 0% | 175 | 24.73 | 8.48 | 34.27 | 1.46 | — | 226,008 | — |
-| BOOT | Boot Barn Holdings, Inc. | graham | ▫️ | 67% | 155 | 21.07 | 3.61 | 17.13 | 2.65 | 0.86 | 337,944 | — |
-| BOOT | Boot Barn Holdings, Inc. | buffett | ▫️ | 67% | 155 | 21.07 | 3.61 | 17.13 | 2.65 | 0.86 | 337,944 | — |
-| BOOT | Boot Barn Holdings, Inc. | greenblatt | ▫️ | 33% | 155 | 21.07 | 3.61 | 17.13 | 2.65 | 0.86 | 337,944 | — |
+| SIVR | abrdn Silver ETF Trust | graham | ▫️ | 56% | 63.13 | 1.34 | 0.70 | 52.24 | — | 0.00 | 3M | — |
+| SIVR | abrdn Silver ETF Trust | buffett | ▫️ | 50% | 63.13 | 1.34 | 0.70 | 52.24 | — | 0.00 | 3M | — |
+| SIVR | abrdn Silver ETF Trust | piotroski | ▫️ | 33% | 63.13 | 1.34 | 0.70 | 52.24 | — | 0.00 | 3M | — |
+| SIVR | abrdn Silver ETF Trust | netnet | ▫️ | 25% | 63.13 | 1.34 | 0.70 | 52.24 | — | 0.00 | 3M | — |
+| SIVR | abrdn Silver ETF Trust | custom | ▫️ | 0% | 63.13 | 1.34 | 0.70 | 52.24 | — | 0.00 | 3M | — |
+| SBC | SBC Medical Group Holdings I | graham | ▫️ | 67% | 4.05 | 8.10 | 1.68 | 20.54 | 3.78 | 0.47 | 92,762 | — |
+| SBC | SBC Medical Group Holdings I | buffett | ▫️ | 67% | 4.05 | 8.10 | 1.68 | 20.54 | 3.78 | 0.47 | 92,762 | — |
+| SBC | SBC Medical Group Holdings I | greenblatt | ▫️ | 67% | 4.05 | 8.10 | 1.68 | 20.54 | 3.78 | 0.47 | 92,762 | — |
+| SBC | SBC Medical Group Holdings I | netnet | ▫️ | 50% | 4.05 | 8.10 | 1.68 | 20.54 | 3.78 | 0.47 | 92,762 | — |
+| SBC | SBC Medical Group Holdings I | piotroski | ▫️ | 44% | 4.05 | 8.10 | 1.68 | 20.54 | 3.78 | 0.47 | 92,762 | — |
+| SBC | SBC Medical Group Holdings I | custom | ▫️ | 0% | 4.05 | 8.10 | 1.68 | 20.54 | 3.78 | 0.47 | 92,762 | — |
+| GSG | iShares S&P GSCI Commodity-I | greenblatt | ▫️ | 33% | 33.39 | 26.50 | — | — | — | — | 2M | — |
+| GSG | iShares S&P GSCI Commodity-I | lynch | ▫️ | 25% | 33.39 | 26.50 | — | — | — | — | 2M | — |
+| GSG | iShares S&P GSCI Commodity-I | netnet | ▫️ | 25% | 33.39 | 26.50 | — | — | — | — | 2M | — |
+| GSG | iShares S&P GSCI Commodity-I | buffett | ▫️ | 17% | 33.39 | 26.50 | — | — | — | — | 2M | — |
+| GSG | iShares S&P GSCI Commodity-I | graham | ▫️ | 0% | 33.39 | 26.50 | — | — | — | — | 2M | — |
+| GSG | iShares S&P GSCI Commodity-I | piotroski | ▫️ | 0% | 33.39 | 26.50 | — | — | — | — | 2M | — |
+| GSG | iShares S&P GSCI Commodity-I | custom | ▫️ | 0% | 33.39 | 26.50 | — | — | — | — | 2M | — |
+| MGY | Magnolia Oil & Gas Corp | piotroski | ▫️ | 67% | 26.25 | 14.98 | 2.44 | 16.27 | 1.54 | — | 3M | — |
+| MGY | Magnolia Oil & Gas Corp | buffett | ▫️ | 50% | 26.25 | 14.98 | 2.44 | 16.27 | 1.54 | — | 3M | — |
+| MGY | Magnolia Oil & Gas Corp | graham | ▫️ | 44% | 26.25 | 14.98 | 2.44 | 16.27 | 1.54 | — | 3M | — |
+| MGY | Magnolia Oil & Gas Corp | greenblatt | ▫️ | 33% | 26.25 | 14.98 | 2.44 | 16.27 | 1.54 | — | 3M | — |
+| MGY | Magnolia Oil & Gas Corp | lynch | ▫️ | 25% | 26.25 | 14.98 | 2.44 | 16.27 | 1.54 | — | 3M | — |
+| MGY | Magnolia Oil & Gas Corp | netnet | ▫️ | 25% | 26.25 | 14.98 | 2.44 | 16.27 | 1.54 | — | 3M | — |
+| MGY | Magnolia Oil & Gas Corp | custom | ▫️ | 0% | 26.25 | 14.98 | 2.44 | 16.27 | 1.54 | — | 3M | — |
+| UNIT | Uniti Group Inc. | greenblatt | ▫️ | 67% | 10.02 | 2.06 | 7.02 | 343 | 0.74 | 30.65 | 2M | — |
+| UNIT | Uniti Group Inc. | graham | ▫️ | 44% | 10.02 | 2.06 | 7.02 | 343 | 0.74 | 30.65 | 2M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
