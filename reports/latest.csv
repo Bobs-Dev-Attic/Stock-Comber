@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-POWL,"Powell Industries, Inc.",greenblatt,True,3,3,100.0,183,12.30,3.47,28.21,2.09,0.73,133,"537,202",—
-POWL,"Powell Industries, Inc.",piotroski,True,7,9,77.8,183,12.30,3.47,28.21,2.09,0.73,133,"537,202",—
-POWL,"Powell Industries, Inc.",lynch,True,3,4,75.0,183,12.30,3.47,28.21,2.09,0.73,133,"537,202",—
+MLI,MUELLER INDUSTRIES INC,buffett,True,6,6,100.0,62.80,9.15,2.18,23.84,5.92,0.15,66.66,1M,—
+MLI,MUELLER INDUSTRIES INC,greenblatt,True,3,3,100.0,62.80,9.15,2.18,23.84,5.92,0.15,66.66,1M,—
+MLI,MUELLER INDUSTRIES INC,lynch,True,4,4,100.0,62.80,9.15,2.18,23.84,5.92,0.15,66.66,1M,—
+MLI,MUELLER INDUSTRIES INC,graham,True,8,9,88.9,62.80,9.15,2.18,23.84,5.92,0.15,66.66,1M,—
+MLI,MUELLER INDUSTRIES INC,piotroski,True,7,9,77.8,62.80,9.15,2.18,23.84,5.92,0.15,66.66,1M,—
+SLDE,"Slide Insurance Holdings, Inc.",greenblatt,True,3,3,100.0,23.48,6.99,2.78,39.88,—,1.62,25.25,"726,587",—
+POWL,"Powell Industries, Inc.",greenblatt,True,3,3,100.0,183,12.30,3.47,28.21,2.09,0.73,133,"536,878",—
+POWL,"Powell Industries, Inc.",piotroski,True,7,9,77.8,183,12.30,3.47,28.21,2.09,0.73,133,"536,878",—
+POWL,"Powell Industries, Inc.",lynch,True,3,4,75.0,183,12.30,3.47,28.21,2.09,0.73,133,"536,878",—
+REFI,"CHICAGO ATLANTIC REAL ESTATE FINANCE, INC.",lynch,True,4,4,100.0,10.68,6.36,0.74,11.70,—,0.38,23.30,"133,421",—
 WING,WINGSTOP INC.,lynch,True,4,4,100.0,114,18.29,—,-23.65,3.26,-1.94,—,"787,354",—
 PLMR,"Palomar Holdings, Inc.",piotroski,True,7,9,77.8,132,18.36,3.84,20.91,—,2.24,74.38,"134,860",—
-AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",piotroski,True,9,9,100.0,175,24.73,8.48,34.27,1.46,—,57.37,"226,008",—
-BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,155,21.07,3.61,17.13,2.65,0.86,84.23,"337,944",—
-BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,155,21.07,3.61,17.13,2.65,0.86,84.23,"337,944",—
-ACIC,American Coastal Insurance Corporation,greenblatt,True,3,3,100.0,9.50,4.42,1.49,33.64,—,2.38,17.57,"170,264",—
-VISN,"Vistance Networks, Inc.",greenblatt,True,3,3,100.0,6.06,0.63,—,-227,3.88,-9.06,—,31M,—
+PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,290,12.68,3.88,30.71,—,5.14,196,"196,333",—
+TREE,"LendingTree, Inc.",greenblatt,True,3,3,100.0,28.96,2.69,1.42,52.76,1.67,1.98,70.33,"552,264",—
+AIV,Apartment Investment and Management Company,greenblatt,True,3,3,100.0,2.55,0.66,0.99,151,—,3.10,14.95,2M,—
+AROC,"Archrock, Inc.",piotroski,True,8,9,88.9,31.24,17.07,3.66,21.61,1.54,1.92,18.75,2M,—
+DAKT,"Daktronics, Inc.",piotroski,True,8,9,88.9,19.30,20.98,3.17,15.09,2.31,—,11.23,"588,096",—
+DAKT,"Daktronics, Inc.",lynch,True,3,4,75.0,19.30,20.98,3.17,15.09,2.31,—,11.23,"588,096",—
+MTCH,"Match Group, Inc.",piotroski,True,8,9,88.9,41.58,17.47,—,-242,1.42,—,—,2M,—
+MTCH,"Match Group, Inc.",lynch,True,3,4,75.0,41.58,17.47,—,-242,1.42,—,—,2M,—
+FTDR,"Frontdoor, Inc.",piotroski,True,8,9,88.9,82.89,24.24,25.52,105,1.55,—,15.81,"303,643",—
+FTDR,"Frontdoor, Inc.",buffett,True,5,6,83.3,82.89,24.24,25.52,105,1.55,—,15.81,"303,643",—
+FSS,FEDERAL SIGNAL CORPORATION,lynch,True,3,4,75.0,118,29.46,5.26,17.84,3.02,0.73,45.03,"422,005",—
+VICR,VICOR CORPORATION,piotroski,True,8,9,88.9,188,71.93,11.99,16.66,8.99,0.10,30.32,"673,335",—
+VICR,VICOR CORPORATION,buffett,True,5,6,83.3,188,71.93,11.99,16.66,8.99,0.10,30.32,"673,335",—
+VICR,VICOR CORPORATION,lynch,True,3,4,75.0,188,71.93,11.99,16.66,8.99,0.10,30.32,"673,335",—
+GPK,Graphic Packaging Holding Co,lynch,True,3,4,75.0,11.56,7.81,1.04,13.31,1.30,—,19.25,4M,—
 HALO,"HALOZYME THERAPEUTICS, INC.",buffett,True,5,6,83.3,105,41.15,267,649,4.66,50.73,4.76,2M,—
-PCTY,PAYLOCITY HOLDING CORPORATION,piotroski,True,8,9,88.9,158,32.10,7.08,22.08,1.09,3.00,49.69,"459,551",—
-NJR,NEW JERSEY RESOURCES CORPORATION,piotroski,True,7,9,77.8,53.60,16.10,2.26,14.03,0.73,—,42.17,"426,184",—
-TRN,TRINITY INDUSTRIES INC,greenblatt,True,3,3,100.0,29.27,9.60,2.25,23.50,—,6.76,29.86,"344,261",—
-TRN,TRINITY INDUSTRIES INC,piotroski,True,7,9,77.8,29.27,9.60,2.25,23.50,—,6.76,29.86,"344,261",—
-KALU,KAISER ALUMINUM CORPORATION,piotroski,True,7,9,77.8,156,23.10,3.15,13.62,2.95,2.10,87.01,"180,378",—
-KALU,KAISER ALUMINUM CORPORATION,lynch,True,3,4,75.0,156,23.10,3.15,13.62,2.95,2.10,87.01,"180,378",—
-DBX,"Dropbox, Inc.",piotroski,True,8,9,88.9,35.70,19.19,—,-28.29,0.63,-2.58,—,3M,—
-CPK,CHESAPEAKE UTILITIES CORP,piotroski,True,7,9,77.8,133,22.23,1.95,8.78,0.45,—,95.61,"131,888",—
-CBL,"CBL & ASSOCIATES PROPERTIES, INC.",piotroski,True,7,9,77.8,55.04,12.68,4.53,36.26,—,6.31,34.45,"134,950",—
-CBU,"COMMUNITY FINANCIAL SYSTEM, INC.",piotroski,True,8,9,88.9,63.16,15.91,1.66,10.49,—,7.63,58.24,"146,981",—
+AGCO,AGCO CORP /DE,piotroski,True,8,9,88.9,113,11.63,1.98,17.00,1.39,1.72,112,1M,—
+CURB,Curbline Properties Corp.,piotroski,True,7,9,77.8,29.99,81.05,1.65,2.09,—,0.29,12.29,1M,—
+CURB,Curbline Properties Corp.,lynch,True,3,4,75.0,29.99,81.05,1.65,2.09,—,0.29,12.29,1M,—
+HLIO,"HELIOS TECHNOLOGIES, INC.",piotroski,True,9,9,100.0,73.08,50.40,2.61,5.20,2.90,0.63,30.21,"219,417",—
+HLIO,"HELIOS TECHNOLOGIES, INC.",lynch,True,3,4,75.0,73.08,50.40,2.61,5.20,2.90,0.63,30.21,"219,417",—
+PAYO,Payoneer Global Inc.,piotroski,True,7,9,77.8,7.11,37.42,3.80,10.39,1.00,11.71,2.83,"872,199",—
 CYH,"COMMUNITY HEALTH SYSTEMS, INC.",piotroski,True,8,9,88.9,2.93,0.78,—,-36.51,1.46,-10.07,—,2M,—
-MAGN,Magnera Corporation,piotroski,True,7,9,77.8,12.40,—,0.41,-14.94,2.37,2.75,—,"327,107",—
-PHIN,PHINIA INC.,piotroski,True,8,9,88.9,68.65,21.19,1.73,8.19,1.86,1.41,53.71,"348,027",—
+VVX,"V2X, Inc.",piotroski,True,9,9,100.0,77.69,31.71,2.28,7.18,1.22,2.02,43.35,"318,225",—
+MAGN,Magnera Corporation,piotroski,True,7,9,77.8,12.40,—,0.41,-14.94,2.37,2.75,—,"327,108",—
+GSHD,"GOOSEHEAD INSURANCE, INC.",lynch,True,3,4,75.0,71.26,68.52,—,-29.14,1.60,-6.05,—,"185,851",—
+MCS,MARCUS CORP,piotroski,True,7,9,77.8,29.02,71.52,1.98,2.77,0.40,—,11.55,"168,663",—
 TRC,TEJON RANCH CO.,piotroski,True,7,9,77.8,16.20,—,0.92,0.02,4.14,0.29,—,"182,489",—
-LW,"Lamb Weston Holdings, Inc.",piotroski,True,7,9,77.8,54.98,26.43,4.19,15.89,1.42,—,24.78,1M,—
-MSGS,MADISON SQUARE GARDEN SPORTS CORP.,piotroski,True,9,9,100.0,389,"1,217",—,-2.95,0.50,-6.84,—,"246,026",—
-POWL,"Powell Industries, Inc.",graham,False,7,9,77.8,183,12.30,3.47,28.21,2.09,0.73,133,"537,202",—
-POWL,"Powell Industries, Inc.",buffett,False,4,6,66.7,183,12.30,3.47,28.21,2.09,0.73,133,"537,202",—
-POWL,"Powell Industries, Inc.",netnet,False,2,4,50.0,183,12.30,3.47,28.21,2.09,0.73,133,"537,202",—
-POWL,"Powell Industries, Inc.",custom,False,0,0,0.0,183,12.30,3.47,28.21,2.09,0.73,133,"537,202",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,piotroski,False,4,9,44.4,26.18,—,—,—,2.10,—,—,"129,116",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,graham,False,3,9,33.3,26.18,—,—,—,2.10,—,—,"129,116",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,buffett,False,2,6,33.3,26.18,—,—,—,2.10,—,—,"129,116",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,greenblatt,False,1,3,33.3,26.18,—,—,—,2.10,—,—,"129,116",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,lynch,False,1,4,25.0,26.18,—,—,—,2.10,—,—,"129,116",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,netnet,False,1,4,25.0,26.18,—,—,—,2.10,—,—,"129,116",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,custom,False,0,0,0.0,26.18,—,—,—,2.10,—,—,"129,116",—
-WING,WINGSTOP INC.,buffett,False,4,6,66.7,114,18.29,—,-23.65,3.26,-1.94,—,"787,354",—
-WING,WINGSTOP INC.,piotroski,False,6,9,66.7,114,18.29,—,-23.65,3.26,-1.94,—,"787,354",—
-WING,WINGSTOP INC.,greenblatt,False,2,3,66.7,114,18.29,—,-23.65,3.26,-1.94,—,"787,354",—
-WING,WINGSTOP INC.,graham,False,3,9,33.3,114,18.29,—,-23.65,3.26,-1.94,—,"787,354",—
-WING,WINGSTOP INC.,netnet,False,1,4,25.0,114,18.29,—,-23.65,3.26,-1.94,—,"787,354",—
-WING,WINGSTOP INC.,custom,False,0,0,0.0,114,18.29,—,-23.65,3.26,-1.94,—,"787,354",—
-PLMR,"Palomar Holdings, Inc.",buffett,False,4,6,66.7,132,18.36,3.84,20.91,—,2.24,74.38,"134,860",—
-PLMR,"Palomar Holdings, Inc.",greenblatt,False,2,3,66.7,132,18.36,3.84,20.91,—,2.24,74.38,"134,860",—
-PLMR,"Palomar Holdings, Inc.",lynch,False,2,4,50.0,132,18.36,3.84,20.91,—,2.24,74.38,"134,860",—
-PLMR,"Palomar Holdings, Inc.",graham,False,4,9,44.4,132,18.36,3.84,20.91,—,2.24,74.38,"134,860",—
-PLMR,"Palomar Holdings, Inc.",netnet,False,1,4,25.0,132,18.36,3.84,20.91,—,2.24,74.38,"134,860",—
-PLMR,"Palomar Holdings, Inc.",custom,False,0,0,0.0,132,18.36,3.84,20.91,—,2.24,74.38,"134,860",—
+NXDR,"Nextdoor Holdings, Inc",piotroski,True,7,9,77.8,2.27,—,2.03,-12.57,14.03,0.13,—,2M,—
+SPHR,SPHERE ENTERTAINMENT CO.,piotroski,True,7,9,77.8,142,191,2.87,1.50,1.09,0.89,28.65,"564,879",—
+WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,8,9,88.9,30.60,33.63,0.71,2.10,2.42,0.76,29.77,"429,950",—
+LILA,Liberty Latin America Ltd.,piotroski,True,7,9,77.8,8.56,—,3.07,-110,1.14,20.09,—,"345,425",—
+MLI,MUELLER INDUSTRIES INC,netnet,False,2,4,50.0,62.80,9.15,2.18,23.84,5.92,0.15,66.66,1M,—
+MLI,MUELLER INDUSTRIES INC,custom,False,0,0,0.0,62.80,9.15,2.18,23.84,5.92,0.15,66.66,1M,—
+SLDE,"Slide Insurance Holdings, Inc.",graham,False,4,9,44.4,23.48,6.99,2.78,39.88,—,1.62,25.25,"726,587",—
+SLDE,"Slide Insurance Holdings, Inc.",buffett,False,2,6,33.3,23.48,6.99,2.78,39.88,—,1.62,25.25,"726,587",—
+SLDE,"Slide Insurance Holdings, Inc.",piotroski,False,3,9,33.3,23.48,6.99,2.78,39.88,—,1.62,25.25,"726,587",—
+SLDE,"Slide Insurance Holdings, Inc.",lynch,False,1,4,25.0,23.48,6.99,2.78,39.88,—,1.62,25.25,"726,587",—
