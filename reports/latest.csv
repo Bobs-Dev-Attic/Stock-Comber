@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-SLDE,"Slide Insurance Holdings, Inc.",greenblatt,True,3,3,100.0,23.48,6.99,2.78,39.88,—,1.62,25.25,"726,587",—
+PPLT,abrdn Platinum ETF Trust,greenblatt,True,3,3,100.0,16.49,0.16,0.07,46.86,—,0.00,730,6M,—
+PPLT,abrdn Platinum ETF Trust,lynch,True,3,4,75.0,16.49,0.16,0.07,46.86,—,0.00,730,6M,—
+GOOGM,Alphabet Inc.,graham,True,9,9,100.0,49.11,4.54,1.45,31.83,2.01,0.43,90.88,"612,228",—
+GOOGM,Alphabet Inc.,buffett,True,6,6,100.0,49.11,4.54,1.45,31.83,2.01,0.43,90.88,"612,228",—
+GOOGM,Alphabet Inc.,greenblatt,True,3,3,100.0,49.11,4.54,1.45,31.83,2.01,0.43,90.88,"612,228",—
+GOOGM,Alphabet Inc.,lynch,True,4,4,100.0,49.11,4.54,1.45,31.83,2.01,0.43,90.88,"612,228",—
 SAFX,"XCF GLOBAL, INC.",greenblatt,True,3,3,100.0,0.36,0.69,1.36,197,0.11,10.14,1.76,3M,—
-SON,Sonoco Products Company,piotroski,True,8,9,88.9,56.47,5.61,1.56,27.75,1.05,2.08,90.68,"722,085",—
-SON,Sonoco Products Company,lynch,True,3,4,75.0,56.47,5.61,1.56,27.75,1.05,2.08,90.68,"722,085",—
-PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,290,12.68,3.88,30.71,—,5.14,196,"196,333",—
-TREE,"LendingTree, Inc.",greenblatt,True,3,3,100.0,28.96,2.69,1.42,52.76,1.67,1.98,70.33,"552,264",—
-AREC,AMERICAN RESOURCES CORPORATION,greenblatt,True,3,3,100.0,2.40,3.81,2.21,58.44,2.19,0.80,3.92,2M,—
-EVR,EVERCORE INC.,buffett,True,5,6,83.3,290,20.65,6.02,29.14,2.16,1.50,123,"356,767",—
-EVR,EVERCORE INC.,piotroski,True,7,9,77.8,290,20.65,6.02,29.14,2.16,1.50,123,"356,767",—
-BY,"Byline Bancorp, Inc.",lynch,True,3,4,75.0,38.30,13.25,1.36,10.26,—,6.61,42.77,"173,411",—
-SHOE,"Shoe Carnival, Inc.",graham,True,8,9,88.9,13.69,7.21,0.55,7.58,3.76,0.74,32.72,"819,980",—
-KEX,KIRBY CORPORATION,piotroski,True,8,9,88.9,139,21.97,2.31,10.49,1.53,—,92.69,"349,199",—
-TRN,TRINITY INDUSTRIES INC,greenblatt,True,3,3,100.0,29.27,9.60,2.25,23.50,—,6.76,29.86,"344,261",—
-TRN,TRINITY INDUSTRIES INC,piotroski,True,7,9,77.8,29.27,9.60,2.25,23.50,—,6.76,29.86,"344,261",—
-WLY,"JOHN WILEY & SONS, INC.",piotroski,True,9,9,100.0,53.71,12.91,3.37,26.13,0.54,2.06,38.61,"380,783",—
-AGCO,AGCO CORP /DE,piotroski,True,8,9,88.9,113,11.63,1.98,17.00,1.39,1.72,112,1M,—
-DRH,DIAMONDROCK HOSPITALITY CO,piotroski,True,7,9,77.8,12.70,28.86,1.83,7.01,—,1.07,8.30,2M,—
-BCPC,Balchem Corporation,piotroski,True,9,9,100.0,178,37.57,4.63,12.31,2.07,0.34,64.20,"150,707",—
-KRT,Karat Packaging Inc.,piotroski,True,7,9,77.8,49.11,31.48,6.63,21.07,2.30,0.88,16.12,"79,523",—
-KNTK,KINETIK HOLDINGS INC.,lynch,True,3,4,75.0,53.81,20.46,—,-31.53,0.69,-7.37,—,"869,329",—
-CURB,Curbline Properties Corp.,piotroski,True,7,9,77.8,29.99,81.05,1.65,2.09,—,0.29,12.29,1M,—
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",piotroski,True,7,9,77.8,9.82,8.12,—,-221,2.06,-5.32,—,3M,—
+REFI,"CHICAGO ATLANTIC REAL ESTATE FINANCE, INC.",lynch,True,4,4,100.0,10.68,6.36,0.74,11.70,—,0.38,23.30,"133,421",—
+PPC,PILGRIM’S PRIDE CORPORATION,piotroski,True,7,9,77.8,31.69,6.98,2.05,29.41,1.47,1.81,39.71,"833,850",—
+SON,Sonoco Products Company,piotroski,True,8,9,88.9,56.47,5.61,1.56,27.75,1.05,2.08,90.68,"722,084",—
+SON,Sonoco Products Company,lynch,True,3,4,75.0,56.47,5.61,1.56,27.75,1.05,2.08,90.68,"722,084",—
+CARG,"CarGurus, Inc.",piotroski,True,8,9,88.9,36.56,23.59,9.81,41.66,2.81,0.77,11.40,"541,705",—
+ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.17,4.12,0.11,4.91,1.93,0.73,1.14,"105,605",—
+WNC,WABASH NATIONAL CORPORATION,greenblatt,True,3,3,100.0,13.33,2.63,1.51,57.56,1.39,2.18,31.68,"641,415",—
+GPK,Graphic Packaging Holding Co,lynch,True,3,4,75.0,11.56,7.81,1.04,13.31,1.30,—,19.25,4M,—
+MEDP,"Medpace Holdings, Inc.",buffett,True,5,6,83.3,601,39.31,38.63,98.27,0.74,3.30,73.11,"186,746",—
+SFM,"Sprouts Farmers Market, Inc.",piotroski,True,7,9,77.8,81.46,15.34,5.73,37.32,0.93,1.96,41.21,1M,—
+MEDP,"Medpace Holdings, Inc.",piotroski,True,7,9,77.8,601,39.31,38.63,98.27,0.74,3.30,73.11,"186,746",—
+HAFC,HANMI FINANCIAL CORPORATION,piotroski,True,8,9,88.9,31.14,12.41,1.17,9.55,—,8.88,38.69,"162,462",—
+AXTA,AXALTA COATING SYSTEMS LTD.,lynch,True,3,4,75.0,37.02,21.28,3.42,16.11,2.06,2.22,20.57,2M,—
+WLY,"JOHN WILEY & SONS, INC.",piotroski,True,9,9,100.0,53.71,12.91,3.37,26.13,0.54,2.06,38.61,"380,781",—
+KRT,Karat Packaging Inc.,piotroski,True,7,9,77.8,49.11,31.48,6.63,21.07,2.30,0.88,16.12,"79,367",—
+BKU,"BankUnited, Inc.",piotroski,True,8,9,88.9,46.39,13.14,1.13,8.79,—,10.47,57.13,"460,225",—
 SSRM,SSR Mining Inc.,piotroski,True,7,9,77.8,37.29,20.16,2.31,11.28,2.08,0.51,25.94,2M,—
+CURB,Curbline Properties Corp.,piotroski,True,7,9,77.8,29.99,81.05,1.65,2.09,—,0.29,12.29,1M,—
 CURB,Curbline Properties Corp.,lynch,True,3,4,75.0,29.99,81.05,1.65,2.09,—,0.29,12.29,1M,—
-FLYW,FLYWIRE CORPORATION,piotroski,True,8,9,88.9,18.79,171,2.87,1.62,1.50,0.50,4.02,1M,—
+FAF,FIRST AMERICAN FINANCIAL CORPORATION,piotroski,True,8,9,88.9,74.47,12.41,1.40,11.31,—,1.95,84.61,"889,507",—
+AIOT,"POWERFLEET, INC.",piotroski,True,7,9,77.8,3.05,—,0.86,-4.32,1.13,1.00,—,2M,—
 MCS,MARCUS CORP,piotroski,True,7,9,77.8,29.02,71.52,1.98,2.77,0.40,—,11.55,"168,663",—
 MOS,MOSAIC CO,piotroski,True,8,9,88.9,23.60,13.88,0.62,4.47,1.32,—,38.07,5M,—
-LW,"Lamb Weston Holdings, Inc.",piotroski,True,7,9,77.8,54.98,26.43,4.19,15.89,1.42,—,24.78,1M,—
 NEOG,Neogen Corporation,piotroski,True,8,9,88.9,11.66,—,1.21,-0.38,3.82,0.60,—,1M,—
-POWW,Outdoor Holding Company,piotroski,True,8,9,88.9,2.18,—,1.09,-1.51,3.96,0.14,—,"475,122",—
-SLDE,"Slide Insurance Holdings, Inc.",graham,False,4,9,44.4,23.48,6.99,2.78,39.88,—,1.62,25.25,"726,587",—
-SLDE,"Slide Insurance Holdings, Inc.",buffett,False,2,6,33.3,23.48,6.99,2.78,39.88,—,1.62,25.25,"726,587",—
-SLDE,"Slide Insurance Holdings, Inc.",piotroski,False,3,9,33.3,23.48,6.99,2.78,39.88,—,1.62,25.25,"726,587",—
-SLDE,"Slide Insurance Holdings, Inc.",lynch,False,1,4,25.0,23.48,6.99,2.78,39.88,—,1.62,25.25,"726,587",—
-SLDE,"Slide Insurance Holdings, Inc.",netnet,False,1,4,25.0,23.48,6.99,2.78,39.88,—,1.62,25.25,"726,587",—
-SLDE,"Slide Insurance Holdings, Inc.",custom,False,0,0,0.0,23.48,6.99,2.78,39.88,—,1.62,25.25,"726,587",—
+MBLY,Mobileye Global Inc.,piotroski,True,7,9,77.8,8.58,—,0.59,-3.30,6.10,0.05,—,3M,—
+PPLT,abrdn Platinum ETF Trust,graham,False,5,9,55.6,16.49,0.16,0.07,46.86,—,0.00,730,6M,—
+PPLT,abrdn Platinum ETF Trust,buffett,False,3,6,50.0,16.49,0.16,0.07,46.86,—,0.00,730,6M,—
+PPLT,abrdn Platinum ETF Trust,piotroski,False,3,9,33.3,16.49,0.16,0.07,46.86,—,0.00,730,6M,—
+PPLT,abrdn Platinum ETF Trust,netnet,False,1,4,25.0,16.49,0.16,0.07,46.86,—,0.00,730,6M,—
+PPLT,abrdn Platinum ETF Trust,custom,False,0,0,0.0,16.49,0.16,0.07,46.86,—,0.00,730,6M,—
+GOOGM,Alphabet Inc.,piotroski,False,6,9,66.7,49.11,4.54,1.45,31.83,2.01,0.43,90.88,"612,228",—
+GOOGM,Alphabet Inc.,netnet,False,2,4,50.0,49.11,4.54,1.45,31.83,2.01,0.43,90.88,"612,228",—
+GOOGM,Alphabet Inc.,custom,False,0,0,0.0,49.11,4.54,1.45,31.83,2.01,0.43,90.88,"612,228",—
 SAFX,"XCF GLOBAL, INC.",graham,False,4,9,44.4,0.36,0.69,1.36,197,0.11,10.14,1.76,3M,—
 SAFX,"XCF GLOBAL, INC.",buffett,False,2,6,33.3,0.36,0.69,1.36,197,0.11,10.14,1.76,3M,—
 SAFX,"XCF GLOBAL, INC.",lynch,False,1,4,25.0,0.36,0.69,1.36,197,0.11,10.14,1.76,3M,—
 SAFX,"XCF GLOBAL, INC.",netnet,False,1,4,25.0,0.36,0.69,1.36,197,0.11,10.14,1.76,3M,—
 SAFX,"XCF GLOBAL, INC.",piotroski,False,1,9,11.1,0.36,0.69,1.36,197,0.11,10.14,1.76,3M,—
 SAFX,"XCF GLOBAL, INC.",custom,False,0,0,0.0,0.36,0.69,1.36,197,0.11,10.14,1.76,3M,—
-GSG,iShares S&P GSCI Commodity-Indexed Trust,greenblatt,False,1,3,33.3,33.39,26.50,—,—,—,—,—,2M,—
-GSG,iShares S&P GSCI Commodity-Indexed Trust,lynch,False,1,4,25.0,33.39,26.50,—,—,—,—,—,2M,—
-GSG,iShares S&P GSCI Commodity-Indexed Trust,netnet,False,1,4,25.0,33.39,26.50,—,—,—,—,—,2M,—
-GSG,iShares S&P GSCI Commodity-Indexed Trust,buffett,False,1,6,16.7,33.39,26.50,—,—,—,—,—,2M,—
-GSG,iShares S&P GSCI Commodity-Indexed Trust,graham,False,0,9,0.0,33.39,26.50,—,—,—,—,—,2M,—
-GSG,iShares S&P GSCI Commodity-Indexed Trust,piotroski,False,0,9,0.0,33.39,26.50,—,—,—,—,—,2M,—
-GSG,iShares S&P GSCI Commodity-Indexed Trust,custom,False,0,0,0.0,33.39,26.50,—,—,—,—,—,2M,—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,piotroski,False,4,9,44.4,26.18,—,—,—,2.10,—,—,"129,116",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,graham,False,3,9,33.3,26.18,—,—,—,2.10,—,—,"129,116",—
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",greenblatt,False,2,3,66.7,9.82,8.12,—,-221,2.06,-5.32,—,3M,—
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",lynch,False,2,4,50.0,9.82,8.12,—,-221,2.06,-5.32,—,3M,—
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",graham,False,4,9,44.4,9.82,8.12,—,-221,2.06,-5.32,—,3M,—
