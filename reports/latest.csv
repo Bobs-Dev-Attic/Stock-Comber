@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-GOOGN,Alphabet Inc.,graham,True,9,9,100.0,47.91,4.43,1.41,31.83,2.01,0.43,90.88,"125,788",—
-GOOGN,Alphabet Inc.,buffett,True,6,6,100.0,47.91,4.43,1.41,31.83,2.01,0.43,90.88,"125,788",—
-GOOGN,Alphabet Inc.,greenblatt,True,3,3,100.0,47.91,4.43,1.41,31.83,2.01,0.43,90.88,"125,788",—
-GOOGN,Alphabet Inc.,lynch,True,4,4,100.0,47.91,4.43,1.41,31.83,2.01,0.43,90.88,"125,788",—
-SBC,SBC Medical Group Holdings Incorporated,lynch,True,3,4,75.0,4.05,8.10,1.68,20.54,3.78,0.47,5.21,"92,762",—
-SM,SM ENERGY CO,piotroski,True,7,9,77.8,36.80,6.52,0.88,13.47,0.69,—,72.85,"787,337",—
+PLMR,"Palomar Holdings, Inc.",piotroski,True,7,9,77.8,133,18.49,3.87,20.91,—,2.24,74.38,"190,522",—
+RRC,RANGE RESOURCES CORP,piotroski,True,8,9,88.9,41.46,15.13,2.30,15.24,0.67,0.72,33.32,2M,—
 AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",piotroski,True,9,9,100.0,175,24.73,8.48,34.27,1.46,—,57.37,"226,008",—
-RILY,"BRC Group Holdings, Inc.",greenblatt,True,3,3,100.0,6.83,0.70,—,-179,—,-10.65,—,"202,258",—
-TRNO,Terreno Realty Corporation,lynch,True,4,4,100.0,66.17,16.92,1.64,9.72,—,0.30,59.59,"88,992",—
-RILY,"BRC Group Holdings, Inc.",lynch,True,3,4,75.0,6.83,0.70,—,-179,—,-10.65,—,"202,258",—
-TRAK,"ReposiTrak, Inc.",lynch,True,4,4,100.0,8.09,23.11,3.13,14.09,6.09,0.12,4.51,"14,565",—
-BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,155,21.07,3.61,17.13,2.65,0.86,84.23,"337,944",—
-BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,155,21.07,3.61,17.13,2.65,0.86,84.23,"337,944",—
-CARG,"CarGurus, Inc.",piotroski,True,8,9,88.9,36.56,23.59,9.81,41.66,2.81,0.77,11.40,"541,705",—
-VISN,"Vistance Networks, Inc.",greenblatt,True,3,3,100.0,6.33,0.66,—,-227,3.88,-9.06,—,5M,—
-BY,"Byline Bancorp, Inc.",lynch,True,3,4,75.0,38.30,13.25,1.36,10.26,—,6.61,42.77,"173,411",—
-MEDP,"Medpace Holdings, Inc.",buffett,True,5,6,83.3,601,39.31,38.63,98.27,0.74,3.30,73.11,"186,917",—
-MEDP,"Medpace Holdings, Inc.",piotroski,True,7,9,77.8,601,39.31,38.63,98.27,0.74,3.30,73.11,"186,917",—
-SFM,"Sprouts Farmers Market, Inc.",piotroski,True,7,9,77.8,81.46,15.34,5.73,37.32,0.93,1.96,41.21,1M,—
+BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,151,20.49,3.51,17.13,2.65,0.86,84.23,"436,446",—
+BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,151,20.49,3.51,17.13,2.65,0.86,84.23,"436,446",—
+FHI,"Federated Hermes, Inc.",greenblatt,True,3,3,100.0,64.41,12.56,4.04,33.69,2.75,0.81,42.89,"417,271",—
+FHI,"Federated Hermes, Inc.",piotroski,True,8,9,88.9,64.41,12.56,4.04,33.69,2.75,0.81,42.89,"417,271",—
+SSD,"Simpson Manufacturing Co., Inc.",buffett,True,5,6,83.3,182,22.10,3.75,17.00,3.54,0.51,94.81,"219,889",—
+SSD,"Simpson Manufacturing Co., Inc.",piotroski,True,7,9,77.8,182,22.10,3.75,17.00,3.54,0.51,94.81,"219,889",—
+GBDC,"Golub Capital BDC, Inc.",lynch,True,3,4,75.0,13.16,9.27,0.88,9.46,—,1.25,21.87,"892,295",—
+EVR,EVERCORE INC.,buffett,True,5,6,83.3,290,20.65,6.02,29.14,2.16,1.50,123,"356,767",—
+EVR,EVERCORE INC.,piotroski,True,7,9,77.8,290,20.65,6.02,29.14,2.16,1.50,123,"356,767",—
+MTCH,"Match Group, Inc.",piotroski,True,8,9,88.9,41.58,17.47,—,-242,1.42,—,—,2M,—
+MTCH,"Match Group, Inc.",lynch,True,3,4,75.0,41.58,17.47,—,-242,1.42,—,—,2M,—
+VNO,Vornado Realty Trust,piotroski,True,7,9,77.8,37.38,8.90,1.26,15.12,—,1.46,53.05,1M,—
+WNC,WABASH NATIONAL CORPORATION,greenblatt,True,3,3,100.0,13.49,2.66,1.53,57.56,1.39,2.18,31.68,"888,793",—
+ALRM,"ALARM.COM HOLDINGS, INC.",piotroski,True,7,9,77.8,57.56,23.40,4.00,15.52,1.92,1.47,28.23,"377,271",—
+TRN,TRINITY INDUSTRIES INC,greenblatt,True,3,3,100.0,28.82,9.45,2.22,23.50,—,6.76,29.86,"429,376",—
 KEX,KIRBY CORPORATION,piotroski,True,8,9,88.9,139,21.97,2.31,10.49,1.53,—,92.69,"349,199",—
-HAFC,HANMI FINANCIAL CORPORATION,piotroski,True,8,9,88.9,31.14,12.41,1.17,9.55,—,8.88,38.69,"162,462",—
-KALU,KAISER ALUMINUM CORPORATION,piotroski,True,7,9,77.8,157,23.26,3.17,13.62,2.95,2.10,87.01,"81,474",—
-KALU,KAISER ALUMINUM CORPORATION,lynch,True,3,4,75.0,157,23.26,3.17,13.62,2.95,2.10,87.01,"81,474",—
+TRN,TRINITY INDUSTRIES INC,piotroski,True,7,9,77.8,28.82,9.45,2.22,23.50,—,6.76,29.86,"429,376",—
+AXTA,AXALTA COATING SYSTEMS LTD.,lynch,True,3,4,75.0,37.02,21.28,3.42,16.11,2.06,2.22,20.57,2M,—
+VCYT,"VERACYTE, INC.",piotroski,True,8,9,88.9,43.19,52.67,2.66,5.07,8.15,0.07,17.32,1M,—
 KRT,Karat Packaging Inc.,piotroski,True,7,9,77.8,49.11,31.48,6.63,21.07,2.30,0.88,16.12,"79,523",—
-BKU,"BankUnited, Inc.",piotroski,True,8,9,88.9,46.39,13.14,1.13,8.79,—,10.47,57.13,"460,225",—
-R,RYDER SYSTEM INC,piotroski,True,9,9,100.0,246,20.59,3.37,16.35,0.89,4.37,140,"130,990",—
-MCS,MARCUS CORP,piotroski,True,7,9,77.8,29.02,71.52,1.98,2.77,0.40,—,11.55,"168,663",—
-SPHR,SPHERE ENTERTAINMENT CO.,piotroski,True,7,9,77.8,142,191,2.87,1.50,1.09,0.89,28.65,"564,879",—
-WRBY,Warby Parker Inc.,piotroski,True,7,9,77.8,25.00,"2,500",8.50,0.45,2.35,0.96,0.81,2M,—
-WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,8,9,88.9,30.60,33.63,0.71,2.10,2.42,0.76,29.77,"429,950",—
-GOOGN,Alphabet Inc.,piotroski,False,6,9,66.7,47.91,4.43,1.41,31.83,2.01,0.43,90.88,"125,788",—
-GOOGN,Alphabet Inc.,netnet,False,2,4,50.0,47.91,4.43,1.41,31.83,2.01,0.43,90.88,"125,788",—
-GOOGN,Alphabet Inc.,custom,False,0,0,0.0,47.91,4.43,1.41,31.83,2.01,0.43,90.88,"125,788",—
-SBC,SBC Medical Group Holdings Incorporated,graham,False,6,9,66.7,4.05,8.10,1.68,20.54,3.78,0.47,5.21,"92,762",—
-SBC,SBC Medical Group Holdings Incorporated,buffett,False,4,6,66.7,4.05,8.10,1.68,20.54,3.78,0.47,5.21,"92,762",—
-SBC,SBC Medical Group Holdings Incorporated,greenblatt,False,2,3,66.7,4.05,8.10,1.68,20.54,3.78,0.47,5.21,"92,762",—
-SBC,SBC Medical Group Holdings Incorporated,netnet,False,2,4,50.0,4.05,8.10,1.68,20.54,3.78,0.47,5.21,"92,762",—
-SBC,SBC Medical Group Holdings Incorporated,piotroski,False,4,9,44.4,4.05,8.10,1.68,20.54,3.78,0.47,5.21,"92,762",—
-SBC,SBC Medical Group Holdings Incorporated,custom,False,0,0,0.0,4.05,8.10,1.68,20.54,3.78,0.47,5.21,"92,762",—
-SM,SM ENERGY CO,graham,False,6,9,66.7,36.80,6.52,0.88,13.47,0.69,—,72.85,"787,337",—
-SM,SM ENERGY CO,greenblatt,False,2,3,66.7,36.80,6.52,0.88,13.47,0.69,—,72.85,"787,337",—
-SM,SM ENERGY CO,lynch,False,1,4,25.0,36.80,6.52,0.88,13.47,0.69,—,72.85,"787,337",—
-SM,SM ENERGY CO,netnet,False,1,4,25.0,36.80,6.52,0.88,13.47,0.69,—,72.85,"787,337",—
-SM,SM ENERGY CO,buffett,False,1,6,16.7,36.80,6.52,0.88,13.47,0.69,—,72.85,"787,337",—
-SM,SM ENERGY CO,custom,False,0,0,0.0,36.80,6.52,0.88,13.47,0.69,—,72.85,"787,337",—
+LCII,LCI INDUSTRIES,piotroski,True,8,9,88.9,101,13.29,1.84,13.83,2.85,1.33,96.57,"333,292",—
+EMBC,EMBECTA CORP.,piotroski,True,7,9,77.8,5.14,3.17,—,-14.66,2.41,—,—,3M,—
+FMNB,FARMERS NATIONAL BANC CORP /OH/,piotroski,True,8,9,88.9,15.68,10.81,1.21,11.24,—,9.80,20.52,"337,384",—
+CURB,Curbline Properties Corp.,piotroski,True,7,9,77.8,29.83,80.62,1.65,2.09,—,0.29,12.29,2M,—
+CURB,Curbline Properties Corp.,lynch,True,3,4,75.0,29.83,80.62,1.65,2.09,—,0.29,12.29,2M,—
+WWW,"WOLVERINE WORLD WIDE, INC.",piotroski,True,7,9,77.8,19.73,17.31,3.95,23.48,1.40,—,11.32,"670,572",—
+GSHD,"GOOSEHEAD INSURANCE, INC.",lynch,True,3,4,75.0,71.26,68.52,—,-29.14,1.60,-6.05,—,"185,851",—
+MSGS,MADISON SQUARE GARDEN SPORTS CORP.,piotroski,True,9,9,100.0,389,"1,217",—,-2.95,0.50,-6.84,—,"246,026",—
+SPHR,SPHERE ENTERTAINMENT CO.,piotroski,True,7,9,77.8,136,184,2.76,1.50,1.09,0.89,28.65,1M,—
+WRBY,Warby Parker Inc.,piotroski,True,7,9,77.8,24.60,"2,460",8.37,0.45,2.35,0.96,0.81,2M,—
+FROG,JFrog Ltd.,piotroski,True,7,9,77.8,100,—,13.10,-8.09,2.14,0.51,—,2M,—
+WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,8,9,88.9,30.09,33.07,0.70,2.10,2.42,0.76,29.77,"507,883",—
+POWW,Outdoor Holding Company,piotroski,True,8,9,88.9,2.18,—,1.09,-1.51,3.96,0.14,—,"475,126",—
+LILA,Liberty Latin America Ltd.,piotroski,True,7,9,77.8,8.56,—,3.07,-110,1.14,20.09,—,"345,425",—
 ARLP,ALLIANCE RESOURCE PARTNERS LP,piotroski,False,4,9,44.4,26.18,—,—,—,2.10,—,—,"129,116",—
 ARLP,ALLIANCE RESOURCE PARTNERS LP,graham,False,3,9,33.3,26.18,—,—,—,2.10,—,—,"129,116",—
 ARLP,ALLIANCE RESOURCE PARTNERS LP,buffett,False,2,6,33.3,26.18,—,—,—,2.10,—,—,"129,116",—
 ARLP,ALLIANCE RESOURCE PARTNERS LP,greenblatt,False,1,3,33.3,26.18,—,—,—,2.10,—,—,"129,116",—
 ARLP,ALLIANCE RESOURCE PARTNERS LP,lynch,False,1,4,25.0,26.18,—,—,—,2.10,—,—,"129,116",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,netnet,False,1,4,25.0,26.18,—,—,—,2.10,—,—,"129,116",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,custom,False,0,0,0.0,26.18,—,—,—,2.10,—,—,"129,116",—
+PLMR,"Palomar Holdings, Inc.",buffett,False,4,6,66.7,133,18.49,3.87,20.91,—,2.24,74.38,"190,522",—
+PLMR,"Palomar Holdings, Inc.",greenblatt,False,2,3,66.7,133,18.49,3.87,20.91,—,2.24,74.38,"190,522",—
+PLMR,"Palomar Holdings, Inc.",lynch,False,2,4,50.0,133,18.49,3.87,20.91,—,2.24,74.38,"190,522",—
+PLMR,"Palomar Holdings, Inc.",graham,False,4,9,44.4,133,18.49,3.87,20.91,—,2.24,74.38,"190,522",—
+PLMR,"Palomar Holdings, Inc.",netnet,False,1,4,25.0,133,18.49,3.87,20.91,—,2.24,74.38,"190,522",—
+PLMR,"Palomar Holdings, Inc.",custom,False,0,0,0.0,133,18.49,3.87,20.91,—,2.24,74.38,"190,522",—
