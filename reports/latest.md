@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-08-31 21:06 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-01 05:12 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **37** strategy matches passed.
+Screened **75** companies · **36** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| PLMR | Palomar Holdings, Inc. | piotroski | ✅ | 78% | 133 | 18.49 | 3.87 | 20.91 | — | 2.24 | 190,522 | — |
-| RRC | RANGE RESOURCES CORP | piotroski | ✅ | 89% | 41.46 | 15.13 | 2.30 | 15.24 | 0.67 | 0.72 | 2M | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | piotroski | ✅ | 100% | 175 | 24.73 | 8.48 | 34.27 | 1.46 | — | 226,008 | — |
-| BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 151 | 20.49 | 3.51 | 17.13 | 2.65 | 0.86 | 436,446 | — |
-| BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 151 | 20.49 | 3.51 | 17.13 | 2.65 | 0.86 | 436,446 | — |
-| FHI | Federated Hermes, Inc. | greenblatt | ✅ | 100% | 64.41 | 12.56 | 4.04 | 33.69 | 2.75 | 0.81 | 417,271 | — |
-| FHI | Federated Hermes, Inc. | piotroski | ✅ | 89% | 64.41 | 12.56 | 4.04 | 33.69 | 2.75 | 0.81 | 417,271 | — |
-| SSD | Simpson Manufacturing Co., I | buffett | ✅ | 83% | 182 | 22.10 | 3.75 | 17.00 | 3.54 | 0.51 | 219,889 | — |
-| SSD | Simpson Manufacturing Co., I | piotroski | ✅ | 78% | 182 | 22.10 | 3.75 | 17.00 | 3.54 | 0.51 | 219,889 | — |
-| GBDC | Golub Capital BDC, Inc. | lynch | ✅ | 75% | 13.16 | 9.27 | 0.88 | 9.46 | — | 1.25 | 892,295 | — |
-| EVR | EVERCORE INC. | buffett | ✅ | 83% | 290 | 20.65 | 6.02 | 29.14 | 2.16 | 1.50 | 356,767 | — |
-| EVR | EVERCORE INC. | piotroski | ✅ | 78% | 290 | 20.65 | 6.02 | 29.14 | 2.16 | 1.50 | 356,767 | — |
-| MTCH | Match Group, Inc. | piotroski | ✅ | 89% | 41.58 | 17.47 | — | -242 | 1.42 | — | 2M | — |
-| MTCH | Match Group, Inc. | lynch | ✅ | 75% | 41.58 | 17.47 | — | -242 | 1.42 | — | 2M | — |
-| VNO | Vornado Realty Trust | piotroski | ✅ | 78% | 37.38 | 8.90 | 1.26 | 15.12 | — | 1.46 | 1M | — |
-| WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 13.49 | 2.66 | 1.53 | 57.56 | 1.39 | 2.18 | 888,793 | — |
-| ALRM | ALARM.COM HOLDINGS, INC. | piotroski | ✅ | 78% | 57.56 | 23.40 | 4.00 | 15.52 | 1.92 | 1.47 | 377,271 | — |
-| TRN | TRINITY INDUSTRIES INC | greenblatt | ✅ | 100% | 28.82 | 9.45 | 2.22 | 23.50 | — | 6.76 | 429,376 | — |
-| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 139 | 21.97 | 2.31 | 10.49 | 1.53 | — | 349,199 | — |
-| TRN | TRINITY INDUSTRIES INC | piotroski | ✅ | 78% | 28.82 | 9.45 | 2.22 | 23.50 | — | 6.76 | 429,376 | — |
-| AXTA | AXALTA COATING SYSTEMS LTD. | lynch | ✅ | 75% | 37.02 | 21.28 | 3.42 | 16.11 | 2.06 | 2.22 | 2M | — |
-| VCYT | VERACYTE, INC. | piotroski | ✅ | 89% | 43.19 | 52.67 | 2.66 | 5.07 | 8.15 | 0.07 | 1M | — |
-| KRT | Karat Packaging Inc. | piotroski | ✅ | 78% | 49.11 | 31.48 | 6.63 | 21.07 | 2.30 | 0.88 | 79,523 | — |
-| LCII | LCI INDUSTRIES | piotroski | ✅ | 89% | 101 | 13.29 | 1.84 | 13.83 | 2.85 | 1.33 | 333,292 | — |
-| EMBC | EMBECTA CORP. | piotroski | ✅ | 78% | 5.14 | 3.17 | — | -14.66 | 2.41 | — | 3M | — |
-| FMNB | FARMERS NATIONAL BANC CORP / | piotroski | ✅ | 89% | 15.68 | 10.81 | 1.21 | 11.24 | — | 9.80 | 337,384 | — |
-| CURB | Curbline Properties Corp. | piotroski | ✅ | 78% | 29.83 | 80.62 | 1.65 | 2.09 | — | 0.29 | 2M | — |
-| CURB | Curbline Properties Corp. | lynch | ✅ | 75% | 29.83 | 80.62 | 1.65 | 2.09 | — | 0.29 | 2M | — |
-| WWW | WOLVERINE WORLD WIDE, INC. | piotroski | ✅ | 78% | 19.73 | 17.31 | 3.95 | 23.48 | 1.40 | — | 670,572 | — |
-| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 71.26 | 68.52 | — | -29.14 | 1.60 | -6.05 | 185,851 | — |
-| MSGS | MADISON SQUARE GARDEN SPORTS | piotroski | ✅ | 100% | 389 | 1,217 | — | -2.95 | 0.50 | -6.84 | 246,026 | — |
-| SPHR | SPHERE ENTERTAINMENT CO. | piotroski | ✅ | 78% | 136 | 184 | 2.76 | 1.50 | 1.09 | 0.89 | 1M | — |
-| WRBY | Warby Parker Inc. | piotroski | ✅ | 78% | 24.60 | 2,460 | 8.37 | 0.45 | 2.35 | 0.96 | 2M | — |
-| FROG | JFrog Ltd. | piotroski | ✅ | 78% | 100 | — | 13.10 | -8.09 | 2.14 | 0.51 | 2M | — |
-| WGO | WINNEBAGO INDUSTRIES, INC. | piotroski | ✅ | 89% | 30.09 | 33.07 | 0.70 | 2.10 | 2.42 | 0.76 | 507,883 | — |
-| POWW | Outdoor Holding Company | piotroski | ✅ | 89% | 2.18 | — | 1.09 | -1.51 | 3.96 | 0.14 | 475,126 | — |
-| LILA | Liberty Latin America Ltd. | piotroski | ✅ | 78% | 8.56 | — | 3.07 | -110 | 1.14 | 20.09 | 345,425 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | piotroski | ▫️ | 44% | 26.18 | — | — | — | 2.10 | — | 129,116 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | graham | ▫️ | 33% | 26.18 | — | — | — | 2.10 | — | 129,116 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | buffett | ▫️ | 33% | 26.18 | — | — | — | 2.10 | — | 129,116 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | greenblatt | ▫️ | 33% | 26.18 | — | — | — | 2.10 | — | 129,116 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | lynch | ▫️ | 25% | 26.18 | — | — | — | 2.10 | — | 129,116 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | netnet | ▫️ | 25% | 26.18 | — | — | — | 2.10 | — | 129,116 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | custom | ▫️ | 0% | 26.18 | — | — | — | 2.10 | — | 129,116 | — |
-| PLMR | Palomar Holdings, Inc. | buffett | ▫️ | 67% | 133 | 18.49 | 3.87 | 20.91 | — | 2.24 | 190,522 | — |
-| PLMR | Palomar Holdings, Inc. | greenblatt | ▫️ | 67% | 133 | 18.49 | 3.87 | 20.91 | — | 2.24 | 190,522 | — |
-| PLMR | Palomar Holdings, Inc. | lynch | ▫️ | 50% | 133 | 18.49 | 3.87 | 20.91 | — | 2.24 | 190,522 | — |
-| PLMR | Palomar Holdings, Inc. | graham | ▫️ | 44% | 133 | 18.49 | 3.87 | 20.91 | — | 2.24 | 190,522 | — |
-| PLMR | Palomar Holdings, Inc. | netnet | ▫️ | 25% | 133 | 18.49 | 3.87 | 20.91 | — | 2.24 | 190,522 | — |
-| PLMR | Palomar Holdings, Inc. | custom | ▫️ | 0% | 133 | 18.49 | 3.87 | 20.91 | — | 2.24 | 190,522 | — |
+| PD | PAGERDUTY, INC. | greenblatt | ✅ | 100% | 14.14 | 7.56 | 5.19 | 68.37 | 2.01 | 2.84 | 3M | — |
+| SAFX | XCF GLOBAL, INC. | greenblatt | ✅ | 100% | 0.36 | 0.68 | 1.34 | 197 | 0.11 | 10.14 | 2M | — |
+| SON | Sonoco Products Company | piotroski | ✅ | 89% | 55.15 | 5.48 | 1.52 | 27.75 | 1.05 | 2.08 | 1M | — |
+| SON | Sonoco Products Company | lynch | ✅ | 75% | 55.15 | 5.48 | 1.52 | 27.75 | 1.05 | 2.08 | 1M | — |
+| PRI | Primerica, Inc. | piotroski | ✅ | 89% | 288 | 12.56 | 3.84 | 30.71 | — | 5.14 | 184,113 | — |
+| RRC | RANGE RESOURCES CORP | piotroski | ✅ | 89% | 41.32 | 15.08 | 2.29 | 15.24 | 0.67 | 0.72 | 2M | — |
+| RILY | BRC Group Holdings, Inc. | greenblatt | ✅ | 100% | 6.92 | 0.71 | — | -179 | — | -10.65 | 497,201 | — |
+| RILY | BRC Group Holdings, Inc. | lynch | ✅ | 75% | 6.92 | 0.71 | — | -179 | — | -10.65 | 497,201 | — |
+| ANNAW | AleAnna, Inc. | piotroski | ✅ | 78% | 0.17 | 4.12 | 0.11 | 4.91 | 1.93 | 0.73 | 109,731 | — |
+| GLRE | GREENLIGHT CAPITAL RE, LTD. | piotroski | ✅ | 78% | 15.16 | 6.99 | 0.74 | 10.57 | — | 2.06 | 150,639 | — |
+| AIV | Apartment Investment and Man | greenblatt | ✅ | 100% | 2.51 | 0.65 | 0.98 | 151 | — | 3.10 | 5M | — |
+| FHI | Federated Hermes, Inc. | greenblatt | ✅ | 100% | 63.65 | 12.41 | 3.99 | 33.69 | 2.75 | 0.81 | 736,731 | — |
+| FHI | Federated Hermes, Inc. | piotroski | ✅ | 89% | 63.65 | 12.41 | 3.99 | 33.69 | 2.75 | 0.81 | 736,731 | — |
+| AREC | AMERICAN RESOURCES CORPORATI | greenblatt | ✅ | 100% | 2.36 | 3.75 | 2.17 | 58.44 | 2.19 | 0.80 | 1M | — |
+| SSD | Simpson Manufacturing Co., I | buffett | ✅ | 83% | 183 | 22.16 | 3.77 | 17.00 | 3.54 | 0.51 | 250,216 | — |
+| SSD | Simpson Manufacturing Co., I | piotroski | ✅ | 78% | 183 | 22.16 | 3.77 | 17.00 | 3.54 | 0.51 | 250,216 | — |
+| DAKT | Daktronics, Inc. | piotroski | ✅ | 89% | 19.53 | 21.23 | 3.21 | 15.09 | 2.31 | — | 404,965 | — |
+| DAKT | Daktronics, Inc. | lynch | ✅ | 75% | 19.53 | 21.23 | 3.21 | 15.09 | 2.31 | — | 404,965 | — |
+| MTCH | Match Group, Inc. | piotroski | ✅ | 89% | 40.65 | 17.08 | — | -242 | 1.42 | — | 3M | — |
+| MTCH | Match Group, Inc. | lynch | ✅ | 75% | 40.65 | 17.08 | — | -242 | 1.42 | — | 3M | — |
+| WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 13.49 | 2.66 | 1.53 | 57.56 | 1.39 | 2.18 | 888,802 | — |
+| ALRM | ALARM.COM HOLDINGS, INC. | piotroski | ✅ | 78% | 57.56 | 23.40 | 4.00 | 15.52 | 1.92 | 1.47 | 453,480 | — |
+| HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 106 | 41.60 | 270 | 649 | 4.66 | 50.73 | 1M | — |
+| BY | Byline Bancorp, Inc. | lynch | ✅ | 75% | 37.92 | 13.12 | 1.35 | 10.26 | — | 6.61 | 274,775 | — |
+| SFM | Sprouts Farmers Market, Inc. | piotroski | ✅ | 78% | 82.04 | 15.45 | 5.77 | 37.32 | 0.93 | 1.96 | 2M | — |
+| PCTY | PAYLOCITY HOLDING CORPORATIO | piotroski | ✅ | 89% | 160 | 32.57 | 7.18 | 22.08 | 1.09 | 3.00 | 1M | — |
+| TRN | TRINITY INDUSTRIES INC | greenblatt | ✅ | 100% | 28.82 | 9.45 | 2.22 | 23.50 | — | 6.76 | 432,423 | — |
+| TRN | TRINITY INDUSTRIES INC | piotroski | ✅ | 78% | 28.82 | 9.45 | 2.22 | 23.50 | — | 6.76 | 432,423 | — |
+| HAFC | HANMI FINANCIAL CORPORATION | piotroski | ✅ | 89% | 31.00 | 12.35 | 1.17 | 9.55 | — | 8.88 | 202,469 | — |
+| AGCO | AGCO CORP /DE | piotroski | ✅ | 89% | 118 | 12.13 | 2.06 | 17.00 | 1.39 | 1.72 | 2M | — |
+| LCII | LCI INDUSTRIES | piotroski | ✅ | 89% | 101 | 13.29 | 1.84 | 13.83 | 2.85 | 1.33 | 333,296 | — |
+| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.44 | 20.18 | 0.79 | 3.99 | 9.18 | 0.34 | 197,247 | — |
+| FAF | FIRST AMERICAN FINANCIAL COR | piotroski | ✅ | 89% | 73.92 | 12.32 | 1.39 | 11.31 | — | 1.95 | 811,863 | — |
+| MCS | MARCUS CORP | piotroski | ✅ | 78% | 28.43 | 70.07 | 1.94 | 2.77 | 0.40 | — | 200,817 | — |
+| NEOG | Neogen Corporation | piotroski | ✅ | 89% | 11.56 | — | 1.20 | -0.38 | 3.82 | 0.60 | 2M | — |
+| BNED | BARNES & NOBLE EDUCATION, IN | piotroski | ✅ | 89% | 12.10 | 24.69 | 1.42 | 5.73 | 1.71 | 1.51 | 263,465 | — |
+| PD | PAGERDUTY, INC. | piotroski | ▫️ | 67% | 14.14 | 7.56 | 5.19 | 68.37 | 2.01 | 2.84 | 3M | — |
+| PD | PAGERDUTY, INC. | buffett | ▫️ | 50% | 14.14 | 7.56 | 5.19 | 68.37 | 2.01 | 2.84 | 3M | — |
+| PD | PAGERDUTY, INC. | graham | ▫️ | 33% | 14.14 | 7.56 | 5.19 | 68.37 | 2.01 | 2.84 | 3M | — |
+| PD | PAGERDUTY, INC. | lynch | ▫️ | 25% | 14.14 | 7.56 | 5.19 | 68.37 | 2.01 | 2.84 | 3M | — |
+| PD | PAGERDUTY, INC. | netnet | ▫️ | 25% | 14.14 | 7.56 | 5.19 | 68.37 | 2.01 | 2.84 | 3M | — |
+| PD | PAGERDUTY, INC. | custom | ▫️ | 0% | 14.14 | 7.56 | 5.19 | 68.37 | 2.01 | 2.84 | 3M | — |
+| SAFX | XCF GLOBAL, INC. | graham | ▫️ | 44% | 0.36 | 0.68 | 1.34 | 197 | 0.11 | 10.14 | 2M | — |
+| SAFX | XCF GLOBAL, INC. | buffett | ▫️ | 33% | 0.36 | 0.68 | 1.34 | 197 | 0.11 | 10.14 | 2M | — |
+| SAFX | XCF GLOBAL, INC. | lynch | ▫️ | 25% | 0.36 | 0.68 | 1.34 | 197 | 0.11 | 10.14 | 2M | — |
+| SAFX | XCF GLOBAL, INC. | netnet | ▫️ | 25% | 0.36 | 0.68 | 1.34 | 197 | 0.11 | 10.14 | 2M | — |
+| SAFX | XCF GLOBAL, INC. | piotroski | ▫️ | 11% | 0.36 | 0.68 | 1.34 | 197 | 0.11 | 10.14 | 2M | — |
+| SAFX | XCF GLOBAL, INC. | custom | ▫️ | 0% | 0.36 | 0.68 | 1.34 | 197 | 0.11 | 10.14 | 2M | — |
+| SON | Sonoco Products Company | buffett | ▫️ | 67% | 55.15 | 5.48 | 1.52 | 27.75 | 1.05 | 2.08 | 1M | — |
+| SON | Sonoco Products Company | greenblatt | ▫️ | 67% | 55.15 | 5.48 | 1.52 | 27.75 | 1.05 | 2.08 | 1M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
