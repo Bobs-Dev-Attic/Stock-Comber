@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-NSLR,Neostellar Capital Corp.,greenblatt,True,3,3,100.0,10.13,5.69,1.42,23.77,—,0.34,16.90,"159,239",—
-PD,"PAGERDUTY, INC.",greenblatt,True,3,3,100.0,14.14,7.56,5.19,68.37,2.01,2.84,10.71,3M,28.34
-PPC,PILGRIM’S PRIDE CORPORATION,piotroski,True,7,9,77.8,31.38,6.91,2.03,29.41,1.47,1.81,39.71,1M,-23.65
-SON,Sonoco Products Company,piotroski,True,8,9,88.9,55.15,5.48,1.52,27.75,1.05,2.08,90.68,1M,11.64
-SON,Sonoco Products Company,lynch,True,3,4,75.0,55.15,5.48,1.52,27.75,1.05,2.08,90.68,1M,11.64
-RILY,"BRC Group Holdings, Inc.",greenblatt,True,3,3,100.0,6.92,0.71,—,-179,—,-10.65,—,"497,201",33.65
-TRNO,Terreno Realty Corporation,lynch,True,4,4,100.0,66.21,16.93,1.64,9.72,—,0.30,59.59,"853,576",16.53
-RILY,"BRC Group Holdings, Inc.",lynch,True,3,4,75.0,6.92,0.71,—,-179,—,-10.65,—,"497,201",33.65
-SSD,"Simpson Manufacturing Co., Inc.",buffett,True,5,6,83.3,183,22.16,3.77,17.00,3.54,0.51,94.81,"250,216",-19.74
-SSD,"Simpson Manufacturing Co., Inc.",piotroski,True,7,9,77.8,183,22.16,3.77,17.00,3.54,0.51,94.81,"250,216",-19.74
-FTDR,"Frontdoor, Inc.",piotroski,True,8,9,88.9,80.87,23.65,24.90,105,1.55,—,15.81,"462,271",15.27
-FTDR,"Frontdoor, Inc.",buffett,True,5,6,83.3,80.87,23.65,24.90,105,1.55,—,15.81,"462,271",15.27
-VISN,"Vistance Networks, Inc.",greenblatt,True,3,3,100.0,6.31,0.66,—,-227,3.88,-9.06,—,19M,39.10
-WNC,WABASH NATIONAL CORPORATION,greenblatt,True,3,3,100.0,13.49,2.66,1.53,57.56,1.39,2.18,31.68,"888,802",-0.06
-FCFS,"FIRSTCASH HOLDINGS, INC.",piotroski,True,7,9,77.8,214,28.90,4.19,14.51,4.55,1.33,92.39,"359,477",18.70
-KALU,KAISER ALUMINUM CORPORATION,piotroski,True,7,9,77.8,159,23.45,3.19,13.62,2.95,2.10,87.01,"362,804",31.37
-KALU,KAISER ALUMINUM CORPORATION,lynch,True,3,4,75.0,159,23.45,3.19,13.62,2.95,2.10,87.01,"362,804",31.37
-FMNB,FARMERS NATIONAL BANC CORP /OH/,piotroski,True,8,9,88.9,15.61,10.77,1.21,11.24,—,9.80,20.52,"412,553",6.94
-FIGS,"FIGS, Inc.",piotroski,True,8,9,88.9,15.34,80.74,6.29,7.83,4.94,0.33,3.23,2M,34.97
-FIVN,"Five9, Inc.",piotroski,True,8,9,88.9,34.56,76.80,3.87,5.02,4.51,1.28,9.51,1M,57.00
-ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.44,20.18,0.79,3.99,9.18,0.34,5.26,"197,247",-6.20
-VVX,"V2X, Inc.",piotroski,True,9,9,100.0,77.16,31.49,2.26,7.18,1.22,2.02,43.35,"470,541",4.68
-MAGN,Magnera Corporation,piotroski,True,7,9,77.8,12.56,—,0.42,-14.94,2.37,2.75,—,"450,555",2.48
-AIOT,"POWERFLEET, INC.",piotroski,True,7,9,77.8,3.00,—,0.84,-4.32,1.13,1.00,—,1M,—
-LOCO,"EL POLLO LOCO HOLDINGS, INC.",piotroski,True,8,9,88.9,15.27,16.97,1.54,9.10,0.32,1.08,14.16,"166,814",-9.05
-SENS,"Senseonics Holdings, Inc.",piotroski,True,7,9,77.8,9.23,—,6.31,-113,4.83,1.07,—,"366,685",70.29
-AVNW,"AVIAT NETWORKS, INC.",piotroski,True,7,9,77.8,19.93,105,0.97,0.95,1.97,1.24,9.37,"277,101",12.94
-NSLR,Neostellar Capital Corp.,lynch,False,2,4,50.0,10.13,5.69,1.42,23.77,—,0.34,16.90,"159,239",—
-NSLR,Neostellar Capital Corp.,graham,False,4,9,44.4,10.13,5.69,1.42,23.77,—,0.34,16.90,"159,239",—
-NSLR,Neostellar Capital Corp.,piotroski,False,4,9,44.4,10.13,5.69,1.42,23.77,—,0.34,16.90,"159,239",—
-NSLR,Neostellar Capital Corp.,buffett,False,2,6,33.3,10.13,5.69,1.42,23.77,—,0.34,16.90,"159,239",—
-NSLR,Neostellar Capital Corp.,netnet,False,1,4,25.0,10.13,5.69,1.42,23.77,—,0.34,16.90,"159,239",—
-NSLR,Neostellar Capital Corp.,custom,False,0,0,0.0,10.13,5.69,1.42,23.77,—,0.34,16.90,"159,239",—
-PD,"PAGERDUTY, INC.",piotroski,False,6,9,66.7,14.14,7.56,5.19,68.37,2.01,2.84,10.71,3M,28.34
-PD,"PAGERDUTY, INC.",buffett,False,3,6,50.0,14.14,7.56,5.19,68.37,2.01,2.84,10.71,3M,28.34
-PD,"PAGERDUTY, INC.",graham,False,3,9,33.3,14.14,7.56,5.19,68.37,2.01,2.84,10.71,3M,28.34
-PD,"PAGERDUTY, INC.",lynch,False,1,4,25.0,14.14,7.56,5.19,68.37,2.01,2.84,10.71,3M,28.34
-PD,"PAGERDUTY, INC.",netnet,False,1,4,25.0,14.14,7.56,5.19,68.37,2.01,2.84,10.71,3M,28.34
-PD,"PAGERDUTY, INC.",custom,False,0,0,0.0,14.14,7.56,5.19,68.37,2.01,2.84,10.71,3M,28.34
-PPC,PILGRIM’S PRIDE CORPORATION,graham,False,6,9,66.7,31.38,6.91,2.03,29.41,1.47,1.81,39.71,1M,-23.65
-PPC,PILGRIM’S PRIDE CORPORATION,greenblatt,False,2,3,66.7,31.38,6.91,2.03,29.41,1.47,1.81,39.71,1M,-23.65
-PPC,PILGRIM’S PRIDE CORPORATION,buffett,False,3,6,50.0,31.38,6.91,2.03,29.41,1.47,1.81,39.71,1M,-23.65
-PPC,PILGRIM’S PRIDE CORPORATION,lynch,False,2,4,50.0,31.38,6.91,2.03,29.41,1.47,1.81,39.71,1M,-23.65
-PPC,PILGRIM’S PRIDE CORPORATION,netnet,False,1,4,25.0,31.38,6.91,2.03,29.41,1.47,1.81,39.71,1M,-23.65
-PPC,PILGRIM’S PRIDE CORPORATION,custom,False,0,0,0.0,31.38,6.91,2.03,29.41,1.47,1.81,39.71,1M,-23.65
-SON,Sonoco Products Company,buffett,False,4,6,66.7,55.15,5.48,1.52,27.75,1.05,2.08,90.68,1M,11.64
-SON,Sonoco Products Company,greenblatt,False,2,3,66.7,55.15,5.48,1.52,27.75,1.05,2.08,90.68,1M,11.64
-SON,Sonoco Products Company,graham,False,5,9,55.6,55.15,5.48,1.52,27.75,1.05,2.08,90.68,1M,11.64
-SON,Sonoco Products Company,netnet,False,1,4,25.0,55.15,5.48,1.52,27.75,1.05,2.08,90.68,1M,11.64
-SON,Sonoco Products Company,custom,False,0,0,0.0,55.15,5.48,1.52,27.75,1.05,2.08,90.68,1M,11.64
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",piotroski,True,7,9,77.8,9.92,8.20,—,-221,2.06,-5.32,—,3M,10.42
+SM,SM ENERGY CO,piotroski,True,7,9,77.8,38.04,6.74,0.91,13.47,0.69,—,72.85,2M,-25.78
+PPC,PILGRIM’S PRIDE CORPORATION,piotroski,True,7,9,77.8,31.09,6.85,2.01,29.41,1.47,1.81,39.71,1M,-23.65
+SON,Sonoco Products Company,piotroski,True,8,9,88.9,54.09,5.37,1.49,27.75,1.05,2.08,90.68,"799,400",10.71
+SON,Sonoco Products Company,lynch,True,3,4,75.0,54.09,5.37,1.49,27.75,1.05,2.08,90.68,"799,400",10.71
+RILY,"BRC Group Holdings, Inc.",greenblatt,True,3,3,100.0,6.75,0.69,—,-179,—,-10.65,—,"549,341",32.38
+RILY,"BRC Group Holdings, Inc.",lynch,True,3,4,75.0,6.75,0.69,—,-179,—,-10.65,—,"549,341",32.38
+EXLS,"EXLSERVICE HOLDINGS, INC.",piotroski,True,8,9,88.9,37.42,24.30,6.66,27.50,2.56,0.87,13.95,2M,5.29
+EXLS,"EXLSERVICE HOLDINGS, INC.",buffett,True,5,6,83.3,37.42,24.30,6.66,27.50,2.56,0.87,13.95,2M,5.29
+PJT,PJT Partners Inc.,buffett,True,5,6,83.3,180,—,—,58.43,—,2.71,—,"350,677",-21.05
+PJT,PJT Partners Inc.,piotroski,True,7,9,77.8,180,—,—,58.43,—,2.71,—,"350,677",-21.05
+ACIC,American Coastal Insurance Corporation,greenblatt,True,3,3,100.0,9.36,4.35,1.47,33.64,—,2.38,17.57,"329,478",-68.31
+DAKT,"Daktronics, Inc.",piotroski,True,8,9,88.9,19.36,21.04,3.18,15.09,2.31,—,11.23,"520,138",-44.41
+DAKT,"Daktronics, Inc.",lynch,True,3,4,75.0,19.36,21.04,3.18,15.09,2.31,—,11.23,"520,138",-44.41
+WNC,WABASH NATIONAL CORPORATION,greenblatt,True,3,3,100.0,12.77,2.52,1.45,57.56,1.39,2.18,31.68,"700,063",-0.23
+FCFS,"FIRSTCASH HOLDINGS, INC.",piotroski,True,7,9,77.8,216,29.05,4.22,14.51,4.55,1.33,92.39,"424,452",19.12
+OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,22.24,32.23,4.25,13.20,1.91,0.30,9.01,2M,-2.64
+NJR,NEW JERSEY RESOURCES CORPORATION,piotroski,True,7,9,77.8,54.10,16.25,2.28,14.03,0.73,—,42.17,"523,474",-8.86
+TRN,TRINITY INDUSTRIES INC,greenblatt,True,3,3,100.0,27.86,9.13,2.14,23.50,—,6.76,29.86,"535,436",-1.89
+TRN,TRINITY INDUSTRIES INC,piotroski,True,7,9,77.8,27.86,9.13,2.14,23.50,—,6.76,29.86,"535,436",-1.89
+KALU,KAISER ALUMINUM CORPORATION,piotroski,True,7,9,77.8,163,24.12,3.29,13.62,2.95,2.10,87.01,"213,563",34.38
+KALU,KAISER ALUMINUM CORPORATION,lynch,True,3,4,75.0,163,24.12,3.29,13.62,2.95,2.10,87.01,"213,563",34.38
+SIRI,SIRIUS XM HOLDINGS INC.,lynch,True,3,4,75.0,27.62,12.39,0.85,6.96,0.30,1.36,40.31,4M,16.62
+BCPC,Balchem Corporation,piotroski,True,9,9,100.0,173,36.49,4.49,12.31,2.07,0.34,64.20,"158,151",-6.56
+BKU,"BankUnited, Inc.",piotroski,True,8,9,88.9,44.74,12.67,1.09,8.79,—,10.47,57.13,"894,012",-14.71
+FIGS,"FIGS, Inc.",piotroski,True,8,9,88.9,15.26,80.32,6.26,7.83,4.94,0.33,3.23,1M,34.26
+VVX,"V2X, Inc.",piotroski,True,9,9,100.0,77.45,31.61,2.27,7.18,1.22,2.02,43.35,"636,807",4.68
+PHIN,PHINIA INC.,piotroski,True,8,9,88.9,66.82,20.62,1.69,8.19,1.86,1.41,53.71,"331,241",-40.34
+NEOG,Neogen Corporation,piotroski,True,8,9,88.9,11.64,—,1.21,-0.38,3.82,0.60,—,2M,17.23
+AVNW,"AVIAT NETWORKS, INC.",piotroski,True,7,9,77.8,18.66,98.21,0.91,0.95,1.97,1.24,9.37,"201,864",13.60
+LILA,Liberty Latin America Ltd.,piotroski,True,7,9,77.8,8.56,—,3.07,-110,1.14,20.09,—,"278,233",30.16
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",greenblatt,False,2,3,66.7,9.92,8.20,—,-221,2.06,-5.32,—,3M,10.42
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",lynch,False,2,4,50.0,9.92,8.20,—,-221,2.06,-5.32,—,3M,10.42
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",graham,False,4,9,44.4,9.92,8.20,—,-221,2.06,-5.32,—,3M,10.42
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",buffett,False,2,6,33.3,9.92,8.20,—,-221,2.06,-5.32,—,3M,10.42
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",netnet,False,1,4,25.0,9.92,8.20,—,-221,2.06,-5.32,—,3M,10.42
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",custom,False,0,0,0.0,9.92,8.20,—,-221,2.06,-5.32,—,3M,10.42
+SM,SM ENERGY CO,graham,False,6,9,66.7,38.04,6.74,0.91,13.47,0.69,—,72.85,2M,-25.78
+SM,SM ENERGY CO,greenblatt,False,2,3,66.7,38.04,6.74,0.91,13.47,0.69,—,72.85,2M,-25.78
+SM,SM ENERGY CO,lynch,False,1,4,25.0,38.04,6.74,0.91,13.47,0.69,—,72.85,2M,-25.78
+SM,SM ENERGY CO,netnet,False,1,4,25.0,38.04,6.74,0.91,13.47,0.69,—,72.85,2M,-25.78
+SM,SM ENERGY CO,buffett,False,1,6,16.7,38.04,6.74,0.91,13.47,0.69,—,72.85,2M,-25.78
+SM,SM ENERGY CO,custom,False,0,0,0.0,38.04,6.74,0.91,13.47,0.69,—,72.85,2M,-25.78
+PPC,PILGRIM’S PRIDE CORPORATION,graham,False,6,9,66.7,31.09,6.85,2.01,29.41,1.47,1.81,39.71,1M,-23.65
+PPC,PILGRIM’S PRIDE CORPORATION,greenblatt,False,2,3,66.7,31.09,6.85,2.01,29.41,1.47,1.81,39.71,1M,-23.65
+PPC,PILGRIM’S PRIDE CORPORATION,buffett,False,3,6,50.0,31.09,6.85,2.01,29.41,1.47,1.81,39.71,1M,-23.65
+PPC,PILGRIM’S PRIDE CORPORATION,lynch,False,2,4,50.0,31.09,6.85,2.01,29.41,1.47,1.81,39.71,1M,-23.65
+PPC,PILGRIM’S PRIDE CORPORATION,netnet,False,1,4,25.0,31.09,6.85,2.01,29.41,1.47,1.81,39.71,1M,-23.65
+PPC,PILGRIM’S PRIDE CORPORATION,custom,False,0,0,0.0,31.09,6.85,2.01,29.41,1.47,1.81,39.71,1M,-23.65
+SON,Sonoco Products Company,graham,False,6,9,66.7,54.09,5.37,1.49,27.75,1.05,2.08,90.68,"799,400",10.71
