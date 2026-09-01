@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-PD,"PAGERDUTY, INC.",greenblatt,True,3,3,100.0,14.14,7.56,5.19,68.37,2.01,2.84,10.71,3M,—
-SAFX,"XCF GLOBAL, INC.",greenblatt,True,3,3,100.0,0.36,0.68,1.34,197,0.11,10.14,1.76,2M,—
-SON,Sonoco Products Company,piotroski,True,8,9,88.9,55.15,5.48,1.52,27.75,1.05,2.08,90.68,1M,—
-SON,Sonoco Products Company,lynch,True,3,4,75.0,55.15,5.48,1.52,27.75,1.05,2.08,90.68,1M,—
-PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,288,12.56,3.84,30.71,—,5.14,196,"184,113",—
-RRC,RANGE RESOURCES CORP,piotroski,True,8,9,88.9,41.32,15.08,2.29,15.24,0.67,0.72,33.32,2M,—
-RILY,"BRC Group Holdings, Inc.",greenblatt,True,3,3,100.0,6.92,0.71,—,-179,—,-10.65,—,"497,201",—
-RILY,"BRC Group Holdings, Inc.",lynch,True,3,4,75.0,6.92,0.71,—,-179,—,-10.65,—,"497,201",—
+SBC,SBC Medical Group Holdings Incorporated,lynch,True,3,4,75.0,4.02,8.04,1.67,20.54,3.78,0.47,5.21,"187,137",—
 ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.17,4.12,0.11,4.91,1.93,0.73,1.14,"109,731",—
-GLRE,"GREENLIGHT CAPITAL RE, LTD.",piotroski,True,7,9,77.8,15.16,6.99,0.74,10.57,—,2.06,31.65,"150,639",—
 AIV,Apartment Investment and Management Company,greenblatt,True,3,3,100.0,2.51,0.65,0.98,151,—,3.10,14.95,5M,—
-FHI,"Federated Hermes, Inc.",greenblatt,True,3,3,100.0,63.65,12.41,3.99,33.69,2.75,0.81,42.89,"736,731",—
-FHI,"Federated Hermes, Inc.",piotroski,True,8,9,88.9,63.65,12.41,3.99,33.69,2.75,0.81,42.89,"736,731",—
 AREC,AMERICAN RESOURCES CORPORATION,greenblatt,True,3,3,100.0,2.36,3.75,2.17,58.44,2.19,0.80,3.92,1M,—
-SSD,"Simpson Manufacturing Co., Inc.",buffett,True,5,6,83.3,183,22.16,3.77,17.00,3.54,0.51,94.81,"250,216",—
-SSD,"Simpson Manufacturing Co., Inc.",piotroski,True,7,9,77.8,183,22.16,3.77,17.00,3.54,0.51,94.81,"250,216",—
-DAKT,"Daktronics, Inc.",piotroski,True,8,9,88.9,19.53,21.23,3.21,15.09,2.31,—,11.23,"404,965",—
-DAKT,"Daktronics, Inc.",lynch,True,3,4,75.0,19.53,21.23,3.21,15.09,2.31,—,11.23,"404,965",—
-MTCH,"Match Group, Inc.",piotroski,True,8,9,88.9,40.65,17.08,—,-242,1.42,—,—,3M,—
-MTCH,"Match Group, Inc.",lynch,True,3,4,75.0,40.65,17.08,—,-242,1.42,—,—,3M,—
-WNC,WABASH NATIONAL CORPORATION,greenblatt,True,3,3,100.0,13.49,2.66,1.53,57.56,1.39,2.18,31.68,"888,802",—
-ALRM,"ALARM.COM HOLDINGS, INC.",piotroski,True,7,9,77.8,57.56,23.40,4.00,15.52,1.92,1.47,28.23,"453,480",—
-HALO,"HALOZYME THERAPEUTICS, INC.",buffett,True,5,6,83.3,106,41.60,270,649,4.66,50.73,4.76,1M,—
-BY,"Byline Bancorp, Inc.",lynch,True,3,4,75.0,37.92,13.12,1.35,10.26,—,6.61,42.77,"274,775",—
-SFM,"Sprouts Farmers Market, Inc.",piotroski,True,7,9,77.8,82.04,15.45,5.77,37.32,0.93,1.96,41.21,2M,—
+VISN,"Vistance Networks, Inc.",greenblatt,True,3,3,100.0,6.31,0.66,—,-227,3.88,-9.06,—,19M,—
+FCFS,"FIRSTCASH HOLDINGS, INC.",piotroski,True,7,9,77.8,214,28.90,4.19,14.51,4.55,1.33,92.39,"359,477",—
 PCTY,PAYLOCITY HOLDING CORPORATION,piotroski,True,8,9,88.9,160,32.57,7.18,22.08,1.09,3.00,49.69,1M,—
-TRN,TRINITY INDUSTRIES INC,greenblatt,True,3,3,100.0,28.82,9.45,2.22,23.50,—,6.76,29.86,"432,423",—
-TRN,TRINITY INDUSTRIES INC,piotroski,True,7,9,77.8,28.82,9.45,2.22,23.50,—,6.76,29.86,"432,423",—
-HAFC,HANMI FINANCIAL CORPORATION,piotroski,True,8,9,88.9,31.00,12.35,1.17,9.55,—,8.88,38.69,"202,469",—
+SHOE,"Shoe Carnival, Inc.",graham,True,8,9,88.9,13.70,7.21,0.55,7.58,3.76,0.74,32.72,1M,—
+OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,24.83,35.99,4.74,13.20,1.91,0.30,9.01,2M,—
 AGCO,AGCO CORP /DE,piotroski,True,8,9,88.9,118,12.13,2.06,17.00,1.39,1.72,112,2M,—
-LCII,LCI INDUSTRIES,piotroski,True,8,9,88.9,101,13.29,1.84,13.83,2.85,1.33,96.57,"333,296",—
-ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.44,20.18,0.79,3.99,9.18,0.34,5.26,"197,247",—
-FAF,FIRST AMERICAN FINANCIAL CORPORATION,piotroski,True,8,9,88.9,73.92,12.32,1.39,11.31,—,1.95,84.61,"811,863",—
-MCS,MARCUS CORP,piotroski,True,7,9,77.8,28.43,70.07,1.94,2.77,0.40,—,11.55,"200,817",—
-NEOG,Neogen Corporation,piotroski,True,8,9,88.9,11.56,—,1.20,-0.38,3.82,0.60,—,2M,—
-BNED,"BARNES & NOBLE EDUCATION, INC.",piotroski,True,8,9,88.9,12.10,24.69,1.42,5.73,1.71,1.51,9.68,"263,465",—
-PD,"PAGERDUTY, INC.",piotroski,False,6,9,66.7,14.14,7.56,5.19,68.37,2.01,2.84,10.71,3M,—
-PD,"PAGERDUTY, INC.",buffett,False,3,6,50.0,14.14,7.56,5.19,68.37,2.01,2.84,10.71,3M,—
-PD,"PAGERDUTY, INC.",graham,False,3,9,33.3,14.14,7.56,5.19,68.37,2.01,2.84,10.71,3M,—
-PD,"PAGERDUTY, INC.",lynch,False,1,4,25.0,14.14,7.56,5.19,68.37,2.01,2.84,10.71,3M,—
-PD,"PAGERDUTY, INC.",netnet,False,1,4,25.0,14.14,7.56,5.19,68.37,2.01,2.84,10.71,3M,—
-PD,"PAGERDUTY, INC.",custom,False,0,0,0.0,14.14,7.56,5.19,68.37,2.01,2.84,10.71,3M,—
-SAFX,"XCF GLOBAL, INC.",graham,False,4,9,44.4,0.36,0.68,1.34,197,0.11,10.14,1.76,2M,—
-SAFX,"XCF GLOBAL, INC.",buffett,False,2,6,33.3,0.36,0.68,1.34,197,0.11,10.14,1.76,2M,—
-SAFX,"XCF GLOBAL, INC.",lynch,False,1,4,25.0,0.36,0.68,1.34,197,0.11,10.14,1.76,2M,—
-SAFX,"XCF GLOBAL, INC.",netnet,False,1,4,25.0,0.36,0.68,1.34,197,0.11,10.14,1.76,2M,—
-SAFX,"XCF GLOBAL, INC.",piotroski,False,1,9,11.1,0.36,0.68,1.34,197,0.11,10.14,1.76,2M,—
-SAFX,"XCF GLOBAL, INC.",custom,False,0,0,0.0,0.36,0.68,1.34,197,0.11,10.14,1.76,2M,—
-SON,Sonoco Products Company,buffett,False,4,6,66.7,55.15,5.48,1.52,27.75,1.05,2.08,90.68,1M,—
-SON,Sonoco Products Company,greenblatt,False,2,3,66.7,55.15,5.48,1.52,27.75,1.05,2.08,90.68,1M,—
+BCPC,Balchem Corporation,piotroski,True,9,9,100.0,176,37.03,4.56,12.31,2.07,0.34,64.20,"198,246",—
+CPK,CHESAPEAKE UTILITIES CORP,piotroski,True,7,9,77.8,134,22.37,1.96,8.78,0.45,—,95.61,"110,779",—
+BKU,"BankUnited, Inc.",piotroski,True,8,9,88.9,45.60,12.92,1.11,8.79,—,10.47,57.13,1M,—
+EMBC,EMBECTA CORP.,piotroski,True,7,9,77.8,5.14,3.17,—,-14.66,2.41,—,—,3M,—
+SSTK,"SHUTTERSTOCK, INC.",piotroski,True,8,9,88.9,5.54,4.43,0.35,7.83,0.54,1.33,21.23,2M,—
+FIGS,"FIGS, Inc.",piotroski,True,8,9,88.9,15.34,80.74,6.29,7.83,4.94,0.33,3.23,2M,—
+FIVN,"Five9, Inc.",piotroski,True,8,9,88.9,34.56,76.80,3.87,5.02,4.51,1.28,9.51,1M,—
+ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.44,20.18,0.79,3.99,9.18,0.34,5.26,"197,233",—
+MOS,MOSAIC CO,piotroski,True,8,9,88.9,24.12,14.19,0.64,4.47,1.32,—,38.07,7M,—
+MSGS,MADISON SQUARE GARDEN SPORTS CORP.,piotroski,True,9,9,100.0,385,"1,202",—,-2.95,0.50,-6.84,—,"227,912",—
+SPHR,SPHERE ENTERTAINMENT CO.,piotroski,True,7,9,77.8,136,184,2.76,1.50,1.09,0.89,28.65,1M,—
+APPN,APPIAN CORPORATION,piotroski,True,7,9,77.8,42.95,"2,148",—,-2.62,1.15,-15.71,—,"925,547",—
+WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,8,9,88.9,30.09,33.07,0.70,2.10,2.42,0.76,29.77,"508,162",—
+MBLY,Mobileye Global Inc.,piotroski,True,7,9,77.8,8.53,—,0.58,-3.30,6.10,0.05,—,3M,—
+AVNW,"AVIAT NETWORKS, INC.",piotroski,True,7,9,77.8,19.93,105,0.97,0.95,1.97,1.24,9.37,"277,101",—
+SBC,SBC Medical Group Holdings Incorporated,graham,False,6,9,66.7,4.02,8.04,1.67,20.54,3.78,0.47,5.21,"187,137",—
+SBC,SBC Medical Group Holdings Incorporated,buffett,False,4,6,66.7,4.02,8.04,1.67,20.54,3.78,0.47,5.21,"187,137",—
+SBC,SBC Medical Group Holdings Incorporated,greenblatt,False,2,3,66.7,4.02,8.04,1.67,20.54,3.78,0.47,5.21,"187,137",—
+SBC,SBC Medical Group Holdings Incorporated,netnet,False,2,4,50.0,4.02,8.04,1.67,20.54,3.78,0.47,5.21,"187,137",—
+SBC,SBC Medical Group Holdings Incorporated,piotroski,False,4,9,44.4,4.02,8.04,1.67,20.54,3.78,0.47,5.21,"187,137",—
+SBC,SBC Medical Group Holdings Incorporated,custom,False,0,0,0.0,4.02,8.04,1.67,20.54,3.78,0.47,5.21,"187,137",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,piotroski,False,4,9,44.4,26.50,—,—,—,2.10,—,—,"204,383",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,graham,False,3,9,33.3,26.50,—,—,—,2.10,—,—,"204,383",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,buffett,False,2,6,33.3,26.50,—,—,—,2.10,—,—,"204,383",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,greenblatt,False,1,3,33.3,26.50,—,—,—,2.10,—,—,"204,383",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,lynch,False,1,4,25.0,26.50,—,—,—,2.10,—,—,"204,383",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,netnet,False,1,4,25.0,26.50,—,—,—,2.10,—,—,"204,383",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,custom,False,0,0,0.0,26.50,—,—,—,2.10,—,—,"204,383",—
+UNIT,Uniti Group Inc.,greenblatt,False,2,3,66.7,9.92,2.04,6.95,343,0.74,30.65,12.50,2M,—
+UNIT,Uniti Group Inc.,graham,False,4,9,44.4,9.92,2.04,6.95,343,0.74,30.65,12.50,2M,—
+UNIT,Uniti Group Inc.,buffett,False,2,6,33.3,9.92,2.04,6.95,343,0.74,30.65,12.50,2M,—
+UNIT,Uniti Group Inc.,lynch,False,1,4,25.0,9.92,2.04,6.95,343,0.74,30.65,12.50,2M,—
+UNIT,Uniti Group Inc.,netnet,False,1,4,25.0,9.92,2.04,6.95,343,0.74,30.65,12.50,2M,—
+UNIT,Uniti Group Inc.,piotroski,False,2,9,22.2,9.92,2.04,6.95,343,0.74,30.65,12.50,2M,—
+UNIT,Uniti Group Inc.,custom,False,0,0,0.0,9.92,2.04,6.95,343,0.74,30.65,12.50,2M,—
+ANNAW,"AleAnna, Inc.",greenblatt,False,2,3,66.7,0.17,4.12,0.11,4.91,1.93,0.73,1.14,"109,731",—
+ANNAW,"AleAnna, Inc.",graham,False,5,9,55.6,0.17,4.12,0.11,4.91,1.93,0.73,1.14,"109,731",—
+ANNAW,"AleAnna, Inc.",lynch,False,2,4,50.0,0.17,4.12,0.11,4.91,1.93,0.73,1.14,"109,731",—
+ANNAW,"AleAnna, Inc.",netnet,False,1,4,25.0,0.17,4.12,0.11,4.91,1.93,0.73,1.14,"109,731",—
+ANNAW,"AleAnna, Inc.",buffett,False,1,6,16.7,0.17,4.12,0.11,4.91,1.93,0.73,1.14,"109,731",—
