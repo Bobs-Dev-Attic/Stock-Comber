@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-SLDE,"Slide Insurance Holdings, Inc.",greenblatt,True,3,3,100.0,23.29,6.93,2.76,39.88,—,1.62,25.25,1M,—
-POWL,"Powell Industries, Inc.",greenblatt,True,3,3,100.0,172,11.58,3.27,28.21,2.09,0.73,133,"248,707",—
-POWL,"Powell Industries, Inc.",piotroski,True,7,9,77.8,172,11.58,3.27,28.21,2.09,0.73,133,"248,707",—
-POWL,"Powell Industries, Inc.",lynch,True,3,4,75.0,172,11.58,3.27,28.21,2.09,0.73,133,"248,707",—
-PPC,PILGRIM’S PRIDE CORPORATION,piotroski,True,7,9,77.8,31.09,6.85,2.01,29.41,1.47,1.81,39.71,1M,—
-CASH,"PATHWARD FINANCIAL, INC.",greenblatt,True,3,3,100.0,80.34,10.21,2.20,21.66,—,7.36,80.37,"194,681",—
-CASH,"PATHWARD FINANCIAL, INC.",buffett,True,5,6,83.3,80.34,10.21,2.20,21.66,—,7.36,80.37,"194,681",—
-TRAK,"ReposiTrak, Inc.",lynch,True,4,4,100.0,7.93,22.66,3.07,14.09,6.09,0.12,4.51,"52,294",—
-GGG,GRACO INC.,piotroski,True,8,9,88.9,76.91,24.97,4.90,19.66,3.15,—,32.97,"742,417",—
-GGG,GRACO INC.,buffett,True,5,6,83.3,76.91,24.97,4.90,19.66,3.15,—,32.97,"742,417",—
-MTCH,"Match Group, Inc.",piotroski,True,8,9,88.9,41.91,17.61,—,-242,1.42,—,—,4M,—
-MTCH,"Match Group, Inc.",lynch,True,3,4,75.0,41.91,17.61,—,-242,1.42,—,—,4M,—
-SIRI,SIRIUS XM HOLDINGS INC.,lynch,True,3,4,75.0,27.62,12.39,0.85,6.96,0.30,1.36,40.31,4M,—
-FIGS,"FIGS, Inc.",piotroski,True,8,9,88.9,15.26,80.32,6.26,7.83,4.94,0.33,3.23,2M,—
-CYH,"COMMUNITY HEALTH SYSTEMS, INC.",piotroski,True,8,9,88.9,2.93,0.78,—,-36.51,1.46,-10.07,—,1M,—
-MAGN,Magnera Corporation,piotroski,True,7,9,77.8,12.31,—,0.41,-14.94,2.37,2.75,—,"325,784",—
-LW,"Lamb Weston Holdings, Inc.",piotroski,True,7,9,77.8,52.60,25.29,4.01,15.89,1.42,—,24.78,2M,—
-MOS,MOSAIC CO,piotroski,True,8,9,88.9,24.78,14.58,0.65,4.47,1.32,—,38.07,9M,—
-BNED,"BARNES & NOBLE EDUCATION, INC.",piotroski,True,8,9,88.9,11.79,24.06,1.39,5.73,1.71,1.51,9.68,"295,972",—
-WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,8,9,88.9,29.33,32.23,0.68,2.10,2.42,0.76,29.77,"555,374",—
-AVNW,"AVIAT NETWORKS, INC.",piotroski,True,7,9,77.8,19.22,101,0.94,0.95,1.97,1.24,9.37,"107,167",—
-SLDE,"Slide Insurance Holdings, Inc.",graham,False,4,9,44.4,23.29,6.93,2.76,39.88,—,1.62,25.25,1M,—
-SLDE,"Slide Insurance Holdings, Inc.",buffett,False,2,6,33.3,23.29,6.93,2.76,39.88,—,1.62,25.25,1M,—
-SLDE,"Slide Insurance Holdings, Inc.",piotroski,False,3,9,33.3,23.29,6.93,2.76,39.88,—,1.62,25.25,1M,—
-SLDE,"Slide Insurance Holdings, Inc.",lynch,False,1,4,25.0,23.29,6.93,2.76,39.88,—,1.62,25.25,1M,—
-SLDE,"Slide Insurance Holdings, Inc.",netnet,False,1,4,25.0,23.29,6.93,2.76,39.88,—,1.62,25.25,1M,—
-SLDE,"Slide Insurance Holdings, Inc.",custom,False,0,0,0.0,23.29,6.93,2.76,39.88,—,1.62,25.25,1M,—
-POWL,"Powell Industries, Inc.",graham,False,7,9,77.8,172,11.58,3.27,28.21,2.09,0.73,133,"248,707",—
-POWL,"Powell Industries, Inc.",buffett,False,4,6,66.7,172,11.58,3.27,28.21,2.09,0.73,133,"248,707",—
-POWL,"Powell Industries, Inc.",netnet,False,2,4,50.0,172,11.58,3.27,28.21,2.09,0.73,133,"248,707",—
-POWL,"Powell Industries, Inc.",custom,False,0,0,0.0,172,11.58,3.27,28.21,2.09,0.73,133,"248,707",—
-GSG,iShares S&P GSCI Commodity-Indexed Trust,greenblatt,False,1,3,33.3,34.85,27.66,—,—,—,—,—,2M,—
-GSG,iShares S&P GSCI Commodity-Indexed Trust,lynch,False,1,4,25.0,34.85,27.66,—,—,—,—,—,2M,—
-GSG,iShares S&P GSCI Commodity-Indexed Trust,netnet,False,1,4,25.0,34.85,27.66,—,—,—,—,—,2M,—
-GSG,iShares S&P GSCI Commodity-Indexed Trust,buffett,False,1,6,16.7,34.85,27.66,—,—,—,—,—,2M,—
-GSG,iShares S&P GSCI Commodity-Indexed Trust,graham,False,0,9,0.0,34.85,27.66,—,—,—,—,—,2M,—
-GSG,iShares S&P GSCI Commodity-Indexed Trust,piotroski,False,0,9,0.0,34.85,27.66,—,—,—,—,—,2M,—
-GSG,iShares S&P GSCI Commodity-Indexed Trust,custom,False,0,0,0.0,34.85,27.66,—,—,—,—,—,2M,—
-PPC,PILGRIM’S PRIDE CORPORATION,graham,False,6,9,66.7,31.09,6.85,2.01,29.41,1.47,1.81,39.71,1M,—
-PPC,PILGRIM’S PRIDE CORPORATION,greenblatt,False,2,3,66.7,31.09,6.85,2.01,29.41,1.47,1.81,39.71,1M,—
-PPC,PILGRIM’S PRIDE CORPORATION,buffett,False,3,6,50.0,31.09,6.85,2.01,29.41,1.47,1.81,39.71,1M,—
-PPC,PILGRIM’S PRIDE CORPORATION,lynch,False,2,4,50.0,31.09,6.85,2.01,29.41,1.47,1.81,39.71,1M,—
-PPC,PILGRIM’S PRIDE CORPORATION,netnet,False,1,4,25.0,31.09,6.85,2.01,29.41,1.47,1.81,39.71,1M,—
-PPC,PILGRIM’S PRIDE CORPORATION,custom,False,0,0,0.0,31.09,6.85,2.01,29.41,1.47,1.81,39.71,1M,—
-CASH,"PATHWARD FINANCIAL, INC.",graham,False,6,9,66.7,80.34,10.21,2.20,21.66,—,7.36,80.37,"194,681",—
-CASH,"PATHWARD FINANCIAL, INC.",piotroski,False,6,9,66.7,80.34,10.21,2.20,21.66,—,7.36,80.37,"194,681",—
-CASH,"PATHWARD FINANCIAL, INC.",lynch,False,2,4,50.0,80.34,10.21,2.20,21.66,—,7.36,80.37,"194,681",—
-CASH,"PATHWARD FINANCIAL, INC.",netnet,False,1,4,25.0,80.34,10.21,2.20,21.66,—,7.36,80.37,"194,681",—
-CASH,"PATHWARD FINANCIAL, INC.",custom,False,0,0,0.0,80.34,10.21,2.20,21.66,—,7.36,80.37,"194,681",—
-TRAK,"ReposiTrak, Inc.",buffett,False,4,6,66.7,7.93,22.66,3.07,14.09,6.09,0.12,4.51,"52,294",—
+MLI,MUELLER INDUSTRIES INC,buffett,True,6,6,100.0,62.07,9.05,2.16,23.84,5.92,0.15,66.66,1M,20.29
+MLI,MUELLER INDUSTRIES INC,greenblatt,True,3,3,100.0,62.07,9.05,2.16,23.84,5.92,0.15,66.66,1M,20.29
+MLI,MUELLER INDUSTRIES INC,lynch,True,4,4,100.0,62.07,9.05,2.16,23.84,5.92,0.15,66.66,1M,20.29
+MLI,MUELLER INDUSTRIES INC,graham,True,8,9,88.9,62.07,9.05,2.16,23.84,5.92,0.15,66.66,1M,20.29
+MLI,MUELLER INDUSTRIES INC,piotroski,True,7,9,77.8,62.07,9.05,2.16,23.84,5.92,0.15,66.66,1M,20.29
+SLDE,"Slide Insurance Holdings, Inc.",greenblatt,True,3,3,100.0,24.18,7.20,2.87,39.88,—,1.62,25.25,2M,—
+SAFX,"XCF GLOBAL, INC.",greenblatt,True,3,3,100.0,0.38,0.73,1.43,197,0.11,10.14,1.76,1M,—
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",piotroski,True,7,9,77.8,10.17,8.40,—,-221,2.06,-5.32,—,3M,13.62
+PPC,PILGRIM’S PRIDE CORPORATION,piotroski,True,7,9,77.8,31.12,6.85,2.02,29.41,1.47,1.81,39.71,1M,-23.65
+FHI,"Federated Hermes, Inc.",greenblatt,True,3,3,100.0,60.73,11.84,3.81,33.69,2.75,0.81,42.89,"483,723",-4.81
+FHI,"Federated Hermes, Inc.",piotroski,True,8,9,88.9,60.73,11.84,3.81,33.69,2.75,0.81,42.89,"483,723",-4.81
+AREC,AMERICAN RESOURCES CORPORATION,greenblatt,True,3,3,100.0,2.44,3.87,2.25,58.44,2.19,0.80,3.92,2M,"-2,893"
+EVR,EVERCORE INC.,buffett,True,5,6,83.3,289,20.55,5.99,29.14,2.16,1.50,123,"548,829",-14.07
+EVR,EVERCORE INC.,piotroski,True,7,9,77.8,289,20.55,5.99,29.14,2.16,1.50,123,"548,829",-14.07
+MTCH,"Match Group, Inc.",piotroski,True,8,9,88.9,42.44,17.83,—,-242,1.42,—,—,3M,29.60
+MTCH,"Match Group, Inc.",lynch,True,3,4,75.0,42.44,17.83,—,-242,1.42,—,—,3M,29.60
+WNC,WABASH NATIONAL CORPORATION,greenblatt,True,3,3,100.0,14.22,2.80,1.62,57.56,1.39,2.18,31.68,"972,205",0.11
+TRN,TRINITY INDUSTRIES INC,greenblatt,True,3,3,100.0,28.00,9.18,2.15,23.50,—,6.76,29.86,"543,855",-1.69
+TRN,TRINITY INDUSTRIES INC,piotroski,True,7,9,77.8,28.00,9.18,2.15,23.50,—,6.76,29.86,"543,855",-1.69
+KALU,KAISER ALUMINUM CORPORATION,piotroski,True,7,9,77.8,163,24.02,3.27,13.62,2.95,2.10,87.01,"210,228",33.89
+KALU,KAISER ALUMINUM CORPORATION,lynch,True,3,4,75.0,163,24.02,3.27,13.62,2.95,2.10,87.01,"210,228",33.89
+BCPC,Balchem Corporation,piotroski,True,9,9,100.0,175,36.94,4.55,12.31,2.07,0.34,64.20,"172,461",-6.55
+KRT,Karat Packaging Inc.,piotroski,True,7,9,77.8,47.38,30.37,6.40,21.07,2.30,0.88,16.12,"99,019",47.28
+FIVN,"Five9, Inc.",piotroski,True,8,9,88.9,33.59,74.64,3.76,5.02,4.51,1.28,9.51,1M,54.57
+MAGN,Magnera Corporation,piotroski,True,7,9,77.8,12.58,—,0.42,-14.94,2.37,2.75,—,"368,970",2.54
+GSHD,"GOOSEHEAD INSURANCE, INC.",lynch,True,3,4,75.0,68.80,66.15,—,-29.14,1.60,-6.05,—,"180,884",-49.02
+AIOT,"POWERFLEET, INC.",piotroski,True,7,9,77.8,3.00,—,0.84,-4.32,1.13,1.00,—,"896,078",—
+TDC,TERADATA CORPORATION,piotroski,True,8,9,88.9,28.26,20.93,11.87,56.52,0.92,6.73,8.50,2M,1.66
+TRC,TEJON RANCH CO.,piotroski,True,7,9,77.8,16.11,—,0.91,0.02,4.14,0.29,—,"149,477",-0.14
+SENS,"Senseonics Holdings, Inc.",piotroski,True,7,9,77.8,9.94,—,6.79,-113,4.83,1.07,—,"820,572",83.15
+MSGS,MADISON SQUARE GARDEN SPORTS CORP.,piotroski,True,9,9,100.0,387,"1,210",—,-2.95,0.50,-6.84,—,"216,687",-6.67
+WRBY,Warby Parker Inc.,piotroski,True,7,9,77.8,23.91,"2,391",8.13,0.45,2.35,0.96,0.81,2M,66.22
+NEOG,Neogen Corporation,piotroski,True,8,9,88.9,11.81,—,1.23,-0.38,3.82,0.60,—,2M,16.93
+CALX,"Calix, Inc",piotroski,True,7,9,77.8,37.58,145,3.03,2.08,4.24,0.23,8.52,1M,-3.71
+LILA,Liberty Latin America Ltd.,piotroski,True,7,9,77.8,8.75,—,3.14,-110,1.14,20.09,—,"388,630",32.24
+OMCL,"OMNICELL, INC",piotroski,True,7,9,77.8,34.71,868,1.31,0.17,1.43,0.60,4.89,"634,537",-40.96
+MLI,MUELLER INDUSTRIES INC,netnet,False,2,4,50.0,62.07,9.05,2.16,23.84,5.92,0.15,66.66,1M,20.29
+MLI,MUELLER INDUSTRIES INC,custom,False,0,0,0.0,62.07,9.05,2.16,23.84,5.92,0.15,66.66,1M,20.29
+SLDE,"Slide Insurance Holdings, Inc.",graham,False,4,9,44.4,24.18,7.20,2.87,39.88,—,1.62,25.25,2M,—
+SLDE,"Slide Insurance Holdings, Inc.",buffett,False,2,6,33.3,24.18,7.20,2.87,39.88,—,1.62,25.25,2M,—
+SLDE,"Slide Insurance Holdings, Inc.",piotroski,False,3,9,33.3,24.18,7.20,2.87,39.88,—,1.62,25.25,2M,—
+SLDE,"Slide Insurance Holdings, Inc.",lynch,False,1,4,25.0,24.18,7.20,2.87,39.88,—,1.62,25.25,2M,—
+SLDE,"Slide Insurance Holdings, Inc.",netnet,False,1,4,25.0,24.18,7.20,2.87,39.88,—,1.62,25.25,2M,—
+SLDE,"Slide Insurance Holdings, Inc.",custom,False,0,0,0.0,24.18,7.20,2.87,39.88,—,1.62,25.25,2M,—
+SAFX,"XCF GLOBAL, INC.",graham,False,4,9,44.4,0.38,0.73,1.43,197,0.11,10.14,1.76,1M,—
+SAFX,"XCF GLOBAL, INC.",buffett,False,2,6,33.3,0.38,0.73,1.43,197,0.11,10.14,1.76,1M,—
+SAFX,"XCF GLOBAL, INC.",lynch,False,1,4,25.0,0.38,0.73,1.43,197,0.11,10.14,1.76,1M,—
+SAFX,"XCF GLOBAL, INC.",netnet,False,1,4,25.0,0.38,0.73,1.43,197,0.11,10.14,1.76,1M,—
+SAFX,"XCF GLOBAL, INC.",piotroski,False,1,9,11.1,0.38,0.73,1.43,197,0.11,10.14,1.76,1M,—
+SAFX,"XCF GLOBAL, INC.",custom,False,0,0,0.0,0.38,0.73,1.43,197,0.11,10.14,1.76,1M,—
