@@ -1,14 +1,15 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-03 06:35 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-03 11:38 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **22** strategy matches passed.
+Screened **75** companies · **26** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| AIV | Apartment Investment and Man | greenblatt | ✅ | 100% | 2.56 | 0.66 | 1.00 | 151 | — | 3.10 | 608,647 | — |
-| LMB | LIMBACH HOLDINGS, INC. | piotroski | ✅ | 78% | 48.58 | 15.04 | 3.00 | 19.97 | 1.44 | 0.95 | 782,197 | — |
-| LMB | LIMBACH HOLDINGS, INC. | lynch | ✅ | 75% | 48.58 | 15.04 | 3.00 | 19.97 | 1.44 | 0.95 | 782,197 | — |
+| SAFX | XCF GLOBAL, INC. | greenblatt | ✅ | 100% | 0.38 | 0.73 | 1.43 | 197 | 0.11 | 10.14 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | piotroski | ✅ | 78% | 31.12 | 6.85 | 2.02 | 29.41 | 1.47 | 1.81 | 1M | — |
+| ESE | ESCO TECHNOLOGIES INC. | lynch | ✅ | 100% | 267 | 23.11 | 4.49 | 19.42 | 1.35 | 0.56 | 212,408 | — |
+| ACIC | American Coastal Insurance C | greenblatt | ✅ | 100% | 9.40 | 4.37 | 1.47 | 33.64 | — | 2.38 | 210,888 | — |
 | FTDR | Frontdoor, Inc. | piotroski | ✅ | 89% | 81.06 | 23.70 | 24.95 | 105 | 1.55 | — | 452,347 | — |
 | FTDR | Frontdoor, Inc. | buffett | ✅ | 83% | 81.06 | 23.70 | 24.95 | 105 | 1.55 | — | 452,347 | — |
 | FSS | FEDERAL SIGNAL CORPORATION | lynch | ✅ | 75% | 115 | 28.71 | 5.12 | 17.84 | 3.02 | 0.73 | 564,554 | — |
@@ -16,45 +17,44 @@ Screened **75** companies · **22** strategy matches passed.
 | VICR | VICOR CORPORATION | piotroski | ✅ | 89% | 182 | 69.57 | 11.60 | 16.66 | 8.99 | 0.10 | 1M | — |
 | VICR | VICOR CORPORATION | buffett | ✅ | 83% | 182 | 69.57 | 11.60 | 16.66 | 8.99 | 0.10 | 1M | — |
 | VICR | VICOR CORPORATION | lynch | ✅ | 75% | 182 | 69.57 | 11.60 | 16.66 | 8.99 | 0.10 | 1M | — |
-| FCFS | FIRSTCASH HOLDINGS, INC. | piotroski | ✅ | 78% | 220 | 29.66 | 4.30 | 14.51 | 4.55 | 1.33 | 445,317 | — |
-| SHOE | Shoe Carnival, Inc. | graham | ✅ | 89% | 13.49 | 7.10 | 0.54 | 7.58 | 3.76 | 0.74 | 1M | — |
-| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 142 | 22.37 | 2.35 | 10.49 | 1.53 | — | 301,969 | — |
-| AXTA | AXALTA COATING SYSTEMS LTD. | lynch | ✅ | 75% | 35.79 | 20.57 | 3.31 | 16.11 | 2.06 | 2.22 | 842,074 | — |
-| R | RYDER SYSTEM INC | piotroski | ✅ | 100% | 243 | 20.36 | 3.33 | 16.35 | 0.89 | 4.37 | 245,147 | — |
-| KNTK | KINETIK HOLDINGS INC. | lynch | ✅ | 75% | 54.12 | 20.58 | — | -31.53 | 0.69 | -7.37 | 613,569 | — |
-| VVX | V2X, Inc. | piotroski | ✅ | 100% | 74.99 | 30.61 | 2.20 | 7.18 | 1.22 | 2.02 | 509,148 | — |
-| FROG | JFrog Ltd. | piotroski | ✅ | 78% | 91.73 | — | 12.01 | -8.09 | 2.14 | 0.51 | 2M | — |
-| NEOG | Neogen Corporation | piotroski | ✅ | 89% | 11.81 | — | 1.23 | -0.38 | 3.82 | 0.60 | 2M | — |
-| CALX | Calix, Inc | piotroski | ✅ | 78% | 37.58 | 145 | 3.03 | 2.08 | 4.24 | 0.23 | 1M | — |
-| AVNW | AVIAT NETWORKS, INC. | piotroski | ✅ | 78% | 19.25 | 101 | 0.94 | 0.95 | 1.97 | 1.24 | 250,218 | — |
-| OMCL | OMNICELL, INC | piotroski | ✅ | 78% | 34.71 | 868 | 1.31 | 0.17 | 1.43 | 0.60 | 634,539 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | piotroski | ▫️ | 44% | 26.54 | — | — | — | 2.10 | — | 125,103 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | graham | ▫️ | 33% | 26.54 | — | — | — | 2.10 | — | 125,103 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | buffett | ▫️ | 33% | 26.54 | — | — | — | 2.10 | — | 125,103 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | greenblatt | ▫️ | 33% | 26.54 | — | — | — | 2.10 | — | 125,103 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | lynch | ▫️ | 25% | 26.54 | — | — | — | 2.10 | — | 125,103 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | netnet | ▫️ | 25% | 26.54 | — | — | — | 2.10 | — | 125,103 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | custom | ▫️ | 0% | 26.54 | — | — | — | 2.10 | — | 125,103 | — |
-| UROY | URANIUM     ROYALTY CORP. | lynch | ▫️ | 50% | 4.29 | 14.79 | 1.91 | 12.87 | 5.94 | 0.19 | 2M | — |
-| UROY | URANIUM     ROYALTY CORP. | netnet | ▫️ | 50% | 4.29 | 14.79 | 1.91 | 12.87 | 5.94 | 0.19 | 2M | — |
-| UROY | URANIUM     ROYALTY CORP. | graham | ▫️ | 44% | 4.29 | 14.79 | 1.91 | 12.87 | 5.94 | 0.19 | 2M | — |
-| UROY | URANIUM     ROYALTY CORP. | buffett | ▫️ | 33% | 4.29 | 14.79 | 1.91 | 12.87 | 5.94 | 0.19 | 2M | — |
-| UROY | URANIUM     ROYALTY CORP. | piotroski | ▫️ | 33% | 4.29 | 14.79 | 1.91 | 12.87 | 5.94 | 0.19 | 2M | — |
-| UROY | URANIUM     ROYALTY CORP. | greenblatt | ▫️ | 33% | 4.29 | 14.79 | 1.91 | 12.87 | 5.94 | 0.19 | 2M | — |
-| UROY | URANIUM     ROYALTY CORP. | custom | ▫️ | 0% | 4.29 | 14.79 | 1.91 | 12.87 | 5.94 | 0.19 | 2M | — |
-| AIV | Apartment Investment and Man | piotroski | ▫️ | 56% | 2.56 | 0.66 | 1.00 | 151 | — | 3.10 | 608,647 | — |
-| AIV | Apartment Investment and Man | graham | ▫️ | 44% | 2.56 | 0.66 | 1.00 | 151 | — | 3.10 | 608,647 | — |
-| AIV | Apartment Investment and Man | buffett | ▫️ | 33% | 2.56 | 0.66 | 1.00 | 151 | — | 3.10 | 608,647 | — |
-| AIV | Apartment Investment and Man | lynch | ▫️ | 25% | 2.56 | 0.66 | 1.00 | 151 | — | 3.10 | 608,647 | — |
-| AIV | Apartment Investment and Man | netnet | ▫️ | 25% | 2.56 | 0.66 | 1.00 | 151 | — | 3.10 | 608,647 | — |
-| AIV | Apartment Investment and Man | custom | ▫️ | 0% | 2.56 | 0.66 | 1.00 | 151 | — | 3.10 | 608,647 | — |
-| AB | ALLIANCEBERNSTEIN HOLDING L. | piotroski | ▫️ | 56% | 36.63 | — | — | — | — | — | 244,017 | — |
-| AB | ALLIANCEBERNSTEIN HOLDING L. | greenblatt | ▫️ | 33% | 36.63 | — | — | — | — | — | 244,017 | — |
-| AB | ALLIANCEBERNSTEIN HOLDING L. | lynch | ▫️ | 25% | 36.63 | — | — | — | — | — | 244,017 | — |
-| AB | ALLIANCEBERNSTEIN HOLDING L. | netnet | ▫️ | 25% | 36.63 | — | — | — | — | — | 244,017 | — |
-| AB | ALLIANCEBERNSTEIN HOLDING L. | graham | ▫️ | 11% | 36.63 | — | — | — | — | — | 244,017 | — |
-| AB | ALLIANCEBERNSTEIN HOLDING L. | buffett | ▫️ | 0% | 36.63 | — | — | — | — | — | 244,017 | — |
-| AB | ALLIANCEBERNSTEIN HOLDING L. | custom | ▫️ | 0% | 36.63 | — | — | — | — | — | 244,017 | — |
-| LMB | LIMBACH HOLDINGS, INC. | buffett | ▫️ | 50% | 48.58 | 15.04 | 3.00 | 19.97 | 1.44 | 0.95 | 782,197 | — |
+| SFM | Sprouts Farmers Market, Inc. | piotroski | ✅ | 78% | 78.76 | 14.83 | 5.54 | 37.32 | 0.93 | 1.96 | 3M | — |
+| AXTA | AXALTA COATING SYSTEMS LTD. | lynch | ✅ | 75% | 35.79 | 20.57 | 3.31 | 16.11 | 2.06 | 2.22 | 898,177 | — |
+| BCPC | Balchem Corporation | piotroski | ✅ | 100% | 175 | 36.94 | 4.55 | 12.31 | 2.07 | 0.34 | 172,463 | — |
+| KRT | Karat Packaging Inc. | piotroski | ✅ | 78% | 47.38 | 30.37 | 6.40 | 21.07 | 2.30 | 0.88 | 99,020 | — |
+| CPK | CHESAPEAKE UTILITIES CORP | piotroski | ✅ | 78% | 131 | 21.92 | 1.92 | 8.78 | 0.45 | — | 218,191 | — |
+| KNTK | KINETIK HOLDINGS INC. | lynch | ✅ | 75% | 54.12 | 20.58 | — | -31.53 | 0.69 | -7.37 | 613,573 | — |
+| FMNB | FARMERS NATIONAL BANC CORP / | piotroski | ✅ | 89% | 15.73 | 10.85 | 1.22 | 11.24 | — | 9.80 | 323,143 | — |
+| FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 15.00 | 78.95 | 6.15 | 7.83 | 4.94 | 0.33 | 2M | — |
+| CYH | COMMUNITY HEALTH SYSTEMS, IN | piotroski | ✅ | 89% | 2.90 | 0.77 | — | -36.51 | 1.46 | -10.07 | 2M | — |
+| VVX | V2X, Inc. | piotroski | ✅ | 100% | 74.99 | 30.61 | 2.20 | 7.18 | 1.22 | 2.02 | 526,412 | — |
+| LW | Lamb Weston Holdings, Inc. | piotroski | ✅ | 78% | 52.41 | 25.20 | 3.99 | 15.89 | 1.42 | — | 1M | — |
+| SPHR | SPHERE ENTERTAINMENT CO. | piotroski | ✅ | 78% | 141 | 190 | 2.85 | 1.50 | 1.09 | 0.89 | 601,309 | — |
+| BNED | BARNES & NOBLE EDUCATION, IN | piotroski | ✅ | 89% | 12.12 | 24.73 | 1.42 | 5.73 | 1.71 | 1.51 | 170,140 | — |
+| WGO | WINNEBAGO INDUSTRIES, INC. | piotroski | ✅ | 89% | 30.33 | 33.33 | 0.70 | 2.10 | 2.42 | 0.76 | 371,842 | — |
+| LILA | Liberty Latin America Ltd. | piotroski | ✅ | 78% | 8.75 | — | 3.14 | -110 | 1.14 | 20.09 | 388,886 | — |
+| SAFX | XCF GLOBAL, INC. | graham | ▫️ | 44% | 0.38 | 0.73 | 1.43 | 197 | 0.11 | 10.14 | 1M | — |
+| SAFX | XCF GLOBAL, INC. | buffett | ▫️ | 33% | 0.38 | 0.73 | 1.43 | 197 | 0.11 | 10.14 | 1M | — |
+| SAFX | XCF GLOBAL, INC. | lynch | ▫️ | 25% | 0.38 | 0.73 | 1.43 | 197 | 0.11 | 10.14 | 1M | — |
+| SAFX | XCF GLOBAL, INC. | netnet | ▫️ | 25% | 0.38 | 0.73 | 1.43 | 197 | 0.11 | 10.14 | 1M | — |
+| SAFX | XCF GLOBAL, INC. | piotroski | ▫️ | 11% | 0.38 | 0.73 | 1.43 | 197 | 0.11 | 10.14 | 1M | — |
+| SAFX | XCF GLOBAL, INC. | custom | ▫️ | 0% | 0.38 | 0.73 | 1.43 | 197 | 0.11 | 10.14 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | graham | ▫️ | 67% | 31.12 | 6.85 | 2.02 | 29.41 | 1.47 | 1.81 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | greenblatt | ▫️ | 67% | 31.12 | 6.85 | 2.02 | 29.41 | 1.47 | 1.81 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | buffett | ▫️ | 50% | 31.12 | 6.85 | 2.02 | 29.41 | 1.47 | 1.81 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | lynch | ▫️ | 50% | 31.12 | 6.85 | 2.02 | 29.41 | 1.47 | 1.81 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | netnet | ▫️ | 25% | 31.12 | 6.85 | 2.02 | 29.41 | 1.47 | 1.81 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | custom | ▫️ | 0% | 31.12 | 6.85 | 2.02 | 29.41 | 1.47 | 1.81 | 1M | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | piotroski | ▫️ | 44% | 26.54 | — | — | — | 2.10 | — | 125,611 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | graham | ▫️ | 33% | 26.54 | — | — | — | 2.10 | — | 125,611 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | buffett | ▫️ | 33% | 26.54 | — | — | — | 2.10 | — | 125,611 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | greenblatt | ▫️ | 33% | 26.54 | — | — | — | 2.10 | — | 125,611 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | lynch | ▫️ | 25% | 26.54 | — | — | — | 2.10 | — | 125,611 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | netnet | ▫️ | 25% | 26.54 | — | — | — | 2.10 | — | 125,611 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | custom | ▫️ | 0% | 26.54 | — | — | — | 2.10 | — | 125,611 | — |
+| ESE | ESCO TECHNOLOGIES INC. | buffett | ▫️ | 67% | 267 | 23.11 | 4.49 | 19.42 | 1.35 | 0.56 | 212,408 | — |
+| ESE | ESCO TECHNOLOGIES INC. | graham | ▫️ | 56% | 267 | 23.11 | 4.49 | 19.42 | 1.35 | 0.56 | 212,408 | — |
+| ESE | ESCO TECHNOLOGIES INC. | piotroski | ▫️ | 56% | 267 | 23.11 | 4.49 | 19.42 | 1.35 | 0.56 | 212,408 | — |
+| ESE | ESCO TECHNOLOGIES INC. | greenblatt | ▫️ | 33% | 267 | 23.11 | 4.49 | 19.42 | 1.35 | 0.56 | 212,408 | — |
+| ESE | ESCO TECHNOLOGIES INC. | netnet | ▫️ | 25% | 267 | 23.11 | 4.49 | 19.42 | 1.35 | 0.56 | 212,408 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
