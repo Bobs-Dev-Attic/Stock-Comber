@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-SLDE,"Slide Insurance Holdings, Inc.",greenblatt,True,3,3,100.0,24.18,7.20,2.87,39.88,—,1.62,25.25,2M,—
-SAFX,"XCF GLOBAL, INC.",greenblatt,True,3,3,100.0,0.38,0.73,1.43,197,0.11,10.14,1.76,1M,—
-PPC,PILGRIM’S PRIDE CORPORATION,piotroski,True,7,9,77.8,31.12,6.85,2.02,29.41,1.47,1.81,39.71,1M,—
-PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,294,12.81,3.92,30.71,—,5.14,196,"130,769",—
-DAKT,"Daktronics, Inc.",piotroski,True,8,9,88.9,19.13,20.79,3.14,15.09,2.31,—,11.23,3M,—
-DAKT,"Daktronics, Inc.",lynch,True,3,4,75.0,19.13,20.79,3.14,15.09,2.31,—,11.23,3M,—
+AIV,Apartment Investment and Management Company,greenblatt,True,3,3,100.0,2.56,0.66,1.00,151,—,3.10,14.95,"608,647",—
+LMB,"LIMBACH HOLDINGS, INC.",piotroski,True,7,9,77.8,48.58,15.04,3.00,19.97,1.44,0.95,34.31,"782,197",—
+LMB,"LIMBACH HOLDINGS, INC.",lynch,True,3,4,75.0,48.58,15.04,3.00,19.97,1.44,0.95,34.31,"782,197",—
+FTDR,"Frontdoor, Inc.",piotroski,True,8,9,88.9,81.06,23.70,24.95,105,1.55,—,15.81,"452,347",—
+FTDR,"Frontdoor, Inc.",buffett,True,5,6,83.3,81.06,23.70,24.95,105,1.55,—,15.81,"452,347",—
+FSS,FEDERAL SIGNAL CORPORATION,lynch,True,3,4,75.0,115,28.71,5.12,17.84,3.02,0.73,45.03,"564,554",—
+WNC,WABASH NATIONAL CORPORATION,greenblatt,True,3,3,100.0,14.22,2.80,1.62,57.56,1.39,2.18,31.68,1M,—
 VICR,VICOR CORPORATION,piotroski,True,8,9,88.9,182,69.57,11.60,16.66,8.99,0.10,30.32,1M,—
 VICR,VICOR CORPORATION,buffett,True,5,6,83.3,182,69.57,11.60,16.66,8.99,0.10,30.32,1M,—
 VICR,VICOR CORPORATION,lynch,True,3,4,75.0,182,69.57,11.60,16.66,8.99,0.10,30.32,1M,—
-HALO,"HALOZYME THERAPEUTICS, INC.",buffett,True,5,6,83.3,110,42.84,278,649,4.66,50.73,4.76,2M,—
-SFM,"Sprouts Farmers Market, Inc.",piotroski,True,7,9,77.8,78.76,14.83,5.54,37.32,0.93,1.96,41.21,3M,—
-BY,"Byline Bancorp, Inc.",lynch,True,3,4,75.0,38.29,13.25,1.36,10.26,—,6.61,42.77,"656,807",—
+FCFS,"FIRSTCASH HOLDINGS, INC.",piotroski,True,7,9,77.8,220,29.66,4.30,14.51,4.55,1.33,92.39,"445,317",—
 SHOE,"Shoe Carnival, Inc.",graham,True,8,9,88.9,13.49,7.10,0.54,7.58,3.76,0.74,32.72,1M,—
-SIRI,SIRIUS XM HOLDINGS INC.,lynch,True,3,4,75.0,29.70,13.32,0.92,6.96,0.30,1.36,40.31,7M,—
-BCPC,Balchem Corporation,piotroski,True,9,9,100.0,175,36.94,4.55,12.31,2.07,0.34,64.20,"172,461",—
-BKU,"BankUnited, Inc.",piotroski,True,8,9,88.9,45.44,12.87,1.11,8.79,—,10.47,57.13,"972,249",—
-R,RYDER SYSTEM INC,piotroski,True,9,9,100.0,243,20.36,3.33,16.35,0.89,4.37,140,"293,649",—
+KEX,KIRBY CORPORATION,piotroski,True,8,9,88.9,142,22.37,2.35,10.49,1.53,—,92.69,"301,969",—
+AXTA,AXALTA COATING SYSTEMS LTD.,lynch,True,3,4,75.0,35.79,20.57,3.31,16.11,2.06,2.22,20.57,"842,074",—
+R,RYDER SYSTEM INC,piotroski,True,9,9,100.0,243,20.36,3.33,16.35,0.89,4.37,140,"245,147",—
 KNTK,KINETIK HOLDINGS INC.,lynch,True,3,4,75.0,54.12,20.58,—,-31.53,0.69,-7.37,—,"613,569",—
-FMNB,FARMERS NATIONAL BANC CORP /OH/,piotroski,True,8,9,88.9,15.73,10.85,1.22,11.24,—,9.80,20.52,"323,141",—
-ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.63,21.05,0.83,3.99,9.18,0.34,5.26,"188,871",—
-AIOT,"POWERFLEET, INC.",piotroski,True,7,9,77.8,3.00,—,0.84,-4.32,1.13,1.00,—,"896,078",—
-MOS,MOSAIC CO,piotroski,True,8,9,88.9,25.78,15.16,0.68,4.47,1.32,—,38.07,10M,—
-SENS,"Senseonics Holdings, Inc.",piotroski,True,7,9,77.8,9.94,—,6.79,-113,4.83,1.07,—,"820,588",—
-SPHR,SPHERE ENTERTAINMENT CO.,piotroski,True,7,9,77.8,141,190,2.85,1.50,1.09,0.89,28.65,"601,309",—
-LILA,Liberty Latin America Ltd.,piotroski,True,7,9,77.8,8.75,—,3.14,-110,1.14,20.09,—,"388,886",—
-SLDE,"Slide Insurance Holdings, Inc.",graham,False,4,9,44.4,24.18,7.20,2.87,39.88,—,1.62,25.25,2M,—
-SLDE,"Slide Insurance Holdings, Inc.",buffett,False,2,6,33.3,24.18,7.20,2.87,39.88,—,1.62,25.25,2M,—
-SLDE,"Slide Insurance Holdings, Inc.",piotroski,False,3,9,33.3,24.18,7.20,2.87,39.88,—,1.62,25.25,2M,—
-SLDE,"Slide Insurance Holdings, Inc.",lynch,False,1,4,25.0,24.18,7.20,2.87,39.88,—,1.62,25.25,2M,—
-SLDE,"Slide Insurance Holdings, Inc.",netnet,False,1,4,25.0,24.18,7.20,2.87,39.88,—,1.62,25.25,2M,—
-SLDE,"Slide Insurance Holdings, Inc.",custom,False,0,0,0.0,24.18,7.20,2.87,39.88,—,1.62,25.25,2M,—
-SAFX,"XCF GLOBAL, INC.",graham,False,4,9,44.4,0.38,0.73,1.43,197,0.11,10.14,1.76,1M,—
-SAFX,"XCF GLOBAL, INC.",buffett,False,2,6,33.3,0.38,0.73,1.43,197,0.11,10.14,1.76,1M,—
-SAFX,"XCF GLOBAL, INC.",lynch,False,1,4,25.0,0.38,0.73,1.43,197,0.11,10.14,1.76,1M,—
-SAFX,"XCF GLOBAL, INC.",netnet,False,1,4,25.0,0.38,0.73,1.43,197,0.11,10.14,1.76,1M,—
-SAFX,"XCF GLOBAL, INC.",piotroski,False,1,9,11.1,0.38,0.73,1.43,197,0.11,10.14,1.76,1M,—
-SAFX,"XCF GLOBAL, INC.",custom,False,0,0,0.0,0.38,0.73,1.43,197,0.11,10.14,1.76,1M,—
-PPC,PILGRIM’S PRIDE CORPORATION,graham,False,6,9,66.7,31.12,6.85,2.02,29.41,1.47,1.81,39.71,1M,—
-PPC,PILGRIM’S PRIDE CORPORATION,greenblatt,False,2,3,66.7,31.12,6.85,2.02,29.41,1.47,1.81,39.71,1M,—
-PPC,PILGRIM’S PRIDE CORPORATION,buffett,False,3,6,50.0,31.12,6.85,2.02,29.41,1.47,1.81,39.71,1M,—
-PPC,PILGRIM’S PRIDE CORPORATION,lynch,False,2,4,50.0,31.12,6.85,2.02,29.41,1.47,1.81,39.71,1M,—
-PPC,PILGRIM’S PRIDE CORPORATION,netnet,False,1,4,25.0,31.12,6.85,2.02,29.41,1.47,1.81,39.71,1M,—
-PPC,PILGRIM’S PRIDE CORPORATION,custom,False,0,0,0.0,31.12,6.85,2.02,29.41,1.47,1.81,39.71,1M,—
-MGY,Magnolia Oil & Gas Corp,piotroski,False,6,9,66.7,27.38,15.62,2.54,16.27,1.54,—,20.61,3M,—
-MGY,Magnolia Oil & Gas Corp,buffett,False,3,6,50.0,27.38,15.62,2.54,16.27,1.54,—,20.61,3M,—
-MGY,Magnolia Oil & Gas Corp,graham,False,3,9,33.3,27.38,15.62,2.54,16.27,1.54,—,20.61,3M,—
-MGY,Magnolia Oil & Gas Corp,greenblatt,False,1,3,33.3,27.38,15.62,2.54,16.27,1.54,—,20.61,3M,—
-MGY,Magnolia Oil & Gas Corp,lynch,False,1,4,25.0,27.38,15.62,2.54,16.27,1.54,—,20.61,3M,—
-MGY,Magnolia Oil & Gas Corp,netnet,False,1,4,25.0,27.38,15.62,2.54,16.27,1.54,—,20.61,3M,—
-MGY,Magnolia Oil & Gas Corp,custom,False,0,0,0.0,27.38,15.62,2.54,16.27,1.54,—,20.61,3M,—
+VVX,"V2X, Inc.",piotroski,True,9,9,100.0,74.99,30.61,2.20,7.18,1.22,2.02,43.35,"509,148",—
+FROG,JFrog Ltd.,piotroski,True,7,9,77.8,91.73,—,12.01,-8.09,2.14,0.51,—,2M,—
+NEOG,Neogen Corporation,piotroski,True,8,9,88.9,11.81,—,1.23,-0.38,3.82,0.60,—,2M,—
+CALX,"Calix, Inc",piotroski,True,7,9,77.8,37.58,145,3.03,2.08,4.24,0.23,8.52,1M,—
+AVNW,"AVIAT NETWORKS, INC.",piotroski,True,7,9,77.8,19.25,101,0.94,0.95,1.97,1.24,9.37,"250,218",—
+OMCL,"OMNICELL, INC",piotroski,True,7,9,77.8,34.71,868,1.31,0.17,1.43,0.60,4.89,"634,539",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,piotroski,False,4,9,44.4,26.54,—,—,—,2.10,—,—,"125,103",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,graham,False,3,9,33.3,26.54,—,—,—,2.10,—,—,"125,103",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,buffett,False,2,6,33.3,26.54,—,—,—,2.10,—,—,"125,103",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,greenblatt,False,1,3,33.3,26.54,—,—,—,2.10,—,—,"125,103",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,lynch,False,1,4,25.0,26.54,—,—,—,2.10,—,—,"125,103",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,netnet,False,1,4,25.0,26.54,—,—,—,2.10,—,—,"125,103",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,custom,False,0,0,0.0,26.54,—,—,—,2.10,—,—,"125,103",—
+UROY,URANIUM     ROYALTY CORP.,lynch,False,2,4,50.0,4.29,14.79,1.91,12.87,5.94,0.19,3.83,2M,—
+UROY,URANIUM     ROYALTY CORP.,netnet,False,2,4,50.0,4.29,14.79,1.91,12.87,5.94,0.19,3.83,2M,—
+UROY,URANIUM     ROYALTY CORP.,graham,False,4,9,44.4,4.29,14.79,1.91,12.87,5.94,0.19,3.83,2M,—
+UROY,URANIUM     ROYALTY CORP.,buffett,False,2,6,33.3,4.29,14.79,1.91,12.87,5.94,0.19,3.83,2M,—
+UROY,URANIUM     ROYALTY CORP.,piotroski,False,3,9,33.3,4.29,14.79,1.91,12.87,5.94,0.19,3.83,2M,—
+UROY,URANIUM     ROYALTY CORP.,greenblatt,False,1,3,33.3,4.29,14.79,1.91,12.87,5.94,0.19,3.83,2M,—
+UROY,URANIUM     ROYALTY CORP.,custom,False,0,0,0.0,4.29,14.79,1.91,12.87,5.94,0.19,3.83,2M,—
+AIV,Apartment Investment and Management Company,piotroski,False,5,9,55.6,2.56,0.66,1.00,151,—,3.10,14.95,"608,647",—
+AIV,Apartment Investment and Management Company,graham,False,4,9,44.4,2.56,0.66,1.00,151,—,3.10,14.95,"608,647",—
+AIV,Apartment Investment and Management Company,buffett,False,2,6,33.3,2.56,0.66,1.00,151,—,3.10,14.95,"608,647",—
+AIV,Apartment Investment and Management Company,lynch,False,1,4,25.0,2.56,0.66,1.00,151,—,3.10,14.95,"608,647",—
+AIV,Apartment Investment and Management Company,netnet,False,1,4,25.0,2.56,0.66,1.00,151,—,3.10,14.95,"608,647",—
+AIV,Apartment Investment and Management Company,custom,False,0,0,0.0,2.56,0.66,1.00,151,—,3.10,14.95,"608,647",—
+AB,ALLIANCEBERNSTEIN HOLDING L.P.,piotroski,False,5,9,55.6,36.63,—,—,—,—,—,—,"244,017",—
+AB,ALLIANCEBERNSTEIN HOLDING L.P.,greenblatt,False,1,3,33.3,36.63,—,—,—,—,—,—,"244,017",—
+AB,ALLIANCEBERNSTEIN HOLDING L.P.,lynch,False,1,4,25.0,36.63,—,—,—,—,—,—,"244,017",—
+AB,ALLIANCEBERNSTEIN HOLDING L.P.,netnet,False,1,4,25.0,36.63,—,—,—,—,—,—,"244,017",—
+AB,ALLIANCEBERNSTEIN HOLDING L.P.,graham,False,1,9,11.1,36.63,—,—,—,—,—,—,"244,017",—
+AB,ALLIANCEBERNSTEIN HOLDING L.P.,buffett,False,0,6,0.0,36.63,—,—,—,—,—,—,"244,017",—
+AB,ALLIANCEBERNSTEIN HOLDING L.P.,custom,False,0,0,0.0,36.63,—,—,—,—,—,—,"244,017",—
+LMB,"LIMBACH HOLDINGS, INC.",buffett,False,3,6,50.0,48.58,15.04,3.00,19.97,1.44,0.95,34.31,"782,197",—
