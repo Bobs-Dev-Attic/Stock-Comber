@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-KOLD,PROSHARES TRUST II,greenblatt,True,3,3,100.0,27.50,1.99,0.59,29.91,—,0.06,120,3M,—
-GOOGN,Alphabet Inc.,graham,True,9,9,100.0,48.31,4.47,1.42,31.83,2.01,0.43,90.88,"92,990",—
-GOOGN,Alphabet Inc.,buffett,True,6,6,100.0,48.31,4.47,1.42,31.83,2.01,0.43,90.88,"92,990",—
-GOOGN,Alphabet Inc.,greenblatt,True,3,3,100.0,48.31,4.47,1.42,31.83,2.01,0.43,90.88,"92,990",—
-GOOGN,Alphabet Inc.,lynch,True,4,4,100.0,48.31,4.47,1.42,31.83,2.01,0.43,90.88,"92,990",—
-SLDE,"Slide Insurance Holdings, Inc.",greenblatt,True,3,3,100.0,24.18,7.20,2.87,39.88,—,1.62,25.25,2M,—
+SAFX,"XCF GLOBAL, INC.",greenblatt,True,3,3,100.0,0.38,0.73,1.43,197,0.11,10.14,1.76,1M,—
 SBC,SBC Medical Group Holdings Incorporated,lynch,True,3,4,75.0,4.23,8.46,1.75,20.54,3.78,0.47,5.21,"200,341",—
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",piotroski,True,7,9,77.8,10.17,8.40,—,-221,2.06,-5.32,—,3M,—
-SON,Sonoco Products Company,piotroski,True,8,9,88.9,51.85,5.15,1.43,27.75,1.05,2.08,90.68,"427,881",—
-SON,Sonoco Products Company,lynch,True,3,4,75.0,51.85,5.15,1.43,27.75,1.05,2.08,90.68,"427,881",—
-CASH,"PATHWARD FINANCIAL, INC.",greenblatt,True,3,3,100.0,82.78,10.52,2.27,21.66,—,7.36,80.37,"20,153",—
-CASH,"PATHWARD FINANCIAL, INC.",buffett,True,5,6,83.3,82.78,10.52,2.27,21.66,—,7.36,80.37,"20,153",—
-TREE,"LendingTree, Inc.",greenblatt,True,3,3,100.0,27.82,2.58,1.36,52.76,1.67,1.98,70.33,"412,233",—
-BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,149,20.23,3.46,17.13,2.65,0.86,84.23,"432,852",—
-BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,149,20.23,3.46,17.13,2.65,0.86,84.23,"432,852",—
-AREC,AMERICAN RESOURCES CORPORATION,greenblatt,True,3,3,100.0,2.44,3.87,2.25,58.44,2.19,0.80,3.92,2M,—
-EVR,EVERCORE INC.,buffett,True,5,6,83.3,289,20.55,5.99,29.14,2.16,1.50,123,"551,810",—
-EVR,EVERCORE INC.,piotroski,True,7,9,77.8,289,20.55,5.99,29.14,2.16,1.50,123,"551,810",—
-HALO,"HALOZYME THERAPEUTICS, INC.",buffett,True,5,6,83.3,110,42.84,278,649,4.66,50.73,4.76,2M,—
-NJR,NEW JERSEY RESOURCES CORPORATION,piotroski,True,7,9,77.8,53.64,16.11,2.26,14.03,0.73,—,42.17,"571,293",—
-SHOE,"Shoe Carnival, Inc.",graham,True,8,9,88.9,13.49,7.10,0.54,7.58,3.76,0.74,32.72,1M,—
-LCII,LCI INDUSTRIES,piotroski,True,8,9,88.9,100,13.27,1.83,13.83,2.85,1.33,96.57,"47,990",—
-VVX,"V2X, Inc.",piotroski,True,9,9,100.0,74.99,30.61,2.20,7.18,1.22,2.02,43.35,"526,412",—
-GSHD,"GOOSEHEAD INSURANCE, INC.",lynch,True,3,4,75.0,68.80,66.15,—,-29.14,1.60,-6.05,—,"180,885",—
+PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,294,12.81,3.92,30.71,—,5.14,196,"130,773",—
+AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",piotroski,True,9,9,100.0,169,23.89,8.19,34.27,1.46,—,57.37,"311,729",—
+ESE,ESCO TECHNOLOGIES INC.,lynch,True,4,4,100.0,272,23.55,4.57,19.42,1.35,0.56,124,"147,799",—
+TRNO,Terreno Realty Corporation,lynch,True,4,4,100.0,65.71,16.81,1.63,9.72,—,0.30,59.59,"261,266",—
+TRAK,"ReposiTrak, Inc.",lynch,True,4,4,100.0,7.90,22.57,3.05,14.09,6.09,0.12,4.51,"55,059",—
+GLRE,"GREENLIGHT CAPITAL RE, LTD.",piotroski,True,7,9,77.8,15.23,7.02,0.74,10.57,—,2.06,31.65,"113,445",—
+MTCH,"Match Group, Inc.",piotroski,True,8,9,88.9,42.44,17.83,—,-242,1.42,—,—,3M,—
+MTCH,"Match Group, Inc.",lynch,True,3,4,75.0,42.44,17.83,—,-242,1.42,—,—,3M,—
+VISN,"Vistance Networks, Inc.",greenblatt,True,3,3,100.0,6.35,0.66,—,-227,3.88,-9.06,—,3M,—
+MEDP,"Medpace Holdings, Inc.",buffett,True,5,6,83.3,593,38.81,38.14,98.27,0.74,3.30,73.11,"204,197",—
+MEDP,"Medpace Holdings, Inc.",piotroski,True,7,9,77.8,593,38.81,38.14,98.27,0.74,3.30,73.11,"204,197",—
+OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,21.90,31.74,4.18,13.20,1.91,0.30,9.01,2M,—
+TRN,TRINITY INDUSTRIES INC,greenblatt,True,3,3,100.0,28.00,9.18,2.15,23.50,—,6.76,29.86,"543,921",—
+TRN,TRINITY INDUSTRIES INC,piotroski,True,7,9,77.8,28.00,9.18,2.15,23.50,—,6.76,29.86,"543,921",—
+KEX,KIRBY CORPORATION,piotroski,True,8,9,88.9,142,22.37,2.35,10.49,1.53,—,92.69,"301,973",—
+VCYT,"VERACYTE, INC.",piotroski,True,8,9,88.9,44.88,54.73,2.76,5.07,8.15,0.07,17.32,1M,—
+KRT,Karat Packaging Inc.,piotroski,True,7,9,77.8,47.38,30.37,6.40,21.07,2.30,0.88,16.12,"99,020",—
+KNTK,KINETIK HOLDINGS INC.,lynch,True,3,4,75.0,54.12,20.58,—,-31.53,0.69,-7.37,—,"613,573",—
+SSTK,"SHUTTERSTOCK, INC.",piotroski,True,8,9,88.9,5.75,4.60,0.36,7.83,0.54,1.33,21.23,"747,183",—
+ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.57,20.75,0.82,3.99,9.18,0.34,5.26,"86,568",—
+MCS,MARCUS CORP,piotroski,True,7,9,77.8,28.07,69.18,1.92,2.77,0.40,—,11.55,"174,775",—
 MOS,MOSAIC CO,piotroski,True,8,9,88.9,25.78,15.16,0.68,4.47,1.32,—,38.07,10M,—
-WRBY,Warby Parker Inc.,piotroski,True,7,9,77.8,23.91,"2,391",8.13,0.45,2.35,0.96,0.81,2M,—
-CALX,"Calix, Inc",piotroski,True,7,9,77.8,37.58,145,3.03,2.08,4.24,0.23,8.52,1M,—
-LILA,Liberty Latin America Ltd.,piotroski,True,7,9,77.8,8.77,—,3.15,-110,1.14,20.09,—,"77,820",—
-KOLD,PROSHARES TRUST II,lynch,False,2,4,50.0,27.50,1.99,0.59,29.91,—,0.06,120,3M,—
-KOLD,PROSHARES TRUST II,graham,False,4,9,44.4,27.50,1.99,0.59,29.91,—,0.06,120,3M,—
-KOLD,PROSHARES TRUST II,buffett,False,2,6,33.3,27.50,1.99,0.59,29.91,—,0.06,120,3M,—
-KOLD,PROSHARES TRUST II,piotroski,False,3,9,33.3,27.50,1.99,0.59,29.91,—,0.06,120,3M,—
-KOLD,PROSHARES TRUST II,netnet,False,1,4,25.0,27.50,1.99,0.59,29.91,—,0.06,120,3M,—
-KOLD,PROSHARES TRUST II,custom,False,0,0,0.0,27.50,1.99,0.59,29.91,—,0.06,120,3M,—
-GOOGN,Alphabet Inc.,piotroski,False,6,9,66.7,48.31,4.47,1.42,31.83,2.01,0.43,90.88,"92,990",—
-GOOGN,Alphabet Inc.,netnet,False,2,4,50.0,48.31,4.47,1.42,31.83,2.01,0.43,90.88,"92,990",—
-GOOGN,Alphabet Inc.,custom,False,0,0,0.0,48.31,4.47,1.42,31.83,2.01,0.43,90.88,"92,990",—
-SLDE,"Slide Insurance Holdings, Inc.",graham,False,4,9,44.4,24.18,7.20,2.87,39.88,—,1.62,25.25,2M,—
-SLDE,"Slide Insurance Holdings, Inc.",buffett,False,2,6,33.3,24.18,7.20,2.87,39.88,—,1.62,25.25,2M,—
-SLDE,"Slide Insurance Holdings, Inc.",piotroski,False,3,9,33.3,24.18,7.20,2.87,39.88,—,1.62,25.25,2M,—
-SLDE,"Slide Insurance Holdings, Inc.",lynch,False,1,4,25.0,24.18,7.20,2.87,39.88,—,1.62,25.25,2M,—
-SLDE,"Slide Insurance Holdings, Inc.",netnet,False,1,4,25.0,24.18,7.20,2.87,39.88,—,1.62,25.25,2M,—
-SLDE,"Slide Insurance Holdings, Inc.",custom,False,0,0,0.0,24.18,7.20,2.87,39.88,—,1.62,25.25,2M,—
+MSGS,MADISON SQUARE GARDEN SPORTS CORP.,piotroski,True,9,9,100.0,387,"1,210",—,-2.95,0.50,-6.84,—,"220,211",—
+LILA,Liberty Latin America Ltd.,piotroski,True,7,9,77.8,8.75,—,3.14,-110,1.14,20.09,—,"388,886",—
+SAFX,"XCF GLOBAL, INC.",graham,False,4,9,44.4,0.38,0.73,1.43,197,0.11,10.14,1.76,1M,—
+SAFX,"XCF GLOBAL, INC.",buffett,False,2,6,33.3,0.38,0.73,1.43,197,0.11,10.14,1.76,1M,—
+SAFX,"XCF GLOBAL, INC.",lynch,False,1,4,25.0,0.38,0.73,1.43,197,0.11,10.14,1.76,1M,—
+SAFX,"XCF GLOBAL, INC.",netnet,False,1,4,25.0,0.38,0.73,1.43,197,0.11,10.14,1.76,1M,—
+SAFX,"XCF GLOBAL, INC.",piotroski,False,1,9,11.1,0.38,0.73,1.43,197,0.11,10.14,1.76,1M,—
+SAFX,"XCF GLOBAL, INC.",custom,False,0,0,0.0,0.38,0.73,1.43,197,0.11,10.14,1.76,1M,—
 SBC,SBC Medical Group Holdings Incorporated,graham,False,6,9,66.7,4.23,8.46,1.75,20.54,3.78,0.47,5.21,"200,341",—
 SBC,SBC Medical Group Holdings Incorporated,buffett,False,4,6,66.7,4.23,8.46,1.75,20.54,3.78,0.47,5.21,"200,341",—
 SBC,SBC Medical Group Holdings Incorporated,greenblatt,False,2,3,66.7,4.23,8.46,1.75,20.54,3.78,0.47,5.21,"200,341",—
 SBC,SBC Medical Group Holdings Incorporated,netnet,False,2,4,50.0,4.23,8.46,1.75,20.54,3.78,0.47,5.21,"200,341",—
 SBC,SBC Medical Group Holdings Incorporated,piotroski,False,4,9,44.4,4.23,8.46,1.75,20.54,3.78,0.47,5.21,"200,341",—
 SBC,SBC Medical Group Holdings Incorporated,custom,False,0,0,0.0,4.23,8.46,1.75,20.54,3.78,0.47,5.21,"200,341",—
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",greenblatt,False,2,3,66.7,10.17,8.40,—,-221,2.06,-5.32,—,3M,—
+GSG,iShares S&P GSCI Commodity-Indexed Trust,greenblatt,False,1,3,33.3,34.89,27.69,—,—,—,—,—,2M,—
+GSG,iShares S&P GSCI Commodity-Indexed Trust,lynch,False,1,4,25.0,34.89,27.69,—,—,—,—,—,2M,—
+GSG,iShares S&P GSCI Commodity-Indexed Trust,netnet,False,1,4,25.0,34.89,27.69,—,—,—,—,—,2M,—
+GSG,iShares S&P GSCI Commodity-Indexed Trust,buffett,False,1,6,16.7,34.89,27.69,—,—,—,—,—,2M,—
+GSG,iShares S&P GSCI Commodity-Indexed Trust,graham,False,0,9,0.0,34.89,27.69,—,—,—,—,—,2M,—
+GSG,iShares S&P GSCI Commodity-Indexed Trust,piotroski,False,0,9,0.0,34.89,27.69,—,—,—,—,—,2M,—
+GSG,iShares S&P GSCI Commodity-Indexed Trust,custom,False,0,0,0.0,34.89,27.69,—,—,—,—,—,2M,—
+PRI,"Primerica, Inc.",buffett,False,4,6,66.7,294,12.81,3.92,30.71,—,5.14,196,"130,773",—
+PRI,"Primerica, Inc.",greenblatt,False,2,3,66.7,294,12.81,3.92,30.71,—,5.14,196,"130,773",—
+PRI,"Primerica, Inc.",graham,False,5,9,55.6,294,12.81,3.92,30.71,—,5.14,196,"130,773",—
+PRI,"Primerica, Inc.",lynch,False,2,4,50.0,294,12.81,3.92,30.71,—,5.14,196,"130,773",—
+PRI,"Primerica, Inc.",netnet,False,1,4,25.0,294,12.81,3.92,30.71,—,5.14,196,"130,773",—
