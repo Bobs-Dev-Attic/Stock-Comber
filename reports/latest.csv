@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",piotroski,True,9,9,100.0,171,24.13,8.27,34.27,1.46,—,57.37,"505,581",—
-TRAK,"ReposiTrak, Inc.",lynch,True,4,4,100.0,7.91,22.60,3.06,14.09,6.09,0.12,4.51,"92,742",—
-BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,147,20.05,3.43,17.13,2.65,0.86,84.23,"394,821",—
-BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,147,20.05,3.43,17.13,2.65,0.86,84.23,"394,821",—
-ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.24,6.00,0.17,4.91,1.93,0.73,1.14,"156,555",—
-VISN,"Vistance Networks, Inc.",greenblatt,True,3,3,100.0,6.37,0.66,—,-227,3.88,-9.06,—,7M,—
-FSS,FEDERAL SIGNAL CORPORATION,lynch,True,3,4,75.0,117,29.22,5.21,17.84,3.02,0.73,45.03,"375,463",—
-VICR,VICOR CORPORATION,piotroski,True,8,9,88.9,179,68.49,11.42,16.66,8.99,0.10,30.32,"519,924",—
-VICR,VICOR CORPORATION,buffett,True,5,6,83.3,179,68.49,11.42,16.66,8.99,0.10,30.32,"519,924",—
-VICR,VICOR CORPORATION,lynch,True,3,4,75.0,179,68.49,11.42,16.66,8.99,0.10,30.32,"519,924",—
-SBH,"SALLY BEAUTY HOLDINGS, INC.",piotroski,True,8,9,88.9,16.47,8.71,2.15,24.66,2.26,2.62,18.04,1M,—
-HALO,"HALOZYME THERAPEUTICS, INC.",buffett,True,5,6,83.3,111,43.27,281,649,4.66,50.73,4.76,2M,—
-OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,22.27,32.28,4.25,13.20,1.91,0.30,9.01,2M,—
-SHOE,"Shoe Carnival, Inc.",graham,True,8,9,88.9,13.65,7.18,0.54,7.58,3.76,0.74,32.72,"976,876",—
-TRN,TRINITY INDUSTRIES INC,greenblatt,True,3,3,100.0,28.11,9.22,2.16,23.50,—,6.76,29.86,"452,247",—
-TRN,TRINITY INDUSTRIES INC,piotroski,True,7,9,77.8,28.11,9.22,2.16,23.50,—,6.76,29.86,"452,247",—
-KRT,Karat Packaging Inc.,piotroski,True,7,9,77.8,47.06,30.17,6.36,21.07,2.30,0.88,16.12,"114,208",—
-CPK,CHESAPEAKE UTILITIES CORP,piotroski,True,7,9,77.8,132,22.15,1.94,8.78,0.45,—,95.61,"184,272",—
-R,RYDER SYSTEM INC,piotroski,True,9,9,100.0,247,20.68,3.38,16.35,0.89,4.37,140,"224,365",—
-EMBC,EMBECTA CORP.,piotroski,True,7,9,77.8,5.69,3.51,—,-14.66,2.41,—,—,1M,—
-CPRI,CAPRI HOLDINGS LIMITED,greenblatt,True,3,3,100.0,13.24,11.61,19.83,171,1.21,39.38,4.14,5M,—
-CPRI,CAPRI HOLDINGS LIMITED,piotroski,True,7,9,77.8,13.24,11.61,19.83,171,1.21,39.38,4.14,5M,—
-MAGN,Magnera Corporation,piotroski,True,7,9,77.8,12.40,—,0.41,-14.94,2.37,2.75,—,"377,373",—
-GCO,Genesco Inc.,piotroski,True,8,9,88.9,34.44,27.55,0.65,2.34,1.64,1.46,38.74,"447,134",—
-MOS,MOSAIC CO,piotroski,True,8,9,88.9,25.49,14.99,0.67,4.47,1.32,—,38.07,7M,—
-SENS,"Senseonics Holdings, Inc.",piotroski,True,7,9,77.8,9.90,—,6.77,-113,4.83,1.07,—,"750,548",—
-MSGS,MADISON SQUARE GARDEN SPORTS CORP.,piotroski,True,9,9,100.0,387,"1,210",—,-2.95,0.50,-6.84,—,"184,368",—
-SPHR,SPHERE ENTERTAINMENT CO.,piotroski,True,7,9,77.8,143,193,2.90,1.50,1.09,0.89,28.65,"542,138",—
-BNED,"BARNES & NOBLE EDUCATION, INC.",piotroski,True,8,9,88.9,12.20,24.90,1.43,5.73,1.71,1.51,9.68,"271,239",—
-CALX,"Calix, Inc",piotroski,True,7,9,77.8,37.07,143,2.99,2.08,4.24,0.23,8.52,"978,251",—
-WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,8,9,88.9,30.05,33.02,0.69,2.10,2.42,0.76,29.77,"387,922",—
-POWW,Outdoor Holding Company,piotroski,True,8,9,88.9,2.14,—,1.07,-1.51,3.96,0.14,—,"402,359",—
-UNIT,Uniti Group Inc.,greenblatt,False,2,3,66.7,10.17,2.09,7.13,343,0.74,30.65,12.50,2M,—
-UNIT,Uniti Group Inc.,graham,False,4,9,44.4,10.17,2.09,7.13,343,0.74,30.65,12.50,2M,—
-UNIT,Uniti Group Inc.,buffett,False,2,6,33.3,10.17,2.09,7.13,343,0.74,30.65,12.50,2M,—
-UNIT,Uniti Group Inc.,lynch,False,1,4,25.0,10.17,2.09,7.13,343,0.74,30.65,12.50,2M,—
-UNIT,Uniti Group Inc.,netnet,False,1,4,25.0,10.17,2.09,7.13,343,0.74,30.65,12.50,2M,—
-UNIT,Uniti Group Inc.,piotroski,False,2,9,22.2,10.17,2.09,7.13,343,0.74,30.65,12.50,2M,—
-UNIT,Uniti Group Inc.,custom,False,0,0,0.0,10.17,2.09,7.13,343,0.74,30.65,12.50,2M,—
-AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",buffett,False,4,6,66.7,171,24.13,8.27,34.27,1.46,—,57.37,"505,581",—
-AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",greenblatt,False,2,3,66.7,171,24.13,8.27,34.27,1.46,—,57.37,"505,581",—
-AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",graham,False,3,9,33.3,171,24.13,8.27,34.27,1.46,—,57.37,"505,581",—
-AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",lynch,False,1,4,25.0,171,24.13,8.27,34.27,1.46,—,57.37,"505,581",—
-AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",netnet,False,1,4,25.0,171,24.13,8.27,34.27,1.46,—,57.37,"505,581",—
-AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",custom,False,0,0,0.0,171,24.13,8.27,34.27,1.46,—,57.37,"505,581",—
-BOOT,"Boot Barn Holdings, Inc.",graham,False,6,9,66.7,147,20.05,3.43,17.13,2.65,0.86,84.23,"394,821",—
-BOOT,"Boot Barn Holdings, Inc.",buffett,False,4,6,66.7,147,20.05,3.43,17.13,2.65,0.86,84.23,"394,821",—
-TRAK,"ReposiTrak, Inc.",buffett,False,4,6,66.7,7.91,22.60,3.06,14.09,6.09,0.12,4.51,"92,742",—
-TRAK,"ReposiTrak, Inc.",piotroski,False,6,9,66.7,7.91,22.60,3.06,14.09,6.09,0.12,4.51,"92,742",—
-TRAK,"ReposiTrak, Inc.",graham,False,5,9,55.6,7.91,22.60,3.06,14.09,6.09,0.12,4.51,"92,742",—
+GOOGM,Alphabet Inc.,graham,True,9,9,100.0,48.59,4.49,1.43,31.83,2.01,0.43,90.88,1M,—
+GOOGM,Alphabet Inc.,buffett,True,6,6,100.0,48.59,4.49,1.43,31.83,2.01,0.43,90.88,1M,—
+GOOGM,Alphabet Inc.,greenblatt,True,3,3,100.0,48.59,4.49,1.43,31.83,2.01,0.43,90.88,1M,—
+GOOGM,Alphabet Inc.,lynch,True,4,4,100.0,48.59,4.49,1.43,31.83,2.01,0.43,90.88,1M,—
+SLDE,"Slide Insurance Holdings, Inc.",greenblatt,True,3,3,100.0,24.73,7.36,2.93,39.88,—,1.62,25.25,2M,—
+PD,"PAGERDUTY, INC.",greenblatt,True,3,3,100.0,14.10,7.54,5.17,68.37,2.01,2.84,10.71,1M,28.03
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",piotroski,True,7,9,77.8,10.09,8.34,—,-221,2.06,-5.32,—,2M,12.60
+PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,298,13.00,3.98,30.71,—,5.14,196,"140,847",-0.61
+ESE,ESCO TECHNOLOGIES INC.,lynch,True,4,4,100.0,274,23.71,4.61,19.42,1.35,0.56,124,"247,566",8.36
+TREE,"LendingTree, Inc.",greenblatt,True,3,3,100.0,28.01,2.60,1.37,52.76,1.67,1.98,70.33,"251,376",-69.24
+BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,147,20.05,3.43,17.13,2.65,0.86,84.23,"394,821",-5.29
+BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,147,20.05,3.43,17.13,2.65,0.86,84.23,"394,821",-5.29
+ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.24,6.00,0.17,4.91,1.93,0.73,1.14,"156,555",7.87
+PJT,PJT Partners Inc.,buffett,True,5,6,83.3,186,—,—,58.43,—,2.71,—,"473,775",-18.55
+PJT,PJT Partners Inc.,piotroski,True,7,9,77.8,186,—,—,58.43,—,2.71,—,"473,775",-18.55
+GGG,GRACO INC.,piotroski,True,8,9,88.9,77.88,25.29,4.97,19.66,3.15,—,32.97,2M,-0.70
+GGG,GRACO INC.,buffett,True,5,6,83.3,77.88,25.29,4.97,19.66,3.15,—,32.97,2M,-0.70
+EVR,EVERCORE INC.,buffett,True,5,6,83.3,297,21.13,6.16,29.14,2.16,1.50,123,"416,053",-14.04
+EVR,EVERCORE INC.,piotroski,True,7,9,77.8,297,21.13,6.16,29.14,2.16,1.50,123,"416,053",-14.04
+VISN,"Vistance Networks, Inc.",greenblatt,True,3,3,100.0,6.37,0.66,—,-227,3.88,-9.06,—,7M,40.09
+GPK,Graphic Packaging Holding Co,lynch,True,3,4,75.0,10.70,7.23,0.96,13.31,1.30,—,19.25,4M,-17.95
+SBH,"SALLY BEAUTY HOLDINGS, INC.",piotroski,True,8,9,88.9,16.47,8.71,2.15,24.66,2.26,2.62,18.04,1M,-25.48
+AGCO,AGCO CORP /DE,piotroski,True,8,9,88.9,126,12.90,2.19,17.00,1.39,1.72,112,2M,-11.35
+KRT,Karat Packaging Inc.,piotroski,True,7,9,77.8,47.06,30.17,6.36,21.07,2.30,0.88,16.12,"114,208",47.16
+R,RYDER SYSTEM INC,piotroski,True,9,9,100.0,247,20.68,3.38,16.35,0.89,4.37,140,"224,365",-40.42
+CBL,"CBL & ASSOCIATES PROPERTIES, INC.",piotroski,True,7,9,77.8,54.92,12.65,4.52,36.26,—,6.31,34.45,"212,645",37.49
+CPRI,CAPRI HOLDINGS LIMITED,greenblatt,True,3,3,100.0,13.24,11.61,19.83,171,1.21,39.38,4.14,5M,31.28
+CPRI,CAPRI HOLDINGS LIMITED,piotroski,True,7,9,77.8,13.24,11.61,19.83,171,1.21,39.38,4.14,5M,31.28
+FAF,FIRST AMERICAN FINANCIAL CORPORATION,piotroski,True,8,9,88.9,76.51,12.75,1.44,11.31,—,1.95,84.61,"643,914",-11.33
+MAGN,Magnera Corporation,piotroski,True,7,9,77.8,12.40,—,0.41,-14.94,2.37,2.75,—,"377,373",1.95
+HCSG,"HEALTHCARE SERVICES GROUP, INC.",piotroski,True,9,9,100.0,21.71,26.80,3.11,11.58,3.38,—,11.28,"582,484",-13.53
+MOS,MOSAIC CO,piotroski,True,8,9,88.9,25.49,14.99,0.67,4.47,1.32,—,38.07,7M,-3.48
+OMCL,"OMNICELL, INC",piotroski,True,7,9,77.8,34.82,870,1.31,0.17,1.43,0.60,4.89,"673,323",-40.92
+GOOGM,Alphabet Inc.,piotroski,False,6,9,66.7,48.59,4.49,1.43,31.83,2.01,0.43,90.88,1M,—
+GOOGM,Alphabet Inc.,netnet,False,2,4,50.0,48.59,4.49,1.43,31.83,2.01,0.43,90.88,1M,—
+GOOGM,Alphabet Inc.,custom,False,0,0,0.0,48.59,4.49,1.43,31.83,2.01,0.43,90.88,1M,—
+SLDE,"Slide Insurance Holdings, Inc.",graham,False,4,9,44.4,24.73,7.36,2.93,39.88,—,1.62,25.25,2M,—
+SLDE,"Slide Insurance Holdings, Inc.",buffett,False,2,6,33.3,24.73,7.36,2.93,39.88,—,1.62,25.25,2M,—
+SLDE,"Slide Insurance Holdings, Inc.",piotroski,False,3,9,33.3,24.73,7.36,2.93,39.88,—,1.62,25.25,2M,—
+SLDE,"Slide Insurance Holdings, Inc.",lynch,False,1,4,25.0,24.73,7.36,2.93,39.88,—,1.62,25.25,2M,—
+SLDE,"Slide Insurance Holdings, Inc.",netnet,False,1,4,25.0,24.73,7.36,2.93,39.88,—,1.62,25.25,2M,—
+SLDE,"Slide Insurance Holdings, Inc.",custom,False,0,0,0.0,24.73,7.36,2.93,39.88,—,1.62,25.25,2M,—
+PD,"PAGERDUTY, INC.",piotroski,False,6,9,66.7,14.10,7.54,5.17,68.37,2.01,2.84,10.71,1M,28.03
+PD,"PAGERDUTY, INC.",buffett,False,3,6,50.0,14.10,7.54,5.17,68.37,2.01,2.84,10.71,1M,28.03
+PD,"PAGERDUTY, INC.",graham,False,3,9,33.3,14.10,7.54,5.17,68.37,2.01,2.84,10.71,1M,28.03
+PD,"PAGERDUTY, INC.",lynch,False,1,4,25.0,14.10,7.54,5.17,68.37,2.01,2.84,10.71,1M,28.03
+PD,"PAGERDUTY, INC.",netnet,False,1,4,25.0,14.10,7.54,5.17,68.37,2.01,2.84,10.71,1M,28.03
+PD,"PAGERDUTY, INC.",custom,False,0,0,0.0,14.10,7.54,5.17,68.37,2.01,2.84,10.71,1M,28.03
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",greenblatt,False,2,3,66.7,10.09,8.34,—,-221,2.06,-5.32,—,2M,12.60
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",lynch,False,2,4,50.0,10.09,8.34,—,-221,2.06,-5.32,—,2M,12.60
