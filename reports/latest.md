@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-04 14:07 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-04 17:25 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **33** strategy matches passed.
+Screened **75** companies · **26** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| GOOGM | Alphabet Inc. | graham | ✅ | 100% | 48.59 | 4.49 | 1.43 | 31.83 | 2.01 | 0.43 | 1M | — |
-| GOOGM | Alphabet Inc. | buffett | ✅ | 100% | 48.59 | 4.49 | 1.43 | 31.83 | 2.01 | 0.43 | 1M | — |
-| GOOGM | Alphabet Inc. | greenblatt | ✅ | 100% | 48.59 | 4.49 | 1.43 | 31.83 | 2.01 | 0.43 | 1M | — |
-| GOOGM | Alphabet Inc. | lynch | ✅ | 100% | 48.59 | 4.49 | 1.43 | 31.83 | 2.01 | 0.43 | 1M | — |
-| SLDE | Slide Insurance Holdings, In | greenblatt | ✅ | 100% | 24.73 | 7.36 | 2.93 | 39.88 | — | 1.62 | 2M | — |
-| PD | PAGERDUTY, INC. | greenblatt | ✅ | 100% | 14.10 | 7.54 | 5.17 | 68.37 | 2.01 | 2.84 | 1M | 28.03 |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | piotroski | ✅ | 78% | 10.09 | 8.34 | — | -221 | 2.06 | -5.32 | 2M | 12.60 |
-| PRI | Primerica, Inc. | piotroski | ✅ | 89% | 298 | 13.00 | 3.98 | 30.71 | — | 5.14 | 140,847 | -0.61 |
-| ESE | ESCO TECHNOLOGIES INC. | lynch | ✅ | 100% | 274 | 23.71 | 4.61 | 19.42 | 1.35 | 0.56 | 247,566 | 8.36 |
-| TREE | LendingTree, Inc. | greenblatt | ✅ | 100% | 28.01 | 2.60 | 1.37 | 52.76 | 1.67 | 1.98 | 251,376 | -69.24 |
-| BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 147 | 20.05 | 3.43 | 17.13 | 2.65 | 0.86 | 394,821 | -5.29 |
-| BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 147 | 20.05 | 3.43 | 17.13 | 2.65 | 0.86 | 394,821 | -5.29 |
-| ANNAW | AleAnna, Inc. | piotroski | ✅ | 78% | 0.24 | 6.00 | 0.17 | 4.91 | 1.93 | 0.73 | 156,555 | 7.87 |
-| PJT | PJT Partners Inc. | buffett | ✅ | 83% | 186 | — | — | 58.43 | — | 2.71 | 473,775 | -18.55 |
-| PJT | PJT Partners Inc. | piotroski | ✅ | 78% | 186 | — | — | 58.43 | — | 2.71 | 473,775 | -18.55 |
-| GGG | GRACO INC. | piotroski | ✅ | 89% | 77.88 | 25.29 | 4.97 | 19.66 | 3.15 | — | 2M | -0.70 |
-| GGG | GRACO INC. | buffett | ✅ | 83% | 77.88 | 25.29 | 4.97 | 19.66 | 3.15 | — | 2M | -0.70 |
-| EVR | EVERCORE INC. | buffett | ✅ | 83% | 297 | 21.13 | 6.16 | 29.14 | 2.16 | 1.50 | 416,053 | -14.04 |
-| EVR | EVERCORE INC. | piotroski | ✅ | 78% | 297 | 21.13 | 6.16 | 29.14 | 2.16 | 1.50 | 416,053 | -14.04 |
-| VISN | Vistance Networks, Inc. | greenblatt | ✅ | 100% | 6.37 | 0.66 | — | -227 | 3.88 | -9.06 | 7M | 40.09 |
-| GPK | Graphic Packaging Holding Co | lynch | ✅ | 75% | 10.70 | 7.23 | 0.96 | 13.31 | 1.30 | — | 4M | -17.95 |
-| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 16.47 | 8.71 | 2.15 | 24.66 | 2.26 | 2.62 | 1M | -25.48 |
-| AGCO | AGCO CORP /DE | piotroski | ✅ | 89% | 126 | 12.90 | 2.19 | 17.00 | 1.39 | 1.72 | 2M | -11.35 |
-| KRT | Karat Packaging Inc. | piotroski | ✅ | 78% | 47.06 | 30.17 | 6.36 | 21.07 | 2.30 | 0.88 | 114,208 | 47.16 |
-| R | RYDER SYSTEM INC | piotroski | ✅ | 100% | 247 | 20.68 | 3.38 | 16.35 | 0.89 | 4.37 | 224,365 | -40.42 |
-| CBL | CBL & ASSOCIATES PROPERTIES, | piotroski | ✅ | 78% | 54.92 | 12.65 | 4.52 | 36.26 | — | 6.31 | 212,645 | 37.49 |
-| CPRI | CAPRI HOLDINGS LIMITED | greenblatt | ✅ | 100% | 13.24 | 11.61 | 19.83 | 171 | 1.21 | 39.38 | 5M | 31.28 |
-| CPRI | CAPRI HOLDINGS LIMITED | piotroski | ✅ | 78% | 13.24 | 11.61 | 19.83 | 171 | 1.21 | 39.38 | 5M | 31.28 |
-| FAF | FIRST AMERICAN FINANCIAL COR | piotroski | ✅ | 89% | 76.51 | 12.75 | 1.44 | 11.31 | — | 1.95 | 643,914 | -11.33 |
-| MAGN | Magnera Corporation | piotroski | ✅ | 78% | 12.40 | — | 0.41 | -14.94 | 2.37 | 2.75 | 377,373 | 1.95 |
-| HCSG | HEALTHCARE SERVICES GROUP, I | piotroski | ✅ | 100% | 21.71 | 26.80 | 3.11 | 11.58 | 3.38 | — | 582,484 | -13.53 |
-| MOS | MOSAIC CO | piotroski | ✅ | 89% | 25.49 | 14.99 | 0.67 | 4.47 | 1.32 | — | 7M | -3.48 |
-| OMCL | OMNICELL, INC | piotroski | ✅ | 78% | 34.82 | 870 | 1.31 | 0.17 | 1.43 | 0.60 | 673,323 | -40.92 |
-| GOOGM | Alphabet Inc. | piotroski | ▫️ | 67% | 48.59 | 4.49 | 1.43 | 31.83 | 2.01 | 0.43 | 1M | — |
-| GOOGM | Alphabet Inc. | netnet | ▫️ | 50% | 48.59 | 4.49 | 1.43 | 31.83 | 2.01 | 0.43 | 1M | — |
-| GOOGM | Alphabet Inc. | custom | ▫️ | 0% | 48.59 | 4.49 | 1.43 | 31.83 | 2.01 | 0.43 | 1M | — |
-| SLDE | Slide Insurance Holdings, In | graham | ▫️ | 44% | 24.73 | 7.36 | 2.93 | 39.88 | — | 1.62 | 2M | — |
-| SLDE | Slide Insurance Holdings, In | buffett | ▫️ | 33% | 24.73 | 7.36 | 2.93 | 39.88 | — | 1.62 | 2M | — |
-| SLDE | Slide Insurance Holdings, In | piotroski | ▫️ | 33% | 24.73 | 7.36 | 2.93 | 39.88 | — | 1.62 | 2M | — |
-| SLDE | Slide Insurance Holdings, In | lynch | ▫️ | 25% | 24.73 | 7.36 | 2.93 | 39.88 | — | 1.62 | 2M | — |
-| SLDE | Slide Insurance Holdings, In | netnet | ▫️ | 25% | 24.73 | 7.36 | 2.93 | 39.88 | — | 1.62 | 2M | — |
-| SLDE | Slide Insurance Holdings, In | custom | ▫️ | 0% | 24.73 | 7.36 | 2.93 | 39.88 | — | 1.62 | 2M | — |
-| PD | PAGERDUTY, INC. | piotroski | ▫️ | 67% | 14.10 | 7.54 | 5.17 | 68.37 | 2.01 | 2.84 | 1M | 28.03 |
-| PD | PAGERDUTY, INC. | buffett | ▫️ | 50% | 14.10 | 7.54 | 5.17 | 68.37 | 2.01 | 2.84 | 1M | 28.03 |
-| PD | PAGERDUTY, INC. | graham | ▫️ | 33% | 14.10 | 7.54 | 5.17 | 68.37 | 2.01 | 2.84 | 1M | 28.03 |
-| PD | PAGERDUTY, INC. | lynch | ▫️ | 25% | 14.10 | 7.54 | 5.17 | 68.37 | 2.01 | 2.84 | 1M | 28.03 |
-| PD | PAGERDUTY, INC. | netnet | ▫️ | 25% | 14.10 | 7.54 | 5.17 | 68.37 | 2.01 | 2.84 | 1M | 28.03 |
-| PD | PAGERDUTY, INC. | custom | ▫️ | 0% | 14.10 | 7.54 | 5.17 | 68.37 | 2.01 | 2.84 | 1M | 28.03 |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | greenblatt | ▫️ | 67% | 10.09 | 8.34 | — | -221 | 2.06 | -5.32 | 2M | 12.60 |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | lynch | ▫️ | 50% | 10.09 | 8.34 | — | -221 | 2.06 | -5.32 | 2M | 12.60 |
+| KOLD | PROSHARES TRUST II | greenblatt | ✅ | 100% | 28.28 | 2.05 | 0.61 | 29.91 | — | 0.06 | 1M | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | piotroski | ✅ | 100% | 171 | 24.13 | 8.27 | 34.27 | 1.46 | — | 505,581 | — |
+| AIV | Apartment Investment and Man | greenblatt | ✅ | 100% | 2.54 | 0.66 | 0.99 | 151 | — | 3.10 | 512,040 | — |
+| FHI | Federated Hermes, Inc. | greenblatt | ✅ | 100% | 62.16 | 12.12 | 3.90 | 33.69 | 2.75 | 0.81 | 690,679 | — |
+| FHI | Federated Hermes, Inc. | piotroski | ✅ | 89% | 62.16 | 12.12 | 3.90 | 33.69 | 2.75 | 0.81 | 690,679 | — |
+| AREC | AMERICAN RESOURCES CORPORATI | greenblatt | ✅ | 100% | 2.44 | 3.87 | 2.25 | 58.44 | 2.19 | 0.80 | 1M | — |
+| SSD | Simpson Manufacturing Co., I | buffett | ✅ | 83% | 181 | 21.91 | 3.72 | 17.00 | 3.54 | 0.51 | 36,571 | — |
+| SSD | Simpson Manufacturing Co., I | piotroski | ✅ | 78% | 181 | 21.91 | 3.72 | 17.00 | 3.54 | 0.51 | 36,571 | — |
+| DAKT | Daktronics, Inc. | piotroski | ✅ | 89% | 19.48 | 21.17 | 3.20 | 15.09 | 2.31 | — | 2M | — |
+| DAKT | Daktronics, Inc. | lynch | ✅ | 75% | 19.48 | 21.17 | 3.20 | 15.09 | 2.31 | — | 2M | — |
+| GGG | GRACO INC. | piotroski | ✅ | 89% | 77.83 | 25.27 | 4.96 | 19.66 | 3.15 | — | 426,388 | — |
+| GGG | GRACO INC. | buffett | ✅ | 83% | 77.83 | 25.27 | 4.96 | 19.66 | 3.15 | — | 426,388 | — |
+| FTDR | Frontdoor, Inc. | piotroski | ✅ | 89% | 82.33 | 24.07 | 25.35 | 105 | 1.55 | — | 151,433 | — |
+| FTDR | Frontdoor, Inc. | buffett | ✅ | 83% | 82.33 | 24.07 | 25.35 | 105 | 1.55 | — | 151,433 | — |
+| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 16.47 | 8.71 | 2.15 | 24.66 | 2.26 | 2.62 | 1M | — |
+| OSW | OneSpaWorld Holdings Limited | piotroski | ✅ | 78% | 22.38 | 32.43 | 4.28 | 13.20 | 1.91 | 0.30 | 371,982 | — |
+| SIRI | SIRIUS XM HOLDINGS INC. | lynch | ✅ | 75% | 29.23 | 13.11 | 0.90 | 6.96 | 0.30 | 1.36 | 1M | — |
+| BCPC | Balchem Corporation | piotroski | ✅ | 100% | 172 | 36.16 | 4.45 | 12.31 | 2.07 | 0.34 | 180,029 | — |
+| CPK | CHESAPEAKE UTILITIES CORP | piotroski | ✅ | 78% | 132 | 22.15 | 1.94 | 8.78 | 0.45 | — | 184,275 | — |
+| LCII | LCI INDUSTRIES | piotroski | ✅ | 89% | 103 | 13.55 | 1.87 | 13.83 | 2.85 | 1.33 | 134,388 | — |
+| EMBC | EMBECTA CORP. | piotroski | ✅ | 78% | 5.69 | 3.51 | — | -14.66 | 2.41 | — | 1M | — |
+| FMNB | FARMERS NATIONAL BANC CORP / | piotroski | ✅ | 89% | 15.82 | 10.91 | 1.23 | 11.24 | — | 9.80 | 269,315 | — |
+| CBU | COMMUNITY FINANCIAL SYSTEM,  | piotroski | ✅ | 89% | 63.49 | 15.99 | 1.67 | 10.49 | — | 7.63 | 259,518 | — |
+| FBNC | FIRST BANCORP | piotroski | ✅ | 78% | 64.34 | 24.01 | 1.61 | 6.71 | — | 6.66 | 130,600 | — |
+| FAF | FIRST AMERICAN FINANCIAL COR | piotroski | ✅ | 89% | 73.69 | 12.28 | 1.39 | 11.31 | — | 1.95 | 515,158 | — |
+| WWW | WOLVERINE WORLD WIDE, INC. | piotroski | ✅ | 78% | 20.20 | 17.71 | 4.04 | 23.48 | 1.40 | — | 236,858 | — |
+| KOLD | PROSHARES TRUST II | lynch | ▫️ | 50% | 28.28 | 2.05 | 0.61 | 29.91 | — | 0.06 | 1M | — |
+| KOLD | PROSHARES TRUST II | graham | ▫️ | 44% | 28.28 | 2.05 | 0.61 | 29.91 | — | 0.06 | 1M | — |
+| KOLD | PROSHARES TRUST II | buffett | ▫️ | 33% | 28.28 | 2.05 | 0.61 | 29.91 | — | 0.06 | 1M | — |
+| KOLD | PROSHARES TRUST II | piotroski | ▫️ | 33% | 28.28 | 2.05 | 0.61 | 29.91 | — | 0.06 | 1M | — |
+| KOLD | PROSHARES TRUST II | netnet | ▫️ | 25% | 28.28 | 2.05 | 0.61 | 29.91 | — | 0.06 | 1M | — |
+| KOLD | PROSHARES TRUST II | custom | ▫️ | 0% | 28.28 | 2.05 | 0.61 | 29.91 | — | 0.06 | 1M | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | buffett | ▫️ | 67% | 171 | 24.13 | 8.27 | 34.27 | 1.46 | — | 505,581 | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | greenblatt | ▫️ | 67% | 171 | 24.13 | 8.27 | 34.27 | 1.46 | — | 505,581 | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | graham | ▫️ | 33% | 171 | 24.13 | 8.27 | 34.27 | 1.46 | — | 505,581 | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | lynch | ▫️ | 25% | 171 | 24.13 | 8.27 | 34.27 | 1.46 | — | 505,581 | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | netnet | ▫️ | 25% | 171 | 24.13 | 8.27 | 34.27 | 1.46 | — | 505,581 | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | custom | ▫️ | 0% | 171 | 24.13 | 8.27 | 34.27 | 1.46 | — | 505,581 | — |
+| AIV | Apartment Investment and Man | piotroski | ▫️ | 56% | 2.54 | 0.66 | 0.99 | 151 | — | 3.10 | 512,040 | — |
+| AIV | Apartment Investment and Man | graham | ▫️ | 44% | 2.54 | 0.66 | 0.99 | 151 | — | 3.10 | 512,040 | — |
+| AIV | Apartment Investment and Man | buffett | ▫️ | 33% | 2.54 | 0.66 | 0.99 | 151 | — | 3.10 | 512,040 | — |
+| AIV | Apartment Investment and Man | lynch | ▫️ | 25% | 2.54 | 0.66 | 0.99 | 151 | — | 3.10 | 512,040 | — |
+| AIV | Apartment Investment and Man | netnet | ▫️ | 25% | 2.54 | 0.66 | 0.99 | 151 | — | 3.10 | 512,040 | — |
+| AIV | Apartment Investment and Man | custom | ▫️ | 0% | 2.54 | 0.66 | 0.99 | 151 | — | 3.10 | 512,040 | — |
+| FHI | Federated Hermes, Inc. | graham | ▫️ | 67% | 62.16 | 12.12 | 3.90 | 33.69 | 2.75 | 0.81 | 690,679 | — |
+| FHI | Federated Hermes, Inc. | buffett | ▫️ | 67% | 62.16 | 12.12 | 3.90 | 33.69 | 2.75 | 0.81 | 690,679 | — |
+| FHI | Federated Hermes, Inc. | lynch | ▫️ | 25% | 62.16 | 12.12 | 3.90 | 33.69 | 2.75 | 0.81 | 690,679 | — |
+| FHI | Federated Hermes, Inc. | netnet | ▫️ | 25% | 62.16 | 12.12 | 3.90 | 33.69 | 2.75 | 0.81 | 690,679 | — |
+| FHI | Federated Hermes, Inc. | custom | ▫️ | 0% | 62.16 | 12.12 | 3.90 | 33.69 | 2.75 | 0.81 | 690,679 | — |
+| AREC | AMERICAN RESOURCES CORPORATI | graham | ▫️ | 56% | 2.44 | 3.87 | 2.25 | 58.44 | 2.19 | 0.80 | 1M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
