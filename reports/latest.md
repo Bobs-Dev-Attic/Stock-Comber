@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-06 04:55 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-06 09:06 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **22** strategy matches passed.
+Screened **75** companies · **28** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| GOOGM | Alphabet Inc. | graham | ✅ | 100% | 48.22 | 4.46 | 1.42 | 31.83 | 2.01 | 0.43 | 124,961 | — |
-| GOOGM | Alphabet Inc. | buffett | ✅ | 100% | 48.22 | 4.46 | 1.42 | 31.83 | 2.01 | 0.43 | 124,961 | — |
-| GOOGM | Alphabet Inc. | greenblatt | ✅ | 100% | 48.22 | 4.46 | 1.42 | 31.83 | 2.01 | 0.43 | 124,961 | — |
-| GOOGM | Alphabet Inc. | lynch | ✅ | 100% | 48.22 | 4.46 | 1.42 | 31.83 | 2.01 | 0.43 | 124,961 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | piotroski | ✅ | 100% | 122 | 22.38 | 4.22 | 18.86 | 0.86 | 0.33 | 85,292 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | lynch | ✅ | 100% | 122 | 22.38 | 4.22 | 18.86 | 0.86 | 0.33 | 85,292 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | buffett | ✅ | 83% | 122 | 22.38 | 4.22 | 18.86 | 0.86 | 0.33 | 85,292 | — |
-| TREE | LendingTree, Inc. | greenblatt | ✅ | 100% | 28.35 | 2.63 | 1.39 | 52.76 | 1.67 | 1.98 | 495,401 | — |
-| ANNAW | AleAnna, Inc. | piotroski | ✅ | 78% | 0.20 | 5.00 | 0.14 | 4.91 | 1.93 | 0.73 | 25,219 | — |
-| AROC | Archrock, Inc. | piotroski | ✅ | 89% | 32.69 | 17.86 | 3.83 | 21.61 | 1.54 | 1.92 | 1M | — |
-| HAFC | HANMI FINANCIAL CORPORATION | piotroski | ✅ | 89% | 32.06 | 12.77 | 1.21 | 9.55 | — | 8.88 | 192,640 | — |
-| CNMD | CONMED CORPORATION | lynch | ✅ | 75% | 49.32 | 32.66 | 1.49 | 4.55 | 2.14 | 1.25 | 281,280 | — |
-| VCEL | VERICEL CORPORATION | piotroski | ✅ | 100% | 40.19 | 126 | 5.91 | 4.66 | 5.03 | 0.38 | 312,911 | — |
-| VCEL | VERICEL CORPORATION | lynch | ✅ | 75% | 40.19 | 126 | 5.91 | 4.66 | 5.03 | 0.38 | 312,911 | — |
-| CYH | COMMUNITY HEALTH SYSTEMS, IN | piotroski | ✅ | 89% | 2.89 | 0.77 | — | -36.51 | 1.46 | -10.07 | 1M | — |
-| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.54 | 20.64 | 0.81 | 3.99 | 9.18 | 0.34 | 132,843 | — |
-| WWW | WOLVERINE WORLD WIDE, INC. | piotroski | ✅ | 78% | 20.76 | 18.21 | 4.16 | 23.48 | 1.40 | — | 2M | — |
-| AIOT | POWERFLEET, INC. | piotroski | ✅ | 78% | 3.02 | — | 0.85 | -4.32 | 1.13 | 1.00 | 600,528 | — |
-| HCSG | HEALTHCARE SERVICES GROUP, I | piotroski | ✅ | 100% | 21.82 | 26.94 | 3.12 | 11.58 | 3.38 | — | 593,954 | — |
-| FUL | FULLER H B CO | piotroski | ✅ | 78% | 53.89 | 19.60 | 1.49 | 7.59 | 1.70 | 1.59 | 382,258 | — |
+| GLD | SPDR® GOLD TRUST | lynch | ✅ | 75% | 407 | 3.66 | — | — | — | — | 10M | — |
+| GOOGN | Alphabet Inc. | graham | ✅ | 100% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,383 | — |
+| GOOGN | Alphabet Inc. | buffett | ✅ | 100% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,383 | — |
+| GOOGN | Alphabet Inc. | greenblatt | ✅ | 100% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,383 | — |
+| GOOGN | Alphabet Inc. | lynch | ✅ | 100% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,383 | — |
+| SAFX | XCF GLOBAL, INC. | greenblatt | ✅ | 100% | 0.39 | 0.76 | 1.49 | 197 | 0.11 | 10.14 | 3M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | piotroski | ✅ | 78% | 30.48 | 6.71 | 1.97 | 29.41 | 1.47 | 1.81 | 955,636 | — |
+| PRI | Primerica, Inc. | piotroski | ✅ | 89% | 296 | 12.90 | 3.95 | 30.71 | — | 5.14 | 180,719 | — |
+| PJT | PJT Partners Inc. | buffett | ✅ | 83% | 183 | — | — | 58.43 | — | 2.71 | 332,270 | — |
+| PJT | PJT Partners Inc. | piotroski | ✅ | 78% | 183 | — | — | 58.43 | — | 2.71 | 332,270 | — |
+| PRDO | PERDOCEO EDUCATION CORP | piotroski | ✅ | 89% | 33.20 | 13.72 | 2.26 | 16.45 | 5.06 | — | 418,970 | — |
+| FTDR | Frontdoor, Inc. | piotroski | ✅ | 89% | 82.60 | 24.15 | 25.43 | 105 | 1.55 | — | 399,128 | — |
+| FTDR | Frontdoor, Inc. | buffett | ✅ | 83% | 82.60 | 24.15 | 25.43 | 105 | 1.55 | — | 399,128 | — |
+| FSS | FEDERAL SIGNAL CORPORATION | lynch | ✅ | 75% | 119 | 29.75 | 5.31 | 17.84 | 3.02 | 0.73 | 326,123 | — |
+| WLY | JOHN WILEY & SONS, INC. | piotroski | ✅ | 100% | 48.19 | 11.58 | 3.03 | 26.13 | 0.54 | 2.06 | 1M | — |
+| AXTA | AXALTA COATING SYSTEMS LTD. | lynch | ✅ | 75% | 35.78 | 20.56 | 3.31 | 16.11 | 2.06 | 2.22 | 2M | — |
+| BCPC | Balchem Corporation | piotroski | ✅ | 100% | 172 | 36.13 | 4.45 | 12.31 | 2.07 | 0.34 | 89,947 | — |
+| FMNB | FARMERS NATIONAL BANC CORP / | piotroski | ✅ | 89% | 16.07 | 11.08 | 1.25 | 11.24 | — | 9.80 | 325,680 | — |
+| WOR | WORTHINGTON ENTERPRISES, INC | piotroski | ✅ | 89% | 62.49 | 19.90 | 3.02 | 15.20 | 2.37 | 0.80 | 411,972 | — |
+| CPRI | CAPRI HOLDINGS LIMITED | greenblatt | ✅ | 100% | 13.56 | 11.89 | 20.31 | 171 | 1.21 | 39.38 | 4M | — |
+| CPRI | CAPRI HOLDINGS LIMITED | piotroski | ✅ | 78% | 13.56 | 11.89 | 20.31 | 171 | 1.21 | 39.38 | 4M | — |
+| FAF | FIRST AMERICAN FINANCIAL COR | piotroski | ✅ | 89% | 72.75 | 12.12 | 1.37 | 11.31 | — | 1.95 | 1M | — |
+| LW | Lamb Weston Holdings, Inc. | piotroski | ✅ | 78% | 49.87 | 23.98 | 3.80 | 15.89 | 1.42 | — | 1M | — |
+| GCO | Genesco Inc. | piotroski | ✅ | 89% | 35.81 | 28.65 | 0.67 | 2.34 | 1.64 | 1.46 | 332,369 | — |
 | SENS | Senseonics Holdings, Inc. | piotroski | ✅ | 78% | 9.63 | — | 6.58 | -113 | 4.83 | 1.07 | 425,575 | — |
+| NEOG | Neogen Corporation | piotroski | ✅ | 89% | 11.83 | — | 1.23 | -0.38 | 3.82 | 0.60 | 1M | — |
 | WGO | WINNEBAGO INDUSTRIES, INC. | piotroski | ✅ | 89% | 31.03 | 34.10 | 0.72 | 2.10 | 2.42 | 0.76 | 425,863 | — |
-| GOOGM | Alphabet Inc. | piotroski | ▫️ | 67% | 48.22 | 4.46 | 1.42 | 31.83 | 2.01 | 0.43 | 124,961 | — |
-| GOOGM | Alphabet Inc. | netnet | ▫️ | 50% | 48.22 | 4.46 | 1.42 | 31.83 | 2.01 | 0.43 | 124,961 | — |
-| GOOGM | Alphabet Inc. | custom | ▫️ | 0% | 48.22 | 4.46 | 1.42 | 31.83 | 2.01 | 0.43 | 124,961 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | graham | ▫️ | 33% | 122 | 22.38 | 4.22 | 18.86 | 0.86 | 0.33 | 85,292 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | greenblatt | ▫️ | 33% | 122 | 22.38 | 4.22 | 18.86 | 0.86 | 0.33 | 85,292 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | netnet | ▫️ | 25% | 122 | 22.38 | 4.22 | 18.86 | 0.86 | 0.33 | 85,292 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | custom | ▫️ | 0% | 122 | 22.38 | 4.22 | 18.86 | 0.86 | 0.33 | 85,292 | — |
-| TREE | LendingTree, Inc. | piotroski | ▫️ | 67% | 28.35 | 2.63 | 1.39 | 52.76 | 1.67 | 1.98 | 495,401 | — |
-| TREE | LendingTree, Inc. | graham | ▫️ | 56% | 28.35 | 2.63 | 1.39 | 52.76 | 1.67 | 1.98 | 495,401 | — |
-| TREE | LendingTree, Inc. | buffett | ▫️ | 50% | 28.35 | 2.63 | 1.39 | 52.76 | 1.67 | 1.98 | 495,401 | — |
-| TREE | LendingTree, Inc. | lynch | ▫️ | 25% | 28.35 | 2.63 | 1.39 | 52.76 | 1.67 | 1.98 | 495,401 | — |
-| TREE | LendingTree, Inc. | netnet | ▫️ | 25% | 28.35 | 2.63 | 1.39 | 52.76 | 1.67 | 1.98 | 495,401 | — |
-| TREE | LendingTree, Inc. | custom | ▫️ | 0% | 28.35 | 2.63 | 1.39 | 52.76 | 1.67 | 1.98 | 495,401 | — |
-| UROY | URANIUM     ROYALTY CORP. | lynch | ▫️ | 50% | 4.44 | 15.31 | 1.98 | 12.87 | 5.94 | 0.19 | 3M | — |
-| UROY | URANIUM     ROYALTY CORP. | netnet | ▫️ | 50% | 4.44 | 15.31 | 1.98 | 12.87 | 5.94 | 0.19 | 3M | — |
-| UROY | URANIUM     ROYALTY CORP. | graham | ▫️ | 33% | 4.44 | 15.31 | 1.98 | 12.87 | 5.94 | 0.19 | 3M | — |
-| UROY | URANIUM     ROYALTY CORP. | buffett | ▫️ | 33% | 4.44 | 15.31 | 1.98 | 12.87 | 5.94 | 0.19 | 3M | — |
-| UROY | URANIUM     ROYALTY CORP. | piotroski | ▫️ | 33% | 4.44 | 15.31 | 1.98 | 12.87 | 5.94 | 0.19 | 3M | — |
-| UROY | URANIUM     ROYALTY CORP. | greenblatt | ▫️ | 33% | 4.44 | 15.31 | 1.98 | 12.87 | 5.94 | 0.19 | 3M | — |
-| UROY | URANIUM     ROYALTY CORP. | custom | ▫️ | 0% | 4.44 | 15.31 | 1.98 | 12.87 | 5.94 | 0.19 | 3M | — |
-| RUN | Sunrun Inc. | greenblatt | ▫️ | 67% | 8.89 | 5.20 | 0.75 | 14.36 | 1.66 | 5.63 | 6M | — |
-| RUN | Sunrun Inc. | graham | ▫️ | 56% | 8.89 | 5.20 | 0.75 | 14.36 | 1.66 | 5.63 | 6M | — |
-| RUN | Sunrun Inc. | piotroski | ▫️ | 56% | 8.89 | 5.20 | 0.75 | 14.36 | 1.66 | 5.63 | 6M | — |
-| RUN | Sunrun Inc. | lynch | ▫️ | 25% | 8.89 | 5.20 | 0.75 | 14.36 | 1.66 | 5.63 | 6M | — |
-| RUN | Sunrun Inc. | netnet | ▫️ | 25% | 8.89 | 5.20 | 0.75 | 14.36 | 1.66 | 5.63 | 6M | — |
-| RUN | Sunrun Inc. | buffett | ▫️ | 17% | 8.89 | 5.20 | 0.75 | 14.36 | 1.66 | 5.63 | 6M | — |
-| RUN | Sunrun Inc. | custom | ▫️ | 0% | 8.89 | 5.20 | 0.75 | 14.36 | 1.66 | 5.63 | 6M | — |
-| ANNAW | AleAnna, Inc. | greenblatt | ▫️ | 67% | 0.20 | 5.00 | 0.14 | 4.91 | 1.93 | 0.73 | 25,219 | — |
+| OMCL | OMNICELL, INC | piotroski | ✅ | 78% | 34.37 | 859 | 1.29 | 0.17 | 1.43 | 0.60 | 873,103 | — |
+| LMMY | Exousia Bio, Inc. | greenblatt | ▫️ | 67% | 0.02 | — | — | — | — | — | 48,705 | — |
+| LMMY | Exousia Bio, Inc. | lynch | ▫️ | 25% | 0.02 | — | — | — | — | — | 48,705 | — |
+| LMMY | Exousia Bio, Inc. | netnet | ▫️ | 25% | 0.02 | — | — | — | — | — | 48,705 | — |
+| LMMY | Exousia Bio, Inc. | piotroski | ▫️ | 22% | 0.02 | — | — | — | — | — | 48,705 | — |
+| LMMY | Exousia Bio, Inc. | buffett | ▫️ | 17% | 0.02 | — | — | — | — | — | 48,705 | — |
+| LMMY | Exousia Bio, Inc. | graham | ▫️ | 0% | 0.02 | — | — | — | — | — | 48,705 | — |
+| LMMY | Exousia Bio, Inc. | custom | ▫️ | 0% | 0.02 | — | — | — | — | — | 48,705 | — |
+| GLD | SPDR® GOLD TRUST | greenblatt | ▫️ | 67% | 407 | 3.66 | — | — | — | — | 10M | — |
+| GLD | SPDR® GOLD TRUST | piotroski | ▫️ | 33% | 407 | 3.66 | — | — | — | — | 10M | — |
+| GLD | SPDR® GOLD TRUST | netnet | ▫️ | 25% | 407 | 3.66 | — | — | — | — | 10M | — |
+| GLD | SPDR® GOLD TRUST | graham | ▫️ | 22% | 407 | 3.66 | — | — | — | — | 10M | — |
+| GLD | SPDR® GOLD TRUST | buffett | ▫️ | 17% | 407 | 3.66 | — | — | — | — | 10M | — |
+| GLD | SPDR® GOLD TRUST | custom | ▫️ | 0% | 407 | 3.66 | — | — | — | — | 10M | — |
+| GOOGN | Alphabet Inc. | piotroski | ▫️ | 67% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,383 | — |
+| GOOGN | Alphabet Inc. | netnet | ▫️ | 50% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,383 | — |
+| GOOGN | Alphabet Inc. | custom | ▫️ | 0% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,383 | — |
+| SAFX | XCF GLOBAL, INC. | graham | ▫️ | 44% | 0.39 | 0.76 | 1.49 | 197 | 0.11 | 10.14 | 3M | — |
+| SAFX | XCF GLOBAL, INC. | buffett | ▫️ | 33% | 0.39 | 0.76 | 1.49 | 197 | 0.11 | 10.14 | 3M | — |
+| SAFX | XCF GLOBAL, INC. | lynch | ▫️ | 25% | 0.39 | 0.76 | 1.49 | 197 | 0.11 | 10.14 | 3M | — |
+| SAFX | XCF GLOBAL, INC. | netnet | ▫️ | 25% | 0.39 | 0.76 | 1.49 | 197 | 0.11 | 10.14 | 3M | — |
+| SAFX | XCF GLOBAL, INC. | piotroski | ▫️ | 11% | 0.39 | 0.76 | 1.49 | 197 | 0.11 | 10.14 | 3M | — |
+| SAFX | XCF GLOBAL, INC. | custom | ▫️ | 0% | 0.39 | 0.76 | 1.49 | 197 | 0.11 | 10.14 | 3M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.

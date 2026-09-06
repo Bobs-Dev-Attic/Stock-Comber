@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-GOOGM,Alphabet Inc.,graham,True,9,9,100.0,48.22,4.46,1.42,31.83,2.01,0.43,90.88,"124,961",—
-GOOGM,Alphabet Inc.,buffett,True,6,6,100.0,48.22,4.46,1.42,31.83,2.01,0.43,90.88,"124,961",—
-GOOGM,Alphabet Inc.,greenblatt,True,3,3,100.0,48.22,4.46,1.42,31.83,2.01,0.43,90.88,"124,961",—
-GOOGM,Alphabet Inc.,lynch,True,4,4,100.0,48.22,4.46,1.42,31.83,2.01,0.43,90.88,"124,961",—
-MCRI,"MONARCH CASINO & RESORT, INC.",piotroski,True,9,9,100.0,122,22.38,4.22,18.86,0.86,0.33,59.33,"85,292",—
-MCRI,"MONARCH CASINO & RESORT, INC.",lynch,True,4,4,100.0,122,22.38,4.22,18.86,0.86,0.33,59.33,"85,292",—
-MCRI,"MONARCH CASINO & RESORT, INC.",buffett,True,5,6,83.3,122,22.38,4.22,18.86,0.86,0.33,59.33,"85,292",—
-TREE,"LendingTree, Inc.",greenblatt,True,3,3,100.0,28.35,2.63,1.39,52.76,1.67,1.98,70.33,"495,401",—
-ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.20,5.00,0.14,4.91,1.93,0.73,1.14,"25,219",—
-AROC,"Archrock, Inc.",piotroski,True,8,9,88.9,32.69,17.86,3.83,21.61,1.54,1.92,18.75,1M,—
-HAFC,HANMI FINANCIAL CORPORATION,piotroski,True,8,9,88.9,32.06,12.77,1.21,9.55,—,8.88,38.69,"192,640",—
-CNMD,CONMED CORPORATION,lynch,True,3,4,75.0,49.32,32.66,1.49,4.55,2.14,1.25,33.57,"281,280",—
-VCEL,VERICEL CORPORATION,piotroski,True,9,9,100.0,40.19,126,5.91,4.66,5.03,0.38,7.00,"312,911",—
-VCEL,VERICEL CORPORATION,lynch,True,3,4,75.0,40.19,126,5.91,4.66,5.03,0.38,7.00,"312,911",—
-CYH,"COMMUNITY HEALTH SYSTEMS, INC.",piotroski,True,8,9,88.9,2.89,0.77,—,-36.51,1.46,-10.07,—,1M,—
-ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.54,20.64,0.81,3.99,9.18,0.34,5.26,"132,843",—
-WWW,"WOLVERINE WORLD WIDE, INC.",piotroski,True,7,9,77.8,20.76,18.21,4.16,23.48,1.40,—,11.32,2M,—
-AIOT,"POWERFLEET, INC.",piotroski,True,7,9,77.8,3.02,—,0.85,-4.32,1.13,1.00,—,"600,528",—
-HCSG,"HEALTHCARE SERVICES GROUP, INC.",piotroski,True,9,9,100.0,21.82,26.94,3.12,11.58,3.38,—,11.28,"593,954",—
-FUL,FULLER H B CO,piotroski,True,7,9,77.8,53.89,19.60,1.49,7.59,1.70,1.59,47.32,"382,258",—
+GLD,SPDR® GOLD TRUST,lynch,True,3,4,75.0,407,3.66,—,—,—,—,—,10M,—
+GOOGN,Alphabet Inc.,graham,True,9,9,100.0,47.94,4.43,1.41,31.83,2.01,0.43,90.88,"739,383",—
+GOOGN,Alphabet Inc.,buffett,True,6,6,100.0,47.94,4.43,1.41,31.83,2.01,0.43,90.88,"739,383",—
+GOOGN,Alphabet Inc.,greenblatt,True,3,3,100.0,47.94,4.43,1.41,31.83,2.01,0.43,90.88,"739,383",—
+GOOGN,Alphabet Inc.,lynch,True,4,4,100.0,47.94,4.43,1.41,31.83,2.01,0.43,90.88,"739,383",—
+SAFX,"XCF GLOBAL, INC.",greenblatt,True,3,3,100.0,0.39,0.76,1.49,197,0.11,10.14,1.76,3M,—
+PPC,PILGRIM’S PRIDE CORPORATION,piotroski,True,7,9,77.8,30.48,6.71,1.97,29.41,1.47,1.81,39.71,"955,636",—
+PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,296,12.90,3.95,30.71,—,5.14,196,"180,719",—
+PJT,PJT Partners Inc.,buffett,True,5,6,83.3,183,—,—,58.43,—,2.71,—,"332,270",—
+PJT,PJT Partners Inc.,piotroski,True,7,9,77.8,183,—,—,58.43,—,2.71,—,"332,270",—
+PRDO,PERDOCEO EDUCATION CORP,piotroski,True,8,9,88.9,33.20,13.72,2.26,16.45,5.06,—,28.29,"418,970",—
+FTDR,"Frontdoor, Inc.",piotroski,True,8,9,88.9,82.60,24.15,25.43,105,1.55,—,15.81,"399,128",—
+FTDR,"Frontdoor, Inc.",buffett,True,5,6,83.3,82.60,24.15,25.43,105,1.55,—,15.81,"399,128",—
+FSS,FEDERAL SIGNAL CORPORATION,lynch,True,3,4,75.0,119,29.75,5.31,17.84,3.02,0.73,45.03,"326,123",—
+WLY,"JOHN WILEY & SONS, INC.",piotroski,True,9,9,100.0,48.19,11.58,3.03,26.13,0.54,2.06,38.61,1M,—
+AXTA,AXALTA COATING SYSTEMS LTD.,lynch,True,3,4,75.0,35.78,20.56,3.31,16.11,2.06,2.22,20.57,2M,—
+BCPC,Balchem Corporation,piotroski,True,9,9,100.0,172,36.13,4.45,12.31,2.07,0.34,64.20,"89,947",—
+FMNB,FARMERS NATIONAL BANC CORP /OH/,piotroski,True,8,9,88.9,16.07,11.08,1.25,11.24,—,9.80,20.52,"325,680",—
+WOR,"WORTHINGTON ENTERPRISES, INC.",piotroski,True,8,9,88.9,62.49,19.90,3.02,15.20,2.37,0.80,38.20,"411,972",—
+CPRI,CAPRI HOLDINGS LIMITED,greenblatt,True,3,3,100.0,13.56,11.89,20.31,171,1.21,39.38,4.14,4M,—
+CPRI,CAPRI HOLDINGS LIMITED,piotroski,True,7,9,77.8,13.56,11.89,20.31,171,1.21,39.38,4.14,4M,—
+FAF,FIRST AMERICAN FINANCIAL CORPORATION,piotroski,True,8,9,88.9,72.75,12.12,1.37,11.31,—,1.95,84.61,1M,—
+LW,"Lamb Weston Holdings, Inc.",piotroski,True,7,9,77.8,49.87,23.98,3.80,15.89,1.42,—,24.78,1M,—
+GCO,Genesco Inc.,piotroski,True,8,9,88.9,35.81,28.65,0.67,2.34,1.64,1.46,38.74,"332,369",—
 SENS,"Senseonics Holdings, Inc.",piotroski,True,7,9,77.8,9.63,—,6.58,-113,4.83,1.07,—,"425,575",—
+NEOG,Neogen Corporation,piotroski,True,8,9,88.9,11.83,—,1.23,-0.38,3.82,0.60,—,1M,—
 WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,8,9,88.9,31.03,34.10,0.72,2.10,2.42,0.76,29.77,"425,863",—
-GOOGM,Alphabet Inc.,piotroski,False,6,9,66.7,48.22,4.46,1.42,31.83,2.01,0.43,90.88,"124,961",—
-GOOGM,Alphabet Inc.,netnet,False,2,4,50.0,48.22,4.46,1.42,31.83,2.01,0.43,90.88,"124,961",—
-GOOGM,Alphabet Inc.,custom,False,0,0,0.0,48.22,4.46,1.42,31.83,2.01,0.43,90.88,"124,961",—
-MCRI,"MONARCH CASINO & RESORT, INC.",graham,False,3,9,33.3,122,22.38,4.22,18.86,0.86,0.33,59.33,"85,292",—
-MCRI,"MONARCH CASINO & RESORT, INC.",greenblatt,False,1,3,33.3,122,22.38,4.22,18.86,0.86,0.33,59.33,"85,292",—
-MCRI,"MONARCH CASINO & RESORT, INC.",netnet,False,1,4,25.0,122,22.38,4.22,18.86,0.86,0.33,59.33,"85,292",—
-MCRI,"MONARCH CASINO & RESORT, INC.",custom,False,0,0,0.0,122,22.38,4.22,18.86,0.86,0.33,59.33,"85,292",—
-TREE,"LendingTree, Inc.",piotroski,False,6,9,66.7,28.35,2.63,1.39,52.76,1.67,1.98,70.33,"495,401",—
-TREE,"LendingTree, Inc.",graham,False,5,9,55.6,28.35,2.63,1.39,52.76,1.67,1.98,70.33,"495,401",—
-TREE,"LendingTree, Inc.",buffett,False,3,6,50.0,28.35,2.63,1.39,52.76,1.67,1.98,70.33,"495,401",—
-TREE,"LendingTree, Inc.",lynch,False,1,4,25.0,28.35,2.63,1.39,52.76,1.67,1.98,70.33,"495,401",—
-TREE,"LendingTree, Inc.",netnet,False,1,4,25.0,28.35,2.63,1.39,52.76,1.67,1.98,70.33,"495,401",—
-TREE,"LendingTree, Inc.",custom,False,0,0,0.0,28.35,2.63,1.39,52.76,1.67,1.98,70.33,"495,401",—
-UROY,URANIUM     ROYALTY CORP.,lynch,False,2,4,50.0,4.44,15.31,1.98,12.87,5.94,0.19,3.83,3M,—
-UROY,URANIUM     ROYALTY CORP.,netnet,False,2,4,50.0,4.44,15.31,1.98,12.87,5.94,0.19,3.83,3M,—
-UROY,URANIUM     ROYALTY CORP.,graham,False,3,9,33.3,4.44,15.31,1.98,12.87,5.94,0.19,3.83,3M,—
-UROY,URANIUM     ROYALTY CORP.,buffett,False,2,6,33.3,4.44,15.31,1.98,12.87,5.94,0.19,3.83,3M,—
-UROY,URANIUM     ROYALTY CORP.,piotroski,False,3,9,33.3,4.44,15.31,1.98,12.87,5.94,0.19,3.83,3M,—
-UROY,URANIUM     ROYALTY CORP.,greenblatt,False,1,3,33.3,4.44,15.31,1.98,12.87,5.94,0.19,3.83,3M,—
-UROY,URANIUM     ROYALTY CORP.,custom,False,0,0,0.0,4.44,15.31,1.98,12.87,5.94,0.19,3.83,3M,—
-RUN,Sunrun Inc.,greenblatt,False,2,3,66.7,8.89,5.20,0.75,14.36,1.66,5.63,21.35,6M,—
-RUN,Sunrun Inc.,graham,False,5,9,55.6,8.89,5.20,0.75,14.36,1.66,5.63,21.35,6M,—
-RUN,Sunrun Inc.,piotroski,False,5,9,55.6,8.89,5.20,0.75,14.36,1.66,5.63,21.35,6M,—
-RUN,Sunrun Inc.,lynch,False,1,4,25.0,8.89,5.20,0.75,14.36,1.66,5.63,21.35,6M,—
-RUN,Sunrun Inc.,netnet,False,1,4,25.0,8.89,5.20,0.75,14.36,1.66,5.63,21.35,6M,—
-RUN,Sunrun Inc.,buffett,False,1,6,16.7,8.89,5.20,0.75,14.36,1.66,5.63,21.35,6M,—
-RUN,Sunrun Inc.,custom,False,0,0,0.0,8.89,5.20,0.75,14.36,1.66,5.63,21.35,6M,—
-ANNAW,"AleAnna, Inc.",greenblatt,False,2,3,66.7,0.20,5.00,0.14,4.91,1.93,0.73,1.14,"25,219",—
+OMCL,"OMNICELL, INC",piotroski,True,7,9,77.8,34.37,859,1.29,0.17,1.43,0.60,4.89,"873,103",—
+LMMY,"Exousia Bio, Inc.",greenblatt,False,2,3,66.7,0.02,—,—,—,—,—,—,"48,705",—
+LMMY,"Exousia Bio, Inc.",lynch,False,1,4,25.0,0.02,—,—,—,—,—,—,"48,705",—
+LMMY,"Exousia Bio, Inc.",netnet,False,1,4,25.0,0.02,—,—,—,—,—,—,"48,705",—
+LMMY,"Exousia Bio, Inc.",piotroski,False,2,9,22.2,0.02,—,—,—,—,—,—,"48,705",—
+LMMY,"Exousia Bio, Inc.",buffett,False,1,6,16.7,0.02,—,—,—,—,—,—,"48,705",—
+LMMY,"Exousia Bio, Inc.",graham,False,0,9,0.0,0.02,—,—,—,—,—,—,"48,705",—
+LMMY,"Exousia Bio, Inc.",custom,False,0,0,0.0,0.02,—,—,—,—,—,—,"48,705",—
+GLD,SPDR® GOLD TRUST,greenblatt,False,2,3,66.7,407,3.66,—,—,—,—,—,10M,—
+GLD,SPDR® GOLD TRUST,piotroski,False,3,9,33.3,407,3.66,—,—,—,—,—,10M,—
+GLD,SPDR® GOLD TRUST,netnet,False,1,4,25.0,407,3.66,—,—,—,—,—,10M,—
+GLD,SPDR® GOLD TRUST,graham,False,2,9,22.2,407,3.66,—,—,—,—,—,10M,—
+GLD,SPDR® GOLD TRUST,buffett,False,1,6,16.7,407,3.66,—,—,—,—,—,10M,—
+GLD,SPDR® GOLD TRUST,custom,False,0,0,0.0,407,3.66,—,—,—,—,—,10M,—
+GOOGN,Alphabet Inc.,piotroski,False,6,9,66.7,47.94,4.43,1.41,31.83,2.01,0.43,90.88,"739,383",—
+GOOGN,Alphabet Inc.,netnet,False,2,4,50.0,47.94,4.43,1.41,31.83,2.01,0.43,90.88,"739,383",—
+GOOGN,Alphabet Inc.,custom,False,0,0,0.0,47.94,4.43,1.41,31.83,2.01,0.43,90.88,"739,383",—
+SAFX,"XCF GLOBAL, INC.",graham,False,4,9,44.4,0.39,0.76,1.49,197,0.11,10.14,1.76,3M,—
+SAFX,"XCF GLOBAL, INC.",buffett,False,2,6,33.3,0.39,0.76,1.49,197,0.11,10.14,1.76,3M,—
+SAFX,"XCF GLOBAL, INC.",lynch,False,1,4,25.0,0.39,0.76,1.49,197,0.11,10.14,1.76,3M,—
+SAFX,"XCF GLOBAL, INC.",netnet,False,1,4,25.0,0.39,0.76,1.49,197,0.11,10.14,1.76,3M,—
+SAFX,"XCF GLOBAL, INC.",piotroski,False,1,9,11.1,0.39,0.76,1.49,197,0.11,10.14,1.76,3M,—
+SAFX,"XCF GLOBAL, INC.",custom,False,0,0,0.0,0.39,0.76,1.49,197,0.11,10.14,1.76,3M,—
