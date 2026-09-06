@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-06 17:56 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-06 21:49 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **31** strategy matches passed.
+Screened **75** companies · **36** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| GOOGM | Alphabet Inc. | graham | ✅ | 100% | 48.22 | 4.46 | 1.42 | 31.83 | 2.01 | 0.43 | 124,961 | — |
-| GOOGM | Alphabet Inc. | buffett | ✅ | 100% | 48.22 | 4.46 | 1.42 | 31.83 | 2.01 | 0.43 | 124,961 | — |
-| GOOGM | Alphabet Inc. | greenblatt | ✅ | 100% | 48.22 | 4.46 | 1.42 | 31.83 | 2.01 | 0.43 | 124,961 | — |
-| GOOGM | Alphabet Inc. | lynch | ✅ | 100% | 48.22 | 4.46 | 1.42 | 31.83 | 2.01 | 0.43 | 124,961 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | greenblatt | ✅ | 100% | 29.43 | 7.38 | 2.48 | 33.67 | 1.55 | — | 556,853 | — |
-| SAFX | XCF GLOBAL, INC. | greenblatt | ✅ | 100% | 0.39 | 0.76 | 1.49 | 197 | 0.11 | 10.14 | 3M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | piotroski | ✅ | 78% | 30.48 | 6.71 | 1.97 | 29.41 | 1.47 | 1.81 | 955,639 | — |
-| TMDX | TransMedics Group, Inc. | piotroski | ✅ | 78% | 89.98 | 18.48 | 7.71 | 40.22 | 7.14 | 1.26 | 542,804 | — |
-| ESE | ESCO TECHNOLOGIES INC. | lynch | ✅ | 100% | 274 | 23.72 | 4.61 | 19.42 | 1.35 | 0.56 | 132,477 | — |
-| TRNO | Terreno Realty Corporation | lynch | ✅ | 100% | 65.65 | 16.79 | 1.63 | 9.72 | — | 0.30 | 669,677 | — |
+| MLI | MUELLER INDUSTRIES INC | buffett | ✅ | 100% | 63.74 | 9.29 | 2.21 | 23.84 | 5.92 | 0.15 | 828,647 | — |
+| MLI | MUELLER INDUSTRIES INC | greenblatt | ✅ | 100% | 63.74 | 9.29 | 2.21 | 23.84 | 5.92 | 0.15 | 828,647 | — |
+| MLI | MUELLER INDUSTRIES INC | lynch | ✅ | 100% | 63.74 | 9.29 | 2.21 | 23.84 | 5.92 | 0.15 | 828,647 | — |
+| MLI | MUELLER INDUSTRIES INC | graham | ✅ | 89% | 63.74 | 9.29 | 2.21 | 23.84 | 5.92 | 0.15 | 828,647 | — |
+| MLI | MUELLER INDUSTRIES INC | piotroski | ✅ | 78% | 63.74 | 9.29 | 2.21 | 23.84 | 5.92 | 0.15 | 828,647 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | piotroski | ✅ | 100% | 122 | 22.38 | 4.22 | 18.86 | 0.86 | 0.33 | 115,232 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | lynch | ✅ | 100% | 122 | 22.38 | 4.22 | 18.86 | 0.86 | 0.33 | 115,232 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | buffett | ✅ | 83% | 122 | 22.38 | 4.22 | 18.86 | 0.86 | 0.33 | 115,232 | — |
+| EXLS | EXLSERVICE HOLDINGS, INC. | piotroski | ✅ | 89% | 36.63 | 23.79 | 6.52 | 27.50 | 2.56 | 0.87 | 3M | — |
+| EXLS | EXLSERVICE HOLDINGS, INC. | buffett | ✅ | 83% | 36.63 | 23.79 | 6.52 | 27.50 | 2.56 | 0.87 | 3M | — |
 | BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 154 | 20.99 | 3.60 | 17.13 | 2.65 | 0.86 | 463,976 | — |
 | BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 154 | 20.99 | 3.60 | 17.13 | 2.65 | 0.86 | 463,976 | — |
 | AIV | Apartment Investment and Man | greenblatt | ✅ | 100% | 2.56 | 0.66 | 1.00 | 151 | — | 3.10 | 792,190 | — |
 | DAKT | Daktronics, Inc. | piotroski | ✅ | 89% | 19.35 | 21.03 | 3.18 | 15.09 | 2.31 | — | 872,567 | — |
 | DAKT | Daktronics, Inc. | lynch | ✅ | 75% | 19.35 | 21.03 | 3.18 | 15.09 | 2.31 | — | 872,567 | — |
-| DUKU | Duke Energy CORP | piotroski | ✅ | 89% | 49.93 | 7.91 | 0.75 | 9.58 | 0.55 | — | 650,018 | — |
-| DUKU | Duke Energy CORP | lynch | ✅ | 75% | 49.93 | 7.91 | 0.75 | 9.58 | 0.55 | — | 650,018 | — |
+| MTCH | Match Group, Inc. | piotroski | ✅ | 89% | 41.86 | 17.59 | — | -242 | 1.42 | — | 2M | — |
+| MTCH | Match Group, Inc. | lynch | ✅ | 75% | 41.86 | 17.59 | — | -242 | 1.42 | — | 2M | — |
 | VISN | Vistance Networks, Inc. | greenblatt | ✅ | 100% | 6.40 | 0.66 | — | -227 | 3.88 | -9.06 | 6M | — |
-| ALRM | ALARM.COM HOLDINGS, INC. | piotroski | ✅ | 78% | 56.48 | 22.96 | 3.92 | 15.52 | 1.92 | 1.47 | 252,377 | — |
 | VICR | VICOR CORPORATION | piotroski | ✅ | 89% | 189 | 72.24 | 12.04 | 16.66 | 8.99 | 0.10 | 507,674 | — |
 | VICR | VICOR CORPORATION | buffett | ✅ | 83% | 189 | 72.24 | 12.04 | 16.66 | 8.99 | 0.10 | 507,674 | — |
 | VICR | VICOR CORPORATION | lynch | ✅ | 75% | 189 | 72.24 | 12.04 | 16.66 | 8.99 | 0.10 | 507,674 | — |
-| OSW | OneSpaWorld Holdings Limited | piotroski | ✅ | 78% | 22.40 | 32.46 | 4.28 | 13.20 | 1.91 | 0.30 | 867,787 | — |
-| BCPC | Balchem Corporation | piotroski | ✅ | 100% | 172 | 36.13 | 4.45 | 12.31 | 2.07 | 0.34 | 89,947 | — |
-| WOR | WORTHINGTON ENTERPRISES, INC | piotroski | ✅ | 89% | 62.49 | 19.90 | 3.02 | 15.20 | 2.37 | 0.80 | 411,972 | — |
-| VVX | V2X, Inc. | piotroski | ✅ | 100% | 74.18 | 30.28 | 2.18 | 7.18 | 1.22 | 2.02 | 514,614 | — |
-| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 65.21 | 62.70 | — | -29.14 | 1.60 | -6.05 | 486,091 | — |
-| LW | Lamb Weston Holdings, Inc. | piotroski | ✅ | 78% | 49.87 | 23.98 | 3.80 | 15.89 | 1.42 | — | 1M | — |
-| MOS | MOSAIC CO | piotroski | ✅ | 89% | 25.85 | 15.21 | 0.68 | 4.47 | 1.32 | — | 9M | — |
+| HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 110 | 43.04 | 280 | 649 | 4.66 | 50.73 | 1M | — |
+| FCFS | FIRSTCASH HOLDINGS, INC. | piotroski | ✅ | 78% | 226 | 30.41 | 4.41 | 14.51 | 4.55 | 1.33 | 258,124 | — |
+| IBEX | IBEX LIMITED | piotroski | ✅ | 78% | 39.17 | 16.60 | 4.59 | 27.45 | 1.82 | 1.03 | 106,274 | — |
+| BKU | BankUnited, Inc. | piotroski | ✅ | 89% | 46.38 | 13.14 | 1.13 | 8.79 | — | 10.47 | 665,940 | — |
+| LCII | LCI INDUSTRIES | piotroski | ✅ | 89% | 103 | 13.55 | 1.87 | 13.83 | 2.85 | 1.33 | 269,719 | — |
+| GRC | The Gorman-Rupp Company | piotroski | ✅ | 89% | 75.34 | 37.30 | 4.78 | 12.78 | 2.37 | 1.07 | 101,358 | — |
+| SSRM | SSR Mining Inc. | piotroski | ✅ | 78% | 37.15 | 20.08 | 2.30 | 11.28 | 2.08 | 0.51 | 3M | — |
+| XPRO | Expro Group Holdings N.V. | piotroski | ✅ | 89% | 17.96 | 39.91 | 1.36 | 3.37 | 2.16 | 0.47 | 555,954 | — |
+| FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 14.42 | 75.89 | 5.92 | 7.83 | 4.94 | 0.33 | 3M | — |
+| SHAK | SHAKE SHACK INC. | piotroski | ✅ | 89% | 69.40 | 63.67 | 5.53 | 8.70 | 1.76 | 2.56 | 988,449 | — |
+| FUL | FULLER H B CO | piotroski | ✅ | 78% | 53.89 | 19.60 | 1.49 | 7.59 | 1.70 | 1.59 | 382,258 | — |
 | MSGS | MADISON SQUARE GARDEN SPORTS | piotroski | ✅ | 100% | 391 | 1,222 | — | -2.95 | 0.50 | -6.84 | 245,071 | — |
-| EGHT | 8x8, Inc. | piotroski | ✅ | 78% | 1.89 | 189 | 1.84 | 1.12 | 1.09 | 3.52 | 950,967 | — |
-| GOOGM | Alphabet Inc. | piotroski | ▫️ | 67% | 48.22 | 4.46 | 1.42 | 31.83 | 2.01 | 0.43 | 124,961 | — |
-| GOOGM | Alphabet Inc. | netnet | ▫️ | 50% | 48.22 | 4.46 | 1.42 | 31.83 | 2.01 | 0.43 | 124,961 | — |
-| GOOGM | Alphabet Inc. | custom | ▫️ | 0% | 48.22 | 4.46 | 1.42 | 31.83 | 2.01 | 0.43 | 124,961 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | graham | ▫️ | 56% | 29.43 | 7.38 | 2.48 | 33.67 | 1.55 | — | 556,853 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | piotroski | ▫️ | 56% | 29.43 | 7.38 | 2.48 | 33.67 | 1.55 | — | 556,853 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | buffett | ▫️ | 50% | 29.43 | 7.38 | 2.48 | 33.67 | 1.55 | — | 556,853 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | lynch | ▫️ | 25% | 29.43 | 7.38 | 2.48 | 33.67 | 1.55 | — | 556,853 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | netnet | ▫️ | 25% | 29.43 | 7.38 | 2.48 | 33.67 | 1.55 | — | 556,853 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | custom | ▫️ | 0% | 29.43 | 7.38 | 2.48 | 33.67 | 1.55 | — | 556,853 | — |
-| SAFX | XCF GLOBAL, INC. | graham | ▫️ | 44% | 0.39 | 0.76 | 1.49 | 197 | 0.11 | 10.14 | 3M | — |
-| SAFX | XCF GLOBAL, INC. | buffett | ▫️ | 33% | 0.39 | 0.76 | 1.49 | 197 | 0.11 | 10.14 | 3M | — |
-| SAFX | XCF GLOBAL, INC. | lynch | ▫️ | 25% | 0.39 | 0.76 | 1.49 | 197 | 0.11 | 10.14 | 3M | — |
-| SAFX | XCF GLOBAL, INC. | netnet | ▫️ | 25% | 0.39 | 0.76 | 1.49 | 197 | 0.11 | 10.14 | 3M | — |
-| SAFX | XCF GLOBAL, INC. | piotroski | ▫️ | 11% | 0.39 | 0.76 | 1.49 | 197 | 0.11 | 10.14 | 3M | — |
-| SAFX | XCF GLOBAL, INC. | custom | ▫️ | 0% | 0.39 | 0.76 | 1.49 | 197 | 0.11 | 10.14 | 3M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | graham | ▫️ | 67% | 30.48 | 6.71 | 1.97 | 29.41 | 1.47 | 1.81 | 955,639 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | greenblatt | ▫️ | 67% | 30.48 | 6.71 | 1.97 | 29.41 | 1.47 | 1.81 | 955,639 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | buffett | ▫️ | 50% | 30.48 | 6.71 | 1.97 | 29.41 | 1.47 | 1.81 | 955,639 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | lynch | ▫️ | 50% | 30.48 | 6.71 | 1.97 | 29.41 | 1.47 | 1.81 | 955,639 | — |
+| BNED | BARNES & NOBLE EDUCATION, IN | piotroski | ✅ | 89% | 12.72 | 25.96 | 1.50 | 5.73 | 1.71 | 1.51 | 204,458 | — |
+| LILA | Liberty Latin America Ltd. | piotroski | ✅ | 78% | 8.52 | — | 3.06 | -110 | 1.14 | 20.09 | 330,802 | — |
+| ORN | ORION GROUP HOLDINGS, INC. | piotroski | ✅ | 78% | 9.28 | 155 | 2.31 | 1.56 | 1.36 | 1.61 | 424,674 | — |
+| MLI | MUELLER INDUSTRIES INC | netnet | ▫️ | 50% | 63.74 | 9.29 | 2.21 | 23.84 | 5.92 | 0.15 | 828,647 | — |
+| MLI | MUELLER INDUSTRIES INC | custom | ▫️ | 0% | 63.74 | 9.29 | 2.21 | 23.84 | 5.92 | 0.15 | 828,647 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | piotroski | ▫️ | 44% | 26.48 | — | — | — | 2.10 | — | 138,436 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | graham | ▫️ | 33% | 26.48 | — | — | — | 2.10 | — | 138,436 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | buffett | ▫️ | 33% | 26.48 | — | — | — | 2.10 | — | 138,436 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | greenblatt | ▫️ | 33% | 26.48 | — | — | — | 2.10 | — | 138,436 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | lynch | ▫️ | 25% | 26.48 | — | — | — | 2.10 | — | 138,436 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | netnet | ▫️ | 25% | 26.48 | — | — | — | 2.10 | — | 138,436 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | custom | ▫️ | 0% | 26.48 | — | — | — | 2.10 | — | 138,436 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | graham | ▫️ | 33% | 122 | 22.38 | 4.22 | 18.86 | 0.86 | 0.33 | 115,232 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | greenblatt | ▫️ | 33% | 122 | 22.38 | 4.22 | 18.86 | 0.86 | 0.33 | 115,232 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | netnet | ▫️ | 25% | 122 | 22.38 | 4.22 | 18.86 | 0.86 | 0.33 | 115,232 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | custom | ▫️ | 0% | 122 | 22.38 | 4.22 | 18.86 | 0.86 | 0.33 | 115,232 | — |
+| EXLS | EXLSERVICE HOLDINGS, INC. | graham | ▫️ | 67% | 36.63 | 23.79 | 6.52 | 27.50 | 2.56 | 0.87 | 3M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
