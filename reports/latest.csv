@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-KOLD,PROSHARES TRUST II,greenblatt,True,3,3,100.0,28.56,2.07,0.62,29.91,—,0.06,120,2M,—
-GOOGN,Alphabet Inc.,graham,True,9,9,100.0,47.94,4.43,1.41,31.83,2.01,0.43,90.88,"739,413",—
-GOOGN,Alphabet Inc.,buffett,True,6,6,100.0,47.94,4.43,1.41,31.83,2.01,0.43,90.88,"739,413",—
-GOOGN,Alphabet Inc.,greenblatt,True,3,3,100.0,47.94,4.43,1.41,31.83,2.01,0.43,90.88,"739,413",—
-GOOGN,Alphabet Inc.,lynch,True,4,4,100.0,47.94,4.43,1.41,31.83,2.01,0.43,90.88,"739,413",—
-GOOGM,Alphabet Inc.,graham,True,9,9,100.0,48.22,4.46,1.42,31.83,2.01,0.43,90.88,"124,958",—
-GOOGM,Alphabet Inc.,buffett,True,6,6,100.0,48.22,4.46,1.42,31.83,2.01,0.43,90.88,"124,958",—
-GOOGM,Alphabet Inc.,greenblatt,True,3,3,100.0,48.22,4.46,1.42,31.83,2.01,0.43,90.88,"124,958",—
-GOOGM,Alphabet Inc.,lynch,True,4,4,100.0,48.22,4.46,1.42,31.83,2.01,0.43,90.88,"124,958",—
+GOOGM,Alphabet Inc.,graham,True,9,9,100.0,48.22,4.46,1.42,31.83,2.01,0.43,90.88,"124,961",—
+GOOGM,Alphabet Inc.,buffett,True,6,6,100.0,48.22,4.46,1.42,31.83,2.01,0.43,90.88,"124,961",—
+GOOGM,Alphabet Inc.,greenblatt,True,3,3,100.0,48.22,4.46,1.42,31.83,2.01,0.43,90.88,"124,961",—
+GOOGM,Alphabet Inc.,lynch,True,4,4,100.0,48.22,4.46,1.42,31.83,2.01,0.43,90.88,"124,961",—
 BBW,BUILD-A-BEAR WORKSHOP INC,greenblatt,True,3,3,100.0,29.43,7.38,2.48,33.67,1.55,—,32.62,"556,853",—
-WING,WINGSTOP INC.,lynch,True,4,4,100.0,109,17.59,—,-23.65,3.26,-1.94,—,"711,886",—
-PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,296,12.90,3.95,30.71,—,5.14,196,"180,722",—
-MCRI,"MONARCH CASINO & RESORT, INC.",piotroski,True,9,9,100.0,122,22.38,4.22,18.86,0.86,0.33,59.33,"85,292",—
-MCRI,"MONARCH CASINO & RESORT, INC.",lynch,True,4,4,100.0,122,22.38,4.22,18.86,0.86,0.33,59.33,"85,292",—
-MCRI,"MONARCH CASINO & RESORT, INC.",buffett,True,5,6,83.3,122,22.38,4.22,18.86,0.86,0.33,59.33,"85,292",—
-ESE,ESCO TECHNOLOGIES INC.,lynch,True,4,4,100.0,274,23.72,4.61,19.42,1.35,0.56,124,"132,481",—
+SAFX,"XCF GLOBAL, INC.",greenblatt,True,3,3,100.0,0.39,0.76,1.49,197,0.11,10.14,1.76,3M,—
+PPC,PILGRIM’S PRIDE CORPORATION,piotroski,True,7,9,77.8,30.48,6.71,1.97,29.41,1.47,1.81,39.71,"955,639",—
+TMDX,"TransMedics Group, Inc.",piotroski,True,7,9,77.8,89.98,18.48,7.71,40.22,7.14,1.26,35.76,"542,804",—
+ESE,ESCO TECHNOLOGIES INC.,lynch,True,4,4,100.0,274,23.72,4.61,19.42,1.35,0.56,124,"132,477",—
+TRNO,Terreno Realty Corporation,lynch,True,4,4,100.0,65.65,16.79,1.63,9.72,—,0.30,59.59,"669,677",—
+BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,154,20.99,3.60,17.13,2.65,0.86,84.23,"463,976",—
+BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,154,20.99,3.60,17.13,2.65,0.86,84.23,"463,976",—
+AIV,Apartment Investment and Management Company,greenblatt,True,3,3,100.0,2.56,0.66,1.00,151,—,3.10,14.95,"792,190",—
+DAKT,"Daktronics, Inc.",piotroski,True,8,9,88.9,19.35,21.03,3.18,15.09,2.31,—,11.23,"872,567",—
+DAKT,"Daktronics, Inc.",lynch,True,3,4,75.0,19.35,21.03,3.18,15.09,2.31,—,11.23,"872,567",—
 DUKU,Duke Energy CORP,piotroski,True,8,9,88.9,49.93,7.91,0.75,9.58,0.55,—,97.33,"650,018",—
 DUKU,Duke Energy CORP,lynch,True,3,4,75.0,49.93,7.91,0.75,9.58,0.55,—,97.33,"650,018",—
-EVR,EVERCORE INC.,buffett,True,5,6,83.3,298,21.20,6.18,29.14,2.16,1.50,123,"332,424",—
-EVR,EVERCORE INC.,piotroski,True,7,9,77.8,298,21.20,6.18,29.14,2.16,1.50,123,"332,424",—
-BANC,"BANC OF CALIFORNIA, INC.",piotroski,True,7,9,77.8,18.92,16.17,0.86,6.47,—,8.83,24.01,3M,—
-HOG,"Harley-Davidson, Inc.",graham,True,9,9,100.0,28.30,10.18,1.09,10.79,2.10,—,40.25,1M,—
-HOG,"Harley-Davidson, Inc.",piotroski,True,8,9,88.9,28.30,10.18,1.09,10.79,2.10,—,40.25,1M,—
-SFM,"Sprouts Farmers Market, Inc.",piotroski,True,7,9,77.8,81.40,15.33,5.73,37.32,0.93,1.96,41.21,2M,—
-TRN,TRINITY INDUSTRIES INC,greenblatt,True,3,3,100.0,28.32,9.29,2.18,23.50,—,6.76,29.86,"413,949",—
-TRN,TRINITY INDUSTRIES INC,piotroski,True,7,9,77.8,28.32,9.29,2.18,23.50,—,6.76,29.86,"413,949",—
-AXTA,AXALTA COATING SYSTEMS LTD.,lynch,True,3,4,75.0,35.78,20.56,3.31,16.11,2.06,2.22,20.57,2M,—
-VCYT,"VERACYTE, INC.",piotroski,True,8,9,88.9,42.53,51.87,2.62,5.07,8.15,0.07,17.32,"992,020",—
-BCPC,Balchem Corporation,piotroski,True,9,9,100.0,172,36.13,4.45,12.31,2.07,0.34,64.20,"89,946",—
-CPK,CHESAPEAKE UTILITIES CORP,piotroski,True,7,9,77.8,133,22.22,1.95,8.78,0.45,—,95.61,"119,739",—
-HLIO,"HELIOS TECHNOLOGIES, INC.",piotroski,True,9,9,100.0,71.62,49.39,2.56,5.20,2.90,0.63,30.21,"421,856",—
-HLIO,"HELIOS TECHNOLOGIES, INC.",lynch,True,3,4,75.0,71.62,49.39,2.56,5.20,2.90,0.63,30.21,"421,856",—
-CNMD,CONMED CORPORATION,lynch,True,3,4,75.0,49.32,32.66,1.49,4.55,2.14,1.25,33.57,"281,280",—
-CBU,"COMMUNITY FINANCIAL SYSTEM, INC.",piotroski,True,8,9,88.9,63.85,16.08,1.68,10.49,—,7.63,58.24,"107,025",—
+VISN,"Vistance Networks, Inc.",greenblatt,True,3,3,100.0,6.40,0.66,—,-227,3.88,-9.06,—,6M,—
+ALRM,"ALARM.COM HOLDINGS, INC.",piotroski,True,7,9,77.8,56.48,22.96,3.92,15.52,1.92,1.47,28.23,"252,377",—
+VICR,VICOR CORPORATION,piotroski,True,8,9,88.9,189,72.24,12.04,16.66,8.99,0.10,30.32,"507,674",—
+VICR,VICOR CORPORATION,buffett,True,5,6,83.3,189,72.24,12.04,16.66,8.99,0.10,30.32,"507,674",—
+VICR,VICOR CORPORATION,lynch,True,3,4,75.0,189,72.24,12.04,16.66,8.99,0.10,30.32,"507,674",—
+OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,22.40,32.46,4.28,13.20,1.91,0.30,9.01,"867,787",—
+BCPC,Balchem Corporation,piotroski,True,9,9,100.0,172,36.13,4.45,12.31,2.07,0.34,64.20,"89,947",—
 WOR,"WORTHINGTON ENTERPRISES, INC.",piotroski,True,8,9,88.9,62.49,19.90,3.02,15.20,2.37,0.80,38.20,"411,972",—
-ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.54,20.64,0.81,3.99,9.18,0.34,5.26,"131,643",—
-TDC,TERADATA CORPORATION,piotroski,True,8,9,88.9,28.05,20.78,11.78,56.52,0.92,6.73,8.50,2M,—
-PHIN,PHINIA INC.,piotroski,True,8,9,88.9,69.04,21.31,1.74,8.19,1.86,1.41,53.71,"337,873",—
-MSGS,MADISON SQUARE GARDEN SPORTS CORP.,piotroski,True,9,9,100.0,391,"1,222",—,-2.95,0.50,-6.84,—,"245,057",—
-FROG,JFrog Ltd.,piotroski,True,7,9,77.8,87.60,—,11.47,-8.09,2.14,0.51,—,2M,—
-NEOG,Neogen Corporation,piotroski,True,8,9,88.9,11.83,—,1.23,-0.38,3.82,0.60,—,1M,—
-KOLD,PROSHARES TRUST II,lynch,False,2,4,50.0,28.56,2.07,0.62,29.91,—,0.06,120,2M,—
-KOLD,PROSHARES TRUST II,graham,False,4,9,44.4,28.56,2.07,0.62,29.91,—,0.06,120,2M,—
-KOLD,PROSHARES TRUST II,buffett,False,2,6,33.3,28.56,2.07,0.62,29.91,—,0.06,120,2M,—
-KOLD,PROSHARES TRUST II,piotroski,False,3,9,33.3,28.56,2.07,0.62,29.91,—,0.06,120,2M,—
-KOLD,PROSHARES TRUST II,netnet,False,1,4,25.0,28.56,2.07,0.62,29.91,—,0.06,120,2M,—
-KOLD,PROSHARES TRUST II,custom,False,0,0,0.0,28.56,2.07,0.62,29.91,—,0.06,120,2M,—
-GOOGN,Alphabet Inc.,piotroski,False,6,9,66.7,47.94,4.43,1.41,31.83,2.01,0.43,90.88,"739,413",—
-GOOGM,Alphabet Inc.,piotroski,False,6,9,66.7,48.22,4.46,1.42,31.83,2.01,0.43,90.88,"124,958",—
-GOOGN,Alphabet Inc.,netnet,False,2,4,50.0,47.94,4.43,1.41,31.83,2.01,0.43,90.88,"739,413",—
+VVX,"V2X, Inc.",piotroski,True,9,9,100.0,74.18,30.28,2.18,7.18,1.22,2.02,43.35,"514,614",—
+GSHD,"GOOSEHEAD INSURANCE, INC.",lynch,True,3,4,75.0,65.21,62.70,—,-29.14,1.60,-6.05,—,"486,091",—
+LW,"Lamb Weston Holdings, Inc.",piotroski,True,7,9,77.8,49.87,23.98,3.80,15.89,1.42,—,24.78,1M,—
+MOS,MOSAIC CO,piotroski,True,8,9,88.9,25.85,15.21,0.68,4.47,1.32,—,38.07,9M,—
+MSGS,MADISON SQUARE GARDEN SPORTS CORP.,piotroski,True,9,9,100.0,391,"1,222",—,-2.95,0.50,-6.84,—,"245,071",—
+EGHT,"8x8, Inc.",piotroski,True,7,9,77.8,1.89,189,1.84,1.12,1.09,3.52,0.48,"950,967",—
+GOOGM,Alphabet Inc.,piotroski,False,6,9,66.7,48.22,4.46,1.42,31.83,2.01,0.43,90.88,"124,961",—
+GOOGM,Alphabet Inc.,netnet,False,2,4,50.0,48.22,4.46,1.42,31.83,2.01,0.43,90.88,"124,961",—
+GOOGM,Alphabet Inc.,custom,False,0,0,0.0,48.22,4.46,1.42,31.83,2.01,0.43,90.88,"124,961",—
+BBW,BUILD-A-BEAR WORKSHOP INC,graham,False,5,9,55.6,29.43,7.38,2.48,33.67,1.55,—,32.62,"556,853",—
+BBW,BUILD-A-BEAR WORKSHOP INC,piotroski,False,5,9,55.6,29.43,7.38,2.48,33.67,1.55,—,32.62,"556,853",—
+BBW,BUILD-A-BEAR WORKSHOP INC,buffett,False,3,6,50.0,29.43,7.38,2.48,33.67,1.55,—,32.62,"556,853",—
+BBW,BUILD-A-BEAR WORKSHOP INC,lynch,False,1,4,25.0,29.43,7.38,2.48,33.67,1.55,—,32.62,"556,853",—
+BBW,BUILD-A-BEAR WORKSHOP INC,netnet,False,1,4,25.0,29.43,7.38,2.48,33.67,1.55,—,32.62,"556,853",—
+BBW,BUILD-A-BEAR WORKSHOP INC,custom,False,0,0,0.0,29.43,7.38,2.48,33.67,1.55,—,32.62,"556,853",—
+SAFX,"XCF GLOBAL, INC.",graham,False,4,9,44.4,0.39,0.76,1.49,197,0.11,10.14,1.76,3M,—
+SAFX,"XCF GLOBAL, INC.",buffett,False,2,6,33.3,0.39,0.76,1.49,197,0.11,10.14,1.76,3M,—
+SAFX,"XCF GLOBAL, INC.",lynch,False,1,4,25.0,0.39,0.76,1.49,197,0.11,10.14,1.76,3M,—
+SAFX,"XCF GLOBAL, INC.",netnet,False,1,4,25.0,0.39,0.76,1.49,197,0.11,10.14,1.76,3M,—
+SAFX,"XCF GLOBAL, INC.",piotroski,False,1,9,11.1,0.39,0.76,1.49,197,0.11,10.14,1.76,3M,—
+SAFX,"XCF GLOBAL, INC.",custom,False,0,0,0.0,0.39,0.76,1.49,197,0.11,10.14,1.76,3M,—
+PPC,PILGRIM’S PRIDE CORPORATION,graham,False,6,9,66.7,30.48,6.71,1.97,29.41,1.47,1.81,39.71,"955,639",—
+PPC,PILGRIM’S PRIDE CORPORATION,greenblatt,False,2,3,66.7,30.48,6.71,1.97,29.41,1.47,1.81,39.71,"955,639",—
+PPC,PILGRIM’S PRIDE CORPORATION,buffett,False,3,6,50.0,30.48,6.71,1.97,29.41,1.47,1.81,39.71,"955,639",—
+PPC,PILGRIM’S PRIDE CORPORATION,lynch,False,2,4,50.0,30.48,6.71,1.97,29.41,1.47,1.81,39.71,"955,639",—
