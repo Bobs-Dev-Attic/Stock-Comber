@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-07 16:10 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-07 19:43 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **25** strategy matches passed.
+Screened **75** companies · **33** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| GOOGN | Alphabet Inc. | graham | ✅ | 100% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
-| GOOGN | Alphabet Inc. | buffett | ✅ | 100% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
-| GOOGN | Alphabet Inc. | greenblatt | ✅ | 100% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
-| GOOGN | Alphabet Inc. | lynch | ✅ | 100% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
-| SM | SM ENERGY CO | piotroski | ✅ | 78% | 36.44 | 6.46 | 0.87 | 13.47 | 0.69 | — | 2M | — |
-| PLMR | Palomar Holdings, Inc. | piotroski | ✅ | 78% | 137 | 19.05 | 3.98 | 20.91 | — | 2.24 | 214,202 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | piotroski | ✅ | 100% | 173 | 24.48 | 8.39 | 34.27 | 1.46 | — | 441,535 | — |
-| ESE | ESCO TECHNOLOGIES INC. | lynch | ✅ | 100% | 274 | 23.72 | 4.61 | 19.42 | 1.35 | 0.56 | 132,481 | — |
+| SON | Sonoco Products Company | piotroski | ✅ | 89% | 51.95 | 5.16 | 1.43 | 27.75 | 1.05 | 2.08 | 1M | — |
+| SON | Sonoco Products Company | lynch | ✅ | 75% | 51.95 | 5.16 | 1.43 | 27.75 | 1.05 | 2.08 | 1M | — |
+| WING | WINGSTOP INC. | lynch | ✅ | 100% | 109 | 17.59 | — | -23.65 | 3.26 | -1.94 | 711,886 | — |
 | RILY | BRC Group Holdings, Inc. | greenblatt | ✅ | 100% | 7.03 | 0.72 | — | -179 | — | -10.65 | 347,158 | — |
+| TREE | LendingTree, Inc. | greenblatt | ✅ | 100% | 28.35 | 2.63 | 1.39 | 52.76 | 1.67 | 1.98 | 495,401 | — |
 | RILY | BRC Group Holdings, Inc. | lynch | ✅ | 75% | 7.03 | 0.72 | — | -179 | — | -10.65 | 347,158 | — |
-| CARG | CarGurus, Inc. | piotroski | ✅ | 89% | 33.74 | 21.77 | 9.05 | 41.66 | 2.81 | 0.77 | 984,826 | — |
-| ANNAW | AleAnna, Inc. | piotroski | ✅ | 78% | 0.20 | 5.00 | 0.14 | 4.91 | 1.93 | 0.73 | 25,219 | — |
-| AROC | Archrock, Inc. | piotroski | ✅ | 89% | 32.69 | 17.86 | 3.83 | 21.61 | 1.54 | 1.92 | 1M | — |
-| GPK | Graphic Packaging Holding Co | lynch | ✅ | 75% | 10.43 | 7.05 | 0.94 | 13.31 | 1.30 | — | 6M | — |
-| BANC | BANC OF CALIFORNIA, INC. | piotroski | ✅ | 78% | 18.92 | 16.17 | 0.86 | 6.47 | — | 8.83 | 2M | — |
+| GLRE | GREENLIGHT CAPITAL RE, LTD. | piotroski | ✅ | 78% | 15.42 | 7.11 | 0.75 | 10.57 | — | 2.06 | 93,717 | — |
+| FHI | Federated Hermes, Inc. | greenblatt | ✅ | 100% | 62.40 | 12.16 | 3.92 | 33.69 | 2.75 | 0.81 | 433,265 | — |
+| FHI | Federated Hermes, Inc. | piotroski | ✅ | 89% | 62.40 | 12.16 | 3.92 | 33.69 | 2.75 | 0.81 | 433,265 | — |
+| DAKT | Daktronics, Inc. | piotroski | ✅ | 89% | 19.35 | 21.03 | 3.18 | 15.09 | 2.31 | — | 872,567 | — |
+| DAKT | Daktronics, Inc. | lynch | ✅ | 75% | 19.35 | 21.03 | 3.18 | 15.09 | 2.31 | — | 872,567 | — |
+| GGG | GRACO INC. | piotroski | ✅ | 89% | 77.88 | 25.29 | 4.97 | 19.66 | 3.15 | — | 1M | — |
+| GGG | GRACO INC. | buffett | ✅ | 83% | 77.88 | 25.29 | 4.97 | 19.66 | 3.15 | — | 1M | — |
+| PRDO | PERDOCEO EDUCATION CORP | piotroski | ✅ | 89% | 33.20 | 13.72 | 2.26 | 16.45 | 5.06 | — | 418,972 | — |
+| FSS | FEDERAL SIGNAL CORPORATION | lynch | ✅ | 75% | 119 | 29.75 | 5.31 | 17.84 | 3.02 | 0.73 | 326,123 | — |
 | HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 110 | 43.04 | 280 | 649 | 4.66 | 50.73 | 1M | — |
-| SFM | Sprouts Farmers Market, Inc. | piotroski | ✅ | 78% | 81.40 | 15.33 | 5.73 | 37.32 | 0.93 | 1.96 | 2M | — |
-| BKU | BankUnited, Inc. | piotroski | ✅ | 89% | 46.38 | 13.14 | 1.13 | 8.79 | — | 10.47 | 665,940 | — |
+| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 16.70 | 8.84 | 2.18 | 24.66 | 2.26 | 2.62 | 851,976 | — |
+| OSW | OneSpaWorld Holdings Limited | piotroski | ✅ | 78% | 22.40 | 32.46 | 4.28 | 13.20 | 1.91 | 0.30 | 867,787 | — |
+| SIRI | SIRIUS XM HOLDINGS INC. | lynch | ✅ | 75% | 28.99 | 13.00 | 0.90 | 6.96 | 0.30 | 1.36 | 3M | — |
+| AGCO | AGCO CORP /DE | piotroski | ✅ | 89% | 133 | 13.68 | 2.33 | 17.00 | 1.39 | 1.72 | 2M | — |
 | EXTR | EXTREME NETWORKS, INC. | piotroski | ✅ | 89% | 21.70 | 70.00 | 33.06 | 47.54 | 0.93 | — | 803,204 | — |
-| UE | URBAN EDGE PROPERTIES | piotroski | ✅ | 78% | 20.98 | 28.35 | 1.92 | 6.80 | — | 1.41 | 791,395 | — |
+| FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 14.42 | 75.89 | 5.92 | 7.83 | 4.94 | 0.33 | 3M | — |
+| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.54 | 20.64 | 0.81 | 3.99 | 9.18 | 0.34 | 132,843 | — |
+| FAF | FIRST AMERICAN FINANCIAL COR | piotroski | ✅ | 89% | 72.75 | 12.12 | 1.37 | 11.31 | — | 1.95 | 1M | — |
+| SGRY | Surgery Partners, Inc. | piotroski | ✅ | 78% | 14.26 | — | 1.06 | -4.55 | 1.87 | — | 1M | — |
+| MCS | MARCUS CORP | piotroski | ✅ | 78% | 27.27 | 67.21 | 1.86 | 2.77 | 0.40 | — | 160,122 | — |
+| PHIN | PHINIA INC. | piotroski | ✅ | 89% | 69.04 | 21.31 | 1.74 | 8.19 | 1.86 | 1.41 | 337,873 | — |
 | HCSG | HEALTHCARE SERVICES GROUP, I | piotroski | ✅ | 100% | 21.82 | 26.94 | 3.12 | 11.58 | 3.38 | — | 593,954 | — |
-| FUL | FULLER H B CO | piotroski | ✅ | 78% | 53.89 | 19.60 | 1.49 | 7.59 | 1.70 | 1.59 | 382,258 | — |
-| MLKN | MillerKnoll, Inc. | piotroski | ✅ | 100% | 22.92 | 17.36 | 1.18 | 6.82 | 1.58 | 1.93 | 377,117 | — |
+| GCO | Genesco Inc. | piotroski | ✅ | 89% | 35.81 | 28.65 | 0.67 | 2.34 | 1.64 | 1.46 | 332,371 | — |
 | SPHR | SPHERE ENTERTAINMENT CO. | piotroski | ✅ | 78% | 142 | 192 | 2.89 | 1.50 | 1.09 | 0.89 | 268,327 | — |
-| AVNW | AVIAT NETWORKS, INC. | piotroski | ✅ | 78% | 19.78 | 104 | 0.96 | 0.95 | 1.97 | 1.24 | 134,811 | — |
-| GOOGN | Alphabet Inc. | piotroski | ▫️ | 67% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
-| GOOGN | Alphabet Inc. | netnet | ▫️ | 50% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
-| GOOGN | Alphabet Inc. | custom | ▫️ | 0% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
-| SM | SM ENERGY CO | graham | ▫️ | 67% | 36.44 | 6.46 | 0.87 | 13.47 | 0.69 | — | 2M | — |
-| SM | SM ENERGY CO | greenblatt | ▫️ | 67% | 36.44 | 6.46 | 0.87 | 13.47 | 0.69 | — | 2M | — |
-| SM | SM ENERGY CO | lynch | ▫️ | 25% | 36.44 | 6.46 | 0.87 | 13.47 | 0.69 | — | 2M | — |
-| SM | SM ENERGY CO | netnet | ▫️ | 25% | 36.44 | 6.46 | 0.87 | 13.47 | 0.69 | — | 2M | — |
-| SM | SM ENERGY CO | buffett | ▫️ | 17% | 36.44 | 6.46 | 0.87 | 13.47 | 0.69 | — | 2M | — |
-| SM | SM ENERGY CO | custom | ▫️ | 0% | 36.44 | 6.46 | 0.87 | 13.47 | 0.69 | — | 2M | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | piotroski | ▫️ | 44% | 26.48 | — | — | — | 2.10 | — | 138,436 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | graham | ▫️ | 33% | 26.48 | — | — | — | 2.10 | — | 138,436 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | buffett | ▫️ | 33% | 26.48 | — | — | — | 2.10 | — | 138,436 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | greenblatt | ▫️ | 33% | 26.48 | — | — | — | 2.10 | — | 138,436 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | lynch | ▫️ | 25% | 26.48 | — | — | — | 2.10 | — | 138,436 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | netnet | ▫️ | 25% | 26.48 | — | — | — | 2.10 | — | 138,436 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | custom | ▫️ | 0% | 26.48 | — | — | — | 2.10 | — | 138,436 | — |
-| PLMR | Palomar Holdings, Inc. | buffett | ▫️ | 67% | 137 | 19.05 | 3.98 | 20.91 | — | 2.24 | 214,202 | — |
-| PLMR | Palomar Holdings, Inc. | greenblatt | ▫️ | 67% | 137 | 19.05 | 3.98 | 20.91 | — | 2.24 | 214,202 | — |
-| PLMR | Palomar Holdings, Inc. | lynch | ▫️ | 50% | 137 | 19.05 | 3.98 | 20.91 | — | 2.24 | 214,202 | — |
-| PLMR | Palomar Holdings, Inc. | graham | ▫️ | 44% | 137 | 19.05 | 3.98 | 20.91 | — | 2.24 | 214,202 | — |
-| PLMR | Palomar Holdings, Inc. | netnet | ▫️ | 25% | 137 | 19.05 | 3.98 | 20.91 | — | 2.24 | 214,202 | — |
-| PLMR | Palomar Holdings, Inc. | custom | ▫️ | 0% | 137 | 19.05 | 3.98 | 20.91 | — | 2.24 | 214,202 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | buffett | ▫️ | 67% | 173 | 24.48 | 8.39 | 34.27 | 1.46 | — | 441,535 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | greenblatt | ▫️ | 67% | 173 | 24.48 | 8.39 | 34.27 | 1.46 | — | 441,535 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | graham | ▫️ | 33% | 173 | 24.48 | 8.39 | 34.27 | 1.46 | — | 441,535 | — |
+| BNED | BARNES & NOBLE EDUCATION, IN | piotroski | ✅ | 89% | 12.72 | 25.96 | 1.50 | 5.73 | 1.71 | 1.51 | 204,301 | — |
+| LILA | Liberty Latin America Ltd. | piotroski | ✅ | 78% | 8.52 | — | 3.06 | -110 | 1.14 | 20.09 | 330,802 | — |
+| ORN | ORION GROUP HOLDINGS, INC. | piotroski | ✅ | 78% | 9.28 | 155 | 2.31 | 1.56 | 1.36 | 1.61 | 424,674 | — |
+| SON | Sonoco Products Company | graham | ▫️ | 67% | 51.95 | 5.16 | 1.43 | 27.75 | 1.05 | 2.08 | 1M | — |
+| SON | Sonoco Products Company | buffett | ▫️ | 67% | 51.95 | 5.16 | 1.43 | 27.75 | 1.05 | 2.08 | 1M | — |
+| SON | Sonoco Products Company | greenblatt | ▫️ | 67% | 51.95 | 5.16 | 1.43 | 27.75 | 1.05 | 2.08 | 1M | — |
+| SON | Sonoco Products Company | netnet | ▫️ | 25% | 51.95 | 5.16 | 1.43 | 27.75 | 1.05 | 2.08 | 1M | — |
+| SON | Sonoco Products Company | custom | ▫️ | 0% | 51.95 | 5.16 | 1.43 | 27.75 | 1.05 | 2.08 | 1M | — |
+| WING | WINGSTOP INC. | buffett | ▫️ | 67% | 109 | 17.59 | — | -23.65 | 3.26 | -1.94 | 711,886 | — |
+| WING | WINGSTOP INC. | piotroski | ▫️ | 67% | 109 | 17.59 | — | -23.65 | 3.26 | -1.94 | 711,886 | — |
+| WING | WINGSTOP INC. | greenblatt | ▫️ | 67% | 109 | 17.59 | — | -23.65 | 3.26 | -1.94 | 711,886 | — |
+| WING | WINGSTOP INC. | graham | ▫️ | 33% | 109 | 17.59 | — | -23.65 | 3.26 | -1.94 | 711,886 | — |
+| WING | WINGSTOP INC. | netnet | ▫️ | 25% | 109 | 17.59 | — | -23.65 | 3.26 | -1.94 | 711,886 | — |
+| WING | WINGSTOP INC. | custom | ▫️ | 0% | 109 | 17.59 | — | -23.65 | 3.26 | -1.94 | 711,886 | — |
+| TREE | LendingTree, Inc. | piotroski | ▫️ | 67% | 28.35 | 2.63 | 1.39 | 52.76 | 1.67 | 1.98 | 495,401 | — |
+| TREE | LendingTree, Inc. | graham | ▫️ | 56% | 28.35 | 2.63 | 1.39 | 52.76 | 1.67 | 1.98 | 495,401 | — |
+| RILY | BRC Group Holdings, Inc. | buffett | ▫️ | 50% | 7.03 | 0.72 | — | -179 | — | -10.65 | 347,158 | — |
+| TREE | LendingTree, Inc. | buffett | ▫️ | 50% | 28.35 | 2.63 | 1.39 | 52.76 | 1.67 | 1.98 | 495,401 | — |
+| RILY | BRC Group Holdings, Inc. | piotroski | ▫️ | 44% | 7.03 | 0.72 | — | -179 | — | -10.65 | 347,158 | — |
+| RILY | BRC Group Holdings, Inc. | graham | ▫️ | 33% | 7.03 | 0.72 | — | -179 | — | -10.65 | 347,158 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
