@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-07 01:02 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-07 05:29 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **30** strategy matches passed.
+Screened **75** companies · **25** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| KRP | Kimbell Royalty Partners, LP | piotroski | ✅ | 78% | 14.88 | — | — | — | 8.64 | — | 831,745 | — |
+| SBC | SBC Medical Group Holdings I | lynch | ✅ | 75% | 4.12 | 8.24 | 1.71 | 20.54 | 3.78 | 0.47 | 140,977 | — |
 | POWL | Powell Industries, Inc. | greenblatt | ✅ | 100% | 181 | 12.19 | 3.44 | 28.21 | 2.09 | 0.73 | 475,485 | — |
 | POWL | Powell Industries, Inc. | piotroski | ✅ | 78% | 181 | 12.19 | 3.44 | 28.21 | 2.09 | 0.73 | 475,485 | — |
 | POWL | Powell Industries, Inc. | lynch | ✅ | 75% | 181 | 12.19 | 3.44 | 28.21 | 2.09 | 0.73 | 475,485 | — |
-| PRI | Primerica, Inc. | piotroski | ✅ | 89% | 296 | 12.90 | 3.95 | 30.71 | — | 5.14 | 180,722 | — |
-| RILY | BRC Group Holdings, Inc. | greenblatt | ✅ | 100% | 7.03 | 0.72 | — | -179 | — | -10.65 | 347,158 | — |
-| RILY | BRC Group Holdings, Inc. | lynch | ✅ | 75% | 7.03 | 0.72 | — | -179 | — | -10.65 | 347,158 | — |
-| SSD | Simpson Manufacturing Co., I | buffett | ✅ | 83% | 181 | 21.96 | 3.73 | 17.00 | 3.54 | 0.51 | 145,012 | — |
-| SSD | Simpson Manufacturing Co., I | piotroski | ✅ | 78% | 181 | 21.96 | 3.73 | 17.00 | 3.54 | 0.51 | 145,012 | — |
-| WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 14.31 | 2.82 | 1.63 | 57.56 | 1.39 | 2.18 | 400,690 | — |
-| FSS | FEDERAL SIGNAL CORPORATION | lynch | ✅ | 75% | 119 | 29.75 | 5.31 | 17.84 | 3.02 | 0.73 | 326,123 | — |
-| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 16.70 | 8.84 | 2.18 | 24.66 | 2.26 | 2.62 | 851,972 | — |
-| SFM | Sprouts Farmers Market, Inc. | piotroski | ✅ | 78% | 81.40 | 15.33 | 5.73 | 37.32 | 0.93 | 1.96 | 2M | — |
-| PCTY | PAYLOCITY HOLDING CORPORATIO | piotroski | ✅ | 89% | 152 | 30.95 | 6.83 | 22.08 | 1.09 | 3.00 | 566,124 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | piotroski | ✅ | 100% | 122 | 22.38 | 4.22 | 18.86 | 0.86 | 0.33 | 115,232 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | lynch | ✅ | 100% | 122 | 22.38 | 4.22 | 18.86 | 0.86 | 0.33 | 115,232 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | buffett | ✅ | 83% | 122 | 22.38 | 4.22 | 18.86 | 0.86 | 0.33 | 115,232 | — |
+| AROC | Archrock, Inc. | piotroski | ✅ | 89% | 32.69 | 17.86 | 3.83 | 21.61 | 1.54 | 1.92 | 1M | — |
+| GGG | GRACO INC. | piotroski | ✅ | 89% | 77.88 | 25.29 | 4.97 | 19.66 | 3.15 | — | 1M | — |
+| GGG | GRACO INC. | buffett | ✅ | 83% | 77.88 | 25.29 | 4.97 | 19.66 | 3.15 | — | 1M | — |
+| VICR | VICOR CORPORATION | piotroski | ✅ | 89% | 189 | 72.24 | 12.04 | 16.66 | 8.99 | 0.10 | 507,674 | — |
+| VICR | VICOR CORPORATION | buffett | ✅ | 83% | 189 | 72.24 | 12.04 | 16.66 | 8.99 | 0.10 | 507,674 | — |
+| VICR | VICOR CORPORATION | lynch | ✅ | 75% | 189 | 72.24 | 12.04 | 16.66 | 8.99 | 0.10 | 507,674 | — |
 | NJR | NEW JERSEY RESOURCES CORPORA | piotroski | ✅ | 78% | 53.40 | 16.04 | 2.25 | 14.03 | 0.73 | — | 551,600 | — |
-| VCYT | VERACYTE, INC. | piotroski | ✅ | 89% | 42.53 | 51.87 | 2.62 | 5.07 | 8.15 | 0.07 | 992,183 | — |
+| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 141 | 22.24 | 2.33 | 10.49 | 1.53 | — | 418,015 | — |
+| HAFC | HANMI FINANCIAL CORPORATION | piotroski | ✅ | 89% | 32.06 | 12.77 | 1.21 | 9.55 | — | 8.88 | 192,640 | — |
+| CPK | CHESAPEAKE UTILITIES CORP | piotroski | ✅ | 78% | 133 | 22.22 | 1.95 | 8.78 | 0.45 | — | 119,739 | — |
 | LCII | LCI INDUSTRIES | piotroski | ✅ | 89% | 103 | 13.55 | 1.87 | 13.83 | 2.85 | 1.33 | 269,719 | — |
-| SSRM | SSR Mining Inc. | piotroski | ✅ | 78% | 37.15 | 20.08 | 2.30 | 11.28 | 2.08 | 0.51 | 3M | — |
-| CNMD | CONMED CORPORATION | lynch | ✅ | 75% | 49.32 | 32.66 | 1.49 | 4.55 | 2.14 | 1.25 | 281,280 | — |
-| CBU | COMMUNITY FINANCIAL SYSTEM,  | piotroski | ✅ | 89% | 63.85 | 16.08 | 1.68 | 10.49 | — | 7.63 | 107,026 | — |
-| FIVN | Five9, Inc. | piotroski | ✅ | 89% | 33.27 | 73.93 | 3.73 | 5.02 | 4.51 | 1.28 | 2M | — |
+| FBNC | FIRST BANCORP | piotroski | ✅ | 78% | 65.04 | 24.27 | 1.63 | 6.71 | — | 6.66 | 112,677 | — |
+| FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 14.42 | 75.89 | 5.92 | 7.83 | 4.94 | 0.33 | 3M | — |
 | CPRI | CAPRI HOLDINGS LIMITED | greenblatt | ✅ | 100% | 13.56 | 11.89 | 20.31 | 171 | 1.21 | 39.38 | 4M | — |
 | CPRI | CAPRI HOLDINGS LIMITED | piotroski | ✅ | 78% | 13.56 | 11.89 | 20.31 | 171 | 1.21 | 39.38 | 4M | — |
-| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.54 | 20.64 | 0.81 | 3.99 | 9.18 | 0.34 | 132,843 | — |
-| SHAK | SHAKE SHACK INC. | piotroski | ✅ | 89% | 69.40 | 63.67 | 5.53 | 8.70 | 1.76 | 2.56 | 988,449 | — |
-| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 65.21 | 62.70 | — | -29.14 | 1.60 | -6.05 | 486,091 | — |
-| HAYW | Hayward Holdings, Inc. | piotroski | ✅ | 100% | 13.92 | 20.47 | 1.94 | 9.51 | 2.94 | 0.98 | 1M | — |
-| LW | Lamb Weston Holdings, Inc. | piotroski | ✅ | 78% | 49.87 | 23.98 | 3.80 | 15.89 | 1.42 | — | 1M | — |
+| FAF | FIRST AMERICAN FINANCIAL COR | piotroski | ✅ | 89% | 72.75 | 12.12 | 1.37 | 11.31 | — | 1.95 | 1M | — |
+| FUL | FULLER H B CO | piotroski | ✅ | 78% | 53.89 | 19.60 | 1.49 | 7.59 | 1.70 | 1.59 | 382,258 | — |
 | NEOG | Neogen Corporation | piotroski | ✅ | 89% | 11.83 | — | 1.23 | -0.38 | 3.82 | 0.60 | 1M | — |
-| CTRI | Centuri Holdings, Inc. | piotroski | ✅ | 78% | 20.54 | 82.16 | 2.12 | 2.57 | 1.78 | 1.75 | 1M | — |
-| KRP | Kimbell Royalty Partners, LP | graham | ▫️ | 33% | 14.88 | — | — | — | 8.64 | — | 831,745 | — |
-| KRP | Kimbell Royalty Partners, LP | greenblatt | ▫️ | 33% | 14.88 | — | — | — | 8.64 | — | 831,745 | — |
-| KRP | Kimbell Royalty Partners, LP | lynch | ▫️ | 25% | 14.88 | — | — | — | 8.64 | — | 831,745 | — |
-| KRP | Kimbell Royalty Partners, LP | netnet | ▫️ | 25% | 14.88 | — | — | — | 8.64 | — | 831,745 | — |
-| KRP | Kimbell Royalty Partners, LP | buffett | ▫️ | 17% | 14.88 | — | — | — | 8.64 | — | 831,745 | — |
-| KRP | Kimbell Royalty Partners, LP | custom | ▫️ | 0% | 14.88 | — | — | — | 8.64 | — | 831,745 | — |
+| SBC | SBC Medical Group Holdings I | graham | ▫️ | 67% | 4.12 | 8.24 | 1.71 | 20.54 | 3.78 | 0.47 | 140,977 | — |
+| SBC | SBC Medical Group Holdings I | buffett | ▫️ | 67% | 4.12 | 8.24 | 1.71 | 20.54 | 3.78 | 0.47 | 140,977 | — |
+| SBC | SBC Medical Group Holdings I | greenblatt | ▫️ | 67% | 4.12 | 8.24 | 1.71 | 20.54 | 3.78 | 0.47 | 140,977 | — |
+| SBC | SBC Medical Group Holdings I | netnet | ▫️ | 50% | 4.12 | 8.24 | 1.71 | 20.54 | 3.78 | 0.47 | 140,977 | — |
+| SBC | SBC Medical Group Holdings I | piotroski | ▫️ | 44% | 4.12 | 8.24 | 1.71 | 20.54 | 3.78 | 0.47 | 140,977 | — |
+| SBC | SBC Medical Group Holdings I | custom | ▫️ | 0% | 4.12 | 8.24 | 1.71 | 20.54 | 3.78 | 0.47 | 140,977 | — |
 | POWL | Powell Industries, Inc. | graham | ▫️ | 78% | 181 | 12.19 | 3.44 | 28.21 | 2.09 | 0.73 | 475,485 | — |
 | POWL | Powell Industries, Inc. | buffett | ▫️ | 67% | 181 | 12.19 | 3.44 | 28.21 | 2.09 | 0.73 | 475,485 | — |
 | POWL | Powell Industries, Inc. | netnet | ▫️ | 50% | 181 | 12.19 | 3.44 | 28.21 | 2.09 | 0.73 | 475,485 | — |
 | POWL | Powell Industries, Inc. | custom | ▫️ | 0% | 181 | 12.19 | 3.44 | 28.21 | 2.09 | 0.73 | 475,485 | — |
-| YOU | CLEAR SECURE, INC. | greenblatt | ▫️ | 67% | 44.33 | — | — | 61.42 | 1.01 | 6.18 | 1M | — |
-| YOU | CLEAR SECURE, INC. | piotroski | ▫️ | 56% | 44.33 | — | — | 61.42 | 1.01 | 6.18 | 1M | — |
-| YOU | CLEAR SECURE, INC. | buffett | ▫️ | 50% | 44.33 | — | — | 61.42 | 1.01 | 6.18 | 1M | — |
-| YOU | CLEAR SECURE, INC. | graham | ▫️ | 33% | 44.33 | — | — | 61.42 | 1.01 | 6.18 | 1M | — |
-| YOU | CLEAR SECURE, INC. | lynch | ▫️ | 25% | 44.33 | — | — | 61.42 | 1.01 | 6.18 | 1M | — |
-| YOU | CLEAR SECURE, INC. | netnet | ▫️ | 25% | 44.33 | — | — | 61.42 | 1.01 | 6.18 | 1M | — |
-| YOU | CLEAR SECURE, INC. | custom | ▫️ | 0% | 44.33 | — | — | 61.42 | 1.01 | 6.18 | 1M | — |
-| PRI | Primerica, Inc. | buffett | ▫️ | 67% | 296 | 12.90 | 3.95 | 30.71 | — | 5.14 | 180,722 | — |
-| PRI | Primerica, Inc. | greenblatt | ▫️ | 67% | 296 | 12.90 | 3.95 | 30.71 | — | 5.14 | 180,722 | — |
-| PRI | Primerica, Inc. | graham | ▫️ | 56% | 296 | 12.90 | 3.95 | 30.71 | — | 5.14 | 180,722 | — |
+| XZO | Exzeo Group, Inc. | greenblatt | ▫️ | 67% | 16.55 | 16.72 | 5.22 | 32.56 | 3.86 | 0.37 | 197,899 | — |
+| XZO | Exzeo Group, Inc. | buffett | ▫️ | 50% | 16.55 | 16.72 | 5.22 | 32.56 | 3.86 | 0.37 | 197,899 | — |
+| XZO | Exzeo Group, Inc. | lynch | ▫️ | 50% | 16.55 | 16.72 | 5.22 | 32.56 | 3.86 | 0.37 | 197,899 | — |
+| XZO | Exzeo Group, Inc. | netnet | ▫️ | 50% | 16.55 | 16.72 | 5.22 | 32.56 | 3.86 | 0.37 | 197,899 | — |
+| XZO | Exzeo Group, Inc. | graham | ▫️ | 33% | 16.55 | 16.72 | 5.22 | 32.56 | 3.86 | 0.37 | 197,899 | — |
+| XZO | Exzeo Group, Inc. | piotroski | ▫️ | 33% | 16.55 | 16.72 | 5.22 | 32.56 | 3.86 | 0.37 | 197,899 | — |
+| XZO | Exzeo Group, Inc. | custom | ▫️ | 0% | 16.55 | 16.72 | 5.22 | 32.56 | 3.86 | 0.37 | 197,899 | — |
+| UNIT | Uniti Group Inc. | greenblatt | ▫️ | 67% | 10.17 | 2.09 | 7.13 | 343 | 0.74 | 30.65 | 1M | — |
+| UNIT | Uniti Group Inc. | graham | ▫️ | 44% | 10.17 | 2.09 | 7.13 | 343 | 0.74 | 30.65 | 1M | — |
+| UNIT | Uniti Group Inc. | buffett | ▫️ | 33% | 10.17 | 2.09 | 7.13 | 343 | 0.74 | 30.65 | 1M | — |
+| UNIT | Uniti Group Inc. | lynch | ▫️ | 25% | 10.17 | 2.09 | 7.13 | 343 | 0.74 | 30.65 | 1M | — |
+| UNIT | Uniti Group Inc. | netnet | ▫️ | 25% | 10.17 | 2.09 | 7.13 | 343 | 0.74 | 30.65 | 1M | — |
+| UNIT | Uniti Group Inc. | piotroski | ▫️ | 22% | 10.17 | 2.09 | 7.13 | 343 | 0.74 | 30.65 | 1M | — |
+| UNIT | Uniti Group Inc. | custom | ▫️ | 0% | 10.17 | 2.09 | 7.13 | 343 | 0.74 | 30.65 | 1M | — |
+| MCRI | MONARCH CASINO & RESORT, INC | graham | ▫️ | 33% | 122 | 22.38 | 4.22 | 18.86 | 0.86 | 0.33 | 115,232 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
