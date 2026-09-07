@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-SBC,SBC Medical Group Holdings Incorporated,lynch,True,3,4,75.0,4.12,8.24,1.71,20.54,3.78,0.47,5.21,"140,977",—
-POWL,"Powell Industries, Inc.",greenblatt,True,3,3,100.0,181,12.19,3.44,28.21,2.09,0.73,133,"475,485",—
-POWL,"Powell Industries, Inc.",piotroski,True,7,9,77.8,181,12.19,3.44,28.21,2.09,0.73,133,"475,485",—
-POWL,"Powell Industries, Inc.",lynch,True,3,4,75.0,181,12.19,3.44,28.21,2.09,0.73,133,"475,485",—
-MCRI,"MONARCH CASINO & RESORT, INC.",piotroski,True,9,9,100.0,122,22.38,4.22,18.86,0.86,0.33,59.33,"115,232",—
-MCRI,"MONARCH CASINO & RESORT, INC.",lynch,True,4,4,100.0,122,22.38,4.22,18.86,0.86,0.33,59.33,"115,232",—
-MCRI,"MONARCH CASINO & RESORT, INC.",buffett,True,5,6,83.3,122,22.38,4.22,18.86,0.86,0.33,59.33,"115,232",—
-AROC,"Archrock, Inc.",piotroski,True,8,9,88.9,32.69,17.86,3.83,21.61,1.54,1.92,18.75,1M,—
-GGG,GRACO INC.,piotroski,True,8,9,88.9,77.88,25.29,4.97,19.66,3.15,—,32.97,1M,—
-GGG,GRACO INC.,buffett,True,5,6,83.3,77.88,25.29,4.97,19.66,3.15,—,32.97,1M,—
-VICR,VICOR CORPORATION,piotroski,True,8,9,88.9,189,72.24,12.04,16.66,8.99,0.10,30.32,"507,674",—
-VICR,VICOR CORPORATION,buffett,True,5,6,83.3,189,72.24,12.04,16.66,8.99,0.10,30.32,"507,674",—
-VICR,VICOR CORPORATION,lynch,True,3,4,75.0,189,72.24,12.04,16.66,8.99,0.10,30.32,"507,674",—
-NJR,NEW JERSEY RESOURCES CORPORATION,piotroski,True,7,9,77.8,53.40,16.04,2.25,14.03,0.73,—,42.17,"551,600",—
-KEX,KIRBY CORPORATION,piotroski,True,8,9,88.9,141,22.24,2.33,10.49,1.53,—,92.69,"418,015",—
-HAFC,HANMI FINANCIAL CORPORATION,piotroski,True,8,9,88.9,32.06,12.77,1.21,9.55,—,8.88,38.69,"192,640",—
-CPK,CHESAPEAKE UTILITIES CORP,piotroski,True,7,9,77.8,133,22.22,1.95,8.78,0.45,—,95.61,"119,739",—
-LCII,LCI INDUSTRIES,piotroski,True,8,9,88.9,103,13.55,1.87,13.83,2.85,1.33,96.57,"269,719",—
-FBNC,FIRST BANCORP,piotroski,True,7,9,77.8,65.04,24.27,1.63,6.71,—,6.66,49.05,"112,677",—
+BOIL,PROSHARES TRUST II,greenblatt,True,3,3,100.0,20.39,1.47,0.44,29.91,—,0.06,120,4M,—
+BBW,BUILD-A-BEAR WORKSHOP INC,greenblatt,True,3,3,100.0,29.43,7.38,2.48,33.67,1.55,—,32.62,"556,853",—
+CASH,"PATHWARD FINANCIAL, INC.",greenblatt,True,3,3,100.0,83.19,10.57,2.28,21.66,—,7.36,80.37,"149,205",—
+CASH,"PATHWARD FINANCIAL, INC.",buffett,True,5,6,83.3,83.19,10.57,2.28,21.66,—,7.36,80.37,"149,205",—
+BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,154,20.99,3.60,17.13,2.65,0.86,84.23,"463,972",—
+BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,154,20.99,3.60,17.13,2.65,0.86,84.23,"463,972",—
+ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.20,5.00,0.14,4.91,1.93,0.73,1.14,"25,219",—
+PJT,PJT Partners Inc.,buffett,True,5,6,83.3,183,—,—,58.43,—,2.71,—,"332,270",—
+PJT,PJT Partners Inc.,piotroski,True,7,9,77.8,183,—,—,58.43,—,2.71,—,"332,270",—
+MTCH,"Match Group, Inc.",piotroski,True,8,9,88.9,41.86,17.59,—,-242,1.42,—,—,2M,—
+MTCH,"Match Group, Inc.",lynch,True,3,4,75.0,41.86,17.59,—,-242,1.42,—,—,2M,—
+WNC,WABASH NATIONAL CORPORATION,greenblatt,True,3,3,100.0,14.31,2.82,1.63,57.56,1.39,2.18,31.68,"400,690",—
+HALO,"HALOZYME THERAPEUTICS, INC.",buffett,True,5,6,83.3,110,43.04,280,649,4.66,50.73,4.76,1M,—
+SFM,"Sprouts Farmers Market, Inc.",piotroski,True,7,9,77.8,81.40,15.33,5.73,37.32,0.93,1.96,41.21,2M,—
+PCTY,PAYLOCITY HOLDING CORPORATION,piotroski,True,8,9,88.9,152,30.95,6.83,22.08,1.09,3.00,49.69,"566,124",—
+OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,22.40,32.46,4.28,13.20,1.91,0.30,9.01,"867,787",—
+EZPW,"EZCORP, INC.",piotroski,True,7,9,77.8,33.32,23.46,2.71,10.69,5.61,0.90,19.82,"525,735",—
+VCYT,"VERACYTE, INC.",piotroski,True,8,9,88.9,42.53,51.87,2.62,5.07,8.15,0.07,17.32,"992,183",—
+SIRI,SIRIUS XM HOLDINGS INC.,lynch,True,3,4,75.0,28.99,13.00,0.90,6.96,0.30,1.36,40.31,3M,—
+DRH,DIAMONDROCK HOSPITALITY CO,piotroski,True,7,9,77.8,12.08,27.45,1.74,7.01,—,1.07,8.30,2M,—
+BCPC,Balchem Corporation,piotroski,True,9,9,100.0,172,36.13,4.45,12.31,2.07,0.34,64.20,"89,947",—
+KNTK,KINETIK HOLDINGS INC.,lynch,True,3,4,75.0,54.43,20.70,—,-31.53,0.69,-7.37,—,"723,027",—
+HLIO,"HELIOS TECHNOLOGIES, INC.",piotroski,True,9,9,100.0,71.62,49.39,2.56,5.20,2.90,0.63,30.21,"421,856",—
+HLIO,"HELIOS TECHNOLOGIES, INC.",lynch,True,3,4,75.0,71.62,49.39,2.56,5.20,2.90,0.63,30.21,"421,856",—
+PAYO,Payoneer Global Inc.,piotroski,True,7,9,77.8,7.17,37.74,3.83,10.39,1.00,11.71,2.83,1M,—
 FIGS,"FIGS, Inc.",piotroski,True,8,9,88.9,14.42,75.89,5.92,7.83,4.94,0.33,3.23,3M,—
 CPRI,CAPRI HOLDINGS LIMITED,greenblatt,True,3,3,100.0,13.56,11.89,20.31,171,1.21,39.38,4.14,4M,—
 CPRI,CAPRI HOLDINGS LIMITED,piotroski,True,7,9,77.8,13.56,11.89,20.31,171,1.21,39.38,4.14,4M,—
-FAF,FIRST AMERICAN FINANCIAL CORPORATION,piotroski,True,8,9,88.9,72.75,12.12,1.37,11.31,—,1.95,84.61,1M,—
-FUL,FULLER H B CO,piotroski,True,7,9,77.8,53.89,19.60,1.49,7.59,1.70,1.59,47.32,"382,258",—
-NEOG,Neogen Corporation,piotroski,True,8,9,88.9,11.83,—,1.23,-0.38,3.82,0.60,—,1M,—
-SBC,SBC Medical Group Holdings Incorporated,graham,False,6,9,66.7,4.12,8.24,1.71,20.54,3.78,0.47,5.21,"140,977",—
-SBC,SBC Medical Group Holdings Incorporated,buffett,False,4,6,66.7,4.12,8.24,1.71,20.54,3.78,0.47,5.21,"140,977",—
-SBC,SBC Medical Group Holdings Incorporated,greenblatt,False,2,3,66.7,4.12,8.24,1.71,20.54,3.78,0.47,5.21,"140,977",—
-SBC,SBC Medical Group Holdings Incorporated,netnet,False,2,4,50.0,4.12,8.24,1.71,20.54,3.78,0.47,5.21,"140,977",—
-SBC,SBC Medical Group Holdings Incorporated,piotroski,False,4,9,44.4,4.12,8.24,1.71,20.54,3.78,0.47,5.21,"140,977",—
-SBC,SBC Medical Group Holdings Incorporated,custom,False,0,0,0.0,4.12,8.24,1.71,20.54,3.78,0.47,5.21,"140,977",—
-POWL,"Powell Industries, Inc.",graham,False,7,9,77.8,181,12.19,3.44,28.21,2.09,0.73,133,"475,485",—
-POWL,"Powell Industries, Inc.",buffett,False,4,6,66.7,181,12.19,3.44,28.21,2.09,0.73,133,"475,485",—
-POWL,"Powell Industries, Inc.",netnet,False,2,4,50.0,181,12.19,3.44,28.21,2.09,0.73,133,"475,485",—
-POWL,"Powell Industries, Inc.",custom,False,0,0,0.0,181,12.19,3.44,28.21,2.09,0.73,133,"475,485",—
-XZO,"Exzeo Group, Inc.",greenblatt,False,2,3,66.7,16.55,16.72,5.22,32.56,3.86,0.37,8.40,"197,899",—
-XZO,"Exzeo Group, Inc.",buffett,False,3,6,50.0,16.55,16.72,5.22,32.56,3.86,0.37,8.40,"197,899",—
-XZO,"Exzeo Group, Inc.",lynch,False,2,4,50.0,16.55,16.72,5.22,32.56,3.86,0.37,8.40,"197,899",—
-XZO,"Exzeo Group, Inc.",netnet,False,2,4,50.0,16.55,16.72,5.22,32.56,3.86,0.37,8.40,"197,899",—
-XZO,"Exzeo Group, Inc.",graham,False,3,9,33.3,16.55,16.72,5.22,32.56,3.86,0.37,8.40,"197,899",—
-XZO,"Exzeo Group, Inc.",piotroski,False,3,9,33.3,16.55,16.72,5.22,32.56,3.86,0.37,8.40,"197,899",—
-XZO,"Exzeo Group, Inc.",custom,False,0,0,0.0,16.55,16.72,5.22,32.56,3.86,0.37,8.40,"197,899",—
-UNIT,Uniti Group Inc.,greenblatt,False,2,3,66.7,10.17,2.09,7.13,343,0.74,30.65,12.50,1M,—
-UNIT,Uniti Group Inc.,graham,False,4,9,44.4,10.17,2.09,7.13,343,0.74,30.65,12.50,1M,—
-UNIT,Uniti Group Inc.,buffett,False,2,6,33.3,10.17,2.09,7.13,343,0.74,30.65,12.50,1M,—
-UNIT,Uniti Group Inc.,lynch,False,1,4,25.0,10.17,2.09,7.13,343,0.74,30.65,12.50,1M,—
-UNIT,Uniti Group Inc.,netnet,False,1,4,25.0,10.17,2.09,7.13,343,0.74,30.65,12.50,1M,—
-UNIT,Uniti Group Inc.,piotroski,False,2,9,22.2,10.17,2.09,7.13,343,0.74,30.65,12.50,1M,—
-UNIT,Uniti Group Inc.,custom,False,0,0,0.0,10.17,2.09,7.13,343,0.74,30.65,12.50,1M,—
-MCRI,"MONARCH CASINO & RESORT, INC.",graham,False,3,9,33.3,122,22.38,4.22,18.86,0.86,0.33,59.33,"115,232",—
+SHAK,SHAKE SHACK INC.,piotroski,True,8,9,88.9,69.40,63.67,5.53,8.70,1.76,2.56,17.55,"988,449",—
+AIOT,"POWERFLEET, INC.",piotroski,True,7,9,77.8,3.02,—,0.85,-4.32,1.13,1.00,—,"604,538",—
+PHIN,PHINIA INC.,piotroski,True,8,9,88.9,69.04,21.31,1.74,8.19,1.86,1.41,53.71,"337,873",—
+LILA,Liberty Latin America Ltd.,piotroski,True,7,9,77.8,8.52,—,3.06,-110,1.14,20.09,—,"330,802",—
+BOIL,PROSHARES TRUST II,lynch,False,2,4,50.0,20.39,1.47,0.44,29.91,—,0.06,120,4M,—
+BOIL,PROSHARES TRUST II,graham,False,4,9,44.4,20.39,1.47,0.44,29.91,—,0.06,120,4M,—
+BOIL,PROSHARES TRUST II,buffett,False,2,6,33.3,20.39,1.47,0.44,29.91,—,0.06,120,4M,—
+BOIL,PROSHARES TRUST II,piotroski,False,3,9,33.3,20.39,1.47,0.44,29.91,—,0.06,120,4M,—
+BOIL,PROSHARES TRUST II,netnet,False,1,4,25.0,20.39,1.47,0.44,29.91,—,0.06,120,4M,—
+BOIL,PROSHARES TRUST II,custom,False,0,0,0.0,20.39,1.47,0.44,29.91,—,0.06,120,4M,—
+BBW,BUILD-A-BEAR WORKSHOP INC,graham,False,5,9,55.6,29.43,7.38,2.48,33.67,1.55,—,32.62,"556,853",—
+BBW,BUILD-A-BEAR WORKSHOP INC,piotroski,False,5,9,55.6,29.43,7.38,2.48,33.67,1.55,—,32.62,"556,853",—
+BBW,BUILD-A-BEAR WORKSHOP INC,buffett,False,3,6,50.0,29.43,7.38,2.48,33.67,1.55,—,32.62,"556,853",—
+BBW,BUILD-A-BEAR WORKSHOP INC,lynch,False,1,4,25.0,29.43,7.38,2.48,33.67,1.55,—,32.62,"556,853",—
+BBW,BUILD-A-BEAR WORKSHOP INC,netnet,False,1,4,25.0,29.43,7.38,2.48,33.67,1.55,—,32.62,"556,853",—
+BBW,BUILD-A-BEAR WORKSHOP INC,custom,False,0,0,0.0,29.43,7.38,2.48,33.67,1.55,—,32.62,"556,853",—
+CASH,"PATHWARD FINANCIAL, INC.",piotroski,False,6,9,66.7,83.19,10.57,2.28,21.66,—,7.36,80.37,"149,205",—
+CASH,"PATHWARD FINANCIAL, INC.",graham,False,5,9,55.6,83.19,10.57,2.28,21.66,—,7.36,80.37,"149,205",—
+CASH,"PATHWARD FINANCIAL, INC.",lynch,False,2,4,50.0,83.19,10.57,2.28,21.66,—,7.36,80.37,"149,205",—
+CASH,"PATHWARD FINANCIAL, INC.",netnet,False,1,4,25.0,83.19,10.57,2.28,21.66,—,7.36,80.37,"149,205",—
+CASH,"PATHWARD FINANCIAL, INC.",custom,False,0,0,0.0,83.19,10.57,2.28,21.66,—,7.36,80.37,"149,205",—
+EEFT,"EURONET WORLDWIDE, INC.",greenblatt,False,2,3,66.7,73.81,10.79,2.58,23.67,1.11,3.95,66.30,"630,101",—
