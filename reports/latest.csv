@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-MLI,MUELLER INDUSTRIES INC,buffett,True,6,6,100.0,63.74,9.29,2.21,23.84,5.92,0.15,66.66,"828,647",—
-MLI,MUELLER INDUSTRIES INC,greenblatt,True,3,3,100.0,63.74,9.29,2.21,23.84,5.92,0.15,66.66,"828,647",—
-MLI,MUELLER INDUSTRIES INC,lynch,True,4,4,100.0,63.74,9.29,2.21,23.84,5.92,0.15,66.66,"828,647",—
-MLI,MUELLER INDUSTRIES INC,graham,True,8,9,88.9,63.74,9.29,2.21,23.84,5.92,0.15,66.66,"828,647",—
-MLI,MUELLER INDUSTRIES INC,piotroski,True,7,9,77.8,63.74,9.29,2.21,23.84,5.92,0.15,66.66,"828,647",—
-MCRI,"MONARCH CASINO & RESORT, INC.",piotroski,True,9,9,100.0,122,22.38,4.22,18.86,0.86,0.33,59.33,"115,232",—
-MCRI,"MONARCH CASINO & RESORT, INC.",lynch,True,4,4,100.0,122,22.38,4.22,18.86,0.86,0.33,59.33,"115,232",—
-MCRI,"MONARCH CASINO & RESORT, INC.",buffett,True,5,6,83.3,122,22.38,4.22,18.86,0.86,0.33,59.33,"115,232",—
-EXLS,"EXLSERVICE HOLDINGS, INC.",piotroski,True,8,9,88.9,36.63,23.79,6.52,27.50,2.56,0.87,13.95,3M,—
-EXLS,"EXLSERVICE HOLDINGS, INC.",buffett,True,5,6,83.3,36.63,23.79,6.52,27.50,2.56,0.87,13.95,3M,—
-BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,154,20.99,3.60,17.13,2.65,0.86,84.23,"463,976",—
-BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,154,20.99,3.60,17.13,2.65,0.86,84.23,"463,976",—
-AIV,Apartment Investment and Management Company,greenblatt,True,3,3,100.0,2.56,0.66,1.00,151,—,3.10,14.95,"792,190",—
-DAKT,"Daktronics, Inc.",piotroski,True,8,9,88.9,19.35,21.03,3.18,15.09,2.31,—,11.23,"872,567",—
-DAKT,"Daktronics, Inc.",lynch,True,3,4,75.0,19.35,21.03,3.18,15.09,2.31,—,11.23,"872,567",—
-MTCH,"Match Group, Inc.",piotroski,True,8,9,88.9,41.86,17.59,—,-242,1.42,—,—,2M,—
-MTCH,"Match Group, Inc.",lynch,True,3,4,75.0,41.86,17.59,—,-242,1.42,—,—,2M,—
-VISN,"Vistance Networks, Inc.",greenblatt,True,3,3,100.0,6.40,0.66,—,-227,3.88,-9.06,—,6M,—
-VICR,VICOR CORPORATION,piotroski,True,8,9,88.9,189,72.24,12.04,16.66,8.99,0.10,30.32,"507,674",—
-VICR,VICOR CORPORATION,buffett,True,5,6,83.3,189,72.24,12.04,16.66,8.99,0.10,30.32,"507,674",—
-VICR,VICOR CORPORATION,lynch,True,3,4,75.0,189,72.24,12.04,16.66,8.99,0.10,30.32,"507,674",—
-HALO,"HALOZYME THERAPEUTICS, INC.",buffett,True,5,6,83.3,110,43.04,280,649,4.66,50.73,4.76,1M,—
-FCFS,"FIRSTCASH HOLDINGS, INC.",piotroski,True,7,9,77.8,226,30.41,4.41,14.51,4.55,1.33,92.39,"258,124",—
-IBEX,IBEX LIMITED,piotroski,True,7,9,77.8,39.17,16.60,4.59,27.45,1.82,1.03,21.30,"106,274",—
-BKU,"BankUnited, Inc.",piotroski,True,8,9,88.9,46.38,13.14,1.13,8.79,—,10.47,57.13,"665,940",—
+KRP,"Kimbell Royalty Partners, LP",piotroski,True,7,9,77.8,14.88,—,—,—,8.64,—,—,"831,745",—
+POWL,"Powell Industries, Inc.",greenblatt,True,3,3,100.0,181,12.19,3.44,28.21,2.09,0.73,133,"475,485",—
+POWL,"Powell Industries, Inc.",piotroski,True,7,9,77.8,181,12.19,3.44,28.21,2.09,0.73,133,"475,485",—
+POWL,"Powell Industries, Inc.",lynch,True,3,4,75.0,181,12.19,3.44,28.21,2.09,0.73,133,"475,485",—
+PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,296,12.90,3.95,30.71,—,5.14,196,"180,722",—
+RILY,"BRC Group Holdings, Inc.",greenblatt,True,3,3,100.0,7.03,0.72,—,-179,—,-10.65,—,"347,158",—
+RILY,"BRC Group Holdings, Inc.",lynch,True,3,4,75.0,7.03,0.72,—,-179,—,-10.65,—,"347,158",—
+SSD,"Simpson Manufacturing Co., Inc.",buffett,True,5,6,83.3,181,21.96,3.73,17.00,3.54,0.51,94.81,"145,012",—
+SSD,"Simpson Manufacturing Co., Inc.",piotroski,True,7,9,77.8,181,21.96,3.73,17.00,3.54,0.51,94.81,"145,012",—
+WNC,WABASH NATIONAL CORPORATION,greenblatt,True,3,3,100.0,14.31,2.82,1.63,57.56,1.39,2.18,31.68,"400,690",—
+FSS,FEDERAL SIGNAL CORPORATION,lynch,True,3,4,75.0,119,29.75,5.31,17.84,3.02,0.73,45.03,"326,123",—
+SBH,"SALLY BEAUTY HOLDINGS, INC.",piotroski,True,8,9,88.9,16.70,8.84,2.18,24.66,2.26,2.62,18.04,"851,972",—
+SFM,"Sprouts Farmers Market, Inc.",piotroski,True,7,9,77.8,81.40,15.33,5.73,37.32,0.93,1.96,41.21,2M,—
+PCTY,PAYLOCITY HOLDING CORPORATION,piotroski,True,8,9,88.9,152,30.95,6.83,22.08,1.09,3.00,49.69,"566,124",—
+NJR,NEW JERSEY RESOURCES CORPORATION,piotroski,True,7,9,77.8,53.40,16.04,2.25,14.03,0.73,—,42.17,"551,600",—
+VCYT,"VERACYTE, INC.",piotroski,True,8,9,88.9,42.53,51.87,2.62,5.07,8.15,0.07,17.32,"992,183",—
 LCII,LCI INDUSTRIES,piotroski,True,8,9,88.9,103,13.55,1.87,13.83,2.85,1.33,96.57,"269,719",—
-GRC,The Gorman-Rupp Company,piotroski,True,8,9,88.9,75.34,37.30,4.78,12.78,2.37,1.07,26.77,"101,358",—
 SSRM,SSR Mining Inc.,piotroski,True,7,9,77.8,37.15,20.08,2.30,11.28,2.08,0.51,25.94,3M,—
-XPRO,Expro Group Holdings N.V.,piotroski,True,8,9,88.9,17.96,39.91,1.36,3.37,2.16,0.47,11.58,"555,954",—
-FIGS,"FIGS, Inc.",piotroski,True,8,9,88.9,14.42,75.89,5.92,7.83,4.94,0.33,3.23,3M,—
+CNMD,CONMED CORPORATION,lynch,True,3,4,75.0,49.32,32.66,1.49,4.55,2.14,1.25,33.57,"281,280",—
+CBU,"COMMUNITY FINANCIAL SYSTEM, INC.",piotroski,True,8,9,88.9,63.85,16.08,1.68,10.49,—,7.63,58.24,"107,026",—
+FIVN,"Five9, Inc.",piotroski,True,8,9,88.9,33.27,73.93,3.73,5.02,4.51,1.28,9.51,2M,—
+CPRI,CAPRI HOLDINGS LIMITED,greenblatt,True,3,3,100.0,13.56,11.89,20.31,171,1.21,39.38,4.14,4M,—
+CPRI,CAPRI HOLDINGS LIMITED,piotroski,True,7,9,77.8,13.56,11.89,20.31,171,1.21,39.38,4.14,4M,—
+ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.54,20.64,0.81,3.99,9.18,0.34,5.26,"132,843",—
 SHAK,SHAKE SHACK INC.,piotroski,True,8,9,88.9,69.40,63.67,5.53,8.70,1.76,2.56,17.55,"988,449",—
-FUL,FULLER H B CO,piotroski,True,7,9,77.8,53.89,19.60,1.49,7.59,1.70,1.59,47.32,"382,258",—
-MSGS,MADISON SQUARE GARDEN SPORTS CORP.,piotroski,True,9,9,100.0,391,"1,222",—,-2.95,0.50,-6.84,—,"245,071",—
-BNED,"BARNES & NOBLE EDUCATION, INC.",piotroski,True,8,9,88.9,12.72,25.96,1.50,5.73,1.71,1.51,9.68,"204,458",—
-LILA,Liberty Latin America Ltd.,piotroski,True,7,9,77.8,8.52,—,3.06,-110,1.14,20.09,—,"330,802",—
-ORN,"ORION GROUP HOLDINGS, INC.",piotroski,True,7,9,77.8,9.28,155,2.31,1.56,1.36,1.61,2.33,"424,674",—
-MLI,MUELLER INDUSTRIES INC,netnet,False,2,4,50.0,63.74,9.29,2.21,23.84,5.92,0.15,66.66,"828,647",—
-MLI,MUELLER INDUSTRIES INC,custom,False,0,0,0.0,63.74,9.29,2.21,23.84,5.92,0.15,66.66,"828,647",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,piotroski,False,4,9,44.4,26.48,—,—,—,2.10,—,—,"138,436",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,graham,False,3,9,33.3,26.48,—,—,—,2.10,—,—,"138,436",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,buffett,False,2,6,33.3,26.48,—,—,—,2.10,—,—,"138,436",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,greenblatt,False,1,3,33.3,26.48,—,—,—,2.10,—,—,"138,436",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,lynch,False,1,4,25.0,26.48,—,—,—,2.10,—,—,"138,436",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,netnet,False,1,4,25.0,26.48,—,—,—,2.10,—,—,"138,436",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,custom,False,0,0,0.0,26.48,—,—,—,2.10,—,—,"138,436",—
-MCRI,"MONARCH CASINO & RESORT, INC.",graham,False,3,9,33.3,122,22.38,4.22,18.86,0.86,0.33,59.33,"115,232",—
-MCRI,"MONARCH CASINO & RESORT, INC.",greenblatt,False,1,3,33.3,122,22.38,4.22,18.86,0.86,0.33,59.33,"115,232",—
-MCRI,"MONARCH CASINO & RESORT, INC.",netnet,False,1,4,25.0,122,22.38,4.22,18.86,0.86,0.33,59.33,"115,232",—
-MCRI,"MONARCH CASINO & RESORT, INC.",custom,False,0,0,0.0,122,22.38,4.22,18.86,0.86,0.33,59.33,"115,232",—
-EXLS,"EXLSERVICE HOLDINGS, INC.",graham,False,6,9,66.7,36.63,23.79,6.52,27.50,2.56,0.87,13.95,3M,—
+GSHD,"GOOSEHEAD INSURANCE, INC.",lynch,True,3,4,75.0,65.21,62.70,—,-29.14,1.60,-6.05,—,"486,091",—
+HAYW,"Hayward Holdings, Inc.",piotroski,True,9,9,100.0,13.92,20.47,1.94,9.51,2.94,0.98,10.47,1M,—
+LW,"Lamb Weston Holdings, Inc.",piotroski,True,7,9,77.8,49.87,23.98,3.80,15.89,1.42,—,24.78,1M,—
+NEOG,Neogen Corporation,piotroski,True,8,9,88.9,11.83,—,1.23,-0.38,3.82,0.60,—,1M,—
+CTRI,"Centuri Holdings, Inc.",piotroski,True,7,9,77.8,20.54,82.16,2.12,2.57,1.78,1.75,7.37,1M,—
+KRP,"Kimbell Royalty Partners, LP",graham,False,3,9,33.3,14.88,—,—,—,8.64,—,—,"831,745",—
+KRP,"Kimbell Royalty Partners, LP",greenblatt,False,1,3,33.3,14.88,—,—,—,8.64,—,—,"831,745",—
+KRP,"Kimbell Royalty Partners, LP",lynch,False,1,4,25.0,14.88,—,—,—,8.64,—,—,"831,745",—
+KRP,"Kimbell Royalty Partners, LP",netnet,False,1,4,25.0,14.88,—,—,—,8.64,—,—,"831,745",—
+KRP,"Kimbell Royalty Partners, LP",buffett,False,1,6,16.7,14.88,—,—,—,8.64,—,—,"831,745",—
+KRP,"Kimbell Royalty Partners, LP",custom,False,0,0,0.0,14.88,—,—,—,8.64,—,—,"831,745",—
+POWL,"Powell Industries, Inc.",graham,False,7,9,77.8,181,12.19,3.44,28.21,2.09,0.73,133,"475,485",—
+POWL,"Powell Industries, Inc.",buffett,False,4,6,66.7,181,12.19,3.44,28.21,2.09,0.73,133,"475,485",—
+POWL,"Powell Industries, Inc.",netnet,False,2,4,50.0,181,12.19,3.44,28.21,2.09,0.73,133,"475,485",—
+POWL,"Powell Industries, Inc.",custom,False,0,0,0.0,181,12.19,3.44,28.21,2.09,0.73,133,"475,485",—
+YOU,"CLEAR SECURE, INC.",greenblatt,False,2,3,66.7,44.33,—,—,61.42,1.01,6.18,—,1M,—
+YOU,"CLEAR SECURE, INC.",piotroski,False,5,9,55.6,44.33,—,—,61.42,1.01,6.18,—,1M,—
+YOU,"CLEAR SECURE, INC.",buffett,False,3,6,50.0,44.33,—,—,61.42,1.01,6.18,—,1M,—
+YOU,"CLEAR SECURE, INC.",graham,False,3,9,33.3,44.33,—,—,61.42,1.01,6.18,—,1M,—
+YOU,"CLEAR SECURE, INC.",lynch,False,1,4,25.0,44.33,—,—,61.42,1.01,6.18,—,1M,—
+YOU,"CLEAR SECURE, INC.",netnet,False,1,4,25.0,44.33,—,—,61.42,1.01,6.18,—,1M,—
+YOU,"CLEAR SECURE, INC.",custom,False,0,0,0.0,44.33,—,—,61.42,1.01,6.18,—,1M,—
+PRI,"Primerica, Inc.",buffett,False,4,6,66.7,296,12.90,3.95,30.71,—,5.14,196,"180,722",—
+PRI,"Primerica, Inc.",greenblatt,False,2,3,66.7,296,12.90,3.95,30.71,—,5.14,196,"180,722",—
+PRI,"Primerica, Inc.",graham,False,5,9,55.6,296,12.90,3.95,30.71,—,5.14,196,"180,722",—
