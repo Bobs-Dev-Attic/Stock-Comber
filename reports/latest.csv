@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-GOOGN,Alphabet Inc.,graham,True,9,9,100.0,47.94,4.43,1.41,31.83,2.01,0.43,90.88,"739,413",—
-GOOGN,Alphabet Inc.,buffett,True,6,6,100.0,47.94,4.43,1.41,31.83,2.01,0.43,90.88,"739,413",—
-GOOGN,Alphabet Inc.,greenblatt,True,3,3,100.0,47.94,4.43,1.41,31.83,2.01,0.43,90.88,"739,413",—
-GOOGN,Alphabet Inc.,lynch,True,4,4,100.0,47.94,4.43,1.41,31.83,2.01,0.43,90.88,"739,413",—
-GOOGM,Alphabet Inc.,graham,True,9,9,100.0,48.22,4.46,1.42,31.83,2.01,0.43,90.88,"124,961",—
-GOOGM,Alphabet Inc.,buffett,True,6,6,100.0,48.22,4.46,1.42,31.83,2.01,0.43,90.88,"124,961",—
-GOOGM,Alphabet Inc.,greenblatt,True,3,3,100.0,48.22,4.46,1.42,31.83,2.01,0.43,90.88,"124,961",—
-GOOGM,Alphabet Inc.,lynch,True,4,4,100.0,48.22,4.46,1.42,31.83,2.01,0.43,90.88,"124,961",—
+QTTB,Q32 Bio Inc.,greenblatt,True,3,3,100.0,11.99,4.95,3.51,70.98,4.85,0.47,13.63,"853,810",—
 BBW,BUILD-A-BEAR WORKSHOP INC,greenblatt,True,3,3,100.0,29.43,7.38,2.48,33.67,1.55,—,32.62,"556,853",—
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",piotroski,True,7,9,77.8,9.96,8.23,—,-221,2.06,-5.32,—,1M,—
-BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,154,20.99,3.60,17.13,2.65,0.86,84.23,"463,976",—
-BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,154,20.99,3.60,17.13,2.65,0.86,84.23,"463,976",—
-AREC,AMERICAN RESOURCES CORPORATION,greenblatt,True,3,3,100.0,2.43,3.86,2.24,58.44,2.19,0.80,3.92,2M,—
-SSD,"Simpson Manufacturing Co., Inc.",buffett,True,5,6,83.3,181,21.96,3.73,17.00,3.54,0.51,94.81,"144,773",—
-SSD,"Simpson Manufacturing Co., Inc.",piotroski,True,7,9,77.8,181,21.96,3.73,17.00,3.54,0.51,94.81,"144,773",—
-GGG,GRACO INC.,piotroski,True,8,9,88.9,77.88,25.29,4.97,19.66,3.15,—,32.97,1M,—
-GGG,GRACO INC.,buffett,True,5,6,83.3,77.88,25.29,4.97,19.66,3.15,—,32.97,1M,—
-DUKU,Duke Energy CORP,piotroski,True,8,9,88.9,49.93,7.91,0.75,9.58,0.55,—,97.33,"650,018",—
-DUKU,Duke Energy CORP,lynch,True,3,4,75.0,49.93,7.91,0.75,9.58,0.55,—,97.33,"650,018",—
+TMDX,"TransMedics Group, Inc.",piotroski,True,7,9,77.8,89.98,18.48,7.71,40.22,7.14,1.26,35.76,"542,804",—
+PJT,PJT Partners Inc.,buffett,True,5,6,83.3,183,—,—,58.43,—,2.71,—,"332,270",—
+PJT,PJT Partners Inc.,piotroski,True,7,9,77.8,183,—,—,58.43,—,2.71,—,"332,270",—
+FSS,FEDERAL SIGNAL CORPORATION,lynch,True,3,4,75.0,119,29.75,5.31,17.84,3.02,0.73,45.03,"326,123",—
+JOE,The St. Joe Company,piotroski,True,8,9,88.9,66.11,33.22,5.00,15.09,—,0.97,24.33,"147,205",—
 SHOE,"Shoe Carnival, Inc.",graham,True,8,9,88.9,14.07,7.41,0.56,7.58,3.76,0.74,32.72,1M,—
-KEX,KIRBY CORPORATION,piotroski,True,8,9,88.9,141,22.24,2.33,10.49,1.53,—,92.69,"418,013",—
-WLY,"JOHN WILEY & SONS, INC.",piotroski,True,9,9,100.0,48.19,11.58,3.03,26.13,0.54,2.06,38.61,1M,—
-SIRI,SIRIUS XM HOLDINGS INC.,lynch,True,3,4,75.0,28.99,13.00,0.90,6.96,0.30,1.36,40.31,3M,—
-POST,"Post Holdings, Inc.",lynch,True,3,4,75.0,84.64,15.36,1.42,8.94,1.67,2.60,86.01,"823,430",—
+BCPC,Balchem Corporation,piotroski,True,9,9,100.0,172,36.13,4.45,12.31,2.07,0.34,64.20,"89,947",—
+ADC,AGREE REALTY CORPORATION,lynch,True,3,4,75.0,72.62,41.03,1.29,3.26,—,0.56,47.39,1M,—
 R,RYDER SYSTEM INC,piotroski,True,9,9,100.0,248,20.81,3.40,16.35,0.89,4.37,140,"183,179",—
-FIVN,"Five9, Inc.",piotroski,True,8,9,88.9,33.27,73.93,3.73,5.02,4.51,1.28,9.51,2M,—
-HMN,HORACE MANN EDUCATORS CORPORATION,piotroski,True,7,9,77.8,50.94,13.06,1.43,10.93,—,9.30,55.92,"273,560",—
-CYH,"COMMUNITY HEALTH SYSTEMS, INC.",piotroski,True,8,9,88.9,2.89,0.77,—,-36.51,1.46,-10.07,—,1M,—
+EXTR,"EXTREME NETWORKS, INC.",piotroski,True,8,9,88.9,21.70,70.00,33.06,47.54,0.93,—,2.14,"803,204",—
+IMAX,IMAX Corporation,piotroski,True,7,9,77.8,51.64,81.97,8.49,10.32,—,1.38,9.29,"460,870",—
+CPRI,CAPRI HOLDINGS LIMITED,greenblatt,True,3,3,100.0,13.56,11.89,20.31,171,1.21,39.38,4.14,4M,—
+CPRI,CAPRI HOLDINGS LIMITED,piotroski,True,7,9,77.8,13.56,11.89,20.31,171,1.21,39.38,4.14,4M,—
+ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.54,20.64,0.81,3.99,9.18,0.34,5.26,"132,843",—
 FAF,FIRST AMERICAN FINANCIAL CORPORATION,piotroski,True,8,9,88.9,72.75,12.12,1.37,11.31,—,1.95,84.61,1M,—
-MCS,MARCUS CORP,piotroski,True,7,9,77.8,27.27,67.21,1.86,2.77,0.40,—,11.55,"160,122",—
-SENS,"Senseonics Holdings, Inc.",piotroski,True,7,9,77.8,9.63,—,6.58,-113,4.83,1.07,—,"425,575",—
-FROG,JFrog Ltd.,piotroski,True,7,9,77.8,87.60,—,11.47,-8.09,2.14,0.51,—,2M,—
-USNA,"USANA HEALTH SCIENCES, INC.",piotroski,True,7,9,77.8,14.96,25.79,0.52,2.02,2.24,0.29,19.35,"224,851",—
-CTRI,"Centuri Holdings, Inc.",piotroski,True,7,9,77.8,20.54,82.16,2.12,2.57,1.78,1.75,7.37,1M,—
-GOOGN,Alphabet Inc.,piotroski,False,6,9,66.7,47.94,4.43,1.41,31.83,2.01,0.43,90.88,"739,413",—
-GOOGM,Alphabet Inc.,piotroski,False,6,9,66.7,48.22,4.46,1.42,31.83,2.01,0.43,90.88,"124,961",—
-GOOGN,Alphabet Inc.,netnet,False,2,4,50.0,47.94,4.43,1.41,31.83,2.01,0.43,90.88,"739,413",—
-GOOGM,Alphabet Inc.,netnet,False,2,4,50.0,48.22,4.46,1.42,31.83,2.01,0.43,90.88,"124,961",—
-GOOGN,Alphabet Inc.,custom,False,0,0,0.0,47.94,4.43,1.41,31.83,2.01,0.43,90.88,"739,413",—
-GOOGM,Alphabet Inc.,custom,False,0,0,0.0,48.22,4.46,1.42,31.83,2.01,0.43,90.88,"124,961",—
+GSHD,"GOOSEHEAD INSURANCE, INC.",lynch,True,3,4,75.0,65.21,62.70,—,-29.14,1.60,-6.05,—,"486,091",—
+LOCO,"EL POLLO LOCO HOLDINGS, INC.",piotroski,True,8,9,88.9,15.37,17.08,1.55,9.10,0.32,1.08,14.16,"174,098",—
+HCSG,"HEALTHCARE SERVICES GROUP, INC.",piotroski,True,9,9,100.0,21.82,26.94,3.12,11.58,3.38,—,11.28,"593,954",—
+FUL,FULLER H B CO,piotroski,True,7,9,77.8,53.89,19.60,1.49,7.59,1.70,1.59,47.32,"382,258",—
+BNED,"BARNES & NOBLE EDUCATION, INC.",piotroski,True,8,9,88.9,12.72,25.96,1.50,5.73,1.71,1.51,9.68,"204,458",—
+QTTB,Q32 Bio Inc.,graham,False,5,9,55.6,11.99,4.95,3.51,70.98,4.85,0.47,13.63,"853,810",—
+QTTB,Q32 Bio Inc.,buffett,False,3,6,50.0,11.99,4.95,3.51,70.98,4.85,0.47,13.63,"853,810",—
+QTTB,Q32 Bio Inc.,lynch,False,2,4,50.0,11.99,4.95,3.51,70.98,4.85,0.47,13.63,"853,810",—
+QTTB,Q32 Bio Inc.,netnet,False,2,4,50.0,11.99,4.95,3.51,70.98,4.85,0.47,13.63,"853,810",—
+QTTB,Q32 Bio Inc.,piotroski,False,4,9,44.4,11.99,4.95,3.51,70.98,4.85,0.47,13.63,"853,810",—
+QTTB,Q32 Bio Inc.,custom,False,0,0,0.0,11.99,4.95,3.51,70.98,4.85,0.47,13.63,"853,810",—
 BBW,BUILD-A-BEAR WORKSHOP INC,graham,False,5,9,55.6,29.43,7.38,2.48,33.67,1.55,—,32.62,"556,853",—
 BBW,BUILD-A-BEAR WORKSHOP INC,piotroski,False,5,9,55.6,29.43,7.38,2.48,33.67,1.55,—,32.62,"556,853",—
 BBW,BUILD-A-BEAR WORKSHOP INC,buffett,False,3,6,50.0,29.43,7.38,2.48,33.67,1.55,—,32.62,"556,853",—
 BBW,BUILD-A-BEAR WORKSHOP INC,lynch,False,1,4,25.0,29.43,7.38,2.48,33.67,1.55,—,32.62,"556,853",—
 BBW,BUILD-A-BEAR WORKSHOP INC,netnet,False,1,4,25.0,29.43,7.38,2.48,33.67,1.55,—,32.62,"556,853",—
 BBW,BUILD-A-BEAR WORKSHOP INC,custom,False,0,0,0.0,29.43,7.38,2.48,33.67,1.55,—,32.62,"556,853",—
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",greenblatt,False,2,3,66.7,9.96,8.23,—,-221,2.06,-5.32,—,1M,—
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",lynch,False,2,4,50.0,9.96,8.23,—,-221,2.06,-5.32,—,1M,—
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",graham,False,4,9,44.4,9.96,8.23,—,-221,2.06,-5.32,—,1M,—
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",buffett,False,2,6,33.3,9.96,8.23,—,-221,2.06,-5.32,—,1M,—
+TMDX,"TransMedics Group, Inc.",greenblatt,False,2,3,66.7,89.98,18.48,7.71,40.22,7.14,1.26,35.76,"542,804",—
+TMDX,"TransMedics Group, Inc.",netnet,False,2,4,50.0,89.98,18.48,7.71,40.22,7.14,1.26,35.76,"542,804",—
+TMDX,"TransMedics Group, Inc.",graham,False,3,9,33.3,89.98,18.48,7.71,40.22,7.14,1.26,35.76,"542,804",—
+TMDX,"TransMedics Group, Inc.",buffett,False,2,6,33.3,89.98,18.48,7.71,40.22,7.14,1.26,35.76,"542,804",—
+TMDX,"TransMedics Group, Inc.",lynch,False,1,4,25.0,89.98,18.48,7.71,40.22,7.14,1.26,35.76,"542,804",—
+TMDX,"TransMedics Group, Inc.",custom,False,0,0,0.0,89.98,18.48,7.71,40.22,7.14,1.26,35.76,"542,804",—
+UNIT,Uniti Group Inc.,greenblatt,False,2,3,66.7,10.17,2.09,7.13,343,0.74,30.65,12.50,1M,—
+UNIT,Uniti Group Inc.,graham,False,4,9,44.4,10.17,2.09,7.13,343,0.74,30.65,12.50,1M,—
+UNIT,Uniti Group Inc.,buffett,False,2,6,33.3,10.17,2.09,7.13,343,0.74,30.65,12.50,1M,—
+UNIT,Uniti Group Inc.,lynch,False,1,4,25.0,10.17,2.09,7.13,343,0.74,30.65,12.50,1M,—
+UNIT,Uniti Group Inc.,netnet,False,1,4,25.0,10.17,2.09,7.13,343,0.74,30.65,12.50,1M,—
+UNIT,Uniti Group Inc.,piotroski,False,2,9,22.2,10.17,2.09,7.13,343,0.74,30.65,12.50,1M,—
+UNIT,Uniti Group Inc.,custom,False,0,0,0.0,10.17,2.09,7.13,343,0.74,30.65,12.50,1M,—
+PJT,PJT Partners Inc.,greenblatt,False,2,3,66.7,183,—,—,58.43,—,2.71,—,"332,270",—
+PJT,PJT Partners Inc.,graham,False,4,9,44.4,183,—,—,58.43,—,2.71,—,"332,270",—
+PJT,PJT Partners Inc.,lynch,False,1,4,25.0,183,—,—,58.43,—,2.71,—,"332,270",—

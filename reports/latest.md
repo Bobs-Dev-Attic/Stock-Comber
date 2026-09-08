@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-08 04:51 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-08 09:18 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **34** strategy matches passed.
+Screened **75** companies · **22** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| GOOGN | Alphabet Inc. | graham | ✅ | 100% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
-| GOOGN | Alphabet Inc. | buffett | ✅ | 100% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
-| GOOGN | Alphabet Inc. | greenblatt | ✅ | 100% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
-| GOOGN | Alphabet Inc. | lynch | ✅ | 100% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
-| GOOGM | Alphabet Inc. | graham | ✅ | 100% | 48.22 | 4.46 | 1.42 | 31.83 | 2.01 | 0.43 | 124,961 | — |
-| GOOGM | Alphabet Inc. | buffett | ✅ | 100% | 48.22 | 4.46 | 1.42 | 31.83 | 2.01 | 0.43 | 124,961 | — |
-| GOOGM | Alphabet Inc. | greenblatt | ✅ | 100% | 48.22 | 4.46 | 1.42 | 31.83 | 2.01 | 0.43 | 124,961 | — |
-| GOOGM | Alphabet Inc. | lynch | ✅ | 100% | 48.22 | 4.46 | 1.42 | 31.83 | 2.01 | 0.43 | 124,961 | — |
+| QTTB | Q32 Bio Inc. | greenblatt | ✅ | 100% | 11.99 | 4.95 | 3.51 | 70.98 | 4.85 | 0.47 | 853,810 | — |
 | BBW | BUILD-A-BEAR WORKSHOP INC | greenblatt | ✅ | 100% | 29.43 | 7.38 | 2.48 | 33.67 | 1.55 | — | 556,853 | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | piotroski | ✅ | 78% | 9.96 | 8.23 | — | -221 | 2.06 | -5.32 | 1M | — |
-| BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 154 | 20.99 | 3.60 | 17.13 | 2.65 | 0.86 | 463,976 | — |
-| BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 154 | 20.99 | 3.60 | 17.13 | 2.65 | 0.86 | 463,976 | — |
-| AREC | AMERICAN RESOURCES CORPORATI | greenblatt | ✅ | 100% | 2.43 | 3.86 | 2.24 | 58.44 | 2.19 | 0.80 | 2M | — |
-| SSD | Simpson Manufacturing Co., I | buffett | ✅ | 83% | 181 | 21.96 | 3.73 | 17.00 | 3.54 | 0.51 | 144,773 | — |
-| SSD | Simpson Manufacturing Co., I | piotroski | ✅ | 78% | 181 | 21.96 | 3.73 | 17.00 | 3.54 | 0.51 | 144,773 | — |
-| GGG | GRACO INC. | piotroski | ✅ | 89% | 77.88 | 25.29 | 4.97 | 19.66 | 3.15 | — | 1M | — |
-| GGG | GRACO INC. | buffett | ✅ | 83% | 77.88 | 25.29 | 4.97 | 19.66 | 3.15 | — | 1M | — |
-| DUKU | Duke Energy CORP | piotroski | ✅ | 89% | 49.93 | 7.91 | 0.75 | 9.58 | 0.55 | — | 650,018 | — |
-| DUKU | Duke Energy CORP | lynch | ✅ | 75% | 49.93 | 7.91 | 0.75 | 9.58 | 0.55 | — | 650,018 | — |
+| TMDX | TransMedics Group, Inc. | piotroski | ✅ | 78% | 89.98 | 18.48 | 7.71 | 40.22 | 7.14 | 1.26 | 542,804 | — |
+| PJT | PJT Partners Inc. | buffett | ✅ | 83% | 183 | — | — | 58.43 | — | 2.71 | 332,270 | — |
+| PJT | PJT Partners Inc. | piotroski | ✅ | 78% | 183 | — | — | 58.43 | — | 2.71 | 332,270 | — |
+| FSS | FEDERAL SIGNAL CORPORATION | lynch | ✅ | 75% | 119 | 29.75 | 5.31 | 17.84 | 3.02 | 0.73 | 326,123 | — |
+| JOE | The St. Joe Company | piotroski | ✅ | 89% | 66.11 | 33.22 | 5.00 | 15.09 | — | 0.97 | 147,205 | — |
 | SHOE | Shoe Carnival, Inc. | graham | ✅ | 89% | 14.07 | 7.41 | 0.56 | 7.58 | 3.76 | 0.74 | 1M | — |
-| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 141 | 22.24 | 2.33 | 10.49 | 1.53 | — | 418,013 | — |
-| WLY | JOHN WILEY & SONS, INC. | piotroski | ✅ | 100% | 48.19 | 11.58 | 3.03 | 26.13 | 0.54 | 2.06 | 1M | — |
-| SIRI | SIRIUS XM HOLDINGS INC. | lynch | ✅ | 75% | 28.99 | 13.00 | 0.90 | 6.96 | 0.30 | 1.36 | 3M | — |
-| POST | Post Holdings, Inc. | lynch | ✅ | 75% | 84.64 | 15.36 | 1.42 | 8.94 | 1.67 | 2.60 | 823,430 | — |
+| BCPC | Balchem Corporation | piotroski | ✅ | 100% | 172 | 36.13 | 4.45 | 12.31 | 2.07 | 0.34 | 89,947 | — |
+| ADC | AGREE REALTY CORPORATION | lynch | ✅ | 75% | 72.62 | 41.03 | 1.29 | 3.26 | — | 0.56 | 1M | — |
 | R | RYDER SYSTEM INC | piotroski | ✅ | 100% | 248 | 20.81 | 3.40 | 16.35 | 0.89 | 4.37 | 183,179 | — |
-| FIVN | Five9, Inc. | piotroski | ✅ | 89% | 33.27 | 73.93 | 3.73 | 5.02 | 4.51 | 1.28 | 2M | — |
-| HMN | HORACE MANN EDUCATORS CORPOR | piotroski | ✅ | 78% | 50.94 | 13.06 | 1.43 | 10.93 | — | 9.30 | 273,560 | — |
-| CYH | COMMUNITY HEALTH SYSTEMS, IN | piotroski | ✅ | 89% | 2.89 | 0.77 | — | -36.51 | 1.46 | -10.07 | 1M | — |
+| EXTR | EXTREME NETWORKS, INC. | piotroski | ✅ | 89% | 21.70 | 70.00 | 33.06 | 47.54 | 0.93 | — | 803,204 | — |
+| IMAX | IMAX Corporation | piotroski | ✅ | 78% | 51.64 | 81.97 | 8.49 | 10.32 | — | 1.38 | 460,870 | — |
+| CPRI | CAPRI HOLDINGS LIMITED | greenblatt | ✅ | 100% | 13.56 | 11.89 | 20.31 | 171 | 1.21 | 39.38 | 4M | — |
+| CPRI | CAPRI HOLDINGS LIMITED | piotroski | ✅ | 78% | 13.56 | 11.89 | 20.31 | 171 | 1.21 | 39.38 | 4M | — |
+| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.54 | 20.64 | 0.81 | 3.99 | 9.18 | 0.34 | 132,843 | — |
 | FAF | FIRST AMERICAN FINANCIAL COR | piotroski | ✅ | 89% | 72.75 | 12.12 | 1.37 | 11.31 | — | 1.95 | 1M | — |
-| MCS | MARCUS CORP | piotroski | ✅ | 78% | 27.27 | 67.21 | 1.86 | 2.77 | 0.40 | — | 160,122 | — |
-| SENS | Senseonics Holdings, Inc. | piotroski | ✅ | 78% | 9.63 | — | 6.58 | -113 | 4.83 | 1.07 | 425,575 | — |
-| FROG | JFrog Ltd. | piotroski | ✅ | 78% | 87.60 | — | 11.47 | -8.09 | 2.14 | 0.51 | 2M | — |
-| USNA | USANA HEALTH SCIENCES, INC. | piotroski | ✅ | 78% | 14.96 | 25.79 | 0.52 | 2.02 | 2.24 | 0.29 | 224,851 | — |
-| CTRI | Centuri Holdings, Inc. | piotroski | ✅ | 78% | 20.54 | 82.16 | 2.12 | 2.57 | 1.78 | 1.75 | 1M | — |
-| GOOGN | Alphabet Inc. | piotroski | ▫️ | 67% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
-| GOOGM | Alphabet Inc. | piotroski | ▫️ | 67% | 48.22 | 4.46 | 1.42 | 31.83 | 2.01 | 0.43 | 124,961 | — |
-| GOOGN | Alphabet Inc. | netnet | ▫️ | 50% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
-| GOOGM | Alphabet Inc. | netnet | ▫️ | 50% | 48.22 | 4.46 | 1.42 | 31.83 | 2.01 | 0.43 | 124,961 | — |
-| GOOGN | Alphabet Inc. | custom | ▫️ | 0% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
-| GOOGM | Alphabet Inc. | custom | ▫️ | 0% | 48.22 | 4.46 | 1.42 | 31.83 | 2.01 | 0.43 | 124,961 | — |
+| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 65.21 | 62.70 | — | -29.14 | 1.60 | -6.05 | 486,091 | — |
+| LOCO | EL POLLO LOCO HOLDINGS, INC. | piotroski | ✅ | 89% | 15.37 | 17.08 | 1.55 | 9.10 | 0.32 | 1.08 | 174,098 | — |
+| HCSG | HEALTHCARE SERVICES GROUP, I | piotroski | ✅ | 100% | 21.82 | 26.94 | 3.12 | 11.58 | 3.38 | — | 593,954 | — |
+| FUL | FULLER H B CO | piotroski | ✅ | 78% | 53.89 | 19.60 | 1.49 | 7.59 | 1.70 | 1.59 | 382,258 | — |
+| BNED | BARNES & NOBLE EDUCATION, IN | piotroski | ✅ | 89% | 12.72 | 25.96 | 1.50 | 5.73 | 1.71 | 1.51 | 204,458 | — |
+| QTTB | Q32 Bio Inc. | graham | ▫️ | 56% | 11.99 | 4.95 | 3.51 | 70.98 | 4.85 | 0.47 | 853,810 | — |
+| QTTB | Q32 Bio Inc. | buffett | ▫️ | 50% | 11.99 | 4.95 | 3.51 | 70.98 | 4.85 | 0.47 | 853,810 | — |
+| QTTB | Q32 Bio Inc. | lynch | ▫️ | 50% | 11.99 | 4.95 | 3.51 | 70.98 | 4.85 | 0.47 | 853,810 | — |
+| QTTB | Q32 Bio Inc. | netnet | ▫️ | 50% | 11.99 | 4.95 | 3.51 | 70.98 | 4.85 | 0.47 | 853,810 | — |
+| QTTB | Q32 Bio Inc. | piotroski | ▫️ | 44% | 11.99 | 4.95 | 3.51 | 70.98 | 4.85 | 0.47 | 853,810 | — |
+| QTTB | Q32 Bio Inc. | custom | ▫️ | 0% | 11.99 | 4.95 | 3.51 | 70.98 | 4.85 | 0.47 | 853,810 | — |
 | BBW | BUILD-A-BEAR WORKSHOP INC | graham | ▫️ | 56% | 29.43 | 7.38 | 2.48 | 33.67 | 1.55 | — | 556,853 | — |
 | BBW | BUILD-A-BEAR WORKSHOP INC | piotroski | ▫️ | 56% | 29.43 | 7.38 | 2.48 | 33.67 | 1.55 | — | 556,853 | — |
 | BBW | BUILD-A-BEAR WORKSHOP INC | buffett | ▫️ | 50% | 29.43 | 7.38 | 2.48 | 33.67 | 1.55 | — | 556,853 | — |
 | BBW | BUILD-A-BEAR WORKSHOP INC | lynch | ▫️ | 25% | 29.43 | 7.38 | 2.48 | 33.67 | 1.55 | — | 556,853 | — |
 | BBW | BUILD-A-BEAR WORKSHOP INC | netnet | ▫️ | 25% | 29.43 | 7.38 | 2.48 | 33.67 | 1.55 | — | 556,853 | — |
 | BBW | BUILD-A-BEAR WORKSHOP INC | custom | ▫️ | 0% | 29.43 | 7.38 | 2.48 | 33.67 | 1.55 | — | 556,853 | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | greenblatt | ▫️ | 67% | 9.96 | 8.23 | — | -221 | 2.06 | -5.32 | 1M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | lynch | ▫️ | 50% | 9.96 | 8.23 | — | -221 | 2.06 | -5.32 | 1M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | graham | ▫️ | 44% | 9.96 | 8.23 | — | -221 | 2.06 | -5.32 | 1M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | buffett | ▫️ | 33% | 9.96 | 8.23 | — | -221 | 2.06 | -5.32 | 1M | — |
+| TMDX | TransMedics Group, Inc. | greenblatt | ▫️ | 67% | 89.98 | 18.48 | 7.71 | 40.22 | 7.14 | 1.26 | 542,804 | — |
+| TMDX | TransMedics Group, Inc. | netnet | ▫️ | 50% | 89.98 | 18.48 | 7.71 | 40.22 | 7.14 | 1.26 | 542,804 | — |
+| TMDX | TransMedics Group, Inc. | graham | ▫️ | 33% | 89.98 | 18.48 | 7.71 | 40.22 | 7.14 | 1.26 | 542,804 | — |
+| TMDX | TransMedics Group, Inc. | buffett | ▫️ | 33% | 89.98 | 18.48 | 7.71 | 40.22 | 7.14 | 1.26 | 542,804 | — |
+| TMDX | TransMedics Group, Inc. | lynch | ▫️ | 25% | 89.98 | 18.48 | 7.71 | 40.22 | 7.14 | 1.26 | 542,804 | — |
+| TMDX | TransMedics Group, Inc. | custom | ▫️ | 0% | 89.98 | 18.48 | 7.71 | 40.22 | 7.14 | 1.26 | 542,804 | — |
+| UNIT | Uniti Group Inc. | greenblatt | ▫️ | 67% | 10.17 | 2.09 | 7.13 | 343 | 0.74 | 30.65 | 1M | — |
+| UNIT | Uniti Group Inc. | graham | ▫️ | 44% | 10.17 | 2.09 | 7.13 | 343 | 0.74 | 30.65 | 1M | — |
+| UNIT | Uniti Group Inc. | buffett | ▫️ | 33% | 10.17 | 2.09 | 7.13 | 343 | 0.74 | 30.65 | 1M | — |
+| UNIT | Uniti Group Inc. | lynch | ▫️ | 25% | 10.17 | 2.09 | 7.13 | 343 | 0.74 | 30.65 | 1M | — |
+| UNIT | Uniti Group Inc. | netnet | ▫️ | 25% | 10.17 | 2.09 | 7.13 | 343 | 0.74 | 30.65 | 1M | — |
+| UNIT | Uniti Group Inc. | piotroski | ▫️ | 22% | 10.17 | 2.09 | 7.13 | 343 | 0.74 | 30.65 | 1M | — |
+| UNIT | Uniti Group Inc. | custom | ▫️ | 0% | 10.17 | 2.09 | 7.13 | 343 | 0.74 | 30.65 | 1M | — |
+| PJT | PJT Partners Inc. | greenblatt | ▫️ | 67% | 183 | — | — | 58.43 | — | 2.71 | 332,270 | — |
+| PJT | PJT Partners Inc. | graham | ▫️ | 44% | 183 | — | — | 58.43 | — | 2.71 | 332,270 | — |
+| PJT | PJT Partners Inc. | lynch | ▫️ | 25% | 183 | — | — | 58.43 | — | 2.71 | 332,270 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
