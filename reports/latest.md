@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-08 13:45 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-08 17:36 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **28** strategy matches passed.
+Screened **75** companies · **26** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| MLI | MUELLER INDUSTRIES INC | buffett | ✅ | 100% | 63.74 | 9.29 | 2.21 | 23.84 | 5.92 | 0.15 | 828,659 | — |
-| MLI | MUELLER INDUSTRIES INC | greenblatt | ✅ | 100% | 63.74 | 9.29 | 2.21 | 23.84 | 5.92 | 0.15 | 828,659 | — |
-| MLI | MUELLER INDUSTRIES INC | lynch | ✅ | 100% | 63.74 | 9.29 | 2.21 | 23.84 | 5.92 | 0.15 | 828,659 | — |
-| MLI | MUELLER INDUSTRIES INC | graham | ✅ | 89% | 63.74 | 9.29 | 2.21 | 23.84 | 5.92 | 0.15 | 828,659 | — |
-| MLI | MUELLER INDUSTRIES INC | piotroski | ✅ | 78% | 63.74 | 9.29 | 2.21 | 23.84 | 5.92 | 0.15 | 828,659 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | greenblatt | ✅ | 100% | 29.20 | 7.32 | 2.46 | 33.67 | 1.55 | — | 31,206 | — |
-| SBC | SBC Medical Group Holdings I | lynch | ✅ | 75% | 4.12 | 8.24 | 1.71 | 20.54 | 3.78 | 0.47 | 140,977 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | piotroski | ✅ | 78% | 81.35 | 16.01 | 2.20 | 13.75 | 10.06 | 0.12 | 13,894 | — |
-| AIV | Apartment Investment and Man | greenblatt | ✅ | 100% | 2.54 | 0.66 | 0.99 | 151 | — | 3.10 | 33,699 | — |
-| AREC | AMERICAN RESOURCES CORPORATI | greenblatt | ✅ | 100% | 2.43 | 3.86 | 2.24 | 58.44 | 2.19 | 0.80 | 2M | — |
-| MHO | M/I HOMES, INC. | lynch | ✅ | 75% | 146 | 9.93 | 1.26 | 12.73 | — | 0.51 | 5,498 | — |
-| DAKT | Daktronics, Inc. | piotroski | ✅ | 89% | 19.35 | 21.03 | 3.18 | 15.09 | 2.31 | — | 872,567 | — |
-| DAKT | Daktronics, Inc. | lynch | ✅ | 75% | 19.35 | 21.03 | 3.18 | 15.09 | 2.31 | — | 872,567 | — |
-| DUKU | Duke Energy CORP | piotroski | ✅ | 89% | 49.85 | 7.90 | 0.75 | 9.58 | 0.55 | — | 910 | — |
-| DUKU | Duke Energy CORP | lynch | ✅ | 75% | 49.85 | 7.90 | 0.75 | 9.58 | 0.55 | — | 910 | — |
-| MTCH | Match Group, Inc. | piotroski | ✅ | 89% | 41.39 | 17.39 | — | -242 | 1.42 | — | 66,286 | — |
-| MTCH | Match Group, Inc. | lynch | ✅ | 75% | 41.39 | 17.39 | — | -242 | 1.42 | — | 66,286 | — |
-| GPK | Graphic Packaging Holding Co | lynch | ✅ | 75% | 10.43 | 7.05 | 0.94 | 13.31 | 1.30 | — | 6M | — |
+| QTTB | Q32 Bio Inc. | greenblatt | ✅ | 100% | 11.96 | 4.94 | 3.51 | 70.98 | 4.85 | 0.47 | 305,494 | — |
+| GOOGN | Alphabet Inc. | graham | ✅ | 100% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
+| GOOGN | Alphabet Inc. | buffett | ✅ | 100% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
+| GOOGN | Alphabet Inc. | greenblatt | ✅ | 100% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
+| GOOGN | Alphabet Inc. | lynch | ✅ | 100% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | greenblatt | ✅ | 100% | 28.67 | 7.19 | 2.42 | 33.67 | 1.55 | — | 224,377 | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | piotroski | ✅ | 78% | 9.25 | 7.64 | — | -221 | 2.06 | -5.32 | 7M | — |
+| TMDX | TransMedics Group, Inc. | piotroski | ✅ | 78% | 87.93 | 18.06 | 7.53 | 40.22 | 7.14 | 1.26 | 214,959 | — |
+| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 114 | 21.69 | 4.15 | 19.12 | 2.99 | — | 47,061 | — |
+| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 114 | 21.69 | 4.15 | 19.12 | 2.99 | — | 47,061 | — |
+| SKYW | SKYWEST INC | piotroski | ✅ | 89% | 96.89 | 9.36 | 1.46 | 15.60 | 0.65 | — | 101,232 | — |
+| ABG | ASBURY AUTOMOTIVE GROUP, INC | piotroski | ✅ | 78% | 213 | 8.48 | 1.07 | 12.64 | 0.95 | — | 76,866 | — |
+| ABG | ASBURY AUTOMOTIVE GROUP, INC | lynch | ✅ | 75% | 213 | 8.48 | 1.07 | 12.64 | 0.95 | — | 76,866 | — |
 | BANC | BANC OF CALIFORNIA, INC. | piotroski | ✅ | 78% | 18.92 | 16.17 | 0.86 | 6.47 | — | 8.83 | 3M | — |
-| GRC | The Gorman-Rupp Company | piotroski | ✅ | 89% | 75.34 | 37.30 | 4.78 | 12.78 | 2.37 | 1.07 | 2,649 | — |
+| FCFS | FIRSTCASH HOLDINGS, INC. | piotroski | ✅ | 78% | 229 | 30.83 | 4.47 | 14.51 | 4.55 | 1.33 | 131,205 | — |
+| NJR | NEW JERSEY RESOURCES CORPORA | piotroski | ✅ | 78% | 53.40 | 16.04 | 2.25 | 14.03 | 0.73 | — | 551,600 | — |
+| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 141 | 22.24 | 2.33 | 10.49 | 1.53 | — | 418,015 | — |
+| DBX | Dropbox, Inc. | piotroski | ✅ | 89% | 33.69 | 18.11 | — | -28.29 | 0.63 | -2.58 | 1M | — |
+| R | RYDER SYSTEM INC | piotroski | ✅ | 100% | 248 | 20.81 | 3.40 | 16.35 | 0.89 | 4.37 | 183,179 | — |
 | KNTK | KINETIK HOLDINGS INC. | lynch | ✅ | 75% | 54.43 | 20.70 | — | -31.53 | 0.69 | -7.37 | 723,027 | — |
-| VVX | V2X, Inc. | piotroski | ✅ | 100% | 74.18 | 30.28 | 2.18 | 7.18 | 1.22 | 2.02 | 514,614 | — |
-| UE | URBAN EDGE PROPERTIES | piotroski | ✅ | 78% | 21.00 | 28.38 | 1.92 | 6.80 | — | 1.41 | 21,996 | — |
-| FUL | FULLER H B CO | piotroski | ✅ | 78% | 53.26 | 19.37 | 1.47 | 7.59 | 1.70 | 1.59 | 6,032 | — |
-| GCO | Genesco Inc. | piotroski | ✅ | 89% | 36.72 | 29.38 | 0.69 | 2.34 | 1.64 | 1.46 | 18,719 | — |
-| MSGS | MADISON SQUARE GARDEN SPORTS | piotroski | ✅ | 100% | 391 | 1,222 | — | -2.95 | 0.50 | -6.84 | 245,071 | — |
-| CALX | Calix, Inc | piotroski | ✅ | 78% | 35.53 | 137 | 2.87 | 2.08 | 4.24 | 0.23 | 30,086 | — |
-| CTRI | Centuri Holdings, Inc. | piotroski | ✅ | 78% | 20.54 | 82.14 | 2.12 | 2.57 | 1.78 | 1.75 | 17,122 | — |
-| MLI | MUELLER INDUSTRIES INC | netnet | ▫️ | 50% | 63.74 | 9.29 | 2.21 | 23.84 | 5.92 | 0.15 | 828,659 | — |
-| MLI | MUELLER INDUSTRIES INC | custom | ▫️ | 0% | 63.74 | 9.29 | 2.21 | 23.84 | 5.92 | 0.15 | 828,659 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | graham | ▫️ | 56% | 29.20 | 7.32 | 2.46 | 33.67 | 1.55 | — | 31,206 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | piotroski | ▫️ | 56% | 29.20 | 7.32 | 2.46 | 33.67 | 1.55 | — | 31,206 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | buffett | ▫️ | 50% | 29.20 | 7.32 | 2.46 | 33.67 | 1.55 | — | 31,206 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | lynch | ▫️ | 25% | 29.20 | 7.32 | 2.46 | 33.67 | 1.55 | — | 31,206 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | netnet | ▫️ | 25% | 29.20 | 7.32 | 2.46 | 33.67 | 1.55 | — | 31,206 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | custom | ▫️ | 0% | 29.20 | 7.32 | 2.46 | 33.67 | 1.55 | — | 31,206 | — |
-| SBC | SBC Medical Group Holdings I | graham | ▫️ | 67% | 4.12 | 8.24 | 1.71 | 20.54 | 3.78 | 0.47 | 140,977 | — |
-| SBC | SBC Medical Group Holdings I | buffett | ▫️ | 67% | 4.12 | 8.24 | 1.71 | 20.54 | 3.78 | 0.47 | 140,977 | — |
-| SBC | SBC Medical Group Holdings I | greenblatt | ▫️ | 67% | 4.12 | 8.24 | 1.71 | 20.54 | 3.78 | 0.47 | 140,977 | — |
-| SBC | SBC Medical Group Holdings I | netnet | ▫️ | 50% | 4.12 | 8.24 | 1.71 | 20.54 | 3.78 | 0.47 | 140,977 | — |
-| SBC | SBC Medical Group Holdings I | piotroski | ▫️ | 44% | 4.12 | 8.24 | 1.71 | 20.54 | 3.78 | 0.47 | 140,977 | — |
-| SBC | SBC Medical Group Holdings I | custom | ▫️ | 0% | 4.12 | 8.24 | 1.71 | 20.54 | 3.78 | 0.47 | 140,977 | — |
-| MGY | Magnolia Oil & Gas Corp | piotroski | ▫️ | 67% | 26.80 | 15.29 | 2.49 | 16.27 | 1.54 | — | 2M | — |
-| MGY | Magnolia Oil & Gas Corp | buffett | ▫️ | 50% | 26.80 | 15.29 | 2.49 | 16.27 | 1.54 | — | 2M | — |
-| MGY | Magnolia Oil & Gas Corp | graham | ▫️ | 33% | 26.80 | 15.29 | 2.49 | 16.27 | 1.54 | — | 2M | — |
-| MGY | Magnolia Oil & Gas Corp | greenblatt | ▫️ | 33% | 26.80 | 15.29 | 2.49 | 16.27 | 1.54 | — | 2M | — |
-| MGY | Magnolia Oil & Gas Corp | lynch | ▫️ | 25% | 26.80 | 15.29 | 2.49 | 16.27 | 1.54 | — | 2M | — |
-| MGY | Magnolia Oil & Gas Corp | netnet | ▫️ | 25% | 26.80 | 15.29 | 2.49 | 16.27 | 1.54 | — | 2M | — |
-| MGY | Magnolia Oil & Gas Corp | custom | ▫️ | 0% | 26.80 | 15.29 | 2.49 | 16.27 | 1.54 | — | 2M | — |
-| UNIT | Uniti Group Inc. | greenblatt | ▫️ | 67% | 10.17 | 2.09 | 7.13 | 343 | 0.74 | 30.65 | 1M | — |
+| FMNB | FARMERS NATIONAL BANC CORP / | piotroski | ✅ | 89% | 16.07 | 11.08 | 1.25 | 11.24 | — | 9.80 | 325,681 | — |
+| AIOT | POWERFLEET, INC. | piotroski | ✅ | 78% | 3.02 | — | 0.85 | -4.32 | 1.13 | 1.00 | 604,538 | — |
+| SGRY | Surgery Partners, Inc. | piotroski | ✅ | 78% | 14.11 | — | 1.05 | -4.55 | 1.87 | — | 1M | — |
+| LOCO | EL POLLO LOCO HOLDINGS, INC. | piotroski | ✅ | 89% | 15.37 | 17.08 | 1.55 | 9.10 | 0.32 | 1.08 | 174,098 | — |
+| THO | THOR INDUSTRIES, INC. | piotroski | ✅ | 78% | 74.19 | 15.33 | 0.92 | 6.03 | 1.75 | — | 290,240 | — |
+| MLKN | MillerKnoll, Inc. | piotroski | ✅ | 100% | 22.92 | 17.36 | 1.18 | 6.82 | 1.58 | 1.93 | 377,117 | — |
+| QTTB | Q32 Bio Inc. | graham | ▫️ | 56% | 11.96 | 4.94 | 3.51 | 70.98 | 4.85 | 0.47 | 305,494 | — |
+| QTTB | Q32 Bio Inc. | buffett | ▫️ | 50% | 11.96 | 4.94 | 3.51 | 70.98 | 4.85 | 0.47 | 305,494 | — |
+| QTTB | Q32 Bio Inc. | lynch | ▫️ | 50% | 11.96 | 4.94 | 3.51 | 70.98 | 4.85 | 0.47 | 305,494 | — |
+| QTTB | Q32 Bio Inc. | netnet | ▫️ | 50% | 11.96 | 4.94 | 3.51 | 70.98 | 4.85 | 0.47 | 305,494 | — |
+| QTTB | Q32 Bio Inc. | piotroski | ▫️ | 44% | 11.96 | 4.94 | 3.51 | 70.98 | 4.85 | 0.47 | 305,494 | — |
+| QTTB | Q32 Bio Inc. | custom | ▫️ | 0% | 11.96 | 4.94 | 3.51 | 70.98 | 4.85 | 0.47 | 305,494 | — |
+| GOOGN | Alphabet Inc. | piotroski | ▫️ | 67% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
+| GOOGN | Alphabet Inc. | netnet | ▫️ | 50% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
+| GOOGN | Alphabet Inc. | custom | ▫️ | 0% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | graham | ▫️ | 56% | 28.67 | 7.19 | 2.42 | 33.67 | 1.55 | — | 224,377 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | piotroski | ▫️ | 56% | 28.67 | 7.19 | 2.42 | 33.67 | 1.55 | — | 224,377 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | buffett | ▫️ | 50% | 28.67 | 7.19 | 2.42 | 33.67 | 1.55 | — | 224,377 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | lynch | ▫️ | 25% | 28.67 | 7.19 | 2.42 | 33.67 | 1.55 | — | 224,377 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | netnet | ▫️ | 25% | 28.67 | 7.19 | 2.42 | 33.67 | 1.55 | — | 224,377 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | custom | ▫️ | 0% | 28.67 | 7.19 | 2.42 | 33.67 | 1.55 | — | 224,377 | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | greenblatt | ▫️ | 67% | 9.25 | 7.64 | — | -221 | 2.06 | -5.32 | 7M | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | lynch | ▫️ | 50% | 9.25 | 7.64 | — | -221 | 2.06 | -5.32 | 7M | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | graham | ▫️ | 44% | 9.25 | 7.64 | — | -221 | 2.06 | -5.32 | 7M | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | buffett | ▫️ | 33% | 9.25 | 7.64 | — | -221 | 2.06 | -5.32 | 7M | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | netnet | ▫️ | 25% | 9.25 | 7.64 | — | -221 | 2.06 | -5.32 | 7M | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | custom | ▫️ | 0% | 9.25 | 7.64 | — | -221 | 2.06 | -5.32 | 7M | — |
+| TMDX | TransMedics Group, Inc. | greenblatt | ▫️ | 67% | 87.93 | 18.06 | 7.53 | 40.22 | 7.14 | 1.26 | 214,959 | — |
+| TMDX | TransMedics Group, Inc. | netnet | ▫️ | 50% | 87.93 | 18.06 | 7.53 | 40.22 | 7.14 | 1.26 | 214,959 | — |
+| TMDX | TransMedics Group, Inc. | graham | ▫️ | 33% | 87.93 | 18.06 | 7.53 | 40.22 | 7.14 | 1.26 | 214,959 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
