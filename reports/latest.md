@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-08 17:36 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-08 22:26 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **26** strategy matches passed.
+Screened **75** companies · **24** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| QTTB | Q32 Bio Inc. | greenblatt | ✅ | 100% | 11.96 | 4.94 | 3.51 | 70.98 | 4.85 | 0.47 | 305,494 | — |
-| GOOGN | Alphabet Inc. | graham | ✅ | 100% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
-| GOOGN | Alphabet Inc. | buffett | ✅ | 100% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
-| GOOGN | Alphabet Inc. | greenblatt | ✅ | 100% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
-| GOOGN | Alphabet Inc. | lynch | ✅ | 100% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | greenblatt | ✅ | 100% | 28.67 | 7.19 | 2.42 | 33.67 | 1.55 | — | 224,377 | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | piotroski | ✅ | 78% | 9.25 | 7.64 | — | -221 | 2.06 | -5.32 | 7M | — |
-| TMDX | TransMedics Group, Inc. | piotroski | ✅ | 78% | 87.93 | 18.06 | 7.53 | 40.22 | 7.14 | 1.26 | 214,959 | — |
-| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 114 | 21.69 | 4.15 | 19.12 | 2.99 | — | 47,061 | — |
-| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 114 | 21.69 | 4.15 | 19.12 | 2.99 | — | 47,061 | — |
-| SKYW | SKYWEST INC | piotroski | ✅ | 89% | 96.89 | 9.36 | 1.46 | 15.60 | 0.65 | — | 101,232 | — |
-| ABG | ASBURY AUTOMOTIVE GROUP, INC | piotroski | ✅ | 78% | 213 | 8.48 | 1.07 | 12.64 | 0.95 | — | 76,866 | — |
-| ABG | ASBURY AUTOMOTIVE GROUP, INC | lynch | ✅ | 75% | 213 | 8.48 | 1.07 | 12.64 | 0.95 | — | 76,866 | — |
-| BANC | BANC OF CALIFORNIA, INC. | piotroski | ✅ | 78% | 18.92 | 16.17 | 0.86 | 6.47 | — | 8.83 | 3M | — |
-| FCFS | FIRSTCASH HOLDINGS, INC. | piotroski | ✅ | 78% | 229 | 30.83 | 4.47 | 14.51 | 4.55 | 1.33 | 131,205 | — |
-| NJR | NEW JERSEY RESOURCES CORPORA | piotroski | ✅ | 78% | 53.40 | 16.04 | 2.25 | 14.03 | 0.73 | — | 551,600 | — |
-| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 141 | 22.24 | 2.33 | 10.49 | 1.53 | — | 418,015 | — |
-| DBX | Dropbox, Inc. | piotroski | ✅ | 89% | 33.69 | 18.11 | — | -28.29 | 0.63 | -2.58 | 1M | — |
-| R | RYDER SYSTEM INC | piotroski | ✅ | 100% | 248 | 20.81 | 3.40 | 16.35 | 0.89 | 4.37 | 183,179 | — |
-| KNTK | KINETIK HOLDINGS INC. | lynch | ✅ | 75% | 54.43 | 20.70 | — | -31.53 | 0.69 | -7.37 | 723,027 | — |
-| FMNB | FARMERS NATIONAL BANC CORP / | piotroski | ✅ | 89% | 16.07 | 11.08 | 1.25 | 11.24 | — | 9.80 | 325,681 | — |
-| AIOT | POWERFLEET, INC. | piotroski | ✅ | 78% | 3.02 | — | 0.85 | -4.32 | 1.13 | 1.00 | 604,538 | — |
-| SGRY | Surgery Partners, Inc. | piotroski | ✅ | 78% | 14.11 | — | 1.05 | -4.55 | 1.87 | — | 1M | — |
-| LOCO | EL POLLO LOCO HOLDINGS, INC. | piotroski | ✅ | 89% | 15.37 | 17.08 | 1.55 | 9.10 | 0.32 | 1.08 | 174,098 | — |
-| THO | THOR INDUSTRIES, INC. | piotroski | ✅ | 78% | 74.19 | 15.33 | 0.92 | 6.03 | 1.75 | — | 290,240 | — |
-| MLKN | MillerKnoll, Inc. | piotroski | ✅ | 100% | 22.92 | 17.36 | 1.18 | 6.82 | 1.58 | 1.93 | 377,117 | — |
-| QTTB | Q32 Bio Inc. | graham | ▫️ | 56% | 11.96 | 4.94 | 3.51 | 70.98 | 4.85 | 0.47 | 305,494 | — |
-| QTTB | Q32 Bio Inc. | buffett | ▫️ | 50% | 11.96 | 4.94 | 3.51 | 70.98 | 4.85 | 0.47 | 305,494 | — |
-| QTTB | Q32 Bio Inc. | lynch | ▫️ | 50% | 11.96 | 4.94 | 3.51 | 70.98 | 4.85 | 0.47 | 305,494 | — |
-| QTTB | Q32 Bio Inc. | netnet | ▫️ | 50% | 11.96 | 4.94 | 3.51 | 70.98 | 4.85 | 0.47 | 305,494 | — |
-| QTTB | Q32 Bio Inc. | piotroski | ▫️ | 44% | 11.96 | 4.94 | 3.51 | 70.98 | 4.85 | 0.47 | 305,494 | — |
-| QTTB | Q32 Bio Inc. | custom | ▫️ | 0% | 11.96 | 4.94 | 3.51 | 70.98 | 4.85 | 0.47 | 305,494 | — |
-| GOOGN | Alphabet Inc. | piotroski | ▫️ | 67% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
-| GOOGN | Alphabet Inc. | netnet | ▫️ | 50% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
-| GOOGN | Alphabet Inc. | custom | ▫️ | 0% | 47.94 | 4.43 | 1.41 | 31.83 | 2.01 | 0.43 | 739,413 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | graham | ▫️ | 56% | 28.67 | 7.19 | 2.42 | 33.67 | 1.55 | — | 224,377 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | piotroski | ▫️ | 56% | 28.67 | 7.19 | 2.42 | 33.67 | 1.55 | — | 224,377 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | buffett | ▫️ | 50% | 28.67 | 7.19 | 2.42 | 33.67 | 1.55 | — | 224,377 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | lynch | ▫️ | 25% | 28.67 | 7.19 | 2.42 | 33.67 | 1.55 | — | 224,377 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | netnet | ▫️ | 25% | 28.67 | 7.19 | 2.42 | 33.67 | 1.55 | — | 224,377 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | custom | ▫️ | 0% | 28.67 | 7.19 | 2.42 | 33.67 | 1.55 | — | 224,377 | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | greenblatt | ▫️ | 67% | 9.25 | 7.64 | — | -221 | 2.06 | -5.32 | 7M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | lynch | ▫️ | 50% | 9.25 | 7.64 | — | -221 | 2.06 | -5.32 | 7M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | graham | ▫️ | 44% | 9.25 | 7.64 | — | -221 | 2.06 | -5.32 | 7M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | buffett | ▫️ | 33% | 9.25 | 7.64 | — | -221 | 2.06 | -5.32 | 7M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | netnet | ▫️ | 25% | 9.25 | 7.64 | — | -221 | 2.06 | -5.32 | 7M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | custom | ▫️ | 0% | 9.25 | 7.64 | — | -221 | 2.06 | -5.32 | 7M | — |
-| TMDX | TransMedics Group, Inc. | greenblatt | ▫️ | 67% | 87.93 | 18.06 | 7.53 | 40.22 | 7.14 | 1.26 | 214,959 | — |
-| TMDX | TransMedics Group, Inc. | netnet | ▫️ | 50% | 87.93 | 18.06 | 7.53 | 40.22 | 7.14 | 1.26 | 214,959 | — |
-| TMDX | TransMedics Group, Inc. | graham | ▫️ | 33% | 87.93 | 18.06 | 7.53 | 40.22 | 7.14 | 1.26 | 214,959 | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | piotroski | ✅ | 78% | 29.99 | 6.61 | 1.94 | 29.41 | 1.47 | 1.81 | 1M | -23.65 |
+| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 113 | 21.57 | 4.12 | 19.12 | 2.99 | — | 128,967 | — |
+| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 113 | 21.57 | 4.12 | 19.12 | 2.99 | — | 128,967 | — |
+| AES | THE AES CORPORATION | greenblatt | ✅ | 100% | 14.83 | 11.77 | 2.61 | 22.40 | 0.77 | — | 4M | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | buffett | ✅ | 83% | 131 | 17.81 | 5.94 | 33.37 | 4.85 | 2.26 | 674,772 | — |
+| SSD | Simpson Manufacturing Co., I | buffett | ✅ | 83% | 179 | 21.71 | 3.69 | 17.00 | 3.54 | 0.51 | 184,182 | -19.21 |
+| SSD | Simpson Manufacturing Co., I | piotroski | ✅ | 78% | 179 | 21.71 | 3.69 | 17.00 | 3.54 | 0.51 | 184,182 | -19.21 |
+| LMB | LIMBACH HOLDINGS, INC. | piotroski | ✅ | 78% | 49.54 | 15.34 | 3.06 | 19.97 | 1.44 | 0.95 | 466,447 | -80.57 |
+| LMB | LIMBACH HOLDINGS, INC. | lynch | ✅ | 75% | 49.54 | 15.34 | 3.06 | 19.97 | 1.44 | 0.95 | 466,447 | -80.57 |
+| PRDO | PERDOCEO EDUCATION CORP | piotroski | ✅ | 89% | 33.09 | 13.67 | 2.25 | 16.45 | 5.06 | — | 527,825 | — |
+| HOG | Harley-Davidson, Inc. | graham | ✅ | 100% | 27.18 | 9.78 | 1.05 | 10.79 | 2.10 | — | 1M | — |
+| HOG | Harley-Davidson, Inc. | piotroski | ✅ | 89% | 27.18 | 9.78 | 1.05 | 10.79 | 2.10 | — | 1M | — |
+| NJR | NEW JERSEY RESOURCES CORPORA | piotroski | ✅ | 78% | 54.00 | 16.22 | 2.28 | 14.03 | 0.73 | — | 427,928 | -8.90 |
+| AGCO | AGCO CORP /DE | piotroski | ✅ | 89% | 127 | 13.06 | 2.22 | 17.00 | 1.39 | 1.72 | 992,077 | -11.27 |
+| KNTK | KINETIK HOLDINGS INC. | lynch | ✅ | 75% | 54.98 | 20.90 | — | -31.53 | 0.69 | -7.37 | 1M | 28.05 |
+| III | Information Services Group I | piotroski | ✅ | 78% | 5.09 | 26.79 | 2.71 | 9.87 | 2.34 | 1.23 | 128,245 | — |
+| III | Information Services Group I | lynch | ✅ | 75% | 5.09 | 26.79 | 2.71 | 9.87 | 2.34 | 1.23 | 128,245 | — |
+| FAF | FIRST AMERICAN FINANCIAL COR | piotroski | ✅ | 89% | 71.38 | 11.90 | 1.35 | 11.31 | — | 1.95 | 895,522 | -11.01 |
+| LOCO | EL POLLO LOCO HOLDINGS, INC. | piotroski | ✅ | 89% | 15.17 | 16.86 | 1.53 | 9.10 | 0.32 | 1.08 | 209,982 | -9.09 |
+| MCS | MARCUS CORP | piotroski | ✅ | 78% | 27.08 | 66.74 | 1.85 | 2.77 | 0.40 | — | 297,273 | 34.68 |
+| GCO | Genesco Inc. | piotroski | ✅ | 89% | 34.55 | 27.64 | 0.65 | 2.34 | 1.64 | 1.46 | 306,916 | 46.70 |
+| ALNT | ALLIENT INC | piotroski | ✅ | 89% | 95.63 | 72.45 | 5.31 | 7.31 | 3.66 | 0.92 | 181,356 | — |
+| BNED | BARNES & NOBLE EDUCATION, IN | piotroski | ✅ | 89% | 12.25 | 25.00 | 1.44 | 5.73 | 1.71 | 1.51 | 348,645 | -37.66 |
+| AEIS | ADVANCED ENERGY INDUSTRIES,  | piotroski | ✅ | 78% | 289 | 75.19 | 8.18 | 10.89 | 1.59 | 0.86 | 558,639 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | piotroski | ▫️ | 67% | 3.10 | 15.50 | 3.46 | 22.71 | 4.86 | 0.39 | 531,399 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | greenblatt | ▫️ | 67% | 3.10 | 15.50 | 3.46 | 22.71 | 4.86 | 0.39 | 531,399 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | buffett | ▫️ | 50% | 3.10 | 15.50 | 3.46 | 22.71 | 4.86 | 0.39 | 531,399 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | lynch | ▫️ | 50% | 3.10 | 15.50 | 3.46 | 22.71 | 4.86 | 0.39 | 531,399 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | netnet | ▫️ | 50% | 3.10 | 15.50 | 3.46 | 22.71 | 4.86 | 0.39 | 531,399 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | graham | ▫️ | 33% | 3.10 | 15.50 | 3.46 | 22.71 | 4.86 | 0.39 | 531,399 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | custom | ▫️ | 0% | 3.10 | 15.50 | 3.46 | 22.71 | 4.86 | 0.39 | 531,399 | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | graham | ▫️ | 67% | 29.99 | 6.61 | 1.94 | 29.41 | 1.47 | 1.81 | 1M | -23.65 |
+| PPC | PILGRIM’S PRIDE CORPORATION | greenblatt | ▫️ | 67% | 29.99 | 6.61 | 1.94 | 29.41 | 1.47 | 1.81 | 1M | -23.65 |
+| PPC | PILGRIM’S PRIDE CORPORATION | buffett | ▫️ | 50% | 29.99 | 6.61 | 1.94 | 29.41 | 1.47 | 1.81 | 1M | -23.65 |
+| PPC | PILGRIM’S PRIDE CORPORATION | lynch | ▫️ | 50% | 29.99 | 6.61 | 1.94 | 29.41 | 1.47 | 1.81 | 1M | -23.65 |
+| PPC | PILGRIM’S PRIDE CORPORATION | netnet | ▫️ | 25% | 29.99 | 6.61 | 1.94 | 29.41 | 1.47 | 1.81 | 1M | -23.65 |
+| PPC | PILGRIM’S PRIDE CORPORATION | custom | ▫️ | 0% | 29.99 | 6.61 | 1.94 | 29.41 | 1.47 | 1.81 | 1M | -23.65 |
+| MGY | Magnolia Oil & Gas Corp | piotroski | ▫️ | 67% | 27.42 | 15.65 | 2.55 | 16.27 | 1.54 | — | 6M | -31.48 |
+| MGY | Magnolia Oil & Gas Corp | buffett | ▫️ | 50% | 27.42 | 15.65 | 2.55 | 16.27 | 1.54 | — | 6M | -31.48 |
+| MGY | Magnolia Oil & Gas Corp | graham | ▫️ | 33% | 27.42 | 15.65 | 2.55 | 16.27 | 1.54 | — | 6M | -31.48 |
+| MGY | Magnolia Oil & Gas Corp | greenblatt | ▫️ | 33% | 27.42 | 15.65 | 2.55 | 16.27 | 1.54 | — | 6M | -31.48 |
+| MGY | Magnolia Oil & Gas Corp | lynch | ▫️ | 25% | 27.42 | 15.65 | 2.55 | 16.27 | 1.54 | — | 6M | -31.48 |
+| MGY | Magnolia Oil & Gas Corp | netnet | ▫️ | 25% | 27.42 | 15.65 | 2.55 | 16.27 | 1.54 | — | 6M | -31.48 |
+| MGY | Magnolia Oil & Gas Corp | custom | ▫️ | 0% | 27.42 | 15.65 | 2.55 | 16.27 | 1.54 | — | 6M | -31.48 |
+| IPAR | INTERPARFUMS, INC. | graham | ▫️ | 67% | 113 | 21.57 | 4.12 | 19.12 | 2.99 | — | 128,967 | — |
+| IPAR | INTERPARFUMS, INC. | piotroski | ▫️ | 67% | 113 | 21.57 | 4.12 | 19.12 | 2.99 | — | 128,967 | — |
+| IPAR | INTERPARFUMS, INC. | greenblatt | ▫️ | 33% | 113 | 21.57 | 4.12 | 19.12 | 2.99 | — | 128,967 | — |
+| IPAR | INTERPARFUMS, INC. | netnet | ▫️ | 25% | 113 | 21.57 | 4.12 | 19.12 | 2.99 | — | 128,967 | — |
+| IPAR | INTERPARFUMS, INC. | custom | ▫️ | 0% | 113 | 21.57 | 4.12 | 19.12 | 2.99 | — | 128,967 | — |
+| EEFT | EURONET WORLDWIDE, INC. | greenblatt | ▫️ | 67% | 71.88 | 10.51 | 2.52 | 23.67 | 1.11 | 3.95 | 552,754 | 7.79 |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
