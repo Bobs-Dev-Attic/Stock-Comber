@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-KRP,"Kimbell Royalty Partners, LP",piotroski,True,7,9,77.8,15.17,—,—,—,8.64,—,—,"914,898",—
-SLDE,"Slide Insurance Holdings, Inc.",greenblatt,True,3,3,100.0,24.71,7.35,2.93,39.88,—,1.62,25.25,1M,—
 SAFX,"XCF GLOBAL, INC.",greenblatt,True,3,3,100.0,0.42,0.82,1.60,197,0.11,10.14,1.76,4M,—
-TMDX,"TransMedics Group, Inc.",piotroski,True,7,9,77.8,86.40,17.74,7.40,40.22,7.14,1.26,35.76,"665,114",—
-AES,THE AES CORPORATION,greenblatt,True,3,3,100.0,14.82,11.76,2.60,22.40,0.77,—,12.70,7M,—
-EVR,EVERCORE INC.,buffett,True,5,6,83.3,288,20.49,5.97,29.14,2.16,1.50,123,"296,722",—
-EVR,EVERCORE INC.,piotroski,True,7,9,77.8,288,20.49,5.97,29.14,2.16,1.50,123,"296,722",—
-VICR,VICOR CORPORATION,piotroski,True,8,9,88.9,184,70.45,11.74,16.66,8.99,0.10,30.32,"620,759",—
-VICR,VICOR CORPORATION,buffett,True,5,6,83.3,184,70.45,11.74,16.66,8.99,0.10,30.32,"620,759",—
-VICR,VICOR CORPORATION,lynch,True,3,4,75.0,184,70.45,11.74,16.66,8.99,0.10,30.32,"620,759",—
-JOE,The St. Joe Company,piotroski,True,8,9,88.9,63.85,32.09,4.83,15.09,—,0.97,24.33,"174,152",—
-PCTY,PAYLOCITY HOLDING CORPORATION,piotroski,True,8,9,88.9,142,28.88,6.37,22.08,1.09,3.00,49.69,"558,534",—
-PCTY,PAYLOCITY HOLDING CORPORATION,lynch,True,3,4,75.0,142,28.88,6.37,22.08,1.09,3.00,49.69,"558,534",—
-POST,"Post Holdings, Inc.",lynch,True,3,4,75.0,81.07,14.71,1.36,8.94,1.67,2.60,86.01,"878,357",—
+OLED,UNIVERSAL DISPLAY CORPORATION,piotroski,True,7,9,77.8,79.91,15.73,2.16,13.75,10.06,0.12,64.99,"755,507",—
+CARG,"CarGurus, Inc.",piotroski,True,8,9,88.9,32.48,20.95,8.72,41.66,2.81,0.77,11.40,1M,—
+FSS,FEDERAL SIGNAL CORPORATION,lynch,True,3,4,75.0,117,29.29,5.23,17.84,3.02,0.73,45.03,"274,865",—
+PCTY,PAYLOCITY HOLDING CORPORATION,piotroski,True,8,9,88.9,142,28.88,6.37,22.08,1.09,3.00,49.69,"562,367",—
+PCTY,PAYLOCITY HOLDING CORPORATION,lynch,True,3,4,75.0,142,28.88,6.37,22.08,1.09,3.00,49.69,"562,367",—
+NJR,NEW JERSEY RESOURCES CORPORATION,piotroski,True,7,9,77.8,53.48,16.06,2.25,14.03,0.73,—,42.17,"506,680",—
+KALU,KAISER ALUMINUM CORPORATION,piotroski,True,7,9,77.8,167,24.73,3.37,13.62,2.95,2.10,87.01,"181,733",—
+KALU,KAISER ALUMINUM CORPORATION,lynch,True,3,4,75.0,167,24.73,3.37,13.62,2.95,2.10,87.01,"181,733",—
+AGCO,AGCO CORP /DE,piotroski,True,8,9,88.9,127,13.01,2.21,17.00,1.39,1.72,112,"888,639",—
 BSY,"BENTLEY SYSTEMS, INCORPORATED",piotroski,True,9,9,100.0,32.01,37.66,8.96,23.36,0.56,1.99,8.26,2M,—
 BSY,"BENTLEY SYSTEMS, INCORPORATED",buffett,True,5,6,83.3,32.01,37.66,8.96,23.36,0.56,1.99,8.26,2M,—
-CPK,CHESAPEAKE UTILITIES CORP,piotroski,True,7,9,77.8,131,21.88,1.92,8.78,0.45,—,95.61,"151,445",—
-EXTR,"EXTREME NETWORKS, INC.",piotroski,True,8,9,88.9,21.46,69.23,32.70,47.54,0.93,—,2.14,1M,—
-SSRM,SSR Mining Inc.,piotroski,True,7,9,77.8,37.60,20.32,2.33,11.28,2.08,0.51,25.94,2M,—
-CYH,"COMMUNITY HEALTH SYSTEMS, INC.",piotroski,True,8,9,88.9,2.95,0.78,—,-36.51,1.46,-10.07,—,2M,—
-SHAK,SHAKE SHACK INC.,piotroski,True,8,9,88.9,63.01,57.81,5.02,8.70,1.76,2.56,17.55,2M,—
-TBCH,TURTLE BEACH CORPORATION,piotroski,True,7,9,77.8,12.08,15.69,1.92,12.24,1.98,1.09,10.43,"219,555",—
-AIOT,"POWERFLEET, INC.",piotroski,True,7,9,77.8,2.97,—,0.84,-4.32,1.13,1.00,—,2M,—
+BKU,"BankUnited, Inc.",piotroski,True,8,9,88.9,45.20,12.80,1.10,8.79,—,10.47,57.13,"639,012",—
+VCEL,VERICEL CORPORATION,piotroski,True,9,9,100.0,38.99,122,5.73,4.66,5.03,0.38,7.00,"366,511",—
+VCEL,VERICEL CORPORATION,lynch,True,3,4,75.0,38.99,122,5.73,4.66,5.03,0.38,7.00,"366,511",—
+SPOK,"SPOK HOLDINGS, INC.",piotroski,True,7,9,77.8,10.57,14.09,1.52,10.85,1.18,0.41,10.83,"135,656",—
+VMD,"VIEMED HEALTHCARE, INC.",piotroski,True,7,9,77.8,8.76,23.68,2.53,10.55,1.18,0.39,5.37,"399,295",—
+VVX,"V2X, Inc.",piotroski,True,9,9,100.0,71.91,29.35,2.11,7.18,1.22,2.02,43.35,"599,296",—
+LW,"Lamb Weston Holdings, Inc.",piotroski,True,7,9,77.8,48.13,23.14,3.67,15.89,1.42,—,24.78,1M,—
 HCSG,"HEALTHCARE SERVICES GROUP, INC.",piotroski,True,9,9,100.0,22.03,27.20,3.15,11.58,3.38,—,11.28,"507,825",—
-GCO,Genesco Inc.,piotroski,True,8,9,88.9,34.33,27.46,0.64,2.34,1.64,1.46,38.74,"220,031",—
-NEOG,Neogen Corporation,piotroski,True,8,9,88.9,11.92,—,1.24,-0.38,3.82,0.60,—,6M,—
-AEIS,"ADVANCED ENERGY INDUSTRIES, INC.",piotroski,True,7,9,77.8,286,74.35,8.09,10.89,1.59,0.86,55.23,"348,988",—
-KRP,"Kimbell Royalty Partners, LP",graham,False,3,9,33.3,15.17,—,—,—,8.64,—,—,"914,898",—
-KRP,"Kimbell Royalty Partners, LP",greenblatt,False,1,3,33.3,15.17,—,—,—,8.64,—,—,"914,898",—
-KRP,"Kimbell Royalty Partners, LP",lynch,False,1,4,25.0,15.17,—,—,—,8.64,—,—,"914,898",—
-KRP,"Kimbell Royalty Partners, LP",netnet,False,1,4,25.0,15.17,—,—,—,8.64,—,—,"914,898",—
-KRP,"Kimbell Royalty Partners, LP",buffett,False,1,6,16.7,15.17,—,—,—,8.64,—,—,"914,898",—
-KRP,"Kimbell Royalty Partners, LP",custom,False,0,0,0.0,15.17,—,—,—,8.64,—,—,"914,898",—
-SLDE,"Slide Insurance Holdings, Inc.",graham,False,4,9,44.4,24.71,7.35,2.93,39.88,—,1.62,25.25,1M,—
-SLDE,"Slide Insurance Holdings, Inc.",buffett,False,2,6,33.3,24.71,7.35,2.93,39.88,—,1.62,25.25,1M,—
-SLDE,"Slide Insurance Holdings, Inc.",piotroski,False,3,9,33.3,24.71,7.35,2.93,39.88,—,1.62,25.25,1M,—
-SLDE,"Slide Insurance Holdings, Inc.",lynch,False,1,4,25.0,24.71,7.35,2.93,39.88,—,1.62,25.25,1M,—
-SLDE,"Slide Insurance Holdings, Inc.",netnet,False,1,4,25.0,24.71,7.35,2.93,39.88,—,1.62,25.25,1M,—
-SLDE,"Slide Insurance Holdings, Inc.",custom,False,0,0,0.0,24.71,7.35,2.93,39.88,—,1.62,25.25,1M,—
+SENS,"Senseonics Holdings, Inc.",piotroski,True,7,9,77.8,8.72,—,5.96,-113,4.83,1.07,—,"746,695",—
+MPAA,"MOTORCAR PARTS OF AMERICA, INC.",piotroski,True,7,9,77.8,11.68,18.84,0.88,4.66,1.46,2.83,13.63,"139,388",—
+WRBY,Warby Parker Inc.,piotroski,True,7,9,77.8,24.57,"2,457",8.36,0.45,2.35,0.96,0.81,3M,—
+BNED,"BARNES & NOBLE EDUCATION, INC.",piotroski,True,8,9,88.9,10.83,22.10,1.27,5.73,1.71,1.51,9.68,1M,—
+WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,8,9,88.9,28.77,31.62,0.66,2.10,2.42,0.76,29.77,"567,173",—
+AVNW,"AVIAT NETWORKS, INC.",piotroski,True,7,9,77.8,19.05,100,0.93,0.95,1.97,1.24,9.37,"131,353",—
+LILA,Liberty Latin America Ltd.,piotroski,True,7,9,77.8,8.65,—,3.11,-110,1.14,20.09,—,"305,463",—
 SAFX,"XCF GLOBAL, INC.",graham,False,3,9,33.3,0.42,0.82,1.60,197,0.11,10.14,1.76,4M,—
 SAFX,"XCF GLOBAL, INC.",buffett,False,2,6,33.3,0.42,0.82,1.60,197,0.11,10.14,1.76,4M,—
 SAFX,"XCF GLOBAL, INC.",lynch,False,1,4,25.0,0.42,0.82,1.60,197,0.11,10.14,1.76,4M,—
 SAFX,"XCF GLOBAL, INC.",netnet,False,1,4,25.0,0.42,0.82,1.60,197,0.11,10.14,1.76,4M,—
 SAFX,"XCF GLOBAL, INC.",piotroski,False,1,9,11.1,0.42,0.82,1.60,197,0.11,10.14,1.76,4M,—
 SAFX,"XCF GLOBAL, INC.",custom,False,0,0,0.0,0.42,0.82,1.60,197,0.11,10.14,1.76,4M,—
-TMDX,"TransMedics Group, Inc.",greenblatt,False,2,3,66.7,86.40,17.74,7.40,40.22,7.14,1.26,35.76,"665,114",—
-TMDX,"TransMedics Group, Inc.",netnet,False,2,4,50.0,86.40,17.74,7.40,40.22,7.14,1.26,35.76,"665,114",—
-TMDX,"TransMedics Group, Inc.",graham,False,3,9,33.3,86.40,17.74,7.40,40.22,7.14,1.26,35.76,"665,114",—
-TMDX,"TransMedics Group, Inc.",buffett,False,2,6,33.3,86.40,17.74,7.40,40.22,7.14,1.26,35.76,"665,114",—
-TMDX,"TransMedics Group, Inc.",lynch,False,1,4,25.0,86.40,17.74,7.40,40.22,7.14,1.26,35.76,"665,114",—
+OLED,UNIVERSAL DISPLAY CORPORATION,buffett,False,4,6,66.7,79.91,15.73,2.16,13.75,10.06,0.12,64.99,"755,507",—
+OLED,UNIVERSAL DISPLAY CORPORATION,graham,False,5,9,55.6,79.91,15.73,2.16,13.75,10.06,0.12,64.99,"755,507",—
+OLED,UNIVERSAL DISPLAY CORPORATION,lynch,False,2,4,50.0,79.91,15.73,2.16,13.75,10.06,0.12,64.99,"755,507",—
+OLED,UNIVERSAL DISPLAY CORPORATION,netnet,False,2,4,50.0,79.91,15.73,2.16,13.75,10.06,0.12,64.99,"755,507",—
+OLED,UNIVERSAL DISPLAY CORPORATION,greenblatt,False,1,3,33.3,79.91,15.73,2.16,13.75,10.06,0.12,64.99,"755,507",—
+OLED,UNIVERSAL DISPLAY CORPORATION,custom,False,0,0,0.0,79.91,15.73,2.16,13.75,10.06,0.12,64.99,"755,507",—
+CARG,"CarGurus, Inc.",graham,False,6,9,66.7,32.48,20.95,8.72,41.66,2.81,0.77,11.40,1M,—
+CARG,"CarGurus, Inc.",buffett,False,4,6,66.7,32.48,20.95,8.72,41.66,2.81,0.77,11.40,1M,—
+CARG,"CarGurus, Inc.",greenblatt,False,2,3,66.7,32.48,20.95,8.72,41.66,2.81,0.77,11.40,1M,—
+CARG,"CarGurus, Inc.",lynch,False,2,4,50.0,32.48,20.95,8.72,41.66,2.81,0.77,11.40,1M,—
+CARG,"CarGurus, Inc.",netnet,False,1,4,25.0,32.48,20.95,8.72,41.66,2.81,0.77,11.40,1M,—
+CARG,"CarGurus, Inc.",custom,False,0,0,0.0,32.48,20.95,8.72,41.66,2.81,0.77,11.40,1M,—
+GRDN,"Guardian Pharmacy Services, Inc.",greenblatt,False,2,3,66.7,43.39,—,—,22.59,1.38,0.89,—,"518,539",—
+GRDN,"Guardian Pharmacy Services, Inc.",graham,False,3,9,33.3,43.39,—,—,22.59,1.38,0.89,—,"518,539",—
+GRDN,"Guardian Pharmacy Services, Inc.",piotroski,False,3,9,33.3,43.39,—,—,22.59,1.38,0.89,—,"518,539",—
+GRDN,"Guardian Pharmacy Services, Inc.",lynch,False,1,4,25.0,43.39,—,—,22.59,1.38,0.89,—,"518,539",—
+GRDN,"Guardian Pharmacy Services, Inc.",netnet,False,1,4,25.0,43.39,—,—,22.59,1.38,0.89,—,"518,539",—
