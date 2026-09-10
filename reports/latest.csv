@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-GLD,SPDR® GOLD TRUST,lynch,True,3,4,75.0,403,3.63,—,—,—,—,—,8M,—
-SON,Sonoco Products Company,piotroski,True,8,9,88.9,48.39,4.81,1.33,27.75,1.05,2.08,90.68,2M,—
-SON,Sonoco Products Company,lynch,True,3,4,75.0,48.39,4.81,1.33,27.75,1.05,2.08,90.68,2M,—
-GMED,"GLOBUS MEDICAL, INC.",piotroski,True,9,9,100.0,74.52,19.01,2.23,11.76,4.26,0.16,54.25,2M,—
-GMED,"GLOBUS MEDICAL, INC.",lynch,True,4,4,100.0,74.52,19.01,2.23,11.76,4.26,0.16,54.25,2M,—
-AMPH,"Amphastar Pharmaceuticals, Inc.",graham,True,8,9,88.9,23.04,11.35,1.41,12.44,4.02,1.07,27.34,"343,408",—
+PPLT,abrdn Platinum ETF Trust,greenblatt,True,3,3,100.0,16.35,0.16,0.07,46.86,—,0.00,730,1M,—
+PPLT,abrdn Platinum ETF Trust,lynch,True,3,4,75.0,16.35,0.16,0.07,46.86,—,0.00,730,1M,—
+SLDE,"Slide Insurance Holdings, Inc.",greenblatt,True,3,3,100.0,24.71,7.35,2.93,39.88,—,1.62,25.25,1M,—
+PD,"PAGERDUTY, INC.",greenblatt,True,3,3,100.0,13.58,7.26,4.98,68.37,2.01,2.84,10.71,2M,—
+SBC,SBC Medical Group Holdings Incorporated,lynch,True,3,4,75.0,4.33,8.67,1.80,20.54,3.78,0.47,5.21,"88,793",—
+PLMR,"Palomar Holdings, Inc.",piotroski,True,7,9,77.8,133,18.56,3.88,20.91,—,2.24,74.38,"164,822",—
+PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,289,12.62,3.86,30.71,—,5.14,196,"22,351",—
+ESE,ESCO TECHNOLOGIES INC.,lynch,True,4,4,100.0,271,23.46,4.56,19.42,1.35,0.56,124,"139,297",—
+CARG,"CarGurus, Inc.",piotroski,True,8,9,88.9,32.48,20.95,8.72,41.66,2.81,0.77,11.40,1M,—
 AREC,AMERICAN RESOURCES CORPORATION,greenblatt,True,3,3,100.0,2.31,3.67,2.13,58.44,2.19,0.80,3.92,1M,—
-LMB,"LIMBACH HOLDINGS, INC.",piotroski,True,7,9,77.8,48.81,15.11,3.01,19.97,1.44,0.95,34.31,"460,056",—
-LMB,"LIMBACH HOLDINGS, INC.",lynch,True,3,4,75.0,48.81,15.11,3.01,19.97,1.44,0.95,34.31,"460,056",—
-HBANP,Huntington Bancshares Incorporated,lynch,True,3,4,75.0,16.31,11.73,1.01,9.08,—,8.25,22.49,"187,334",—
-PAYC,"Paycom Software, Inc.",buffett,True,5,6,83.3,216,26.68,6.99,26.19,1.09,3.39,74.90,"825,094",—
-VISN,"Vistance Networks, Inc.",greenblatt,True,3,3,100.0,6.41,0.67,—,-227,3.88,-9.06,—,5M,—
+LMB,"LIMBACH HOLDINGS, INC.",piotroski,True,7,9,77.8,48.54,15.03,3.00,19.97,1.44,0.95,34.31,"48,077",—
+LMB,"LIMBACH HOLDINGS, INC.",lynch,True,3,4,75.0,48.54,15.03,3.00,19.97,1.44,0.95,34.31,"48,077",—
+HBANP,Huntington Bancshares Incorporated,lynch,True,3,4,75.0,16.19,11.65,1.00,9.08,—,8.25,22.49,"13,190",—
 SFM,"Sprouts Farmers Market, Inc.",piotroski,True,7,9,77.8,73.11,13.77,5.14,37.32,0.93,1.96,41.21,2M,—
-HOG,"Harley-Davidson, Inc.",graham,True,9,9,100.0,26.67,9.59,1.03,10.79,2.10,—,40.25,1M,—
-HOG,"Harley-Davidson, Inc.",piotroski,True,8,9,88.9,26.67,9.59,1.03,10.79,2.10,—,40.25,1M,—
-AXTA,AXALTA COATING SYSTEMS LTD.,lynch,True,3,4,75.0,34.44,19.79,3.19,16.11,2.06,2.22,20.57,2M,—
-KALU,KAISER ALUMINUM CORPORATION,piotroski,True,7,9,77.8,167,24.73,3.37,13.62,2.95,2.10,87.01,"181,740",—
-KALU,KAISER ALUMINUM CORPORATION,lynch,True,3,4,75.0,167,24.73,3.37,13.62,2.95,2.10,87.01,"181,740",—
-KRT,Karat Packaging Inc.,piotroski,True,7,9,77.8,46.87,30.04,6.33,21.07,2.30,0.88,16.12,"88,026",—
-FMNB,FARMERS NATIONAL BANC CORP /OH/,piotroski,True,8,9,88.9,15.73,10.85,1.22,11.24,—,9.80,20.52,"367,516",—
-CYH,"COMMUNITY HEALTH SYSTEMS, INC.",piotroski,True,8,9,88.9,2.95,0.78,—,-36.51,1.46,-10.07,—,2M,—
-ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.56,20.73,0.82,3.99,9.18,0.34,5.26,"139,384",—
-PHIN,PHINIA INC.,piotroski,True,8,9,88.9,66.69,20.58,1.69,8.19,1.86,1.41,53.71,"253,835",—
-TRC,TEJON RANCH CO.,piotroski,True,7,9,77.8,16.39,—,0.93,0.02,4.14,0.29,—,"113,285",—
-FUL,FULLER H B CO,piotroski,True,7,9,77.8,51.84,18.85,1.43,7.59,1.70,1.59,47.32,"471,947",—
-HCSG,"HEALTHCARE SERVICES GROUP, INC.",piotroski,True,9,9,100.0,22.03,27.20,3.15,11.58,3.38,—,11.28,"507,825",—
-MSGS,MADISON SQUARE GARDEN SPORTS CORP.,piotroski,True,9,9,100.0,395,"1,235",—,-2.95,0.50,-6.84,—,"317,545",—
-INNV,InnovAge Holding Corp.,piotroski,True,7,9,77.8,11.03,—,6.35,-1.08,1.05,1.23,—,"924,668",—
+HOG,"Harley-Davidson, Inc.",graham,True,9,9,100.0,26.80,9.64,1.03,10.79,2.10,—,40.25,"222,742",—
+HOG,"Harley-Davidson, Inc.",piotroski,True,8,9,88.9,26.80,9.64,1.03,10.79,2.10,—,40.25,"222,742",—
+ORI,OLD REPUBLIC INTERNATIONAL CORPORATION,piotroski,True,7,9,77.8,40.80,10.97,1.73,15.82,—,4.05,44.38,"145,746",—
+SIRI,SIRIUS XM HOLDINGS INC.,lynch,True,3,4,75.0,29.02,13.01,0.90,6.96,0.30,1.36,40.31,"550,452",—
+BSY,"BENTLEY SYSTEMS, INCORPORATED",piotroski,True,9,9,100.0,31.86,37.48,8.92,23.36,0.56,1.99,8.26,"287,396",—
+BSY,"BENTLEY SYSTEMS, INCORPORATED",buffett,True,5,6,83.3,31.86,37.48,8.92,23.36,0.56,1.99,8.26,"287,396",—
+KNTK,KINETIK HOLDINGS INC.,lynch,True,3,4,75.0,54.55,20.74,—,-31.53,0.69,-7.37,—,"950,377",—
+EXTR,"EXTREME NETWORKS, INC.",piotroski,True,8,9,88.9,21.56,69.55,32.85,47.54,0.93,—,2.14,"146,601",—
+HLIO,"HELIOS TECHNOLOGIES, INC.",piotroski,True,9,9,100.0,70.73,48.78,2.53,5.20,2.90,0.63,30.21,"280,431",—
+HLIO,"HELIOS TECHNOLOGIES, INC.",lynch,True,3,4,75.0,70.73,48.78,2.53,5.20,2.90,0.63,30.21,"280,431",—
+NMRK,"NEWMARK GROUP, INC.",piotroski,True,8,9,88.9,14.37,21.12,2.49,8.63,1.05,2.24,9.39,"99,440",—
+MAGN,Magnera Corporation,piotroski,True,7,9,77.8,11.61,—,0.39,-14.94,2.37,2.75,—,"359,433",—
+GSHD,"GOOSEHEAD INSURANCE, INC.",lynch,True,3,4,75.0,56.40,54.23,—,-29.14,1.60,-6.05,—,"769,353",—
+LW,"Lamb Weston Holdings, Inc.",piotroski,True,7,9,77.8,48.13,23.14,3.67,15.89,1.42,—,24.78,1M,—
+PHIN,PHINIA INC.,piotroski,True,8,9,88.9,66.47,20.52,1.68,8.19,1.86,1.41,53.71,"71,761",—
+FUL,FULLER H B CO,piotroski,True,7,9,77.8,51.61,18.77,1.43,7.59,1.70,1.59,47.32,"74,439",—
 CALX,"Calix, Inc",piotroski,True,7,9,77.8,34.44,132,2.78,2.08,4.24,0.23,8.52,1M,—
-AEIS,"ADVANCED ENERGY INDUSTRIES, INC.",piotroski,True,7,9,77.8,286,74.35,8.09,10.89,1.59,0.86,55.23,"348,988",—
-GLD,SPDR® GOLD TRUST,greenblatt,False,2,3,66.7,403,3.63,—,—,—,—,—,8M,—
-GLD,SPDR® GOLD TRUST,piotroski,False,3,9,33.3,403,3.63,—,—,—,—,—,8M,—
-GLD,SPDR® GOLD TRUST,netnet,False,1,4,25.0,403,3.63,—,—,—,—,—,8M,—
-GLD,SPDR® GOLD TRUST,graham,False,2,9,22.2,403,3.63,—,—,—,—,—,8M,—
-GLD,SPDR® GOLD TRUST,buffett,False,1,6,16.7,403,3.63,—,—,—,—,—,8M,—
-GLD,SPDR® GOLD TRUST,custom,False,0,0,0.0,403,3.63,—,—,—,—,—,8M,—
-CLSK,"CleanSpark, Inc.",greenblatt,False,2,3,66.7,13.28,—,1.94,16.76,4.18,0.46,—,14M,—
-CLSK,"CleanSpark, Inc.",piotroski,False,5,9,55.6,13.28,—,1.94,16.76,4.18,0.46,—,14M,—
-CLSK,"CleanSpark, Inc.",buffett,False,3,6,50.0,13.28,—,1.94,16.76,4.18,0.46,—,14M,—
-CLSK,"CleanSpark, Inc.",lynch,False,2,4,50.0,13.28,—,1.94,16.76,4.18,0.46,—,14M,—
-CLSK,"CleanSpark, Inc.",netnet,False,2,4,50.0,13.28,—,1.94,16.76,4.18,0.46,—,14M,—
-CLSK,"CleanSpark, Inc.",graham,False,4,9,44.4,13.28,—,1.94,16.76,4.18,0.46,—,14M,—
-CLSK,"CleanSpark, Inc.",custom,False,0,0,0.0,13.28,—,1.94,16.76,4.18,0.46,—,14M,—
-SON,Sonoco Products Company,graham,False,6,9,66.7,48.39,4.81,1.33,27.75,1.05,2.08,90.68,2M,—
-SON,Sonoco Products Company,buffett,False,4,6,66.7,48.39,4.81,1.33,27.75,1.05,2.08,90.68,2M,—
-SON,Sonoco Products Company,greenblatt,False,2,3,66.7,48.39,4.81,1.33,27.75,1.05,2.08,90.68,2M,—
-SON,Sonoco Products Company,netnet,False,1,4,25.0,48.39,4.81,1.33,27.75,1.05,2.08,90.68,2M,—
-SON,Sonoco Products Company,custom,False,0,0,0.0,48.39,4.81,1.33,27.75,1.05,2.08,90.68,2M,—
-GMED,"GLOBUS MEDICAL, INC.",graham,False,6,9,66.7,74.52,19.01,2.23,11.76,4.26,0.16,54.25,2M,—
-GMED,"GLOBUS MEDICAL, INC.",buffett,False,4,6,66.7,74.52,19.01,2.23,11.76,4.26,0.16,54.25,2M,—
+WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,8,9,88.9,28.77,31.62,0.66,2.10,2.42,0.76,29.77,"567,173",—
+POWW,Outdoor Holding Company,piotroski,True,8,9,88.9,2.17,—,1.08,-1.51,3.96,0.14,—,"612,404",—
+PPLT,abrdn Platinum ETF Trust,graham,False,5,9,55.6,16.35,0.16,0.07,46.86,—,0.00,730,1M,—
+PPLT,abrdn Platinum ETF Trust,buffett,False,3,6,50.0,16.35,0.16,0.07,46.86,—,0.00,730,1M,—
+PPLT,abrdn Platinum ETF Trust,piotroski,False,3,9,33.3,16.35,0.16,0.07,46.86,—,0.00,730,1M,—
+PPLT,abrdn Platinum ETF Trust,netnet,False,1,4,25.0,16.35,0.16,0.07,46.86,—,0.00,730,1M,—
+PPLT,abrdn Platinum ETF Trust,custom,False,0,0,0.0,16.35,0.16,0.07,46.86,—,0.00,730,1M,—
+SLDE,"Slide Insurance Holdings, Inc.",graham,False,4,9,44.4,24.71,7.35,2.93,39.88,—,1.62,25.25,1M,—
+SLDE,"Slide Insurance Holdings, Inc.",buffett,False,2,6,33.3,24.71,7.35,2.93,39.88,—,1.62,25.25,1M,—
+SLDE,"Slide Insurance Holdings, Inc.",piotroski,False,3,9,33.3,24.71,7.35,2.93,39.88,—,1.62,25.25,1M,—
+SLDE,"Slide Insurance Holdings, Inc.",lynch,False,1,4,25.0,24.71,7.35,2.93,39.88,—,1.62,25.25,1M,—
+SLDE,"Slide Insurance Holdings, Inc.",netnet,False,1,4,25.0,24.71,7.35,2.93,39.88,—,1.62,25.25,1M,—
+SLDE,"Slide Insurance Holdings, Inc.",custom,False,0,0,0.0,24.71,7.35,2.93,39.88,—,1.62,25.25,1M,—
+PD,"PAGERDUTY, INC.",piotroski,False,6,9,66.7,13.58,7.26,4.98,68.37,2.01,2.84,10.71,2M,—
+PD,"PAGERDUTY, INC.",buffett,False,3,6,50.0,13.58,7.26,4.98,68.37,2.01,2.84,10.71,2M,—
+PD,"PAGERDUTY, INC.",graham,False,3,9,33.3,13.58,7.26,4.98,68.37,2.01,2.84,10.71,2M,—
+PD,"PAGERDUTY, INC.",lynch,False,1,4,25.0,13.58,7.26,4.98,68.37,2.01,2.84,10.71,2M,—
+PD,"PAGERDUTY, INC.",netnet,False,1,4,25.0,13.58,7.26,4.98,68.37,2.01,2.84,10.71,2M,—
+PD,"PAGERDUTY, INC.",custom,False,0,0,0.0,13.58,7.26,4.98,68.37,2.01,2.84,10.71,2M,—
