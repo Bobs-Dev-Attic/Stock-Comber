@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-11 00:52 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-11 05:24 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **39** strategy matches passed.
+Screened **75** companies · **35** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| SLDE | Slide Insurance Holdings, In | greenblatt | ✅ | 100% | 24.45 | 7.28 | 2.90 | 39.88 | — | 1.62 | 1M | — |
-| POWL | Powell Industries, Inc. | greenblatt | ✅ | 100% | 177 | 11.90 | 3.36 | 28.21 | 2.09 | 0.73 | 411,058 | — |
-| POWL | Powell Industries, Inc. | piotroski | ✅ | 78% | 177 | 11.90 | 3.36 | 28.21 | 2.09 | 0.73 | 411,058 | — |
-| POWL | Powell Industries, Inc. | lynch | ✅ | 75% | 177 | 11.90 | 3.36 | 28.21 | 2.09 | 0.73 | 411,058 | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | piotroski | ✅ | 78% | 8.29 | 6.85 | — | -221 | 2.06 | -5.32 | 9M | — |
-| LGNYZ | LIGAND PHARMACEUTICALS INCOR | netnet | ✅ | 100% | 0.06 | 0.01 | 0.00 | 12.23 | 22.23 | 0.53 | 60,800 | — |
-| TMDX | TransMedics Group, Inc. | piotroski | ✅ | 78% | 85.04 | 17.46 | 7.29 | 40.22 | 7.14 | 1.26 | 590,943 | — |
-| SON | Sonoco Products Company | piotroski | ✅ | 89% | 48.43 | 4.81 | 1.33 | 27.75 | 1.05 | 2.08 | 1M | — |
-| SON | Sonoco Products Company | lynch | ✅ | 75% | 48.43 | 4.81 | 1.33 | 27.75 | 1.05 | 2.08 | 1M | — |
-| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 110 | 21.09 | 4.03 | 19.12 | 2.99 | — | 152,147 | — |
-| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 110 | 21.09 | 4.03 | 19.12 | 2.99 | — | 152,147 | — |
-| TREE | LendingTree, Inc. | greenblatt | ✅ | 100% | 26.89 | 2.49 | 1.32 | 52.76 | 1.67 | 1.98 | 307,859 | — |
-| PJT | PJT Partners Inc. | buffett | ✅ | 83% | 172 | — | — | 58.43 | — | 2.71 | 350,197 | — |
-| PJT | PJT Partners Inc. | piotroski | ✅ | 78% | 172 | — | — | 58.43 | — | 2.71 | 350,197 | — |
-| DAKT | Daktronics, Inc. | piotroski | ✅ | 89% | 18.95 | 20.60 | 3.11 | 15.09 | 2.31 | — | 711,291 | — |
-| DAKT | Daktronics, Inc. | lynch | ✅ | 75% | 18.95 | 20.60 | 3.11 | 15.09 | 2.31 | — | 711,291 | — |
-| FTDR | Frontdoor, Inc. | piotroski | ✅ | 89% | 79.56 | 23.26 | 24.49 | 105 | 1.55 | — | 480,788 | — |
-| FTDR | Frontdoor, Inc. | buffett | ✅ | 83% | 79.56 | 23.26 | 24.49 | 105 | 1.55 | — | 480,788 | — |
+| GOOGM | Alphabet Inc. | graham | ✅ | 100% | 47.62 | 4.41 | 1.40 | 31.83 | 2.01 | 0.43 | 300,703 | — |
+| GOOGM | Alphabet Inc. | buffett | ✅ | 100% | 47.62 | 4.41 | 1.40 | 31.83 | 2.01 | 0.43 | 300,703 | — |
+| GOOGM | Alphabet Inc. | greenblatt | ✅ | 100% | 47.62 | 4.41 | 1.40 | 31.83 | 2.01 | 0.43 | 300,703 | — |
+| GOOGM | Alphabet Inc. | lynch | ✅ | 100% | 47.62 | 4.41 | 1.40 | 31.83 | 2.01 | 0.43 | 300,703 | — |
+| MLI | MUELLER INDUSTRIES INC | buffett | ✅ | 100% | 60.16 | 8.77 | 2.09 | 23.84 | 5.92 | 0.15 | 1M | 19.72 |
+| MLI | MUELLER INDUSTRIES INC | greenblatt | ✅ | 100% | 60.16 | 8.77 | 2.09 | 23.84 | 5.92 | 0.15 | 1M | 19.72 |
+| MLI | MUELLER INDUSTRIES INC | lynch | ✅ | 100% | 60.16 | 8.77 | 2.09 | 23.84 | 5.92 | 0.15 | 1M | 19.72 |
+| MLI | MUELLER INDUSTRIES INC | graham | ✅ | 89% | 60.16 | 8.77 | 2.09 | 23.84 | 5.92 | 0.15 | 1M | 19.72 |
+| MLI | MUELLER INDUSTRIES INC | piotroski | ✅ | 78% | 60.16 | 8.77 | 2.09 | 23.84 | 5.92 | 0.15 | 1M | 19.72 |
+| KRP | Kimbell Royalty Partners, LP | piotroski | ✅ | 78% | 15.10 | — | — | — | 8.64 | — | 632,878 | — |
+| SAFX | XCF Global, Inc. | greenblatt | ✅ | 100% | 0.42 | 0.80 | 1.57 | 197 | 0.11 | 10.14 | 1M | — |
+| CASH | PATHWARD FINANCIAL, INC. | greenblatt | ✅ | 100% | 79.18 | 10.06 | 2.17 | 21.66 | — | 7.36 | 273,348 | 5.46 |
+| CASH | PATHWARD FINANCIAL, INC. | buffett | ✅ | 83% | 79.18 | 10.06 | 2.17 | 21.66 | — | 7.36 | 273,348 | 5.46 |
+| RRC | RANGE RESOURCES CORP | piotroski | ✅ | 89% | 41.88 | 15.28 | 2.33 | 15.24 | 0.67 | 0.72 | 3M | 1.91 |
+| BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 141 | 19.14 | 3.28 | 17.13 | 2.65 | 0.86 | 615,984 | -5.89 |
+| BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 141 | 19.14 | 3.28 | 17.13 | 2.65 | 0.86 | 615,984 | -5.89 |
+| AIV | Apartment Investment and Man | greenblatt | ✅ | 100% | 2.44 | 0.63 | 0.95 | 151 | — | 3.10 | 2M | 0.14 |
+| ALSN | ALLISON TRANSMISSION HOLDING | buffett | ✅ | 83% | 128 | 17.40 | 5.81 | 33.37 | 4.85 | 2.26 | 665,138 | — |
+| WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 12.62 | 2.49 | 1.43 | 57.56 | 1.39 | 2.18 | 544,424 | -0.27 |
 | NYT | THE NEW YORK TIMES COMPANY | piotroski | ✅ | 100% | 66.57 | 31.85 | 5.38 | 16.85 | 1.54 | — | 2M | — |
-| DORM | Dorman Products, Inc. | piotroski | ✅ | 89% | 127 | 19.07 | 2.64 | 13.82 | 3.09 | — | 144,167 | — |
-| NJR | NEW JERSEY RESOURCES CORPORA | piotroski | ✅ | 78% | 53.34 | 16.02 | 2.25 | 14.03 | 0.73 | — | 597,181 | — |
-| TRN | TRINITY INDUSTRIES INC | greenblatt | ✅ | 100% | 28.36 | 9.30 | 2.18 | 23.50 | — | 6.76 | 489,536 | — |
-| TRN | TRINITY INDUSTRIES INC | piotroski | ✅ | 78% | 28.36 | 9.30 | 2.18 | 23.50 | — | 6.76 | 489,536 | — |
-| POST | Post Holdings, Inc. | lynch | ✅ | 75% | 80.28 | 14.57 | 1.35 | 8.94 | 1.67 | 2.60 | 593,270 | — |
-| BSY | BENTLEY SYSTEMS, INCORPORATE | piotroski | ✅ | 100% | 31.00 | 36.47 | 8.68 | 23.36 | 0.56 | 1.99 | 3M | — |
-| BSY | BENTLEY SYSTEMS, INCORPORATE | buffett | ✅ | 83% | 31.00 | 36.47 | 8.68 | 23.36 | 0.56 | 1.99 | 3M | — |
-| EMBC | EMBECTA CORP. | piotroski | ✅ | 78% | 4.89 | 3.02 | — | -14.66 | 2.41 | — | 1M | — |
-| CURB | Curbline Properties Corp. | piotroski | ✅ | 78% | 29.40 | 79.46 | 1.62 | 2.09 | — | 0.29 | 1M | — |
-| CURB | Curbline Properties Corp. | lynch | ✅ | 75% | 29.40 | 79.46 | 1.62 | 2.09 | — | 0.29 | 1M | — |
-| CBU | COMMUNITY FINANCIAL SYSTEM,  | piotroski | ✅ | 89% | 62.70 | 15.79 | 1.65 | 10.49 | — | 7.63 | 178,837 | — |
-| SPOK | SPOK HOLDINGS, INC. | piotroski | ✅ | 78% | 10.63 | 14.17 | 1.53 | 10.85 | 1.18 | 0.41 | 136,414 | — |
-| VVX | V2X, Inc. | piotroski | ✅ | 100% | 72.56 | 29.62 | 2.13 | 7.18 | 1.22 | 2.02 | 689,436 | — |
-| TBCH | TURTLE BEACH CORPORATION | piotroski | ✅ | 78% | 11.84 | 15.38 | 1.88 | 12.24 | 1.98 | 1.09 | 278,806 | — |
-| LW | Lamb Weston Holdings, Inc. | piotroski | ✅ | 78% | 47.32 | 22.75 | 3.61 | 15.89 | 1.42 | — | 1M | — |
-| HCSG | HEALTHCARE SERVICES GROUP, I | piotroski | ✅ | 100% | 21.84 | 26.96 | 3.13 | 11.58 | 3.38 | — | 392,605 | — |
-| FUL | FULLER H B CO | piotroski | ✅ | 78% | 51.65 | 18.78 | 1.43 | 7.59 | 1.70 | 1.59 | 633,652 | — |
-| RRX | REGAL REXNORD CORP | piotroski | ✅ | 78% | 157 | 37.27 | 1.52 | 4.08 | 2.15 | — | 1M | — |
-| MSGS | MADISON SQUARE GARDEN SPORTS | piotroski | ✅ | 100% | 392 | 1,225 | — | -2.95 | 0.50 | -6.84 | 231,945 | — |
-| SPHR | SPHERE ENTERTAINMENT CO. | piotroski | ✅ | 78% | 142 | 192 | 2.88 | 1.50 | 1.09 | 0.89 | 368,535 | — |
-| SLDE | Slide Insurance Holdings, In | graham | ▫️ | 44% | 24.45 | 7.28 | 2.90 | 39.88 | — | 1.62 | 1M | — |
-| SLDE | Slide Insurance Holdings, In | buffett | ▫️ | 33% | 24.45 | 7.28 | 2.90 | 39.88 | — | 1.62 | 1M | — |
-| SLDE | Slide Insurance Holdings, In | piotroski | ▫️ | 33% | 24.45 | 7.28 | 2.90 | 39.88 | — | 1.62 | 1M | — |
-| SLDE | Slide Insurance Holdings, In | lynch | ▫️ | 25% | 24.45 | 7.28 | 2.90 | 39.88 | — | 1.62 | 1M | — |
-| SLDE | Slide Insurance Holdings, In | netnet | ▫️ | 25% | 24.45 | 7.28 | 2.90 | 39.88 | — | 1.62 | 1M | — |
-| SLDE | Slide Insurance Holdings, In | custom | ▫️ | 0% | 24.45 | 7.28 | 2.90 | 39.88 | — | 1.62 | 1M | — |
-| POWL | Powell Industries, Inc. | graham | ▫️ | 78% | 177 | 11.90 | 3.36 | 28.21 | 2.09 | 0.73 | 411,058 | — |
-| POWL | Powell Industries, Inc. | buffett | ▫️ | 67% | 177 | 11.90 | 3.36 | 28.21 | 2.09 | 0.73 | 411,058 | — |
-| POWL | Powell Industries, Inc. | netnet | ▫️ | 50% | 177 | 11.90 | 3.36 | 28.21 | 2.09 | 0.73 | 411,058 | — |
-| POWL | Powell Industries, Inc. | custom | ▫️ | 0% | 177 | 11.90 | 3.36 | 28.21 | 2.09 | 0.73 | 411,058 | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | greenblatt | ▫️ | 67% | 8.29 | 6.85 | — | -221 | 2.06 | -5.32 | 9M | — |
+| SFM | Sprouts Farmers Market, Inc. | piotroski | ✅ | 78% | 72.20 | 13.60 | 5.08 | 37.32 | 0.93 | 1.96 | 2M | -2.49 |
+| TRN | TRINITY INDUSTRIES INC | greenblatt | ✅ | 100% | 28.36 | 9.30 | 2.18 | 23.50 | — | 6.76 | 489,549 | -1.16 |
+| TRN | TRINITY INDUSTRIES INC | piotroski | ✅ | 78% | 28.36 | 9.30 | 2.18 | 23.50 | — | 6.76 | 489,549 | -1.16 |
+| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 139 | 21.89 | 2.30 | 10.49 | 1.53 | — | 296,879 | 9.53 |
+| AXTA | AXALTA COATING SYSTEMS LTD. | lynch | ✅ | 75% | 34.02 | 19.55 | 3.15 | 16.11 | 2.06 | 2.22 | 2M | 1.57 |
+| UMBF | UMB FINANCIAL CORP | lynch | ✅ | 75% | 139 | 15.00 | 1.33 | 9.13 | — | 8.50 | 425,051 | — |
+| AM | ANTERO MIDSTREAM CORPORATION | piotroski | ✅ | 78% | 22.27 | 25.90 | 5.45 | 20.95 | 3.41 | 1.98 | 1M | — |
+| AGCO | AGCO CORP /DE | piotroski | ✅ | 89% | 122 | 12.51 | 2.13 | 17.00 | 1.39 | 1.72 | 1M | -11.55 |
+| GRC | The Gorman-Rupp Company | piotroski | ✅ | 89% | 73.23 | 36.25 | 4.64 | 12.78 | 2.37 | 1.07 | 215,397 | — |
+| KNTK | KINETIK HOLDINGS INC. | lynch | ✅ | 75% | 54.20 | 20.61 | — | -31.53 | 0.69 | -7.37 | 2M | 27.52 |
+| EXTR | EXTREME NETWORKS, INC. | piotroski | ✅ | 89% | 21.18 | 68.32 | 32.27 | 47.54 | 0.93 | — | 1M | — |
+| FAF | FIRST AMERICAN FINANCIAL COR | piotroski | ✅ | 89% | 71.18 | 11.86 | 1.34 | 11.31 | — | 1.95 | 487,943 | -11.00 |
+| THO | THOR INDUSTRIES, INC. | piotroski | ✅ | 78% | 72.01 | 14.88 | 0.90 | 6.03 | 1.75 | — | 697,655 | — |
+| DAR | DARLING INGREDIENTS INC. | piotroski | ✅ | 78% | 66.37 | 170 | 2.24 | 1.33 | 1.50 | 1.16 | 1M | — |
+| LILA | Liberty Latin America Ltd. | piotroski | ✅ | 78% | 8.70 | — | 3.12 | -110 | 1.14 | 20.09 | 298,502 | 31.69 |
+| GOOGM | Alphabet Inc. | piotroski | ▫️ | 67% | 47.62 | 4.41 | 1.40 | 31.83 | 2.01 | 0.43 | 300,703 | — |
+| GOOGM | Alphabet Inc. | netnet | ▫️ | 50% | 47.62 | 4.41 | 1.40 | 31.83 | 2.01 | 0.43 | 300,703 | — |
+| GOOGM | Alphabet Inc. | custom | ▫️ | 0% | 47.62 | 4.41 | 1.40 | 31.83 | 2.01 | 0.43 | 300,703 | — |
+| MLI | MUELLER INDUSTRIES INC | netnet | ▫️ | 50% | 60.16 | 8.77 | 2.09 | 23.84 | 5.92 | 0.15 | 1M | 19.72 |
+| MLI | MUELLER INDUSTRIES INC | custom | ▫️ | 0% | 60.16 | 8.77 | 2.09 | 23.84 | 5.92 | 0.15 | 1M | 19.72 |
+| KRP | Kimbell Royalty Partners, LP | graham | ▫️ | 33% | 15.10 | — | — | — | 8.64 | — | 632,878 | — |
+| KRP | Kimbell Royalty Partners, LP | greenblatt | ▫️ | 33% | 15.10 | — | — | — | 8.64 | — | 632,878 | — |
+| KRP | Kimbell Royalty Partners, LP | lynch | ▫️ | 25% | 15.10 | — | — | — | 8.64 | — | 632,878 | — |
+| KRP | Kimbell Royalty Partners, LP | netnet | ▫️ | 25% | 15.10 | — | — | — | 8.64 | — | 632,878 | — |
+| KRP | Kimbell Royalty Partners, LP | buffett | ▫️ | 17% | 15.10 | — | — | — | 8.64 | — | 632,878 | — |
+| KRP | Kimbell Royalty Partners, LP | custom | ▫️ | 0% | 15.10 | — | — | — | 8.64 | — | 632,878 | — |
+| SAFX | XCF Global, Inc. | graham | ▫️ | 33% | 0.42 | 0.80 | 1.57 | 197 | 0.11 | 10.14 | 1M | — |
+| SAFX | XCF Global, Inc. | buffett | ▫️ | 33% | 0.42 | 0.80 | 1.57 | 197 | 0.11 | 10.14 | 1M | — |
+| SAFX | XCF Global, Inc. | lynch | ▫️ | 25% | 0.42 | 0.80 | 1.57 | 197 | 0.11 | 10.14 | 1M | — |
+| SAFX | XCF Global, Inc. | netnet | ▫️ | 25% | 0.42 | 0.80 | 1.57 | 197 | 0.11 | 10.14 | 1M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
