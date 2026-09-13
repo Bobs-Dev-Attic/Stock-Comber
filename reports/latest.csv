@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-PIPR,PIPER SANDLER COMPANIES,greenblatt,True,3,3,100.0,76.43,4.83,0.99,20.52,—,0.74,166,"514,317",—
-PIPR,PIPER SANDLER COMPANIES,lynch,True,4,4,100.0,76.43,4.83,0.99,20.52,—,0.74,166,"514,317",—
-PIPR,PIPER SANDLER COMPANIES,piotroski,True,8,9,88.9,76.43,4.83,0.99,20.52,—,0.74,166,"514,317",—
-REFI,"CHICAGO ATLANTIC REAL ESTATE FINANCE, INC.",lynch,True,4,4,100.0,10.73,6.39,0.75,11.70,—,0.38,23.30,"166,606",—
-SKYW,SKYWEST INC,piotroski,True,8,9,88.9,96.14,9.29,1.45,15.60,0.65,—,124,"303,993",—
+SVXY,PROSHARES TRUST II,greenblatt,True,3,3,100.0,62.88,4.55,1.36,29.91,—,0.06,120,2M,—
+SBC,SBC Medical Group Holdings Incorporated,lynch,True,3,4,75.0,4.46,8.92,1.85,20.54,3.78,0.47,5.21,"182,818",—
+SON,Sonoco Products Company,piotroski,True,8,9,88.9,47.84,4.75,1.32,27.75,1.05,2.08,90.68,2M,—
+SON,Sonoco Products Company,lynch,True,3,4,75.0,47.84,4.75,1.32,27.75,1.05,2.08,90.68,2M,—
+CRUS,"CIRRUS LOGIC, INC.",piotroski,True,8,9,88.9,119,15.13,2.95,19.47,7.37,—,84.35,1M,—
 BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,144,19.64,3.37,17.13,2.65,0.86,84.23,"502,968",—
 BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,144,19.64,3.37,17.13,2.65,0.86,84.23,"502,968",—
-TRAK,"ReposiTrak, Inc.",lynch,True,4,4,100.0,8.00,22.86,3.09,14.09,6.09,0.12,4.51,"68,292",—
-AIV,Apartment Investment and Management Company,greenblatt,True,3,3,100.0,2.40,0.62,0.94,151,—,3.10,14.95,"948,711",—
-ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.35,8.68,0.24,4.91,1.93,0.73,1.14,0.00,—
-BELFA,BEL FUSE INC /NJ,piotroski,True,8,9,88.9,209,—,—,14.46,3.02,0.98,—,"43,019",—
-HBANP,Huntington Bancshares Incorporated,lynch,True,3,4,75.0,16.36,11.77,1.01,9.08,—,8.25,22.49,"77,733",—
 PRDO,PERDOCEO EDUCATION CORP,piotroski,True,8,9,88.9,33.02,13.64,2.25,16.45,5.06,—,28.29,"257,848",—
-MTCH,"Match Group, Inc.",piotroski,True,8,9,88.9,42.39,17.81,—,-242,1.42,—,—,3M,—
-MTCH,"Match Group, Inc.",lynch,True,3,4,75.0,42.39,17.81,—,-242,1.42,—,—,3M,—
-FTDR,"Frontdoor, Inc.",piotroski,True,8,9,88.9,81.01,23.69,24.94,105,1.55,—,15.81,"387,504",—
-FTDR,"Frontdoor, Inc.",buffett,True,5,6,83.3,81.01,23.69,24.94,105,1.55,—,15.81,"387,504",—
-FSS,FEDERAL SIGNAL CORPORATION,lynch,True,3,4,75.0,114,28.42,5.07,17.84,3.02,0.73,45.03,"274,281",—
-HOG,"Harley-Davidson, Inc.",graham,True,9,9,100.0,27.87,10.03,1.08,10.79,2.10,—,40.25,1M,—
-HOG,"Harley-Davidson, Inc.",piotroski,True,8,9,88.9,27.87,10.03,1.08,10.79,2.10,—,40.25,1M,—
-SHOE,"Shoe Station Group, Inc.",graham,True,8,9,88.9,12.71,6.69,0.51,7.58,3.76,0.74,32.72,1M,—
-WLY,"JOHN WILEY & SONS, INC.",piotroski,True,9,9,100.0,47.03,11.31,2.95,26.13,0.54,2.06,38.61,"509,139",—
-BCPC,Balchem Corporation,piotroski,True,9,9,100.0,164,34.61,4.26,12.31,2.07,0.34,64.20,"250,642",—
-VMD,"VIEMED HEALTHCARE, INC.",piotroski,True,7,9,77.8,8.79,23.76,2.54,10.55,1.18,0.39,5.37,"201,811",—
-ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.57,20.77,0.82,3.99,9.18,0.34,5.26,"187,823",—
-AIOT,"POWERFLEET, INC.",piotroski,True,7,9,77.8,3.00,—,0.84,-4.32,1.13,1.00,—,"820,117",—
+GPK,Graphic Packaging Holding Co,lynch,True,3,4,75.0,9.50,6.42,0.85,13.31,1.30,—,19.25,6M,—
+JOE,The St. Joe Company,piotroski,True,8,9,88.9,65.86,33.10,4.98,15.09,—,0.97,24.33,"249,858",—
+SSB,SOUTHSTATE BANK CORP,lynch,True,3,4,75.0,106,13.47,1.19,8.82,—,6.42,126,"469,909",—
+TRN,TRINITY INDUSTRIES INC,greenblatt,True,3,3,100.0,28.50,9.34,2.19,23.50,—,6.76,29.86,"667,079",—
+TRN,TRINITY INDUSTRIES INC,piotroski,True,7,9,77.8,28.50,9.34,2.19,23.50,—,6.76,29.86,"667,079",—
+AGCO,AGCO CORP /DE,piotroski,True,8,9,88.9,121,12.42,2.11,17.00,1.39,1.72,112,"985,327",—
+SIRI,SIRIUS XM HOLDINGS INC.,lynch,True,3,4,75.0,29.15,13.07,0.90,6.96,0.30,1.36,40.31,3M,—
+EMBC,EMBECTA CORP.,piotroski,True,7,9,77.8,4.94,3.05,—,-14.66,2.41,—,—,1M,—
+KNTK,KINETIK HOLDINGS INC.,lynch,True,3,4,75.0,54.75,20.82,—,-31.53,0.69,-7.37,—,1M,—
+FIVN,"Five9, Inc.",piotroski,True,8,9,88.9,30.66,68.13,3.43,5.02,4.51,1.28,9.51,"866,389",—
+HMN,HORACE MANN EDUCATORS CORPORATION,piotroski,True,7,9,77.8,48.77,12.51,1.37,10.93,—,9.30,55.92,"236,606",—
+FAF,FIRST AMERICAN FINANCIAL CORPORATION,piotroski,True,8,9,88.9,71.78,11.96,1.35,11.31,—,1.95,84.61,"468,151",—
+CPRI,CAPRI HOLDINGS LIMITED,greenblatt,True,3,3,100.0,13.89,12.18,20.81,171,1.21,39.38,4.14,7M,—
+CPRI,CAPRI HOLDINGS LIMITED,piotroski,True,7,9,77.8,13.89,12.18,20.81,171,1.21,39.38,4.14,7M,—
+TDC,TERADATA CORPORATION,piotroski,True,8,9,88.9,27.84,20.62,11.69,56.52,0.92,6.73,8.50,2M,—
+TBCH,TURTLE BEACH CORPORATION,piotroski,True,7,9,77.8,12.81,16.64,2.04,12.24,1.98,1.09,10.43,"393,624",—
 MCS,MARCUS CORP,piotroski,True,7,9,77.8,27.14,66.89,1.86,2.77,0.40,—,11.55,"203,451",—
-MLKN,"MillerKnoll, Inc.",piotroski,True,9,9,100.0,21.19,16.05,1.09,6.82,1.58,1.93,23.98,"613,027",—
-MSGS,MADISON SQUARE GARDEN SPORTS CORP.,piotroski,True,9,9,100.0,392,"1,225",—,-2.95,0.50,-6.84,—,"332,038",—
-WRBY,Warby Parker Inc.,piotroski,True,7,9,77.8,24.71,"2,471",8.41,0.45,2.35,0.96,0.81,2M,—
-DAR,DARLING INGREDIENTS INC.,piotroski,True,7,9,77.8,65.11,167,2.20,1.33,1.50,1.16,16.11,2M,—
-PIPR,PIPER SANDLER COMPANIES,graham,False,7,9,77.8,76.43,4.83,0.99,20.52,—,0.74,166,"514,317",—
-PIPR,PIPER SANDLER COMPANIES,buffett,False,3,6,50.0,76.43,4.83,0.99,20.52,—,0.74,166,"514,317",—
-PIPR,PIPER SANDLER COMPANIES,netnet,False,1,4,25.0,76.43,4.83,0.99,20.52,—,0.74,166,"514,317",—
-PIPR,PIPER SANDLER COMPANIES,custom,False,0,0,0.0,76.43,4.83,0.99,20.52,—,0.74,166,"514,317",—
-REFI,"CHICAGO ATLANTIC REAL ESTATE FINANCE, INC.",graham,False,6,9,66.7,10.73,6.39,0.75,11.70,—,0.38,23.30,"166,606",—
-REFI,"CHICAGO ATLANTIC REAL ESTATE FINANCE, INC.",greenblatt,False,2,3,66.7,10.73,6.39,0.75,11.70,—,0.38,23.30,"166,606",—
-REFI,"CHICAGO ATLANTIC REAL ESTATE FINANCE, INC.",buffett,False,2,6,33.3,10.73,6.39,0.75,11.70,—,0.38,23.30,"166,606",—
-REFI,"CHICAGO ATLANTIC REAL ESTATE FINANCE, INC.",netnet,False,1,4,25.0,10.73,6.39,0.75,11.70,—,0.38,23.30,"166,606",—
-REFI,"CHICAGO ATLANTIC REAL ESTATE FINANCE, INC.",piotroski,False,2,9,22.2,10.73,6.39,0.75,11.70,—,0.38,23.30,"166,606",—
-REFI,"CHICAGO ATLANTIC REAL ESTATE FINANCE, INC.",custom,False,0,0,0.0,10.73,6.39,0.75,11.70,—,0.38,23.30,"166,606",—
-IDR,"IDAHO STRATEGIC RESOURCES, INC",buffett,False,4,6,66.7,30.91,27.11,4.20,15.45,13.96,0.05,13.74,"149,257",—
-IDR,"IDAHO STRATEGIC RESOURCES, INC",piotroski,False,6,9,66.7,30.91,27.11,4.20,15.45,13.96,0.05,13.74,"149,257",—
-IDR,"IDAHO STRATEGIC RESOURCES, INC",lynch,False,2,4,50.0,30.91,27.11,4.20,15.45,13.96,0.05,13.74,"149,257",—
-IDR,"IDAHO STRATEGIC RESOURCES, INC",netnet,False,2,4,50.0,30.91,27.11,4.20,15.45,13.96,0.05,13.74,"149,257",—
-IDR,"IDAHO STRATEGIC RESOURCES, INC",graham,False,3,9,33.3,30.91,27.11,4.20,15.45,13.96,0.05,13.74,"149,257",—
-IDR,"IDAHO STRATEGIC RESOURCES, INC",greenblatt,False,1,3,33.3,30.91,27.11,4.20,15.45,13.96,0.05,13.74,"149,257",—
-IDR,"IDAHO STRATEGIC RESOURCES, INC",custom,False,0,0,0.0,30.91,27.11,4.20,15.45,13.96,0.05,13.74,"149,257",—
-UNIT,Uniti Group Inc.,greenblatt,False,2,3,66.7,10.07,2.07,7.06,343,0.74,30.65,12.50,2M,—
-UNIT,Uniti Group Inc.,graham,False,4,9,44.4,10.07,2.07,7.06,343,0.74,30.65,12.50,2M,—
+SENS,"Senseonics Holdings, Inc.",piotroski,True,7,9,77.8,8.71,—,5.95,-113,4.83,1.07,—,"395,168",—
+BNED,"BARNES & NOBLE EDUCATION, INC.",piotroski,True,8,9,88.9,11.23,22.92,1.32,5.73,1.71,1.51,9.68,"262,888",—
+USNA,"USANA HEALTH SCIENCES, INC.",piotroski,True,7,9,77.8,15.02,25.90,0.52,2.02,2.24,0.29,19.35,"241,984",—
+OMCL,"OMNICELL, INC",piotroski,True,7,9,77.8,32.79,820,1.23,0.17,1.43,0.60,4.89,"483,600",—
+SVXY,PROSHARES TRUST II,lynch,False,2,4,50.0,62.88,4.55,1.36,29.91,—,0.06,120,2M,—
+SVXY,PROSHARES TRUST II,graham,False,4,9,44.4,62.88,4.55,1.36,29.91,—,0.06,120,2M,—
+SVXY,PROSHARES TRUST II,buffett,False,2,6,33.3,62.88,4.55,1.36,29.91,—,0.06,120,2M,—
+SVXY,PROSHARES TRUST II,piotroski,False,3,9,33.3,62.88,4.55,1.36,29.91,—,0.06,120,2M,—
+SVXY,PROSHARES TRUST II,netnet,False,1,4,25.0,62.88,4.55,1.36,29.91,—,0.06,120,2M,—
+SVXY,PROSHARES TRUST II,custom,False,0,0,0.0,62.88,4.55,1.36,29.91,—,0.06,120,2M,—
+SBC,SBC Medical Group Holdings Incorporated,graham,False,6,9,66.7,4.46,8.92,1.85,20.54,3.78,0.47,5.21,"182,818",—
+SBC,SBC Medical Group Holdings Incorporated,buffett,False,4,6,66.7,4.46,8.92,1.85,20.54,3.78,0.47,5.21,"182,818",—
+SBC,SBC Medical Group Holdings Incorporated,greenblatt,False,2,3,66.7,4.46,8.92,1.85,20.54,3.78,0.47,5.21,"182,818",—
+SBC,SBC Medical Group Holdings Incorporated,netnet,False,2,4,50.0,4.46,8.92,1.85,20.54,3.78,0.47,5.21,"182,818",—
+SBC,SBC Medical Group Holdings Incorporated,piotroski,False,4,9,44.4,4.46,8.92,1.85,20.54,3.78,0.47,5.21,"182,818",—
+SBC,SBC Medical Group Holdings Incorporated,custom,False,0,0,0.0,4.46,8.92,1.85,20.54,3.78,0.47,5.21,"182,818",—
+SON,Sonoco Products Company,graham,False,6,9,66.7,47.84,4.75,1.32,27.75,1.05,2.08,90.68,2M,—
+SON,Sonoco Products Company,buffett,False,4,6,66.7,47.84,4.75,1.32,27.75,1.05,2.08,90.68,2M,—
+SON,Sonoco Products Company,greenblatt,False,2,3,66.7,47.84,4.75,1.32,27.75,1.05,2.08,90.68,2M,—
+SON,Sonoco Products Company,netnet,False,1,4,25.0,47.84,4.75,1.32,27.75,1.05,2.08,90.68,2M,—
+SON,Sonoco Products Company,custom,False,0,0,0.0,47.84,4.75,1.32,27.75,1.05,2.08,90.68,2M,—
+CRUS,"CIRRUS LOGIC, INC.",graham,False,6,9,66.7,119,15.13,2.95,19.47,7.37,—,84.35,1M,—
+CRUS,"CIRRUS LOGIC, INC.",buffett,False,4,6,66.7,119,15.13,2.95,19.47,7.37,—,84.35,1M,—
+CRUS,"CIRRUS LOGIC, INC.",greenblatt,False,1,3,33.3,119,15.13,2.95,19.47,7.37,—,84.35,1M,—
+CRUS,"CIRRUS LOGIC, INC.",lynch,False,1,4,25.0,119,15.13,2.95,19.47,7.37,—,84.35,1M,—
