@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-14 01:22 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-14 06:27 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **30** strategy matches passed.
+Screened **75** companies · **31** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| PIPR | PIPER SANDLER COMPANIES | greenblatt | ✅ | 100% | 76.43 | 4.83 | 0.99 | 20.52 | — | 0.74 | 514,317 | — |
-| PIPR | PIPER SANDLER COMPANIES | lynch | ✅ | 100% | 76.43 | 4.83 | 0.99 | 20.52 | — | 0.74 | 514,317 | — |
-| PIPR | PIPER SANDLER COMPANIES | piotroski | ✅ | 89% | 76.43 | 4.83 | 0.99 | 20.52 | — | 0.74 | 514,317 | — |
-| PD | PAGERDUTY, INC. | greenblatt | ✅ | 100% | 14.09 | 7.53 | 5.17 | 68.37 | 2.01 | 2.84 | 1M | — |
-| WTFCN | WINTRUST FINANCIAL CORP | lynch | ✅ | 75% | 26.06 | 2.29 | 0.24 | 11.35 | — | 8.80 | 5,750 | — |
-| RILY | BRC Group Holdings, Inc. | greenblatt | ✅ | 100% | 6.60 | 0.67 | — | -179 | — | -10.65 | 526,273 | — |
-| RILY | BRC Group Holdings, Inc. | lynch | ✅ | 75% | 6.60 | 0.67 | — | -179 | — | -10.65 | 526,273 | — |
-| CARG | CarGurus, Inc. | piotroski | ✅ | 89% | 34.42 | 22.21 | 9.24 | 41.66 | 2.81 | 0.77 | 1M | — |
-| ALSN | ALLISON TRANSMISSION HOLDING | buffett | ✅ | 83% | 127 | 17.32 | 5.78 | 33.37 | 4.85 | 2.26 | 498,845 | — |
-| PRDO | PERDOCEO EDUCATION CORP | piotroski | ✅ | 89% | 33.02 | 13.64 | 2.25 | 16.45 | 5.06 | — | 424,050 | — |
-| FSS | FEDERAL SIGNAL CORPORATION | lynch | ✅ | 75% | 114 | 28.42 | 5.07 | 17.84 | 3.02 | 0.73 | 274,281 | — |
-| NYT | THE NEW YORK TIMES COMPANY | piotroski | ✅ | 100% | 66.88 | 32.00 | 5.40 | 16.85 | 1.54 | — | 1M | — |
-| MEDP | Medpace Holdings, Inc. | buffett | ✅ | 83% | 588 | 38.45 | 37.79 | 98.27 | 0.74 | 3.30 | 159,087 | — |
-| MEDP | Medpace Holdings, Inc. | piotroski | ✅ | 78% | 588 | 38.45 | 37.79 | 98.27 | 0.74 | 3.30 | 159,087 | — |
-| BY | Byline Bancorp, Inc. | lynch | ✅ | 75% | 38.67 | 13.38 | 1.37 | 10.26 | — | 6.61 | 203,545 | — |
-| OSW | OneSpaWorld Holdings Limited | piotroski | ✅ | 78% | 21.74 | 31.51 | 4.15 | 13.20 | 1.91 | 0.30 | 914,589 | — |
-| ORI | OLD REPUBLIC INTERNATIONAL C | piotroski | ✅ | 78% | 40.96 | 11.01 | 1.74 | 15.82 | — | 4.05 | 859,387 | — |
-| DRVN | Driven Brands Holdings Inc. | piotroski | ✅ | 78% | 12.15 | 14.29 | 2.59 | 18.27 | 0.75 | 4.42 | 862,257 | — |
-| BCPC | Balchem Corporation | piotroski | ✅ | 100% | 164 | 34.61 | 4.26 | 12.31 | 2.07 | 0.34 | 250,642 | — |
-| VCYT | VERACYTE, INC. | piotroski | ✅ | 89% | 40.87 | 49.84 | 2.51 | 5.07 | 8.15 | 0.07 | 1M | — |
-| EMBC | EMBECTA CORP. | piotroski | ✅ | 78% | 4.94 | 3.05 | — | -14.66 | 2.41 | — | 1M | — |
-| EXTR | EXTREME NETWORKS, INC. | piotroski | ✅ | 89% | 22.20 | 71.61 | 33.82 | 47.54 | 0.93 | — | 1M | — |
-| FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 13.35 | 70.26 | 5.48 | 7.83 | 4.94 | 0.33 | 4M | — |
+| KRP | Kimbell Royalty Partners, LP | piotroski | ✅ | 78% | 14.90 | — | — | — | 8.64 | — | 1M | — |
+| SAFX | XCF Global, Inc. | greenblatt | ✅ | 100% | 0.41 | 0.79 | 1.55 | 197 | 0.11 | 10.14 | 2M | — |
+| OTTR | OTTER TAIL CORPORATION | lynch | ✅ | 75% | 88.06 | 13.44 | 1.99 | 14.82 | 2.28 | — | 166,359 | — |
+| BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 144 | 19.64 | 3.37 | 17.13 | 2.65 | 0.86 | 502,968 | — |
+| BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 144 | 19.64 | 3.37 | 17.13 | 2.65 | 0.86 | 502,968 | — |
+| TRAK | ReposiTrak, Inc. | lynch | ✅ | 100% | 8.00 | 22.86 | 3.09 | 14.09 | 6.09 | 0.12 | 68,292 | — |
+| AIV | Apartment Investment and Man | greenblatt | ✅ | 100% | 2.40 | 0.62 | 0.94 | 151 | — | 3.10 | 948,711 | — |
+| ANNAW | AleAnna, Inc. | piotroski | ✅ | 78% | 0.35 | 8.68 | 0.24 | 4.91 | 1.93 | 0.73 | 0.00 | — |
+| BELFA | BEL FUSE INC /NJ | piotroski | ✅ | 89% | 209 | — | — | 14.46 | 3.02 | 0.98 | 43,020 | — |
+| MHO | M/I HOMES, INC. | lynch | ✅ | 75% | 140 | 9.49 | 1.21 | 12.73 | — | 0.51 | 182,586 | — |
+| KRYS | Krystal Biotech, Inc. | piotroski | ✅ | 89% | 347 | 50.73 | 8.52 | 16.80 | 9.95 | 0.09 | 206,324 | — |
+| MTCH | Match Group, Inc. | piotroski | ✅ | 89% | 42.39 | 17.81 | — | -242 | 1.42 | — | 3M | — |
+| MTCH | Match Group, Inc. | lynch | ✅ | 75% | 42.39 | 17.81 | — | -242 | 1.42 | — | 3M | — |
+| WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 12.55 | 2.48 | 1.43 | 57.56 | 1.39 | 2.18 | 397,209 | — |
+| DORM | Dorman Products, Inc. | piotroski | ✅ | 89% | 127 | 19.08 | 2.64 | 13.82 | 3.09 | — | 128,544 | — |
+| JOE | The St. Joe Company | piotroski | ✅ | 89% | 65.86 | 33.10 | 4.98 | 15.09 | — | 0.97 | 249,858 | — |
+| AM | ANTERO MIDSTREAM CORPORATION | piotroski | ✅ | 78% | 22.06 | 25.65 | 5.39 | 20.95 | 3.41 | 1.98 | 2M | — |
+| FCF | FIRST COMMONWEALTH FINANCIAL | lynch | ✅ | 75% | 21.31 | 14.50 | 1.42 | 9.80 | — | 6.94 | 819,197 | — |
+| KRT | Karat Packaging Inc. | piotroski | ✅ | 78% | 46.94 | 30.09 | 6.34 | 21.07 | 2.30 | 0.88 | 67,973 | — |
+| CBL | CBL & ASSOCIATES PROPERTIES, | piotroski | ✅ | 78% | 54.73 | 12.61 | 4.50 | 36.26 | — | 6.31 | 189,784 | — |
+| PFH | PRUDENTIAL FINANCIAL INC | piotroski | ✅ | 78% | 15.15 | 1.52 | 0.17 | 11.02 | — | 22.76 | 109,067 | — |
+| FIVN | Five9, Inc. | piotroski | ✅ | 89% | 30.66 | 68.13 | 3.43 | 5.02 | 4.51 | 1.28 | 866,389 | — |
+| IMAX | IMAX Corporation | piotroski | ✅ | 78% | 52.09 | 82.68 | 8.56 | 10.32 | — | 1.38 | 1M | — |
 | ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.57 | 20.77 | 0.82 | 3.99 | 9.18 | 0.34 | 187,823 | — |
-| SHAK | SHAKE SHACK INC. | piotroski | ✅ | 89% | 63.65 | 58.39 | 5.07 | 8.70 | 1.76 | 2.56 | 1M | — |
-| HAYW | Hayward Holdings, Inc. | piotroski | ✅ | 100% | 13.11 | 19.28 | 1.83 | 9.51 | 2.94 | 0.98 | 3M | — |
-| TBCH | TURTLE BEACH CORPORATION | piotroski | ✅ | 78% | 12.81 | 16.64 | 2.04 | 12.24 | 1.98 | 1.09 | 393,626 | — |
-| FUL | FULLER H B CO | piotroski | ✅ | 78% | 51.60 | 18.76 | 1.43 | 7.59 | 1.70 | 1.59 | 1M | — |
-| NEOG | Neogen Corporation | piotroski | ✅ | 89% | 11.78 | — | 1.22 | -0.38 | 3.82 | 0.60 | 2M | — |
+| MAGN | Magnera Corporation | piotroski | ✅ | 78% | 11.70 | — | 0.39 | -14.94 | 2.37 | 2.75 | 446,683 | — |
+| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 57.18 | 54.98 | — | -29.14 | 1.60 | -6.05 | 186,287 | — |
+| ALNT | ALLIENT INC | piotroski | ✅ | 89% | 98.66 | 74.74 | 5.48 | 7.31 | 3.66 | 0.92 | 565,131 | — |
 | INNV | InnovAge Holding Corp. | piotroski | ✅ | 78% | 10.75 | — | 6.19 | -1.08 | 1.05 | 1.23 | 192,102 | — |
-| PIPR | PIPER SANDLER COMPANIES | graham | ▫️ | 78% | 76.43 | 4.83 | 0.99 | 20.52 | — | 0.74 | 514,317 | — |
-| PIPR | PIPER SANDLER COMPANIES | buffett | ▫️ | 50% | 76.43 | 4.83 | 0.99 | 20.52 | — | 0.74 | 514,317 | — |
-| PIPR | PIPER SANDLER COMPANIES | netnet | ▫️ | 25% | 76.43 | 4.83 | 0.99 | 20.52 | — | 0.74 | 514,317 | — |
-| PIPR | PIPER SANDLER COMPANIES | custom | ▫️ | 0% | 76.43 | 4.83 | 0.99 | 20.52 | — | 0.74 | 514,317 | — |
-| PD | PAGERDUTY, INC. | piotroski | ▫️ | 67% | 14.09 | 7.53 | 5.17 | 68.37 | 2.01 | 2.84 | 1M | — |
-| PD | PAGERDUTY, INC. | buffett | ▫️ | 50% | 14.09 | 7.53 | 5.17 | 68.37 | 2.01 | 2.84 | 1M | — |
-| PD | PAGERDUTY, INC. | graham | ▫️ | 33% | 14.09 | 7.53 | 5.17 | 68.37 | 2.01 | 2.84 | 1M | — |
-| PD | PAGERDUTY, INC. | lynch | ▫️ | 25% | 14.09 | 7.53 | 5.17 | 68.37 | 2.01 | 2.84 | 1M | — |
-| PD | PAGERDUTY, INC. | netnet | ▫️ | 25% | 14.09 | 7.53 | 5.17 | 68.37 | 2.01 | 2.84 | 1M | — |
-| PD | PAGERDUTY, INC. | custom | ▫️ | 0% | 14.09 | 7.53 | 5.17 | 68.37 | 2.01 | 2.84 | 1M | — |
-| WTFCN | WINTRUST FINANCIAL CORP | graham | ▫️ | 67% | 26.06 | 2.29 | 0.24 | 11.35 | — | 8.80 | 5,750 | — |
-| WTFCN | WINTRUST FINANCIAL CORP | piotroski | ▫️ | 67% | 26.06 | 2.29 | 0.24 | 11.35 | — | 8.80 | 5,750 | — |
-| WTFCN | WINTRUST FINANCIAL CORP | greenblatt | ▫️ | 67% | 26.06 | 2.29 | 0.24 | 11.35 | — | 8.80 | 5,750 | — |
-| WTFCN | WINTRUST FINANCIAL CORP | buffett | ▫️ | 50% | 26.06 | 2.29 | 0.24 | 11.35 | — | 8.80 | 5,750 | — |
-| WTFCN | WINTRUST FINANCIAL CORP | netnet | ▫️ | 25% | 26.06 | 2.29 | 0.24 | 11.35 | — | 8.80 | 5,750 | — |
-| WTFCN | WINTRUST FINANCIAL CORP | custom | ▫️ | 0% | 26.06 | 2.29 | 0.24 | 11.35 | — | 8.80 | 5,750 | — |
-| PPIH | Perma-Pipe International Hol | piotroski | ▫️ | 67% | 30.91 | 14.79 | 2.78 | 18.79 | 1.84 | — | 132,340 | — |
-| PPIH | Perma-Pipe International Hol | graham | ▫️ | 44% | 30.91 | 14.79 | 2.78 | 18.79 | 1.84 | — | 132,340 | — |
-| PPIH | Perma-Pipe International Hol | greenblatt | ▫️ | 33% | 30.91 | 14.79 | 2.78 | 18.79 | 1.84 | — | 132,340 | — |
-| PPIH | Perma-Pipe International Hol | lynch | ▫️ | 25% | 30.91 | 14.79 | 2.78 | 18.79 | 1.84 | — | 132,340 | — |
+| AEIS | ADVANCED ENERGY INDUSTRIES,  | piotroski | ✅ | 78% | 287 | 74.80 | 8.14 | 10.89 | 1.59 | 0.86 | 426,873 | — |
+| EGHT | 8x8, Inc. | piotroski | ✅ | 78% | 1.84 | 184 | 1.79 | 1.12 | 1.09 | 3.52 | 2M | — |
+| AVNW | AVIAT NETWORKS, INC. | piotroski | ✅ | 78% | 20.73 | 109 | 1.01 | 0.95 | 1.97 | 1.24 | 241,872 | — |
+| KRP | Kimbell Royalty Partners, LP | graham | ▫️ | 33% | 14.90 | — | — | — | 8.64 | — | 1M | — |
+| KRP | Kimbell Royalty Partners, LP | greenblatt | ▫️ | 33% | 14.90 | — | — | — | 8.64 | — | 1M | — |
+| KRP | Kimbell Royalty Partners, LP | lynch | ▫️ | 25% | 14.90 | — | — | — | 8.64 | — | 1M | — |
+| KRP | Kimbell Royalty Partners, LP | netnet | ▫️ | 25% | 14.90 | — | — | — | 8.64 | — | 1M | — |
+| KRP | Kimbell Royalty Partners, LP | buffett | ▫️ | 17% | 14.90 | — | — | — | 8.64 | — | 1M | — |
+| KRP | Kimbell Royalty Partners, LP | custom | ▫️ | 0% | 14.90 | — | — | — | 8.64 | — | 1M | — |
+| SAFX | XCF Global, Inc. | graham | ▫️ | 33% | 0.41 | 0.79 | 1.55 | 197 | 0.11 | 10.14 | 2M | — |
+| SAFX | XCF Global, Inc. | buffett | ▫️ | 33% | 0.41 | 0.79 | 1.55 | 197 | 0.11 | 10.14 | 2M | — |
+| SAFX | XCF Global, Inc. | lynch | ▫️ | 25% | 0.41 | 0.79 | 1.55 | 197 | 0.11 | 10.14 | 2M | — |
+| SAFX | XCF Global, Inc. | netnet | ▫️ | 25% | 0.41 | 0.79 | 1.55 | 197 | 0.11 | 10.14 | 2M | — |
+| SAFX | XCF Global, Inc. | piotroski | ▫️ | 11% | 0.41 | 0.79 | 1.55 | 197 | 0.11 | 10.14 | 2M | — |
+| SAFX | XCF Global, Inc. | custom | ▫️ | 0% | 0.41 | 0.79 | 1.55 | 197 | 0.11 | 10.14 | 2M | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | piotroski | ▫️ | 67% | 3.04 | 15.20 | 3.39 | 22.71 | 4.86 | 0.39 | 322,139 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | greenblatt | ▫️ | 67% | 3.04 | 15.20 | 3.39 | 22.71 | 4.86 | 0.39 | 322,139 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | buffett | ▫️ | 50% | 3.04 | 15.20 | 3.39 | 22.71 | 4.86 | 0.39 | 322,139 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | lynch | ▫️ | 50% | 3.04 | 15.20 | 3.39 | 22.71 | 4.86 | 0.39 | 322,139 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | netnet | ▫️ | 50% | 3.04 | 15.20 | 3.39 | 22.71 | 4.86 | 0.39 | 322,139 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | graham | ▫️ | 33% | 3.04 | 15.20 | 3.39 | 22.71 | 4.86 | 0.39 | 322,139 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | custom | ▫️ | 0% | 3.04 | 15.20 | 3.39 | 22.71 | 4.86 | 0.39 | 322,139 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
