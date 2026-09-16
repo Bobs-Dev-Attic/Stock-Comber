@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-GOOGN,Alphabet Inc.,graham,True,9,9,100.0,48.63,4.50,1.43,31.83,2.01,0.43,90.88,1M,—
-GOOGN,Alphabet Inc.,buffett,True,6,6,100.0,48.63,4.50,1.43,31.83,2.01,0.43,90.88,1M,—
-GOOGN,Alphabet Inc.,greenblatt,True,3,3,100.0,48.63,4.50,1.43,31.83,2.01,0.43,90.88,1M,—
-GOOGN,Alphabet Inc.,lynch,True,4,4,100.0,48.63,4.50,1.43,31.83,2.01,0.43,90.88,1M,—
-PD,"PAGERDUTY, INC.",greenblatt,True,3,3,100.0,14.51,7.76,5.32,68.37,2.01,2.84,10.71,1M,—
-SON,Sonoco Products Company,piotroski,True,8,9,88.9,48.28,4.79,1.33,27.75,1.05,2.08,90.68,1M,—
-SON,Sonoco Products Company,lynch,True,3,4,75.0,48.28,4.79,1.33,27.75,1.05,2.08,90.68,1M,—
-OTTR,OTTER TAIL CORPORATION,lynch,True,3,4,75.0,88.22,13.47,2.00,14.82,2.28,—,80.71,"247,614",—
-SKYW,SKYWEST INC,piotroski,True,8,9,88.9,96.01,9.28,1.45,15.60,0.65,—,124,"361,508",—
-AROC,"Archrock, Inc.",piotroski,True,8,9,88.9,30.58,16.71,3.58,21.61,1.54,1.92,18.75,3M,—
-SSD,"Simpson Manufacturing Co., Inc.",buffett,True,5,6,83.3,173,21.00,3.57,17.00,3.54,0.51,94.81,"310,702",—
-SSD,"Simpson Manufacturing Co., Inc.",piotroski,True,7,9,77.8,173,21.00,3.57,17.00,3.54,0.51,94.81,"310,702",—
-DAKT,"Daktronics, Inc.",piotroski,True,8,9,88.9,17.74,19.28,2.91,15.09,2.31,—,11.23,"541,105",—
-DAKT,"Daktronics, Inc.",lynch,True,3,4,75.0,17.74,19.28,2.91,15.09,2.31,—,11.23,"541,105",—
-GLAD,GLADSTONE CAPITAL CORP,lynch,True,3,4,75.0,19.42,7.70,0.91,11.86,—,0.84,34.75,"156,297",—
-FTDR,"Frontdoor, Inc.",piotroski,True,8,9,88.9,80.12,23.43,24.67,105,1.55,—,15.81,"469,852",—
-FTDR,"Frontdoor, Inc.",buffett,True,5,6,83.3,80.12,23.43,24.67,105,1.55,—,15.81,"469,852",—
+REFI,"CHICAGO ATLANTIC REAL ESTATE FINANCE, INC.",lynch,True,4,4,100.0,10.93,6.51,0.76,11.70,—,0.38,23.30,"243,527",—
+WTFCN,WINTRUST FINANCIAL CORP,lynch,True,3,4,75.0,26.16,2.29,0.24,11.35,—,8.80,166,"25,267",—
+IPAR,"INTERPARFUMS, INC.",buffett,True,5,6,83.3,110,20.99,4.01,19.12,2.99,—,56.84,"202,816",—
+IPAR,"INTERPARFUMS, INC.",lynch,True,3,4,75.0,110,20.99,4.01,19.12,2.99,—,56.84,"202,816",—
+AREC,AMERICAN RESOURCES CORPORATION,greenblatt,True,3,3,100.0,2.06,3.27,1.90,58.44,2.19,0.80,3.92,2M,—
+HBANP,Huntington Bancshares Incorporated,lynch,True,3,4,75.0,15.97,11.49,0.99,9.08,—,8.25,22.49,"123,874",—
 NYT,THE NEW YORK TIMES COMPANY,piotroski,True,9,9,100.0,71.71,34.31,5.79,16.85,1.54,—,24.12,3M,—
-MEDP,"Medpace Holdings, Inc.",buffett,True,5,6,83.3,620,40.61,39.91,98.27,0.74,3.30,73.11,"303,860",—
-MEDP,"Medpace Holdings, Inc.",piotroski,True,7,9,77.8,620,40.61,39.91,98.27,0.74,3.30,73.11,"303,860",—
-TRN,TRINITY INDUSTRIES INC,greenblatt,True,3,3,100.0,28.17,9.24,2.17,23.50,—,6.76,29.86,"588,107",—
-TRN,TRINITY INDUSTRIES INC,piotroski,True,7,9,77.8,28.17,9.24,2.17,23.50,—,6.76,29.86,"588,107",—
-KEX,KIRBY CORPORATION,piotroski,True,8,9,88.9,139,21.95,2.30,10.49,1.53,—,92.69,"422,374",—
-AXTA,AXALTA COATING SYSTEMS LTD.,lynch,True,3,4,75.0,33.29,19.13,3.08,16.11,2.06,2.22,20.57,3M,—
-HAFC,HANMI FINANCIAL CORPORATION,piotroski,True,8,9,88.9,32.16,12.81,1.21,9.55,—,8.88,38.69,"198,308",—
+HOG,"Harley-Davidson, Inc.",graham,True,9,9,100.0,27.57,9.92,1.06,10.79,2.10,—,40.25,1M,—
+HOG,"Harley-Davidson, Inc.",piotroski,True,8,9,88.9,27.57,9.92,1.06,10.79,2.10,—,40.25,1M,—
+NJR,NEW JERSEY RESOURCES CORPORATION,piotroski,True,7,9,77.8,53.27,16.00,2.24,14.03,0.73,—,42.17,"661,746",—
+KEX,KIRBY CORPORATION,piotroski,True,8,9,88.9,139,21.95,2.30,10.49,1.53,—,92.69,"422,475",—
 DRVN,Driven Brands Holdings Inc.,piotroski,True,7,9,77.8,12.52,14.73,2.67,18.27,0.75,4.42,9.46,1M,—
-AGCO,AGCO CORP /DE,piotroski,True,8,9,88.9,124,12.70,2.16,17.00,1.39,1.72,112,"861,068",—
-BBWI,"BATH & BODY WORKS, INC.",greenblatt,True,3,3,100.0,16.72,5.38,—,-50.66,1.27,—,—,8M,—
+BBWI,"BATH & BODY WORKS, INC.",greenblatt,True,3,3,100.0,16.72,5.38,—,-50.66,1.27,—,—,9M,—
 KNTK,KINETIK HOLDINGS INC.,lynch,True,3,4,75.0,54.70,20.80,—,-31.53,0.69,-7.37,—,1M,—
-FMNB,FARMERS NATIONAL BANC CORP /OH/,piotroski,True,8,9,88.9,15.96,11.01,1.24,11.24,—,9.80,20.52,"344,698",—
-WOR,"WORTHINGTON ENTERPRISES, INC.",piotroski,True,8,9,88.9,54.36,17.31,2.63,15.20,2.37,0.80,38.20,"301,486",—
-SPOK,"SPOK HOLDINGS, INC.",piotroski,True,7,9,77.8,10.70,14.27,1.54,10.85,1.18,0.41,10.83,"140,505",—
-VVX,"V2X, Inc.",piotroski,True,9,9,100.0,75.17,30.68,2.21,7.18,1.22,2.02,43.35,"687,438",—
-GSHD,"GOOSEHEAD INSURANCE, INC.",lynch,True,3,4,75.0,59.35,57.07,—,-29.14,1.60,-6.05,—,"239,162",—
-TDC,TERADATA CORPORATION,piotroski,True,8,9,88.9,29.39,21.77,12.34,56.52,0.92,6.73,8.50,2M,—
+SSTK,"SHUTTERSTOCK, INC.",piotroski,True,8,9,88.9,4.87,3.90,0.30,7.83,0.54,1.33,21.23,"740,093",—
+FIGS,"FIGS, Inc.",piotroski,True,8,9,88.9,13.28,69.89,5.45,7.83,4.94,0.33,3.23,2M,—
+III,Information Services Group Inc.,piotroski,True,7,9,77.8,5.38,28.32,2.86,9.87,2.34,1.23,2.84,"164,708",—
+SPOK,"SPOK HOLDINGS, INC.",piotroski,True,7,9,77.8,10.70,14.27,1.54,10.85,1.18,0.41,10.83,"140,607",—
+VVX,"V2X, Inc.",piotroski,True,9,9,100.0,75.17,30.68,2.21,7.18,1.22,2.02,43.35,"643,500",—
+LW,"Lamb Weston Holdings, Inc.",piotroski,True,7,9,77.8,47.09,22.64,3.59,15.89,1.42,—,24.78,2M,—
+MLKN,"MillerKnoll, Inc.",piotroski,True,9,9,100.0,20.94,15.86,1.08,6.82,1.58,1.93,23.98,"652,085",—
 FUL,FULLER H B CO,piotroski,True,7,9,77.8,50.89,18.51,1.41,7.59,1.70,1.59,47.32,"833,017",—
-SPHR,SPHERE ENTERTAINMENT CO.,piotroski,True,7,9,77.8,144,195,2.92,1.50,1.09,0.89,28.65,"362,815",—
+GCO,GENESCO INC,piotroski,True,8,9,88.9,34.25,27.40,0.64,2.34,1.64,1.46,38.74,"280,729",—
+RRX,REGAL REXNORD CORP,piotroski,True,7,9,77.8,152,36.30,1.48,4.08,2.15,—,98.55,2M,—
 NEOG,Neogen Corporation,piotroski,True,8,9,88.9,12.25,—,1.27,-0.38,3.82,0.60,—,3M,—
-BNED,"BARNES & NOBLE EDUCATION, INC.",piotroski,True,8,9,88.9,10.77,21.98,1.27,5.73,1.71,1.51,9.68,"247,820",—
-GOOGN,Alphabet Inc.,piotroski,False,6,9,66.7,48.63,4.50,1.43,31.83,2.01,0.43,90.88,1M,—
-GOOGN,Alphabet Inc.,netnet,False,2,4,50.0,48.63,4.50,1.43,31.83,2.01,0.43,90.88,1M,—
-GOOGN,Alphabet Inc.,custom,False,0,0,0.0,48.63,4.50,1.43,31.83,2.01,0.43,90.88,1M,—
-PD,"PAGERDUTY, INC.",piotroski,False,6,9,66.7,14.51,7.76,5.32,68.37,2.01,2.84,10.71,1M,—
-PD,"PAGERDUTY, INC.",buffett,False,3,6,50.0,14.51,7.76,5.32,68.37,2.01,2.84,10.71,1M,—
-PD,"PAGERDUTY, INC.",graham,False,3,9,33.3,14.51,7.76,5.32,68.37,2.01,2.84,10.71,1M,—
-PD,"PAGERDUTY, INC.",lynch,False,1,4,25.0,14.51,7.76,5.32,68.37,2.01,2.84,10.71,1M,—
-PD,"PAGERDUTY, INC.",netnet,False,1,4,25.0,14.51,7.76,5.32,68.37,2.01,2.84,10.71,1M,—
-PD,"PAGERDUTY, INC.",custom,False,0,0,0.0,14.51,7.76,5.32,68.37,2.01,2.84,10.71,1M,—
-SON,Sonoco Products Company,graham,False,6,9,66.7,48.28,4.79,1.33,27.75,1.05,2.08,90.68,1M,—
-SON,Sonoco Products Company,buffett,False,4,6,66.7,48.28,4.79,1.33,27.75,1.05,2.08,90.68,1M,—
+USNA,"USANA HEALTH SCIENCES, INC.",piotroski,True,7,9,77.8,14.90,25.69,0.52,2.02,2.24,0.29,19.35,"196,432",—
+LMMY,"Exousia Bio, Inc.",greenblatt,False,2,3,66.7,0.02,—,—,—,—,—,—,"20,000",—
+LMMY,"Exousia Bio, Inc.",lynch,False,1,4,25.0,0.02,—,—,—,—,—,—,"20,000",—
+LMMY,"Exousia Bio, Inc.",netnet,False,1,4,25.0,0.02,—,—,—,—,—,—,"20,000",—
+LMMY,"Exousia Bio, Inc.",piotroski,False,2,9,22.2,0.02,—,—,—,—,—,—,"20,000",—
+LMMY,"Exousia Bio, Inc.",buffett,False,1,6,16.7,0.02,—,—,—,—,—,—,"20,000",—
+LMMY,"Exousia Bio, Inc.",graham,False,0,9,0.0,0.02,—,—,—,—,—,—,"20,000",—
+LMMY,"Exousia Bio, Inc.",custom,False,0,0,0.0,0.02,—,—,—,—,—,—,"20,000",—
+ADMA,"ADMA BIOLOGICS, INC.",buffett,False,4,6,66.7,8.61,14.35,4.42,30.78,6.71,0.31,5.13,4M,—
+ADMA,"ADMA BIOLOGICS, INC.",greenblatt,False,2,3,66.7,8.61,14.35,4.42,30.78,6.71,0.31,5.13,4M,—
+ADMA,"ADMA BIOLOGICS, INC.",lynch,False,2,4,50.0,8.61,14.35,4.42,30.78,6.71,0.31,5.13,4M,—
+ADMA,"ADMA BIOLOGICS, INC.",netnet,False,2,4,50.0,8.61,14.35,4.42,30.78,6.71,0.31,5.13,4M,—
+ADMA,"ADMA BIOLOGICS, INC.",graham,False,4,9,44.4,8.61,14.35,4.42,30.78,6.71,0.31,5.13,4M,—
+ADMA,"ADMA BIOLOGICS, INC.",piotroski,False,4,9,44.4,8.61,14.35,4.42,30.78,6.71,0.31,5.13,4M,—
+ADMA,"ADMA BIOLOGICS, INC.",custom,False,0,0,0.0,8.61,14.35,4.42,30.78,6.71,0.31,5.13,4M,—
+CLSK,"CleanSpark, Inc.",greenblatt,False,2,3,66.7,12.62,—,1.84,16.76,4.18,0.46,—,15M,—
+CLSK,"CleanSpark, Inc.",piotroski,False,5,9,55.6,12.62,—,1.84,16.76,4.18,0.46,—,15M,—
+CLSK,"CleanSpark, Inc.",buffett,False,3,6,50.0,12.62,—,1.84,16.76,4.18,0.46,—,15M,—
+CLSK,"CleanSpark, Inc.",lynch,False,2,4,50.0,12.62,—,1.84,16.76,4.18,0.46,—,15M,—
+CLSK,"CleanSpark, Inc.",netnet,False,2,4,50.0,12.62,—,1.84,16.76,4.18,0.46,—,15M,—
+CLSK,"CleanSpark, Inc.",graham,False,4,9,44.4,12.62,—,1.84,16.76,4.18,0.46,—,15M,—
+CLSK,"CleanSpark, Inc.",custom,False,0,0,0.0,12.62,—,1.84,16.76,4.18,0.46,—,15M,—
+REFI,"CHICAGO ATLANTIC REAL ESTATE FINANCE, INC.",graham,False,6,9,66.7,10.93,6.51,0.76,11.70,—,0.38,23.30,"243,527",—
+REFI,"CHICAGO ATLANTIC REAL ESTATE FINANCE, INC.",greenblatt,False,2,3,66.7,10.93,6.51,0.76,11.70,—,0.38,23.30,"243,527",—
+REFI,"CHICAGO ATLANTIC REAL ESTATE FINANCE, INC.",buffett,False,2,6,33.3,10.93,6.51,0.76,11.70,—,0.38,23.30,"243,527",—
