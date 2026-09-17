@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-17 06:59 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-17 12:22 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **24** strategy matches passed.
+Screened **75** companies · **29** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| TMDX | TransMedics Group, Inc. | piotroski | ✅ | 78% | 87.56 | 17.98 | 7.50 | 40.22 | 7.14 | 1.26 | 464,675 | — |
-| ANNAW | AleAnna, Inc. | piotroski | ✅ | 78% | 0.29 | 7.25 | 0.20 | 4.91 | 1.93 | 0.73 | 68,820 | — |
-| BELFA | BEL FUSE INC /NJ | piotroski | ✅ | 89% | 192 | — | — | 14.46 | 3.02 | 0.98 | 97,342 | — |
-| HBANP | Huntington Bancshares Incorp | lynch | ✅ | 75% | 16.81 | 12.09 | 1.04 | 9.08 | — | 8.25 | 168,966 | — |
-| PRDO | PERDOCEO EDUCATION CORP | piotroski | ✅ | 89% | 33.27 | 13.75 | 2.26 | 16.45 | 5.06 | — | 805,151 | — |
-| ABG | ASBURY AUTOMOTIVE GROUP, INC | piotroski | ✅ | 78% | 195 | 7.77 | 0.98 | 12.64 | 0.95 | — | 269,131 | — |
-| ABG | ASBURY AUTOMOTIVE GROUP, INC | lynch | ✅ | 75% | 195 | 7.77 | 0.98 | 12.64 | 0.95 | — | 269,131 | — |
-| HOG | Harley-Davidson, Inc. | graham | ✅ | 100% | 26.84 | 9.65 | 1.04 | 10.79 | 2.10 | — | 2M | — |
-| HOG | Harley-Davidson, Inc. | piotroski | ✅ | 89% | 26.84 | 9.65 | 1.04 | 10.79 | 2.10 | — | 2M | — |
-| PCTY | PAYLOCITY HOLDING CORPORATIO | piotroski | ✅ | 89% | 147 | 29.94 | 6.61 | 22.08 | 1.09 | 3.00 | 590,199 | — |
-| PCTY | PAYLOCITY HOLDING CORPORATIO | lynch | ✅ | 75% | 147 | 29.94 | 6.61 | 22.08 | 1.09 | 3.00 | 590,199 | — |
-| BYND | BEYOND MEAT, INC. | greenblatt | ✅ | 100% | 10.95 | — | — | -21,968 | 4.56 | — | 2M | — |
-| TRN | TRINITY INDUSTRIES INC | greenblatt | ✅ | 100% | 28.33 | 9.29 | 2.18 | 23.50 | — | 6.76 | 580,948 | — |
-| TRN | TRINITY INDUSTRIES INC | piotroski | ✅ | 78% | 28.33 | 9.29 | 2.18 | 23.50 | — | 6.76 | 580,948 | — |
-| BCPC | Balchem Corporation | piotroski | ✅ | 100% | 168 | 35.28 | 4.35 | 12.31 | 2.07 | 0.34 | 240,119 | — |
-| HMN | HORACE MANN EDUCATORS CORPOR | piotroski | ✅ | 78% | 49.37 | 12.66 | 1.39 | 10.93 | — | 9.30 | 450,266 | — |
-| MAGN | Magnera Corporation | piotroski | ✅ | 78% | 11.64 | — | 0.39 | -14.94 | 2.37 | 2.75 | 240,002 | — |
-| RRX | REGAL REXNORD CORP | piotroski | ✅ | 78% | 149 | 35.52 | 1.45 | 4.08 | 2.15 | — | 1M | — |
-| MSGS | MADISON SQUARE GARDEN SPORTS | piotroski | ✅ | 100% | 394 | 1,231 | — | -2.95 | 0.50 | -6.84 | 299,491 | — |
-| WRBY | Warby Parker Inc. | piotroski | ✅ | 78% | 23.55 | 2,355 | 8.01 | 0.45 | 2.35 | 0.96 | 3M | — |
-| NEOG | Neogen Corporation | piotroski | ✅ | 89% | 12.55 | — | 1.30 | -0.38 | 3.82 | 0.60 | 3M | — |
-| BNED | BARNES & NOBLE EDUCATION, IN | piotroski | ✅ | 89% | 10.47 | 21.37 | 1.23 | 5.73 | 1.71 | 1.51 | 252,819 | — |
-| CALX | Calix, Inc | piotroski | ✅ | 78% | 35.44 | 136 | 2.86 | 2.08 | 4.24 | 0.23 | 891,923 | — |
-| CTRI | Centuri Holdings, Inc. | piotroski | ✅ | 78% | 19.16 | 76.64 | 1.98 | 2.57 | 1.78 | 1.75 | 1M | — |
-| TMDX | TransMedics Group, Inc. | greenblatt | ▫️ | 67% | 87.56 | 17.98 | 7.50 | 40.22 | 7.14 | 1.26 | 464,675 | — |
-| TMDX | TransMedics Group, Inc. | netnet | ▫️ | 50% | 87.56 | 17.98 | 7.50 | 40.22 | 7.14 | 1.26 | 464,675 | — |
-| TMDX | TransMedics Group, Inc. | graham | ▫️ | 33% | 87.56 | 17.98 | 7.50 | 40.22 | 7.14 | 1.26 | 464,675 | — |
-| TMDX | TransMedics Group, Inc. | buffett | ▫️ | 33% | 87.56 | 17.98 | 7.50 | 40.22 | 7.14 | 1.26 | 464,675 | — |
-| TMDX | TransMedics Group, Inc. | lynch | ▫️ | 25% | 87.56 | 17.98 | 7.50 | 40.22 | 7.14 | 1.26 | 464,675 | — |
-| TMDX | TransMedics Group, Inc. | custom | ▫️ | 0% | 87.56 | 17.98 | 7.50 | 40.22 | 7.14 | 1.26 | 464,675 | — |
-| ANNAW | AleAnna, Inc. | greenblatt | ▫️ | 67% | 0.29 | 7.25 | 0.20 | 4.91 | 1.93 | 0.73 | 68,820 | — |
-| ANNAW | AleAnna, Inc. | graham | ▫️ | 56% | 0.29 | 7.25 | 0.20 | 4.91 | 1.93 | 0.73 | 68,820 | — |
-| ANNAW | AleAnna, Inc. | lynch | ▫️ | 50% | 0.29 | 7.25 | 0.20 | 4.91 | 1.93 | 0.73 | 68,820 | — |
-| ANNAW | AleAnna, Inc. | netnet | ▫️ | 25% | 0.29 | 7.25 | 0.20 | 4.91 | 1.93 | 0.73 | 68,820 | — |
-| ANNAW | AleAnna, Inc. | buffett | ▫️ | 17% | 0.29 | 7.25 | 0.20 | 4.91 | 1.93 | 0.73 | 68,820 | — |
-| ANNAW | AleAnna, Inc. | custom | ▫️ | 0% | 0.29 | 7.25 | 0.20 | 4.91 | 1.93 | 0.73 | 68,820 | — |
-| BELFA | BEL FUSE INC /NJ | graham | ▫️ | 56% | 192 | — | — | 14.46 | 3.02 | 0.98 | 97,342 | — |
-| BELFA | BEL FUSE INC /NJ | lynch | ▫️ | 50% | 192 | — | — | 14.46 | 3.02 | 0.98 | 97,342 | — |
-| BELFA | BEL FUSE INC /NJ | buffett | ▫️ | 33% | 192 | — | — | 14.46 | 3.02 | 0.98 | 97,342 | — |
-| BELFA | BEL FUSE INC /NJ | greenblatt | ▫️ | 33% | 192 | — | — | 14.46 | 3.02 | 0.98 | 97,342 | — |
-| BELFA | BEL FUSE INC /NJ | netnet | ▫️ | 25% | 192 | — | — | 14.46 | 3.02 | 0.98 | 97,342 | — |
-| BELFA | BEL FUSE INC /NJ | custom | ▫️ | 0% | 192 | — | — | 14.46 | 3.02 | 0.98 | 97,342 | — |
-| HBANP | Huntington Bancshares Incorp | graham | ▫️ | 78% | 16.81 | 12.09 | 1.04 | 9.08 | — | 8.25 | 168,966 | — |
-| HBANP | Huntington Bancshares Incorp | piotroski | ▫️ | 67% | 16.81 | 12.09 | 1.04 | 9.08 | — | 8.25 | 168,966 | — |
-| HBANP | Huntington Bancshares Incorp | greenblatt | ▫️ | 67% | 16.81 | 12.09 | 1.04 | 9.08 | — | 8.25 | 168,966 | — |
-| HBANP | Huntington Bancshares Incorp | buffett | ▫️ | 50% | 16.81 | 12.09 | 1.04 | 9.08 | — | 8.25 | 168,966 | — |
-| HBANP | Huntington Bancshares Incorp | netnet | ▫️ | 25% | 16.81 | 12.09 | 1.04 | 9.08 | — | 8.25 | 168,966 | — |
-| HBANP | Huntington Bancshares Incorp | custom | ▫️ | 0% | 16.81 | 12.09 | 1.04 | 9.08 | — | 8.25 | 168,966 | — |
-| WT | WisdomTree, Inc. | buffett | ▫️ | 67% | 22.26 | 29.68 | 7.80 | 26.38 | 1.75 | 2.66 | 6M | — |
-| WT | WisdomTree, Inc. | piotroski | ▫️ | 67% | 22.26 | 29.68 | 7.80 | 26.38 | 1.75 | 2.66 | 6M | — |
+| VIXM | PROSHARES TRUST II | greenblatt | ✅ | 100% | 13.27 | 0.96 | 0.29 | 29.91 | — | 0.06 | 304,989 | — |
+| GOOGM | Alphabet Inc. | graham | ✅ | 100% | 48.66 | 4.50 | 1.43 | 31.83 | 2.01 | 0.43 | 2M | — |
+| GOOGM | Alphabet Inc. | buffett | ✅ | 100% | 48.66 | 4.50 | 1.43 | 31.83 | 2.01 | 0.43 | 2M | — |
+| GOOGM | Alphabet Inc. | greenblatt | ✅ | 100% | 48.66 | 4.50 | 1.43 | 31.83 | 2.01 | 0.43 | 2M | — |
+| GOOGM | Alphabet Inc. | lynch | ✅ | 100% | 48.66 | 4.50 | 1.43 | 31.83 | 2.01 | 0.43 | 2M | — |
+| SBC | SBC Medical Group Holdings I | lynch | ✅ | 75% | 4.48 | 8.96 | 1.86 | 20.54 | 3.78 | 0.47 | 150,363 | — |
+| WING | WINGSTOP INC. | lynch | ✅ | 100% | 101 | 16.27 | — | -23.65 | 3.26 | -1.94 | 2M | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | piotroski | ✅ | 78% | 76.31 | 15.02 | 2.07 | 13.75 | 10.06 | 0.12 | 734,859 | — |
+| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 113 | 21.50 | 4.11 | 19.12 | 2.99 | — | 187,310 | — |
+| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 113 | 21.50 | 4.11 | 19.12 | 2.99 | — | 187,310 | — |
+| TREE | LendingTree, Inc. | greenblatt | ✅ | 100% | 26.58 | 2.47 | 1.30 | 52.76 | 1.67 | 1.98 | 282,784 | — |
+| AES | THE AES CORPORATION | greenblatt | ✅ | 100% | 14.81 | 11.75 | 2.60 | 22.40 | 0.77 | — | 8M | — |
+| DUKU | Duke Energy CORP | piotroski | ✅ | 89% | 49.31 | 7.81 | 0.74 | 9.58 | 0.55 | — | 67,949 | — |
+| DUKU | Duke Energy CORP | lynch | ✅ | 75% | 49.31 | 7.81 | 0.74 | 9.58 | 0.55 | — | 67,949 | — |
+| SFM | Sprouts Farmers Market, Inc. | piotroski | ✅ | 78% | 71.06 | 13.38 | 5.00 | 37.32 | 0.93 | 1.96 | 2M | — |
+| DORM | Dorman Products, Inc. | piotroski | ✅ | 89% | 125 | 18.82 | 2.60 | 13.82 | 3.09 | — | 215,012 | — |
+| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 16.01 | 8.47 | 2.09 | 24.66 | 2.26 | 2.62 | 1M | — |
+| NJR | NEW JERSEY RESOURCES CORPORA | piotroski | ✅ | 78% | 53.50 | 16.07 | 2.25 | 14.03 | 0.73 | — | 782,973 | — |
+| AM | ANTERO MIDSTREAM CORPORATION | piotroski | ✅ | 78% | 21.16 | 24.60 | 5.17 | 20.95 | 3.41 | 1.98 | 2M | — |
+| AGCO | AGCO CORP /DE | piotroski | ✅ | 89% | 120 | 12.30 | 2.09 | 17.00 | 1.39 | 1.72 | 862,380 | — |
+| EMBC | EMBECTA CORP. | piotroski | ✅ | 78% | 5.13 | 3.17 | — | -14.66 | 2.41 | — | 718,227 | — |
+| FMNB | FARMERS NATIONAL BANC CORP / | piotroski | ✅ | 89% | 15.68 | 10.81 | 1.21 | 11.24 | — | 9.80 | 427,329 | — |
+| AIOT | POWERFLEET, INC. | piotroski | ✅ | 78% | 3.03 | — | 0.85 | -4.32 | 1.13 | 1.00 | 1M | — |
+| UE | URBAN EDGE PROPERTIES | piotroski | ✅ | 78% | 20.03 | 27.07 | 1.83 | 6.80 | — | 1.41 | 822,556 | — |
+| THO | THOR INDUSTRIES, INC. | piotroski | ✅ | 78% | 69.74 | 14.41 | 0.87 | 6.03 | 1.75 | — | 1M | — |
+| MCS | MARCUS CORP | piotroski | ✅ | 78% | 27.54 | 67.88 | 1.88 | 2.77 | 0.40 | — | 190,800 | — |
+| FUL | FULLER H B CO | piotroski | ✅ | 78% | 50.83 | 18.48 | 1.40 | 7.59 | 1.70 | 1.59 | 612,349 | — |
+| CALX | Calix, Inc | piotroski | ✅ | 78% | 35.44 | 136 | 2.86 | 2.08 | 4.24 | 0.23 | 891,925 | — |
+| AVNW | Aviat Networks, Inc. | piotroski | ✅ | 78% | 20.18 | 106 | 0.98 | 0.95 | 1.97 | 1.24 | 141,829 | — |
+| VIXM | PROSHARES TRUST II | lynch | ▫️ | 50% | 13.27 | 0.96 | 0.29 | 29.91 | — | 0.06 | 304,989 | — |
+| VIXM | PROSHARES TRUST II | graham | ▫️ | 44% | 13.27 | 0.96 | 0.29 | 29.91 | — | 0.06 | 304,989 | — |
+| VIXM | PROSHARES TRUST II | buffett | ▫️ | 33% | 13.27 | 0.96 | 0.29 | 29.91 | — | 0.06 | 304,989 | — |
+| VIXM | PROSHARES TRUST II | piotroski | ▫️ | 33% | 13.27 | 0.96 | 0.29 | 29.91 | — | 0.06 | 304,989 | — |
+| VIXM | PROSHARES TRUST II | netnet | ▫️ | 25% | 13.27 | 0.96 | 0.29 | 29.91 | — | 0.06 | 304,989 | — |
+| VIXM | PROSHARES TRUST II | custom | ▫️ | 0% | 13.27 | 0.96 | 0.29 | 29.91 | — | 0.06 | 304,989 | — |
+| GOOGM | Alphabet Inc. | piotroski | ▫️ | 67% | 48.66 | 4.50 | 1.43 | 31.83 | 2.01 | 0.43 | 2M | — |
+| GOOGM | Alphabet Inc. | netnet | ▫️ | 50% | 48.66 | 4.50 | 1.43 | 31.83 | 2.01 | 0.43 | 2M | — |
+| GOOGM | Alphabet Inc. | custom | ▫️ | 0% | 48.66 | 4.50 | 1.43 | 31.83 | 2.01 | 0.43 | 2M | — |
+| SBC | SBC Medical Group Holdings I | graham | ▫️ | 67% | 4.48 | 8.96 | 1.86 | 20.54 | 3.78 | 0.47 | 150,363 | — |
+| SBC | SBC Medical Group Holdings I | buffett | ▫️ | 67% | 4.48 | 8.96 | 1.86 | 20.54 | 3.78 | 0.47 | 150,363 | — |
+| SBC | SBC Medical Group Holdings I | greenblatt | ▫️ | 67% | 4.48 | 8.96 | 1.86 | 20.54 | 3.78 | 0.47 | 150,363 | — |
+| SBC | SBC Medical Group Holdings I | netnet | ▫️ | 50% | 4.48 | 8.96 | 1.86 | 20.54 | 3.78 | 0.47 | 150,363 | — |
+| SBC | SBC Medical Group Holdings I | piotroski | ▫️ | 44% | 4.48 | 8.96 | 1.86 | 20.54 | 3.78 | 0.47 | 150,363 | — |
+| SBC | SBC Medical Group Holdings I | custom | ▫️ | 0% | 4.48 | 8.96 | 1.86 | 20.54 | 3.78 | 0.47 | 150,363 | — |
+| WING | WINGSTOP INC. | buffett | ▫️ | 67% | 101 | 16.27 | — | -23.65 | 3.26 | -1.94 | 2M | — |
+| WING | WINGSTOP INC. | piotroski | ▫️ | 67% | 101 | 16.27 | — | -23.65 | 3.26 | -1.94 | 2M | — |
+| WING | WINGSTOP INC. | greenblatt | ▫️ | 67% | 101 | 16.27 | — | -23.65 | 3.26 | -1.94 | 2M | — |
+| WING | WINGSTOP INC. | graham | ▫️ | 33% | 101 | 16.27 | — | -23.65 | 3.26 | -1.94 | 2M | — |
+| WING | WINGSTOP INC. | netnet | ▫️ | 25% | 101 | 16.27 | — | -23.65 | 3.26 | -1.94 | 2M | — |
+| WING | WINGSTOP INC. | custom | ▫️ | 0% | 101 | 16.27 | — | -23.65 | 3.26 | -1.94 | 2M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.

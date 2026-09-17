@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-TMDX,"TransMedics Group, Inc.",piotroski,True,7,9,77.8,87.56,17.98,7.50,40.22,7.14,1.26,35.76,"464,675",—
-ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.29,7.25,0.20,4.91,1.93,0.73,1.14,"68,820",—
-BELFA,BEL FUSE INC /NJ,piotroski,True,8,9,88.9,192,—,—,14.46,3.02,0.98,—,"97,342",—
-HBANP,Huntington Bancshares Incorporated,lynch,True,3,4,75.0,16.81,12.09,1.04,9.08,—,8.25,22.49,"168,966",—
-PRDO,PERDOCEO EDUCATION CORP,piotroski,True,8,9,88.9,33.27,13.75,2.26,16.45,5.06,—,28.29,"805,151",—
-ABG,"ASBURY AUTOMOTIVE GROUP, INC.",piotroski,True,7,9,77.8,195,7.77,0.98,12.64,0.95,—,335,"269,131",—
-ABG,"ASBURY AUTOMOTIVE GROUP, INC.",lynch,True,3,4,75.0,195,7.77,0.98,12.64,0.95,—,335,"269,131",—
-HOG,"Harley-Davidson, Inc.",graham,True,9,9,100.0,26.84,9.65,1.04,10.79,2.10,—,40.25,2M,—
-HOG,"Harley-Davidson, Inc.",piotroski,True,8,9,88.9,26.84,9.65,1.04,10.79,2.10,—,40.25,2M,—
-PCTY,PAYLOCITY HOLDING CORPORATION,piotroski,True,8,9,88.9,147,29.94,6.61,22.08,1.09,3.00,49.69,"590,199",—
-PCTY,PAYLOCITY HOLDING CORPORATION,lynch,True,3,4,75.0,147,29.94,6.61,22.08,1.09,3.00,49.69,"590,199",—
-BYND,"BEYOND MEAT, INC.",greenblatt,True,3,3,100.0,10.95,—,—,"-21,968",4.56,—,—,2M,—
-TRN,TRINITY INDUSTRIES INC,greenblatt,True,3,3,100.0,28.33,9.29,2.18,23.50,—,6.76,29.86,"580,948",—
-TRN,TRINITY INDUSTRIES INC,piotroski,True,7,9,77.8,28.33,9.29,2.18,23.50,—,6.76,29.86,"580,948",—
-BCPC,Balchem Corporation,piotroski,True,9,9,100.0,168,35.28,4.35,12.31,2.07,0.34,64.20,"240,119",—
-HMN,HORACE MANN EDUCATORS CORPORATION,piotroski,True,7,9,77.8,49.37,12.66,1.39,10.93,—,9.30,55.92,"450,266",—
-MAGN,Magnera Corporation,piotroski,True,7,9,77.8,11.64,—,0.39,-14.94,2.37,2.75,—,"240,002",—
-RRX,REGAL REXNORD CORP,piotroski,True,7,9,77.8,149,35.52,1.45,4.08,2.15,—,98.55,1M,—
-MSGS,MADISON SQUARE GARDEN SPORTS CORP.,piotroski,True,9,9,100.0,394,"1,231",—,-2.95,0.50,-6.84,—,"299,491",—
-WRBY,Warby Parker Inc.,piotroski,True,7,9,77.8,23.55,"2,355",8.01,0.45,2.35,0.96,0.81,3M,—
-NEOG,Neogen Corporation,piotroski,True,8,9,88.9,12.55,—,1.30,-0.38,3.82,0.60,—,3M,—
-BNED,"BARNES & NOBLE EDUCATION, INC.",piotroski,True,8,9,88.9,10.47,21.37,1.23,5.73,1.71,1.51,9.68,"252,819",—
-CALX,"Calix, Inc",piotroski,True,7,9,77.8,35.44,136,2.86,2.08,4.24,0.23,8.52,"891,923",—
-CTRI,"Centuri Holdings, Inc.",piotroski,True,7,9,77.8,19.16,76.64,1.98,2.57,1.78,1.75,7.37,1M,—
-TMDX,"TransMedics Group, Inc.",greenblatt,False,2,3,66.7,87.56,17.98,7.50,40.22,7.14,1.26,35.76,"464,675",—
-TMDX,"TransMedics Group, Inc.",netnet,False,2,4,50.0,87.56,17.98,7.50,40.22,7.14,1.26,35.76,"464,675",—
-TMDX,"TransMedics Group, Inc.",graham,False,3,9,33.3,87.56,17.98,7.50,40.22,7.14,1.26,35.76,"464,675",—
-TMDX,"TransMedics Group, Inc.",buffett,False,2,6,33.3,87.56,17.98,7.50,40.22,7.14,1.26,35.76,"464,675",—
-TMDX,"TransMedics Group, Inc.",lynch,False,1,4,25.0,87.56,17.98,7.50,40.22,7.14,1.26,35.76,"464,675",—
-TMDX,"TransMedics Group, Inc.",custom,False,0,0,0.0,87.56,17.98,7.50,40.22,7.14,1.26,35.76,"464,675",—
-ANNAW,"AleAnna, Inc.",greenblatt,False,2,3,66.7,0.29,7.25,0.20,4.91,1.93,0.73,1.14,"68,820",—
-ANNAW,"AleAnna, Inc.",graham,False,5,9,55.6,0.29,7.25,0.20,4.91,1.93,0.73,1.14,"68,820",—
-ANNAW,"AleAnna, Inc.",lynch,False,2,4,50.0,0.29,7.25,0.20,4.91,1.93,0.73,1.14,"68,820",—
-ANNAW,"AleAnna, Inc.",netnet,False,1,4,25.0,0.29,7.25,0.20,4.91,1.93,0.73,1.14,"68,820",—
-ANNAW,"AleAnna, Inc.",buffett,False,1,6,16.7,0.29,7.25,0.20,4.91,1.93,0.73,1.14,"68,820",—
-ANNAW,"AleAnna, Inc.",custom,False,0,0,0.0,0.29,7.25,0.20,4.91,1.93,0.73,1.14,"68,820",—
-BELFA,BEL FUSE INC /NJ,graham,False,5,9,55.6,192,—,—,14.46,3.02,0.98,—,"97,342",—
-BELFA,BEL FUSE INC /NJ,lynch,False,2,4,50.0,192,—,—,14.46,3.02,0.98,—,"97,342",—
-BELFA,BEL FUSE INC /NJ,buffett,False,2,6,33.3,192,—,—,14.46,3.02,0.98,—,"97,342",—
-BELFA,BEL FUSE INC /NJ,greenblatt,False,1,3,33.3,192,—,—,14.46,3.02,0.98,—,"97,342",—
-BELFA,BEL FUSE INC /NJ,netnet,False,1,4,25.0,192,—,—,14.46,3.02,0.98,—,"97,342",—
-BELFA,BEL FUSE INC /NJ,custom,False,0,0,0.0,192,—,—,14.46,3.02,0.98,—,"97,342",—
-HBANP,Huntington Bancshares Incorporated,graham,False,7,9,77.8,16.81,12.09,1.04,9.08,—,8.25,22.49,"168,966",—
-HBANP,Huntington Bancshares Incorporated,piotroski,False,6,9,66.7,16.81,12.09,1.04,9.08,—,8.25,22.49,"168,966",—
-HBANP,Huntington Bancshares Incorporated,greenblatt,False,2,3,66.7,16.81,12.09,1.04,9.08,—,8.25,22.49,"168,966",—
-HBANP,Huntington Bancshares Incorporated,buffett,False,3,6,50.0,16.81,12.09,1.04,9.08,—,8.25,22.49,"168,966",—
-HBANP,Huntington Bancshares Incorporated,netnet,False,1,4,25.0,16.81,12.09,1.04,9.08,—,8.25,22.49,"168,966",—
-HBANP,Huntington Bancshares Incorporated,custom,False,0,0,0.0,16.81,12.09,1.04,9.08,—,8.25,22.49,"168,966",—
-WT,"WisdomTree, Inc.",buffett,False,4,6,66.7,22.26,29.68,7.80,26.38,1.75,2.66,6.94,6M,—
-WT,"WisdomTree, Inc.",piotroski,False,6,9,66.7,22.26,29.68,7.80,26.38,1.75,2.66,6.94,6M,—
+VIXM,PROSHARES TRUST II,greenblatt,True,3,3,100.0,13.27,0.96,0.29,29.91,—,0.06,120,"304,989",—
+GOOGM,Alphabet Inc.,graham,True,9,9,100.0,48.66,4.50,1.43,31.83,2.01,0.43,90.88,2M,—
+GOOGM,Alphabet Inc.,buffett,True,6,6,100.0,48.66,4.50,1.43,31.83,2.01,0.43,90.88,2M,—
+GOOGM,Alphabet Inc.,greenblatt,True,3,3,100.0,48.66,4.50,1.43,31.83,2.01,0.43,90.88,2M,—
+GOOGM,Alphabet Inc.,lynch,True,4,4,100.0,48.66,4.50,1.43,31.83,2.01,0.43,90.88,2M,—
+SBC,SBC Medical Group Holdings Incorporated,lynch,True,3,4,75.0,4.48,8.96,1.86,20.54,3.78,0.47,5.21,"150,363",—
+WING,WINGSTOP INC.,lynch,True,4,4,100.0,101,16.27,—,-23.65,3.26,-1.94,—,2M,—
+OLED,UNIVERSAL DISPLAY CORPORATION,piotroski,True,7,9,77.8,76.31,15.02,2.07,13.75,10.06,0.12,64.99,"734,859",—
+IPAR,"INTERPARFUMS, INC.",buffett,True,5,6,83.3,113,21.50,4.11,19.12,2.99,—,56.84,"187,310",—
+IPAR,"INTERPARFUMS, INC.",lynch,True,3,4,75.0,113,21.50,4.11,19.12,2.99,—,56.84,"187,310",—
+TREE,"LendingTree, Inc.",greenblatt,True,3,3,100.0,26.58,2.47,1.30,52.76,1.67,1.98,70.33,"282,784",—
+AES,THE AES CORPORATION,greenblatt,True,3,3,100.0,14.81,11.75,2.60,22.40,0.77,—,12.70,8M,—
+DUKU,Duke Energy CORP,piotroski,True,8,9,88.9,49.31,7.81,0.74,9.58,0.55,—,97.33,"67,949",—
+DUKU,Duke Energy CORP,lynch,True,3,4,75.0,49.31,7.81,0.74,9.58,0.55,—,97.33,"67,949",—
+SFM,"Sprouts Farmers Market, Inc.",piotroski,True,7,9,77.8,71.06,13.38,5.00,37.32,0.93,1.96,41.21,2M,—
+DORM,"Dorman Products, Inc.",piotroski,True,8,9,88.9,125,18.82,2.60,13.82,3.09,—,84.71,"215,012",—
+SBH,"SALLY BEAUTY HOLDINGS, INC.",piotroski,True,8,9,88.9,16.01,8.47,2.09,24.66,2.26,2.62,18.04,1M,—
+NJR,NEW JERSEY RESOURCES CORPORATION,piotroski,True,7,9,77.8,53.50,16.07,2.25,14.03,0.73,—,42.17,"782,973",—
+AM,ANTERO MIDSTREAM CORPORATION,piotroski,True,7,9,77.8,21.16,24.60,5.17,20.95,3.41,1.98,8.90,2M,—
+AGCO,AGCO CORP /DE,piotroski,True,8,9,88.9,120,12.30,2.09,17.00,1.39,1.72,112,"862,380",—
+EMBC,EMBECTA CORP.,piotroski,True,7,9,77.8,5.13,3.17,—,-14.66,2.41,—,—,"718,227",—
+FMNB,FARMERS NATIONAL BANC CORP /OH/,piotroski,True,8,9,88.9,15.68,10.81,1.21,11.24,—,9.80,20.52,"427,329",—
+AIOT,"POWERFLEET, INC.",piotroski,True,7,9,77.8,3.03,—,0.85,-4.32,1.13,1.00,—,1M,—
+UE,URBAN EDGE PROPERTIES,piotroski,True,7,9,77.8,20.03,27.07,1.83,6.80,—,1.41,13.49,"822,556",—
+THO,"THOR INDUSTRIES, INC.",piotroski,True,7,9,77.8,69.74,14.41,0.87,6.03,1.75,—,93.52,1M,—
+MCS,MARCUS CORP,piotroski,True,7,9,77.8,27.54,67.88,1.88,2.77,0.40,—,11.55,"190,800",—
+FUL,FULLER H B CO,piotroski,True,7,9,77.8,50.83,18.48,1.40,7.59,1.70,1.59,47.32,"612,349",—
+CALX,"Calix, Inc",piotroski,True,7,9,77.8,35.44,136,2.86,2.08,4.24,0.23,8.52,"891,925",—
+AVNW,"Aviat Networks, Inc.",piotroski,True,7,9,77.8,20.18,106,0.98,0.95,1.97,1.24,9.37,"141,829",—
+VIXM,PROSHARES TRUST II,lynch,False,2,4,50.0,13.27,0.96,0.29,29.91,—,0.06,120,"304,989",—
+VIXM,PROSHARES TRUST II,graham,False,4,9,44.4,13.27,0.96,0.29,29.91,—,0.06,120,"304,989",—
+VIXM,PROSHARES TRUST II,buffett,False,2,6,33.3,13.27,0.96,0.29,29.91,—,0.06,120,"304,989",—
+VIXM,PROSHARES TRUST II,piotroski,False,3,9,33.3,13.27,0.96,0.29,29.91,—,0.06,120,"304,989",—
+VIXM,PROSHARES TRUST II,netnet,False,1,4,25.0,13.27,0.96,0.29,29.91,—,0.06,120,"304,989",—
+VIXM,PROSHARES TRUST II,custom,False,0,0,0.0,13.27,0.96,0.29,29.91,—,0.06,120,"304,989",—
+GOOGM,Alphabet Inc.,piotroski,False,6,9,66.7,48.66,4.50,1.43,31.83,2.01,0.43,90.88,2M,—
+GOOGM,Alphabet Inc.,netnet,False,2,4,50.0,48.66,4.50,1.43,31.83,2.01,0.43,90.88,2M,—
+GOOGM,Alphabet Inc.,custom,False,0,0,0.0,48.66,4.50,1.43,31.83,2.01,0.43,90.88,2M,—
+SBC,SBC Medical Group Holdings Incorporated,graham,False,6,9,66.7,4.48,8.96,1.86,20.54,3.78,0.47,5.21,"150,363",—
+SBC,SBC Medical Group Holdings Incorporated,buffett,False,4,6,66.7,4.48,8.96,1.86,20.54,3.78,0.47,5.21,"150,363",—
+SBC,SBC Medical Group Holdings Incorporated,greenblatt,False,2,3,66.7,4.48,8.96,1.86,20.54,3.78,0.47,5.21,"150,363",—
+SBC,SBC Medical Group Holdings Incorporated,netnet,False,2,4,50.0,4.48,8.96,1.86,20.54,3.78,0.47,5.21,"150,363",—
+SBC,SBC Medical Group Holdings Incorporated,piotroski,False,4,9,44.4,4.48,8.96,1.86,20.54,3.78,0.47,5.21,"150,363",—
+SBC,SBC Medical Group Holdings Incorporated,custom,False,0,0,0.0,4.48,8.96,1.86,20.54,3.78,0.47,5.21,"150,363",—
+WING,WINGSTOP INC.,buffett,False,4,6,66.7,101,16.27,—,-23.65,3.26,-1.94,—,2M,—
+WING,WINGSTOP INC.,piotroski,False,6,9,66.7,101,16.27,—,-23.65,3.26,-1.94,—,2M,—
+WING,WINGSTOP INC.,greenblatt,False,2,3,66.7,101,16.27,—,-23.65,3.26,-1.94,—,2M,—
+WING,WINGSTOP INC.,graham,False,3,9,33.3,101,16.27,—,-23.65,3.26,-1.94,—,2M,—
+WING,WINGSTOP INC.,netnet,False,1,4,25.0,101,16.27,—,-23.65,3.26,-1.94,—,2M,—
+WING,WINGSTOP INC.,custom,False,0,0,0.0,101,16.27,—,-23.65,3.26,-1.94,—,2M,—
