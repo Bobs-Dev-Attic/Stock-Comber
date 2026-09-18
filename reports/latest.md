@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-18 14:05 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-18 17:33 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **36** strategy matches passed.
+Screened **75** companies · **33** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| BOIL | PROSHARES TRUST II | greenblatt | ✅ | 100% | 20.18 | 1.46 | 0.44 | 29.91 | — | 0.06 | 1M | — |
-| SVXY | PROSHARES TRUST II | greenblatt | ✅ | 100% | 63.08 | 4.56 | 1.36 | 29.91 | — | 0.06 | 116,726 | — |
-| GOOGN | Alphabet Inc. | graham | ✅ | 100% | 48.89 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 387,978 | — |
-| GOOGN | Alphabet Inc. | buffett | ✅ | 100% | 48.89 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 387,978 | — |
-| GOOGN | Alphabet Inc. | greenblatt | ✅ | 100% | 48.89 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 387,978 | — |
-| GOOGN | Alphabet Inc. | lynch | ✅ | 100% | 48.89 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 387,978 | — |
-| SON | Sonoco Products Company | piotroski | ✅ | 89% | 48.82 | 4.85 | 1.35 | 27.75 | 1.05 | 2.08 | 1M | 6.04 |
-| SON | Sonoco Products Company | lynch | ✅ | 75% | 48.82 | 4.85 | 1.35 | 27.75 | 1.05 | 2.08 | 1M | 6.04 |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | piotroski | ✅ | 100% | 160 | 22.58 | 7.74 | 34.27 | 1.46 | — | 323,293 | -42.89 |
-| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 111 | 21.13 | 4.04 | 19.12 | 2.99 | — | 176,160 | 3.62 |
-| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 111 | 21.13 | 4.04 | 19.12 | 2.99 | — | 176,160 | 3.62 |
-| EXLS | EXLSERVICE HOLDINGS, INC. | piotroski | ✅ | 89% | 34.90 | 22.66 | 6.21 | 27.50 | 2.56 | 0.87 | 169,722 | — |
-| EXLS | EXLSERVICE HOLDINGS, INC. | buffett | ✅ | 83% | 34.90 | 22.66 | 6.21 | 27.50 | 2.56 | 0.87 | 169,722 | — |
-| EXLS | EXLSERVICE HOLDINGS, INC. | lynch | ✅ | 75% | 34.90 | 22.66 | 6.21 | 27.50 | 2.56 | 0.87 | 169,722 | — |
-| ANNAW | AleAnna, Inc. | piotroski | ✅ | 78% | 0.27 | 6.75 | 0.19 | 4.91 | 1.93 | 0.73 | 1,230 | 29.07 |
-| AES | THE AES CORPORATION | greenblatt | ✅ | 100% | 14.85 | 11.79 | 2.61 | 22.40 | 0.77 | — | 7M | 18.38 |
-| DUKU | Duke Energy CORP | piotroski | ✅ | 89% | 49.00 | 7.77 | 0.73 | 9.58 | 0.55 | — | 2,076 | — |
-| DUKU | Duke Energy CORP | lynch | ✅ | 75% | 49.00 | 7.77 | 0.73 | 9.58 | 0.55 | — | 2,076 | — |
-| FTDR | Frontdoor, Inc. | piotroski | ✅ | 89% | 79.50 | 23.25 | 24.47 | 105 | 1.55 | — | 490,403 | 13.53 |
-| FTDR | Frontdoor, Inc. | buffett | ✅ | 83% | 79.50 | 23.25 | 24.47 | 105 | 1.55 | — | 490,403 | 13.53 |
-| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 15.81 | 8.37 | 2.07 | 24.66 | 2.26 | 2.62 | 976,396 | -26.63 |
-| MEDP | Medpace Holdings, Inc. | buffett | ✅ | 83% | 615 | 40.26 | 39.57 | 98.27 | 0.74 | 3.30 | 226,115 | 17.52 |
-| MEDP | Medpace Holdings, Inc. | piotroski | ✅ | 78% | 615 | 40.26 | 39.57 | 98.27 | 0.74 | 3.30 | 226,115 | 17.52 |
-| SSB | SOUTHSTATE BANK CORP | lynch | ✅ | 75% | 103 | 13.08 | 1.15 | 8.82 | — | 6.42 | 124,193 | — |
-| EGP | EASTGROUP PROPERTIES, INC. | piotroski | ✅ | 78% | 201 | 41.21 | 3.03 | 7.36 | — | 0.55 | 90,691 | — |
-| EGP | EASTGROUP PROPERTIES, INC. | lynch | ✅ | 75% | 201 | 41.21 | 3.03 | 7.36 | — | 0.55 | 90,691 | — |
-| AGCO | AGCO CORP /DE | piotroski | ✅ | 89% | 122 | 12.47 | 2.12 | 17.00 | 1.39 | 1.72 | 2M | -11.57 |
-| GRC | The Gorman-Rupp Company | piotroski | ✅ | 89% | 72.10 | 35.69 | 4.57 | 12.78 | 2.37 | 1.07 | 242,090 | -5.19 |
-| FIVN | Five9, Inc. | piotroski | ✅ | 89% | 33.12 | 73.61 | 3.71 | 5.02 | 4.51 | 1.28 | 729,539 | — |
-| FUL | FULLER H B CO | piotroski | ✅ | 78% | 50.41 | 18.33 | 1.39 | 7.59 | 1.70 | 1.59 | 487,183 | -7.24 |
-| SENS | Senseonics Holdings, Inc. | piotroski | ✅ | 78% | 9.43 | — | 6.45 | -113 | 4.83 | 1.07 | 990,860 | 73.91 |
-| MSGS | MADISON SQUARE GARDEN SPORTS | piotroski | ✅ | 100% | 395 | 1,233 | — | -2.95 | 0.50 | -6.84 | 389,866 | -7.07 |
-| FROG | JFrog Ltd. | piotroski | ✅ | 78% | 93.98 | — | 12.31 | -8.09 | 2.14 | 0.51 | 2M | 34.72 |
-| NEOG | Neogen Corporation | piotroski | ✅ | 89% | 12.83 | — | 1.33 | -0.38 | 3.82 | 0.60 | 4M | 15.21 |
-| BJRI | BJ’S RESTAURANTS, INC. | piotroski | ✅ | 78% | 59.08 | 27.35 | 3.65 | 13.33 | 0.40 | 1.77 | 32,654 | — |
-| CALX | Calix, Inc | piotroski | ✅ | 78% | 35.14 | 135 | 2.83 | 2.08 | 4.24 | 0.23 | 2M | -5.25 |
-| BOIL | PROSHARES TRUST II | lynch | ▫️ | 50% | 20.18 | 1.46 | 0.44 | 29.91 | — | 0.06 | 1M | — |
-| BOIL | PROSHARES TRUST II | graham | ▫️ | 44% | 20.18 | 1.46 | 0.44 | 29.91 | — | 0.06 | 1M | — |
-| BOIL | PROSHARES TRUST II | buffett | ▫️ | 33% | 20.18 | 1.46 | 0.44 | 29.91 | — | 0.06 | 1M | — |
-| BOIL | PROSHARES TRUST II | piotroski | ▫️ | 33% | 20.18 | 1.46 | 0.44 | 29.91 | — | 0.06 | 1M | — |
-| BOIL | PROSHARES TRUST II | netnet | ▫️ | 25% | 20.18 | 1.46 | 0.44 | 29.91 | — | 0.06 | 1M | — |
-| BOIL | PROSHARES TRUST II | custom | ▫️ | 0% | 20.18 | 1.46 | 0.44 | 29.91 | — | 0.06 | 1M | — |
-| SVXY | PROSHARES TRUST II | lynch | ▫️ | 50% | 63.08 | 4.56 | 1.36 | 29.91 | — | 0.06 | 116,726 | — |
-| SVXY | PROSHARES TRUST II | graham | ▫️ | 44% | 63.08 | 4.56 | 1.36 | 29.91 | — | 0.06 | 116,726 | — |
-| SVXY | PROSHARES TRUST II | buffett | ▫️ | 33% | 63.08 | 4.56 | 1.36 | 29.91 | — | 0.06 | 116,726 | — |
-| SVXY | PROSHARES TRUST II | piotroski | ▫️ | 33% | 63.08 | 4.56 | 1.36 | 29.91 | — | 0.06 | 116,726 | — |
-| SVXY | PROSHARES TRUST II | netnet | ▫️ | 25% | 63.08 | 4.56 | 1.36 | 29.91 | — | 0.06 | 116,726 | — |
-| SVXY | PROSHARES TRUST II | custom | ▫️ | 0% | 63.08 | 4.56 | 1.36 | 29.91 | — | 0.06 | 116,726 | — |
-| GOOGN | Alphabet Inc. | piotroski | ▫️ | 67% | 48.89 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 387,978 | — |
-| GOOGN | Alphabet Inc. | netnet | ▫️ | 50% | 48.89 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 387,978 | — |
+| GOOGN | Alphabet Inc. | graham | ✅ | 100% | 49.07 | 4.54 | 1.45 | 31.83 | 2.01 | 0.43 | 110,884 | — |
+| GOOGN | Alphabet Inc. | buffett | ✅ | 100% | 49.07 | 4.54 | 1.45 | 31.83 | 2.01 | 0.43 | 110,884 | — |
+| GOOGN | Alphabet Inc. | greenblatt | ✅ | 100% | 49.07 | 4.54 | 1.45 | 31.83 | 2.01 | 0.43 | 110,884 | — |
+| GOOGN | Alphabet Inc. | lynch | ✅ | 100% | 49.07 | 4.54 | 1.45 | 31.83 | 2.01 | 0.43 | 110,884 | — |
+| PLMR | Palomar Holdings, Inc. | piotroski | ✅ | 78% | 137 | 19.04 | 3.98 | 20.91 | — | 2.24 | 95,429 | — |
+| RILY | BRC Group Holdings, Inc. | greenblatt | ✅ | 100% | 5.94 | 0.61 | — | -179 | — | -10.65 | 151,803 | — |
+| RILY | BRC Group Holdings, Inc. | lynch | ✅ | 75% | 5.94 | 0.61 | — | -179 | — | -10.65 | 151,803 | — |
+| SKYW | SKYWEST INC | piotroski | ✅ | 89% | 96.59 | 9.33 | 1.46 | 15.60 | 0.65 | — | 113,442 | — |
+| ANNAW | AleAnna, Inc. | piotroski | ✅ | 78% | 0.27 | 6.75 | 0.19 | 4.91 | 1.93 | 0.73 | 1,230 | — |
+| BELFA | BEL FUSE INC /NJ | piotroski | ✅ | 89% | 195 | — | — | 14.46 | 3.02 | 0.98 | 23,700 | — |
+| MHO | M/I HOMES, INC. | lynch | ✅ | 75% | 141 | 9.58 | 1.22 | 12.73 | — | 0.51 | 165,275 | — |
+| HOG | Harley-Davidson, Inc. | graham | ✅ | 100% | 26.50 | 9.53 | 1.02 | 10.79 | 2.10 | — | 2M | — |
+| HOG | Harley-Davidson, Inc. | piotroski | ✅ | 89% | 26.50 | 9.53 | 1.02 | 10.79 | 2.10 | — | 2M | — |
+| ACEL | Accel Entertainment, Inc. | piotroski | ✅ | 78% | 11.32 | 18.88 | 3.63 | 19.09 | 2.61 | — | 140,999 | — |
+| PCTY | PAYLOCITY HOLDING CORPORATIO | piotroski | ✅ | 89% | 145 | 29.49 | 6.51 | 22.08 | 1.09 | 3.00 | 141,485 | — |
+| PCTY | PAYLOCITY HOLDING CORPORATIO | lynch | ✅ | 75% | 145 | 29.49 | 6.51 | 22.08 | 1.09 | 3.00 | 141,485 | — |
+| BYND | BEYOND MEAT, INC. | greenblatt | ✅ | 100% | 11.70 | — | — | -21,968 | 4.56 | — | 1M | — |
+| SHOE | Shoe Station Group, Inc. | graham | ✅ | 89% | 13.26 | 6.98 | 0.53 | 7.58 | 3.76 | 0.74 | 3M | — |
+| DRVN | Driven Brands Holdings Inc. | piotroski | ✅ | 78% | 12.23 | 14.39 | 2.61 | 18.27 | 0.75 | 4.42 | 280,989 | — |
+| HAFC | HANMI FINANCIAL CORPORATION | piotroski | ✅ | 89% | 32.23 | 12.84 | 1.22 | 9.55 | — | 8.88 | 215,101 | — |
+| AGCO | AGCO CORP /DE | piotroski | ✅ | 89% | 122 | 12.47 | 2.12 | 17.00 | 1.39 | 1.72 | 2M | — |
+| EXTR | EXTREME NETWORKS, INC. | piotroski | ✅ | 89% | 22.10 | 71.29 | 33.67 | 47.54 | 0.93 | — | 483,017 | — |
+| HLIO | HELIOS TECHNOLOGIES, INC. | piotroski | ✅ | 100% | 68.25 | 47.07 | 2.44 | 5.20 | 2.90 | 0.63 | 141,494 | — |
+| HLIO | HELIOS TECHNOLOGIES, INC. | lynch | ✅ | 75% | 68.25 | 47.07 | 2.44 | 5.20 | 2.90 | 0.63 | 141,494 | — |
+| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.50 | 20.43 | 0.80 | 3.99 | 9.18 | 0.34 | 179,234 | — |
+| FAF | FIRST AMERICAN FINANCIAL COR | piotroski | ✅ | 89% | 71.96 | 11.99 | 1.36 | 11.31 | — | 1.95 | 913,477 | — |
+| MCS | MARCUS CORP | piotroski | ✅ | 78% | 27.67 | 68.20 | 1.89 | 2.77 | 0.40 | — | 79,393 | — |
+| FET | FORUM ENERGY TECHNOLOGIES, I | piotroski | ✅ | 78% | 81.85 | — | 3.34 | -3.32 | 2.17 | 1.58 | 65,974 | — |
+| WRBY | Warby Parker Inc. | piotroski | ✅ | 78% | 24.18 | 2,418 | 8.23 | 0.45 | 2.35 | 0.96 | 2M | — |
+| SPHR | SPHERE ENTERTAINMENT CO. | piotroski | ✅ | 78% | 144 | 195 | 2.92 | 1.50 | 1.09 | 0.89 | 116,498 | — |
+| BNED | BARNES & NOBLE EDUCATION, IN | piotroski | ✅ | 89% | 10.54 | 21.50 | 1.24 | 5.73 | 1.71 | 1.51 | 88,228 | — |
+| HROW | Harrow, Inc. | piotroski | ✅ | 78% | 32.41 | — | 22.72 | -9.80 | 2.20 | 6.62 | 912,720 | — |
+| AVNW | Aviat Networks, Inc. | piotroski | ✅ | 78% | 20.25 | 107 | 0.99 | 0.95 | 1.97 | 1.24 | 56,907 | — |
+| GOOGN | Alphabet Inc. | piotroski | ▫️ | 67% | 49.07 | 4.54 | 1.45 | 31.83 | 2.01 | 0.43 | 110,884 | — |
+| GOOGN | Alphabet Inc. | netnet | ▫️ | 50% | 49.07 | 4.54 | 1.45 | 31.83 | 2.01 | 0.43 | 110,884 | — |
+| GOOGN | Alphabet Inc. | custom | ▫️ | 0% | 49.07 | 4.54 | 1.45 | 31.83 | 2.01 | 0.43 | 110,884 | — |
+| IDR | IDAHO STRATEGIC RESOURCES, I | buffett | ▫️ | 67% | 29.09 | 25.52 | 3.95 | 15.45 | 13.96 | 0.05 | 66,625 | — |
+| IDR | IDAHO STRATEGIC RESOURCES, I | piotroski | ▫️ | 67% | 29.09 | 25.52 | 3.95 | 15.45 | 13.96 | 0.05 | 66,625 | — |
+| IDR | IDAHO STRATEGIC RESOURCES, I | lynch | ▫️ | 50% | 29.09 | 25.52 | 3.95 | 15.45 | 13.96 | 0.05 | 66,625 | — |
+| IDR | IDAHO STRATEGIC RESOURCES, I | netnet | ▫️ | 50% | 29.09 | 25.52 | 3.95 | 15.45 | 13.96 | 0.05 | 66,625 | — |
+| IDR | IDAHO STRATEGIC RESOURCES, I | graham | ▫️ | 33% | 29.09 | 25.52 | 3.95 | 15.45 | 13.96 | 0.05 | 66,625 | — |
+| IDR | IDAHO STRATEGIC RESOURCES, I | greenblatt | ▫️ | 33% | 29.09 | 25.52 | 3.95 | 15.45 | 13.96 | 0.05 | 66,625 | — |
+| IDR | IDAHO STRATEGIC RESOURCES, I | custom | ▫️ | 0% | 29.09 | 25.52 | 3.95 | 15.45 | 13.96 | 0.05 | 66,625 | — |
+| PLMR | Palomar Holdings, Inc. | buffett | ▫️ | 67% | 137 | 19.04 | 3.98 | 20.91 | — | 2.24 | 95,429 | — |
+| PLMR | Palomar Holdings, Inc. | greenblatt | ▫️ | 67% | 137 | 19.04 | 3.98 | 20.91 | — | 2.24 | 95,429 | — |
+| PLMR | Palomar Holdings, Inc. | lynch | ▫️ | 50% | 137 | 19.04 | 3.98 | 20.91 | — | 2.24 | 95,429 | — |
+| PLMR | Palomar Holdings, Inc. | graham | ▫️ | 44% | 137 | 19.04 | 3.98 | 20.91 | — | 2.24 | 95,429 | — |
+| PLMR | Palomar Holdings, Inc. | netnet | ▫️ | 25% | 137 | 19.04 | 3.98 | 20.91 | — | 2.24 | 95,429 | — |
+| PLMR | Palomar Holdings, Inc. | custom | ▫️ | 0% | 137 | 19.04 | 3.98 | 20.91 | — | 2.24 | 95,429 | — |
+| RILY | BRC Group Holdings, Inc. | buffett | ▫️ | 50% | 5.94 | 0.61 | — | -179 | — | -10.65 | 151,803 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
