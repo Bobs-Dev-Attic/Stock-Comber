@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-17 22:45 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-18 00:53 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **33** strategy matches passed.
+Screened **75** companies · **47** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| REFI | CHICAGO ATLANTIC REAL ESTATE | lynch | ✅ | 100% | 11.15 | 6.64 | 0.78 | 11.70 | — | 0.38 | 312,513 | 2.27 |
-| SPNT | SIRIUSPOINT LTD. | lynch | ✅ | 75% | 24.43 | 6.71 | 1.20 | 18.61 | — | 4.09 | 613,377 | -6.08 |
-| CASH | PATHWARD FINANCIAL, INC. | greenblatt | ✅ | 100% | 77.48 | 9.84 | 2.12 | 21.66 | — | 7.36 | 232,225 | 5.05 |
-| CASH | PATHWARD FINANCIAL, INC. | buffett | ✅ | 83% | 77.48 | 9.84 | 2.12 | 21.66 | — | 7.36 | 232,225 | 5.05 |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | piotroski | ✅ | 78% | 77.33 | 15.22 | 2.09 | 13.75 | 10.06 | 0.12 | 637,380 | 10.82 |
-| OTTR | OTTER TAIL CORPORATION | lynch | ✅ | 75% | 88.55 | 13.52 | 2.00 | 14.82 | 2.28 | — | 308,595 | -3.26 |
-| MWA | MUELLER WATER PRODUCTS, INC. | piotroski | ✅ | 89% | 21.85 | 17.91 | 3.51 | 19.53 | 3.54 | 0.87 | 2M | 12.01 |
-| MWA | MUELLER WATER PRODUCTS, INC. | lynch | ✅ | 75% | 21.85 | 17.91 | 3.51 | 19.53 | 3.54 | 0.87 | 2M | 12.01 |
-| DAKT | Daktronics, Inc. | piotroski | ✅ | 89% | 17.44 | 18.96 | 2.86 | 15.09 | 2.31 | — | 558,062 | -43.06 |
-| DAKT | Daktronics, Inc. | lynch | ✅ | 75% | 17.44 | 18.96 | 2.86 | 15.09 | 2.31 | — | 558,062 | -43.06 |
-| VISN | Vistance Networks, Inc. | greenblatt | ✅ | 100% | 6.45 | 0.67 | — | -227 | 3.88 | -9.06 | 6M | 41.41 |
-| VICR | VICOR CORPORATION | piotroski | ✅ | 89% | 216 | 82.91 | 13.82 | 16.66 | 8.99 | 0.10 | 2M | 17.72 |
-| VICR | VICOR CORPORATION | buffett | ✅ | 83% | 216 | 82.91 | 13.82 | 16.66 | 8.99 | 0.10 | 2M | 17.72 |
-| VICR | VICOR CORPORATION | lynch | ✅ | 75% | 216 | 82.91 | 13.82 | 16.66 | 8.99 | 0.10 | 2M | 17.72 |
-| JOE | The St. Joe Company | piotroski | ✅ | 89% | 63.89 | 32.11 | 4.83 | 15.09 | — | 0.97 | 392,852 | -7.67 |
-| HOG | Harley-Davidson, Inc. | graham | ✅ | 100% | 26.50 | 9.53 | 1.02 | 10.79 | 2.10 | — | 2M | 36.37 |
-| HOG | Harley-Davidson, Inc. | piotroski | ✅ | 89% | 26.50 | 9.53 | 1.02 | 10.79 | 2.10 | — | 2M | 36.37 |
-| MEDP | Medpace Holdings, Inc. | buffett | ✅ | 83% | 615 | 40.26 | 39.57 | 98.27 | 0.74 | 3.30 | 221,205 | 17.52 |
-| MEDP | Medpace Holdings, Inc. | piotroski | ✅ | 78% | 615 | 40.26 | 39.57 | 98.27 | 0.74 | 3.30 | 221,205 | 17.52 |
-| DRVN | Driven Brands Holdings Inc. | piotroski | ✅ | 78% | 12.26 | 14.42 | 2.62 | 18.27 | 0.75 | 4.42 | 3M | -1.88 |
-| BCPC | Balchem Corporation | piotroski | ✅ | 100% | 166 | 34.90 | 4.30 | 12.31 | 2.07 | 0.34 | 242,460 | -6.59 |
-| VCYT | VERACYTE, INC. | piotroski | ✅ | 89% | 40.57 | 49.48 | 2.50 | 5.07 | 8.15 | 0.07 | 1M | -30.94 |
-| GRC | The Gorman-Rupp Company | piotroski | ✅ | 89% | 72.10 | 35.69 | 4.57 | 12.78 | 2.37 | 1.07 | 232,800 | -5.19 |
-| FAF | FIRST AMERICAN FINANCIAL COR | piotroski | ✅ | 89% | 71.96 | 11.99 | 1.36 | 11.31 | — | 1.95 | 911,037 | -11.05 |
-| MAGN | Magnera Corporation | piotroski | ✅ | 78% | 11.70 | — | 0.39 | -14.94 | 2.37 | 2.75 | 216,575 | -0.36 |
-| LOCO | EL POLLO LOCO HOLDINGS, INC. | piotroski | ✅ | 89% | 14.32 | 15.91 | 1.45 | 9.10 | 0.32 | 1.08 | 187,817 | -9.31 |
-| HCSG | HEALTHCARE SERVICES GROUP, I | piotroski | ✅ | 100% | 21.49 | 26.53 | 3.08 | 11.58 | 3.38 | — | 697,757 | -13.57 |
-| GCO | GENESCO INC | piotroski | ✅ | 89% | 33.27 | 26.62 | 0.62 | 2.34 | 1.64 | 1.46 | 208,980 | 47.43 |
-| SENS | Senseonics Holdings, Inc. | piotroski | ✅ | 78% | 9.43 | — | 6.45 | -113 | 4.83 | 1.07 | 990,668 | 73.91 |
-| BNED | BARNES & NOBLE EDUCATION, IN | piotroski | ✅ | 89% | 10.66 | 21.76 | 1.25 | 5.73 | 1.71 | 1.51 | 169,543 | -35.72 |
+| KOLD | PROSHARES TRUST II | greenblatt | ✅ | 100% | 29.41 | 2.13 | 0.64 | 29.91 | — | 0.06 | 3M | — |
+| GOOGM | Alphabet Inc. | graham | ✅ | 100% | 49.05 | 4.54 | 1.44 | 31.83 | 2.01 | 0.43 | 1M | — |
+| GOOGM | Alphabet Inc. | buffett | ✅ | 100% | 49.05 | 4.54 | 1.44 | 31.83 | 2.01 | 0.43 | 1M | — |
+| GOOGM | Alphabet Inc. | greenblatt | ✅ | 100% | 49.05 | 4.54 | 1.44 | 31.83 | 2.01 | 0.43 | 1M | — |
+| GOOGM | Alphabet Inc. | lynch | ✅ | 100% | 49.05 | 4.54 | 1.44 | 31.83 | 2.01 | 0.43 | 1M | — |
+| MLI | MUELLER INDUSTRIES INC | buffett | ✅ | 100% | 60.33 | 8.79 | 2.10 | 23.84 | 5.92 | 0.15 | 1M | — |
+| MLI | MUELLER INDUSTRIES INC | greenblatt | ✅ | 100% | 60.33 | 8.79 | 2.10 | 23.84 | 5.92 | 0.15 | 1M | — |
+| MLI | MUELLER INDUSTRIES INC | lynch | ✅ | 100% | 60.33 | 8.79 | 2.10 | 23.84 | 5.92 | 0.15 | 1M | — |
+| MLI | MUELLER INDUSTRIES INC | graham | ✅ | 89% | 60.33 | 8.79 | 2.10 | 23.84 | 5.92 | 0.15 | 1M | — |
+| MLI | MUELLER INDUSTRIES INC | piotroski | ✅ | 78% | 60.33 | 8.79 | 2.10 | 23.84 | 5.92 | 0.15 | 1M | — |
+| SAFX | XCF Global, Inc. | greenblatt | ✅ | 100% | 0.46 | 0.88 | 1.74 | 197 | 0.11 | 10.14 | 4M | — |
+| SON | Sonoco Products Company | piotroski | ✅ | 89% | 48.82 | 4.85 | 1.35 | 27.75 | 1.05 | 2.08 | 1M | — |
+| SON | Sonoco Products Company | lynch | ✅ | 75% | 48.82 | 4.85 | 1.35 | 27.75 | 1.05 | 2.08 | 1M | — |
+| SPNT | SIRIUSPOINT LTD. | lynch | ✅ | 75% | 24.43 | 6.71 | 1.20 | 18.61 | — | 4.09 | 613,377 | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | piotroski | ✅ | 78% | 77.33 | 15.22 | 2.09 | 13.75 | 10.06 | 0.12 | 637,380 | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | piotroski | ✅ | 100% | 160 | 22.58 | 7.74 | 34.27 | 1.46 | — | 323,288 | — |
+| BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 123 | 16.71 | 2.86 | 17.13 | 2.65 | 0.86 | 678,515 | — |
+| BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 123 | 16.71 | 2.86 | 17.13 | 2.65 | 0.86 | 678,515 | — |
+| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 111 | 21.13 | 4.04 | 19.12 | 2.99 | — | 176,158 | — |
+| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 111 | 21.13 | 4.04 | 19.12 | 2.99 | — | 176,158 | — |
+| RILY | BRC Group Holdings, Inc. | greenblatt | ✅ | 100% | 6.02 | 0.61 | — | -179 | — | -10.65 | 395,336 | — |
+| XPEL | XPEL, INC. | buffett | ✅ | 100% | 44.41 | 24.01 | 4.39 | 18.28 | 3.25 | 0.35 | 136,317 | — |
+| RILY | BRC Group Holdings, Inc. | lynch | ✅ | 75% | 6.02 | 0.61 | — | -179 | — | -10.65 | 395,336 | — |
+| XPEL | XPEL, INC. | lynch | ✅ | 75% | 44.41 | 24.01 | 4.39 | 18.28 | 3.25 | 0.35 | 136,317 | — |
+| FHI | Federated Hermes, Inc. | greenblatt | ✅ | 100% | 56.36 | 10.99 | 3.54 | 33.69 | 2.75 | 0.81 | 635,728 | — |
+| FHI | Federated Hermes, Inc. | piotroski | ✅ | 89% | 56.36 | 10.99 | 3.54 | 33.69 | 2.75 | 0.81 | 635,728 | — |
+| FTDR | Frontdoor, Inc. | piotroski | ✅ | 89% | 79.50 | 23.25 | 24.47 | 105 | 1.55 | — | 415,459 | — |
+| FTDR | Frontdoor, Inc. | buffett | ✅ | 83% | 79.50 | 23.25 | 24.47 | 105 | 1.55 | — | 415,459 | — |
+| HOG | Harley-Davidson, Inc. | graham | ✅ | 100% | 26.50 | 9.53 | 1.02 | 10.79 | 2.10 | — | 2M | — |
+| HOG | Harley-Davidson, Inc. | piotroski | ✅ | 89% | 26.50 | 9.53 | 1.02 | 10.79 | 2.10 | — | 2M | — |
+| TRN | TRINITY INDUSTRIES INC | greenblatt | ✅ | 100% | 28.40 | 9.31 | 2.19 | 23.50 | — | 6.76 | 625,054 | — |
+| TRN | TRINITY INDUSTRIES INC | piotroski | ✅ | 78% | 28.40 | 9.31 | 2.19 | 23.50 | — | 6.76 | 625,054 | — |
+| OPY | OPPENHEIMER HOLDINGS INC. | piotroski | ✅ | 78% | 114 | 8.77 | 1.32 | 15.08 | — | 2.77 | 122,706 | — |
+| SIRI | SIRIUS XM HOLDINGS INC. | lynch | ✅ | 75% | 27.74 | 12.44 | 0.86 | 6.96 | 0.30 | 1.36 | 5M | — |
+| BSY | BENTLEY SYSTEMS, INCORPORATE | piotroski | ✅ | 100% | 31.41 | 36.95 | 8.80 | 23.36 | 0.56 | 1.99 | 2M | — |
+| BSY | BENTLEY SYSTEMS, INCORPORATE | buffett | ✅ | 83% | 31.41 | 36.95 | 8.80 | 23.36 | 0.56 | 1.99 | 2M | — |
+| CPK | CHESAPEAKE UTILITIES CORP | piotroski | ✅ | 78% | 131 | 21.92 | 1.92 | 8.78 | 0.45 | — | 166,025 | — |
+| BKU | BankUnited, Inc. | piotroski | ✅ | 89% | 44.75 | 12.68 | 1.09 | 8.79 | — | 10.47 | 815,964 | — |
+| KNTK | KINETIK HOLDINGS INC. | lynch | ✅ | 75% | 53.68 | 20.41 | — | -31.53 | 0.69 | -7.37 | 1M | — |
+| CURB | Curbline Properties Corp. | piotroski | ✅ | 78% | 28.74 | 77.68 | 1.59 | 2.09 | — | 0.29 | 821,124 | — |
+| CURB | Curbline Properties Corp. | lynch | ✅ | 75% | 28.74 | 77.68 | 1.59 | 2.09 | — | 0.29 | 821,124 | — |
+| WWW | WOLVERINE WORLD WIDE, INC. | piotroski | ✅ | 78% | 19.34 | 16.96 | 3.87 | 23.48 | 1.40 | — | 476,391 | — |
+| PENG | PENGUIN SOLUTIONS, INC. | piotroski | ✅ | 78% | 52.55 | 188 | 7.25 | 6.44 | 2.25 | 2.56 | 1M | — |
+| SENS | Senseonics Holdings, Inc. | piotroski | ✅ | 78% | 9.43 | — | 6.45 | -113 | 4.83 | 1.07 | 990,668 | — |
 | INNV | InnovAge Holding Corp. | piotroski | ✅ | 78% | 10.70 | — | 6.16 | -1.08 | 1.05 | 1.23 | 187,739 | — |
-| WGO | WINNEBAGO INDUSTRIES, INC. | piotroski | ✅ | 89% | 26.96 | 29.63 | 0.62 | 2.10 | 2.42 | 0.76 | 558,896 | 8.01 |
-| ORN | ORION GROUP HOLDINGS, INC. | piotroski | ✅ | 78% | 9.04 | 151 | 2.25 | 1.56 | 1.36 | 1.61 | 468,595 | 7.64 |
-| REFI | CHICAGO ATLANTIC REAL ESTATE | graham | ▫️ | 67% | 11.15 | 6.64 | 0.78 | 11.70 | — | 0.38 | 312,513 | 2.27 |
-| REFI | CHICAGO ATLANTIC REAL ESTATE | greenblatt | ▫️ | 67% | 11.15 | 6.64 | 0.78 | 11.70 | — | 0.38 | 312,513 | 2.27 |
-| REFI | CHICAGO ATLANTIC REAL ESTATE | buffett | ▫️ | 33% | 11.15 | 6.64 | 0.78 | 11.70 | — | 0.38 | 312,513 | 2.27 |
-| REFI | CHICAGO ATLANTIC REAL ESTATE | netnet | ▫️ | 25% | 11.15 | 6.64 | 0.78 | 11.70 | — | 0.38 | 312,513 | 2.27 |
-| REFI | CHICAGO ATLANTIC REAL ESTATE | piotroski | ▫️ | 22% | 11.15 | 6.64 | 0.78 | 11.70 | — | 0.38 | 312,513 | 2.27 |
-| REFI | CHICAGO ATLANTIC REAL ESTATE | custom | ▫️ | 0% | 11.15 | 6.64 | 0.78 | 11.70 | — | 0.38 | 312,513 | 2.27 |
-| SPNT | SIRIUSPOINT LTD. | graham | ▫️ | 67% | 24.43 | 6.71 | 1.20 | 18.61 | — | 4.09 | 613,377 | -6.08 |
-| SPNT | SIRIUSPOINT LTD. | piotroski | ▫️ | 67% | 24.43 | 6.71 | 1.20 | 18.61 | — | 4.09 | 613,377 | -6.08 |
-| SPNT | SIRIUSPOINT LTD. | greenblatt | ▫️ | 67% | 24.43 | 6.71 | 1.20 | 18.61 | — | 4.09 | 613,377 | -6.08 |
-| SPNT | SIRIUSPOINT LTD. | buffett | ▫️ | 50% | 24.43 | 6.71 | 1.20 | 18.61 | — | 4.09 | 613,377 | -6.08 |
-| SPNT | SIRIUSPOINT LTD. | netnet | ▫️ | 25% | 24.43 | 6.71 | 1.20 | 18.61 | — | 4.09 | 613,377 | -6.08 |
-| SPNT | SIRIUSPOINT LTD. | custom | ▫️ | 0% | 24.43 | 6.71 | 1.20 | 18.61 | — | 4.09 | 613,377 | -6.08 |
-| INVA | INNOVIVA, INC. | graham | ▫️ | 67% | 21.05 | 6.38 | 1.52 | 23.12 | 14.64 | — | 846,944 | -3.00 |
-| INVA | INNOVIVA, INC. | piotroski | ▫️ | 67% | 21.05 | 6.38 | 1.52 | 23.12 | 14.64 | — | 846,944 | -3.00 |
-| INVA | INNOVIVA, INC. | greenblatt | ▫️ | 67% | 21.05 | 6.38 | 1.52 | 23.12 | 14.64 | — | 846,944 | -3.00 |
-| INVA | INNOVIVA, INC. | buffett | ▫️ | 50% | 21.05 | 6.38 | 1.52 | 23.12 | 14.64 | — | 846,944 | -3.00 |
-| INVA | INNOVIVA, INC. | lynch | ▫️ | 25% | 21.05 | 6.38 | 1.52 | 23.12 | 14.64 | — | 846,944 | -3.00 |
+| DAR | DARLING INGREDIENTS INC. | piotroski | ✅ | 78% | 66.49 | 170 | 2.25 | 1.33 | 1.50 | 1.16 | 2M | — |
+| LILA | Liberty Latin America Ltd. | piotroski | ✅ | 78% | 8.53 | — | 3.06 | -110 | 1.14 | 20.09 | 216,789 | — |
+| KOLD | PROSHARES TRUST II | lynch | ▫️ | 50% | 29.41 | 2.13 | 0.64 | 29.91 | — | 0.06 | 3M | — |
+| KOLD | PROSHARES TRUST II | graham | ▫️ | 44% | 29.41 | 2.13 | 0.64 | 29.91 | — | 0.06 | 3M | — |
+| KOLD | PROSHARES TRUST II | buffett | ▫️ | 33% | 29.41 | 2.13 | 0.64 | 29.91 | — | 0.06 | 3M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
