@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
+BOIL,PROSHARES TRUST II,greenblatt,True,3,3,100.0,20.18,1.46,0.44,29.91,—,0.06,120,1M,—
+SVXY,PROSHARES TRUST II,greenblatt,True,3,3,100.0,63.08,4.56,1.36,29.91,—,0.06,120,"116,726",—
 GOOGN,Alphabet Inc.,graham,True,9,9,100.0,48.89,4.52,1.44,31.83,2.01,0.43,90.88,"387,978",—
 GOOGN,Alphabet Inc.,buffett,True,6,6,100.0,48.89,4.52,1.44,31.83,2.01,0.43,90.88,"387,978",—
 GOOGN,Alphabet Inc.,greenblatt,True,3,3,100.0,48.89,4.52,1.44,31.83,2.01,0.43,90.88,"387,978",—
 GOOGN,Alphabet Inc.,lynch,True,4,4,100.0,48.89,4.52,1.44,31.83,2.01,0.43,90.88,"387,978",—
-SLDE,"Slide Insurance Holdings, Inc.",greenblatt,True,3,3,100.0,25.00,7.44,2.96,39.88,—,1.62,25.25,2M,—
-SON,Sonoco Products Company,piotroski,True,8,9,88.9,48.82,4.85,1.35,27.75,1.05,2.08,90.68,1M,—
-SON,Sonoco Products Company,lynch,True,3,4,75.0,48.82,4.85,1.35,27.75,1.05,2.08,90.68,1M,—
-BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,123,16.71,2.86,17.13,2.65,0.86,84.23,"678,583",—
-BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,123,16.71,2.86,17.13,2.65,0.86,84.23,"678,583",—
-IPAR,"INTERPARFUMS, INC.",buffett,True,5,6,83.3,111,21.13,4.04,19.12,2.99,—,56.84,"176,160",—
-IPAR,"INTERPARFUMS, INC.",lynch,True,3,4,75.0,111,21.13,4.04,19.12,2.99,—,56.84,"176,160",—
-MCRI,"MONARCH CASINO & RESORT, INC.",piotroski,True,9,9,100.0,123,22.58,4.26,18.86,0.86,0.33,59.33,"130,443",—
-MCRI,"MONARCH CASINO & RESORT, INC.",lynch,True,4,4,100.0,123,22.58,4.26,18.86,0.86,0.33,59.33,"130,443",—
-MCRI,"MONARCH CASINO & RESORT, INC.",buffett,True,5,6,83.3,123,22.58,4.26,18.86,0.86,0.33,59.33,"130,443",—
-ABEO,ABEONA THERAPEUTICS INC.,greenblatt,True,3,3,100.0,5.59,5.53,2.32,44.71,6.93,0.38,7.40,3M,—
-AES,THE AES CORPORATION,greenblatt,True,3,3,100.0,14.85,11.79,2.61,22.40,0.77,—,12.70,7M,—
-HBANP,Huntington Bancshares Incorporated,lynch,True,3,4,75.0,16.63,11.96,1.03,9.08,—,8.25,22.49,"78,034",—
-JOE,The St. Joe Company,piotroski,True,8,9,88.9,63.89,32.11,4.83,15.09,—,0.97,24.33,"405,486",—
-OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,21.83,31.64,4.17,13.20,1.91,0.30,9.01,"722,004",—
-BYND,"BEYOND MEAT, INC.",greenblatt,True,3,3,100.0,11.70,—,—,"-21,968",4.56,—,—,1M,—
-SHOE,"Shoe Station Group, Inc.",graham,True,8,9,88.9,13.24,6.97,0.53,7.58,3.76,0.74,32.72,1M,—
-KEX,KIRBY CORPORATION,piotroski,True,8,9,88.9,138,21.86,2.29,10.49,1.53,—,92.69,"350,639",—
-EGP,"EASTGROUP PROPERTIES, INC.",piotroski,True,7,9,77.8,202,41.40,3.05,7.36,—,0.55,85.17,"618,256",—
-EGP,"EASTGROUP PROPERTIES, INC.",lynch,True,3,4,75.0,202,41.40,3.05,7.36,—,0.55,85.17,"618,256",—
-BBWI,"BATH & BODY WORKS, INC.",greenblatt,True,3,3,100.0,17.19,5.53,—,-50.66,1.27,—,—,6M,—
-BKU,"BankUnited, Inc.",piotroski,True,8,9,88.9,44.75,12.68,1.09,8.79,—,10.47,57.13,"815,964",—
-GRC,The Gorman-Rupp Company,piotroski,True,8,9,88.9,72.10,35.69,4.57,12.78,2.37,1.07,26.77,"242,090",—
-AIOT,"POWERFLEET, INC.",piotroski,True,7,9,77.8,2.97,—,0.84,-4.32,1.13,1.00,—,2M,—
-FUL,FULLER H B CO,piotroski,True,7,9,77.8,50.41,18.33,1.39,7.59,1.70,1.59,47.32,"487,183",—
-BNED,"BARNES & NOBLE EDUCATION, INC.",piotroski,True,8,9,88.9,10.66,21.76,1.25,5.73,1.71,1.51,9.68,"169,543",—
-AEIS,"ADVANCED ENERGY INDUSTRIES, INC.",piotroski,True,7,9,77.8,254,66.26,7.21,10.89,1.59,0.86,55.23,"437,644",—
-DAR,DARLING INGREDIENTS INC.,piotroski,True,7,9,77.8,66.49,170,2.25,1.33,1.50,1.16,16.11,2M,—
-OMCL,"OMNICELL, INC",piotroski,True,7,9,77.8,32.62,815,1.23,0.17,1.43,0.60,4.89,"394,292",—
+SON,Sonoco Products Company,piotroski,True,8,9,88.9,48.82,4.85,1.35,27.75,1.05,2.08,90.68,1M,6.04
+SON,Sonoco Products Company,lynch,True,3,4,75.0,48.82,4.85,1.35,27.75,1.05,2.08,90.68,1M,6.04
+AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",piotroski,True,9,9,100.0,160,22.58,7.74,34.27,1.46,—,57.37,"323,293",-42.89
+IPAR,"INTERPARFUMS, INC.",buffett,True,5,6,83.3,111,21.13,4.04,19.12,2.99,—,56.84,"176,160",3.62
+IPAR,"INTERPARFUMS, INC.",lynch,True,3,4,75.0,111,21.13,4.04,19.12,2.99,—,56.84,"176,160",3.62
+EXLS,"EXLSERVICE HOLDINGS, INC.",piotroski,True,8,9,88.9,34.90,22.66,6.21,27.50,2.56,0.87,13.95,"169,722",—
+EXLS,"EXLSERVICE HOLDINGS, INC.",buffett,True,5,6,83.3,34.90,22.66,6.21,27.50,2.56,0.87,13.95,"169,722",—
+EXLS,"EXLSERVICE HOLDINGS, INC.",lynch,True,3,4,75.0,34.90,22.66,6.21,27.50,2.56,0.87,13.95,"169,722",—
+ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.27,6.75,0.19,4.91,1.93,0.73,1.14,"1,230",29.07
+AES,THE AES CORPORATION,greenblatt,True,3,3,100.0,14.85,11.79,2.61,22.40,0.77,—,12.70,7M,18.38
+DUKU,Duke Energy CORP,piotroski,True,8,9,88.9,49.00,7.77,0.73,9.58,0.55,—,97.33,"2,076",—
+DUKU,Duke Energy CORP,lynch,True,3,4,75.0,49.00,7.77,0.73,9.58,0.55,—,97.33,"2,076",—
+FTDR,"Frontdoor, Inc.",piotroski,True,8,9,88.9,79.50,23.25,24.47,105,1.55,—,15.81,"490,403",13.53
+FTDR,"Frontdoor, Inc.",buffett,True,5,6,83.3,79.50,23.25,24.47,105,1.55,—,15.81,"490,403",13.53
+SBH,"SALLY BEAUTY HOLDINGS, INC.",piotroski,True,8,9,88.9,15.81,8.37,2.07,24.66,2.26,2.62,18.04,"976,396",-26.63
+MEDP,"Medpace Holdings, Inc.",buffett,True,5,6,83.3,615,40.26,39.57,98.27,0.74,3.30,73.11,"226,115",17.52
+MEDP,"Medpace Holdings, Inc.",piotroski,True,7,9,77.8,615,40.26,39.57,98.27,0.74,3.30,73.11,"226,115",17.52
+SSB,SOUTHSTATE BANK CORP,lynch,True,3,4,75.0,103,13.08,1.15,8.82,—,6.42,126,"124,193",—
+EGP,"EASTGROUP PROPERTIES, INC.",piotroski,True,7,9,77.8,201,41.21,3.03,7.36,—,0.55,85.17,"90,691",—
+EGP,"EASTGROUP PROPERTIES, INC.",lynch,True,3,4,75.0,201,41.21,3.03,7.36,—,0.55,85.17,"90,691",—
+AGCO,AGCO CORP /DE,piotroski,True,8,9,88.9,122,12.47,2.12,17.00,1.39,1.72,112,2M,-11.57
+GRC,The Gorman-Rupp Company,piotroski,True,8,9,88.9,72.10,35.69,4.57,12.78,2.37,1.07,26.77,"242,090",-5.19
+FIVN,"Five9, Inc.",piotroski,True,8,9,88.9,33.12,73.61,3.71,5.02,4.51,1.28,9.51,"729,539",—
+FUL,FULLER H B CO,piotroski,True,7,9,77.8,50.41,18.33,1.39,7.59,1.70,1.59,47.32,"487,183",-7.24
+SENS,"Senseonics Holdings, Inc.",piotroski,True,7,9,77.8,9.43,—,6.45,-113,4.83,1.07,—,"990,860",73.91
+MSGS,MADISON SQUARE GARDEN SPORTS CORP.,piotroski,True,9,9,100.0,395,"1,233",—,-2.95,0.50,-6.84,—,"389,866",-7.07
+FROG,JFrog Ltd.,piotroski,True,7,9,77.8,93.98,—,12.31,-8.09,2.14,0.51,—,2M,34.72
+NEOG,Neogen Corporation,piotroski,True,8,9,88.9,12.83,—,1.33,-0.38,3.82,0.60,—,4M,15.21
+BJRI,"BJ’S RESTAURANTS, INC.",piotroski,True,7,9,77.8,59.08,27.35,3.65,13.33,0.40,1.77,28.05,"32,654",—
+CALX,"Calix, Inc",piotroski,True,7,9,77.8,35.14,135,2.83,2.08,4.24,0.23,8.52,2M,-5.25
+BOIL,PROSHARES TRUST II,lynch,False,2,4,50.0,20.18,1.46,0.44,29.91,—,0.06,120,1M,—
+BOIL,PROSHARES TRUST II,graham,False,4,9,44.4,20.18,1.46,0.44,29.91,—,0.06,120,1M,—
+BOIL,PROSHARES TRUST II,buffett,False,2,6,33.3,20.18,1.46,0.44,29.91,—,0.06,120,1M,—
+BOIL,PROSHARES TRUST II,piotroski,False,3,9,33.3,20.18,1.46,0.44,29.91,—,0.06,120,1M,—
+BOIL,PROSHARES TRUST II,netnet,False,1,4,25.0,20.18,1.46,0.44,29.91,—,0.06,120,1M,—
+BOIL,PROSHARES TRUST II,custom,False,0,0,0.0,20.18,1.46,0.44,29.91,—,0.06,120,1M,—
+SVXY,PROSHARES TRUST II,lynch,False,2,4,50.0,63.08,4.56,1.36,29.91,—,0.06,120,"116,726",—
+SVXY,PROSHARES TRUST II,graham,False,4,9,44.4,63.08,4.56,1.36,29.91,—,0.06,120,"116,726",—
+SVXY,PROSHARES TRUST II,buffett,False,2,6,33.3,63.08,4.56,1.36,29.91,—,0.06,120,"116,726",—
+SVXY,PROSHARES TRUST II,piotroski,False,3,9,33.3,63.08,4.56,1.36,29.91,—,0.06,120,"116,726",—
+SVXY,PROSHARES TRUST II,netnet,False,1,4,25.0,63.08,4.56,1.36,29.91,—,0.06,120,"116,726",—
+SVXY,PROSHARES TRUST II,custom,False,0,0,0.0,63.08,4.56,1.36,29.91,—,0.06,120,"116,726",—
 GOOGN,Alphabet Inc.,piotroski,False,6,9,66.7,48.89,4.52,1.44,31.83,2.01,0.43,90.88,"387,978",—
 GOOGN,Alphabet Inc.,netnet,False,2,4,50.0,48.89,4.52,1.44,31.83,2.01,0.43,90.88,"387,978",—
-GOOGN,Alphabet Inc.,custom,False,0,0,0.0,48.89,4.52,1.44,31.83,2.01,0.43,90.88,"387,978",—
-SLDE,"Slide Insurance Holdings, Inc.",graham,False,4,9,44.4,25.00,7.44,2.96,39.88,—,1.62,25.25,2M,—
-SLDE,"Slide Insurance Holdings, Inc.",buffett,False,2,6,33.3,25.00,7.44,2.96,39.88,—,1.62,25.25,2M,—
-SLDE,"Slide Insurance Holdings, Inc.",piotroski,False,3,9,33.3,25.00,7.44,2.96,39.88,—,1.62,25.25,2M,—
-SLDE,"Slide Insurance Holdings, Inc.",lynch,False,1,4,25.0,25.00,7.44,2.96,39.88,—,1.62,25.25,2M,—
-SLDE,"Slide Insurance Holdings, Inc.",netnet,False,1,4,25.0,25.00,7.44,2.96,39.88,—,1.62,25.25,2M,—
-SLDE,"Slide Insurance Holdings, Inc.",custom,False,0,0,0.0,25.00,7.44,2.96,39.88,—,1.62,25.25,2M,—
-SON,Sonoco Products Company,graham,False,6,9,66.7,48.82,4.85,1.35,27.75,1.05,2.08,90.68,1M,—
-SON,Sonoco Products Company,buffett,False,4,6,66.7,48.82,4.85,1.35,27.75,1.05,2.08,90.68,1M,—
-SON,Sonoco Products Company,greenblatt,False,2,3,66.7,48.82,4.85,1.35,27.75,1.05,2.08,90.68,1M,—
-SON,Sonoco Products Company,netnet,False,1,4,25.0,48.82,4.85,1.35,27.75,1.05,2.08,90.68,1M,—
-SON,Sonoco Products Company,custom,False,0,0,0.0,48.82,4.85,1.35,27.75,1.05,2.08,90.68,1M,—
-IDR,"IDAHO STRATEGIC RESOURCES, INC",buffett,False,4,6,66.7,29.07,25.50,3.95,15.45,13.96,0.05,13.74,"239,403",—
-IDR,"IDAHO STRATEGIC RESOURCES, INC",piotroski,False,6,9,66.7,29.07,25.50,3.95,15.45,13.96,0.05,13.74,"239,403",—
-IDR,"IDAHO STRATEGIC RESOURCES, INC",lynch,False,2,4,50.0,29.07,25.50,3.95,15.45,13.96,0.05,13.74,"239,403",—
