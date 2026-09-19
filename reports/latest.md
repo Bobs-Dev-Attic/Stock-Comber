@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-19 06:41 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-19 11:30 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **33** strategy matches passed.
+Screened **75** companies · **31** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| PIPR | PIPER SANDLER COMPANIES | greenblatt | ✅ | 100% | 72.36 | 4.57 | 0.94 | 20.52 | — | 0.74 | 1M | — |
-| PIPR | PIPER SANDLER COMPANIES | lynch | ✅ | 100% | 72.36 | 4.57 | 0.94 | 20.52 | — | 0.74 | 1M | — |
-| PIPR | PIPER SANDLER COMPANIES | piotroski | ✅ | 89% | 72.36 | 4.57 | 0.94 | 20.52 | — | 0.74 | 1M | — |
-| LGNYZ | LIGAND PHARMACEUTICALS INCOR | netnet | ✅ | 100% | 0.06 | 0.01 | 0.00 | 12.23 | 22.23 | 0.53 | 60,800 | — |
-| OTTR | OTTER TAIL CORPORATION | lynch | ✅ | 75% | 87.42 | 13.35 | 1.98 | 14.82 | 2.28 | — | 1M | — |
-| ALSN | ALLISON TRANSMISSION HOLDING | buffett | ✅ | 83% | 117 | 15.98 | 5.33 | 33.37 | 4.85 | 2.26 | 3M | — |
-| AROC | Archrock, Inc. | piotroski | ✅ | 89% | 31.56 | 17.25 | 3.70 | 21.61 | 1.54 | 1.92 | 4M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | piotroski | ✅ | 78% | 29.85 | 6.57 | 1.93 | 29.41 | 1.47 | 1.81 | 2M | — |
+| SON | Sonoco Products Company | piotroski | ✅ | 89% | 48.84 | 4.85 | 1.35 | 27.75 | 1.05 | 2.08 | 2M | — |
+| SON | Sonoco Products Company | lynch | ✅ | 75% | 48.84 | 4.85 | 1.35 | 27.75 | 1.05 | 2.08 | 2M | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | piotroski | ✅ | 78% | 78.30 | 15.41 | 2.12 | 13.75 | 10.06 | 0.12 | 2M | — |
+| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 113 | 21.47 | 4.11 | 19.12 | 2.99 | — | 740,883 | — |
+| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 113 | 21.47 | 4.11 | 19.12 | 2.99 | — | 740,883 | — |
+| ESE | ESCO TECHNOLOGIES INC. | lynch | ✅ | 100% | 266 | 23.02 | 4.47 | 19.42 | 1.35 | 0.56 | 846,958 | — |
 | IBP | Installed Building Products, | piotroski | ✅ | 89% | 198 | 20.35 | 7.61 | 37.39 | 3.03 | 1.91 | 806,905 | — |
 | IBP | Installed Building Products, | lynch | ✅ | 75% | 198 | 20.35 | 7.61 | 37.39 | 3.03 | 1.91 | 806,905 | — |
-| LMB | LIMBACH HOLDINGS, INC. | piotroski | ✅ | 78% | 51.74 | 16.02 | 3.19 | 19.97 | 1.44 | 0.95 | 511,664 | — |
-| LMB | LIMBACH HOLDINGS, INC. | lynch | ✅ | 75% | 51.74 | 16.02 | 3.19 | 19.97 | 1.44 | 0.95 | 511,664 | — |
-| FTDR | Frontdoor, Inc. | piotroski | ✅ | 89% | 78.29 | 22.89 | 24.10 | 105 | 1.55 | — | 1M | — |
-| FTDR | Frontdoor, Inc. | buffett | ✅ | 83% | 78.29 | 22.89 | 24.10 | 105 | 1.55 | — | 1M | — |
+| WTFC | WINTRUST FINANCIAL CORP | lynch | ✅ | 75% | 148 | 12.94 | 1.38 | 11.35 | — | 8.80 | 987,109 | — |
+| EVR | EVERCORE INC. | buffett | ✅ | 83% | 263 | 18.69 | 5.45 | 29.14 | 2.16 | 1.50 | 828,437 | — |
+| EVR | EVERCORE INC. | piotroski | ✅ | 78% | 263 | 18.69 | 5.45 | 29.14 | 2.16 | 1.50 | 828,437 | — |
+| MHO | M/I HOMES, INC. | lynch | ✅ | 75% | 139 | 9.42 | 1.20 | 12.73 | — | 0.51 | 437,124 | — |
+| HBANP | Huntington Bancshares Incorp | lynch | ✅ | 75% | 16.69 | 12.01 | 1.03 | 9.08 | — | 8.25 | 41,695 | — |
+| IIIN | Insteel Industries Inc. | piotroski | ✅ | 78% | 29.66 | 14.12 | 1.56 | 11.04 | 3.97 | — | 262,763 | — |
+| ALRM | ALARM.COM HOLDINGS, INC. | piotroski | ✅ | 78% | 53.96 | 21.93 | 3.75 | 15.52 | 1.92 | 1.47 | 1M | — |
+| FSS | FEDERAL SIGNAL CORPORATION | lynch | ✅ | 75% | 114 | 28.39 | 5.07 | 17.84 | 3.02 | 0.73 | 1M | — |
+| IIIN | Insteel Industries Inc. | lynch | ✅ | 75% | 29.66 | 14.12 | 1.56 | 11.04 | 3.97 | — | 262,763 | — |
 | WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 11.86 | 2.34 | 1.35 | 57.56 | 1.39 | 2.18 | 1M | — |
-| VICR | VICOR CORPORATION | piotroski | ✅ | 89% | 223 | 85.33 | 14.23 | 16.66 | 8.99 | 0.10 | 2M | — |
-| VICR | VICOR CORPORATION | buffett | ✅ | 83% | 223 | 85.33 | 14.23 | 16.66 | 8.99 | 0.10 | 2M | — |
-| VICR | VICOR CORPORATION | lynch | ✅ | 75% | 223 | 85.33 | 14.23 | 16.66 | 8.99 | 0.10 | 2M | — |
-| HOG | Harley-Davidson, Inc. | graham | ✅ | 100% | 25.93 | 9.33 | 1.00 | 10.79 | 2.10 | — | 3M | — |
-| HOG | Harley-Davidson, Inc. | piotroski | ✅ | 89% | 25.93 | 9.33 | 1.00 | 10.79 | 2.10 | — | 3M | — |
-| MEDP | Medpace Holdings, Inc. | buffett | ✅ | 83% | 612 | 40.07 | 39.38 | 98.27 | 0.74 | 3.30 | 522,196 | — |
-| MEDP | Medpace Holdings, Inc. | piotroski | ✅ | 78% | 612 | 40.07 | 39.38 | 98.27 | 0.74 | 3.30 | 522,196 | — |
-| OSW | OneSpaWorld Holdings Limited | piotroski | ✅ | 78% | 21.87 | 31.70 | 4.18 | 13.20 | 1.91 | 0.30 | 2M | — |
-| SSB | SOUTHSTATE BANK CORP | lynch | ✅ | 75% | 103 | 13.14 | 1.16 | 8.82 | — | 6.42 | 1M | — |
-| SHOE | Shoe Station Group, Inc. | graham | ✅ | 89% | 13.07 | 6.88 | 0.52 | 7.58 | 3.76 | 0.74 | 4M | — |
-| UMBF | UMB FINANCIAL CORP | lynch | ✅ | 75% | 135 | 14.48 | 1.29 | 9.13 | — | 8.50 | 2M | — |
+| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 15.79 | 8.35 | 2.06 | 24.66 | 2.26 | 2.62 | 3M | — |
+| EZPW | EZCORP, INC. | piotroski | ✅ | 78% | 30.65 | 21.58 | 2.49 | 10.69 | 5.61 | 0.90 | 1M | — |
+| DRVN | Driven Brands Holdings Inc. | piotroski | ✅ | 78% | 12.28 | 14.45 | 2.62 | 18.27 | 0.75 | 4.42 | 2M | — |
+| OPY | OPPENHEIMER HOLDINGS INC. | piotroski | ✅ | 78% | 115 | 8.83 | 1.33 | 15.08 | — | 2.77 | 145,772 | — |
 | SIRI | SIRIUS XM HOLDINGS INC. | lynch | ✅ | 75% | 27.31 | 12.25 | 0.84 | 6.96 | 0.30 | 1.36 | 8M | — |
 | BCPC | Balchem Corporation | piotroski | ✅ | 100% | 167 | 35.17 | 4.33 | 12.31 | 2.07 | 0.34 | 620,235 | — |
-| HLIO | HELIOS TECHNOLOGIES, INC. | piotroski | ✅ | 100% | 69.29 | 47.79 | 2.48 | 5.20 | 2.90 | 0.63 | 621,912 | — |
-| HLIO | HELIOS TECHNOLOGIES, INC. | lynch | ✅ | 75% | 69.29 | 47.79 | 2.48 | 5.20 | 2.90 | 0.63 | 621,912 | — |
-| WOR | WORTHINGTON ENTERPRISES, INC | piotroski | ✅ | 89% | 57.38 | 18.27 | 2.78 | 15.20 | 2.37 | 0.80 | 804,839 | — |
-| SPOK | SPOK HOLDINGS, INC. | piotroski | ✅ | 78% | 10.39 | 13.85 | 1.49 | 10.85 | 1.18 | 0.41 | 244,297 | — |
-| THO | THOR INDUSTRIES, INC. | piotroski | ✅ | 78% | 67.77 | 14.00 | 0.84 | 6.03 | 1.75 | — | 2M | — |
-| MOS | MOSAIC CO | piotroski | ✅ | 89% | 24.48 | 14.40 | 0.65 | 4.47 | 1.32 | — | 12M | — |
-| PIPR | PIPER SANDLER COMPANIES | graham | ▫️ | 78% | 72.36 | 4.57 | 0.94 | 20.52 | — | 0.74 | 1M | — |
-| PIPR | PIPER SANDLER COMPANIES | buffett | ▫️ | 50% | 72.36 | 4.57 | 0.94 | 20.52 | — | 0.74 | 1M | — |
-| PIPR | PIPER SANDLER COMPANIES | netnet | ▫️ | 25% | 72.36 | 4.57 | 0.94 | 20.52 | — | 0.74 | 1M | — |
-| PIPR | PIPER SANDLER COMPANIES | custom | ▫️ | 0% | 72.36 | 4.57 | 0.94 | 20.52 | — | 0.74 | 1M | — |
-| LGNYZ | LIGAND PHARMACEUTICALS INCOR | graham | ▫️ | 67% | 0.06 | 0.01 | 0.00 | 12.23 | 22.23 | 0.53 | 60,800 | — |
-| LGNYZ | LIGAND PHARMACEUTICALS INCOR | piotroski | ▫️ | 67% | 0.06 | 0.01 | 0.00 | 12.23 | 22.23 | 0.53 | 60,800 | — |
-| LGNYZ | LIGAND PHARMACEUTICALS INCOR | greenblatt | ▫️ | 67% | 0.06 | 0.01 | 0.00 | 12.23 | 22.23 | 0.53 | 60,800 | — |
-| LGNYZ | LIGAND PHARMACEUTICALS INCOR | lynch | ▫️ | 50% | 0.06 | 0.01 | 0.00 | 12.23 | 22.23 | 0.53 | 60,800 | — |
-| LGNYZ | LIGAND PHARMACEUTICALS INCOR | buffett | ▫️ | 33% | 0.06 | 0.01 | 0.00 | 12.23 | 22.23 | 0.53 | 60,800 | — |
-| LGNYZ | LIGAND PHARMACEUTICALS INCOR | custom | ▫️ | 0% | 0.06 | 0.01 | 0.00 | 12.23 | 22.23 | 0.53 | 60,800 | — |
-| PPIH | Perma-Pipe International Hol | piotroski | ▫️ | 67% | 30.55 | 14.62 | 2.75 | 18.79 | 1.84 | — | 189,614 | — |
-| PPIH | Perma-Pipe International Hol | graham | ▫️ | 44% | 30.55 | 14.62 | 2.75 | 18.79 | 1.84 | — | 189,614 | — |
-| PPIH | Perma-Pipe International Hol | greenblatt | ▫️ | 33% | 30.55 | 14.62 | 2.75 | 18.79 | 1.84 | — | 189,614 | — |
-| PPIH | Perma-Pipe International Hol | lynch | ▫️ | 25% | 30.55 | 14.62 | 2.75 | 18.79 | 1.84 | — | 189,614 | — |
-| PPIH | Perma-Pipe International Hol | netnet | ▫️ | 25% | 30.55 | 14.62 | 2.75 | 18.79 | 1.84 | — | 189,614 | — |
-| PPIH | Perma-Pipe International Hol | buffett | ▫️ | 17% | 30.55 | 14.62 | 2.75 | 18.79 | 1.84 | — | 189,614 | — |
-| PPIH | Perma-Pipe International Hol | custom | ▫️ | 0% | 30.55 | 14.62 | 2.75 | 18.79 | 1.84 | — | 189,614 | — |
+| GRC | The Gorman-Rupp Company | piotroski | ✅ | 89% | 73.25 | 36.26 | 4.64 | 12.78 | 2.37 | 1.07 | 796,693 | — |
+| IMAX | IMAX Corporation | piotroski | ✅ | 78% | 52.77 | 83.76 | 8.67 | 10.32 | — | 1.38 | 1M | — |
+| FLYW | FLYWIRE CORPORATION | piotroski | ✅ | 89% | 17.34 | 158 | 2.65 | 1.62 | 1.50 | 0.50 | 2M | — |
+| MCS | MARCUS CORP | piotroski | ✅ | 78% | 27.68 | 68.22 | 1.89 | 2.77 | 0.40 | — | 325,426 | — |
+| WRBY | Warby Parker Inc. | piotroski | ✅ | 78% | 22.50 | 2,250 | 7.65 | 0.45 | 2.35 | 0.96 | 5M | — |
+| WGO | WINNEBAGO INDUSTRIES, INC. | piotroski | ✅ | 89% | 26.43 | 29.04 | 0.61 | 2.10 | 2.42 | 0.76 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | graham | ▫️ | 67% | 29.85 | 6.57 | 1.93 | 29.41 | 1.47 | 1.81 | 2M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | greenblatt | ▫️ | 67% | 29.85 | 6.57 | 1.93 | 29.41 | 1.47 | 1.81 | 2M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | buffett | ▫️ | 50% | 29.85 | 6.57 | 1.93 | 29.41 | 1.47 | 1.81 | 2M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | lynch | ▫️ | 50% | 29.85 | 6.57 | 1.93 | 29.41 | 1.47 | 1.81 | 2M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | netnet | ▫️ | 25% | 29.85 | 6.57 | 1.93 | 29.41 | 1.47 | 1.81 | 2M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | custom | ▫️ | 0% | 29.85 | 6.57 | 1.93 | 29.41 | 1.47 | 1.81 | 2M | — |
+| SON | Sonoco Products Company | graham | ▫️ | 67% | 48.84 | 4.85 | 1.35 | 27.75 | 1.05 | 2.08 | 2M | — |
+| SON | Sonoco Products Company | buffett | ▫️ | 67% | 48.84 | 4.85 | 1.35 | 27.75 | 1.05 | 2.08 | 2M | — |
+| SON | Sonoco Products Company | greenblatt | ▫️ | 67% | 48.84 | 4.85 | 1.35 | 27.75 | 1.05 | 2.08 | 2M | — |
+| SON | Sonoco Products Company | netnet | ▫️ | 25% | 48.84 | 4.85 | 1.35 | 27.75 | 1.05 | 2.08 | 2M | — |
+| SON | Sonoco Products Company | custom | ▫️ | 0% | 48.84 | 4.85 | 1.35 | 27.75 | 1.05 | 2.08 | 2M | — |
+| UNIT | Uniti Group Inc. | greenblatt | ▫️ | 67% | 9.45 | 1.94 | 6.62 | 343 | 0.74 | 30.65 | 4M | — |
+| UNIT | Uniti Group Inc. | graham | ▫️ | 44% | 9.45 | 1.94 | 6.62 | 343 | 0.74 | 30.65 | 4M | — |
+| UNIT | Uniti Group Inc. | buffett | ▫️ | 33% | 9.45 | 1.94 | 6.62 | 343 | 0.74 | 30.65 | 4M | — |
+| UNIT | Uniti Group Inc. | lynch | ▫️ | 25% | 9.45 | 1.94 | 6.62 | 343 | 0.74 | 30.65 | 4M | — |
+| UNIT | Uniti Group Inc. | netnet | ▫️ | 25% | 9.45 | 1.94 | 6.62 | 343 | 0.74 | 30.65 | 4M | — |
+| UNIT | Uniti Group Inc. | piotroski | ▫️ | 22% | 9.45 | 1.94 | 6.62 | 343 | 0.74 | 30.65 | 4M | — |
+| UNIT | Uniti Group Inc. | custom | ▫️ | 0% | 9.45 | 1.94 | 6.62 | 343 | 0.74 | 30.65 | 4M | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | buffett | ▫️ | 67% | 78.30 | 15.41 | 2.12 | 13.75 | 10.06 | 0.12 | 2M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
