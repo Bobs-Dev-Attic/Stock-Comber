@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-19 17:36 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-19 21:47 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **31** strategy matches passed.
+Screened **75** companies · **25** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
 | PIPR | PIPER SANDLER COMPANIES | greenblatt | ✅ | 100% | 72.36 | 4.57 | 0.94 | 20.52 | — | 0.74 | 1M | — |
 | PIPR | PIPER SANDLER COMPANIES | lynch | ✅ | 100% | 72.36 | 4.57 | 0.94 | 20.52 | — | 0.74 | 1M | — |
 | PIPR | PIPER SANDLER COMPANIES | piotroski | ✅ | 89% | 72.36 | 4.57 | 0.94 | 20.52 | — | 0.74 | 1M | — |
-| SON | Sonoco Products Company | piotroski | ✅ | 89% | 48.84 | 4.85 | 1.35 | 27.75 | 1.05 | 2.08 | 2M | — |
-| SON | Sonoco Products Company | lynch | ✅ | 75% | 48.84 | 4.85 | 1.35 | 27.75 | 1.05 | 2.08 | 2M | — |
-| WTFCN | WINTRUST FINANCIAL CORP | lynch | ✅ | 75% | 26.05 | 2.29 | 0.24 | 11.35 | — | 8.80 | 4,862 | — |
-| PRI | Primerica, Inc. | piotroski | ✅ | 89% | 291 | 12.68 | 3.88 | 30.71 | — | 5.14 | 459,950 | — |
-| TREE | LendingTree, Inc. | greenblatt | ✅ | 100% | 25.61 | 2.38 | 1.26 | 52.76 | 1.67 | 1.98 | 354,681 | — |
-| TRNO | Terreno Realty Corporation | lynch | ✅ | 100% | 65.75 | 16.82 | 1.63 | 9.72 | — | 0.30 | 2M | — |
-| AREC | AMERICAN RESOURCES CORPORATI | greenblatt | ✅ | 100% | 1.98 | 3.14 | 1.82 | 58.44 | 2.19 | 0.80 | 3M | — |
-| IBP | Installed Building Products, | piotroski | ✅ | 89% | 198 | 20.35 | 7.61 | 37.39 | 3.03 | 1.91 | 806,905 | — |
-| IBP | Installed Building Products, | lynch | ✅ | 75% | 198 | 20.35 | 7.61 | 37.39 | 3.03 | 1.91 | 806,905 | — |
-| AES | THE AES CORPORATION | greenblatt | ✅ | 100% | 14.83 | 11.77 | 2.61 | 22.40 | 0.77 | — | 10M | — |
-| IBEX | IBEX LIMITED | piotroski | ✅ | 100% | 40.20 | 12.84 | 3.50 | 27.22 | 2.10 | 0.82 | 219,005 | — |
-| ABG | ASBURY AUTOMOTIVE GROUP, INC | piotroski | ✅ | 78% | 183 | 7.28 | 0.92 | 12.64 | 0.95 | — | 919,319 | — |
-| ABG | ASBURY AUTOMOTIVE GROUP, INC | lynch | ✅ | 75% | 183 | 7.28 | 0.92 | 12.64 | 0.95 | — | 919,319 | — |
-| ALRM | ALARM.COM HOLDINGS, INC. | piotroski | ✅ | 78% | 53.96 | 21.93 | 3.75 | 15.52 | 1.92 | 1.47 | 1M | — |
-| BANC | BANC OF CALIFORNIA, INC. | piotroski | ✅ | 78% | 18.32 | 15.66 | 0.84 | 6.47 | — | 8.83 | 6M | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | piotroski | ✅ | 78% | 8.68 | 7.17 | — | -221 | 2.06 | -5.32 | 13M | — |
+| SPNT | SIRIUSPOINT LTD. | lynch | ✅ | 75% | 24.75 | 6.80 | 1.22 | 18.61 | — | 4.09 | 4M | — |
+| GENVR | Gen Digital Inc. | piotroski | ✅ | 89% | 4.21 | 2.68 | 1.00 | 37.27 | 0.40 | 4.97 | 28,003 | — |
+| RILY | BRC Group Holdings, Inc. | greenblatt | ✅ | 100% | 5.98 | 0.61 | — | -179 | — | -10.65 | 1M | — |
+| RILY | BRC Group Holdings, Inc. | lynch | ✅ | 75% | 5.98 | 0.61 | — | -179 | — | -10.65 | 1M | — |
+| CARG | CarGurus, Inc. | piotroski | ✅ | 89% | 33.21 | 21.43 | 8.91 | 41.66 | 2.81 | 0.77 | 2M | — |
+| DAKT | Daktronics, Inc. | piotroski | ✅ | 89% | 17.41 | 18.92 | 2.86 | 15.09 | 2.31 | — | 902,821 | — |
+| DAKT | Daktronics, Inc. | lynch | ✅ | 75% | 17.41 | 18.92 | 2.86 | 15.09 | 2.31 | — | 902,821 | — |
+| SFM | Sprouts Farmers Market, Inc. | piotroski | ✅ | 78% | 70.79 | 13.33 | 4.98 | 37.32 | 0.93 | 1.96 | 2M | — |
+| NYT | THE NEW YORK TIMES COMPANY | piotroski | ✅ | 100% | 70.21 | 33.59 | 5.67 | 16.85 | 1.54 | — | 8M | — |
+| AGX | ARGAN INC | lynch | ✅ | 75% | 390 | 40.03 | 11.93 | 29.80 | 1.59 | 1.57 | 595,684 | — |
+| UMBF | UMB FINANCIAL CORP | lynch | ✅ | 75% | 135 | 14.48 | 1.29 | 9.13 | — | 8.50 | 2M | — |
 | AM | ANTERO MIDSTREAM CORPORATION | piotroski | ✅ | 78% | 21.19 | 24.64 | 5.18 | 20.95 | 3.41 | 1.98 | 7M | — |
-| WOR | WORTHINGTON ENTERPRISES, INC | piotroski | ✅ | 89% | 57.38 | 18.27 | 2.78 | 15.20 | 2.37 | 0.80 | 804,839 | — |
-| FIVN | Five9, Inc. | piotroski | ✅ | 89% | 32.47 | 72.16 | 3.64 | 5.02 | 4.51 | 1.28 | 4M | — |
-| IMAX | IMAX Corporation | piotroski | ✅ | 78% | 52.77 | 83.76 | 8.67 | 10.32 | — | 1.38 | 1M | — |
-| HAYW | Hayward Holdings, Inc. | piotroski | ✅ | 100% | 12.99 | 19.10 | 1.81 | 9.51 | 2.94 | 0.98 | 10M | — |
-| AIOT | POWERFLEET, INC. | piotroski | ✅ | 78% | 2.88 | — | 0.81 | -4.32 | 1.13 | 1.00 | 2M | — |
-| SGRY | Surgery Partners, Inc. | piotroski | ✅ | 78% | 13.25 | — | 0.98 | -4.55 | 1.87 | — | 3M | — |
-| MCS | MARCUS CORP | piotroski | ✅ | 78% | 27.68 | 68.22 | 1.89 | 2.77 | 0.40 | — | 325,426 | — |
-| RRX | REGAL REXNORD CORP | piotroski | ✅ | 78% | 148 | 35.25 | 1.44 | 4.08 | 2.15 | — | 2M | — |
-| INNV | InnovAge Holding Corp. | piotroski | ✅ | 78% | 10.92 | — | 6.29 | -1.08 | 1.05 | 1.23 | 331,570 | — |
-| AVNW | Aviat Networks, Inc. | piotroski | ✅ | 78% | 20.46 | 108 | 1.00 | 0.95 | 1.97 | 1.24 | 174,129 | — |
-| DAR | DARLING INGREDIENTS INC. | piotroski | ✅ | 78% | 65.36 | 168 | 2.21 | 1.33 | 1.50 | 1.16 | 4M | — |
+| BCPC | Balchem Corporation | piotroski | ✅ | 100% | 167 | 35.17 | 4.33 | 12.31 | 2.07 | 0.34 | 620,235 | — |
+| KRT | Karat Packaging Inc. | piotroski | ✅ | 78% | 49.87 | 31.97 | 6.74 | 21.07 | 2.30 | 0.88 | 286,040 | — |
+| EXTR | Extreme Networks, Inc. | piotroski | ✅ | 89% | 22.31 | 71.97 | 33.99 | 47.54 | 0.93 | — | 2M | — |
+| HLIO | HELIOS TECHNOLOGIES, INC. | piotroski | ✅ | 100% | 69.29 | 47.79 | 2.48 | 5.20 | 2.90 | 0.63 | 621,912 | — |
+| HLIO | HELIOS TECHNOLOGIES, INC. | lynch | ✅ | 75% | 69.29 | 47.79 | 2.48 | 5.20 | 2.90 | 0.63 | 621,912 | — |
+| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.51 | 20.50 | 0.81 | 3.99 | 9.18 | 0.34 | 480,414 | — |
+| ALNT | ALLIENT INC | piotroski | ✅ | 89% | 100 | 76.13 | 5.58 | 7.31 | 3.66 | 0.92 | 232,798 | — |
+| BJRI | BJ’S RESTAURANTS, INC. | piotroski | ✅ | 78% | 59.54 | 27.56 | 3.68 | 13.33 | 0.40 | 1.77 | 760,526 | — |
 | GXO | GXO Logistics, Inc. | piotroski | ✅ | 78% | 45.92 | 164 | 1.79 | 1.07 | 0.85 | — | 1M | — |
 | PIPR | PIPER SANDLER COMPANIES | graham | ▫️ | 78% | 72.36 | 4.57 | 0.94 | 20.52 | — | 0.74 | 1M | — |
 | PIPR | PIPER SANDLER COMPANIES | buffett | ▫️ | 50% | 72.36 | 4.57 | 0.94 | 20.52 | — | 0.74 | 1M | — |
 | PIPR | PIPER SANDLER COMPANIES | netnet | ▫️ | 25% | 72.36 | 4.57 | 0.94 | 20.52 | — | 0.74 | 1M | — |
 | PIPR | PIPER SANDLER COMPANIES | custom | ▫️ | 0% | 72.36 | 4.57 | 0.94 | 20.52 | — | 0.74 | 1M | — |
-| SON | Sonoco Products Company | graham | ▫️ | 67% | 48.84 | 4.85 | 1.35 | 27.75 | 1.05 | 2.08 | 2M | — |
-| SON | Sonoco Products Company | buffett | ▫️ | 67% | 48.84 | 4.85 | 1.35 | 27.75 | 1.05 | 2.08 | 2M | — |
-| SON | Sonoco Products Company | greenblatt | ▫️ | 67% | 48.84 | 4.85 | 1.35 | 27.75 | 1.05 | 2.08 | 2M | — |
-| SON | Sonoco Products Company | netnet | ▫️ | 25% | 48.84 | 4.85 | 1.35 | 27.75 | 1.05 | 2.08 | 2M | — |
-| SON | Sonoco Products Company | custom | ▫️ | 0% | 48.84 | 4.85 | 1.35 | 27.75 | 1.05 | 2.08 | 2M | — |
-| WTFCN | WINTRUST FINANCIAL CORP | graham | ▫️ | 67% | 26.05 | 2.29 | 0.24 | 11.35 | — | 8.80 | 4,862 | — |
-| WTFCN | WINTRUST FINANCIAL CORP | piotroski | ▫️ | 67% | 26.05 | 2.29 | 0.24 | 11.35 | — | 8.80 | 4,862 | — |
-| WTFCN | WINTRUST FINANCIAL CORP | greenblatt | ▫️ | 67% | 26.05 | 2.29 | 0.24 | 11.35 | — | 8.80 | 4,862 | — |
-| WTFCN | WINTRUST FINANCIAL CORP | buffett | ▫️ | 50% | 26.05 | 2.29 | 0.24 | 11.35 | — | 8.80 | 4,862 | — |
-| WTFCN | WINTRUST FINANCIAL CORP | netnet | ▫️ | 25% | 26.05 | 2.29 | 0.24 | 11.35 | — | 8.80 | 4,862 | — |
-| WTFCN | WINTRUST FINANCIAL CORP | custom | ▫️ | 0% | 26.05 | 2.29 | 0.24 | 11.35 | — | 8.80 | 4,862 | — |
-| PRI | Primerica, Inc. | buffett | ▫️ | 67% | 291 | 12.68 | 3.88 | 30.71 | — | 5.14 | 459,950 | — |
-| PRI | Primerica, Inc. | greenblatt | ▫️ | 67% | 291 | 12.68 | 3.88 | 30.71 | — | 5.14 | 459,950 | — |
-| PRI | Primerica, Inc. | graham | ▫️ | 56% | 291 | 12.68 | 3.88 | 30.71 | — | 5.14 | 459,950 | — |
-| PRI | Primerica, Inc. | lynch | ▫️ | 50% | 291 | 12.68 | 3.88 | 30.71 | — | 5.14 | 459,950 | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | greenblatt | ▫️ | 67% | 8.68 | 7.17 | — | -221 | 2.06 | -5.32 | 13M | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | lynch | ▫️ | 50% | 8.68 | 7.17 | — | -221 | 2.06 | -5.32 | 13M | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | graham | ▫️ | 44% | 8.68 | 7.17 | — | -221 | 2.06 | -5.32 | 13M | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | buffett | ▫️ | 33% | 8.68 | 7.17 | — | -221 | 2.06 | -5.32 | 13M | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | netnet | ▫️ | 25% | 8.68 | 7.17 | — | -221 | 2.06 | -5.32 | 13M | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | custom | ▫️ | 0% | 8.68 | 7.17 | — | -221 | 2.06 | -5.32 | 13M | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | piotroski | ▫️ | 44% | 25.87 | — | — | — | 2.10 | — | 310,717 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | graham | ▫️ | 33% | 25.87 | — | — | — | 2.10 | — | 310,717 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | buffett | ▫️ | 33% | 25.87 | — | — | — | 2.10 | — | 310,717 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | greenblatt | ▫️ | 33% | 25.87 | — | — | — | 2.10 | — | 310,717 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | lynch | ▫️ | 25% | 25.87 | — | — | — | 2.10 | — | 310,717 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | netnet | ▫️ | 25% | 25.87 | — | — | — | 2.10 | — | 310,717 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | custom | ▫️ | 0% | 25.87 | — | — | — | 2.10 | — | 310,717 | — |
+| INSW | INTERNATIONAL SEAWAYS, INC. | buffett | ▫️ | 67% | 111 | 17.84 | 2.73 | 15.31 | 3.71 | 0.32 | 2M | — |
+| INSW | INTERNATIONAL SEAWAYS, INC. | piotroski | ▫️ | 67% | 111 | 17.84 | 2.73 | 15.31 | 3.71 | 0.32 | 2M | — |
+| INSW | INTERNATIONAL SEAWAYS, INC. | lynch | ▫️ | 50% | 111 | 17.84 | 2.73 | 15.31 | 3.71 | 0.32 | 2M | — |
+| INSW | INTERNATIONAL SEAWAYS, INC. | graham | ▫️ | 33% | 111 | 17.84 | 2.73 | 15.31 | 3.71 | 0.32 | 2M | — |
+| INSW | INTERNATIONAL SEAWAYS, INC. | greenblatt | ▫️ | 33% | 111 | 17.84 | 2.73 | 15.31 | 3.71 | 0.32 | 2M | — |
+| INSW | INTERNATIONAL SEAWAYS, INC. | netnet | ▫️ | 25% | 111 | 17.84 | 2.73 | 15.31 | 3.71 | 0.32 | 2M | — |
+| INSW | INTERNATIONAL SEAWAYS, INC. | custom | ▫️ | 0% | 111 | 17.84 | 2.73 | 15.31 | 3.71 | 0.32 | 2M | — |
+| MGY | Magnolia Oil & Gas Corp | piotroski | ▫️ | 67% | 25.18 | 14.37 | 2.34 | 16.27 | 1.54 | — | 7M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.

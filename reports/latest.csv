@@ -2,50 +2,50 @@ ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,ro
 PIPR,PIPER SANDLER COMPANIES,greenblatt,True,3,3,100.0,72.36,4.57,0.94,20.52,—,0.74,166,1M,—
 PIPR,PIPER SANDLER COMPANIES,lynch,True,4,4,100.0,72.36,4.57,0.94,20.52,—,0.74,166,1M,—
 PIPR,PIPER SANDLER COMPANIES,piotroski,True,8,9,88.9,72.36,4.57,0.94,20.52,—,0.74,166,1M,—
-SON,Sonoco Products Company,piotroski,True,8,9,88.9,48.84,4.85,1.35,27.75,1.05,2.08,90.68,2M,—
-SON,Sonoco Products Company,lynch,True,3,4,75.0,48.84,4.85,1.35,27.75,1.05,2.08,90.68,2M,—
-WTFCN,WINTRUST FINANCIAL CORP,lynch,True,3,4,75.0,26.05,2.29,0.24,11.35,—,8.80,166,"4,862",—
-PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,291,12.68,3.88,30.71,—,5.14,196,"459,950",—
-TREE,"LendingTree, Inc.",greenblatt,True,3,3,100.0,25.61,2.38,1.26,52.76,1.67,1.98,70.33,"354,681",—
-TRNO,Terreno Realty Corporation,lynch,True,4,4,100.0,65.75,16.82,1.63,9.72,—,0.30,59.59,2M,—
-AREC,AMERICAN RESOURCES CORPORATION,greenblatt,True,3,3,100.0,1.98,3.14,1.82,58.44,2.19,0.80,3.92,3M,—
-IBP,"Installed Building Products, Inc.",piotroski,True,8,9,88.9,198,20.35,7.61,37.39,3.03,1.91,75.33,"806,905",—
-IBP,"Installed Building Products, Inc.",lynch,True,3,4,75.0,198,20.35,7.61,37.39,3.03,1.91,75.33,"806,905",—
-AES,THE AES CORPORATION,greenblatt,True,3,3,100.0,14.83,11.77,2.61,22.40,0.77,—,12.70,10M,—
-IBEX,IBEX LIMITED,piotroski,True,9,9,100.0,40.20,12.84,3.50,27.22,2.10,0.82,28.45,"219,005",—
-ABG,"ASBURY AUTOMOTIVE GROUP, INC.",piotroski,True,7,9,77.8,183,7.28,0.92,12.64,0.95,—,335,"919,319",—
-ABG,"ASBURY AUTOMOTIVE GROUP, INC.",lynch,True,3,4,75.0,183,7.28,0.92,12.64,0.95,—,335,"919,319",—
-ALRM,"ALARM.COM HOLDINGS, INC.",piotroski,True,7,9,77.8,53.96,21.93,3.75,15.52,1.92,1.47,28.23,1M,—
-BANC,"BANC OF CALIFORNIA, INC.",piotroski,True,7,9,77.8,18.32,15.66,0.84,6.47,—,8.83,24.01,6M,—
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",piotroski,True,7,9,77.8,8.68,7.17,—,-221,2.06,-5.32,—,13M,—
+SPNT,SIRIUSPOINT LTD.,lynch,True,3,4,75.0,24.75,6.80,1.22,18.61,—,4.09,40.78,4M,—
+GENVR,Gen Digital Inc.,piotroski,True,8,9,88.9,4.21,2.68,1.00,37.27,0.40,4.97,12.21,"28,003",—
+RILY,"BRC Group Holdings, Inc.",greenblatt,True,3,3,100.0,5.98,0.61,—,-179,—,-10.65,—,1M,—
+RILY,"BRC Group Holdings, Inc.",lynch,True,3,4,75.0,5.98,0.61,—,-179,—,-10.65,—,1M,—
+CARG,"CarGurus, Inc.",piotroski,True,8,9,88.9,33.21,21.43,8.91,41.66,2.81,0.77,11.40,2M,—
+DAKT,"Daktronics, Inc.",piotroski,True,8,9,88.9,17.41,18.92,2.86,15.09,2.31,—,11.23,"902,821",—
+DAKT,"Daktronics, Inc.",lynch,True,3,4,75.0,17.41,18.92,2.86,15.09,2.31,—,11.23,"902,821",—
+SFM,"Sprouts Farmers Market, Inc.",piotroski,True,7,9,77.8,70.79,13.33,4.98,37.32,0.93,1.96,41.21,2M,—
+NYT,THE NEW YORK TIMES COMPANY,piotroski,True,9,9,100.0,70.21,33.59,5.67,16.85,1.54,—,24.12,8M,—
+AGX,ARGAN INC,lynch,True,3,4,75.0,390,40.03,11.93,29.80,1.59,1.57,84.62,"595,684",—
+UMBF,UMB FINANCIAL CORP,lynch,True,3,4,75.0,135,14.48,1.29,9.13,—,8.50,148,2M,—
 AM,ANTERO MIDSTREAM CORPORATION,piotroski,True,7,9,77.8,21.19,24.64,5.18,20.95,3.41,1.98,8.90,7M,—
-WOR,"WORTHINGTON ENTERPRISES, INC.",piotroski,True,8,9,88.9,57.38,18.27,2.78,15.20,2.37,0.80,38.20,"804,839",—
-FIVN,"Five9, Inc.",piotroski,True,8,9,88.9,32.47,72.16,3.64,5.02,4.51,1.28,9.51,4M,—
-IMAX,IMAX Corporation,piotroski,True,7,9,77.8,52.77,83.76,8.67,10.32,—,1.38,9.29,1M,—
-HAYW,"Hayward Holdings, Inc.",piotroski,True,9,9,100.0,12.99,19.10,1.81,9.51,2.94,0.98,10.47,10M,—
-AIOT,"POWERFLEET, INC.",piotroski,True,7,9,77.8,2.88,—,0.81,-4.32,1.13,1.00,—,2M,—
-SGRY,"Surgery Partners, Inc.",piotroski,True,7,9,77.8,13.25,—,0.98,-4.55,1.87,—,—,3M,—
-MCS,MARCUS CORP,piotroski,True,7,9,77.8,27.68,68.22,1.89,2.77,0.40,—,11.55,"325,426",—
-RRX,REGAL REXNORD CORP,piotroski,True,7,9,77.8,148,35.25,1.44,4.08,2.15,—,98.55,2M,—
-INNV,InnovAge Holding Corp.,piotroski,True,7,9,77.8,10.92,—,6.29,-1.08,1.05,1.23,—,"331,570",—
-AVNW,"Aviat Networks, Inc.",piotroski,True,7,9,77.8,20.46,108,1.00,0.95,1.97,1.24,9.37,"174,129",—
-DAR,DARLING INGREDIENTS INC.,piotroski,True,7,9,77.8,65.36,168,2.21,1.33,1.50,1.16,16.11,4M,—
+BCPC,Balchem Corporation,piotroski,True,9,9,100.0,167,35.17,4.33,12.31,2.07,0.34,64.20,"620,235",—
+KRT,Karat Packaging Inc.,piotroski,True,7,9,77.8,49.87,31.97,6.74,21.07,2.30,0.88,16.12,"286,040",—
+EXTR,"Extreme Networks, Inc.",piotroski,True,8,9,88.9,22.31,71.97,33.99,47.54,0.93,—,2.14,2M,—
+HLIO,"HELIOS TECHNOLOGIES, INC.",piotroski,True,9,9,100.0,69.29,47.79,2.48,5.20,2.90,0.63,30.21,"621,912",—
+HLIO,"HELIOS TECHNOLOGIES, INC.",lynch,True,3,4,75.0,69.29,47.79,2.48,5.20,2.90,0.63,30.21,"621,912",—
+ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.51,20.50,0.81,3.99,9.18,0.34,5.26,"480,414",—
+ALNT,ALLIENT INC,piotroski,True,8,9,88.9,100,76.13,5.58,7.31,3.66,0.92,23.13,"232,798",—
+BJRI,"BJ’S RESTAURANTS, INC.",piotroski,True,7,9,77.8,59.54,27.56,3.68,13.33,0.40,1.77,28.05,"760,526",—
 GXO,"GXO Logistics, Inc.",piotroski,True,7,9,77.8,45.92,164,1.79,1.07,0.85,—,12.71,1M,—
 PIPR,PIPER SANDLER COMPANIES,graham,False,7,9,77.8,72.36,4.57,0.94,20.52,—,0.74,166,1M,—
 PIPR,PIPER SANDLER COMPANIES,buffett,False,3,6,50.0,72.36,4.57,0.94,20.52,—,0.74,166,1M,—
 PIPR,PIPER SANDLER COMPANIES,netnet,False,1,4,25.0,72.36,4.57,0.94,20.52,—,0.74,166,1M,—
 PIPR,PIPER SANDLER COMPANIES,custom,False,0,0,0.0,72.36,4.57,0.94,20.52,—,0.74,166,1M,—
-SON,Sonoco Products Company,graham,False,6,9,66.7,48.84,4.85,1.35,27.75,1.05,2.08,90.68,2M,—
-SON,Sonoco Products Company,buffett,False,4,6,66.7,48.84,4.85,1.35,27.75,1.05,2.08,90.68,2M,—
-SON,Sonoco Products Company,greenblatt,False,2,3,66.7,48.84,4.85,1.35,27.75,1.05,2.08,90.68,2M,—
-SON,Sonoco Products Company,netnet,False,1,4,25.0,48.84,4.85,1.35,27.75,1.05,2.08,90.68,2M,—
-SON,Sonoco Products Company,custom,False,0,0,0.0,48.84,4.85,1.35,27.75,1.05,2.08,90.68,2M,—
-WTFCN,WINTRUST FINANCIAL CORP,graham,False,6,9,66.7,26.05,2.29,0.24,11.35,—,8.80,166,"4,862",—
-WTFCN,WINTRUST FINANCIAL CORP,piotroski,False,6,9,66.7,26.05,2.29,0.24,11.35,—,8.80,166,"4,862",—
-WTFCN,WINTRUST FINANCIAL CORP,greenblatt,False,2,3,66.7,26.05,2.29,0.24,11.35,—,8.80,166,"4,862",—
-WTFCN,WINTRUST FINANCIAL CORP,buffett,False,3,6,50.0,26.05,2.29,0.24,11.35,—,8.80,166,"4,862",—
-WTFCN,WINTRUST FINANCIAL CORP,netnet,False,1,4,25.0,26.05,2.29,0.24,11.35,—,8.80,166,"4,862",—
-WTFCN,WINTRUST FINANCIAL CORP,custom,False,0,0,0.0,26.05,2.29,0.24,11.35,—,8.80,166,"4,862",—
-PRI,"Primerica, Inc.",buffett,False,4,6,66.7,291,12.68,3.88,30.71,—,5.14,196,"459,950",—
-PRI,"Primerica, Inc.",greenblatt,False,2,3,66.7,291,12.68,3.88,30.71,—,5.14,196,"459,950",—
-PRI,"Primerica, Inc.",graham,False,5,9,55.6,291,12.68,3.88,30.71,—,5.14,196,"459,950",—
-PRI,"Primerica, Inc.",lynch,False,2,4,50.0,291,12.68,3.88,30.71,—,5.14,196,"459,950",—
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",greenblatt,False,2,3,66.7,8.68,7.17,—,-221,2.06,-5.32,—,13M,—
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",lynch,False,2,4,50.0,8.68,7.17,—,-221,2.06,-5.32,—,13M,—
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",graham,False,4,9,44.4,8.68,7.17,—,-221,2.06,-5.32,—,13M,—
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",buffett,False,2,6,33.3,8.68,7.17,—,-221,2.06,-5.32,—,13M,—
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",netnet,False,1,4,25.0,8.68,7.17,—,-221,2.06,-5.32,—,13M,—
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",custom,False,0,0,0.0,8.68,7.17,—,-221,2.06,-5.32,—,13M,—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,piotroski,False,4,9,44.4,25.87,—,—,—,2.10,—,—,"310,717",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,graham,False,3,9,33.3,25.87,—,—,—,2.10,—,—,"310,717",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,buffett,False,2,6,33.3,25.87,—,—,—,2.10,—,—,"310,717",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,greenblatt,False,1,3,33.3,25.87,—,—,—,2.10,—,—,"310,717",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,lynch,False,1,4,25.0,25.87,—,—,—,2.10,—,—,"310,717",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,netnet,False,1,4,25.0,25.87,—,—,—,2.10,—,—,"310,717",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,custom,False,0,0,0.0,25.87,—,—,—,2.10,—,—,"310,717",—
+INSW,"INTERNATIONAL SEAWAYS, INC.",buffett,False,4,6,66.7,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
+INSW,"INTERNATIONAL SEAWAYS, INC.",piotroski,False,6,9,66.7,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
+INSW,"INTERNATIONAL SEAWAYS, INC.",lynch,False,2,4,50.0,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
+INSW,"INTERNATIONAL SEAWAYS, INC.",graham,False,3,9,33.3,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
+INSW,"INTERNATIONAL SEAWAYS, INC.",greenblatt,False,1,3,33.3,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
+INSW,"INTERNATIONAL SEAWAYS, INC.",netnet,False,1,4,25.0,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
+INSW,"INTERNATIONAL SEAWAYS, INC.",custom,False,0,0,0.0,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
+MGY,Magnolia Oil & Gas Corp,piotroski,False,6,9,66.7,25.18,14.37,2.34,16.27,1.54,—,20.61,7M,—
