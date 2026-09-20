@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-20 17:57 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-20 22:04 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **31** strategy matches passed.
+Screened **75** companies · **42** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
+| UGL | PROSHARES TRUST II | greenblatt | ✅ | 100% | 50.87 | 3.68 | 1.10 | 29.91 | — | 0.06 | 2M | — |
 | GOOGN | Alphabet Inc. | graham | ✅ | 100% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 376,484 | — |
 | GOOGN | Alphabet Inc. | buffett | ✅ | 100% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 376,484 | — |
 | GOOGN | Alphabet Inc. | greenblatt | ✅ | 100% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 376,484 | — |
 | GOOGN | Alphabet Inc. | lynch | ✅ | 100% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 376,484 | — |
-| TDW | TIDEWATER INC | piotroski | ✅ | 89% | 86.69 | 13.06 | 3.20 | 24.51 | 2.90 | — | 1M | — |
-| SBC | SBC Medical Group Holdings I | lynch | ✅ | 75% | 4.75 | 9.50 | 1.97 | 20.54 | 3.78 | 0.47 | 558,937 | — |
-| USLM | UNITED STATES LIME & MINERAL | lynch | ✅ | 100% | 114 | 24.30 | 5.17 | 21.29 | 19.27 | 0.08 | 561,098 | — |
-| USLM | UNITED STATES LIME & MINERAL | buffett | ✅ | 83% | 114 | 24.30 | 5.17 | 21.29 | 19.27 | 0.08 | 561,098 | — |
-| RLI | RLI Corp | buffett | ✅ | 83% | 59.39 | 13.59 | 3.09 | 22.68 | — | 2.47 | 2M | — |
-| RLI | RLI Corp | piotroski | ✅ | 78% | 59.39 | 13.59 | 3.09 | 22.68 | — | 2.47 | 2M | — |
-| RLI | RLI Corp | lynch | ✅ | 75% | 59.39 | 13.59 | 3.09 | 22.68 | — | 2.47 | 2M | — |
-| AIV | Apartment Investment and Man | greenblatt | ✅ | 100% | 2.18 | 0.56 | 0.85 | 151 | — | 3.10 | 1M | — |
-| BELFA | BEL FUSE INC /NJ | piotroski | ✅ | 89% | 199 | — | — | 14.46 | 3.02 | 0.98 | 78,236 | — |
-| ABG | ASBURY AUTOMOTIVE GROUP, INC | piotroski | ✅ | 78% | 183 | 7.28 | 0.92 | 12.64 | 0.95 | — | 894,915 | — |
-| ABG | ASBURY AUTOMOTIVE GROUP, INC | lynch | ✅ | 75% | 183 | 7.28 | 0.92 | 12.64 | 0.95 | — | 894,915 | — |
-| VICR | VICOR CORPORATION | piotroski | ✅ | 89% | 223 | 85.33 | 14.23 | 16.66 | 8.99 | 0.10 | 2M | — |
-| VICR | VICOR CORPORATION | buffett | ✅ | 83% | 223 | 85.33 | 14.23 | 16.66 | 8.99 | 0.10 | 2M | — |
-| VICR | VICOR CORPORATION | lynch | ✅ | 75% | 223 | 85.33 | 14.23 | 16.66 | 8.99 | 0.10 | 2M | — |
-| SSB | SOUTHSTATE BANK CORP | lynch | ✅ | 75% | 103 | 13.14 | 1.16 | 8.82 | — | 6.42 | 1M | — |
-| EZPW | EZCORP, INC. | piotroski | ✅ | 78% | 30.65 | 21.58 | 2.49 | 10.69 | 5.61 | 0.90 | 1M | — |
-| TRN | TRINITY INDUSTRIES INC | greenblatt | ✅ | 100% | 28.00 | 9.18 | 2.15 | 23.50 | — | 6.76 | 2M | — |
-| TRN | TRINITY INDUSTRIES INC | piotroski | ✅ | 78% | 28.00 | 9.18 | 2.15 | 23.50 | — | 6.76 | 2M | — |
-| DRVN | Driven Brands Holdings Inc. | piotroski | ✅ | 78% | 12.28 | 14.45 | 2.62 | 18.27 | 0.75 | 4.42 | 2M | — |
-| VCYT | VERACYTE, INC. | piotroski | ✅ | 89% | 39.80 | 48.53 | 2.45 | 5.07 | 8.15 | 0.07 | 3M | — |
-| CENTA | Central Garden & Pet Company | graham | ✅ | 100% | 34.57 | 13.56 | 1.39 | 10.29 | 3.67 | — | 718,127 | — |
-| CENTA | Central Garden & Pet Company | piotroski | ✅ | 89% | 34.57 | 13.56 | 1.39 | 10.29 | 3.67 | — | 718,127 | — |
+| BYD | BOYD GAMING CORP | greenblatt | ✅ | 100% | 72.97 | 3.23 | 2.29 | 70.66 | 0.54 | — | 2M | — |
+| BYD | BOYD GAMING CORP | piotroski | ✅ | 78% | 72.97 | 3.23 | 2.29 | 70.66 | 0.54 | — | 2M | — |
+| SPNT | SIRIUSPOINT LTD. | lynch | ✅ | 75% | 24.75 | 6.80 | 1.22 | 18.61 | — | 4.09 | 4M | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | piotroski | ✅ | 100% | 160 | 22.55 | 7.73 | 34.27 | 1.46 | — | 933,933 | — |
+| SKYW | SKYWEST INC | piotroski | ✅ | 89% | 96.38 | 9.31 | 1.45 | 15.60 | 0.65 | — | 992,755 | — |
+| FHI | Federated Hermes, Inc. | greenblatt | ✅ | 100% | 57.10 | 11.13 | 3.58 | 33.69 | 2.75 | 0.81 | 2M | — |
+| FHI | Federated Hermes, Inc. | piotroski | ✅ | 89% | 57.10 | 11.13 | 3.58 | 33.69 | 2.75 | 0.81 | 2M | — |
+| AROC | Archrock, Inc. | piotroski | ✅ | 89% | 31.56 | 17.25 | 3.70 | 21.61 | 1.54 | 1.92 | 4M | — |
+| IIIN | Insteel Industries Inc. | piotroski | ✅ | 78% | 29.66 | 14.12 | 1.56 | 11.04 | 3.97 | — | 262,763 | — |
+| IIIN | Insteel Industries Inc. | lynch | ✅ | 75% | 29.66 | 14.12 | 1.56 | 11.04 | 3.97 | — | 262,763 | — |
+| HOG | Harley-Davidson, Inc. | graham | ✅ | 100% | 25.93 | 9.33 | 1.00 | 10.79 | 2.10 | — | 3M | — |
+| HOG | Harley-Davidson, Inc. | piotroski | ✅ | 89% | 25.93 | 9.33 | 1.00 | 10.79 | 2.10 | — | 3M | — |
+| HRB | H&R BLOCK INC | greenblatt | ✅ | 100% | 44.25 | 7.82 | 48.54 | 624 | 1.13 | 26.72 | 5M | — |
+| HRB | H&R BLOCK INC | piotroski | ✅ | 89% | 44.25 | 7.82 | 48.54 | 624 | 1.13 | 26.72 | 5M | — |
+| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 138 | 21.86 | 2.29 | 10.49 | 1.53 | — | 584,750 | — |
+| SIRI | SIRIUS XM HOLDINGS INC. | lynch | ✅ | 75% | 27.31 | 12.25 | 0.84 | 6.96 | 0.30 | 1.36 | 8M | — |
+| OPLN | OPENLANE, Inc. | piotroski | ✅ | 89% | 34.27 | — | 2.95 | 14.32 | 1.16 | — | 3M | — |
+| KRT | Karat Packaging Inc. | piotroski | ✅ | 78% | 49.87 | 31.97 | 6.74 | 21.07 | 2.30 | 0.88 | 286,040 | — |
+| KNTK | KINETIK HOLDINGS INC. | lynch | ✅ | 75% | 53.50 | 20.34 | — | -31.53 | 0.69 | -7.37 | 4M | — |
+| SSRM | SSR Mining Inc. | piotroski | ✅ | 78% | 36.33 | 19.64 | 2.25 | 11.28 | 2.08 | 0.51 | 5M | — |
+| CNMD | CONMED CORPORATION | lynch | ✅ | 75% | 45.42 | 30.08 | 1.37 | 4.55 | 2.14 | 1.25 | 780,480 | — |
+| VCEL | VERICEL CORPORATION | piotroski | ✅ | 100% | 40.02 | 125 | 5.89 | 4.66 | 5.03 | 0.38 | 1M | — |
+| VCEL | VERICEL CORPORATION | lynch | ✅ | 75% | 40.02 | 125 | 5.89 | 4.66 | 5.03 | 0.38 | 1M | — |
+| LQDT | LIQUIDITY SERVICES, INC | piotroski | ✅ | 89% | 42.88 | 49.29 | 6.84 | 13.82 | 1.39 | 0.85 | 574,865 | — |
+| IMAX | IMAX Corporation | piotroski | ✅ | 78% | 52.77 | 83.76 | 8.67 | 10.32 | — | 1.38 | 1M | — |
+| HMN | HORACE MANN EDUCATORS CORPOR | piotroski | ✅ | 78% | 48.38 | 12.41 | 1.36 | 10.93 | — | 9.30 | 1M | — |
+| SHAK | SHAKE SHACK INC. | piotroski | ✅ | 89% | 54.88 | 50.35 | 4.37 | 8.70 | 1.76 | 2.56 | 2M | — |
 | VVX | V2X, Inc. | piotroski | ✅ | 100% | 76.84 | 31.36 | 2.25 | 7.18 | 1.22 | 2.02 | 4M | — |
-| LW | Lamb Weston Holdings, Inc. | piotroski | ✅ | 78% | 46.67 | 22.44 | 3.56 | 15.89 | 1.42 | — | 2M | — |
-| ALNT | ALLIENT INC | piotroski | ✅ | 89% | 100 | 76.13 | 5.58 | 7.31 | 3.66 | 0.92 | 232,816 | — |
+| TBCH | TURTLE BEACH CORPORATION | piotroski | ✅ | 78% | 12.68 | 16.47 | 2.02 | 12.24 | 1.98 | 1.09 | 281,508 | — |
+| THO | THOR INDUSTRIES, INC. | piotroski | ✅ | 78% | 67.77 | 14.00 | 0.84 | 6.03 | 1.75 | — | 2M | — |
+| SENS | Senseonics Holdings, Inc. | piotroski | ✅ | 78% | 9.58 | — | 6.55 | -113 | 4.83 | 1.07 | 2M | — |
+| CVI | CVR ENERGY, INC | piotroski | ✅ | 89% | 53.69 | 199 | 7.39 | 3.70 | 1.79 | — | 2M | — |
+| WGO | WINNEBAGO INDUSTRIES, INC. | piotroski | ✅ | 89% | 26.43 | 29.04 | 0.61 | 2.10 | 2.42 | 0.76 | 1M | — |
 | AVNW | Aviat Networks, Inc. | piotroski | ✅ | 78% | 20.46 | 108 | 1.00 | 0.95 | 1.97 | 1.24 | 174,131 | — |
-| ORN | ORION GROUP HOLDINGS, INC. | piotroski | ✅ | 78% | 9.05 | 151 | 2.26 | 1.56 | 1.36 | 1.61 | 700,631 | — |
+| SHC | SOTERA HEALTH COMPANY | piotroski | ✅ | 78% | 18.73 | 69.37 | 8.85 | 12.86 | 2.46 | 4.38 | 6M | — |
+| AMN | AMN HEALTHCARE SERVICES, INC | piotroski | ✅ | 78% | 34.26 | — | 2.06 | -14.90 | 0.94 | 2.26 | 1M | — |
+| KLIC | KULICKE AND SOFFA INDUSTRIES | piotroski | ✅ | 89% | 83.14 | 20,785 | 5.38 | 0.03 | 4.79 | 0.34 | 1M | — |
+| UGL | PROSHARES TRUST II | lynch | ▫️ | 50% | 50.87 | 3.68 | 1.10 | 29.91 | — | 0.06 | 2M | — |
+| UGL | PROSHARES TRUST II | graham | ▫️ | 44% | 50.87 | 3.68 | 1.10 | 29.91 | — | 0.06 | 2M | — |
+| UGL | PROSHARES TRUST II | buffett | ▫️ | 33% | 50.87 | 3.68 | 1.10 | 29.91 | — | 0.06 | 2M | — |
+| UGL | PROSHARES TRUST II | piotroski | ▫️ | 33% | 50.87 | 3.68 | 1.10 | 29.91 | — | 0.06 | 2M | — |
+| UGL | PROSHARES TRUST II | netnet | ▫️ | 25% | 50.87 | 3.68 | 1.10 | 29.91 | — | 0.06 | 2M | — |
+| UGL | PROSHARES TRUST II | custom | ▫️ | 0% | 50.87 | 3.68 | 1.10 | 29.91 | — | 0.06 | 2M | — |
 | GOOGN | Alphabet Inc. | piotroski | ▫️ | 67% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 376,484 | — |
 | GOOGN | Alphabet Inc. | netnet | ▫️ | 50% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 376,484 | — |
-| GOOGN | Alphabet Inc. | custom | ▫️ | 0% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 376,484 | — |
-| TDW | TIDEWATER INC | buffett | ▫️ | 50% | 86.69 | 13.06 | 3.20 | 24.51 | 2.90 | — | 1M | — |
-| TDW | TIDEWATER INC | graham | ▫️ | 44% | 86.69 | 13.06 | 3.20 | 24.51 | 2.90 | — | 1M | — |
-| TDW | TIDEWATER INC | greenblatt | ▫️ | 33% | 86.69 | 13.06 | 3.20 | 24.51 | 2.90 | — | 1M | — |
-| TDW | TIDEWATER INC | lynch | ▫️ | 25% | 86.69 | 13.06 | 3.20 | 24.51 | 2.90 | — | 1M | — |
-| TDW | TIDEWATER INC | netnet | ▫️ | 25% | 86.69 | 13.06 | 3.20 | 24.51 | 2.90 | — | 1M | — |
-| TDW | TIDEWATER INC | custom | ▫️ | 0% | 86.69 | 13.06 | 3.20 | 24.51 | 2.90 | — | 1M | — |
-| SBC | SBC Medical Group Holdings I | graham | ▫️ | 67% | 4.75 | 9.50 | 1.97 | 20.54 | 3.78 | 0.47 | 558,937 | — |
-| SBC | SBC Medical Group Holdings I | buffett | ▫️ | 67% | 4.75 | 9.50 | 1.97 | 20.54 | 3.78 | 0.47 | 558,937 | — |
-| SBC | SBC Medical Group Holdings I | greenblatt | ▫️ | 67% | 4.75 | 9.50 | 1.97 | 20.54 | 3.78 | 0.47 | 558,937 | — |
-| SBC | SBC Medical Group Holdings I | netnet | ▫️ | 50% | 4.75 | 9.50 | 1.97 | 20.54 | 3.78 | 0.47 | 558,937 | — |
-| SBC | SBC Medical Group Holdings I | piotroski | ▫️ | 44% | 4.75 | 9.50 | 1.97 | 20.54 | 3.78 | 0.47 | 558,937 | — |
-| SBC | SBC Medical Group Holdings I | custom | ▫️ | 0% | 4.75 | 9.50 | 1.97 | 20.54 | 3.78 | 0.47 | 558,937 | — |
-| USLM | UNITED STATES LIME & MINERAL | piotroski | ▫️ | 67% | 114 | 24.30 | 5.17 | 21.29 | 19.27 | 0.08 | 561,098 | — |
-| USLM | UNITED STATES LIME & MINERAL | greenblatt | ▫️ | 67% | 114 | 24.30 | 5.17 | 21.29 | 19.27 | 0.08 | 561,098 | — |
-| USLM | UNITED STATES LIME & MINERAL | graham | ▫️ | 56% | 114 | 24.30 | 5.17 | 21.29 | 19.27 | 0.08 | 561,098 | — |
-| USLM | UNITED STATES LIME & MINERAL | netnet | ▫️ | 50% | 114 | 24.30 | 5.17 | 21.29 | 19.27 | 0.08 | 561,098 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
