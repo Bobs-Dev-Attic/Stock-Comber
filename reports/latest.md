@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-20 01:32 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-20 06:36 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **35** strategy matches passed.
+Screened **75** companies · **23** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| SBC | SBC Medical Group Holdings I | lynch | ✅ | 75% | 4.75 | 9.50 | 1.97 | 20.54 | 3.78 | 0.47 | 558,937 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | piotroski | ✅ | 78% | 29.85 | 6.57 | 1.93 | 29.41 | 1.47 | 1.81 | 2M | — |
-| TMDX | TransMedics Group, Inc. | piotroski | ✅ | 78% | 86.42 | 17.75 | 7.41 | 40.22 | 7.14 | 1.26 | 1M | — |
-| SON | Sonoco Products Company | piotroski | ✅ | 89% | 48.84 | 4.85 | 1.35 | 27.75 | 1.05 | 2.08 | 2M | — |
-| SON | Sonoco Products Company | lynch | ✅ | 75% | 48.84 | 4.85 | 1.35 | 27.75 | 1.05 | 2.08 | 2M | — |
-| SPNT | SIRIUSPOINT LTD. | lynch | ✅ | 75% | 24.75 | 6.80 | 1.22 | 18.61 | — | 4.09 | 4M | — |
+| UGL | PROSHARES TRUST II | greenblatt | ✅ | 100% | 50.87 | 3.68 | 1.10 | 29.91 | — | 0.06 | 2M | — |
+| SAFX | XCF Global, Inc. | greenblatt | ✅ | 100% | 0.47 | 0.91 | 1.79 | 197 | 0.11 | 10.14 | 4M | — |
 | MCRI | MONARCH CASINO & RESORT, INC | piotroski | ✅ | 100% | 121 | 22.37 | 4.22 | 18.86 | 0.86 | 0.33 | 673,995 | — |
 | MCRI | MONARCH CASINO & RESORT, INC | lynch | ✅ | 100% | 121 | 22.37 | 4.22 | 18.86 | 0.86 | 0.33 | 673,995 | — |
 | MCRI | MONARCH CASINO & RESORT, INC | buffett | ✅ | 83% | 121 | 22.37 | 4.22 | 18.86 | 0.86 | 0.33 | 673,995 | — |
-| GLRE | GREENLIGHT CAPITAL RE, LTD. | piotroski | ✅ | 78% | 15.03 | 6.93 | 0.73 | 10.57 | — | 2.06 | 340,155 | — |
+| ESE | ESCO TECHNOLOGIES INC. | lynch | ✅ | 100% | 266 | 23.02 | 4.47 | 19.42 | 1.35 | 0.56 | 846,958 | — |
+| AX | AXOS FINANCIAL, INC. | lynch | ✅ | 75% | 90.79 | 10.71 | 1.62 | 15.49 | — | 8.46 | 2M | — |
+| OTTR | OTTER TAIL CORPORATION | lynch | ✅ | 75% | 87.42 | 13.35 | 1.98 | 14.82 | 2.28 | — | 1M | — |
 | ANNAW | AleAnna, Inc. | piotroski | ✅ | 78% | 0.26 | 6.50 | 0.18 | 4.91 | 1.93 | 0.73 | 31,895 | — |
-| AROC | Archrock, Inc. | piotroski | ✅ | 89% | 31.56 | 17.25 | 3.70 | 21.61 | 1.54 | 1.92 | 4M | — |
-| KRYS | Krystal Biotech, Inc. | piotroski | ✅ | 89% | 337 | 49.22 | 8.27 | 16.80 | 9.95 | 0.09 | 1M | — |
-| HBANP | Huntington Bancshares Incorp | lynch | ✅ | 75% | 16.69 | 12.01 | 1.03 | 9.08 | — | 8.25 | 41,695 | — |
+| AES | THE AES CORPORATION | greenblatt | ✅ | 100% | 14.83 | 11.77 | 2.61 | 22.40 | 0.77 | — | 10M | — |
+| FTDR | Frontdoor, Inc. | piotroski | ✅ | 89% | 78.29 | 22.89 | 24.10 | 105 | 1.55 | — | 1M | — |
+| FTDR | Frontdoor, Inc. | buffett | ✅ | 83% | 78.29 | 22.89 | 24.10 | 105 | 1.55 | — | 1M | — |
 | IIIN | Insteel Industries Inc. | piotroski | ✅ | 78% | 29.66 | 14.12 | 1.56 | 11.04 | 3.97 | — | 262,763 | — |
 | IIIN | Insteel Industries Inc. | lynch | ✅ | 75% | 29.66 | 14.12 | 1.56 | 11.04 | 3.97 | — | 262,763 | — |
-| FSS | FEDERAL SIGNAL CORPORATION | lynch | ✅ | 75% | 114 | 28.39 | 5.07 | 17.84 | 3.02 | 0.73 | 1M | — |
-| WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 11.86 | 2.34 | 1.35 | 57.56 | 1.39 | 2.18 | 1M | — |
-| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 15.79 | 8.35 | 2.06 | 24.66 | 2.26 | 2.62 | 3M | — |
-| JOE | The St. Joe Company | piotroski | ✅ | 89% | 63.84 | 32.08 | 4.83 | 15.09 | — | 0.97 | 1M | — |
-| BRX | Brixmor Property Group Inc. | lynch | ✅ | 75% | 28.03 | 22.42 | 2.87 | 12.83 | — | 2.03 | 5M | — |
-| DRVN | Driven Brands Holdings Inc. | piotroski | ✅ | 78% | 12.28 | 14.45 | 2.62 | 18.27 | 0.75 | 4.42 | 2M | — |
-| AGCO | AGCO CORP /DE | piotroski | ✅ | 89% | 120 | 12.29 | 2.09 | 17.00 | 1.39 | 1.72 | 2M | — |
-| BSY | BENTLEY SYSTEMS, INCORPORATE | piotroski | ✅ | 100% | 32.58 | 38.33 | 9.12 | 23.36 | 0.56 | 1.99 | 9M | — |
-| BSY | BENTLEY SYSTEMS, INCORPORATE | buffett | ✅ | 83% | 32.58 | 38.33 | 9.12 | 23.36 | 0.56 | 1.99 | 9M | — |
-| HLIO | HELIOS TECHNOLOGIES, INC. | piotroski | ✅ | 100% | 69.29 | 47.79 | 2.48 | 5.20 | 2.90 | 0.63 | 621,912 | — |
-| HLIO | HELIOS TECHNOLOGIES, INC. | lynch | ✅ | 75% | 69.29 | 47.79 | 2.48 | 5.20 | 2.90 | 0.63 | 621,912 | — |
-| FIVN | Five9, Inc. | piotroski | ✅ | 89% | 32.47 | 72.16 | 3.64 | 5.02 | 4.51 | 1.28 | 4M | — |
-| CYH | COMMUNITY HEALTH SYSTEMS, IN | piotroski | ✅ | 89% | 2.87 | 0.76 | — | -36.51 | 1.46 | -10.07 | 3M | — |
+| HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 112 | 43.93 | 285 | 649 | 4.66 | 50.73 | 10M | — |
+| ACEL | Accel Entertainment, Inc. | piotroski | ✅ | 78% | 11.27 | 18.78 | 3.61 | 19.09 | 2.61 | — | 626,987 | — |
+| FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 13.06 | 68.74 | 5.36 | 7.83 | 4.94 | 0.33 | 2M | — |
 | VVX | V2X, Inc. | piotroski | ✅ | 100% | 76.84 | 31.36 | 2.25 | 7.18 | 1.22 | 2.02 | 4M | — |
-| BHC | Bausch Health Companies Inc. | piotroski | ✅ | 78% | 5.67 | 13.50 | — | -28.34 | 1.47 | -46.91 | 2M | — |
-| GCO | GENESCO INC | piotroski | ✅ | 89% | 32.76 | 26.21 | 0.61 | 2.34 | 1.64 | 1.46 | 418,530 | — |
-| FROG | JFrog Ltd. | piotroski | ✅ | 78% | 92.81 | — | 12.15 | -8.09 | 2.14 | 0.51 | 2M | — |
-| HROW | Harrow, Inc. | piotroski | ✅ | 78% | 33.08 | — | 23.19 | -9.80 | 2.20 | 6.62 | 2M | — |
-| AEIS | ADVANCED ENERGY INDUSTRIES,  | piotroski | ✅ | 78% | 262 | 68.28 | 7.43 | 10.89 | 1.59 | 0.86 | 1M | — |
-| SBC | SBC Medical Group Holdings I | graham | ▫️ | 67% | 4.75 | 9.50 | 1.97 | 20.54 | 3.78 | 0.47 | 558,937 | — |
-| SBC | SBC Medical Group Holdings I | buffett | ▫️ | 67% | 4.75 | 9.50 | 1.97 | 20.54 | 3.78 | 0.47 | 558,937 | — |
-| SBC | SBC Medical Group Holdings I | greenblatt | ▫️ | 67% | 4.75 | 9.50 | 1.97 | 20.54 | 3.78 | 0.47 | 558,937 | — |
-| SBC | SBC Medical Group Holdings I | netnet | ▫️ | 50% | 4.75 | 9.50 | 1.97 | 20.54 | 3.78 | 0.47 | 558,937 | — |
-| SBC | SBC Medical Group Holdings I | piotroski | ▫️ | 44% | 4.75 | 9.50 | 1.97 | 20.54 | 3.78 | 0.47 | 558,937 | — |
-| SBC | SBC Medical Group Holdings I | custom | ▫️ | 0% | 4.75 | 9.50 | 1.97 | 20.54 | 3.78 | 0.47 | 558,937 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | piotroski | ▫️ | 67% | 2.99 | 14.95 | 3.34 | 22.71 | 4.86 | 0.39 | 609,168 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | greenblatt | ▫️ | 67% | 2.99 | 14.95 | 3.34 | 22.71 | 4.86 | 0.39 | 609,168 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | buffett | ▫️ | 50% | 2.99 | 14.95 | 3.34 | 22.71 | 4.86 | 0.39 | 609,168 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | lynch | ▫️ | 50% | 2.99 | 14.95 | 3.34 | 22.71 | 4.86 | 0.39 | 609,168 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | netnet | ▫️ | 50% | 2.99 | 14.95 | 3.34 | 22.71 | 4.86 | 0.39 | 609,168 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | graham | ▫️ | 44% | 2.99 | 14.95 | 3.34 | 22.71 | 4.86 | 0.39 | 609,168 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | custom | ▫️ | 0% | 2.99 | 14.95 | 3.34 | 22.71 | 4.86 | 0.39 | 609,168 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | graham | ▫️ | 67% | 29.85 | 6.57 | 1.93 | 29.41 | 1.47 | 1.81 | 2M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | greenblatt | ▫️ | 67% | 29.85 | 6.57 | 1.93 | 29.41 | 1.47 | 1.81 | 2M | — |
+| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 54.55 | 52.45 | — | -29.14 | 1.60 | -6.05 | 661,942 | — |
+| TRC | TEJON RANCH CO. | piotroski | ✅ | 78% | 16.16 | — | 0.92 | 0.02 | 4.14 | 0.29 | 441,739 | — |
+| MSGS | MADISON SQUARE GARDEN SPORTS | piotroski | ✅ | 100% | 399 | 1,246 | — | -2.95 | 0.50 | -6.84 | 572,692 | — |
+| SPHR | SPHERE ENTERTAINMENT CO. | piotroski | ✅ | 78% | 145 | 196 | 2.94 | 1.50 | 1.09 | 0.89 | 838,231 | — |
+| AVNW | Aviat Networks, Inc. | piotroski | ✅ | 78% | 20.46 | 108 | 1.00 | 0.95 | 1.97 | 1.24 | 174,129 | — |
+| UGL | PROSHARES TRUST II | lynch | ▫️ | 50% | 50.87 | 3.68 | 1.10 | 29.91 | — | 0.06 | 2M | — |
+| UGL | PROSHARES TRUST II | graham | ▫️ | 44% | 50.87 | 3.68 | 1.10 | 29.91 | — | 0.06 | 2M | — |
+| UGL | PROSHARES TRUST II | buffett | ▫️ | 33% | 50.87 | 3.68 | 1.10 | 29.91 | — | 0.06 | 2M | — |
+| UGL | PROSHARES TRUST II | piotroski | ▫️ | 33% | 50.87 | 3.68 | 1.10 | 29.91 | — | 0.06 | 2M | — |
+| UGL | PROSHARES TRUST II | netnet | ▫️ | 25% | 50.87 | 3.68 | 1.10 | 29.91 | — | 0.06 | 2M | — |
+| UGL | PROSHARES TRUST II | custom | ▫️ | 0% | 50.87 | 3.68 | 1.10 | 29.91 | — | 0.06 | 2M | — |
+| SAFX | XCF Global, Inc. | graham | ▫️ | 33% | 0.47 | 0.91 | 1.79 | 197 | 0.11 | 10.14 | 4M | — |
+| SAFX | XCF Global, Inc. | buffett | ▫️ | 33% | 0.47 | 0.91 | 1.79 | 197 | 0.11 | 10.14 | 4M | — |
+| SAFX | XCF Global, Inc. | lynch | ▫️ | 25% | 0.47 | 0.91 | 1.79 | 197 | 0.11 | 10.14 | 4M | — |
+| SAFX | XCF Global, Inc. | netnet | ▫️ | 25% | 0.47 | 0.91 | 1.79 | 197 | 0.11 | 10.14 | 4M | — |
+| SAFX | XCF Global, Inc. | piotroski | ▫️ | 11% | 0.47 | 0.91 | 1.79 | 197 | 0.11 | 10.14 | 4M | — |
+| SAFX | XCF Global, Inc. | custom | ▫️ | 0% | 0.47 | 0.91 | 1.79 | 197 | 0.11 | 10.14 | 4M | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | piotroski | ▫️ | 44% | 25.87 | — | — | — | 2.10 | — | 307,620 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | graham | ▫️ | 33% | 25.87 | — | — | — | 2.10 | — | 307,620 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | buffett | ▫️ | 33% | 25.87 | — | — | — | 2.10 | — | 307,620 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | greenblatt | ▫️ | 33% | 25.87 | — | — | — | 2.10 | — | 307,620 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | lynch | ▫️ | 25% | 25.87 | — | — | — | 2.10 | — | 307,620 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | netnet | ▫️ | 25% | 25.87 | — | — | — | 2.10 | — | 307,620 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | custom | ▫️ | 0% | 25.87 | — | — | — | 2.10 | — | 307,620 | — |
+| PPIH | Perma-Pipe International Hol | piotroski | ▫️ | 67% | 30.55 | 14.62 | 2.75 | 18.79 | 1.84 | — | 194,181 | — |
+| PPIH | Perma-Pipe International Hol | graham | ▫️ | 44% | 30.55 | 14.62 | 2.75 | 18.79 | 1.84 | — | 194,181 | — |
+| PPIH | Perma-Pipe International Hol | greenblatt | ▫️ | 33% | 30.55 | 14.62 | 2.75 | 18.79 | 1.84 | — | 194,181 | — |
+| PPIH | Perma-Pipe International Hol | lynch | ▫️ | 25% | 30.55 | 14.62 | 2.75 | 18.79 | 1.84 | — | 194,181 | — |
+| PPIH | Perma-Pipe International Hol | netnet | ▫️ | 25% | 30.55 | 14.62 | 2.75 | 18.79 | 1.84 | — | 194,181 | — |
+| PPIH | Perma-Pipe International Hol | buffett | ▫️ | 17% | 30.55 | 14.62 | 2.75 | 18.79 | 1.84 | — | 194,181 | — |
+| PPIH | Perma-Pipe International Hol | custom | ▫️ | 0% | 30.55 | 14.62 | 2.75 | 18.79 | 1.84 | — | 194,181 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | graham | ▫️ | 33% | 121 | 22.37 | 4.22 | 18.86 | 0.86 | 0.33 | 673,995 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
