@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-PIPR,PIPER SANDLER COMPANIES,greenblatt,True,3,3,100.0,72.36,4.57,0.94,20.52,—,0.74,166,1M,—
-PIPR,PIPER SANDLER COMPANIES,lynch,True,4,4,100.0,72.36,4.57,0.94,20.52,—,0.74,166,1M,—
-PIPR,PIPER SANDLER COMPANIES,piotroski,True,8,9,88.9,72.36,4.57,0.94,20.52,—,0.74,166,1M,—
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",piotroski,True,7,9,77.8,8.68,7.17,—,-221,2.06,-5.32,—,13M,—
+SBC,SBC Medical Group Holdings Incorporated,lynch,True,3,4,75.0,4.75,9.50,1.97,20.54,3.78,0.47,5.21,"558,937",—
+PPC,PILGRIM’S PRIDE CORPORATION,piotroski,True,7,9,77.8,29.85,6.57,1.93,29.41,1.47,1.81,39.71,2M,—
+TMDX,"TransMedics Group, Inc.",piotroski,True,7,9,77.8,86.42,17.75,7.41,40.22,7.14,1.26,35.76,1M,—
+SON,Sonoco Products Company,piotroski,True,8,9,88.9,48.84,4.85,1.35,27.75,1.05,2.08,90.68,2M,—
+SON,Sonoco Products Company,lynch,True,3,4,75.0,48.84,4.85,1.35,27.75,1.05,2.08,90.68,2M,—
 SPNT,SIRIUSPOINT LTD.,lynch,True,3,4,75.0,24.75,6.80,1.22,18.61,—,4.09,40.78,4M,—
-GENVR,Gen Digital Inc.,piotroski,True,8,9,88.9,4.21,2.68,1.00,37.27,0.40,4.97,12.21,"28,003",—
-RILY,"BRC Group Holdings, Inc.",greenblatt,True,3,3,100.0,5.98,0.61,—,-179,—,-10.65,—,1M,—
-RILY,"BRC Group Holdings, Inc.",lynch,True,3,4,75.0,5.98,0.61,—,-179,—,-10.65,—,1M,—
-CARG,"CarGurus, Inc.",piotroski,True,8,9,88.9,33.21,21.43,8.91,41.66,2.81,0.77,11.40,2M,—
-DAKT,"Daktronics, Inc.",piotroski,True,8,9,88.9,17.41,18.92,2.86,15.09,2.31,—,11.23,"902,821",—
-DAKT,"Daktronics, Inc.",lynch,True,3,4,75.0,17.41,18.92,2.86,15.09,2.31,—,11.23,"902,821",—
-SFM,"Sprouts Farmers Market, Inc.",piotroski,True,7,9,77.8,70.79,13.33,4.98,37.32,0.93,1.96,41.21,2M,—
-NYT,THE NEW YORK TIMES COMPANY,piotroski,True,9,9,100.0,70.21,33.59,5.67,16.85,1.54,—,24.12,8M,—
-AGX,ARGAN INC,lynch,True,3,4,75.0,390,40.03,11.93,29.80,1.59,1.57,84.62,"595,684",—
-UMBF,UMB FINANCIAL CORP,lynch,True,3,4,75.0,135,14.48,1.29,9.13,—,8.50,148,2M,—
-AM,ANTERO MIDSTREAM CORPORATION,piotroski,True,7,9,77.8,21.19,24.64,5.18,20.95,3.41,1.98,8.90,7M,—
-BCPC,Balchem Corporation,piotroski,True,9,9,100.0,167,35.17,4.33,12.31,2.07,0.34,64.20,"620,235",—
-KRT,Karat Packaging Inc.,piotroski,True,7,9,77.8,49.87,31.97,6.74,21.07,2.30,0.88,16.12,"286,040",—
-EXTR,"Extreme Networks, Inc.",piotroski,True,8,9,88.9,22.31,71.97,33.99,47.54,0.93,—,2.14,2M,—
+MCRI,"MONARCH CASINO & RESORT, INC.",piotroski,True,9,9,100.0,121,22.37,4.22,18.86,0.86,0.33,59.33,"673,995",—
+MCRI,"MONARCH CASINO & RESORT, INC.",lynch,True,4,4,100.0,121,22.37,4.22,18.86,0.86,0.33,59.33,"673,995",—
+MCRI,"MONARCH CASINO & RESORT, INC.",buffett,True,5,6,83.3,121,22.37,4.22,18.86,0.86,0.33,59.33,"673,995",—
+GLRE,"GREENLIGHT CAPITAL RE, LTD.",piotroski,True,7,9,77.8,15.03,6.93,0.73,10.57,—,2.06,31.65,"340,155",—
+ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.26,6.50,0.18,4.91,1.93,0.73,1.14,"31,895",—
+AROC,"Archrock, Inc.",piotroski,True,8,9,88.9,31.56,17.25,3.70,21.61,1.54,1.92,18.75,4M,—
+KRYS,"Krystal Biotech, Inc.",piotroski,True,8,9,88.9,337,49.22,8.27,16.80,9.95,0.09,79.16,1M,—
+HBANP,Huntington Bancshares Incorporated,lynch,True,3,4,75.0,16.69,12.01,1.03,9.08,—,8.25,22.49,"41,695",—
+IIIN,Insteel Industries Inc.,piotroski,True,7,9,77.8,29.66,14.12,1.56,11.04,3.97,—,29.96,"262,763",—
+IIIN,Insteel Industries Inc.,lynch,True,3,4,75.0,29.66,14.12,1.56,11.04,3.97,—,29.96,"262,763",—
+FSS,FEDERAL SIGNAL CORPORATION,lynch,True,3,4,75.0,114,28.39,5.07,17.84,3.02,0.73,45.03,1M,—
+WNC,WABASH NATIONAL CORPORATION,greenblatt,True,3,3,100.0,11.86,2.34,1.35,57.56,1.39,2.18,31.68,1M,—
+SBH,"SALLY BEAUTY HOLDINGS, INC.",piotroski,True,8,9,88.9,15.79,8.35,2.06,24.66,2.26,2.62,18.04,3M,—
+JOE,The St. Joe Company,piotroski,True,8,9,88.9,63.84,32.08,4.83,15.09,—,0.97,24.33,1M,—
+BRX,Brixmor Property Group Inc.,lynch,True,3,4,75.0,28.03,22.42,2.87,12.83,—,2.03,16.58,5M,—
+DRVN,Driven Brands Holdings Inc.,piotroski,True,7,9,77.8,12.28,14.45,2.62,18.27,0.75,4.42,9.46,2M,—
+AGCO,AGCO CORP /DE,piotroski,True,8,9,88.9,120,12.29,2.09,17.00,1.39,1.72,112,2M,—
+BSY,"BENTLEY SYSTEMS, INCORPORATED",piotroski,True,9,9,100.0,32.58,38.33,9.12,23.36,0.56,1.99,8.26,9M,—
+BSY,"BENTLEY SYSTEMS, INCORPORATED",buffett,True,5,6,83.3,32.58,38.33,9.12,23.36,0.56,1.99,8.26,9M,—
 HLIO,"HELIOS TECHNOLOGIES, INC.",piotroski,True,9,9,100.0,69.29,47.79,2.48,5.20,2.90,0.63,30.21,"621,912",—
 HLIO,"HELIOS TECHNOLOGIES, INC.",lynch,True,3,4,75.0,69.29,47.79,2.48,5.20,2.90,0.63,30.21,"621,912",—
-ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.51,20.50,0.81,3.99,9.18,0.34,5.26,"480,414",—
-ALNT,ALLIENT INC,piotroski,True,8,9,88.9,100,76.13,5.58,7.31,3.66,0.92,23.13,"232,798",—
-BJRI,"BJ’S RESTAURANTS, INC.",piotroski,True,7,9,77.8,59.54,27.56,3.68,13.33,0.40,1.77,28.05,"760,526",—
-GXO,"GXO Logistics, Inc.",piotroski,True,7,9,77.8,45.92,164,1.79,1.07,0.85,—,12.71,1M,—
-PIPR,PIPER SANDLER COMPANIES,graham,False,7,9,77.8,72.36,4.57,0.94,20.52,—,0.74,166,1M,—
-PIPR,PIPER SANDLER COMPANIES,buffett,False,3,6,50.0,72.36,4.57,0.94,20.52,—,0.74,166,1M,—
-PIPR,PIPER SANDLER COMPANIES,netnet,False,1,4,25.0,72.36,4.57,0.94,20.52,—,0.74,166,1M,—
-PIPR,PIPER SANDLER COMPANIES,custom,False,0,0,0.0,72.36,4.57,0.94,20.52,—,0.74,166,1M,—
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",greenblatt,False,2,3,66.7,8.68,7.17,—,-221,2.06,-5.32,—,13M,—
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",lynch,False,2,4,50.0,8.68,7.17,—,-221,2.06,-5.32,—,13M,—
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",graham,False,4,9,44.4,8.68,7.17,—,-221,2.06,-5.32,—,13M,—
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",buffett,False,2,6,33.3,8.68,7.17,—,-221,2.06,-5.32,—,13M,—
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",netnet,False,1,4,25.0,8.68,7.17,—,-221,2.06,-5.32,—,13M,—
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",custom,False,0,0,0.0,8.68,7.17,—,-221,2.06,-5.32,—,13M,—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,piotroski,False,4,9,44.4,25.87,—,—,—,2.10,—,—,"310,717",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,graham,False,3,9,33.3,25.87,—,—,—,2.10,—,—,"310,717",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,buffett,False,2,6,33.3,25.87,—,—,—,2.10,—,—,"310,717",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,greenblatt,False,1,3,33.3,25.87,—,—,—,2.10,—,—,"310,717",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,lynch,False,1,4,25.0,25.87,—,—,—,2.10,—,—,"310,717",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,netnet,False,1,4,25.0,25.87,—,—,—,2.10,—,—,"310,717",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,custom,False,0,0,0.0,25.87,—,—,—,2.10,—,—,"310,717",—
-INSW,"INTERNATIONAL SEAWAYS, INC.",buffett,False,4,6,66.7,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
-INSW,"INTERNATIONAL SEAWAYS, INC.",piotroski,False,6,9,66.7,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
-INSW,"INTERNATIONAL SEAWAYS, INC.",lynch,False,2,4,50.0,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
-INSW,"INTERNATIONAL SEAWAYS, INC.",graham,False,3,9,33.3,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
-INSW,"INTERNATIONAL SEAWAYS, INC.",greenblatt,False,1,3,33.3,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
-INSW,"INTERNATIONAL SEAWAYS, INC.",netnet,False,1,4,25.0,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
-INSW,"INTERNATIONAL SEAWAYS, INC.",custom,False,0,0,0.0,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
-MGY,Magnolia Oil & Gas Corp,piotroski,False,6,9,66.7,25.18,14.37,2.34,16.27,1.54,—,20.61,7M,—
+FIVN,"Five9, Inc.",piotroski,True,8,9,88.9,32.47,72.16,3.64,5.02,4.51,1.28,9.51,4M,—
+CYH,"COMMUNITY HEALTH SYSTEMS, INC.",piotroski,True,8,9,88.9,2.87,0.76,—,-36.51,1.46,-10.07,—,3M,—
+VVX,"V2X, Inc.",piotroski,True,9,9,100.0,76.84,31.36,2.25,7.18,1.22,2.02,43.35,4M,—
+BHC,Bausch Health Companies Inc.,piotroski,True,7,9,77.8,5.67,13.50,—,-28.34,1.47,-46.91,—,2M,—
+GCO,GENESCO INC,piotroski,True,8,9,88.9,32.76,26.21,0.61,2.34,1.64,1.46,38.74,"418,530",—
+FROG,JFrog Ltd.,piotroski,True,7,9,77.8,92.81,—,12.15,-8.09,2.14,0.51,—,2M,—
+HROW,"Harrow, Inc.",piotroski,True,7,9,77.8,33.08,—,23.19,-9.80,2.20,6.62,—,2M,—
+AEIS,"ADVANCED ENERGY INDUSTRIES, INC.",piotroski,True,7,9,77.8,262,68.28,7.43,10.89,1.59,0.86,55.23,1M,—
+SBC,SBC Medical Group Holdings Incorporated,graham,False,6,9,66.7,4.75,9.50,1.97,20.54,3.78,0.47,5.21,"558,937",—
+SBC,SBC Medical Group Holdings Incorporated,buffett,False,4,6,66.7,4.75,9.50,1.97,20.54,3.78,0.47,5.21,"558,937",—
+SBC,SBC Medical Group Holdings Incorporated,greenblatt,False,2,3,66.7,4.75,9.50,1.97,20.54,3.78,0.47,5.21,"558,937",—
+SBC,SBC Medical Group Holdings Incorporated,netnet,False,2,4,50.0,4.75,9.50,1.97,20.54,3.78,0.47,5.21,"558,937",—
+SBC,SBC Medical Group Holdings Incorporated,piotroski,False,4,9,44.4,4.75,9.50,1.97,20.54,3.78,0.47,5.21,"558,937",—
+SBC,SBC Medical Group Holdings Incorporated,custom,False,0,0,0.0,4.75,9.50,1.97,20.54,3.78,0.47,5.21,"558,937",—
+NAGE,"NIAGEN BIOSCIENCE, INC.",piotroski,False,6,9,66.7,2.99,14.95,3.34,22.71,4.86,0.39,2.01,"609,168",—
+NAGE,"NIAGEN BIOSCIENCE, INC.",greenblatt,False,2,3,66.7,2.99,14.95,3.34,22.71,4.86,0.39,2.01,"609,168",—
+NAGE,"NIAGEN BIOSCIENCE, INC.",buffett,False,3,6,50.0,2.99,14.95,3.34,22.71,4.86,0.39,2.01,"609,168",—
+NAGE,"NIAGEN BIOSCIENCE, INC.",lynch,False,2,4,50.0,2.99,14.95,3.34,22.71,4.86,0.39,2.01,"609,168",—
+NAGE,"NIAGEN BIOSCIENCE, INC.",netnet,False,2,4,50.0,2.99,14.95,3.34,22.71,4.86,0.39,2.01,"609,168",—
+NAGE,"NIAGEN BIOSCIENCE, INC.",graham,False,4,9,44.4,2.99,14.95,3.34,22.71,4.86,0.39,2.01,"609,168",—
+NAGE,"NIAGEN BIOSCIENCE, INC.",custom,False,0,0,0.0,2.99,14.95,3.34,22.71,4.86,0.39,2.01,"609,168",—
+PPC,PILGRIM’S PRIDE CORPORATION,graham,False,6,9,66.7,29.85,6.57,1.93,29.41,1.47,1.81,39.71,2M,—
+PPC,PILGRIM’S PRIDE CORPORATION,greenblatt,False,2,3,66.7,29.85,6.57,1.93,29.41,1.47,1.81,39.71,2M,—
