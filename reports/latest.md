@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-20 11:50 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-20 15:05 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **27** strategy matches passed.
+Screened **75** companies · **35** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| GOOGN | Alphabet Inc. | graham | ✅ | 100% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 376,484 | — |
-| GOOGN | Alphabet Inc. | buffett | ✅ | 100% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 376,484 | — |
-| GOOGN | Alphabet Inc. | greenblatt | ✅ | 100% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 376,484 | — |
-| GOOGN | Alphabet Inc. | lynch | ✅ | 100% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 376,484 | — |
-| POWL | Powell Industries, Inc. | greenblatt | ✅ | 100% | 184 | 12.38 | 3.49 | 28.21 | 2.09 | 0.73 | 904,473 | — |
-| POWL | Powell Industries, Inc. | piotroski | ✅ | 78% | 184 | 12.38 | 3.49 | 28.21 | 2.09 | 0.73 | 904,473 | — |
-| POWL | Powell Industries, Inc. | lynch | ✅ | 75% | 184 | 12.38 | 3.49 | 28.21 | 2.09 | 0.73 | 904,473 | — |
-| OTTR | OTTER TAIL CORPORATION | lynch | ✅ | 75% | 87.42 | 13.35 | 1.98 | 14.82 | 2.28 | — | 1M | — |
-| RILY | BRC Group Holdings, Inc. | greenblatt | ✅ | 100% | 5.98 | 0.61 | — | -179 | — | -10.65 | 1M | — |
-| RILY | BRC Group Holdings, Inc. | lynch | ✅ | 75% | 5.98 | 0.61 | — | -179 | — | -10.65 | 1M | — |
-| AREC | AMERICAN RESOURCES CORPORATI | greenblatt | ✅ | 100% | 1.98 | 3.14 | 1.82 | 58.44 | 2.19 | 0.80 | 3M | — |
-| AROC | Archrock, Inc. | piotroski | ✅ | 89% | 31.56 | 17.25 | 3.70 | 21.61 | 1.54 | 1.92 | 4M | — |
-| DAKT | Daktronics, Inc. | piotroski | ✅ | 89% | 17.41 | 18.92 | 2.86 | 15.09 | 2.31 | — | 902,821 | — |
-| DAKT | Daktronics, Inc. | lynch | ✅ | 75% | 17.41 | 18.92 | 2.86 | 15.09 | 2.31 | — | 902,821 | — |
+| LRN | Stride, Inc. | lynch | ✅ | 100% | 78.90 | 11.05 | 2.29 | 20.72 | 5.94 | 0.49 | 1M | — |
+| LRN | Stride, Inc. | piotroski | ✅ | 89% | 78.90 | 11.05 | 2.29 | 20.72 | 5.94 | 0.49 | 1M | — |
+| LRN | Stride, Inc. | buffett | ✅ | 83% | 78.90 | 11.05 | 2.29 | 20.72 | 5.94 | 0.49 | 1M | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | piotroski | ✅ | 100% | 160 | 22.55 | 7.73 | 34.27 | 1.46 | — | 933,933 | — |
+| MHO | M/I HOMES, INC. | lynch | ✅ | 75% | 139 | 9.42 | 1.20 | 12.73 | — | 0.51 | 437,124 | — |
 | KRYS | Krystal Biotech, Inc. | piotroski | ✅ | 89% | 337 | 49.22 | 8.27 | 16.80 | 9.95 | 0.09 | 1M | — |
-| BBWI | BATH & BODY WORKS, INC. | greenblatt | ✅ | 100% | 17.40 | 5.59 | — | -50.66 | 1.27 | — | 9M | — |
-| OPLN | OPENLANE, Inc. | piotroski | ✅ | 89% | 34.27 | — | 2.95 | 14.32 | 1.16 | — | 3M | — |
-| BKU | BankUnited, Inc. | piotroski | ✅ | 89% | 44.77 | 12.68 | 1.09 | 8.79 | — | 10.47 | 2M | — |
-| KRT | Karat Packaging Inc. | piotroski | ✅ | 78% | 49.87 | 31.97 | 6.74 | 21.07 | 2.30 | 0.88 | 286,040 | — |
-| FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 13.06 | 68.74 | 5.36 | 7.83 | 4.94 | 0.33 | 2M | — |
-| IMAX | IMAX Corporation | piotroski | ✅ | 78% | 52.77 | 83.76 | 8.67 | 10.32 | — | 1.38 | 1M | — |
-| FAF | FIRST AMERICAN FINANCIAL COR | piotroski | ✅ | 89% | 69.59 | 11.60 | 1.31 | 11.31 | — | 1.95 | 2M | — |
+| KFY | KORN FERRY | piotroski | ✅ | 100% | 76.78 | 14.71 | 2.04 | 14.06 | 1.94 | 1.06 | 2M | — |
+| KFY | KORN FERRY | lynch | ✅ | 75% | 76.78 | 14.71 | 2.04 | 14.06 | 1.94 | 1.06 | 2M | — |
+| PRDO | PERDOCEO EDUCATION CORP | piotroski | ✅ | 89% | 32.55 | 13.45 | 2.21 | 16.45 | 5.06 | — | 2M | — |
+| HRB | H&R BLOCK INC | greenblatt | ✅ | 100% | 44.25 | 7.82 | 48.54 | 624 | 1.13 | 26.72 | 5M | — |
+| HRB | H&R BLOCK INC | piotroski | ✅ | 89% | 44.25 | 7.82 | 48.54 | 624 | 1.13 | 26.72 | 5M | — |
+| PCTY | PAYLOCITY HOLDING CORPORATIO | piotroski | ✅ | 89% | 144 | 29.21 | 6.45 | 22.08 | 1.09 | 3.00 | 1M | — |
+| PCTY | PAYLOCITY HOLDING CORPORATIO | lynch | ✅ | 75% | 144 | 29.21 | 6.45 | 22.08 | 1.09 | 3.00 | 1M | — |
+| BDC | BELDEN INC. | piotroski | ✅ | 89% | 111 | 18.77 | 3.53 | 18.78 | 1.93 | — | 610,572 | — |
+| BYND | BEYOND MEAT, INC. | greenblatt | ✅ | 100% | 11.51 | — | — | -21,968 | 4.56 | — | 1M | — |
+| TRN | TRINITY INDUSTRIES INC | greenblatt | ✅ | 100% | 28.00 | 9.18 | 2.15 | 23.50 | — | 6.76 | 2M | — |
+| TRN | TRINITY INDUSTRIES INC | piotroski | ✅ | 78% | 28.00 | 9.18 | 2.15 | 23.50 | — | 6.76 | 2M | — |
+| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 138 | 21.86 | 2.29 | 10.49 | 1.53 | — | 584,750 | — |
+| AXTA | AXALTA COATING SYSTEMS LTD. | lynch | ✅ | 75% | 32.20 | 18.51 | 2.98 | 16.11 | 2.06 | 2.22 | 3M | — |
+| NHC | NATIONAL HEALTHCARE CORP | piotroski | ✅ | 100% | 222 | 28.96 | 3.25 | 11.23 | 1.82 | 0.42 | 466,466 | — |
+| NHC | NATIONAL HEALTHCARE CORP | lynch | ✅ | 75% | 222 | 28.96 | 3.25 | 11.23 | 1.82 | 0.42 | 466,466 | — |
+| KALU | KAISER ALUMINUM CORPORATION | piotroski | ✅ | 78% | 150 | 22.18 | 3.02 | 13.62 | 2.95 | 2.10 | 658,519 | — |
+| KALU | KAISER ALUMINUM CORPORATION | lynch | ✅ | 75% | 150 | 22.18 | 3.02 | 13.62 | 2.95 | 2.10 | 658,519 | — |
+| GEO | The GEO Group, Inc. | piotroski | ✅ | 78% | 31.76 | 17.45 | 2.95 | 16.89 | 2.01 | — | 3M | — |
+| GEO | The GEO Group, Inc. | lynch | ✅ | 75% | 31.76 | 17.45 | 2.95 | 16.89 | 2.01 | — | 3M | — |
+| OPY | OPPENHEIMER HOLDINGS INC. | piotroski | ✅ | 78% | 115 | 8.83 | 1.33 | 15.08 | — | 2.77 | 135,516 | — |
+| EMBC | EMBECTA CORP. | piotroski | ✅ | 78% | 5.29 | 3.27 | — | -14.66 | 2.41 | — | 4M | — |
+| KNTK | KINETIK HOLDINGS INC. | lynch | ✅ | 75% | 53.50 | 20.34 | — | -31.53 | 0.69 | -7.37 | 4M | — |
+| MYRG | MYR GROUP INC. | piotroski | ✅ | 89% | 279 | 37.09 | 6.65 | 17.93 | 1.33 | 1.49 | 473,055 | — |
 | FUL | FULLER H B CO | piotroski | ✅ | 78% | 49.41 | 17.97 | 1.37 | 7.59 | 1.70 | 1.59 | 2M | — |
-| MLKN | MillerKnoll, Inc. | piotroski | ✅ | 100% | 20.66 | 15.65 | 1.07 | 6.82 | 1.58 | 1.93 | 2M | — |
-| SENS | Senseonics Holdings, Inc. | piotroski | ✅ | 78% | 9.58 | — | 6.55 | -113 | 4.83 | 1.07 | 2M | — |
-| MSGS | MADISON SQUARE GARDEN SPORTS | piotroski | ✅ | 100% | 399 | 1,246 | — | -2.95 | 0.50 | -6.84 | 572,692 | — |
-| BNED | BARNES & NOBLE EDUCATION, IN | piotroski | ✅ | 89% | 10.64 | 21.71 | 1.25 | 5.73 | 1.71 | 1.51 | 385,633 | — |
-| GOOGN | Alphabet Inc. | piotroski | ▫️ | 67% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 376,484 | — |
-| GOOGN | Alphabet Inc. | netnet | ▫️ | 50% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 376,484 | — |
-| GOOGN | Alphabet Inc. | custom | ▫️ | 0% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 376,484 | — |
-| POWL | Powell Industries, Inc. | graham | ▫️ | 78% | 184 | 12.38 | 3.49 | 28.21 | 2.09 | 0.73 | 904,473 | — |
-| POWL | Powell Industries, Inc. | buffett | ▫️ | 67% | 184 | 12.38 | 3.49 | 28.21 | 2.09 | 0.73 | 904,473 | — |
-| POWL | Powell Industries, Inc. | netnet | ▫️ | 50% | 184 | 12.38 | 3.49 | 28.21 | 2.09 | 0.73 | 904,473 | — |
-| POWL | Powell Industries, Inc. | custom | ▫️ | 0% | 184 | 12.38 | 3.49 | 28.21 | 2.09 | 0.73 | 904,473 | — |
-| MGY | Magnolia Oil & Gas Corp | piotroski | ▫️ | 67% | 25.18 | 14.37 | 2.34 | 16.27 | 1.54 | — | 7M | — |
-| MGY | Magnolia Oil & Gas Corp | buffett | ▫️ | 50% | 25.18 | 14.37 | 2.34 | 16.27 | 1.54 | — | 7M | — |
-| MGY | Magnolia Oil & Gas Corp | graham | ▫️ | 44% | 25.18 | 14.37 | 2.34 | 16.27 | 1.54 | — | 7M | — |
-| MGY | Magnolia Oil & Gas Corp | greenblatt | ▫️ | 33% | 25.18 | 14.37 | 2.34 | 16.27 | 1.54 | — | 7M | — |
-| MGY | Magnolia Oil & Gas Corp | lynch | ▫️ | 25% | 25.18 | 14.37 | 2.34 | 16.27 | 1.54 | — | 7M | — |
-| MGY | Magnolia Oil & Gas Corp | netnet | ▫️ | 25% | 25.18 | 14.37 | 2.34 | 16.27 | 1.54 | — | 7M | — |
-| MGY | Magnolia Oil & Gas Corp | custom | ▫️ | 0% | 25.18 | 14.37 | 2.34 | 16.27 | 1.54 | — | 7M | — |
-| OTTR | OTTER TAIL CORPORATION | graham | ▫️ | 67% | 87.42 | 13.35 | 1.98 | 14.82 | 2.28 | — | 1M | — |
-| OTTR | OTTER TAIL CORPORATION | piotroski | ▫️ | 67% | 87.42 | 13.35 | 1.98 | 14.82 | 2.28 | — | 1M | — |
-| OTTR | OTTER TAIL CORPORATION | buffett | ▫️ | 50% | 87.42 | 13.35 | 1.98 | 14.82 | 2.28 | — | 1M | — |
-| OTTR | OTTER TAIL CORPORATION | greenblatt | ▫️ | 33% | 87.42 | 13.35 | 1.98 | 14.82 | 2.28 | — | 1M | — |
-| OTTR | OTTER TAIL CORPORATION | netnet | ▫️ | 25% | 87.42 | 13.35 | 1.98 | 14.82 | 2.28 | — | 1M | — |
-| OTTR | OTTER TAIL CORPORATION | custom | ▫️ | 0% | 87.42 | 13.35 | 1.98 | 14.82 | 2.28 | — | 1M | — |
-| RILY | BRC Group Holdings, Inc. | buffett | ▫️ | 50% | 5.98 | 0.61 | — | -179 | — | -10.65 | 1M | — |
-| RILY | BRC Group Holdings, Inc. | piotroski | ▫️ | 44% | 5.98 | 0.61 | — | -179 | — | -10.65 | 1M | — |
-| RILY | BRC Group Holdings, Inc. | graham | ▫️ | 33% | 5.98 | 0.61 | — | -179 | — | -10.65 | 1M | — |
+| MSGS | MADISON SQUARE GARDEN SPORTS | piotroski | ✅ | 100% | 399 | 1,246 | — | -2.95 | 0.50 | -6.84 | 572,696 | — |
+| SPHR | SPHERE ENTERTAINMENT CO. | piotroski | ✅ | 78% | 145 | 196 | 2.94 | 1.50 | 1.09 | 0.89 | 838,231 | — |
+| CALX | Calix, Inc | piotroski | ✅ | 78% | 35.24 | 136 | 2.84 | 2.08 | 4.24 | 0.23 | 2M | — |
+| WGO | WINNEBAGO INDUSTRIES, INC. | piotroski | ✅ | 89% | 26.43 | 29.04 | 0.61 | 2.10 | 2.42 | 0.76 | 1M | — |
+| AVNW | Aviat Networks, Inc. | piotroski | ✅ | 78% | 20.46 | 108 | 1.00 | 0.95 | 1.97 | 1.24 | 174,129 | — |
+| LRN | Stride, Inc. | graham | ▫️ | 78% | 78.90 | 11.05 | 2.29 | 20.72 | 5.94 | 0.49 | 1M | — |
+| LRN | Stride, Inc. | greenblatt | ▫️ | 67% | 78.90 | 11.05 | 2.29 | 20.72 | 5.94 | 0.49 | 1M | — |
+| LRN | Stride, Inc. | netnet | ▫️ | 50% | 78.90 | 11.05 | 2.29 | 20.72 | 5.94 | 0.49 | 1M | — |
+| LRN | Stride, Inc. | custom | ▫️ | 0% | 78.90 | 11.05 | 2.29 | 20.72 | 5.94 | 0.49 | 1M | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | buffett | ▫️ | 67% | 160 | 22.55 | 7.73 | 34.27 | 1.46 | — | 933,933 | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | greenblatt | ▫️ | 67% | 160 | 22.55 | 7.73 | 34.27 | 1.46 | — | 933,933 | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | graham | ▫️ | 33% | 160 | 22.55 | 7.73 | 34.27 | 1.46 | — | 933,933 | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | lynch | ▫️ | 25% | 160 | 22.55 | 7.73 | 34.27 | 1.46 | — | 933,933 | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | netnet | ▫️ | 25% | 160 | 22.55 | 7.73 | 34.27 | 1.46 | — | 933,933 | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | custom | ▫️ | 0% | 160 | 22.55 | 7.73 | 34.27 | 1.46 | — | 933,933 | — |
+| MHO | M/I HOMES, INC. | graham | ▫️ | 78% | 139 | 9.42 | 1.20 | 12.73 | — | 0.51 | 437,124 | — |
+| MHO | M/I HOMES, INC. | greenblatt | ▫️ | 67% | 139 | 9.42 | 1.20 | 12.73 | — | 0.51 | 437,124 | — |
+| MHO | M/I HOMES, INC. | piotroski | ▫️ | 44% | 139 | 9.42 | 1.20 | 12.73 | — | 0.51 | 437,124 | — |
+| MHO | M/I HOMES, INC. | buffett | ▫️ | 33% | 139 | 9.42 | 1.20 | 12.73 | — | 0.51 | 437,124 | — |
+| MHO | M/I HOMES, INC. | netnet | ▫️ | 25% | 139 | 9.42 | 1.20 | 12.73 | — | 0.51 | 437,124 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
