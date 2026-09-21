@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-GOOGN,Alphabet Inc.,graham,True,9,9,100.0,48.90,4.52,1.44,31.83,2.01,0.43,90.88,"376,484",—
-GOOGN,Alphabet Inc.,buffett,True,6,6,100.0,48.90,4.52,1.44,31.83,2.01,0.43,90.88,"376,484",—
-GOOGN,Alphabet Inc.,greenblatt,True,3,3,100.0,48.90,4.52,1.44,31.83,2.01,0.43,90.88,"376,484",—
-GOOGN,Alphabet Inc.,lynch,True,4,4,100.0,48.90,4.52,1.44,31.83,2.01,0.43,90.88,"376,484",—
+PPLT,abrdn Platinum ETF Trust,greenblatt,True,3,3,100.0,16.31,0.15,0.07,46.86,—,0.00,730,1M,—
+PPLT,abrdn Platinum ETF Trust,lynch,True,3,4,75.0,16.31,0.15,0.07,46.86,—,0.00,730,1M,—
 PPC,PILGRIM’S PRIDE CORPORATION,piotroski,True,7,9,77.8,29.85,6.57,1.93,29.41,1.47,1.81,39.71,2M,—
-GENVR,Gen Digital Inc.,piotroski,True,8,9,88.9,4.21,2.68,1.00,37.27,0.40,4.97,12.21,"28,003",—
-MCRI,"MONARCH CASINO & RESORT, INC.",piotroski,True,9,9,100.0,121,22.37,4.22,18.86,0.86,0.33,59.33,"681,697",—
-MCRI,"MONARCH CASINO & RESORT, INC.",lynch,True,4,4,100.0,121,22.37,4.22,18.86,0.86,0.33,59.33,"681,697",—
-MCRI,"MONARCH CASINO & RESORT, INC.",buffett,True,5,6,83.3,121,22.37,4.22,18.86,0.86,0.33,59.33,"681,697",—
-AES,THE AES CORPORATION,greenblatt,True,3,3,100.0,14.83,11.77,2.61,22.40,0.77,—,12.70,10M,—
-KFY,KORN FERRY,piotroski,True,9,9,100.0,76.78,14.71,2.04,14.06,1.94,1.06,66.42,2M,—
-KFY,KORN FERRY,lynch,True,3,4,75.0,76.78,14.71,2.04,14.06,1.94,1.06,66.42,2M,—
-CIM,CHIMERA INVESTMENT CORPORATION,lynch,True,3,4,75.0,10.87,6.32,0.35,8.96,—,5.14,34.44,2M,—
-VISN,"Vistance Networks, Inc.",greenblatt,True,3,3,100.0,6.57,0.68,—,-227,3.88,-9.06,—,31M,—
-ACEL,"Accel Entertainment, Inc.",piotroski,True,7,9,77.8,11.27,18.78,3.61,19.09,2.61,—,6.49,"626,987",—
-CSTM,Constellium SE,piotroski,True,9,9,100.0,25.55,13.31,3.81,28.68,1.29,4.60,17.02,3M,—
-BDC,BELDEN INC.,piotroski,True,8,9,88.9,111,18.77,3.53,18.78,1.93,—,64.66,"610,572",—
-WLY,"JOHN WILEY & SONS, INC.",piotroski,True,9,9,100.0,48.10,11.56,3.02,26.13,0.54,2.06,38.61,1M,—
-AGCO,AGCO CORP /DE,piotroski,True,8,9,88.9,120,12.29,2.09,17.00,1.39,1.72,112,2M,—
-BBWI,"BATH & BODY WORKS, INC.",greenblatt,True,3,3,100.0,17.40,5.59,—,-50.66,1.27,—,—,9M,—
-KRT,Karat Packaging Inc.,piotroski,True,7,9,77.8,49.87,31.97,6.74,21.07,2.30,0.88,16.12,"286,040",—
-EXTR,"Extreme Networks, Inc.",piotroski,True,8,9,88.9,22.31,71.97,33.99,47.54,0.93,—,2.14,2M,—
-HLIO,"HELIOS TECHNOLOGIES, INC.",piotroski,True,9,9,100.0,69.29,47.79,2.48,5.20,2.90,0.63,30.21,"621,912",—
-HLIO,"HELIOS TECHNOLOGIES, INC.",lynch,True,3,4,75.0,69.29,47.79,2.48,5.20,2.90,0.63,30.21,"621,912",—
-WOR,"WORTHINGTON ENTERPRISES, INC.",piotroski,True,8,9,88.9,57.38,18.27,2.78,15.20,2.37,0.80,38.20,"804,841",—
-ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.51,20.50,0.81,3.99,9.18,0.34,5.26,"494,324",—
-GCO,GENESCO INC,piotroski,True,8,9,88.9,32.76,26.21,0.61,2.34,1.64,1.46,38.74,"418,530",—
-FROG,JFrog Ltd.,piotroski,True,7,9,77.8,92.81,—,12.15,-8.09,2.14,0.51,—,2M,—
-CALX,"Calix, Inc",piotroski,True,7,9,77.8,35.24,136,2.84,2.08,4.24,0.23,8.52,2M,—
-POWW,Outdoor Holding Company,piotroski,True,8,9,88.9,2.19,—,1.09,-1.51,3.96,0.14,—,2M,—
-CTRI,"Centuri Holdings, Inc.",piotroski,True,7,9,77.8,19.35,77.40,2.00,2.57,1.78,1.75,7.37,2M,—
-SEDG,"SOLAREDGE TECHNOLOGIES, INC.",piotroski,True,7,9,77.8,34.68,—,4.78,-94.85,2.17,—,—,3M,—
-GOOGN,Alphabet Inc.,piotroski,False,6,9,66.7,48.90,4.52,1.44,31.83,2.01,0.43,90.88,"376,484",—
-GOOGN,Alphabet Inc.,netnet,False,2,4,50.0,48.90,4.52,1.44,31.83,2.01,0.43,90.88,"376,484",—
-GOOGN,Alphabet Inc.,custom,False,0,0,0.0,48.90,4.52,1.44,31.83,2.01,0.43,90.88,"376,484",—
+SON,Sonoco Products Company,piotroski,True,8,9,88.9,48.84,4.85,1.35,27.75,1.05,2.08,90.68,2M,—
+SON,Sonoco Products Company,lynch,True,3,4,75.0,48.84,4.85,1.35,27.75,1.05,2.08,90.68,2M,—
+OLED,UNIVERSAL DISPLAY CORPORATION,piotroski,True,7,9,77.8,78.30,15.41,2.12,13.75,10.06,0.12,64.99,2M,—
+AREC,AMERICAN RESOURCES CORPORATION,greenblatt,True,3,3,100.0,1.98,3.14,1.82,58.44,2.19,0.80,3.92,3M,—
+IBP,"Installed Building Products, Inc.",piotroski,True,8,9,88.9,198,20.35,7.61,37.39,3.03,1.91,75.33,"806,905",—
+IBP,"Installed Building Products, Inc.",lynch,True,3,4,75.0,198,20.35,7.61,37.39,3.03,1.91,75.33,"806,905",—
+FSS,FEDERAL SIGNAL CORPORATION,lynch,True,3,4,75.0,114,28.39,5.07,17.84,3.02,0.73,45.03,1M,—
+VNO,Vornado Realty Trust,piotroski,True,7,9,77.8,34.90,8.31,1.17,15.12,—,1.46,53.05,3M,—
+SBH,"SALLY BEAUTY HOLDINGS, INC.",piotroski,True,8,9,88.9,15.79,8.35,2.06,24.66,2.26,2.62,18.04,3M,—
+FCFS,"FIRSTCASH HOLDINGS, INC.",piotroski,True,7,9,77.8,219,29.51,4.28,14.51,4.55,1.33,92.39,"717,572",—
+ORI,OLD REPUBLIC INTERNATIONAL CORPORATION,piotroski,True,7,9,77.8,39.95,10.74,1.70,15.82,—,4.05,44.38,4M,—
+KALU,KAISER ALUMINUM CORPORATION,piotroski,True,7,9,77.8,150,22.18,3.02,13.62,2.95,2.10,87.01,"658,519",—
+KALU,KAISER ALUMINUM CORPORATION,lynch,True,3,4,75.0,150,22.18,3.02,13.62,2.95,2.10,87.01,"658,519",—
+VCYT,"VERACYTE, INC.",piotroski,True,8,9,88.9,39.80,48.53,2.45,5.07,8.15,0.07,17.32,3M,—
+GPAT,GP-Act III Acquisition Corp.,lynch,True,3,4,75.0,11.15,—,—,-82.10,0.30,-1.01,—,71.00,—
+THO,"THOR INDUSTRIES, INC.",piotroski,True,7,9,77.8,67.77,14.00,0.84,6.03,1.75,—,93.52,2M,—
+MCS,MARCUS CORP,piotroski,True,7,9,77.8,27.68,68.22,1.89,2.77,0.40,—,11.55,"325,426",—
+MOS,MOSAIC CO,piotroski,True,8,9,88.9,24.48,14.40,0.65,4.47,1.32,—,38.07,12M,—
+SENS,"Senseonics Holdings, Inc.",piotroski,True,7,9,77.8,9.58,—,6.55,-113,4.83,1.07,—,2M,—
+WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,8,9,88.9,26.43,29.04,0.61,2.10,2.42,0.76,29.77,1M,—
+AVNW,"Aviat Networks, Inc.",piotroski,True,7,9,77.8,20.46,108,1.00,0.95,1.97,1.24,9.37,"174,131",—
+TDAY,"USA TODAY CO., INC.",piotroski,True,7,9,77.8,6.24,624,5.87,1.13,0.75,10.85,0.49,3M,—
+PPLT,abrdn Platinum ETF Trust,graham,False,5,9,55.6,16.31,0.15,0.07,46.86,—,0.00,730,1M,—
+PPLT,abrdn Platinum ETF Trust,buffett,False,3,6,50.0,16.31,0.15,0.07,46.86,—,0.00,730,1M,—
+PPLT,abrdn Platinum ETF Trust,piotroski,False,3,9,33.3,16.31,0.15,0.07,46.86,—,0.00,730,1M,—
+PPLT,abrdn Platinum ETF Trust,netnet,False,1,4,25.0,16.31,0.15,0.07,46.86,—,0.00,730,1M,—
+PPLT,abrdn Platinum ETF Trust,custom,False,0,0,0.0,16.31,0.15,0.07,46.86,—,0.00,730,1M,—
 PPC,PILGRIM’S PRIDE CORPORATION,graham,False,6,9,66.7,29.85,6.57,1.93,29.41,1.47,1.81,39.71,2M,—
 PPC,PILGRIM’S PRIDE CORPORATION,greenblatt,False,2,3,66.7,29.85,6.57,1.93,29.41,1.47,1.81,39.71,2M,—
 PPC,PILGRIM’S PRIDE CORPORATION,buffett,False,3,6,50.0,29.85,6.57,1.93,29.41,1.47,1.81,39.71,2M,—
 PPC,PILGRIM’S PRIDE CORPORATION,lynch,False,2,4,50.0,29.85,6.57,1.93,29.41,1.47,1.81,39.71,2M,—
 PPC,PILGRIM’S PRIDE CORPORATION,netnet,False,1,4,25.0,29.85,6.57,1.93,29.41,1.47,1.81,39.71,2M,—
 PPC,PILGRIM’S PRIDE CORPORATION,custom,False,0,0,0.0,29.85,6.57,1.93,29.41,1.47,1.81,39.71,2M,—
-GENVR,Gen Digital Inc.,graham,False,7,9,77.8,4.21,2.68,1.00,37.27,0.40,4.97,12.21,"28,003",—
-GENVR,Gen Digital Inc.,buffett,False,4,6,66.7,4.21,2.68,1.00,37.27,0.40,4.97,12.21,"28,003",—
-GENVR,Gen Digital Inc.,greenblatt,False,2,3,66.7,4.21,2.68,1.00,37.27,0.40,4.97,12.21,"28,003",—
-GENVR,Gen Digital Inc.,lynch,False,2,4,50.0,4.21,2.68,1.00,37.27,0.40,4.97,12.21,"28,003",—
-GENVR,Gen Digital Inc.,netnet,False,1,4,25.0,4.21,2.68,1.00,37.27,0.40,4.97,12.21,"28,003",—
-GENVR,Gen Digital Inc.,custom,False,0,0,0.0,4.21,2.68,1.00,37.27,0.40,4.97,12.21,"28,003",—
-MCRI,"MONARCH CASINO & RESORT, INC.",graham,False,3,9,33.3,121,22.37,4.22,18.86,0.86,0.33,59.33,"681,697",—
-MCRI,"MONARCH CASINO & RESORT, INC.",greenblatt,False,1,3,33.3,121,22.37,4.22,18.86,0.86,0.33,59.33,"681,697",—
-MCRI,"MONARCH CASINO & RESORT, INC.",netnet,False,1,4,25.0,121,22.37,4.22,18.86,0.86,0.33,59.33,"681,697",—
+SON,Sonoco Products Company,graham,False,6,9,66.7,48.84,4.85,1.35,27.75,1.05,2.08,90.68,2M,—
+SON,Sonoco Products Company,buffett,False,4,6,66.7,48.84,4.85,1.35,27.75,1.05,2.08,90.68,2M,—
+SON,Sonoco Products Company,greenblatt,False,2,3,66.7,48.84,4.85,1.35,27.75,1.05,2.08,90.68,2M,—
+SON,Sonoco Products Company,netnet,False,1,4,25.0,48.84,4.85,1.35,27.75,1.05,2.08,90.68,2M,—
+SON,Sonoco Products Company,custom,False,0,0,0.0,48.84,4.85,1.35,27.75,1.05,2.08,90.68,2M,—
+INSW,"INTERNATIONAL SEAWAYS, INC.",buffett,False,4,6,66.7,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
+INSW,"INTERNATIONAL SEAWAYS, INC.",piotroski,False,6,9,66.7,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
+INSW,"INTERNATIONAL SEAWAYS, INC.",lynch,False,2,4,50.0,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
+INSW,"INTERNATIONAL SEAWAYS, INC.",graham,False,3,9,33.3,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
+INSW,"INTERNATIONAL SEAWAYS, INC.",greenblatt,False,1,3,33.3,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
+INSW,"INTERNATIONAL SEAWAYS, INC.",netnet,False,1,4,25.0,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
+INSW,"INTERNATIONAL SEAWAYS, INC.",custom,False,0,0,0.0,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
+OLED,UNIVERSAL DISPLAY CORPORATION,buffett,False,4,6,66.7,78.30,15.41,2.12,13.75,10.06,0.12,64.99,2M,—
+OLED,UNIVERSAL DISPLAY CORPORATION,graham,False,5,9,55.6,78.30,15.41,2.12,13.75,10.06,0.12,64.99,2M,—
