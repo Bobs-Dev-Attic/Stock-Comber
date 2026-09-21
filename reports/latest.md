@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-20 22:04 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-21 01:44 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **42** strategy matches passed.
+Screened **75** companies · **32** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| UGL | PROSHARES TRUST II | greenblatt | ✅ | 100% | 50.87 | 3.68 | 1.10 | 29.91 | — | 0.06 | 2M | — |
 | GOOGN | Alphabet Inc. | graham | ✅ | 100% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 376,484 | — |
 | GOOGN | Alphabet Inc. | buffett | ✅ | 100% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 376,484 | — |
 | GOOGN | Alphabet Inc. | greenblatt | ✅ | 100% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 376,484 | — |
 | GOOGN | Alphabet Inc. | lynch | ✅ | 100% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 376,484 | — |
-| BYD | BOYD GAMING CORP | greenblatt | ✅ | 100% | 72.97 | 3.23 | 2.29 | 70.66 | 0.54 | — | 2M | — |
-| BYD | BOYD GAMING CORP | piotroski | ✅ | 78% | 72.97 | 3.23 | 2.29 | 70.66 | 0.54 | — | 2M | — |
-| SPNT | SIRIUSPOINT LTD. | lynch | ✅ | 75% | 24.75 | 6.80 | 1.22 | 18.61 | — | 4.09 | 4M | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | piotroski | ✅ | 100% | 160 | 22.55 | 7.73 | 34.27 | 1.46 | — | 933,933 | — |
-| SKYW | SKYWEST INC | piotroski | ✅ | 89% | 96.38 | 9.31 | 1.45 | 15.60 | 0.65 | — | 992,755 | — |
-| FHI | Federated Hermes, Inc. | greenblatt | ✅ | 100% | 57.10 | 11.13 | 3.58 | 33.69 | 2.75 | 0.81 | 2M | — |
-| FHI | Federated Hermes, Inc. | piotroski | ✅ | 89% | 57.10 | 11.13 | 3.58 | 33.69 | 2.75 | 0.81 | 2M | — |
-| AROC | Archrock, Inc. | piotroski | ✅ | 89% | 31.56 | 17.25 | 3.70 | 21.61 | 1.54 | 1.92 | 4M | — |
-| IIIN | Insteel Industries Inc. | piotroski | ✅ | 78% | 29.66 | 14.12 | 1.56 | 11.04 | 3.97 | — | 262,763 | — |
-| IIIN | Insteel Industries Inc. | lynch | ✅ | 75% | 29.66 | 14.12 | 1.56 | 11.04 | 3.97 | — | 262,763 | — |
-| HOG | Harley-Davidson, Inc. | graham | ✅ | 100% | 25.93 | 9.33 | 1.00 | 10.79 | 2.10 | — | 3M | — |
-| HOG | Harley-Davidson, Inc. | piotroski | ✅ | 89% | 25.93 | 9.33 | 1.00 | 10.79 | 2.10 | — | 3M | — |
-| HRB | H&R BLOCK INC | greenblatt | ✅ | 100% | 44.25 | 7.82 | 48.54 | 624 | 1.13 | 26.72 | 5M | — |
-| HRB | H&R BLOCK INC | piotroski | ✅ | 89% | 44.25 | 7.82 | 48.54 | 624 | 1.13 | 26.72 | 5M | — |
-| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 138 | 21.86 | 2.29 | 10.49 | 1.53 | — | 584,750 | — |
-| SIRI | SIRIUS XM HOLDINGS INC. | lynch | ✅ | 75% | 27.31 | 12.25 | 0.84 | 6.96 | 0.30 | 1.36 | 8M | — |
-| OPLN | OPENLANE, Inc. | piotroski | ✅ | 89% | 34.27 | — | 2.95 | 14.32 | 1.16 | — | 3M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | piotroski | ✅ | 78% | 29.85 | 6.57 | 1.93 | 29.41 | 1.47 | 1.81 | 2M | — |
+| GENVR | Gen Digital Inc. | piotroski | ✅ | 89% | 4.21 | 2.68 | 1.00 | 37.27 | 0.40 | 4.97 | 28,003 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | piotroski | ✅ | 100% | 121 | 22.37 | 4.22 | 18.86 | 0.86 | 0.33 | 681,697 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | lynch | ✅ | 100% | 121 | 22.37 | 4.22 | 18.86 | 0.86 | 0.33 | 681,697 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | buffett | ✅ | 83% | 121 | 22.37 | 4.22 | 18.86 | 0.86 | 0.33 | 681,697 | — |
+| AES | THE AES CORPORATION | greenblatt | ✅ | 100% | 14.83 | 11.77 | 2.61 | 22.40 | 0.77 | — | 10M | — |
+| KFY | KORN FERRY | piotroski | ✅ | 100% | 76.78 | 14.71 | 2.04 | 14.06 | 1.94 | 1.06 | 2M | — |
+| KFY | KORN FERRY | lynch | ✅ | 75% | 76.78 | 14.71 | 2.04 | 14.06 | 1.94 | 1.06 | 2M | — |
+| CIM | CHIMERA INVESTMENT CORPORATI | lynch | ✅ | 75% | 10.87 | 6.32 | 0.35 | 8.96 | — | 5.14 | 2M | — |
+| VISN | Vistance Networks, Inc. | greenblatt | ✅ | 100% | 6.57 | 0.68 | — | -227 | 3.88 | -9.06 | 31M | — |
+| ACEL | Accel Entertainment, Inc. | piotroski | ✅ | 78% | 11.27 | 18.78 | 3.61 | 19.09 | 2.61 | — | 626,987 | — |
+| CSTM | Constellium SE | piotroski | ✅ | 100% | 25.55 | 13.31 | 3.81 | 28.68 | 1.29 | 4.60 | 3M | — |
+| BDC | BELDEN INC. | piotroski | ✅ | 89% | 111 | 18.77 | 3.53 | 18.78 | 1.93 | — | 610,572 | — |
+| WLY | JOHN WILEY & SONS, INC. | piotroski | ✅ | 100% | 48.10 | 11.56 | 3.02 | 26.13 | 0.54 | 2.06 | 1M | — |
+| AGCO | AGCO CORP /DE | piotroski | ✅ | 89% | 120 | 12.29 | 2.09 | 17.00 | 1.39 | 1.72 | 2M | — |
+| BBWI | BATH & BODY WORKS, INC. | greenblatt | ✅ | 100% | 17.40 | 5.59 | — | -50.66 | 1.27 | — | 9M | — |
 | KRT | Karat Packaging Inc. | piotroski | ✅ | 78% | 49.87 | 31.97 | 6.74 | 21.07 | 2.30 | 0.88 | 286,040 | — |
-| KNTK | KINETIK HOLDINGS INC. | lynch | ✅ | 75% | 53.50 | 20.34 | — | -31.53 | 0.69 | -7.37 | 4M | — |
-| SSRM | SSR Mining Inc. | piotroski | ✅ | 78% | 36.33 | 19.64 | 2.25 | 11.28 | 2.08 | 0.51 | 5M | — |
-| CNMD | CONMED CORPORATION | lynch | ✅ | 75% | 45.42 | 30.08 | 1.37 | 4.55 | 2.14 | 1.25 | 780,480 | — |
-| VCEL | VERICEL CORPORATION | piotroski | ✅ | 100% | 40.02 | 125 | 5.89 | 4.66 | 5.03 | 0.38 | 1M | — |
-| VCEL | VERICEL CORPORATION | lynch | ✅ | 75% | 40.02 | 125 | 5.89 | 4.66 | 5.03 | 0.38 | 1M | — |
-| LQDT | LIQUIDITY SERVICES, INC | piotroski | ✅ | 89% | 42.88 | 49.29 | 6.84 | 13.82 | 1.39 | 0.85 | 574,865 | — |
-| IMAX | IMAX Corporation | piotroski | ✅ | 78% | 52.77 | 83.76 | 8.67 | 10.32 | — | 1.38 | 1M | — |
-| HMN | HORACE MANN EDUCATORS CORPOR | piotroski | ✅ | 78% | 48.38 | 12.41 | 1.36 | 10.93 | — | 9.30 | 1M | — |
-| SHAK | SHAKE SHACK INC. | piotroski | ✅ | 89% | 54.88 | 50.35 | 4.37 | 8.70 | 1.76 | 2.56 | 2M | — |
-| VVX | V2X, Inc. | piotroski | ✅ | 100% | 76.84 | 31.36 | 2.25 | 7.18 | 1.22 | 2.02 | 4M | — |
-| TBCH | TURTLE BEACH CORPORATION | piotroski | ✅ | 78% | 12.68 | 16.47 | 2.02 | 12.24 | 1.98 | 1.09 | 281,508 | — |
-| THO | THOR INDUSTRIES, INC. | piotroski | ✅ | 78% | 67.77 | 14.00 | 0.84 | 6.03 | 1.75 | — | 2M | — |
-| SENS | Senseonics Holdings, Inc. | piotroski | ✅ | 78% | 9.58 | — | 6.55 | -113 | 4.83 | 1.07 | 2M | — |
-| CVI | CVR ENERGY, INC | piotroski | ✅ | 89% | 53.69 | 199 | 7.39 | 3.70 | 1.79 | — | 2M | — |
-| WGO | WINNEBAGO INDUSTRIES, INC. | piotroski | ✅ | 89% | 26.43 | 29.04 | 0.61 | 2.10 | 2.42 | 0.76 | 1M | — |
-| AVNW | Aviat Networks, Inc. | piotroski | ✅ | 78% | 20.46 | 108 | 1.00 | 0.95 | 1.97 | 1.24 | 174,131 | — |
-| SHC | SOTERA HEALTH COMPANY | piotroski | ✅ | 78% | 18.73 | 69.37 | 8.85 | 12.86 | 2.46 | 4.38 | 6M | — |
-| AMN | AMN HEALTHCARE SERVICES, INC | piotroski | ✅ | 78% | 34.26 | — | 2.06 | -14.90 | 0.94 | 2.26 | 1M | — |
-| KLIC | KULICKE AND SOFFA INDUSTRIES | piotroski | ✅ | 89% | 83.14 | 20,785 | 5.38 | 0.03 | 4.79 | 0.34 | 1M | — |
-| UGL | PROSHARES TRUST II | lynch | ▫️ | 50% | 50.87 | 3.68 | 1.10 | 29.91 | — | 0.06 | 2M | — |
-| UGL | PROSHARES TRUST II | graham | ▫️ | 44% | 50.87 | 3.68 | 1.10 | 29.91 | — | 0.06 | 2M | — |
-| UGL | PROSHARES TRUST II | buffett | ▫️ | 33% | 50.87 | 3.68 | 1.10 | 29.91 | — | 0.06 | 2M | — |
-| UGL | PROSHARES TRUST II | piotroski | ▫️ | 33% | 50.87 | 3.68 | 1.10 | 29.91 | — | 0.06 | 2M | — |
-| UGL | PROSHARES TRUST II | netnet | ▫️ | 25% | 50.87 | 3.68 | 1.10 | 29.91 | — | 0.06 | 2M | — |
-| UGL | PROSHARES TRUST II | custom | ▫️ | 0% | 50.87 | 3.68 | 1.10 | 29.91 | — | 0.06 | 2M | — |
+| EXTR | Extreme Networks, Inc. | piotroski | ✅ | 89% | 22.31 | 71.97 | 33.99 | 47.54 | 0.93 | — | 2M | — |
+| HLIO | HELIOS TECHNOLOGIES, INC. | piotroski | ✅ | 100% | 69.29 | 47.79 | 2.48 | 5.20 | 2.90 | 0.63 | 621,912 | — |
+| HLIO | HELIOS TECHNOLOGIES, INC. | lynch | ✅ | 75% | 69.29 | 47.79 | 2.48 | 5.20 | 2.90 | 0.63 | 621,912 | — |
+| WOR | WORTHINGTON ENTERPRISES, INC | piotroski | ✅ | 89% | 57.38 | 18.27 | 2.78 | 15.20 | 2.37 | 0.80 | 804,841 | — |
+| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.51 | 20.50 | 0.81 | 3.99 | 9.18 | 0.34 | 494,324 | — |
+| GCO | GENESCO INC | piotroski | ✅ | 89% | 32.76 | 26.21 | 0.61 | 2.34 | 1.64 | 1.46 | 418,530 | — |
+| FROG | JFrog Ltd. | piotroski | ✅ | 78% | 92.81 | — | 12.15 | -8.09 | 2.14 | 0.51 | 2M | — |
+| CALX | Calix, Inc | piotroski | ✅ | 78% | 35.24 | 136 | 2.84 | 2.08 | 4.24 | 0.23 | 2M | — |
+| POWW | Outdoor Holding Company | piotroski | ✅ | 89% | 2.19 | — | 1.09 | -1.51 | 3.96 | 0.14 | 2M | — |
+| CTRI | Centuri Holdings, Inc. | piotroski | ✅ | 78% | 19.35 | 77.40 | 2.00 | 2.57 | 1.78 | 1.75 | 2M | — |
+| SEDG | SOLAREDGE TECHNOLOGIES, INC. | piotroski | ✅ | 78% | 34.68 | — | 4.78 | -94.85 | 2.17 | — | 3M | — |
 | GOOGN | Alphabet Inc. | piotroski | ▫️ | 67% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 376,484 | — |
 | GOOGN | Alphabet Inc. | netnet | ▫️ | 50% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 376,484 | — |
+| GOOGN | Alphabet Inc. | custom | ▫️ | 0% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 376,484 | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | graham | ▫️ | 67% | 29.85 | 6.57 | 1.93 | 29.41 | 1.47 | 1.81 | 2M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | greenblatt | ▫️ | 67% | 29.85 | 6.57 | 1.93 | 29.41 | 1.47 | 1.81 | 2M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | buffett | ▫️ | 50% | 29.85 | 6.57 | 1.93 | 29.41 | 1.47 | 1.81 | 2M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | lynch | ▫️ | 50% | 29.85 | 6.57 | 1.93 | 29.41 | 1.47 | 1.81 | 2M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | netnet | ▫️ | 25% | 29.85 | 6.57 | 1.93 | 29.41 | 1.47 | 1.81 | 2M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | custom | ▫️ | 0% | 29.85 | 6.57 | 1.93 | 29.41 | 1.47 | 1.81 | 2M | — |
+| GENVR | Gen Digital Inc. | graham | ▫️ | 78% | 4.21 | 2.68 | 1.00 | 37.27 | 0.40 | 4.97 | 28,003 | — |
+| GENVR | Gen Digital Inc. | buffett | ▫️ | 67% | 4.21 | 2.68 | 1.00 | 37.27 | 0.40 | 4.97 | 28,003 | — |
+| GENVR | Gen Digital Inc. | greenblatt | ▫️ | 67% | 4.21 | 2.68 | 1.00 | 37.27 | 0.40 | 4.97 | 28,003 | — |
+| GENVR | Gen Digital Inc. | lynch | ▫️ | 50% | 4.21 | 2.68 | 1.00 | 37.27 | 0.40 | 4.97 | 28,003 | — |
+| GENVR | Gen Digital Inc. | netnet | ▫️ | 25% | 4.21 | 2.68 | 1.00 | 37.27 | 0.40 | 4.97 | 28,003 | — |
+| GENVR | Gen Digital Inc. | custom | ▫️ | 0% | 4.21 | 2.68 | 1.00 | 37.27 | 0.40 | 4.97 | 28,003 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | graham | ▫️ | 33% | 121 | 22.37 | 4.22 | 18.86 | 0.86 | 0.33 | 681,697 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | greenblatt | ▫️ | 33% | 121 | 22.37 | 4.22 | 18.86 | 0.86 | 0.33 | 681,697 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | netnet | ▫️ | 25% | 121 | 22.37 | 4.22 | 18.86 | 0.86 | 0.33 | 681,697 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
