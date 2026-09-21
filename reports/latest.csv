@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-PPLT,abrdn Platinum ETF Trust,greenblatt,True,3,3,100.0,16.31,0.15,0.07,46.86,—,0.00,730,1M,—
-PPLT,abrdn Platinum ETF Trust,lynch,True,3,4,75.0,16.31,0.15,0.07,46.86,—,0.00,730,1M,—
-PPC,PILGRIM’S PRIDE CORPORATION,piotroski,True,7,9,77.8,29.85,6.57,1.93,29.41,1.47,1.81,39.71,2M,—
-SON,Sonoco Products Company,piotroski,True,8,9,88.9,48.84,4.85,1.35,27.75,1.05,2.08,90.68,2M,—
-SON,Sonoco Products Company,lynch,True,3,4,75.0,48.84,4.85,1.35,27.75,1.05,2.08,90.68,2M,—
-OLED,UNIVERSAL DISPLAY CORPORATION,piotroski,True,7,9,77.8,78.30,15.41,2.12,13.75,10.06,0.12,64.99,2M,—
-AREC,AMERICAN RESOURCES CORPORATION,greenblatt,True,3,3,100.0,1.98,3.14,1.82,58.44,2.19,0.80,3.92,3M,—
-IBP,"Installed Building Products, Inc.",piotroski,True,8,9,88.9,198,20.35,7.61,37.39,3.03,1.91,75.33,"806,905",—
-IBP,"Installed Building Products, Inc.",lynch,True,3,4,75.0,198,20.35,7.61,37.39,3.03,1.91,75.33,"806,905",—
-FSS,FEDERAL SIGNAL CORPORATION,lynch,True,3,4,75.0,114,28.39,5.07,17.84,3.02,0.73,45.03,1M,—
-VNO,Vornado Realty Trust,piotroski,True,7,9,77.8,34.90,8.31,1.17,15.12,—,1.46,53.05,3M,—
-SBH,"SALLY BEAUTY HOLDINGS, INC.",piotroski,True,8,9,88.9,15.79,8.35,2.06,24.66,2.26,2.62,18.04,3M,—
-FCFS,"FIRSTCASH HOLDINGS, INC.",piotroski,True,7,9,77.8,219,29.51,4.28,14.51,4.55,1.33,92.39,"717,572",—
-ORI,OLD REPUBLIC INTERNATIONAL CORPORATION,piotroski,True,7,9,77.8,39.95,10.74,1.70,15.82,—,4.05,44.38,4M,—
-KALU,KAISER ALUMINUM CORPORATION,piotroski,True,7,9,77.8,150,22.18,3.02,13.62,2.95,2.10,87.01,"658,519",—
-KALU,KAISER ALUMINUM CORPORATION,lynch,True,3,4,75.0,150,22.18,3.02,13.62,2.95,2.10,87.01,"658,519",—
-VCYT,"VERACYTE, INC.",piotroski,True,8,9,88.9,39.80,48.53,2.45,5.07,8.15,0.07,17.32,3M,—
-GPAT,GP-Act III Acquisition Corp.,lynch,True,3,4,75.0,11.15,—,—,-82.10,0.30,-1.01,—,71.00,—
-THO,"THOR INDUSTRIES, INC.",piotroski,True,7,9,77.8,67.77,14.00,0.84,6.03,1.75,—,93.52,2M,—
-MCS,MARCUS CORP,piotroski,True,7,9,77.8,27.68,68.22,1.89,2.77,0.40,—,11.55,"325,426",—
-MOS,MOSAIC CO,piotroski,True,8,9,88.9,24.48,14.40,0.65,4.47,1.32,—,38.07,12M,—
-SENS,"Senseonics Holdings, Inc.",piotroski,True,7,9,77.8,9.58,—,6.55,-113,4.83,1.07,—,2M,—
-WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,8,9,88.9,26.43,29.04,0.61,2.10,2.42,0.76,29.77,1M,—
-AVNW,"Aviat Networks, Inc.",piotroski,True,7,9,77.8,20.46,108,1.00,0.95,1.97,1.24,9.37,"174,131",—
-TDAY,"USA TODAY CO., INC.",piotroski,True,7,9,77.8,6.24,624,5.87,1.13,0.75,10.85,0.49,3M,—
-PPLT,abrdn Platinum ETF Trust,graham,False,5,9,55.6,16.31,0.15,0.07,46.86,—,0.00,730,1M,—
-PPLT,abrdn Platinum ETF Trust,buffett,False,3,6,50.0,16.31,0.15,0.07,46.86,—,0.00,730,1M,—
-PPLT,abrdn Platinum ETF Trust,piotroski,False,3,9,33.3,16.31,0.15,0.07,46.86,—,0.00,730,1M,—
-PPLT,abrdn Platinum ETF Trust,netnet,False,1,4,25.0,16.31,0.15,0.07,46.86,—,0.00,730,1M,—
-PPLT,abrdn Platinum ETF Trust,custom,False,0,0,0.0,16.31,0.15,0.07,46.86,—,0.00,730,1M,—
-PPC,PILGRIM’S PRIDE CORPORATION,graham,False,6,9,66.7,29.85,6.57,1.93,29.41,1.47,1.81,39.71,2M,—
-PPC,PILGRIM’S PRIDE CORPORATION,greenblatt,False,2,3,66.7,29.85,6.57,1.93,29.41,1.47,1.81,39.71,2M,—
-PPC,PILGRIM’S PRIDE CORPORATION,buffett,False,3,6,50.0,29.85,6.57,1.93,29.41,1.47,1.81,39.71,2M,—
-PPC,PILGRIM’S PRIDE CORPORATION,lynch,False,2,4,50.0,29.85,6.57,1.93,29.41,1.47,1.81,39.71,2M,—
-PPC,PILGRIM’S PRIDE CORPORATION,netnet,False,1,4,25.0,29.85,6.57,1.93,29.41,1.47,1.81,39.71,2M,—
-PPC,PILGRIM’S PRIDE CORPORATION,custom,False,0,0,0.0,29.85,6.57,1.93,29.41,1.47,1.81,39.71,2M,—
-SON,Sonoco Products Company,graham,False,6,9,66.7,48.84,4.85,1.35,27.75,1.05,2.08,90.68,2M,—
-SON,Sonoco Products Company,buffett,False,4,6,66.7,48.84,4.85,1.35,27.75,1.05,2.08,90.68,2M,—
-SON,Sonoco Products Company,greenblatt,False,2,3,66.7,48.84,4.85,1.35,27.75,1.05,2.08,90.68,2M,—
-SON,Sonoco Products Company,netnet,False,1,4,25.0,48.84,4.85,1.35,27.75,1.05,2.08,90.68,2M,—
-SON,Sonoco Products Company,custom,False,0,0,0.0,48.84,4.85,1.35,27.75,1.05,2.08,90.68,2M,—
-INSW,"INTERNATIONAL SEAWAYS, INC.",buffett,False,4,6,66.7,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
-INSW,"INTERNATIONAL SEAWAYS, INC.",piotroski,False,6,9,66.7,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
-INSW,"INTERNATIONAL SEAWAYS, INC.",lynch,False,2,4,50.0,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
-INSW,"INTERNATIONAL SEAWAYS, INC.",graham,False,3,9,33.3,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
-INSW,"INTERNATIONAL SEAWAYS, INC.",greenblatt,False,1,3,33.3,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
-INSW,"INTERNATIONAL SEAWAYS, INC.",netnet,False,1,4,25.0,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
-INSW,"INTERNATIONAL SEAWAYS, INC.",custom,False,0,0,0.0,111,17.84,2.73,15.31,3.71,0.32,75.56,2M,—
-OLED,UNIVERSAL DISPLAY CORPORATION,buffett,False,4,6,66.7,78.30,15.41,2.12,13.75,10.06,0.12,64.99,2M,—
-OLED,UNIVERSAL DISPLAY CORPORATION,graham,False,5,9,55.6,78.30,15.41,2.12,13.75,10.06,0.12,64.99,2M,—
+SM,SM ENERGY CO,piotroski,True,7,9,77.8,35.47,6.29,0.85,13.47,0.69,—,72.85,"278,323",—
+CRUS,"CIRRUS LOGIC, INC.",piotroski,True,8,9,88.9,119,15.15,2.95,19.47,7.37,—,84.35,"16,069",—
+AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",piotroski,True,9,9,100.0,161,22.69,7.78,34.27,1.46,—,57.37,"32,846",—
+RILY,"BRC Group Holdings, Inc.",greenblatt,True,3,3,100.0,5.98,0.61,—,-179,—,-10.65,—,1M,—
+RILY,"BRC Group Holdings, Inc.",lynch,True,3,4,75.0,5.98,0.61,—,-179,—,-10.65,—,1M,—
+XPEL,"XPEL, INC.",buffett,True,6,6,100.0,44.99,24.32,4.44,18.28,3.25,0.35,20.53,"8,913",—
+XPEL,"XPEL, INC.",lynch,True,3,4,75.0,44.99,24.32,4.44,18.28,3.25,0.35,20.53,"8,913",—
+CVSA,Covista Inc.,lynch,True,3,4,75.0,124,17.62,3.06,17.40,1.09,1.08,80.09,"18,289",—
+GGG,GRACO INC.,piotroski,True,8,9,88.9,76.37,24.80,4.87,19.66,3.15,—,32.97,"53,785",—
+GGG,GRACO INC.,buffett,True,5,6,83.3,76.37,24.80,4.87,19.66,3.15,—,32.97,"53,785",—
+LMB,"LIMBACH HOLDINGS, INC.",piotroski,True,7,9,77.8,52.40,16.22,3.24,19.97,1.44,0.95,34.31,"38,545",—
+LMB,"LIMBACH HOLDINGS, INC.",lynch,True,3,4,75.0,52.40,16.22,3.24,19.97,1.44,0.95,34.31,"38,545",—
+FTDR,"Frontdoor, Inc.",piotroski,True,8,9,88.9,78.29,22.89,24.10,105,1.55,—,15.81,1M,—
+FTDR,"Frontdoor, Inc.",buffett,True,5,6,83.3,78.29,22.89,24.10,105,1.55,—,15.81,1M,—
+MTCH,"Match Group, Inc.",piotroski,True,8,9,88.9,43.33,18.21,—,-242,1.42,—,—,"75,385",—
+MTCH,"Match Group, Inc.",lynch,True,3,4,75.0,43.33,18.21,—,-242,1.42,—,—,"75,385",—
+WNC,WABASH NATIONAL CORPORATION,greenblatt,True,3,3,100.0,11.86,2.34,1.35,57.56,1.39,2.18,31.68,1M,—
+HALO,"HALOZYME THERAPEUTICS, INC.",buffett,True,5,6,83.3,112,43.93,285,649,4.66,50.73,4.76,10M,—
+OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,22.04,31.94,4.21,13.20,1.91,0.30,9.01,"27,546",—
+CSTM,Constellium SE,piotroski,True,9,9,100.0,25.34,13.20,3.78,28.68,1.29,4.60,17.02,"51,050",—
+BDC,BELDEN INC.,piotroski,True,8,9,88.9,111,18.77,3.53,18.78,1.93,—,64.66,"6,371",—
+NIC,"NICOLET BANKSHARES, INC",lynch,True,3,4,75.0,168,17.21,2.06,11.98,—,6.30,134,"7,602",—
+BKU,"BankUnited, Inc.",piotroski,True,8,9,88.9,44.77,12.68,1.09,8.79,—,10.47,57.13,2M,—
+DLB,"Dolby Laboratories, Inc.",piotroski,True,7,9,77.8,57.56,21.97,2.14,9.72,3.17,0.23,39.82,"8,062",—
+CYH,"COMMUNITY HEALTH SYSTEMS, INC.",piotroski,True,8,9,88.9,2.87,0.76,—,-36.51,1.46,-10.07,—,3M,—
+VVX,"V2X, Inc.",piotroski,True,9,9,100.0,76.84,31.36,2.25,7.18,1.22,2.02,43.35,4M,—
+HCSG,"HEALTHCARE SERVICES GROUP, INC.",piotroski,True,9,9,100.0,21.47,26.51,3.07,11.58,3.38,—,11.28,2M,—
+MSGS,MADISON SQUARE GARDEN SPORTS CORP.,piotroski,True,9,9,100.0,402,"1,258",—,-2.95,0.50,-6.84,—,"5,155",—
+NEOG,Neogen Corporation,piotroski,True,8,9,88.9,13.00,—,1.35,-0.38,3.82,0.60,—,7M,—
+SHC,SOTERA HEALTH COMPANY,piotroski,True,7,9,77.8,18.72,69.33,8.85,12.86,2.46,4.38,3.59,"45,298",—
+SM,SM ENERGY CO,graham,False,6,9,66.7,35.47,6.29,0.85,13.47,0.69,—,72.85,"278,323",—
+SM,SM ENERGY CO,greenblatt,False,2,3,66.7,35.47,6.29,0.85,13.47,0.69,—,72.85,"278,323",—
+SM,SM ENERGY CO,lynch,False,1,4,25.0,35.47,6.29,0.85,13.47,0.69,—,72.85,"278,323",—
+SM,SM ENERGY CO,netnet,False,1,4,25.0,35.47,6.29,0.85,13.47,0.69,—,72.85,"278,323",—
+SM,SM ENERGY CO,buffett,False,1,6,16.7,35.47,6.29,0.85,13.47,0.69,—,72.85,"278,323",—
+SM,SM ENERGY CO,custom,False,0,0,0.0,35.47,6.29,0.85,13.47,0.69,—,72.85,"278,323",—
+XZO,"Exzeo Group, Inc.",greenblatt,False,2,3,66.7,16.56,16.73,5.22,32.56,3.86,0.37,8.40,2M,—
+XZO,"Exzeo Group, Inc.",buffett,False,3,6,50.0,16.56,16.73,5.22,32.56,3.86,0.37,8.40,2M,—
+XZO,"Exzeo Group, Inc.",lynch,False,2,4,50.0,16.56,16.73,5.22,32.56,3.86,0.37,8.40,2M,—
+XZO,"Exzeo Group, Inc.",netnet,False,2,4,50.0,16.56,16.73,5.22,32.56,3.86,0.37,8.40,2M,—
+XZO,"Exzeo Group, Inc.",graham,False,3,9,33.3,16.56,16.73,5.22,32.56,3.86,0.37,8.40,2M,—
+XZO,"Exzeo Group, Inc.",piotroski,False,3,9,33.3,16.56,16.73,5.22,32.56,3.86,0.37,8.40,2M,—
+XZO,"Exzeo Group, Inc.",custom,False,0,0,0.0,16.56,16.73,5.22,32.56,3.86,0.37,8.40,2M,—
+SABR,Sabre Corporation,greenblatt,False,2,3,66.7,2.27,1.69,—,-50.61,1.07,—,—,"76,476",—
+SABR,Sabre Corporation,piotroski,False,5,9,55.6,2.27,1.69,—,-50.61,1.07,—,—,"76,476",—
+SABR,Sabre Corporation,lynch,False,1,4,25.0,2.27,1.69,—,-50.61,1.07,—,—,"76,476",—
+SABR,Sabre Corporation,netnet,False,1,4,25.0,2.27,1.69,—,-50.61,1.07,—,—,"76,476",—
+SABR,Sabre Corporation,graham,False,2,9,22.2,2.27,1.69,—,-50.61,1.07,—,—,"76,476",—
+SABR,Sabre Corporation,buffett,False,1,6,16.7,2.27,1.69,—,-50.61,1.07,—,—,"76,476",—
+SABR,Sabre Corporation,custom,False,0,0,0.0,2.27,1.69,—,-50.61,1.07,—,—,"76,476",—
