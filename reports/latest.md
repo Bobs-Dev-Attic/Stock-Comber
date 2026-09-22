@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-22 18:40 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-22 21:45 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **30** strategy matches passed.
+Screened **75** companies · **35** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| WING | WINGSTOP INC. | lynch | ✅ | 100% | 103 | 16.57 | — | -23.65 | 3.26 | -1.94 | 591,359 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | piotroski | ✅ | 100% | 164 | 23.12 | 7.92 | 34.27 | 1.46 | — | 96,996 | — |
-| ESE | ESCO TECHNOLOGIES INC. | lynch | ✅ | 100% | 262 | 22.72 | 4.41 | 19.42 | 1.35 | 0.56 | 263,780 | — |
-| AX | AXOS FINANCIAL, INC. | lynch | ✅ | 75% | 90.47 | 10.67 | 1.62 | 15.49 | — | 8.46 | 105,051 | — |
-| OTTR | OTTER TAIL CORPORATION | lynch | ✅ | 75% | 88.13 | 13.45 | 1.99 | 14.82 | 2.28 | — | 231,422 | — |
-| AREC | AMERICAN RESOURCES CORPORATI | greenblatt | ✅ | 100% | 1.99 | 3.16 | 1.83 | 58.44 | 2.19 | 0.80 | 1M | — |
-| KRYS | Krystal Biotech, Inc. | piotroski | ✅ | 89% | 351 | 51.37 | 8.63 | 16.80 | 9.95 | 0.09 | 119,656 | — |
-| HOG | Harley-Davidson, Inc. | graham | ✅ | 100% | 26.21 | 9.43 | 1.01 | 10.79 | 2.10 | — | 1M | — |
-| JOE | The St. Joe Company | piotroski | ✅ | 89% | 64.56 | 32.44 | 4.88 | 15.09 | — | 0.97 | 268,361 | — |
-| HOG | Harley-Davidson, Inc. | piotroski | ✅ | 89% | 26.21 | 9.43 | 1.01 | 10.79 | 2.10 | — | 1M | — |
-| HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 111 | 43.54 | 283 | 649 | 4.66 | 50.73 | 3M | — |
-| SIGI | SELECTIVE INSURANCE GROUP, I | piotroski | ✅ | 78% | 87.68 | 11.71 | 1.48 | 12.92 | — | 3.20 | 258,822 | — |
-| MEDP | Medpace Holdings, Inc. | buffett | ✅ | 83% | 624 | 40.85 | 40.15 | 98.27 | 0.74 | 3.30 | 188,233 | — |
-| MEDP | Medpace Holdings, Inc. | piotroski | ✅ | 78% | 624 | 40.85 | 40.15 | 98.27 | 0.74 | 3.30 | 188,233 | — |
-| SSB | SOUTHSTATE BANK CORP | lynch | ✅ | 75% | 103 | 13.10 | 1.16 | 8.82 | — | 6.42 | 357,743 | — |
-| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 136 | 21.43 | 2.25 | 10.49 | 1.53 | — | 417,642 | — |
-| AXTA | AXALTA COATING SYSTEMS LTD. | lynch | ✅ | 75% | 31.86 | 18.31 | 2.95 | 16.11 | 2.06 | 2.22 | 4M | — |
-| WLY | JOHN WILEY & SONS, INC. | piotroski | ✅ | 100% | 47.45 | 11.41 | 2.98 | 26.13 | 0.54 | 2.06 | 107,187 | — |
-| POST | Post Holdings, Inc. | lynch | ✅ | 75% | 75.26 | 13.66 | 1.26 | 8.94 | 1.67 | 2.60 | 1M | — |
-| GRC | The Gorman-Rupp Company | piotroski | ✅ | 89% | 74.56 | 36.91 | 4.73 | 12.78 | 2.37 | 1.07 | 54,795 | — |
-| CNMD | CONMED CORPORATION | lynch | ✅ | 75% | 44.69 | 29.60 | 1.35 | 4.55 | 2.14 | 1.25 | 354,663 | — |
-| WOR | WORTHINGTON ENTERPRISES, INC | piotroski | ✅ | 89% | 58.15 | 18.52 | 2.81 | 15.20 | 2.37 | 0.80 | 338,924 | — |
-| CPRI | CAPRI HOLDINGS LIMITED | piotroski | ✅ | 78% | 14.31 | 12.55 | 21.44 | 171 | 1.21 | 39.38 | 6M | — |
-| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 51.70 | 49.71 | — | -29.14 | 1.60 | -6.05 | 630,702 | — |
-| MCS | MARCUS CORP | piotroski | ✅ | 78% | 27.77 | 68.46 | 1.90 | 2.77 | 0.40 | — | 111,320 | — |
-| SENS | Senseonics Holdings, Inc. | piotroski | ✅ | 78% | 9.87 | — | 6.75 | -113 | 4.83 | 1.07 | 302,770 | — |
-| MSGS | MADISON SQUARE GARDEN SPORTS | piotroski | ✅ | 100% | 400 | 1,250 | — | -2.95 | 0.50 | -6.84 | 308,391 | — |
-| WRBY | Warby Parker Inc. | piotroski | ✅ | 78% | 23.25 | 2,325 | 7.91 | 0.45 | 2.35 | 0.96 | 4M | — |
-| BNED | BARNES & NOBLE EDUCATION, IN | piotroski | ✅ | 89% | 10.74 | 21.92 | 1.26 | 5.73 | 1.71 | 1.51 | 196,043 | — |
-| ORN | ORION GROUP HOLDINGS, INC. | piotroski | ✅ | 78% | 9.18 | 153 | 2.29 | 1.56 | 1.36 | 1.61 | 574,438 | — |
-| SABR | Sabre Corporation | greenblatt | ▫️ | 67% | 2.24 | 1.67 | — | -50.61 | 1.07 | — | 2M | — |
-| SABR | Sabre Corporation | piotroski | ▫️ | 56% | 2.24 | 1.67 | — | -50.61 | 1.07 | — | 2M | — |
-| SABR | Sabre Corporation | lynch | ▫️ | 25% | 2.24 | 1.67 | — | -50.61 | 1.07 | — | 2M | — |
-| SABR | Sabre Corporation | netnet | ▫️ | 25% | 2.24 | 1.67 | — | -50.61 | 1.07 | — | 2M | — |
-| SABR | Sabre Corporation | graham | ▫️ | 22% | 2.24 | 1.67 | — | -50.61 | 1.07 | — | 2M | — |
-| SABR | Sabre Corporation | buffett | ▫️ | 17% | 2.24 | 1.67 | — | -50.61 | 1.07 | — | 2M | — |
-| SABR | Sabre Corporation | custom | ▫️ | 0% | 2.24 | 1.67 | — | -50.61 | 1.07 | — | 2M | — |
-| WING | WINGSTOP INC. | buffett | ▫️ | 67% | 103 | 16.57 | — | -23.65 | 3.26 | -1.94 | 591,359 | — |
-| WING | WINGSTOP INC. | piotroski | ▫️ | 67% | 103 | 16.57 | — | -23.65 | 3.26 | -1.94 | 591,359 | — |
-| WING | WINGSTOP INC. | greenblatt | ▫️ | 67% | 103 | 16.57 | — | -23.65 | 3.26 | -1.94 | 591,359 | — |
-| WING | WINGSTOP INC. | graham | ▫️ | 33% | 103 | 16.57 | — | -23.65 | 3.26 | -1.94 | 591,359 | — |
-| WING | WINGSTOP INC. | netnet | ▫️ | 25% | 103 | 16.57 | — | -23.65 | 3.26 | -1.94 | 591,359 | — |
-| WING | WINGSTOP INC. | custom | ▫️ | 0% | 103 | 16.57 | — | -23.65 | 3.26 | -1.94 | 591,359 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | buffett | ▫️ | 67% | 164 | 23.12 | 7.92 | 34.27 | 1.46 | — | 96,996 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | greenblatt | ▫️ | 67% | 164 | 23.12 | 7.92 | 34.27 | 1.46 | — | 96,996 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | graham | ▫️ | 33% | 164 | 23.12 | 7.92 | 34.27 | 1.46 | — | 96,996 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | lynch | ▫️ | 25% | 164 | 23.12 | 7.92 | 34.27 | 1.46 | — | 96,996 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | netnet | ▫️ | 25% | 164 | 23.12 | 7.92 | 34.27 | 1.46 | — | 96,996 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | custom | ▫️ | 0% | 164 | 23.12 | 7.92 | 34.27 | 1.46 | — | 96,996 | — |
-| ESE | ESCO TECHNOLOGIES INC. | buffett | ▫️ | 67% | 262 | 22.72 | 4.41 | 19.42 | 1.35 | 0.56 | 263,780 | — |
+| GOOGN | Alphabet Inc. | graham | ✅ | 100% | 49.23 | 4.55 | 1.45 | 31.83 | 2.01 | 0.43 | 2M | — |
+| GOOGN | Alphabet Inc. | buffett | ✅ | 100% | 49.23 | 4.55 | 1.45 | 31.83 | 2.01 | 0.43 | 2M | — |
+| GOOGN | Alphabet Inc. | greenblatt | ✅ | 100% | 49.23 | 4.55 | 1.45 | 31.83 | 2.01 | 0.43 | 2M | — |
+| GOOGN | Alphabet Inc. | lynch | ✅ | 100% | 49.23 | 4.55 | 1.45 | 31.83 | 2.01 | 0.43 | 2M | — |
+| PTCT | PTC Therapeutics, Inc. | greenblatt | ✅ | 100% | 65.96 | 8.48 | — | -332 | 2.35 | -15.12 | 1M | — |
+| PTCT | PTC Therapeutics, Inc. | piotroski | ✅ | 78% | 65.96 | 8.48 | — | -332 | 2.35 | -15.12 | 1M | — |
+| SON | Sonoco Products Company | piotroski | ✅ | 89% | 50.69 | 5.03 | 1.40 | 27.75 | 1.05 | 2.08 | 1M | — |
+| SON | Sonoco Products Company | lynch | ✅ | 75% | 50.69 | 5.03 | 1.40 | 27.75 | 1.05 | 2.08 | 1M | — |
+| NSSC | NAPCO SECURITY TECHNOLOGIES, | buffett | ✅ | 100% | 35.88 | 29.90 | 6.74 | 22.53 | 4.90 | 0.25 | 322,851 | — |
+| NSSC | NAPCO SECURITY TECHNOLOGIES, | lynch | ✅ | 75% | 35.88 | 29.90 | 6.74 | 22.53 | 4.90 | 0.25 | 322,851 | — |
+| AIV | Apartment Investment and Man | greenblatt | ✅ | 100% | 2.16 | 0.56 | 0.84 | 151 | — | 3.10 | 1M | — |
+| KRYS | Krystal Biotech, Inc. | piotroski | ✅ | 89% | 351 | 51.30 | 8.62 | 16.80 | 9.95 | 0.09 | 274,329 | — |
+| IBOC | INTERNATIONAL BANCSHARES COR | lynch | ✅ | 75% | 69.75 | 10.54 | 1.34 | 12.68 | — | 4.10 | 321,553 | — |
+| FTDR | Frontdoor, Inc. | piotroski | ✅ | 89% | 77.19 | 22.57 | 23.76 | 105 | 1.55 | — | 859,303 | — |
+| FTDR | Frontdoor, Inc. | buffett | ✅ | 83% | 77.19 | 22.57 | 23.76 | 105 | 1.55 | — | 859,303 | — |
+| DORM | Dorman Products, Inc. | piotroski | ✅ | 89% | 121 | 18.19 | 2.52 | 13.82 | 3.09 | — | 223,043 | — |
+| HOG | Harley-Davidson, Inc. | graham | ✅ | 100% | 26.03 | 9.36 | 1.00 | 10.79 | 2.10 | — | 2M | — |
+| HOG | Harley-Davidson, Inc. | piotroski | ✅ | 89% | 26.03 | 9.36 | 1.00 | 10.79 | 2.10 | — | 2M | — |
+| HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 115 | 44.97 | 292 | 649 | 4.66 | 50.73 | 4M | — |
+| SSB | SOUTHSTATE BANK CORP | lynch | ✅ | 75% | 102 | 13.01 | 1.15 | 8.82 | — | 6.42 | 664,060 | — |
+| SHOE | Shoe Station Group, Inc. | graham | ✅ | 89% | 13.38 | 7.04 | 0.53 | 7.58 | 3.76 | 0.74 | 959,363 | — |
+| GEO | The GEO Group, Inc. | piotroski | ✅ | 78% | 29.74 | 16.34 | 2.76 | 16.89 | 2.01 | — | 4M | — |
+| GEO | The GEO Group, Inc. | lynch | ✅ | 75% | 29.74 | 16.34 | 2.76 | 16.89 | 2.01 | — | 4M | — |
+| DRVN | Driven Brands Holdings Inc. | piotroski | ✅ | 78% | 12.27 | 14.44 | 2.62 | 18.27 | 0.75 | 4.42 | 796,226 | — |
+| BCPC | Balchem Corporation | piotroski | ✅ | 100% | 168 | 35.45 | 4.37 | 12.31 | 2.07 | 0.34 | 216,963 | — |
+| PAYO | Payoneer Global Inc. | piotroski | ✅ | 78% | 7.13 | 37.53 | 3.81 | 10.39 | 1.00 | 11.71 | 5M | — |
+| UMH | UMH PROPERTIES, INC. | piotroski | ✅ | 78% | 15.80 | 226 | 1.48 | 2.90 | — | 0.87 | 476,375 | — |
+| FAF | FIRST AMERICAN FINANCIAL COR | piotroski | ✅ | 89% | 69.24 | 11.54 | 1.31 | 11.31 | — | 1.95 | 888,757 | — |
+| CXW | CORECIVIC, INC. | piotroski | ✅ | 89% | 31.47 | 29.14 | 2.40 | 8.29 | 1.66 | 1.32 | 2M | — |
+| RRX | REGAL REXNORD CORP | piotroski | ✅ | 78% | 153 | 36.35 | 1.49 | 4.08 | 2.15 | — | 1M | — |
+| MSGS | MADISON SQUARE GARDEN SPORTS | piotroski | ✅ | 100% | 397 | 1,239 | — | -2.95 | 0.50 | -6.84 | 234,150 | — |
+| CVI | CVR ENERGY, INC | piotroski | ✅ | 89% | 52.13 | 193 | 7.18 | 3.70 | 1.79 | — | 1M | — |
+| NEOG | Neogen Corporation | piotroski | ✅ | 89% | 13.98 | — | 1.45 | -0.38 | 3.82 | 0.60 | 5M | — |
+| AVNW | Aviat Networks, Inc. | piotroski | ✅ | 78% | 20.04 | 105 | 0.98 | 0.95 | 1.97 | 1.24 | 106,752 | — |
+| GXO | GXO Logistics, Inc. | piotroski | ✅ | 78% | 45.77 | 163 | 1.78 | 1.07 | 0.85 | — | 896,913 | — |
+| GOOGN | Alphabet Inc. | piotroski | ▫️ | 67% | 49.23 | 4.55 | 1.45 | 31.83 | 2.01 | 0.43 | 2M | — |
+| GOOGN | Alphabet Inc. | netnet | ▫️ | 50% | 49.23 | 4.55 | 1.45 | 31.83 | 2.01 | 0.43 | 2M | — |
+| GOOGN | Alphabet Inc. | custom | ▫️ | 0% | 49.23 | 4.55 | 1.45 | 31.83 | 2.01 | 0.43 | 2M | — |
+| PTCT | PTC Therapeutics, Inc. | lynch | ▫️ | 50% | 65.96 | 8.48 | — | -332 | 2.35 | -15.12 | 1M | — |
+| PTCT | PTC Therapeutics, Inc. | graham | ▫️ | 44% | 65.96 | 8.48 | — | -332 | 2.35 | -15.12 | 1M | — |
+| PTCT | PTC Therapeutics, Inc. | buffett | ▫️ | 33% | 65.96 | 8.48 | — | -332 | 2.35 | -15.12 | 1M | — |
+| PTCT | PTC Therapeutics, Inc. | netnet | ▫️ | 25% | 65.96 | 8.48 | — | -332 | 2.35 | -15.12 | 1M | — |
+| PTCT | PTC Therapeutics, Inc. | custom | ▫️ | 0% | 65.96 | 8.48 | — | -332 | 2.35 | -15.12 | 1M | — |
+| SON | Sonoco Products Company | graham | ▫️ | 67% | 50.69 | 5.03 | 1.40 | 27.75 | 1.05 | 2.08 | 1M | — |
+| SON | Sonoco Products Company | buffett | ▫️ | 67% | 50.69 | 5.03 | 1.40 | 27.75 | 1.05 | 2.08 | 1M | — |
+| SON | Sonoco Products Company | greenblatt | ▫️ | 67% | 50.69 | 5.03 | 1.40 | 27.75 | 1.05 | 2.08 | 1M | — |
+| SON | Sonoco Products Company | netnet | ▫️ | 25% | 50.69 | 5.03 | 1.40 | 27.75 | 1.05 | 2.08 | 1M | — |
+| SON | Sonoco Products Company | custom | ▫️ | 0% | 50.69 | 5.03 | 1.40 | 27.75 | 1.05 | 2.08 | 1M | — |
+| NSSC | NAPCO SECURITY TECHNOLOGIES, | greenblatt | ▫️ | 67% | 35.88 | 29.90 | 6.74 | 22.53 | 4.90 | 0.25 | 322,851 | — |
+| NSSC | NAPCO SECURITY TECHNOLOGIES, | graham | ▫️ | 56% | 35.88 | 29.90 | 6.74 | 22.53 | 4.90 | 0.25 | 322,851 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
