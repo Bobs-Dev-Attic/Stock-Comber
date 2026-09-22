@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-BBW,BUILD-A-BEAR WORKSHOP INC,greenblatt,True,3,3,100.0,25.50,6.39,2.15,33.67,1.55,—,32.62,"191,872",—
-SBC,SBC Medical Group Holdings Incorporated,lynch,True,3,4,75.0,5.14,10.28,2.13,20.54,3.78,0.47,5.21,"356,204",-41.74
-MCRI,"MONARCH CASINO & RESORT, INC.",piotroski,True,9,9,100.0,121,22.23,4.19,18.86,0.86,0.33,59.33,"55,356",—
-MCRI,"MONARCH CASINO & RESORT, INC.",lynch,True,4,4,100.0,121,22.23,4.19,18.86,0.86,0.33,59.33,"55,356",—
-MCRI,"MONARCH CASINO & RESORT, INC.",buffett,True,5,6,83.3,121,22.23,4.19,18.86,0.86,0.33,59.33,"55,356",—
-RILY,"BRC Group Holdings, Inc.",greenblatt,True,3,3,100.0,5.80,0.59,—,-179,—,-10.65,—,"570,604",25.27
-RILY,"BRC Group Holdings, Inc.",lynch,True,3,4,75.0,5.80,0.59,—,-179,—,-10.65,—,"570,604",25.27
-AES,THE AES CORPORATION,greenblatt,True,3,3,100.0,14.83,11.77,2.61,22.40,0.77,—,12.70,5M,18.37
-SSD,"Simpson Manufacturing Co., Inc.",buffett,True,5,6,83.3,175,21.23,3.61,17.00,3.54,0.51,94.81,"34,874",—
-SSD,"Simpson Manufacturing Co., Inc.",piotroski,True,7,9,77.8,175,21.23,3.61,17.00,3.54,0.51,94.81,"34,874",—
-DAKT,"Daktronics, Inc.",piotroski,True,8,9,88.9,17.66,19.20,2.90,15.09,2.31,—,11.23,"379,729",-43.22
-DAKT,"Daktronics, Inc.",lynch,True,3,4,75.0,17.66,19.20,2.90,15.09,2.31,—,11.23,"379,729",-43.22
-KFY,KORN FERRY,piotroski,True,9,9,100.0,75.42,14.45,2.01,14.06,1.94,1.06,66.42,"63,216",—
-KFY,KORN FERRY,lynch,True,3,4,75.0,75.42,14.45,2.01,14.06,1.94,1.06,66.42,"63,216",—
-PRDO,PERDOCEO EDUCATION CORP,piotroski,True,8,9,88.9,32.33,13.36,2.20,16.45,5.06,—,28.29,"936,473",6.22
-CRVL,CORVEL CORPORATION,buffett,True,5,6,83.3,72.01,33.65,9.43,27.99,2.03,0.63,19.18,"31,810",—
-CRVL,CORVEL CORPORATION,piotroski,True,7,9,77.8,72.01,33.65,9.43,27.99,2.03,0.63,19.18,"31,810",—
-IIIN,Insteel Industries Inc.,piotroski,True,7,9,77.8,30.04,14.30,1.58,11.04,3.97,—,29.96,"13,205",—
-CRVL,CORVEL CORPORATION,lynch,True,3,4,75.0,72.01,33.65,9.43,27.99,2.03,0.63,19.18,"31,810",—
-IIIN,Insteel Industries Inc.,lynch,True,3,4,75.0,30.04,14.30,1.58,11.04,3.97,—,29.96,"13,205",—
-AGX,ARGAN INC,lynch,True,3,4,75.0,373,38.32,11.42,29.80,1.59,1.57,84.62,"113,811",—
-JOE,The St. Joe Company,piotroski,True,8,9,88.9,64.56,32.44,4.88,15.09,—,0.97,24.33,"268,361",-7.18
-PCTY,PAYLOCITY HOLDING CORPORATION,piotroski,True,8,9,88.9,144,29.35,6.48,22.08,1.09,3.00,49.69,"639,297",-13.74
-PCTY,PAYLOCITY HOLDING CORPORATION,lynch,True,3,4,75.0,144,29.35,6.48,22.08,1.09,3.00,49.69,"639,297",-13.74
-UMBF,UMB FINANCIAL CORP,lynch,True,3,4,75.0,134,14.37,1.28,9.13,—,8.50,148,"575,157",-2.01
-WOR,"WORTHINGTON ENTERPRISES, INC.",piotroski,True,8,9,88.9,58.15,18.52,2.81,15.20,2.37,0.80,38.20,"338,924",-16.16
-HAYW,"Hayward Holdings, Inc.",piotroski,True,9,9,100.0,12.88,18.94,1.80,9.51,2.94,0.98,10.47,3M,-5.44
-UE,URBAN EDGE PROPERTIES,piotroski,True,7,9,77.8,20.00,27.03,1.83,6.80,—,1.41,13.49,"521,031",9.99
-FUL,FULLER H B CO,piotroski,True,7,9,77.8,49.63,18.05,1.37,7.59,1.70,1.59,47.32,"613,103",-7.49
-MPAA,"MOTORCAR PARTS OF AMERICA, INC.",piotroski,True,7,9,77.8,10.54,17.00,0.79,4.66,1.46,2.83,13.63,"150,432",-19.85
-CALX,"Calix, Inc",piotroski,True,7,9,77.8,35.42,136,2.86,2.08,4.24,0.23,8.52,1M,-5.07
-GXO,"GXO Logistics, Inc.",piotroski,True,7,9,77.8,45.72,163,1.78,1.07,0.85,—,12.71,"111,047",—
-LILA,Liberty Latin America Ltd.,piotroski,True,7,9,77.8,8.85,—,3.18,-110,1.14,20.09,—,"109,282",—
-BBW,BUILD-A-BEAR WORKSHOP INC,graham,False,5,9,55.6,25.50,6.39,2.15,33.67,1.55,—,32.62,"191,872",—
-BBW,BUILD-A-BEAR WORKSHOP INC,piotroski,False,5,9,55.6,25.50,6.39,2.15,33.67,1.55,—,32.62,"191,872",—
-BBW,BUILD-A-BEAR WORKSHOP INC,buffett,False,3,6,50.0,25.50,6.39,2.15,33.67,1.55,—,32.62,"191,872",—
-BBW,BUILD-A-BEAR WORKSHOP INC,lynch,False,1,4,25.0,25.50,6.39,2.15,33.67,1.55,—,32.62,"191,872",—
-BBW,BUILD-A-BEAR WORKSHOP INC,netnet,False,1,4,25.0,25.50,6.39,2.15,33.67,1.55,—,32.62,"191,872",—
-BBW,BUILD-A-BEAR WORKSHOP INC,custom,False,0,0,0.0,25.50,6.39,2.15,33.67,1.55,—,32.62,"191,872",—
-SBC,SBC Medical Group Holdings Incorporated,graham,False,6,9,66.7,5.14,10.28,2.13,20.54,3.78,0.47,5.21,"356,204",-41.74
-SBC,SBC Medical Group Holdings Incorporated,buffett,False,4,6,66.7,5.14,10.28,2.13,20.54,3.78,0.47,5.21,"356,204",-41.74
-SBC,SBC Medical Group Holdings Incorporated,greenblatt,False,2,3,66.7,5.14,10.28,2.13,20.54,3.78,0.47,5.21,"356,204",-41.74
-SBC,SBC Medical Group Holdings Incorporated,netnet,False,2,4,50.0,5.14,10.28,2.13,20.54,3.78,0.47,5.21,"356,204",-41.74
-SBC,SBC Medical Group Holdings Incorporated,piotroski,False,4,9,44.4,5.14,10.28,2.13,20.54,3.78,0.47,5.21,"356,204",-41.74
-SBC,SBC Medical Group Holdings Incorporated,custom,False,0,0,0.0,5.14,10.28,2.13,20.54,3.78,0.47,5.21,"356,204",-41.74
-INSW,"INTERNATIONAL SEAWAYS, INC.",buffett,False,4,6,66.7,106,17.00,2.60,15.31,3.71,0.32,75.56,"329,013",—
-INSW,"INTERNATIONAL SEAWAYS, INC.",piotroski,False,6,9,66.7,106,17.00,2.60,15.31,3.71,0.32,75.56,"329,013",—
-INSW,"INTERNATIONAL SEAWAYS, INC.",lynch,False,2,4,50.0,106,17.00,2.60,15.31,3.71,0.32,75.56,"329,013",—
-INSW,"INTERNATIONAL SEAWAYS, INC.",graham,False,3,9,33.3,106,17.00,2.60,15.31,3.71,0.32,75.56,"329,013",—
-INSW,"INTERNATIONAL SEAWAYS, INC.",greenblatt,False,1,3,33.3,106,17.00,2.60,15.31,3.71,0.32,75.56,"329,013",—
+WING,WINGSTOP INC.,lynch,True,4,4,100.0,103,16.57,—,-23.65,3.26,-1.94,—,"591,359",—
+AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",piotroski,True,9,9,100.0,164,23.12,7.92,34.27,1.46,—,57.37,"96,996",—
+ESE,ESCO TECHNOLOGIES INC.,lynch,True,4,4,100.0,262,22.72,4.41,19.42,1.35,0.56,124,"263,780",—
+AX,"AXOS FINANCIAL, INC.",lynch,True,3,4,75.0,90.47,10.67,1.62,15.49,—,8.46,103,"105,051",—
+OTTR,OTTER TAIL CORPORATION,lynch,True,3,4,75.0,88.13,13.45,1.99,14.82,2.28,—,80.71,"231,422",—
+AREC,AMERICAN RESOURCES CORPORATION,greenblatt,True,3,3,100.0,1.99,3.16,1.83,58.44,2.19,0.80,3.92,1M,—
+KRYS,"Krystal Biotech, Inc.",piotroski,True,8,9,88.9,351,51.37,8.63,16.80,9.95,0.09,79.16,"119,656",—
+HOG,"Harley-Davidson, Inc.",graham,True,9,9,100.0,26.21,9.43,1.01,10.79,2.10,—,40.25,1M,—
+JOE,The St. Joe Company,piotroski,True,8,9,88.9,64.56,32.44,4.88,15.09,—,0.97,24.33,"268,361",—
+HOG,"Harley-Davidson, Inc.",piotroski,True,8,9,88.9,26.21,9.43,1.01,10.79,2.10,—,40.25,1M,—
+HALO,"HALOZYME THERAPEUTICS, INC.",buffett,True,5,6,83.3,111,43.54,283,649,4.66,50.73,4.76,3M,—
+SIGI,"SELECTIVE INSURANCE GROUP, INC",piotroski,True,7,9,77.8,87.68,11.71,1.48,12.92,—,3.20,99.81,"258,822",—
+MEDP,"Medpace Holdings, Inc.",buffett,True,5,6,83.3,624,40.85,40.15,98.27,0.74,3.30,73.11,"188,233",—
+MEDP,"Medpace Holdings, Inc.",piotroski,True,7,9,77.8,624,40.85,40.15,98.27,0.74,3.30,73.11,"188,233",—
+SSB,SOUTHSTATE BANK CORP,lynch,True,3,4,75.0,103,13.10,1.16,8.82,—,6.42,126,"357,743",—
+KEX,KIRBY CORPORATION,piotroski,True,8,9,88.9,136,21.43,2.25,10.49,1.53,—,92.69,"417,642",—
+AXTA,AXALTA COATING SYSTEMS LTD.,lynch,True,3,4,75.0,31.86,18.31,2.95,16.11,2.06,2.22,20.57,4M,—
+WLY,"JOHN WILEY & SONS, INC.",piotroski,True,9,9,100.0,47.45,11.41,2.98,26.13,0.54,2.06,38.61,"107,187",—
+POST,"Post Holdings, Inc.",lynch,True,3,4,75.0,75.26,13.66,1.26,8.94,1.67,2.60,86.01,1M,—
+GRC,The Gorman-Rupp Company,piotroski,True,8,9,88.9,74.56,36.91,4.73,12.78,2.37,1.07,26.77,"54,795",—
+CNMD,CONMED CORPORATION,lynch,True,3,4,75.0,44.69,29.60,1.35,4.55,2.14,1.25,33.57,"354,663",—
+WOR,"WORTHINGTON ENTERPRISES, INC.",piotroski,True,8,9,88.9,58.15,18.52,2.81,15.20,2.37,0.80,38.20,"338,924",—
+CPRI,CAPRI HOLDINGS LIMITED,piotroski,True,7,9,77.8,14.31,12.55,21.44,171,1.21,39.38,4.14,6M,—
+GSHD,"GOOSEHEAD INSURANCE, INC.",lynch,True,3,4,75.0,51.70,49.71,—,-29.14,1.60,-6.05,—,"630,702",—
+MCS,MARCUS CORP,piotroski,True,7,9,77.8,27.77,68.46,1.90,2.77,0.40,—,11.55,"111,320",—
+SENS,"Senseonics Holdings, Inc.",piotroski,True,7,9,77.8,9.87,—,6.75,-113,4.83,1.07,—,"302,770",—
+MSGS,MADISON SQUARE GARDEN SPORTS CORP.,piotroski,True,9,9,100.0,400,"1,250",—,-2.95,0.50,-6.84,—,"308,391",—
+WRBY,Warby Parker Inc.,piotroski,True,7,9,77.8,23.25,"2,325",7.91,0.45,2.35,0.96,0.81,4M,—
+BNED,"BARNES & NOBLE EDUCATION, INC.",piotroski,True,8,9,88.9,10.74,21.92,1.26,5.73,1.71,1.51,9.68,"196,043",—
+ORN,"ORION GROUP HOLDINGS, INC.",piotroski,True,7,9,77.8,9.18,153,2.29,1.56,1.36,1.61,2.33,"574,438",—
+SABR,Sabre Corporation,greenblatt,False,2,3,66.7,2.24,1.67,—,-50.61,1.07,—,—,2M,—
+SABR,Sabre Corporation,piotroski,False,5,9,55.6,2.24,1.67,—,-50.61,1.07,—,—,2M,—
+SABR,Sabre Corporation,lynch,False,1,4,25.0,2.24,1.67,—,-50.61,1.07,—,—,2M,—
+SABR,Sabre Corporation,netnet,False,1,4,25.0,2.24,1.67,—,-50.61,1.07,—,—,2M,—
+SABR,Sabre Corporation,graham,False,2,9,22.2,2.24,1.67,—,-50.61,1.07,—,—,2M,—
+SABR,Sabre Corporation,buffett,False,1,6,16.7,2.24,1.67,—,-50.61,1.07,—,—,2M,—
+SABR,Sabre Corporation,custom,False,0,0,0.0,2.24,1.67,—,-50.61,1.07,—,—,2M,—
+WING,WINGSTOP INC.,buffett,False,4,6,66.7,103,16.57,—,-23.65,3.26,-1.94,—,"591,359",—
+WING,WINGSTOP INC.,piotroski,False,6,9,66.7,103,16.57,—,-23.65,3.26,-1.94,—,"591,359",—
+WING,WINGSTOP INC.,greenblatt,False,2,3,66.7,103,16.57,—,-23.65,3.26,-1.94,—,"591,359",—
+WING,WINGSTOP INC.,graham,False,3,9,33.3,103,16.57,—,-23.65,3.26,-1.94,—,"591,359",—
+WING,WINGSTOP INC.,netnet,False,1,4,25.0,103,16.57,—,-23.65,3.26,-1.94,—,"591,359",—
+WING,WINGSTOP INC.,custom,False,0,0,0.0,103,16.57,—,-23.65,3.26,-1.94,—,"591,359",—
+AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",buffett,False,4,6,66.7,164,23.12,7.92,34.27,1.46,—,57.37,"96,996",—
+AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",greenblatt,False,2,3,66.7,164,23.12,7.92,34.27,1.46,—,57.37,"96,996",—
+AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",graham,False,3,9,33.3,164,23.12,7.92,34.27,1.46,—,57.37,"96,996",—
+AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",lynch,False,1,4,25.0,164,23.12,7.92,34.27,1.46,—,57.37,"96,996",—
+AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",netnet,False,1,4,25.0,164,23.12,7.92,34.27,1.46,—,57.37,"96,996",—
+AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",custom,False,0,0,0.0,164,23.12,7.92,34.27,1.46,—,57.37,"96,996",—
+ESE,ESCO TECHNOLOGIES INC.,buffett,False,4,6,66.7,262,22.72,4.41,19.42,1.35,0.56,124,"263,780",—
