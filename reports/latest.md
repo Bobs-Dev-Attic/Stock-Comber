@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-22 05:47 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-22 10:29 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **37** strategy matches passed.
+Screened **75** companies · **40** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| SAFX | XCF Global, Inc. | greenblatt | ✅ | 100% | 0.50 | 0.97 | 1.90 | 197 | 0.11 | 10.14 | 5M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | piotroski | ✅ | 78% | 29.48 | 6.49 | 1.91 | 29.41 | 1.47 | 1.81 | 2M | — |
-| GENVR | Gen Digital Inc. | piotroski | ✅ | 89% | 4.09 | 2.61 | 0.97 | 37.27 | 0.40 | 4.97 | 32,645 | — |
-| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 113 | 21.52 | 4.11 | 19.12 | 2.99 | — | 153,117 | — |
-| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 113 | 21.52 | 4.11 | 19.12 | 2.99 | — | 153,117 | — |
-| RILY | BRC Group Holdings, Inc. | greenblatt | ✅ | 100% | 5.80 | 0.59 | — | -179 | — | -10.65 | 570,604 | — |
-| RILY | BRC Group Holdings, Inc. | lynch | ✅ | 75% | 5.80 | 0.59 | — | -179 | — | -10.65 | 570,604 | — |
-| SKYW | SKYWEST INC | piotroski | ✅ | 89% | 100 | 9.68 | 1.51 | 15.60 | 0.65 | — | 302,049 | — |
-| GLRE | GREENLIGHT CAPITAL RE, LTD. | piotroski | ✅ | 78% | 15.09 | 6.95 | 0.74 | 10.57 | — | 2.06 | 106,232 | — |
-| WTFC | WINTRUST FINANCIAL CORP | lynch | ✅ | 75% | 147 | 12.90 | 1.38 | 11.35 | — | 8.80 | 331,367 | — |
+| MLI | MUELLER INDUSTRIES INC | buffett | ✅ | 100% | 59.93 | 8.74 | 2.08 | 23.84 | 5.92 | 0.15 | 1M | — |
+| MLI | MUELLER INDUSTRIES INC | greenblatt | ✅ | 100% | 59.93 | 8.74 | 2.08 | 23.84 | 5.92 | 0.15 | 1M | — |
+| MLI | MUELLER INDUSTRIES INC | lynch | ✅ | 100% | 59.93 | 8.74 | 2.08 | 23.84 | 5.92 | 0.15 | 1M | — |
+| MLI | MUELLER INDUSTRIES INC | graham | ✅ | 89% | 59.93 | 8.74 | 2.08 | 23.84 | 5.92 | 0.15 | 1M | — |
+| MLI | MUELLER INDUSTRIES INC | piotroski | ✅ | 78% | 59.93 | 8.74 | 2.08 | 23.84 | 5.92 | 0.15 | 1M | — |
+| PIPR | PIPER SANDLER COMPANIES | greenblatt | ✅ | 100% | 73.87 | 4.67 | 0.96 | 20.52 | — | 0.74 | 433,564 | — |
+| PIPR | PIPER SANDLER COMPANIES | lynch | ✅ | 100% | 73.87 | 4.67 | 0.96 | 20.52 | — | 0.74 | 433,564 | — |
+| PIPR | PIPER SANDLER COMPANIES | piotroski | ✅ | 89% | 73.87 | 4.67 | 0.96 | 20.52 | — | 0.74 | 433,564 | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | piotroski | ✅ | 78% | 8.76 | 7.24 | — | -221 | 2.06 | -5.32 | 3M | — |
+| REFI | CHICAGO ATLANTIC REAL ESTATE | lynch | ✅ | 100% | 10.80 | 6.43 | 0.75 | 11.70 | — | 0.38 | 256,842 | — |
+| SON | Sonoco Products Company | piotroski | ✅ | 89% | 49.25 | 4.89 | 1.36 | 27.75 | 1.05 | 2.08 | 1M | — |
+| SON | Sonoco Products Company | lynch | ✅ | 75% | 49.25 | 4.89 | 1.36 | 27.75 | 1.05 | 2.08 | 1M | — |
+| PARR | Par Pacific Holdings, Inc. | piotroski | ✅ | 78% | 82.00 | 11.45 | 2.80 | 24.44 | 1.61 | 1.51 | 970,409 | — |
+| AROC | Archrock, Inc. | piotroski | ✅ | 89% | 30.73 | 16.79 | 3.60 | 21.61 | 1.54 | 1.92 | 954,317 | — |
 | AES | THE AES CORPORATION | greenblatt | ✅ | 100% | 14.83 | 11.77 | 2.61 | 22.40 | 0.77 | — | 5M | — |
-| KRYS | Krystal Biotech, Inc. | piotroski | ✅ | 89% | 334 | 48.81 | 8.20 | 16.80 | 9.95 | 0.09 | 210,258 | — |
-| HBANP | Huntington Bancshares Incorp | lynch | ✅ | 75% | 16.58 | 11.93 | 1.02 | 9.08 | — | 8.25 | 35,122 | — |
-| IIIN | Insteel Industries Inc. | piotroski | ✅ | 78% | 29.83 | 14.20 | 1.57 | 11.04 | 3.97 | — | 131,855 | — |
-| IIIN | Insteel Industries Inc. | lynch | ✅ | 75% | 29.83 | 14.20 | 1.57 | 11.04 | 3.97 | — | 131,855 | — |
-| SFM | Sprouts Farmers Market, Inc. | piotroski | ✅ | 78% | 68.66 | 12.93 | 4.83 | 37.32 | 0.93 | 1.96 | 2M | — |
+| PJT | PJT Partners Inc. | buffett | ✅ | 83% | 151 | — | — | 58.43 | — | 2.71 | 435,744 | — |
+| PJT | PJT Partners Inc. | piotroski | ✅ | 78% | 151 | — | — | 58.43 | — | 2.71 | 435,744 | — |
+| BELFA | BEL FUSE INC /NJ | piotroski | ✅ | 89% | 198 | — | — | 14.46 | 3.02 | 0.98 | 72,388 | — |
+| KFY | KORN FERRY | piotroski | ✅ | 100% | 76.77 | 14.71 | 2.04 | 14.06 | 1.94 | 1.06 | 345,990 | — |
+| KFY | KORN FERRY | lynch | ✅ | 75% | 76.77 | 14.71 | 2.04 | 14.06 | 1.94 | 1.06 | 345,990 | — |
+| ABG | ASBURY AUTOMOTIVE GROUP, INC | piotroski | ✅ | 78% | 185 | 7.34 | 0.93 | 12.64 | 0.95 | — | 289,370 | — |
+| ABG | ASBURY AUTOMOTIVE GROUP, INC | lynch | ✅ | 75% | 185 | 7.34 | 0.93 | 12.64 | 0.95 | — | 289,370 | — |
+| NYT | THE NEW YORK TIMES COMPANY | piotroski | ✅ | 100% | 70.53 | 33.75 | 5.70 | 16.85 | 1.54 | — | 3M | — |
 | PCTY | PAYLOCITY HOLDING CORPORATIO | piotroski | ✅ | 89% | 144 | 29.35 | 6.48 | 22.08 | 1.09 | 3.00 | 639,297 | — |
 | PCTY | PAYLOCITY HOLDING CORPORATIO | lynch | ✅ | 75% | 144 | 29.35 | 6.48 | 22.08 | 1.09 | 3.00 | 639,297 | — |
-| AENTW | ALLIANCE ENTERTAINMENT HOLDI | lynch | ✅ | 75% | 0.19 | 0.75 | 0.09 | 11.20 | 1.34 | 2.41 | 0.00 | — |
-| NJR | NEW JERSEY RESOURCES CORPORA | piotroski | ✅ | 78% | 52.92 | 15.89 | 2.23 | 14.03 | 0.73 | — | 635,913 | — |
-| SHOE | Shoe Station Group, Inc. | graham | ✅ | 89% | 13.04 | 6.86 | 0.52 | 7.58 | 3.76 | 0.74 | 1M | — |
 | NHC | NATIONAL HEALTHCARE CORP | piotroski | ✅ | 100% | 223 | 29.11 | 3.27 | 11.23 | 1.82 | 0.42 | 100,315 | — |
 | NHC | NATIONAL HEALTHCARE CORP | lynch | ✅ | 75% | 223 | 29.11 | 3.27 | 11.23 | 1.82 | 0.42 | 100,315 | — |
-| AGCO | AGCO CORP /DE | piotroski | ✅ | 89% | 120 | 12.30 | 2.09 | 17.00 | 1.39 | 1.72 | 885,532 | — |
-| SIRI | SIRIUS XM HOLDINGS INC. | lynch | ✅ | 75% | 27.44 | 12.30 | 0.85 | 6.96 | 0.30 | 1.36 | 4M | — |
-| HLIO | HELIOS TECHNOLOGIES, INC. | piotroski | ✅ | 100% | 68.26 | 47.08 | 2.44 | 5.20 | 2.90 | 0.63 | 289,700 | — |
-| HLIO | HELIOS TECHNOLOGIES, INC. | lynch | ✅ | 75% | 68.26 | 47.08 | 2.44 | 5.20 | 2.90 | 0.63 | 289,700 | — |
+| EGP | EASTGROUP PROPERTIES, INC. | piotroski | ✅ | 78% | 203 | 41.60 | 3.06 | 7.36 | — | 0.55 | 585,174 | — |
+| EGP | EASTGROUP PROPERTIES, INC. | lynch | ✅ | 75% | 203 | 41.60 | 3.06 | 7.36 | — | 0.55 | 585,174 | — |
+| BCPC | Balchem Corporation | piotroski | ✅ | 100% | 167 | 35.23 | 4.34 | 12.31 | 2.07 | 0.34 | 198,971 | — |
+| CPK | CHESAPEAKE UTILITIES CORP | piotroski | ✅ | 78% | 131 | 21.97 | 1.93 | 8.78 | 0.45 | — | 230,170 | — |
+| BKU | BankUnited, Inc. | piotroski | ✅ | 89% | 44.45 | 12.59 | 1.08 | 8.79 | — | 10.47 | 813,292 | — |
+| R | RYDER SYSTEM INC | piotroski | ✅ | 100% | 237 | 19.86 | 3.25 | 16.35 | 0.89 | 4.37 | 229,486 | — |
+| MYRG | MYR GROUP INC. | piotroski | ✅ | 89% | 288 | 38.31 | 6.87 | 17.93 | 1.33 | 1.49 | 273,958 | — |
 | CBU | COMMUNITY FINANCIAL SYSTEM,  | piotroski | ✅ | 89% | 61.09 | 15.39 | 1.61 | 10.49 | — | 7.63 | 319,981 | — |
-| MAGN | Magnera Corporation | piotroski | ✅ | 78% | 11.83 | — | 0.39 | -14.94 | 2.37 | 2.75 | 419,215 | — |
-| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 51.70 | 49.71 | — | -29.14 | 1.60 | -6.05 | 630,700 | — |
-| LW | Lamb Weston Holdings, Inc. | piotroski | ✅ | 78% | 47.29 | 22.74 | 3.60 | 15.89 | 1.42 | — | 2M | — |
-| MLKN | MillerKnoll, Inc. | piotroski | ✅ | 100% | 20.32 | 15.39 | 1.05 | 6.82 | 1.58 | 1.93 | 1M | — |
-| ALNT | ALLIENT INC | piotroski | ✅ | 89% | 109 | 82.84 | 6.07 | 7.31 | 3.66 | 0.92 | 234,057 | — |
-| NEOG | Neogen Corporation | piotroski | ✅ | 89% | 13.61 | — | 1.41 | -0.38 | 3.82 | 0.60 | 4M | — |
-| BNED | BARNES & NOBLE EDUCATION, IN | piotroski | ✅ | 89% | 10.74 | 21.92 | 1.26 | 5.73 | 1.71 | 1.51 | 196,043 | — |
-| INNV | InnovAge Holding Corp. | piotroski | ✅ | 78% | 10.60 | — | 6.11 | -1.08 | 1.05 | 1.23 | 239,669 | — |
-| WGO | WINNEBAGO INDUSTRIES, INC. | piotroski | ✅ | 89% | 27.21 | 29.90 | 0.63 | 2.10 | 2.42 | 0.76 | 608,085 | — |
-| SAFX | XCF Global, Inc. | graham | ▫️ | 33% | 0.50 | 0.97 | 1.90 | 197 | 0.11 | 10.14 | 5M | — |
-| SAFX | XCF Global, Inc. | buffett | ▫️ | 33% | 0.50 | 0.97 | 1.90 | 197 | 0.11 | 10.14 | 5M | — |
-| SAFX | XCF Global, Inc. | lynch | ▫️ | 25% | 0.50 | 0.97 | 1.90 | 197 | 0.11 | 10.14 | 5M | — |
-| SAFX | XCF Global, Inc. | netnet | ▫️ | 25% | 0.50 | 0.97 | 1.90 | 197 | 0.11 | 10.14 | 5M | — |
-| SAFX | XCF Global, Inc. | piotroski | ▫️ | 11% | 0.50 | 0.97 | 1.90 | 197 | 0.11 | 10.14 | 5M | — |
-| SAFX | XCF Global, Inc. | custom | ▫️ | 0% | 0.50 | 0.97 | 1.90 | 197 | 0.11 | 10.14 | 5M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | graham | ▫️ | 67% | 29.48 | 6.49 | 1.91 | 29.41 | 1.47 | 1.81 | 2M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | greenblatt | ▫️ | 67% | 29.48 | 6.49 | 1.91 | 29.41 | 1.47 | 1.81 | 2M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | buffett | ▫️ | 50% | 29.48 | 6.49 | 1.91 | 29.41 | 1.47 | 1.81 | 2M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | lynch | ▫️ | 50% | 29.48 | 6.49 | 1.91 | 29.41 | 1.47 | 1.81 | 2M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | netnet | ▫️ | 25% | 29.48 | 6.49 | 1.91 | 29.41 | 1.47 | 1.81 | 2M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | custom | ▫️ | 0% | 29.48 | 6.49 | 1.91 | 29.41 | 1.47 | 1.81 | 2M | — |
-| GENVR | Gen Digital Inc. | graham | ▫️ | 78% | 4.09 | 2.61 | 0.97 | 37.27 | 0.40 | 4.97 | 32,645 | — |
+| III | Information Services Group I | piotroski | ✅ | 78% | 5.36 | 28.21 | 2.85 | 9.87 | 2.34 | 1.23 | 166,907 | — |
+| VVX | V2X, Inc. | piotroski | ✅ | 100% | 77.27 | 31.54 | 2.27 | 7.18 | 1.22 | 2.02 | 547,781 | — |
+| TDC | TERADATA CORPORATION | piotroski | ✅ | 89% | 29.36 | 21.75 | 12.33 | 56.52 | 0.92 | 6.73 | 1M | — |
+| MSGS | MADISON SQUARE GARDEN SPORTS | piotroski | ✅ | 100% | 400 | 1,250 | — | -2.95 | 0.50 | -6.84 | 308,391 | — |
+| WRBY | Warby Parker Inc. | piotroski | ✅ | 78% | 23.25 | 2,325 | 7.91 | 0.45 | 2.35 | 0.96 | 4M | — |
+| MLI | MUELLER INDUSTRIES INC | netnet | ▫️ | 50% | 59.93 | 8.74 | 2.08 | 23.84 | 5.92 | 0.15 | 1M | — |
+| MLI | MUELLER INDUSTRIES INC | custom | ▫️ | 0% | 59.93 | 8.74 | 2.08 | 23.84 | 5.92 | 0.15 | 1M | — |
+| PIPR | PIPER SANDLER COMPANIES | graham | ▫️ | 78% | 73.87 | 4.67 | 0.96 | 20.52 | — | 0.74 | 433,564 | — |
+| PIPR | PIPER SANDLER COMPANIES | buffett | ▫️ | 50% | 73.87 | 4.67 | 0.96 | 20.52 | — | 0.74 | 433,564 | — |
+| PIPR | PIPER SANDLER COMPANIES | netnet | ▫️ | 25% | 73.87 | 4.67 | 0.96 | 20.52 | — | 0.74 | 433,564 | — |
+| PIPR | PIPER SANDLER COMPANIES | custom | ▫️ | 0% | 73.87 | 4.67 | 0.96 | 20.52 | — | 0.74 | 433,564 | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | greenblatt | ▫️ | 67% | 8.76 | 7.24 | — | -221 | 2.06 | -5.32 | 3M | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | lynch | ▫️ | 50% | 8.76 | 7.24 | — | -221 | 2.06 | -5.32 | 3M | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | graham | ▫️ | 44% | 8.76 | 7.24 | — | -221 | 2.06 | -5.32 | 3M | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | buffett | ▫️ | 33% | 8.76 | 7.24 | — | -221 | 2.06 | -5.32 | 3M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
