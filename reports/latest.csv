@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-UCO,PROSHARES TRUST II,greenblatt,True,3,3,100.0,50.63,3.66,1.10,29.91,—,0.06,120,4M,—
-PPC,PILGRIM’S PRIDE CORPORATION,piotroski,True,7,9,77.8,28.98,6.38,1.88,29.41,1.47,1.81,39.71,1M,—
-ESE,ESCO TECHNOLOGIES INC.,lynch,True,4,4,100.0,262,22.67,4.40,19.42,1.35,0.56,124,"271,913",—
-ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",buffett,True,5,6,83.3,115,15.74,5.25,33.37,4.85,2.26,60.19,1M,—
-ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",lynch,True,3,4,75.0,115,15.74,5.25,33.37,4.85,2.26,60.19,1M,—
-CVSA,Covista Inc.,lynch,True,3,4,75.0,123,17.47,3.04,17.40,1.09,1.08,80.09,"428,130",—
-VISN,"Vistance Networks, Inc.",greenblatt,True,3,3,100.0,6.48,0.67,—,-227,3.88,-9.06,—,4M,—
-JOE,The St. Joe Company,piotroski,True,8,9,88.9,66.21,33.27,5.01,15.09,—,0.97,24.33,"259,073",—
-PCTY,PAYLOCITY HOLDING CORPORATION,piotroski,True,8,9,88.9,146,29.62,6.53,22.08,1.09,3.00,49.69,"779,746",—
-PCTY,PAYLOCITY HOLDING CORPORATION,lynch,True,3,4,75.0,146,29.62,6.53,22.08,1.09,3.00,49.69,"779,746",—
-CSTM,Constellium SE,piotroski,True,9,9,100.0,25.33,13.19,3.78,28.68,1.29,4.60,17.02,1M,—
-ORI,OLD REPUBLIC INTERNATIONAL CORPORATION,piotroski,True,7,9,77.8,38.78,10.42,1.65,15.82,—,4.05,44.38,2M,—
-SHOE,"Shoe Station Group, Inc.",graham,True,8,9,88.9,13.38,7.04,0.53,7.58,3.76,0.74,32.72,"962,407",—
-GRC,The Gorman-Rupp Company,piotroski,True,8,9,88.9,74.59,36.93,4.73,12.78,2.37,1.07,26.77,"122,609",—
-CNMD,CONMED CORPORATION,lynch,True,3,4,75.0,46.17,30.58,1.39,4.55,2.14,1.25,33.57,"441,782",—
-IMAX,IMAX Corporation,piotroski,True,7,9,77.8,53.59,85.06,8.81,10.32,—,1.38,9.29,1M,—
-SHAK,SHAKE SHACK INC.,piotroski,True,8,9,88.9,58.09,53.29,4.63,8.70,1.76,2.56,17.55,1M,—
-AIOT,"POWERFLEET, INC.",piotroski,True,7,9,77.8,2.98,—,0.84,-4.32,1.13,1.00,—,1M,—
-SGRY,"Surgery Partners, Inc.",piotroski,True,7,9,77.8,15.80,—,1.17,-4.55,1.87,—,—,8M,—
-HCSG,"HEALTHCARE SERVICES GROUP, INC.",piotroski,True,9,9,100.0,21.57,26.63,3.09,11.58,3.38,—,11.28,1M,—
-MOS,MOSAIC CO,piotroski,True,8,9,88.9,24.73,14.55,0.65,4.47,1.32,—,38.07,6M,—
-LILA,Liberty Latin America Ltd.,piotroski,True,7,9,77.8,8.79,—,3.16,-110,1.14,20.09,—,"443,689",—
-UCO,PROSHARES TRUST II,lynch,False,2,4,50.0,50.63,3.66,1.10,29.91,—,0.06,120,4M,—
-UCO,PROSHARES TRUST II,graham,False,4,9,44.4,50.63,3.66,1.10,29.91,—,0.06,120,4M,—
-UCO,PROSHARES TRUST II,buffett,False,2,6,33.3,50.63,3.66,1.10,29.91,—,0.06,120,4M,—
-UCO,PROSHARES TRUST II,piotroski,False,3,9,33.3,50.63,3.66,1.10,29.91,—,0.06,120,4M,—
-UCO,PROSHARES TRUST II,netnet,False,1,4,25.0,50.63,3.66,1.10,29.91,—,0.06,120,4M,—
-UCO,PROSHARES TRUST II,custom,False,0,0,0.0,50.63,3.66,1.10,29.91,—,0.06,120,4M,—
-PPC,PILGRIM’S PRIDE CORPORATION,graham,False,6,9,66.7,28.98,6.38,1.88,29.41,1.47,1.81,39.71,1M,—
-PPC,PILGRIM’S PRIDE CORPORATION,greenblatt,False,2,3,66.7,28.98,6.38,1.88,29.41,1.47,1.81,39.71,1M,—
-PPC,PILGRIM’S PRIDE CORPORATION,buffett,False,3,6,50.0,28.98,6.38,1.88,29.41,1.47,1.81,39.71,1M,—
-PPC,PILGRIM’S PRIDE CORPORATION,lynch,False,2,4,50.0,28.98,6.38,1.88,29.41,1.47,1.81,39.71,1M,—
-PPC,PILGRIM’S PRIDE CORPORATION,netnet,False,1,4,25.0,28.98,6.38,1.88,29.41,1.47,1.81,39.71,1M,—
-PPC,PILGRIM’S PRIDE CORPORATION,custom,False,0,0,0.0,28.98,6.38,1.88,29.41,1.47,1.81,39.71,1M,—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,piotroski,False,4,9,44.4,25.86,—,—,—,2.10,—,—,"96,304",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,graham,False,3,9,33.3,25.86,—,—,—,2.10,—,—,"96,304",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,buffett,False,2,6,33.3,25.86,—,—,—,2.10,—,—,"96,304",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,greenblatt,False,1,3,33.3,25.86,—,—,—,2.10,—,—,"96,304",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,lynch,False,1,4,25.0,25.86,—,—,—,2.10,—,—,"96,304",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,netnet,False,1,4,25.0,25.86,—,—,—,2.10,—,—,"96,304",—
-ARLP,ALLIANCE RESOURCE PARTNERS LP,custom,False,0,0,0.0,25.86,—,—,—,2.10,—,—,"96,304",—
-MGY,Magnolia Oil & Gas Corp,piotroski,False,6,9,66.7,24.02,13.71,2.23,16.27,1.54,—,20.61,6M,—
-MGY,Magnolia Oil & Gas Corp,buffett,False,3,6,50.0,24.02,13.71,2.23,16.27,1.54,—,20.61,6M,—
-MGY,Magnolia Oil & Gas Corp,graham,False,4,9,44.4,24.02,13.71,2.23,16.27,1.54,—,20.61,6M,—
-MGY,Magnolia Oil & Gas Corp,greenblatt,False,1,3,33.3,24.02,13.71,2.23,16.27,1.54,—,20.61,6M,—
-MGY,Magnolia Oil & Gas Corp,lynch,False,1,4,25.0,24.02,13.71,2.23,16.27,1.54,—,20.61,6M,—
-MGY,Magnolia Oil & Gas Corp,netnet,False,1,4,25.0,24.02,13.71,2.23,16.27,1.54,—,20.61,6M,—
-MGY,Magnolia Oil & Gas Corp,custom,False,0,0,0.0,24.02,13.71,2.23,16.27,1.54,—,20.61,6M,—
-ESE,ESCO TECHNOLOGIES INC.,buffett,False,4,6,66.7,262,22.67,4.40,19.42,1.35,0.56,124,"271,913",—
-ESE,ESCO TECHNOLOGIES INC.,graham,False,5,9,55.6,262,22.67,4.40,19.42,1.35,0.56,124,"271,913",—
+SLDE,"Slide Insurance Holdings, Inc.",greenblatt,True,3,3,100.0,23.87,7.10,2.83,39.88,—,1.62,25.25,2M,—
+TDW,TIDEWATER INC,piotroski,True,8,9,88.9,87.16,13.13,3.22,24.51,2.90,—,63.60,"688,764",—
+SAFX,"XCF Global, Inc.",greenblatt,True,3,3,100.0,0.46,0.88,1.73,197,0.11,10.14,1.76,8M,—
+NSSC,"NAPCO SECURITY TECHNOLOGIES, INC",buffett,True,6,6,100.0,35.88,29.90,6.74,22.53,4.90,0.25,11.99,"327,480",—
+NSSC,"NAPCO SECURITY TECHNOLOGIES, INC",lynch,True,3,4,75.0,35.88,29.90,6.74,22.53,4.90,0.25,11.99,"327,480",—
+AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",piotroski,True,9,9,100.0,164,23.14,7.93,34.27,1.46,—,57.37,"329,957",—
+ESE,ESCO TECHNOLOGIES INC.,lynch,True,4,4,100.0,262,22.67,4.40,19.42,1.35,0.56,124,"261,112",—
+BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,129,17.59,3.01,17.13,2.65,0.86,84.23,"874,885",—
+BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,129,17.59,3.01,17.13,2.65,0.86,84.23,"874,885",—
+FBP,FIRST BANCORP,piotroski,True,8,9,88.9,26.91,12.52,2.20,17.53,—,8.73,24.33,2M,—
+FBP,FIRST BANCORP,lynch,True,3,4,75.0,26.91,12.52,2.20,17.53,—,8.73,24.33,2M,—
+RILY,"BRC Group Holdings, Inc.",greenblatt,True,3,3,100.0,6.13,0.63,—,-179,—,-10.65,—,"452,082",—
+RILY,"BRC Group Holdings, Inc.",lynch,True,3,4,75.0,6.13,0.63,—,-179,—,-10.65,—,"452,082",—
+ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.27,6.75,0.19,4.91,1.93,0.73,1.14,"1,627",—
+AROC,"Archrock, Inc.",piotroski,True,8,9,88.9,30.40,16.61,3.56,21.61,1.54,1.92,18.75,2M,—
+DAKT,"Daktronics, Inc.",piotroski,True,8,9,88.9,17.98,19.54,2.95,15.09,2.31,—,11.23,"479,245",—
+DAKT,"Daktronics, Inc.",lynch,True,3,4,75.0,17.98,19.54,2.95,15.09,2.31,—,11.23,"479,245",—
+AGX,ARGAN INC,lynch,True,3,4,75.0,371,38.12,11.36,29.80,1.59,1.57,84.62,"431,767",—
+KEX,KIRBY CORPORATION,piotroski,True,8,9,88.9,132,20.93,2.20,10.49,1.53,—,92.69,"541,103",—
+KALU,KAISER ALUMINUM CORPORATION,piotroski,True,7,9,77.8,154,22.73,3.10,13.62,2.95,2.10,87.01,"178,425",—
+KALU,KAISER ALUMINUM CORPORATION,lynch,True,3,4,75.0,154,22.73,3.10,13.62,2.95,2.10,87.01,"178,425",—
+OPY,OPPENHEIMER HOLDINGS INC.,piotroski,True,7,9,77.8,113,8.66,1.31,15.08,—,2.77,159,"180,988",—
+UMBF,UMB FINANCIAL CORP,lynch,True,3,4,75.0,134,14.45,1.29,9.13,—,8.50,148,"823,797",—
+EGP,"EASTGROUP PROPERTIES, INC.",piotroski,True,7,9,77.8,203,41.77,3.07,7.36,—,0.55,85.17,"393,628",—
+SIRI,SIRIUS XM HOLDINGS INC.,lynch,True,3,4,75.0,26.53,11.90,0.82,6.96,0.30,1.36,40.31,6M,—
+FCF,FIRST COMMONWEALTH FINANCIAL CORP /PA/,lynch,True,3,4,75.0,20.74,14.11,1.38,9.80,—,6.94,22.28,1M,—
+EGP,"EASTGROUP PROPERTIES, INC.",lynch,True,3,4,75.0,203,41.77,3.07,7.36,—,0.55,85.17,"393,628",—
+CPK,CHESAPEAKE UTILITIES CORP,piotroski,True,7,9,77.8,132,22.10,1.94,8.78,0.45,—,95.61,"232,853",—
+KRT,Karat Packaging Inc.,piotroski,True,7,9,77.8,52.20,33.46,7.05,21.07,2.30,0.88,16.12,"258,175",—
+KNTK,KINETIK HOLDINGS INC.,lynch,True,3,4,75.0,52.39,19.92,—,-31.53,0.69,-7.37,—,1M,—
+WOR,"WORTHINGTON ENTERPRISES, INC.",piotroski,True,8,9,88.9,58.94,18.77,2.85,15.20,2.37,0.80,38.20,"425,082",—
+CPRI,CAPRI HOLDINGS LIMITED,piotroski,True,7,9,77.8,15.19,13.32,22.76,171,1.21,39.38,4.14,11M,—
+MAGN,Magnera Corporation,piotroski,True,7,9,77.8,12.09,—,0.40,-14.94,2.37,2.75,—,"392,974",—
+ALNT,ALLIENT INC,piotroski,True,8,9,88.9,108,81.86,6.00,7.31,3.66,0.92,23.13,"187,058",—
+MSGS,MADISON SQUARE GARDEN SPORTS CORP.,piotroski,True,9,9,100.0,397,"1,239",—,-2.95,0.50,-6.84,—,"234,166",—
+SLDE,"Slide Insurance Holdings, Inc.",graham,False,4,9,44.4,23.87,7.10,2.83,39.88,—,1.62,25.25,2M,—
+SLDE,"Slide Insurance Holdings, Inc.",buffett,False,2,6,33.3,23.87,7.10,2.83,39.88,—,1.62,25.25,2M,—
+SLDE,"Slide Insurance Holdings, Inc.",piotroski,False,3,9,33.3,23.87,7.10,2.83,39.88,—,1.62,25.25,2M,—
+SLDE,"Slide Insurance Holdings, Inc.",lynch,False,1,4,25.0,23.87,7.10,2.83,39.88,—,1.62,25.25,2M,—
+SLDE,"Slide Insurance Holdings, Inc.",netnet,False,1,4,25.0,23.87,7.10,2.83,39.88,—,1.62,25.25,2M,—
+SLDE,"Slide Insurance Holdings, Inc.",custom,False,0,0,0.0,23.87,7.10,2.83,39.88,—,1.62,25.25,2M,—
+TDW,TIDEWATER INC,buffett,False,3,6,50.0,87.16,13.13,3.22,24.51,2.90,—,63.60,"688,764",—
+TDW,TIDEWATER INC,graham,False,4,9,44.4,87.16,13.13,3.22,24.51,2.90,—,63.60,"688,764",—
+TDW,TIDEWATER INC,greenblatt,False,1,3,33.3,87.16,13.13,3.22,24.51,2.90,—,63.60,"688,764",—
+TDW,TIDEWATER INC,lynch,False,1,4,25.0,87.16,13.13,3.22,24.51,2.90,—,63.60,"688,764",—
+TDW,TIDEWATER INC,netnet,False,1,4,25.0,87.16,13.13,3.22,24.51,2.90,—,63.60,"688,764",—
+TDW,TIDEWATER INC,custom,False,0,0,0.0,87.16,13.13,3.22,24.51,2.90,—,63.60,"688,764",—
+SAFX,"XCF Global, Inc.",graham,False,3,9,33.3,0.46,0.88,1.73,197,0.11,10.14,1.76,8M,—
+SAFX,"XCF Global, Inc.",buffett,False,2,6,33.3,0.46,0.88,1.73,197,0.11,10.14,1.76,8M,—
+SAFX,"XCF Global, Inc.",lynch,False,1,4,25.0,0.46,0.88,1.73,197,0.11,10.14,1.76,8M,—
