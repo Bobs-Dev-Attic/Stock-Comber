@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-23 17:07 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-23 22:47 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **37** strategy matches passed.
+Screened **75** companies · **33** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| GOOGN | Alphabet Inc. | graham | ✅ | 100% | 49.23 | 4.55 | 1.45 | 31.83 | 2.01 | 0.43 | 2M | — |
-| GOOGN | Alphabet Inc. | buffett | ✅ | 100% | 49.23 | 4.55 | 1.45 | 31.83 | 2.01 | 0.43 | 2M | — |
-| GOOGN | Alphabet Inc. | greenblatt | ✅ | 100% | 49.23 | 4.55 | 1.45 | 31.83 | 2.01 | 0.43 | 2M | — |
-| GOOGN | Alphabet Inc. | lynch | ✅ | 100% | 49.23 | 4.55 | 1.45 | 31.83 | 2.01 | 0.43 | 2M | — |
-| BYD | BOYD GAMING CORP | greenblatt | ✅ | 100% | 71.76 | 3.18 | 2.25 | 70.66 | 0.54 | — | 225,214 | — |
-| BYD | BOYD GAMING CORP | piotroski | ✅ | 78% | 71.76 | 3.18 | 2.25 | 70.66 | 0.54 | — | 225,214 | — |
-| USLM | UNITED STATES LIME & MINERAL | lynch | ✅ | 100% | 108 | 23.18 | 4.93 | 21.29 | 19.27 | 0.08 | 119,165 | — |
-| USLM | UNITED STATES LIME & MINERAL | buffett | ✅ | 83% | 108 | 23.18 | 4.93 | 21.29 | 19.27 | 0.08 | 119,165 | — |
-| SON | Sonoco Products Company | piotroski | ✅ | 89% | 50.69 | 5.03 | 1.40 | 27.75 | 1.05 | 2.08 | 1M | — |
-| SON | Sonoco Products Company | lynch | ✅ | 75% | 50.69 | 5.03 | 1.40 | 27.75 | 1.05 | 2.08 | 1M | — |
-| PRI | Primerica, Inc. | greenblatt | ✅ | 100% | 276 | 12.03 | 3.68 | 30.71 | — | 5.14 | 324,767 | — |
-| PRI | Primerica, Inc. | piotroski | ✅ | 89% | 276 | 12.03 | 3.68 | 30.71 | — | 5.14 | 324,767 | — |
-| NSSC | NAPCO SECURITY TECHNOLOGIES, | buffett | ✅ | 100% | 35.88 | 29.90 | 6.74 | 22.53 | 4.90 | 0.25 | 327,480 | — |
-| NSSC | NAPCO SECURITY TECHNOLOGIES, | lynch | ✅ | 75% | 35.88 | 29.90 | 6.74 | 22.53 | 4.90 | 0.25 | 327,480 | — |
-| CARG | CarGurus, Inc. | piotroski | ✅ | 89% | 30.42 | 19.63 | 8.16 | 41.66 | 2.81 | 0.77 | 942,819 | — |
-| ALSN | ALLISON TRANSMISSION HOLDING | buffett | ✅ | 83% | 115 | 15.62 | 5.21 | 33.37 | 4.85 | 2.26 | 255,619 | — |
-| ALSN | ALLISON TRANSMISSION HOLDING | lynch | ✅ | 75% | 115 | 15.62 | 5.21 | 33.37 | 4.85 | 2.26 | 255,619 | — |
-| IBP | Installed Building Products, | piotroski | ✅ | 89% | 208 | 21.43 | 8.01 | 37.39 | 3.03 | 1.91 | 76,371 | — |
-| IBP | Installed Building Products, | lynch | ✅ | 75% | 208 | 21.43 | 8.01 | 37.39 | 3.03 | 1.91 | 76,371 | — |
-| SSD | Simpson Manufacturing Co., I | buffett | ✅ | 83% | 176 | 21.34 | 3.63 | 17.00 | 3.54 | 0.51 | 110,738 | — |
-| SSD | Simpson Manufacturing Co., I | piotroski | ✅ | 78% | 176 | 21.34 | 3.63 | 17.00 | 3.54 | 0.51 | 110,738 | — |
-| KRYS | Krystal Biotech, Inc. | piotroski | ✅ | 89% | 339 | 49.61 | 8.33 | 16.80 | 9.95 | 0.09 | 74,559 | — |
-| GBX | THE GREENBRIER COMPANIES, IN | lynch | ✅ | 75% | 42.76 | 6.73 | 0.90 | 13.32 | — | — | 81,193 | — |
-| LMB | LIMBACH HOLDINGS, INC. | piotroski | ✅ | 78% | 52.08 | 16.12 | 3.22 | 19.97 | 1.44 | 0.95 | 168,044 | — |
-| LMB | LIMBACH HOLDINGS, INC. | lynch | ✅ | 75% | 52.08 | 16.12 | 3.22 | 19.97 | 1.44 | 0.95 | 168,044 | — |
-| PRDO | PERDOCEO EDUCATION CORP | piotroski | ✅ | 89% | 31.23 | 12.90 | 2.12 | 16.45 | 5.06 | — | 823,042 | — |
-| FSS | FEDERAL SIGNAL CORPORATION | lynch | ✅ | 75% | 114 | 28.38 | 5.06 | 17.84 | 3.02 | 0.73 | 109,202 | — |
-| GPK | Graphic Packaging Holding Co | lynch | ✅ | 75% | 9.77 | 6.60 | 0.88 | 13.31 | 1.30 | — | 3M | — |
-| ACEL | Accel Entertainment, Inc. | piotroski | ✅ | 78% | 11.13 | 18.56 | 3.57 | 19.09 | 2.61 | — | 121,061 | — |
-| ORI | OLD REPUBLIC INTERNATIONAL C | piotroski | ✅ | 78% | 38.78 | 10.42 | 1.65 | 15.82 | — | 4.05 | 2M | — |
-| DRVN | Driven Brands Holdings Inc. | piotroski | ✅ | 78% | 12.27 | 14.44 | 2.62 | 18.27 | 0.75 | 4.42 | 796,316 | — |
-| OPLN | OPENLANE, Inc. | piotroski | ✅ | 89% | 34.42 | — | 2.97 | 14.32 | 1.16 | — | 366,018 | — |
-| FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 12.95 | 68.16 | 5.31 | 7.83 | 4.94 | 0.33 | 2M | — |
-| FAF | FIRST AMERICAN FINANCIAL COR | piotroski | ✅ | 89% | 69.24 | 11.54 | 1.31 | 11.31 | — | 1.95 | 888,759 | — |
-| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 45.76 | 44.00 | — | -29.14 | 1.60 | -6.05 | 2M | — |
-| MLKN | MillerKnoll, Inc. | piotroski | ✅ | 100% | 20.29 | 15.37 | 1.05 | 6.82 | 1.58 | 1.93 | 2M | — |
-| LILA | Liberty Latin America Ltd. | piotroski | ✅ | 78% | 8.60 | — | 3.09 | -110 | 1.14 | 20.09 | 123,645 | — |
-| GOOGN | Alphabet Inc. | piotroski | ▫️ | 67% | 49.23 | 4.55 | 1.45 | 31.83 | 2.01 | 0.43 | 2M | — |
-| GOOGN | Alphabet Inc. | netnet | ▫️ | 50% | 49.23 | 4.55 | 1.45 | 31.83 | 2.01 | 0.43 | 2M | — |
-| GOOGN | Alphabet Inc. | custom | ▫️ | 0% | 49.23 | 4.55 | 1.45 | 31.83 | 2.01 | 0.43 | 2M | — |
-| BYD | BOYD GAMING CORP | buffett | ▫️ | 67% | 71.76 | 3.18 | 2.25 | 70.66 | 0.54 | — | 225,214 | — |
-| BYD | BOYD GAMING CORP | graham | ▫️ | 56% | 71.76 | 3.18 | 2.25 | 70.66 | 0.54 | — | 225,214 | — |
-| BYD | BOYD GAMING CORP | lynch | ▫️ | 25% | 71.76 | 3.18 | 2.25 | 70.66 | 0.54 | — | 225,214 | — |
-| BYD | BOYD GAMING CORP | netnet | ▫️ | 25% | 71.76 | 3.18 | 2.25 | 70.66 | 0.54 | — | 225,214 | — |
-| BYD | BOYD GAMING CORP | custom | ▫️ | 0% | 71.76 | 3.18 | 2.25 | 70.66 | 0.54 | — | 225,214 | — |
-| USLM | UNITED STATES LIME & MINERAL | piotroski | ▫️ | 67% | 108 | 23.18 | 4.93 | 21.29 | 19.27 | 0.08 | 119,165 | — |
-| USLM | UNITED STATES LIME & MINERAL | greenblatt | ▫️ | 67% | 108 | 23.18 | 4.93 | 21.29 | 19.27 | 0.08 | 119,165 | — |
-| USLM | UNITED STATES LIME & MINERAL | graham | ▫️ | 56% | 108 | 23.18 | 4.93 | 21.29 | 19.27 | 0.08 | 119,165 | — |
-| USLM | UNITED STATES LIME & MINERAL | netnet | ▫️ | 50% | 108 | 23.18 | 4.93 | 21.29 | 19.27 | 0.08 | 119,165 | — |
-| USLM | UNITED STATES LIME & MINERAL | custom | ▫️ | 0% | 108 | 23.18 | 4.93 | 21.29 | 19.27 | 0.08 | 119,165 | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | piotroski | ✅ | 78% | 76.71 | 15.10 | 2.08 | 13.75 | 10.06 | 0.12 | 539,966 | — |
+| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 117 | 22.40 | 4.28 | 19.12 | 2.99 | — | 195,193 | — |
+| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 117 | 22.40 | 4.28 | 19.12 | 2.99 | — | 195,193 | — |
+| TRNO | Terreno Realty Corporation | lynch | ✅ | 100% | 66.02 | 16.88 | 1.64 | 9.72 | — | 0.30 | 613,120 | — |
+| SKYW | SKYWEST INC | piotroski | ✅ | 89% | 99.27 | 9.59 | 1.50 | 15.60 | 0.65 | — | 228,594 | — |
+| EVR | EVERCORE INC. | buffett | ✅ | 83% | 260 | 18.50 | 5.39 | 29.14 | 2.16 | 1.50 | 496,383 | — |
+| EVR | EVERCORE INC. | piotroski | ✅ | 78% | 260 | 18.50 | 5.39 | 29.14 | 2.16 | 1.50 | 496,383 | — |
+| FSS | FEDERAL SIGNAL CORPORATION | lynch | ✅ | 75% | 113 | 28.24 | 5.04 | 17.84 | 3.02 | 0.73 | 340,602 | — |
+| GPK | Graphic Packaging Holding Co | lynch | ✅ | 75% | 9.66 | 6.53 | 0.87 | 13.31 | 1.30 | — | 6M | — |
+| ACEL | Accel Entertainment, Inc. | piotroski | ✅ | 78% | 11.08 | 18.47 | 3.55 | 19.09 | 2.61 | — | 375,473 | — |
+| AGX | ARGAN INC | lynch | ✅ | 75% | 374 | 38.44 | 11.46 | 29.80 | 1.59 | 1.57 | 251,655 | — |
+| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 16.75 | 8.86 | 2.19 | 24.66 | 2.26 | 2.62 | 1M | — |
+| JOE | The St. Joe Company | piotroski | ✅ | 89% | 65.85 | 33.09 | 4.98 | 15.09 | — | 0.97 | 305,347 | — |
+| HRB | H&R BLOCK INC | greenblatt | ✅ | 100% | 42.54 | 7.52 | 46.66 | 624 | 1.13 | 26.72 | 2M | — |
+| HRB | H&R BLOCK INC | piotroski | ✅ | 89% | 42.54 | 7.52 | 46.66 | 624 | 1.13 | 26.72 | 2M | — |
+| SSB | SOUTHSTATE BANK CORP | lynch | ✅ | 75% | 102 | 12.91 | 1.14 | 8.82 | — | 6.42 | 522,331 | — |
+| SHOE | Shoe Station Group, Inc. | graham | ✅ | 89% | 13.11 | 6.90 | 0.52 | 7.58 | 3.76 | 0.74 | 700,973 | — |
+| GEO | The GEO Group, Inc. | piotroski | ✅ | 78% | 30.62 | 16.82 | 2.84 | 16.89 | 2.01 | — | 2M | — |
+| GEO | The GEO Group, Inc. | lynch | ✅ | 75% | 30.62 | 16.82 | 2.84 | 16.89 | 2.01 | — | 2M | — |
+| HAFC | HANMI FINANCIAL CORPORATION | piotroski | ✅ | 89% | 31.58 | 12.58 | 1.19 | 9.55 | — | 8.88 | 248,113 | — |
+| AM | ANTERO MIDSTREAM CORPORATION | piotroski | ✅ | 78% | 21.38 | 24.86 | 5.23 | 20.95 | 3.41 | 1.98 | 2M | — |
+| FCF | FIRST COMMONWEALTH FINANCIAL | lynch | ✅ | 75% | 20.62 | 14.03 | 1.37 | 9.80 | — | 6.94 | 961,478 | — |
+| BKU | BankUnited, Inc. | piotroski | ✅ | 89% | 43.36 | 12.28 | 1.06 | 8.79 | — | 10.47 | 636,831 | — |
+| HLIO | HELIOS TECHNOLOGIES, INC. | piotroski | ✅ | 100% | 69.52 | 47.94 | 2.49 | 5.20 | 2.90 | 0.63 | 323,510 | — |
+| HLIO | HELIOS TECHNOLOGIES, INC. | lynch | ✅ | 75% | 69.52 | 47.94 | 2.49 | 5.20 | 2.90 | 0.63 | 323,510 | — |
+| CPRI | CAPRI HOLDINGS LIMITED | piotroski | ✅ | 78% | 15.43 | 13.54 | 23.12 | 171 | 1.21 | 39.38 | 5M | — |
+| LW | LAMB WESTON HOLDINGS, INC. | piotroski | ✅ | 78% | 45.04 | 21.65 | 3.43 | 15.89 | 1.42 | — | 1M | — |
+| MOS | MOSAIC CO | piotroski | ✅ | 89% | 24.37 | 14.34 | 0.64 | 4.47 | 1.32 | — | 5M | — |
+| MPAA | MOTORCAR PARTS OF AMERICA, I | piotroski | ✅ | 78% | 10.56 | 17.03 | 0.79 | 4.66 | 1.46 | 2.83 | 136,084 | — |
+| INNV | InnovAge Holding Corp. | piotroski | ✅ | 78% | 9.00 | — | 5.18 | -1.08 | 1.05 | 1.23 | 7M | — |
+| DIOD | DIODES INC /DEL/ | piotroski | ✅ | 89% | 95.51 | 66.79 | 2.36 | 3.52 | 3.32 | 0.27 | 327,917 | — |
+| EVCM | EverCommerce Inc. | piotroski | ✅ | 78% | 8.32 | 83.20 | 2.13 | 2.45 | 2.11 | 0.91 | 162,290 | — |
+| LILA | Liberty Latin America Ltd. | piotroski | ✅ | 78% | 8.52 | — | 3.06 | -110 | 1.14 | 20.09 | 333,817 | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | buffett | ▫️ | 67% | 76.71 | 15.10 | 2.08 | 13.75 | 10.06 | 0.12 | 539,966 | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | graham | ▫️ | 56% | 76.71 | 15.10 | 2.08 | 13.75 | 10.06 | 0.12 | 539,966 | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | lynch | ▫️ | 50% | 76.71 | 15.10 | 2.08 | 13.75 | 10.06 | 0.12 | 539,966 | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | netnet | ▫️ | 50% | 76.71 | 15.10 | 2.08 | 13.75 | 10.06 | 0.12 | 539,966 | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | greenblatt | ▫️ | 33% | 76.71 | 15.10 | 2.08 | 13.75 | 10.06 | 0.12 | 539,966 | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | custom | ▫️ | 0% | 76.71 | 15.10 | 2.08 | 13.75 | 10.06 | 0.12 | 539,966 | — |
+| IPAR | INTERPARFUMS, INC. | graham | ▫️ | 67% | 117 | 22.40 | 4.28 | 19.12 | 2.99 | — | 195,193 | — |
+| IPAR | INTERPARFUMS, INC. | piotroski | ▫️ | 67% | 117 | 22.40 | 4.28 | 19.12 | 2.99 | — | 195,193 | — |
+| IPAR | INTERPARFUMS, INC. | greenblatt | ▫️ | 33% | 117 | 22.40 | 4.28 | 19.12 | 2.99 | — | 195,193 | — |
+| IPAR | INTERPARFUMS, INC. | netnet | ▫️ | 25% | 117 | 22.40 | 4.28 | 19.12 | 2.99 | — | 195,193 | — |
+| IPAR | INTERPARFUMS, INC. | custom | ▫️ | 0% | 117 | 22.40 | 4.28 | 19.12 | 2.99 | — | 195,193 | — |
+| TRNO | Terreno Realty Corporation | piotroski | ▫️ | 56% | 66.02 | 16.88 | 1.64 | 9.72 | — | 0.30 | 613,120 | — |
+| TRNO | Terreno Realty Corporation | buffett | ▫️ | 50% | 66.02 | 16.88 | 1.64 | 9.72 | — | 0.30 | 613,120 | — |
+| TRNO | Terreno Realty Corporation | graham | ▫️ | 33% | 66.02 | 16.88 | 1.64 | 9.72 | — | 0.30 | 613,120 | — |
+| TRNO | Terreno Realty Corporation | greenblatt | ▫️ | 33% | 66.02 | 16.88 | 1.64 | 9.72 | — | 0.30 | 613,120 | — |
+| TRNO | Terreno Realty Corporation | netnet | ▫️ | 25% | 66.02 | 16.88 | 1.64 | 9.72 | — | 0.30 | 613,120 | — |
+| TRNO | Terreno Realty Corporation | custom | ▫️ | 0% | 66.02 | 16.88 | 1.64 | 9.72 | — | 0.30 | 613,120 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
