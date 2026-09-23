@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-SLDE,"Slide Insurance Holdings, Inc.",greenblatt,True,3,3,100.0,23.87,7.10,2.83,39.88,—,1.62,25.25,2M,—
-TDW,TIDEWATER INC,piotroski,True,8,9,88.9,87.16,13.13,3.22,24.51,2.90,—,63.60,"688,764",—
-SAFX,"XCF Global, Inc.",greenblatt,True,3,3,100.0,0.46,0.88,1.73,197,0.11,10.14,1.76,8M,—
+GOOGN,Alphabet Inc.,graham,True,9,9,100.0,49.23,4.55,1.45,31.83,2.01,0.43,90.88,2M,—
+GOOGN,Alphabet Inc.,buffett,True,6,6,100.0,49.23,4.55,1.45,31.83,2.01,0.43,90.88,2M,—
+GOOGN,Alphabet Inc.,greenblatt,True,3,3,100.0,49.23,4.55,1.45,31.83,2.01,0.43,90.88,2M,—
+GOOGN,Alphabet Inc.,lynch,True,4,4,100.0,49.23,4.55,1.45,31.83,2.01,0.43,90.88,2M,—
+BYD,BOYD GAMING CORP,greenblatt,True,3,3,100.0,71.76,3.18,2.25,70.66,0.54,—,127,"225,214",—
+BYD,BOYD GAMING CORP,piotroski,True,7,9,77.8,71.76,3.18,2.25,70.66,0.54,—,127,"225,214",—
+USLM,UNITED STATES LIME & MINERALS INC,lynch,True,4,4,100.0,108,23.18,4.93,21.29,19.27,0.08,48.03,"119,165",—
+USLM,UNITED STATES LIME & MINERALS INC,buffett,True,5,6,83.3,108,23.18,4.93,21.29,19.27,0.08,48.03,"119,165",—
+SON,Sonoco Products Company,piotroski,True,8,9,88.9,50.69,5.03,1.40,27.75,1.05,2.08,90.68,1M,—
+SON,Sonoco Products Company,lynch,True,3,4,75.0,50.69,5.03,1.40,27.75,1.05,2.08,90.68,1M,—
+PRI,"Primerica, Inc.",greenblatt,True,3,3,100.0,276,12.03,3.68,30.71,—,5.14,196,"324,767",—
+PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,276,12.03,3.68,30.71,—,5.14,196,"324,767",—
 NSSC,"NAPCO SECURITY TECHNOLOGIES, INC",buffett,True,6,6,100.0,35.88,29.90,6.74,22.53,4.90,0.25,11.99,"327,480",—
 NSSC,"NAPCO SECURITY TECHNOLOGIES, INC",lynch,True,3,4,75.0,35.88,29.90,6.74,22.53,4.90,0.25,11.99,"327,480",—
-AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",piotroski,True,9,9,100.0,164,23.14,7.93,34.27,1.46,—,57.37,"329,957",—
-ESE,ESCO TECHNOLOGIES INC.,lynch,True,4,4,100.0,262,22.67,4.40,19.42,1.35,0.56,124,"261,112",—
-BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,129,17.59,3.01,17.13,2.65,0.86,84.23,"874,885",—
-BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,129,17.59,3.01,17.13,2.65,0.86,84.23,"874,885",—
-FBP,FIRST BANCORP,piotroski,True,8,9,88.9,26.91,12.52,2.20,17.53,—,8.73,24.33,2M,—
-FBP,FIRST BANCORP,lynch,True,3,4,75.0,26.91,12.52,2.20,17.53,—,8.73,24.33,2M,—
-RILY,"BRC Group Holdings, Inc.",greenblatt,True,3,3,100.0,6.13,0.63,—,-179,—,-10.65,—,"452,082",—
-RILY,"BRC Group Holdings, Inc.",lynch,True,3,4,75.0,6.13,0.63,—,-179,—,-10.65,—,"452,082",—
-ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.27,6.75,0.19,4.91,1.93,0.73,1.14,"1,627",—
-AROC,"Archrock, Inc.",piotroski,True,8,9,88.9,30.40,16.61,3.56,21.61,1.54,1.92,18.75,2M,—
-DAKT,"Daktronics, Inc.",piotroski,True,8,9,88.9,17.98,19.54,2.95,15.09,2.31,—,11.23,"479,245",—
-DAKT,"Daktronics, Inc.",lynch,True,3,4,75.0,17.98,19.54,2.95,15.09,2.31,—,11.23,"479,245",—
-AGX,ARGAN INC,lynch,True,3,4,75.0,371,38.12,11.36,29.80,1.59,1.57,84.62,"431,767",—
-KEX,KIRBY CORPORATION,piotroski,True,8,9,88.9,132,20.93,2.20,10.49,1.53,—,92.69,"541,103",—
-KALU,KAISER ALUMINUM CORPORATION,piotroski,True,7,9,77.8,154,22.73,3.10,13.62,2.95,2.10,87.01,"178,425",—
-KALU,KAISER ALUMINUM CORPORATION,lynch,True,3,4,75.0,154,22.73,3.10,13.62,2.95,2.10,87.01,"178,425",—
-OPY,OPPENHEIMER HOLDINGS INC.,piotroski,True,7,9,77.8,113,8.66,1.31,15.08,—,2.77,159,"180,988",—
-UMBF,UMB FINANCIAL CORP,lynch,True,3,4,75.0,134,14.45,1.29,9.13,—,8.50,148,"823,797",—
-EGP,"EASTGROUP PROPERTIES, INC.",piotroski,True,7,9,77.8,203,41.77,3.07,7.36,—,0.55,85.17,"393,628",—
-SIRI,SIRIUS XM HOLDINGS INC.,lynch,True,3,4,75.0,26.53,11.90,0.82,6.96,0.30,1.36,40.31,6M,—
-FCF,FIRST COMMONWEALTH FINANCIAL CORP /PA/,lynch,True,3,4,75.0,20.74,14.11,1.38,9.80,—,6.94,22.28,1M,—
-EGP,"EASTGROUP PROPERTIES, INC.",lynch,True,3,4,75.0,203,41.77,3.07,7.36,—,0.55,85.17,"393,628",—
-CPK,CHESAPEAKE UTILITIES CORP,piotroski,True,7,9,77.8,132,22.10,1.94,8.78,0.45,—,95.61,"232,853",—
-KRT,Karat Packaging Inc.,piotroski,True,7,9,77.8,52.20,33.46,7.05,21.07,2.30,0.88,16.12,"258,175",—
-KNTK,KINETIK HOLDINGS INC.,lynch,True,3,4,75.0,52.39,19.92,—,-31.53,0.69,-7.37,—,1M,—
-WOR,"WORTHINGTON ENTERPRISES, INC.",piotroski,True,8,9,88.9,58.94,18.77,2.85,15.20,2.37,0.80,38.20,"425,082",—
-CPRI,CAPRI HOLDINGS LIMITED,piotroski,True,7,9,77.8,15.19,13.32,22.76,171,1.21,39.38,4.14,11M,—
-MAGN,Magnera Corporation,piotroski,True,7,9,77.8,12.09,—,0.40,-14.94,2.37,2.75,—,"392,974",—
-ALNT,ALLIENT INC,piotroski,True,8,9,88.9,108,81.86,6.00,7.31,3.66,0.92,23.13,"187,058",—
-MSGS,MADISON SQUARE GARDEN SPORTS CORP.,piotroski,True,9,9,100.0,397,"1,239",—,-2.95,0.50,-6.84,—,"234,166",—
-SLDE,"Slide Insurance Holdings, Inc.",graham,False,4,9,44.4,23.87,7.10,2.83,39.88,—,1.62,25.25,2M,—
-SLDE,"Slide Insurance Holdings, Inc.",buffett,False,2,6,33.3,23.87,7.10,2.83,39.88,—,1.62,25.25,2M,—
-SLDE,"Slide Insurance Holdings, Inc.",piotroski,False,3,9,33.3,23.87,7.10,2.83,39.88,—,1.62,25.25,2M,—
-SLDE,"Slide Insurance Holdings, Inc.",lynch,False,1,4,25.0,23.87,7.10,2.83,39.88,—,1.62,25.25,2M,—
-SLDE,"Slide Insurance Holdings, Inc.",netnet,False,1,4,25.0,23.87,7.10,2.83,39.88,—,1.62,25.25,2M,—
-SLDE,"Slide Insurance Holdings, Inc.",custom,False,0,0,0.0,23.87,7.10,2.83,39.88,—,1.62,25.25,2M,—
-TDW,TIDEWATER INC,buffett,False,3,6,50.0,87.16,13.13,3.22,24.51,2.90,—,63.60,"688,764",—
-TDW,TIDEWATER INC,graham,False,4,9,44.4,87.16,13.13,3.22,24.51,2.90,—,63.60,"688,764",—
-TDW,TIDEWATER INC,greenblatt,False,1,3,33.3,87.16,13.13,3.22,24.51,2.90,—,63.60,"688,764",—
-TDW,TIDEWATER INC,lynch,False,1,4,25.0,87.16,13.13,3.22,24.51,2.90,—,63.60,"688,764",—
-TDW,TIDEWATER INC,netnet,False,1,4,25.0,87.16,13.13,3.22,24.51,2.90,—,63.60,"688,764",—
-TDW,TIDEWATER INC,custom,False,0,0,0.0,87.16,13.13,3.22,24.51,2.90,—,63.60,"688,764",—
-SAFX,"XCF Global, Inc.",graham,False,3,9,33.3,0.46,0.88,1.73,197,0.11,10.14,1.76,8M,—
-SAFX,"XCF Global, Inc.",buffett,False,2,6,33.3,0.46,0.88,1.73,197,0.11,10.14,1.76,8M,—
-SAFX,"XCF Global, Inc.",lynch,False,1,4,25.0,0.46,0.88,1.73,197,0.11,10.14,1.76,8M,—
+CARG,"CarGurus, Inc.",piotroski,True,8,9,88.9,30.42,19.63,8.16,41.66,2.81,0.77,11.40,"942,819",—
+ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",buffett,True,5,6,83.3,115,15.62,5.21,33.37,4.85,2.26,60.19,"255,619",—
+ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",lynch,True,3,4,75.0,115,15.62,5.21,33.37,4.85,2.26,60.19,"255,619",—
+IBP,"Installed Building Products, Inc.",piotroski,True,8,9,88.9,208,21.43,8.01,37.39,3.03,1.91,75.33,"76,371",—
+IBP,"Installed Building Products, Inc.",lynch,True,3,4,75.0,208,21.43,8.01,37.39,3.03,1.91,75.33,"76,371",—
+SSD,"Simpson Manufacturing Co., Inc.",buffett,True,5,6,83.3,176,21.34,3.63,17.00,3.54,0.51,94.81,"110,738",—
+SSD,"Simpson Manufacturing Co., Inc.",piotroski,True,7,9,77.8,176,21.34,3.63,17.00,3.54,0.51,94.81,"110,738",—
+KRYS,"Krystal Biotech, Inc.",piotroski,True,8,9,88.9,339,49.61,8.33,16.80,9.95,0.09,79.16,"74,559",—
+GBX,"THE GREENBRIER COMPANIES, INC.",lynch,True,3,4,75.0,42.76,6.73,0.90,13.32,—,—,82.54,"81,193",—
+LMB,"LIMBACH HOLDINGS, INC.",piotroski,True,7,9,77.8,52.08,16.12,3.22,19.97,1.44,0.95,34.31,"168,044",—
+LMB,"LIMBACH HOLDINGS, INC.",lynch,True,3,4,75.0,52.08,16.12,3.22,19.97,1.44,0.95,34.31,"168,044",—
+PRDO,PERDOCEO EDUCATION CORP,piotroski,True,8,9,88.9,31.23,12.90,2.12,16.45,5.06,—,28.29,"823,042",—
+FSS,FEDERAL SIGNAL CORPORATION,lynch,True,3,4,75.0,114,28.38,5.06,17.84,3.02,0.73,45.03,"109,202",—
+GPK,Graphic Packaging Holding Co,lynch,True,3,4,75.0,9.77,6.60,0.88,13.31,1.30,—,19.25,3M,—
+ACEL,"Accel Entertainment, Inc.",piotroski,True,7,9,77.8,11.13,18.56,3.57,19.09,2.61,—,6.49,"121,061",—
+ORI,OLD REPUBLIC INTERNATIONAL CORPORATION,piotroski,True,7,9,77.8,38.78,10.42,1.65,15.82,—,4.05,44.38,2M,—
+DRVN,Driven Brands Holdings Inc.,piotroski,True,7,9,77.8,12.27,14.44,2.62,18.27,0.75,4.42,9.46,"796,316",—
+OPLN,"OPENLANE, Inc.",piotroski,True,8,9,88.9,34.42,—,2.97,14.32,1.16,—,—,"366,018",—
+FIGS,"FIGS, Inc.",piotroski,True,8,9,88.9,12.95,68.16,5.31,7.83,4.94,0.33,3.23,2M,—
+FAF,FIRST AMERICAN FINANCIAL CORPORATION,piotroski,True,8,9,88.9,69.24,11.54,1.31,11.31,—,1.95,84.61,"888,759",—
+GSHD,"GOOSEHEAD INSURANCE, INC.",lynch,True,3,4,75.0,45.76,44.00,—,-29.14,1.60,-6.05,—,2M,—
+MLKN,"MillerKnoll, Inc.",piotroski,True,9,9,100.0,20.29,15.37,1.05,6.82,1.58,1.93,23.98,2M,—
+LILA,Liberty Latin America Ltd.,piotroski,True,7,9,77.8,8.60,—,3.09,-110,1.14,20.09,—,"123,645",—
+GOOGN,Alphabet Inc.,piotroski,False,6,9,66.7,49.23,4.55,1.45,31.83,2.01,0.43,90.88,2M,—
+GOOGN,Alphabet Inc.,netnet,False,2,4,50.0,49.23,4.55,1.45,31.83,2.01,0.43,90.88,2M,—
+GOOGN,Alphabet Inc.,custom,False,0,0,0.0,49.23,4.55,1.45,31.83,2.01,0.43,90.88,2M,—
+BYD,BOYD GAMING CORP,buffett,False,4,6,66.7,71.76,3.18,2.25,70.66,0.54,—,127,"225,214",—
+BYD,BOYD GAMING CORP,graham,False,5,9,55.6,71.76,3.18,2.25,70.66,0.54,—,127,"225,214",—
+BYD,BOYD GAMING CORP,lynch,False,1,4,25.0,71.76,3.18,2.25,70.66,0.54,—,127,"225,214",—
+BYD,BOYD GAMING CORP,netnet,False,1,4,25.0,71.76,3.18,2.25,70.66,0.54,—,127,"225,214",—
+BYD,BOYD GAMING CORP,custom,False,0,0,0.0,71.76,3.18,2.25,70.66,0.54,—,127,"225,214",—
+USLM,UNITED STATES LIME & MINERALS INC,piotroski,False,6,9,66.7,108,23.18,4.93,21.29,19.27,0.08,48.03,"119,165",—
+USLM,UNITED STATES LIME & MINERALS INC,greenblatt,False,2,3,66.7,108,23.18,4.93,21.29,19.27,0.08,48.03,"119,165",—
+USLM,UNITED STATES LIME & MINERALS INC,graham,False,5,9,55.6,108,23.18,4.93,21.29,19.27,0.08,48.03,"119,165",—
+USLM,UNITED STATES LIME & MINERALS INC,netnet,False,2,4,50.0,108,23.18,4.93,21.29,19.27,0.08,48.03,"119,165",—
+USLM,UNITED STATES LIME & MINERALS INC,custom,False,0,0,0.0,108,23.18,4.93,21.29,19.27,0.08,48.03,"119,165",—
