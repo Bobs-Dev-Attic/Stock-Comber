@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-OLED,UNIVERSAL DISPLAY CORPORATION,piotroski,True,7,9,77.8,76.71,15.10,2.08,13.75,10.06,0.12,64.99,"539,966",—
-IPAR,"INTERPARFUMS, INC.",buffett,True,5,6,83.3,117,22.40,4.28,19.12,2.99,—,56.84,"195,193",—
-IPAR,"INTERPARFUMS, INC.",lynch,True,3,4,75.0,117,22.40,4.28,19.12,2.99,—,56.84,"195,193",—
-TRNO,Terreno Realty Corporation,lynch,True,4,4,100.0,66.02,16.88,1.64,9.72,—,0.30,59.59,"613,120",—
-SKYW,SKYWEST INC,piotroski,True,8,9,88.9,99.27,9.59,1.50,15.60,0.65,—,124,"228,594",—
-EVR,EVERCORE INC.,buffett,True,5,6,83.3,260,18.50,5.39,29.14,2.16,1.50,123,"496,383",—
-EVR,EVERCORE INC.,piotroski,True,7,9,77.8,260,18.50,5.39,29.14,2.16,1.50,123,"496,383",—
-FSS,FEDERAL SIGNAL CORPORATION,lynch,True,3,4,75.0,113,28.24,5.04,17.84,3.02,0.73,45.03,"340,602",—
-GPK,Graphic Packaging Holding Co,lynch,True,3,4,75.0,9.66,6.53,0.87,13.31,1.30,—,19.25,6M,—
-ACEL,"Accel Entertainment, Inc.",piotroski,True,7,9,77.8,11.08,18.47,3.55,19.09,2.61,—,6.49,"375,473",—
-AGX,ARGAN INC,lynch,True,3,4,75.0,374,38.44,11.46,29.80,1.59,1.57,84.62,"251,655",—
-SBH,"SALLY BEAUTY HOLDINGS, INC.",piotroski,True,8,9,88.9,16.75,8.86,2.19,24.66,2.26,2.62,18.04,1M,—
-JOE,The St. Joe Company,piotroski,True,8,9,88.9,65.85,33.09,4.98,15.09,—,0.97,24.33,"305,347",—
-HRB,H&R BLOCK INC,greenblatt,True,3,3,100.0,42.54,7.52,46.66,624,1.13,26.72,10.78,2M,—
-HRB,H&R BLOCK INC,piotroski,True,8,9,88.9,42.54,7.52,46.66,624,1.13,26.72,10.78,2M,—
+GOOGN,Alphabet Inc.,graham,True,9,9,100.0,48.00,4.44,1.41,31.83,2.01,0.43,90.88,2M,—
+GOOGN,Alphabet Inc.,buffett,True,6,6,100.0,48.00,4.44,1.41,31.83,2.01,0.43,90.88,2M,—
+GOOGN,Alphabet Inc.,greenblatt,True,3,3,100.0,48.00,4.44,1.41,31.83,2.01,0.43,90.88,2M,—
+GOOGN,Alphabet Inc.,lynch,True,4,4,100.0,48.00,4.44,1.41,31.83,2.01,0.43,90.88,2M,—
+KRP,"Kimbell Royalty Partners, LP",piotroski,True,7,9,77.8,14.41,—,—,—,8.64,—,—,1M,—
+OTTR,OTTER TAIL CORPORATION,lynch,True,3,4,75.0,89.15,13.61,2.02,14.82,2.28,—,80.71,"176,898",—
+KRYS,"Krystal Biotech, Inc.",piotroski,True,8,9,88.9,342,49.96,8.39,16.80,9.95,0.09,79.16,"215,942",—
+MTCH,"Match Group, Inc.",piotroski,True,8,9,88.9,40.48,17.01,—,-242,1.42,—,—,6M,—
+MTCH,"Match Group, Inc.",lynch,True,3,4,75.0,40.48,17.01,—,-242,1.42,—,—,6M,—
+SFM,"Sprouts Farmers Market, Inc.",greenblatt,True,3,3,100.0,66.07,12.44,4.65,37.32,0.93,1.96,41.21,2M,—
+SFM,"Sprouts Farmers Market, Inc.",piotroski,True,7,9,77.8,66.07,12.44,4.65,37.32,0.93,1.96,41.21,2M,—
+HOG,"Harley-Davidson, Inc.",graham,True,9,9,100.0,25.98,9.35,1.00,10.79,2.10,—,40.25,2M,—
+HOG,"Harley-Davidson, Inc.",piotroski,True,8,9,88.9,25.98,9.35,1.00,10.79,2.10,—,40.25,2M,—
 SSB,SOUTHSTATE BANK CORP,lynch,True,3,4,75.0,102,12.91,1.14,8.82,—,6.42,126,"522,331",—
-SHOE,"Shoe Station Group, Inc.",graham,True,8,9,88.9,13.11,6.90,0.52,7.58,3.76,0.74,32.72,"700,973",—
-GEO,"The GEO Group, Inc.",piotroski,True,7,9,77.8,30.62,16.82,2.84,16.89,2.01,—,21.01,2M,—
-GEO,"The GEO Group, Inc.",lynch,True,3,4,75.0,30.62,16.82,2.84,16.89,2.01,—,21.01,2M,—
-HAFC,HANMI FINANCIAL CORPORATION,piotroski,True,8,9,88.9,31.58,12.58,1.19,9.55,—,8.88,38.69,"248,113",—
+CSTM,Constellium SE,piotroski,True,9,9,100.0,24.96,13.00,3.72,28.68,1.29,4.60,17.02,3M,—
+BDC,BELDEN INC.,piotroski,True,8,9,88.9,114,19.31,3.63,18.78,1.93,—,64.66,"394,961",—
+SHOE,"Shoe Station Group, Inc.",graham,True,8,9,88.9,13.11,6.90,0.52,7.58,3.76,0.74,32.72,"701,198",—
+KALU,KAISER ALUMINUM CORPORATION,piotroski,True,7,9,77.8,156,23.08,3.14,13.62,2.95,2.10,87.01,"215,239",—
+KALU,KAISER ALUMINUM CORPORATION,lynch,True,3,4,75.0,156,23.08,3.14,13.62,2.95,2.10,87.01,"215,239",—
 AM,ANTERO MIDSTREAM CORPORATION,piotroski,True,7,9,77.8,21.38,24.86,5.23,20.95,3.41,1.98,8.90,2M,—
-FCF,FIRST COMMONWEALTH FINANCIAL CORP /PA/,lynch,True,3,4,75.0,20.62,14.03,1.37,9.80,—,6.94,22.28,"961,478",—
-BKU,"BankUnited, Inc.",piotroski,True,8,9,88.9,43.36,12.28,1.06,8.79,—,10.47,57.13,"636,831",—
-HLIO,"HELIOS TECHNOLOGIES, INC.",piotroski,True,9,9,100.0,69.52,47.94,2.49,5.20,2.90,0.63,30.21,"323,510",—
-HLIO,"HELIOS TECHNOLOGIES, INC.",lynch,True,3,4,75.0,69.52,47.94,2.49,5.20,2.90,0.63,30.21,"323,510",—
-CPRI,CAPRI HOLDINGS LIMITED,piotroski,True,7,9,77.8,15.43,13.54,23.12,171,1.21,39.38,4.14,5M,—
-LW,"LAMB WESTON HOLDINGS, INC.",piotroski,True,7,9,77.8,45.04,21.65,3.43,15.89,1.42,—,24.78,1M,—
-MOS,MOSAIC CO,piotroski,True,8,9,88.9,24.37,14.34,0.64,4.47,1.32,—,38.07,5M,—
-MPAA,"MOTORCAR PARTS OF AMERICA, INC.",piotroski,True,7,9,77.8,10.56,17.03,0.79,4.66,1.46,2.83,13.63,"136,084",—
+POST,"Post Holdings, Inc.",lynch,True,3,4,75.0,75.81,13.76,1.27,8.94,1.67,2.60,86.01,"790,476",—
+CPK,CHESAPEAKE UTILITIES CORP,piotroski,True,7,9,77.8,130,21.72,1.90,8.78,0.45,—,95.61,"187,914",—
+R,RYDER SYSTEM INC,piotroski,True,9,9,100.0,238,19.93,3.26,16.35,0.89,4.37,140,"175,188",—
+GRC,The Gorman-Rupp Company,piotroski,True,8,9,88.9,75.25,37.25,4.77,12.78,2.37,1.07,26.77,"163,649",—
+EXTR,"Extreme Networks, Inc.",piotroski,True,8,9,88.9,22.03,71.06,33.56,47.54,0.93,—,2.14,"954,269",—
+AIOT,"POWERFLEET, INC.",piotroski,True,7,9,77.8,2.90,—,0.82,-4.32,1.13,1.00,—,1M,—
 INNV,InnovAge Holding Corp.,piotroski,True,7,9,77.8,9.00,—,5.18,-1.08,1.05,1.23,—,7M,—
-DIOD,DIODES INC /DEL/,piotroski,True,8,9,88.9,95.51,66.79,2.36,3.52,3.32,0.27,36.08,"327,917",—
-EVCM,EverCommerce Inc.,piotroski,True,7,9,77.8,8.32,83.20,2.13,2.45,2.11,0.91,2.96,"162,290",—
-LILA,Liberty Latin America Ltd.,piotroski,True,7,9,77.8,8.52,—,3.06,-110,1.14,20.09,—,"333,817",—
-OLED,UNIVERSAL DISPLAY CORPORATION,buffett,False,4,6,66.7,76.71,15.10,2.08,13.75,10.06,0.12,64.99,"539,966",—
-OLED,UNIVERSAL DISPLAY CORPORATION,graham,False,5,9,55.6,76.71,15.10,2.08,13.75,10.06,0.12,64.99,"539,966",—
-OLED,UNIVERSAL DISPLAY CORPORATION,lynch,False,2,4,50.0,76.71,15.10,2.08,13.75,10.06,0.12,64.99,"539,966",—
-OLED,UNIVERSAL DISPLAY CORPORATION,netnet,False,2,4,50.0,76.71,15.10,2.08,13.75,10.06,0.12,64.99,"539,966",—
-OLED,UNIVERSAL DISPLAY CORPORATION,greenblatt,False,1,3,33.3,76.71,15.10,2.08,13.75,10.06,0.12,64.99,"539,966",—
-OLED,UNIVERSAL DISPLAY CORPORATION,custom,False,0,0,0.0,76.71,15.10,2.08,13.75,10.06,0.12,64.99,"539,966",—
-IPAR,"INTERPARFUMS, INC.",graham,False,6,9,66.7,117,22.40,4.28,19.12,2.99,—,56.84,"195,193",—
-IPAR,"INTERPARFUMS, INC.",piotroski,False,6,9,66.7,117,22.40,4.28,19.12,2.99,—,56.84,"195,193",—
-IPAR,"INTERPARFUMS, INC.",greenblatt,False,1,3,33.3,117,22.40,4.28,19.12,2.99,—,56.84,"195,193",—
-IPAR,"INTERPARFUMS, INC.",netnet,False,1,4,25.0,117,22.40,4.28,19.12,2.99,—,56.84,"195,193",—
-IPAR,"INTERPARFUMS, INC.",custom,False,0,0,0.0,117,22.40,4.28,19.12,2.99,—,56.84,"195,193",—
-TRNO,Terreno Realty Corporation,piotroski,False,5,9,55.6,66.02,16.88,1.64,9.72,—,0.30,59.59,"613,120",—
-TRNO,Terreno Realty Corporation,buffett,False,3,6,50.0,66.02,16.88,1.64,9.72,—,0.30,59.59,"613,120",—
-TRNO,Terreno Realty Corporation,graham,False,3,9,33.3,66.02,16.88,1.64,9.72,—,0.30,59.59,"613,120",—
-TRNO,Terreno Realty Corporation,greenblatt,False,1,3,33.3,66.02,16.88,1.64,9.72,—,0.30,59.59,"613,120",—
-TRNO,Terreno Realty Corporation,netnet,False,1,4,25.0,66.02,16.88,1.64,9.72,—,0.30,59.59,"613,120",—
-TRNO,Terreno Realty Corporation,custom,False,0,0,0.0,66.02,16.88,1.64,9.72,—,0.30,59.59,"613,120",—
+AEIS,"ADVANCED ENERGY INDUSTRIES, INC.",piotroski,True,7,9,77.8,279,72.77,7.91,10.89,1.59,0.86,55.23,"509,033",—
+GOOGN,Alphabet Inc.,piotroski,False,6,9,66.7,48.00,4.44,1.41,31.83,2.01,0.43,90.88,2M,—
+GOOGN,Alphabet Inc.,netnet,False,2,4,50.0,48.00,4.44,1.41,31.83,2.01,0.43,90.88,2M,—
+GOOGN,Alphabet Inc.,custom,False,0,0,0.0,48.00,4.44,1.41,31.83,2.01,0.43,90.88,2M,—
+KRP,"Kimbell Royalty Partners, LP",graham,False,3,9,33.3,14.41,—,—,—,8.64,—,—,1M,—
+KRP,"Kimbell Royalty Partners, LP",greenblatt,False,1,3,33.3,14.41,—,—,—,8.64,—,—,1M,—
+KRP,"Kimbell Royalty Partners, LP",lynch,False,1,4,25.0,14.41,—,—,—,8.64,—,—,1M,—
+KRP,"Kimbell Royalty Partners, LP",netnet,False,1,4,25.0,14.41,—,—,—,8.64,—,—,1M,—
+KRP,"Kimbell Royalty Partners, LP",buffett,False,1,6,16.7,14.41,—,—,—,8.64,—,—,1M,—
+KRP,"Kimbell Royalty Partners, LP",custom,False,0,0,0.0,14.41,—,—,—,8.64,—,—,1M,—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,piotroski,False,4,9,44.4,25.55,—,—,—,2.10,—,—,"283,033",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,graham,False,3,9,33.3,25.55,—,—,—,2.10,—,—,"283,033",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,buffett,False,2,6,33.3,25.55,—,—,—,2.10,—,—,"283,033",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,greenblatt,False,1,3,33.3,25.55,—,—,—,2.10,—,—,"283,033",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,lynch,False,1,4,25.0,25.55,—,—,—,2.10,—,—,"283,033",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,netnet,False,1,4,25.0,25.55,—,—,—,2.10,—,—,"283,033",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,custom,False,0,0,0.0,25.55,—,—,—,2.10,—,—,"283,033",—
+OTTR,OTTER TAIL CORPORATION,graham,False,6,9,66.7,89.15,13.61,2.02,14.82,2.28,—,80.71,"176,898",—
+OTTR,OTTER TAIL CORPORATION,piotroski,False,6,9,66.7,89.15,13.61,2.02,14.82,2.28,—,80.71,"176,898",—
+OTTR,OTTER TAIL CORPORATION,buffett,False,3,6,50.0,89.15,13.61,2.02,14.82,2.28,—,80.71,"176,898",—
+OTTR,OTTER TAIL CORPORATION,greenblatt,False,1,3,33.3,89.15,13.61,2.02,14.82,2.28,—,80.71,"176,898",—
+OTTR,OTTER TAIL CORPORATION,netnet,False,1,4,25.0,89.15,13.61,2.02,14.82,2.28,—,80.71,"176,898",—
+OTTR,OTTER TAIL CORPORATION,custom,False,0,0,0.0,89.15,13.61,2.02,14.82,2.28,—,80.71,"176,898",—
