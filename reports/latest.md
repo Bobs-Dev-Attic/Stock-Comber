@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-24 15:19 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-24 19:14 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **44** strategy matches passed.
+Screened **75** companies · **27** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| GOOGN | Alphabet Inc. | graham | ✅ | 100% | 48.00 | 4.44 | 1.41 | 31.83 | 2.01 | 0.43 | 2M | — |
-| GOOGN | Alphabet Inc. | buffett | ✅ | 100% | 48.00 | 4.44 | 1.41 | 31.83 | 2.01 | 0.43 | 2M | — |
-| GOOGN | Alphabet Inc. | greenblatt | ✅ | 100% | 48.00 | 4.44 | 1.41 | 31.83 | 2.01 | 0.43 | 2M | — |
-| GOOGN | Alphabet Inc. | lynch | ✅ | 100% | 48.00 | 4.44 | 1.41 | 31.83 | 2.01 | 0.43 | 2M | — |
-| WING | WINGSTOP INC. | lynch | ✅ | 100% | 97.88 | 15.76 | — | -23.65 | 3.26 | -1.94 | 2M | — |
-| WTFCN | WINTRUST FINANCIAL CORP | lynch | ✅ | 75% | 26.05 | 2.29 | 0.24 | 11.35 | — | 8.80 | 11,565 | — |
-| PLMR | Palomar Holdings, Inc. | piotroski | ✅ | 78% | 128 | 17.88 | 3.74 | 20.91 | — | 2.24 | 40,386 | — |
-| NSSC | NAPCO SECURITY TECHNOLOGIES, | buffett | ✅ | 100% | 34.88 | 29.07 | 6.55 | 22.53 | 4.90 | 0.25 | 33,076 | — |
-| NSSC | NAPCO SECURITY TECHNOLOGIES, | lynch | ✅ | 75% | 34.88 | 29.07 | 6.55 | 22.53 | 4.90 | 0.25 | 33,076 | — |
-| AX | AXOS FINANCIAL, INC. | lynch | ✅ | 75% | 87.08 | 10.27 | 1.56 | 15.49 | — | 8.46 | 25,218 | — |
-| ESE | ESCO TECHNOLOGIES INC. | lynch | ✅ | 100% | 266 | 23.05 | 4.48 | 19.42 | 1.35 | 0.56 | 189,652 | — |
-| XPEL | XPEL, INC. | buffett | ✅ | 100% | 44.52 | 24.06 | 4.40 | 18.28 | 3.25 | 0.35 | 143,531 | — |
-| XPEL | XPEL, INC. | lynch | ✅ | 75% | 44.52 | 24.06 | 4.40 | 18.28 | 3.25 | 0.35 | 143,531 | — |
-| AROC | Archrock, Inc. | piotroski | ✅ | 89% | 30.15 | 16.48 | 3.53 | 21.61 | 1.54 | 1.92 | 183,285 | — |
-| PJT | PJT Partners Inc. | buffett | ✅ | 83% | 149 | — | — | 58.43 | — | 2.71 | 461,278 | — |
-| PJT | PJT Partners Inc. | piotroski | ✅ | 78% | 149 | — | — | 58.43 | — | 2.71 | 461,278 | — |
-| CVSA | Covista Inc. | lynch | ✅ | 75% | 125 | 17.74 | 3.08 | 17.40 | 1.09 | 1.08 | 79,025 | — |
+| ZSL | PROSHARES TRUST II | greenblatt | ✅ | 100% | 24.99 | 1.81 | 0.54 | 29.91 | — | 0.06 | 8M | — |
+| CRUS | CIRRUS LOGIC, INC. | piotroski | ✅ | 89% | 118 | 15.06 | 2.93 | 19.47 | 7.37 | — | 223,614 | — |
+| BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 124 | 16.94 | 2.90 | 17.13 | 2.65 | 0.86 | 463,673 | — |
+| BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 124 | 16.94 | 2.90 | 17.13 | 2.65 | 0.86 | 463,673 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | piotroski | ✅ | 100% | 117 | 21.64 | 4.08 | 18.86 | 0.86 | 0.33 | 85,895 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | lynch | ✅ | 100% | 117 | 21.64 | 4.08 | 18.86 | 0.86 | 0.33 | 85,895 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | buffett | ✅ | 83% | 117 | 21.64 | 4.08 | 18.86 | 0.86 | 0.33 | 85,895 | — |
+| AX | AXOS FINANCIAL, INC. | lynch | ✅ | 75% | 88.38 | 10.42 | 1.58 | 15.49 | — | 8.46 | 113,200 | — |
+| FBP | FIRST BANCORP | piotroski | ✅ | 89% | 26.79 | 12.46 | 2.19 | 17.53 | — | 8.73 | 555,931 | — |
+| FBP | FIRST BANCORP | lynch | ✅ | 75% | 26.79 | 12.46 | 2.19 | 17.53 | — | 8.73 | 555,931 | — |
+| RILY | BRC Group Holdings, Inc. | greenblatt | ✅ | 100% | 5.78 | 0.59 | — | -179 | — | -10.65 | 428,994 | — |
+| RILY | BRC Group Holdings, Inc. | lynch | ✅ | 75% | 5.78 | 0.59 | — | -179 | — | -10.65 | 428,994 | — |
 | PDYNW | Palladyne AI Corp. | netnet | ✅ | 100% | 0.00 | 0.00 | 0.00 | 13.44 | 9.28 | 0.28 | 2M | — |
-| DUKU | Duke Energy CORP | piotroski | ✅ | 89% | 48.02 | 7.61 | 0.72 | 9.58 | 0.55 | — | 54,846 | — |
-| DUKU | Duke Energy CORP | lynch | ✅ | 75% | 48.02 | 7.61 | 0.72 | 9.58 | 0.55 | — | 54,846 | — |
-| NYT | THE NEW YORK TIMES COMPANY | piotroski | ✅ | 100% | 61.89 | 29.61 | 5.00 | 16.85 | 1.54 | — | 7M | — |
-| CRVL | CORVEL CORPORATION | buffett | ✅ | 83% | 73.22 | 34.21 | 9.59 | 27.99 | 2.03 | 0.63 | 19,064 | — |
-| CRVL | CORVEL CORPORATION | piotroski | ✅ | 78% | 73.22 | 34.21 | 9.59 | 27.99 | 2.03 | 0.63 | 19,064 | — |
-| CRVL | CORVEL CORPORATION | lynch | ✅ | 75% | 73.22 | 34.21 | 9.59 | 27.99 | 2.03 | 0.63 | 19,064 | — |
-| GPK | Graphic Packaging Holding Co | lynch | ✅ | 75% | 9.36 | 6.32 | 0.84 | 13.31 | 1.30 | — | 914,163 | — |
-| DORM | Dorman Products, Inc. | piotroski | ✅ | 89% | 121 | 18.28 | 2.53 | 13.82 | 3.09 | — | 237,540 | — |
-| VICR | VICOR CORPORATION | piotroski | ✅ | 89% | 283 | 108 | 18.09 | 16.66 | 8.99 | 0.10 | 2M | — |
-| VICR | VICOR CORPORATION | buffett | ✅ | 83% | 283 | 108 | 18.09 | 16.66 | 8.99 | 0.10 | 2M | — |
-| VICR | VICOR CORPORATION | lynch | ✅ | 75% | 283 | 108 | 18.09 | 16.66 | 8.99 | 0.10 | 2M | — |
-| HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 112 | 43.92 | 285 | 649 | 4.66 | 50.73 | 3M | — |
-| HRB | H&R BLOCK INC | greenblatt | ✅ | 100% | 42.53 | 7.51 | 46.65 | 624 | 1.13 | 26.72 | 296,546 | — |
-| HRB | H&R BLOCK INC | piotroski | ✅ | 89% | 42.53 | 7.51 | 46.65 | 624 | 1.13 | 26.72 | 296,546 | — |
-| GEO | The GEO Group, Inc. | piotroski | ✅ | 78% | 31.35 | 17.23 | 2.91 | 16.89 | 2.01 | — | 461,744 | — |
-| GEO | The GEO Group, Inc. | lynch | ✅ | 75% | 31.35 | 17.23 | 2.91 | 16.89 | 2.01 | — | 461,744 | — |
-| HAFC | HANMI FINANCIAL CORPORATION | piotroski | ✅ | 89% | 31.58 | 12.58 | 1.19 | 9.55 | — | 8.88 | 248,114 | — |
-| OPRX | OptimizeRx Corporation | piotroski | ✅ | 89% | 7.50 | 27.78 | 1.11 | 4.00 | 3.04 | 0.38 | 51,931 | — |
-| BCPC | Balchem Corporation | piotroski | ✅ | 100% | 168 | 35.42 | 4.36 | 12.31 | 2.07 | 0.34 | 145,641 | — |
-| SSRM | SSR Mining Inc. | piotroski | ✅ | 78% | 35.17 | 19.01 | 2.18 | 11.28 | 2.08 | 0.51 | 539,901 | — |
-| DLB | Dolby Laboratories, Inc. | piotroski | ✅ | 78% | 57.73 | 22.03 | 2.15 | 9.72 | 3.17 | 0.23 | 101,211 | — |
+| HBANP | Huntington Bancshares Incorp | lynch | ✅ | 75% | 16.48 | 11.86 | 1.02 | 9.08 | — | 8.25 | 53,251 | — |
+| IIIN | Insteel Industries Inc. | piotroski | ✅ | 78% | 29.04 | 13.83 | 1.53 | 11.04 | 3.97 | — | 50,689 | — |
+| IIIN | Insteel Industries Inc. | lynch | ✅ | 75% | 29.04 | 13.83 | 1.53 | 11.04 | 3.97 | — | 50,689 | — |
+| BANC | BANC OF CALIFORNIA, INC. | piotroski | ✅ | 78% | 17.73 | 15.15 | 0.81 | 6.47 | — | 8.83 | 1M | — |
+| ACEL | Accel Entertainment, Inc. | piotroski | ✅ | 78% | 11.00 | 18.33 | 3.52 | 19.09 | 2.61 | — | 219,234 | — |
+| JOE | The St. Joe Company | piotroski | ✅ | 89% | 65.22 | 32.78 | 4.93 | 15.09 | — | 0.97 | 196,584 | — |
+| FCFS | FIRSTCASH HOLDINGS, INC. | piotroski | ✅ | 78% | 217 | 29.25 | 4.24 | 14.51 | 4.55 | 1.33 | 114,199 | — |
+| BCPC | Balchem Corporation | piotroski | ✅ | 100% | 167 | 35.19 | 4.33 | 12.31 | 2.07 | 0.34 | 84,759 | — |
+| OPLN | OPENLANE, Inc. | piotroski | ✅ | 89% | 34.56 | — | 2.98 | 14.32 | 1.16 | — | 663,071 | — |
+| MYRG | MYR GROUP INC. | piotroski | ✅ | 89% | 295 | 39.12 | 7.02 | 17.93 | 1.33 | 1.49 | 96,304 | — |
 | FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 11.97 | 63.00 | 4.91 | 7.83 | 4.94 | 0.33 | 2M | — |
-| SPOK | SPOK HOLDINGS, INC. | piotroski | ✅ | 78% | 10.40 | 13.87 | 1.50 | 10.85 | 1.18 | 0.41 | 102,358 | — |
-| LW | LAMB WESTON HOLDINGS, INC. | piotroski | ✅ | 78% | 45.04 | 21.65 | 3.43 | 15.89 | 1.42 | — | 1M | — |
-| MSGS | MADISON SQUARE GARDEN SPORTS | piotroski | ✅ | 100% | 395 | 1,235 | — | -2.95 | 0.50 | -6.84 | 41,050 | — |
-| SHC | SOTERA HEALTH COMPANY | piotroski | ✅ | 78% | 18.38 | 68.07 | 8.69 | 12.86 | 2.46 | 4.38 | 135,113 | — |
-| GOOGN | Alphabet Inc. | piotroski | ▫️ | 67% | 48.00 | 4.44 | 1.41 | 31.83 | 2.01 | 0.43 | 2M | — |
-| GOOGN | Alphabet Inc. | netnet | ▫️ | 50% | 48.00 | 4.44 | 1.41 | 31.83 | 2.01 | 0.43 | 2M | — |
-| GOOGN | Alphabet Inc. | custom | ▫️ | 0% | 48.00 | 4.44 | 1.41 | 31.83 | 2.01 | 0.43 | 2M | — |
-| WING | WINGSTOP INC. | buffett | ▫️ | 67% | 97.88 | 15.76 | — | -23.65 | 3.26 | -1.94 | 2M | — |
-| WING | WINGSTOP INC. | piotroski | ▫️ | 67% | 97.88 | 15.76 | — | -23.65 | 3.26 | -1.94 | 2M | — |
-| WING | WINGSTOP INC. | greenblatt | ▫️ | 67% | 97.88 | 15.76 | — | -23.65 | 3.26 | -1.94 | 2M | — |
+| GCO | GENESCO INC | piotroski | ✅ | 89% | 34.16 | 27.33 | 0.64 | 2.34 | 1.64 | 1.46 | 160,379 | — |
+| GXO | GXO Logistics, Inc. | piotroski | ✅ | 78% | 43.99 | 157 | 1.72 | 1.07 | 0.85 | — | 1M | — |
+| TDAY | USA TODAY CO., INC. | piotroski | ✅ | 78% | 6.46 | 646 | 6.08 | 1.13 | 0.75 | 10.85 | 692,882 | — |
+| ZSL | PROSHARES TRUST II | lynch | ▫️ | 50% | 24.99 | 1.81 | 0.54 | 29.91 | — | 0.06 | 8M | — |
+| ZSL | PROSHARES TRUST II | graham | ▫️ | 44% | 24.99 | 1.81 | 0.54 | 29.91 | — | 0.06 | 8M | — |
+| ZSL | PROSHARES TRUST II | buffett | ▫️ | 33% | 24.99 | 1.81 | 0.54 | 29.91 | — | 0.06 | 8M | — |
+| ZSL | PROSHARES TRUST II | piotroski | ▫️ | 33% | 24.99 | 1.81 | 0.54 | 29.91 | — | 0.06 | 8M | — |
+| ZSL | PROSHARES TRUST II | netnet | ▫️ | 25% | 24.99 | 1.81 | 0.54 | 29.91 | — | 0.06 | 8M | — |
+| ZSL | PROSHARES TRUST II | custom | ▫️ | 0% | 24.99 | 1.81 | 0.54 | 29.91 | — | 0.06 | 8M | — |
+| CRUS | CIRRUS LOGIC, INC. | graham | ▫️ | 67% | 118 | 15.06 | 2.93 | 19.47 | 7.37 | — | 223,614 | — |
+| CRUS | CIRRUS LOGIC, INC. | buffett | ▫️ | 67% | 118 | 15.06 | 2.93 | 19.47 | 7.37 | — | 223,614 | — |
+| CRUS | CIRRUS LOGIC, INC. | greenblatt | ▫️ | 33% | 118 | 15.06 | 2.93 | 19.47 | 7.37 | — | 223,614 | — |
+| CRUS | CIRRUS LOGIC, INC. | lynch | ▫️ | 25% | 118 | 15.06 | 2.93 | 19.47 | 7.37 | — | 223,614 | — |
+| CRUS | CIRRUS LOGIC, INC. | netnet | ▫️ | 25% | 118 | 15.06 | 2.93 | 19.47 | 7.37 | — | 223,614 | — |
+| CRUS | CIRRUS LOGIC, INC. | custom | ▫️ | 0% | 118 | 15.06 | 2.93 | 19.47 | 7.37 | — | 223,614 | — |
+| BOOT | Boot Barn Holdings, Inc. | graham | ▫️ | 67% | 124 | 16.94 | 2.90 | 17.13 | 2.65 | 0.86 | 463,673 | — |
+| BOOT | Boot Barn Holdings, Inc. | buffett | ▫️ | 67% | 124 | 16.94 | 2.90 | 17.13 | 2.65 | 0.86 | 463,673 | — |
+| BOOT | Boot Barn Holdings, Inc. | greenblatt | ▫️ | 33% | 124 | 16.94 | 2.90 | 17.13 | 2.65 | 0.86 | 463,673 | — |
+| BOOT | Boot Barn Holdings, Inc. | netnet | ▫️ | 25% | 124 | 16.94 | 2.90 | 17.13 | 2.65 | 0.86 | 463,673 | — |
+| BOOT | Boot Barn Holdings, Inc. | custom | ▫️ | 0% | 124 | 16.94 | 2.90 | 17.13 | 2.65 | 0.86 | 463,673 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | graham | ▫️ | 33% | 117 | 21.64 | 4.08 | 18.86 | 0.86 | 0.33 | 85,895 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | greenblatt | ▫️ | 33% | 117 | 21.64 | 4.08 | 18.86 | 0.86 | 0.33 | 85,895 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | netnet | ▫️ | 25% | 117 | 21.64 | 4.08 | 18.86 | 0.86 | 0.33 | 85,895 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | custom | ▫️ | 0% | 117 | 21.64 | 4.08 | 18.86 | 0.86 | 0.33 | 85,895 | — |
+| AX | AXOS FINANCIAL, INC. | buffett | ▫️ | 67% | 88.38 | 10.42 | 1.58 | 15.49 | — | 8.46 | 113,200 | — |
+| AX | AXOS FINANCIAL, INC. | piotroski | ▫️ | 67% | 88.38 | 10.42 | 1.58 | 15.49 | — | 8.46 | 113,200 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
