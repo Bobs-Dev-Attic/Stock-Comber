@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-27 00:57 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-27 06:00 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **31** strategy matches passed.
+Screened **75** companies · **28** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| GOOGM | Alphabet Inc. | graham | ✅ | 100% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 3M | — |
-| GOOGM | Alphabet Inc. | buffett | ✅ | 100% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 3M | — |
-| GOOGM | Alphabet Inc. | greenblatt | ✅ | 100% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 3M | — |
-| GOOGM | Alphabet Inc. | lynch | ✅ | 100% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 3M | — |
-| REFI | CHICAGO ATLANTIC REAL ESTATE | lynch | ✅ | 100% | 10.65 | 6.34 | 0.74 | 11.70 | — | 0.38 | 210,837 | — |
-| USLM | UNITED STATES LIME & MINERAL | lynch | ✅ | 100% | 111 | 23.85 | 5.07 | 21.29 | 19.27 | 0.08 | 82,187 | — |
-| USLM | UNITED STATES LIME & MINERAL | buffett | ✅ | 83% | 111 | 23.85 | 5.07 | 21.29 | 19.27 | 0.08 | 82,187 | — |
-| SPNT | SIRIUSPOINT LTD. | lynch | ✅ | 75% | 25.38 | 6.97 | 1.25 | 18.61 | — | 4.09 | 702,967 | — |
-| OTTR | OTTER TAIL CORPORATION | lynch | ✅ | 75% | 89.34 | 13.64 | 2.02 | 14.82 | 2.28 | — | 202,686 | — |
-| RILY | BRC Group Holdings, Inc. | greenblatt | ✅ | 100% | 5.71 | 0.58 | — | -179 | — | -10.65 | 410,563 | — |
-| RILY | BRC Group Holdings, Inc. | lynch | ✅ | 75% | 5.71 | 0.58 | — | -179 | — | -10.65 | 410,563 | — |
-| ALSN | ALLISON TRANSMISSION HOLDING | buffett | ✅ | 83% | 114 | 15.53 | 5.18 | 33.37 | 4.85 | 2.26 | 662,429 | — |
-| ALSN | ALLISON TRANSMISSION HOLDING | lynch | ✅ | 75% | 114 | 15.53 | 5.18 | 33.37 | 4.85 | 2.26 | 662,429 | — |
-| PJT | PJT Partners Inc. | buffett | ✅ | 83% | 152 | — | — | 58.43 | — | 2.71 | 303,262 | — |
-| PJT | PJT Partners Inc. | piotroski | ✅ | 78% | 152 | — | — | 58.43 | — | 2.71 | 303,262 | — |
-| PRDO | PERDOCEO EDUCATION CORP | piotroski | ✅ | 89% | 30.49 | 12.60 | 2.07 | 16.45 | 5.06 | — | 860,042 | — |
-| SFM | Sprouts Farmers Market, Inc. | greenblatt | ✅ | 100% | 62.49 | 11.77 | 4.40 | 37.32 | 0.93 | 1.96 | 3M | — |
-| SFM | Sprouts Farmers Market, Inc. | piotroski | ✅ | 78% | 62.49 | 11.77 | 4.40 | 37.32 | 0.93 | 1.96 | 3M | — |
-| WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 13.03 | 2.57 | 1.48 | 57.56 | 1.39 | 2.18 | 1M | — |
-| HOG | Harley-Davidson, Inc. | graham | ✅ | 100% | 25.45 | 9.15 | 0.98 | 10.79 | 2.10 | — | 2M | — |
-| HOG | Harley-Davidson, Inc. | piotroski | ✅ | 89% | 25.45 | 9.15 | 0.98 | 10.79 | 2.10 | — | 2M | — |
-| AENTW | ALLIANCE ENTERTAINMENT HOLDI | lynch | ✅ | 75% | 0.21 | 0.81 | 0.09 | 11.20 | 1.34 | 2.41 | 5,115 | — |
-| AXTA | AXALTA COATING SYSTEMS LTD. | lynch | ✅ | 75% | 32.89 | 18.90 | 3.04 | 16.11 | 2.06 | 2.22 | 2M | — |
-| KRT | Karat Packaging Inc. | piotroski | ✅ | 78% | 53.09 | 34.03 | 7.17 | 21.07 | 2.30 | 0.88 | 197,605 | — |
-| TRIP | TRIPADVISOR, INC. | piotroski | ✅ | 89% | 8.41 | 27.13 | 1.71 | 6.20 | 1.29 | 3.07 | 4M | — |
-| WWW | WOLVERINE WORLD WIDE, INC. | piotroski | ✅ | 78% | 19.07 | 16.73 | 3.82 | 23.48 | 1.40 | — | 582,308 | — |
-| KN | Knowles Corporation | piotroski | ✅ | 78% | 37.53 | 75.06 | 4.26 | 5.70 | 2.75 | — | 498,128 | — |
-| LOCO | EL POLLO LOCO HOLDINGS, INC. | piotroski | ✅ | 89% | 14.09 | 15.66 | 1.42 | 9.10 | 0.32 | 1.08 | 164,142 | — |
-| MSGS | MADISON SQUARE GARDEN SPORTS | piotroski | ✅ | 100% | 403 | 1,259 | — | -2.95 | 0.50 | -6.84 | 194,814 | — |
-| WGO | WINNEBAGO INDUSTRIES, INC. | piotroski | ✅ | 89% | 27.15 | 29.84 | 0.63 | 2.10 | 2.42 | 0.76 | 502,565 | — |
-| GXO | GXO Logistics, Inc. | piotroski | ✅ | 78% | 45.20 | 161 | 1.76 | 1.07 | 0.85 | — | 1M | — |
-| GOOGM | Alphabet Inc. | piotroski | ▫️ | 67% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 3M | — |
-| GOOGM | Alphabet Inc. | netnet | ▫️ | 50% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 3M | — |
-| GOOGM | Alphabet Inc. | custom | ▫️ | 0% | 48.90 | 4.52 | 1.44 | 31.83 | 2.01 | 0.43 | 3M | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | piotroski | ▫️ | 67% | 3.05 | 15.25 | 3.40 | 22.71 | 4.86 | 0.39 | 618,995 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | greenblatt | ▫️ | 67% | 3.05 | 15.25 | 3.40 | 22.71 | 4.86 | 0.39 | 618,995 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | buffett | ▫️ | 50% | 3.05 | 15.25 | 3.40 | 22.71 | 4.86 | 0.39 | 618,995 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | lynch | ▫️ | 50% | 3.05 | 15.25 | 3.40 | 22.71 | 4.86 | 0.39 | 618,995 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | netnet | ▫️ | 50% | 3.05 | 15.25 | 3.40 | 22.71 | 4.86 | 0.39 | 618,995 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | graham | ▫️ | 33% | 3.05 | 15.25 | 3.40 | 22.71 | 4.86 | 0.39 | 618,995 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | custom | ▫️ | 0% | 3.05 | 15.25 | 3.40 | 22.71 | 4.86 | 0.39 | 618,995 | — |
-| REFI | CHICAGO ATLANTIC REAL ESTATE | graham | ▫️ | 67% | 10.65 | 6.34 | 0.74 | 11.70 | — | 0.38 | 210,837 | — |
-| REFI | CHICAGO ATLANTIC REAL ESTATE | greenblatt | ▫️ | 67% | 10.65 | 6.34 | 0.74 | 11.70 | — | 0.38 | 210,837 | — |
-| REFI | CHICAGO ATLANTIC REAL ESTATE | buffett | ▫️ | 33% | 10.65 | 6.34 | 0.74 | 11.70 | — | 0.38 | 210,837 | — |
-| REFI | CHICAGO ATLANTIC REAL ESTATE | netnet | ▫️ | 25% | 10.65 | 6.34 | 0.74 | 11.70 | — | 0.38 | 210,837 | — |
-| REFI | CHICAGO ATLANTIC REAL ESTATE | piotroski | ▫️ | 22% | 10.65 | 6.34 | 0.74 | 11.70 | — | 0.38 | 210,837 | — |
-| REFI | CHICAGO ATLANTIC REAL ESTATE | custom | ▫️ | 0% | 10.65 | 6.34 | 0.74 | 11.70 | — | 0.38 | 210,837 | — |
-| USLM | UNITED STATES LIME & MINERAL | piotroski | ▫️ | 67% | 111 | 23.85 | 5.07 | 21.29 | 19.27 | 0.08 | 82,187 | — |
-| USLM | UNITED STATES LIME & MINERAL | greenblatt | ▫️ | 67% | 111 | 23.85 | 5.07 | 21.29 | 19.27 | 0.08 | 82,187 | — |
-| USLM | UNITED STATES LIME & MINERAL | graham | ▫️ | 56% | 111 | 23.85 | 5.07 | 21.29 | 19.27 | 0.08 | 82,187 | — |
+| BYD | BOYD GAMING CORP | greenblatt | ✅ | 100% | 71.23 | 3.16 | 2.23 | 70.66 | 0.54 | — | 953,700 | — |
+| BYD | BOYD GAMING CORP | piotroski | ✅ | 78% | 71.23 | 3.16 | 2.23 | 70.66 | 0.54 | — | 953,700 | — |
+| GMED | GLOBUS MEDICAL, INC. | piotroski | ✅ | 100% | 74.52 | 19.01 | 2.23 | 11.76 | 4.26 | 0.16 | 2M | — |
+| GMED | GLOBUS MEDICAL, INC. | lynch | ✅ | 100% | 74.52 | 19.01 | 2.23 | 11.76 | 4.26 | 0.16 | 2M | — |
+| AROC | Archrock, Inc. | piotroski | ✅ | 89% | 30.43 | 16.63 | 3.57 | 21.61 | 1.54 | 1.92 | 1M | — |
+| PATH | UiPath, Inc. | piotroski | ✅ | 89% | 12.46 | 23.96 | 3.26 | 13.56 | 2.48 | 0.53 | 46M | — |
+| IBP | Installed Building Products, | piotroski | ✅ | 89% | 200 | 20.62 | 7.71 | 37.39 | 3.03 | 1.91 | 415,771 | — |
+| IBP | Installed Building Products, | lynch | ✅ | 75% | 200 | 20.62 | 7.71 | 37.39 | 3.03 | 1.91 | 415,771 | — |
+| MTCH | Match Group, Inc. | piotroski | ✅ | 89% | 40.55 | 17.04 | — | -242 | 1.42 | — | 2M | — |
+| MTCH | Match Group, Inc. | lynch | ✅ | 75% | 40.55 | 17.04 | — | -242 | 1.42 | — | 2M | — |
+| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 17.18 | 9.09 | 2.25 | 24.66 | 2.26 | 2.62 | 1M | — |
+| AIR | AAR CORP. | piotroski | ✅ | 78% | 116 | 23.89 | 2.62 | 11.02 | 2.84 | — | 383,069 | — |
+| AIR | AAR CORP. | lynch | ✅ | 75% | 116 | 23.89 | 2.62 | 11.02 | 2.84 | — | 383,069 | — |
+| LCII | LCI INDUSTRIES | piotroski | ✅ | 89% | 84.51 | 11.16 | 1.54 | 13.83 | 2.85 | 1.33 | 442,922 | — |
+| OPLN | OPENLANE, Inc. | piotroski | ✅ | 89% | 34.82 | — | 3.00 | 14.32 | 1.16 | — | 883,230 | — |
+| EXTR | Extreme Networks, Inc. | piotroski | ✅ | 89% | 21.52 | 69.42 | 32.79 | 47.54 | 0.93 | — | 2M | — |
+| XPRO | Expro Group Holdings N.V. | piotroski | ✅ | 89% | 16.33 | 36.29 | 1.23 | 3.37 | 2.16 | 0.47 | 614,498 | — |
+| GCO | GENESCO INC | piotroski | ✅ | 89% | 34.54 | 27.63 | 0.65 | 2.34 | 1.64 | 1.46 | 73,366 | — |
+| SENS | Senseonics Holdings, Inc. | piotroski | ✅ | 78% | 10.00 | — | 6.84 | -113 | 4.83 | 1.07 | 569,757 | — |
+| WRBY | Warby Parker Inc. | piotroski | ✅ | 78% | 26.71 | 2,671 | 9.09 | 0.45 | 2.35 | 0.96 | 4M | — |
+| INNV | InnovAge Holding Corp. | piotroski | ✅ | 78% | 9.00 | — | 5.18 | -1.08 | 1.05 | 1.23 | 2M | — |
+| SMG | Scotts Miracle-Gro Co | piotroski | ✅ | 78% | 50.89 | 20.60 | — | -40.62 | 1.27 | -8.67 | 1M | — |
+| CALX | Calix, Inc | piotroski | ✅ | 78% | 33.14 | 127 | 2.67 | 2.08 | 4.24 | 0.23 | 831,795 | — |
+| AEIS | ADVANCED ENERGY INDUSTRIES,  | piotroski | ✅ | 78% | 280 | 72.83 | 7.92 | 10.89 | 1.59 | 0.86 | 342,565 | — |
+| AVNW | Aviat Networks, Inc. | piotroski | ✅ | 78% | 20.09 | 106 | 0.98 | 0.95 | 1.97 | 1.24 | 93,972 | — |
+| SHC | SOTERA HEALTH COMPANY | piotroski | ✅ | 78% | 18.34 | 67.93 | 8.67 | 12.86 | 2.46 | 4.38 | 845,747 | — |
+| ORN | ORION GROUP HOLDINGS, INC. | piotroski | ✅ | 78% | 8.58 | 143 | 2.14 | 1.56 | 1.36 | 1.61 | 835,176 | — |
+| TDAY | USA TODAY CO., INC. | piotroski | ✅ | 78% | 6.42 | 642 | 6.04 | 1.13 | 0.75 | 10.85 | 1M | — |
+| BYD | BOYD GAMING CORP | buffett | ▫️ | 67% | 71.23 | 3.16 | 2.23 | 70.66 | 0.54 | — | 953,700 | — |
+| BYD | BOYD GAMING CORP | graham | ▫️ | 56% | 71.23 | 3.16 | 2.23 | 70.66 | 0.54 | — | 953,700 | — |
+| BYD | BOYD GAMING CORP | lynch | ▫️ | 25% | 71.23 | 3.16 | 2.23 | 70.66 | 0.54 | — | 953,700 | — |
+| BYD | BOYD GAMING CORP | netnet | ▫️ | 25% | 71.23 | 3.16 | 2.23 | 70.66 | 0.54 | — | 953,700 | — |
+| BYD | BOYD GAMING CORP | custom | ▫️ | 0% | 71.23 | 3.16 | 2.23 | 70.66 | 0.54 | — | 953,700 | — |
+| GEF | GREIF, INC. | buffett | ▫️ | 67% | 82.66 | — | — | 28.82 | 1.27 | — | 359,679 | — |
+| GEF | GREIF, INC. | greenblatt | ▫️ | 67% | 82.66 | — | — | 28.82 | 1.27 | — | 359,679 | — |
+| GEF | GREIF, INC. | piotroski | ▫️ | 56% | 82.66 | — | — | 28.82 | 1.27 | — | 359,679 | — |
+| GEF | GREIF, INC. | graham | ▫️ | 44% | 82.66 | — | — | 28.82 | 1.27 | — | 359,679 | — |
+| GEF | GREIF, INC. | lynch | ▫️ | 25% | 82.66 | — | — | 28.82 | 1.27 | — | 359,679 | — |
+| GEF | GREIF, INC. | netnet | ▫️ | 25% | 82.66 | — | — | 28.82 | 1.27 | — | 359,679 | — |
+| GEF | GREIF, INC. | custom | ▫️ | 0% | 82.66 | — | — | 28.82 | 1.27 | — | 359,679 | — |
+| GMED | GLOBUS MEDICAL, INC. | graham | ▫️ | 67% | 74.52 | 19.01 | 2.23 | 11.76 | 4.26 | 0.16 | 2M | — |
+| GMED | GLOBUS MEDICAL, INC. | buffett | ▫️ | 67% | 74.52 | 19.01 | 2.23 | 11.76 | 4.26 | 0.16 | 2M | — |
+| GMED | GLOBUS MEDICAL, INC. | netnet | ▫️ | 50% | 74.52 | 19.01 | 2.23 | 11.76 | 4.26 | 0.16 | 2M | — |
+| GMED | GLOBUS MEDICAL, INC. | greenblatt | ▫️ | 33% | 74.52 | 19.01 | 2.23 | 11.76 | 4.26 | 0.16 | 2M | — |
+| GMED | GLOBUS MEDICAL, INC. | custom | ▫️ | 0% | 74.52 | 19.01 | 2.23 | 11.76 | 4.26 | 0.16 | 2M | — |
+| IPXGU | COLUMBUS CIRCLE CAPITAL CORP | buffett | ▫️ | 33% | — | — | — | 219 | — | -8.31 | — | — |
+| IPXGU | COLUMBUS CIRCLE CAPITAL CORP | lynch | ▫️ | 25% | — | — | — | 219 | — | -8.31 | — | — |
+| IPXGU | COLUMBUS CIRCLE CAPITAL CORP | graham | ▫️ | 0% | — | — | — | 219 | — | -8.31 | — | — |
+| IPXGU | COLUMBUS CIRCLE CAPITAL CORP | piotroski | ▫️ | 0% | — | — | — | 219 | — | -8.31 | — | — |
+| IPXGU | COLUMBUS CIRCLE CAPITAL CORP | greenblatt | ▫️ | 0% | — | — | — | 219 | — | -8.31 | — | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
