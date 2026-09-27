@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-27 15:36 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-27 19:17 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **30** strategy matches passed.
+Screened **75** companies · **32** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| MLI | MUELLER INDUSTRIES INC | buffett | ✅ | 100% | 60.52 | 8.82 | 2.10 | 23.84 | 5.92 | 0.15 | 1M | — |
-| MLI | MUELLER INDUSTRIES INC | greenblatt | ✅ | 100% | 60.52 | 8.82 | 2.10 | 23.84 | 5.92 | 0.15 | 1M | — |
-| MLI | MUELLER INDUSTRIES INC | lynch | ✅ | 100% | 60.52 | 8.82 | 2.10 | 23.84 | 5.92 | 0.15 | 1M | — |
-| MLI | MUELLER INDUSTRIES INC | graham | ✅ | 89% | 60.52 | 8.82 | 2.10 | 23.84 | 5.92 | 0.15 | 1M | — |
-| MLI | MUELLER INDUSTRIES INC | piotroski | ✅ | 78% | 60.52 | 8.82 | 2.10 | 23.84 | 5.92 | 0.15 | 1M | — |
+| POWL | Powell Industries, Inc. | piotroski | ✅ | 78% | 190 | 12.75 | 3.60 | 28.21 | 2.09 | 0.73 | 575,570 | — |
+| POWL | Powell Industries, Inc. | lynch | ✅ | 75% | 190 | 12.75 | 3.60 | 28.21 | 2.09 | 0.73 | 575,570 | — |
 | GRBK | Green Brick Partners, Inc. | buffett | ✅ | 100% | 68.79 | 9.73 | 1.63 | 16.85 | — | 0.32 | 254,259 | — |
 | GRBK | Green Brick Partners, Inc. | lynch | ✅ | 100% | 68.79 | 9.73 | 1.63 | 16.85 | — | 0.32 | 254,259 | — |
-| RILY | BRC Group Holdings, Inc. | greenblatt | ✅ | 100% | 5.71 | 0.58 | — | -179 | — | -10.65 | 410,559 | — |
-| RILY | BRC Group Holdings, Inc. | lynch | ✅ | 75% | 5.71 | 0.58 | — | -179 | — | -10.65 | 410,559 | — |
-| ALSN | ALLISON TRANSMISSION HOLDING | buffett | ✅ | 83% | 114 | 15.53 | 5.18 | 33.37 | 4.85 | 2.26 | 662,429 | — |
-| ALSN | ALLISON TRANSMISSION HOLDING | lynch | ✅ | 75% | 114 | 15.53 | 5.18 | 33.37 | 4.85 | 2.26 | 662,429 | — |
-| AES | THE AES CORPORATION | greenblatt | ✅ | 100% | 14.87 | 11.80 | 2.61 | 22.40 | 0.77 | — | 5M | — |
-| KFY | KORN FERRY | piotroski | ✅ | 100% | 71.73 | 13.74 | 1.91 | 14.06 | 1.94 | 1.06 | 591,726 | — |
-| KFY | KORN FERRY | lynch | ✅ | 75% | 71.73 | 13.74 | 1.91 | 14.06 | 1.94 | 1.06 | 591,726 | — |
-| MTCH | Match Group, Inc. | piotroski | ✅ | 89% | 40.55 | 17.04 | — | -242 | 1.42 | — | 2M | — |
-| MTCH | Match Group, Inc. | lynch | ✅ | 75% | 40.55 | 17.04 | — | -242 | 1.42 | — | 2M | — |
-| FSS | FEDERAL SIGNAL CORPORATION | lynch | ✅ | 75% | 115 | 28.62 | 5.11 | 17.84 | 3.02 | 0.73 | 360,716 | — |
-| ACEL | Accel Entertainment, Inc. | piotroski | ✅ | 78% | 11.07 | 18.45 | 3.55 | 19.09 | 2.61 | — | 269,970 | — |
-| ORI | OLD REPUBLIC INTERNATIONAL C | piotroski | ✅ | 78% | 37.74 | 10.15 | 1.60 | 15.82 | — | 4.05 | 1M | — |
-| BFAM | BRIGHT HORIZONS FAMILY SOLUT | piotroski | ✅ | 89% | 65.86 | 19.60 | 2.82 | 14.42 | 0.52 | 1.90 | 841,356 | — |
-| BFAM | BRIGHT HORIZONS FAMILY SOLUT | lynch | ✅ | 75% | 65.86 | 19.60 | 2.82 | 14.42 | 0.52 | 1.90 | 841,356 | — |
-| AM | ANTERO MIDSTREAM CORPORATION | piotroski | ✅ | 78% | 20.93 | 24.34 | 5.12 | 20.95 | 3.41 | 1.98 | 3M | — |
-| UMBF | UMB FINANCIAL CORP | lynch | ✅ | 75% | 136 | 14.62 | 1.30 | 9.13 | — | 8.50 | 713,777 | — |
-| OPLN | OPENLANE, Inc. | piotroski | ✅ | 89% | 34.82 | — | 3.00 | 14.32 | 1.16 | — | 883,230 | — |
-| VCEL | VERICEL CORPORATION | piotroski | ✅ | 100% | 39.71 | 124 | 5.84 | 4.66 | 5.03 | 0.38 | 359,338 | — |
-| VCEL | VERICEL CORPORATION | lynch | ✅ | 75% | 39.71 | 124 | 5.84 | 4.66 | 5.03 | 0.38 | 359,338 | — |
-| FUL | FULLER H B CO | piotroski | ✅ | 78% | 50.06 | 18.20 | 1.38 | 7.59 | 1.70 | 1.59 | 1M | — |
-| SPHR | SPHERE ENTERTAINMENT CO. | piotroski | ✅ | 78% | 141 | 191 | 2.86 | 1.50 | 1.09 | 0.89 | 402,937 | — |
-| LILA | Liberty Latin America Ltd. | piotroski | ✅ | 78% | 8.48 | — | 3.04 | -110 | 1.14 | 20.09 | 308,799 | — |
-| ORN | ORION GROUP HOLDINGS, INC. | piotroski | ✅ | 78% | 8.58 | 143 | 2.14 | 1.56 | 1.36 | 1.61 | 835,176 | — |
-| MLI | MUELLER INDUSTRIES INC | netnet | ▫️ | 50% | 60.52 | 8.82 | 2.10 | 23.84 | 5.92 | 0.15 | 1M | — |
-| MLI | MUELLER INDUSTRIES INC | custom | ▫️ | 0% | 60.52 | 8.82 | 2.10 | 23.84 | 5.92 | 0.15 | 1M | — |
+| USLM | UNITED STATES LIME & MINERAL | lynch | ✅ | 100% | 111 | 23.85 | 5.07 | 21.29 | 19.27 | 0.08 | 82,189 | — |
+| USLM | UNITED STATES LIME & MINERAL | buffett | ✅ | 83% | 111 | 23.85 | 5.07 | 21.29 | 19.27 | 0.08 | 82,189 | — |
+| NSSC | NAPCO SECURITY TECHNOLOGIES, | buffett | ✅ | 100% | 35.66 | 29.72 | 6.70 | 22.53 | 4.90 | 0.25 | 303,558 | — |
+| NSSC | NAPCO SECURITY TECHNOLOGIES, | lynch | ✅ | 75% | 35.66 | 29.72 | 6.70 | 22.53 | 4.90 | 0.25 | 303,558 | — |
+| ANNAW | AleAnna, Inc. | piotroski | ✅ | 78% | 0.30 | 7.50 | 0.21 | 4.91 | 1.93 | 0.73 | 8,475 | — |
+| BELFA | BEL FUSE INC /NJ | piotroski | ✅ | 89% | 203 | — | — | 14.46 | 3.02 | 0.98 | 65,337 | — |
+| DAKT | Daktronics, Inc. | piotroski | ✅ | 89% | 17.02 | 18.50 | 2.79 | 15.09 | 2.31 | — | 597,295 | — |
+| DAKT | Daktronics, Inc. | lynch | ✅ | 75% | 17.02 | 18.50 | 2.79 | 15.09 | 2.31 | — | 597,295 | — |
+| LMB | LIMBACH HOLDINGS, INC. | piotroski | ✅ | 78% | 51.48 | 15.94 | 3.18 | 19.97 | 1.44 | 0.95 | 131,369 | — |
+| LMB | LIMBACH HOLDINGS, INC. | lynch | ✅ | 75% | 51.48 | 15.94 | 3.18 | 19.97 | 1.44 | 0.95 | 131,369 | — |
+| FTDR | Frontdoor, Inc. | piotroski | ✅ | 89% | 73.99 | 21.63 | 22.78 | 105 | 1.55 | — | 683,989 | — |
+| FTDR | Frontdoor, Inc. | buffett | ✅ | 83% | 73.99 | 21.63 | 22.78 | 105 | 1.55 | — | 683,989 | — |
+| BANC | BANC OF CALIFORNIA, INC. | piotroski | ✅ | 78% | 17.94 | 15.33 | 0.82 | 6.47 | — | 8.83 | 2M | — |
+| SKY | Champion Homes, Inc. | piotroski | ✅ | 89% | 87.72 | 23.97 | 3.15 | 13.15 | 2.48 | — | 407,473 | — |
+| PCTY | PAYLOCITY HOLDING CORPORATIO | piotroski | ✅ | 89% | 143 | 29.14 | 6.43 | 22.08 | 1.09 | 3.00 | 746,441 | — |
+| PCTY | PAYLOCITY HOLDING CORPORATIO | lynch | ✅ | 75% | 143 | 29.14 | 6.43 | 22.08 | 1.09 | 3.00 | 746,441 | — |
+| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 129 | 20.36 | 2.14 | 10.49 | 1.53 | — | 544,535 | — |
+| TRN | TRINITY INDUSTRIES INC | greenblatt | ✅ | 100% | 27.91 | 9.15 | 2.15 | 23.50 | — | 6.76 | 683,548 | — |
+| TRN | TRINITY INDUSTRIES INC | piotroski | ✅ | 78% | 27.91 | 9.15 | 2.15 | 23.50 | — | 6.76 | 683,548 | — |
+| AXTA | AXALTA COATING SYSTEMS LTD. | lynch | ✅ | 75% | 32.89 | 18.90 | 3.04 | 16.11 | 2.06 | 2.22 | 2M | — |
+| BCO | BRINK’S CO | piotroski | ✅ | 78% | 107 | 22.78 | 16.35 | 71.91 | 1.51 | 24.96 | 364,183 | — |
+| KRT | Karat Packaging Inc. | piotroski | ✅ | 78% | 53.09 | 34.03 | 7.17 | 21.07 | 2.30 | 0.88 | 197,605 | — |
+| CBL | CBL & ASSOCIATES PROPERTIES, | piotroski | ✅ | 78% | 51.91 | 11.96 | 4.27 | 36.26 | — | 6.31 | 216,086 | — |
+| CENTA | Central Garden & Pet Company | graham | ✅ | 100% | 34.06 | 13.36 | 1.37 | 10.29 | 3.67 | — | 275,873 | — |
+| CENTA | Central Garden & Pet Company | piotroski | ✅ | 89% | 34.06 | 13.36 | 1.37 | 10.29 | 3.67 | — | 275,873 | — |
+| PFH | PRUDENTIAL FINANCIAL INC | piotroski | ✅ | 78% | 15.05 | 1.51 | 0.16 | 11.02 | — | 22.76 | 63,778 | — |
+| NXDR | Nextdoor Holdings, Inc | piotroski | ✅ | 78% | 2.51 | — | 2.25 | -12.57 | 14.03 | 0.13 | 2M | — |
+| BJRI | BJ’S RESTAURANTS, INC. | piotroski | ✅ | 78% | 60.13 | 27.84 | 3.71 | 13.33 | 0.40 | 1.77 | 266,420 | — |
+| POWL | Powell Industries, Inc. | graham | ▫️ | 78% | 190 | 12.75 | 3.60 | 28.21 | 2.09 | 0.73 | 575,570 | — |
+| POWL | Powell Industries, Inc. | buffett | ▫️ | 67% | 190 | 12.75 | 3.60 | 28.21 | 2.09 | 0.73 | 575,570 | — |
+| POWL | Powell Industries, Inc. | greenblatt | ▫️ | 67% | 190 | 12.75 | 3.60 | 28.21 | 2.09 | 0.73 | 575,570 | — |
+| POWL | Powell Industries, Inc. | netnet | ▫️ | 50% | 190 | 12.75 | 3.60 | 28.21 | 2.09 | 0.73 | 575,570 | — |
+| POWL | Powell Industries, Inc. | custom | ▫️ | 0% | 190 | 12.75 | 3.60 | 28.21 | 2.09 | 0.73 | 575,570 | — |
 | GRBK | Green Brick Partners, Inc. | graham | ▫️ | 67% | 68.79 | 9.73 | 1.63 | 16.85 | — | 0.32 | 254,259 | — |
 | GRBK | Green Brick Partners, Inc. | greenblatt | ▫️ | 67% | 68.79 | 9.73 | 1.63 | 16.85 | — | 0.32 | 254,259 | — |
 | GRBK | Green Brick Partners, Inc. | piotroski | ▫️ | 44% | 68.79 | 9.73 | 1.63 | 16.85 | — | 0.32 | 254,259 | — |
 | GRBK | Green Brick Partners, Inc. | netnet | ▫️ | 25% | 68.79 | 9.73 | 1.63 | 16.85 | — | 0.32 | 254,259 | — |
 | GRBK | Green Brick Partners, Inc. | custom | ▫️ | 0% | 68.79 | 9.73 | 1.63 | 16.85 | — | 0.32 | 254,259 | — |
-| UROY | Uranium Royalty Corp. | lynch | ▫️ | 50% | 4.14 | 14.28 | 1.85 | 12.87 | 5.94 | 0.19 | 2M | — |
-| UROY | Uranium Royalty Corp. | netnet | ▫️ | 50% | 4.14 | 14.28 | 1.85 | 12.87 | 5.94 | 0.19 | 2M | — |
-| UROY | Uranium Royalty Corp. | graham | ▫️ | 44% | 4.14 | 14.28 | 1.85 | 12.87 | 5.94 | 0.19 | 2M | — |
-| UROY | Uranium Royalty Corp. | buffett | ▫️ | 33% | 4.14 | 14.28 | 1.85 | 12.87 | 5.94 | 0.19 | 2M | — |
-| UROY | Uranium Royalty Corp. | piotroski | ▫️ | 33% | 4.14 | 14.28 | 1.85 | 12.87 | 5.94 | 0.19 | 2M | — |
-| UROY | Uranium Royalty Corp. | greenblatt | ▫️ | 33% | 4.14 | 14.28 | 1.85 | 12.87 | 5.94 | 0.19 | 2M | — |
-| UROY | Uranium Royalty Corp. | custom | ▫️ | 0% | 4.14 | 14.28 | 1.85 | 12.87 | 5.94 | 0.19 | 2M | — |
-| RILY | BRC Group Holdings, Inc. | buffett | ▫️ | 50% | 5.71 | 0.58 | — | -179 | — | -10.65 | 410,559 | — |
-| RILY | BRC Group Holdings, Inc. | piotroski | ▫️ | 44% | 5.71 | 0.58 | — | -179 | — | -10.65 | 410,559 | — |
-| RILY | BRC Group Holdings, Inc. | graham | ▫️ | 33% | 5.71 | 0.58 | — | -179 | — | -10.65 | 410,559 | — |
-| RILY | BRC Group Holdings, Inc. | netnet | ▫️ | 25% | 5.71 | 0.58 | — | -179 | — | -10.65 | 410,559 | — |
-| RILY | BRC Group Holdings, Inc. | custom | ▫️ | 0% | 5.71 | 0.58 | — | -179 | — | -10.65 | 410,559 | — |
-| ALSN | ALLISON TRANSMISSION HOLDING | graham | ▫️ | 56% | 114 | 15.53 | 5.18 | 33.37 | 4.85 | 2.26 | 662,429 | — |
+| USLM | UNITED STATES LIME & MINERAL | piotroski | ▫️ | 67% | 111 | 23.85 | 5.07 | 21.29 | 19.27 | 0.08 | 82,189 | — |
+| USLM | UNITED STATES LIME & MINERAL | greenblatt | ▫️ | 67% | 111 | 23.85 | 5.07 | 21.29 | 19.27 | 0.08 | 82,189 | — |
+| USLM | UNITED STATES LIME & MINERAL | graham | ▫️ | 56% | 111 | 23.85 | 5.07 | 21.29 | 19.27 | 0.08 | 82,189 | — |
+| USLM | UNITED STATES LIME & MINERAL | netnet | ▫️ | 50% | 111 | 23.85 | 5.07 | 21.29 | 19.27 | 0.08 | 82,189 | — |
+| USLM | UNITED STATES LIME & MINERAL | custom | ▫️ | 0% | 111 | 23.85 | 5.07 | 21.29 | 19.27 | 0.08 | 82,189 | — |
+| INSW | INTERNATIONAL SEAWAYS, INC. | buffett | ▫️ | 67% | 106 | 16.96 | 2.59 | 15.31 | 3.71 | 0.32 | 498,352 | — |
+| INSW | INTERNATIONAL SEAWAYS, INC. | piotroski | ▫️ | 67% | 106 | 16.96 | 2.59 | 15.31 | 3.71 | 0.32 | 498,352 | — |
+| INSW | INTERNATIONAL SEAWAYS, INC. | lynch | ▫️ | 50% | 106 | 16.96 | 2.59 | 15.31 | 3.71 | 0.32 | 498,352 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
