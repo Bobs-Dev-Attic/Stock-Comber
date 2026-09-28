@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-BBW,BUILD-A-BEAR WORKSHOP INC,greenblatt,True,3,3,100.0,25.77,6.46,2.17,33.67,1.55,—,32.62,"355,169",—
-SAFX,"XCF Global, Inc.",greenblatt,True,3,3,100.0,0.37,0.72,1.41,197,0.11,10.14,1.76,10M,—
+UCO,PROSHARES TRUST II,greenblatt,True,3,3,100.0,51.92,3.76,1.12,29.91,—,0.06,120,3M,—
+PD,"PAGERDUTY, INC.",greenblatt,True,3,3,100.0,14.38,7.69,5.27,68.37,2.01,2.84,10.71,2M,—
 PRI,"Primerica, Inc.",greenblatt,True,3,3,100.0,276,12.03,3.68,30.71,—,5.14,196,"143,853",—
 PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,276,12.03,3.68,30.71,—,5.14,196,"143,853",—
-GMED,"GLOBUS MEDICAL, INC.",piotroski,True,9,9,100.0,74.52,19.01,2.23,11.76,4.26,0.16,54.25,2M,—
-GMED,"GLOBUS MEDICAL, INC.",lynch,True,4,4,100.0,74.52,19.01,2.23,11.76,4.26,0.16,54.25,2M,—
-MCRI,"MONARCH CASINO & RESORT, INC.",piotroski,True,9,9,100.0,118,21.68,4.09,18.86,0.86,0.33,59.33,"180,160",—
-MCRI,"MONARCH CASINO & RESORT, INC.",lynch,True,4,4,100.0,118,21.68,4.09,18.86,0.86,0.33,59.33,"180,160",—
-MCRI,"MONARCH CASINO & RESORT, INC.",buffett,True,5,6,83.3,118,21.68,4.09,18.86,0.86,0.33,59.33,"180,160",—
-ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.30,7.50,0.21,4.91,1.93,0.73,1.14,"8,475",—
-PJT,PJT Partners Inc.,buffett,True,5,6,83.3,152,—,—,58.43,—,2.71,—,"262,259",—
-PJT,PJT Partners Inc.,piotroski,True,7,9,77.8,152,—,—,58.43,—,2.71,—,"262,259",—
-KFY,KORN FERRY,piotroski,True,9,9,100.0,71.73,13.74,1.91,14.06,1.94,1.06,66.42,"591,726",—
-KFY,KORN FERRY,lynch,True,3,4,75.0,71.73,13.74,1.91,14.06,1.94,1.06,66.42,"591,726",—
-PDYNW,Palladyne AI Corp.,netnet,True,4,4,100.0,0.00,0.01,0.00,13.44,9.28,0.28,3.09,4M,—
-PRDO,PERDOCEO EDUCATION CORP,piotroski,True,8,9,88.9,30.49,12.60,2.07,16.45,5.06,—,28.29,"860,042",—
-LMB,"LIMBACH HOLDINGS, INC.",piotroski,True,7,9,77.8,51.48,15.94,3.18,19.97,1.44,0.95,34.31,"131,369",—
-LMB,"LIMBACH HOLDINGS, INC.",lynch,True,3,4,75.0,51.48,15.94,3.18,19.97,1.44,0.95,34.31,"131,369",—
 FTDR,"Frontdoor, Inc.",piotroski,True,8,9,88.9,73.99,21.63,22.78,105,1.55,—,15.81,"683,989",—
 FTDR,"Frontdoor, Inc.",buffett,True,5,6,83.3,73.99,21.63,22.78,105,1.55,—,15.81,"683,989",—
-IIIN,Insteel Industries Inc.,piotroski,True,7,9,77.8,29.48,14.04,1.55,11.04,3.97,—,29.96,"120,327",—
-IIIN,Insteel Industries Inc.,lynch,True,3,4,75.0,29.48,14.04,1.55,11.04,3.97,—,29.96,"120,327",—
+PAYC,"Paycom Software, Inc.",buffett,True,5,6,83.3,220,27.28,7.14,26.19,1.09,3.39,74.90,"232,164",—
+GNTX,GENTEX CORPORATION,buffett,True,5,6,83.3,22.39,12.87,1.96,15.47,2.91,0.18,21.14,2M,—
+IIIN,Insteel Industries Inc.,piotroski,True,7,9,77.8,29.44,14.02,1.55,11.04,3.97,—,29.96,"51,215",—
+IIIN,Insteel Industries Inc.,lynch,True,3,4,75.0,29.44,14.02,1.55,11.04,3.97,—,29.96,"51,215",—
 VISN,"Vistance Networks, Inc.",greenblatt,True,3,3,100.0,6.22,0.65,—,-227,3.88,-9.06,—,6M,—
-CRVL,CORVEL CORPORATION,buffett,True,5,6,83.3,74.33,34.73,9.73,27.99,2.03,0.63,19.18,"213,849",—
-CRVL,CORVEL CORPORATION,piotroski,True,7,9,77.8,74.33,34.73,9.73,27.99,2.03,0.63,19.18,"213,849",—
-CRVL,CORVEL CORPORATION,lynch,True,3,4,75.0,74.33,34.73,9.73,27.99,2.03,0.63,19.18,"213,849",—
-HALO,"HALOZYME THERAPEUTICS, INC.",buffett,True,5,6,83.3,114,44.49,289,649,4.66,50.73,4.76,2M,—
-AENTW,ALLIANCE ENTERTAINMENT HOLDING CORPORATION,lynch,True,3,4,75.0,0.21,0.81,0.09,11.20,1.34,2.41,3.66,"5,115",—
-OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,22.92,33.22,4.38,13.20,1.91,0.30,9.01,"908,624",—
-DRVN,Driven Brands Holdings Inc.,piotroski,True,7,9,77.8,12.31,14.48,2.63,18.27,0.75,4.42,9.46,1M,—
-RSI,"Rush Street Interactive, Inc.",piotroski,True,7,9,77.8,19.87,64.10,31.87,22.62,1.93,2.41,2.09,3M,—
-KRT,Karat Packaging Inc.,piotroski,True,7,9,77.8,53.09,34.03,7.17,21.07,2.30,0.88,16.12,"197,605",—
-KNTK,KINETIK HOLDINGS INC.,lynch,True,3,4,75.0,51.21,19.47,—,-31.53,0.69,-7.37,—,1M,—
-HLIO,"HELIOS TECHNOLOGIES, INC.",piotroski,True,9,9,100.0,68.64,47.34,2.45,5.20,2.90,0.63,30.21,"534,260",—
-HLIO,"HELIOS TECHNOLOGIES, INC.",lynch,True,3,4,75.0,68.64,47.34,2.45,5.20,2.90,0.63,30.21,"534,260",—
-PHIN,PHINIA INC.,piotroski,True,8,9,88.9,62.04,19.15,1.57,8.19,1.86,1.41,53.71,"344,720",—
-LFST,"LifeStance Health Group, Inc.",piotroski,True,8,9,88.9,11.84,479,3.04,0.64,1.65,0.45,1.47,8M,—
-CBZ,"CBIZ, Inc.",piotroski,True,7,9,77.8,54.68,29.88,1.96,6.55,1.22,1.50,33.87,"456,512",—
-PLXS,PLEXUS CORP.,piotroski,True,8,9,88.9,263,42.03,4.99,11.89,1.58,1.16,86.13,"207,000",—
-NEOG,Neogen Corporation,piotroski,True,8,9,88.9,13.76,—,1.43,-0.38,3.82,0.60,—,5M,—
-BJRI,"BJ’S RESTAURANTS, INC.",piotroski,True,7,9,77.8,60.13,27.84,3.71,13.33,0.40,1.77,28.05,"266,420",—
-LILA,Liberty Latin America Ltd.,piotroski,True,7,9,77.8,8.48,—,3.04,-110,1.14,20.09,—,"308,801",—
-BBW,BUILD-A-BEAR WORKSHOP INC,graham,False,5,9,55.6,25.77,6.46,2.17,33.67,1.55,—,32.62,"355,169",—
-BBW,BUILD-A-BEAR WORKSHOP INC,piotroski,False,5,9,55.6,25.77,6.46,2.17,33.67,1.55,—,32.62,"355,169",—
-BBW,BUILD-A-BEAR WORKSHOP INC,buffett,False,3,6,50.0,25.77,6.46,2.17,33.67,1.55,—,32.62,"355,169",—
-BBW,BUILD-A-BEAR WORKSHOP INC,lynch,False,1,4,25.0,25.77,6.46,2.17,33.67,1.55,—,32.62,"355,169",—
-BBW,BUILD-A-BEAR WORKSHOP INC,netnet,False,1,4,25.0,25.77,6.46,2.17,33.67,1.55,—,32.62,"355,169",—
-BBW,BUILD-A-BEAR WORKSHOP INC,custom,False,0,0,0.0,25.77,6.46,2.17,33.67,1.55,—,32.62,"355,169",—
-SAFX,"XCF Global, Inc.",graham,False,4,9,44.4,0.37,0.72,1.41,197,0.11,10.14,1.76,10M,—
-SAFX,"XCF Global, Inc.",buffett,False,2,6,33.3,0.37,0.72,1.41,197,0.11,10.14,1.76,10M,—
+SHOE,"Shoe Station Group, Inc.",graham,True,8,9,88.9,13.00,6.84,0.52,7.58,3.76,0.74,32.72,1M,—
+KEX,KIRBY CORPORATION,piotroski,True,8,9,88.9,129,20.36,2.14,10.49,1.53,—,92.69,"544,535",—
+AXTA,AXALTA COATING SYSTEMS LTD.,lynch,True,3,4,75.0,32.89,18.90,3.04,16.11,2.06,2.22,20.57,2M,—
+AM,ANTERO MIDSTREAM CORPORATION,piotroski,True,7,9,77.8,20.93,24.34,5.12,20.95,3.41,1.98,8.90,3M,—
+SIRI,SIRIUS XM HOLDINGS INC.,lynch,True,3,4,75.0,25.86,11.59,0.80,6.96,0.30,1.36,40.31,5M,—
+AGCO,AGCO CORP /DE,piotroski,True,8,9,88.9,118,12.15,2.06,17.00,1.39,1.72,112,"330,831",—
+POST,"Post Holdings, Inc.",lynch,True,3,4,75.0,73.15,13.28,1.23,8.94,1.67,2.60,86.01,"723,169",—
+BBWI,"BATH & BODY WORKS, INC.",greenblatt,True,3,3,100.0,16.03,5.15,—,-50.66,1.27,—,—,6M,—
+OPLN,"OPENLANE, Inc.",piotroski,True,8,9,88.9,34.65,—,2.99,14.32,1.16,—,—,"416,677",—
+EMBC,EMBECTA CORP.,piotroski,True,7,9,77.8,5.90,3.64,—,-14.66,2.41,—,—,"791,824",—
+DLB,"Dolby Laboratories, Inc.",piotroski,True,7,9,77.8,58.11,22.18,2.16,9.72,3.17,0.23,39.82,"227,305",—
+SHAK,SHAKE SHACK INC.,piotroski,True,8,9,88.9,57.37,52.63,4.57,8.70,1.76,2.56,17.55,"933,039",—
+MAGN,Magnera Corporation,piotroski,True,7,9,77.8,11.84,—,0.40,-14.94,2.37,2.75,—,"210,535",—
+UE,URBAN EDGE PROPERTIES,piotroski,True,7,9,77.8,19.90,26.89,1.82,6.80,—,1.41,13.49,"781,555",—
+LFST,"LifeStance Health Group, Inc.",piotroski,True,8,9,88.9,11.90,482,3.06,0.64,1.65,0.45,1.47,"964,774",—
+KOP,KOPPERS HOLDINGS INC.,piotroski,True,8,9,88.9,46.59,17.00,1.66,9.76,2.94,2.29,41.64,"30,752",—
+UCO,PROSHARES TRUST II,lynch,False,2,4,50.0,51.92,3.76,1.12,29.91,—,0.06,120,3M,—
+UCO,PROSHARES TRUST II,graham,False,4,9,44.4,51.92,3.76,1.12,29.91,—,0.06,120,3M,—
+UCO,PROSHARES TRUST II,buffett,False,2,6,33.3,51.92,3.76,1.12,29.91,—,0.06,120,3M,—
+UCO,PROSHARES TRUST II,piotroski,False,3,9,33.3,51.92,3.76,1.12,29.91,—,0.06,120,3M,—
+UCO,PROSHARES TRUST II,netnet,False,1,4,25.0,51.92,3.76,1.12,29.91,—,0.06,120,3M,—
+UCO,PROSHARES TRUST II,custom,False,0,0,0.0,51.92,3.76,1.12,29.91,—,0.06,120,3M,—
+PD,"PAGERDUTY, INC.",piotroski,False,6,9,66.7,14.38,7.69,5.27,68.37,2.01,2.84,10.71,2M,—
+PD,"PAGERDUTY, INC.",buffett,False,3,6,50.0,14.38,7.69,5.27,68.37,2.01,2.84,10.71,2M,—
+PD,"PAGERDUTY, INC.",graham,False,3,9,33.3,14.38,7.69,5.27,68.37,2.01,2.84,10.71,2M,—
+PD,"PAGERDUTY, INC.",lynch,False,1,4,25.0,14.38,7.69,5.27,68.37,2.01,2.84,10.71,2M,—
+PD,"PAGERDUTY, INC.",netnet,False,1,4,25.0,14.38,7.69,5.27,68.37,2.01,2.84,10.71,2M,—
+PD,"PAGERDUTY, INC.",custom,False,0,0,0.0,14.38,7.69,5.27,68.37,2.01,2.84,10.71,2M,—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,piotroski,False,4,9,44.4,25.15,—,—,—,2.10,—,—,"373,945",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,graham,False,3,9,33.3,25.15,—,—,—,2.10,—,—,"373,945",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,buffett,False,2,6,33.3,25.15,—,—,—,2.10,—,—,"373,945",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,greenblatt,False,1,3,33.3,25.15,—,—,—,2.10,—,—,"373,945",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,lynch,False,1,4,25.0,25.15,—,—,—,2.10,—,—,"373,945",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,netnet,False,1,4,25.0,25.15,—,—,—,2.10,—,—,"373,945",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,custom,False,0,0,0.0,25.15,—,—,—,2.10,—,—,"373,945",—
+PRI,"Primerica, Inc.",buffett,False,4,6,66.7,276,12.03,3.68,30.71,—,5.14,196,"143,853",—
+PRI,"Primerica, Inc.",graham,False,5,9,55.6,276,12.03,3.68,30.71,—,5.14,196,"143,853",—
+PRI,"Primerica, Inc.",lynch,False,2,4,50.0,276,12.03,3.68,30.71,—,5.14,196,"143,853",—
+PRI,"Primerica, Inc.",netnet,False,1,4,25.0,276,12.03,3.68,30.71,—,5.14,196,"143,853",—
