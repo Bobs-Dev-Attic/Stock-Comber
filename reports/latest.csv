@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-USLM,UNITED STATES LIME & MINERALS INC,lynch,True,4,4,100.0,111,23.85,5.07,21.29,19.27,0.08,48.03,"82,189",—
-USLM,UNITED STATES LIME & MINERALS INC,buffett,True,5,6,83.3,111,23.85,5.07,21.29,19.27,0.08,48.03,"82,189",—
-CASH,"PATHWARD FINANCIAL, INC.",greenblatt,True,3,3,100.0,73.80,9.38,2.02,21.66,—,7.36,80.37,"173,251",—
-CASH,"PATHWARD FINANCIAL, INC.",buffett,True,5,6,83.3,73.80,9.38,2.02,21.66,—,7.36,80.37,"173,251",—
-TREE,"LendingTree, Inc.",greenblatt,True,3,3,100.0,24.62,2.28,1.21,52.76,1.67,1.98,70.33,"292,624",—
-ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.30,7.50,0.21,4.91,1.93,0.73,1.14,"8,475",—
-AROC,"Archrock, Inc.",piotroski,True,8,9,88.9,30.43,16.63,3.57,21.61,1.54,1.92,18.75,1M,—
-PJT,PJT Partners Inc.,buffett,True,5,6,83.3,152,—,—,58.43,—,2.71,—,"303,262",—
-PJT,PJT Partners Inc.,piotroski,True,7,9,77.8,152,—,—,58.43,—,2.71,—,"303,262",—
-MCHB,MECHANICS BANCORP,lynch,True,3,4,75.0,15.17,11.94,1.11,9.28,—,6.81,19.80,"417,573",—
-DAKT,"Daktronics, Inc.",piotroski,True,8,9,88.9,17.02,18.50,2.79,15.09,2.31,—,11.23,"597,295",—
-DAKT,"Daktronics, Inc.",lynch,True,3,4,75.0,17.02,18.50,2.79,15.09,2.31,—,11.23,"597,295",—
+GOOGM,Alphabet Inc.,graham,True,9,9,100.0,48.90,4.52,1.44,31.83,2.01,0.43,90.88,3M,—
+GOOGM,Alphabet Inc.,buffett,True,6,6,100.0,48.90,4.52,1.44,31.83,2.01,0.43,90.88,3M,—
+GOOGM,Alphabet Inc.,greenblatt,True,3,3,100.0,48.90,4.52,1.44,31.83,2.01,0.43,90.88,3M,—
+GOOGM,Alphabet Inc.,lynch,True,4,4,100.0,48.90,4.52,1.44,31.83,2.01,0.43,90.88,3M,—
+SAFX,"XCF Global, Inc.",greenblatt,True,3,3,100.0,0.37,0.72,1.41,197,0.11,10.14,1.76,10M,—
+LRN,"Stride, Inc.",lynch,True,4,4,100.0,78.56,11.00,2.28,20.72,5.94,0.49,74.43,"488,473",—
+LRN,"Stride, Inc.",piotroski,True,8,9,88.9,78.56,11.00,2.28,20.72,5.94,0.49,74.43,"488,473",—
+LRN,"Stride, Inc.",buffett,True,5,6,83.3,78.56,11.00,2.28,20.72,5.94,0.49,74.43,"488,473",—
+SON,Sonoco Products Company,piotroski,True,8,9,88.9,50.06,4.97,1.38,27.75,1.05,2.08,90.68,"785,846",—
+SON,Sonoco Products Company,lynch,True,3,4,75.0,50.06,4.97,1.38,27.75,1.05,2.08,90.68,"785,846",—
+WING,WINGSTOP INC.,lynch,True,4,4,100.0,99.07,15.95,—,-23.65,3.26,-1.94,—,1M,—
+NSSC,"NAPCO SECURITY TECHNOLOGIES, INC",buffett,True,6,6,100.0,35.66,29.72,6.70,22.53,4.90,0.25,11.99,"303,558",—
+NSSC,"NAPCO SECURITY TECHNOLOGIES, INC",lynch,True,3,4,75.0,35.66,29.72,6.70,22.53,4.90,0.25,11.99,"303,558",—
+ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",buffett,True,5,6,83.3,114,15.53,5.18,33.37,4.85,2.26,60.19,"662,429",—
+ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",lynch,True,3,4,75.0,114,15.53,5.18,33.37,4.85,2.26,60.19,"662,429",—
+GBX,"THE GREENBRIER COMPANIES, INC.",lynch,True,3,4,75.0,42.54,6.70,0.89,13.32,—,—,82.54,"307,595",—
+SFM,"Sprouts Farmers Market, Inc.",greenblatt,True,3,3,100.0,62.49,11.77,4.40,37.32,0.93,1.96,41.21,3M,—
+SFM,"Sprouts Farmers Market, Inc.",piotroski,True,7,9,77.8,62.49,11.77,4.40,37.32,0.93,1.96,41.21,3M,—
 LMB,"LIMBACH HOLDINGS, INC.",piotroski,True,7,9,77.8,51.48,15.94,3.18,19.97,1.44,0.95,34.31,"131,369",—
 LMB,"LIMBACH HOLDINGS, INC.",lynch,True,3,4,75.0,51.48,15.94,3.18,19.97,1.44,0.95,34.31,"131,369",—
-PAYC,"Paycom Software, Inc.",buffett,True,5,6,83.3,220,27.28,7.14,26.19,1.09,3.39,74.90,"442,152",—
-GNTX,GENTEX CORPORATION,buffett,True,5,6,83.3,22.58,12.98,1.98,15.47,2.91,0.18,21.14,2M,—
-GEO,"The GEO Group, Inc.",piotroski,True,7,9,77.8,31.22,17.15,2.90,16.89,2.01,—,21.01,1M,—
-AXTA,AXALTA COATING SYSTEMS LTD.,lynch,True,3,4,75.0,32.89,18.90,3.04,16.11,2.06,2.22,20.57,2M,—
-GEO,"The GEO Group, Inc.",lynch,True,3,4,75.0,31.22,17.15,2.90,16.89,2.01,—,21.01,1M,—
-SIRI,SIRIUS XM HOLDINGS INC.,lynch,True,3,4,75.0,25.86,11.59,0.80,6.96,0.30,1.36,40.31,5M,—
-EGP,"EASTGROUP PROPERTIES, INC.",piotroski,True,7,9,77.8,202,41.38,3.04,7.36,—,0.55,85.17,"431,755",—
-EGP,"EASTGROUP PROPERTIES, INC.",lynch,True,3,4,75.0,202,41.38,3.04,7.36,—,0.55,85.17,"431,755",—
+FTDR,"Frontdoor, Inc.",piotroski,True,8,9,88.9,73.99,21.63,22.78,105,1.55,—,15.81,"683,989",—
+FTDR,"Frontdoor, Inc.",buffett,True,5,6,83.3,73.99,21.63,22.78,105,1.55,—,15.81,"683,989",—
+HOG,"Harley-Davidson, Inc.",graham,True,9,9,100.0,25.45,9.15,0.98,10.79,2.10,—,40.25,2M,—
+HOG,"Harley-Davidson, Inc.",piotroski,True,8,9,88.9,25.45,9.15,0.98,10.79,2.10,—,40.25,2M,—
+CSTM,Constellium SE,piotroski,True,9,9,100.0,24.89,12.96,3.71,28.68,1.29,4.60,17.02,1M,—
+BFH,"BREAD FINANCIAL HOLDINGS, INC.",lynch,True,3,4,75.0,103,9.45,1.47,15.57,—,5.81,131,"457,202",—
+PSN,Parsons Corporation,lynch,True,3,4,75.0,43.07,19.58,1.79,9.13,1.75,1.14,34.53,1M,—
+BCPC,Balchem Corporation,piotroski,True,9,9,100.0,168,35.35,4.35,12.31,2.07,0.34,64.20,"212,521",—
+OPLN,"OPENLANE, Inc.",piotroski,True,8,9,88.9,34.82,—,3.00,14.32,1.16,—,—,"883,230",—
 ABM,ABM INDUSTRIES INCORPORATED,piotroski,True,8,9,88.9,49.78,19.22,1.75,9.09,1.48,1.95,40.74,"413,242",—
-BCO,BRINK’S CO,piotroski,True,7,9,77.8,107,22.78,16.35,71.91,1.51,24.96,26.26,"364,183",—
 KNTK,KINETIK HOLDINGS INC.,lynch,True,3,4,75.0,51.21,19.47,—,-31.53,0.69,-7.37,—,1M,—
-CBL,"CBL & ASSOCIATES PROPERTIES, INC.",piotroski,True,7,9,77.8,51.91,11.96,4.27,36.26,—,6.31,34.45,"216,086",—
-PFH,PRUDENTIAL FINANCIAL INC,piotroski,True,7,9,77.8,15.05,1.51,0.16,11.02,—,22.76,144,"63,778",—
+FIGS,"FIGS, Inc.",piotroski,True,8,9,88.9,13.42,70.63,5.51,7.83,4.94,0.33,3.23,4M,—
 SHAK,SHAKE SHACK INC.,piotroski,True,8,9,88.9,55.55,50.96,4.43,8.70,1.76,2.56,17.55,2M,—
-DCTH,"DELCATH SYSTEMS, INC.",piotroski,True,7,9,77.8,15.60,223,5.60,2.43,10.92,0.11,2.09,"262,284",—
-FUL,FULLER H B CO,piotroski,True,7,9,77.8,50.06,18.20,1.38,7.59,1.70,1.59,47.32,1M,—
-FROG,JFrog Ltd.,piotroski,True,7,9,77.8,89.18,—,11.68,-8.09,2.14,0.51,—,2M,—
-AEIS,"ADVANCED ENERGY INDUSTRIES, INC.",piotroski,True,7,9,77.8,280,72.83,7.92,10.89,1.59,0.86,55.23,"342,593",—
-NAGE,"NIAGEN BIOSCIENCE, INC.",piotroski,False,6,9,66.7,3.05,15.25,3.40,22.71,4.86,0.39,2.01,"618,995",—
-NAGE,"NIAGEN BIOSCIENCE, INC.",greenblatt,False,2,3,66.7,3.05,15.25,3.40,22.71,4.86,0.39,2.01,"618,995",—
-NAGE,"NIAGEN BIOSCIENCE, INC.",buffett,False,3,6,50.0,3.05,15.25,3.40,22.71,4.86,0.39,2.01,"618,995",—
-NAGE,"NIAGEN BIOSCIENCE, INC.",lynch,False,2,4,50.0,3.05,15.25,3.40,22.71,4.86,0.39,2.01,"618,995",—
-NAGE,"NIAGEN BIOSCIENCE, INC.",netnet,False,2,4,50.0,3.05,15.25,3.40,22.71,4.86,0.39,2.01,"618,995",—
-NAGE,"NIAGEN BIOSCIENCE, INC.",graham,False,3,9,33.3,3.05,15.25,3.40,22.71,4.86,0.39,2.01,"618,995",—
-NAGE,"NIAGEN BIOSCIENCE, INC.",custom,False,0,0,0.0,3.05,15.25,3.40,22.71,4.86,0.39,2.01,"618,995",—
-USLM,UNITED STATES LIME & MINERALS INC,piotroski,False,6,9,66.7,111,23.85,5.07,21.29,19.27,0.08,48.03,"82,189",—
-USLM,UNITED STATES LIME & MINERALS INC,greenblatt,False,2,3,66.7,111,23.85,5.07,21.29,19.27,0.08,48.03,"82,189",—
-USLM,UNITED STATES LIME & MINERALS INC,graham,False,5,9,55.6,111,23.85,5.07,21.29,19.27,0.08,48.03,"82,189",—
-USLM,UNITED STATES LIME & MINERALS INC,netnet,False,2,4,50.0,111,23.85,5.07,21.29,19.27,0.08,48.03,"82,189",—
-USLM,UNITED STATES LIME & MINERALS INC,custom,False,0,0,0.0,111,23.85,5.07,21.29,19.27,0.08,48.03,"82,189",—
-CASH,"PATHWARD FINANCIAL, INC.",graham,False,6,9,66.7,73.80,9.38,2.02,21.66,—,7.36,80.37,"173,251",—
-CASH,"PATHWARD FINANCIAL, INC.",piotroski,False,6,9,66.7,73.80,9.38,2.02,21.66,—,7.36,80.37,"173,251",—
-CASH,"PATHWARD FINANCIAL, INC.",lynch,False,2,4,50.0,73.80,9.38,2.02,21.66,—,7.36,80.37,"173,251",—
-CASH,"PATHWARD FINANCIAL, INC.",netnet,False,1,4,25.0,73.80,9.38,2.02,21.66,—,7.36,80.37,"173,251",—
-CASH,"PATHWARD FINANCIAL, INC.",custom,False,0,0,0.0,73.80,9.38,2.02,21.66,—,7.36,80.37,"173,251",—
-TREE,"LendingTree, Inc.",piotroski,False,6,9,66.7,24.62,2.28,1.21,52.76,1.67,1.98,70.33,"292,624",—
+CPRI,CAPRI HOLDINGS LIMITED,piotroski,True,7,9,77.8,15.10,13.25,22.62,171,1.21,39.38,4.14,3M,—
+MOS,MOSAIC CO,piotroski,True,8,9,88.9,23.01,13.54,0.61,4.47,1.32,—,38.07,9M,—
+BNED,"BARNES & NOBLE EDUCATION, INC.",piotroski,True,8,9,88.9,11.33,23.12,1.33,5.73,1.71,1.51,9.68,"138,769",—
+SMG,Scotts Miracle-Gro Co,piotroski,True,7,9,77.8,50.89,20.60,—,-40.62,1.27,-8.67,—,1M,—
+GXO,"GXO Logistics, Inc.",piotroski,True,7,9,77.8,45.20,161,1.76,1.07,0.85,—,12.71,1M,—
+GOOGM,Alphabet Inc.,piotroski,False,6,9,66.7,48.90,4.52,1.44,31.83,2.01,0.43,90.88,3M,—
+GOOGM,Alphabet Inc.,netnet,False,2,4,50.0,48.90,4.52,1.44,31.83,2.01,0.43,90.88,3M,—
+GOOGM,Alphabet Inc.,custom,False,0,0,0.0,48.90,4.52,1.44,31.83,2.01,0.43,90.88,3M,—
+SAFX,"XCF Global, Inc.",graham,False,4,9,44.4,0.37,0.72,1.41,197,0.11,10.14,1.76,10M,—
+SAFX,"XCF Global, Inc.",buffett,False,2,6,33.3,0.37,0.72,1.41,197,0.11,10.14,1.76,10M,—
+SAFX,"XCF Global, Inc.",lynch,False,1,4,25.0,0.37,0.72,1.41,197,0.11,10.14,1.76,10M,—
+SAFX,"XCF Global, Inc.",netnet,False,1,4,25.0,0.37,0.72,1.41,197,0.11,10.14,1.76,10M,—
+SAFX,"XCF Global, Inc.",piotroski,False,1,9,11.1,0.37,0.72,1.41,197,0.11,10.14,1.76,10M,—
+SAFX,"XCF Global, Inc.",custom,False,0,0,0.0,0.37,0.72,1.41,197,0.11,10.14,1.76,10M,—
+LRN,"Stride, Inc.",graham,False,7,9,77.8,78.56,11.00,2.28,20.72,5.94,0.49,74.43,"488,473",—
+LRN,"Stride, Inc.",greenblatt,False,2,3,66.7,78.56,11.00,2.28,20.72,5.94,0.49,74.43,"488,473",—
+LRN,"Stride, Inc.",netnet,False,2,4,50.0,78.56,11.00,2.28,20.72,5.94,0.49,74.43,"488,473",—
