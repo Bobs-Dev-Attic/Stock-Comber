@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-28 18:45 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-28 23:42 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **27** strategy matches passed.
+Screened **75** companies · **21** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| UCO | PROSHARES TRUST II | greenblatt | ✅ | 100% | 51.92 | 3.76 | 1.12 | 29.91 | — | 0.06 | 3M | — |
-| PD | PAGERDUTY, INC. | greenblatt | ✅ | 100% | 14.38 | 7.69 | 5.27 | 68.37 | 2.01 | 2.84 | 2M | — |
-| PRI | Primerica, Inc. | greenblatt | ✅ | 100% | 276 | 12.03 | 3.68 | 30.71 | — | 5.14 | 143,853 | — |
-| PRI | Primerica, Inc. | piotroski | ✅ | 89% | 276 | 12.03 | 3.68 | 30.71 | — | 5.14 | 143,853 | — |
-| FTDR | Frontdoor, Inc. | piotroski | ✅ | 89% | 73.99 | 21.63 | 22.78 | 105 | 1.55 | — | 683,989 | — |
-| FTDR | Frontdoor, Inc. | buffett | ✅ | 83% | 73.99 | 21.63 | 22.78 | 105 | 1.55 | — | 683,989 | — |
-| PAYC | Paycom Software, Inc. | buffett | ✅ | 83% | 220 | 27.28 | 7.14 | 26.19 | 1.09 | 3.39 | 232,164 | — |
-| GNTX | GENTEX CORPORATION | buffett | ✅ | 83% | 22.39 | 12.87 | 1.96 | 15.47 | 2.91 | 0.18 | 2M | — |
-| IIIN | Insteel Industries Inc. | piotroski | ✅ | 78% | 29.44 | 14.02 | 1.55 | 11.04 | 3.97 | — | 51,215 | — |
-| IIIN | Insteel Industries Inc. | lynch | ✅ | 75% | 29.44 | 14.02 | 1.55 | 11.04 | 3.97 | — | 51,215 | — |
-| VISN | Vistance Networks, Inc. | greenblatt | ✅ | 100% | 6.22 | 0.65 | — | -227 | 3.88 | -9.06 | 6M | — |
-| SHOE | Shoe Station Group, Inc. | graham | ✅ | 89% | 13.00 | 6.84 | 0.52 | 7.58 | 3.76 | 0.74 | 1M | — |
-| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 129 | 20.36 | 2.14 | 10.49 | 1.53 | — | 544,535 | — |
-| AXTA | AXALTA COATING SYSTEMS LTD. | lynch | ✅ | 75% | 32.89 | 18.90 | 3.04 | 16.11 | 2.06 | 2.22 | 2M | — |
-| AM | ANTERO MIDSTREAM CORPORATION | piotroski | ✅ | 78% | 20.93 | 24.34 | 5.12 | 20.95 | 3.41 | 1.98 | 3M | — |
-| SIRI | SIRIUS XM HOLDINGS INC. | lynch | ✅ | 75% | 25.86 | 11.59 | 0.80 | 6.96 | 0.30 | 1.36 | 5M | — |
-| AGCO | AGCO CORP /DE | piotroski | ✅ | 89% | 118 | 12.15 | 2.06 | 17.00 | 1.39 | 1.72 | 330,831 | — |
-| POST | Post Holdings, Inc. | lynch | ✅ | 75% | 73.15 | 13.28 | 1.23 | 8.94 | 1.67 | 2.60 | 723,169 | — |
-| BBWI | BATH & BODY WORKS, INC. | greenblatt | ✅ | 100% | 16.03 | 5.15 | — | -50.66 | 1.27 | — | 6M | — |
-| OPLN | OPENLANE, Inc. | piotroski | ✅ | 89% | 34.65 | — | 2.99 | 14.32 | 1.16 | — | 416,677 | — |
-| EMBC | EMBECTA CORP. | piotroski | ✅ | 78% | 5.90 | 3.64 | — | -14.66 | 2.41 | — | 791,824 | — |
-| DLB | Dolby Laboratories, Inc. | piotroski | ✅ | 78% | 58.11 | 22.18 | 2.16 | 9.72 | 3.17 | 0.23 | 227,305 | — |
-| SHAK | SHAKE SHACK INC. | piotroski | ✅ | 89% | 57.37 | 52.63 | 4.57 | 8.70 | 1.76 | 2.56 | 933,039 | — |
-| MAGN | Magnera Corporation | piotroski | ✅ | 78% | 11.84 | — | 0.40 | -14.94 | 2.37 | 2.75 | 210,535 | — |
-| UE | URBAN EDGE PROPERTIES | piotroski | ✅ | 78% | 19.90 | 26.89 | 1.82 | 6.80 | — | 1.41 | 781,555 | — |
-| LFST | LifeStance Health Group, Inc | piotroski | ✅ | 89% | 11.90 | 482 | 3.06 | 0.64 | 1.65 | 0.45 | 964,774 | — |
-| KOP | KOPPERS HOLDINGS INC. | piotroski | ✅ | 89% | 46.59 | 17.00 | 1.66 | 9.76 | 2.94 | 2.29 | 30,752 | — |
-| UCO | PROSHARES TRUST II | lynch | ▫️ | 50% | 51.92 | 3.76 | 1.12 | 29.91 | — | 0.06 | 3M | — |
-| UCO | PROSHARES TRUST II | graham | ▫️ | 44% | 51.92 | 3.76 | 1.12 | 29.91 | — | 0.06 | 3M | — |
-| UCO | PROSHARES TRUST II | buffett | ▫️ | 33% | 51.92 | 3.76 | 1.12 | 29.91 | — | 0.06 | 3M | — |
-| UCO | PROSHARES TRUST II | piotroski | ▫️ | 33% | 51.92 | 3.76 | 1.12 | 29.91 | — | 0.06 | 3M | — |
-| UCO | PROSHARES TRUST II | netnet | ▫️ | 25% | 51.92 | 3.76 | 1.12 | 29.91 | — | 0.06 | 3M | — |
-| UCO | PROSHARES TRUST II | custom | ▫️ | 0% | 51.92 | 3.76 | 1.12 | 29.91 | — | 0.06 | 3M | — |
-| PD | PAGERDUTY, INC. | piotroski | ▫️ | 67% | 14.38 | 7.69 | 5.27 | 68.37 | 2.01 | 2.84 | 2M | — |
-| PD | PAGERDUTY, INC. | buffett | ▫️ | 50% | 14.38 | 7.69 | 5.27 | 68.37 | 2.01 | 2.84 | 2M | — |
-| PD | PAGERDUTY, INC. | graham | ▫️ | 33% | 14.38 | 7.69 | 5.27 | 68.37 | 2.01 | 2.84 | 2M | — |
-| PD | PAGERDUTY, INC. | lynch | ▫️ | 25% | 14.38 | 7.69 | 5.27 | 68.37 | 2.01 | 2.84 | 2M | — |
-| PD | PAGERDUTY, INC. | netnet | ▫️ | 25% | 14.38 | 7.69 | 5.27 | 68.37 | 2.01 | 2.84 | 2M | — |
-| PD | PAGERDUTY, INC. | custom | ▫️ | 0% | 14.38 | 7.69 | 5.27 | 68.37 | 2.01 | 2.84 | 2M | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | piotroski | ▫️ | 44% | 25.15 | — | — | — | 2.10 | — | 373,945 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | graham | ▫️ | 33% | 25.15 | — | — | — | 2.10 | — | 373,945 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | buffett | ▫️ | 33% | 25.15 | — | — | — | 2.10 | — | 373,945 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | greenblatt | ▫️ | 33% | 25.15 | — | — | — | 2.10 | — | 373,945 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | lynch | ▫️ | 25% | 25.15 | — | — | — | 2.10 | — | 373,945 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | netnet | ▫️ | 25% | 25.15 | — | — | — | 2.10 | — | 373,945 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | custom | ▫️ | 0% | 25.15 | — | — | — | 2.10 | — | 373,945 | — |
-| PRI | Primerica, Inc. | buffett | ▫️ | 67% | 276 | 12.03 | 3.68 | 30.71 | — | 5.14 | 143,853 | — |
-| PRI | Primerica, Inc. | graham | ▫️ | 56% | 276 | 12.03 | 3.68 | 30.71 | — | 5.14 | 143,853 | — |
-| PRI | Primerica, Inc. | lynch | ▫️ | 50% | 276 | 12.03 | 3.68 | 30.71 | — | 5.14 | 143,853 | — |
-| PRI | Primerica, Inc. | netnet | ▫️ | 25% | 276 | 12.03 | 3.68 | 30.71 | — | 5.14 | 143,853 | — |
+| SBC | SBC Medical Group Holdings I | lynch | ✅ | 75% | 5.03 | 10.06 | 2.09 | 20.54 | 3.78 | 0.47 | 194,897 | — |
+| SON | Sonoco Products Company | piotroski | ✅ | 89% | 49.97 | 4.96 | 1.38 | 27.75 | 1.05 | 2.08 | 910,453 | — |
+| SON | Sonoco Products Company | lynch | ✅ | 75% | 49.97 | 4.96 | 1.38 | 27.75 | 1.05 | 2.08 | 910,453 | — |
+| AROC | Archrock, Inc. | piotroski | ✅ | 89% | 30.55 | 16.69 | 3.58 | 21.61 | 1.54 | 1.92 | 846,857 | — |
+| AES | THE AES CORPORATION | greenblatt | ✅ | 100% | 14.87 | 11.80 | 2.61 | 22.40 | 0.77 | — | 7M | — |
+| KFY | KORN FERRY | piotroski | ✅ | 100% | 71.31 | 13.66 | 1.90 | 14.06 | 1.94 | 1.06 | 528,876 | — |
+| KFY | KORN FERRY | lynch | ✅ | 75% | 71.31 | 13.66 | 1.90 | 14.06 | 1.94 | 1.06 | 528,876 | — |
+| GBX | THE GREENBRIER COMPANIES, IN | lynch | ✅ | 75% | 42.09 | 6.63 | 0.88 | 13.32 | — | — | 287,939 | — |
+| DORM | Dorman Products, Inc. | piotroski | ✅ | 89% | 124 | 18.63 | 2.58 | 13.82 | 3.09 | — | 182,850 | — |
+| SSB | SOUTHSTATE BANK CORP | lynch | ✅ | 75% | 102 | 12.92 | 1.14 | 8.82 | — | 6.42 | 543,169 | — |
+| EZPW | EZCORP, INC. | piotroski | ✅ | 78% | 30.83 | 21.71 | 2.51 | 10.69 | 5.61 | 0.90 | 626,585 | — |
+| DRVN | Driven Brands Holdings Inc. | piotroski | ✅ | 78% | 11.76 | 13.84 | 2.51 | 18.27 | 0.75 | 4.42 | 947,737 | — |
+| RSI | Rush Street Interactive, Inc | piotroski | ✅ | 78% | 19.55 | 63.06 | 31.35 | 22.62 | 1.93 | 2.41 | 3M | — |
+| MYRG | MYR GROUP INC. | piotroski | ✅ | 89% | 286 | 37.97 | 6.81 | 17.93 | 1.33 | 1.49 | 205,966 | — |
+| DLB | Dolby Laboratories, Inc. | piotroski | ✅ | 78% | 58.19 | 22.21 | 2.16 | 9.72 | 3.17 | 0.23 | 621,295 | — |
+| XPRO | Expro Group Holdings N.V. | piotroski | ✅ | 89% | 16.32 | 36.27 | 1.23 | 3.37 | 2.16 | 0.47 | 1M | — |
+| FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 13.62 | 71.68 | 5.59 | 7.83 | 4.94 | 0.33 | 3M | — |
+| WOR | WORTHINGTON ENTERPRISES, INC | piotroski | ✅ | 89% | 60.87 | 19.39 | 2.95 | 15.20 | 2.37 | 0.80 | 395,930 | — |
+| AIOT | Powerfleet, Inc. | piotroski | ✅ | 78% | 2.62 | — | 0.74 | -4.32 | 1.13 | 1.00 | 2M | — |
+| LFST | LifeStance Health Group, Inc | piotroski | ✅ | 89% | 11.84 | 479 | 3.04 | 0.64 | 1.65 | 0.45 | 3M | — |
+| SHC | SOTERA HEALTH COMPANY | piotroski | ✅ | 78% | 18.45 | 68.33 | 8.72 | 12.86 | 2.46 | 4.38 | 1M | — |
+| ADMA | ADMA BIOLOGICS, INC. | buffett | ▫️ | 67% | 10.12 | 16.87 | 5.19 | 30.78 | 6.71 | 0.31 | 4M | — |
+| ADMA | ADMA BIOLOGICS, INC. | greenblatt | ▫️ | 67% | 10.12 | 16.87 | 5.19 | 30.78 | 6.71 | 0.31 | 4M | — |
+| ADMA | ADMA BIOLOGICS, INC. | lynch | ▫️ | 50% | 10.12 | 16.87 | 5.19 | 30.78 | 6.71 | 0.31 | 4M | — |
+| ADMA | ADMA BIOLOGICS, INC. | netnet | ▫️ | 50% | 10.12 | 16.87 | 5.19 | 30.78 | 6.71 | 0.31 | 4M | — |
+| ADMA | ADMA BIOLOGICS, INC. | piotroski | ▫️ | 44% | 10.12 | 16.87 | 5.19 | 30.78 | 6.71 | 0.31 | 4M | — |
+| ADMA | ADMA BIOLOGICS, INC. | graham | ▫️ | 33% | 10.12 | 16.87 | 5.19 | 30.78 | 6.71 | 0.31 | 4M | — |
+| ADMA | ADMA BIOLOGICS, INC. | custom | ▫️ | 0% | 10.12 | 16.87 | 5.19 | 30.78 | 6.71 | 0.31 | 4M | — |
+| SBC | SBC Medical Group Holdings I | graham | ▫️ | 67% | 5.03 | 10.06 | 2.09 | 20.54 | 3.78 | 0.47 | 194,897 | — |
+| SBC | SBC Medical Group Holdings I | buffett | ▫️ | 67% | 5.03 | 10.06 | 2.09 | 20.54 | 3.78 | 0.47 | 194,897 | — |
+| SBC | SBC Medical Group Holdings I | greenblatt | ▫️ | 67% | 5.03 | 10.06 | 2.09 | 20.54 | 3.78 | 0.47 | 194,897 | — |
+| SBC | SBC Medical Group Holdings I | netnet | ▫️ | 50% | 5.03 | 10.06 | 2.09 | 20.54 | 3.78 | 0.47 | 194,897 | — |
+| SBC | SBC Medical Group Holdings I | piotroski | ▫️ | 44% | 5.03 | 10.06 | 2.09 | 20.54 | 3.78 | 0.47 | 194,897 | — |
+| SBC | SBC Medical Group Holdings I | custom | ▫️ | 0% | 5.03 | 10.06 | 2.09 | 20.54 | 3.78 | 0.47 | 194,897 | — |
+| SON | Sonoco Products Company | graham | ▫️ | 67% | 49.97 | 4.96 | 1.38 | 27.75 | 1.05 | 2.08 | 910,453 | — |
+| SON | Sonoco Products Company | buffett | ▫️ | 67% | 49.97 | 4.96 | 1.38 | 27.75 | 1.05 | 2.08 | 910,453 | — |
+| SON | Sonoco Products Company | greenblatt | ▫️ | 67% | 49.97 | 4.96 | 1.38 | 27.75 | 1.05 | 2.08 | 910,453 | — |
+| SON | Sonoco Products Company | netnet | ▫️ | 25% | 49.97 | 4.96 | 1.38 | 27.75 | 1.05 | 2.08 | 910,453 | — |
+| SON | Sonoco Products Company | custom | ▫️ | 0% | 49.97 | 4.96 | 1.38 | 27.75 | 1.05 | 2.08 | 910,453 | — |
+| SABR | Sabre Corporation | greenblatt | ▫️ | 67% | 2.10 | 1.57 | — | -50.61 | 1.07 | — | 5M | — |
+| SABR | Sabre Corporation | piotroski | ▫️ | 56% | 2.10 | 1.57 | — | -50.61 | 1.07 | — | 5M | — |
+| SABR | Sabre Corporation | lynch | ▫️ | 25% | 2.10 | 1.57 | — | -50.61 | 1.07 | — | 5M | — |
+| SABR | Sabre Corporation | netnet | ▫️ | 25% | 2.10 | 1.57 | — | -50.61 | 1.07 | — | 5M | — |
+| SABR | Sabre Corporation | graham | ▫️ | 22% | 2.10 | 1.57 | — | -50.61 | 1.07 | — | 5M | — |
+| SABR | Sabre Corporation | buffett | ▫️ | 17% | 2.10 | 1.57 | — | -50.61 | 1.07 | — | 5M | — |
+| SABR | Sabre Corporation | custom | ▫️ | 0% | 2.10 | 1.57 | — | -50.61 | 1.07 | — | 5M | — |
+| UNIT | Uniti Group Inc. | greenblatt | ▫️ | 67% | 8.65 | 1.78 | 6.06 | 343 | 0.74 | 30.65 | 3M | — |
+| UNIT | Uniti Group Inc. | graham | ▫️ | 44% | 8.65 | 1.78 | 6.06 | 343 | 0.74 | 30.65 | 3M | — |
+| UNIT | Uniti Group Inc. | buffett | ▫️ | 33% | 8.65 | 1.78 | 6.06 | 343 | 0.74 | 30.65 | 3M | — |
+| UNIT | Uniti Group Inc. | lynch | ▫️ | 25% | 8.65 | 1.78 | 6.06 | 343 | 0.74 | 30.65 | 3M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
