@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-SLDE,"Slide Insurance Holdings, Inc.",greenblatt,True,3,3,100.0,22.86,6.80,2.71,39.88,—,1.62,25.25,"690,158",—
-OLED,UNIVERSAL DISPLAY CORPORATION,piotroski,True,7,9,77.8,75.47,14.86,2.04,13.75,10.06,0.12,64.99,"402,578",—
-RILY,"BRC Group Holdings, Inc.",greenblatt,True,3,3,100.0,5.49,0.56,—,-179,—,-10.65,—,"436,302",—
-RILY,"BRC Group Holdings, Inc.",lynch,True,3,4,75.0,5.49,0.56,—,-179,—,-10.65,—,"436,302",—
-CVSA,Covista Inc.,lynch,True,3,4,75.0,118,16.69,2.90,17.40,1.09,1.08,80.09,"670,097",—
-MHO,"M/I HOMES, INC.",lynch,True,3,4,75.0,137,9.32,1.19,12.73,—,0.51,196,"190,480",—
-PDYNW,Palladyne AI Corp.,netnet,True,4,4,100.0,0.00,0.01,0.00,13.44,9.28,0.28,3.09,4M,—
-SFD,"SMITHFIELD FOODS, INC.",graham,True,9,9,100.0,19.14,7.63,1.11,14.51,2.97,—,31.27,2M,—
-FULT,FULTON FINANCIAL CORP,lynch,True,3,4,75.0,22.97,11.04,1.21,11.22,—,8.20,29.85,2M,—
-VISN,"Vistance Networks, Inc.",greenblatt,True,3,3,100.0,6.09,0.63,—,-227,3.88,-9.06,—,6M,—
-AXTA,AXALTA COATING SYSTEMS LTD.,lynch,True,3,4,75.0,32.68,18.78,3.02,16.11,2.06,2.22,20.57,1M,—
-WLY,"JOHN WILEY & SONS, INC.",piotroski,True,9,9,100.0,47.61,11.44,2.99,26.13,0.54,2.06,38.61,"518,460",—
-BCPC,Balchem Corporation,piotroski,True,9,9,100.0,169,35.51,4.37,12.31,2.07,0.34,64.20,"134,616",—
-ACA,"Arcosa, Inc.",piotroski,True,9,9,100.0,147,34.56,2.72,7.89,2.20,0.89,71.71,1M,—
-GSHD,"GOOSEHEAD INSURANCE, INC.",lynch,True,3,4,75.0,44.39,42.68,—,-29.14,1.60,-6.05,—,"398,740",—
-KN,Knowles Corporation,piotroski,True,7,9,77.8,37.24,74.48,4.22,5.70,2.75,—,9.96,"542,989",—
-UE,URBAN EDGE PROPERTIES,piotroski,True,7,9,77.8,19.91,26.91,1.82,6.80,—,1.41,13.49,"873,631",—
-ATRC,"AtriCure, Inc.",piotroski,True,7,9,77.8,58.41,—,5.67,-2.33,3.96,0.33,—,1M,—
-NEOG,Neogen Corporation,piotroski,True,8,9,88.9,13.72,—,1.43,-0.38,3.82,0.60,—,8M,—
-BNED,"BARNES & NOBLE EDUCATION, INC.",piotroski,True,8,9,88.9,11.18,22.82,1.31,5.73,1.71,1.51,9.68,"180,734",—
-CALX,"Calix, Inc",piotroski,True,7,9,77.8,33.19,128,2.68,2.08,4.24,0.23,8.52,1M,—
-USNA,"USANA HEALTH SCIENCES, INC.",piotroski,True,7,9,77.8,14.82,25.55,0.52,2.02,2.24,0.29,19.35,"157,399",—
-WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,8,9,88.9,27.01,29.68,0.62,2.10,2.42,0.76,29.77,"576,760",—
+BYD,BOYD GAMING CORP,greenblatt,True,3,3,100.0,69.19,3.07,2.17,70.66,0.54,—,127,1M,—
+BYD,BOYD GAMING CORP,piotroski,True,7,9,77.8,69.19,3.07,2.17,70.66,0.54,—,127,1M,—
+SLV,iShares Silver Trust,lynch,True,3,4,75.0,54.95,1.34,—,—,—,—,—,23M,—
+BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,126,17.16,2.94,17.13,2.65,0.86,84.23,"850,412",—
+BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,126,17.16,2.94,17.13,2.65,0.86,84.23,"850,412",—
+IBP,"Installed Building Products, Inc.",piotroski,True,8,9,88.9,196,20.19,7.55,37.39,3.03,1.91,75.33,"276,186",—
+IBP,"Installed Building Products, Inc.",lynch,True,3,4,75.0,196,20.19,7.55,37.39,3.03,1.91,75.33,"276,186",—
+EVR,EVERCORE INC.,buffett,True,5,6,83.3,262,18.62,5.43,29.14,2.16,1.50,123,"396,178",—
+EVR,EVERCORE INC.,piotroski,True,7,9,77.8,262,18.62,5.43,29.14,2.16,1.50,123,"396,178",—
+GBX,"THE GREENBRIER COMPANIES, INC.",lynch,True,3,4,75.0,42.09,6.63,0.88,13.32,—,—,82.54,"287,939",—
+GGG,GRACO INC.,piotroski,True,8,9,88.9,78.25,25.41,4.99,19.66,3.15,—,32.97,1M,—
+GGG,GRACO INC.,buffett,True,5,6,83.3,78.25,25.41,4.99,19.66,3.15,—,32.97,1M,—
+MEDP,"Medpace Holdings, Inc.",buffett,True,5,6,83.3,616,40.31,39.62,98.27,0.74,3.30,73.11,"242,301",—
+MEDP,"Medpace Holdings, Inc.",piotroski,True,7,9,77.8,616,40.31,39.62,98.27,0.74,3.30,73.11,"242,301",—
+OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,22.78,33.01,4.35,13.20,1.91,0.30,9.01,"776,500",—
+AIR,AAR CORP.,piotroski,True,7,9,77.8,115,23.68,2.59,11.02,2.84,—,69.66,"566,532",—
+AIR,AAR CORP.,lynch,True,3,4,75.0,115,23.68,2.59,11.02,2.84,—,69.66,"566,532",—
+KEX,KIRBY CORPORATION,piotroski,True,8,9,88.9,132,20.79,2.18,10.49,1.53,—,92.69,"501,213",—
+BBWI,"BATH & BODY WORKS, INC.",greenblatt,True,3,3,100.0,16.19,5.21,—,-50.66,1.27,—,—,9M,—
+DLB,"Dolby Laboratories, Inc.",piotroski,True,7,9,77.8,58.19,22.21,2.16,9.72,3.17,0.23,39.82,"621,295",—
+AIOT,"Powerfleet, Inc.",piotroski,True,7,9,77.8,2.62,—,0.74,-4.32,1.13,1.00,—,3M,—
+NPKI,NPK International Inc.,piotroski,True,7,9,77.8,11.58,25.73,2.83,11.09,1.43,0.26,6.44,"631,579",—
+MSGS,MADISON SQUARE GARDEN SPORTS CORP.,piotroski,True,9,9,100.0,416,"1,301",—,-2.95,0.50,-6.84,—,"290,290",—
+APPN,APPIAN CORPORATION,piotroski,True,7,9,77.8,35.02,"1,751",—,-2.62,1.15,-15.71,—,"948,838",—
+DAR,DARLING INGREDIENTS INC.,piotroski,True,7,9,77.8,60.59,155,2.05,1.33,1.50,1.16,16.11,2M,—
+GXO,"GXO Logistics, Inc.",piotroski,True,7,9,77.8,44.77,160,1.75,1.07,0.85,—,12.71,1M,—
 TPC,Tutor Perini Corporation,piotroski,True,7,9,77.8,83.98,55.62,3.68,6.60,1.27,3.20,27.84,"302,504",—
-ORN,"ORION GROUP HOLDINGS, INC.",piotroski,True,7,9,77.8,8.35,139,2.08,1.56,1.36,1.61,2.33,"450,850",—
-SLDE,"Slide Insurance Holdings, Inc.",graham,False,4,9,44.4,22.86,6.80,2.71,39.88,—,1.62,25.25,"690,158",—
-SLDE,"Slide Insurance Holdings, Inc.",buffett,False,2,6,33.3,22.86,6.80,2.71,39.88,—,1.62,25.25,"690,158",—
-SLDE,"Slide Insurance Holdings, Inc.",piotroski,False,3,9,33.3,22.86,6.80,2.71,39.88,—,1.62,25.25,"690,158",—
-SLDE,"Slide Insurance Holdings, Inc.",lynch,False,1,4,25.0,22.86,6.80,2.71,39.88,—,1.62,25.25,"690,158",—
-SLDE,"Slide Insurance Holdings, Inc.",netnet,False,1,4,25.0,22.86,6.80,2.71,39.88,—,1.62,25.25,"690,158",—
-SLDE,"Slide Insurance Holdings, Inc.",custom,False,0,0,0.0,22.86,6.80,2.71,39.88,—,1.62,25.25,"690,158",—
-MGY,Magnolia Oil & Gas Corp,piotroski,False,6,9,66.7,23.71,13.53,2.20,16.27,1.54,—,20.61,5M,—
-MGY,Magnolia Oil & Gas Corp,buffett,False,3,6,50.0,23.71,13.53,2.20,16.27,1.54,—,20.61,5M,—
-MGY,Magnolia Oil & Gas Corp,graham,False,4,9,44.4,23.71,13.53,2.20,16.27,1.54,—,20.61,5M,—
-MGY,Magnolia Oil & Gas Corp,greenblatt,False,1,3,33.3,23.71,13.53,2.20,16.27,1.54,—,20.61,5M,—
-MGY,Magnolia Oil & Gas Corp,lynch,False,1,4,25.0,23.71,13.53,2.20,16.27,1.54,—,20.61,5M,—
-MGY,Magnolia Oil & Gas Corp,netnet,False,1,4,25.0,23.71,13.53,2.20,16.27,1.54,—,20.61,5M,—
-MGY,Magnolia Oil & Gas Corp,custom,False,0,0,0.0,23.71,13.53,2.20,16.27,1.54,—,20.61,5M,—
-OLED,UNIVERSAL DISPLAY CORPORATION,graham,False,6,9,66.7,75.47,14.86,2.04,13.75,10.06,0.12,64.99,"402,578",—
-OLED,UNIVERSAL DISPLAY CORPORATION,buffett,False,4,6,66.7,75.47,14.86,2.04,13.75,10.06,0.12,64.99,"402,578",—
-OLED,UNIVERSAL DISPLAY CORPORATION,lynch,False,2,4,50.0,75.47,14.86,2.04,13.75,10.06,0.12,64.99,"402,578",—
-OLED,UNIVERSAL DISPLAY CORPORATION,netnet,False,2,4,50.0,75.47,14.86,2.04,13.75,10.06,0.12,64.99,"402,578",—
-OLED,UNIVERSAL DISPLAY CORPORATION,greenblatt,False,1,3,33.3,75.47,14.86,2.04,13.75,10.06,0.12,64.99,"402,578",—
-OLED,UNIVERSAL DISPLAY CORPORATION,custom,False,0,0,0.0,75.47,14.86,2.04,13.75,10.06,0.12,64.99,"402,578",—
-DEC,Diversified Energy Company,greenblatt,False,2,3,66.7,13.57,2.96,1.03,34.66,0.60,5.26,36.90,"679,567",—
-DEC,Diversified Energy Company,graham,False,5,9,55.6,13.57,2.96,1.03,34.66,0.60,5.26,36.90,"679,567",—
-DEC,Diversified Energy Company,buffett,False,2,6,33.3,13.57,2.96,1.03,34.66,0.60,5.26,36.90,"679,567",—
-DEC,Diversified Energy Company,piotroski,False,3,9,33.3,13.57,2.96,1.03,34.66,0.60,5.26,36.90,"679,567",—
-DEC,Diversified Energy Company,lynch,False,1,4,25.0,13.57,2.96,1.03,34.66,0.60,5.26,36.90,"679,567",—
-DEC,Diversified Energy Company,netnet,False,1,4,25.0,13.57,2.96,1.03,34.66,0.60,5.26,36.90,"679,567",—
+AMN,"AMN HEALTHCARE SERVICES, INC.",piotroski,True,7,9,77.8,34.26,—,2.06,-14.90,0.94,2.26,—,"341,479",—
+TDAY,"USA TODAY CO., INC.",piotroski,True,7,9,77.8,6.37,637,5.99,1.13,0.75,10.85,0.49,2M,—
+BYD,BOYD GAMING CORP,buffett,False,4,6,66.7,69.19,3.07,2.17,70.66,0.54,—,127,1M,—
+BYD,BOYD GAMING CORP,graham,False,5,9,55.6,69.19,3.07,2.17,70.66,0.54,—,127,1M,—
+BYD,BOYD GAMING CORP,lynch,False,1,4,25.0,69.19,3.07,2.17,70.66,0.54,—,127,1M,—
+BYD,BOYD GAMING CORP,netnet,False,1,4,25.0,69.19,3.07,2.17,70.66,0.54,—,127,1M,—
+BYD,BOYD GAMING CORP,custom,False,0,0,0.0,69.19,3.07,2.17,70.66,0.54,—,127,1M,—
+SLV,iShares Silver Trust,greenblatt,False,1,3,33.3,54.95,1.34,—,—,—,—,—,23M,—
+SLV,iShares Silver Trust,netnet,False,1,4,25.0,54.95,1.34,—,—,—,—,—,23M,—
+SLV,iShares Silver Trust,graham,False,2,9,22.2,54.95,1.34,—,—,—,—,—,23M,—
+SLV,iShares Silver Trust,buffett,False,1,6,16.7,54.95,1.34,—,—,—,—,—,23M,—
+SLV,iShares Silver Trust,piotroski,False,0,9,0.0,54.95,1.34,—,—,—,—,—,23M,—
+SLV,iShares Silver Trust,custom,False,0,0,0.0,54.95,1.34,—,—,—,—,—,23M,—
+XZO,"Exzeo Group, Inc.",greenblatt,False,2,3,66.7,15.09,15.24,4.76,32.56,3.86,0.37,8.40,"208,854",—
+XZO,"Exzeo Group, Inc.",buffett,False,3,6,50.0,15.09,15.24,4.76,32.56,3.86,0.37,8.40,"208,854",—
+XZO,"Exzeo Group, Inc.",lynch,False,2,4,50.0,15.09,15.24,4.76,32.56,3.86,0.37,8.40,"208,854",—
+XZO,"Exzeo Group, Inc.",netnet,False,2,4,50.0,15.09,15.24,4.76,32.56,3.86,0.37,8.40,"208,854",—
+XZO,"Exzeo Group, Inc.",graham,False,3,9,33.3,15.09,15.24,4.76,32.56,3.86,0.37,8.40,"208,854",—
+XZO,"Exzeo Group, Inc.",piotroski,False,3,9,33.3,15.09,15.24,4.76,32.56,3.86,0.37,8.40,"208,854",—
+XZO,"Exzeo Group, Inc.",custom,False,0,0,0.0,15.09,15.24,4.76,32.56,3.86,0.37,8.40,"208,854",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,piotroski,False,4,9,44.4,24.83,—,—,—,2.10,—,—,"297,081",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,graham,False,3,9,33.3,24.83,—,—,—,2.10,—,—,"297,081",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,buffett,False,2,6,33.3,24.83,—,—,—,2.10,—,—,"297,081",—

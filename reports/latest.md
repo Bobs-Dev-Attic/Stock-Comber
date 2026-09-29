@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-29 02:54 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-29 09:16 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **25** strategy matches passed.
+Screened **75** companies · **29** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| SLDE | Slide Insurance Holdings, In | greenblatt | ✅ | 100% | 22.86 | 6.80 | 2.71 | 39.88 | — | 1.62 | 690,158 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | piotroski | ✅ | 78% | 75.47 | 14.86 | 2.04 | 13.75 | 10.06 | 0.12 | 402,578 | — |
-| RILY | BRC Group Holdings, Inc. | greenblatt | ✅ | 100% | 5.49 | 0.56 | — | -179 | — | -10.65 | 436,302 | — |
-| RILY | BRC Group Holdings, Inc. | lynch | ✅ | 75% | 5.49 | 0.56 | — | -179 | — | -10.65 | 436,302 | — |
-| CVSA | Covista Inc. | lynch | ✅ | 75% | 118 | 16.69 | 2.90 | 17.40 | 1.09 | 1.08 | 670,097 | — |
-| MHO | M/I HOMES, INC. | lynch | ✅ | 75% | 137 | 9.32 | 1.19 | 12.73 | — | 0.51 | 190,480 | — |
-| PDYNW | Palladyne AI Corp. | netnet | ✅ | 100% | 0.00 | 0.01 | 0.00 | 13.44 | 9.28 | 0.28 | 4M | — |
-| SFD | SMITHFIELD FOODS, INC. | graham | ✅ | 100% | 19.14 | 7.63 | 1.11 | 14.51 | 2.97 | — | 2M | — |
-| FULT | FULTON FINANCIAL CORP | lynch | ✅ | 75% | 22.97 | 11.04 | 1.21 | 11.22 | — | 8.20 | 2M | — |
-| VISN | Vistance Networks, Inc. | greenblatt | ✅ | 100% | 6.09 | 0.63 | — | -227 | 3.88 | -9.06 | 6M | — |
-| AXTA | AXALTA COATING SYSTEMS LTD. | lynch | ✅ | 75% | 32.68 | 18.78 | 3.02 | 16.11 | 2.06 | 2.22 | 1M | — |
-| WLY | JOHN WILEY & SONS, INC. | piotroski | ✅ | 100% | 47.61 | 11.44 | 2.99 | 26.13 | 0.54 | 2.06 | 518,460 | — |
-| BCPC | Balchem Corporation | piotroski | ✅ | 100% | 169 | 35.51 | 4.37 | 12.31 | 2.07 | 0.34 | 134,616 | — |
-| ACA | Arcosa, Inc. | piotroski | ✅ | 100% | 147 | 34.56 | 2.72 | 7.89 | 2.20 | 0.89 | 1M | — |
-| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 44.39 | 42.68 | — | -29.14 | 1.60 | -6.05 | 398,740 | — |
-| KN | Knowles Corporation | piotroski | ✅ | 78% | 37.24 | 74.48 | 4.22 | 5.70 | 2.75 | — | 542,989 | — |
-| UE | URBAN EDGE PROPERTIES | piotroski | ✅ | 78% | 19.91 | 26.91 | 1.82 | 6.80 | — | 1.41 | 873,631 | — |
-| ATRC | AtriCure, Inc. | piotroski | ✅ | 78% | 58.41 | — | 5.67 | -2.33 | 3.96 | 0.33 | 1M | — |
-| NEOG | Neogen Corporation | piotroski | ✅ | 89% | 13.72 | — | 1.43 | -0.38 | 3.82 | 0.60 | 8M | — |
-| BNED | BARNES & NOBLE EDUCATION, IN | piotroski | ✅ | 89% | 11.18 | 22.82 | 1.31 | 5.73 | 1.71 | 1.51 | 180,734 | — |
-| CALX | Calix, Inc | piotroski | ✅ | 78% | 33.19 | 128 | 2.68 | 2.08 | 4.24 | 0.23 | 1M | — |
-| USNA | USANA HEALTH SCIENCES, INC. | piotroski | ✅ | 78% | 14.82 | 25.55 | 0.52 | 2.02 | 2.24 | 0.29 | 157,399 | — |
-| WGO | WINNEBAGO INDUSTRIES, INC. | piotroski | ✅ | 89% | 27.01 | 29.68 | 0.62 | 2.10 | 2.42 | 0.76 | 576,760 | — |
+| BYD | BOYD GAMING CORP | greenblatt | ✅ | 100% | 69.19 | 3.07 | 2.17 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | piotroski | ✅ | 78% | 69.19 | 3.07 | 2.17 | 70.66 | 0.54 | — | 1M | — |
+| SLV | iShares Silver Trust | lynch | ✅ | 75% | 54.95 | 1.34 | — | — | — | — | 23M | — |
+| BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 126 | 17.16 | 2.94 | 17.13 | 2.65 | 0.86 | 850,412 | — |
+| BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 126 | 17.16 | 2.94 | 17.13 | 2.65 | 0.86 | 850,412 | — |
+| IBP | Installed Building Products, | piotroski | ✅ | 89% | 196 | 20.19 | 7.55 | 37.39 | 3.03 | 1.91 | 276,186 | — |
+| IBP | Installed Building Products, | lynch | ✅ | 75% | 196 | 20.19 | 7.55 | 37.39 | 3.03 | 1.91 | 276,186 | — |
+| EVR | EVERCORE INC. | buffett | ✅ | 83% | 262 | 18.62 | 5.43 | 29.14 | 2.16 | 1.50 | 396,178 | — |
+| EVR | EVERCORE INC. | piotroski | ✅ | 78% | 262 | 18.62 | 5.43 | 29.14 | 2.16 | 1.50 | 396,178 | — |
+| GBX | THE GREENBRIER COMPANIES, IN | lynch | ✅ | 75% | 42.09 | 6.63 | 0.88 | 13.32 | — | — | 287,939 | — |
+| GGG | GRACO INC. | piotroski | ✅ | 89% | 78.25 | 25.41 | 4.99 | 19.66 | 3.15 | — | 1M | — |
+| GGG | GRACO INC. | buffett | ✅ | 83% | 78.25 | 25.41 | 4.99 | 19.66 | 3.15 | — | 1M | — |
+| MEDP | Medpace Holdings, Inc. | buffett | ✅ | 83% | 616 | 40.31 | 39.62 | 98.27 | 0.74 | 3.30 | 242,301 | — |
+| MEDP | Medpace Holdings, Inc. | piotroski | ✅ | 78% | 616 | 40.31 | 39.62 | 98.27 | 0.74 | 3.30 | 242,301 | — |
+| OSW | OneSpaWorld Holdings Limited | piotroski | ✅ | 78% | 22.78 | 33.01 | 4.35 | 13.20 | 1.91 | 0.30 | 776,500 | — |
+| AIR | AAR CORP. | piotroski | ✅ | 78% | 115 | 23.68 | 2.59 | 11.02 | 2.84 | — | 566,532 | — |
+| AIR | AAR CORP. | lynch | ✅ | 75% | 115 | 23.68 | 2.59 | 11.02 | 2.84 | — | 566,532 | — |
+| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 132 | 20.79 | 2.18 | 10.49 | 1.53 | — | 501,213 | — |
+| BBWI | BATH & BODY WORKS, INC. | greenblatt | ✅ | 100% | 16.19 | 5.21 | — | -50.66 | 1.27 | — | 9M | — |
+| DLB | Dolby Laboratories, Inc. | piotroski | ✅ | 78% | 58.19 | 22.21 | 2.16 | 9.72 | 3.17 | 0.23 | 621,295 | — |
+| AIOT | Powerfleet, Inc. | piotroski | ✅ | 78% | 2.62 | — | 0.74 | -4.32 | 1.13 | 1.00 | 3M | — |
+| NPKI | NPK International Inc. | piotroski | ✅ | 78% | 11.58 | 25.73 | 2.83 | 11.09 | 1.43 | 0.26 | 631,579 | — |
+| MSGS | MADISON SQUARE GARDEN SPORTS | piotroski | ✅ | 100% | 416 | 1,301 | — | -2.95 | 0.50 | -6.84 | 290,290 | — |
+| APPN | APPIAN CORPORATION | piotroski | ✅ | 78% | 35.02 | 1,751 | — | -2.62 | 1.15 | -15.71 | 948,838 | — |
+| DAR | DARLING INGREDIENTS INC. | piotroski | ✅ | 78% | 60.59 | 155 | 2.05 | 1.33 | 1.50 | 1.16 | 2M | — |
+| GXO | GXO Logistics, Inc. | piotroski | ✅ | 78% | 44.77 | 160 | 1.75 | 1.07 | 0.85 | — | 1M | — |
 | TPC | Tutor Perini Corporation | piotroski | ✅ | 78% | 83.98 | 55.62 | 3.68 | 6.60 | 1.27 | 3.20 | 302,504 | — |
-| ORN | ORION GROUP HOLDINGS, INC. | piotroski | ✅ | 78% | 8.35 | 139 | 2.08 | 1.56 | 1.36 | 1.61 | 450,850 | — |
-| SLDE | Slide Insurance Holdings, In | graham | ▫️ | 44% | 22.86 | 6.80 | 2.71 | 39.88 | — | 1.62 | 690,158 | — |
-| SLDE | Slide Insurance Holdings, In | buffett | ▫️ | 33% | 22.86 | 6.80 | 2.71 | 39.88 | — | 1.62 | 690,158 | — |
-| SLDE | Slide Insurance Holdings, In | piotroski | ▫️ | 33% | 22.86 | 6.80 | 2.71 | 39.88 | — | 1.62 | 690,158 | — |
-| SLDE | Slide Insurance Holdings, In | lynch | ▫️ | 25% | 22.86 | 6.80 | 2.71 | 39.88 | — | 1.62 | 690,158 | — |
-| SLDE | Slide Insurance Holdings, In | netnet | ▫️ | 25% | 22.86 | 6.80 | 2.71 | 39.88 | — | 1.62 | 690,158 | — |
-| SLDE | Slide Insurance Holdings, In | custom | ▫️ | 0% | 22.86 | 6.80 | 2.71 | 39.88 | — | 1.62 | 690,158 | — |
-| MGY | Magnolia Oil & Gas Corp | piotroski | ▫️ | 67% | 23.71 | 13.53 | 2.20 | 16.27 | 1.54 | — | 5M | — |
-| MGY | Magnolia Oil & Gas Corp | buffett | ▫️ | 50% | 23.71 | 13.53 | 2.20 | 16.27 | 1.54 | — | 5M | — |
-| MGY | Magnolia Oil & Gas Corp | graham | ▫️ | 44% | 23.71 | 13.53 | 2.20 | 16.27 | 1.54 | — | 5M | — |
-| MGY | Magnolia Oil & Gas Corp | greenblatt | ▫️ | 33% | 23.71 | 13.53 | 2.20 | 16.27 | 1.54 | — | 5M | — |
-| MGY | Magnolia Oil & Gas Corp | lynch | ▫️ | 25% | 23.71 | 13.53 | 2.20 | 16.27 | 1.54 | — | 5M | — |
-| MGY | Magnolia Oil & Gas Corp | netnet | ▫️ | 25% | 23.71 | 13.53 | 2.20 | 16.27 | 1.54 | — | 5M | — |
-| MGY | Magnolia Oil & Gas Corp | custom | ▫️ | 0% | 23.71 | 13.53 | 2.20 | 16.27 | 1.54 | — | 5M | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | graham | ▫️ | 67% | 75.47 | 14.86 | 2.04 | 13.75 | 10.06 | 0.12 | 402,578 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | buffett | ▫️ | 67% | 75.47 | 14.86 | 2.04 | 13.75 | 10.06 | 0.12 | 402,578 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | lynch | ▫️ | 50% | 75.47 | 14.86 | 2.04 | 13.75 | 10.06 | 0.12 | 402,578 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | netnet | ▫️ | 50% | 75.47 | 14.86 | 2.04 | 13.75 | 10.06 | 0.12 | 402,578 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | greenblatt | ▫️ | 33% | 75.47 | 14.86 | 2.04 | 13.75 | 10.06 | 0.12 | 402,578 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | custom | ▫️ | 0% | 75.47 | 14.86 | 2.04 | 13.75 | 10.06 | 0.12 | 402,578 | — |
-| DEC | Diversified Energy Company | greenblatt | ▫️ | 67% | 13.57 | 2.96 | 1.03 | 34.66 | 0.60 | 5.26 | 679,567 | — |
-| DEC | Diversified Energy Company | graham | ▫️ | 56% | 13.57 | 2.96 | 1.03 | 34.66 | 0.60 | 5.26 | 679,567 | — |
-| DEC | Diversified Energy Company | buffett | ▫️ | 33% | 13.57 | 2.96 | 1.03 | 34.66 | 0.60 | 5.26 | 679,567 | — |
-| DEC | Diversified Energy Company | piotroski | ▫️ | 33% | 13.57 | 2.96 | 1.03 | 34.66 | 0.60 | 5.26 | 679,567 | — |
-| DEC | Diversified Energy Company | lynch | ▫️ | 25% | 13.57 | 2.96 | 1.03 | 34.66 | 0.60 | 5.26 | 679,567 | — |
-| DEC | Diversified Energy Company | netnet | ▫️ | 25% | 13.57 | 2.96 | 1.03 | 34.66 | 0.60 | 5.26 | 679,567 | — |
+| AMN | AMN HEALTHCARE SERVICES, INC | piotroski | ✅ | 78% | 34.26 | — | 2.06 | -14.90 | 0.94 | 2.26 | 341,479 | — |
+| TDAY | USA TODAY CO., INC. | piotroski | ✅ | 78% | 6.37 | 637 | 5.99 | 1.13 | 0.75 | 10.85 | 2M | — |
+| BYD | BOYD GAMING CORP | buffett | ▫️ | 67% | 69.19 | 3.07 | 2.17 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | graham | ▫️ | 56% | 69.19 | 3.07 | 2.17 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | lynch | ▫️ | 25% | 69.19 | 3.07 | 2.17 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | netnet | ▫️ | 25% | 69.19 | 3.07 | 2.17 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | custom | ▫️ | 0% | 69.19 | 3.07 | 2.17 | 70.66 | 0.54 | — | 1M | — |
+| SLV | iShares Silver Trust | greenblatt | ▫️ | 33% | 54.95 | 1.34 | — | — | — | — | 23M | — |
+| SLV | iShares Silver Trust | netnet | ▫️ | 25% | 54.95 | 1.34 | — | — | — | — | 23M | — |
+| SLV | iShares Silver Trust | graham | ▫️ | 22% | 54.95 | 1.34 | — | — | — | — | 23M | — |
+| SLV | iShares Silver Trust | buffett | ▫️ | 17% | 54.95 | 1.34 | — | — | — | — | 23M | — |
+| SLV | iShares Silver Trust | piotroski | ▫️ | 0% | 54.95 | 1.34 | — | — | — | — | 23M | — |
+| SLV | iShares Silver Trust | custom | ▫️ | 0% | 54.95 | 1.34 | — | — | — | — | 23M | — |
+| XZO | Exzeo Group, Inc. | greenblatt | ▫️ | 67% | 15.09 | 15.24 | 4.76 | 32.56 | 3.86 | 0.37 | 208,854 | — |
+| XZO | Exzeo Group, Inc. | buffett | ▫️ | 50% | 15.09 | 15.24 | 4.76 | 32.56 | 3.86 | 0.37 | 208,854 | — |
+| XZO | Exzeo Group, Inc. | lynch | ▫️ | 50% | 15.09 | 15.24 | 4.76 | 32.56 | 3.86 | 0.37 | 208,854 | — |
+| XZO | Exzeo Group, Inc. | netnet | ▫️ | 50% | 15.09 | 15.24 | 4.76 | 32.56 | 3.86 | 0.37 | 208,854 | — |
+| XZO | Exzeo Group, Inc. | graham | ▫️ | 33% | 15.09 | 15.24 | 4.76 | 32.56 | 3.86 | 0.37 | 208,854 | — |
+| XZO | Exzeo Group, Inc. | piotroski | ▫️ | 33% | 15.09 | 15.24 | 4.76 | 32.56 | 3.86 | 0.37 | 208,854 | — |
+| XZO | Exzeo Group, Inc. | custom | ▫️ | 0% | 15.09 | 15.24 | 4.76 | 32.56 | 3.86 | 0.37 | 208,854 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | piotroski | ▫️ | 44% | 24.83 | — | — | — | 2.10 | — | 297,081 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | graham | ▫️ | 33% | 24.83 | — | — | — | 2.10 | — | 297,081 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | buffett | ▫️ | 33% | 24.83 | — | — | — | 2.10 | — | 297,081 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
