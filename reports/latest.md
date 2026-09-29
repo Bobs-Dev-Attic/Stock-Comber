@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-29 20:18 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-29 23:49 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **35** strategy matches passed.
+Screened **75** companies · **40** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| PPLT | abrdn Platinum ETF Trust | greenblatt | ✅ | 100% | 15.47 | 0.15 | 0.07 | 46.86 | — | 0.00 | 2M | — |
-| PPLT | abrdn Platinum ETF Trust | lynch | ✅ | 75% | 15.47 | 0.15 | 0.07 | 46.86 | — | 0.00 | 2M | — |
-| YELP | YELP INC | greenblatt | ✅ | 100% | 18.28 | 8.16 | 1.67 | 20.48 | 2.99 | 0.35 | 2M | — |
-| YELP | YELP INC | piotroski | ✅ | 89% | 18.28 | 8.16 | 1.67 | 20.48 | 2.99 | 0.35 | 2M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | piotroski | ✅ | 78% | 28.11 | 6.19 | 1.82 | 29.41 | 1.47 | 1.81 | 2M | — |
-| SON | Sonoco Products Company | piotroski | ✅ | 89% | 49.61 | 4.93 | 1.37 | 27.75 | 1.05 | 2.08 | 857,926 | — |
-| SON | Sonoco Products Company | lynch | ✅ | 75% | 49.61 | 4.93 | 1.37 | 27.75 | 1.05 | 2.08 | 857,926 | — |
-| SPNT | SIRIUSPOINT LTD. | lynch | ✅ | 75% | 24.83 | 6.82 | 1.22 | 18.61 | — | 4.09 | 604,336 | — |
-| PFS | PROVIDENT FINANCIAL SERVICES | piotroski | ✅ | 78% | 22.22 | 9.96 | 1.02 | 10.28 | — | 7.82 | 767,263 | — |
-| PFS | PROVIDENT FINANCIAL SERVICES | lynch | ✅ | 75% | 22.22 | 9.96 | 1.02 | 10.28 | — | 7.82 | 767,263 | — |
-| DAKT | Daktronics, Inc. | piotroski | ✅ | 89% | 17.41 | 18.92 | 2.86 | 15.09 | 2.31 | — | 370,164 | — |
-| DAKT | Daktronics, Inc. | lynch | ✅ | 75% | 17.41 | 18.92 | 2.86 | 15.09 | 2.31 | — | 370,164 | — |
-| FSS | FEDERAL SIGNAL CORPORATION | lynch | ✅ | 75% | 114 | 28.49 | 5.08 | 17.84 | 3.02 | 0.73 | 351,710 | — |
-| ACEL | Accel Entertainment, Inc. | piotroski | ✅ | 78% | 10.88 | 18.13 | 3.48 | 19.09 | 2.61 | — | 416,632 | — |
-| HRB | H&R BLOCK INC | greenblatt | ✅ | 100% | 40.58 | 7.17 | 44.51 | 624 | 1.13 | 26.72 | 3M | — |
-| HRB | H&R BLOCK INC | piotroski | ✅ | 89% | 40.58 | 7.17 | 44.51 | 624 | 1.13 | 26.72 | 3M | — |
-| FIZZ | National Beverage Corp. | buffett | ✅ | 83% | 29.61 | 15.11 | 4.36 | 28.89 | 4.39 | 0.34 | 332,945 | — |
-| AENTW | ALLIANCE ENTERTAINMENT HOLDI | lynch | ✅ | 75% | 0.21 | 0.81 | 0.09 | 11.20 | 1.34 | 2.41 | 22.00 | — |
-| TRN | TRINITY INDUSTRIES INC | greenblatt | ✅ | 100% | 26.71 | 8.76 | 2.06 | 23.50 | — | 6.76 | 577,860 | — |
-| TRN | TRINITY INDUSTRIES INC | piotroski | ✅ | 78% | 26.71 | 8.76 | 2.06 | 23.50 | — | 6.76 | 577,860 | — |
-| BFAM | BRIGHT HORIZONS FAMILY SOLUT | piotroski | ✅ | 89% | 63.79 | 18.99 | 2.74 | 14.42 | 0.52 | 1.90 | 834,584 | — |
-| BFAM | BRIGHT HORIZONS FAMILY SOLUT | lynch | ✅ | 75% | 63.79 | 18.99 | 2.74 | 14.42 | 0.52 | 1.90 | 834,584 | — |
-| GEO | The GEO Group, Inc. | piotroski | ✅ | 78% | 30.96 | 17.01 | 2.87 | 16.89 | 2.01 | — | 2M | — |
-| GEO | The GEO Group, Inc. | lynch | ✅ | 75% | 30.96 | 17.01 | 2.87 | 16.89 | 2.01 | — | 2M | — |
-| OPLN | OPENLANE, Inc. | piotroski | ✅ | 89% | 34.61 | — | 2.98 | 14.32 | 1.16 | — | 870,126 | — |
-| EXTR | Extreme Networks, Inc. | piotroski | ✅ | 89% | 21.07 | 67.97 | 32.10 | 47.54 | 0.93 | — | 1M | — |
-| TRIP | TRIPADVISOR, INC. | piotroski | ✅ | 89% | 8.40 | 27.10 | 1.71 | 6.20 | 1.29 | 3.07 | 3M | — |
-| ACA | Arcosa, Inc. | piotroski | ✅ | 100% | 146 | 34.43 | 2.71 | 7.89 | 2.20 | 0.89 | 1M | — |
-| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.33 | 19.68 | 0.77 | 3.99 | 9.18 | 0.34 | 143,002 | — |
-| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 44.39 | 42.68 | — | -29.14 | 1.60 | -6.05 | 398,762 | — |
-| HAYW | Hayward Holdings, Inc. | piotroski | ✅ | 100% | 12.52 | 18.41 | 1.75 | 9.51 | 2.94 | 0.98 | 5M | — |
-| MLKN | MillerKnoll, Inc. | piotroski | ✅ | 100% | 20.28 | 15.36 | 1.05 | 6.82 | 1.58 | 1.93 | 541,803 | — |
-| PLXS | PLEXUS CORP. | piotroski | ✅ | 89% | 266 | 42.51 | 5.05 | 11.89 | 1.58 | 1.16 | 128,027 | — |
-| MSGS | MADISON SQUARE GARDEN SPORTS | piotroski | ✅ | 100% | 416 | 1,301 | — | -2.95 | 0.50 | -6.84 | 290,290 | — |
-| INNV | InnovAge Holding Corp. | piotroski | ✅ | 78% | 8.89 | — | 5.12 | -1.08 | 1.05 | 1.23 | 725,519 | — |
-| PPLT | abrdn Platinum ETF Trust | graham | ▫️ | 56% | 15.47 | 0.15 | 0.07 | 46.86 | — | 0.00 | 2M | — |
-| PPLT | abrdn Platinum ETF Trust | buffett | ▫️ | 50% | 15.47 | 0.15 | 0.07 | 46.86 | — | 0.00 | 2M | — |
-| PPLT | abrdn Platinum ETF Trust | piotroski | ▫️ | 33% | 15.47 | 0.15 | 0.07 | 46.86 | — | 0.00 | 2M | — |
-| PPLT | abrdn Platinum ETF Trust | netnet | ▫️ | 25% | 15.47 | 0.15 | 0.07 | 46.86 | — | 0.00 | 2M | — |
-| PPLT | abrdn Platinum ETF Trust | custom | ▫️ | 0% | 15.47 | 0.15 | 0.07 | 46.86 | — | 0.00 | 2M | — |
-| YELP | YELP INC | graham | ▫️ | 78% | 18.28 | 8.16 | 1.67 | 20.48 | 2.99 | 0.35 | 2M | — |
-| YELP | YELP INC | buffett | ▫️ | 50% | 18.28 | 8.16 | 1.67 | 20.48 | 2.99 | 0.35 | 2M | — |
-| YELP | YELP INC | lynch | ▫️ | 50% | 18.28 | 8.16 | 1.67 | 20.48 | 2.99 | 0.35 | 2M | — |
-| YELP | YELP INC | netnet | ▫️ | 50% | 18.28 | 8.16 | 1.67 | 20.48 | 2.99 | 0.35 | 2M | — |
-| YELP | YELP INC | custom | ▫️ | 0% | 18.28 | 8.16 | 1.67 | 20.48 | 2.99 | 0.35 | 2M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | graham | ▫️ | 67% | 28.11 | 6.19 | 1.82 | 29.41 | 1.47 | 1.81 | 2M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | greenblatt | ▫️ | 67% | 28.11 | 6.19 | 1.82 | 29.41 | 1.47 | 1.81 | 2M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | buffett | ▫️ | 50% | 28.11 | 6.19 | 1.82 | 29.41 | 1.47 | 1.81 | 2M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | lynch | ▫️ | 50% | 28.11 | 6.19 | 1.82 | 29.41 | 1.47 | 1.81 | 2M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | netnet | ▫️ | 25% | 28.11 | 6.19 | 1.82 | 29.41 | 1.47 | 1.81 | 2M | — |
+| PIPR | PIPER SANDLER COMPANIES | greenblatt | ✅ | 100% | 64.72 | 4.09 | 0.84 | 20.52 | — | 0.74 | 2M | — |
+| PIPR | PIPER SANDLER COMPANIES | lynch | ✅ | 100% | 64.72 | 4.09 | 0.84 | 20.52 | — | 0.74 | 2M | — |
+| PIPR | PIPER SANDLER COMPANIES | piotroski | ✅ | 89% | 64.72 | 4.09 | 0.84 | 20.52 | — | 0.74 | 2M | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | greenblatt | ✅ | 100% | 25.45 | 6.38 | 2.15 | 33.67 | 1.55 | — | 418,791 | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | piotroski | ✅ | 100% | 163 | 23.04 | 7.89 | 34.27 | 1.46 | — | 223,603 | — |
+| ESE | ESCO TECHNOLOGIES INC. | lynch | ✅ | 100% | 266 | 23.00 | 4.47 | 19.42 | 1.35 | 0.56 | 138,144 | — |
+| SKYW | SKYWEST INC | piotroski | ✅ | 89% | 98.90 | 9.56 | 1.49 | 15.60 | 0.65 | — | 232,275 | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | buffett | ✅ | 83% | 113 | 15.42 | 5.15 | 33.37 | 4.85 | 2.26 | 728,905 | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | lynch | ✅ | 75% | 113 | 15.42 | 5.15 | 33.37 | 4.85 | 2.26 | 728,905 | — |
+| PJT | PJT Partners Inc. | buffett | ✅ | 83% | 145 | — | — | 58.43 | — | 2.71 | 402,594 | — |
+| PJT | PJT Partners Inc. | piotroski | ✅ | 78% | 145 | — | — | 58.43 | — | 2.71 | 402,594 | — |
+| SSD | Simpson Manufacturing Co., I | buffett | ✅ | 83% | 174 | 21.12 | 3.59 | 17.00 | 3.54 | 0.51 | 218,395 | — |
+| SSD | Simpson Manufacturing Co., I | piotroski | ✅ | 78% | 174 | 21.12 | 3.59 | 17.00 | 3.54 | 0.51 | 218,395 | — |
+| KFY | KORN FERRY | piotroski | ✅ | 100% | 71.98 | 13.79 | 1.92 | 14.06 | 1.94 | 1.06 | 958,114 | — |
+| KFY | KORN FERRY | lynch | ✅ | 75% | 71.98 | 13.79 | 1.92 | 14.06 | 1.94 | 1.06 | 958,114 | — |
+| IBEX | IBEX LIMITED | piotroski | ✅ | 100% | 43.38 | 13.86 | 3.77 | 27.22 | 2.10 | 0.82 | 76,476 | — |
+| SFM | Sprouts Farmers Market, Inc. | greenblatt | ✅ | 100% | 64.65 | 12.18 | 4.55 | 37.32 | 0.93 | 1.96 | 2M | — |
+| SFM | Sprouts Farmers Market, Inc. | piotroski | ✅ | 78% | 64.65 | 12.18 | 4.55 | 37.32 | 0.93 | 1.96 | 2M | — |
+| IIIN | Insteel Industries Inc. | piotroski | ✅ | 78% | 29.09 | 13.85 | 1.53 | 11.04 | 3.97 | — | 155,333 | — |
+| IIIN | Insteel Industries Inc. | lynch | ✅ | 75% | 29.09 | 13.85 | 1.53 | 11.04 | 3.97 | — | 155,333 | — |
+| MEDP | Medpace Holdings, Inc. | buffett | ✅ | 83% | 622 | 40.71 | 40.01 | 98.27 | 0.74 | 3.30 | 249,674 | — |
+| MEDP | Medpace Holdings, Inc. | piotroski | ✅ | 78% | 622 | 40.71 | 40.01 | 98.27 | 0.74 | 3.30 | 249,674 | — |
+| BDC | BELDEN INC. | piotroski | ✅ | 89% | 109 | 18.49 | 3.47 | 18.78 | 1.93 | — | 394,741 | — |
+| AXTA | AXALTA COATING SYSTEMS LTD. | lynch | ✅ | 75% | 32.64 | 18.76 | 3.02 | 16.11 | 2.06 | 2.22 | 1M | — |
+| HAFC | HANMI FINANCIAL CORPORATION | piotroski | ✅ | 89% | 31.16 | 12.41 | 1.18 | 9.55 | — | 8.88 | 230,345 | — |
+| SIRI | SIRIUS XM HOLDINGS INC. | lynch | ✅ | 75% | 25.76 | 11.55 | 0.80 | 6.96 | 0.30 | 1.36 | 3M | — |
+| AGCO | AGCO CORP /DE | piotroski | ✅ | 89% | 116 | 11.91 | 2.03 | 17.00 | 1.39 | 1.72 | 878,533 | — |
+| POST | Post Holdings, Inc. | lynch | ✅ | 75% | 73.43 | 13.33 | 1.23 | 8.94 | 1.67 | 2.60 | 796,054 | — |
+| CPK | CHESAPEAKE UTILITIES CORPORA | piotroski | ✅ | 78% | 128 | 21.47 | 1.88 | 8.78 | 0.45 | — | 145,658 | — |
+| CYH | COMMUNITY HEALTH SYSTEMS, IN | piotroski | ✅ | 89% | 2.91 | 0.77 | — | -36.51 | 1.46 | -10.07 | 1M | — |
+| HAYW | Hayward Holdings, Inc. | piotroski | ✅ | 100% | 12.34 | 18.15 | 1.72 | 9.51 | 2.94 | 0.98 | 4M | — |
+| TDC | TERADATA CORPORATION | piotroski | ✅ | 89% | 28.69 | 21.25 | 12.05 | 56.52 | 0.92 | 6.73 | 1M | — |
+| RRX | REGAL REXNORD CORP | piotroski | ✅ | 78% | 156 | 37.12 | 1.52 | 4.08 | 2.15 | — | 725,051 | — |
+| WRBY | Warby Parker Inc. | piotroski | ✅ | 78% | 27.47 | 2,747 | 9.35 | 0.45 | 2.35 | 0.96 | 5M | — |
+| ZUMZ | ZUMIEZ INC | piotroski | ✅ | 89% | 13.78 | 17.67 | 0.73 | 4.13 | 2.01 | 0.99 | 269,626 | — |
+| ADT | ADT Inc. | piotroski | ✅ | 89% | 6.14 | — | — | 15.77 | 0.93 | 3.19 | 9M | — |
+| GXO | GXO Logistics, Inc. | piotroski | ✅ | 78% | 44.76 | 160 | 1.75 | 1.07 | 0.85 | — | 1M | — |
+| AMN | AMN HEALTHCARE SERVICES, INC | piotroski | ✅ | 78% | 34.95 | — | 2.10 | -14.90 | 0.94 | 2.26 | 660,057 | — |
+| SEDG | SOLAREDGE TECHNOLOGIES, INC. | piotroski | ✅ | 78% | 31.52 | — | 4.35 | -94.85 | 2.17 | — | 3M | — |
+| TDAY | USA TODAY CO., INC. | piotroski | ✅ | 78% | 6.30 | 630 | 5.93 | 1.13 | 0.75 | 10.85 | 2M | — |
+| PIPR | PIPER SANDLER COMPANIES | graham | ▫️ | 78% | 64.72 | 4.09 | 0.84 | 20.52 | — | 0.74 | 2M | — |
+| PIPR | PIPER SANDLER COMPANIES | buffett | ▫️ | 50% | 64.72 | 4.09 | 0.84 | 20.52 | — | 0.74 | 2M | — |
+| PIPR | PIPER SANDLER COMPANIES | netnet | ▫️ | 25% | 64.72 | 4.09 | 0.84 | 20.52 | — | 0.74 | 2M | — |
+| PIPR | PIPER SANDLER COMPANIES | custom | ▫️ | 0% | 64.72 | 4.09 | 0.84 | 20.52 | — | 0.74 | 2M | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | graham | ▫️ | 56% | 25.45 | 6.38 | 2.15 | 33.67 | 1.55 | — | 418,791 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | piotroski | ▫️ | 56% | 25.45 | 6.38 | 2.15 | 33.67 | 1.55 | — | 418,791 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | buffett | ▫️ | 50% | 25.45 | 6.38 | 2.15 | 33.67 | 1.55 | — | 418,791 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | lynch | ▫️ | 25% | 25.45 | 6.38 | 2.15 | 33.67 | 1.55 | — | 418,791 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | netnet | ▫️ | 25% | 25.45 | 6.38 | 2.15 | 33.67 | 1.55 | — | 418,791 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | custom | ▫️ | 0% | 25.45 | 6.38 | 2.15 | 33.67 | 1.55 | — | 418,791 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
