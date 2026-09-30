@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-30 02:32 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-30 08:52 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
 Screened **75** companies · **30** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| MLI | MUELLER INDUSTRIES INC | buffett | ✅ | 100% | 60.79 | 8.86 | 2.11 | 23.84 | 5.92 | 0.15 | 870,238 | — |
-| MLI | MUELLER INDUSTRIES INC | greenblatt | ✅ | 100% | 60.79 | 8.86 | 2.11 | 23.84 | 5.92 | 0.15 | 870,238 | — |
-| MLI | MUELLER INDUSTRIES INC | lynch | ✅ | 100% | 60.79 | 8.86 | 2.11 | 23.84 | 5.92 | 0.15 | 870,238 | — |
-| MLI | MUELLER INDUSTRIES INC | graham | ✅ | 89% | 60.79 | 8.86 | 2.11 | 23.84 | 5.92 | 0.15 | 870,238 | — |
-| MLI | MUELLER INDUSTRIES INC | piotroski | ✅ | 78% | 60.79 | 8.86 | 2.11 | 23.84 | 5.92 | 0.15 | 870,238 | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | piotroski | ✅ | 78% | 8.27 | 6.83 | — | -221 | 2.06 | -5.32 | 5M | — |
-| USLM | UNITED STATES LIME & MINERAL | lynch | ✅ | 100% | 110 | 23.66 | 5.03 | 21.29 | 19.27 | 0.08 | 96,024 | — |
-| USLM | UNITED STATES LIME & MINERAL | buffett | ✅ | 83% | 110 | 23.66 | 5.03 | 21.29 | 19.27 | 0.08 | 96,024 | — |
-| BELFA | BEL FUSE INC /NJ | piotroski | ✅ | 89% | 198 | — | — | 14.46 | 3.02 | 0.98 | 94,840 | — |
-| ACIC | American Coastal Insurance C | greenblatt | ✅ | 100% | 9.24 | 4.30 | 1.45 | 33.64 | — | 2.38 | 203,376 | — |
-| DAKT | Daktronics, Inc. | piotroski | ✅ | 89% | 17.41 | 18.92 | 2.86 | 15.09 | 2.31 | — | 370,164 | — |
-| DAKT | Daktronics, Inc. | lynch | ✅ | 75% | 17.41 | 18.92 | 2.86 | 15.09 | 2.31 | — | 370,164 | — |
-| SFM | Sprouts Farmers Market, Inc. | greenblatt | ✅ | 100% | 64.65 | 12.18 | 4.55 | 37.32 | 0.93 | 1.96 | 2M | — |
-| SFM | Sprouts Farmers Market, Inc. | piotroski | ✅ | 78% | 64.65 | 12.18 | 4.55 | 37.32 | 0.93 | 1.96 | 2M | — |
-| HRB | H&R BLOCK INC | greenblatt | ✅ | 100% | 40.58 | 7.17 | 44.51 | 624 | 1.13 | 26.72 | 3M | — |
-| HRB | H&R BLOCK INC | piotroski | ✅ | 89% | 40.58 | 7.17 | 44.51 | 624 | 1.13 | 26.72 | 3M | — |
-| BCPC | Balchem Corporation | piotroski | ✅ | 100% | 167 | 35.19 | 4.33 | 12.31 | 2.07 | 0.34 | 234,679 | — |
-| KRT | Karat Packaging Inc. | piotroski | ✅ | 78% | 52.69 | 33.78 | 7.12 | 21.07 | 2.30 | 0.88 | 150,539 | — |
-| KNTK | KINETIK HOLDINGS INC. | lynch | ✅ | 75% | 51.16 | 19.45 | — | -31.53 | 0.69 | -7.37 | 2M | — |
-| MYRG | MYR GROUP INC. | piotroski | ✅ | 89% | 288 | 38.29 | 6.87 | 17.93 | 1.33 | 1.49 | 233,478 | — |
-| DLB | Dolby Laboratories, Inc. | piotroski | ✅ | 78% | 57.93 | 22.11 | 2.15 | 9.72 | 3.17 | 0.23 | 849,996 | — |
-| FAF | FIRST AMERICAN FINANCIAL COR | piotroski | ✅ | 89% | 64.03 | 10.67 | 1.21 | 11.31 | — | 1.95 | 1M | — |
-| AIOT | Powerfleet, Inc. | piotroski | ✅ | 78% | 2.75 | — | 0.77 | -4.32 | 1.13 | 1.00 | 3M | — |
-| SGRY | Surgery Partners, Inc. | piotroski | ✅ | 78% | 14.41 | — | 1.07 | -4.55 | 1.87 | — | 1M | — |
-| MLKN | MillerKnoll, Inc. | piotroski | ✅ | 100% | 19.96 | 15.12 | 1.03 | 6.82 | 1.58 | 1.93 | 557,073 | — |
-| MSGS | MADISON SQUARE GARDEN SPORTS | piotroski | ✅ | 100% | 414 | 1,293 | — | -2.95 | 0.50 | -6.84 | 285,740 | — |
-| USNA | USANA HEALTH SCIENCES, INC. | piotroski | ✅ | 78% | 14.70 | 25.34 | 0.51 | 2.02 | 2.24 | 0.29 | 102,318 | — |
-| AVNW | Aviat Networks, Inc. | piotroski | ✅ | 78% | 19.61 | 103 | 0.96 | 0.95 | 1.97 | 1.24 | 124,268 | — |
-| GXO | GXO Logistics, Inc. | piotroski | ✅ | 78% | 44.76 | 160 | 1.75 | 1.07 | 0.85 | — | 1M | — |
-| ORN | ORION GROUP HOLDINGS, INC. | piotroski | ✅ | 78% | 8.41 | 140 | 2.10 | 1.56 | 1.36 | 1.61 | 632,734 | — |
-| MLI | MUELLER INDUSTRIES INC | netnet | ▫️ | 50% | 60.79 | 8.86 | 2.11 | 23.84 | 5.92 | 0.15 | 870,238 | — |
-| MLI | MUELLER INDUSTRIES INC | custom | ▫️ | 0% | 60.79 | 8.86 | 2.11 | 23.84 | 5.92 | 0.15 | 870,238 | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | greenblatt | ▫️ | 67% | 8.27 | 6.83 | — | -221 | 2.06 | -5.32 | 5M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | lynch | ▫️ | 50% | 8.27 | 6.83 | — | -221 | 2.06 | -5.32 | 5M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | graham | ▫️ | 44% | 8.27 | 6.83 | — | -221 | 2.06 | -5.32 | 5M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | buffett | ▫️ | 33% | 8.27 | 6.83 | — | -221 | 2.06 | -5.32 | 5M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | netnet | ▫️ | 25% | 8.27 | 6.83 | — | -221 | 2.06 | -5.32 | 5M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | custom | ▫️ | 0% | 8.27 | 6.83 | — | -221 | 2.06 | -5.32 | 5M | — |
-| USLM | UNITED STATES LIME & MINERAL | piotroski | ▫️ | 67% | 110 | 23.66 | 5.03 | 21.29 | 19.27 | 0.08 | 96,024 | — |
-| USLM | UNITED STATES LIME & MINERAL | greenblatt | ▫️ | 67% | 110 | 23.66 | 5.03 | 21.29 | 19.27 | 0.08 | 96,024 | — |
-| USLM | UNITED STATES LIME & MINERAL | graham | ▫️ | 56% | 110 | 23.66 | 5.03 | 21.29 | 19.27 | 0.08 | 96,024 | — |
-| USLM | UNITED STATES LIME & MINERAL | netnet | ▫️ | 50% | 110 | 23.66 | 5.03 | 21.29 | 19.27 | 0.08 | 96,024 | — |
-| USLM | UNITED STATES LIME & MINERAL | custom | ▫️ | 0% | 110 | 23.66 | 5.03 | 21.29 | 19.27 | 0.08 | 96,024 | — |
-| UNIT | Uniti Group Inc. | greenblatt | ▫️ | 67% | 8.57 | 1.76 | 6.01 | 343 | 0.74 | 30.65 | 2M | — |
-| UNIT | Uniti Group Inc. | graham | ▫️ | 44% | 8.57 | 1.76 | 6.01 | 343 | 0.74 | 30.65 | 2M | — |
-| UNIT | Uniti Group Inc. | buffett | ▫️ | 33% | 8.57 | 1.76 | 6.01 | 343 | 0.74 | 30.65 | 2M | — |
-| UNIT | Uniti Group Inc. | lynch | ▫️ | 25% | 8.57 | 1.76 | 6.01 | 343 | 0.74 | 30.65 | 2M | — |
-| UNIT | Uniti Group Inc. | netnet | ▫️ | 25% | 8.57 | 1.76 | 6.01 | 343 | 0.74 | 30.65 | 2M | — |
-| UNIT | Uniti Group Inc. | piotroski | ▫️ | 22% | 8.57 | 1.76 | 6.01 | 343 | 0.74 | 30.65 | 2M | — |
-| UNIT | Uniti Group Inc. | custom | ▫️ | 0% | 8.57 | 1.76 | 6.01 | 343 | 0.74 | 30.65 | 2M | — |
+| POWL | Powell Industries, Inc. | piotroski | ✅ | 78% | 188 | 12.68 | 3.58 | 28.21 | 2.09 | 0.73 | 302,485 | — |
+| POWL | Powell Industries, Inc. | lynch | ✅ | 75% | 188 | 12.68 | 3.58 | 28.21 | 2.09 | 0.73 | 302,485 | — |
+| GMED | GLOBUS MEDICAL, INC. | piotroski | ✅ | 100% | 75.69 | 19.31 | 2.27 | 11.76 | 4.26 | 0.16 | 2M | — |
+| GMED | GLOBUS MEDICAL, INC. | lynch | ✅ | 100% | 75.69 | 19.31 | 2.27 | 11.76 | 4.26 | 0.16 | 2M | — |
+| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 115 | 21.96 | 4.20 | 19.12 | 2.99 | — | 179,716 | — |
+| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 115 | 21.96 | 4.20 | 19.12 | 2.99 | — | 179,716 | — |
+| ABEO | ABEONA THERAPEUTICS INC. | greenblatt | ✅ | 100% | 5.16 | 5.11 | 2.14 | 44.71 | 6.93 | 0.38 | 1M | — |
+| PJT | PJT Partners Inc. | buffett | ✅ | 83% | 145 | — | — | 58.43 | — | 2.71 | 412,885 | — |
+| PJT | PJT Partners Inc. | piotroski | ✅ | 78% | 145 | — | — | 58.43 | — | 2.71 | 412,885 | — |
+| PRDO | PERDOCEO EDUCATION CORP | piotroski | ✅ | 89% | 30.11 | 12.44 | 2.05 | 16.45 | 5.06 | — | 744,806 | — |
+| KRG | KITE REALTY GROUP TRUST | piotroski | ✅ | 89% | 24.70 | 18.03 | 1.76 | 9.72 | — | 1.13 | 2M | — |
+| NYT | THE NEW YORK TIMES COMPANY | piotroski | ✅ | 100% | 62.32 | 29.82 | 5.04 | 16.85 | 1.54 | — | 3M | — |
+| FCFS | FIRSTCASH HOLDINGS, INC. | piotroski | ✅ | 78% | 213 | 28.68 | 4.16 | 14.51 | 4.55 | 1.33 | 287,516 | — |
+| BANF | BancFirst Corporation | lynch | ✅ | 75% | 106 | 14.96 | 1.94 | 12.98 | — | 7.00 | 189,643 | — |
+| AGCO | AGCO CORP /DE | piotroski | ✅ | 89% | 116 | 11.91 | 2.03 | 17.00 | 1.39 | 1.72 | 878,534 | — |
+| BBWI | BATH & BODY WORKS, INC. | greenblatt | ✅ | 100% | 15.99 | 5.14 | — | -50.66 | 1.27 | — | 5M | — |
+| CENTA | Central Garden & Pet Company | graham | ✅ | 100% | 33.95 | 13.31 | 1.37 | 10.29 | 3.67 | — | 226,026 | — |
+| CENTA | Central Garden & Pet Company | piotroski | ✅ | 89% | 33.95 | 13.31 | 1.37 | 10.29 | 3.67 | — | 226,026 | — |
+| PFH | PRUDENTIAL FINANCIAL INC | piotroski | ✅ | 78% | 15.11 | 1.51 | 0.16 | 11.02 | — | 22.76 | 94,126 | — |
+| IMAX | IMAX Corporation | piotroski | ✅ | 78% | 56.33 | 89.41 | 9.26 | 10.32 | — | 1.38 | 1M | — |
+| KOP | KOPPERS HOLDINGS INC. | piotroski | ✅ | 89% | 46.08 | 16.82 | 1.64 | 9.76 | 2.94 | 2.29 | 103,874 | — |
+| WRBY | Warby Parker Inc. | piotroski | ✅ | 78% | 27.47 | 2,747 | 9.35 | 0.45 | 2.35 | 0.96 | 5M | — |
+| INNV | InnovAge Holding Corp. | piotroski | ✅ | 78% | 8.98 | — | 5.17 | -1.08 | 1.05 | 1.23 | 729,146 | — |
+| SMG | Scotts Miracle-Gro Co | piotroski | ✅ | 78% | 49.50 | 20.04 | — | -40.62 | 1.27 | -8.67 | 2M | — |
+| CALX | Calix, Inc | piotroski | ✅ | 78% | 33.53 | 129 | 2.70 | 2.08 | 4.24 | 0.23 | 1M | — |
+| ADT | ADT Inc. | piotroski | ✅ | 89% | 6.14 | — | — | 15.77 | 0.93 | 3.19 | 9M | — |
+| DAR | DARLING INGREDIENTS INC. | piotroski | ✅ | 78% | 60.32 | 155 | 2.04 | 1.33 | 1.50 | 1.16 | 1M | — |
+| SHC | SOTERA HEALTH COMPANY | piotroski | ✅ | 78% | 18.60 | 68.89 | 8.79 | 12.86 | 2.46 | 4.38 | 2M | — |
+| TPC | Tutor Perini Corporation | piotroski | ✅ | 78% | 84.40 | 55.89 | 3.70 | 6.60 | 1.27 | 3.20 | 266,628 | — |
+| TDAY | USA TODAY CO., INC. | piotroski | ✅ | 78% | 6.30 | 630 | 5.93 | 1.13 | 0.75 | 10.85 | 2M | — |
+| POWL | Powell Industries, Inc. | graham | ▫️ | 78% | 188 | 12.68 | 3.58 | 28.21 | 2.09 | 0.73 | 302,485 | — |
+| POWL | Powell Industries, Inc. | buffett | ▫️ | 67% | 188 | 12.68 | 3.58 | 28.21 | 2.09 | 0.73 | 302,485 | — |
+| POWL | Powell Industries, Inc. | greenblatt | ▫️ | 67% | 188 | 12.68 | 3.58 | 28.21 | 2.09 | 0.73 | 302,485 | — |
+| POWL | Powell Industries, Inc. | netnet | ▫️ | 50% | 188 | 12.68 | 3.58 | 28.21 | 2.09 | 0.73 | 302,485 | — |
+| POWL | Powell Industries, Inc. | custom | ▫️ | 0% | 188 | 12.68 | 3.58 | 28.21 | 2.09 | 0.73 | 302,485 | — |
+| GMED | GLOBUS MEDICAL, INC. | graham | ▫️ | 67% | 75.69 | 19.31 | 2.27 | 11.76 | 4.26 | 0.16 | 2M | — |
+| GMED | GLOBUS MEDICAL, INC. | buffett | ▫️ | 67% | 75.69 | 19.31 | 2.27 | 11.76 | 4.26 | 0.16 | 2M | — |
+| GMED | GLOBUS MEDICAL, INC. | netnet | ▫️ | 50% | 75.69 | 19.31 | 2.27 | 11.76 | 4.26 | 0.16 | 2M | — |
+| GMED | GLOBUS MEDICAL, INC. | greenblatt | ▫️ | 33% | 75.69 | 19.31 | 2.27 | 11.76 | 4.26 | 0.16 | 2M | — |
+| GMED | GLOBUS MEDICAL, INC. | custom | ▫️ | 0% | 75.69 | 19.31 | 2.27 | 11.76 | 4.26 | 0.16 | 2M | — |
+| PPIH | Perma-Pipe International Hol | piotroski | ▫️ | 67% | 31.21 | 14.93 | 2.81 | 18.79 | 1.84 | — | 67,376 | — |
+| PPIH | Perma-Pipe International Hol | graham | ▫️ | 44% | 31.21 | 14.93 | 2.81 | 18.79 | 1.84 | — | 67,376 | — |
+| PPIH | Perma-Pipe International Hol | greenblatt | ▫️ | 33% | 31.21 | 14.93 | 2.81 | 18.79 | 1.84 | — | 67,376 | — |
+| PPIH | Perma-Pipe International Hol | lynch | ▫️ | 25% | 31.21 | 14.93 | 2.81 | 18.79 | 1.84 | — | 67,376 | — |
+| PPIH | Perma-Pipe International Hol | netnet | ▫️ | 25% | 31.21 | 14.93 | 2.81 | 18.79 | 1.84 | — | 67,376 | — |
+| PPIH | Perma-Pipe International Hol | buffett | ▫️ | 17% | 31.21 | 14.93 | 2.81 | 18.79 | 1.84 | — | 67,376 | — |
+| PPIH | Perma-Pipe International Hol | custom | ▫️ | 0% | 31.21 | 14.93 | 2.81 | 18.79 | 1.84 | — | 67,376 | — |
+| IPAR | INTERPARFUMS, INC. | graham | ▫️ | 67% | 115 | 21.96 | 4.20 | 19.12 | 2.99 | — | 179,716 | — |
+| IPAR | INTERPARFUMS, INC. | piotroski | ▫️ | 67% | 115 | 21.96 | 4.20 | 19.12 | 2.99 | — | 179,716 | — |
+| IPAR | INTERPARFUMS, INC. | greenblatt | ▫️ | 33% | 115 | 21.96 | 4.20 | 19.12 | 2.99 | — | 179,716 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
