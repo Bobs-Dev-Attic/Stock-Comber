@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-WHD,"Cactus, Inc.",lynch,True,3,4,75.0,62.22,—,—,13.54,5.81,0.36,—,"770,073",—
-SKYW,SKYWEST INC,piotroski,True,8,9,88.9,96.92,9.36,1.46,15.60,0.65,—,124,"283,012",—
-FHI,"Federated Hermes, Inc.",greenblatt,True,3,3,100.0,57.52,11.21,3.61,33.69,2.75,0.81,42.89,"480,622",—
-FHI,"Federated Hermes, Inc.",piotroski,True,8,9,88.9,57.52,11.21,3.61,33.69,2.75,0.81,42.89,"480,622",—
-PJT,PJT Partners Inc.,buffett,True,5,6,83.3,145,—,—,58.43,—,2.71,—,"412,885",—
-PJT,PJT Partners Inc.,piotroski,True,7,9,77.8,145,—,—,58.43,—,2.71,—,"412,885",—
-PRDO,PERDOCEO EDUCATION CORP,piotroski,True,8,9,88.9,30.11,12.44,2.05,16.45,5.06,—,28.29,"744,806",—
-GPK,Graphic Packaging Holding Co,lynch,True,3,4,75.0,9.05,6.11,0.81,13.31,1.30,—,19.25,6M,—
-WNC,WABASH NATIONAL CORPORATION,greenblatt,True,3,3,100.0,12.68,2.50,1.44,57.56,1.39,2.18,31.68,"983,112",—
-FIZZ,National Beverage Corp.,buffett,True,5,6,83.3,29.20,14.90,4.30,28.89,4.39,0.34,17.30,"416,428",—
-AENTW,ALLIANCE ENTERTAINMENT HOLDING CORPORATION,lynch,True,3,4,75.0,0.19,0.73,0.08,11.20,1.34,2.41,3.66,"30,324",—
-PSN,Parsons Corporation,lynch,True,3,4,75.0,40.97,18.62,1.70,9.13,1.75,1.14,34.53,1M,—
-BCPC,Balchem Corporation,piotroski,True,9,9,100.0,167,35.19,4.33,12.31,2.07,0.34,64.20,"234,679",—
-SSTK,"SHUTTERSTOCK, INC.",piotroski,True,8,9,88.9,4.02,3.22,0.25,7.83,0.54,1.33,21.23,"926,389",—
-FIGS,"FIGS, Inc.",piotroski,True,8,9,88.9,13.86,72.95,5.69,7.83,4.94,0.33,3.23,3M,—
-WWW,"WOLVERINE WORLD WIDE, INC.",piotroski,True,7,9,77.8,19.24,16.88,3.85,23.48,1.40,—,11.32,"626,633",—
-GSHD,"GOOSEHEAD INSURANCE, INC.",lynch,True,3,4,75.0,43.99,42.30,—,-29.14,1.60,-6.05,—,"481,442",—
-CHEF,"CHEFS’ WAREHOUSE, INC.",piotroski,True,9,9,100.0,112,66.77,8.54,11.97,2.05,2.36,22.28,1M,—
-KN,Knowles Corporation,piotroski,True,7,9,77.8,37.15,74.30,4.21,5.70,2.75,—,9.96,"580,783",—
-WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,8,9,88.9,26.66,29.30,0.62,2.10,2.42,0.76,29.77,"607,729",—
+GOOGN,Alphabet Inc.,graham,True,9,9,100.0,48.49,4.49,1.43,31.83,2.01,0.43,90.88,4M,—
+GOOGN,Alphabet Inc.,buffett,True,6,6,100.0,48.49,4.49,1.43,31.83,2.01,0.43,90.88,4M,—
+GOOGN,Alphabet Inc.,greenblatt,True,3,3,100.0,48.49,4.49,1.43,31.83,2.01,0.43,90.88,4M,—
+GOOGN,Alphabet Inc.,lynch,True,4,4,100.0,48.49,4.49,1.43,31.83,2.01,0.43,90.88,4M,—
+MLI,MUELLER INDUSTRIES INC,buffett,True,6,6,100.0,60.61,8.84,2.11,23.84,5.92,0.15,66.66,1M,—
+MLI,MUELLER INDUSTRIES INC,greenblatt,True,3,3,100.0,60.61,8.84,2.11,23.84,5.92,0.15,66.66,1M,—
+MLI,MUELLER INDUSTRIES INC,lynch,True,4,4,100.0,60.61,8.84,2.11,23.84,5.92,0.15,66.66,1M,—
+MLI,MUELLER INDUSTRIES INC,graham,True,8,9,88.9,60.61,8.84,2.11,23.84,5.92,0.15,66.66,1M,—
+MLI,MUELLER INDUSTRIES INC,piotroski,True,7,9,77.8,60.61,8.84,2.11,23.84,5.92,0.15,66.66,1M,—
+LRN,"Stride, Inc.",lynch,True,4,4,100.0,77.98,10.92,2.26,20.72,5.94,0.49,74.43,"680,982",—
+LRN,"Stride, Inc.",piotroski,True,8,9,88.9,77.98,10.92,2.26,20.72,5.94,0.49,74.43,"680,982",—
+LRN,"Stride, Inc.",buffett,True,5,6,83.3,77.98,10.92,2.26,20.72,5.94,0.49,74.43,"680,982",—
+SPNT,SIRIUSPOINT LTD.,lynch,True,3,4,75.0,24.25,6.66,1.19,18.61,—,4.09,40.78,"905,447",—
+CHH,CHOICE HOTELS INTERNATIONAL INC /DE,piotroski,True,7,9,77.8,102,12.96,26.32,204,0.87,15.10,26.30,"678,577",—
+CHH,CHOICE HOTELS INTERNATIONAL INC /DE,lynch,True,3,4,75.0,102,12.96,26.32,204,0.87,15.10,26.30,"678,577",—
+EXLS,"EXLSERVICE HOLDINGS, INC.",piotroski,True,8,9,88.9,34.38,22.32,6.12,27.50,2.56,0.87,13.95,2M,—
+EXLS,"EXLSERVICE HOLDINGS, INC.",buffett,True,5,6,83.3,34.38,22.32,6.12,27.50,2.56,0.87,13.95,2M,—
+EXLS,"EXLSERVICE HOLDINGS, INC.",lynch,True,3,4,75.0,34.38,22.32,6.12,27.50,2.56,0.87,13.95,2M,—
+ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",buffett,True,5,6,83.3,113,15.45,5.16,33.37,4.85,2.26,60.19,1M,—
+ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",lynch,True,3,4,75.0,113,15.45,5.16,33.37,4.85,2.26,60.19,1M,—
+SFD,"SMITHFIELD FOODS, INC.",graham,True,9,9,100.0,18.72,7.46,1.08,14.51,2.97,—,31.27,1M,—
+GBX,"THE GREENBRIER COMPANIES, INC.",lynch,True,3,4,75.0,40.07,6.31,0.84,13.32,—,—,82.54,"485,152",—
+DUKU,Duke Energy CORP,piotroski,True,8,9,88.9,48.10,7.62,0.72,9.58,0.55,—,97.33,"429,363",—
+DUKU,Duke Energy CORP,lynch,True,3,4,75.0,48.10,7.62,0.72,9.58,0.55,—,97.33,"429,363",—
+VNO,Vornado Realty Trust,piotroski,True,7,9,77.8,33.88,8.07,1.14,15.12,—,1.46,53.05,1M,—
+BANC,"BANC OF CALIFORNIA, INC.",piotroski,True,7,9,77.8,17.23,14.73,0.79,6.47,—,8.83,24.01,2M,—
+HOG,"Harley-Davidson, Inc.",graham,True,9,9,100.0,24.43,8.79,0.94,10.79,2.10,—,40.25,2M,—
+HOG,"Harley-Davidson, Inc.",piotroski,True,8,9,88.9,24.43,8.79,0.94,10.79,2.10,—,40.25,2M,—
+HALO,"HALOZYME THERAPEUTICS, INC.",buffett,True,5,6,83.3,110,43.12,280,649,4.66,50.73,4.76,4M,—
+EGP,"EASTGROUP PROPERTIES, INC.",piotroski,True,7,9,77.8,197,40.54,2.98,7.36,—,0.55,85.17,"561,108",—
+EGP,"EASTGROUP PROPERTIES, INC.",lynch,True,3,4,75.0,197,40.54,2.98,7.36,—,0.55,85.17,"561,108",—
+TRIP,"TRIPADVISOR, INC.",piotroski,True,8,9,88.9,8.37,27.00,1.70,6.20,1.29,3.07,5.86,3M,—
+WOR,"WORTHINGTON ENTERPRISES, INC.",piotroski,True,8,9,88.9,59.54,18.96,2.88,15.20,2.37,0.80,38.20,"601,623",—
+ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.31,19.59,0.77,3.99,9.18,0.34,5.26,"126,418",—
+SGRY,"Surgery Partners, Inc.",piotroski,True,7,9,77.8,13.87,—,1.03,-4.55,1.87,—,—,2M,—
+MPAA,"MOTORCAR PARTS OF AMERICA, INC.",piotroski,True,7,9,77.8,10.49,16.92,0.79,4.66,1.46,2.83,13.63,"291,866",—
 AMN,"AMN HEALTHCARE SERVICES, INC.",piotroski,True,7,9,77.8,35.87,—,2.15,-14.90,0.94,2.26,—,1M,—
-WHD,"Cactus, Inc.",graham,False,6,9,66.7,62.22,—,—,13.54,5.81,0.36,—,"770,073",—
-WHD,"Cactus, Inc.",piotroski,False,5,9,55.6,62.22,—,—,13.54,5.81,0.36,—,"770,073",—
-WHD,"Cactus, Inc.",buffett,False,3,6,50.0,62.22,—,—,13.54,5.81,0.36,—,"770,073",—
-WHD,"Cactus, Inc.",greenblatt,False,1,3,33.3,62.22,—,—,13.54,5.81,0.36,—,"770,073",—
-WHD,"Cactus, Inc.",netnet,False,1,4,25.0,62.22,—,—,13.54,5.81,0.36,—,"770,073",—
-WHD,"Cactus, Inc.",custom,False,0,0,0.0,62.22,—,—,13.54,5.81,0.36,—,"770,073",—
-INSW,"INTERNATIONAL SEAWAYS, INC.",buffett,False,4,6,66.7,110,17.68,2.70,15.31,3.71,0.32,75.56,"856,990",—
-INSW,"INTERNATIONAL SEAWAYS, INC.",piotroski,False,6,9,66.7,110,17.68,2.70,15.31,3.71,0.32,75.56,"856,990",—
-INSW,"INTERNATIONAL SEAWAYS, INC.",lynch,False,2,4,50.0,110,17.68,2.70,15.31,3.71,0.32,75.56,"856,990",—
-INSW,"INTERNATIONAL SEAWAYS, INC.",graham,False,3,9,33.3,110,17.68,2.70,15.31,3.71,0.32,75.56,"856,990",—
-INSW,"INTERNATIONAL SEAWAYS, INC.",greenblatt,False,1,3,33.3,110,17.68,2.70,15.31,3.71,0.32,75.56,"856,990",—
-INSW,"INTERNATIONAL SEAWAYS, INC.",netnet,False,1,4,25.0,110,17.68,2.70,15.31,3.71,0.32,75.56,"856,990",—
-INSW,"INTERNATIONAL SEAWAYS, INC.",custom,False,0,0,0.0,110,17.68,2.70,15.31,3.71,0.32,75.56,"856,990",—
-IDR,"IDAHO STRATEGIC RESOURCES, INC",buffett,False,4,6,66.7,28.00,24.56,3.81,15.45,13.96,0.05,13.74,"242,396",—
-IDR,"IDAHO STRATEGIC RESOURCES, INC",piotroski,False,6,9,66.7,28.00,24.56,3.81,15.45,13.96,0.05,13.74,"242,396",—
-IDR,"IDAHO STRATEGIC RESOURCES, INC",lynch,False,2,4,50.0,28.00,24.56,3.81,15.45,13.96,0.05,13.74,"242,396",—
-IDR,"IDAHO STRATEGIC RESOURCES, INC",netnet,False,2,4,50.0,28.00,24.56,3.81,15.45,13.96,0.05,13.74,"242,396",—
-IDR,"IDAHO STRATEGIC RESOURCES, INC",graham,False,3,9,33.3,28.00,24.56,3.81,15.45,13.96,0.05,13.74,"242,396",—
-IDR,"IDAHO STRATEGIC RESOURCES, INC",greenblatt,False,1,3,33.3,28.00,24.56,3.81,15.45,13.96,0.05,13.74,"242,396",—
-IDR,"IDAHO STRATEGIC RESOURCES, INC",custom,False,0,0,0.0,28.00,24.56,3.81,15.45,13.96,0.05,13.74,"242,396",—
-UROY,Uranium Royalty Corp.,lynch,False,2,4,50.0,4.04,13.93,1.80,12.87,5.94,0.19,3.83,3M,—
-UROY,Uranium Royalty Corp.,netnet,False,2,4,50.0,4.04,13.93,1.80,12.87,5.94,0.19,3.83,3M,—
-UROY,Uranium Royalty Corp.,graham,False,4,9,44.4,4.04,13.93,1.80,12.87,5.94,0.19,3.83,3M,—
-UROY,Uranium Royalty Corp.,buffett,False,2,6,33.3,4.04,13.93,1.80,12.87,5.94,0.19,3.83,3M,—
-UROY,Uranium Royalty Corp.,piotroski,False,3,9,33.3,4.04,13.93,1.80,12.87,5.94,0.19,3.83,3M,—
-UROY,Uranium Royalty Corp.,greenblatt,False,1,3,33.3,4.04,13.93,1.80,12.87,5.94,0.19,3.83,3M,—
-UROY,Uranium Royalty Corp.,custom,False,0,0,0.0,4.04,13.93,1.80,12.87,5.94,0.19,3.83,3M,—
-PPIH,"Perma-Pipe International Holdings, Inc.",piotroski,False,6,9,66.7,31.21,14.93,2.81,18.79,1.84,—,22.87,"67,376",—
-PPIH,"Perma-Pipe International Holdings, Inc.",graham,False,4,9,44.4,31.21,14.93,2.81,18.79,1.84,—,22.87,"67,376",—
+GOOGN,Alphabet Inc.,piotroski,False,6,9,66.7,48.49,4.49,1.43,31.83,2.01,0.43,90.88,4M,—
+GOOGN,Alphabet Inc.,netnet,False,2,4,50.0,48.49,4.49,1.43,31.83,2.01,0.43,90.88,4M,—
+GOOGN,Alphabet Inc.,custom,False,0,0,0.0,48.49,4.49,1.43,31.83,2.01,0.43,90.88,4M,—
+MLI,MUELLER INDUSTRIES INC,netnet,False,2,4,50.0,60.61,8.84,2.11,23.84,5.92,0.15,66.66,1M,—
+MLI,MUELLER INDUSTRIES INC,custom,False,0,0,0.0,60.61,8.84,2.11,23.84,5.92,0.15,66.66,1M,—
+LRN,"Stride, Inc.",graham,False,7,9,77.8,77.98,10.92,2.26,20.72,5.94,0.49,74.43,"680,982",—
+LRN,"Stride, Inc.",greenblatt,False,2,3,66.7,77.98,10.92,2.26,20.72,5.94,0.49,74.43,"680,982",—
+LRN,"Stride, Inc.",netnet,False,2,4,50.0,77.98,10.92,2.26,20.72,5.94,0.49,74.43,"680,982",—
+LRN,"Stride, Inc.",custom,False,0,0,0.0,77.98,10.92,2.26,20.72,5.94,0.49,74.43,"680,982",—
+NAGE,"NIAGEN BIOSCIENCE, INC.",piotroski,False,6,9,66.7,2.92,14.60,3.26,22.71,4.86,0.39,2.01,"360,538",—
+NAGE,"NIAGEN BIOSCIENCE, INC.",greenblatt,False,2,3,66.7,2.92,14.60,3.26,22.71,4.86,0.39,2.01,"360,538",—
+NAGE,"NIAGEN BIOSCIENCE, INC.",buffett,False,3,6,50.0,2.92,14.60,3.26,22.71,4.86,0.39,2.01,"360,538",—
+NAGE,"NIAGEN BIOSCIENCE, INC.",lynch,False,2,4,50.0,2.92,14.60,3.26,22.71,4.86,0.39,2.01,"360,538",—

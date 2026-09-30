@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-09-30 20:19 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-09-30 23:51 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **21** strategy matches passed.
+Screened **75** companies · **37** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| WHD | Cactus, Inc. | lynch | ✅ | 75% | 62.22 | — | — | 13.54 | 5.81 | 0.36 | 770,073 | — |
-| SKYW | SKYWEST INC | piotroski | ✅ | 89% | 96.92 | 9.36 | 1.46 | 15.60 | 0.65 | — | 283,012 | — |
-| FHI | Federated Hermes, Inc. | greenblatt | ✅ | 100% | 57.52 | 11.21 | 3.61 | 33.69 | 2.75 | 0.81 | 480,622 | — |
-| FHI | Federated Hermes, Inc. | piotroski | ✅ | 89% | 57.52 | 11.21 | 3.61 | 33.69 | 2.75 | 0.81 | 480,622 | — |
-| PJT | PJT Partners Inc. | buffett | ✅ | 83% | 145 | — | — | 58.43 | — | 2.71 | 412,885 | — |
-| PJT | PJT Partners Inc. | piotroski | ✅ | 78% | 145 | — | — | 58.43 | — | 2.71 | 412,885 | — |
-| PRDO | PERDOCEO EDUCATION CORP | piotroski | ✅ | 89% | 30.11 | 12.44 | 2.05 | 16.45 | 5.06 | — | 744,806 | — |
-| GPK | Graphic Packaging Holding Co | lynch | ✅ | 75% | 9.05 | 6.11 | 0.81 | 13.31 | 1.30 | — | 6M | — |
-| WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 12.68 | 2.50 | 1.44 | 57.56 | 1.39 | 2.18 | 983,112 | — |
-| FIZZ | National Beverage Corp. | buffett | ✅ | 83% | 29.20 | 14.90 | 4.30 | 28.89 | 4.39 | 0.34 | 416,428 | — |
-| AENTW | ALLIANCE ENTERTAINMENT HOLDI | lynch | ✅ | 75% | 0.19 | 0.73 | 0.08 | 11.20 | 1.34 | 2.41 | 30,324 | — |
-| PSN | Parsons Corporation | lynch | ✅ | 75% | 40.97 | 18.62 | 1.70 | 9.13 | 1.75 | 1.14 | 1M | — |
-| BCPC | Balchem Corporation | piotroski | ✅ | 100% | 167 | 35.19 | 4.33 | 12.31 | 2.07 | 0.34 | 234,679 | — |
-| SSTK | SHUTTERSTOCK, INC. | piotroski | ✅ | 89% | 4.02 | 3.22 | 0.25 | 7.83 | 0.54 | 1.33 | 926,389 | — |
-| FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 13.86 | 72.95 | 5.69 | 7.83 | 4.94 | 0.33 | 3M | — |
-| WWW | WOLVERINE WORLD WIDE, INC. | piotroski | ✅ | 78% | 19.24 | 16.88 | 3.85 | 23.48 | 1.40 | — | 626,633 | — |
-| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 43.99 | 42.30 | — | -29.14 | 1.60 | -6.05 | 481,442 | — |
-| CHEF | CHEFS’ WAREHOUSE, INC. | piotroski | ✅ | 100% | 112 | 66.77 | 8.54 | 11.97 | 2.05 | 2.36 | 1M | — |
-| KN | Knowles Corporation | piotroski | ✅ | 78% | 37.15 | 74.30 | 4.21 | 5.70 | 2.75 | — | 580,783 | — |
-| WGO | WINNEBAGO INDUSTRIES, INC. | piotroski | ✅ | 89% | 26.66 | 29.30 | 0.62 | 2.10 | 2.42 | 0.76 | 607,729 | — |
+| GOOGN | Alphabet Inc. | graham | ✅ | 100% | 48.49 | 4.49 | 1.43 | 31.83 | 2.01 | 0.43 | 4M | — |
+| GOOGN | Alphabet Inc. | buffett | ✅ | 100% | 48.49 | 4.49 | 1.43 | 31.83 | 2.01 | 0.43 | 4M | — |
+| GOOGN | Alphabet Inc. | greenblatt | ✅ | 100% | 48.49 | 4.49 | 1.43 | 31.83 | 2.01 | 0.43 | 4M | — |
+| GOOGN | Alphabet Inc. | lynch | ✅ | 100% | 48.49 | 4.49 | 1.43 | 31.83 | 2.01 | 0.43 | 4M | — |
+| MLI | MUELLER INDUSTRIES INC | buffett | ✅ | 100% | 60.61 | 8.84 | 2.11 | 23.84 | 5.92 | 0.15 | 1M | — |
+| MLI | MUELLER INDUSTRIES INC | greenblatt | ✅ | 100% | 60.61 | 8.84 | 2.11 | 23.84 | 5.92 | 0.15 | 1M | — |
+| MLI | MUELLER INDUSTRIES INC | lynch | ✅ | 100% | 60.61 | 8.84 | 2.11 | 23.84 | 5.92 | 0.15 | 1M | — |
+| MLI | MUELLER INDUSTRIES INC | graham | ✅ | 89% | 60.61 | 8.84 | 2.11 | 23.84 | 5.92 | 0.15 | 1M | — |
+| MLI | MUELLER INDUSTRIES INC | piotroski | ✅ | 78% | 60.61 | 8.84 | 2.11 | 23.84 | 5.92 | 0.15 | 1M | — |
+| LRN | Stride, Inc. | lynch | ✅ | 100% | 77.98 | 10.92 | 2.26 | 20.72 | 5.94 | 0.49 | 680,982 | — |
+| LRN | Stride, Inc. | piotroski | ✅ | 89% | 77.98 | 10.92 | 2.26 | 20.72 | 5.94 | 0.49 | 680,982 | — |
+| LRN | Stride, Inc. | buffett | ✅ | 83% | 77.98 | 10.92 | 2.26 | 20.72 | 5.94 | 0.49 | 680,982 | — |
+| SPNT | SIRIUSPOINT LTD. | lynch | ✅ | 75% | 24.25 | 6.66 | 1.19 | 18.61 | — | 4.09 | 905,447 | — |
+| CHH | CHOICE HOTELS INTERNATIONAL  | piotroski | ✅ | 78% | 102 | 12.96 | 26.32 | 204 | 0.87 | 15.10 | 678,577 | — |
+| CHH | CHOICE HOTELS INTERNATIONAL  | lynch | ✅ | 75% | 102 | 12.96 | 26.32 | 204 | 0.87 | 15.10 | 678,577 | — |
+| EXLS | EXLSERVICE HOLDINGS, INC. | piotroski | ✅ | 89% | 34.38 | 22.32 | 6.12 | 27.50 | 2.56 | 0.87 | 2M | — |
+| EXLS | EXLSERVICE HOLDINGS, INC. | buffett | ✅ | 83% | 34.38 | 22.32 | 6.12 | 27.50 | 2.56 | 0.87 | 2M | — |
+| EXLS | EXLSERVICE HOLDINGS, INC. | lynch | ✅ | 75% | 34.38 | 22.32 | 6.12 | 27.50 | 2.56 | 0.87 | 2M | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | buffett | ✅ | 83% | 113 | 15.45 | 5.16 | 33.37 | 4.85 | 2.26 | 1M | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | lynch | ✅ | 75% | 113 | 15.45 | 5.16 | 33.37 | 4.85 | 2.26 | 1M | — |
+| SFD | SMITHFIELD FOODS, INC. | graham | ✅ | 100% | 18.72 | 7.46 | 1.08 | 14.51 | 2.97 | — | 1M | — |
+| GBX | THE GREENBRIER COMPANIES, IN | lynch | ✅ | 75% | 40.07 | 6.31 | 0.84 | 13.32 | — | — | 485,152 | — |
+| DUKU | Duke Energy CORP | piotroski | ✅ | 89% | 48.10 | 7.62 | 0.72 | 9.58 | 0.55 | — | 429,363 | — |
+| DUKU | Duke Energy CORP | lynch | ✅ | 75% | 48.10 | 7.62 | 0.72 | 9.58 | 0.55 | — | 429,363 | — |
+| VNO | Vornado Realty Trust | piotroski | ✅ | 78% | 33.88 | 8.07 | 1.14 | 15.12 | — | 1.46 | 1M | — |
+| BANC | BANC OF CALIFORNIA, INC. | piotroski | ✅ | 78% | 17.23 | 14.73 | 0.79 | 6.47 | — | 8.83 | 2M | — |
+| HOG | Harley-Davidson, Inc. | graham | ✅ | 100% | 24.43 | 8.79 | 0.94 | 10.79 | 2.10 | — | 2M | — |
+| HOG | Harley-Davidson, Inc. | piotroski | ✅ | 89% | 24.43 | 8.79 | 0.94 | 10.79 | 2.10 | — | 2M | — |
+| HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 110 | 43.12 | 280 | 649 | 4.66 | 50.73 | 4M | — |
+| EGP | EASTGROUP PROPERTIES, INC. | piotroski | ✅ | 78% | 197 | 40.54 | 2.98 | 7.36 | — | 0.55 | 561,108 | — |
+| EGP | EASTGROUP PROPERTIES, INC. | lynch | ✅ | 75% | 197 | 40.54 | 2.98 | 7.36 | — | 0.55 | 561,108 | — |
+| TRIP | TRIPADVISOR, INC. | piotroski | ✅ | 89% | 8.37 | 27.00 | 1.70 | 6.20 | 1.29 | 3.07 | 3M | — |
+| WOR | WORTHINGTON ENTERPRISES, INC | piotroski | ✅ | 89% | 59.54 | 18.96 | 2.88 | 15.20 | 2.37 | 0.80 | 601,623 | — |
+| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.31 | 19.59 | 0.77 | 3.99 | 9.18 | 0.34 | 126,418 | — |
+| SGRY | Surgery Partners, Inc. | piotroski | ✅ | 78% | 13.87 | — | 1.03 | -4.55 | 1.87 | — | 2M | — |
+| MPAA | MOTORCAR PARTS OF AMERICA, I | piotroski | ✅ | 78% | 10.49 | 16.92 | 0.79 | 4.66 | 1.46 | 2.83 | 291,866 | — |
 | AMN | AMN HEALTHCARE SERVICES, INC | piotroski | ✅ | 78% | 35.87 | — | 2.15 | -14.90 | 0.94 | 2.26 | 1M | — |
-| WHD | Cactus, Inc. | graham | ▫️ | 67% | 62.22 | — | — | 13.54 | 5.81 | 0.36 | 770,073 | — |
-| WHD | Cactus, Inc. | piotroski | ▫️ | 56% | 62.22 | — | — | 13.54 | 5.81 | 0.36 | 770,073 | — |
-| WHD | Cactus, Inc. | buffett | ▫️ | 50% | 62.22 | — | — | 13.54 | 5.81 | 0.36 | 770,073 | — |
-| WHD | Cactus, Inc. | greenblatt | ▫️ | 33% | 62.22 | — | — | 13.54 | 5.81 | 0.36 | 770,073 | — |
-| WHD | Cactus, Inc. | netnet | ▫️ | 25% | 62.22 | — | — | 13.54 | 5.81 | 0.36 | 770,073 | — |
-| WHD | Cactus, Inc. | custom | ▫️ | 0% | 62.22 | — | — | 13.54 | 5.81 | 0.36 | 770,073 | — |
-| INSW | INTERNATIONAL SEAWAYS, INC. | buffett | ▫️ | 67% | 110 | 17.68 | 2.70 | 15.31 | 3.71 | 0.32 | 856,990 | — |
-| INSW | INTERNATIONAL SEAWAYS, INC. | piotroski | ▫️ | 67% | 110 | 17.68 | 2.70 | 15.31 | 3.71 | 0.32 | 856,990 | — |
-| INSW | INTERNATIONAL SEAWAYS, INC. | lynch | ▫️ | 50% | 110 | 17.68 | 2.70 | 15.31 | 3.71 | 0.32 | 856,990 | — |
-| INSW | INTERNATIONAL SEAWAYS, INC. | graham | ▫️ | 33% | 110 | 17.68 | 2.70 | 15.31 | 3.71 | 0.32 | 856,990 | — |
-| INSW | INTERNATIONAL SEAWAYS, INC. | greenblatt | ▫️ | 33% | 110 | 17.68 | 2.70 | 15.31 | 3.71 | 0.32 | 856,990 | — |
-| INSW | INTERNATIONAL SEAWAYS, INC. | netnet | ▫️ | 25% | 110 | 17.68 | 2.70 | 15.31 | 3.71 | 0.32 | 856,990 | — |
-| INSW | INTERNATIONAL SEAWAYS, INC. | custom | ▫️ | 0% | 110 | 17.68 | 2.70 | 15.31 | 3.71 | 0.32 | 856,990 | — |
-| IDR | IDAHO STRATEGIC RESOURCES, I | buffett | ▫️ | 67% | 28.00 | 24.56 | 3.81 | 15.45 | 13.96 | 0.05 | 242,396 | — |
-| IDR | IDAHO STRATEGIC RESOURCES, I | piotroski | ▫️ | 67% | 28.00 | 24.56 | 3.81 | 15.45 | 13.96 | 0.05 | 242,396 | — |
-| IDR | IDAHO STRATEGIC RESOURCES, I | lynch | ▫️ | 50% | 28.00 | 24.56 | 3.81 | 15.45 | 13.96 | 0.05 | 242,396 | — |
-| IDR | IDAHO STRATEGIC RESOURCES, I | netnet | ▫️ | 50% | 28.00 | 24.56 | 3.81 | 15.45 | 13.96 | 0.05 | 242,396 | — |
-| IDR | IDAHO STRATEGIC RESOURCES, I | graham | ▫️ | 33% | 28.00 | 24.56 | 3.81 | 15.45 | 13.96 | 0.05 | 242,396 | — |
-| IDR | IDAHO STRATEGIC RESOURCES, I | greenblatt | ▫️ | 33% | 28.00 | 24.56 | 3.81 | 15.45 | 13.96 | 0.05 | 242,396 | — |
-| IDR | IDAHO STRATEGIC RESOURCES, I | custom | ▫️ | 0% | 28.00 | 24.56 | 3.81 | 15.45 | 13.96 | 0.05 | 242,396 | — |
-| UROY | Uranium Royalty Corp. | lynch | ▫️ | 50% | 4.04 | 13.93 | 1.80 | 12.87 | 5.94 | 0.19 | 3M | — |
-| UROY | Uranium Royalty Corp. | netnet | ▫️ | 50% | 4.04 | 13.93 | 1.80 | 12.87 | 5.94 | 0.19 | 3M | — |
-| UROY | Uranium Royalty Corp. | graham | ▫️ | 44% | 4.04 | 13.93 | 1.80 | 12.87 | 5.94 | 0.19 | 3M | — |
-| UROY | Uranium Royalty Corp. | buffett | ▫️ | 33% | 4.04 | 13.93 | 1.80 | 12.87 | 5.94 | 0.19 | 3M | — |
-| UROY | Uranium Royalty Corp. | piotroski | ▫️ | 33% | 4.04 | 13.93 | 1.80 | 12.87 | 5.94 | 0.19 | 3M | — |
-| UROY | Uranium Royalty Corp. | greenblatt | ▫️ | 33% | 4.04 | 13.93 | 1.80 | 12.87 | 5.94 | 0.19 | 3M | — |
-| UROY | Uranium Royalty Corp. | custom | ▫️ | 0% | 4.04 | 13.93 | 1.80 | 12.87 | 5.94 | 0.19 | 3M | — |
-| PPIH | Perma-Pipe International Hol | piotroski | ▫️ | 67% | 31.21 | 14.93 | 2.81 | 18.79 | 1.84 | — | 67,376 | — |
-| PPIH | Perma-Pipe International Hol | graham | ▫️ | 44% | 31.21 | 14.93 | 2.81 | 18.79 | 1.84 | — | 67,376 | — |
+| GOOGN | Alphabet Inc. | piotroski | ▫️ | 67% | 48.49 | 4.49 | 1.43 | 31.83 | 2.01 | 0.43 | 4M | — |
+| GOOGN | Alphabet Inc. | netnet | ▫️ | 50% | 48.49 | 4.49 | 1.43 | 31.83 | 2.01 | 0.43 | 4M | — |
+| GOOGN | Alphabet Inc. | custom | ▫️ | 0% | 48.49 | 4.49 | 1.43 | 31.83 | 2.01 | 0.43 | 4M | — |
+| MLI | MUELLER INDUSTRIES INC | netnet | ▫️ | 50% | 60.61 | 8.84 | 2.11 | 23.84 | 5.92 | 0.15 | 1M | — |
+| MLI | MUELLER INDUSTRIES INC | custom | ▫️ | 0% | 60.61 | 8.84 | 2.11 | 23.84 | 5.92 | 0.15 | 1M | — |
+| LRN | Stride, Inc. | graham | ▫️ | 78% | 77.98 | 10.92 | 2.26 | 20.72 | 5.94 | 0.49 | 680,982 | — |
+| LRN | Stride, Inc. | greenblatt | ▫️ | 67% | 77.98 | 10.92 | 2.26 | 20.72 | 5.94 | 0.49 | 680,982 | — |
+| LRN | Stride, Inc. | netnet | ▫️ | 50% | 77.98 | 10.92 | 2.26 | 20.72 | 5.94 | 0.49 | 680,982 | — |
+| LRN | Stride, Inc. | custom | ▫️ | 0% | 77.98 | 10.92 | 2.26 | 20.72 | 5.94 | 0.49 | 680,982 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | piotroski | ▫️ | 67% | 2.92 | 14.60 | 3.26 | 22.71 | 4.86 | 0.39 | 360,538 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | greenblatt | ▫️ | 67% | 2.92 | 14.60 | 3.26 | 22.71 | 4.86 | 0.39 | 360,538 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | buffett | ▫️ | 50% | 2.92 | 14.60 | 3.26 | 22.71 | 4.86 | 0.39 | 360,538 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | lynch | ▫️ | 50% | 2.92 | 14.60 | 3.26 | 22.71 | 4.86 | 0.39 | 360,538 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
