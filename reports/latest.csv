@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",piotroski,True,7,9,77.8,8.33,6.88,—,-221,2.06,-5.32,—,13M,—
-WING,WINGSTOP INC.,lynch,True,4,4,100.0,105,16.97,—,-23.65,3.26,-1.94,—,2M,—
-TREE,"LendingTree, Inc.",greenblatt,True,3,3,100.0,24.43,2.27,1.20,52.76,1.67,1.98,70.33,"333,116",—
-ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",buffett,True,5,6,83.3,113,15.45,5.16,33.37,4.85,2.26,60.19,1M,—
-ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",lynch,True,3,4,75.0,113,15.45,5.16,33.37,4.85,2.26,60.19,1M,—
-AES,THE AES CORPORATION,greenblatt,True,3,3,100.0,14.90,11.83,2.62,22.40,0.77,—,12.70,12M,—
-PATH,"UiPath, Inc.",piotroski,True,8,9,88.9,12.84,24.69,3.36,13.56,2.48,0.53,6.69,42M,—
-KTB,"KONTOOR BRANDS, INC.",lynch,True,3,4,75.0,63.03,15.56,6.26,40.27,1.82,3.57,30.29,"778,884",—
-GBX,"THE GREENBRIER COMPANIES, INC.",lynch,True,3,4,75.0,40.07,6.31,0.84,13.32,—,—,82.54,"485,152",—
-NFG,NATIONAL FUEL GAS CO,piotroski,True,8,9,88.9,75.86,13.36,2.24,16.76,0.44,—,65.84,"980,047",—
-AGX,ARGAN INC,lynch,True,3,4,75.0,378,38.80,11.57,29.80,1.59,1.57,84.62,"358,045",—
-MEDP,"Medpace Holdings, Inc.",buffett,True,5,6,83.3,624,40.85,40.15,98.27,0.74,3.30,73.11,"306,609",—
-MEDP,"Medpace Holdings, Inc.",piotroski,True,7,9,77.8,624,40.85,40.15,98.27,0.74,3.30,73.11,"306,609",—
-AIR,AAR CORP,piotroski,True,7,9,77.8,101,20.88,2.29,11.02,2.84,—,69.66,1M,—
-AIR,AAR CORP,lynch,True,3,4,75.0,101,20.88,2.29,11.02,2.84,—,69.66,1M,—
-KEX,KIRBY CORPORATION,piotroski,True,8,9,88.9,131,20.73,2.18,10.49,1.53,—,92.69,"461,069",—
-EGP,"EASTGROUP PROPERTIES, INC.",piotroski,True,7,9,77.8,197,40.54,2.98,7.36,—,0.55,85.17,"561,108",—
-EGP,"EASTGROUP PROPERTIES, INC.",lynch,True,3,4,75.0,197,40.54,2.98,7.36,—,0.55,85.17,"561,108",—
-CCNE,CNB FINANCIAL CORP/PA,lynch,True,3,4,75.0,33.28,13.37,0.94,7.58,—,8.63,44.50,"154,659",—
-EXTR,"Extreme Networks, Inc.",piotroski,True,8,9,88.9,21.45,69.19,32.68,47.54,0.93,—,2.14,2M,—
-MAGN,Magnera Corporation,piotroski,True,7,9,77.8,11.34,—,0.38,-14.94,2.37,2.75,—,"291,629",—
+BYD,BOYD GAMING CORP,greenblatt,True,3,3,100.0,66.57,2.95,2.09,70.66,0.54,—,127,1M,—
+BYD,BOYD GAMING CORP,piotroski,True,7,9,77.8,66.57,2.95,2.09,70.66,0.54,—,127,1M,—
+KRP,"Kimbell Royalty Partners, LP",piotroski,True,7,9,77.8,14.28,—,—,—,8.64,—,—,"801,846",—
+PLMR,"Palomar Holdings, Inc.",piotroski,True,7,9,77.8,123,17.20,3.59,20.91,—,2.24,74.38,"245,501",—
+FSS,FEDERAL SIGNAL CORPORATION,lynch,True,3,4,75.0,111,27.63,4.93,17.84,3.02,0.73,45.03,"454,217",—
+HOG,"Harley-Davidson, Inc.",graham,True,9,9,100.0,24.43,8.79,0.94,10.79,2.10,—,40.25,2M,—
+HOG,"Harley-Davidson, Inc.",piotroski,True,8,9,88.9,24.43,8.79,0.94,10.79,2.10,—,40.25,2M,—
+GTX,Garrett Motion Inc.,lynch,True,4,4,100.0,26.03,17.12,—,-38.65,0.97,-3.95,—,2M,—
+GTX,Garrett Motion Inc.,piotroski,True,8,9,88.9,26.03,17.12,—,-38.65,0.97,-3.95,—,2M,—
+NHC,NATIONAL HEALTHCARE CORP,piotroski,True,9,9,100.0,220,28.62,3.21,11.23,1.82,0.42,109,"116,839",—
+NHC,NATIONAL HEALTHCARE CORP,lynch,True,3,4,75.0,220,28.62,3.21,11.23,1.82,0.42,109,"116,839",—
+ABM,ABM INDUSTRIES INCORPORATED,piotroski,True,8,9,88.9,48.10,18.57,1.69,9.09,1.48,1.95,40.74,"477,041",—
+BCO,BRINK’S CO,piotroski,True,7,9,77.8,101,21.53,15.46,71.91,1.51,24.96,26.26,"750,122",—
+FAF,FIRST AMERICAN FINANCIAL CORPORATION,piotroski,True,8,9,88.9,60.74,10.12,1.15,11.31,—,1.95,84.61,2M,—
+SHAK,SHAKE SHACK INC.,piotroski,True,8,9,88.9,58.68,53.83,4.67,8.70,1.76,2.56,17.55,2M,—
 AIOT,"Powerfleet, Inc.",piotroski,True,7,9,77.8,2.84,—,0.80,-4.32,1.13,1.00,—,3M,—
 LOCO,"EL POLLO LOCO HOLDINGS, INC.",piotroski,True,8,9,88.9,14.35,15.94,1.45,9.10,0.32,1.08,14.16,"338,256",—
-WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,8,9,88.9,26.37,28.98,0.61,2.10,2.42,0.76,29.77,"515,053",—
-AVNW,"Aviat Networks, Inc.",piotroski,True,7,9,77.8,20.05,106,0.98,0.95,1.97,1.24,9.37,"173,195",—
-DAR,DARLING INGREDIENTS INC.,piotroski,True,7,9,77.8,60.71,156,2.05,1.33,1.50,1.16,16.11,2M,—
-CTRI,"Centuri Holdings, Inc.",piotroski,True,7,9,77.8,20.04,80.16,2.07,2.57,1.78,1.75,7.37,2M,—
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",greenblatt,False,2,3,66.7,8.33,6.88,—,-221,2.06,-5.32,—,13M,—
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",lynch,False,2,4,50.0,8.33,6.88,—,-221,2.06,-5.32,—,13M,—
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",graham,False,4,9,44.4,8.33,6.88,—,-221,2.06,-5.32,—,13M,—
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",buffett,False,2,6,33.3,8.33,6.88,—,-221,2.06,-5.32,—,13M,—
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",netnet,False,1,4,25.0,8.33,6.88,—,-221,2.06,-5.32,—,13M,—
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",custom,False,0,0,0.0,8.33,6.88,—,-221,2.06,-5.32,—,13M,—
-MGY,Magnolia Oil & Gas Corp,piotroski,False,6,9,66.7,23.49,13.40,2.18,16.27,1.54,—,20.61,4M,—
-MGY,Magnolia Oil & Gas Corp,buffett,False,3,6,50.0,23.49,13.40,2.18,16.27,1.54,—,20.61,4M,—
-MGY,Magnolia Oil & Gas Corp,graham,False,4,9,44.4,23.49,13.40,2.18,16.27,1.54,—,20.61,4M,—
-MGY,Magnolia Oil & Gas Corp,greenblatt,False,1,3,33.3,23.49,13.40,2.18,16.27,1.54,—,20.61,4M,—
-MGY,Magnolia Oil & Gas Corp,lynch,False,1,4,25.0,23.49,13.40,2.18,16.27,1.54,—,20.61,4M,—
-MGY,Magnolia Oil & Gas Corp,netnet,False,1,4,25.0,23.49,13.40,2.18,16.27,1.54,—,20.61,4M,—
-MGY,Magnolia Oil & Gas Corp,custom,False,0,0,0.0,23.49,13.40,2.18,16.27,1.54,—,20.61,4M,—
-WING,WINGSTOP INC.,buffett,False,4,6,66.7,105,16.97,—,-23.65,3.26,-1.94,—,2M,—
-WING,WINGSTOP INC.,piotroski,False,6,9,66.7,105,16.97,—,-23.65,3.26,-1.94,—,2M,—
-WING,WINGSTOP INC.,greenblatt,False,2,3,66.7,105,16.97,—,-23.65,3.26,-1.94,—,2M,—
-WING,WINGSTOP INC.,graham,False,3,9,33.3,105,16.97,—,-23.65,3.26,-1.94,—,2M,—
-WING,WINGSTOP INC.,netnet,False,1,4,25.0,105,16.97,—,-23.65,3.26,-1.94,—,2M,—
-WING,WINGSTOP INC.,custom,False,0,0,0.0,105,16.97,—,-23.65,3.26,-1.94,—,2M,—
-TREE,"LendingTree, Inc.",piotroski,False,6,9,66.7,24.43,2.27,1.20,52.76,1.67,1.98,70.33,"333,116",—
-TREE,"LendingTree, Inc.",graham,False,5,9,55.6,24.43,2.27,1.20,52.76,1.67,1.98,70.33,"333,116",—
-TREE,"LendingTree, Inc.",buffett,False,3,6,50.0,24.43,2.27,1.20,52.76,1.67,1.98,70.33,"333,116",—
-TREE,"LendingTree, Inc.",lynch,False,1,4,25.0,24.43,2.27,1.20,52.76,1.67,1.98,70.33,"333,116",—
+MLKN,"MillerKnoll, Inc.",piotroski,True,9,9,100.0,19.66,14.89,1.02,6.82,1.58,1.93,23.98,"527,250",—
+MOS,MOSAIC CO,piotroski,True,8,9,88.9,21.65,12.74,0.57,4.47,1.32,—,38.07,8M,—
+CBZ,"CBIZ, Inc.",piotroski,True,7,9,77.8,54.69,29.89,1.96,6.55,1.22,1.50,33.87,"815,199",—
+KOP,KOPPERS HOLDINGS INC.,piotroski,True,8,9,88.9,45.59,16.64,1.62,9.76,2.94,2.29,41.64,"150,737",—
+WRBY,Warby Parker Inc.,piotroski,True,7,9,77.8,27.78,"2,778",9.45,0.45,2.35,0.96,0.81,4M,—
+NEOG,Neogen Corporation,piotroski,True,8,9,88.9,12.80,—,1.33,-0.38,3.82,0.60,—,7M,—
+INNV,InnovAge Holding Corp.,piotroski,True,7,9,77.8,8.80,—,5.07,-1.08,1.05,1.23,—,"807,590",—
+SMG,Scotts Miracle-Gro Co,piotroski,True,7,9,77.8,50.11,20.29,—,-40.62,1.27,-8.67,—,2M,—
+LILA,Liberty Latin America Ltd.,piotroski,True,7,9,77.8,8.28,—,2.97,-110,1.14,20.09,—,"269,012",—
+BYD,BOYD GAMING CORP,buffett,False,4,6,66.7,66.57,2.95,2.09,70.66,0.54,—,127,1M,—
+BYD,BOYD GAMING CORP,graham,False,5,9,55.6,66.57,2.95,2.09,70.66,0.54,—,127,1M,—
+BYD,BOYD GAMING CORP,lynch,False,1,4,25.0,66.57,2.95,2.09,70.66,0.54,—,127,1M,—
+BYD,BOYD GAMING CORP,netnet,False,1,4,25.0,66.57,2.95,2.09,70.66,0.54,—,127,1M,—
+BYD,BOYD GAMING CORP,custom,False,0,0,0.0,66.57,2.95,2.09,70.66,0.54,—,127,1M,—
+KRP,"Kimbell Royalty Partners, LP",graham,False,3,9,33.3,14.28,—,—,—,8.64,—,—,"801,846",—
+KRP,"Kimbell Royalty Partners, LP",greenblatt,False,1,3,33.3,14.28,—,—,—,8.64,—,—,"801,846",—
+KRP,"Kimbell Royalty Partners, LP",lynch,False,1,4,25.0,14.28,—,—,—,8.64,—,—,"801,846",—
+KRP,"Kimbell Royalty Partners, LP",netnet,False,1,4,25.0,14.28,—,—,—,8.64,—,—,"801,846",—
+KRP,"Kimbell Royalty Partners, LP",buffett,False,1,6,16.7,14.28,—,—,—,8.64,—,—,"801,846",—
+KRP,"Kimbell Royalty Partners, LP",custom,False,0,0,0.0,14.28,—,—,—,8.64,—,—,"801,846",—
+GEF,"GREIF, INC.",buffett,False,4,6,66.7,79.59,—,—,28.82,1.27,—,—,"740,419",—
+GEF,"GREIF, INC.",greenblatt,False,2,3,66.7,79.59,—,—,28.82,1.27,—,—,"740,419",—
+GEF,"GREIF, INC.",piotroski,False,5,9,55.6,79.59,—,—,28.82,1.27,—,—,"740,419",—
+GEF,"GREIF, INC.",graham,False,4,9,44.4,79.59,—,—,28.82,1.27,—,—,"740,419",—
+GEF,"GREIF, INC.",lynch,False,1,4,25.0,79.59,—,—,28.82,1.27,—,—,"740,419",—
+GEF,"GREIF, INC.",netnet,False,1,4,25.0,79.59,—,—,28.82,1.27,—,—,"740,419",—
+GEF,"GREIF, INC.",custom,False,0,0,0.0,79.59,—,—,28.82,1.27,—,—,"740,419",—
+UNIT,Uniti Group Inc.,greenblatt,False,2,3,66.7,8.38,1.72,5.87,343,0.74,30.65,12.50,3M,—
+UNIT,Uniti Group Inc.,graham,False,4,9,44.4,8.38,1.72,5.87,343,0.74,30.65,12.50,3M,—
+UNIT,Uniti Group Inc.,buffett,False,2,6,33.3,8.38,1.72,5.87,343,0.74,30.65,12.50,3M,—
+UNIT,Uniti Group Inc.,lynch,False,1,4,25.0,8.38,1.72,5.87,343,0.74,30.65,12.50,3M,—
+UNIT,Uniti Group Inc.,netnet,False,1,4,25.0,8.38,1.72,5.87,343,0.74,30.65,12.50,3M,—
+UNIT,Uniti Group Inc.,piotroski,False,2,9,22.2,8.38,1.72,5.87,343,0.74,30.65,12.50,3M,—
