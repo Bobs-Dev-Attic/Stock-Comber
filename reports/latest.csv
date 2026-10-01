@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-BYD,BOYD GAMING CORP,greenblatt,True,3,3,100.0,66.57,2.95,2.09,70.66,0.54,—,127,1M,—
-BYD,BOYD GAMING CORP,piotroski,True,7,9,77.8,66.57,2.95,2.09,70.66,0.54,—,127,1M,—
-KRP,"Kimbell Royalty Partners, LP",piotroski,True,7,9,77.8,14.28,—,—,—,8.64,—,—,"801,846",—
-PLMR,"Palomar Holdings, Inc.",piotroski,True,7,9,77.8,123,17.20,3.59,20.91,—,2.24,74.38,"245,501",—
+OLED,UNIVERSAL DISPLAY CORPORATION,piotroski,True,7,9,77.8,77.04,15.17,2.08,13.75,10.06,0.12,64.99,"416,166",—
+ESE,ESCO TECHNOLOGIES INC.,lynch,True,4,4,100.0,268,23.16,4.50,19.42,1.35,0.56,124,"46,339",—
+ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",buffett,True,5,6,83.3,113,15.45,5.16,33.37,4.85,2.26,60.19,1M,—
+ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",lynch,True,3,4,75.0,113,15.45,5.16,33.37,4.85,2.26,60.19,1M,—
+WTFC,WINTRUST FINANCIAL CORP,lynch,True,3,4,75.0,142,12.44,1.33,11.35,—,8.80,166,"393,322",—
+PJT,PJT Partners Inc.,buffett,True,5,6,83.3,143,—,—,58.43,—,2.71,—,"437,820",—
+PJT,PJT Partners Inc.,piotroski,True,7,9,77.8,143,—,—,58.43,—,2.71,—,"437,820",—
+BELFA,BEL FUSE INC /NJ,piotroski,True,8,9,88.9,201,—,—,14.46,3.02,0.98,—,"38,268",—
+KRYS,"Krystal Biotech, Inc.",piotroski,True,8,9,88.9,333,48.62,8.17,16.80,9.95,0.09,79.16,"268,266",—
+LMB,"LIMBACH HOLDINGS, INC.",piotroski,True,7,9,77.8,48.93,15.15,3.02,19.97,1.44,0.95,34.31,"363,081",—
+LMB,"LIMBACH HOLDINGS, INC.",lynch,True,3,4,75.0,48.93,15.15,3.02,19.97,1.44,0.95,34.31,"363,081",—
+GBX,"THE GREENBRIER COMPANIES, INC.",lynch,True,3,4,75.0,40.07,6.31,0.84,13.32,—,—,82.54,"485,174",—
 FSS,FEDERAL SIGNAL CORPORATION,lynch,True,3,4,75.0,111,27.63,4.93,17.84,3.02,0.73,45.03,"454,217",—
-HOG,"Harley-Davidson, Inc.",graham,True,9,9,100.0,24.43,8.79,0.94,10.79,2.10,—,40.25,2M,—
-HOG,"Harley-Davidson, Inc.",piotroski,True,8,9,88.9,24.43,8.79,0.94,10.79,2.10,—,40.25,2M,—
-GTX,Garrett Motion Inc.,lynch,True,4,4,100.0,26.03,17.12,—,-38.65,0.97,-3.95,—,2M,—
-GTX,Garrett Motion Inc.,piotroski,True,8,9,88.9,26.03,17.12,—,-38.65,0.97,-3.95,—,2M,—
+CRVL,CORVEL CORPORATION,buffett,True,5,6,83.3,75.52,35.29,9.89,27.99,2.03,0.63,19.18,"35,067",—
+CRVL,CORVEL CORPORATION,piotroski,True,7,9,77.8,75.52,35.29,9.89,27.99,2.03,0.63,19.18,"35,067",—
+CRVL,CORVEL CORPORATION,lynch,True,3,4,75.0,75.52,35.29,9.89,27.99,2.03,0.63,19.18,"35,067",—
+HRB,H&R BLOCK INC,greenblatt,True,3,3,100.0,42.03,7.43,46.11,624,1.13,26.72,10.78,"656,253",—
+HRB,H&R BLOCK INC,piotroski,True,8,9,88.9,42.03,7.43,46.11,624,1.13,26.72,10.78,"656,253",—
+MEDP,"Medpace Holdings, Inc.",buffett,True,5,6,83.3,624,40.85,40.15,98.27,0.74,3.30,73.11,"306,609",—
+MEDP,"Medpace Holdings, Inc.",piotroski,True,7,9,77.8,624,40.85,40.15,98.27,0.74,3.30,73.11,"306,609",—
+AIR,AAR CORP,piotroski,True,7,9,77.8,101,20.88,2.29,11.02,2.84,—,69.66,1M,—
+AIR,AAR CORP,lynch,True,3,4,75.0,101,20.88,2.29,11.02,2.84,—,69.66,1M,—
+KBR,"KBR, Inc.",piotroski,True,8,9,88.9,35.16,10.95,3.02,27.61,1.22,3.37,29.01,2M,—
+AXTA,AXALTA COATING SYSTEMS LTD.,lynch,True,3,4,75.0,31.63,18.18,2.93,16.11,2.06,2.22,20.57,"737,990",—
 NHC,NATIONAL HEALTHCARE CORP,piotroski,True,9,9,100.0,220,28.62,3.21,11.23,1.82,0.42,109,"116,839",—
 NHC,NATIONAL HEALTHCARE CORP,lynch,True,3,4,75.0,220,28.62,3.21,11.23,1.82,0.42,109,"116,839",—
-ABM,ABM INDUSTRIES INCORPORATED,piotroski,True,8,9,88.9,48.10,18.57,1.69,9.09,1.48,1.95,40.74,"477,041",—
-BCO,BRINK’S CO,piotroski,True,7,9,77.8,101,21.53,15.46,71.91,1.51,24.96,26.26,"750,122",—
-FAF,FIRST AMERICAN FINANCIAL CORPORATION,piotroski,True,8,9,88.9,60.74,10.12,1.15,11.31,—,1.95,84.61,2M,—
-SHAK,SHAKE SHACK INC.,piotroski,True,8,9,88.9,58.68,53.83,4.67,8.70,1.76,2.56,17.55,2M,—
-AIOT,"Powerfleet, Inc.",piotroski,True,7,9,77.8,2.84,—,0.80,-4.32,1.13,1.00,—,3M,—
-LOCO,"EL POLLO LOCO HOLDINGS, INC.",piotroski,True,8,9,88.9,14.35,15.94,1.45,9.10,0.32,1.08,14.16,"338,256",—
-MLKN,"MillerKnoll, Inc.",piotroski,True,9,9,100.0,19.66,14.89,1.02,6.82,1.58,1.93,23.98,"527,250",—
-MOS,MOSAIC CO,piotroski,True,8,9,88.9,21.65,12.74,0.57,4.47,1.32,—,38.07,8M,—
-CBZ,"CBIZ, Inc.",piotroski,True,7,9,77.8,54.69,29.89,1.96,6.55,1.22,1.50,33.87,"815,199",—
-KOP,KOPPERS HOLDINGS INC.,piotroski,True,8,9,88.9,45.59,16.64,1.62,9.76,2.94,2.29,41.64,"150,737",—
-WRBY,Warby Parker Inc.,piotroski,True,7,9,77.8,27.78,"2,778",9.45,0.45,2.35,0.96,0.81,4M,—
-NEOG,Neogen Corporation,piotroski,True,8,9,88.9,12.80,—,1.33,-0.38,3.82,0.60,—,7M,—
-INNV,InnovAge Holding Corp.,piotroski,True,7,9,77.8,8.80,—,5.07,-1.08,1.05,1.23,—,"807,590",—
-SMG,Scotts Miracle-Gro Co,piotroski,True,7,9,77.8,50.11,20.29,—,-40.62,1.27,-8.67,—,2M,—
-LILA,Liberty Latin America Ltd.,piotroski,True,7,9,77.8,8.28,—,2.97,-110,1.14,20.09,—,"269,012",—
-BYD,BOYD GAMING CORP,buffett,False,4,6,66.7,66.57,2.95,2.09,70.66,0.54,—,127,1M,—
-BYD,BOYD GAMING CORP,graham,False,5,9,55.6,66.57,2.95,2.09,70.66,0.54,—,127,1M,—
-BYD,BOYD GAMING CORP,lynch,False,1,4,25.0,66.57,2.95,2.09,70.66,0.54,—,127,1M,—
-BYD,BOYD GAMING CORP,netnet,False,1,4,25.0,66.57,2.95,2.09,70.66,0.54,—,127,1M,—
-BYD,BOYD GAMING CORP,custom,False,0,0,0.0,66.57,2.95,2.09,70.66,0.54,—,127,1M,—
-KRP,"Kimbell Royalty Partners, LP",graham,False,3,9,33.3,14.28,—,—,—,8.64,—,—,"801,846",—
-KRP,"Kimbell Royalty Partners, LP",greenblatt,False,1,3,33.3,14.28,—,—,—,8.64,—,—,"801,846",—
-KRP,"Kimbell Royalty Partners, LP",lynch,False,1,4,25.0,14.28,—,—,—,8.64,—,—,"801,846",—
-KRP,"Kimbell Royalty Partners, LP",netnet,False,1,4,25.0,14.28,—,—,—,8.64,—,—,"801,846",—
-KRP,"Kimbell Royalty Partners, LP",buffett,False,1,6,16.7,14.28,—,—,—,8.64,—,—,"801,846",—
-KRP,"Kimbell Royalty Partners, LP",custom,False,0,0,0.0,14.28,—,—,—,8.64,—,—,"801,846",—
-GEF,"GREIF, INC.",buffett,False,4,6,66.7,79.59,—,—,28.82,1.27,—,—,"740,419",—
-GEF,"GREIF, INC.",greenblatt,False,2,3,66.7,79.59,—,—,28.82,1.27,—,—,"740,419",—
-GEF,"GREIF, INC.",piotroski,False,5,9,55.6,79.59,—,—,28.82,1.27,—,—,"740,419",—
-GEF,"GREIF, INC.",graham,False,4,9,44.4,79.59,—,—,28.82,1.27,—,—,"740,419",—
-GEF,"GREIF, INC.",lynch,False,1,4,25.0,79.59,—,—,28.82,1.27,—,—,"740,419",—
-GEF,"GREIF, INC.",netnet,False,1,4,25.0,79.59,—,—,28.82,1.27,—,—,"740,419",—
-GEF,"GREIF, INC.",custom,False,0,0,0.0,79.59,—,—,28.82,1.27,—,—,"740,419",—
-UNIT,Uniti Group Inc.,greenblatt,False,2,3,66.7,8.38,1.72,5.87,343,0.74,30.65,12.50,3M,—
-UNIT,Uniti Group Inc.,graham,False,4,9,44.4,8.38,1.72,5.87,343,0.74,30.65,12.50,3M,—
-UNIT,Uniti Group Inc.,buffett,False,2,6,33.3,8.38,1.72,5.87,343,0.74,30.65,12.50,3M,—
-UNIT,Uniti Group Inc.,lynch,False,1,4,25.0,8.38,1.72,5.87,343,0.74,30.65,12.50,3M,—
-UNIT,Uniti Group Inc.,netnet,False,1,4,25.0,8.38,1.72,5.87,343,0.74,30.65,12.50,3M,—
-UNIT,Uniti Group Inc.,piotroski,False,2,9,22.2,8.38,1.72,5.87,343,0.74,30.65,12.50,3M,—
+HAFC,HANMI FINANCIAL CORPORATION,piotroski,True,8,9,88.9,30.90,12.31,1.17,9.55,—,8.88,38.69,"314,464",—
+OPY,OPPENHEIMER HOLDINGS INC.,piotroski,True,7,9,77.8,118,9.05,1.36,15.08,—,2.77,159,"35,374",—
+CPK,CHESAPEAKE UTILITIES CORP,piotroski,True,7,9,77.8,127,21.26,1.86,8.78,0.45,—,95.61,"88,247",—
+KRT,Karat Packaging Inc.,piotroski,True,7,9,77.8,53.68,34.41,7.25,21.07,2.30,0.88,16.12,"48,603",—
+IMAX,IMAX Corporation,piotroski,True,7,9,77.8,54.80,86.98,9.01,10.32,—,1.38,9.29,"917,263",—
+MCS,MARCUS CORP,piotroski,True,7,9,77.8,27.89,68.74,1.91,2.77,0.40,—,11.55,"274,096",—
+CBZ,"CBIZ, Inc.",piotroski,True,7,9,77.8,54.77,29.93,1.97,6.55,1.22,1.50,33.87,"215,392",—
+GCO,GENESCO INC,piotroski,True,8,9,88.9,34.70,27.76,0.65,2.34,1.64,1.46,38.74,"33,480",—
+GXO,"GXO Logistics, Inc.",piotroski,True,7,9,77.8,44.45,159,1.73,1.07,0.85,—,12.71,1M,—
+CLSK,"CleanSpark, Inc.",greenblatt,False,2,3,66.7,12.14,—,1.77,16.76,4.18,0.46,—,9M,—
+CLSK,"CleanSpark, Inc.",piotroski,False,5,9,55.6,12.14,—,1.77,16.76,4.18,0.46,—,9M,—
+CLSK,"CleanSpark, Inc.",buffett,False,3,6,50.0,12.14,—,1.77,16.76,4.18,0.46,—,9M,—
+CLSK,"CleanSpark, Inc.",lynch,False,2,4,50.0,12.14,—,1.77,16.76,4.18,0.46,—,9M,—
+CLSK,"CleanSpark, Inc.",netnet,False,2,4,50.0,12.14,—,1.77,16.76,4.18,0.46,—,9M,—
+CLSK,"CleanSpark, Inc.",graham,False,4,9,44.4,12.14,—,1.77,16.76,4.18,0.46,—,9M,—
+CLSK,"CleanSpark, Inc.",custom,False,0,0,0.0,12.14,—,1.77,16.76,4.18,0.46,—,9M,—
+MGY,Magnolia Oil & Gas Corp,piotroski,False,6,9,66.7,23.49,13.40,2.18,16.27,1.54,—,20.61,4M,—
+MGY,Magnolia Oil & Gas Corp,buffett,False,3,6,50.0,23.49,13.40,2.18,16.27,1.54,—,20.61,4M,—
+MGY,Magnolia Oil & Gas Corp,graham,False,4,9,44.4,23.49,13.40,2.18,16.27,1.54,—,20.61,4M,—
+MGY,Magnolia Oil & Gas Corp,greenblatt,False,1,3,33.3,23.49,13.40,2.18,16.27,1.54,—,20.61,4M,—
+MGY,Magnolia Oil & Gas Corp,lynch,False,1,4,25.0,23.49,13.40,2.18,16.27,1.54,—,20.61,4M,—
+MGY,Magnolia Oil & Gas Corp,netnet,False,1,4,25.0,23.49,13.40,2.18,16.27,1.54,—,20.61,4M,—
+MGY,Magnolia Oil & Gas Corp,custom,False,0,0,0.0,23.49,13.40,2.18,16.27,1.54,—,20.61,4M,—
+OLED,UNIVERSAL DISPLAY CORPORATION,buffett,False,4,6,66.7,77.04,15.17,2.08,13.75,10.06,0.12,64.99,"416,166",—
