@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-01 21:20 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-02 00:54 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **32** strategy matches passed.
+Screened **75** companies · **29** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| HG | Hamilton Insurance Group, Lt | greenblatt | ✅ | 100% | 33.75 | 6.08 | 1.24 | 29.77 | — | 2.39 | 342,506 | — |
-| HG | Hamilton Insurance Group, Lt | piotroski | ✅ | 89% | 33.75 | 6.08 | 1.24 | 29.77 | — | 2.39 | 342,506 | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | piotroski | ✅ | 78% | 8.33 | 6.88 | — | -221 | 2.06 | -5.32 | 13M | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | piotroski | ✅ | 100% | 163 | 22.98 | 7.87 | 34.27 | 1.46 | — | 254,568 | — |
-| ESE | ESCO TECHNOLOGIES INC. | lynch | ✅ | 100% | 270 | 23.37 | 4.54 | 19.42 | 1.35 | 0.56 | 176,499 | — |
-| FHI | Federated Hermes, Inc. | greenblatt | ✅ | 100% | 56.37 | 10.99 | 3.54 | 33.69 | 2.75 | 0.81 | 883,964 | — |
-| FHI | Federated Hermes, Inc. | piotroski | ✅ | 89% | 56.37 | 10.99 | 3.54 | 33.69 | 2.75 | 0.81 | 883,964 | — |
-| CVSA | Covista Inc. | lynch | ✅ | 75% | 122 | 17.36 | 3.02 | 17.40 | 1.09 | 1.08 | 350,241 | — |
-| GGG | GRACO INC. | piotroski | ✅ | 89% | 76.84 | 24.95 | 4.90 | 19.66 | 3.15 | — | 2M | — |
-| GGG | GRACO INC. | buffett | ✅ | 83% | 76.84 | 24.95 | 4.90 | 19.66 | 3.15 | — | 2M | — |
-| MTCH | Match Group, Inc. | piotroski | ✅ | 89% | 40.15 | 16.87 | — | -242 | 1.42 | — | 3M | — |
-| MTCH | Match Group, Inc. | lynch | ✅ | 75% | 40.15 | 16.87 | — | -242 | 1.42 | — | 3M | — |
-| GPK | Graphic Packaging Holding Co | lynch | ✅ | 75% | 8.96 | 6.05 | 0.81 | 13.31 | 1.30 | — | 8M | — |
-| HOG | Harley-Davidson, Inc. | graham | ✅ | 100% | 24.83 | 8.93 | 0.96 | 10.79 | 2.10 | — | 2M | — |
-| HOG | Harley-Davidson, Inc. | piotroski | ✅ | 89% | 24.83 | 8.93 | 0.96 | 10.79 | 2.10 | — | 2M | — |
-| ORI | OLD REPUBLIC INTERNATIONAL C | piotroski | ✅ | 78% | 37.49 | 10.08 | 1.59 | 15.82 | — | 4.05 | 2M | — |
-| EZPW | EZCORP, INC. | piotroski | ✅ | 78% | 30.06 | 21.17 | 2.44 | 10.69 | 5.61 | 0.90 | 623,888 | — |
-| BFAM | BRIGHT HORIZONS FAMILY SOLUT | piotroski | ✅ | 89% | 63.72 | 18.96 | 2.73 | 14.42 | 0.52 | 1.90 | 682,685 | — |
-| BFAM | BRIGHT HORIZONS FAMILY SOLUT | lynch | ✅ | 75% | 63.72 | 18.96 | 2.73 | 14.42 | 0.52 | 1.90 | 682,685 | — |
-| OSBC | OLD SECOND BANCORP INC | lynch | ✅ | 75% | 24.49 | 15.12 | 1.36 | 8.96 | — | 6.70 | 505,073 | — |
-| NIC | NICOLET BANKSHARES, INC | lynch | ✅ | 75% | 163 | 16.67 | 2.00 | 11.98 | — | 6.30 | 156,803 | — |
-| AXTA | AXALTA COATING SYSTEMS LTD. | lynch | ✅ | 75% | 32.16 | 18.48 | 2.97 | 16.11 | 2.06 | 2.22 | 2M | — |
-| KALU | KAISER ALUMINUM CORPORATION | piotroski | ✅ | 78% | 148 | 21.92 | 2.99 | 13.62 | 2.95 | 2.10 | 243,531 | — |
-| KALU | KAISER ALUMINUM CORPORATION | lynch | ✅ | 75% | 148 | 21.92 | 2.99 | 13.62 | 2.95 | 2.10 | 243,531 | — |
-| R | RYDER SYSTEM INC | piotroski | ✅ | 100% | 231 | 19.34 | 3.16 | 16.35 | 0.89 | 4.37 | 286,448 | — |
-| TRIP | TRIPADVISOR, INC. | piotroski | ✅ | 89% | 8.37 | 27.00 | 1.70 | 6.20 | 1.29 | 3.07 | 3M | — |
-| UMH | UMH PROPERTIES, INC. | piotroski | ✅ | 78% | 15.40 | 220 | 1.44 | 2.90 | — | 0.87 | 538,258 | — |
-| CPRI | CAPRI HOLDINGS LIMITED | piotroski | ✅ | 78% | 14.48 | 12.70 | 21.69 | 171 | 1.21 | 39.38 | 4M | — |
-| PHIN | PHINIA INC. | piotroski | ✅ | 89% | 60.03 | 18.53 | 1.52 | 8.19 | 1.86 | 1.41 | 528,236 | — |
-| MCS | MARCUS CORP | piotroski | ✅ | 78% | 27.89 | 68.74 | 1.91 | 2.77 | 0.40 | — | 274,096 | — |
-| MOS | MOSAIC CO | piotroski | ✅ | 89% | 21.65 | 12.74 | 0.57 | 4.47 | 1.32 | — | 8M | — |
-| DAR | DARLING INGREDIENTS INC. | piotroski | ✅ | 78% | 60.71 | 156 | 2.05 | 1.33 | 1.50 | 1.16 | 2M | — |
-| HG | Hamilton Insurance Group, Lt | graham | ▫️ | 67% | 33.75 | 6.08 | 1.24 | 29.77 | — | 2.39 | 342,506 | — |
-| HG | Hamilton Insurance Group, Lt | buffett | ▫️ | 50% | 33.75 | 6.08 | 1.24 | 29.77 | — | 2.39 | 342,506 | — |
-| HG | Hamilton Insurance Group, Lt | lynch | ▫️ | 50% | 33.75 | 6.08 | 1.24 | 29.77 | — | 2.39 | 342,506 | — |
-| HG | Hamilton Insurance Group, Lt | netnet | ▫️ | 25% | 33.75 | 6.08 | 1.24 | 29.77 | — | 2.39 | 342,506 | — |
-| HG | Hamilton Insurance Group, Lt | custom | ▫️ | 0% | 33.75 | 6.08 | 1.24 | 29.77 | — | 2.39 | 342,506 | — |
-| ADMA | ADMA BIOLOGICS, INC. | buffett | ▫️ | 67% | 9.93 | 16.55 | 5.09 | 30.78 | 6.71 | 0.31 | 4M | — |
-| ADMA | ADMA BIOLOGICS, INC. | greenblatt | ▫️ | 67% | 9.93 | 16.55 | 5.09 | 30.78 | 6.71 | 0.31 | 4M | — |
-| ADMA | ADMA BIOLOGICS, INC. | lynch | ▫️ | 50% | 9.93 | 16.55 | 5.09 | 30.78 | 6.71 | 0.31 | 4M | — |
-| ADMA | ADMA BIOLOGICS, INC. | netnet | ▫️ | 50% | 9.93 | 16.55 | 5.09 | 30.78 | 6.71 | 0.31 | 4M | — |
-| ADMA | ADMA BIOLOGICS, INC. | piotroski | ▫️ | 44% | 9.93 | 16.55 | 5.09 | 30.78 | 6.71 | 0.31 | 4M | — |
-| ADMA | ADMA BIOLOGICS, INC. | graham | ▫️ | 33% | 9.93 | 16.55 | 5.09 | 30.78 | 6.71 | 0.31 | 4M | — |
-| ADMA | ADMA BIOLOGICS, INC. | custom | ▫️ | 0% | 9.93 | 16.55 | 5.09 | 30.78 | 6.71 | 0.31 | 4M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | greenblatt | ▫️ | 67% | 8.33 | 6.88 | — | -221 | 2.06 | -5.32 | 13M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | lynch | ▫️ | 50% | 8.33 | 6.88 | — | -221 | 2.06 | -5.32 | 13M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | graham | ▫️ | 44% | 8.33 | 6.88 | — | -221 | 2.06 | -5.32 | 13M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | buffett | ▫️ | 33% | 8.33 | 6.88 | — | -221 | 2.06 | -5.32 | 13M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | netnet | ▫️ | 25% | 8.33 | 6.88 | — | -221 | 2.06 | -5.32 | 13M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | custom | ▫️ | 0% | 8.33 | 6.88 | — | -221 | 2.06 | -5.32 | 13M | — |
+| TDW | TIDEWATER INC | piotroski | ✅ | 89% | 82.18 | 12.38 | 3.04 | 24.51 | 2.90 | — | 587,160 | — |
+| RLI | RLI Corp | buffett | ✅ | 83% | 56.18 | 12.86 | 2.92 | 22.68 | — | 2.47 | 908,211 | — |
+| RLI | RLI Corp | piotroski | ✅ | 78% | 56.18 | 12.86 | 2.92 | 22.68 | — | 2.47 | 908,211 | — |
+| RLI | RLI Corp | lynch | ✅ | 75% | 56.18 | 12.86 | 2.92 | 22.68 | — | 2.47 | 908,211 | — |
+| TRNO | Terreno Realty Corporation | lynch | ✅ | 100% | 63.98 | 16.36 | 1.59 | 9.72 | — | 0.30 | 808,383 | — |
+| KRYS | Krystal Biotech, Inc. | piotroski | ✅ | 89% | 325 | 47.56 | 7.99 | 16.80 | 9.95 | 0.09 | 225,686 | — |
+| GGG | GRACO INC. | piotroski | ✅ | 89% | 77.76 | 25.25 | 4.96 | 19.66 | 3.15 | — | 1M | — |
+| GGG | GRACO INC. | buffett | ✅ | 83% | 77.76 | 25.25 | 4.96 | 19.66 | 3.15 | — | 1M | — |
+| TRN | TRINITY INDUSTRIES INC | greenblatt | ✅ | 100% | 25.80 | 8.46 | 1.99 | 23.50 | — | 6.76 | 894,516 | — |
+| TRN | TRINITY INDUSTRIES INC | piotroski | ✅ | 78% | 25.80 | 8.46 | 1.99 | 23.50 | — | 6.76 | 894,516 | — |
+| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 133 | 21.08 | 2.21 | 10.49 | 1.53 | — | 395,236 | — |
+| NHC | NATIONAL HEALTHCARE CORP | piotroski | ✅ | 100% | 223 | 29.12 | 3.27 | 11.23 | 1.82 | 0.42 | 98,363 | — |
+| NHC | NATIONAL HEALTHCARE CORP | lynch | ✅ | 75% | 223 | 29.12 | 3.27 | 11.23 | 1.82 | 0.42 | 98,363 | — |
+| POST | Post Holdings, Inc. | lynch | ✅ | 75% | 72.83 | 13.22 | 1.22 | 8.94 | 1.67 | 2.60 | 695,314 | — |
+| BKU | BankUnited, Inc. | piotroski | ✅ | 89% | 42.72 | 12.10 | 1.04 | 8.79 | — | 10.47 | 799,841 | — |
+| KRT | Karat Packaging Inc. | piotroski | ✅ | 78% | 53.37 | 34.21 | 7.21 | 21.07 | 2.30 | 0.88 | 144,183 | — |
+| SSRM | SSR Mining Inc. | piotroski | ✅ | 78% | 33.42 | 18.06 | 2.07 | 11.28 | 2.08 | 0.51 | 2M | — |
+| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 47.15 | 45.34 | — | -29.14 | 1.60 | -6.05 | 619,006 | — |
+| LW | LAMB WESTON HOLDINGS, INC. | piotroski | ✅ | 78% | 41.18 | 19.80 | 3.14 | 15.89 | 1.42 | — | 2M | — |
+| CHEF | CHEFS’ WAREHOUSE, INC. | piotroski | ✅ | 100% | 113 | 67.00 | 8.57 | 11.97 | 2.05 | 2.36 | 575,473 | — |
+| TBCH | TURTLE BEACH CORPORATION | piotroski | ✅ | 78% | 12.79 | 16.61 | 2.04 | 12.24 | 1.98 | 1.09 | 267,086 | — |
+| HCSG | HEALTHCARE SERVICES GROUP, I | piotroski | ✅ | 100% | 20.58 | 25.41 | 2.95 | 11.58 | 3.38 | — | 1M | — |
+| KOP | KOPPERS HOLDINGS INC. | piotroski | ✅ | 89% | 45.19 | 16.49 | 1.61 | 9.76 | 2.94 | 2.29 | 196,273 | — |
+| MSGS | MADISON SQUARE GARDEN SPORTS | piotroski | ✅ | 100% | 399 | 1,247 | — | -2.95 | 0.50 | -6.84 | 563,704 | — |
+| CTRI | Centuri Holdings, Inc. | piotroski | ✅ | 78% | 20.54 | 82.16 | 2.12 | 2.57 | 1.78 | 1.75 | 2M | — |
+| LILA | Liberty Latin America Ltd. | piotroski | ✅ | 78% | 8.36 | — | 3.00 | -110 | 1.14 | 20.09 | 282,495 | — |
+| ORN | ORION GROUP HOLDINGS, INC. | piotroski | ✅ | 78% | 9.19 | 153 | 2.29 | 1.56 | 1.36 | 1.61 | 813,351 | — |
+| KLIC | KULICKE AND SOFFA INDUSTRIES | piotroski | ✅ | 89% | 96.03 | 24,008 | 6.22 | 0.03 | 4.79 | 0.34 | 405,934 | — |
+| TDAY | USA TODAY CO., INC. | piotroski | ✅ | 78% | 7.06 | 706 | 6.64 | 1.13 | 0.75 | 10.85 | 7M | — |
+| TDW | TIDEWATER INC | greenblatt | ▫️ | 67% | 82.18 | 12.38 | 3.04 | 24.51 | 2.90 | — | 587,160 | — |
+| TDW | TIDEWATER INC | buffett | ▫️ | 50% | 82.18 | 12.38 | 3.04 | 24.51 | 2.90 | — | 587,160 | — |
+| TDW | TIDEWATER INC | graham | ▫️ | 44% | 82.18 | 12.38 | 3.04 | 24.51 | 2.90 | — | 587,160 | — |
+| TDW | TIDEWATER INC | lynch | ▫️ | 25% | 82.18 | 12.38 | 3.04 | 24.51 | 2.90 | — | 587,160 | — |
+| TDW | TIDEWATER INC | netnet | ▫️ | 25% | 82.18 | 12.38 | 3.04 | 24.51 | 2.90 | — | 587,160 | — |
+| TDW | TIDEWATER INC | custom | ▫️ | 0% | 82.18 | 12.38 | 3.04 | 24.51 | 2.90 | — | 587,160 | — |
+| RLI | RLI Corp | greenblatt | ▫️ | 67% | 56.18 | 12.86 | 2.92 | 22.68 | — | 2.47 | 908,211 | — |
+| RLI | RLI Corp | graham | ▫️ | 56% | 56.18 | 12.86 | 2.92 | 22.68 | — | 2.47 | 908,211 | — |
+| RLI | RLI Corp | netnet | ▫️ | 25% | 56.18 | 12.86 | 2.92 | 22.68 | — | 2.47 | 908,211 | — |
+| RLI | RLI Corp | custom | ▫️ | 0% | 56.18 | 12.86 | 2.92 | 22.68 | — | 2.47 | 908,211 | — |
+| TRNO | Terreno Realty Corporation | piotroski | ▫️ | 56% | 63.98 | 16.36 | 1.59 | 9.72 | — | 0.30 | 808,383 | — |
+| TRNO | Terreno Realty Corporation | buffett | ▫️ | 50% | 63.98 | 16.36 | 1.59 | 9.72 | — | 0.30 | 808,383 | — |
+| TRNO | Terreno Realty Corporation | graham | ▫️ | 33% | 63.98 | 16.36 | 1.59 | 9.72 | — | 0.30 | 808,383 | — |
+| TRNO | Terreno Realty Corporation | greenblatt | ▫️ | 33% | 63.98 | 16.36 | 1.59 | 9.72 | — | 0.30 | 808,383 | — |
+| TRNO | Terreno Realty Corporation | netnet | ▫️ | 25% | 63.98 | 16.36 | 1.59 | 9.72 | — | 0.30 | 808,383 | — |
+| TRNO | Terreno Realty Corporation | custom | ▫️ | 0% | 63.98 | 16.36 | 1.59 | 9.72 | — | 0.30 | 808,383 | — |
+| IPXGU | COLUMBUS CIRCLE CAPITAL CORP | buffett | ▫️ | 33% | — | — | — | 219 | — | -8.31 | — | — |
+| IPXGU | COLUMBUS CIRCLE CAPITAL CORP | lynch | ▫️ | 25% | — | — | — | 219 | — | -8.31 | — | — |
+| IPXGU | COLUMBUS CIRCLE CAPITAL CORP | graham | ▫️ | 0% | — | — | — | 219 | — | -8.31 | — | — |
+| IPXGU | COLUMBUS CIRCLE CAPITAL CORP | piotroski | ▫️ | 0% | — | — | — | 219 | — | -8.31 | — | — |
+| IPXGU | COLUMBUS CIRCLE CAPITAL CORP | greenblatt | ▫️ | 0% | — | — | — | 219 | — | -8.31 | — | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
