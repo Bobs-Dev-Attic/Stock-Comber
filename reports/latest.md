@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-02 18:12 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-02 21:42 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **30** strategy matches passed.
+Screened **75** companies · **34** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| PIPR | PIPER SANDLER COMPANIES | greenblatt | ✅ | 100% | 65.87 | 4.16 | 0.85 | 20.52 | — | 0.74 | 237,613 | — |
-| PIPR | PIPER SANDLER COMPANIES | lynch | ✅ | 100% | 65.87 | 4.16 | 0.85 | 20.52 | — | 0.74 | 237,613 | — |
-| PIPR | PIPER SANDLER COMPANIES | piotroski | ✅ | 89% | 65.87 | 4.16 | 0.85 | 20.52 | — | 0.74 | 237,613 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | greenblatt | ✅ | 100% | 25.52 | 6.40 | 2.15 | 33.67 | 1.55 | — | 99,494 | — |
-| SON | Sonoco Products Company | piotroski | ✅ | 89% | 48.50 | 4.82 | 1.34 | 27.75 | 1.05 | 2.08 | 1M | — |
-| SON | Sonoco Products Company | lynch | ✅ | 75% | 48.50 | 4.82 | 1.34 | 27.75 | 1.05 | 2.08 | 1M | — |
-| BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 121 | 16.40 | 2.81 | 17.13 | 2.65 | 0.86 | 281,771 | — |
-| BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 121 | 16.40 | 2.81 | 17.13 | 2.65 | 0.86 | 281,771 | — |
-| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 112 | 21.35 | 4.08 | 19.12 | 2.99 | — | 391,999 | — |
-| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 112 | 21.35 | 4.08 | 19.12 | 2.99 | — | 391,999 | — |
-| ESE | ESCO TECHNOLOGIES INC. | lynch | ✅ | 100% | 270 | 23.37 | 4.54 | 19.42 | 1.35 | 0.56 | 188,084 | — |
-| SSD | Simpson Manufacturing Co., I | buffett | ✅ | 83% | 173 | 20.95 | 3.56 | 17.00 | 3.54 | 0.51 | 295,467 | — |
-| SSD | Simpson Manufacturing Co., I | piotroski | ✅ | 78% | 173 | 20.95 | 3.56 | 17.00 | 3.54 | 0.51 | 295,467 | — |
-| MHO | M/I HOMES, INC. | lynch | ✅ | 75% | 135 | 9.18 | 1.17 | 12.73 | — | 0.51 | 186,159 | — |
-| IIIN | Insteel Industries Inc. | piotroski | ✅ | 78% | 29.04 | 13.83 | 1.53 | 11.04 | 3.97 | — | 186,011 | — |
-| IIIN | Insteel Industries Inc. | lynch | ✅ | 75% | 29.04 | 13.83 | 1.53 | 11.04 | 3.97 | — | 186,011 | — |
-| HRB | H&R BLOCK INC | greenblatt | ✅ | 100% | 41.94 | 7.41 | 46.00 | 624 | 1.13 | 26.72 | 623,794 | — |
-| HRB | H&R BLOCK INC | piotroski | ✅ | 89% | 41.94 | 7.41 | 46.00 | 624 | 1.13 | 26.72 | 623,794 | — |
-| KBR | KBR, Inc. | piotroski | ✅ | 89% | 35.05 | 10.92 | 3.01 | 27.61 | 1.22 | 3.37 | 2M | — |
-| RSI | Rush Street Interactive, Inc | piotroski | ✅ | 78% | 19.95 | 64.35 | 31.99 | 22.62 | 1.93 | 2.41 | 3M | — |
-| BCO | BRINK’S CO | piotroski | ✅ | 78% | 102 | 21.67 | 15.56 | 71.91 | 1.51 | 24.96 | 152,555 | — |
-| SSTK | SHUTTERSTOCK, INC. | piotroski | ✅ | 89% | 4.12 | 3.30 | 0.26 | 7.83 | 0.54 | 1.33 | 948,296 | — |
-| CURB | Curbline Properties Corp. | piotroski | ✅ | 78% | 27.95 | 75.54 | 1.54 | 2.09 | — | 0.29 | 2M | — |
-| CURB | Curbline Properties Corp. | lynch | ✅ | 75% | 27.95 | 75.54 | 1.54 | 2.09 | — | 0.29 | 2M | — |
-| FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 14.08 | 74.11 | 5.78 | 7.83 | 4.94 | 0.33 | 3M | — |
-| MAGN | Magnera Corporation | piotroski | ✅ | 78% | 11.32 | — | 0.38 | -14.94 | 2.37 | 2.75 | 357,848 | — |
-| SENS | Senseonics Holdings, Inc. | piotroski | ✅ | 78% | 9.96 | — | 6.81 | -113 | 4.83 | 1.07 | 606,436 | — |
-| SPHR | SPHERE ENTERTAINMENT CO. | piotroski | ✅ | 78% | 129 | 174 | 2.61 | 1.50 | 1.09 | 0.89 | 813,821 | — |
-| CVI | CVR ENERGY, INC | piotroski | ✅ | 89% | 55.35 | 205 | 7.62 | 3.70 | 1.79 | — | 348,565 | — |
-| SMG | Scotts Miracle-Gro Co | piotroski | ✅ | 78% | 49.36 | 19.98 | — | -40.62 | 1.27 | -8.67 | 374,128 | — |
-| PIPR | PIPER SANDLER COMPANIES | graham | ▫️ | 78% | 65.87 | 4.16 | 0.85 | 20.52 | — | 0.74 | 237,613 | — |
-| PIPR | PIPER SANDLER COMPANIES | buffett | ▫️ | 50% | 65.87 | 4.16 | 0.85 | 20.52 | — | 0.74 | 237,613 | — |
-| PIPR | PIPER SANDLER COMPANIES | netnet | ▫️ | 25% | 65.87 | 4.16 | 0.85 | 20.52 | — | 0.74 | 237,613 | — |
-| PIPR | PIPER SANDLER COMPANIES | custom | ▫️ | 0% | 65.87 | 4.16 | 0.85 | 20.52 | — | 0.74 | 237,613 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | graham | ▫️ | 56% | 25.52 | 6.40 | 2.15 | 33.67 | 1.55 | — | 99,494 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | piotroski | ▫️ | 56% | 25.52 | 6.40 | 2.15 | 33.67 | 1.55 | — | 99,494 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | buffett | ▫️ | 50% | 25.52 | 6.40 | 2.15 | 33.67 | 1.55 | — | 99,494 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | lynch | ▫️ | 25% | 25.52 | 6.40 | 2.15 | 33.67 | 1.55 | — | 99,494 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | netnet | ▫️ | 25% | 25.52 | 6.40 | 2.15 | 33.67 | 1.55 | — | 99,494 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | custom | ▫️ | 0% | 25.52 | 6.40 | 2.15 | 33.67 | 1.55 | — | 99,494 | — |
-| HGTY | HAGERTY, INC. | piotroski | ▫️ | 67% | 13.46 | — | — | 67.43 | — | 6.09 | 597,602 | — |
-| HGTY | HAGERTY, INC. | greenblatt | ▫️ | 67% | 13.46 | — | — | 67.43 | — | 6.09 | 597,602 | — |
-| HGTY | HAGERTY, INC. | buffett | ▫️ | 50% | 13.46 | — | — | 67.43 | — | 6.09 | 597,602 | — |
-| HGTY | HAGERTY, INC. | lynch | ▫️ | 25% | 13.46 | — | — | 67.43 | — | 6.09 | 597,602 | — |
-| HGTY | HAGERTY, INC. | netnet | ▫️ | 25% | 13.46 | — | — | 67.43 | — | 6.09 | 597,602 | — |
-| HGTY | HAGERTY, INC. | graham | ▫️ | 11% | 13.46 | — | — | 67.43 | — | 6.09 | 597,602 | — |
-| HGTY | HAGERTY, INC. | custom | ▫️ | 0% | 13.46 | — | — | 67.43 | — | 6.09 | 597,602 | — |
-| SON | Sonoco Products Company | graham | ▫️ | 67% | 48.50 | 4.82 | 1.34 | 27.75 | 1.05 | 2.08 | 1M | — |
-| SON | Sonoco Products Company | buffett | ▫️ | 67% | 48.50 | 4.82 | 1.34 | 27.75 | 1.05 | 2.08 | 1M | — |
-| SON | Sonoco Products Company | greenblatt | ▫️ | 67% | 48.50 | 4.82 | 1.34 | 27.75 | 1.05 | 2.08 | 1M | — |
+| BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 122 | 16.58 | 2.84 | 17.13 | 2.65 | 0.86 | 773,436 | — |
+| BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 122 | 16.58 | 2.84 | 17.13 | 2.65 | 0.86 | 773,436 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | piotroski | ✅ | 100% | 118 | 21.65 | 4.08 | 18.86 | 0.86 | 0.33 | 188,512 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | lynch | ✅ | 100% | 118 | 21.65 | 4.08 | 18.86 | 0.86 | 0.33 | 188,512 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | buffett | ✅ | 83% | 118 | 21.65 | 4.08 | 18.86 | 0.86 | 0.33 | 188,512 | — |
+| BFST | BUSINESS FIRST BANCSHARES, I | lynch | ✅ | 75% | 30.90 | 11.08 | 1.02 | 9.80 | — | 8.16 | 192,807 | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | buffett | ✅ | 83% | 118 | 16.09 | 5.37 | 33.37 | 4.85 | 2.26 | 741,799 | — |
+| AES | THE AES CORPORATION | greenblatt | ✅ | 100% | 14.91 | 11.83 | 2.62 | 22.40 | 0.77 | — | 7M | — |
+| BELFA | BEL FUSE INC /NJ | piotroski | ✅ | 89% | 209 | — | — | 14.46 | 3.02 | 0.98 | 49,580 | — |
+| DAKT | Daktronics, Inc. | piotroski | ✅ | 89% | 17.96 | 19.52 | 2.95 | 15.09 | 2.31 | — | 408,479 | — |
+| HBANP | Huntington Bancshares Incorp | lynch | ✅ | 75% | 15.66 | 11.27 | 0.97 | 9.08 | — | 8.25 | 58,527 | — |
+| DAKT | Daktronics, Inc. | lynch | ✅ | 75% | 17.96 | 19.52 | 2.95 | 15.09 | 2.31 | — | 408,479 | — |
+| WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 14.04 | 2.77 | 1.60 | 57.56 | 1.39 | 2.18 | 2M | — |
+| AGX | ARGAN INC | lynch | ✅ | 75% | 384 | 39.41 | 11.75 | 29.80 | 1.59 | 1.57 | 266,679 | — |
+| ORI | OLD REPUBLIC INTERNATIONAL C | piotroski | ✅ | 78% | 38.06 | 10.23 | 1.62 | 15.82 | — | 4.05 | 2M | — |
+| TRN | TRINITY INDUSTRIES INC | greenblatt | ✅ | 100% | 26.13 | 8.57 | 2.01 | 23.50 | — | 6.76 | 863,227 | — |
+| SR | Spire Inc. | piotroski | ✅ | 78% | 77.54 | 17.74 | 0.00 | 8.02 | 0.32 | — | 469,804 | — |
+| TRN | TRINITY INDUSTRIES INC | piotroski | ✅ | 78% | 26.13 | 8.57 | 2.01 | 23.50 | — | 6.76 | 863,227 | — |
+| SR | Spire Inc. | lynch | ✅ | 75% | 77.54 | 17.74 | 0.00 | 8.02 | 0.32 | — | 469,804 | — |
+| VIRT | Virtu Financial, Inc. | piotroski | ✅ | 78% | 58.79 | 11.46 | 3.17 | 29.60 | — | 11.49 | 2M | — |
+| TBB | AT&T INC. | piotroski | ✅ | 78% | 18.97 | 6.24 | 1.08 | 17.36 | 0.91 | — | 221,791 | — |
+| CURB | Curbline Properties Corp. | piotroski | ✅ | 78% | 28.27 | 76.41 | 1.56 | 2.09 | — | 0.29 | 2M | — |
+| CURB | Curbline Properties Corp. | lynch | ✅ | 75% | 28.27 | 76.41 | 1.56 | 2.09 | — | 0.29 | 2M | — |
+| HLIO | HELIOS TECHNOLOGIES, INC. | piotroski | ✅ | 100% | 71.71 | 49.46 | 2.56 | 5.20 | 2.90 | 0.63 | 532,480 | — |
+| HLIO | HELIOS TECHNOLOGIES, INC. | lynch | ✅ | 75% | 71.71 | 49.46 | 2.56 | 5.20 | 2.90 | 0.63 | 532,480 | — |
+| ACA | Arcosa, Inc. | piotroski | ✅ | 100% | 146 | 34.55 | 2.72 | 7.89 | 2.20 | 0.89 | 355,824 | — |
+| NMRK | NEWMARK GROUP, INC. | piotroski | ✅ | 89% | 12.65 | 18.60 | 2.19 | 8.63 | 1.05 | 2.24 | 2M | — |
+| VVX | V2X, Inc. | piotroski | ✅ | 100% | 70.79 | 28.89 | 2.08 | 7.18 | 1.22 | 2.02 | 456,506 | — |
+| MOS | MOSAIC CO | piotroski | ✅ | 89% | 21.07 | 12.39 | 0.56 | 4.47 | 1.32 | — | 8M | — |
+| MLKN | MillerKnoll, Inc. | piotroski | ✅ | 100% | 20.24 | 15.33 | 1.05 | 6.82 | 1.58 | 1.93 | 576,440 | — |
+| RRX | REGAL REXNORD CORP | piotroski | ✅ | 78% | 160 | 38.06 | 1.56 | 4.08 | 2.15 | — | 1M | — |
+| CVI | CVR ENERGY, INC | piotroski | ✅ | 89% | 54.83 | 203 | 7.55 | 3.70 | 1.79 | — | 780,612 | — |
+| ZUMZ | ZUMIEZ INC | piotroski | ✅ | 89% | 13.29 | 17.04 | 0.71 | 4.13 | 2.01 | 0.99 | 252,795 | — |
+| CALX | Calix, Inc | piotroski | ✅ | 78% | 34.81 | 134 | 2.81 | 2.08 | 4.24 | 0.23 | 1M | — |
+| GEF | GREIF, INC. | buffett | ▫️ | 67% | 82.18 | — | — | 28.82 | 1.27 | — | 307,707 | — |
+| GEF | GREIF, INC. | greenblatt | ▫️ | 67% | 82.18 | — | — | 28.82 | 1.27 | — | 307,707 | — |
+| GEF | GREIF, INC. | piotroski | ▫️ | 56% | 82.18 | — | — | 28.82 | 1.27 | — | 307,707 | — |
+| GEF | GREIF, INC. | graham | ▫️ | 44% | 82.18 | — | — | 28.82 | 1.27 | — | 307,707 | — |
+| GEF | GREIF, INC. | lynch | ▫️ | 25% | 82.18 | — | — | 28.82 | 1.27 | — | 307,707 | — |
+| GEF | GREIF, INC. | netnet | ▫️ | 25% | 82.18 | — | — | 28.82 | 1.27 | — | 307,707 | — |
+| GEF | GREIF, INC. | custom | ▫️ | 0% | 82.18 | — | — | 28.82 | 1.27 | — | 307,707 | — |
+| UNIT | Uniti Group Inc. | greenblatt | ▫️ | 67% | 8.04 | 1.65 | 5.63 | 343 | 0.74 | 30.65 | 4M | — |
+| UNIT | Uniti Group Inc. | graham | ▫️ | 44% | 8.04 | 1.65 | 5.63 | 343 | 0.74 | 30.65 | 4M | — |
+| UNIT | Uniti Group Inc. | buffett | ▫️ | 33% | 8.04 | 1.65 | 5.63 | 343 | 0.74 | 30.65 | 4M | — |
+| UNIT | Uniti Group Inc. | lynch | ▫️ | 25% | 8.04 | 1.65 | 5.63 | 343 | 0.74 | 30.65 | 4M | — |
+| UNIT | Uniti Group Inc. | netnet | ▫️ | 25% | 8.04 | 1.65 | 5.63 | 343 | 0.74 | 30.65 | 4M | — |
+| UNIT | Uniti Group Inc. | piotroski | ▫️ | 22% | 8.04 | 1.65 | 5.63 | 343 | 0.74 | 30.65 | 4M | — |
+| UNIT | Uniti Group Inc. | custom | ▫️ | 0% | 8.04 | 1.65 | 5.63 | 343 | 0.74 | 30.65 | 4M | — |
+| BOOT | Boot Barn Holdings, Inc. | graham | ▫️ | 67% | 122 | 16.58 | 2.84 | 17.13 | 2.65 | 0.86 | 773,436 | — |
+| BOOT | Boot Barn Holdings, Inc. | buffett | ▫️ | 67% | 122 | 16.58 | 2.84 | 17.13 | 2.65 | 0.86 | 773,436 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
