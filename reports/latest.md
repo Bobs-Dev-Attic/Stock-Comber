@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-02 00:54 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-02 06:22 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **29** strategy matches passed.
+Screened **75** companies · **37** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| TDW | TIDEWATER INC | piotroski | ✅ | 89% | 82.18 | 12.38 | 3.04 | 24.51 | 2.90 | — | 587,160 | — |
-| RLI | RLI Corp | buffett | ✅ | 83% | 56.18 | 12.86 | 2.92 | 22.68 | — | 2.47 | 908,211 | — |
-| RLI | RLI Corp | piotroski | ✅ | 78% | 56.18 | 12.86 | 2.92 | 22.68 | — | 2.47 | 908,211 | — |
-| RLI | RLI Corp | lynch | ✅ | 75% | 56.18 | 12.86 | 2.92 | 22.68 | — | 2.47 | 908,211 | — |
-| TRNO | Terreno Realty Corporation | lynch | ✅ | 100% | 63.98 | 16.36 | 1.59 | 9.72 | — | 0.30 | 808,383 | — |
-| KRYS | Krystal Biotech, Inc. | piotroski | ✅ | 89% | 325 | 47.56 | 7.99 | 16.80 | 9.95 | 0.09 | 225,686 | — |
-| GGG | GRACO INC. | piotroski | ✅ | 89% | 77.76 | 25.25 | 4.96 | 19.66 | 3.15 | — | 1M | — |
-| GGG | GRACO INC. | buffett | ✅ | 83% | 77.76 | 25.25 | 4.96 | 19.66 | 3.15 | — | 1M | — |
-| TRN | TRINITY INDUSTRIES INC | greenblatt | ✅ | 100% | 25.80 | 8.46 | 1.99 | 23.50 | — | 6.76 | 894,516 | — |
-| TRN | TRINITY INDUSTRIES INC | piotroski | ✅ | 78% | 25.80 | 8.46 | 1.99 | 23.50 | — | 6.76 | 894,516 | — |
-| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 133 | 21.08 | 2.21 | 10.49 | 1.53 | — | 395,236 | — |
-| NHC | NATIONAL HEALTHCARE CORP | piotroski | ✅ | 100% | 223 | 29.12 | 3.27 | 11.23 | 1.82 | 0.42 | 98,363 | — |
-| NHC | NATIONAL HEALTHCARE CORP | lynch | ✅ | 75% | 223 | 29.12 | 3.27 | 11.23 | 1.82 | 0.42 | 98,363 | — |
-| POST | Post Holdings, Inc. | lynch | ✅ | 75% | 72.83 | 13.22 | 1.22 | 8.94 | 1.67 | 2.60 | 695,314 | — |
-| BKU | BankUnited, Inc. | piotroski | ✅ | 89% | 42.72 | 12.10 | 1.04 | 8.79 | — | 10.47 | 799,841 | — |
-| KRT | Karat Packaging Inc. | piotroski | ✅ | 78% | 53.37 | 34.21 | 7.21 | 21.07 | 2.30 | 0.88 | 144,183 | — |
-| SSRM | SSR Mining Inc. | piotroski | ✅ | 78% | 33.42 | 18.06 | 2.07 | 11.28 | 2.08 | 0.51 | 2M | — |
-| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 47.15 | 45.34 | — | -29.14 | 1.60 | -6.05 | 619,006 | — |
-| LW | LAMB WESTON HOLDINGS, INC. | piotroski | ✅ | 78% | 41.18 | 19.80 | 3.14 | 15.89 | 1.42 | — | 2M | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | greenblatt | ✅ | 100% | 25.41 | 6.37 | 2.14 | 33.67 | 1.55 | — | 458,598 | — |
+| SBC | SBC Medical Group Holdings I | lynch | ✅ | 75% | 5.07 | 10.14 | 2.10 | 20.54 | 3.78 | 0.47 | 218,196 | — |
+| USLM | UNITED STATES LIME & MINERAL | lynch | ✅ | 100% | 111 | 23.85 | 5.07 | 21.29 | 19.27 | 0.08 | 168,415 | — |
+| USLM | UNITED STATES LIME & MINERAL | buffett | ✅ | 83% | 111 | 23.85 | 5.07 | 21.29 | 19.27 | 0.08 | 168,415 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | piotroski | ✅ | 100% | 116 | 21.40 | 4.03 | 18.86 | 0.86 | 0.33 | 136,183 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | lynch | ✅ | 100% | 116 | 21.40 | 4.03 | 18.86 | 0.86 | 0.33 | 136,183 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | buffett | ✅ | 83% | 116 | 21.40 | 4.03 | 18.86 | 0.86 | 0.33 | 136,183 | — |
+| XPEL | XPEL, INC. | buffett | ✅ | 100% | 44.56 | 24.09 | 4.40 | 18.28 | 3.25 | 0.35 | 148,216 | — |
+| RILY | BRC Group Holdings, Inc. | greenblatt | ✅ | 100% | 5.04 | 0.51 | — | -179 | — | -10.65 | 603,789 | — |
+| XPEL | XPEL, INC. | lynch | ✅ | 75% | 44.56 | 24.09 | 4.40 | 18.28 | 3.25 | 0.35 | 148,216 | — |
+| RILY | BRC Group Holdings, Inc. | lynch | ✅ | 75% | 5.04 | 0.51 | — | -179 | — | -10.65 | 603,789 | — |
+| SMPL | The Simply Good Foods Compan | graham | ✅ | 100% | 9.88 | 9.69 | 0.56 | 5.73 | 3.64 | 0.33 | 3M | — |
+| SMPL | The Simply Good Foods Compan | lynch | ✅ | 100% | 9.88 | 9.69 | 0.56 | 5.73 | 3.64 | 0.33 | 3M | — |
+| ANNAW | AleAnna, Inc. | piotroski | ✅ | 78% | 0.27 | 6.73 | 0.19 | 4.91 | 1.93 | 0.73 | 160 | — |
+| PJT | PJT Partners Inc. | buffett | ✅ | 83% | 140 | — | — | 58.43 | — | 2.71 | 477,871 | — |
+| PJT | PJT Partners Inc. | piotroski | ✅ | 78% | 140 | — | — | 58.43 | — | 2.71 | 477,871 | — |
+| PATH | UiPath, Inc. | piotroski | ✅ | 89% | 13.32 | 25.62 | 3.48 | 13.56 | 2.48 | 0.53 | 43M | — |
+| FTDR | Frontdoor, Inc. | piotroski | ✅ | 89% | 75.45 | 22.06 | 23.23 | 105 | 1.55 | — | 591,779 | — |
+| FTDR | Frontdoor, Inc. | buffett | ✅ | 83% | 75.45 | 22.06 | 23.23 | 105 | 1.55 | — | 591,779 | — |
+| ABG | ASBURY AUTOMOTIVE GROUP, INC | piotroski | ✅ | 78% | 178 | 7.10 | 0.90 | 12.64 | 0.95 | — | 287,654 | — |
+| ABG | ASBURY AUTOMOTIVE GROUP, INC | lynch | ✅ | 75% | 178 | 7.10 | 0.90 | 12.64 | 0.95 | — | 287,654 | — |
+| AGX | ARGAN INC | lynch | ✅ | 75% | 380 | 38.97 | 11.62 | 29.80 | 1.59 | 1.57 | 293,160 | — |
+| BFH | BREAD FINANCIAL HOLDINGS, IN | lynch | ✅ | 75% | 96.94 | 8.90 | 1.39 | 15.57 | — | 5.81 | 776,672 | — |
+| AGCO | AGCO CORP /DE | piotroski | ✅ | 89% | 112 | 11.47 | 1.95 | 17.00 | 1.39 | 1.72 | 984,010 | — |
+| BKU | BankUnited, Inc. | piotroski | ✅ | 89% | 42.72 | 12.10 | 1.04 | 8.79 | — | 10.47 | 799,842 | — |
+| FMNB | FARMERS NATIONAL BANC CORP / | piotroski | ✅ | 89% | 15.15 | 10.45 | 1.17 | 11.24 | — | 9.80 | 376,783 | — |
+| DLB | Dolby Laboratories, Inc. | piotroski | ✅ | 78% | 59.06 | 22.54 | 2.20 | 9.72 | 3.17 | 0.23 | 802,630 | — |
+| CENTA | Central Garden & Pet Company | graham | ✅ | 100% | 33.79 | 13.25 | 1.36 | 10.29 | 3.67 | — | 301,858 | — |
+| CENTA | Central Garden & Pet Company | piotroski | ✅ | 89% | 33.79 | 13.25 | 1.36 | 10.29 | 3.67 | — | 301,858 | — |
+| FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 14.08 | 74.11 | 5.78 | 7.83 | 4.94 | 0.33 | 3M | — |
+| WOR | WORTHINGTON ENTERPRISES, INC | piotroski | ✅ | 89% | 59.14 | 18.83 | 2.86 | 15.20 | 2.37 | 0.80 | 238,366 | — |
 | CHEF | CHEFS’ WAREHOUSE, INC. | piotroski | ✅ | 100% | 113 | 67.00 | 8.57 | 11.97 | 2.05 | 2.36 | 575,473 | — |
 | TBCH | TURTLE BEACH CORPORATION | piotroski | ✅ | 78% | 12.79 | 16.61 | 2.04 | 12.24 | 1.98 | 1.09 | 267,086 | — |
-| HCSG | HEALTHCARE SERVICES GROUP, I | piotroski | ✅ | 100% | 20.58 | 25.41 | 2.95 | 11.58 | 3.38 | — | 1M | — |
-| KOP | KOPPERS HOLDINGS INC. | piotroski | ✅ | 89% | 45.19 | 16.49 | 1.61 | 9.76 | 2.94 | 2.29 | 196,273 | — |
-| MSGS | MADISON SQUARE GARDEN SPORTS | piotroski | ✅ | 100% | 399 | 1,247 | — | -2.95 | 0.50 | -6.84 | 563,704 | — |
+| KOP | KOPPERS HOLDINGS INC. | piotroski | ✅ | 89% | 45.19 | 16.49 | 1.61 | 9.76 | 2.94 | 2.29 | 196,748 | — |
+| USNA | USANA HEALTH SCIENCES, INC. | piotroski | ✅ | 78% | 14.37 | 24.78 | 0.50 | 2.02 | 2.24 | 0.29 | 140,084 | — |
+| DAR | DARLING INGREDIENTS INC. | piotroski | ✅ | 78% | 61.64 | 158 | 2.08 | 1.33 | 1.50 | 1.16 | 3M | — |
 | CTRI | Centuri Holdings, Inc. | piotroski | ✅ | 78% | 20.54 | 82.16 | 2.12 | 2.57 | 1.78 | 1.75 | 2M | — |
-| LILA | Liberty Latin America Ltd. | piotroski | ✅ | 78% | 8.36 | — | 3.00 | -110 | 1.14 | 20.09 | 282,495 | — |
-| ORN | ORION GROUP HOLDINGS, INC. | piotroski | ✅ | 78% | 9.19 | 153 | 2.29 | 1.56 | 1.36 | 1.61 | 813,351 | — |
-| KLIC | KULICKE AND SOFFA INDUSTRIES | piotroski | ✅ | 89% | 96.03 | 24,008 | 6.22 | 0.03 | 4.79 | 0.34 | 405,934 | — |
-| TDAY | USA TODAY CO., INC. | piotroski | ✅ | 78% | 7.06 | 706 | 6.64 | 1.13 | 0.75 | 10.85 | 7M | — |
-| TDW | TIDEWATER INC | greenblatt | ▫️ | 67% | 82.18 | 12.38 | 3.04 | 24.51 | 2.90 | — | 587,160 | — |
-| TDW | TIDEWATER INC | buffett | ▫️ | 50% | 82.18 | 12.38 | 3.04 | 24.51 | 2.90 | — | 587,160 | — |
-| TDW | TIDEWATER INC | graham | ▫️ | 44% | 82.18 | 12.38 | 3.04 | 24.51 | 2.90 | — | 587,160 | — |
-| TDW | TIDEWATER INC | lynch | ▫️ | 25% | 82.18 | 12.38 | 3.04 | 24.51 | 2.90 | — | 587,160 | — |
-| TDW | TIDEWATER INC | netnet | ▫️ | 25% | 82.18 | 12.38 | 3.04 | 24.51 | 2.90 | — | 587,160 | — |
-| TDW | TIDEWATER INC | custom | ▫️ | 0% | 82.18 | 12.38 | 3.04 | 24.51 | 2.90 | — | 587,160 | — |
-| RLI | RLI Corp | greenblatt | ▫️ | 67% | 56.18 | 12.86 | 2.92 | 22.68 | — | 2.47 | 908,211 | — |
-| RLI | RLI Corp | graham | ▫️ | 56% | 56.18 | 12.86 | 2.92 | 22.68 | — | 2.47 | 908,211 | — |
-| RLI | RLI Corp | netnet | ▫️ | 25% | 56.18 | 12.86 | 2.92 | 22.68 | — | 2.47 | 908,211 | — |
-| RLI | RLI Corp | custom | ▫️ | 0% | 56.18 | 12.86 | 2.92 | 22.68 | — | 2.47 | 908,211 | — |
-| TRNO | Terreno Realty Corporation | piotroski | ▫️ | 56% | 63.98 | 16.36 | 1.59 | 9.72 | — | 0.30 | 808,383 | — |
-| TRNO | Terreno Realty Corporation | buffett | ▫️ | 50% | 63.98 | 16.36 | 1.59 | 9.72 | — | 0.30 | 808,383 | — |
-| TRNO | Terreno Realty Corporation | graham | ▫️ | 33% | 63.98 | 16.36 | 1.59 | 9.72 | — | 0.30 | 808,383 | — |
-| TRNO | Terreno Realty Corporation | greenblatt | ▫️ | 33% | 63.98 | 16.36 | 1.59 | 9.72 | — | 0.30 | 808,383 | — |
-| TRNO | Terreno Realty Corporation | netnet | ▫️ | 25% | 63.98 | 16.36 | 1.59 | 9.72 | — | 0.30 | 808,383 | — |
-| TRNO | Terreno Realty Corporation | custom | ▫️ | 0% | 63.98 | 16.36 | 1.59 | 9.72 | — | 0.30 | 808,383 | — |
-| IPXGU | COLUMBUS CIRCLE CAPITAL CORP | buffett | ▫️ | 33% | — | — | — | 219 | — | -8.31 | — | — |
-| IPXGU | COLUMBUS CIRCLE CAPITAL CORP | lynch | ▫️ | 25% | — | — | — | 219 | — | -8.31 | — | — |
-| IPXGU | COLUMBUS CIRCLE CAPITAL CORP | graham | ▫️ | 0% | — | — | — | 219 | — | -8.31 | — | — |
-| IPXGU | COLUMBUS CIRCLE CAPITAL CORP | piotroski | ▫️ | 0% | — | — | — | 219 | — | -8.31 | — | — |
-| IPXGU | COLUMBUS CIRCLE CAPITAL CORP | greenblatt | ▫️ | 0% | — | — | — | 219 | — | -8.31 | — | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | graham | ▫️ | 56% | 25.41 | 6.37 | 2.14 | 33.67 | 1.55 | — | 458,598 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | piotroski | ▫️ | 56% | 25.41 | 6.37 | 2.14 | 33.67 | 1.55 | — | 458,598 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | buffett | ▫️ | 50% | 25.41 | 6.37 | 2.14 | 33.67 | 1.55 | — | 458,598 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | lynch | ▫️ | 25% | 25.41 | 6.37 | 2.14 | 33.67 | 1.55 | — | 458,598 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | netnet | ▫️ | 25% | 25.41 | 6.37 | 2.14 | 33.67 | 1.55 | — | 458,598 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | custom | ▫️ | 0% | 25.41 | 6.37 | 2.14 | 33.67 | 1.55 | — | 458,598 | — |
+| SBC | SBC Medical Group Holdings I | graham | ▫️ | 67% | 5.07 | 10.14 | 2.10 | 20.54 | 3.78 | 0.47 | 218,196 | — |
+| SBC | SBC Medical Group Holdings I | buffett | ▫️ | 67% | 5.07 | 10.14 | 2.10 | 20.54 | 3.78 | 0.47 | 218,196 | — |
+| SBC | SBC Medical Group Holdings I | greenblatt | ▫️ | 67% | 5.07 | 10.14 | 2.10 | 20.54 | 3.78 | 0.47 | 218,196 | — |
+| SBC | SBC Medical Group Holdings I | netnet | ▫️ | 50% | 5.07 | 10.14 | 2.10 | 20.54 | 3.78 | 0.47 | 218,196 | — |
+| SBC | SBC Medical Group Holdings I | piotroski | ▫️ | 44% | 5.07 | 10.14 | 2.10 | 20.54 | 3.78 | 0.47 | 218,196 | — |
+| SBC | SBC Medical Group Holdings I | custom | ▫️ | 0% | 5.07 | 10.14 | 2.10 | 20.54 | 3.78 | 0.47 | 218,196 | — |
+| GEF | GREIF, INC. | buffett | ▫️ | 67% | 81.56 | — | — | 28.82 | 1.27 | — | 433,901 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
