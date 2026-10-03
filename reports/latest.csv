@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-OII,OCEANEERING INTERNATIONAL INC,piotroski,True,7,9,77.8,44.32,12.70,4.19,33.04,1.99,—,28.81,"598,592",—
-FHI,"Federated Hermes, Inc.",greenblatt,True,3,3,100.0,56.07,10.93,3.52,33.69,2.75,0.81,42.89,"552,930",—
-FHI,"Federated Hermes, Inc.",piotroski,True,8,9,88.9,56.07,10.93,3.52,33.69,2.75,0.81,42.89,"552,930",—
-MWA,"Mueller Water Products, Inc.",piotroski,True,8,9,88.9,21.66,17.75,3.48,19.53,3.54,0.87,13.08,2M,—
-MWA,"Mueller Water Products, Inc.",lynch,True,3,4,75.0,21.66,17.75,3.48,19.53,3.54,0.87,13.08,2M,—
-AREC,AMERICAN RESOURCES CORPORATION,greenblatt,True,3,3,100.0,1.79,2.84,1.65,58.44,2.19,0.80,3.92,1M,—
-KRYS,"Krystal Biotech, Inc.",piotroski,True,8,9,88.9,322,47.12,7.91,16.80,9.95,0.09,79.16,"426,094",—
-LMB,"LIMBACH HOLDINGS, INC.",piotroski,True,7,9,77.8,49.10,15.20,3.03,19.97,1.44,0.95,34.31,"248,613",—
-LMB,"LIMBACH HOLDINGS, INC.",lynch,True,3,4,75.0,49.10,15.20,3.03,19.97,1.44,0.95,34.31,"248,613",—
-SFM,"Sprouts Farmers Market, Inc.",greenblatt,True,3,3,100.0,64.47,12.14,4.54,37.32,0.93,1.96,41.21,2M,—
-SFM,"Sprouts Farmers Market, Inc.",piotroski,True,7,9,77.8,64.47,12.14,4.54,37.32,0.93,1.96,41.21,2M,—
-GPK,Graphic Packaging Holding Co,lynch,True,3,4,75.0,8.78,5.93,0.79,13.31,1.30,—,19.25,9M,—
-HALO,"HALOZYME THERAPEUTICS, INC.",buffett,True,5,6,83.3,110,42.91,279,649,4.66,50.73,4.76,3M,—
-ORI,OLD REPUBLIC INTERNATIONAL CORPORATION,piotroski,True,7,9,77.8,38.06,10.23,1.62,15.82,—,4.05,44.38,2M,—
-EGP,"EASTGROUP PROPERTIES, INC.",piotroski,True,7,9,77.8,196,40.20,2.96,7.36,—,0.55,85.17,"508,970",—
-EGP,"EASTGROUP PROPERTIES, INC.",lynch,True,3,4,75.0,196,40.20,2.96,7.36,—,0.55,85.17,"508,970",—
-OPRX,OptimizeRx Corporation,piotroski,True,8,9,88.9,8.57,31.74,1.27,4.00,3.04,0.38,6.40,"224,802",—
-OPLN,"OPENLANE, Inc.",piotroski,True,8,9,88.9,35.53,—,3.06,14.32,1.16,—,—,1M,—
-III,Information Services Group Inc.,piotroski,True,7,9,77.8,5.70,30.00,3.03,9.87,2.34,1.23,2.84,"212,314",—
-IMAX,IMAX Corporation,piotroski,True,7,9,77.8,52.72,83.68,8.67,10.32,—,1.38,9.29,"746,923",—
-KOP,KOPPERS HOLDINGS INC.,piotroski,True,8,9,88.9,46.04,16.80,1.64,9.76,2.94,2.29,41.64,"158,974",—
-SHC,SOTERA HEALTH COMPANY,piotroski,True,7,9,77.8,18.22,67.48,8.61,12.86,2.46,4.38,3.59,2M,—
-GXO,"GXO Logistics, Inc.",piotroski,True,7,9,77.8,46.56,166,1.82,1.07,0.85,—,12.71,1M,—
-ORN,"ORION GROUP HOLDINGS, INC.",piotroski,True,7,9,77.8,9.30,155,2.32,1.56,1.36,1.61,2.33,"461,896",—
-OII,OCEANEERING INTERNATIONAL INC,greenblatt,False,2,3,66.7,44.32,12.70,4.19,33.04,1.99,—,28.81,"598,592",—
-OII,OCEANEERING INTERNATIONAL INC,buffett,False,3,6,50.0,44.32,12.70,4.19,33.04,1.99,—,28.81,"598,592",—
-OII,OCEANEERING INTERNATIONAL INC,graham,False,4,9,44.4,44.32,12.70,4.19,33.04,1.99,—,28.81,"598,592",—
-OII,OCEANEERING INTERNATIONAL INC,lynch,False,1,4,25.0,44.32,12.70,4.19,33.04,1.99,—,28.81,"598,592",—
-OII,OCEANEERING INTERNATIONAL INC,netnet,False,1,4,25.0,44.32,12.70,4.19,33.04,1.99,—,28.81,"598,592",—
-OII,OCEANEERING INTERNATIONAL INC,custom,False,0,0,0.0,44.32,12.70,4.19,33.04,1.99,—,28.81,"598,592",—
-DEC,Diversified Energy Company,greenblatt,False,2,3,66.7,13.42,2.93,1.02,34.66,0.60,5.26,36.90,"493,693",—
-DEC,Diversified Energy Company,graham,False,5,9,55.6,13.42,2.93,1.02,34.66,0.60,5.26,36.90,"493,693",—
-DEC,Diversified Energy Company,buffett,False,2,6,33.3,13.42,2.93,1.02,34.66,0.60,5.26,36.90,"493,693",—
-DEC,Diversified Energy Company,piotroski,False,3,9,33.3,13.42,2.93,1.02,34.66,0.60,5.26,36.90,"493,693",—
-DEC,Diversified Energy Company,lynch,False,1,4,25.0,13.42,2.93,1.02,34.66,0.60,5.26,36.90,"493,693",—
-DEC,Diversified Energy Company,netnet,False,1,4,25.0,13.42,2.93,1.02,34.66,0.60,5.26,36.90,"493,693",—
-DEC,Diversified Energy Company,custom,False,0,0,0.0,13.42,2.93,1.02,34.66,0.60,5.26,36.90,"493,693",—
-FHI,"Federated Hermes, Inc.",graham,False,6,9,66.7,56.07,10.93,3.52,33.69,2.75,0.81,42.89,"552,930",—
-FHI,"Federated Hermes, Inc.",buffett,False,4,6,66.7,56.07,10.93,3.52,33.69,2.75,0.81,42.89,"552,930",—
-FHI,"Federated Hermes, Inc.",lynch,False,1,4,25.0,56.07,10.93,3.52,33.69,2.75,0.81,42.89,"552,930",—
-FHI,"Federated Hermes, Inc.",netnet,False,1,4,25.0,56.07,10.93,3.52,33.69,2.75,0.81,42.89,"552,930",—
-FHI,"Federated Hermes, Inc.",custom,False,0,0,0.0,56.07,10.93,3.52,33.69,2.75,0.81,42.89,"552,930",—
-MWA,"Mueller Water Products, Inc.",graham,False,6,9,66.7,21.66,17.75,3.48,19.53,3.54,0.87,13.08,2M,—
-MWA,"Mueller Water Products, Inc.",buffett,False,4,6,66.7,21.66,17.75,3.48,19.53,3.54,0.87,13.08,2M,—
-MWA,"Mueller Water Products, Inc.",netnet,False,2,4,50.0,21.66,17.75,3.48,19.53,3.54,0.87,13.08,2M,—
-MWA,"Mueller Water Products, Inc.",greenblatt,False,1,3,33.3,21.66,17.75,3.48,19.53,3.54,0.87,13.08,2M,—
-MWA,"Mueller Water Products, Inc.",custom,False,0,0,0.0,21.66,17.75,3.48,19.53,3.54,0.87,13.08,2M,—
-OIMAU,ONEIM ACQUISITION CORP.,buffett,False,2,6,33.3,10.19,—,—,173,—,-15.05,—,10.00,—
-OIMAU,ONEIM ACQUISITION CORP.,lynch,False,1,4,25.0,10.19,—,—,173,—,-15.05,—,10.00,—
-OIMAU,ONEIM ACQUISITION CORP.,graham,False,0,9,0.0,10.19,—,—,173,—,-15.05,—,10.00,—
+PLMR,"Palomar Holdings, Inc.",piotroski,True,7,9,77.8,126,17.64,3.69,20.91,—,2.24,74.38,"226,879",—
+RILY,"BRC Group Holdings, Inc.",greenblatt,True,3,3,100.0,4.86,0.50,—,-179,—,-10.65,—,"765,090",—
+RILY,"BRC Group Holdings, Inc.",lynch,True,3,4,75.0,4.86,0.50,—,-179,—,-10.65,—,"765,090",—
+AES,THE AES CORPORATION,greenblatt,True,3,3,100.0,14.91,11.83,2.62,22.40,0.77,—,12.70,7M,—
+SSD,"Simpson Manufacturing Co., Inc.",buffett,True,5,6,83.3,174,21.06,3.58,17.00,3.54,0.51,94.81,"310,806",—
+SSD,"Simpson Manufacturing Co., Inc.",piotroski,True,7,9,77.8,174,21.06,3.58,17.00,3.54,0.51,94.81,"310,806",—
+MHO,"M/I HOMES, INC.",lynch,True,3,4,75.0,135,9.14,1.16,12.73,—,0.51,196,"174,405",—
+KFY,KORN FERRY,piotroski,True,9,9,100.0,71.92,13.78,1.91,14.06,1.94,1.06,66.42,"611,582",—
+KFY,KORN FERRY,lynch,True,3,4,75.0,71.92,13.78,1.91,14.06,1.94,1.06,66.42,"611,582",—
+RMNI,"Rimini Street, Inc.",greenblatt,True,3,3,100.0,4.24,10.87,—,-137,0.86,-16.65,—,"611,789",—
+RMNI,"Rimini Street, Inc.",lynch,True,4,4,100.0,4.24,10.87,—,-137,0.86,-16.65,—,"611,789",—
+RMNI,"Rimini Street, Inc.",piotroski,True,7,9,77.8,4.24,10.87,—,-137,0.86,-16.65,—,"611,789",—
+IBEX,IBEX LIMITED,piotroski,True,9,9,100.0,43.58,13.92,3.79,27.22,2.10,0.82,28.45,"60,856",—
+GBX,"THE GREENBRIER COMPANIES, INC.",lynch,True,3,4,75.0,40.58,6.39,0.85,13.32,—,—,82.54,"397,573",—
+GGG,GRACO INC.,piotroski,True,8,9,88.9,78.00,25.32,4.97,19.66,3.15,—,32.97,1M,—
+GGG,GRACO INC.,buffett,True,5,6,83.3,78.00,25.32,4.97,19.66,3.15,—,32.97,1M,—
+ACEL,"Accel Entertainment, Inc.",piotroski,True,7,9,77.8,10.84,18.07,3.47,19.09,2.61,—,6.49,"422,851",—
+PCTY,PAYLOCITY HOLDING CORPORATION,piotroski,True,8,9,88.9,144,29.36,6.48,22.08,1.09,3.00,49.69,"537,272",—
+PCTY,PAYLOCITY HOLDING CORPORATION,lynch,True,3,4,75.0,144,29.36,6.48,22.08,1.09,3.00,49.69,"537,272",—
+AIR,AAR CORP,piotroski,True,7,9,77.8,103,21.09,2.31,11.02,2.84,—,69.66,1M,—
+AIR,AAR CORP,lynch,True,3,4,75.0,103,21.09,2.31,11.02,2.84,—,69.66,1M,—
+SSB,SOUTHSTATE BANK CORP,lynch,True,3,4,75.0,102,12.95,1.14,8.82,—,6.42,126,"604,102",—
+BFAM,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,piotroski,True,8,9,88.9,64.26,19.13,2.76,14.42,0.52,1.90,41.99,"597,481",—
+BFAM,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,lynch,True,3,4,75.0,64.26,19.13,2.76,14.42,0.52,1.90,41.99,"597,481",—
+WLY,"JOHN WILEY & SONS, INC.",piotroski,True,9,9,100.0,47.50,11.42,2.98,26.13,0.54,2.06,38.61,"398,538",—
+PSN,Parsons Corporation,lynch,True,3,4,75.0,40.79,18.54,1.69,9.13,1.75,1.14,34.53,2M,—
+EGP,"EASTGROUP PROPERTIES, INC.",piotroski,True,7,9,77.8,196,40.20,2.96,7.36,—,0.55,85.17,"514,497",—
+EGP,"EASTGROUP PROPERTIES, INC.",lynch,True,3,4,75.0,196,40.20,2.96,7.36,—,0.55,85.17,"514,497",—
+POST,"Post Holdings, Inc.",lynch,True,3,4,75.0,72.56,13.17,1.22,8.94,1.67,2.60,86.01,"727,773",—
+BBWI,"BATH & BODY WORKS, INC.",greenblatt,True,3,3,100.0,16.06,5.16,—,-50.66,1.27,—,—,6M,—
+KNTK,KINETIK HOLDINGS INC.,lynch,True,3,4,75.0,52.53,19.97,—,-31.53,0.69,-7.37,—,2M,—
+GRC,The Gorman-Rupp Company,piotroski,True,8,9,88.9,77.26,38.25,4.90,12.78,2.37,1.07,26.77,"280,605",—
+ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.34,19.73,0.78,3.99,9.18,0.34,5.26,"126,917",—
+KN,Knowles Corporation,piotroski,True,7,9,77.8,40.05,80.10,4.54,5.70,2.75,—,9.96,"751,350",—
+MOS,MOSAIC CO,piotroski,True,8,9,88.9,21.07,12.39,0.56,4.47,1.32,—,38.07,8M,—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,piotroski,False,4,9,44.4,24.53,—,—,—,2.10,—,—,"239,541",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,graham,False,3,9,33.3,24.53,—,—,—,2.10,—,—,"239,541",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,buffett,False,2,6,33.3,24.53,—,—,—,2.10,—,—,"239,541",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,greenblatt,False,1,3,33.3,24.53,—,—,—,2.10,—,—,"239,541",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,lynch,False,1,4,25.0,24.53,—,—,—,2.10,—,—,"239,541",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,netnet,False,1,4,25.0,24.53,—,—,—,2.10,—,—,"239,541",—
+ARLP,ALLIANCE RESOURCE PARTNERS LP,custom,False,0,0,0.0,24.53,—,—,—,2.10,—,—,"239,541",—
+IDR,"IDAHO STRATEGIC RESOURCES, INC",buffett,False,4,6,66.7,27.64,24.25,3.76,15.45,13.96,0.05,13.74,"245,231",—
+IDR,"IDAHO STRATEGIC RESOURCES, INC",piotroski,False,6,9,66.7,27.64,24.25,3.76,15.45,13.96,0.05,13.74,"245,231",—
+IDR,"IDAHO STRATEGIC RESOURCES, INC",lynch,False,2,4,50.0,27.64,24.25,3.76,15.45,13.96,0.05,13.74,"245,231",—
+IDR,"IDAHO STRATEGIC RESOURCES, INC",netnet,False,2,4,50.0,27.64,24.25,3.76,15.45,13.96,0.05,13.74,"245,231",—
+IDR,"IDAHO STRATEGIC RESOURCES, INC",graham,False,3,9,33.3,27.64,24.25,3.76,15.45,13.96,0.05,13.74,"245,231",—
+IDR,"IDAHO STRATEGIC RESOURCES, INC",greenblatt,False,1,3,33.3,27.64,24.25,3.76,15.45,13.96,0.05,13.74,"245,231",—
+IDR,"IDAHO STRATEGIC RESOURCES, INC",custom,False,0,0,0.0,27.64,24.25,3.76,15.45,13.96,0.05,13.74,"245,231",—
+PLMR,"Palomar Holdings, Inc.",buffett,False,4,6,66.7,126,17.64,3.69,20.91,—,2.24,74.38,"226,879",—
