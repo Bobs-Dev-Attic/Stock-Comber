@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-BYD,BOYD GAMING CORP,greenblatt,True,3,3,100.0,67.25,2.98,2.11,70.66,0.54,—,127,1M,—
-BYD,BOYD GAMING CORP,piotroski,True,7,9,77.8,67.25,2.98,2.11,70.66,0.54,—,127,1M,—
-RILYT,"BRC Group Holdings, Inc.",greenblatt,True,3,3,100.0,21.54,2.20,—,-179,—,-10.65,—,"31,732",—
-RILYT,"BRC Group Holdings, Inc.",lynch,True,3,4,75.0,21.54,2.20,—,-179,—,-10.65,—,"31,732",—
-LNN,Lindsay Corporation,piotroski,True,7,9,77.8,114,16.87,2.34,13.90,3.71,0.58,86.29,"106,342",—
-LNN,Lindsay Corporation,lynch,True,3,4,75.0,114,16.87,2.34,13.90,3.71,0.58,86.29,"106,342",—
-PJT,PJT Partners Inc.,buffett,True,5,6,83.3,139,—,—,58.43,—,2.71,—,"375,375",—
-PJT,PJT Partners Inc.,piotroski,True,7,9,77.8,139,—,—,58.43,—,2.71,—,"375,375",—
-EVR,EVERCORE INC.,buffett,True,5,6,83.3,262,18.62,5.43,29.14,2.16,1.50,123,"670,122",—
-EVR,EVERCORE INC.,piotroski,True,7,9,77.8,262,18.62,5.43,29.14,2.16,1.50,123,"670,122",—
-WLDN,"WILLDAN GROUP, INC.",piotroski,True,7,9,77.8,73.54,21.07,3.64,17.24,1.56,0.79,39.85,"248,700",—
-PRDO,PERDOCEO EDUCATION CORP,piotroski,True,8,9,88.9,31.91,13.19,2.17,16.45,5.06,—,28.29,"724,832",—
-FTDR,"Frontdoor, Inc.",piotroski,True,8,9,88.9,77.24,22.58,23.78,105,1.55,—,15.81,"633,095",—
-FTDR,"Frontdoor, Inc.",buffett,True,5,6,83.3,77.24,22.58,23.78,105,1.55,—,15.81,"633,095",—
-POST,"Post Holdings, Inc.",lynch,True,3,4,75.0,72.56,13.17,1.22,8.94,1.67,2.60,86.01,"727,768",—
-CPK,CHESAPEAKE UTILITIES CORP,piotroski,True,7,9,77.8,127,21.34,1.87,8.78,0.45,—,95.61,"210,192",—
-BCO,BRINK’S CO,piotroski,True,7,9,77.8,102,21.71,15.58,71.91,1.51,24.96,26.26,"403,526",—
-GRC,The Gorman-Rupp Company,piotroski,True,8,9,88.9,77.26,38.25,4.90,12.78,2.37,1.07,26.77,"280,605",—
-AMTM,"Amentum Holdings, Inc.",piotroski,True,7,9,77.8,18.14,67.19,0.98,1.47,1.32,1.52,10.59,2M,—
-MOS,MOSAIC CO,piotroski,True,8,9,88.9,21.07,12.39,0.56,4.47,1.32,—,38.07,8M,—
-SENS,"Senseonics Holdings, Inc.",piotroski,True,7,9,77.8,9.88,—,6.75,-113,4.83,1.07,—,"705,952",—
-QUAD,"Quad/Graphics, Inc.",piotroski,True,7,9,77.8,9.42,17.44,—,-45.38,0.86,-18.90,—,"288,518",—
-BYD,BOYD GAMING CORP,buffett,False,4,6,66.7,67.25,2.98,2.11,70.66,0.54,—,127,1M,—
-BYD,BOYD GAMING CORP,graham,False,5,9,55.6,67.25,2.98,2.11,70.66,0.54,—,127,1M,—
-BYD,BOYD GAMING CORP,lynch,False,1,4,25.0,67.25,2.98,2.11,70.66,0.54,—,127,1M,—
-BYD,BOYD GAMING CORP,netnet,False,1,4,25.0,67.25,2.98,2.11,70.66,0.54,—,127,1M,—
-BYD,BOYD GAMING CORP,custom,False,0,0,0.0,67.25,2.98,2.11,70.66,0.54,—,127,1M,—
-HGTY,"HAGERTY, INC.",piotroski,False,6,9,66.7,13.61,—,—,67.43,—,6.09,—,"709,648",—
-HGTY,"HAGERTY, INC.",greenblatt,False,2,3,66.7,13.61,—,—,67.43,—,6.09,—,"709,648",—
-HGTY,"HAGERTY, INC.",buffett,False,3,6,50.0,13.61,—,—,67.43,—,6.09,—,"709,648",—
-HGTY,"HAGERTY, INC.",lynch,False,1,4,25.0,13.61,—,—,67.43,—,6.09,—,"709,648",—
-HGTY,"HAGERTY, INC.",netnet,False,1,4,25.0,13.61,—,—,67.43,—,6.09,—,"709,648",—
-HGTY,"HAGERTY, INC.",graham,False,1,9,11.1,13.61,—,—,67.43,—,6.09,—,"709,648",—
-HGTY,"HAGERTY, INC.",custom,False,0,0,0.0,13.61,—,—,67.43,—,6.09,—,"709,648",—
-WALDW,Waldencast plc,buffett,False,2,6,33.3,0.01,—,—,26.32,4.64,-1.03,—,"438,283",—
-WALDW,Waldencast plc,lynch,False,1,4,25.0,0.01,—,—,26.32,4.64,-1.03,—,"438,283",—
-WALDW,Waldencast plc,graham,False,2,9,22.2,0.01,—,—,26.32,4.64,-1.03,—,"438,283",—
-WALDW,Waldencast plc,piotroski,False,1,9,11.1,0.01,—,—,26.32,4.64,-1.03,—,"438,283",—
-WALDW,Waldencast plc,greenblatt,False,0,3,0.0,0.01,—,—,26.32,4.64,-1.03,—,"438,283",—
-WALDW,Waldencast plc,netnet,False,0,4,0.0,0.01,—,—,26.32,4.64,-1.03,—,"438,283",—
-WALDW,Waldencast plc,custom,False,0,0,0.0,0.01,—,—,26.32,4.64,-1.03,—,"438,283",—
-EEFT,"EURONET WORLDWIDE, INC.",greenblatt,False,2,3,66.7,63.50,9.28,2.22,23.67,1.11,3.95,66.30,"507,512",—
-EEFT,"EURONET WORLDWIDE, INC.",graham,False,5,9,55.6,63.50,9.28,2.22,23.67,1.11,3.95,66.30,"507,512",—
-EEFT,"EURONET WORLDWIDE, INC.",piotroski,False,5,9,55.6,63.50,9.28,2.22,23.67,1.11,3.95,66.30,"507,512",—
-EEFT,"EURONET WORLDWIDE, INC.",buffett,False,2,6,33.3,63.50,9.28,2.22,23.67,1.11,3.95,66.30,"507,512",—
-EEFT,"EURONET WORLDWIDE, INC.",lynch,False,1,4,25.0,63.50,9.28,2.22,23.67,1.11,3.95,66.30,"507,512",—
-EEFT,"EURONET WORLDWIDE, INC.",netnet,False,1,4,25.0,63.50,9.28,2.22,23.67,1.11,3.95,66.30,"507,512",—
-EEFT,"EURONET WORLDWIDE, INC.",custom,False,0,0,0.0,63.50,9.28,2.22,23.67,1.11,3.95,66.30,"507,512",—
-RILYT,"BRC Group Holdings, Inc.",buffett,False,3,6,50.0,21.54,2.20,—,-179,—,-10.65,—,"31,732",—
-RILYT,"BRC Group Holdings, Inc.",piotroski,False,4,9,44.4,21.54,2.20,—,-179,—,-10.65,—,"31,732",—
+YELP,YELP INC,greenblatt,True,3,3,100.0,18.26,8.15,1.67,20.48,2.99,0.35,23.46,1M,—
+YELP,YELP INC,piotroski,True,8,9,88.9,18.26,8.15,1.67,20.48,2.99,0.35,23.46,1M,—
+VITL,"Vital Farms, Inc.",graham,True,9,9,100.0,9.06,6.29,1.19,18.87,2.16,0.48,15.73,2M,—
+VITL,"Vital Farms, Inc.",lynch,True,4,4,100.0,9.06,6.29,1.19,18.87,2.16,0.48,15.73,2M,—
+LRN,"Stride, Inc.",lynch,True,4,4,100.0,78.89,11.05,2.29,20.72,5.94,0.49,74.43,"699,408",—
+LRN,"Stride, Inc.",piotroski,True,8,9,88.9,78.89,11.05,2.29,20.72,5.94,0.49,74.43,"699,408",—
+LRN,"Stride, Inc.",buffett,True,5,6,83.3,78.89,11.05,2.29,20.72,5.94,0.49,74.43,"699,408",—
+PPC,PILGRIM’S PRIDE CORPORATION,piotroski,True,7,9,77.8,27.50,6.06,1.78,29.41,1.47,1.81,39.71,2M,—
+QNST,"QuinStreet, Inc.",greenblatt,True,3,3,100.0,14.97,10.69,2.69,25.14,1.22,1.23,13.23,"813,700",—
+QNST,"QuinStreet, Inc.",lynch,True,3,4,75.0,14.97,10.69,2.69,25.14,1.22,1.23,13.23,"813,700",—
+NYT,THE NEW YORK TIMES COMPANY,piotroski,True,9,9,100.0,62.70,30.00,5.07,16.85,1.54,—,24.12,5M,—
+SBH,"SALLY BEAUTY HOLDINGS, INC.",piotroski,True,8,9,88.9,16.24,8.59,2.12,24.66,2.26,2.62,18.04,1M,—
+HRB,H&R BLOCK INC,greenblatt,True,3,3,100.0,41.68,7.36,45.72,624,1.13,26.72,10.78,2M,—
+HRB,H&R BLOCK INC,piotroski,True,8,9,88.9,41.68,7.36,45.72,624,1.13,26.72,10.78,2M,—
+AXTA,AXALTA COATING SYSTEMS LTD.,lynch,True,3,4,75.0,32.20,18.51,2.98,16.11,2.06,2.22,20.57,3M,—
+NHC,NATIONAL HEALTHCARE CORP,piotroski,True,9,9,100.0,228,29.68,3.33,11.23,1.82,0.42,109,"88,312",—
+NHC,NATIONAL HEALTHCARE CORP,lynch,True,3,4,75.0,228,29.68,3.33,11.23,1.82,0.42,109,"88,312",—
+KALU,KAISER ALUMINUM CORPORATION,piotroski,True,7,9,77.8,152,22.46,3.06,13.62,2.95,2.10,87.01,"178,582",—
+KALU,KAISER ALUMINUM CORPORATION,lynch,True,3,4,75.0,152,22.46,3.06,13.62,2.95,2.10,87.01,"178,582",—
+BCPC,Balchem Corporation,piotroski,True,9,9,100.0,167,35.07,4.32,12.31,2.07,0.34,64.20,"197,319",—
+CCNE,CNB FINANCIAL CORP/PA,lynch,True,3,4,75.0,34.10,13.69,0.96,7.58,—,8.63,44.50,"151,125",—
+BBWI,"BATH & BODY WORKS, INC.",greenblatt,True,3,3,100.0,16.06,5.16,—,-50.66,1.27,—,—,6M,—
+ABM,ABM INDUSTRIES INCORPORATED,piotroski,True,8,9,88.9,48.97,18.91,1.72,9.09,1.48,1.95,40.74,"370,083",—
+NMRK,"NEWMARK GROUP, INC.",piotroski,True,8,9,88.9,12.65,18.60,2.19,8.63,1.05,2.24,9.39,2M,—
+VVX,"V2X, Inc.",piotroski,True,9,9,100.0,70.79,28.89,2.08,7.18,1.22,2.02,43.35,"456,506",—
+AIOT,"Powerfleet, Inc.",piotroski,True,7,9,77.8,2.81,—,0.79,-4.32,1.13,1.00,—,2M,—
+FLYW,FLYWIRE CORPORATION,piotroski,True,8,9,88.9,17.58,160,2.69,1.62,1.50,0.50,4.02,1M,—
+ATRC,"AtriCure, Inc.",piotroski,True,7,9,77.8,55.14,—,5.35,-2.33,3.96,0.33,—,2M,—
+KOP,KOPPERS HOLDINGS INC.,piotroski,True,8,9,88.9,46.04,16.80,1.64,9.76,2.94,2.29,41.64,"158,975",—
+TPC,Tutor Perini Corporation,piotroski,True,7,9,77.8,86.73,57.44,3.80,6.60,1.27,3.20,27.84,"420,447",—
+YELP,YELP INC,graham,False,7,9,77.8,18.26,8.15,1.67,20.48,2.99,0.35,23.46,1M,—
+YELP,YELP INC,buffett,False,3,6,50.0,18.26,8.15,1.67,20.48,2.99,0.35,23.46,1M,—
+YELP,YELP INC,lynch,False,2,4,50.0,18.26,8.15,1.67,20.48,2.99,0.35,23.46,1M,—
+YELP,YELP INC,netnet,False,2,4,50.0,18.26,8.15,1.67,20.48,2.99,0.35,23.46,1M,—
+YELP,YELP INC,custom,False,0,0,0.0,18.26,8.15,1.67,20.48,2.99,0.35,23.46,1M,—
+VITL,"Vital Farms, Inc.",greenblatt,False,2,3,66.7,9.06,6.29,1.19,18.87,2.16,0.48,15.73,2M,—
+VITL,"Vital Farms, Inc.",buffett,False,3,6,50.0,9.06,6.29,1.19,18.87,2.16,0.48,15.73,2M,—
+VITL,"Vital Farms, Inc.",netnet,False,2,4,50.0,9.06,6.29,1.19,18.87,2.16,0.48,15.73,2M,—
+VITL,"Vital Farms, Inc.",piotroski,False,3,9,33.3,9.06,6.29,1.19,18.87,2.16,0.48,15.73,2M,—
+VITL,"Vital Farms, Inc.",custom,False,0,0,0.0,9.06,6.29,1.19,18.87,2.16,0.48,15.73,2M,—
+LRN,"Stride, Inc.",graham,False,7,9,77.8,78.89,11.05,2.29,20.72,5.94,0.49,74.43,"699,408",—
+LRN,"Stride, Inc.",greenblatt,False,2,3,66.7,78.89,11.05,2.29,20.72,5.94,0.49,74.43,"699,408",—
+LRN,"Stride, Inc.",netnet,False,2,4,50.0,78.89,11.05,2.29,20.72,5.94,0.49,74.43,"699,408",—
+LRN,"Stride, Inc.",custom,False,0,0,0.0,78.89,11.05,2.29,20.72,5.94,0.49,74.43,"699,408",—
+PPC,PILGRIM’S PRIDE CORPORATION,graham,False,6,9,66.7,27.50,6.06,1.78,29.41,1.47,1.81,39.71,2M,—
+PPC,PILGRIM’S PRIDE CORPORATION,greenblatt,False,2,3,66.7,27.50,6.06,1.78,29.41,1.47,1.81,39.71,2M,—
+PPC,PILGRIM’S PRIDE CORPORATION,buffett,False,3,6,50.0,27.50,6.06,1.78,29.41,1.47,1.81,39.71,2M,—
+PPC,PILGRIM’S PRIDE CORPORATION,lynch,False,2,4,50.0,27.50,6.06,1.78,29.41,1.47,1.81,39.71,2M,—
+PPC,PILGRIM’S PRIDE CORPORATION,netnet,False,1,4,25.0,27.50,6.06,1.78,29.41,1.47,1.81,39.71,2M,—
+PPC,PILGRIM’S PRIDE CORPORATION,custom,False,0,0,0.0,27.50,6.06,1.78,29.41,1.47,1.81,39.71,2M,—
