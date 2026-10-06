@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-06 07:19 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-06 14:20 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **34** strategy matches passed.
+Screened **75** companies · **30** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| BBW | BUILD-A-BEAR WORKSHOP INC | greenblatt | ✅ | 100% | 26.00 | 6.52 | 2.19 | 33.67 | 1.55 | — | 295,278 | — |
-| SAFX | XCF Global, Inc. | greenblatt | ✅ | 100% | 0.30 | 0.58 | 1.14 | 197 | 0.11 | 10.14 | 4M | — |
-| KMT | KENNAMETAL INC. | graham | ✅ | 89% | 32.86 | 7.43 | 1.62 | 21.81 | 2.62 | 0.99 | 2M | — |
-| POWL | Powell Industries, Inc. | piotroski | ✅ | 78% | 198 | 13.31 | 3.76 | 28.21 | 2.09 | 0.73 | 658,382 | — |
-| POWL | Powell Industries, Inc. | lynch | ✅ | 75% | 198 | 13.31 | 3.76 | 28.21 | 2.09 | 0.73 | 658,382 | — |
-| KMT | KENNAMETAL INC. | lynch | ✅ | 75% | 32.86 | 7.43 | 1.62 | 21.81 | 2.62 | 0.99 | 2M | — |
-| VRRM | VERRA MOBILITY CORPORATION | piotroski | ✅ | 100% | 2.87 | 3.38 | 1.58 | 46.64 | 2.09 | 4.62 | 7M | — |
-| QNST | QuinStreet, Inc. | greenblatt | ✅ | 100% | 14.99 | 10.71 | 2.70 | 25.14 | 1.22 | 1.23 | 952,529 | — |
-| QNST | QuinStreet, Inc. | lynch | ✅ | 75% | 14.99 | 10.71 | 2.70 | 25.14 | 1.22 | 1.23 | 952,529 | — |
-| PRI | Primerica, Inc. | greenblatt | ✅ | 100% | 278 | 12.13 | 3.71 | 30.71 | — | 5.14 | 255,105 | — |
-| PRI | Primerica, Inc. | piotroski | ✅ | 89% | 278 | 12.13 | 3.71 | 30.71 | — | 5.14 | 255,105 | — |
+| SIVR | abrdn Silver ETF Trust | greenblatt | ✅ | 100% | 57.80 | 1.23 | 0.64 | 52.24 | — | 0.00 | 855,224 | — |
+| SIVR | abrdn Silver ETF Trust | lynch | ✅ | 75% | 57.80 | 1.23 | 0.64 | 52.24 | — | 0.00 | 855,224 | — |
+| KMT | KENNAMETAL INC. | graham | ✅ | 89% | 33.11 | 7.49 | 1.63 | 21.81 | 2.62 | 0.99 | 67,698 | — |
+| KMT | KENNAMETAL INC. | lynch | ✅ | 75% | 33.11 | 7.49 | 1.63 | 21.81 | 2.62 | 0.99 | 67,698 | — |
+| SBC | SBC Medical Group Holdings I | lynch | ✅ | 75% | 5.46 | 10.92 | 2.27 | 20.54 | 3.78 | 0.47 | 54,781 | — |
+| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 114 | 21.71 | 4.15 | 19.12 | 2.99 | — | 197,748 | — |
+| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 114 | 21.71 | 4.15 | 19.12 | 2.99 | — | 197,748 | — |
 | ESE | ESCO TECHNOLOGIES INC. | lynch | ✅ | 100% | 272 | 23.54 | 4.57 | 19.42 | 1.35 | 0.56 | 297,067 | — |
-| LNN | Lindsay Corporation | piotroski | ✅ | 78% | 114 | 16.87 | 2.34 | 13.90 | 3.71 | 0.58 | 114,694 | — |
-| LNN | Lindsay Corporation | lynch | ✅ | 75% | 114 | 16.87 | 2.34 | 13.90 | 3.71 | 0.58 | 114,694 | — |
-| NYT | THE NEW YORK TIMES COMPANY | piotroski | ✅ | 100% | 64.00 | 30.62 | 5.17 | 16.85 | 1.54 | — | 2M | — |
-| WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 13.99 | 2.76 | 1.59 | 57.56 | 1.39 | 2.18 | 1M | — |
-| PCTY | PAYLOCITY HOLDING CORPORATIO | piotroski | ✅ | 89% | 147 | 29.96 | 6.61 | 22.08 | 1.09 | 3.00 | 556,935 | — |
-| PCTY | PAYLOCITY HOLDING CORPORATIO | lynch | ✅ | 75% | 147 | 29.96 | 6.61 | 22.08 | 1.09 | 3.00 | 556,935 | — |
-| CSTM | Constellium SE | piotroski | ✅ | 100% | 25.29 | 13.17 | 3.77 | 28.68 | 1.29 | 4.60 | 2M | — |
-| KBR | KBR, Inc. | piotroski | ✅ | 89% | 34.52 | 10.75 | 2.96 | 27.61 | 1.22 | 3.37 | 2M | — |
-| GEO | The GEO Group, Inc. | piotroski | ✅ | 78% | 32.34 | 17.77 | 3.00 | 16.89 | 2.01 | — | 4M | — |
-| BKU | BankUnited, Inc. | piotroski | ✅ | 89% | 43.23 | 12.25 | 1.05 | 8.79 | — | 10.47 | 827,038 | — |
-| OPLN | OPENLANE, Inc. | piotroski | ✅ | 89% | 35.32 | — | 3.04 | 14.32 | 1.16 | — | 1M | — |
-| BCO | BRINK’S CO | piotroski | ✅ | 78% | 103 | 21.91 | 15.73 | 71.91 | 1.51 | 24.96 | 554,148 | — |
-| FMNB | FARMERS NATIONAL BANC CORP / | piotroski | ✅ | 89% | 15.28 | 10.54 | 1.18 | 11.24 | — | 9.80 | 253,127 | — |
-| EXTR | Extreme Networks, Inc. | piotroski | ✅ | 89% | 23.33 | 75.26 | 35.54 | 47.54 | 0.93 | — | 2M | — |
-| SPOK | SPOK HOLDINGS, INC. | piotroski | ✅ | 78% | 10.97 | 14.63 | 1.58 | 10.85 | 1.18 | 0.41 | 210,949 | — |
-| WOR | WORTHINGTON ENTERPRISES, INC | piotroski | ✅ | 89% | 61.14 | 19.47 | 2.96 | 15.20 | 2.37 | 0.80 | 273,594 | — |
-| KN | Knowles Corporation | piotroski | ✅ | 78% | 39.40 | 78.80 | 4.47 | 5.70 | 2.75 | — | 839,844 | — |
-| FUL | FULLER H B CO | piotroski | ✅ | 78% | 50.44 | 18.34 | 1.39 | 7.59 | 1.70 | 1.59 | 1M | — |
-| RRX | REGAL REXNORD CORP | piotroski | ✅ | 78% | 161 | 38.40 | 1.57 | 4.08 | 2.15 | — | 977,927 | — |
-| NXDR | Nextdoor Holdings, Inc | piotroski | ✅ | 78% | 2.47 | — | 2.21 | -12.57 | 14.03 | 0.13 | 2M | — |
-| TRLV | TRULIEVE CANNABIS CORP. | piotroski | ✅ | 89% | 10.65 | — | 1.78 | -10.70 | 4.43 | 1.36 | 2M | — |
-| DAR | DARLING INGREDIENTS INC. | piotroski | ✅ | 78% | 62.70 | 161 | 2.12 | 1.33 | 1.50 | 1.16 | 2M | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | graham | ▫️ | 56% | 26.00 | 6.52 | 2.19 | 33.67 | 1.55 | — | 295,278 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | piotroski | ▫️ | 56% | 26.00 | 6.52 | 2.19 | 33.67 | 1.55 | — | 295,278 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | buffett | ▫️ | 50% | 26.00 | 6.52 | 2.19 | 33.67 | 1.55 | — | 295,278 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | lynch | ▫️ | 25% | 26.00 | 6.52 | 2.19 | 33.67 | 1.55 | — | 295,278 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | netnet | ▫️ | 25% | 26.00 | 6.52 | 2.19 | 33.67 | 1.55 | — | 295,278 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | custom | ▫️ | 0% | 26.00 | 6.52 | 2.19 | 33.67 | 1.55 | — | 295,278 | — |
-| SAFX | XCF Global, Inc. | graham | ▫️ | 44% | 0.30 | 0.58 | 1.14 | 197 | 0.11 | 10.14 | 4M | — |
-| SAFX | XCF Global, Inc. | buffett | ▫️ | 33% | 0.30 | 0.58 | 1.14 | 197 | 0.11 | 10.14 | 4M | — |
-| SAFX | XCF Global, Inc. | lynch | ▫️ | 25% | 0.30 | 0.58 | 1.14 | 197 | 0.11 | 10.14 | 4M | — |
-| SAFX | XCF Global, Inc. | netnet | ▫️ | 25% | 0.30 | 0.58 | 1.14 | 197 | 0.11 | 10.14 | 4M | — |
-| SAFX | XCF Global, Inc. | piotroski | ▫️ | 11% | 0.30 | 0.58 | 1.14 | 197 | 0.11 | 10.14 | 4M | — |
-| SAFX | XCF Global, Inc. | custom | ▫️ | 0% | 0.30 | 0.58 | 1.14 | 197 | 0.11 | 10.14 | 4M | — |
-| POWL | Powell Industries, Inc. | graham | ▫️ | 78% | 198 | 13.31 | 3.76 | 28.21 | 2.09 | 0.73 | 658,382 | — |
-| POWL | Powell Industries, Inc. | buffett | ▫️ | 67% | 198 | 13.31 | 3.76 | 28.21 | 2.09 | 0.73 | 658,382 | — |
-| POWL | Powell Industries, Inc. | greenblatt | ▫️ | 67% | 198 | 13.31 | 3.76 | 28.21 | 2.09 | 0.73 | 658,382 | — |
-| KMT | KENNAMETAL INC. | piotroski | ▫️ | 67% | 32.86 | 7.43 | 1.62 | 21.81 | 2.62 | 0.99 | 2M | — |
+| RILYT | BRC Group Holdings, Inc. | greenblatt | ✅ | 100% | 21.55 | 2.20 | — | -179 | — | -10.65 | 18,017 | — |
+| RILYT | BRC Group Holdings, Inc. | lynch | ✅ | 75% | 21.55 | 2.20 | — | -179 | — | -10.65 | 18,017 | — |
+| FHI | Federated Hermes, Inc. | greenblatt | ✅ | 100% | 56.53 | 11.02 | 3.55 | 33.69 | 2.75 | 0.81 | 25,425 | — |
+| FHI | Federated Hermes, Inc. | piotroski | ✅ | 89% | 56.53 | 11.02 | 3.55 | 33.69 | 2.75 | 0.81 | 25,425 | — |
+| KFY | KORN FERRY | piotroski | ✅ | 100% | 71.71 | 13.74 | 1.91 | 14.06 | 1.94 | 1.06 | 817,725 | — |
+| KFY | KORN FERRY | lynch | ✅ | 75% | 71.71 | 13.74 | 1.91 | 14.06 | 1.94 | 1.06 | 817,725 | — |
+| KRYS | Krystal Biotech, Inc. | piotroski | ✅ | 89% | 320 | 46.78 | 7.86 | 16.80 | 9.95 | 0.09 | 49,218 | — |
+| PDYNW | Palladyne AI Corp. | netnet | ✅ | 100% | 0.00 | 0.01 | 0.00 | 13.44 | 9.28 | 0.28 | 4M | — |
+| HBANP | Huntington Bancshares Incorp | lynch | ✅ | 75% | 15.60 | 11.22 | 0.96 | 9.08 | — | 8.25 | 7,296 | — |
+| FTDR | Frontdoor, Inc. | piotroski | ✅ | 89% | 77.62 | 22.70 | 23.90 | 105 | 1.55 | — | 641,497 | — |
+| FTDR | Frontdoor, Inc. | buffett | ✅ | 83% | 77.62 | 22.70 | 23.90 | 105 | 1.55 | — | 641,497 | — |
+| PCTY | PAYLOCITY HOLDING CORPORATIO | piotroski | ✅ | 89% | 148 | 30.00 | 6.62 | 22.08 | 1.09 | 3.00 | 67,817 | — |
+| PCTY | PAYLOCITY HOLDING CORPORATIO | lynch | ✅ | 75% | 148 | 30.00 | 6.62 | 22.08 | 1.09 | 3.00 | 67,817 | — |
+| CSTM | Constellium SE | piotroski | ✅ | 100% | 25.40 | 13.23 | 3.79 | 28.68 | 1.29 | 4.60 | 108,979 | — |
+| PLUS | ePlus inc. | piotroski | ✅ | 78% | 93.14 | 18.52 | 2.30 | 12.41 | 2.24 | 0.68 | 35,494 | — |
+| KALU | KAISER ALUMINUM CORPORATION | piotroski | ✅ | 78% | 156 | 23.01 | 3.13 | 13.62 | 2.95 | 2.10 | 257,509 | — |
+| KALU | KAISER ALUMINUM CORPORATION | lynch | ✅ | 75% | 156 | 23.01 | 3.13 | 13.62 | 2.95 | 2.10 | 257,509 | — |
+| DLB | Dolby Laboratories, Inc. | piotroski | ✅ | 78% | 59.36 | 22.66 | 2.21 | 9.72 | 3.17 | 0.23 | 758,654 | — |
+| LFST | LifeStance Health Group, Inc | piotroski | ✅ | 89% | 12.00 | 486 | 3.09 | 0.64 | 1.65 | 0.45 | 269,427 | — |
+| FUL | FULLER H B CO | piotroski | ✅ | 78% | 50.33 | 18.30 | 1.39 | 7.59 | 1.70 | 1.59 | 24,444 | — |
+| THO | THOR INDUSTRIES, INC. | piotroski | ✅ | 78% | 67.24 | 19.89 | 0.83 | 4.17 | 1.77 | — | 1M | — |
+| USNA | USANA HEALTH SCIENCES, INC. | piotroski | ✅ | 78% | 14.85 | 25.60 | 0.52 | 2.02 | 2.24 | 0.29 | 163,727 | — |
+| SIVR | abrdn Silver ETF Trust | graham | ▫️ | 56% | 57.80 | 1.23 | 0.64 | 52.24 | — | 0.00 | 855,224 | — |
+| SIVR | abrdn Silver ETF Trust | buffett | ▫️ | 50% | 57.80 | 1.23 | 0.64 | 52.24 | — | 0.00 | 855,224 | — |
+| SIVR | abrdn Silver ETF Trust | piotroski | ▫️ | 33% | 57.80 | 1.23 | 0.64 | 52.24 | — | 0.00 | 855,224 | — |
+| SIVR | abrdn Silver ETF Trust | netnet | ▫️ | 25% | 57.80 | 1.23 | 0.64 | 52.24 | — | 0.00 | 855,224 | — |
+| SIVR | abrdn Silver ETF Trust | custom | ▫️ | 0% | 57.80 | 1.23 | 0.64 | 52.24 | — | 0.00 | 855,224 | — |
+| KMT | KENNAMETAL INC. | piotroski | ▫️ | 67% | 33.11 | 7.49 | 1.63 | 21.81 | 2.62 | 0.99 | 67,698 | — |
+| KMT | KENNAMETAL INC. | greenblatt | ▫️ | 67% | 33.11 | 7.49 | 1.63 | 21.81 | 2.62 | 0.99 | 67,698 | — |
+| KMT | KENNAMETAL INC. | buffett | ▫️ | 50% | 33.11 | 7.49 | 1.63 | 21.81 | 2.62 | 0.99 | 67,698 | — |
+| KMT | KENNAMETAL INC. | netnet | ▫️ | 50% | 33.11 | 7.49 | 1.63 | 21.81 | 2.62 | 0.99 | 67,698 | — |
+| KMT | KENNAMETAL INC. | custom | ▫️ | 0% | 33.11 | 7.49 | 1.63 | 21.81 | 2.62 | 0.99 | 67,698 | — |
+| SBC | SBC Medical Group Holdings I | buffett | ▫️ | 67% | 5.46 | 10.92 | 2.27 | 20.54 | 3.78 | 0.47 | 54,781 | — |
+| SBC | SBC Medical Group Holdings I | greenblatt | ▫️ | 67% | 5.46 | 10.92 | 2.27 | 20.54 | 3.78 | 0.47 | 54,781 | — |
+| SBC | SBC Medical Group Holdings I | graham | ▫️ | 56% | 5.46 | 10.92 | 2.27 | 20.54 | 3.78 | 0.47 | 54,781 | — |
+| SBC | SBC Medical Group Holdings I | netnet | ▫️ | 50% | 5.46 | 10.92 | 2.27 | 20.54 | 3.78 | 0.47 | 54,781 | — |
+| SBC | SBC Medical Group Holdings I | piotroski | ▫️ | 44% | 5.46 | 10.92 | 2.27 | 20.54 | 3.78 | 0.47 | 54,781 | — |
+| SBC | SBC Medical Group Holdings I | custom | ▫️ | 0% | 5.46 | 10.92 | 2.27 | 20.54 | 3.78 | 0.47 | 54,781 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | piotroski | ▫️ | 44% | 24.79 | — | — | — | 2.10 | — | 334,440 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | graham | ▫️ | 33% | 24.79 | — | — | — | 2.10 | — | 334,440 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | buffett | ▫️ | 33% | 24.79 | — | — | — | 2.10 | — | 334,440 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | greenblatt | ▫️ | 33% | 24.79 | — | — | — | 2.10 | — | 334,440 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
