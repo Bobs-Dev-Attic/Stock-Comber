@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-LPG,DORIAN LPG LTD.,lynch,True,4,4,100.0,57.21,12.60,2.14,17.00,2.67,0.64,52.25,"794,538",—
-LPG,DORIAN LPG LTD.,piotroski,True,8,9,88.9,57.21,12.60,2.14,17.00,2.67,0.64,52.25,"794,538",—
-PFS,PROVIDENT FINANCIAL SERVICES INC,piotroski,True,7,9,77.8,22.39,10.04,1.03,10.28,—,7.82,33.00,"686,786",—
-PFS,PROVIDENT FINANCIAL SERVICES INC,lynch,True,3,4,75.0,22.39,10.04,1.03,10.28,—,7.82,33.00,"686,786",—
-MWA,"Mueller Water Products, Inc.",piotroski,True,8,9,88.9,21.66,17.75,3.48,19.53,3.54,0.87,13.08,2M,—
-MWA,"Mueller Water Products, Inc.",lynch,True,3,4,75.0,21.66,17.75,3.48,19.53,3.54,0.87,13.08,2M,—
-KFY,KORN FERRY,piotroski,True,9,9,100.0,71.92,13.78,1.91,14.06,1.94,1.06,66.42,"611,582",—
-KFY,KORN FERRY,lynch,True,3,4,75.0,71.92,13.78,1.91,14.06,1.94,1.06,66.42,"611,582",—
-FIZZ,National Beverage Corp.,buffett,True,5,6,83.3,29.84,15.22,4.40,28.89,4.39,0.34,17.30,"394,913",—
-SSB,SOUTHSTATE BANK CORP,lynch,True,3,4,75.0,102,12.95,1.14,8.82,—,6.42,126,"604,102",—
-GTX,Garrett Motion Inc.,lynch,True,4,4,100.0,27.07,17.81,—,-38.65,0.97,-3.95,—,3M,—
-GTX,Garrett Motion Inc.,piotroski,True,8,9,88.9,27.07,17.81,—,-38.65,0.97,-3.95,—,3M,—
-TRN,TRINITY INDUSTRIES INC,greenblatt,True,3,3,100.0,26.13,8.57,2.01,23.50,—,6.76,29.86,"875,754",—
-TRN,TRINITY INDUSTRIES INC,piotroski,True,7,9,77.8,26.13,8.57,2.01,23.50,—,6.76,29.86,"875,754",—
-NHC,NATIONAL HEALTHCARE CORP,piotroski,True,9,9,100.0,228,29.68,3.33,11.23,1.82,0.42,109,"88,312",—
-NHC,NATIONAL HEALTHCARE CORP,lynch,True,3,4,75.0,228,29.68,3.33,11.23,1.82,0.42,109,"88,312",—
-LCII,LCI INDUSTRIES,piotroski,True,8,9,88.9,82.68,10.92,1.51,13.83,2.85,1.33,96.57,"308,052",—
-POST,"Post Holdings, Inc.",lynch,True,3,4,75.0,72.68,13.19,1.22,8.94,1.67,2.60,86.01,"639,925",—
-FAF,FIRST AMERICAN FINANCIAL CORPORATION,piotroski,True,8,9,88.9,62.49,10.42,1.18,11.31,—,1.95,84.61,"916,012",—
-ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.34,19.73,0.78,3.99,9.18,0.34,5.26,"126,917",—
-DCTH,"DELCATH SYSTEMS, INC.",piotroski,True,7,9,77.8,15.87,227,5.70,2.43,10.92,0.11,2.09,"407,471",—
-HAYW,"Hayward Holdings, Inc.",piotroski,True,9,9,100.0,12.40,18.24,1.73,9.51,2.94,0.98,10.47,3M,—
-CBZ,"CBIZ, Inc.",piotroski,True,7,9,77.8,54.73,29.91,1.96,6.55,1.22,1.50,33.87,"586,103",—
-SENS,"Senseonics Holdings, Inc.",piotroski,True,7,9,77.8,10.31,—,7.05,-113,4.83,1.07,—,"699,663",—
-QUAD,"Quad/Graphics, Inc.",piotroski,True,7,9,77.8,9.46,17.52,—,-45.38,0.86,-18.90,—,"182,701",—
-LILA,Liberty Latin America Ltd.,piotroski,True,7,9,77.8,8.53,—,3.06,-110,1.14,20.09,—,"343,648",—
-TDAY,"USA TODAY CO., INC.",piotroski,True,7,9,77.8,7.44,744,7.00,1.13,0.75,10.85,0.49,2M,—
-LPG,DORIAN LPG LTD.,buffett,False,4,6,66.7,57.21,12.60,2.14,17.00,2.67,0.64,52.25,"794,538",—
-LPG,DORIAN LPG LTD.,graham,False,5,9,55.6,57.21,12.60,2.14,17.00,2.67,0.64,52.25,"794,538",—
-LPG,DORIAN LPG LTD.,greenblatt,False,1,3,33.3,57.21,12.60,2.14,17.00,2.67,0.64,52.25,"794,538",—
-LPG,DORIAN LPG LTD.,netnet,False,1,4,25.0,57.21,12.60,2.14,17.00,2.67,0.64,52.25,"794,538",—
-LPG,DORIAN LPG LTD.,custom,False,0,0,0.0,57.21,12.60,2.14,17.00,2.67,0.64,52.25,"794,538",—
-PFS,PROVIDENT FINANCIAL SERVICES INC,graham,False,6,9,66.7,22.39,10.04,1.03,10.28,—,7.82,33.00,"686,786",—
-PFS,PROVIDENT FINANCIAL SERVICES INC,greenblatt,False,2,3,66.7,22.39,10.04,1.03,10.28,—,7.82,33.00,"686,786",—
-PFS,PROVIDENT FINANCIAL SERVICES INC,buffett,False,3,6,50.0,22.39,10.04,1.03,10.28,—,7.82,33.00,"686,786",—
-PFS,PROVIDENT FINANCIAL SERVICES INC,netnet,False,1,4,25.0,22.39,10.04,1.03,10.28,—,7.82,33.00,"686,786",—
-PFS,PROVIDENT FINANCIAL SERVICES INC,custom,False,0,0,0.0,22.39,10.04,1.03,10.28,—,7.82,33.00,"686,786",—
-REX,REX AMERICAN RESOURCES CORPORATION,piotroski,False,6,9,66.7,43.45,17.38,2.36,15.57,5.94,—,32.16,"239,853",—
-REX,REX AMERICAN RESOURCES CORPORATION,graham,False,5,9,55.6,43.45,17.38,2.36,15.57,5.94,—,32.16,"239,853",—
-REX,REX AMERICAN RESOURCES CORPORATION,buffett,False,3,6,50.0,43.45,17.38,2.36,15.57,5.94,—,32.16,"239,853",—
-REX,REX AMERICAN RESOURCES CORPORATION,lynch,False,2,4,50.0,43.45,17.38,2.36,15.57,5.94,—,32.16,"239,853",—
-REX,REX AMERICAN RESOURCES CORPORATION,greenblatt,False,1,3,33.3,43.45,17.38,2.36,15.57,5.94,—,32.16,"239,853",—
-REX,REX AMERICAN RESOURCES CORPORATION,netnet,False,1,4,25.0,43.45,17.38,2.36,15.57,5.94,—,32.16,"239,853",—
-REX,REX AMERICAN RESOURCES CORPORATION,custom,False,0,0,0.0,43.45,17.38,2.36,15.57,5.94,—,32.16,"239,853",—
-MWA,"Mueller Water Products, Inc.",graham,False,6,9,66.7,21.66,17.75,3.48,19.53,3.54,0.87,13.08,2M,—
-MWA,"Mueller Water Products, Inc.",buffett,False,4,6,66.7,21.66,17.75,3.48,19.53,3.54,0.87,13.08,2M,—
-MWA,"Mueller Water Products, Inc.",netnet,False,2,4,50.0,21.66,17.75,3.48,19.53,3.54,0.87,13.08,2M,—
-MWA,"Mueller Water Products, Inc.",greenblatt,False,1,3,33.3,21.66,17.75,3.48,19.53,3.54,0.87,13.08,2M,—
-MWA,"Mueller Water Products, Inc.",custom,False,0,0,0.0,21.66,17.75,3.48,19.53,3.54,0.87,13.08,2M,—
-KFY,KORN FERRY,graham,False,6,9,66.7,71.92,13.78,1.91,14.06,1.94,1.06,66.42,"611,582",—
+GOOGM,Alphabet Inc.,graham,True,9,9,100.0,49.24,4.56,1.45,31.83,2.01,0.43,90.88,"232,827",—
+GOOGM,Alphabet Inc.,buffett,True,6,6,100.0,49.24,4.56,1.45,31.83,2.01,0.43,90.88,"232,827",—
+GOOGM,Alphabet Inc.,greenblatt,True,3,3,100.0,49.24,4.56,1.45,31.83,2.01,0.43,90.88,"232,827",—
+GOOGM,Alphabet Inc.,lynch,True,4,4,100.0,49.24,4.56,1.45,31.83,2.01,0.43,90.88,"232,827",—
+BBW,BUILD-A-BEAR WORKSHOP INC,greenblatt,True,3,3,100.0,26.00,6.52,2.19,33.67,1.55,—,32.62,"294,982",—
+TMDX,"TransMedics Group, Inc.",piotroski,True,7,9,77.8,82.99,17.04,7.11,40.22,7.14,1.26,35.76,"994,892",—
+ESE,ESCO TECHNOLOGIES INC.,lynch,True,4,4,100.0,272,23.54,4.57,19.42,1.35,0.56,124,"229,602",—
+FHI,"Federated Hermes, Inc.",greenblatt,True,3,3,100.0,56.50,11.01,3.55,33.69,2.75,0.81,42.89,"568,224",—
+FHI,"Federated Hermes, Inc.",piotroski,True,8,9,88.9,56.50,11.01,3.55,33.69,2.75,0.81,42.89,"568,224",—
+IBP,"Installed Building Products, Inc.",piotroski,True,8,9,88.9,191,19.68,7.36,37.39,3.03,1.91,75.33,"476,546",—
+IBP,"Installed Building Products, Inc.",lynch,True,3,4,75.0,191,19.68,7.36,37.39,3.03,1.91,75.33,"476,546",—
+KFY,KORN FERRY,piotroski,True,9,9,100.0,71.71,13.74,1.91,14.06,1.94,1.06,66.42,"619,097",—
+KFY,KORN FERRY,lynch,True,3,4,75.0,71.71,13.74,1.91,14.06,1.94,1.06,66.42,"619,097",—
+PRDO,PERDOCEO EDUCATION CORP,piotroski,True,8,9,88.9,31.54,13.03,2.15,16.45,5.06,—,28.29,"648,039",—
+PAYC,"Paycom Software, Inc.",buffett,True,5,6,83.3,226,27.94,7.32,26.19,1.09,3.39,74.90,"601,713",—
+JOE,The St. Joe Company,piotroski,True,8,9,88.9,66.21,33.27,5.01,15.09,—,0.97,24.33,"258,673",—
+AGX,ARGAN INC,lynch,True,3,4,75.0,388,39.81,11.87,29.80,1.59,1.57,84.62,"269,458",—
+EFC,Ellington Financial Inc.,lynch,True,3,4,75.0,11.50,9.66,0.63,6.47,—,9.53,22.10,2M,—
+AM,ANTERO MIDSTREAM CORPORATION,piotroski,True,7,9,77.8,20.56,23.91,5.03,20.95,3.41,1.98,8.90,3M,—
+AGCO,AGCO CORP /DE,piotroski,True,8,9,88.9,116,11.92,2.03,17.00,1.39,1.72,112,"953,191",—
+BKU,"BankUnited, Inc.",piotroski,True,8,9,88.9,43.23,12.25,1.05,8.79,—,10.47,57.13,"827,036",—
+SPOK,"SPOK HOLDINGS, INC.",piotroski,True,7,9,77.8,10.97,14.63,1.58,10.85,1.18,0.41,10.83,"210,949",—
+KN,Knowles Corporation,piotroski,True,7,9,77.8,39.40,78.80,4.47,5.70,2.75,—,9.96,"851,496",—
+MPAA,"MOTORCAR PARTS OF AMERICA, INC.",piotroski,True,7,9,77.8,10.62,17.13,0.80,4.66,1.46,2.83,13.63,"79,951",—
+THO,"THOR INDUSTRIES, INC.",piotroski,True,7,9,77.8,67.24,19.89,0.83,4.17,1.77,—,78.52,1M,—
+USNA,"USANA HEALTH SCIENCES, INC.",piotroski,True,7,9,77.8,14.85,25.60,0.52,2.02,2.24,0.29,19.35,"163,725",—
+EGHT,"8x8, Inc.",piotroski,True,7,9,77.8,2.24,224,2.18,1.12,1.09,3.52,0.48,"975,562",—
+GOOGM,Alphabet Inc.,piotroski,False,6,9,66.7,49.24,4.56,1.45,31.83,2.01,0.43,90.88,"232,827",—
+GOOGM,Alphabet Inc.,netnet,False,2,4,50.0,49.24,4.56,1.45,31.83,2.01,0.43,90.88,"232,827",—
+GOOGM,Alphabet Inc.,custom,False,0,0,0.0,49.24,4.56,1.45,31.83,2.01,0.43,90.88,"232,827",—
+BBW,BUILD-A-BEAR WORKSHOP INC,graham,False,5,9,55.6,26.00,6.52,2.19,33.67,1.55,—,32.62,"294,982",—
+BBW,BUILD-A-BEAR WORKSHOP INC,piotroski,False,5,9,55.6,26.00,6.52,2.19,33.67,1.55,—,32.62,"294,982",—
+BBW,BUILD-A-BEAR WORKSHOP INC,buffett,False,3,6,50.0,26.00,6.52,2.19,33.67,1.55,—,32.62,"294,982",—
+BBW,BUILD-A-BEAR WORKSHOP INC,lynch,False,1,4,25.0,26.00,6.52,2.19,33.67,1.55,—,32.62,"294,982",—
+BBW,BUILD-A-BEAR WORKSHOP INC,netnet,False,1,4,25.0,26.00,6.52,2.19,33.67,1.55,—,32.62,"294,982",—
+BBW,BUILD-A-BEAR WORKSHOP INC,custom,False,0,0,0.0,26.00,6.52,2.19,33.67,1.55,—,32.62,"294,982",—
+TMDX,"TransMedics Group, Inc.",greenblatt,False,2,3,66.7,82.99,17.04,7.11,40.22,7.14,1.26,35.76,"994,892",—
+TMDX,"TransMedics Group, Inc.",netnet,False,2,4,50.0,82.99,17.04,7.11,40.22,7.14,1.26,35.76,"994,892",—
+TMDX,"TransMedics Group, Inc.",graham,False,3,9,33.3,82.99,17.04,7.11,40.22,7.14,1.26,35.76,"994,892",—
+TMDX,"TransMedics Group, Inc.",buffett,False,2,6,33.3,82.99,17.04,7.11,40.22,7.14,1.26,35.76,"994,892",—
+TMDX,"TransMedics Group, Inc.",lynch,False,1,4,25.0,82.99,17.04,7.11,40.22,7.14,1.26,35.76,"994,892",—
+TMDX,"TransMedics Group, Inc.",custom,False,0,0,0.0,82.99,17.04,7.11,40.22,7.14,1.26,35.76,"994,892",—
+SABR,Sabre Corporation,greenblatt,False,2,3,66.7,1.93,1.44,—,-50.61,1.07,—,—,6M,—
+SABR,Sabre Corporation,piotroski,False,5,9,55.6,1.93,1.44,—,-50.61,1.07,—,—,6M,—
+SABR,Sabre Corporation,lynch,False,1,4,25.0,1.93,1.44,—,-50.61,1.07,—,—,6M,—
+SABR,Sabre Corporation,netnet,False,1,4,25.0,1.93,1.44,—,-50.61,1.07,—,—,6M,—
+SABR,Sabre Corporation,graham,False,2,9,22.2,1.93,1.44,—,-50.61,1.07,—,—,6M,—
+SABR,Sabre Corporation,buffett,False,1,6,16.7,1.93,1.44,—,-50.61,1.07,—,—,6M,—
+SABR,Sabre Corporation,custom,False,0,0,0.0,1.93,1.44,—,-50.61,1.07,—,—,6M,—
+NKLR,TERRA INNOVATUM GLOBAL N.V.,greenblatt,False,2,3,66.7,3.44,0.35,—,-576,33.57,-2.13,—,"171,515",—
