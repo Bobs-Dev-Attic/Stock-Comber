@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-KRP,"Kimbell Royalty Partners, LP",piotroski,True,7,9,77.8,14.94,—,—,—,8.64,—,—,"740,710",—
-MLI,MUELLER INDUSTRIES INC,buffett,True,6,6,100.0,63.13,9.20,2.19,23.84,5.92,0.15,66.66,1M,—
-MLI,MUELLER INDUSTRIES INC,greenblatt,True,3,3,100.0,63.13,9.20,2.19,23.84,5.92,0.15,66.66,1M,—
-MLI,MUELLER INDUSTRIES INC,lynch,True,4,4,100.0,63.13,9.20,2.19,23.84,5.92,0.15,66.66,1M,—
-MLI,MUELLER INDUSTRIES INC,graham,True,8,9,88.9,63.13,9.20,2.19,23.84,5.92,0.15,66.66,1M,—
-MLI,MUELLER INDUSTRIES INC,piotroski,True,7,9,77.8,63.13,9.20,2.19,23.84,5.92,0.15,66.66,1M,—
-SAFX,"XCF Global, Inc.",greenblatt,True,3,3,100.0,0.30,0.58,1.14,197,0.11,10.14,1.76,5M,—
-POWL,"Powell Industries, Inc.",piotroski,True,7,9,77.8,205,13.77,3.89,28.21,2.09,0.73,133,"484,908",—
-POWL,"Powell Industries, Inc.",lynch,True,3,4,75.0,205,13.77,3.89,28.21,2.09,0.73,133,"484,908",—
-SBC,SBC Medical Group Holdings Incorporated,lynch,True,3,4,75.0,5.33,10.66,2.21,20.54,3.78,0.47,5.21,"251,055",—
-PPC,PILGRIM’S PRIDE CORPORATION,piotroski,True,7,9,77.8,27.89,6.14,1.81,29.41,1.47,1.81,39.71,1M,—
-WHD,"Cactus, Inc.",lynch,True,3,4,75.0,64.17,—,—,13.54,5.81,0.36,—,"381,028",—
-OLED,UNIVERSAL DISPLAY CORPORATION,piotroski,True,7,9,77.8,79.66,15.68,2.16,13.75,10.06,0.12,64.99,"465,287",—
-FHI,"Federated Hermes, Inc.",greenblatt,True,3,3,100.0,56.56,11.03,3.55,33.69,2.75,0.81,42.89,"589,119",—
-FHI,"Federated Hermes, Inc.",piotroski,True,8,9,88.9,56.56,11.03,3.55,33.69,2.75,0.81,42.89,"589,119",—
-SFD,"SMITHFIELD FOODS, INC.",graham,True,9,9,100.0,18.78,7.48,1.08,14.51,2.97,—,31.27,2M,—
-WNC,WABASH NATIONAL CORPORATION,greenblatt,True,3,3,100.0,13.87,2.74,1.58,57.56,1.39,2.18,31.68,"519,745",—
-SBH,"SALLY BEAUTY HOLDINGS, INC.",piotroski,True,8,9,88.9,16.26,8.60,2.13,24.66,2.26,2.62,18.04,1M,—
-VICR,VICOR CORPORATION,piotroski,True,8,9,88.9,299,115,19.12,16.66,8.99,0.10,30.32,"557,347",—
-VICR,VICOR CORPORATION,buffett,True,5,6,83.3,299,115,19.12,16.66,8.99,0.10,30.32,"557,347",—
-VICR,VICOR CORPORATION,lynch,True,3,4,75.0,299,115,19.12,16.66,8.99,0.10,30.32,"557,347",—
-PCTY,PAYLOCITY HOLDING CORPORATION,piotroski,True,8,9,88.9,146,29.71,6.55,22.08,1.09,3.00,49.69,"526,347",—
-PCTY,PAYLOCITY HOLDING CORPORATION,lynch,True,3,4,75.0,146,29.71,6.55,22.08,1.09,3.00,49.69,"526,347",—
-EFC,Ellington Financial Inc.,lynch,True,3,4,75.0,11.67,9.81,0.64,6.47,—,9.53,22.10,2M,—
-PLUS,ePlus inc.,piotroski,True,7,9,77.8,94.16,18.72,2.32,12.41,2.24,0.68,67.73,"166,178",—
-KEX,KIRBY CORPORATION,piotroski,True,8,9,88.9,138,21.88,2.30,10.49,1.53,—,92.69,"653,941",—
-OSBC,OLD SECOND BANCORP INC,lynch,True,3,4,75.0,25.05,15.46,1.39,8.96,—,6.70,25.65,"922,394",—
-OPLN,"OPENLANE, Inc.",piotroski,True,8,9,88.9,34.96,—,3.01,14.32,1.16,—,—,"789,345",—
-BCO,BRINK’S CO,piotroski,True,7,9,77.8,104,22.07,15.84,71.91,1.51,24.96,26.26,"347,569",—
-CURB,Curbline Properties Corp.,piotroski,True,7,9,77.8,27.89,75.38,1.54,2.09,—,0.29,12.29,"882,674",—
-CURB,Curbline Properties Corp.,lynch,True,3,4,75.0,27.89,75.38,1.54,2.09,—,0.29,12.29,"882,674",—
-ACA,"Arcosa, Inc.",piotroski,True,9,9,100.0,146,34.55,2.72,7.89,2.20,0.89,71.71,"552,103",—
-SPOK,"SPOK HOLDINGS, INC.",piotroski,True,7,9,77.8,10.96,14.61,1.58,10.85,1.18,0.41,10.83,"136,204",—
-ZUMZ,ZUMIEZ INC,piotroski,True,8,9,88.9,14.10,18.08,0.75,4.13,2.01,0.99,18.16,"267,555",—
-QUAD,"Quad/Graphics, Inc.",piotroski,True,7,9,77.8,9.39,17.39,—,-45.38,0.86,-18.90,—,"156,161",—
-KRP,"Kimbell Royalty Partners, LP",graham,False,3,9,33.3,14.94,—,—,—,8.64,—,—,"740,710",—
-KRP,"Kimbell Royalty Partners, LP",greenblatt,False,1,3,33.3,14.94,—,—,—,8.64,—,—,"740,710",—
-KRP,"Kimbell Royalty Partners, LP",lynch,False,1,4,25.0,14.94,—,—,—,8.64,—,—,"740,710",—
-KRP,"Kimbell Royalty Partners, LP",netnet,False,1,4,25.0,14.94,—,—,—,8.64,—,—,"740,710",—
-KRP,"Kimbell Royalty Partners, LP",buffett,False,1,6,16.7,14.94,—,—,—,8.64,—,—,"740,710",—
-KRP,"Kimbell Royalty Partners, LP",custom,False,0,0,0.0,14.94,—,—,—,8.64,—,—,"740,710",—
-MLI,MUELLER INDUSTRIES INC,netnet,False,2,4,50.0,63.13,9.20,2.19,23.84,5.92,0.15,66.66,1M,—
-MLI,MUELLER INDUSTRIES INC,custom,False,0,0,0.0,63.13,9.20,2.19,23.84,5.92,0.15,66.66,1M,—
-SAFX,"XCF Global, Inc.",graham,False,4,9,44.4,0.30,0.58,1.14,197,0.11,10.14,1.76,5M,—
-SAFX,"XCF Global, Inc.",buffett,False,2,6,33.3,0.30,0.58,1.14,197,0.11,10.14,1.76,5M,—
-SAFX,"XCF Global, Inc.",lynch,False,1,4,25.0,0.30,0.58,1.14,197,0.11,10.14,1.76,5M,—
-SAFX,"XCF Global, Inc.",netnet,False,1,4,25.0,0.30,0.58,1.14,197,0.11,10.14,1.76,5M,—
-SAFX,"XCF Global, Inc.",piotroski,False,1,9,11.1,0.30,0.58,1.14,197,0.11,10.14,1.76,5M,—
-SAFX,"XCF Global, Inc.",custom,False,0,0,0.0,0.30,0.58,1.14,197,0.11,10.14,1.76,5M,—
-POWL,"Powell Industries, Inc.",graham,False,7,9,77.8,205,13.77,3.89,28.21,2.09,0.73,133,"484,908",—
+VIXY,PROSHARES TRUST II,greenblatt,True,3,3,100.0,16.38,1.18,0.35,29.91,—,0.06,120,1M,—
+MLI,MUELLER INDUSTRIES INC,buffett,True,6,6,100.0,60.34,8.80,2.10,23.84,5.92,0.15,66.66,"188,993",—
+MLI,MUELLER INDUSTRIES INC,greenblatt,True,3,3,100.0,60.34,8.80,2.10,23.84,5.92,0.15,66.66,"188,993",—
+MLI,MUELLER INDUSTRIES INC,lynch,True,4,4,100.0,60.34,8.80,2.10,23.84,5.92,0.15,66.66,"188,993",—
+MLI,MUELLER INDUSTRIES INC,graham,True,8,9,88.9,60.34,8.80,2.10,23.84,5.92,0.15,66.66,"188,993",—
+MLI,MUELLER INDUSTRIES INC,piotroski,True,7,9,77.8,60.34,8.80,2.10,23.84,5.92,0.15,66.66,"188,993",—
+REPX,"Riley Exploration Permian, Inc.",piotroski,True,7,9,77.8,42.91,5.65,1.43,25.36,0.60,0.84,71.49,"33,607",—
+YELP,YELP INC,greenblatt,True,3,3,100.0,18.25,8.15,1.67,20.48,2.99,0.35,23.46,"320,568",—
+YELP,YELP INC,piotroski,True,8,9,88.9,18.25,8.15,1.67,20.48,2.99,0.35,23.46,"320,568",—
+USLM,UNITED STATES LIME & MINERALS INC,lynch,True,4,4,100.0,111,23.71,5.04,21.29,19.27,0.08,48.03,"27,047",—
+USLM,UNITED STATES LIME & MINERALS INC,buffett,True,5,6,83.3,111,23.71,5.04,21.29,19.27,0.08,48.03,"27,047",—
+IPAR,"INTERPARFUMS, INC.",buffett,True,5,6,83.3,113,21.54,4.12,19.12,2.99,—,56.84,"193,639",—
+IPAR,"INTERPARFUMS, INC.",lynch,True,3,4,75.0,113,21.54,4.12,19.12,2.99,—,56.84,"193,639",—
+WTFC,WINTRUST FINANCIAL CORP,lynch,True,3,4,75.0,145,12.71,1.36,11.35,—,8.80,166,"681,374",—
+NYT,THE NEW YORK TIMES COMPANY,piotroski,True,9,9,100.0,63.66,30.46,5.14,16.85,1.54,—,24.12,"524,734",—
+GPK,Graphic Packaging Holding Co,lynch,True,3,4,75.0,8.54,5.77,0.77,13.31,1.30,—,19.25,2M,—
+FSS,FEDERAL SIGNAL CORPORATION,lynch,True,3,4,75.0,118,29.46,5.26,17.84,3.02,0.73,45.03,"334,597",—
+AIR,AAR CORP,piotroski,True,7,9,77.8,104,21.41,2.34,11.02,2.84,—,69.66,"463,154",—
+AIR,AAR CORP,lynch,True,3,4,75.0,104,21.41,2.34,11.02,2.84,—,69.66,"463,154",—
+TRN,TRINITY INDUSTRIES INC,greenblatt,True,3,3,100.0,26.21,8.59,2.02,23.50,—,6.76,29.86,"969,485",—
+TRN,TRINITY INDUSTRIES INC,piotroski,True,7,9,77.8,26.21,8.59,2.02,23.50,—,6.76,29.86,"969,485",—
+KALU,KAISER ALUMINUM CORPORATION,piotroski,True,7,9,77.8,154,22.71,3.09,13.62,2.95,2.10,87.01,"131,649",—
+KALU,KAISER ALUMINUM CORPORATION,lynch,True,3,4,75.0,154,22.71,3.09,13.62,2.95,2.10,87.01,"131,649",—
+OPY,OPPENHEIMER HOLDINGS INC.,piotroski,True,7,9,77.8,121,9.25,1.40,15.08,—,2.77,159,"99,738",—
+DRH,DIAMONDROCK HOSPITALITY CO,piotroski,True,7,9,77.8,12.38,28.12,1.78,7.01,—,1.07,8.30,"484,528",—
+KRT,Karat Packaging Inc.,piotroski,True,7,9,77.8,53.69,34.42,7.25,21.07,2.30,0.88,16.12,"188,239",—
+GRC,The Gorman-Rupp Company,piotroski,True,8,9,88.9,73.93,36.60,4.69,12.78,2.37,1.07,26.77,"43,626",—
+FMNB,FARMERS NATIONAL BANC CORP /OH/,piotroski,True,8,9,88.9,15.23,10.51,1.18,11.24,—,9.80,20.52,"312,236",—
+EXTR,"Extreme Networks, Inc.",piotroski,True,8,9,88.9,24.77,79.90,37.74,47.54,0.93,—,2.14,"534,220",—
+HLIO,"HELIOS TECHNOLOGIES, INC.",piotroski,True,9,9,100.0,68.69,47.37,2.46,5.20,2.90,0.63,30.21,"64,632",—
+HLIO,"HELIOS TECHNOLOGIES, INC.",lynch,True,3,4,75.0,68.69,47.37,2.46,5.20,2.90,0.63,30.21,"64,632",—
+CYH,"COMMUNITY HEALTH SYSTEMS, INC.",piotroski,True,8,9,88.9,2.73,0.72,—,-36.51,1.46,-10.07,—,"325,708",—
+MAGN,Magnera Corporation,piotroski,True,7,9,77.8,11.71,—,0.39,-14.94,2.37,2.75,—,"379,418",—
+AIOT,"Powerfleet, Inc.",piotroski,True,7,9,77.8,2.71,—,0.76,-4.32,1.13,1.00,—,"942,334",—
+HCSG,"HEALTHCARE SERVICES GROUP, INC.",piotroski,True,9,9,100.0,21.19,26.16,3.03,11.58,3.38,—,11.28,"129,549",—
+WRBY,Warby Parker Inc.,piotroski,True,7,9,77.8,26.23,"2,623",8.92,0.45,2.35,0.96,0.81,3M,—
+FROG,JFrog Ltd.,piotroski,True,7,9,77.8,98.14,—,12.85,-8.09,2.14,0.51,—,"186,026",—
+AVNW,"Aviat Networks, Inc.",piotroski,True,7,9,77.8,20.77,109,1.01,0.95,1.97,1.24,9.37,"11,878",—
+TDAY,"USA TODAY CO., INC.",piotroski,True,7,9,77.8,7.02,702,6.61,1.13,0.75,10.85,0.49,"894,138",—
+VIXY,PROSHARES TRUST II,lynch,False,2,4,50.0,16.38,1.18,0.35,29.91,—,0.06,120,1M,—
+VIXY,PROSHARES TRUST II,graham,False,4,9,44.4,16.38,1.18,0.35,29.91,—,0.06,120,1M,—
+VIXY,PROSHARES TRUST II,buffett,False,2,6,33.3,16.38,1.18,0.35,29.91,—,0.06,120,1M,—
+VIXY,PROSHARES TRUST II,piotroski,False,3,9,33.3,16.38,1.18,0.35,29.91,—,0.06,120,1M,—
+VIXY,PROSHARES TRUST II,netnet,False,1,4,25.0,16.38,1.18,0.35,29.91,—,0.06,120,1M,—
+VIXY,PROSHARES TRUST II,custom,False,0,0,0.0,16.38,1.18,0.35,29.91,—,0.06,120,1M,—
+MLI,MUELLER INDUSTRIES INC,netnet,False,2,4,50.0,60.34,8.80,2.10,23.84,5.92,0.15,66.66,"188,993",—
+MLI,MUELLER INDUSTRIES INC,custom,False,0,0,0.0,60.34,8.80,2.10,23.84,5.92,0.15,66.66,"188,993",—
+REPX,"Riley Exploration Permian, Inc.",greenblatt,False,2,3,66.7,42.91,5.65,1.43,25.36,0.60,0.84,71.49,"33,607",—
+REPX,"Riley Exploration Permian, Inc.",graham,False,4,9,44.4,42.91,5.65,1.43,25.36,0.60,0.84,71.49,"33,607",—
+REPX,"Riley Exploration Permian, Inc.",buffett,False,2,6,33.3,42.91,5.65,1.43,25.36,0.60,0.84,71.49,"33,607",—
