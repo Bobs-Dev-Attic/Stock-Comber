@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-07 02:34 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-07 08:58 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **25** strategy matches passed.
+Screened **75** companies · **35** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| SLDE | Slide Insurance Holdings, In | greenblatt | ✅ | 100% | 23.89 | 7.11 | 2.83 | 39.88 | — | 1.62 | 1M | — |
-| YELP | YELP INC | greenblatt | ✅ | 100% | 18.14 | 8.10 | 1.66 | 20.48 | 2.99 | 0.35 | 1M | — |
-| YELP | YELP INC | piotroski | ✅ | 89% | 18.14 | 8.10 | 1.66 | 20.48 | 2.99 | 0.35 | 1M | — |
+| KRP | Kimbell Royalty Partners, LP | piotroski | ✅ | 78% | 14.94 | — | — | — | 8.64 | — | 740,710 | — |
+| MLI | MUELLER INDUSTRIES INC | buffett | ✅ | 100% | 63.13 | 9.20 | 2.19 | 23.84 | 5.92 | 0.15 | 1M | — |
+| MLI | MUELLER INDUSTRIES INC | greenblatt | ✅ | 100% | 63.13 | 9.20 | 2.19 | 23.84 | 5.92 | 0.15 | 1M | — |
+| MLI | MUELLER INDUSTRIES INC | lynch | ✅ | 100% | 63.13 | 9.20 | 2.19 | 23.84 | 5.92 | 0.15 | 1M | — |
+| MLI | MUELLER INDUSTRIES INC | graham | ✅ | 89% | 63.13 | 9.20 | 2.19 | 23.84 | 5.92 | 0.15 | 1M | — |
+| MLI | MUELLER INDUSTRIES INC | piotroski | ✅ | 78% | 63.13 | 9.20 | 2.19 | 23.84 | 5.92 | 0.15 | 1M | — |
+| SAFX | XCF Global, Inc. | greenblatt | ✅ | 100% | 0.30 | 0.58 | 1.14 | 197 | 0.11 | 10.14 | 5M | — |
+| POWL | Powell Industries, Inc. | piotroski | ✅ | 78% | 205 | 13.77 | 3.89 | 28.21 | 2.09 | 0.73 | 484,908 | — |
+| POWL | Powell Industries, Inc. | lynch | ✅ | 75% | 205 | 13.77 | 3.89 | 28.21 | 2.09 | 0.73 | 484,908 | — |
+| SBC | SBC Medical Group Holdings I | lynch | ✅ | 75% | 5.33 | 10.66 | 2.21 | 20.54 | 3.78 | 0.47 | 251,055 | — |
 | PPC | PILGRIM’S PRIDE CORPORATION | piotroski | ✅ | 78% | 27.89 | 6.14 | 1.81 | 29.41 | 1.47 | 1.81 | 1M | — |
-| QNST | QuinStreet, Inc. | greenblatt | ✅ | 100% | 15.02 | 10.73 | 2.70 | 25.14 | 1.22 | 1.23 | 660,658 | — |
-| QNST | QuinStreet, Inc. | lynch | ✅ | 75% | 15.02 | 10.73 | 2.70 | 25.14 | 1.22 | 1.23 | 660,658 | — |
-| FHI | Federated Hermes, Inc. | greenblatt | ✅ | 100% | 56.56 | 11.03 | 3.55 | 33.69 | 2.75 | 0.81 | 589,122 | — |
-| FHI | Federated Hermes, Inc. | piotroski | ✅ | 89% | 56.56 | 11.03 | 3.55 | 33.69 | 2.75 | 0.81 | 589,122 | — |
-| WLDN | WILLDAN GROUP, INC. | piotroski | ✅ | 78% | 73.91 | 21.18 | 3.65 | 17.24 | 1.56 | 0.79 | 159,608 | — |
-| KTB | KONTOOR BRANDS, INC. | lynch | ✅ | 75% | 65.80 | 16.25 | 6.54 | 40.27 | 1.82 | 3.57 | 616,514 | — |
-| GPK | Graphic Packaging Holding Co | lynch | ✅ | 75% | 8.61 | 5.82 | 0.77 | 13.31 | 1.30 | — | 7M | — |
-| WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 13.87 | 2.74 | 1.58 | 57.56 | 1.39 | 2.18 | 519,744 | — |
-| MEDP | Medpace Holdings, Inc. | buffett | ✅ | 83% | 603 | 39.46 | 38.78 | 98.27 | 0.74 | 3.30 | 219,131 | — |
-| MEDP | Medpace Holdings, Inc. | piotroski | ✅ | 78% | 603 | 39.46 | 38.78 | 98.27 | 0.74 | 3.30 | 219,131 | — |
-| AIR | AAR CORP | piotroski | ✅ | 78% | 104 | 21.41 | 2.34 | 11.02 | 2.84 | — | 463,154 | — |
-| AIR | AAR CORP | lynch | ✅ | 75% | 104 | 21.41 | 2.34 | 11.02 | 2.84 | — | 463,154 | — |
-| HAFC | HANMI FINANCIAL CORPORATION | piotroski | ✅ | 89% | 31.68 | 12.62 | 1.20 | 9.55 | — | 8.88 | 212,326 | — |
-| UMBF | UMB FINANCIAL CORP | lynch | ✅ | 75% | 130 | 14.00 | 1.25 | 9.13 | — | 8.50 | 559,518 | — |
-| SSTK | SHUTTERSTOCK, INC. | piotroski | ✅ | 89% | 4.08 | 3.26 | 0.25 | 7.83 | 0.54 | 1.33 | 543,947 | — |
-| LQDT | LIQUIDITY SERVICES, INC | piotroski | ✅ | 89% | 41.51 | 47.71 | 6.62 | 13.82 | 1.39 | 0.85 | 234,290 | — |
-| SHAK | SHAKE SHACK INC. | piotroski | ✅ | 89% | 64.61 | 59.28 | 5.15 | 8.70 | 1.76 | 2.56 | 2M | — |
-| PHIN | PHINIA INC. | piotroski | ✅ | 89% | 60.76 | 18.75 | 1.54 | 8.19 | 1.86 | 1.41 | 325,006 | — |
-| MSGS | MADISON SQUARE GARDEN SPORTS | piotroski | ✅ | 100% | 402 | 1,256 | — | -2.95 | 0.50 | -6.84 | 172,246 | — |
-| ADT | ADT Inc. | piotroski | ✅ | 89% | 6.36 | — | — | 15.77 | 0.93 | 3.19 | 7M | — |
-| LILA | Liberty Latin America Ltd. | piotroski | ✅ | 78% | 8.89 | — | 3.19 | -110 | 1.14 | 20.09 | 210,825 | — |
-| IAUM | iShares Gold Trust Micro | lynch | ▫️ | 50% | 41.55 | 2.45 | — | — | — | — | 1M | — |
-| IAUM | iShares Gold Trust Micro | graham | ▫️ | 33% | 41.55 | 2.45 | — | — | — | — | 1M | — |
-| IAUM | iShares Gold Trust Micro | greenblatt | ▫️ | 33% | 41.55 | 2.45 | — | — | — | — | 1M | — |
-| IAUM | iShares Gold Trust Micro | netnet | ▫️ | 25% | 41.55 | 2.45 | — | — | — | — | 1M | — |
-| IAUM | iShares Gold Trust Micro | buffett | ▫️ | 17% | 41.55 | 2.45 | — | — | — | — | 1M | — |
-| IAUM | iShares Gold Trust Micro | piotroski | ▫️ | 0% | 41.55 | 2.45 | — | — | — | — | 1M | — |
-| IAUM | iShares Gold Trust Micro | custom | ▫️ | 0% | 41.55 | 2.45 | — | — | — | — | 1M | — |
-| PURR | Hyperliquid Strategies Inc | graham | ▫️ | 67% | 12.50 | 3.89 | 0.53 | 16.31 | 41.62 | 0.10 | 10M | — |
-| PURR | Hyperliquid Strategies Inc | greenblatt | ▫️ | 67% | 12.50 | 3.89 | 0.53 | 16.31 | 41.62 | 0.10 | 10M | — |
-| PURR | Hyperliquid Strategies Inc | buffett | ▫️ | 50% | 12.50 | 3.89 | 0.53 | 16.31 | 41.62 | 0.10 | 10M | — |
-| PURR | Hyperliquid Strategies Inc | lynch | ▫️ | 50% | 12.50 | 3.89 | 0.53 | 16.31 | 41.62 | 0.10 | 10M | — |
-| PURR | Hyperliquid Strategies Inc | netnet | ▫️ | 25% | 12.50 | 3.89 | 0.53 | 16.31 | 41.62 | 0.10 | 10M | — |
-| PURR | Hyperliquid Strategies Inc | piotroski | ▫️ | 11% | 12.50 | 3.89 | 0.53 | 16.31 | 41.62 | 0.10 | 10M | — |
-| PURR | Hyperliquid Strategies Inc | custom | ▫️ | 0% | 12.50 | 3.89 | 0.53 | 16.31 | 41.62 | 0.10 | 10M | — |
-| SLDE | Slide Insurance Holdings, In | graham | ▫️ | 44% | 23.89 | 7.11 | 2.83 | 39.88 | — | 1.62 | 1M | — |
-| SLDE | Slide Insurance Holdings, In | buffett | ▫️ | 33% | 23.89 | 7.11 | 2.83 | 39.88 | — | 1.62 | 1M | — |
-| SLDE | Slide Insurance Holdings, In | piotroski | ▫️ | 33% | 23.89 | 7.11 | 2.83 | 39.88 | — | 1.62 | 1M | — |
-| SLDE | Slide Insurance Holdings, In | lynch | ▫️ | 25% | 23.89 | 7.11 | 2.83 | 39.88 | — | 1.62 | 1M | — |
-| SLDE | Slide Insurance Holdings, In | netnet | ▫️ | 25% | 23.89 | 7.11 | 2.83 | 39.88 | — | 1.62 | 1M | — |
-| SLDE | Slide Insurance Holdings, In | custom | ▫️ | 0% | 23.89 | 7.11 | 2.83 | 39.88 | — | 1.62 | 1M | — |
-| YELP | YELP INC | graham | ▫️ | 78% | 18.14 | 8.10 | 1.66 | 20.48 | 2.99 | 0.35 | 1M | — |
-| YELP | YELP INC | buffett | ▫️ | 50% | 18.14 | 8.10 | 1.66 | 20.48 | 2.99 | 0.35 | 1M | — |
-| YELP | YELP INC | lynch | ▫️ | 50% | 18.14 | 8.10 | 1.66 | 20.48 | 2.99 | 0.35 | 1M | — |
-| YELP | YELP INC | netnet | ▫️ | 50% | 18.14 | 8.10 | 1.66 | 20.48 | 2.99 | 0.35 | 1M | — |
-| YELP | YELP INC | custom | ▫️ | 0% | 18.14 | 8.10 | 1.66 | 20.48 | 2.99 | 0.35 | 1M | — |
+| WHD | Cactus, Inc. | lynch | ✅ | 75% | 64.17 | — | — | 13.54 | 5.81 | 0.36 | 381,028 | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | piotroski | ✅ | 78% | 79.66 | 15.68 | 2.16 | 13.75 | 10.06 | 0.12 | 465,287 | — |
+| FHI | Federated Hermes, Inc. | greenblatt | ✅ | 100% | 56.56 | 11.03 | 3.55 | 33.69 | 2.75 | 0.81 | 589,119 | — |
+| FHI | Federated Hermes, Inc. | piotroski | ✅ | 89% | 56.56 | 11.03 | 3.55 | 33.69 | 2.75 | 0.81 | 589,119 | — |
+| SFD | SMITHFIELD FOODS, INC. | graham | ✅ | 100% | 18.78 | 7.48 | 1.08 | 14.51 | 2.97 | — | 2M | — |
+| WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 13.87 | 2.74 | 1.58 | 57.56 | 1.39 | 2.18 | 519,745 | — |
+| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 16.26 | 8.60 | 2.13 | 24.66 | 2.26 | 2.62 | 1M | — |
+| VICR | VICOR CORPORATION | piotroski | ✅ | 89% | 299 | 115 | 19.12 | 16.66 | 8.99 | 0.10 | 557,347 | — |
+| VICR | VICOR CORPORATION | buffett | ✅ | 83% | 299 | 115 | 19.12 | 16.66 | 8.99 | 0.10 | 557,347 | — |
+| VICR | VICOR CORPORATION | lynch | ✅ | 75% | 299 | 115 | 19.12 | 16.66 | 8.99 | 0.10 | 557,347 | — |
+| PCTY | PAYLOCITY HOLDING CORPORATIO | piotroski | ✅ | 89% | 146 | 29.71 | 6.55 | 22.08 | 1.09 | 3.00 | 526,347 | — |
+| PCTY | PAYLOCITY HOLDING CORPORATIO | lynch | ✅ | 75% | 146 | 29.71 | 6.55 | 22.08 | 1.09 | 3.00 | 526,347 | — |
+| EFC | Ellington Financial Inc. | lynch | ✅ | 75% | 11.67 | 9.81 | 0.64 | 6.47 | — | 9.53 | 2M | — |
+| PLUS | ePlus inc. | piotroski | ✅ | 78% | 94.16 | 18.72 | 2.32 | 12.41 | 2.24 | 0.68 | 166,178 | — |
+| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 138 | 21.88 | 2.30 | 10.49 | 1.53 | — | 653,941 | — |
+| OSBC | OLD SECOND BANCORP INC | lynch | ✅ | 75% | 25.05 | 15.46 | 1.39 | 8.96 | — | 6.70 | 922,394 | — |
+| OPLN | OPENLANE, Inc. | piotroski | ✅ | 89% | 34.96 | — | 3.01 | 14.32 | 1.16 | — | 789,345 | — |
+| BCO | BRINK’S CO | piotroski | ✅ | 78% | 104 | 22.07 | 15.84 | 71.91 | 1.51 | 24.96 | 347,569 | — |
+| CURB | Curbline Properties Corp. | piotroski | ✅ | 78% | 27.89 | 75.38 | 1.54 | 2.09 | — | 0.29 | 882,674 | — |
+| CURB | Curbline Properties Corp. | lynch | ✅ | 75% | 27.89 | 75.38 | 1.54 | 2.09 | — | 0.29 | 882,674 | — |
+| ACA | Arcosa, Inc. | piotroski | ✅ | 100% | 146 | 34.55 | 2.72 | 7.89 | 2.20 | 0.89 | 552,103 | — |
+| SPOK | SPOK HOLDINGS, INC. | piotroski | ✅ | 78% | 10.96 | 14.61 | 1.58 | 10.85 | 1.18 | 0.41 | 136,204 | — |
+| ZUMZ | ZUMIEZ INC | piotroski | ✅ | 89% | 14.10 | 18.08 | 0.75 | 4.13 | 2.01 | 0.99 | 267,555 | — |
+| QUAD | Quad/Graphics, Inc. | piotroski | ✅ | 78% | 9.39 | 17.39 | — | -45.38 | 0.86 | -18.90 | 156,161 | — |
+| KRP | Kimbell Royalty Partners, LP | graham | ▫️ | 33% | 14.94 | — | — | — | 8.64 | — | 740,710 | — |
+| KRP | Kimbell Royalty Partners, LP | greenblatt | ▫️ | 33% | 14.94 | — | — | — | 8.64 | — | 740,710 | — |
+| KRP | Kimbell Royalty Partners, LP | lynch | ▫️ | 25% | 14.94 | — | — | — | 8.64 | — | 740,710 | — |
+| KRP | Kimbell Royalty Partners, LP | netnet | ▫️ | 25% | 14.94 | — | — | — | 8.64 | — | 740,710 | — |
+| KRP | Kimbell Royalty Partners, LP | buffett | ▫️ | 17% | 14.94 | — | — | — | 8.64 | — | 740,710 | — |
+| KRP | Kimbell Royalty Partners, LP | custom | ▫️ | 0% | 14.94 | — | — | — | 8.64 | — | 740,710 | — |
+| MLI | MUELLER INDUSTRIES INC | netnet | ▫️ | 50% | 63.13 | 9.20 | 2.19 | 23.84 | 5.92 | 0.15 | 1M | — |
+| MLI | MUELLER INDUSTRIES INC | custom | ▫️ | 0% | 63.13 | 9.20 | 2.19 | 23.84 | 5.92 | 0.15 | 1M | — |
+| SAFX | XCF Global, Inc. | graham | ▫️ | 44% | 0.30 | 0.58 | 1.14 | 197 | 0.11 | 10.14 | 5M | — |
+| SAFX | XCF Global, Inc. | buffett | ▫️ | 33% | 0.30 | 0.58 | 1.14 | 197 | 0.11 | 10.14 | 5M | — |
+| SAFX | XCF Global, Inc. | lynch | ▫️ | 25% | 0.30 | 0.58 | 1.14 | 197 | 0.11 | 10.14 | 5M | — |
+| SAFX | XCF Global, Inc. | netnet | ▫️ | 25% | 0.30 | 0.58 | 1.14 | 197 | 0.11 | 10.14 | 5M | — |
+| SAFX | XCF Global, Inc. | piotroski | ▫️ | 11% | 0.30 | 0.58 | 1.14 | 197 | 0.11 | 10.14 | 5M | — |
+| SAFX | XCF Global, Inc. | custom | ▫️ | 0% | 0.30 | 0.58 | 1.14 | 197 | 0.11 | 10.14 | 5M | — |
+| POWL | Powell Industries, Inc. | graham | ▫️ | 78% | 205 | 13.77 | 3.89 | 28.21 | 2.09 | 0.73 | 484,908 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
