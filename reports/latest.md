@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-07 21:00 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-08 06:32 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **29** strategy matches passed.
+Screened **75** companies · **33** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| REPX | Riley Exploration Permian, I | piotroski | ✅ | 78% | 43.21 | 5.69 | 1.44 | 25.36 | 0.60 | 0.84 | 143,617 | — |
-| SAFX | XCF Global, Inc. | greenblatt | ✅ | 100% | 0.31 | 0.59 | 1.16 | 197 | 0.11 | 10.14 | 2M | — |
-| SON | Sonoco Products Company | piotroski | ✅ | 89% | 48.02 | 4.77 | 1.32 | 27.75 | 1.05 | 2.08 | 834,245 | — |
-| SON | Sonoco Products Company | lynch | ✅ | 75% | 48.02 | 4.77 | 1.32 | 27.75 | 1.05 | 2.08 | 834,245 | — |
-| BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 124 | 16.91 | 2.90 | 17.13 | 2.65 | 0.86 | 636,723 | -7.34 |
-| BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 124 | 16.91 | 2.90 | 17.13 | 2.65 | 0.86 | 636,723 | -7.34 |
-| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 113 | 21.54 | 4.12 | 19.12 | 2.99 | — | 193,639 | — |
-| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 113 | 21.54 | 4.12 | 19.12 | 2.99 | — | 193,639 | — |
-| OTTR | OTTER TAIL CORPORATION | lynch | ✅ | 75% | 89.20 | 13.62 | 2.02 | 14.82 | 2.28 | — | 236,234 | — |
-| HBANP | Huntington Bancshares Incorp | lynch | ✅ | 75% | 15.49 | 11.14 | 0.96 | 9.08 | — | 8.25 | 86,452 | — |
-| GGG | GRACO INC. | piotroski | ✅ | 89% | 78.89 | 25.61 | 5.03 | 19.66 | 3.15 | — | 1M | -0.50 |
-| GGG | GRACO INC. | buffett | ✅ | 83% | 78.89 | 25.61 | 5.03 | 19.66 | 3.15 | — | 1M | -0.50 |
-| WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 13.87 | 2.74 | 1.58 | 57.56 | 1.39 | 2.18 | 519,745 | — |
-| PCTY | PAYLOCITY HOLDING CORPORATIO | piotroski | ✅ | 89% | 148 | 30.09 | 6.64 | 22.08 | 1.09 | 3.00 | 502,093 | — |
-| PCTY | PAYLOCITY HOLDING CORPORATIO | lynch | ✅ | 75% | 148 | 30.09 | 6.64 | 22.08 | 1.09 | 3.00 | 502,093 | — |
-| FIZZ | National Beverage Corp. | buffett | ✅ | 83% | 29.60 | 15.10 | 4.36 | 28.89 | 4.39 | 0.34 | 413,496 | — |
-| KBR | KBR, Inc. | piotroski | ✅ | 89% | 34.61 | 10.78 | 2.97 | 27.61 | 1.22 | 3.37 | 2M | — |
-| OSW | OneSpaWorld Holdings Limited | piotroski | ✅ | 78% | 23.30 | 33.77 | 4.45 | 13.20 | 1.91 | 0.30 | 851,972 | — |
-| GEO | The GEO Group, Inc. | piotroski | ✅ | 78% | 30.52 | 16.77 | 2.83 | 16.89 | 2.01 | — | 3M | — |
-| GEO | The GEO Group, Inc. | lynch | ✅ | 75% | 30.52 | 16.77 | 2.83 | 16.89 | 2.01 | — | 3M | — |
-| AXTA | AXALTA COATING SYSTEMS LTD. | lynch | ✅ | 75% | 33.40 | 19.20 | 3.09 | 16.11 | 2.06 | 2.22 | 3M | 1.49 |
-| SIRI | SIRIUS XM HOLDINGS INC. | lynch | ✅ | 75% | 26.36 | 11.82 | 0.81 | 6.96 | 0.30 | 1.36 | 5M | — |
-| PRK | PARK NATIONAL CORPORATION | piotroski | ✅ | 89% | 176 | 15.85 | 2.11 | 13.31 | — | 6.25 | 75,244 | — |
-| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 43.39 | 41.72 | — | -29.14 | 1.60 | -6.05 | 612,216 | — |
-| FUL | FULLER H B CO | piotroski | ✅ | 78% | 50.63 | 18.41 | 1.40 | 7.59 | 1.70 | 1.59 | 913,563 | -7.18 |
-| SENS | Senseonics Holdings, Inc. | piotroski | ✅ | 78% | 9.96 | — | 6.81 | -113 | 4.83 | 1.07 | 568,802 | — |
-| APPN | APPIAN CORPORATION | piotroski | ✅ | 78% | 37.76 | 1,888 | — | -2.62 | 1.15 | -15.71 | 1M | — |
-| BNED | BARNES & NOBLE EDUCATION, IN | piotroski | ✅ | 89% | 11.66 | 23.80 | 1.37 | 5.73 | 1.71 | 1.51 | 338,266 | — |
-| TDAY | USA TODAY CO., INC. | piotroski | ✅ | 78% | 7.35 | 735 | 6.92 | 1.13 | 0.75 | 10.85 | 2M | — |
-| REPX | Riley Exploration Permian, I | greenblatt | ▫️ | 67% | 43.21 | 5.69 | 1.44 | 25.36 | 0.60 | 0.84 | 143,617 | — |
-| REPX | Riley Exploration Permian, I | graham | ▫️ | 44% | 43.21 | 5.69 | 1.44 | 25.36 | 0.60 | 0.84 | 143,617 | — |
-| REPX | Riley Exploration Permian, I | buffett | ▫️ | 33% | 43.21 | 5.69 | 1.44 | 25.36 | 0.60 | 0.84 | 143,617 | — |
-| REPX | Riley Exploration Permian, I | lynch | ▫️ | 25% | 43.21 | 5.69 | 1.44 | 25.36 | 0.60 | 0.84 | 143,617 | — |
-| REPX | Riley Exploration Permian, I | netnet | ▫️ | 25% | 43.21 | 5.69 | 1.44 | 25.36 | 0.60 | 0.84 | 143,617 | — |
-| REPX | Riley Exploration Permian, I | custom | ▫️ | 0% | 43.21 | 5.69 | 1.44 | 25.36 | 0.60 | 0.84 | 143,617 | — |
-| SAFX | XCF Global, Inc. | graham | ▫️ | 44% | 0.31 | 0.59 | 1.16 | 197 | 0.11 | 10.14 | 2M | — |
-| SAFX | XCF Global, Inc. | buffett | ▫️ | 33% | 0.31 | 0.59 | 1.16 | 197 | 0.11 | 10.14 | 2M | — |
-| SAFX | XCF Global, Inc. | lynch | ▫️ | 25% | 0.31 | 0.59 | 1.16 | 197 | 0.11 | 10.14 | 2M | — |
-| SAFX | XCF Global, Inc. | netnet | ▫️ | 25% | 0.31 | 0.59 | 1.16 | 197 | 0.11 | 10.14 | 2M | — |
-| SAFX | XCF Global, Inc. | piotroski | ▫️ | 11% | 0.31 | 0.59 | 1.16 | 197 | 0.11 | 10.14 | 2M | — |
-| SAFX | XCF Global, Inc. | custom | ▫️ | 0% | 0.31 | 0.59 | 1.16 | 197 | 0.11 | 10.14 | 2M | — |
-| SON | Sonoco Products Company | graham | ▫️ | 67% | 48.02 | 4.77 | 1.32 | 27.75 | 1.05 | 2.08 | 834,245 | — |
-| SON | Sonoco Products Company | buffett | ▫️ | 67% | 48.02 | 4.77 | 1.32 | 27.75 | 1.05 | 2.08 | 834,245 | — |
-| SON | Sonoco Products Company | greenblatt | ▫️ | 67% | 48.02 | 4.77 | 1.32 | 27.75 | 1.05 | 2.08 | 834,245 | — |
-| SON | Sonoco Products Company | netnet | ▫️ | 25% | 48.02 | 4.77 | 1.32 | 27.75 | 1.05 | 2.08 | 834,245 | — |
-| SON | Sonoco Products Company | custom | ▫️ | 0% | 48.02 | 4.77 | 1.32 | 27.75 | 1.05 | 2.08 | 834,245 | — |
-| BOOT | Boot Barn Holdings, Inc. | graham | ▫️ | 67% | 124 | 16.91 | 2.90 | 17.13 | 2.65 | 0.86 | 636,723 | -7.34 |
-| BOOT | Boot Barn Holdings, Inc. | buffett | ▫️ | 67% | 124 | 16.91 | 2.90 | 17.13 | 2.65 | 0.86 | 636,723 | -7.34 |
-| BOOT | Boot Barn Holdings, Inc. | greenblatt | ▫️ | 33% | 124 | 16.91 | 2.90 | 17.13 | 2.65 | 0.86 | 636,723 | -7.34 |
-| BOOT | Boot Barn Holdings, Inc. | netnet | ▫️ | 25% | 124 | 16.91 | 2.90 | 17.13 | 2.65 | 0.86 | 636,723 | -7.34 |
+| ACAD | ACADIA PHARMACEUTICALS INC. | greenblatt | ✅ | 100% | 19.65 | 8.54 | 2.72 | 31.86 | 3.83 | 0.27 | 2M | — |
+| UVE | UNIVERSAL INSURANCE HOLDINGS | greenblatt | ✅ | 100% | 45.25 | 7.16 | 2.38 | 33.20 | — | 4.15 | 329,885 | — |
+| UVE | UNIVERSAL INSURANCE HOLDINGS | piotroski | ✅ | 89% | 45.25 | 7.16 | 2.38 | 33.20 | — | 4.15 | 329,885 | — |
+| USLM | UNITED STATES LIME & MINERAL | lynch | ✅ | 100% | 110 | 23.61 | 5.02 | 21.29 | 19.27 | 0.08 | 88,383 | — |
+| USLM | UNITED STATES LIME & MINERAL | buffett | ✅ | 83% | 110 | 23.61 | 5.02 | 21.29 | 19.27 | 0.08 | 88,383 | — |
+| LNN | Lindsay Corporation | piotroski | ✅ | 78% | 113 | 16.72 | 2.32 | 13.90 | 3.71 | 0.58 | 165,606 | — |
+| LNN | Lindsay Corporation | lynch | ✅ | 75% | 113 | 16.72 | 2.32 | 13.90 | 3.71 | 0.58 | 165,606 | — |
+| AES | THE AES CORPORATION | greenblatt | ✅ | 100% | 14.93 | 11.85 | 2.62 | 22.40 | 0.77 | — | 6M | — |
+| KFY | KORN FERRY | piotroski | ✅ | 100% | 70.53 | 13.51 | 1.88 | 14.06 | 1.94 | 1.06 | 386,088 | — |
+| KFY | KORN FERRY | lynch | ✅ | 75% | 70.53 | 13.51 | 1.88 | 14.06 | 1.94 | 1.06 | 386,088 | — |
+| WLDN | WILLDAN GROUP, INC. | piotroski | ✅ | 78% | 73.42 | 21.04 | 3.63 | 17.24 | 1.56 | 0.79 | 168,153 | — |
+| RDN | RADIAN GROUP INC | lynch | ✅ | 75% | 33.70 | 8.14 | 0.99 | 12.19 | — | 0.70 | 3M | — |
+| HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 111 | 43.28 | 281 | 649 | 4.66 | 50.73 | 2M | — |
+| PCTY | PAYLOCITY HOLDING CORPORATIO | piotroski | ✅ | 89% | 148 | 30.09 | 6.64 | 22.08 | 1.09 | 3.00 | 571,066 | — |
+| PCTY | PAYLOCITY HOLDING CORPORATIO | lynch | ✅ | 75% | 148 | 30.09 | 6.64 | 22.08 | 1.09 | 3.00 | 571,066 | — |
+| BDC | BELDEN INC. | piotroski | ✅ | 89% | 109 | 18.51 | 3.48 | 18.78 | 1.93 | — | 285,453 | — |
+| SHOE | Shoe Station Group, Inc. | graham | ✅ | 89% | 12.76 | 6.72 | 0.51 | 7.58 | 3.76 | 0.74 | 2M | — |
+| JJSF | J&J SNACK FOODS CORP. | lynch | ✅ | 75% | 79.33 | 23.61 | 1.60 | 6.79 | 2.72 | — | 232,045 | — |
+| ABM | ABM INDUSTRIES INCORPORATED | piotroski | ✅ | 89% | 48.75 | 18.82 | 1.71 | 9.09 | 1.48 | 1.95 | 380,641 | — |
+| BSY | BENTLEY SYSTEMS, INCORPORATE | piotroski | ✅ | 100% | 35.15 | 41.35 | 9.84 | 23.36 | 0.56 | 1.99 | 2M | — |
+| BSY | BENTLEY SYSTEMS, INCORPORATE | buffett | ✅ | 83% | 35.15 | 41.35 | 9.84 | 23.36 | 0.56 | 1.99 | 2M | — |
+| KRT | Karat Packaging Inc. | piotroski | ✅ | 78% | 53.38 | 34.22 | 7.21 | 21.07 | 2.30 | 0.88 | 215,276 | — |
+| SARO | StandardAero, Inc. | piotroski | ✅ | 89% | 20.25 | 24.40 | 2.54 | 10.40 | 2.20 | 1.46 | 3M | — |
+| VVX | V2X, Inc. | piotroski | ✅ | 100% | 68.07 | 27.78 | 2.00 | 7.18 | 1.22 | 2.02 | 393,138 | — |
+| SHAK | SHAKE SHACK INC. | piotroski | ✅ | 89% | 64.17 | 58.87 | 5.11 | 8.70 | 1.76 | 2.56 | 856,485 | — |
+| NPKI | NPK International Inc. | piotroski | ✅ | 78% | 11.41 | 25.36 | 2.79 | 11.09 | 1.43 | 0.26 | 1M | — |
+| SGRY | Surgery Partners, Inc. | piotroski | ✅ | 78% | 13.71 | — | 1.02 | -4.55 | 1.87 | — | 2M | — |
+| HCSG | HEALTHCARE SERVICES GROUP, I | piotroski | ✅ | 100% | 20.79 | 25.67 | 2.98 | 11.58 | 3.38 | — | 1M | — |
+| WRBY | Warby Parker Inc. | piotroski | ✅ | 78% | 25.31 | 2,531 | 8.61 | 0.45 | 2.35 | 0.96 | 2M | — |
+| INNV | InnovAge Holding Corp. | piotroski | ✅ | 78% | 9.13 | — | 5.26 | -1.08 | 1.05 | 1.23 | 342,157 | — |
+| AVNW | Aviat Networks, Inc. | piotroski | ✅ | 78% | 20.84 | 110 | 1.02 | 0.95 | 1.97 | 1.24 | 57,826 | — |
+| DAR | DARLING INGREDIENTS INC. | piotroski | ✅ | 78% | 60.02 | 154 | 2.03 | 1.33 | 1.50 | 1.16 | 2M | — |
+| ORN | ORION GROUP HOLDINGS, INC. | piotroski | ✅ | 78% | 9.07 | 151 | 2.26 | 1.56 | 1.36 | 1.61 | 432,256 | — |
+| ACAD | ACADIA PHARMACEUTICALS INC. | buffett | ▫️ | 67% | 19.65 | 8.54 | 2.72 | 31.86 | 3.83 | 0.27 | 2M | — |
+| ACAD | ACADIA PHARMACEUTICALS INC. | piotroski | ▫️ | 67% | 19.65 | 8.54 | 2.72 | 31.86 | 3.83 | 0.27 | 2M | — |
+| ACAD | ACADIA PHARMACEUTICALS INC. | graham | ▫️ | 56% | 19.65 | 8.54 | 2.72 | 31.86 | 3.83 | 0.27 | 2M | — |
+| ACAD | ACADIA PHARMACEUTICALS INC. | lynch | ▫️ | 50% | 19.65 | 8.54 | 2.72 | 31.86 | 3.83 | 0.27 | 2M | — |
+| ACAD | ACADIA PHARMACEUTICALS INC. | netnet | ▫️ | 50% | 19.65 | 8.54 | 2.72 | 31.86 | 3.83 | 0.27 | 2M | — |
+| ACAD | ACADIA PHARMACEUTICALS INC. | custom | ▫️ | 0% | 19.65 | 8.54 | 2.72 | 31.86 | 3.83 | 0.27 | 2M | — |
+| CLSK | CleanSpark, Inc. | greenblatt | ▫️ | 67% | 11.52 | — | 1.68 | 16.76 | 4.18 | 0.46 | 16M | — |
+| CLSK | CleanSpark, Inc. | piotroski | ▫️ | 56% | 11.52 | — | 1.68 | 16.76 | 4.18 | 0.46 | 16M | — |
+| CLSK | CleanSpark, Inc. | buffett | ▫️ | 50% | 11.52 | — | 1.68 | 16.76 | 4.18 | 0.46 | 16M | — |
+| CLSK | CleanSpark, Inc. | lynch | ▫️ | 50% | 11.52 | — | 1.68 | 16.76 | 4.18 | 0.46 | 16M | — |
+| CLSK | CleanSpark, Inc. | netnet | ▫️ | 50% | 11.52 | — | 1.68 | 16.76 | 4.18 | 0.46 | 16M | — |
+| CLSK | CleanSpark, Inc. | graham | ▫️ | 44% | 11.52 | — | 1.68 | 16.76 | 4.18 | 0.46 | 16M | — |
+| CLSK | CleanSpark, Inc. | custom | ▫️ | 0% | 11.52 | — | 1.68 | 16.76 | 4.18 | 0.46 | 16M | — |
+| UVE | UNIVERSAL INSURANCE HOLDINGS | buffett | ▫️ | 67% | 45.25 | 7.16 | 2.38 | 33.20 | — | 4.15 | 329,885 | — |
+| UVE | UNIVERSAL INSURANCE HOLDINGS | graham | ▫️ | 56% | 45.25 | 7.16 | 2.38 | 33.20 | — | 4.15 | 329,885 | — |
+| UVE | UNIVERSAL INSURANCE HOLDINGS | lynch | ▫️ | 50% | 45.25 | 7.16 | 2.38 | 33.20 | — | 4.15 | 329,885 | — |
+| UVE | UNIVERSAL INSURANCE HOLDINGS | netnet | ▫️ | 25% | 45.25 | 7.16 | 2.38 | 33.20 | — | 4.15 | 329,885 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
