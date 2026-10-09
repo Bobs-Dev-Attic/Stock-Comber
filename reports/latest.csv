@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-KMT,KENNAMETAL INC.,graham,True,8,9,88.9,31.71,7.17,1.56,21.81,2.62,0.99,44.90,2M,—
-KMT,KENNAMETAL INC.,lynch,True,3,4,75.0,31.71,7.17,1.56,21.81,2.62,0.99,44.90,2M,—
-LPG,DORIAN LPG LTD.,lynch,True,4,4,100.0,58.23,12.83,2.18,17.00,2.67,0.64,52.25,"511,620",—
-LPG,DORIAN LPG LTD.,piotroski,True,8,9,88.9,58.23,12.83,2.18,17.00,2.67,0.64,52.25,"511,620",—
-BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,122,16.54,2.83,17.13,2.65,0.86,84.23,"589,188",—
-BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,122,16.54,2.83,17.13,2.65,0.86,84.23,"589,188",—
-XPEL,"XPEL, INC.",buffett,True,6,6,100.0,44.92,24.28,4.44,18.28,3.25,0.35,20.53,"179,093",—
-XPEL,"XPEL, INC.",lynch,True,3,4,75.0,44.92,24.28,4.44,18.28,3.25,0.35,20.53,"179,093",—
-BFST,"BUSINESS FIRST BANCSHARES, INC.",lynch,True,3,4,75.0,30.71,11.01,1.01,9.80,—,8.16,43.65,"217,515",—
-GLRE,"GREENLIGHT CAPITAL RE, LTD.",piotroski,True,7,9,77.8,14.97,6.90,0.73,10.57,—,2.06,31.65,"117,607",—
-IBP,"Installed Building Products, Inc.",piotroski,True,8,9,88.9,188,19.34,7.23,37.39,3.03,1.91,75.33,"652,300",—
-IBP,"Installed Building Products, Inc.",lynch,True,3,4,75.0,188,19.34,7.23,37.39,3.03,1.91,75.33,"652,300",—
-AES,THE AES CORPORATION,greenblatt,True,3,3,100.0,14.93,11.85,2.62,22.40,0.77,—,12.70,13M,—
-BELFA,BEL FUSE INC /NJ,piotroski,True,8,9,88.9,195,—,—,14.46,3.02,0.98,—,"149,393",—
-HRB,H&R BLOCK INC,greenblatt,True,3,3,100.0,44.59,7.88,48.91,624,1.13,26.72,10.78,2M,—
-HRB,H&R BLOCK INC,piotroski,True,8,9,88.9,44.59,7.88,48.91,624,1.13,26.72,10.78,2M,—
-AIR,AAR CORP,piotroski,True,7,9,77.8,102,20.90,2.29,11.02,2.84,—,69.66,"487,460",—
-AIR,AAR CORP,lynch,True,3,4,75.0,102,20.90,2.29,11.02,2.84,—,69.66,"487,460",—
-SSB,SOUTHSTATE BANK CORP,lynch,True,3,4,75.0,101,12.78,1.13,8.82,—,6.42,126,"881,723",—
-KBR,"KBR, Inc.",piotroski,True,8,9,88.9,35.18,10.96,3.02,27.61,1.22,3.37,29.01,2M,—
-UMBF,UMB FINANCIAL CORP,lynch,True,3,4,75.0,130,14.04,1.25,9.13,—,8.50,148,"983,601",—
-AM,ANTERO MIDSTREAM CORPORATION,piotroski,True,7,9,77.8,21.19,24.64,5.18,20.95,3.41,1.98,8.90,2M,—
-FCF,FIRST COMMONWEALTH FINANCIAL CORP /PA/,lynch,True,3,4,75.0,20.06,13.65,1.34,9.80,—,6.94,22.28,1M,—
-SIRI,SIRIUS XM HOLDINGS INC.,lynch,True,3,4,75.0,26.33,11.81,0.81,6.96,0.30,1.36,40.31,4M,—
-DLB,"Dolby Laboratories, Inc.",piotroski,True,7,9,77.8,58.45,22.31,2.17,9.72,3.17,0.23,39.82,1M,—
-MYRG,MYR GROUP INC.,piotroski,True,8,9,88.9,311,41.28,7.40,17.93,1.33,1.49,84.34,"224,639",—
-BHC,Bausch Health Companies Inc.,piotroski,True,7,9,77.8,6.04,14.38,—,-28.34,1.47,-46.91,—,1M,—
-PLXS,PLEXUS CORP.,piotroski,True,8,9,88.9,261,41.75,4.96,11.89,1.58,1.16,86.13,"185,448",—
-QUAD,"Quad/Graphics, Inc.",piotroski,True,7,9,77.8,9.49,17.57,—,-45.38,0.86,-18.90,—,"210,105",—
-KMT,KENNAMETAL INC.,piotroski,False,6,9,66.7,31.71,7.17,1.56,21.81,2.62,0.99,44.90,2M,—
-KMT,KENNAMETAL INC.,greenblatt,False,2,3,66.7,31.71,7.17,1.56,21.81,2.62,0.99,44.90,2M,—
-KMT,KENNAMETAL INC.,buffett,False,3,6,50.0,31.71,7.17,1.56,21.81,2.62,0.99,44.90,2M,—
-KMT,KENNAMETAL INC.,netnet,False,2,4,50.0,31.71,7.17,1.56,21.81,2.62,0.99,44.90,2M,—
-KMT,KENNAMETAL INC.,custom,False,0,0,0.0,31.71,7.17,1.56,21.81,2.62,0.99,44.90,2M,—
-GEF,"GREIF, INC.",buffett,False,4,6,66.7,81.88,—,—,28.82,1.27,—,—,"369,978",—
-GEF,"GREIF, INC.",greenblatt,False,2,3,66.7,81.88,—,—,28.82,1.27,—,—,"369,978",—
-GEF,"GREIF, INC.",piotroski,False,5,9,55.6,81.88,—,—,28.82,1.27,—,—,"369,978",—
-GEF,"GREIF, INC.",graham,False,4,9,44.4,81.88,—,—,28.82,1.27,—,—,"369,978",—
-GEF,"GREIF, INC.",lynch,False,1,4,25.0,81.88,—,—,28.82,1.27,—,—,"369,978",—
-GEF,"GREIF, INC.",netnet,False,1,4,25.0,81.88,—,—,28.82,1.27,—,—,"369,978",—
-GEF,"GREIF, INC.",custom,False,0,0,0.0,81.88,—,—,28.82,1.27,—,—,"369,978",—
-LPG,DORIAN LPG LTD.,buffett,False,4,6,66.7,58.23,12.83,2.18,17.00,2.67,0.64,52.25,"511,620",—
-LPG,DORIAN LPG LTD.,graham,False,5,9,55.6,58.23,12.83,2.18,17.00,2.67,0.64,52.25,"511,620",—
-LPG,DORIAN LPG LTD.,greenblatt,False,1,3,33.3,58.23,12.83,2.18,17.00,2.67,0.64,52.25,"511,620",—
-LPG,DORIAN LPG LTD.,netnet,False,1,4,25.0,58.23,12.83,2.18,17.00,2.67,0.64,52.25,"511,620",—
-LPG,DORIAN LPG LTD.,custom,False,0,0,0.0,58.23,12.83,2.18,17.00,2.67,0.64,52.25,"511,620",—
-BOOT,"Boot Barn Holdings, Inc.",graham,False,6,9,66.7,122,16.54,2.83,17.13,2.65,0.86,84.23,"589,188",—
-BOOT,"Boot Barn Holdings, Inc.",buffett,False,4,6,66.7,122,16.54,2.83,17.13,2.65,0.86,84.23,"589,188",—
-BOOT,"Boot Barn Holdings, Inc.",greenblatt,False,1,3,33.3,122,16.54,2.83,17.13,2.65,0.86,84.23,"589,188",—
-BOOT,"Boot Barn Holdings, Inc.",netnet,False,1,4,25.0,122,16.54,2.83,17.13,2.65,0.86,84.23,"589,188",—
+VITL,"Vital Farms, Inc.",graham,True,9,9,100.0,9.33,6.48,1.22,18.87,2.16,0.48,15.73,"430,843",—
+VITL,"Vital Farms, Inc.",lynch,True,4,4,100.0,9.33,6.48,1.22,18.87,2.16,0.48,15.73,"430,843",—
+USLM,UNITED STATES LIME & MINERALS INC,lynch,True,4,4,100.0,109,23.32,4.96,21.29,19.27,0.08,48.03,"48,528",—
+USLM,UNITED STATES LIME & MINERALS INC,buffett,True,5,6,83.3,109,23.32,4.96,21.29,19.27,0.08,48.03,"48,528",—
+PRI,"Primerica, Inc.",greenblatt,True,3,3,100.0,275,12.00,3.67,30.71,—,5.14,196,"67,716",—
+PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,275,12.00,3.67,30.71,—,5.14,196,"67,716",—
+OTTR,OTTER TAIL CORPORATION,lynch,True,3,4,75.0,88.33,13.49,2.00,14.82,2.28,—,80.71,"202,396",—
+IBP,"Installed Building Products, Inc.",piotroski,True,8,9,88.9,183,18.89,7.06,37.39,3.03,1.91,75.33,"123,933",—
+IBP,"Installed Building Products, Inc.",lynch,True,3,4,75.0,183,18.89,7.06,37.39,3.03,1.91,75.33,"123,933",—
+SMPL,The Simply Good Foods Company,graham,True,9,9,100.0,10.11,9.91,0.57,5.73,3.64,0.33,20.21,3M,—
+SMPL,The Simply Good Foods Company,lynch,True,4,4,100.0,10.11,9.91,0.57,5.73,3.64,0.33,20.21,3M,—
+IBEX,IBEX LIMITED,piotroski,True,9,9,100.0,44.40,14.19,3.86,27.22,2.10,0.82,28.45,"72,273",—
+DUKU,Duke Energy CORP,piotroski,True,8,9,88.9,48.83,7.74,0.73,9.58,0.55,—,97.33,"16,093",—
+DUKU,Duke Energy CORP,lynch,True,3,4,75.0,48.83,7.74,0.73,9.58,0.55,—,97.33,"16,093",—
+FSS,FEDERAL SIGNAL CORPORATION,lynch,True,3,4,75.0,114,28.33,5.06,17.84,3.02,0.73,45.03,"75,042",—
+SIGI,"SELECTIVE INSURANCE GROUP, INC",piotroski,True,7,9,77.8,84.15,11.23,1.42,12.92,—,3.20,99.81,"65,670",—
+NHC,NATIONAL HEALTHCARE CORP,piotroski,True,9,9,100.0,226,29.49,3.31,11.23,1.82,0.42,109,"32,468",—
+NHC,NATIONAL HEALTHCARE CORP,lynch,True,3,4,75.0,226,29.49,3.31,11.23,1.82,0.42,109,"32,468",—
+POST,"Post Holdings, Inc.",lynch,True,3,4,75.0,74.23,13.47,1.24,8.94,1.67,2.60,86.01,"591,030",—
+CPK,CHESAPEAKE UTILITIES CORP,piotroski,True,7,9,77.8,128,21.47,1.88,8.78,0.45,—,95.61,"123,536",—
+RSI,"Rush Street Interactive, Inc.",piotroski,True,7,9,77.8,20.32,65.55,32.59,22.62,1.93,2.41,2.09,2M,—
+R,RYDER SYSTEM INC,piotroski,True,9,9,100.0,237,19.88,3.25,16.35,0.89,4.37,140,"92,968",—
+SARO,"StandardAero, Inc.",piotroski,True,8,9,88.9,20.42,24.60,2.56,10.40,2.20,1.46,12.21,"909,373",—
+KNTK,KINETIK HOLDINGS INC.,lynch,True,3,4,75.0,54.41,20.69,—,-31.53,0.69,-7.37,—,1M,—
+HLIO,"HELIOS TECHNOLOGIES, INC.",piotroski,True,9,9,100.0,67.95,46.86,2.43,5.20,2.90,0.63,30.21,"466,779",—
+XPRO,Expro Group Holdings N.V.,piotroski,True,8,9,88.9,16.21,36.03,1.22,3.37,2.16,0.47,11.58,"149,942",—
+HLIO,"HELIOS TECHNOLOGIES, INC.",lynch,True,3,4,75.0,67.95,46.86,2.43,5.20,2.90,0.63,30.21,"466,779",—
+SPOK,"SPOK HOLDINGS, INC.",piotroski,True,7,9,77.8,10.78,14.37,1.55,10.85,1.18,0.41,10.83,"53,615",—
+CYH,"COMMUNITY HEALTH SYSTEMS, INC.",piotroski,True,8,9,88.9,2.75,0.73,—,-36.51,1.46,-10.07,—,"447,002",—
+MAGN,Magnera Corporation,piotroski,True,7,9,77.8,11.57,—,0.39,-14.94,2.37,2.75,—,"50,573",—
+AIOT,"Powerfleet, Inc.",piotroski,True,7,9,77.8,2.65,—,0.74,-4.32,1.13,1.00,—,"358,601",—
+UE,URBAN EDGE PROPERTIES,piotroski,True,7,9,77.8,19.29,26.07,1.76,6.80,—,1.41,13.49,"932,664",—
+CRI,"CARTER’S, INC.",graham,True,8,9,88.9,32.71,12.93,1.25,9.92,2.51,1.77,38.57,"149,017",—
+RRX,REGAL REXNORD CORP,piotroski,True,7,9,77.8,160,38.10,1.56,4.08,2.15,—,98.55,1M,—
+TRLV,TRULIEVE CANNABIS CORP.,piotroski,True,8,9,88.9,10.63,—,1.78,-10.70,4.43,1.36,—,"535,120",—
+LILA,Liberty Latin America Ltd.,piotroski,True,7,9,77.8,8.18,—,2.94,-110,1.14,20.09,—,"161,945",—
+VITL,"Vital Farms, Inc.",greenblatt,False,2,3,66.7,9.33,6.48,1.22,18.87,2.16,0.48,15.73,"430,843",—
+VITL,"Vital Farms, Inc.",buffett,False,3,6,50.0,9.33,6.48,1.22,18.87,2.16,0.48,15.73,"430,843",—
+VITL,"Vital Farms, Inc.",netnet,False,2,4,50.0,9.33,6.48,1.22,18.87,2.16,0.48,15.73,"430,843",—
+VITL,"Vital Farms, Inc.",piotroski,False,3,9,33.3,9.33,6.48,1.22,18.87,2.16,0.48,15.73,"430,843",—
+VITL,"Vital Farms, Inc.",custom,False,0,0,0.0,9.33,6.48,1.22,18.87,2.16,0.48,15.73,"430,843",—
+USLM,UNITED STATES LIME & MINERALS INC,piotroski,False,6,9,66.7,109,23.32,4.96,21.29,19.27,0.08,48.03,"48,528",—
+USLM,UNITED STATES LIME & MINERALS INC,greenblatt,False,2,3,66.7,109,23.32,4.96,21.29,19.27,0.08,48.03,"48,528",—
+USLM,UNITED STATES LIME & MINERALS INC,graham,False,5,9,55.6,109,23.32,4.96,21.29,19.27,0.08,48.03,"48,528",—
+USLM,UNITED STATES LIME & MINERALS INC,netnet,False,2,4,50.0,109,23.32,4.96,21.29,19.27,0.08,48.03,"48,528",—
+USLM,UNITED STATES LIME & MINERALS INC,custom,False,0,0,0.0,109,23.32,4.96,21.29,19.27,0.08,48.03,"48,528",—
+PRI,"Primerica, Inc.",buffett,False,4,6,66.7,275,12.00,3.67,30.71,—,5.14,196,"67,716",—
+PRI,"Primerica, Inc.",graham,False,5,9,55.6,275,12.00,3.67,30.71,—,5.14,196,"67,716",—
+PRI,"Primerica, Inc.",lynch,False,2,4,50.0,275,12.00,3.67,30.71,—,5.14,196,"67,716",—
+PRI,"Primerica, Inc.",netnet,False,1,4,25.0,275,12.00,3.67,30.71,—,5.14,196,"67,716",—
