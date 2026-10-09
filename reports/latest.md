@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-08 19:43 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-09 00:05 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **39** strategy matches passed.
+Screened **75** companies · **37** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| BOIL | PROSHARES TRUST II | greenblatt | ✅ | 100% | 21.44 | 1.55 | 0.46 | 29.91 | — | 0.06 | 7M | — |
-| SBC | SBC Medical Group Holdings I | lynch | ✅ | 75% | 5.29 | 10.58 | 2.19 | 20.54 | 3.78 | 0.47 | 178,619 | — |
-| SON | Sonoco Products Company | piotroski | ✅ | 89% | 47.74 | 4.74 | 1.32 | 27.75 | 1.05 | 2.08 | 978,191 | — |
-| SON | Sonoco Products Company | lynch | ✅ | 75% | 47.74 | 4.74 | 1.32 | 27.75 | 1.05 | 2.08 | 978,191 | — |
-| PRI | Primerica, Inc. | greenblatt | ✅ | 100% | 276 | 12.05 | 3.69 | 30.71 | — | 5.14 | 103,373 | — |
-| PRI | Primerica, Inc. | piotroski | ✅ | 89% | 276 | 12.05 | 3.69 | 30.71 | — | 5.14 | 103,373 | — |
-| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 111 | 21.18 | 4.05 | 19.12 | 2.99 | — | 143,594 | — |
-| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 111 | 21.18 | 4.05 | 19.12 | 2.99 | — | 143,594 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | piotroski | ✅ | 100% | 118 | 21.76 | 4.10 | 18.86 | 0.86 | 0.33 | 249,424 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | lynch | ✅ | 100% | 118 | 21.76 | 4.10 | 18.86 | 0.86 | 0.33 | 249,424 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | buffett | ✅ | 83% | 118 | 21.76 | 4.10 | 18.86 | 0.86 | 0.33 | 249,424 | — |
-| NBR | NABORS INDUSTRIES LTD | piotroski | ✅ | 78% | 80.09 | 4.61 | 1.95 | 48.52 | 1.56 | 5.67 | 245,807 | — |
-| OTTR | OTTER TAIL CORPORATION | lynch | ✅ | 75% | 88.07 | 13.45 | 1.99 | 14.82 | 2.28 | — | 230,354 | — |
-| RILYT | BRC Group Holdings, Inc. | greenblatt | ✅ | 100% | 20.44 | 2.09 | — | -179 | — | -10.65 | 21,394 | — |
-| RILYT | BRC Group Holdings, Inc. | lynch | ✅ | 75% | 20.44 | 2.09 | — | -179 | — | -10.65 | 21,394 | — |
-| AIV | Apartment Investment and Man | greenblatt | ✅ | 100% | 1.76 | 0.46 | 0.69 | 151 | — | 3.10 | 2M | — |
-| BELFA | BEL FUSE INC /NJ | piotroski | ✅ | 89% | 195 | — | — | 14.46 | 3.02 | 0.98 | 134,222 | — |
-| NFG | NATIONAL FUEL GAS CO | piotroski | ✅ | 89% | 78.49 | 13.82 | 2.31 | 16.76 | 0.44 | — | 427,794 | — |
-| SFM | Sprouts Farmers Market, Inc. | piotroski | ✅ | 78% | 66.35 | 12.50 | 4.67 | 37.32 | 0.93 | 1.96 | 983,532 | — |
-| FSS | FEDERAL SIGNAL CORPORATION | lynch | ✅ | 75% | 114 | 28.53 | 5.09 | 17.84 | 3.02 | 0.73 | 876,880 | — |
-| VISN | Vistance Networks, Inc. | greenblatt | ✅ | 100% | 5.94 | 0.62 | — | -227 | 3.88 | -9.06 | 3M | — |
-| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 16.50 | 8.73 | 2.16 | 24.66 | 2.26 | 2.62 | 2M | — |
-| MEDP | Medpace Holdings, Inc. | buffett | ✅ | 83% | 600 | 39.27 | 38.59 | 98.27 | 0.74 | 3.30 | 141,123 | — |
-| MEDP | Medpace Holdings, Inc. | piotroski | ✅ | 78% | 600 | 39.27 | 38.59 | 98.27 | 0.74 | 3.30 | 141,123 | — |
-| WLY | JOHN WILEY & SONS, INC. | piotroski | ✅ | 100% | 49.21 | 11.83 | 3.09 | 26.13 | 0.54 | 2.06 | 423,427 | — |
-| BKU | BankUnited, Inc. | piotroski | ✅ | 89% | 42.51 | 12.04 | 1.03 | 8.79 | — | 10.47 | 610,416 | — |
-| BBWI | BATH & BODY WORKS, INC. | greenblatt | ✅ | 100% | 17.81 | 5.73 | — | -50.66 | 1.27 | — | 8M | — |
-| SSRM | SSR Mining Inc. | piotroski | ✅ | 78% | 32.75 | 17.70 | 2.03 | 11.28 | 2.08 | 0.51 | 2M | — |
-| VCEL | VERICEL CORPORATION | piotroski | ✅ | 100% | 40.15 | 125 | 5.90 | 4.66 | 5.03 | 0.38 | 374,156 | — |
-| VCEL | VERICEL CORPORATION | lynch | ✅ | 75% | 40.15 | 125 | 5.90 | 4.66 | 5.03 | 0.38 | 374,156 | — |
-| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.36 | 19.80 | 0.78 | 3.99 | 9.18 | 0.34 | 129,424 | — |
-| CHEF | CHEFS’ WAREHOUSE, INC. | piotroski | ✅ | 100% | 112 | 66.86 | 8.55 | 11.97 | 2.05 | 2.36 | 292,611 | — |
-| AMCX | AMC Global Media Inc. | piotroski | ✅ | 78% | 10.93 | 6.58 | 0.63 | 9.11 | 1.67 | 2.98 | 355,375 | — |
-| NPKI | NPK International Inc. | piotroski | ✅ | 78% | 11.48 | 25.52 | 2.80 | 11.09 | 1.43 | 0.26 | 425,235 | — |
-| SPHR | SPHERE ENTERTAINMENT CO. | piotroski | ✅ | 78% | 110 | 149 | 2.23 | 1.50 | 1.09 | 0.89 | 650,832 | — |
-| BNED | BARNES & NOBLE EDUCATION, IN | piotroski | ✅ | 89% | 11.87 | 24.21 | 1.39 | 5.73 | 1.71 | 1.51 | 156,841 | — |
-| THO | THOR INDUSTRIES, INC. | piotroski | ✅ | 78% | 65.84 | 19.48 | 0.81 | 4.17 | 1.77 | — | 698,490 | — |
-| TPC | Tutor Perini Corporation | piotroski | ✅ | 78% | 83.97 | 55.61 | 3.68 | 6.60 | 1.27 | 3.20 | 238,534 | — |
-| ORN | ORION GROUP HOLDINGS, INC. | piotroski | ✅ | 78% | 9.07 | 151 | 2.26 | 1.56 | 1.36 | 1.61 | 432,256 | — |
-| BOIL | PROSHARES TRUST II | lynch | ▫️ | 50% | 21.44 | 1.55 | 0.46 | 29.91 | — | 0.06 | 7M | — |
-| BOIL | PROSHARES TRUST II | graham | ▫️ | 44% | 21.44 | 1.55 | 0.46 | 29.91 | — | 0.06 | 7M | — |
-| BOIL | PROSHARES TRUST II | buffett | ▫️ | 33% | 21.44 | 1.55 | 0.46 | 29.91 | — | 0.06 | 7M | — |
-| BOIL | PROSHARES TRUST II | piotroski | ▫️ | 33% | 21.44 | 1.55 | 0.46 | 29.91 | — | 0.06 | 7M | — |
-| BOIL | PROSHARES TRUST II | netnet | ▫️ | 25% | 21.44 | 1.55 | 0.46 | 29.91 | — | 0.06 | 7M | — |
-| BOIL | PROSHARES TRUST II | custom | ▫️ | 0% | 21.44 | 1.55 | 0.46 | 29.91 | — | 0.06 | 7M | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | piotroski | ▫️ | 67% | 2.67 | 13.32 | 2.98 | 22.71 | 4.86 | 0.39 | 370,328 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | greenblatt | ▫️ | 67% | 2.67 | 13.32 | 2.98 | 22.71 | 4.86 | 0.39 | 370,328 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | buffett | ▫️ | 50% | 2.67 | 13.32 | 2.98 | 22.71 | 4.86 | 0.39 | 370,328 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | lynch | ▫️ | 50% | 2.67 | 13.32 | 2.98 | 22.71 | 4.86 | 0.39 | 370,328 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | netnet | ▫️ | 50% | 2.67 | 13.32 | 2.98 | 22.71 | 4.86 | 0.39 | 370,328 | — |
+| GOOGN | Alphabet Inc. | graham | ✅ | 100% | 49.06 | 4.54 | 1.44 | 31.83 | 2.01 | 0.43 | 868,888 | — |
+| GOOGN | Alphabet Inc. | buffett | ✅ | 100% | 49.06 | 4.54 | 1.44 | 31.83 | 2.01 | 0.43 | 868,888 | — |
+| GOOGN | Alphabet Inc. | greenblatt | ✅ | 100% | 49.06 | 4.54 | 1.44 | 31.83 | 2.01 | 0.43 | 868,888 | — |
+| GOOGN | Alphabet Inc. | lynch | ✅ | 100% | 49.06 | 4.54 | 1.44 | 31.83 | 2.01 | 0.43 | 868,888 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | greenblatt | ✅ | 100% | 25.90 | 6.49 | 2.19 | 33.67 | 1.55 | — | 278,305 | — |
+| LPG | DORIAN LPG LTD. | lynch | ✅ | 100% | 58.23 | 12.83 | 2.18 | 17.00 | 2.67 | 0.64 | 511,587 | — |
+| LPG | DORIAN LPG LTD. | piotroski | ✅ | 89% | 58.23 | 12.83 | 2.18 | 17.00 | 2.67 | 0.64 | 511,587 | — |
+| NBR | NABORS INDUSTRIES LTD | piotroski | ✅ | 78% | 81.56 | 4.69 | 1.99 | 48.52 | 1.56 | 5.67 | 166,986 | — |
+| AREC | AMERICAN RESOURCES CORPORATI | greenblatt | ✅ | 100% | 1.65 | 2.62 | 1.52 | 58.44 | 2.19 | 0.80 | 2M | — |
+| SMPL | The Simply Good Foods Compan | graham | ✅ | 100% | 10.11 | 9.91 | 0.57 | 5.73 | 3.64 | 0.33 | 3M | — |
+| SMPL | The Simply Good Foods Compan | lynch | ✅ | 100% | 10.11 | 9.91 | 0.57 | 5.73 | 3.64 | 0.33 | 3M | — |
+| BELFA | BEL FUSE INC /NJ | piotroski | ✅ | 89% | 195 | — | — | 14.46 | 3.02 | 0.98 | 146,733 | — |
+| MTCH | Match Group, Inc. | piotroski | ✅ | 89% | 41.50 | 17.44 | — | -242 | 1.42 | — | 3M | — |
+| MTCH | Match Group, Inc. | lynch | ✅ | 75% | 41.50 | 17.44 | — | -242 | 1.42 | — | 3M | — |
+| FSS | FEDERAL SIGNAL CORPORATION | lynch | ✅ | 75% | 113 | 28.08 | 5.01 | 17.84 | 3.02 | 0.73 | 367,554 | — |
+| GPK | Graphic Packaging Holding Co | lynch | ✅ | 75% | 8.58 | 5.80 | 0.77 | 13.31 | 1.30 | — | 8M | — |
+| NYT | THE NEW YORK TIMES COMPANY | piotroski | ✅ | 100% | 66.60 | 31.87 | 5.38 | 16.85 | 1.54 | — | 2M | — |
+| JOE | The St. Joe Company | piotroski | ✅ | 89% | 65.25 | 32.79 | 4.94 | 15.09 | — | 0.97 | 161,285 | — |
+| HOG | Harley-Davidson, Inc. | graham | ✅ | 100% | 26.75 | 9.62 | 1.03 | 10.79 | 2.10 | — | 3M | — |
+| HOG | Harley-Davidson, Inc. | piotroski | ✅ | 89% | 26.75 | 9.62 | 1.03 | 10.79 | 2.10 | — | 3M | — |
+| MEDP | Medpace Holdings, Inc. | buffett | ✅ | 83% | 603 | 39.44 | 38.77 | 98.27 | 0.74 | 3.30 | 223,093 | — |
+| MEDP | Medpace Holdings, Inc. | piotroski | ✅ | 78% | 603 | 39.44 | 38.77 | 98.27 | 0.74 | 3.30 | 223,093 | — |
+| AIR | AAR CORP | piotroski | ✅ | 78% | 102 | 20.90 | 2.29 | 11.02 | 2.84 | — | 487,251 | — |
+| AIR | AAR CORP | lynch | ✅ | 75% | 102 | 20.90 | 2.29 | 11.02 | 2.84 | — | 487,251 | — |
+| ORI | OLD REPUBLIC INTERNATIONAL C | piotroski | ✅ | 78% | 38.55 | 10.36 | 1.64 | 15.82 | — | 4.05 | 1M | — |
+| CSTM | Constellium SE | piotroski | ✅ | 100% | 25.60 | 13.33 | 3.82 | 28.68 | 1.29 | 4.60 | 1M | — |
+| AXTA | AXALTA COATING SYSTEMS LTD. | lynch | ✅ | 75% | 32.81 | 18.86 | 3.03 | 16.11 | 2.06 | 2.22 | 2M | — |
+| CWEN | Clearway Energy, Inc. | lynch | ✅ | 75% | 29.95 | 6.20 | 0.18 | 2.91 | 1.13 | 1.85 | 1M | — |
+| MYRG | MYR GROUP INC. | piotroski | ✅ | 89% | 311 | 41.28 | 7.40 | 17.93 | 1.33 | 1.49 | 223,947 | — |
+| SPOK | SPOK HOLDINGS, INC. | piotroski | ✅ | 78% | 11.06 | 14.75 | 1.59 | 10.85 | 1.18 | 0.41 | 117,234 | — |
+| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 45.38 | 43.64 | — | -29.14 | 1.60 | -6.05 | 525,253 | — |
+| PHIN | PHINIA INC. | piotroski | ✅ | 89% | 58.46 | 18.04 | 1.48 | 8.19 | 1.86 | 1.41 | 451,570 | — |
+| NPKI | NPK International Inc. | piotroski | ✅ | 78% | 11.48 | 25.51 | 2.80 | 11.09 | 1.43 | 0.26 | 909,745 | — |
+| ZUMZ | ZUMIEZ INC | piotroski | ✅ | 89% | 14.21 | 18.22 | 0.76 | 4.13 | 2.01 | 0.99 | 345,239 | — |
+| INNV | InnovAge Holding Corp. | piotroski | ✅ | 78% | 9.11 | — | 5.25 | -1.08 | 1.05 | 1.23 | 1M | — |
+| SHC | SOTERA HEALTH COMPANY | piotroski | ✅ | 78% | 17.83 | 66.04 | 8.43 | 12.86 | 2.46 | 4.38 | 2M | — |
+| LILA | Liberty Latin America Ltd. | piotroski | ✅ | 78% | 8.77 | — | 3.15 | -110 | 1.14 | 20.09 | 255,146 | — |
+| GOOGN | Alphabet Inc. | piotroski | ▫️ | 67% | 49.06 | 4.54 | 1.44 | 31.83 | 2.01 | 0.43 | 868,888 | — |
+| GOOGN | Alphabet Inc. | netnet | ▫️ | 50% | 49.06 | 4.54 | 1.44 | 31.83 | 2.01 | 0.43 | 868,888 | — |
+| GOOGN | Alphabet Inc. | custom | ▫️ | 0% | 49.06 | 4.54 | 1.44 | 31.83 | 2.01 | 0.43 | 868,888 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | graham | ▫️ | 56% | 25.90 | 6.49 | 2.19 | 33.67 | 1.55 | — | 278,305 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | piotroski | ▫️ | 56% | 25.90 | 6.49 | 2.19 | 33.67 | 1.55 | — | 278,305 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | buffett | ▫️ | 50% | 25.90 | 6.49 | 2.19 | 33.67 | 1.55 | — | 278,305 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | lynch | ▫️ | 25% | 25.90 | 6.49 | 2.19 | 33.67 | 1.55 | — | 278,305 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | netnet | ▫️ | 25% | 25.90 | 6.49 | 2.19 | 33.67 | 1.55 | — | 278,305 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | custom | ▫️ | 0% | 25.90 | 6.49 | 2.19 | 33.67 | 1.55 | — | 278,305 | — |
+| LPG | DORIAN LPG LTD. | buffett | ▫️ | 67% | 58.23 | 12.83 | 2.18 | 17.00 | 2.67 | 0.64 | 511,587 | — |
+| LPG | DORIAN LPG LTD. | graham | ▫️ | 56% | 58.23 | 12.83 | 2.18 | 17.00 | 2.67 | 0.64 | 511,587 | — |
+| LPG | DORIAN LPG LTD. | greenblatt | ▫️ | 33% | 58.23 | 12.83 | 2.18 | 17.00 | 2.67 | 0.64 | 511,587 | — |
+| LPG | DORIAN LPG LTD. | netnet | ▫️ | 25% | 58.23 | 12.83 | 2.18 | 17.00 | 2.67 | 0.64 | 511,587 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
