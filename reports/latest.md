@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-09 03:24 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-09 10:41 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **28** strategy matches passed.
+Screened **75** companies · **29** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| YELP | YELP INC | greenblatt | ✅ | 100% | 19.37 | 8.65 | 1.77 | 20.48 | 2.99 | 0.35 | 2M | — |
-| YELP | YELP INC | piotroski | ✅ | 89% | 19.37 | 8.65 | 1.77 | 20.48 | 2.99 | 0.35 | 2M | — |
-| VITL | Vital Farms, Inc. | graham | ✅ | 100% | 9.44 | 6.55 | 1.24 | 18.87 | 2.16 | 0.48 | 2M | — |
-| VITL | Vital Farms, Inc. | lynch | ✅ | 100% | 9.44 | 6.55 | 1.24 | 18.87 | 2.16 | 0.48 | 2M | — |
-| WING | WINGSTOP INC. | lynch | ✅ | 100% | 118 | 19.08 | — | -23.65 | 3.26 | -1.94 | 1M | — |
-| MCRI | MONARCH CASINO & RESORT, INC | piotroski | ✅ | 100% | 115 | 21.25 | 4.00 | 18.86 | 0.86 | 0.33 | 157,596 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | lynch | ✅ | 100% | 115 | 21.25 | 4.00 | 18.86 | 0.86 | 0.33 | 157,596 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | buffett | ✅ | 83% | 115 | 21.25 | 4.00 | 18.86 | 0.86 | 0.33 | 157,596 | — |
-| MWA | Mueller Water Products, Inc. | piotroski | ✅ | 89% | 21.56 | 17.67 | 3.46 | 19.53 | 3.54 | 0.87 | 2M | — |
-| MWA | Mueller Water Products, Inc. | lynch | ✅ | 75% | 21.56 | 17.67 | 3.46 | 19.53 | 3.54 | 0.87 | 2M | — |
+| KMT | KENNAMETAL INC. | graham | ✅ | 89% | 31.71 | 7.17 | 1.56 | 21.81 | 2.62 | 0.99 | 2M | — |
+| KMT | KENNAMETAL INC. | lynch | ✅ | 75% | 31.71 | 7.17 | 1.56 | 21.81 | 2.62 | 0.99 | 2M | — |
+| LPG | DORIAN LPG LTD. | lynch | ✅ | 100% | 58.23 | 12.83 | 2.18 | 17.00 | 2.67 | 0.64 | 511,620 | — |
+| LPG | DORIAN LPG LTD. | piotroski | ✅ | 89% | 58.23 | 12.83 | 2.18 | 17.00 | 2.67 | 0.64 | 511,620 | — |
+| BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 122 | 16.54 | 2.83 | 17.13 | 2.65 | 0.86 | 589,188 | — |
+| BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 122 | 16.54 | 2.83 | 17.13 | 2.65 | 0.86 | 589,188 | — |
+| XPEL | XPEL, INC. | buffett | ✅ | 100% | 44.92 | 24.28 | 4.44 | 18.28 | 3.25 | 0.35 | 179,093 | — |
+| XPEL | XPEL, INC. | lynch | ✅ | 75% | 44.92 | 24.28 | 4.44 | 18.28 | 3.25 | 0.35 | 179,093 | — |
+| BFST | BUSINESS FIRST BANCSHARES, I | lynch | ✅ | 75% | 30.71 | 11.01 | 1.01 | 9.80 | — | 8.16 | 217,515 | — |
 | GLRE | GREENLIGHT CAPITAL RE, LTD. | piotroski | ✅ | 78% | 14.97 | 6.90 | 0.73 | 10.57 | — | 2.06 | 117,607 | — |
-| EFC | Ellington Financial Inc. | lynch | ✅ | 75% | 11.64 | 9.78 | 0.64 | 6.47 | — | 9.53 | 2M | — |
-| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 138 | 21.82 | 2.29 | 10.49 | 1.53 | — | 356,720 | — |
-| BFAM | BRIGHT HORIZONS FAMILY SOLUT | piotroski | ✅ | 89% | 68.89 | 20.50 | 2.95 | 14.42 | 0.52 | 1.90 | 926,026 | — |
-| BFAM | BRIGHT HORIZONS FAMILY SOLUT | lynch | ✅ | 75% | 68.89 | 20.50 | 2.95 | 14.42 | 0.52 | 1.90 | 926,026 | — |
-| JJSF | J&J SNACK FOODS CORP. | lynch | ✅ | 75% | 81.69 | 24.31 | 1.65 | 6.79 | 2.72 | — | 237,197 | — |
-| TBB | AT&T INC. | piotroski | ✅ | 78% | 18.74 | 6.16 | 1.06 | 17.36 | 0.91 | — | 129,384 | — |
-| R | RYDER SYSTEM INC | piotroski | ✅ | 100% | 235 | 19.70 | 3.22 | 16.35 | 0.89 | 4.37 | 259,714 | — |
-| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.39 | 19.95 | 0.78 | 3.99 | 9.18 | 0.34 | 146,323 | — |
-| SGRY | Surgery Partners, Inc. | piotroski | ✅ | 78% | 13.64 | — | 1.01 | -4.55 | 1.87 | — | 1M | — |
-| HCSG | HEALTHCARE SERVICES GROUP, I | piotroski | ✅ | 100% | 20.66 | 25.51 | 2.96 | 11.58 | 3.38 | — | 843,977 | — |
-| FUL | FULLER H B CO | piotroski | ✅ | 78% | 50.44 | 18.34 | 1.39 | 7.59 | 1.70 | 1.59 | 1M | — |
-| MLKN | MillerKnoll, Inc. | piotroski | ✅ | 100% | 20.77 | 15.73 | 1.07 | 6.82 | 1.58 | 1.93 | 589,511 | — |
-| AEIS | ADVANCED ENERGY INDUSTRIES,  | piotroski | ✅ | 78% | 284 | 74.02 | 8.05 | 10.89 | 1.59 | 0.86 | 388,257 | — |
-| MBLY | Mobileye Global Inc. | piotroski | ✅ | 78% | 7.06 | — | 0.48 | -3.30 | 6.10 | 0.05 | 7M | — |
-| AVNW | Aviat Networks, Inc. | piotroski | ✅ | 78% | 20.42 | 107 | 0.99 | 0.95 | 1.97 | 1.24 | 96,040 | — |
-| SHC | SOTERA HEALTH COMPANY | piotroski | ✅ | 78% | 17.83 | 66.04 | 8.43 | 12.86 | 2.46 | 4.38 | 2M | — |
-| ADV | Advantage Solutions Inc. | piotroski | ✅ | 78% | 30.58 | — | 17.92 | -41.11 | 2.25 | 4.04 | 44,858 | — |
-| YELP | YELP INC | graham | ▫️ | 78% | 19.37 | 8.65 | 1.77 | 20.48 | 2.99 | 0.35 | 2M | — |
-| YELP | YELP INC | buffett | ▫️ | 50% | 19.37 | 8.65 | 1.77 | 20.48 | 2.99 | 0.35 | 2M | — |
-| YELP | YELP INC | lynch | ▫️ | 50% | 19.37 | 8.65 | 1.77 | 20.48 | 2.99 | 0.35 | 2M | — |
-| YELP | YELP INC | netnet | ▫️ | 50% | 19.37 | 8.65 | 1.77 | 20.48 | 2.99 | 0.35 | 2M | — |
-| YELP | YELP INC | custom | ▫️ | 0% | 19.37 | 8.65 | 1.77 | 20.48 | 2.99 | 0.35 | 2M | — |
-| VITL | Vital Farms, Inc. | greenblatt | ▫️ | 67% | 9.44 | 6.55 | 1.24 | 18.87 | 2.16 | 0.48 | 2M | — |
-| VITL | Vital Farms, Inc. | buffett | ▫️ | 50% | 9.44 | 6.55 | 1.24 | 18.87 | 2.16 | 0.48 | 2M | — |
-| VITL | Vital Farms, Inc. | netnet | ▫️ | 50% | 9.44 | 6.55 | 1.24 | 18.87 | 2.16 | 0.48 | 2M | — |
-| VITL | Vital Farms, Inc. | piotroski | ▫️ | 33% | 9.44 | 6.55 | 1.24 | 18.87 | 2.16 | 0.48 | 2M | — |
-| VITL | Vital Farms, Inc. | custom | ▫️ | 0% | 9.44 | 6.55 | 1.24 | 18.87 | 2.16 | 0.48 | 2M | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | piotroski | ▫️ | 67% | 2.66 | 13.30 | 2.97 | 22.71 | 4.86 | 0.39 | 635,105 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | greenblatt | ▫️ | 67% | 2.66 | 13.30 | 2.97 | 22.71 | 4.86 | 0.39 | 635,105 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | buffett | ▫️ | 50% | 2.66 | 13.30 | 2.97 | 22.71 | 4.86 | 0.39 | 635,105 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | lynch | ▫️ | 50% | 2.66 | 13.30 | 2.97 | 22.71 | 4.86 | 0.39 | 635,105 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | netnet | ▫️ | 50% | 2.66 | 13.30 | 2.97 | 22.71 | 4.86 | 0.39 | 635,105 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | graham | ▫️ | 44% | 2.66 | 13.30 | 2.97 | 22.71 | 4.86 | 0.39 | 635,105 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | custom | ▫️ | 0% | 2.66 | 13.30 | 2.97 | 22.71 | 4.86 | 0.39 | 635,105 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | piotroski | ▫️ | 44% | 24.65 | — | — | — | 2.10 | — | 237,115 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | graham | ▫️ | 33% | 24.65 | — | — | — | 2.10 | — | 237,115 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | buffett | ▫️ | 33% | 24.65 | — | — | — | 2.10 | — | 237,115 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | greenblatt | ▫️ | 33% | 24.65 | — | — | — | 2.10 | — | 237,115 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | lynch | ▫️ | 25% | 24.65 | — | — | — | 2.10 | — | 237,115 | — |
+| IBP | Installed Building Products, | piotroski | ✅ | 89% | 188 | 19.34 | 7.23 | 37.39 | 3.03 | 1.91 | 652,300 | — |
+| IBP | Installed Building Products, | lynch | ✅ | 75% | 188 | 19.34 | 7.23 | 37.39 | 3.03 | 1.91 | 652,300 | — |
+| AES | THE AES CORPORATION | greenblatt | ✅ | 100% | 14.93 | 11.85 | 2.62 | 22.40 | 0.77 | — | 13M | — |
+| BELFA | BEL FUSE INC /NJ | piotroski | ✅ | 89% | 195 | — | — | 14.46 | 3.02 | 0.98 | 149,393 | — |
+| HRB | H&R BLOCK INC | greenblatt | ✅ | 100% | 44.59 | 7.88 | 48.91 | 624 | 1.13 | 26.72 | 2M | — |
+| HRB | H&R BLOCK INC | piotroski | ✅ | 89% | 44.59 | 7.88 | 48.91 | 624 | 1.13 | 26.72 | 2M | — |
+| AIR | AAR CORP | piotroski | ✅ | 78% | 102 | 20.90 | 2.29 | 11.02 | 2.84 | — | 487,460 | — |
+| AIR | AAR CORP | lynch | ✅ | 75% | 102 | 20.90 | 2.29 | 11.02 | 2.84 | — | 487,460 | — |
+| SSB | SOUTHSTATE BANK CORP | lynch | ✅ | 75% | 101 | 12.78 | 1.13 | 8.82 | — | 6.42 | 881,723 | — |
+| KBR | KBR, Inc. | piotroski | ✅ | 89% | 35.18 | 10.96 | 3.02 | 27.61 | 1.22 | 3.37 | 2M | — |
+| UMBF | UMB FINANCIAL CORP | lynch | ✅ | 75% | 130 | 14.04 | 1.25 | 9.13 | — | 8.50 | 983,601 | — |
+| AM | ANTERO MIDSTREAM CORPORATION | piotroski | ✅ | 78% | 21.19 | 24.64 | 5.18 | 20.95 | 3.41 | 1.98 | 2M | — |
+| FCF | FIRST COMMONWEALTH FINANCIAL | lynch | ✅ | 75% | 20.06 | 13.65 | 1.34 | 9.80 | — | 6.94 | 1M | — |
+| SIRI | SIRIUS XM HOLDINGS INC. | lynch | ✅ | 75% | 26.33 | 11.81 | 0.81 | 6.96 | 0.30 | 1.36 | 4M | — |
+| DLB | Dolby Laboratories, Inc. | piotroski | ✅ | 78% | 58.45 | 22.31 | 2.17 | 9.72 | 3.17 | 0.23 | 1M | — |
+| MYRG | MYR GROUP INC. | piotroski | ✅ | 89% | 311 | 41.28 | 7.40 | 17.93 | 1.33 | 1.49 | 224,639 | — |
+| BHC | Bausch Health Companies Inc. | piotroski | ✅ | 78% | 6.04 | 14.38 | — | -28.34 | 1.47 | -46.91 | 1M | — |
+| PLXS | PLEXUS CORP. | piotroski | ✅ | 89% | 261 | 41.75 | 4.96 | 11.89 | 1.58 | 1.16 | 185,448 | — |
+| QUAD | Quad/Graphics, Inc. | piotroski | ✅ | 78% | 9.49 | 17.57 | — | -45.38 | 0.86 | -18.90 | 210,105 | — |
+| KMT | KENNAMETAL INC. | piotroski | ▫️ | 67% | 31.71 | 7.17 | 1.56 | 21.81 | 2.62 | 0.99 | 2M | — |
+| KMT | KENNAMETAL INC. | greenblatt | ▫️ | 67% | 31.71 | 7.17 | 1.56 | 21.81 | 2.62 | 0.99 | 2M | — |
+| KMT | KENNAMETAL INC. | buffett | ▫️ | 50% | 31.71 | 7.17 | 1.56 | 21.81 | 2.62 | 0.99 | 2M | — |
+| KMT | KENNAMETAL INC. | netnet | ▫️ | 50% | 31.71 | 7.17 | 1.56 | 21.81 | 2.62 | 0.99 | 2M | — |
+| KMT | KENNAMETAL INC. | custom | ▫️ | 0% | 31.71 | 7.17 | 1.56 | 21.81 | 2.62 | 0.99 | 2M | — |
+| GEF | GREIF, INC. | buffett | ▫️ | 67% | 81.88 | — | — | 28.82 | 1.27 | — | 369,978 | — |
+| GEF | GREIF, INC. | greenblatt | ▫️ | 67% | 81.88 | — | — | 28.82 | 1.27 | — | 369,978 | — |
+| GEF | GREIF, INC. | piotroski | ▫️ | 56% | 81.88 | — | — | 28.82 | 1.27 | — | 369,978 | — |
+| GEF | GREIF, INC. | graham | ▫️ | 44% | 81.88 | — | — | 28.82 | 1.27 | — | 369,978 | — |
+| GEF | GREIF, INC. | lynch | ▫️ | 25% | 81.88 | — | — | 28.82 | 1.27 | — | 369,978 | — |
+| GEF | GREIF, INC. | netnet | ▫️ | 25% | 81.88 | — | — | 28.82 | 1.27 | — | 369,978 | — |
+| GEF | GREIF, INC. | custom | ▫️ | 0% | 81.88 | — | — | 28.82 | 1.27 | — | 369,978 | — |
+| LPG | DORIAN LPG LTD. | buffett | ▫️ | 67% | 58.23 | 12.83 | 2.18 | 17.00 | 2.67 | 0.64 | 511,620 | — |
+| LPG | DORIAN LPG LTD. | graham | ▫️ | 56% | 58.23 | 12.83 | 2.18 | 17.00 | 2.67 | 0.64 | 511,620 | — |
+| LPG | DORIAN LPG LTD. | greenblatt | ▫️ | 33% | 58.23 | 12.83 | 2.18 | 17.00 | 2.67 | 0.64 | 511,620 | — |
+| LPG | DORIAN LPG LTD. | netnet | ▫️ | 25% | 58.23 | 12.83 | 2.18 | 17.00 | 2.67 | 0.64 | 511,620 | — |
+| LPG | DORIAN LPG LTD. | custom | ▫️ | 0% | 58.23 | 12.83 | 2.18 | 17.00 | 2.67 | 0.64 | 511,620 | — |
+| BOOT | Boot Barn Holdings, Inc. | graham | ▫️ | 67% | 122 | 16.54 | 2.83 | 17.13 | 2.65 | 0.86 | 589,188 | — |
+| BOOT | Boot Barn Holdings, Inc. | buffett | ▫️ | 67% | 122 | 16.54 | 2.83 | 17.13 | 2.65 | 0.86 | 589,188 | — |
+| BOOT | Boot Barn Holdings, Inc. | greenblatt | ▫️ | 33% | 122 | 16.54 | 2.83 | 17.13 | 2.65 | 0.86 | 589,188 | — |
+| BOOT | Boot Barn Holdings, Inc. | netnet | ▫️ | 25% | 122 | 16.54 | 2.83 | 17.13 | 2.65 | 0.86 | 589,188 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
