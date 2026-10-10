@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-MLI,MUELLER INDUSTRIES INC,buffett,True,6,6,100.0,60.71,8.85,2.11,23.84,5.92,0.15,66.66,"828,670",—
-MLI,MUELLER INDUSTRIES INC,greenblatt,True,3,3,100.0,60.71,8.85,2.11,23.84,5.92,0.15,66.66,"828,670",—
-MLI,MUELLER INDUSTRIES INC,lynch,True,4,4,100.0,60.71,8.85,2.11,23.84,5.92,0.15,66.66,"828,670",—
-MLI,MUELLER INDUSTRIES INC,graham,True,8,9,88.9,60.71,8.85,2.11,23.84,5.92,0.15,66.66,"828,670",—
-MLI,MUELLER INDUSTRIES INC,piotroski,True,7,9,77.8,60.71,8.85,2.11,23.84,5.92,0.15,66.66,"828,670",—
-KRP,"Kimbell Royalty Partners, LP",piotroski,True,7,9,77.8,15.24,—,—,—,8.64,—,—,"546,476",—
-UVE,"UNIVERSAL INSURANCE HOLDINGS, INC.",greenblatt,True,3,3,100.0,45.85,7.25,2.41,33.20,—,4.15,52.02,"196,080",—
-UVE,"UNIVERSAL INSURANCE HOLDINGS, INC.",piotroski,True,8,9,88.9,45.85,7.25,2.41,33.20,—,4.15,52.02,"196,080",—
-SON,Sonoco Products Company,piotroski,True,8,9,88.9,47.92,4.76,1.32,27.75,1.05,2.08,90.68,"694,442",—
-SON,Sonoco Products Company,lynch,True,3,4,75.0,47.92,4.76,1.32,27.75,1.05,2.08,90.68,"694,442",—
+TDW,TIDEWATER INC,piotroski,True,8,9,88.9,85.42,12.86,3.16,24.51,2.90,—,63.60,"470,510",—
+TMDX,"TransMedics Group, Inc.",piotroski,True,7,9,77.8,77.87,15.99,6.67,40.22,7.14,1.26,35.76,"733,651",—
+PPC,PILGRIM’S PRIDE CORPORATION,piotroski,True,7,9,77.8,28.65,6.31,1.86,29.41,1.47,1.81,39.71,"998,253",—
+NSSC,"NAPCO SECURITY TECHNOLOGIES, INC",buffett,True,6,6,100.0,36.14,30.12,6.79,22.53,4.90,0.25,11.99,"230,106",—
+NSSC,"NAPCO SECURITY TECHNOLOGIES, INC",lynch,True,3,4,75.0,36.14,30.12,6.79,22.53,4.90,0.25,11.99,"230,106",—
 MCRI,"MONARCH CASINO & RESORT, INC.",piotroski,True,9,9,100.0,114,21.06,3.97,18.86,0.86,0.33,59.33,"120,306",—
 MCRI,"MONARCH CASINO & RESORT, INC.",lynch,True,4,4,100.0,114,21.06,3.97,18.86,0.86,0.33,59.33,"120,306",—
 MCRI,"MONARCH CASINO & RESORT, INC.",buffett,True,5,6,83.3,114,21.06,3.97,18.86,0.86,0.33,59.33,"120,306",—
-TREE,"LendingTree, Inc.",greenblatt,True,3,3,100.0,25.19,2.34,1.24,52.76,1.67,1.98,70.33,"222,494",—
-LNN,Lindsay Corporation,piotroski,True,7,9,77.8,112,16.52,2.30,13.90,3.71,0.58,86.29,"158,955",—
-LNN,Lindsay Corporation,lynch,True,3,4,75.0,112,16.52,2.30,13.90,3.71,0.58,86.29,"158,955",—
-AREC,AMERICAN RESOURCES CORPORATION,greenblatt,True,3,3,100.0,1.59,2.52,1.46,58.44,2.19,0.80,3.92,2M,—
+AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",piotroski,True,9,9,100.0,162,22.86,7.84,34.27,1.46,—,57.37,"258,930",—
+XPEL,"XPEL, INC.",buffett,True,6,6,100.0,44.43,24.02,4.39,18.28,3.25,0.35,20.53,"101,044",—
+XPEL,"XPEL, INC.",lynch,True,3,4,75.0,44.43,24.02,4.39,18.28,3.25,0.35,20.53,"101,044",—
 AES,THE AES CORPORATION,greenblatt,True,3,3,100.0,14.94,11.86,2.63,22.40,0.77,—,12.70,6M,—
-BELFA,BEL FUSE INC /NJ,piotroski,True,8,9,88.9,195,—,—,14.46,3.02,0.98,—,"137,861",—
-CVSA,Covista Inc.,lynch,True,3,4,75.0,129,18.38,3.20,17.40,1.09,1.08,80.09,"195,877",—
-WNC,WABASH NATIONAL CORPORATION,greenblatt,True,3,3,100.0,13.20,2.60,1.50,57.56,1.39,2.18,31.68,"428,229",—
-BYND,"BEYOND MEAT, INC.",greenblatt,True,3,3,100.0,7.70,—,—,"-21,968",4.56,—,—,"784,274",—
-JOE,The St. Joe Company,piotroski,True,8,9,88.9,64.86,32.59,4.91,15.09,—,0.97,24.33,"252,015",—
-ORI,OLD REPUBLIC INTERNATIONAL CORPORATION,piotroski,True,7,9,77.8,38.17,10.26,1.62,15.82,—,4.05,44.38,"918,552",—
-BDC,BELDEN INC.,piotroski,True,8,9,88.9,109,18.47,3.47,18.78,1.93,—,64.66,"177,367",—
-VIRT,"Virtu Financial, Inc.",piotroski,True,7,9,77.8,57.51,11.21,3.10,29.60,—,11.49,46.27,"749,998",—
-EXTR,"Extreme Networks, Inc.",piotroski,True,8,9,88.9,24.19,78.03,36.85,47.54,0.93,—,2.14,1M,—
+PDYNW,Palladyne AI Corp.,netnet,True,4,4,100.0,0.00,0.01,0.00,13.44,9.28,0.28,3.09,4M,—
+NFG,NATIONAL FUEL GAS CO,piotroski,True,8,9,88.9,78.66,13.85,2.32,16.76,0.44,—,65.84,"576,019",—
+CIM,CHIMERA INVESTMENT CORPORATION,lynch,True,3,4,75.0,8.96,5.21,0.29,8.96,—,5.14,34.44,1M,—
+HOG,"Harley-Davidson, Inc.",graham,True,9,9,100.0,26.90,9.68,1.04,10.79,2.10,—,40.25,2M,—
+HOG,"Harley-Davidson, Inc.",piotroski,True,8,9,88.9,26.90,9.68,1.04,10.79,2.10,—,40.25,2M,—
+EFC,Ellington Financial Inc.,lynch,True,3,4,75.0,11.66,9.80,0.64,6.47,—,9.53,22.10,2M,—
+SHOE,"Shoe Station Group, Inc.",graham,True,8,9,88.9,12.75,6.71,0.51,7.58,3.76,0.74,32.72,1M,—
+OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,23.74,34.41,4.54,13.20,1.91,0.30,9.01,"366,570",—
+GEO,"The GEO Group, Inc.",piotroski,True,7,9,77.8,31.13,17.10,2.89,16.89,2.01,—,21.01,2M,—
+GEO,"The GEO Group, Inc.",lynch,True,3,4,75.0,31.13,17.10,2.89,16.89,2.01,—,21.01,2M,—
+OPLN,"OPENLANE, Inc.",piotroski,True,8,9,88.9,36.71,—,3.16,14.32,1.16,—,—,1M,—
+FAF,FIRST AMERICAN FINANCIAL CORPORATION,piotroski,True,8,9,88.9,61.20,10.20,1.15,11.31,—,1.95,84.61,"893,977",—
+GSHD,"GOOSEHEAD INSURANCE, INC.",lynch,True,3,4,75.0,43.51,41.84,—,-29.14,1.60,-6.05,—,"237,743",—
+MOS,MOSAIC CO,piotroski,True,8,9,88.9,18.74,11.02,0.49,4.47,1.32,—,38.07,14M,—
 FUL,FULLER H B CO,piotroski,True,7,9,77.8,49.56,18.02,1.37,7.59,1.70,1.59,47.32,"469,895",—
-CBZ,"CBIZ, Inc.",piotroski,True,7,9,77.8,54.82,29.96,1.97,6.55,1.22,1.50,33.87,"543,814",—
-SENS,"Senseonics Holdings, Inc.",piotroski,True,7,9,77.8,8.98,—,6.14,-113,4.83,1.07,—,"499,323",—
+LFST,"LifeStance Health Group, Inc.",piotroski,True,8,9,88.9,12.42,503,3.19,0.64,1.65,0.45,1.47,2M,—
+ZUMZ,ZUMIEZ INC,piotroski,True,8,9,88.9,14.48,18.56,0.77,4.13,2.01,0.99,18.16,"317,014",—
+SMG,Scotts Miracle-Gro Co,piotroski,True,7,9,77.8,49.86,20.19,—,-40.62,1.27,-8.67,—,"957,131",—
 WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,8,9,88.9,23.39,25.70,0.54,2.10,2.42,0.76,29.77,"570,813",—
-ARKO,ARKO Corp.,piotroski,True,7,9,77.8,4.11,27.40,1.77,8.51,1.66,11.85,2.80,"895,744",—
-GXO,"GXO Logistics, Inc.",piotroski,True,7,9,77.8,46.56,166,1.82,1.07,0.85,—,12.71,"587,395",—
-MLI,MUELLER INDUSTRIES INC,netnet,False,2,4,50.0,60.71,8.85,2.11,23.84,5.92,0.15,66.66,"828,670",—
-MLI,MUELLER INDUSTRIES INC,custom,False,0,0,0.0,60.71,8.85,2.11,23.84,5.92,0.15,66.66,"828,670",—
-KRP,"Kimbell Royalty Partners, LP",graham,False,3,9,33.3,15.24,—,—,—,8.64,—,—,"546,476",—
-KRP,"Kimbell Royalty Partners, LP",greenblatt,False,1,3,33.3,15.24,—,—,—,8.64,—,—,"546,476",—
-KRP,"Kimbell Royalty Partners, LP",lynch,False,1,4,25.0,15.24,—,—,—,8.64,—,—,"546,476",—
-KRP,"Kimbell Royalty Partners, LP",netnet,False,1,4,25.0,15.24,—,—,—,8.64,—,—,"546,476",—
-KRP,"Kimbell Royalty Partners, LP",buffett,False,1,6,16.7,15.24,—,—,—,8.64,—,—,"546,476",—
-KRP,"Kimbell Royalty Partners, LP",custom,False,0,0,0.0,15.24,—,—,—,8.64,—,—,"546,476",—
-UVE,"UNIVERSAL INSURANCE HOLDINGS, INC.",buffett,False,4,6,66.7,45.85,7.25,2.41,33.20,—,4.15,52.02,"196,080",—
-UVE,"UNIVERSAL INSURANCE HOLDINGS, INC.",graham,False,5,9,55.6,45.85,7.25,2.41,33.20,—,4.15,52.02,"196,080",—
-UVE,"UNIVERSAL INSURANCE HOLDINGS, INC.",lynch,False,2,4,50.0,45.85,7.25,2.41,33.20,—,4.15,52.02,"196,080",—
-UVE,"UNIVERSAL INSURANCE HOLDINGS, INC.",netnet,False,1,4,25.0,45.85,7.25,2.41,33.20,—,4.15,52.02,"196,080",—
-UVE,"UNIVERSAL INSURANCE HOLDINGS, INC.",custom,False,0,0,0.0,45.85,7.25,2.41,33.20,—,4.15,52.02,"196,080",—
-SON,Sonoco Products Company,graham,False,6,9,66.7,47.92,4.76,1.32,27.75,1.05,2.08,90.68,"694,442",—
-SON,Sonoco Products Company,buffett,False,4,6,66.7,47.92,4.76,1.32,27.75,1.05,2.08,90.68,"694,442",—
-SON,Sonoco Products Company,greenblatt,False,2,3,66.7,47.92,4.76,1.32,27.75,1.05,2.08,90.68,"694,442",—
-SON,Sonoco Products Company,netnet,False,1,4,25.0,47.92,4.76,1.32,27.75,1.05,2.08,90.68,"694,442",—
+AEIS,"ADVANCED ENERGY INDUSTRIES, INC.",piotroski,True,7,9,77.8,289,75.17,8.18,10.89,1.59,0.86,55.23,"252,211",—
+OMCL,"OMNICELL, INC",piotroski,True,7,9,77.8,35.82,896,1.35,0.17,1.43,0.60,4.89,"303,069",—
+ORN,"ORION GROUP HOLDINGS, INC.",piotroski,True,7,9,77.8,9.15,152,2.28,1.56,1.36,1.61,2.33,"239,977",—
+TDW,TIDEWATER INC,buffett,False,3,6,50.0,85.42,12.86,3.16,24.51,2.90,—,63.60,"470,510",—
+TDW,TIDEWATER INC,graham,False,4,9,44.4,85.42,12.86,3.16,24.51,2.90,—,63.60,"470,510",—
+TDW,TIDEWATER INC,greenblatt,False,1,3,33.3,85.42,12.86,3.16,24.51,2.90,—,63.60,"470,510",—
+TDW,TIDEWATER INC,lynch,False,1,4,25.0,85.42,12.86,3.16,24.51,2.90,—,63.60,"470,510",—
+TDW,TIDEWATER INC,netnet,False,1,4,25.0,85.42,12.86,3.16,24.51,2.90,—,63.60,"470,510",—
+TDW,TIDEWATER INC,custom,False,0,0,0.0,85.42,12.86,3.16,24.51,2.90,—,63.60,"470,510",—
+TMDX,"TransMedics Group, Inc.",greenblatt,False,2,3,66.7,77.87,15.99,6.67,40.22,7.14,1.26,35.76,"733,651",—
+TMDX,"TransMedics Group, Inc.",netnet,False,2,4,50.0,77.87,15.99,6.67,40.22,7.14,1.26,35.76,"733,651",—
+TMDX,"TransMedics Group, Inc.",graham,False,3,9,33.3,77.87,15.99,6.67,40.22,7.14,1.26,35.76,"733,651",—
+TMDX,"TransMedics Group, Inc.",buffett,False,2,6,33.3,77.87,15.99,6.67,40.22,7.14,1.26,35.76,"733,651",—
+TMDX,"TransMedics Group, Inc.",lynch,False,1,4,25.0,77.87,15.99,6.67,40.22,7.14,1.26,35.76,"733,651",—
+TMDX,"TransMedics Group, Inc.",custom,False,0,0,0.0,77.87,15.99,6.67,40.22,7.14,1.26,35.76,"733,651",—
+PPC,PILGRIM’S PRIDE CORPORATION,graham,False,6,9,66.7,28.65,6.31,1.86,29.41,1.47,1.81,39.71,"998,253",—
+PPC,PILGRIM’S PRIDE CORPORATION,greenblatt,False,2,3,66.7,28.65,6.31,1.86,29.41,1.47,1.81,39.71,"998,253",—
+PPC,PILGRIM’S PRIDE CORPORATION,buffett,False,3,6,50.0,28.65,6.31,1.86,29.41,1.47,1.81,39.71,"998,253",—
+PPC,PILGRIM’S PRIDE CORPORATION,lynch,False,2,4,50.0,28.65,6.31,1.86,29.41,1.47,1.81,39.71,"998,253",—
