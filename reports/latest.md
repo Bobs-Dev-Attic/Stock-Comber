@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-10 07:15 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-10 13:36 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **34** strategy matches passed.
+Screened **75** companies · **33** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| GOOGN | Alphabet Inc. | graham | ✅ | 100% | 49.41 | 4.57 | 1.46 | 31.83 | 2.01 | 0.43 | 427,918 | — |
-| GOOGN | Alphabet Inc. | buffett | ✅ | 100% | 49.41 | 4.57 | 1.46 | 31.83 | 2.01 | 0.43 | 427,918 | — |
-| GOOGN | Alphabet Inc. | greenblatt | ✅ | 100% | 49.41 | 4.57 | 1.46 | 31.83 | 2.01 | 0.43 | 427,918 | — |
-| GOOGN | Alphabet Inc. | lynch | ✅ | 100% | 49.41 | 4.57 | 1.46 | 31.83 | 2.01 | 0.43 | 427,918 | — |
-| SBC | SBC Medical Group Holdings I | lynch | ✅ | 75% | 5.42 | 10.84 | 2.25 | 20.54 | 3.78 | 0.47 | 156,903 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | piotroski | ✅ | 78% | 74.96 | 14.76 | 2.03 | 13.75 | 10.06 | 0.12 | 765,036 | — |
-| BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 120 | 16.32 | 2.80 | 17.13 | 2.65 | 0.86 | 471,678 | — |
-| BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 120 | 16.32 | 2.80 | 17.13 | 2.65 | 0.86 | 471,678 | — |
-| TREE | LendingTree, Inc. | greenblatt | ✅ | 100% | 25.19 | 2.34 | 1.24 | 52.76 | 1.67 | 1.98 | 222,423 | — |
-| TRNO | Terreno Realty Corporation | lynch | ✅ | 100% | 64.79 | 16.57 | 1.61 | 9.72 | — | 0.30 | 402,305 | — |
-| PJT | PJT Partners Inc. | buffett | ✅ | 83% | 137 | — | — | 58.43 | — | 2.71 | 343,533 | — |
-| PJT | PJT Partners Inc. | piotroski | ✅ | 78% | 137 | — | — | 58.43 | — | 2.71 | 343,533 | — |
-| BKV | BKV Corp | piotroski | ✅ | 78% | 24.24 | 12.24 | 1.03 | 8.49 | 1.78 | 0.52 | 2M | — |
-| FTDR | Frontdoor, Inc. | piotroski | ✅ | 89% | 79.80 | 23.33 | 24.57 | 105 | 1.55 | — | 541,408 | — |
-| FTDR | Frontdoor, Inc. | buffett | ✅ | 83% | 79.80 | 23.33 | 24.57 | 105 | 1.55 | — | 541,408 | — |
-| BANC | BANC OF CALIFORNIA, INC. | piotroski | ✅ | 78% | 17.30 | 14.79 | 0.79 | 6.47 | — | 8.83 | 1M | — |
-| PLUS | ePlus inc. | piotroski | ✅ | 78% | 93.30 | 18.55 | 2.30 | 12.41 | 2.24 | 0.68 | 157,413 | — |
-| AGCO | AGCO CORP /DE | piotroski | ✅ | 89% | 103 | 10.59 | 1.80 | 17.00 | 1.39 | 1.72 | 1M | — |
-| LCII | LCI INDUSTRIES | piotroski | ✅ | 89% | 78.30 | 10.34 | 1.43 | 13.83 | 2.85 | 1.33 | 233,141 | — |
-| POST | Post Holdings, Inc. | lynch | ✅ | 75% | 74.82 | 13.58 | 1.25 | 8.94 | 1.67 | 2.60 | 585,063 | — |
-| BCPC | Balchem Corporation | piotroski | ✅ | 100% | 168 | 35.33 | 4.35 | 12.31 | 2.07 | 0.34 | 264,221 | — |
-| CPK | CHESAPEAKE UTILITIES CORP | piotroski | ✅ | 78% | 128 | 21.40 | 1.88 | 8.78 | 0.45 | — | 70,556 | — |
-| BCO | BRINK’S CO | piotroski | ✅ | 78% | 103 | 22.05 | 15.82 | 71.91 | 1.51 | 24.96 | 236,257 | — |
+| MLI | MUELLER INDUSTRIES INC | buffett | ✅ | 100% | 60.71 | 8.85 | 2.11 | 23.84 | 5.92 | 0.15 | 828,670 | — |
+| MLI | MUELLER INDUSTRIES INC | greenblatt | ✅ | 100% | 60.71 | 8.85 | 2.11 | 23.84 | 5.92 | 0.15 | 828,670 | — |
+| MLI | MUELLER INDUSTRIES INC | lynch | ✅ | 100% | 60.71 | 8.85 | 2.11 | 23.84 | 5.92 | 0.15 | 828,670 | — |
+| MLI | MUELLER INDUSTRIES INC | graham | ✅ | 89% | 60.71 | 8.85 | 2.11 | 23.84 | 5.92 | 0.15 | 828,670 | — |
+| MLI | MUELLER INDUSTRIES INC | piotroski | ✅ | 78% | 60.71 | 8.85 | 2.11 | 23.84 | 5.92 | 0.15 | 828,670 | — |
+| KRP | Kimbell Royalty Partners, LP | piotroski | ✅ | 78% | 15.24 | — | — | — | 8.64 | — | 546,476 | — |
+| UVE | UNIVERSAL INSURANCE HOLDINGS | greenblatt | ✅ | 100% | 45.85 | 7.25 | 2.41 | 33.20 | — | 4.15 | 196,080 | — |
+| UVE | UNIVERSAL INSURANCE HOLDINGS | piotroski | ✅ | 89% | 45.85 | 7.25 | 2.41 | 33.20 | — | 4.15 | 196,080 | — |
+| SON | Sonoco Products Company | piotroski | ✅ | 89% | 47.92 | 4.76 | 1.32 | 27.75 | 1.05 | 2.08 | 694,442 | — |
+| SON | Sonoco Products Company | lynch | ✅ | 75% | 47.92 | 4.76 | 1.32 | 27.75 | 1.05 | 2.08 | 694,442 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | piotroski | ✅ | 100% | 114 | 21.06 | 3.97 | 18.86 | 0.86 | 0.33 | 120,306 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | lynch | ✅ | 100% | 114 | 21.06 | 3.97 | 18.86 | 0.86 | 0.33 | 120,306 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | buffett | ✅ | 83% | 114 | 21.06 | 3.97 | 18.86 | 0.86 | 0.33 | 120,306 | — |
+| TREE | LendingTree, Inc. | greenblatt | ✅ | 100% | 25.19 | 2.34 | 1.24 | 52.76 | 1.67 | 1.98 | 222,494 | — |
+| LNN | Lindsay Corporation | piotroski | ✅ | 78% | 112 | 16.52 | 2.30 | 13.90 | 3.71 | 0.58 | 158,955 | — |
+| LNN | Lindsay Corporation | lynch | ✅ | 75% | 112 | 16.52 | 2.30 | 13.90 | 3.71 | 0.58 | 158,955 | — |
+| AREC | AMERICAN RESOURCES CORPORATI | greenblatt | ✅ | 100% | 1.59 | 2.52 | 1.46 | 58.44 | 2.19 | 0.80 | 2M | — |
+| AES | THE AES CORPORATION | greenblatt | ✅ | 100% | 14.94 | 11.86 | 2.63 | 22.40 | 0.77 | — | 6M | — |
+| BELFA | BEL FUSE INC /NJ | piotroski | ✅ | 89% | 195 | — | — | 14.46 | 3.02 | 0.98 | 137,861 | — |
+| CVSA | Covista Inc. | lynch | ✅ | 75% | 129 | 18.38 | 3.20 | 17.40 | 1.09 | 1.08 | 195,877 | — |
+| WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 13.20 | 2.60 | 1.50 | 57.56 | 1.39 | 2.18 | 428,229 | — |
+| BYND | BEYOND MEAT, INC. | greenblatt | ✅ | 100% | 7.70 | — | — | -21,968 | 4.56 | — | 784,274 | — |
+| JOE | The St. Joe Company | piotroski | ✅ | 89% | 64.86 | 32.59 | 4.91 | 15.09 | — | 0.97 | 252,015 | — |
+| ORI | OLD REPUBLIC INTERNATIONAL C | piotroski | ✅ | 78% | 38.17 | 10.26 | 1.62 | 15.82 | — | 4.05 | 918,552 | — |
+| BDC | BELDEN INC. | piotroski | ✅ | 89% | 109 | 18.47 | 3.47 | 18.78 | 1.93 | — | 177,367 | — |
+| VIRT | Virtu Financial, Inc. | piotroski | ✅ | 78% | 57.51 | 11.21 | 3.10 | 29.60 | — | 11.49 | 749,998 | — |
 | EXTR | Extreme Networks, Inc. | piotroski | ✅ | 89% | 24.19 | 78.03 | 36.85 | 47.54 | 0.93 | — | 1M | — |
-| MYRG | MYR GROUP INC. | piotroski | ✅ | 89% | 312 | 41.39 | 7.42 | 17.93 | 1.33 | 1.49 | 168,002 | — |
-| FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 15.78 | 83.05 | 6.47 | 7.83 | 4.94 | 0.33 | 4M | — |
-| AMCX | AMC Global Media Inc. | piotroski | ✅ | 78% | 10.81 | 6.51 | 0.62 | 9.11 | 1.67 | 2.98 | 362,474 | — |
-| RH | RH | piotroski | ✅ | 89% | 117 | 18.54 | 38.21 | 206 | 1.19 | 78.80 | 900,178 | — |
+| FUL | FULLER H B CO | piotroski | ✅ | 78% | 49.56 | 18.02 | 1.37 | 7.59 | 1.70 | 1.59 | 469,895 | — |
+| CBZ | CBIZ, Inc. | piotroski | ✅ | 78% | 54.82 | 29.96 | 1.97 | 6.55 | 1.22 | 1.50 | 543,814 | — |
 | SENS | Senseonics Holdings, Inc. | piotroski | ✅ | 78% | 8.98 | — | 6.14 | -113 | 4.83 | 1.07 | 499,323 | — |
-| ZUMZ | ZUMIEZ INC | piotroski | ✅ | 89% | 14.48 | 18.56 | 0.77 | 4.13 | 2.01 | 0.99 | 317,014 | — |
-| BNED | BARNES & NOBLE EDUCATION, IN | piotroski | ✅ | 89% | 12.51 | 25.53 | 1.47 | 5.73 | 1.71 | 1.51 | 201,953 | — |
 | WGO | WINNEBAGO INDUSTRIES, INC. | piotroski | ✅ | 89% | 23.39 | 25.70 | 0.54 | 2.10 | 2.42 | 0.76 | 570,813 | — |
-| PRLB | Proto Labs Inc | piotroski | ✅ | 89% | 93.84 | 107 | 3.38 | 3.15 | 3.49 | 0.13 | 140,290 | — |
-| LILA | Liberty Latin America Ltd. | piotroski | ✅ | 78% | 8.10 | — | 2.91 | -110 | 1.14 | 20.09 | 510,681 | — |
-| GOOGN | Alphabet Inc. | piotroski | ▫️ | 67% | 49.41 | 4.57 | 1.46 | 31.83 | 2.01 | 0.43 | 427,918 | — |
-| GOOGN | Alphabet Inc. | netnet | ▫️ | 50% | 49.41 | 4.57 | 1.46 | 31.83 | 2.01 | 0.43 | 427,918 | — |
-| GOOGN | Alphabet Inc. | custom | ▫️ | 0% | 49.41 | 4.57 | 1.46 | 31.83 | 2.01 | 0.43 | 427,918 | — |
-| SBC | SBC Medical Group Holdings I | buffett | ▫️ | 67% | 5.42 | 10.84 | 2.25 | 20.54 | 3.78 | 0.47 | 156,903 | — |
-| SBC | SBC Medical Group Holdings I | greenblatt | ▫️ | 67% | 5.42 | 10.84 | 2.25 | 20.54 | 3.78 | 0.47 | 156,903 | — |
-| SBC | SBC Medical Group Holdings I | graham | ▫️ | 56% | 5.42 | 10.84 | 2.25 | 20.54 | 3.78 | 0.47 | 156,903 | — |
-| SBC | SBC Medical Group Holdings I | netnet | ▫️ | 50% | 5.42 | 10.84 | 2.25 | 20.54 | 3.78 | 0.47 | 156,903 | — |
-| SBC | SBC Medical Group Holdings I | piotroski | ▫️ | 44% | 5.42 | 10.84 | 2.25 | 20.54 | 3.78 | 0.47 | 156,903 | — |
-| SBC | SBC Medical Group Holdings I | custom | ▫️ | 0% | 5.42 | 10.84 | 2.25 | 20.54 | 3.78 | 0.47 | 156,903 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | graham | ▫️ | 67% | 74.96 | 14.76 | 2.03 | 13.75 | 10.06 | 0.12 | 765,036 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | buffett | ▫️ | 67% | 74.96 | 14.76 | 2.03 | 13.75 | 10.06 | 0.12 | 765,036 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | lynch | ▫️ | 50% | 74.96 | 14.76 | 2.03 | 13.75 | 10.06 | 0.12 | 765,036 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | netnet | ▫️ | 50% | 74.96 | 14.76 | 2.03 | 13.75 | 10.06 | 0.12 | 765,036 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | greenblatt | ▫️ | 33% | 74.96 | 14.76 | 2.03 | 13.75 | 10.06 | 0.12 | 765,036 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | custom | ▫️ | 0% | 74.96 | 14.76 | 2.03 | 13.75 | 10.06 | 0.12 | 765,036 | — |
-| BOOT | Boot Barn Holdings, Inc. | graham | ▫️ | 67% | 120 | 16.32 | 2.80 | 17.13 | 2.65 | 0.86 | 471,678 | — |
+| ARKO | ARKO Corp. | piotroski | ✅ | 78% | 4.11 | 27.40 | 1.77 | 8.51 | 1.66 | 11.85 | 895,744 | — |
+| GXO | GXO Logistics, Inc. | piotroski | ✅ | 78% | 46.56 | 166 | 1.82 | 1.07 | 0.85 | — | 587,395 | — |
+| MLI | MUELLER INDUSTRIES INC | netnet | ▫️ | 50% | 60.71 | 8.85 | 2.11 | 23.84 | 5.92 | 0.15 | 828,670 | — |
+| MLI | MUELLER INDUSTRIES INC | custom | ▫️ | 0% | 60.71 | 8.85 | 2.11 | 23.84 | 5.92 | 0.15 | 828,670 | — |
+| KRP | Kimbell Royalty Partners, LP | graham | ▫️ | 33% | 15.24 | — | — | — | 8.64 | — | 546,476 | — |
+| KRP | Kimbell Royalty Partners, LP | greenblatt | ▫️ | 33% | 15.24 | — | — | — | 8.64 | — | 546,476 | — |
+| KRP | Kimbell Royalty Partners, LP | lynch | ▫️ | 25% | 15.24 | — | — | — | 8.64 | — | 546,476 | — |
+| KRP | Kimbell Royalty Partners, LP | netnet | ▫️ | 25% | 15.24 | — | — | — | 8.64 | — | 546,476 | — |
+| KRP | Kimbell Royalty Partners, LP | buffett | ▫️ | 17% | 15.24 | — | — | — | 8.64 | — | 546,476 | — |
+| KRP | Kimbell Royalty Partners, LP | custom | ▫️ | 0% | 15.24 | — | — | — | 8.64 | — | 546,476 | — |
+| UVE | UNIVERSAL INSURANCE HOLDINGS | buffett | ▫️ | 67% | 45.85 | 7.25 | 2.41 | 33.20 | — | 4.15 | 196,080 | — |
+| UVE | UNIVERSAL INSURANCE HOLDINGS | graham | ▫️ | 56% | 45.85 | 7.25 | 2.41 | 33.20 | — | 4.15 | 196,080 | — |
+| UVE | UNIVERSAL INSURANCE HOLDINGS | lynch | ▫️ | 50% | 45.85 | 7.25 | 2.41 | 33.20 | — | 4.15 | 196,080 | — |
+| UVE | UNIVERSAL INSURANCE HOLDINGS | netnet | ▫️ | 25% | 45.85 | 7.25 | 2.41 | 33.20 | — | 4.15 | 196,080 | — |
+| UVE | UNIVERSAL INSURANCE HOLDINGS | custom | ▫️ | 0% | 45.85 | 7.25 | 2.41 | 33.20 | — | 4.15 | 196,080 | — |
+| SON | Sonoco Products Company | graham | ▫️ | 67% | 47.92 | 4.76 | 1.32 | 27.75 | 1.05 | 2.08 | 694,442 | — |
+| SON | Sonoco Products Company | buffett | ▫️ | 67% | 47.92 | 4.76 | 1.32 | 27.75 | 1.05 | 2.08 | 694,442 | — |
+| SON | Sonoco Products Company | greenblatt | ▫️ | 67% | 47.92 | 4.76 | 1.32 | 27.75 | 1.05 | 2.08 | 694,442 | — |
+| SON | Sonoco Products Company | netnet | ▫️ | 25% | 47.92 | 4.76 | 1.32 | 27.75 | 1.05 | 2.08 | 694,442 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
