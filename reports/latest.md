@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-11 19:46 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-11 23:19 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **27** strategy matches passed.
+Screened **75** companies · **25** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| GOOGM | Alphabet Inc. | graham | ✅ | 100% | 49.76 | 4.60 | 1.47 | 31.83 | 2.01 | 0.43 | 1M | — |
-| GOOGM | Alphabet Inc. | buffett | ✅ | 100% | 49.76 | 4.60 | 1.47 | 31.83 | 2.01 | 0.43 | 1M | — |
-| GOOGM | Alphabet Inc. | greenblatt | ✅ | 100% | 49.76 | 4.60 | 1.47 | 31.83 | 2.01 | 0.43 | 1M | — |
-| GOOGM | Alphabet Inc. | lynch | ✅ | 100% | 49.76 | 4.60 | 1.47 | 31.83 | 2.01 | 0.43 | 1M | — |
-| SBC | SBC Medical Group Holdings I | lynch | ✅ | 75% | 5.42 | 10.84 | 2.25 | 20.54 | 3.78 | 0.47 | 156,905 | — |
-| USLM | UNITED STATES LIME & MINERAL | lynch | ✅ | 100% | 109 | 23.25 | 4.95 | 21.29 | 19.27 | 0.08 | 93,300 | — |
-| USLM | UNITED STATES LIME & MINERAL | buffett | ✅ | 83% | 109 | 23.25 | 4.95 | 21.29 | 19.27 | 0.08 | 93,300 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | piotroski | ✅ | 78% | 28.65 | 6.31 | 1.86 | 29.41 | 1.47 | 1.81 | 998,255 | — |
-| ESE | ESCO TECHNOLOGIES INC. | lynch | ✅ | 100% | 258 | 22.32 | 4.34 | 19.42 | 1.35 | 0.56 | 187,726 | — |
-| AX | Axos Financial, Inc. | lynch | ✅ | 75% | 88.44 | 10.43 | 1.58 | 15.49 | — | 8.46 | 212,193 | — |
-| TREE | LendingTree, Inc. | greenblatt | ✅ | 100% | 25.19 | 2.34 | 1.24 | 52.76 | 1.67 | 1.98 | 222,494 | — |
-| REX | REX AMERICAN RESOURCES CORPO | lynch | ✅ | 75% | 42.09 | 16.84 | 2.29 | 15.57 | 5.94 | — | 215,032 | — |
-| NFG | NATIONAL FUEL GAS CO | piotroski | ✅ | 89% | 78.66 | 13.85 | 2.32 | 16.76 | 0.44 | — | 576,019 | — |
-| PRDO | PERDOCEO EDUCATION CORP | piotroski | ✅ | 89% | 33.71 | 13.93 | 2.29 | 16.45 | 5.06 | — | 450,067 | — |
-| PAYC | Paycom Software, Inc. | buffett | ✅ | 83% | 232 | 28.74 | 7.53 | 26.19 | 1.09 | 3.39 | 406,866 | — |
-| NYT | THE NEW YORK TIMES COMPANY | piotroski | ✅ | 100% | 66.32 | 31.73 | 5.36 | 16.85 | 1.54 | — | 2M | — |
-| UFPT | UFP Technologies, Inc. | lynch | ✅ | 100% | 289 | 33.03 | 5.32 | 16.12 | 2.68 | 0.55 | 92,649 | — |
-| UFPT | UFP Technologies, Inc. | piotroski | ✅ | 89% | 289 | 33.03 | 5.32 | 16.12 | 2.68 | 0.55 | 92,649 | — |
-| HOG | Harley-Davidson, Inc. | graham | ✅ | 100% | 26.90 | 9.68 | 1.04 | 10.79 | 2.10 | — | 2M | — |
-| HOG | Harley-Davidson, Inc. | piotroski | ✅ | 89% | 26.90 | 9.68 | 1.04 | 10.79 | 2.10 | — | 2M | — |
-| FCFS | FIRSTCASH HOLDINGS, INC. | piotroski | ✅ | 78% | 214 | 28.80 | 4.18 | 14.51 | 4.55 | 1.33 | 188,557 | — |
-| ACA | Arcosa, Inc. | piotroski | ✅ | 100% | 147 | 34.71 | 2.73 | 7.89 | 2.20 | 0.89 | 423,890 | — |
-| HCSG | HEALTHCARE SERVICES GROUP, I | piotroski | ✅ | 100% | 20.59 | 25.42 | 2.95 | 11.58 | 3.38 | — | 446,300 | — |
-| LFST | LifeStance Health Group, Inc | piotroski | ✅ | 89% | 12.42 | 503 | 3.19 | 0.64 | 1.65 | 0.45 | 2M | — |
-| BNED | BARNES & NOBLE EDUCATION, IN | piotroski | ✅ | 89% | 12.51 | 25.53 | 1.47 | 5.73 | 1.71 | 1.51 | 201,953 | — |
-| THO | THOR INDUSTRIES, INC. | piotroski | ✅ | 78% | 63.87 | 18.90 | 0.79 | 4.17 | 1.77 | — | 752,640 | — |
-| TPC | Tutor Perini Corporation | piotroski | ✅ | 78% | 83.36 | 55.21 | 3.65 | 6.60 | 1.27 | 3.20 | 228,938 | — |
-| GOOGM | Alphabet Inc. | piotroski | ▫️ | 67% | 49.76 | 4.60 | 1.47 | 31.83 | 2.01 | 0.43 | 1M | — |
-| GOOGM | Alphabet Inc. | netnet | ▫️ | 50% | 49.76 | 4.60 | 1.47 | 31.83 | 2.01 | 0.43 | 1M | — |
-| GOOGM | Alphabet Inc. | custom | ▫️ | 0% | 49.76 | 4.60 | 1.47 | 31.83 | 2.01 | 0.43 | 1M | — |
-| SBC | SBC Medical Group Holdings I | buffett | ▫️ | 67% | 5.42 | 10.84 | 2.25 | 20.54 | 3.78 | 0.47 | 156,905 | — |
-| SBC | SBC Medical Group Holdings I | greenblatt | ▫️ | 67% | 5.42 | 10.84 | 2.25 | 20.54 | 3.78 | 0.47 | 156,905 | — |
-| SBC | SBC Medical Group Holdings I | graham | ▫️ | 56% | 5.42 | 10.84 | 2.25 | 20.54 | 3.78 | 0.47 | 156,905 | — |
-| SBC | SBC Medical Group Holdings I | netnet | ▫️ | 50% | 5.42 | 10.84 | 2.25 | 20.54 | 3.78 | 0.47 | 156,905 | — |
-| SBC | SBC Medical Group Holdings I | piotroski | ▫️ | 44% | 5.42 | 10.84 | 2.25 | 20.54 | 3.78 | 0.47 | 156,905 | — |
-| SBC | SBC Medical Group Holdings I | custom | ▫️ | 0% | 5.42 | 10.84 | 2.25 | 20.54 | 3.78 | 0.47 | 156,905 | — |
-| USLM | UNITED STATES LIME & MINERAL | piotroski | ▫️ | 67% | 109 | 23.25 | 4.95 | 21.29 | 19.27 | 0.08 | 93,300 | — |
-| USLM | UNITED STATES LIME & MINERAL | greenblatt | ▫️ | 67% | 109 | 23.25 | 4.95 | 21.29 | 19.27 | 0.08 | 93,300 | — |
-| USLM | UNITED STATES LIME & MINERAL | graham | ▫️ | 56% | 109 | 23.25 | 4.95 | 21.29 | 19.27 | 0.08 | 93,300 | — |
-| USLM | UNITED STATES LIME & MINERAL | netnet | ▫️ | 50% | 109 | 23.25 | 4.95 | 21.29 | 19.27 | 0.08 | 93,300 | — |
-| USLM | UNITED STATES LIME & MINERAL | custom | ▫️ | 0% | 109 | 23.25 | 4.95 | 21.29 | 19.27 | 0.08 | 93,300 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | graham | ▫️ | 67% | 28.65 | 6.31 | 1.86 | 29.41 | 1.47 | 1.81 | 998,255 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | greenblatt | ▫️ | 67% | 28.65 | 6.31 | 1.86 | 29.41 | 1.47 | 1.81 | 998,255 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | buffett | ▫️ | 50% | 28.65 | 6.31 | 1.86 | 29.41 | 1.47 | 1.81 | 998,255 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | lynch | ▫️ | 50% | 28.65 | 6.31 | 1.86 | 29.41 | 1.47 | 1.81 | 998,255 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | netnet | ▫️ | 25% | 28.65 | 6.31 | 1.86 | 29.41 | 1.47 | 1.81 | 998,255 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | custom | ▫️ | 0% | 28.65 | 6.31 | 1.86 | 29.41 | 1.47 | 1.81 | 998,255 | — |
-| ESE | ESCO TECHNOLOGIES INC. | buffett | ▫️ | 67% | 258 | 22.32 | 4.34 | 19.42 | 1.35 | 0.56 | 187,726 | — |
-| ESE | ESCO TECHNOLOGIES INC. | graham | ▫️ | 56% | 258 | 22.32 | 4.34 | 19.42 | 1.35 | 0.56 | 187,726 | — |
-| ESE | ESCO TECHNOLOGIES INC. | piotroski | ▫️ | 56% | 258 | 22.32 | 4.34 | 19.42 | 1.35 | 0.56 | 187,726 | — |
+| BYD | BOYD GAMING CORP | greenblatt | ✅ | 100% | 68.93 | 3.06 | 2.16 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | piotroski | ✅ | 78% | 68.93 | 3.06 | 2.16 | 70.66 | 0.54 | — | 1M | — |
+| MLI | MUELLER INDUSTRIES INC | buffett | ✅ | 100% | 60.71 | 8.85 | 2.11 | 23.84 | 5.92 | 0.15 | 828,670 | — |
+| MLI | MUELLER INDUSTRIES INC | greenblatt | ✅ | 100% | 60.71 | 8.85 | 2.11 | 23.84 | 5.92 | 0.15 | 828,670 | — |
+| MLI | MUELLER INDUSTRIES INC | lynch | ✅ | 100% | 60.71 | 8.85 | 2.11 | 23.84 | 5.92 | 0.15 | 828,670 | — |
+| MLI | MUELLER INDUSTRIES INC | graham | ✅ | 89% | 60.71 | 8.85 | 2.11 | 23.84 | 5.92 | 0.15 | 828,670 | — |
+| MLI | MUELLER INDUSTRIES INC | piotroski | ✅ | 78% | 60.71 | 8.85 | 2.11 | 23.84 | 5.92 | 0.15 | 828,670 | — |
+| OTTR | OTTER TAIL CORPORATION | lynch | ✅ | 75% | 87.46 | 13.35 | 1.98 | 14.82 | 2.28 | — | 131,158 | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | buffett | ✅ | 83% | 110 | 14.99 | 5.00 | 33.37 | 4.85 | 2.26 | 774,410 | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | lynch | ✅ | 75% | 110 | 14.99 | 5.00 | 33.37 | 4.85 | 2.26 | 774,410 | — |
+| AES | THE AES CORPORATION | greenblatt | ✅ | 100% | 14.94 | 11.86 | 2.63 | 22.40 | 0.77 | — | 6M | — |
+| BELFA | BEL FUSE INC /NJ | piotroski | ✅ | 89% | 195 | — | — | 14.46 | 3.02 | 0.98 | 138,468 | — |
+| CVSA | Covista Inc. | lynch | ✅ | 75% | 129 | 18.38 | 3.20 | 17.40 | 1.09 | 1.08 | 195,877 | — |
+| FULT | FULTON FINANCIAL CORP | lynch | ✅ | 75% | 22.10 | 10.62 | 1.16 | 11.22 | — | 8.20 | 970,791 | — |
+| GEO | The GEO Group, Inc. | piotroski | ✅ | 78% | 31.13 | 17.10 | 2.89 | 16.89 | 2.01 | — | 2M | — |
+| GEO | The GEO Group, Inc. | lynch | ✅ | 75% | 31.13 | 17.10 | 2.89 | 16.89 | 2.01 | — | 2M | — |
+| JJSF | J&J SNACK FOODS CORP. | lynch | ✅ | 75% | 81.13 | 24.15 | 1.64 | 6.79 | 2.72 | — | 235,114 | — |
+| SIRI | SIRIUS XM HOLDINGS INC. | lynch | ✅ | 75% | 26.51 | 11.89 | 0.82 | 6.96 | 0.30 | 1.36 | 8M | — |
+| PRK | PARK NATIONAL CORPORATION | piotroski | ✅ | 89% | 176 | 15.89 | 2.11 | 13.31 | — | 6.25 | 65,364 | — |
+| SSRM | SSR Mining Inc. | piotroski | ✅ | 78% | 35.51 | 19.19 | 2.20 | 11.28 | 2.08 | 0.51 | 2M | — |
+| MOS | MOSAIC CO | piotroski | ✅ | 89% | 18.74 | 11.02 | 0.49 | 4.47 | 1.32 | — | 14M | — |
+| CBZ | CBIZ, Inc. | piotroski | ✅ | 78% | 54.82 | 29.96 | 1.97 | 6.55 | 1.22 | 1.50 | 543,814 | — |
+| PRLB | Proto Labs Inc | piotroski | ✅ | 89% | 93.84 | 107 | 3.38 | 3.15 | 3.49 | 0.13 | 140,290 | — |
+| SHC | SOTERA HEALTH COMPANY | piotroski | ✅ | 78% | 18.06 | 66.89 | 8.54 | 12.86 | 2.46 | 4.38 | 2M | — |
+| CTRI | Centuri Holdings, Inc. | piotroski | ✅ | 78% | 20.90 | 83.60 | 2.16 | 2.57 | 1.78 | 1.75 | 1M | — |
+| BYD | BOYD GAMING CORP | buffett | ▫️ | 67% | 68.93 | 3.06 | 2.16 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | graham | ▫️ | 56% | 68.93 | 3.06 | 2.16 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | lynch | ▫️ | 25% | 68.93 | 3.06 | 2.16 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | netnet | ▫️ | 25% | 68.93 | 3.06 | 2.16 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | custom | ▫️ | 0% | 68.93 | 3.06 | 2.16 | 70.66 | 0.54 | — | 1M | — |
+| MLI | MUELLER INDUSTRIES INC | netnet | ▫️ | 50% | 60.71 | 8.85 | 2.11 | 23.84 | 5.92 | 0.15 | 828,670 | — |
+| MLI | MUELLER INDUSTRIES INC | custom | ▫️ | 0% | 60.71 | 8.85 | 2.11 | 23.84 | 5.92 | 0.15 | 828,670 | — |
+| IDR | IDAHO STRATEGIC RESOURCES, I | buffett | ▫️ | 67% | 23.79 | 20.87 | 3.23 | 15.45 | 13.96 | 0.05 | 1M | — |
+| IDR | IDAHO STRATEGIC RESOURCES, I | piotroski | ▫️ | 67% | 23.79 | 20.87 | 3.23 | 15.45 | 13.96 | 0.05 | 1M | — |
+| IDR | IDAHO STRATEGIC RESOURCES, I | lynch | ▫️ | 50% | 23.79 | 20.87 | 3.23 | 15.45 | 13.96 | 0.05 | 1M | — |
+| IDR | IDAHO STRATEGIC RESOURCES, I | netnet | ▫️ | 50% | 23.79 | 20.87 | 3.23 | 15.45 | 13.96 | 0.05 | 1M | — |
+| IDR | IDAHO STRATEGIC RESOURCES, I | graham | ▫️ | 33% | 23.79 | 20.87 | 3.23 | 15.45 | 13.96 | 0.05 | 1M | — |
+| IDR | IDAHO STRATEGIC RESOURCES, I | greenblatt | ▫️ | 33% | 23.79 | 20.87 | 3.23 | 15.45 | 13.96 | 0.05 | 1M | — |
+| IDR | IDAHO STRATEGIC RESOURCES, I | custom | ▫️ | 0% | 23.79 | 20.87 | 3.23 | 15.45 | 13.96 | 0.05 | 1M | — |
+| OTTR | OTTER TAIL CORPORATION | graham | ▫️ | 67% | 87.46 | 13.35 | 1.98 | 14.82 | 2.28 | — | 131,158 | — |
+| OTTR | OTTER TAIL CORPORATION | piotroski | ▫️ | 67% | 87.46 | 13.35 | 1.98 | 14.82 | 2.28 | — | 131,158 | — |
+| OTTR | OTTER TAIL CORPORATION | buffett | ▫️ | 50% | 87.46 | 13.35 | 1.98 | 14.82 | 2.28 | — | 131,158 | — |
+| OTTR | OTTER TAIL CORPORATION | greenblatt | ▫️ | 33% | 87.46 | 13.35 | 1.98 | 14.82 | 2.28 | — | 131,158 | — |
+| OTTR | OTTER TAIL CORPORATION | netnet | ▫️ | 25% | 87.46 | 13.35 | 1.98 | 14.82 | 2.28 | — | 131,158 | — |
+| OTTR | OTTER TAIL CORPORATION | custom | ▫️ | 0% | 87.46 | 13.35 | 1.98 | 14.82 | 2.28 | — | 131,158 | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | graham | ▫️ | 67% | 110 | 14.99 | 5.00 | 33.37 | 4.85 | 2.26 | 774,410 | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | piotroski | ▫️ | 56% | 110 | 14.99 | 5.00 | 33.37 | 4.85 | 2.26 | 774,410 | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | greenblatt | ▫️ | 33% | 110 | 14.99 | 5.00 | 33.37 | 4.85 | 2.26 | 774,410 | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | netnet | ▫️ | 25% | 110 | 14.99 | 5.00 | 33.37 | 4.85 | 2.26 | 774,410 | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | custom | ▫️ | 0% | 110 | 14.99 | 5.00 | 33.37 | 4.85 | 2.26 | 774,410 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
