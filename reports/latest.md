@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-11 09:07 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-11 15:25 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **23** strategy matches passed.
+Screened **75** companies · **34** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| TDW | TIDEWATER INC | piotroski | ✅ | 89% | 85.42 | 12.86 | 3.16 | 24.51 | 2.90 | — | 470,499 | — |
-| CASH | PATHWARD FINANCIAL, INC. | greenblatt | ✅ | 100% | 71.87 | 9.13 | 1.97 | 21.66 | — | 7.36 | 128,707 | — |
-| CASH | PATHWARD FINANCIAL, INC. | buffett | ✅ | 83% | 71.87 | 9.13 | 1.97 | 21.66 | — | 7.36 | 128,707 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | piotroski | ✅ | 78% | 74.96 | 14.76 | 2.03 | 13.75 | 10.06 | 0.12 | 765,089 | — |
-| NBR | NABORS INDUSTRIES LTD | piotroski | ✅ | 78% | 80.67 | 4.64 | 1.97 | 48.52 | 1.56 | 5.67 | 188,961 | — |
-| OTTR | OTTER TAIL CORPORATION | lynch | ✅ | 75% | 87.46 | 13.35 | 1.98 | 14.82 | 2.28 | — | 131,157 | — |
-| TRNO | Terreno Realty Corporation | lynch | ✅ | 100% | 64.79 | 16.57 | 1.61 | 9.72 | — | 0.30 | 402,305 | — |
-| AES | THE AES CORPORATION | greenblatt | ✅ | 100% | 14.94 | 11.86 | 2.63 | 22.40 | 0.77 | — | 6M | — |
-| WLDN | WILLDAN GROUP, INC. | piotroski | ✅ | 78% | 75.12 | 21.52 | 3.71 | 17.24 | 1.56 | 0.79 | 270,718 | — |
-| LMB | LIMBACH HOLDINGS, INC. | piotroski | ✅ | 78% | 51.26 | 15.87 | 3.16 | 19.97 | 1.44 | 0.95 | 231,979 | — |
-| LMB | LIMBACH HOLDINGS, INC. | lynch | ✅ | 75% | 51.26 | 15.87 | 3.16 | 19.97 | 1.44 | 0.95 | 231,979 | — |
-| DORM | Dorman Products, Inc. | piotroski | ✅ | 89% | 120 | 18.13 | 2.51 | 13.82 | 3.09 | — | 231,537 | — |
-| UCB | UNITED COMMUNITY BANKS, INC. | piotroski | ✅ | 78% | 33.38 | 12.74 | 1.11 | 9.02 | — | 6.70 | 627,022 | — |
-| KALU | KAISER ALUMINUM CORPORATION | piotroski | ✅ | 78% | 152 | 22.38 | 3.05 | 13.62 | 2.95 | 2.10 | 91,154 | — |
-| KALU | KAISER ALUMINUM CORPORATION | lynch | ✅ | 75% | 152 | 22.38 | 3.05 | 13.62 | 2.95 | 2.10 | 91,154 | — |
-| BBWI | BATH & BODY WORKS, INC. | greenblatt | ✅ | 100% | 17.34 | 5.58 | — | -50.66 | 1.27 | — | 7M | — |
-| RSI | Rush Street Interactive, Inc | piotroski | ✅ | 78% | 18.90 | 60.97 | 30.31 | 22.62 | 1.93 | 2.41 | 3M | — |
-| GRC | The Gorman-Rupp Company | piotroski | ✅ | 89% | 73.99 | 36.63 | 4.69 | 12.78 | 2.37 | 1.07 | 137,456 | — |
-| CURB | Curbline Properties Corp. | piotroski | ✅ | 78% | 27.01 | 73.00 | 1.49 | 2.09 | — | 0.29 | 2M | — |
-| CURB | Curbline Properties Corp. | lynch | ✅ | 75% | 27.01 | 73.00 | 1.49 | 2.09 | — | 0.29 | 2M | — |
-| MYRG | MYR GROUP INC. | piotroski | ✅ | 89% | 312 | 41.39 | 7.42 | 17.93 | 1.33 | 1.49 | 168,229 | — |
-| SPHR | SPHERE ENTERTAINMENT CO. | piotroski | ✅ | 78% | 106 | 144 | 2.16 | 1.50 | 1.09 | 0.89 | 729,843 | — |
-| TPC | Tutor Perini Corporation | piotroski | ✅ | 78% | 83.36 | 55.21 | 3.65 | 6.60 | 1.27 | 3.20 | 228,938 | — |
-| TDW | TIDEWATER INC | buffett | ▫️ | 50% | 85.42 | 12.86 | 3.16 | 24.51 | 2.90 | — | 470,499 | — |
-| TDW | TIDEWATER INC | graham | ▫️ | 44% | 85.42 | 12.86 | 3.16 | 24.51 | 2.90 | — | 470,499 | — |
-| TDW | TIDEWATER INC | greenblatt | ▫️ | 33% | 85.42 | 12.86 | 3.16 | 24.51 | 2.90 | — | 470,499 | — |
-| TDW | TIDEWATER INC | lynch | ▫️ | 25% | 85.42 | 12.86 | 3.16 | 24.51 | 2.90 | — | 470,499 | — |
-| TDW | TIDEWATER INC | netnet | ▫️ | 25% | 85.42 | 12.86 | 3.16 | 24.51 | 2.90 | — | 470,499 | — |
-| TDW | TIDEWATER INC | custom | ▫️ | 0% | 85.42 | 12.86 | 3.16 | 24.51 | 2.90 | — | 470,499 | — |
-| CASH | PATHWARD FINANCIAL, INC. | graham | ▫️ | 67% | 71.87 | 9.13 | 1.97 | 21.66 | — | 7.36 | 128,707 | — |
-| CASH | PATHWARD FINANCIAL, INC. | piotroski | ▫️ | 67% | 71.87 | 9.13 | 1.97 | 21.66 | — | 7.36 | 128,707 | — |
-| CASH | PATHWARD FINANCIAL, INC. | lynch | ▫️ | 50% | 71.87 | 9.13 | 1.97 | 21.66 | — | 7.36 | 128,707 | — |
-| CASH | PATHWARD FINANCIAL, INC. | netnet | ▫️ | 25% | 71.87 | 9.13 | 1.97 | 21.66 | — | 7.36 | 128,707 | — |
-| CASH | PATHWARD FINANCIAL, INC. | custom | ▫️ | 0% | 71.87 | 9.13 | 1.97 | 21.66 | — | 7.36 | 128,707 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | graham | ▫️ | 67% | 74.96 | 14.76 | 2.03 | 13.75 | 10.06 | 0.12 | 765,089 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | buffett | ▫️ | 67% | 74.96 | 14.76 | 2.03 | 13.75 | 10.06 | 0.12 | 765,089 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | lynch | ▫️ | 50% | 74.96 | 14.76 | 2.03 | 13.75 | 10.06 | 0.12 | 765,089 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | netnet | ▫️ | 50% | 74.96 | 14.76 | 2.03 | 13.75 | 10.06 | 0.12 | 765,089 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | greenblatt | ▫️ | 33% | 74.96 | 14.76 | 2.03 | 13.75 | 10.06 | 0.12 | 765,089 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | custom | ▫️ | 0% | 74.96 | 14.76 | 2.03 | 13.75 | 10.06 | 0.12 | 765,089 | — |
-| SKWD | SKYWARD SPECIALTY INSURANCE  | buffett | ▫️ | 67% | 58.32 | 14.33 | 2.42 | 16.84 | — | 3.75 | 241,501 | — |
-| SKWD | SKYWARD SPECIALTY INSURANCE  | piotroski | ▫️ | 67% | 58.32 | 14.33 | 2.42 | 16.84 | — | 3.75 | 241,501 | — |
-| SKWD | SKYWARD SPECIALTY INSURANCE  | lynch | ▫️ | 50% | 58.32 | 14.33 | 2.42 | 16.84 | — | 3.75 | 241,501 | — |
-| SKWD | SKYWARD SPECIALTY INSURANCE  | graham | ▫️ | 33% | 58.32 | 14.33 | 2.42 | 16.84 | — | 3.75 | 241,501 | — |
-| SKWD | SKYWARD SPECIALTY INSURANCE  | greenblatt | ▫️ | 33% | 58.32 | 14.33 | 2.42 | 16.84 | — | 3.75 | 241,501 | — |
-| SKWD | SKYWARD SPECIALTY INSURANCE  | netnet | ▫️ | 25% | 58.32 | 14.33 | 2.42 | 16.84 | — | 3.75 | 241,501 | — |
-| SKWD | SKYWARD SPECIALTY INSURANCE  | custom | ▫️ | 0% | 58.32 | 14.33 | 2.42 | 16.84 | — | 3.75 | 241,501 | — |
-| NBR | NABORS INDUSTRIES LTD | greenblatt | ▫️ | 67% | 80.67 | 4.64 | 1.97 | 48.52 | 1.56 | 5.67 | 188,961 | — |
-| UROY | Uranium Royalty Corp. | lynch | ▫️ | 50% | 4.18 | 14.41 | 1.86 | 12.87 | 5.94 | 0.19 | 2M | — |
-| UROY | Uranium Royalty Corp. | netnet | ▫️ | 50% | 4.18 | 14.41 | 1.86 | 12.87 | 5.94 | 0.19 | 2M | — |
+| USLM | UNITED STATES LIME & MINERAL | lynch | ✅ | 100% | 109 | 23.25 | 4.95 | 21.29 | 19.27 | 0.08 | 93,300 | — |
+| USLM | UNITED STATES LIME & MINERAL | buffett | ✅ | 83% | 109 | 23.25 | 4.95 | 21.29 | 19.27 | 0.08 | 93,300 | — |
+| LPG | DORIAN LPG LTD. | lynch | ✅ | 100% | 57.64 | 12.70 | 2.16 | 17.00 | 2.67 | 0.64 | 448,541 | — |
+| LPG | DORIAN LPG LTD. | piotroski | ✅ | 89% | 57.64 | 12.70 | 2.16 | 17.00 | 2.67 | 0.64 | 448,541 | — |
+| BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 120 | 16.32 | 2.80 | 17.13 | 2.65 | 0.86 | 471,672 | — |
+| BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 120 | 16.32 | 2.80 | 17.13 | 2.65 | 0.86 | 471,672 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | piotroski | ✅ | 100% | 114 | 21.06 | 3.97 | 18.86 | 0.86 | 0.33 | 120,306 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | lynch | ✅ | 100% | 114 | 21.06 | 3.97 | 18.86 | 0.86 | 0.33 | 120,306 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | buffett | ✅ | 83% | 114 | 21.06 | 3.97 | 18.86 | 0.86 | 0.33 | 120,306 | — |
+| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 112 | 21.41 | 4.09 | 19.12 | 2.99 | — | 132,106 | — |
+| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 112 | 21.41 | 4.09 | 19.12 | 2.99 | — | 132,106 | — |
+| VTOL | Bristow Group Inc. | piotroski | ✅ | 78% | 40.69 | 9.42 | 1.15 | 12.18 | 1.90 | 1.18 | 139,890 | — |
+| HBANP | Huntington Bancshares Incorp | lynch | ✅ | 75% | 15.30 | 11.01 | 0.95 | 9.08 | — | 8.25 | 53,588 | — |
+| KTB | KONTOOR BRANDS, INC. | lynch | ✅ | 75% | 65.62 | 16.20 | 6.52 | 40.27 | 1.82 | 3.57 | 475,420 | — |
+| ALRM | ALARM.COM HOLDINGS, INC. | piotroski | ✅ | 78% | 55.65 | 22.62 | 3.87 | 15.52 | 1.92 | 1.47 | 236,489 | — |
+| NYT | THE NEW YORK TIMES COMPANY | piotroski | ✅ | 100% | 66.32 | 31.73 | 5.36 | 16.85 | 1.54 | — | 2M | — |
+| HRB | H&R BLOCK INC | greenblatt | ✅ | 100% | 44.05 | 7.78 | 48.32 | 624 | 1.13 | 26.72 | 1M | — |
+| HRB | H&R BLOCK INC | piotroski | ✅ | 89% | 44.05 | 7.78 | 48.32 | 624 | 1.13 | 26.72 | 1M | — |
+| ORI | OLD REPUBLIC INTERNATIONAL C | piotroski | ✅ | 78% | 38.17 | 10.26 | 1.62 | 15.82 | — | 4.05 | 918,546 | — |
+| BDC | BELDEN INC. | piotroski | ✅ | 89% | 109 | 18.47 | 3.47 | 18.78 | 1.93 | — | 177,367 | — |
+| KBR | KBR, Inc. | piotroski | ✅ | 89% | 35.34 | 11.01 | 3.03 | 27.61 | 1.22 | 3.37 | 1M | — |
+| SHOE | Shoe Station Group, Inc. | graham | ✅ | 89% | 12.75 | 6.71 | 0.51 | 7.58 | 3.76 | 0.74 | 1M | — |
+| JJSF | J&J SNACK FOODS CORP. | lynch | ✅ | 75% | 81.13 | 24.15 | 1.64 | 6.79 | 2.72 | — | 233,394 | — |
+| SARO | StandardAero, Inc. | piotroski | ✅ | 89% | 20.17 | 24.30 | 2.53 | 10.40 | 2.20 | 1.46 | 3M | — |
+| KNTK | KINETIK HOLDINGS INC. | lynch | ✅ | 75% | 53.46 | 20.33 | — | -31.53 | 0.69 | -7.37 | 740,172 | — |
+| SSRM | SSR Mining Inc. | piotroski | ✅ | 78% | 35.51 | 19.19 | 2.20 | 11.28 | 2.08 | 0.51 | 2M | — |
+| XPRO | Expro Group Holdings N.V. | piotroski | ✅ | 89% | 16.17 | 35.93 | 1.22 | 3.37 | 2.16 | 0.47 | 645,287 | — |
+| WOR | WORTHINGTON ENTERPRISES, INC | piotroski | ✅ | 89% | 62.45 | 19.89 | 3.02 | 15.20 | 2.37 | 0.80 | 189,803 | — |
+| SHAK | SHAKE SHACK INC. | piotroski | ✅ | 89% | 66.90 | 61.38 | 5.33 | 8.70 | 1.76 | 2.56 | 850,367 | — |
+| MOS | MOSAIC CO | piotroski | ✅ | 89% | 18.74 | 11.02 | 0.49 | 4.47 | 1.32 | — | 14M | — |
+| WRBY | Warby Parker Inc. | piotroski | ✅ | 78% | 25.30 | 2,530 | 8.61 | 0.45 | 2.35 | 0.96 | 2M | — |
+| QUAD | Quad/Graphics, Inc. | piotroski | ✅ | 78% | 9.34 | 17.30 | — | -45.38 | 0.86 | -18.90 | 182,371 | — |
+| AEIS | ADVANCED ENERGY INDUSTRIES,  | piotroski | ✅ | 78% | 289 | 75.17 | 8.18 | 10.89 | 1.59 | 0.86 | 252,211 | — |
+| ORN | ORION GROUP HOLDINGS, INC. | piotroski | ✅ | 78% | 9.15 | 152 | 2.28 | 1.56 | 1.36 | 1.61 | 239,914 | — |
+| USLM | UNITED STATES LIME & MINERAL | piotroski | ▫️ | 67% | 109 | 23.25 | 4.95 | 21.29 | 19.27 | 0.08 | 93,300 | — |
+| USLM | UNITED STATES LIME & MINERAL | greenblatt | ▫️ | 67% | 109 | 23.25 | 4.95 | 21.29 | 19.27 | 0.08 | 93,300 | — |
+| USLM | UNITED STATES LIME & MINERAL | graham | ▫️ | 56% | 109 | 23.25 | 4.95 | 21.29 | 19.27 | 0.08 | 93,300 | — |
+| USLM | UNITED STATES LIME & MINERAL | netnet | ▫️ | 50% | 109 | 23.25 | 4.95 | 21.29 | 19.27 | 0.08 | 93,300 | — |
+| USLM | UNITED STATES LIME & MINERAL | custom | ▫️ | 0% | 109 | 23.25 | 4.95 | 21.29 | 19.27 | 0.08 | 93,300 | — |
+| UNIT | Uniti Group Inc. | greenblatt | ▫️ | 67% | 6.87 | 1.41 | 4.81 | 343 | 0.74 | 30.65 | 6M | — |
+| UNIT | Uniti Group Inc. | graham | ▫️ | 44% | 6.87 | 1.41 | 4.81 | 343 | 0.74 | 30.65 | 6M | — |
+| UNIT | Uniti Group Inc. | buffett | ▫️ | 33% | 6.87 | 1.41 | 4.81 | 343 | 0.74 | 30.65 | 6M | — |
+| UNIT | Uniti Group Inc. | lynch | ▫️ | 25% | 6.87 | 1.41 | 4.81 | 343 | 0.74 | 30.65 | 6M | — |
+| UNIT | Uniti Group Inc. | netnet | ▫️ | 25% | 6.87 | 1.41 | 4.81 | 343 | 0.74 | 30.65 | 6M | — |
+| UNIT | Uniti Group Inc. | piotroski | ▫️ | 22% | 6.87 | 1.41 | 4.81 | 343 | 0.74 | 30.65 | 6M | — |
+| UNIT | Uniti Group Inc. | custom | ▫️ | 0% | 6.87 | 1.41 | 4.81 | 343 | 0.74 | 30.65 | 6M | — |
+| LPG | DORIAN LPG LTD. | buffett | ▫️ | 67% | 57.64 | 12.70 | 2.16 | 17.00 | 2.67 | 0.64 | 448,541 | — |
+| LPG | DORIAN LPG LTD. | graham | ▫️ | 56% | 57.64 | 12.70 | 2.16 | 17.00 | 2.67 | 0.64 | 448,541 | — |
+| LPG | DORIAN LPG LTD. | greenblatt | ▫️ | 33% | 57.64 | 12.70 | 2.16 | 17.00 | 2.67 | 0.64 | 448,541 | — |
+| LPG | DORIAN LPG LTD. | netnet | ▫️ | 25% | 57.64 | 12.70 | 2.16 | 17.00 | 2.67 | 0.64 | 448,541 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
