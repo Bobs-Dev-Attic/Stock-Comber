@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-LRN,"Stride, Inc.",lynch,True,4,4,100.0,85.59,11.99,2.48,20.72,5.94,0.49,74.43,"761,420",—
-LRN,"Stride, Inc.",piotroski,True,8,9,88.9,85.59,11.99,2.48,20.72,5.94,0.49,74.43,"761,420",—
-LRN,"Stride, Inc.",buffett,True,5,6,83.3,85.59,11.99,2.48,20.72,5.94,0.49,74.43,"761,420",—
-LPG,DORIAN LPG LTD.,lynch,True,4,4,100.0,57.64,12.70,2.16,17.00,2.67,0.64,52.25,"447,873",—
-LPG,DORIAN LPG LTD.,piotroski,True,8,9,88.9,57.64,12.70,2.16,17.00,2.67,0.64,52.25,"447,873",—
-BKV,BKV Corp,piotroski,True,7,9,77.8,24.24,12.24,1.03,8.49,1.78,0.52,32.34,2M,—
-VISN,"Vistance Networks, Inc.",greenblatt,True,3,3,100.0,6.05,0.63,—,-227,3.88,-9.06,—,4M,—
-HRB,H&R BLOCK INC,greenblatt,True,3,3,100.0,44.05,7.78,48.32,624,1.13,26.72,10.78,1M,—
-HRB,H&R BLOCK INC,piotroski,True,8,9,88.9,44.05,7.78,48.32,624,1.13,26.72,10.78,1M,—
-ADUS,Addus HomeCare Corp,lynch,True,4,4,100.0,114,21.90,1.94,8.84,1.80,0.32,83.25,"172,782",—
-ADUS,Addus HomeCare Corp,piotroski,True,8,9,88.9,114,21.90,1.94,8.84,1.80,0.32,83.25,"172,782",—
-NIC,"NICOLET BANKSHARES, INC",lynch,True,3,4,75.0,163,16.65,1.99,11.98,—,6.30,134,"131,630",—
-OPY,OPPENHEIMER HOLDINGS INC.,piotroski,True,7,9,77.8,114,8.74,1.32,15.08,—,2.77,159,"93,060",—
-BCPC,Balchem Corporation,piotroski,True,9,9,100.0,168,35.33,4.35,12.31,2.07,0.34,64.20,"334,826",—
-TBB,AT&T INC.,piotroski,True,7,9,77.8,18.51,6.09,1.05,17.36,0.91,—,34.72,"164,881",—
-BBWI,"BATH & BODY WORKS, INC.",greenblatt,True,3,3,100.0,17.34,5.58,—,-50.66,1.27,—,—,7M,—
-UFPI,"UFP INDUSTRIES, INC.",graham,True,8,9,88.9,74.21,14.84,1.38,9.63,4.59,0.31,77.88,"477,392",—
-DLB,"Dolby Laboratories, Inc.",piotroski,True,7,9,77.8,58.74,22.42,2.18,9.72,3.17,0.23,39.82,"583,879",—
-CENTA,Central Garden & Pet Company,graham,True,9,9,100.0,35.00,13.73,1.41,10.29,3.67,—,37.73,"291,322",—
-CENTA,Central Garden & Pet Company,piotroski,True,8,9,88.9,35.00,13.73,1.41,10.29,3.67,—,37.73,"291,322",—
-FIGS,"FIGS, Inc.",piotroski,True,8,9,88.9,15.78,83.05,6.47,7.83,4.94,0.33,3.23,4M,—
-FAF,FIRST AMERICAN FINANCIAL CORPORATION,piotroski,True,8,9,88.9,61.20,10.20,1.15,11.31,—,1.95,84.61,"894,011",—
-ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.32,19.64,0.77,3.99,9.18,0.34,5.26,"80,031",—
-MAGN,Magnera Corporation,piotroski,True,7,9,77.8,11.50,—,0.38,-14.94,2.37,2.75,—,"205,845",—
-AMCX,AMC Global Media Inc.,piotroski,True,7,9,77.8,10.81,6.51,0.62,9.11,1.67,2.98,25.46,"374,300",—
-MOS,MOSAIC CO,piotroski,True,8,9,88.9,18.74,11.02,0.49,4.47,1.32,—,38.07,14M,—
-UE,URBAN EDGE PROPERTIES,piotroski,True,7,9,77.8,19.36,26.16,1.77,6.80,—,1.41,13.49,"669,862",—
-MLKN,"MillerKnoll, Inc.",piotroski,True,9,9,100.0,20.88,15.82,1.08,6.82,1.58,1.93,23.98,"389,711",—
-GCO,GENESCO INC,piotroski,True,8,9,88.9,36.51,29.21,0.68,2.34,1.64,1.46,38.74,"83,239",—
-SENS,"Senseonics Holdings, Inc.",piotroski,True,7,9,77.8,8.98,—,6.14,-113,4.83,1.07,—,"499,323",—
-SMG,Scotts Miracle-Gro Co,piotroski,True,7,9,77.8,49.86,20.19,—,-40.62,1.27,-8.67,—,"957,372",—
-THO,"THOR INDUSTRIES, INC.",piotroski,True,7,9,77.8,63.87,18.90,0.79,4.17,1.77,—,78.52,"752,640",—
-USNA,"USANA HEALTH SCIENCES, INC.",piotroski,True,7,9,77.8,14.66,25.28,0.51,2.02,2.24,0.29,19.35,"153,386",—
-PCRX,"PACIRA BIOSCIENCES, INC.",piotroski,True,7,9,77.8,36.31,227,2.36,1.01,4.54,0.82,7.44,5M,—
-LRN,"Stride, Inc.",graham,False,7,9,77.8,85.59,11.99,2.48,20.72,5.94,0.49,74.43,"761,420",—
-LRN,"Stride, Inc.",greenblatt,False,2,3,66.7,85.59,11.99,2.48,20.72,5.94,0.49,74.43,"761,420",—
-LRN,"Stride, Inc.",netnet,False,2,4,50.0,85.59,11.99,2.48,20.72,5.94,0.49,74.43,"761,420",—
-LRN,"Stride, Inc.",custom,False,0,0,0.0,85.59,11.99,2.48,20.72,5.94,0.49,74.43,"761,420",—
-LPG,DORIAN LPG LTD.,buffett,False,4,6,66.7,57.64,12.70,2.16,17.00,2.67,0.64,52.25,"447,873",—
-LPG,DORIAN LPG LTD.,graham,False,5,9,55.6,57.64,12.70,2.16,17.00,2.67,0.64,52.25,"447,873",—
-LPG,DORIAN LPG LTD.,greenblatt,False,1,3,33.3,57.64,12.70,2.16,17.00,2.67,0.64,52.25,"447,873",—
-LPG,DORIAN LPG LTD.,netnet,False,1,4,25.0,57.64,12.70,2.16,17.00,2.67,0.64,52.25,"447,873",—
-LPG,DORIAN LPG LTD.,custom,False,0,0,0.0,57.64,12.70,2.16,17.00,2.67,0.64,52.25,"447,873",—
-PPIH,"Perma-Pipe International Holdings, Inc.",piotroski,False,6,9,66.7,31.32,14.99,2.82,18.79,1.84,—,22.87,"32,314",—
-PPIH,"Perma-Pipe International Holdings, Inc.",graham,False,4,9,44.4,31.32,14.99,2.82,18.79,1.84,—,22.87,"32,314",—
-PPIH,"Perma-Pipe International Holdings, Inc.",greenblatt,False,1,3,33.3,31.32,14.99,2.82,18.79,1.84,—,22.87,"32,314",—
-PPIH,"Perma-Pipe International Holdings, Inc.",lynch,False,1,4,25.0,31.32,14.99,2.82,18.79,1.84,—,22.87,"32,314",—
-PPIH,"Perma-Pipe International Holdings, Inc.",netnet,False,1,4,25.0,31.32,14.99,2.82,18.79,1.84,—,22.87,"32,314",—
-PPIH,"Perma-Pipe International Holdings, Inc.",buffett,False,1,6,16.7,31.32,14.99,2.82,18.79,1.84,—,22.87,"32,314",—
-PPIH,"Perma-Pipe International Holdings, Inc.",custom,False,0,0,0.0,31.32,14.99,2.82,18.79,1.84,—,22.87,"32,314",—
+GOOGN,Alphabet Inc.,graham,True,9,9,100.0,49.48,4.58,1.46,31.83,2.01,0.43,90.88,"382,402",—
+GOOGN,Alphabet Inc.,buffett,True,6,6,100.0,49.48,4.58,1.46,31.83,2.01,0.43,90.88,"382,402",—
+GOOGN,Alphabet Inc.,greenblatt,True,3,3,100.0,49.48,4.58,1.46,31.83,2.01,0.43,90.88,"382,402",—
+GOOGN,Alphabet Inc.,lynch,True,4,4,100.0,49.48,4.58,1.46,31.83,2.01,0.43,90.88,"382,402",—
+WHD,"Cactus, Inc.",lynch,True,3,4,75.0,63.03,—,—,13.54,5.81,0.36,—,"118,139",—
+NSSC,"NAPCO SECURITY TECHNOLOGIES, INC",buffett,True,6,6,100.0,36.37,30.31,6.83,22.53,4.90,0.25,11.99,"107,580",—
+NSSC,"NAPCO SECURITY TECHNOLOGIES, INC",lynch,True,3,4,75.0,36.37,30.31,6.83,22.53,4.90,0.25,11.99,"107,580",—
+VTOL,Bristow Group Inc.,piotroski,True,7,9,77.8,41.35,9.57,1.17,12.18,1.90,1.18,58.71,"87,768",—
+AREC,AMERICAN RESOURCES CORPORATION,greenblatt,True,3,3,100.0,1.59,2.52,1.46,58.44,2.19,0.80,3.92,2M,—
+AES,THE AES CORPORATION,greenblatt,True,3,3,100.0,14.94,11.86,2.63,22.40,0.77,—,12.70,6M,—
+KRYS,"Krystal Biotech, Inc.",piotroski,True,8,9,88.9,332,48.48,8.14,16.80,9.95,0.09,79.16,"196,961",—
+GPK,Graphic Packaging Holding Co,lynch,True,3,4,75.0,8.35,5.64,0.75,13.31,1.30,—,19.25,7M,—
+CRVL,CORVEL CORPORATION,buffett,True,5,6,83.3,78.28,36.58,10.25,27.99,2.03,0.63,19.18,"109,091",—
+CRVL,CORVEL CORPORATION,piotroski,True,7,9,77.8,78.28,36.58,10.25,27.99,2.03,0.63,19.18,"109,091",—
+CRVL,CORVEL CORPORATION,lynch,True,3,4,75.0,78.28,36.58,10.25,27.99,2.03,0.63,19.18,"109,091",—
+ACEL,"Accel Entertainment, Inc.",piotroski,True,7,9,77.8,11.00,18.33,3.52,19.09,2.61,—,6.49,"252,919",—
+HALO,"HALOZYME THERAPEUTICS, INC.",buffett,True,5,6,83.3,110,43.13,280,649,4.66,50.73,4.76,2M,—
+OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,23.92,34.67,4.57,13.20,1.91,0.30,9.01,"169,241",—
+BFAM,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,piotroski,True,8,9,88.9,69.88,20.80,3.00,14.42,0.52,1.90,41.99,"244,444",—
+BFAM,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,lynch,True,3,4,75.0,69.88,20.80,3.00,14.42,0.52,1.90,41.99,"244,444",—
+FCF,FIRST COMMONWEALTH FINANCIAL CORP /PA/,lynch,True,3,4,75.0,20.18,13.72,1.34,9.80,—,6.94,22.28,"235,657",—
+POST,"Post Holdings, Inc.",lynch,True,3,4,75.0,74.82,13.58,1.25,8.94,1.67,2.60,86.01,"585,063",—
+RSI,"Rush Street Interactive, Inc.",piotroski,True,7,9,77.8,18.90,60.97,30.31,22.62,1.93,2.41,2.09,3M,—
+HLIO,"HELIOS TECHNOLOGIES, INC.",piotroski,True,9,9,100.0,69.16,47.70,2.47,5.20,2.90,0.63,30.21,"168,294",—
+CBU,"COMMUNITY FINANCIAL SYSTEM, INC.",piotroski,True,8,9,88.9,59.69,15.04,1.57,10.49,—,7.63,58.24,"89,731",—
+HLIO,"HELIOS TECHNOLOGIES, INC.",lynch,True,3,4,75.0,69.16,47.70,2.47,5.20,2.90,0.63,30.21,"168,294",—
+SPOK,"SPOK HOLDINGS, INC.",piotroski,True,7,9,77.8,10.79,14.38,1.55,10.85,1.18,0.41,10.83,"72,856",—
+CYH,"COMMUNITY HEALTH SYSTEMS, INC.",piotroski,True,8,9,88.9,2.93,0.78,—,-36.51,1.46,-10.07,—,"811,465",—
+CRI,"CARTER’S, INC.",graham,True,8,9,88.9,31.93,12.62,1.22,9.92,2.51,1.77,38.57,"719,027",—
+FET,"FORUM ENERGY TECHNOLOGIES, INC.",piotroski,True,7,9,77.8,86.58,—,3.53,-3.32,2.17,1.58,—,"100,183",—
+CVI,"CVR ENERGY, INC",piotroski,True,8,9,88.9,58.24,216,8.02,3.70,1.79,—,6.64,"410,531",—
+BNED,"BARNES & NOBLE EDUCATION, INC.",piotroski,True,8,9,88.9,12.50,25.51,1.47,5.73,1.71,1.51,9.68,"169,398",—
+DBD,"Diebold Nixdorf, Incorporated",piotroski,True,7,9,77.8,63.56,25.02,2.15,8.60,1.30,2.50,41.11,"75,021",—
+SHC,SOTERA HEALTH COMPANY,piotroski,True,7,9,77.8,18.06,66.89,8.54,12.86,2.46,4.38,3.59,2M,—
+CTRI,"Centuri Holdings, Inc.",piotroski,True,7,9,77.8,20.77,83.08,2.15,2.57,1.78,1.75,7.37,"583,130",—
+ORN,"ORION GROUP HOLDINGS, INC.",piotroski,True,7,9,77.8,9.19,153,2.29,1.56,1.36,1.61,2.33,"190,211",—
+TDAY,"USA TODAY CO., INC.",piotroski,True,7,9,77.8,6.83,683,6.43,1.13,0.75,10.85,0.49,1M,—
+GOOGN,Alphabet Inc.,piotroski,False,6,9,66.7,49.48,4.58,1.46,31.83,2.01,0.43,90.88,"382,402",—
+GOOGN,Alphabet Inc.,netnet,False,2,4,50.0,49.48,4.58,1.46,31.83,2.01,0.43,90.88,"382,402",—
+GOOGN,Alphabet Inc.,custom,False,0,0,0.0,49.48,4.58,1.46,31.83,2.01,0.43,90.88,"382,402",—
+WHD,"Cactus, Inc.",graham,False,6,9,66.7,63.03,—,—,13.54,5.81,0.36,—,"118,139",—
+WHD,"Cactus, Inc.",piotroski,False,5,9,55.6,63.03,—,—,13.54,5.81,0.36,—,"118,139",—
+WHD,"Cactus, Inc.",buffett,False,3,6,50.0,63.03,—,—,13.54,5.81,0.36,—,"118,139",—
+WHD,"Cactus, Inc.",greenblatt,False,1,3,33.3,63.03,—,—,13.54,5.81,0.36,—,"118,139",—
+WHD,"Cactus, Inc.",netnet,False,1,4,25.0,63.03,—,—,13.54,5.81,0.36,—,"118,139",—
+WHD,"Cactus, Inc.",custom,False,0,0,0.0,63.03,—,—,13.54,5.81,0.36,—,"118,139",—
+NSSC,"NAPCO SECURITY TECHNOLOGIES, INC",greenblatt,False,2,3,66.7,36.37,30.31,6.83,22.53,4.90,0.25,11.99,"107,580",—
+NSSC,"NAPCO SECURITY TECHNOLOGIES, INC",graham,False,5,9,55.6,36.37,30.31,6.83,22.53,4.90,0.25,11.99,"107,580",—
+NSSC,"NAPCO SECURITY TECHNOLOGIES, INC",piotroski,False,5,9,55.6,36.37,30.31,6.83,22.53,4.90,0.25,11.99,"107,580",—
+NSSC,"NAPCO SECURITY TECHNOLOGIES, INC",netnet,False,2,4,50.0,36.37,30.31,6.83,22.53,4.90,0.25,11.99,"107,580",—
