@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-GOOGM,Alphabet Inc.,graham,True,9,9,100.0,49.83,4.61,1.47,31.83,2.01,0.43,90.88,"303,992",—
-GOOGM,Alphabet Inc.,buffett,True,6,6,100.0,49.83,4.61,1.47,31.83,2.01,0.43,90.88,"303,992",—
-GOOGM,Alphabet Inc.,greenblatt,True,3,3,100.0,49.83,4.61,1.47,31.83,2.01,0.43,90.88,"303,992",—
-GOOGM,Alphabet Inc.,lynch,True,4,4,100.0,49.83,4.61,1.47,31.83,2.01,0.43,90.88,"303,992",—
-GOOGN,Alphabet Inc.,graham,True,9,9,100.0,49.79,4.61,1.47,31.83,2.01,0.43,90.88,"134,040",—
-GOOGN,Alphabet Inc.,buffett,True,6,6,100.0,49.79,4.61,1.47,31.83,2.01,0.43,90.88,"134,040",—
-GOOGN,Alphabet Inc.,greenblatt,True,3,3,100.0,49.79,4.61,1.47,31.83,2.01,0.43,90.88,"134,040",—
-GOOGN,Alphabet Inc.,lynch,True,4,4,100.0,49.79,4.61,1.47,31.83,2.01,0.43,90.88,"134,040",—
-USLM,UNITED STATES LIME & MINERALS INC,lynch,True,4,4,100.0,106,22.61,4.81,21.29,19.27,0.08,48.03,"31,753",—
-USLM,UNITED STATES LIME & MINERALS INC,buffett,True,5,6,83.3,106,22.61,4.81,21.29,19.27,0.08,48.03,"31,753",—
-LPG,DORIAN LPG LTD.,lynch,True,4,4,100.0,58.24,12.83,2.18,17.00,2.67,0.64,52.25,"388,080",—
-LPG,DORIAN LPG LTD.,piotroski,True,8,9,88.9,58.24,12.83,2.18,17.00,2.67,0.64,52.25,"388,080",—
-REX,REX AMERICAN RESOURCES CORPORATION,lynch,True,3,4,75.0,41.94,16.78,2.28,15.57,5.94,—,32.16,"30,183",—
-AREC,AMERICAN RESOURCES CORPORATION,greenblatt,True,3,3,100.0,1.37,2.17,1.26,58.44,2.19,0.80,3.92,1M,—
-ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.27,6.74,0.19,4.91,1.93,0.73,1.14,"10,782",—
-AROC,"Archrock, Inc.",piotroski,True,8,9,88.9,30.01,16.40,3.52,21.61,1.54,1.92,18.75,"234,367",—
-MTCH,"Match Group, Inc.",piotroski,True,8,9,88.9,41.52,17.45,—,-242,1.42,—,—,4M,—
-MTCH,"Match Group, Inc.",lynch,True,3,4,75.0,41.52,17.45,—,-242,1.42,—,—,4M,—
-WNC,WABASH NATIONAL CORPORATION,greenblatt,True,3,3,100.0,13.31,2.63,1.51,57.56,1.39,2.18,31.68,"49,739",—
-ACEL,"Accel Entertainment, Inc.",piotroski,True,7,9,77.8,11.17,18.62,3.58,19.09,2.61,—,6.49,"315,177",—
-AIR,AAR CORP,piotroski,True,7,9,77.8,101,20.69,2.27,11.02,2.84,—,69.66,"443,171",—
-AIR,AAR CORP,lynch,True,3,4,75.0,101,20.69,2.27,11.02,2.84,—,69.66,"443,171",—
-EFC,Ellington Financial Inc.,lynch,True,3,4,75.0,11.68,9.82,0.64,6.47,—,9.53,22.10,"440,740",—
-TRN,TRINITY INDUSTRIES INC,greenblatt,True,3,3,100.0,25.95,8.51,2.00,23.50,—,6.76,29.86,"762,992",—
-TRN,TRINITY INDUSTRIES INC,piotroski,True,7,9,77.8,25.95,8.51,2.00,23.50,—,6.76,29.86,"762,992",—
-EGP,"EASTGROUP PROPERTIES, INC.",piotroski,True,7,9,77.8,197,40.54,2.98,7.36,—,0.55,85.17,"323,287",—
-EGP,"EASTGROUP PROPERTIES, INC.",lynch,True,3,4,75.0,197,40.54,2.98,7.36,—,0.55,85.17,"323,287",—
-POST,"Post Holdings, Inc.",lynch,True,3,4,75.0,76.71,13.92,1.29,8.94,1.67,2.60,86.01,"76,754",—
-SCSC,"ScanSource, Inc.",piotroski,True,7,9,77.8,61.76,16.97,1.47,8.66,1.76,1.12,58.64,"57,378",—
-SCSC,"ScanSource, Inc.",lynch,True,3,4,75.0,61.76,16.97,1.47,8.66,1.76,1.12,58.64,"57,378",—
-SSRM,SSR Mining Inc.,piotroski,True,7,9,77.8,32.82,17.74,2.03,11.28,2.08,0.51,25.94,1M,—
-AIOT,"Powerfleet, Inc.",piotroski,True,7,9,77.8,2.72,—,0.77,-4.32,1.13,1.00,—,"791,112",—
-RRX,REGAL REXNORD CORP,piotroski,True,7,9,77.8,163,38.85,1.59,4.08,2.15,—,98.55,"824,949",—
-MYE,"Myers Industries, Inc.",piotroski,True,7,9,77.8,30.27,32.55,3.86,11.87,1.67,1.89,12.80,"18,461",—
+ZSL,PROSHARES TRUST II,greenblatt,True,3,3,100.0,28.67,2.07,0.62,29.91,—,0.06,120,3M,—
+SLDE,"Slide Insurance Holdings, Inc.",greenblatt,True,3,3,100.0,25.50,7.59,3.02,39.88,—,1.62,25.25,"926,455",—
+YELP,YELP INC,greenblatt,True,3,3,100.0,18.92,8.45,1.73,20.48,2.99,0.35,23.46,"898,871",—
+YELP,YELP INC,piotroski,True,8,9,88.9,18.92,8.45,1.73,20.48,2.99,0.35,23.46,"898,871",—
+POWL,"Powell Industries, Inc.",greenblatt,True,3,3,100.0,183,12.30,3.47,28.21,2.09,0.73,133,"559,067",—
+POWL,"Powell Industries, Inc.",piotroski,True,7,9,77.8,183,12.30,3.47,28.21,2.09,0.73,133,"559,067",—
+POWL,"Powell Industries, Inc.",lynch,True,3,4,75.0,183,12.30,3.47,28.21,2.09,0.73,133,"559,067",—
+MCRI,"MONARCH CASINO & RESORT, INC.",piotroski,True,9,9,100.0,115,21.20,3.99,18.86,0.86,0.33,59.33,"118,520",—
+MCRI,"MONARCH CASINO & RESORT, INC.",lynch,True,4,4,100.0,115,21.20,3.99,18.86,0.86,0.33,59.33,"118,520",—
+MCRI,"MONARCH CASINO & RESORT, INC.",buffett,True,5,6,83.3,115,21.20,3.99,18.86,0.86,0.33,59.33,"118,520",—
+AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",piotroski,True,9,9,100.0,165,23.26,7.97,34.27,1.46,—,57.37,"269,479",—
+ESE,ESCO TECHNOLOGIES INC.,lynch,True,4,4,100.0,262,22.64,4.40,19.42,1.35,0.56,124,"239,122",—
+BFST,"BUSINESS FIRST BANCSHARES, INC.",lynch,True,3,4,75.0,30.82,11.05,1.02,9.80,—,8.16,43.65,"165,718",—
+MHO,"M/I HOMES, INC.",lynch,True,3,4,75.0,126,8.57,1.09,12.73,—,0.51,196,"168,431",—
+WNC,WABASH NATIONAL CORPORATION,greenblatt,True,3,3,100.0,13.17,2.60,1.50,57.56,1.39,2.18,31.68,"770,091",—
+HALO,"HALOZYME THERAPEUTICS, INC.",buffett,True,5,6,83.3,110,42.82,278,649,4.66,50.73,4.76,2M,—
+AGX,ARGAN INC,lynch,True,3,4,75.0,388,39.85,11.88,29.80,1.59,1.57,84.62,"253,390",—
+BDC,BELDEN INC.,piotroski,True,8,9,88.9,108,18.35,3.45,18.78,1.93,—,64.66,"315,714",—
+OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,24.13,34.97,4.61,13.20,1.91,0.30,9.01,"384,486",—
+PLUS,ePlus inc.,piotroski,True,7,9,77.8,96.93,19.27,2.39,12.41,2.24,0.68,67.73,"229,968",—
+NHC,NATIONAL HEALTHCARE CORP,piotroski,True,9,9,100.0,230,29.97,3.37,11.23,1.82,0.42,109,"65,278",—
+NHC,NATIONAL HEALTHCARE CORP,lynch,True,3,4,75.0,230,29.97,3.37,11.23,1.82,0.42,109,"65,278",—
+UMBF,UMB FINANCIAL CORP,lynch,True,3,4,75.0,131,14.13,1.26,9.13,—,8.50,148,"536,168",—
+WLY,"JOHN WILEY & SONS, INC.",piotroski,True,9,9,100.0,51.32,12.34,3.22,26.13,0.54,2.06,38.61,"361,902",—
+POST,"Post Holdings, Inc.",lynch,True,3,4,75.0,76.83,13.94,1.29,8.94,1.67,2.60,86.01,"667,546",—
+CPK,CHESAPEAKE UTILITIES CORP,piotroski,True,7,9,77.8,129,21.61,1.90,8.78,0.45,—,95.61,"146,002",—
+KNTK,KINETIK HOLDINGS INC.,lynch,True,3,4,75.0,54.53,20.73,—,-31.53,0.69,-7.37,—,"821,257",—
+MD,"Pediatrix Medical Group, Inc.",piotroski,True,7,9,77.8,26.61,13.72,2.62,19.10,1.66,1.59,21.05,"461,053",—
+MYRG,MYR GROUP INC.,piotroski,True,8,9,88.9,313,41.59,7.46,17.93,1.33,1.49,84.34,"306,651",—
+CPRI,CAPRI HOLDINGS LIMITED,piotroski,True,7,9,77.8,15.09,13.24,22.61,171,1.21,39.38,4.14,3M,—
+NPKI,NPK International Inc.,piotroski,True,7,9,77.8,11.29,25.09,2.76,11.09,1.43,0.26,6.44,"408,261",—
+MOS,MOSAIC CO,piotroski,True,8,9,88.9,19.18,11.28,0.51,4.47,1.32,—,38.07,8M,—
+AMTM,"Amentum Holdings, Inc.",piotroski,True,7,9,77.8,18.52,68.59,1.00,1.47,1.32,1.52,10.59,1M,—
 INNV,InnovAge Holding Corp.,piotroski,True,7,9,77.8,9.15,—,5.27,-1.08,1.05,1.23,—,"315,394",—
-CALX,"Calix, Inc",piotroski,True,7,9,77.8,36.08,139,2.91,2.08,4.24,0.23,8.52,"920,987",—
-ADT,ADT Inc.,piotroski,True,8,9,88.9,6.61,—,—,15.77,0.93,3.19,—,1M,—
-OMCL,"OMNICELL, INC",piotroski,True,7,9,77.8,36.49,912,1.37,0.17,1.43,0.60,4.89,"75,114",—
-GOOGM,Alphabet Inc.,piotroski,False,6,9,66.7,49.83,4.61,1.47,31.83,2.01,0.43,90.88,"303,992",—
-GOOGN,Alphabet Inc.,piotroski,False,6,9,66.7,49.79,4.61,1.47,31.83,2.01,0.43,90.88,"134,040",—
-GOOGM,Alphabet Inc.,netnet,False,2,4,50.0,49.83,4.61,1.47,31.83,2.01,0.43,90.88,"303,992",—
-GOOGN,Alphabet Inc.,netnet,False,2,4,50.0,49.79,4.61,1.47,31.83,2.01,0.43,90.88,"134,040",—
-GOOGM,Alphabet Inc.,custom,False,0,0,0.0,49.83,4.61,1.47,31.83,2.01,0.43,90.88,"303,992",—
-GOOGN,Alphabet Inc.,custom,False,0,0,0.0,49.79,4.61,1.47,31.83,2.01,0.43,90.88,"134,040",—
-USLM,UNITED STATES LIME & MINERALS INC,piotroski,False,6,9,66.7,106,22.61,4.81,21.29,19.27,0.08,48.03,"31,753",—
-USLM,UNITED STATES LIME & MINERALS INC,greenblatt,False,2,3,66.7,106,22.61,4.81,21.29,19.27,0.08,48.03,"31,753",—
-USLM,UNITED STATES LIME & MINERALS INC,graham,False,5,9,55.6,106,22.61,4.81,21.29,19.27,0.08,48.03,"31,753",—
-USLM,UNITED STATES LIME & MINERALS INC,netnet,False,2,4,50.0,106,22.61,4.81,21.29,19.27,0.08,48.03,"31,753",—
-USLM,UNITED STATES LIME & MINERALS INC,custom,False,0,0,0.0,106,22.61,4.81,21.29,19.27,0.08,48.03,"31,753",—
-LPG,DORIAN LPG LTD.,buffett,False,4,6,66.7,58.24,12.83,2.18,17.00,2.67,0.64,52.25,"388,080",—
+ADT,ADT Inc.,piotroski,True,8,9,88.9,6.45,—,—,15.77,0.93,3.19,—,8M,—
+ARKO,ARKO Corp.,piotroski,True,7,9,77.8,4.10,27.33,1.76,8.51,1.66,11.85,2.80,"425,350",—
+SHC,SOTERA HEALTH COMPANY,piotroski,True,7,9,77.8,18.15,67.22,8.58,12.86,2.46,4.38,3.59,2M,—
+TPC,Tutor Perini Corporation,piotroski,True,7,9,77.8,83.26,55.14,3.65,6.60,1.27,3.20,27.84,"358,726",—
+ZSL,PROSHARES TRUST II,lynch,False,2,4,50.0,28.67,2.07,0.62,29.91,—,0.06,120,3M,—
+ZSL,PROSHARES TRUST II,graham,False,4,9,44.4,28.67,2.07,0.62,29.91,—,0.06,120,3M,—
+ZSL,PROSHARES TRUST II,buffett,False,2,6,33.3,28.67,2.07,0.62,29.91,—,0.06,120,3M,—
+ZSL,PROSHARES TRUST II,piotroski,False,3,9,33.3,28.67,2.07,0.62,29.91,—,0.06,120,3M,—
+ZSL,PROSHARES TRUST II,netnet,False,1,4,25.0,28.67,2.07,0.62,29.91,—,0.06,120,3M,—
+ZSL,PROSHARES TRUST II,custom,False,0,0,0.0,28.67,2.07,0.62,29.91,—,0.06,120,3M,—
+SLDE,"Slide Insurance Holdings, Inc.",graham,False,3,9,33.3,25.50,7.59,3.02,39.88,—,1.62,25.25,"926,455",—
+SLDE,"Slide Insurance Holdings, Inc.",buffett,False,2,6,33.3,25.50,7.59,3.02,39.88,—,1.62,25.25,"926,455",—
+SLDE,"Slide Insurance Holdings, Inc.",piotroski,False,3,9,33.3,25.50,7.59,3.02,39.88,—,1.62,25.25,"926,455",—
+SLDE,"Slide Insurance Holdings, Inc.",lynch,False,1,4,25.0,25.50,7.59,3.02,39.88,—,1.62,25.25,"926,455",—
+SLDE,"Slide Insurance Holdings, Inc.",netnet,False,1,4,25.0,25.50,7.59,3.02,39.88,—,1.62,25.25,"926,455",—
+SLDE,"Slide Insurance Holdings, Inc.",custom,False,0,0,0.0,25.50,7.59,3.02,39.88,—,1.62,25.25,"926,455",—
