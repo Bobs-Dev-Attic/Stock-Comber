@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-13 01:18 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-13 07:45 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **32** strategy matches passed.
+Screened **75** companies · **24** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| LPG | DORIAN LPG LTD. | lynch | ✅ | 100% | 58.24 | 12.83 | 2.18 | 17.00 | 2.67 | 0.64 | 382,372 | — |
-| LPG | DORIAN LPG LTD. | piotroski | ✅ | 89% | 58.24 | 12.83 | 2.18 | 17.00 | 2.67 | 0.64 | 382,372 | — |
-| OII | OCEANEERING INTERNATIONAL IN | piotroski | ✅ | 78% | 44.42 | 12.73 | 4.20 | 33.04 | 1.99 | — | 647,762 | — |
-| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 112 | 21.44 | 4.10 | 19.12 | 2.99 | — | 163,978 | — |
-| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 112 | 21.44 | 4.10 | 19.12 | 2.99 | — | 163,978 | — |
-| MWA | Mueller Water Products, Inc. | piotroski | ✅ | 89% | 21.87 | 17.93 | 3.51 | 19.53 | 3.54 | 0.87 | 1M | — |
-| MWA | Mueller Water Products, Inc. | lynch | ✅ | 75% | 21.87 | 17.93 | 3.51 | 19.53 | 3.54 | 0.87 | 1M | — |
-| CVSA | Covista Inc. | lynch | ✅ | 75% | 129 | 18.31 | 3.18 | 17.40 | 1.09 | 1.08 | 213,800 | — |
-| LMB | LIMBACH HOLDINGS, INC. | piotroski | ✅ | 78% | 51.07 | 15.81 | 3.15 | 19.97 | 1.44 | 0.95 | 214,848 | — |
-| LMB | LIMBACH HOLDINGS, INC. | lynch | ✅ | 75% | 51.07 | 15.81 | 3.15 | 19.97 | 1.44 | 0.95 | 214,848 | — |
-| DUKU | Duke Energy CORP | piotroski | ✅ | 89% | 49.05 | 7.77 | 0.74 | 9.58 | 0.55 | — | 122,081 | — |
-| DUKU | Duke Energy CORP | lynch | ✅ | 75% | 49.05 | 7.77 | 0.74 | 9.58 | 0.55 | — | 122,081 | — |
-| MTCH | Match Group, Inc. | piotroski | ✅ | 89% | 41.52 | 17.45 | — | -242 | 1.42 | — | 4M | — |
-| MTCH | Match Group, Inc. | lynch | ✅ | 75% | 41.52 | 17.45 | — | -242 | 1.42 | — | 4M | — |
-| WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 13.17 | 2.60 | 1.50 | 57.56 | 1.39 | 2.18 | 770,089 | — |
+| TDW | TIDEWATER INC | piotroski | ✅ | 89% | 86.45 | 13.02 | 3.19 | 24.51 | 2.90 | — | 510,793 | — |
+| PRI | Primerica, Inc. | greenblatt | ✅ | 100% | 277 | 12.08 | 3.70 | 30.71 | — | 5.14 | 158,271 | — |
+| PRI | Primerica, Inc. | piotroski | ✅ | 89% | 277 | 12.08 | 3.70 | 30.71 | — | 5.14 | 158,271 | — |
+| ESE | ESCO TECHNOLOGIES INC. | lynch | ✅ | 100% | 262 | 22.64 | 4.40 | 19.42 | 1.35 | 0.56 | 239,122 | — |
+| AROC | Archrock, Inc. | piotroski | ✅ | 89% | 30.33 | 16.57 | 3.55 | 21.61 | 1.54 | 1.92 | 1M | — |
+| BELFA | BEL FUSE INC /NJ | piotroski | ✅ | 89% | 189 | — | — | 14.46 | 3.02 | 0.98 | 133,243 | — |
+| KRYS | Krystal Biotech, Inc. | piotroski | ✅ | 89% | 332 | 48.55 | 8.16 | 16.80 | 9.95 | 0.09 | 168,067 | — |
+| SFM | Sprouts Farmers Market, Inc. | greenblatt | ✅ | 100% | 64.33 | 12.11 | 4.53 | 37.32 | 0.93 | 1.96 | 2M | — |
+| SFM | Sprouts Farmers Market, Inc. | piotroski | ✅ | 78% | 64.33 | 12.11 | 4.53 | 37.32 | 0.93 | 1.96 | 2M | — |
 | HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 111 | 43.39 | 282 | 649 | 4.66 | 50.73 | 2M | — |
-| BDC | BELDEN INC. | piotroski | ✅ | 89% | 105 | 17.82 | 3.35 | 18.78 | 1.93 | — | 231,513 | — |
-| SR | Spire Inc. | piotroski | ✅ | 78% | 79.56 | 18.21 | 0.00 | 8.02 | 0.32 | — | 378,214 | — |
-| SR | Spire Inc. | lynch | ✅ | 75% | 79.56 | 18.21 | 0.00 | 8.02 | 0.32 | — | 378,214 | — |
-| DRVN | Driven Brands Holdings Inc. | piotroski | ✅ | 78% | 11.78 | 13.86 | 2.52 | 18.27 | 0.75 | 4.42 | 617,852 | — |
-| BFAM | BRIGHT HORIZONS FAMILY SOLUT | piotroski | ✅ | 89% | 69.90 | 20.80 | 3.00 | 14.42 | 0.52 | 1.90 | 551,190 | — |
-| BFAM | BRIGHT HORIZONS FAMILY SOLUT | lynch | ✅ | 75% | 69.90 | 20.80 | 3.00 | 14.42 | 0.52 | 1.90 | 551,190 | — |
+| SIGI | SELECTIVE INSURANCE GROUP, I | piotroski | ✅ | 78% | 84.92 | 11.34 | 1.44 | 12.92 | — | 3.20 | 339,109 | — |
+| NHC | NATIONAL HEALTHCARE CORP | piotroski | ✅ | 100% | 230 | 29.97 | 3.37 | 11.23 | 1.82 | 0.42 | 65,278 | — |
+| NHC | NATIONAL HEALTHCARE CORP | lynch | ✅ | 75% | 230 | 29.97 | 3.37 | 11.23 | 1.82 | 0.42 | 65,278 | — |
+| AGCO | AGCO CORP /DE | piotroski | ✅ | 89% | 104 | 10.71 | 1.82 | 17.00 | 1.39 | 1.72 | 1M | — |
 | SIRI | SIRIUS XM HOLDINGS INC. | lynch | ✅ | 75% | 26.61 | 11.93 | 0.82 | 6.96 | 0.30 | 1.36 | 3M | — |
-| BKU | BankUnited, Inc. | piotroski | ✅ | 89% | 42.22 | 11.96 | 1.03 | 8.79 | — | 10.47 | 607,712 | — |
-| WOR | WORTHINGTON ENTERPRISES, INC | piotroski | ✅ | 89% | 62.64 | 19.95 | 3.03 | 15.20 | 2.37 | 0.80 | 297,955 | — |
-| SGRY | Surgery Partners, Inc. | piotroski | ✅ | 78% | 14.24 | — | 1.06 | -4.55 | 1.87 | — | 1M | — |
-| LFST | LifeStance Health Group, Inc | piotroski | ✅ | 89% | 12.48 | 505 | 3.21 | 0.64 | 1.65 | 0.45 | 2M | — |
-| KOP | KOPPERS HOLDINGS INC. | piotroski | ✅ | 89% | 43.10 | 15.73 | 1.53 | 9.76 | 2.94 | 2.29 | 115,126 | — |
-| WRBY | Warby Parker Inc. | piotroski | ✅ | 78% | 25.99 | 2,599 | 8.84 | 0.45 | 2.35 | 0.96 | 2M | — |
-| MYE | Myers Industries, Inc. | piotroski | ✅ | 78% | 30.39 | 32.68 | 3.88 | 11.87 | 1.67 | 1.89 | 150,994 | — |
-| INNV | InnovAge Holding Corp. | piotroski | ✅ | 78% | 9.15 | — | 5.27 | -1.08 | 1.05 | 1.23 | 315,394 | — |
-| OMCL | OMNICELL, INC | piotroski | ✅ | 78% | 36.87 | 922 | 1.39 | 0.17 | 1.43 | 0.60 | 459,029 | — |
-| LPG | DORIAN LPG LTD. | buffett | ▫️ | 67% | 58.24 | 12.83 | 2.18 | 17.00 | 2.67 | 0.64 | 382,372 | — |
-| LPG | DORIAN LPG LTD. | graham | ▫️ | 56% | 58.24 | 12.83 | 2.18 | 17.00 | 2.67 | 0.64 | 382,372 | — |
-| LPG | DORIAN LPG LTD. | greenblatt | ▫️ | 33% | 58.24 | 12.83 | 2.18 | 17.00 | 2.67 | 0.64 | 382,372 | — |
-| LPG | DORIAN LPG LTD. | netnet | ▫️ | 25% | 58.24 | 12.83 | 2.18 | 17.00 | 2.67 | 0.64 | 382,372 | — |
-| LPG | DORIAN LPG LTD. | custom | ▫️ | 0% | 58.24 | 12.83 | 2.18 | 17.00 | 2.67 | 0.64 | 382,372 | — |
-| OII | OCEANEERING INTERNATIONAL IN | greenblatt | ▫️ | 67% | 44.42 | 12.73 | 4.20 | 33.04 | 1.99 | — | 647,762 | — |
-| OII | OCEANEERING INTERNATIONAL IN | buffett | ▫️ | 50% | 44.42 | 12.73 | 4.20 | 33.04 | 1.99 | — | 647,762 | — |
-| OII | OCEANEERING INTERNATIONAL IN | graham | ▫️ | 44% | 44.42 | 12.73 | 4.20 | 33.04 | 1.99 | — | 647,762 | — |
-| OII | OCEANEERING INTERNATIONAL IN | lynch | ▫️ | 25% | 44.42 | 12.73 | 4.20 | 33.04 | 1.99 | — | 647,762 | — |
-| OII | OCEANEERING INTERNATIONAL IN | netnet | ▫️ | 25% | 44.42 | 12.73 | 4.20 | 33.04 | 1.99 | — | 647,762 | — |
-| OII | OCEANEERING INTERNATIONAL IN | custom | ▫️ | 0% | 44.42 | 12.73 | 4.20 | 33.04 | 1.99 | — | 647,762 | — |
-| IPAR | INTERPARFUMS, INC. | graham | ▫️ | 67% | 112 | 21.44 | 4.10 | 19.12 | 2.99 | — | 163,978 | — |
-| IPAR | INTERPARFUMS, INC. | piotroski | ▫️ | 67% | 112 | 21.44 | 4.10 | 19.12 | 2.99 | — | 163,978 | — |
-| IPAR | INTERPARFUMS, INC. | greenblatt | ▫️ | 33% | 112 | 21.44 | 4.10 | 19.12 | 2.99 | — | 163,978 | — |
-| IPAR | INTERPARFUMS, INC. | netnet | ▫️ | 25% | 112 | 21.44 | 4.10 | 19.12 | 2.99 | — | 163,978 | — |
-| IPAR | INTERPARFUMS, INC. | custom | ▫️ | 0% | 112 | 21.44 | 4.10 | 19.12 | 2.99 | — | 163,978 | — |
-| MWA | Mueller Water Products, Inc. | graham | ▫️ | 67% | 21.87 | 17.93 | 3.51 | 19.53 | 3.54 | 0.87 | 1M | — |
-| MWA | Mueller Water Products, Inc. | buffett | ▫️ | 67% | 21.87 | 17.93 | 3.51 | 19.53 | 3.54 | 0.87 | 1M | — |
+| EMBC | EMBECTA CORP. | piotroski | ✅ | 78% | 5.99 | 3.70 | — | -14.66 | 2.41 | — | 1M | — |
+| SPOK | SPOK HOLDINGS, INC. | piotroski | ✅ | 78% | 10.74 | 14.32 | 1.54 | 10.85 | 1.18 | 0.41 | 143,128 | — |
+| WOR | WORTHINGTON ENTERPRISES, INC | piotroski | ✅ | 89% | 62.64 | 19.95 | 3.03 | 15.20 | 2.37 | 0.80 | 304,391 | — |
+| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.34 | 19.73 | 0.78 | 3.99 | 9.18 | 0.34 | 110,253 | — |
+| KN | Knowles Corporation | piotroski | ✅ | 78% | 36.52 | 73.04 | 4.14 | 5.70 | 2.75 | — | 488,155 | — |
+| ZUMZ | ZUMIEZ INC | piotroski | ✅ | 89% | 14.80 | 18.97 | 0.79 | 4.13 | 2.01 | 0.99 | 264,519 | — |
+| THO | THOR INDUSTRIES, INC. | piotroski | ✅ | 78% | 63.96 | 18.92 | 0.79 | 4.17 | 1.77 | — | 922,725 | — |
+| PRLB | Proto Labs Inc | piotroski | ✅ | 89% | 91.60 | 104 | 3.30 | 3.15 | 3.49 | 0.13 | 126,475 | — |
+| GXO | GXO Logistics, Inc. | piotroski | ✅ | 78% | 46.60 | 166 | 1.82 | 1.07 | 0.85 | — | 1M | — |
+| TDW | TIDEWATER INC | buffett | ▫️ | 50% | 86.45 | 13.02 | 3.19 | 24.51 | 2.90 | — | 510,793 | — |
+| TDW | TIDEWATER INC | graham | ▫️ | 44% | 86.45 | 13.02 | 3.19 | 24.51 | 2.90 | — | 510,793 | — |
+| TDW | TIDEWATER INC | greenblatt | ▫️ | 33% | 86.45 | 13.02 | 3.19 | 24.51 | 2.90 | — | 510,793 | — |
+| TDW | TIDEWATER INC | lynch | ▫️ | 25% | 86.45 | 13.02 | 3.19 | 24.51 | 2.90 | — | 510,793 | — |
+| TDW | TIDEWATER INC | netnet | ▫️ | 25% | 86.45 | 13.02 | 3.19 | 24.51 | 2.90 | — | 510,793 | — |
+| TDW | TIDEWATER INC | custom | ▫️ | 0% | 86.45 | 13.02 | 3.19 | 24.51 | 2.90 | — | 510,793 | — |
+| GEF | GREIF, INC. | buffett | ▫️ | 67% | 78.68 | — | — | 28.82 | 1.27 | — | 373,607 | — |
+| GEF | GREIF, INC. | greenblatt | ▫️ | 67% | 78.68 | — | — | 28.82 | 1.27 | — | 373,607 | — |
+| GEF | GREIF, INC. | piotroski | ▫️ | 56% | 78.68 | — | — | 28.82 | 1.27 | — | 373,607 | — |
+| GEF | GREIF, INC. | graham | ▫️ | 44% | 78.68 | — | — | 28.82 | 1.27 | — | 373,607 | — |
+| GEF | GREIF, INC. | lynch | ▫️ | 25% | 78.68 | — | — | 28.82 | 1.27 | — | 373,607 | — |
+| GEF | GREIF, INC. | netnet | ▫️ | 25% | 78.68 | — | — | 28.82 | 1.27 | — | 373,607 | — |
+| GEF | GREIF, INC. | custom | ▫️ | 0% | 78.68 | — | — | 28.82 | 1.27 | — | 373,607 | — |
+| NKLR | TERRA INNOVATUM GLOBAL N.V. | greenblatt | ▫️ | 67% | 2.86 | 0.29 | — | -576 | 33.57 | -2.13 | 505,222 | — |
+| NKLR | TERRA INNOVATUM GLOBAL N.V. | lynch | ▫️ | 50% | 2.86 | 0.29 | — | -576 | 33.57 | -2.13 | 505,222 | — |
+| NKLR | TERRA INNOVATUM GLOBAL N.V. | graham | ▫️ | 33% | 2.86 | 0.29 | — | -576 | 33.57 | -2.13 | 505,222 | — |
+| NKLR | TERRA INNOVATUM GLOBAL N.V. | netnet | ▫️ | 25% | 2.86 | 0.29 | — | -576 | 33.57 | -2.13 | 505,222 | — |
+| NKLR | TERRA INNOVATUM GLOBAL N.V. | buffett | ▫️ | 17% | 2.86 | 0.29 | — | -576 | 33.57 | -2.13 | 505,222 | — |
+| NKLR | TERRA INNOVATUM GLOBAL N.V. | piotroski | ▫️ | 11% | 2.86 | 0.29 | — | -576 | 33.57 | -2.13 | 505,222 | — |
+| NKLR | TERRA INNOVATUM GLOBAL N.V. | custom | ▫️ | 0% | 2.86 | 0.29 | — | -576 | 33.57 | -2.13 | 505,222 | — |
+| PRI | Primerica, Inc. | buffett | ▫️ | 67% | 277 | 12.08 | 3.70 | 30.71 | — | 5.14 | 158,271 | — |
+| PRI | Primerica, Inc. | graham | ▫️ | 56% | 277 | 12.08 | 3.70 | 30.71 | — | 5.14 | 158,271 | — |
+| PRI | Primerica, Inc. | lynch | ▫️ | 50% | 277 | 12.08 | 3.70 | 30.71 | — | 5.14 | 158,271 | — |
+| PRI | Primerica, Inc. | netnet | ▫️ | 25% | 277 | 12.08 | 3.70 | 30.71 | — | 5.14 | 158,271 | — |
+| PRI | Primerica, Inc. | custom | ▫️ | 0% | 277 | 12.08 | 3.70 | 30.71 | — | 5.14 | 158,271 | — |
+| ESE | ESCO TECHNOLOGIES INC. | buffett | ▫️ | 67% | 262 | 22.64 | 4.40 | 19.42 | 1.35 | 0.56 | 239,122 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
