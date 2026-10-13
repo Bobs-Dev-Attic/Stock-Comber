@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-TDW,TIDEWATER INC,piotroski,True,8,9,88.9,86.45,13.02,3.19,24.51,2.90,—,63.60,"510,793",—
-PRI,"Primerica, Inc.",greenblatt,True,3,3,100.0,277,12.08,3.70,30.71,—,5.14,196,"158,271",—
-PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,277,12.08,3.70,30.71,—,5.14,196,"158,271",—
-ESE,ESCO TECHNOLOGIES INC.,lynch,True,4,4,100.0,262,22.64,4.40,19.42,1.35,0.56,124,"239,122",—
-AROC,"Archrock, Inc.",piotroski,True,8,9,88.9,30.33,16.57,3.55,21.61,1.54,1.92,18.75,1M,—
-BELFA,BEL FUSE INC /NJ,piotroski,True,8,9,88.9,189,—,—,14.46,3.02,0.98,—,"133,243",—
-KRYS,"Krystal Biotech, Inc.",piotroski,True,8,9,88.9,332,48.55,8.16,16.80,9.95,0.09,79.16,"168,067",—
-SFM,"Sprouts Farmers Market, Inc.",greenblatt,True,3,3,100.0,64.33,12.11,4.53,37.32,0.93,1.96,41.21,2M,—
-SFM,"Sprouts Farmers Market, Inc.",piotroski,True,7,9,77.8,64.33,12.11,4.53,37.32,0.93,1.96,41.21,2M,—
-HALO,"HALOZYME THERAPEUTICS, INC.",buffett,True,5,6,83.3,111,43.39,282,649,4.66,50.73,4.76,2M,—
-SIGI,"SELECTIVE INSURANCE GROUP, INC",piotroski,True,7,9,77.8,84.92,11.34,1.44,12.92,—,3.20,99.81,"339,109",—
-NHC,NATIONAL HEALTHCARE CORP,piotroski,True,9,9,100.0,230,29.97,3.37,11.23,1.82,0.42,109,"65,278",—
-NHC,NATIONAL HEALTHCARE CORP,lynch,True,3,4,75.0,230,29.97,3.37,11.23,1.82,0.42,109,"65,278",—
-AGCO,AGCO CORP /DE,piotroski,True,8,9,88.9,104,10.71,1.82,17.00,1.39,1.72,112,1M,—
-SIRI,SIRIUS XM HOLDINGS INC.,lynch,True,3,4,75.0,26.61,11.93,0.82,6.96,0.30,1.36,40.31,3M,—
-EMBC,EMBECTA CORP.,piotroski,True,7,9,77.8,5.99,3.70,—,-14.66,2.41,—,—,1M,—
-SPOK,"SPOK HOLDINGS, INC.",piotroski,True,7,9,77.8,10.74,14.32,1.54,10.85,1.18,0.41,10.83,"143,128",—
-WOR,"WORTHINGTON ENTERPRISES, INC",piotroski,True,8,9,88.9,62.64,19.95,3.03,15.20,2.37,0.80,38.20,"304,391",—
-ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.34,19.73,0.78,3.99,9.18,0.34,5.26,"110,253",—
-KN,Knowles Corporation,piotroski,True,7,9,77.8,36.52,73.04,4.14,5.70,2.75,—,9.96,"488,155",—
-ZUMZ,ZUMIEZ INC,piotroski,True,8,9,88.9,14.80,18.97,0.79,4.13,2.01,0.99,18.16,"264,519",—
-THO,"THOR INDUSTRIES, INC.",piotroski,True,7,9,77.8,63.96,18.92,0.79,4.17,1.77,—,78.52,"922,725",—
-PRLB,Proto Labs Inc,piotroski,True,8,9,88.9,91.60,104,3.30,3.15,3.49,0.13,23.46,"126,475",—
-GXO,"GXO Logistics, Inc.",piotroski,True,7,9,77.8,46.60,166,1.82,1.07,0.85,—,12.71,1M,—
-TDW,TIDEWATER INC,buffett,False,3,6,50.0,86.45,13.02,3.19,24.51,2.90,—,63.60,"510,793",—
-TDW,TIDEWATER INC,graham,False,4,9,44.4,86.45,13.02,3.19,24.51,2.90,—,63.60,"510,793",—
-TDW,TIDEWATER INC,greenblatt,False,1,3,33.3,86.45,13.02,3.19,24.51,2.90,—,63.60,"510,793",—
-TDW,TIDEWATER INC,lynch,False,1,4,25.0,86.45,13.02,3.19,24.51,2.90,—,63.60,"510,793",—
-TDW,TIDEWATER INC,netnet,False,1,4,25.0,86.45,13.02,3.19,24.51,2.90,—,63.60,"510,793",—
-TDW,TIDEWATER INC,custom,False,0,0,0.0,86.45,13.02,3.19,24.51,2.90,—,63.60,"510,793",—
-GEF,"GREIF, INC.",buffett,False,4,6,66.7,78.68,—,—,28.82,1.27,—,—,"373,607",—
-GEF,"GREIF, INC.",greenblatt,False,2,3,66.7,78.68,—,—,28.82,1.27,—,—,"373,607",—
-GEF,"GREIF, INC.",piotroski,False,5,9,55.6,78.68,—,—,28.82,1.27,—,—,"373,607",—
-GEF,"GREIF, INC.",graham,False,4,9,44.4,78.68,—,—,28.82,1.27,—,—,"373,607",—
-GEF,"GREIF, INC.",lynch,False,1,4,25.0,78.68,—,—,28.82,1.27,—,—,"373,607",—
-GEF,"GREIF, INC.",netnet,False,1,4,25.0,78.68,—,—,28.82,1.27,—,—,"373,607",—
-GEF,"GREIF, INC.",custom,False,0,0,0.0,78.68,—,—,28.82,1.27,—,—,"373,607",—
-NKLR,TERRA INNOVATUM GLOBAL N.V.,greenblatt,False,2,3,66.7,2.86,0.29,—,-576,33.57,-2.13,—,"505,222",—
-NKLR,TERRA INNOVATUM GLOBAL N.V.,lynch,False,2,4,50.0,2.86,0.29,—,-576,33.57,-2.13,—,"505,222",—
-NKLR,TERRA INNOVATUM GLOBAL N.V.,graham,False,3,9,33.3,2.86,0.29,—,-576,33.57,-2.13,—,"505,222",—
-NKLR,TERRA INNOVATUM GLOBAL N.V.,netnet,False,1,4,25.0,2.86,0.29,—,-576,33.57,-2.13,—,"505,222",—
-NKLR,TERRA INNOVATUM GLOBAL N.V.,buffett,False,1,6,16.7,2.86,0.29,—,-576,33.57,-2.13,—,"505,222",—
-NKLR,TERRA INNOVATUM GLOBAL N.V.,piotroski,False,1,9,11.1,2.86,0.29,—,-576,33.57,-2.13,—,"505,222",—
-NKLR,TERRA INNOVATUM GLOBAL N.V.,custom,False,0,0,0.0,2.86,0.29,—,-576,33.57,-2.13,—,"505,222",—
-PRI,"Primerica, Inc.",buffett,False,4,6,66.7,277,12.08,3.70,30.71,—,5.14,196,"158,271",—
-PRI,"Primerica, Inc.",graham,False,5,9,55.6,277,12.08,3.70,30.71,—,5.14,196,"158,271",—
-PRI,"Primerica, Inc.",lynch,False,2,4,50.0,277,12.08,3.70,30.71,—,5.14,196,"158,271",—
-PRI,"Primerica, Inc.",netnet,False,1,4,25.0,277,12.08,3.70,30.71,—,5.14,196,"158,271",—
-PRI,"Primerica, Inc.",custom,False,0,0,0.0,277,12.08,3.70,30.71,—,5.14,196,"158,271",—
-ESE,ESCO TECHNOLOGIES INC.,buffett,False,4,6,66.7,262,22.64,4.40,19.42,1.35,0.56,124,"239,122",—
+GOOGM,Alphabet Inc.,graham,True,9,9,100.0,49.83,4.61,1.47,31.83,2.01,0.43,90.88,"303,992",—
+GOOGM,Alphabet Inc.,buffett,True,6,6,100.0,49.83,4.61,1.47,31.83,2.01,0.43,90.88,"303,992",—
+GOOGM,Alphabet Inc.,greenblatt,True,3,3,100.0,49.83,4.61,1.47,31.83,2.01,0.43,90.88,"303,992",—
+GOOGM,Alphabet Inc.,lynch,True,4,4,100.0,49.83,4.61,1.47,31.83,2.01,0.43,90.88,"303,992",—
+GOOGN,Alphabet Inc.,graham,True,9,9,100.0,49.79,4.61,1.47,31.83,2.01,0.43,90.88,"134,040",—
+GOOGN,Alphabet Inc.,buffett,True,6,6,100.0,49.79,4.61,1.47,31.83,2.01,0.43,90.88,"134,040",—
+GOOGN,Alphabet Inc.,greenblatt,True,3,3,100.0,49.79,4.61,1.47,31.83,2.01,0.43,90.88,"134,040",—
+GOOGN,Alphabet Inc.,lynch,True,4,4,100.0,49.79,4.61,1.47,31.83,2.01,0.43,90.88,"134,040",—
+USLM,UNITED STATES LIME & MINERALS INC,lynch,True,4,4,100.0,106,22.61,4.81,21.29,19.27,0.08,48.03,"31,753",—
+USLM,UNITED STATES LIME & MINERALS INC,buffett,True,5,6,83.3,106,22.61,4.81,21.29,19.27,0.08,48.03,"31,753",—
+LPG,DORIAN LPG LTD.,lynch,True,4,4,100.0,58.24,12.83,2.18,17.00,2.67,0.64,52.25,"388,080",—
+LPG,DORIAN LPG LTD.,piotroski,True,8,9,88.9,58.24,12.83,2.18,17.00,2.67,0.64,52.25,"388,080",—
+REX,REX AMERICAN RESOURCES CORPORATION,lynch,True,3,4,75.0,41.94,16.78,2.28,15.57,5.94,—,32.16,"30,183",—
+AREC,AMERICAN RESOURCES CORPORATION,greenblatt,True,3,3,100.0,1.37,2.17,1.26,58.44,2.19,0.80,3.92,1M,—
+ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.27,6.74,0.19,4.91,1.93,0.73,1.14,"10,782",—
+AROC,"Archrock, Inc.",piotroski,True,8,9,88.9,30.01,16.40,3.52,21.61,1.54,1.92,18.75,"234,367",—
+MTCH,"Match Group, Inc.",piotroski,True,8,9,88.9,41.52,17.45,—,-242,1.42,—,—,4M,—
+MTCH,"Match Group, Inc.",lynch,True,3,4,75.0,41.52,17.45,—,-242,1.42,—,—,4M,—
+WNC,WABASH NATIONAL CORPORATION,greenblatt,True,3,3,100.0,13.31,2.63,1.51,57.56,1.39,2.18,31.68,"49,739",—
+ACEL,"Accel Entertainment, Inc.",piotroski,True,7,9,77.8,11.17,18.62,3.58,19.09,2.61,—,6.49,"315,177",—
+AIR,AAR CORP,piotroski,True,7,9,77.8,101,20.69,2.27,11.02,2.84,—,69.66,"443,171",—
+AIR,AAR CORP,lynch,True,3,4,75.0,101,20.69,2.27,11.02,2.84,—,69.66,"443,171",—
+EFC,Ellington Financial Inc.,lynch,True,3,4,75.0,11.68,9.82,0.64,6.47,—,9.53,22.10,"440,740",—
+TRN,TRINITY INDUSTRIES INC,greenblatt,True,3,3,100.0,25.95,8.51,2.00,23.50,—,6.76,29.86,"762,992",—
+TRN,TRINITY INDUSTRIES INC,piotroski,True,7,9,77.8,25.95,8.51,2.00,23.50,—,6.76,29.86,"762,992",—
+EGP,"EASTGROUP PROPERTIES, INC.",piotroski,True,7,9,77.8,197,40.54,2.98,7.36,—,0.55,85.17,"323,287",—
+EGP,"EASTGROUP PROPERTIES, INC.",lynch,True,3,4,75.0,197,40.54,2.98,7.36,—,0.55,85.17,"323,287",—
+POST,"Post Holdings, Inc.",lynch,True,3,4,75.0,76.71,13.92,1.29,8.94,1.67,2.60,86.01,"76,754",—
+SCSC,"ScanSource, Inc.",piotroski,True,7,9,77.8,61.76,16.97,1.47,8.66,1.76,1.12,58.64,"57,378",—
+SCSC,"ScanSource, Inc.",lynch,True,3,4,75.0,61.76,16.97,1.47,8.66,1.76,1.12,58.64,"57,378",—
+SSRM,SSR Mining Inc.,piotroski,True,7,9,77.8,32.82,17.74,2.03,11.28,2.08,0.51,25.94,1M,—
+AIOT,"Powerfleet, Inc.",piotroski,True,7,9,77.8,2.72,—,0.77,-4.32,1.13,1.00,—,"791,112",—
+RRX,REGAL REXNORD CORP,piotroski,True,7,9,77.8,163,38.85,1.59,4.08,2.15,—,98.55,"824,949",—
+MYE,"Myers Industries, Inc.",piotroski,True,7,9,77.8,30.27,32.55,3.86,11.87,1.67,1.89,12.80,"18,461",—
+INNV,InnovAge Holding Corp.,piotroski,True,7,9,77.8,9.15,—,5.27,-1.08,1.05,1.23,—,"315,394",—
+CALX,"Calix, Inc",piotroski,True,7,9,77.8,36.08,139,2.91,2.08,4.24,0.23,8.52,"920,987",—
+ADT,ADT Inc.,piotroski,True,8,9,88.9,6.61,—,—,15.77,0.93,3.19,—,1M,—
+OMCL,"OMNICELL, INC",piotroski,True,7,9,77.8,36.49,912,1.37,0.17,1.43,0.60,4.89,"75,114",—
+GOOGM,Alphabet Inc.,piotroski,False,6,9,66.7,49.83,4.61,1.47,31.83,2.01,0.43,90.88,"303,992",—
+GOOGN,Alphabet Inc.,piotroski,False,6,9,66.7,49.79,4.61,1.47,31.83,2.01,0.43,90.88,"134,040",—
+GOOGM,Alphabet Inc.,netnet,False,2,4,50.0,49.83,4.61,1.47,31.83,2.01,0.43,90.88,"303,992",—
+GOOGN,Alphabet Inc.,netnet,False,2,4,50.0,49.79,4.61,1.47,31.83,2.01,0.43,90.88,"134,040",—
+GOOGM,Alphabet Inc.,custom,False,0,0,0.0,49.83,4.61,1.47,31.83,2.01,0.43,90.88,"303,992",—
+GOOGN,Alphabet Inc.,custom,False,0,0,0.0,49.79,4.61,1.47,31.83,2.01,0.43,90.88,"134,040",—
+USLM,UNITED STATES LIME & MINERALS INC,piotroski,False,6,9,66.7,106,22.61,4.81,21.29,19.27,0.08,48.03,"31,753",—
+USLM,UNITED STATES LIME & MINERALS INC,greenblatt,False,2,3,66.7,106,22.61,4.81,21.29,19.27,0.08,48.03,"31,753",—
+USLM,UNITED STATES LIME & MINERALS INC,graham,False,5,9,55.6,106,22.61,4.81,21.29,19.27,0.08,48.03,"31,753",—
+USLM,UNITED STATES LIME & MINERALS INC,netnet,False,2,4,50.0,106,22.61,4.81,21.29,19.27,0.08,48.03,"31,753",—
+USLM,UNITED STATES LIME & MINERALS INC,custom,False,0,0,0.0,106,22.61,4.81,21.29,19.27,0.08,48.03,"31,753",—
+LPG,DORIAN LPG LTD.,buffett,False,4,6,66.7,58.24,12.83,2.18,17.00,2.67,0.64,52.25,"388,080",—
