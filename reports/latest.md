@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-14 13:10 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-14 18:07 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
 Screened **75** companies · **34** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| FSLR | First Solar, Inc. | lynch | ✅ | 100% | 187 | 13.13 | 2.10 | 16.02 | 2.67 | 0.40 | 2M | — |
-| FSLR | First Solar, Inc. | piotroski | ✅ | 89% | 187 | 13.13 | 2.10 | 16.02 | 2.67 | 0.40 | 2M | — |
-| BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 118 | 16.00 | 2.74 | 17.13 | 2.65 | 0.86 | 890,143 | — |
-| BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 118 | 16.00 | 2.74 | 17.13 | 2.65 | 0.86 | 890,143 | — |
-| GMED | GLOBUS MEDICAL, INC. | piotroski | ✅ | 100% | 76.32 | 19.47 | 2.29 | 11.76 | 4.26 | 0.16 | 1M | — |
-| GMED | GLOBUS MEDICAL, INC. | lynch | ✅ | 100% | 76.32 | 19.47 | 2.29 | 11.76 | 4.26 | 0.16 | 1M | — |
-| PFS | PROVIDENT FINANCIAL SERVICES | piotroski | ✅ | 78% | 22.04 | 9.88 | 1.02 | 10.28 | — | 7.82 | 601,293 | — |
-| PFS | PROVIDENT FINANCIAL SERVICES | lynch | ✅ | 75% | 22.04 | 9.88 | 1.02 | 10.28 | — | 7.82 | 601,293 | — |
+| POWL | Powell Industries, Inc. | greenblatt | ✅ | 100% | 167 | 11.24 | 3.17 | 28.21 | 2.09 | 0.73 | 518,840 | — |
+| POWL | Powell Industries, Inc. | piotroski | ✅ | 78% | 167 | 11.24 | 3.17 | 28.21 | 2.09 | 0.73 | 518,840 | — |
+| POWL | Powell Industries, Inc. | lynch | ✅ | 75% | 167 | 11.24 | 3.17 | 28.21 | 2.09 | 0.73 | 518,840 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | greenblatt | ✅ | 100% | 2.53 | 12.65 | 2.82 | 22.71 | 4.86 | 0.39 | 338,421 | — |
+| FSLR | First Solar, Inc. | lynch | ✅ | 100% | 179 | 12.60 | 2.02 | 16.02 | 2.67 | 0.40 | 1M | — |
+| FSLR | First Solar, Inc. | piotroski | ✅ | 89% | 179 | 12.60 | 2.02 | 16.02 | 2.67 | 0.40 | 1M | — |
+| IBP | Installed Building Products, | piotroski | ✅ | 89% | 177 | 18.20 | 6.80 | 37.39 | 3.03 | 1.91 | 191,942 | — |
+| IBP | Installed Building Products, | lynch | ✅ | 75% | 177 | 18.20 | 6.80 | 37.39 | 3.03 | 1.91 | 191,942 | — |
 | AREC | AMERICAN RESOURCES CORPORATI | greenblatt | ✅ | 100% | 1.32 | 2.10 | 1.22 | 58.44 | 2.19 | 0.80 | 3M | — |
-| AROC | Archrock, Inc. | piotroski | ✅ | 89% | 30.68 | 16.77 | 3.59 | 21.61 | 1.54 | 1.92 | 2M | — |
-| WTFC | WINTRUST FINANCIAL CORP | lynch | ✅ | 75% | 143 | 12.53 | 1.34 | 11.35 | — | 8.80 | 345,715 | — |
-| AES | THE AES CORPORATION | greenblatt | ✅ | 100% | 14.99 | 11.90 | 2.63 | 22.40 | 0.77 | — | 7M | — |
-| SSD | Simpson Manufacturing Co., I | buffett | ✅ | 83% | 172 | 20.90 | 3.55 | 17.00 | 3.54 | 0.51 | 229,845 | — |
-| SSD | Simpson Manufacturing Co., I | piotroski | ✅ | 78% | 172 | 20.90 | 3.55 | 17.00 | 3.54 | 0.51 | 229,845 | — |
-| BDC | BELDEN INC. | piotroski | ✅ | 89% | 108 | 18.35 | 3.45 | 18.78 | 1.93 | — | 315,714 | — |
-| EZPW | EZCORP, INC. | piotroski | ✅ | 78% | 33.07 | 23.29 | 2.69 | 10.69 | 5.61 | 0.90 | 912,677 | — |
-| GRC | The Gorman-Rupp Company | piotroski | ✅ | 89% | 73.86 | 36.56 | 4.68 | 12.78 | 2.37 | 1.07 | 139,244 | — |
-| EMBC | EMBECTA CORP. | piotroski | ✅ | 78% | 6.20 | 3.83 | — | -14.66 | 2.41 | — | 732,855 | — |
-| SSTK | SHUTTERSTOCK, INC. | piotroski | ✅ | 89% | 4.23 | 3.38 | 0.26 | 7.83 | 0.54 | 1.33 | 655,770 | — |
+| BELFA | BEL FUSE INC /NJ | piotroski | ✅ | 89% | 188 | — | — | 14.46 | 3.02 | 0.98 | 90,140 | — |
+| CVSA | Covista Inc. | lynch | ✅ | 75% | 129 | 18.34 | 3.19 | 17.40 | 1.09 | 1.08 | 268,703 | — |
+| MTCH | Match Group, Inc. | piotroski | ✅ | 89% | 42.36 | 17.80 | — | -242 | 1.42 | — | 4M | — |
+| MTCH | Match Group, Inc. | lynch | ✅ | 75% | 42.36 | 17.80 | — | -242 | 1.42 | — | 4M | — |
+| WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 13.47 | 2.66 | 1.53 | 57.56 | 1.39 | 2.18 | 518,698 | — |
+| ACEL | Accel Entertainment, Inc. | piotroski | ✅ | 78% | 11.10 | 18.49 | 3.55 | 19.09 | 2.61 | — | 146,424 | — |
+| ORI | OLD REPUBLIC INTERNATIONAL C | piotroski | ✅ | 78% | 38.15 | 10.26 | 1.62 | 15.82 | — | 4.05 | 2M | — |
+| PCTY | PAYLOCITY HOLDING CORPORATIO | piotroski | ✅ | 89% | 158 | 32.16 | 7.09 | 22.08 | 1.09 | 3.00 | 264,605 | — |
+| BFH | BREAD FINANCIAL HOLDINGS, IN | lynch | ✅ | 75% | 102 | 9.39 | 1.46 | 15.57 | — | 5.81 | 390,050 | — |
+| OPY | OPPENHEIMER HOLDINGS INC. | piotroski | ✅ | 78% | 107 | 8.20 | 1.24 | 15.08 | — | 2.77 | 117,239 | — |
+| TILE | INTERFACE INC | piotroski | ✅ | 89% | 34.80 | 17.76 | 3.21 | 18.12 | 2.34 | 0.88 | 222,860 | — |
+| WLY | JOHN WILEY & SONS, INC. | piotroski | ✅ | 100% | 52.58 | 12.64 | 3.30 | 26.13 | 0.54 | 2.06 | 420,924 | — |
+| AGCO | AGCO CORP /DE | piotroski | ✅ | 89% | 106 | 10.87 | 1.85 | 17.00 | 1.39 | 1.72 | 397,878 | — |
 | EXTR | Extreme Networks, Inc. | piotroski | ✅ | 89% | 23.49 | 75.77 | 35.79 | 47.54 | 0.93 | — | 970,735 | — |
-| FAF | FIRST AMERICAN FINANCIAL COR | piotroski | ✅ | 89% | 62.17 | 10.36 | 1.17 | 11.31 | — | 1.95 | 930,182 | — |
-| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.40 | 20.00 | 0.79 | 3.99 | 9.18 | 0.34 | 150,184 | — |
-| MAGN | Magnera Corporation | piotroski | ✅ | 78% | 11.09 | — | 0.37 | -14.94 | 2.37 | 2.75 | 467,696 | — |
-| RH | RH | piotroski | ✅ | 89% | 116 | 18.36 | 37.85 | 206 | 1.19 | 78.80 | 566,695 | — |
-| AIOT | Powerfleet, Inc. | piotroski | ✅ | 78% | 2.69 | — | 0.76 | -4.32 | 1.13 | 1.00 | 579,678 | — |
-| TBCH | TURTLE BEACH CORPORATION | piotroski | ✅ | 78% | 14.53 | 18.87 | 2.31 | 12.24 | 1.98 | 1.09 | 482,508 | — |
-| LFST | LifeStance Health Group, Inc | piotroski | ✅ | 89% | 12.32 | 499 | 3.17 | 0.64 | 1.65 | 0.45 | 2M | — |
-| GCO | GENESCO INC | piotroski | ✅ | 89% | 36.16 | 28.93 | 0.68 | 2.34 | 1.64 | 1.46 | 87,866 | — |
-| MPAA | MOTORCAR PARTS OF AMERICA, I | piotroski | ✅ | 78% | 10.59 | 17.08 | 0.80 | 4.66 | 1.46 | 2.83 | 56,717 | — |
-| WRBY | Warby Parker Inc. | piotroski | ✅ | 78% | 26.52 | 2,652 | 9.02 | 0.45 | 2.35 | 0.96 | 3M | — |
-| ZUMZ | ZUMIEZ INC | piotroski | ✅ | 89% | 14.11 | 18.09 | 0.75 | 4.13 | 2.01 | 0.99 | 300,604 | — |
-| PPLC | PPL Corp | piotroski | ✅ | 78% | 46.38 | 29.17 | 2.32 | 7.94 | 0.86 | — | 3,466 | — |
-| QUAD | Quad/Graphics, Inc. | piotroski | ✅ | 78% | 9.54 | 17.67 | — | -45.38 | 0.86 | -18.90 | 169,549 | — |
-| ORN | ORION GROUP HOLDINGS, INC. | piotroski | ✅ | 78% | 9.15 | 152 | 2.28 | 1.56 | 1.36 | 1.61 | 397,357 | — |
-| FSLR | First Solar, Inc. | graham | ▫️ | 67% | 187 | 13.13 | 2.10 | 16.02 | 2.67 | 0.40 | 2M | — |
-| FSLR | First Solar, Inc. | buffett | ▫️ | 67% | 187 | 13.13 | 2.10 | 16.02 | 2.67 | 0.40 | 2M | — |
-| FSLR | First Solar, Inc. | netnet | ▫️ | 50% | 187 | 13.13 | 2.10 | 16.02 | 2.67 | 0.40 | 2M | — |
-| FSLR | First Solar, Inc. | greenblatt | ▫️ | 33% | 187 | 13.13 | 2.10 | 16.02 | 2.67 | 0.40 | 2M | — |
-| FSLR | First Solar, Inc. | custom | ▫️ | 0% | 187 | 13.13 | 2.10 | 16.02 | 2.67 | 0.40 | 2M | — |
-| BOOT | Boot Barn Holdings, Inc. | graham | ▫️ | 67% | 118 | 16.00 | 2.74 | 17.13 | 2.65 | 0.86 | 890,143 | — |
-| BOOT | Boot Barn Holdings, Inc. | buffett | ▫️ | 67% | 118 | 16.00 | 2.74 | 17.13 | 2.65 | 0.86 | 890,143 | — |
-| BOOT | Boot Barn Holdings, Inc. | greenblatt | ▫️ | 33% | 118 | 16.00 | 2.74 | 17.13 | 2.65 | 0.86 | 890,143 | — |
-| BOOT | Boot Barn Holdings, Inc. | netnet | ▫️ | 25% | 118 | 16.00 | 2.74 | 17.13 | 2.65 | 0.86 | 890,143 | — |
-| BOOT | Boot Barn Holdings, Inc. | custom | ▫️ | 0% | 118 | 16.00 | 2.74 | 17.13 | 2.65 | 0.86 | 890,143 | — |
-| GMED | GLOBUS MEDICAL, INC. | graham | ▫️ | 67% | 76.32 | 19.47 | 2.29 | 11.76 | 4.26 | 0.16 | 1M | — |
-| GMED | GLOBUS MEDICAL, INC. | buffett | ▫️ | 67% | 76.32 | 19.47 | 2.29 | 11.76 | 4.26 | 0.16 | 1M | — |
-| GMED | GLOBUS MEDICAL, INC. | netnet | ▫️ | 50% | 76.32 | 19.47 | 2.29 | 11.76 | 4.26 | 0.16 | 1M | — |
-| GMED | GLOBUS MEDICAL, INC. | greenblatt | ▫️ | 33% | 76.32 | 19.47 | 2.29 | 11.76 | 4.26 | 0.16 | 1M | — |
-| GMED | GLOBUS MEDICAL, INC. | custom | ▫️ | 0% | 76.32 | 19.47 | 2.29 | 11.76 | 4.26 | 0.16 | 1M | — |
-| PFS | PROVIDENT FINANCIAL SERVICES | graham | ▫️ | 67% | 22.04 | 9.88 | 1.02 | 10.28 | — | 7.82 | 601,293 | — |
+| HLIO | HELIOS TECHNOLOGIES, INC. | piotroski | ✅ | 100% | 69.46 | 47.90 | 2.48 | 5.20 | 2.90 | 0.63 | 460,562 | — |
+| HLIO | HELIOS TECHNOLOGIES, INC. | lynch | ✅ | 75% | 69.46 | 47.90 | 2.48 | 5.20 | 2.90 | 0.63 | 460,562 | — |
+| VVX | V2X, Inc. | piotroski | ✅ | 100% | 67.03 | 27.36 | 1.97 | 7.18 | 1.22 | 2.02 | 261,848 | — |
+| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.30 | 19.57 | 0.77 | 3.99 | 9.18 | 0.34 | 55,363 | — |
+| CHEF | CHEFS’ WAREHOUSE, INC. | piotroski | ✅ | 100% | 110 | 65.56 | 8.38 | 11.97 | 2.05 | 2.36 | 317,787 | — |
+| MOS | MOSAIC CO | piotroski | ✅ | 89% | 19.00 | 11.17 | 0.50 | 4.47 | 1.32 | — | 3M | — |
+| PLXS | PLEXUS CORP. | piotroski | ✅ | 89% | 246 | 39.29 | 4.67 | 11.89 | 1.58 | 1.16 | 80,019 | — |
+| PPLC | PPL Corp | piotroski | ✅ | 78% | 46.40 | 29.18 | 2.32 | 7.94 | 0.86 | — | 77,897 | — |
+| DBD | Diebold Nixdorf, Incorporate | piotroski | ✅ | 78% | 63.83 | 25.13 | 2.16 | 8.60 | 1.30 | 2.50 | 77,928 | — |
+| GXO | GXO Logistics, Inc. | piotroski | ✅ | 78% | 46.50 | 166 | 1.81 | 1.07 | 0.85 | — | 961,027 | — |
+| KLIC | KULICKE AND SOFFA INDUSTRIES | piotroski | ✅ | 89% | 88.54 | 22,135 | 5.73 | 0.03 | 4.79 | 0.34 | 370,969 | — |
+| HGTY | HAGERTY, INC. | piotroski | ▫️ | 67% | 14.90 | — | — | 67.43 | — | 6.09 | 117,003 | — |
+| HGTY | HAGERTY, INC. | greenblatt | ▫️ | 67% | 14.90 | — | — | 67.43 | — | 6.09 | 117,003 | — |
+| HGTY | HAGERTY, INC. | buffett | ▫️ | 50% | 14.90 | — | — | 67.43 | — | 6.09 | 117,003 | — |
+| HGTY | HAGERTY, INC. | lynch | ▫️ | 25% | 14.90 | — | — | 67.43 | — | 6.09 | 117,003 | — |
+| HGTY | HAGERTY, INC. | netnet | ▫️ | 25% | 14.90 | — | — | 67.43 | — | 6.09 | 117,003 | — |
+| HGTY | HAGERTY, INC. | graham | ▫️ | 11% | 14.90 | — | — | 67.43 | — | 6.09 | 117,003 | — |
+| HGTY | HAGERTY, INC. | custom | ▫️ | 0% | 14.90 | — | — | 67.43 | — | 6.09 | 117,003 | — |
+| POWL | Powell Industries, Inc. | graham | ▫️ | 78% | 167 | 11.24 | 3.17 | 28.21 | 2.09 | 0.73 | 518,840 | — |
+| POWL | Powell Industries, Inc. | buffett | ▫️ | 67% | 167 | 11.24 | 3.17 | 28.21 | 2.09 | 0.73 | 518,840 | — |
+| POWL | Powell Industries, Inc. | netnet | ▫️ | 50% | 167 | 11.24 | 3.17 | 28.21 | 2.09 | 0.73 | 518,840 | — |
+| POWL | Powell Industries, Inc. | custom | ▫️ | 0% | 167 | 11.24 | 3.17 | 28.21 | 2.09 | 0.73 | 518,840 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | piotroski | ▫️ | 67% | 2.53 | 12.65 | 2.82 | 22.71 | 4.86 | 0.39 | 338,421 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | buffett | ▫️ | 50% | 2.53 | 12.65 | 2.82 | 22.71 | 4.86 | 0.39 | 338,421 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | lynch | ▫️ | 50% | 2.53 | 12.65 | 2.82 | 22.71 | 4.86 | 0.39 | 338,421 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | netnet | ▫️ | 50% | 2.53 | 12.65 | 2.82 | 22.71 | 4.86 | 0.39 | 338,421 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | graham | ▫️ | 44% | 2.53 | 12.65 | 2.82 | 22.71 | 4.86 | 0.39 | 338,421 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.

@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-FSLR,"First Solar, Inc.",lynch,True,4,4,100.0,187,13.13,2.10,16.02,2.67,0.40,168,2M,—
-FSLR,"First Solar, Inc.",piotroski,True,8,9,88.9,187,13.13,2.10,16.02,2.67,0.40,168,2M,—
-BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,118,16.00,2.74,17.13,2.65,0.86,84.23,"890,143",—
-BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,118,16.00,2.74,17.13,2.65,0.86,84.23,"890,143",—
-GMED,"GLOBUS MEDICAL, INC.",piotroski,True,9,9,100.0,76.32,19.47,2.29,11.76,4.26,0.16,54.25,1M,—
-GMED,"GLOBUS MEDICAL, INC.",lynch,True,4,4,100.0,76.32,19.47,2.29,11.76,4.26,0.16,54.25,1M,—
-PFS,PROVIDENT FINANCIAL SERVICES INC,piotroski,True,7,9,77.8,22.04,9.88,1.02,10.28,—,7.82,33.00,"601,293",—
-PFS,PROVIDENT FINANCIAL SERVICES INC,lynch,True,3,4,75.0,22.04,9.88,1.02,10.28,—,7.82,33.00,"601,293",—
+POWL,"Powell Industries, Inc.",greenblatt,True,3,3,100.0,167,11.24,3.17,28.21,2.09,0.73,133,"518,840",—
+POWL,"Powell Industries, Inc.",piotroski,True,7,9,77.8,167,11.24,3.17,28.21,2.09,0.73,133,"518,840",—
+POWL,"Powell Industries, Inc.",lynch,True,3,4,75.0,167,11.24,3.17,28.21,2.09,0.73,133,"518,840",—
+NAGE,"NIAGEN BIOSCIENCE, INC.",greenblatt,True,3,3,100.0,2.53,12.65,2.82,22.71,4.86,0.39,2.01,"338,421",—
+FSLR,"First Solar, Inc.",lynch,True,4,4,100.0,179,12.60,2.02,16.02,2.67,0.40,168,1M,—
+FSLR,"First Solar, Inc.",piotroski,True,8,9,88.9,179,12.60,2.02,16.02,2.67,0.40,168,1M,—
+IBP,"Installed Building Products, Inc.",piotroski,True,8,9,88.9,177,18.20,6.80,37.39,3.03,1.91,75.33,"191,942",—
+IBP,"Installed Building Products, Inc.",lynch,True,3,4,75.0,177,18.20,6.80,37.39,3.03,1.91,75.33,"191,942",—
 AREC,AMERICAN RESOURCES CORPORATION,greenblatt,True,3,3,100.0,1.32,2.10,1.22,58.44,2.19,0.80,3.92,3M,—
-AROC,"Archrock, Inc.",piotroski,True,8,9,88.9,30.68,16.77,3.59,21.61,1.54,1.92,18.75,2M,—
-WTFC,WINTRUST FINANCIAL CORP,lynch,True,3,4,75.0,143,12.53,1.34,11.35,—,8.80,166,"345,715",—
-AES,THE AES CORPORATION,greenblatt,True,3,3,100.0,14.99,11.90,2.63,22.40,0.77,—,12.70,7M,—
-SSD,"Simpson Manufacturing Co., Inc.",buffett,True,5,6,83.3,172,20.90,3.55,17.00,3.54,0.51,94.81,"229,845",—
-SSD,"Simpson Manufacturing Co., Inc.",piotroski,True,7,9,77.8,172,20.90,3.55,17.00,3.54,0.51,94.81,"229,845",—
-BDC,BELDEN INC.,piotroski,True,8,9,88.9,108,18.35,3.45,18.78,1.93,—,64.66,"315,714",—
-EZPW,"EZCORP, INC.",piotroski,True,7,9,77.8,33.07,23.29,2.69,10.69,5.61,0.90,19.82,"912,677",—
-GRC,The Gorman-Rupp Company,piotroski,True,8,9,88.9,73.86,36.56,4.68,12.78,2.37,1.07,26.77,"139,244",—
-EMBC,EMBECTA CORP.,piotroski,True,7,9,77.8,6.20,3.83,—,-14.66,2.41,—,—,"732,855",—
-SSTK,"SHUTTERSTOCK, INC.",piotroski,True,8,9,88.9,4.23,3.38,0.26,7.83,0.54,1.33,21.23,"655,770",—
+BELFA,BEL FUSE INC /NJ,piotroski,True,8,9,88.9,188,—,—,14.46,3.02,0.98,—,"90,140",—
+CVSA,Covista Inc.,lynch,True,3,4,75.0,129,18.34,3.19,17.40,1.09,1.08,80.09,"268,703",—
+MTCH,"Match Group, Inc.",piotroski,True,8,9,88.9,42.36,17.80,—,-242,1.42,—,—,4M,—
+MTCH,"Match Group, Inc.",lynch,True,3,4,75.0,42.36,17.80,—,-242,1.42,—,—,4M,—
+WNC,WABASH NATIONAL CORPORATION,greenblatt,True,3,3,100.0,13.47,2.66,1.53,57.56,1.39,2.18,31.68,"518,698",—
+ACEL,"Accel Entertainment, Inc.",piotroski,True,7,9,77.8,11.10,18.49,3.55,19.09,2.61,—,6.49,"146,424",—
+ORI,OLD REPUBLIC INTERNATIONAL CORPORATION,piotroski,True,7,9,77.8,38.15,10.26,1.62,15.82,—,4.05,44.38,2M,—
+PCTY,PAYLOCITY HOLDING CORPORATION,piotroski,True,8,9,88.9,158,32.16,7.09,22.08,1.09,3.00,49.69,"264,605",—
+BFH,"BREAD FINANCIAL HOLDINGS, INC.",lynch,True,3,4,75.0,102,9.39,1.46,15.57,—,5.81,131,"390,050",—
+OPY,OPPENHEIMER HOLDINGS INC.,piotroski,True,7,9,77.8,107,8.20,1.24,15.08,—,2.77,159,"117,239",—
+TILE,INTERFACE INC,piotroski,True,8,9,88.9,34.80,17.76,3.21,18.12,2.34,0.88,21.85,"222,860",—
+WLY,"JOHN WILEY & SONS, INC.",piotroski,True,9,9,100.0,52.58,12.64,3.30,26.13,0.54,2.06,38.61,"420,924",—
+AGCO,AGCO CORP /DE,piotroski,True,8,9,88.9,106,10.87,1.85,17.00,1.39,1.72,112,"397,878",—
 EXTR,"Extreme Networks, Inc.",piotroski,True,8,9,88.9,23.49,75.77,35.79,47.54,0.93,—,2.14,"970,735",—
-FAF,FIRST AMERICAN FINANCIAL CORPORATION,piotroski,True,8,9,88.9,62.17,10.36,1.17,11.31,—,1.95,84.61,"930,182",—
-ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.40,20.00,0.79,3.99,9.18,0.34,5.26,"150,184",—
-MAGN,Magnera Corporation,piotroski,True,7,9,77.8,11.09,—,0.37,-14.94,2.37,2.75,—,"467,696",—
-RH,RH,piotroski,True,8,9,88.9,116,18.36,37.85,206,1.19,78.80,20.85,"566,695",—
-AIOT,"Powerfleet, Inc.",piotroski,True,7,9,77.8,2.69,—,0.76,-4.32,1.13,1.00,—,"579,678",—
-TBCH,TURTLE BEACH CORPORATION,piotroski,True,7,9,77.8,14.53,18.87,2.31,12.24,1.98,1.09,10.43,"482,508",—
-LFST,"LifeStance Health Group, Inc.",piotroski,True,8,9,88.9,12.32,499,3.17,0.64,1.65,0.45,1.47,2M,—
-GCO,GENESCO INC,piotroski,True,8,9,88.9,36.16,28.93,0.68,2.34,1.64,1.46,38.74,"87,866",—
-MPAA,"MOTORCAR PARTS OF AMERICA, INC.",piotroski,True,7,9,77.8,10.59,17.08,0.80,4.66,1.46,2.83,13.63,"56,717",—
-WRBY,Warby Parker Inc.,piotroski,True,7,9,77.8,26.52,"2,652",9.02,0.45,2.35,0.96,0.81,3M,—
-ZUMZ,ZUMIEZ INC,piotroski,True,8,9,88.9,14.11,18.09,0.75,4.13,2.01,0.99,18.16,"300,604",—
-PPLC,PPL Corp,piotroski,True,7,9,77.8,46.38,29.17,2.32,7.94,0.86,—,26.76,"3,466",—
-QUAD,"Quad/Graphics, Inc.",piotroski,True,7,9,77.8,9.54,17.67,—,-45.38,0.86,-18.90,—,"169,549",—
-ORN,"ORION GROUP HOLDINGS, INC.",piotroski,True,7,9,77.8,9.15,152,2.28,1.56,1.36,1.61,2.33,"397,357",—
-FSLR,"First Solar, Inc.",graham,False,6,9,66.7,187,13.13,2.10,16.02,2.67,0.40,168,2M,—
-FSLR,"First Solar, Inc.",buffett,False,4,6,66.7,187,13.13,2.10,16.02,2.67,0.40,168,2M,—
-FSLR,"First Solar, Inc.",netnet,False,2,4,50.0,187,13.13,2.10,16.02,2.67,0.40,168,2M,—
-FSLR,"First Solar, Inc.",greenblatt,False,1,3,33.3,187,13.13,2.10,16.02,2.67,0.40,168,2M,—
-FSLR,"First Solar, Inc.",custom,False,0,0,0.0,187,13.13,2.10,16.02,2.67,0.40,168,2M,—
-BOOT,"Boot Barn Holdings, Inc.",graham,False,6,9,66.7,118,16.00,2.74,17.13,2.65,0.86,84.23,"890,143",—
-BOOT,"Boot Barn Holdings, Inc.",buffett,False,4,6,66.7,118,16.00,2.74,17.13,2.65,0.86,84.23,"890,143",—
-BOOT,"Boot Barn Holdings, Inc.",greenblatt,False,1,3,33.3,118,16.00,2.74,17.13,2.65,0.86,84.23,"890,143",—
-BOOT,"Boot Barn Holdings, Inc.",netnet,False,1,4,25.0,118,16.00,2.74,17.13,2.65,0.86,84.23,"890,143",—
-BOOT,"Boot Barn Holdings, Inc.",custom,False,0,0,0.0,118,16.00,2.74,17.13,2.65,0.86,84.23,"890,143",—
-GMED,"GLOBUS MEDICAL, INC.",graham,False,6,9,66.7,76.32,19.47,2.29,11.76,4.26,0.16,54.25,1M,—
-GMED,"GLOBUS MEDICAL, INC.",buffett,False,4,6,66.7,76.32,19.47,2.29,11.76,4.26,0.16,54.25,1M,—
-GMED,"GLOBUS MEDICAL, INC.",netnet,False,2,4,50.0,76.32,19.47,2.29,11.76,4.26,0.16,54.25,1M,—
-GMED,"GLOBUS MEDICAL, INC.",greenblatt,False,1,3,33.3,76.32,19.47,2.29,11.76,4.26,0.16,54.25,1M,—
-GMED,"GLOBUS MEDICAL, INC.",custom,False,0,0,0.0,76.32,19.47,2.29,11.76,4.26,0.16,54.25,1M,—
-PFS,PROVIDENT FINANCIAL SERVICES INC,graham,False,6,9,66.7,22.04,9.88,1.02,10.28,—,7.82,33.00,"601,293",—
+HLIO,"HELIOS TECHNOLOGIES, INC.",piotroski,True,9,9,100.0,69.46,47.90,2.48,5.20,2.90,0.63,30.21,"460,562",—
+HLIO,"HELIOS TECHNOLOGIES, INC.",lynch,True,3,4,75.0,69.46,47.90,2.48,5.20,2.90,0.63,30.21,"460,562",—
+VVX,"V2X, Inc.",piotroski,True,9,9,100.0,67.03,27.36,1.97,7.18,1.22,2.02,43.35,"261,848",—
+ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.30,19.57,0.77,3.99,9.18,0.34,5.26,"55,363",—
+CHEF,"CHEFS’ WAREHOUSE, INC.",piotroski,True,9,9,100.0,110,65.56,8.38,11.97,2.05,2.36,22.28,"317,787",—
+MOS,MOSAIC CO,piotroski,True,8,9,88.9,19.00,11.17,0.50,4.47,1.32,—,38.07,3M,—
+PLXS,PLEXUS CORP.,piotroski,True,8,9,88.9,246,39.29,4.67,11.89,1.58,1.16,86.13,"80,019",—
+PPLC,PPL Corp,piotroski,True,7,9,77.8,46.40,29.18,2.32,7.94,0.86,—,26.76,"77,897",—
+DBD,"Diebold Nixdorf, Incorporated",piotroski,True,7,9,77.8,63.83,25.13,2.16,8.60,1.30,2.50,41.11,"77,928",—
+GXO,"GXO Logistics, Inc.",piotroski,True,7,9,77.8,46.50,166,1.81,1.07,0.85,—,12.71,"961,027",—
+KLIC,"KULICKE AND SOFFA INDUSTRIES, INC.",piotroski,True,8,9,88.9,88.54,"22,135",5.73,0.03,4.79,0.34,1.18,"370,969",—
+HGTY,"HAGERTY, INC.",piotroski,False,6,9,66.7,14.90,—,—,67.43,—,6.09,—,"117,003",—
+HGTY,"HAGERTY, INC.",greenblatt,False,2,3,66.7,14.90,—,—,67.43,—,6.09,—,"117,003",—
+HGTY,"HAGERTY, INC.",buffett,False,3,6,50.0,14.90,—,—,67.43,—,6.09,—,"117,003",—
+HGTY,"HAGERTY, INC.",lynch,False,1,4,25.0,14.90,—,—,67.43,—,6.09,—,"117,003",—
+HGTY,"HAGERTY, INC.",netnet,False,1,4,25.0,14.90,—,—,67.43,—,6.09,—,"117,003",—
+HGTY,"HAGERTY, INC.",graham,False,1,9,11.1,14.90,—,—,67.43,—,6.09,—,"117,003",—
+HGTY,"HAGERTY, INC.",custom,False,0,0,0.0,14.90,—,—,67.43,—,6.09,—,"117,003",—
+POWL,"Powell Industries, Inc.",graham,False,7,9,77.8,167,11.24,3.17,28.21,2.09,0.73,133,"518,840",—
+POWL,"Powell Industries, Inc.",buffett,False,4,6,66.7,167,11.24,3.17,28.21,2.09,0.73,133,"518,840",—
+POWL,"Powell Industries, Inc.",netnet,False,2,4,50.0,167,11.24,3.17,28.21,2.09,0.73,133,"518,840",—
+POWL,"Powell Industries, Inc.",custom,False,0,0,0.0,167,11.24,3.17,28.21,2.09,0.73,133,"518,840",—
+NAGE,"NIAGEN BIOSCIENCE, INC.",piotroski,False,6,9,66.7,2.53,12.65,2.82,22.71,4.86,0.39,2.01,"338,421",—
+NAGE,"NIAGEN BIOSCIENCE, INC.",buffett,False,3,6,50.0,2.53,12.65,2.82,22.71,4.86,0.39,2.01,"338,421",—
+NAGE,"NIAGEN BIOSCIENCE, INC.",lynch,False,2,4,50.0,2.53,12.65,2.82,22.71,4.86,0.39,2.01,"338,421",—
+NAGE,"NIAGEN BIOSCIENCE, INC.",netnet,False,2,4,50.0,2.53,12.65,2.82,22.71,4.86,0.39,2.01,"338,421",—
+NAGE,"NIAGEN BIOSCIENCE, INC.",graham,False,4,9,44.4,2.53,12.65,2.82,22.71,4.86,0.39,2.01,"338,421",—
