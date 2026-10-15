@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-LPG,DORIAN LPG LTD.,lynch,True,4,4,100.0,55.20,12.16,2.07,17.00,2.67,0.64,52.25,"635,805",—
-LPG,DORIAN LPG LTD.,piotroski,True,8,9,88.9,55.20,12.16,2.07,17.00,2.67,0.64,52.25,"635,805",—
-TRNO,Terreno Realty Corporation,lynch,True,4,4,100.0,64.40,16.47,1.60,9.72,—,0.30,59.59,"522,537",—
-LNN,Lindsay Corporation,piotroski,True,7,9,77.8,110,16.16,2.24,13.90,3.71,0.58,86.29,"99,066",—
-LNN,Lindsay Corporation,lynch,True,3,4,75.0,110,16.16,2.24,13.90,3.71,0.58,86.29,"99,066",—
-EVR,EVERCORE INC.,buffett,True,5,6,83.3,256,18.24,5.31,29.14,2.16,1.50,123,"308,588",—
-EVR,EVERCORE INC.,piotroski,True,7,9,77.8,256,18.24,5.31,29.14,2.16,1.50,123,"308,588",—
-KFY,KORN FERRY,piotroski,True,9,9,100.0,70.92,13.59,1.89,14.06,1.94,1.06,66.42,"812,079",—
-KFY,KORN FERRY,lynch,True,3,4,75.0,70.92,13.59,1.89,14.06,1.94,1.06,66.42,"812,079",—
-DUKU,Duke Energy CORP,piotroski,True,8,9,88.9,48.54,7.69,0.73,9.58,0.55,—,97.33,"79,312",—
-DUKU,Duke Energy CORP,lynch,True,3,4,75.0,48.54,7.69,0.73,9.58,0.55,—,97.33,"79,312",—
-IIIN,Insteel Industries Inc.,piotroski,True,7,9,77.8,29.75,14.17,1.57,11.04,3.97,—,29.96,"134,799",—
-IIIN,Insteel Industries Inc.,lynch,True,3,4,75.0,29.75,14.17,1.57,11.04,3.97,—,29.96,"134,799",—
-VICR,VICOR CORPORATION,piotroski,True,8,9,88.9,217,83.30,13.89,16.66,8.99,0.10,30.32,2M,—
-VICR,VICOR CORPORATION,buffett,True,5,6,83.3,217,83.30,13.89,16.66,8.99,0.10,30.32,2M,—
-VICR,VICOR CORPORATION,lynch,True,3,4,75.0,217,83.30,13.89,16.66,8.99,0.10,30.32,2M,—
-AGX,ARGAN INC,lynch,True,3,4,75.0,366,37.56,11.20,29.80,1.59,1.57,84.62,"374,798",—
-NYT,THE NEW YORK TIMES COMPANY,piotroski,True,9,9,100.0,69.30,33.16,5.60,16.85,1.54,—,24.12,1M,—
-MEDP,"Medpace Holdings, Inc.",buffett,True,5,6,83.3,632,41.36,40.65,98.27,0.74,3.30,73.11,"222,394",—
-MEDP,"Medpace Holdings, Inc.",piotroski,True,7,9,77.8,632,41.36,40.65,98.27,0.74,3.30,73.11,"222,394",—
-TRN,TRINITY INDUSTRIES INC,greenblatt,True,3,3,100.0,25.55,8.38,1.97,23.50,—,6.76,29.86,"413,697",—
-TRN,TRINITY INDUSTRIES INC,piotroski,True,7,9,77.8,25.55,8.38,1.97,23.50,—,6.76,29.86,"413,697",—
-SHOE,"Shoe Station Group, Inc.",graham,True,8,9,88.9,13.83,7.28,0.55,7.58,3.76,0.74,32.72,"283,166",—
-GEO,"The GEO Group, Inc.",piotroski,True,7,9,77.8,29.54,16.23,2.74,16.89,2.01,—,21.01,1M,—
-GEO,"The GEO Group, Inc.",lynch,True,3,4,75.0,29.54,16.23,2.74,16.89,2.01,—,21.01,1M,—
-KEX,KIRBY CORPORATION,piotroski,True,8,9,88.9,138,21.77,2.29,10.49,1.53,—,92.69,"710,865",—
-NHC,NATIONAL HEALTHCARE CORP,piotroski,True,9,9,100.0,234,30.57,3.43,11.23,1.82,0.42,109,"80,773",—
-NHC,NATIONAL HEALTHCARE CORP,lynch,True,3,4,75.0,234,30.57,3.43,11.23,1.82,0.42,109,"80,773",—
-UMBF,UMB FINANCIAL CORP,lynch,True,3,4,75.0,132,14.17,1.26,9.13,—,8.50,148,"265,989",—
-SIRI,SIRIUS XM HOLDINGS INC.,lynch,True,3,4,75.0,26.51,11.89,0.82,6.96,0.30,1.36,40.31,2M,—
-BSY,"BENTLEY SYSTEMS, INCORPORATED",piotroski,True,9,9,100.0,36.19,42.58,10.13,23.36,0.56,1.99,8.26,3M,—
-BSY,"BENTLEY SYSTEMS, INCORPORATED",buffett,True,5,6,83.3,36.19,42.58,10.13,23.36,0.56,1.99,8.26,3M,—
-OPLN,"OPENLANE, Inc.",piotroski,True,8,9,88.9,36.81,—,3.17,14.32,1.16,—,—,1M,—
-SSRM,SSR Mining Inc.,piotroski,True,7,9,77.8,30.70,16.59,1.90,11.28,2.08,0.51,25.94,4M,—
-SPOK,"SPOK HOLDINGS, INC.",piotroski,True,7,9,77.8,10.78,14.37,1.55,10.85,1.18,0.41,10.83,"62,404",—
-WWW,"WOLVERINE WORLD WIDE, INC.",piotroski,True,7,9,77.8,20.07,17.60,4.02,23.48,1.40,—,11.32,"579,245",—
-SHAK,SHAKE SHACK INC.,piotroski,True,8,9,88.9,70.58,64.76,5.62,8.70,1.76,2.56,17.55,"948,887",—
-CRI,"CARTER’S, INC.",graham,True,8,9,88.9,32.74,12.94,1.25,9.92,2.51,1.77,38.57,"611,098",—
-FROG,JFrog Ltd.,piotroski,True,7,9,77.8,94.08,—,12.32,-8.09,2.14,0.51,—,1M,—
-BNED,"BARNES & NOBLE EDUCATION, INC.",piotroski,True,8,9,88.9,13.12,26.79,1.54,5.73,1.71,1.51,9.68,"215,534",—
-CALX,"Calix, Inc",piotroski,True,7,9,77.8,36.04,139,2.91,2.08,4.24,0.23,8.52,"627,510",—
-TRLV,TRULIEVE CANNABIS CORP.,piotroski,True,8,9,88.9,10.25,—,1.72,-10.70,4.43,1.36,—,1M,—
-LPG,DORIAN LPG LTD.,buffett,False,4,6,66.7,55.20,12.16,2.07,17.00,2.67,0.64,52.25,"635,805",—
-LPG,DORIAN LPG LTD.,greenblatt,False,2,3,66.7,55.20,12.16,2.07,17.00,2.67,0.64,52.25,"635,805",—
-LPG,DORIAN LPG LTD.,graham,False,5,9,55.6,55.20,12.16,2.07,17.00,2.67,0.64,52.25,"635,805",—
-LPG,DORIAN LPG LTD.,netnet,False,1,4,25.0,55.20,12.16,2.07,17.00,2.67,0.64,52.25,"635,805",—
-LPG,DORIAN LPG LTD.,custom,False,0,0,0.0,55.20,12.16,2.07,17.00,2.67,0.64,52.25,"635,805",—
-TRNO,Terreno Realty Corporation,piotroski,False,5,9,55.6,64.40,16.47,1.60,9.72,—,0.30,59.59,"522,537",—
-TRNO,Terreno Realty Corporation,buffett,False,3,6,50.0,64.40,16.47,1.60,9.72,—,0.30,59.59,"522,537",—
-TRNO,Terreno Realty Corporation,graham,False,3,9,33.3,64.40,16.47,1.60,9.72,—,0.30,59.59,"522,537",—
+SLDE,"Slide Insurance Holdings, Inc.",greenblatt,True,3,3,100.0,26.53,7.90,3.14,39.88,—,1.62,25.25,2M,—
+YELP,YELP INC,greenblatt,True,3,3,100.0,20.41,9.11,1.87,20.48,2.99,0.35,23.46,2M,—
+YELP,YELP INC,piotroski,True,8,9,88.9,20.41,9.11,1.87,20.48,2.99,0.35,23.46,2M,—
+PTCT,"PTC Therapeutics, Inc.",greenblatt,True,3,3,100.0,60.99,7.84,—,-332,2.35,-15.12,—,1M,—
+PTCT,"PTC Therapeutics, Inc.",piotroski,True,7,9,77.8,60.99,7.84,—,-332,2.35,-15.12,—,1M,—
+GRBK,"Green Brick Partners, Inc.",buffett,True,6,6,100.0,61.98,8.77,1.46,16.85,—,0.32,82.05,"398,646",—
+GRBK,"Green Brick Partners, Inc.",lynch,True,4,4,100.0,61.98,8.77,1.46,16.85,—,0.32,82.05,"398,646",—
+SBC,SBC Medical Group Holdings Incorporated,lynch,True,3,4,75.0,5.30,10.60,2.20,20.54,3.78,0.47,5.21,"139,685",—
+LNN,Lindsay Corporation,piotroski,True,7,9,77.8,111,16.31,2.27,13.90,3.71,0.58,86.29,"159,245",—
+LNN,Lindsay Corporation,lynch,True,3,4,75.0,111,16.31,2.27,13.90,3.71,0.58,86.29,"159,245",—
+EVR,EVERCORE INC.,buffett,True,5,6,83.3,257,18.26,5.32,29.14,2.16,1.50,123,"533,626",—
+EVR,EVERCORE INC.,piotroski,True,7,9,77.8,257,18.26,5.32,29.14,2.16,1.50,123,"533,626",—
+INOD,INNODATA INC,lynch,True,3,4,75.0,56.57,61.49,18.49,30.03,2.68,0.57,7.96,1M,—
+ACEL,"Accel Entertainment, Inc.",piotroski,True,7,9,77.8,11.06,18.43,3.54,19.09,2.61,—,6.49,"546,225",—
+BFAM,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,piotroski,True,8,9,88.9,70.42,20.96,3.02,14.42,0.52,1.90,41.99,"534,196",—
+BFAM,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,lynch,True,3,4,75.0,70.42,20.96,3.02,14.42,0.52,1.90,41.99,"534,196",—
+WLY,"JOHN WILEY & SONS, INC.",piotroski,True,9,9,100.0,52.97,12.73,3.33,26.13,0.54,2.06,38.61,"321,433",—
+GRC,The Gorman-Rupp Company,piotroski,True,8,9,88.9,72.14,35.71,4.57,12.78,2.37,1.07,26.77,"110,441",—
+AIOT,"Powerfleet, Inc.",piotroski,True,7,9,77.8,2.49,—,0.70,-4.32,1.13,1.00,—,2M,—
+LUV,SOUTHWEST AIRLINES CO.,piotroski,True,7,9,77.8,40.83,51.68,2.85,5.53,0.52,—,15.94,5M,—
+AVO,"MISSION PRODUCE, INC.",piotroski,True,8,9,88.9,12.08,22.79,1.47,6.42,1.95,0.62,9.91,"633,597",—
+SPHR,SPHERE ENTERTAINMENT CO.,piotroski,True,7,9,77.8,109,147,2.21,1.50,1.09,0.89,28.65,1M,—
+MSGS,MADISON SQUARE GARDEN SPORTS CORP.,piotroski,True,9,9,100.0,405,"1,265",—,-2.95,0.50,-6.84,—,"455,642",—
+GXO,"GXO Logistics, Inc.",piotroski,True,7,9,77.8,46.55,166,1.81,1.07,0.85,—,12.71,"965,161",—
+ADV,Advantage Solutions Inc.,piotroski,True,7,9,77.8,29.36,—,17.20,-41.11,2.25,4.04,—,"50,344",—
+SLDE,"Slide Insurance Holdings, Inc.",graham,False,3,9,33.3,26.53,7.90,3.14,39.88,—,1.62,25.25,2M,—
+SLDE,"Slide Insurance Holdings, Inc.",buffett,False,2,6,33.3,26.53,7.90,3.14,39.88,—,1.62,25.25,2M,—
+SLDE,"Slide Insurance Holdings, Inc.",piotroski,False,3,9,33.3,26.53,7.90,3.14,39.88,—,1.62,25.25,2M,—
+SLDE,"Slide Insurance Holdings, Inc.",lynch,False,1,4,25.0,26.53,7.90,3.14,39.88,—,1.62,25.25,2M,—
+SLDE,"Slide Insurance Holdings, Inc.",netnet,False,1,4,25.0,26.53,7.90,3.14,39.88,—,1.62,25.25,2M,—
+SLDE,"Slide Insurance Holdings, Inc.",custom,False,0,0,0.0,26.53,7.90,3.14,39.88,—,1.62,25.25,2M,—
+YELP,YELP INC,graham,False,7,9,77.8,20.41,9.11,1.87,20.48,2.99,0.35,23.46,2M,—
+YELP,YELP INC,buffett,False,3,6,50.0,20.41,9.11,1.87,20.48,2.99,0.35,23.46,2M,—
+YELP,YELP INC,lynch,False,2,4,50.0,20.41,9.11,1.87,20.48,2.99,0.35,23.46,2M,—
+YELP,YELP INC,netnet,False,2,4,50.0,20.41,9.11,1.87,20.48,2.99,0.35,23.46,2M,—
+YELP,YELP INC,custom,False,0,0,0.0,20.41,9.11,1.87,20.48,2.99,0.35,23.46,2M,—
+PTCT,"PTC Therapeutics, Inc.",lynch,False,2,4,50.0,60.99,7.84,—,-332,2.35,-15.12,—,1M,—
+PTCT,"PTC Therapeutics, Inc.",graham,False,4,9,44.4,60.99,7.84,—,-332,2.35,-15.12,—,1M,—
+PTCT,"PTC Therapeutics, Inc.",buffett,False,2,6,33.3,60.99,7.84,—,-332,2.35,-15.12,—,1M,—
+PTCT,"PTC Therapeutics, Inc.",netnet,False,1,4,25.0,60.99,7.84,—,-332,2.35,-15.12,—,1M,—
+PTCT,"PTC Therapeutics, Inc.",custom,False,0,0,0.0,60.99,7.84,—,-332,2.35,-15.12,—,1M,—
+GRBK,"Green Brick Partners, Inc.",graham,False,7,9,77.8,61.98,8.77,1.46,16.85,—,0.32,82.05,"398,646",—
+GRBK,"Green Brick Partners, Inc.",greenblatt,False,2,3,66.7,61.98,8.77,1.46,16.85,—,0.32,82.05,"398,646",—
+GRBK,"Green Brick Partners, Inc.",piotroski,False,4,9,44.4,61.98,8.77,1.46,16.85,—,0.32,82.05,"398,646",—
+GRBK,"Green Brick Partners, Inc.",netnet,False,1,4,25.0,61.98,8.77,1.46,16.85,—,0.32,82.05,"398,646",—
+GRBK,"Green Brick Partners, Inc.",custom,False,0,0,0.0,61.98,8.77,1.46,16.85,—,0.32,82.05,"398,646",—
+SBC,SBC Medical Group Holdings Incorporated,buffett,False,4,6,66.7,5.30,10.60,2.20,20.54,3.78,0.47,5.21,"139,685",—
+SBC,SBC Medical Group Holdings Incorporated,greenblatt,False,2,3,66.7,5.30,10.60,2.20,20.54,3.78,0.47,5.21,"139,685",—
+SBC,SBC Medical Group Holdings Incorporated,graham,False,5,9,55.6,5.30,10.60,2.20,20.54,3.78,0.47,5.21,"139,685",—
+SBC,SBC Medical Group Holdings Incorporated,netnet,False,2,4,50.0,5.30,10.60,2.20,20.54,3.78,0.47,5.21,"139,685",—
