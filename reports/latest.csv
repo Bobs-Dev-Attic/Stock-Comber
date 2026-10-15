@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-REFI,"CHICAGO ATLANTIC REAL ESTATE FINANCE, INC.",lynch,True,4,4,100.0,9.14,5.44,0.64,11.70,—,0.38,23.30,"197,751",—
-WHD,"Cactus, Inc.",lynch,True,3,4,75.0,62.52,—,—,13.54,5.81,0.36,—,"804,573",—
-SKYW,SKYWEST INC,piotroski,True,8,9,88.9,92.43,8.93,1.39,15.60,0.65,—,124,"419,815",—
-ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.24,6.03,0.17,4.91,1.93,0.73,1.14,"1,697",—
-PJT,PJT Partners Inc.,buffett,True,5,6,83.3,132,—,—,58.43,—,2.71,—,"450,627",—
-PJT,PJT Partners Inc.,piotroski,True,7,9,77.8,132,—,—,58.43,—,2.71,—,"450,627",—
-ACEL,"Accel Entertainment, Inc.",piotroski,True,7,9,77.8,11.13,18.55,3.56,19.09,2.61,—,6.49,"349,552",—
-AIR,AAR CORP,piotroski,True,7,9,77.8,97.06,19.97,2.19,11.02,2.84,—,69.66,"699,081",—
-AIR,AAR CORP,lynch,True,3,4,75.0,97.06,19.97,2.19,11.02,2.84,—,69.66,"699,081",—
-TRN,TRINITY INDUSTRIES INC,greenblatt,True,3,3,100.0,26.13,8.57,2.01,23.50,—,6.76,29.86,"774,848",—
-FIZZ,National Beverage Corp.,buffett,True,5,6,83.3,33.54,17.11,4.94,28.89,4.39,0.34,17.30,"359,096",—
-TRN,TRINITY INDUSTRIES INC,piotroski,True,7,9,77.8,26.13,8.57,2.01,23.50,—,6.76,29.86,"774,848",—
-BFH,"BREAD FINANCIAL HOLDINGS, INC.",lynch,True,3,4,75.0,98.96,9.09,1.42,15.57,—,5.81,131,"441,627",—
-EGP,"EASTGROUP PROPERTIES, INC.",piotroski,True,7,9,77.8,194,39.76,2.92,7.36,—,0.55,85.17,"540,870",—
-EGP,"EASTGROUP PROPERTIES, INC.",lynch,True,3,4,75.0,194,39.76,2.92,7.36,—,0.55,85.17,"540,870",—
-CURB,Curbline Properties Corp.,piotroski,True,7,9,77.8,26.57,71.81,1.47,2.09,—,0.29,12.29,2M,—
-CURB,Curbline Properties Corp.,lynch,True,3,4,75.0,26.57,71.81,1.47,2.09,—,0.29,12.29,2M,—
-MYRG,MYR GROUP INC.,piotroski,True,8,9,88.9,291,38.67,6.93,17.93,1.33,1.49,84.34,"317,602",—
-DLB,"Dolby Laboratories, Inc.",piotroski,True,7,9,77.8,58.84,22.46,2.19,9.72,3.17,0.23,39.82,"617,032",—
-EXTR,"Extreme Networks, Inc.",piotroski,True,8,9,88.9,22.46,72.45,34.22,47.54,0.93,—,2.14,1M,—
-FAF,FIRST AMERICAN FINANCIAL CORPORATION,piotroski,True,8,9,88.9,62.07,10.35,1.17,11.31,—,1.95,84.61,"703,287",—
-AMCR,AMCOR PLC,piotroski,True,8,9,88.9,42.28,17.76,1.66,9.38,1.25,2.15,36.90,3M,—
-HCSG,"HEALTHCARE SERVICES GROUP, INC.",piotroski,True,9,9,100.0,21.02,25.95,3.01,11.58,3.38,—,11.28,"623,331",—
-NEOG,Neogen Corporation,piotroski,True,8,9,88.9,12.13,—,1.26,-0.38,3.82,0.60,—,3M,—
-CTRI,"Centuri Holdings, Inc.",piotroski,True,7,9,77.8,19.77,79.08,2.04,2.57,1.78,1.75,7.37,2M,—
-REFI,"CHICAGO ATLANTIC REAL ESTATE FINANCE, INC.",graham,False,6,9,66.7,9.14,5.44,0.64,11.70,—,0.38,23.30,"197,751",—
-REFI,"CHICAGO ATLANTIC REAL ESTATE FINANCE, INC.",greenblatt,False,2,3,66.7,9.14,5.44,0.64,11.70,—,0.38,23.30,"197,751",—
-REFI,"CHICAGO ATLANTIC REAL ESTATE FINANCE, INC.",buffett,False,2,6,33.3,9.14,5.44,0.64,11.70,—,0.38,23.30,"197,751",—
-REFI,"CHICAGO ATLANTIC REAL ESTATE FINANCE, INC.",netnet,False,1,4,25.0,9.14,5.44,0.64,11.70,—,0.38,23.30,"197,751",—
-REFI,"CHICAGO ATLANTIC REAL ESTATE FINANCE, INC.",piotroski,False,2,9,22.2,9.14,5.44,0.64,11.70,—,0.38,23.30,"197,751",—
-REFI,"CHICAGO ATLANTIC REAL ESTATE FINANCE, INC.",custom,False,0,0,0.0,9.14,5.44,0.64,11.70,—,0.38,23.30,"197,751",—
-WHD,"Cactus, Inc.",graham,False,6,9,66.7,62.52,—,—,13.54,5.81,0.36,—,"804,573",—
-WHD,"Cactus, Inc.",piotroski,False,5,9,55.6,62.52,—,—,13.54,5.81,0.36,—,"804,573",—
-WHD,"Cactus, Inc.",buffett,False,3,6,50.0,62.52,—,—,13.54,5.81,0.36,—,"804,573",—
-WHD,"Cactus, Inc.",greenblatt,False,1,3,33.3,62.52,—,—,13.54,5.81,0.36,—,"804,573",—
-WHD,"Cactus, Inc.",netnet,False,1,4,25.0,62.52,—,—,13.54,5.81,0.36,—,"804,573",—
-WHD,"Cactus, Inc.",custom,False,0,0,0.0,62.52,—,—,13.54,5.81,0.36,—,"804,573",—
-NKLR,TERRA INNOVATUM GLOBAL N.V.,greenblatt,False,2,3,66.7,2.59,0.27,—,-576,33.57,-2.13,—,"569,026",—
-NKLR,TERRA INNOVATUM GLOBAL N.V.,lynch,False,2,4,50.0,2.59,0.27,—,-576,33.57,-2.13,—,"569,026",—
-NKLR,TERRA INNOVATUM GLOBAL N.V.,graham,False,3,9,33.3,2.59,0.27,—,-576,33.57,-2.13,—,"569,026",—
-NKLR,TERRA INNOVATUM GLOBAL N.V.,netnet,False,1,4,25.0,2.59,0.27,—,-576,33.57,-2.13,—,"569,026",—
-NKLR,TERRA INNOVATUM GLOBAL N.V.,buffett,False,1,6,16.7,2.59,0.27,—,-576,33.57,-2.13,—,"569,026",—
-NKLR,TERRA INNOVATUM GLOBAL N.V.,piotroski,False,1,9,11.1,2.59,0.27,—,-576,33.57,-2.13,—,"569,026",—
-NKLR,TERRA INNOVATUM GLOBAL N.V.,custom,False,0,0,0.0,2.59,0.27,—,-576,33.57,-2.13,—,"569,026",—
-SKYW,SKYWEST INC,graham,False,6,9,66.7,92.43,8.93,1.39,15.60,0.65,—,124,"419,815",—
-SKYW,SKYWEST INC,greenblatt,False,2,3,66.7,92.43,8.93,1.39,15.60,0.65,—,124,"419,815",—
-SKYW,SKYWEST INC,buffett,False,3,6,50.0,92.43,8.93,1.39,15.60,0.65,—,124,"419,815",—
-SKYW,SKYWEST INC,lynch,False,1,4,25.0,92.43,8.93,1.39,15.60,0.65,—,124,"419,815",—
-SKYW,SKYWEST INC,netnet,False,1,4,25.0,92.43,8.93,1.39,15.60,0.65,—,124,"419,815",—
-SKYW,SKYWEST INC,custom,False,0,0,0.0,92.43,8.93,1.39,15.60,0.65,—,124,"419,815",—
+REPX,"Riley Exploration Permian, Inc.",piotroski,True,7,9,77.8,46.43,6.12,1.55,25.36,0.60,0.84,71.49,"173,015",—
+PIPR,PIPER SANDLER COMPANIES,greenblatt,True,3,3,100.0,64.48,4.08,0.84,20.52,—,0.74,166,3M,—
+PIPR,PIPER SANDLER COMPANIES,lynch,True,4,4,100.0,64.48,4.08,0.84,20.52,—,0.74,166,3M,—
+PIPR,PIPER SANDLER COMPANIES,piotroski,True,8,9,88.9,64.48,4.08,0.84,20.52,—,0.74,166,3M,—
+NBR,NABORS INDUSTRIES LTD,piotroski,True,7,9,77.8,78.20,4.50,1.91,48.52,1.56,5.67,127,"163,293",—
+ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",buffett,True,5,6,83.3,111,15.10,5.04,33.37,4.85,2.26,60.19,"506,216",—
+ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",lynch,True,3,4,75.0,111,15.10,5.04,33.37,4.85,2.26,60.19,"506,216",—
+LNN,Lindsay Corporation,piotroski,True,7,9,77.8,112,16.53,2.30,13.90,3.71,0.58,86.29,"194,715",—
+LNN,Lindsay Corporation,lynch,True,3,4,75.0,112,16.53,2.30,13.90,3.71,0.58,86.29,"194,715",—
+SMPL,The Simply Good Foods Company,graham,True,9,9,100.0,10.72,10.51,0.60,5.73,3.64,0.33,20.21,2M,—
+SMPL,The Simply Good Foods Company,lynch,True,4,4,100.0,10.72,10.51,0.60,5.73,3.64,0.33,20.21,2M,—
+AES,THE AES CORPORATION,greenblatt,True,3,3,100.0,14.96,11.87,2.63,22.40,0.77,—,12.70,15M,—
+IBEX,IBEX LIMITED,piotroski,True,9,9,100.0,44.75,14.30,3.89,27.22,2.10,0.82,28.45,"135,046",—
+CWCO,CONSOLIDATED WATER CO. LTD.,lynch,True,4,4,100.0,29.21,25.62,2.11,8.27,6.12,0.14,18.85,"105,441",—
+UCB,"UNITED COMMUNITY BANKS, INC.",piotroski,True,7,9,77.8,33.16,12.66,1.11,9.02,—,6.70,42.03,1M,—
+FCFS,"FIRSTCASH HOLDINGS, INC.",piotroski,True,7,9,77.8,217,29.18,4.23,14.51,4.55,1.33,92.39,"378,513",—
+PLUS,ePlus inc.,piotroski,True,7,9,77.8,94.75,18.84,2.34,12.41,2.24,0.68,67.73,"270,537",—
+GEO,"The GEO Group, Inc.",piotroski,True,7,9,77.8,30.81,16.93,2.86,16.89,2.01,—,21.01,"999,935",—
+GEO,"The GEO Group, Inc.",lynch,True,3,4,75.0,30.81,16.93,2.86,16.89,2.01,—,21.01,"999,935",—
+OPY,OPPENHEIMER HOLDINGS INC.,piotroski,True,7,9,77.8,103,7.90,1.19,15.08,—,2.77,159,"152,769",—
+TBB,AT&T INC.,piotroski,True,7,9,77.8,18.26,6.01,1.04,17.36,0.91,—,34.72,"166,425",—
+OPLN,"OPENLANE, Inc.",piotroski,True,8,9,88.9,36.81,—,3.17,14.32,1.16,—,—,1M,—
+CBL,"CBL & ASSOCIATES PROPERTIES, INC.",piotroski,True,7,9,77.8,47.85,11.03,3.94,36.26,—,6.31,34.45,"323,206",—
+R,RYDER SYSTEM INC,piotroski,True,9,9,100.0,238,19.92,3.26,16.35,0.89,4.37,140,"242,431",—
+GRC,The Gorman-Rupp Company,piotroski,True,8,9,88.9,72.94,36.11,4.62,12.78,2.37,1.07,26.77,"114,285",—
+FIVN,"Five9, Inc.",piotroski,True,8,9,88.9,33.08,73.51,3.70,5.02,4.51,1.28,9.51,2M,—
+ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.30,19.55,0.77,3.99,9.18,0.34,5.26,"128,521",—
+CHEF,"CHEFS’ WAREHOUSE, INC.",piotroski,True,9,9,100.0,113,67.26,8.60,11.97,2.05,2.36,22.28,"788,887",—
+TBCH,TURTLE BEACH CORPORATION,piotroski,True,7,9,77.8,14.40,18.70,2.29,12.24,1.98,1.09,10.43,"520,736",—
+FUL,FULLER H B CO,piotroski,True,7,9,77.8,50.43,18.34,1.39,7.59,1.70,1.59,47.32,"496,004",—
+GCO,GENESCO INC,piotroski,True,8,9,88.9,35.95,28.76,0.67,2.34,1.64,1.46,38.74,"146,276",—
+KOP,KOPPERS HOLDINGS INC.,piotroski,True,8,9,88.9,43.67,15.94,1.55,9.76,2.94,2.29,41.64,"116,627",—
+ZUMZ,ZUMIEZ INC,piotroski,True,8,9,88.9,14.12,18.10,0.75,4.13,2.01,0.99,18.16,"531,738",—
+PPLC,PPL Corp,piotroski,True,7,9,77.8,46.39,29.18,2.32,7.94,0.86,—,26.76,"179,761",—
+BNED,"BARNES & NOBLE EDUCATION, INC.",piotroski,True,8,9,88.9,12.52,25.55,1.47,5.73,1.71,1.51,9.68,"220,422",—
+WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,8,9,88.9,23.09,25.37,0.53,2.10,2.42,0.76,29.77,"770,254",—
+THO,"THOR INDUSTRIES, INC.",piotroski,True,7,9,77.8,65.47,19.37,0.81,4.17,1.77,—,78.52,"674,791",—
+AEIS,"ADVANCED ENERGY INDUSTRIES, INC.",piotroski,True,7,9,77.8,261,67.91,7.39,10.89,1.59,0.86,55.23,"574,227",—
+SHC,SOTERA HEALTH COMPANY,piotroski,True,7,9,77.8,17.73,65.67,8.38,12.86,2.46,4.38,3.59,2M,—
+REPX,"Riley Exploration Permian, Inc.",greenblatt,False,2,3,66.7,46.43,6.12,1.55,25.36,0.60,0.84,71.49,"173,015",—
+REPX,"Riley Exploration Permian, Inc.",graham,False,3,9,33.3,46.43,6.12,1.55,25.36,0.60,0.84,71.49,"173,015",—
+REPX,"Riley Exploration Permian, Inc.",buffett,False,2,6,33.3,46.43,6.12,1.55,25.36,0.60,0.84,71.49,"173,015",—
+REPX,"Riley Exploration Permian, Inc.",lynch,False,1,4,25.0,46.43,6.12,1.55,25.36,0.60,0.84,71.49,"173,015",—
+REPX,"Riley Exploration Permian, Inc.",netnet,False,1,4,25.0,46.43,6.12,1.55,25.36,0.60,0.84,71.49,"173,015",—
+REPX,"Riley Exploration Permian, Inc.",custom,False,0,0,0.0,46.43,6.12,1.55,25.36,0.60,0.84,71.49,"173,015",—
+PIPR,PIPER SANDLER COMPANIES,graham,False,7,9,77.8,64.48,4.08,0.84,20.52,—,0.74,166,3M,—
+PIPR,PIPER SANDLER COMPANIES,buffett,False,3,6,50.0,64.48,4.08,0.84,20.52,—,0.74,166,3M,—
+PIPR,PIPER SANDLER COMPANIES,netnet,False,1,4,25.0,64.48,4.08,0.84,20.52,—,0.74,166,3M,—
+PIPR,PIPER SANDLER COMPANIES,custom,False,0,0,0.0,64.48,4.08,0.84,20.52,—,0.74,166,3M,—
+UNIT,Uniti Group Inc.,greenblatt,False,2,3,66.7,5.64,1.16,3.95,343,0.74,30.65,12.50,10M,—
