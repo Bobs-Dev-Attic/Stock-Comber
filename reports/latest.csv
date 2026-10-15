@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-REPX,"Riley Exploration Permian, Inc.",piotroski,True,7,9,77.8,46.43,6.12,1.55,25.36,0.60,0.84,71.49,"173,015",—
-PIPR,PIPER SANDLER COMPANIES,greenblatt,True,3,3,100.0,64.48,4.08,0.84,20.52,—,0.74,166,3M,—
-PIPR,PIPER SANDLER COMPANIES,lynch,True,4,4,100.0,64.48,4.08,0.84,20.52,—,0.74,166,3M,—
-PIPR,PIPER SANDLER COMPANIES,piotroski,True,8,9,88.9,64.48,4.08,0.84,20.52,—,0.74,166,3M,—
-NBR,NABORS INDUSTRIES LTD,piotroski,True,7,9,77.8,78.20,4.50,1.91,48.52,1.56,5.67,127,"163,293",—
-ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",buffett,True,5,6,83.3,111,15.10,5.04,33.37,4.85,2.26,60.19,"506,216",—
-ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",lynch,True,3,4,75.0,111,15.10,5.04,33.37,4.85,2.26,60.19,"506,216",—
-LNN,Lindsay Corporation,piotroski,True,7,9,77.8,112,16.53,2.30,13.90,3.71,0.58,86.29,"194,715",—
-LNN,Lindsay Corporation,lynch,True,3,4,75.0,112,16.53,2.30,13.90,3.71,0.58,86.29,"194,715",—
-SMPL,The Simply Good Foods Company,graham,True,9,9,100.0,10.72,10.51,0.60,5.73,3.64,0.33,20.21,2M,—
-SMPL,The Simply Good Foods Company,lynch,True,4,4,100.0,10.72,10.51,0.60,5.73,3.64,0.33,20.21,2M,—
+PD,"PAGERDUTY, INC.",greenblatt,True,3,3,100.0,17.12,9.16,6.28,68.37,2.01,2.84,10.71,"804,908",—
+SON,Sonoco Products Company,piotroski,True,8,9,88.9,49.73,4.94,1.37,27.75,1.05,2.08,90.68,"386,755",—
+SON,Sonoco Products Company,lynch,True,3,4,75.0,49.73,4.94,1.37,27.75,1.05,2.08,90.68,"386,755",—
 AES,THE AES CORPORATION,greenblatt,True,3,3,100.0,14.96,11.87,2.63,22.40,0.77,—,12.70,15M,—
-IBEX,IBEX LIMITED,piotroski,True,9,9,100.0,44.75,14.30,3.89,27.22,2.10,0.82,28.45,"135,046",—
-CWCO,CONSOLIDATED WATER CO. LTD.,lynch,True,4,4,100.0,29.21,25.62,2.11,8.27,6.12,0.14,18.85,"105,441",—
-UCB,"UNITED COMMUNITY BANKS, INC.",piotroski,True,7,9,77.8,33.16,12.66,1.11,9.02,—,6.70,42.03,1M,—
-FCFS,"FIRSTCASH HOLDINGS, INC.",piotroski,True,7,9,77.8,217,29.18,4.23,14.51,4.55,1.33,92.39,"378,513",—
-PLUS,ePlus inc.,piotroski,True,7,9,77.8,94.75,18.84,2.34,12.41,2.24,0.68,67.73,"270,537",—
-GEO,"The GEO Group, Inc.",piotroski,True,7,9,77.8,30.81,16.93,2.86,16.89,2.01,—,21.01,"999,935",—
-GEO,"The GEO Group, Inc.",lynch,True,3,4,75.0,30.81,16.93,2.86,16.89,2.01,—,21.01,"999,935",—
-OPY,OPPENHEIMER HOLDINGS INC.,piotroski,True,7,9,77.8,103,7.90,1.19,15.08,—,2.77,159,"152,769",—
-TBB,AT&T INC.,piotroski,True,7,9,77.8,18.26,6.01,1.04,17.36,0.91,—,34.72,"166,425",—
-OPLN,"OPENLANE, Inc.",piotroski,True,8,9,88.9,36.81,—,3.17,14.32,1.16,—,—,1M,—
-CBL,"CBL & ASSOCIATES PROPERTIES, INC.",piotroski,True,7,9,77.8,47.85,11.03,3.94,36.26,—,6.31,34.45,"323,206",—
-R,RYDER SYSTEM INC,piotroski,True,9,9,100.0,238,19.92,3.26,16.35,0.89,4.37,140,"242,431",—
-GRC,The Gorman-Rupp Company,piotroski,True,8,9,88.9,72.94,36.11,4.62,12.78,2.37,1.07,26.77,"114,285",—
-FIVN,"Five9, Inc.",piotroski,True,8,9,88.9,33.08,73.51,3.70,5.02,4.51,1.28,9.51,2M,—
-ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.30,19.55,0.77,3.99,9.18,0.34,5.26,"128,521",—
-CHEF,"CHEFS’ WAREHOUSE, INC.",piotroski,True,9,9,100.0,113,67.26,8.60,11.97,2.05,2.36,22.28,"788,887",—
-TBCH,TURTLE BEACH CORPORATION,piotroski,True,7,9,77.8,14.40,18.70,2.29,12.24,1.98,1.09,10.43,"520,736",—
-FUL,FULLER H B CO,piotroski,True,7,9,77.8,50.43,18.34,1.39,7.59,1.70,1.59,47.32,"496,004",—
-GCO,GENESCO INC,piotroski,True,8,9,88.9,35.95,28.76,0.67,2.34,1.64,1.46,38.74,"146,276",—
-KOP,KOPPERS HOLDINGS INC.,piotroski,True,8,9,88.9,43.67,15.94,1.55,9.76,2.94,2.29,41.64,"116,627",—
+BELFA,BEL FUSE INC /NJ,piotroski,True,8,9,88.9,180,—,—,14.46,3.02,0.98,—,"114,282",—
+SSD,"Simpson Manufacturing Co., Inc.",buffett,True,5,6,83.3,175,21.22,3.61,17.00,3.54,0.51,94.81,"72,468",—
+SSD,"Simpson Manufacturing Co., Inc.",piotroski,True,7,9,77.8,175,21.22,3.61,17.00,3.54,0.51,94.81,"72,468",—
+SFD,"SMITHFIELD FOODS, INC.",graham,True,9,9,100.0,18.61,7.42,1.07,14.51,2.97,—,31.27,"545,858",—
+BYND,"BEYOND MEAT, INC.",greenblatt,True,3,3,100.0,7.05,—,—,"-21,968",4.56,—,—,"558,873",—
+HRB,H&R BLOCK INC,greenblatt,True,3,3,100.0,48.37,8.55,53.05,624,1.13,26.72,10.78,"400,452",—
+HRB,H&R BLOCK INC,piotroski,True,8,9,88.9,48.37,8.55,53.05,624,1.13,26.72,10.78,"400,452",—
+BDC,BELDEN INC.,piotroski,True,8,9,88.9,102,17.25,3.24,18.78,1.93,—,64.66,"112,789",—
+ADUS,Addus HomeCare Corp,lynch,True,4,4,100.0,117,22.45,1.99,8.84,1.80,0.32,83.25,"59,685",—
+ADUS,Addus HomeCare Corp,piotroski,True,8,9,88.9,117,22.45,1.99,8.84,1.80,0.32,83.25,"59,685",—
+BFAM,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,piotroski,True,8,9,88.9,68.41,20.36,2.93,14.42,0.52,1.90,41.99,"603,022",—
+BFAM,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,lynch,True,3,4,75.0,68.41,20.36,2.93,14.42,0.52,1.90,41.99,"603,022",—
+UMBF,UMB FINANCIAL CORP,lynch,True,3,4,75.0,131,14.10,1.25,9.13,—,8.50,148,"117,104",—
+CCNE,CNB FINANCIAL CORP/PA,lynch,True,3,4,75.0,33.73,13.55,0.95,7.58,—,8.63,44.50,"34,740",—
+SPOK,"SPOK HOLDINGS, INC.",piotroski,True,7,9,77.8,10.90,14.53,1.57,10.85,1.18,0.41,10.83,"31,119",—
+WOR,"WORTHINGTON ENTERPRISES, INC",piotroski,True,8,9,88.9,62.73,19.98,3.04,15.20,2.37,0.80,38.20,"259,254",—
+VVX,"V2X, Inc.",piotroski,True,9,9,100.0,68.72,28.05,2.02,7.18,1.22,2.02,43.35,"87,825",—
+CHEF,"CHEFS’ WAREHOUSE, INC.",piotroski,True,9,9,100.0,115,68.43,8.75,11.97,2.05,2.36,22.28,"272,128",—
+CBZ,"CBIZ, Inc.",piotroski,True,7,9,77.8,54.73,29.90,1.96,6.55,1.22,1.50,33.87,"742,438",—
+MLKN,"MillerKnoll, Inc.",piotroski,True,9,9,100.0,21.10,15.98,1.09,6.82,1.58,1.93,23.98,"576,218",—
 ZUMZ,ZUMIEZ INC,piotroski,True,8,9,88.9,14.12,18.10,0.75,4.13,2.01,0.99,18.16,"531,738",—
-PPLC,PPL Corp,piotroski,True,7,9,77.8,46.39,29.18,2.32,7.94,0.86,—,26.76,"179,761",—
-BNED,"BARNES & NOBLE EDUCATION, INC.",piotroski,True,8,9,88.9,12.52,25.55,1.47,5.73,1.71,1.51,9.68,"220,422",—
-WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,8,9,88.9,23.09,25.37,0.53,2.10,2.42,0.76,29.77,"770,254",—
+BNED,"BARNES & NOBLE EDUCATION, INC.",piotroski,True,8,9,88.9,12.65,25.82,1.49,5.73,1.71,1.51,9.68,"58,224",—
+QUAD,"Quad/Graphics, Inc.",piotroski,True,7,9,77.8,9.49,17.57,—,-45.38,0.86,-18.90,—,"40,918",—
 THO,"THOR INDUSTRIES, INC.",piotroski,True,7,9,77.8,65.47,19.37,0.81,4.17,1.77,—,78.52,"674,791",—
-AEIS,"ADVANCED ENERGY INDUSTRIES, INC.",piotroski,True,7,9,77.8,261,67.91,7.39,10.89,1.59,0.86,55.23,"574,227",—
-SHC,SOTERA HEALTH COMPANY,piotroski,True,7,9,77.8,17.73,65.67,8.38,12.86,2.46,4.38,3.59,2M,—
-REPX,"Riley Exploration Permian, Inc.",greenblatt,False,2,3,66.7,46.43,6.12,1.55,25.36,0.60,0.84,71.49,"173,015",—
-REPX,"Riley Exploration Permian, Inc.",graham,False,3,9,33.3,46.43,6.12,1.55,25.36,0.60,0.84,71.49,"173,015",—
-REPX,"Riley Exploration Permian, Inc.",buffett,False,2,6,33.3,46.43,6.12,1.55,25.36,0.60,0.84,71.49,"173,015",—
-REPX,"Riley Exploration Permian, Inc.",lynch,False,1,4,25.0,46.43,6.12,1.55,25.36,0.60,0.84,71.49,"173,015",—
-REPX,"Riley Exploration Permian, Inc.",netnet,False,1,4,25.0,46.43,6.12,1.55,25.36,0.60,0.84,71.49,"173,015",—
-REPX,"Riley Exploration Permian, Inc.",custom,False,0,0,0.0,46.43,6.12,1.55,25.36,0.60,0.84,71.49,"173,015",—
-PIPR,PIPER SANDLER COMPANIES,graham,False,7,9,77.8,64.48,4.08,0.84,20.52,—,0.74,166,3M,—
-PIPR,PIPER SANDLER COMPANIES,buffett,False,3,6,50.0,64.48,4.08,0.84,20.52,—,0.74,166,3M,—
-PIPR,PIPER SANDLER COMPANIES,netnet,False,1,4,25.0,64.48,4.08,0.84,20.52,—,0.74,166,3M,—
-PIPR,PIPER SANDLER COMPANIES,custom,False,0,0,0.0,64.48,4.08,0.84,20.52,—,0.74,166,3M,—
-UNIT,Uniti Group Inc.,greenblatt,False,2,3,66.7,5.64,1.16,3.95,343,0.74,30.65,12.50,10M,—
+ARKO,ARKO Corp.,piotroski,True,7,9,77.8,4.12,27.47,1.77,8.51,1.66,11.85,2.80,"153,927",—
+PD,"PAGERDUTY, INC.",piotroski,False,6,9,66.7,17.12,9.16,6.28,68.37,2.01,2.84,10.71,"804,908",—
+PD,"PAGERDUTY, INC.",buffett,False,3,6,50.0,17.12,9.16,6.28,68.37,2.01,2.84,10.71,"804,908",—
+PD,"PAGERDUTY, INC.",graham,False,3,9,33.3,17.12,9.16,6.28,68.37,2.01,2.84,10.71,"804,908",—
+PD,"PAGERDUTY, INC.",lynch,False,1,4,25.0,17.12,9.16,6.28,68.37,2.01,2.84,10.71,"804,908",—
+PD,"PAGERDUTY, INC.",netnet,False,1,4,25.0,17.12,9.16,6.28,68.37,2.01,2.84,10.71,"804,908",—
+PD,"PAGERDUTY, INC.",custom,False,0,0,0.0,17.12,9.16,6.28,68.37,2.01,2.84,10.71,"804,908",—
+IDR,"IDAHO STRATEGIC RESOURCES, INC",buffett,False,4,6,66.7,20.58,18.05,2.80,15.45,13.96,0.05,13.74,"615,109",—
+IDR,"IDAHO STRATEGIC RESOURCES, INC",piotroski,False,6,9,66.7,20.58,18.05,2.80,15.45,13.96,0.05,13.74,"615,109",—
+IDR,"IDAHO STRATEGIC RESOURCES, INC",lynch,False,2,4,50.0,20.58,18.05,2.80,15.45,13.96,0.05,13.74,"615,109",—
+IDR,"IDAHO STRATEGIC RESOURCES, INC",netnet,False,2,4,50.0,20.58,18.05,2.80,15.45,13.96,0.05,13.74,"615,109",—
+IDR,"IDAHO STRATEGIC RESOURCES, INC",graham,False,3,9,33.3,20.58,18.05,2.80,15.45,13.96,0.05,13.74,"615,109",—
+IDR,"IDAHO STRATEGIC RESOURCES, INC",greenblatt,False,1,3,33.3,20.58,18.05,2.80,15.45,13.96,0.05,13.74,"615,109",—
+IDR,"IDAHO STRATEGIC RESOURCES, INC",custom,False,0,0,0.0,20.58,18.05,2.80,15.45,13.96,0.05,13.74,"615,109",—
+SON,Sonoco Products Company,graham,False,6,9,66.7,49.73,4.94,1.37,27.75,1.05,2.08,90.68,"386,755",—
+SON,Sonoco Products Company,buffett,False,4,6,66.7,49.73,4.94,1.37,27.75,1.05,2.08,90.68,"386,755",—
+SON,Sonoco Products Company,greenblatt,False,2,3,66.7,49.73,4.94,1.37,27.75,1.05,2.08,90.68,"386,755",—
+GSG,iShares S&P GSCI Commodity-Indexed Trust,greenblatt,False,1,3,33.3,36.65,29.09,—,—,—,—,—,"527,134",—
+SON,Sonoco Products Company,netnet,False,1,4,25.0,49.73,4.94,1.37,27.75,1.05,2.08,90.68,"386,755",—
+GSG,iShares S&P GSCI Commodity-Indexed Trust,lynch,False,1,4,25.0,36.65,29.09,—,—,—,—,—,"527,134",—
+GSG,iShares S&P GSCI Commodity-Indexed Trust,netnet,False,1,4,25.0,36.65,29.09,—,—,—,—,—,"527,134",—
+GSG,iShares S&P GSCI Commodity-Indexed Trust,buffett,False,1,6,16.7,36.65,29.09,—,—,—,—,—,"527,134",—
