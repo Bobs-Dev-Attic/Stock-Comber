@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-16 23:05 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-17 01:02 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **30** strategy matches passed.
+Screened **75** companies · **29** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| KMT | KENNAMETAL INC. | graham | ✅ | 89% | 30.79 | 6.97 | 1.52 | 21.81 | 2.62 | 0.99 | 2M | — |
-| KMT | KENNAMETAL INC. | lynch | ✅ | 75% | 30.79 | 6.97 | 1.52 | 21.81 | 2.62 | 0.99 | 2M | — |
-| MCRI | MONARCH CASINO & RESORT, INC | piotroski | ✅ | 100% | 114 | 20.92 | 3.94 | 18.86 | 0.86 | 0.33 | 150,465 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | lynch | ✅ | 100% | 114 | 20.92 | 3.94 | 18.86 | 0.86 | 0.33 | 150,465 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | buffett | ✅ | 83% | 114 | 20.92 | 3.94 | 18.86 | 0.86 | 0.33 | 150,465 | — |
-| AES | THE AES CORPORATION | greenblatt | ✅ | 100% | 14.95 | 11.87 | 2.63 | 22.40 | 0.77 | — | 13M | — |
-| DAKT | Daktronics, Inc. | piotroski | ✅ | 89% | 18.21 | 19.79 | 2.99 | 15.09 | 2.31 | — | 651,751 | — |
-| DAKT | Daktronics, Inc. | lynch | ✅ | 75% | 18.21 | 19.79 | 2.99 | 15.09 | 2.31 | — | 651,751 | — |
-| WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 12.36 | 2.44 | 1.40 | 57.56 | 1.39 | 2.18 | 546,361 | — |
-| AGX | ARGAN INC | lynch | ✅ | 75% | 346 | 35.48 | 10.58 | 29.80 | 1.59 | 1.57 | 543,066 | — |
-| IOSP | INNOSPEC INC. | lynch | ✅ | 100% | 96.81 | 20.73 | 1.82 | 8.79 | 2.79 | 0.38 | 173,644 | — |
-| IOSP | INNOSPEC INC. | piotroski | ✅ | 89% | 96.81 | 20.73 | 1.82 | 8.79 | 2.79 | 0.38 | 173,644 | — |
-| NJR | NEW JERSEY RESOURCES CORPORA | piotroski | ✅ | 78% | 52.19 | 15.67 | 2.20 | 14.03 | 0.73 | — | 794,913 | — |
-| ORI | OLD REPUBLIC INTERNATIONAL C | piotroski | ✅ | 78% | 39.66 | 10.66 | 1.69 | 15.82 | — | 4.05 | 2M | — |
-| KALU | KAISER ALUMINUM CORPORATION | piotroski | ✅ | 78% | 147 | 21.75 | 2.96 | 13.62 | 2.95 | 2.10 | 125,660 | — |
-| KALU | KAISER ALUMINUM CORPORATION | lynch | ✅ | 75% | 147 | 21.75 | 2.96 | 13.62 | 2.95 | 2.10 | 125,660 | — |
-| CWEN | Clearway Energy, Inc. | lynch | ✅ | 75% | 29.93 | 6.20 | 0.18 | 2.91 | 1.13 | 1.85 | 1M | — |
-| OPY | OPPENHEIMER HOLDINGS INC. | piotroski | ✅ | 78% | 101 | 7.71 | 1.16 | 15.08 | — | 2.77 | 96,060 | — |
-| TILE | INTERFACE INC | piotroski | ✅ | 89% | 36.23 | 18.48 | 3.35 | 18.12 | 2.34 | 0.88 | 364,677 | — |
-| SIRI | SIRIUS XM HOLDINGS INC. | lynch | ✅ | 75% | 26.97 | 12.09 | 0.83 | 6.96 | 0.30 | 1.36 | 4M | — |
-| BBWI | BATH & BODY WORKS, INC. | greenblatt | ✅ | 100% | 20.14 | 6.48 | — | -50.66 | 1.27 | — | 8M | — |
-| ABM | ABM INDUSTRIES INCORPORATED | piotroski | ✅ | 89% | 51.15 | 19.75 | 1.80 | 9.09 | 1.48 | 1.95 | 462,894 | — |
-| SARO | StandardAero, Inc. | piotroski | ✅ | 89% | 21.31 | 25.67 | 2.67 | 10.40 | 2.20 | 1.46 | 5M | — |
-| DLB | Dolby Laboratories, Inc. | piotroski | ✅ | 78% | 59.95 | 22.88 | 2.23 | 9.72 | 3.17 | 0.23 | 512,709 | — |
-| CBU | COMMUNITY FINANCIAL SYSTEM,  | piotroski | ✅ | 89% | 60.24 | 15.17 | 1.59 | 10.49 | — | 7.63 | 239,198 | — |
-| MAGN | Magnera Corporation | piotroski | ✅ | 78% | 11.05 | — | 0.37 | -14.94 | 2.37 | 2.75 | 453,652 | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | piotroski | ✅ | 78% | 77.95 | 15.34 | 2.11 | 13.75 | 10.06 | 0.12 | 995,622 | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | buffett | ✅ | 83% | 112 | 15.25 | 5.09 | 33.37 | 4.85 | 2.26 | 501,686 | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | lynch | ✅ | 75% | 112 | 15.25 | 5.09 | 33.37 | 4.85 | 2.26 | 501,686 | — |
+| SSD | Simpson Manufacturing Co., I | buffett | ✅ | 83% | 176 | 21.41 | 3.64 | 17.00 | 3.54 | 0.51 | 367,060 | — |
+| SSD | Simpson Manufacturing Co., I | piotroski | ✅ | 78% | 176 | 21.41 | 3.64 | 17.00 | 3.54 | 0.51 | 367,060 | — |
+| MTCH | Match Group, Inc. | piotroski | ✅ | 89% | 42.95 | 18.05 | — | -242 | 1.42 | — | 3M | — |
+| MTCH | Match Group, Inc. | lynch | ✅ | 75% | 42.95 | 18.05 | — | -242 | 1.42 | — | 3M | — |
+| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 16.65 | 8.81 | 2.18 | 24.66 | 2.26 | 2.62 | 1M | — |
+| AIR | AAR CORP | piotroski | ✅ | 78% | 98.84 | 20.34 | 2.23 | 11.02 | 2.84 | — | 513,108 | — |
+| AIR | AAR CORP | lynch | ✅ | 75% | 98.84 | 20.34 | 2.23 | 11.02 | 2.84 | — | 513,108 | — |
+| ADUS | Addus HomeCare Corp | lynch | ✅ | 100% | 116 | 22.22 | 1.97 | 8.84 | 1.80 | 0.32 | 136,879 | — |
+| ADUS | Addus HomeCare Corp | piotroski | ✅ | 89% | 116 | 22.22 | 1.97 | 8.84 | 1.80 | 0.32 | 136,879 | — |
+| BFH | BREAD FINANCIAL HOLDINGS, IN | lynch | ✅ | 75% | 103 | 9.42 | 1.47 | 15.57 | — | 5.81 | 589,348 | — |
+| AM | ANTERO MIDSTREAM CORPORATION | piotroski | ✅ | 78% | 20.64 | 24.00 | 5.05 | 20.95 | 3.41 | 1.98 | 4M | — |
+| NHC | NATIONAL HEALTHCARE CORP | piotroski | ✅ | 100% | 243 | 31.66 | 3.55 | 11.23 | 1.82 | 0.42 | 100,925 | — |
+| NHC | NATIONAL HEALTHCARE CORP | lynch | ✅ | 75% | 243 | 31.66 | 3.55 | 11.23 | 1.82 | 0.42 | 100,925 | — |
+| FHB | FIRST HAWAIIAN, INC. | piotroski | ✅ | 89% | 24.95 | 11.34 | 1.13 | 9.98 | — | 7.65 | 2M | — |
+| GRC | The Gorman-Rupp Company | piotroski | ✅ | 89% | 71.89 | 35.59 | 4.56 | 12.78 | 2.37 | 1.07 | 111,200 | — |
+| WWD | WOODWARD, INC. | piotroski | ✅ | 100% | 328 | 45.69 | 7.87 | 17.23 | 2.08 | 0.80 | 596,730 | — |
+| MD | Pediatrix Medical Group, Inc | piotroski | ✅ | 78% | 27.38 | 14.11 | 2.70 | 19.10 | 1.66 | 1.59 | 534,997 | — |
+| FIVN | Five9, Inc. | piotroski | ✅ | 89% | 32.23 | 71.62 | 3.61 | 5.02 | 4.51 | 1.28 | 2M | — |
+| TRIP | TRIPADVISOR, INC. | piotroski | ✅ | 89% | 9.32 | 30.06 | 1.89 | 6.20 | 1.29 | 3.07 | 3M | — |
+| RH | RH | piotroski | ✅ | 89% | 113 | 17.91 | 36.90 | 206 | 1.19 | 78.80 | 793,718 | — |
+| LUV | SOUTHWEST AIRLINES CO. | piotroski | ✅ | 78% | 39.50 | 50.00 | 2.76 | 5.53 | 0.52 | — | 5M | — |
+| UE | URBAN EDGE PROPERTIES | piotroski | ✅ | 78% | 19.50 | 26.35 | 1.78 | 6.80 | — | 1.41 | 3M | — |
 | SENS | Senseonics Holdings, Inc. | piotroski | ✅ | 78% | 7.77 | — | 5.31 | -113 | 4.83 | 1.07 | 608,476 | — |
-| SPHR | SPHERE ENTERTAINMENT CO. | piotroski | ✅ | 78% | 104 | 140 | 2.10 | 1.50 | 1.09 | 0.89 | 898,956 | — |
-| DAR | DARLING INGREDIENTS INC. | piotroski | ✅ | 78% | 61.36 | 157 | 2.07 | 1.33 | 1.50 | 1.16 | 3M | — |
-| OMCL | OMNICELL, INC | piotroski | ✅ | 78% | 35.39 | 885 | 1.33 | 0.17 | 1.43 | 0.60 | 426,646 | — |
-| KMT | KENNAMETAL INC. | piotroski | ▫️ | 67% | 30.79 | 6.97 | 1.52 | 21.81 | 2.62 | 0.99 | 2M | — |
-| KMT | KENNAMETAL INC. | greenblatt | ▫️ | 67% | 30.79 | 6.97 | 1.52 | 21.81 | 2.62 | 0.99 | 2M | — |
-| KMT | KENNAMETAL INC. | buffett | ▫️ | 50% | 30.79 | 6.97 | 1.52 | 21.81 | 2.62 | 0.99 | 2M | — |
-| KMT | KENNAMETAL INC. | netnet | ▫️ | 50% | 30.79 | 6.97 | 1.52 | 21.81 | 2.62 | 0.99 | 2M | — |
-| KMT | KENNAMETAL INC. | custom | ▫️ | 0% | 30.79 | 6.97 | 1.52 | 21.81 | 2.62 | 0.99 | 2M | — |
-| XZO | Exzeo Group, Inc. | greenblatt | ▫️ | 67% | 16.69 | 16.86 | 5.26 | 32.56 | 3.86 | 0.37 | 160,755 | — |
-| XZO | Exzeo Group, Inc. | buffett | ▫️ | 50% | 16.69 | 16.86 | 5.26 | 32.56 | 3.86 | 0.37 | 160,755 | — |
-| XZO | Exzeo Group, Inc. | lynch | ▫️ | 50% | 16.69 | 16.86 | 5.26 | 32.56 | 3.86 | 0.37 | 160,755 | — |
-| XZO | Exzeo Group, Inc. | netnet | ▫️ | 50% | 16.69 | 16.86 | 5.26 | 32.56 | 3.86 | 0.37 | 160,755 | — |
-| XZO | Exzeo Group, Inc. | graham | ▫️ | 33% | 16.69 | 16.86 | 5.26 | 32.56 | 3.86 | 0.37 | 160,755 | — |
-| XZO | Exzeo Group, Inc. | piotroski | ▫️ | 33% | 16.69 | 16.86 | 5.26 | 32.56 | 3.86 | 0.37 | 160,755 | — |
-| XZO | Exzeo Group, Inc. | custom | ▫️ | 0% | 16.69 | 16.86 | 5.26 | 32.56 | 3.86 | 0.37 | 160,755 | — |
-| UNIT | Uniti Group Inc. | greenblatt | ▫️ | 67% | 5.60 | 1.15 | 3.92 | 343 | 0.74 | 30.65 | 6M | — |
-| UNIT | Uniti Group Inc. | graham | ▫️ | 44% | 5.60 | 1.15 | 3.92 | 343 | 0.74 | 30.65 | 6M | — |
-| UNIT | Uniti Group Inc. | buffett | ▫️ | 33% | 5.60 | 1.15 | 3.92 | 343 | 0.74 | 30.65 | 6M | — |
-| UNIT | Uniti Group Inc. | lynch | ▫️ | 25% | 5.60 | 1.15 | 3.92 | 343 | 0.74 | 30.65 | 6M | — |
-| UNIT | Uniti Group Inc. | netnet | ▫️ | 25% | 5.60 | 1.15 | 3.92 | 343 | 0.74 | 30.65 | 6M | — |
-| UNIT | Uniti Group Inc. | piotroski | ▫️ | 22% | 5.60 | 1.15 | 3.92 | 343 | 0.74 | 30.65 | 6M | — |
-| UNIT | Uniti Group Inc. | custom | ▫️ | 0% | 5.60 | 1.15 | 3.92 | 343 | 0.74 | 30.65 | 6M | — |
-| CEPF | CANTOR EQUITY PARTNERS IV, I | greenblatt | ▫️ | 67% | 10.26 | — | — | 4,306 | — | 0.67 | 136,688 | — |
+| NEOG | Neogen Corporation | piotroski | ✅ | 89% | 11.81 | — | 1.23 | -0.38 | 3.82 | 0.60 | 2M | — |
+| ORN | ORION GROUP HOLDINGS, INC. | piotroski | ✅ | 78% | 8.52 | 142 | 2.12 | 1.56 | 1.36 | 1.61 | 450,541 | — |
+| TLYS | TILLY’S, INC. | piotroski | ✅ | 78% | 4.60 | — | 1.63 | -20.50 | 1.25 | 2.65 | 121,334 | — |
+| BENFW | Beneficient | buffett | ▫️ | 50% | 0.01 | — | — | 46.19 | — | -1.78 | 10,982 | — |
+| BENFW | Beneficient | piotroski | ▫️ | 33% | 0.01 | — | — | 46.19 | — | -1.78 | 10,982 | — |
+| BENFW | Beneficient | lynch | ▫️ | 25% | 0.01 | — | — | 46.19 | — | -1.78 | 10,982 | — |
+| BENFW | Beneficient | graham | ▫️ | 0% | 0.01 | — | — | 46.19 | — | -1.78 | 10,982 | — |
+| BENFW | Beneficient | greenblatt | ▫️ | 0% | 0.01 | — | — | 46.19 | — | -1.78 | 10,982 | — |
+| BENFW | Beneficient | netnet | ▫️ | 0% | 0.01 | — | — | 46.19 | — | -1.78 | 10,982 | — |
+| BENFW | Beneficient | custom | ▫️ | 0% | 0.01 | — | — | 46.19 | — | -1.78 | 10,982 | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | buffett | ▫️ | 67% | 77.95 | 15.34 | 2.11 | 13.75 | 10.06 | 0.12 | 995,622 | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | graham | ▫️ | 56% | 77.95 | 15.34 | 2.11 | 13.75 | 10.06 | 0.12 | 995,622 | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | lynch | ▫️ | 50% | 77.95 | 15.34 | 2.11 | 13.75 | 10.06 | 0.12 | 995,622 | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | netnet | ▫️ | 50% | 77.95 | 15.34 | 2.11 | 13.75 | 10.06 | 0.12 | 995,622 | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | greenblatt | ▫️ | 33% | 77.95 | 15.34 | 2.11 | 13.75 | 10.06 | 0.12 | 995,622 | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | custom | ▫️ | 0% | 77.95 | 15.34 | 2.11 | 13.75 | 10.06 | 0.12 | 995,622 | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | graham | ▫️ | 56% | 112 | 15.25 | 5.09 | 33.37 | 4.85 | 2.26 | 501,686 | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | piotroski | ▫️ | 56% | 112 | 15.25 | 5.09 | 33.37 | 4.85 | 2.26 | 501,686 | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | greenblatt | ▫️ | 33% | 112 | 15.25 | 5.09 | 33.37 | 4.85 | 2.26 | 501,686 | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | netnet | ▫️ | 25% | 112 | 15.25 | 5.09 | 33.37 | 4.85 | 2.26 | 501,686 | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | custom | ▫️ | 0% | 112 | 15.25 | 5.09 | 33.37 | 4.85 | 2.26 | 501,686 | — |
+| SMCIP | Super Micro Computer, Inc. | graham | ▫️ | 67% | 54.67 | 16.77 | 2.63 | 15.40 | 3.87 | 1.07 | 2M | — |
+| SMCIP | Super Micro Computer, Inc. | buffett | ▫️ | 50% | 54.67 | 16.77 | 2.63 | 15.40 | 3.87 | 1.07 | 2M | — |
+| SMCIP | Super Micro Computer, Inc. | lynch | ▫️ | 50% | 54.67 | 16.77 | 2.63 | 15.40 | 3.87 | 1.07 | 2M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.

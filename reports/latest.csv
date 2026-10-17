@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-KMT,KENNAMETAL INC.,graham,True,8,9,88.9,30.79,6.97,1.52,21.81,2.62,0.99,44.90,2M,—
-KMT,KENNAMETAL INC.,lynch,True,3,4,75.0,30.79,6.97,1.52,21.81,2.62,0.99,44.90,2M,—
-MCRI,"MONARCH CASINO & RESORT, INC.",piotroski,True,9,9,100.0,114,20.92,3.94,18.86,0.86,0.33,59.33,"150,465",—
-MCRI,"MONARCH CASINO & RESORT, INC.",lynch,True,4,4,100.0,114,20.92,3.94,18.86,0.86,0.33,59.33,"150,465",—
-MCRI,"MONARCH CASINO & RESORT, INC.",buffett,True,5,6,83.3,114,20.92,3.94,18.86,0.86,0.33,59.33,"150,465",—
-AES,THE AES CORPORATION,greenblatt,True,3,3,100.0,14.95,11.87,2.63,22.40,0.77,—,12.70,13M,—
-DAKT,"Daktronics, Inc.",piotroski,True,8,9,88.9,18.21,19.79,2.99,15.09,2.31,—,11.23,"651,751",—
-DAKT,"Daktronics, Inc.",lynch,True,3,4,75.0,18.21,19.79,2.99,15.09,2.31,—,11.23,"651,751",—
-WNC,WABASH NATIONAL CORPORATION,greenblatt,True,3,3,100.0,12.36,2.44,1.40,57.56,1.39,2.18,31.68,"546,361",—
-AGX,ARGAN INC,lynch,True,3,4,75.0,346,35.48,10.58,29.80,1.59,1.57,84.62,"543,066",—
-IOSP,INNOSPEC INC.,lynch,True,4,4,100.0,96.81,20.73,1.82,8.79,2.79,0.38,74.67,"173,644",—
-IOSP,INNOSPEC INC.,piotroski,True,8,9,88.9,96.81,20.73,1.82,8.79,2.79,0.38,74.67,"173,644",—
-NJR,NEW JERSEY RESOURCES CORPORATION,piotroski,True,7,9,77.8,52.19,15.67,2.20,14.03,0.73,—,42.17,"794,913",—
-ORI,OLD REPUBLIC INTERNATIONAL CORPORATION,piotroski,True,7,9,77.8,39.66,10.66,1.69,15.82,—,4.05,44.38,2M,—
-KALU,KAISER ALUMINUM CORPORATION,piotroski,True,7,9,77.8,147,21.75,2.96,13.62,2.95,2.10,87.01,"125,660",—
-KALU,KAISER ALUMINUM CORPORATION,lynch,True,3,4,75.0,147,21.75,2.96,13.62,2.95,2.10,87.01,"125,660",—
-CWEN,"Clearway Energy, Inc.",lynch,True,3,4,75.0,29.93,6.20,0.18,2.91,1.13,1.85,134,1M,—
-OPY,OPPENHEIMER HOLDINGS INC.,piotroski,True,7,9,77.8,101,7.71,1.16,15.08,—,2.77,159,"96,060",—
-TILE,INTERFACE INC,piotroski,True,8,9,88.9,36.23,18.48,3.35,18.12,2.34,0.88,21.85,"364,677",—
-SIRI,SIRIUS XM HOLDINGS INC.,lynch,True,3,4,75.0,26.97,12.09,0.83,6.96,0.30,1.36,40.31,4M,—
-BBWI,"BATH & BODY WORKS, INC.",greenblatt,True,3,3,100.0,20.14,6.48,—,-50.66,1.27,—,—,8M,—
-ABM,ABM INDUSTRIES INCORPORATED,piotroski,True,8,9,88.9,51.15,19.75,1.80,9.09,1.48,1.95,40.74,"462,894",—
-SARO,"StandardAero, Inc.",piotroski,True,8,9,88.9,21.31,25.67,2.67,10.40,2.20,1.46,12.21,5M,—
-DLB,"Dolby Laboratories, Inc.",piotroski,True,7,9,77.8,59.95,22.88,2.23,9.72,3.17,0.23,39.82,"512,709",—
-CBU,"COMMUNITY FINANCIAL SYSTEM, INC.",piotroski,True,8,9,88.9,60.24,15.17,1.59,10.49,—,7.63,58.24,"239,198",—
-MAGN,Magnera Corporation,piotroski,True,7,9,77.8,11.05,—,0.37,-14.94,2.37,2.75,—,"453,652",—
+OLED,UNIVERSAL DISPLAY CORPORATION,piotroski,True,7,9,77.8,77.95,15.34,2.11,13.75,10.06,0.12,64.99,"995,622",—
+ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",buffett,True,5,6,83.3,112,15.25,5.09,33.37,4.85,2.26,60.19,"501,686",—
+ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",lynch,True,3,4,75.0,112,15.25,5.09,33.37,4.85,2.26,60.19,"501,686",—
+SSD,"Simpson Manufacturing Co., Inc.",buffett,True,5,6,83.3,176,21.41,3.64,17.00,3.54,0.51,94.81,"367,060",—
+SSD,"Simpson Manufacturing Co., Inc.",piotroski,True,7,9,77.8,176,21.41,3.64,17.00,3.54,0.51,94.81,"367,060",—
+MTCH,"Match Group, Inc.",piotroski,True,8,9,88.9,42.95,18.05,—,-242,1.42,—,—,3M,—
+MTCH,"Match Group, Inc.",lynch,True,3,4,75.0,42.95,18.05,—,-242,1.42,—,—,3M,—
+SBH,"SALLY BEAUTY HOLDINGS, INC.",piotroski,True,8,9,88.9,16.65,8.81,2.18,24.66,2.26,2.62,18.04,1M,—
+AIR,AAR CORP,piotroski,True,7,9,77.8,98.84,20.34,2.23,11.02,2.84,—,69.66,"513,108",—
+AIR,AAR CORP,lynch,True,3,4,75.0,98.84,20.34,2.23,11.02,2.84,—,69.66,"513,108",—
+ADUS,Addus HomeCare Corp,lynch,True,4,4,100.0,116,22.22,1.97,8.84,1.80,0.32,83.25,"136,879",—
+ADUS,Addus HomeCare Corp,piotroski,True,8,9,88.9,116,22.22,1.97,8.84,1.80,0.32,83.25,"136,879",—
+BFH,"BREAD FINANCIAL HOLDINGS, INC.",lynch,True,3,4,75.0,103,9.42,1.47,15.57,—,5.81,131,"589,348",—
+AM,ANTERO MIDSTREAM CORPORATION,piotroski,True,7,9,77.8,20.64,24.00,5.05,20.95,3.41,1.98,8.90,4M,—
+NHC,NATIONAL HEALTHCARE CORP,piotroski,True,9,9,100.0,243,31.66,3.55,11.23,1.82,0.42,109,"100,925",—
+NHC,NATIONAL HEALTHCARE CORP,lynch,True,3,4,75.0,243,31.66,3.55,11.23,1.82,0.42,109,"100,925",—
+FHB,"FIRST HAWAIIAN, INC.",piotroski,True,8,9,88.9,24.95,11.34,1.13,9.98,—,7.65,33.05,2M,—
+GRC,The Gorman-Rupp Company,piotroski,True,8,9,88.9,71.89,35.59,4.56,12.78,2.37,1.07,26.77,"111,200",—
+WWD,"WOODWARD, INC.",piotroski,True,9,9,100.0,328,45.69,7.87,17.23,2.08,0.80,82.19,"596,730",—
+MD,"Pediatrix Medical Group, Inc.",piotroski,True,7,9,77.8,27.38,14.11,2.70,19.10,1.66,1.59,21.05,"534,997",—
+FIVN,"Five9, Inc.",piotroski,True,8,9,88.9,32.23,71.62,3.61,5.02,4.51,1.28,9.51,2M,—
+TRIP,"TRIPADVISOR, INC.",piotroski,True,8,9,88.9,9.32,30.06,1.89,6.20,1.29,3.07,5.86,3M,—
+RH,RH,piotroski,True,8,9,88.9,113,17.91,36.90,206,1.19,78.80,20.85,"793,718",—
+LUV,SOUTHWEST AIRLINES CO.,piotroski,True,7,9,77.8,39.50,50.00,2.76,5.53,0.52,—,15.94,5M,—
+UE,URBAN EDGE PROPERTIES,piotroski,True,7,9,77.8,19.50,26.35,1.78,6.80,—,1.41,13.49,3M,—
 SENS,"Senseonics Holdings, Inc.",piotroski,True,7,9,77.8,7.77,—,5.31,-113,4.83,1.07,—,"608,476",—
-SPHR,SPHERE ENTERTAINMENT CO.,piotroski,True,7,9,77.8,104,140,2.10,1.50,1.09,0.89,28.65,"898,956",—
-DAR,DARLING INGREDIENTS INC.,piotroski,True,7,9,77.8,61.36,157,2.07,1.33,1.50,1.16,16.11,3M,—
-OMCL,"OMNICELL, INC",piotroski,True,7,9,77.8,35.39,885,1.33,0.17,1.43,0.60,4.89,"426,646",—
-KMT,KENNAMETAL INC.,piotroski,False,6,9,66.7,30.79,6.97,1.52,21.81,2.62,0.99,44.90,2M,—
-KMT,KENNAMETAL INC.,greenblatt,False,2,3,66.7,30.79,6.97,1.52,21.81,2.62,0.99,44.90,2M,—
-KMT,KENNAMETAL INC.,buffett,False,3,6,50.0,30.79,6.97,1.52,21.81,2.62,0.99,44.90,2M,—
-KMT,KENNAMETAL INC.,netnet,False,2,4,50.0,30.79,6.97,1.52,21.81,2.62,0.99,44.90,2M,—
-KMT,KENNAMETAL INC.,custom,False,0,0,0.0,30.79,6.97,1.52,21.81,2.62,0.99,44.90,2M,—
-XZO,"Exzeo Group, Inc.",greenblatt,False,2,3,66.7,16.69,16.86,5.26,32.56,3.86,0.37,8.40,"160,755",—
-XZO,"Exzeo Group, Inc.",buffett,False,3,6,50.0,16.69,16.86,5.26,32.56,3.86,0.37,8.40,"160,755",—
-XZO,"Exzeo Group, Inc.",lynch,False,2,4,50.0,16.69,16.86,5.26,32.56,3.86,0.37,8.40,"160,755",—
-XZO,"Exzeo Group, Inc.",netnet,False,2,4,50.0,16.69,16.86,5.26,32.56,3.86,0.37,8.40,"160,755",—
-XZO,"Exzeo Group, Inc.",graham,False,3,9,33.3,16.69,16.86,5.26,32.56,3.86,0.37,8.40,"160,755",—
-XZO,"Exzeo Group, Inc.",piotroski,False,3,9,33.3,16.69,16.86,5.26,32.56,3.86,0.37,8.40,"160,755",—
-XZO,"Exzeo Group, Inc.",custom,False,0,0,0.0,16.69,16.86,5.26,32.56,3.86,0.37,8.40,"160,755",—
-UNIT,Uniti Group Inc.,greenblatt,False,2,3,66.7,5.60,1.15,3.92,343,0.74,30.65,12.50,6M,—
-UNIT,Uniti Group Inc.,graham,False,4,9,44.4,5.60,1.15,3.92,343,0.74,30.65,12.50,6M,—
-UNIT,Uniti Group Inc.,buffett,False,2,6,33.3,5.60,1.15,3.92,343,0.74,30.65,12.50,6M,—
-UNIT,Uniti Group Inc.,lynch,False,1,4,25.0,5.60,1.15,3.92,343,0.74,30.65,12.50,6M,—
-UNIT,Uniti Group Inc.,netnet,False,1,4,25.0,5.60,1.15,3.92,343,0.74,30.65,12.50,6M,—
-UNIT,Uniti Group Inc.,piotroski,False,2,9,22.2,5.60,1.15,3.92,343,0.74,30.65,12.50,6M,—
-UNIT,Uniti Group Inc.,custom,False,0,0,0.0,5.60,1.15,3.92,343,0.74,30.65,12.50,6M,—
-CEPF,"CANTOR EQUITY PARTNERS IV, INC.",greenblatt,False,2,3,66.7,10.26,—,—,"4,306",—,0.67,—,"136,688",—
+NEOG,Neogen Corporation,piotroski,True,8,9,88.9,11.81,—,1.23,-0.38,3.82,0.60,—,2M,—
+ORN,"ORION GROUP HOLDINGS, INC.",piotroski,True,7,9,77.8,8.52,142,2.12,1.56,1.36,1.61,2.33,"450,541",—
+TLYS,"TILLY’S, INC.",piotroski,True,7,9,77.8,4.60,—,1.63,-20.50,1.25,2.65,—,"121,334",—
+BENFW,Beneficient,buffett,False,3,6,50.0,0.01,—,—,46.19,—,-1.78,—,"10,982",—
+BENFW,Beneficient,piotroski,False,3,9,33.3,0.01,—,—,46.19,—,-1.78,—,"10,982",—
+BENFW,Beneficient,lynch,False,1,4,25.0,0.01,—,—,46.19,—,-1.78,—,"10,982",—
+BENFW,Beneficient,graham,False,0,9,0.0,0.01,—,—,46.19,—,-1.78,—,"10,982",—
+BENFW,Beneficient,greenblatt,False,0,3,0.0,0.01,—,—,46.19,—,-1.78,—,"10,982",—
+BENFW,Beneficient,netnet,False,0,4,0.0,0.01,—,—,46.19,—,-1.78,—,"10,982",—
+BENFW,Beneficient,custom,False,0,0,0.0,0.01,—,—,46.19,—,-1.78,—,"10,982",—
+OLED,UNIVERSAL DISPLAY CORPORATION,buffett,False,4,6,66.7,77.95,15.34,2.11,13.75,10.06,0.12,64.99,"995,622",—
+OLED,UNIVERSAL DISPLAY CORPORATION,graham,False,5,9,55.6,77.95,15.34,2.11,13.75,10.06,0.12,64.99,"995,622",—
+OLED,UNIVERSAL DISPLAY CORPORATION,lynch,False,2,4,50.0,77.95,15.34,2.11,13.75,10.06,0.12,64.99,"995,622",—
+OLED,UNIVERSAL DISPLAY CORPORATION,netnet,False,2,4,50.0,77.95,15.34,2.11,13.75,10.06,0.12,64.99,"995,622",—
+OLED,UNIVERSAL DISPLAY CORPORATION,greenblatt,False,1,3,33.3,77.95,15.34,2.11,13.75,10.06,0.12,64.99,"995,622",—
+OLED,UNIVERSAL DISPLAY CORPORATION,custom,False,0,0,0.0,77.95,15.34,2.11,13.75,10.06,0.12,64.99,"995,622",—
+ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",graham,False,5,9,55.6,112,15.25,5.09,33.37,4.85,2.26,60.19,"501,686",—
+ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",piotroski,False,5,9,55.6,112,15.25,5.09,33.37,4.85,2.26,60.19,"501,686",—
+ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",greenblatt,False,1,3,33.3,112,15.25,5.09,33.37,4.85,2.26,60.19,"501,686",—
+ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",netnet,False,1,4,25.0,112,15.25,5.09,33.37,4.85,2.26,60.19,"501,686",—
+ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",custom,False,0,0,0.0,112,15.25,5.09,33.37,4.85,2.26,60.19,"501,686",—
+SMCIP,"Super Micro Computer, Inc.",graham,False,6,9,66.7,54.67,16.77,2.63,15.40,3.87,1.07,39.03,2M,—
+SMCIP,"Super Micro Computer, Inc.",buffett,False,3,6,50.0,54.67,16.77,2.63,15.40,3.87,1.07,39.03,2M,—
+SMCIP,"Super Micro Computer, Inc.",lynch,False,2,4,50.0,54.67,16.77,2.63,15.40,3.87,1.07,39.03,2M,—
