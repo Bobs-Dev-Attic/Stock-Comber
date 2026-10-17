@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-17 05:19 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-17 09:25 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **32** strategy matches passed.
+Screened **75** companies · **29** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| FSLR | First Solar, Inc. | lynch | ✅ | 100% | 173 | 12.15 | 1.95 | 16.02 | 2.67 | 0.40 | 2M | — |
-| FSLR | First Solar, Inc. | piotroski | ✅ | 89% | 173 | 12.15 | 1.95 | 16.02 | 2.67 | 0.40 | 2M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | piotroski | ✅ | 78% | 7.79 | 6.44 | — | -221 | 2.06 | -5.32 | 4M | — |
-| SBC | SBC Medical Group Holdings I | lynch | ✅ | 75% | 5.16 | 10.32 | 2.14 | 20.54 | 3.78 | 0.47 | 119,485 | — |
-| USLM | UNITED STATES LIME & MINERAL | lynch | ✅ | 100% | 106 | 22.71 | 4.83 | 21.29 | 19.27 | 0.08 | 106,988 | — |
-| USLM | UNITED STATES LIME & MINERAL | buffett | ✅ | 83% | 106 | 22.71 | 4.83 | 21.29 | 19.27 | 0.08 | 106,988 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | piotroski | ✅ | 100% | 114 | 20.92 | 3.94 | 18.86 | 0.86 | 0.33 | 150,465 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | lynch | ✅ | 100% | 114 | 20.92 | 3.94 | 18.86 | 0.86 | 0.33 | 150,465 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | buffett | ✅ | 83% | 114 | 20.92 | 3.94 | 18.86 | 0.86 | 0.33 | 150,465 | — |
-| BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 122 | 16.56 | 2.84 | 17.13 | 2.65 | 0.86 | 894,350 | — |
-| BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 122 | 16.56 | 2.84 | 17.13 | 2.65 | 0.86 | 894,350 | — |
-| AGX | ARGAN INC | lynch | ✅ | 75% | 346 | 35.48 | 10.58 | 29.80 | 1.59 | 1.57 | 543,287 | — |
-| ALRM | ALARM.COM HOLDINGS, INC. | piotroski | ✅ | 78% | 57.37 | 23.32 | 3.99 | 15.52 | 1.92 | 1.47 | 462,971 | — |
-| UFPT | UFP Technologies, Inc. | lynch | ✅ | 100% | 292 | 33.33 | 5.37 | 16.12 | 2.68 | 0.55 | 82,205 | — |
-| UFPT | UFP Technologies, Inc. | piotroski | ✅ | 89% | 292 | 33.33 | 5.37 | 16.12 | 2.68 | 0.55 | 82,205 | — |
-| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 16.65 | 8.81 | 2.18 | 24.66 | 2.26 | 2.62 | 1M | — |
-| BDC | BELDEN INC. | piotroski | ✅ | 89% | 103 | 17.40 | 3.27 | 18.78 | 1.93 | — | 327,792 | — |
-| ADUS | Addus HomeCare Corp | lynch | ✅ | 100% | 116 | 22.22 | 1.97 | 8.84 | 1.80 | 0.32 | 136,879 | — |
-| ADUS | Addus HomeCare Corp | piotroski | ✅ | 89% | 116 | 22.22 | 1.97 | 8.84 | 1.80 | 0.32 | 136,879 | — |
-| UMBF | UMB FINANCIAL CORP | lynch | ✅ | 75% | 131 | 14.11 | 1.26 | 9.13 | — | 8.50 | 669,372 | — |
-| EGP | EASTGROUP PROPERTIES, INC. | piotroski | ✅ | 78% | 196 | 40.32 | 2.97 | 7.36 | — | 0.55 | 579,916 | — |
-| EGP | EASTGROUP PROPERTIES, INC. | lynch | ✅ | 75% | 196 | 40.32 | 2.97 | 7.36 | — | 0.55 | 579,916 | — |
-| MD | Pediatrix Medical Group, Inc | piotroski | ✅ | 78% | 27.38 | 14.11 | 2.70 | 19.10 | 1.66 | 1.59 | 534,997 | — |
-| CENTA | Central Garden & Pet Company | graham | ✅ | 100% | 36.21 | 14.20 | 1.46 | 10.29 | 3.67 | — | 222,537 | — |
-| CENTA | Central Garden & Pet Company | piotroski | ✅ | 89% | 36.21 | 14.20 | 1.46 | 10.29 | 3.67 | — | 222,537 | — |
-| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.23 | 19.23 | 0.76 | 3.99 | 9.18 | 0.34 | 127,341 | — |
-| CPRI | CAPRI HOLDINGS LIMITED | piotroski | ✅ | 78% | 15.95 | 13.99 | 23.89 | 171 | 1.21 | 39.38 | 3M | — |
-| AMCR | AMCOR PLC | piotroski | ✅ | 89% | 43.85 | 18.42 | 1.72 | 9.38 | 1.25 | 2.15 | 3M | — |
-| ATRC | AtriCure, Inc. | piotroski | ✅ | 78% | 56.07 | — | 5.44 | -2.33 | 3.96 | 0.33 | 648,235 | — |
-| TBCH | TURTLE BEACH CORPORATION | piotroski | ✅ | 78% | 15.20 | 19.74 | 2.42 | 12.24 | 1.98 | 1.09 | 570,247 | — |
-| WGO | WINNEBAGO INDUSTRIES, INC. | piotroski | ✅ | 89% | 24.00 | 26.37 | 0.55 | 2.10 | 2.42 | 0.76 | 595,388 | — |
-| TRLV | TRULIEVE CANNABIS CORP. | piotroski | ✅ | 89% | 10.01 | — | 1.68 | -10.70 | 4.43 | 1.36 | 913,698 | — |
-| FSLR | First Solar, Inc. | graham | ▫️ | 67% | 173 | 12.15 | 1.95 | 16.02 | 2.67 | 0.40 | 2M | — |
-| FSLR | First Solar, Inc. | buffett | ▫️ | 67% | 173 | 12.15 | 1.95 | 16.02 | 2.67 | 0.40 | 2M | — |
-| FSLR | First Solar, Inc. | greenblatt | ▫️ | 67% | 173 | 12.15 | 1.95 | 16.02 | 2.67 | 0.40 | 2M | — |
-| FSLR | First Solar, Inc. | netnet | ▫️ | 50% | 173 | 12.15 | 1.95 | 16.02 | 2.67 | 0.40 | 2M | — |
-| FSLR | First Solar, Inc. | custom | ▫️ | 0% | 173 | 12.15 | 1.95 | 16.02 | 2.67 | 0.40 | 2M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | greenblatt | ▫️ | 67% | 7.79 | 6.44 | — | -221 | 2.06 | -5.32 | 4M | — |
-| SBC | SBC Medical Group Holdings I | graham | ▫️ | 67% | 5.16 | 10.32 | 2.14 | 20.54 | 3.78 | 0.47 | 119,485 | — |
-| SBC | SBC Medical Group Holdings I | buffett | ▫️ | 67% | 5.16 | 10.32 | 2.14 | 20.54 | 3.78 | 0.47 | 119,485 | — |
-| SBC | SBC Medical Group Holdings I | greenblatt | ▫️ | 67% | 5.16 | 10.32 | 2.14 | 20.54 | 3.78 | 0.47 | 119,485 | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | lynch | ▫️ | 50% | 7.79 | 6.44 | — | -221 | 2.06 | -5.32 | 4M | — |
-| SBC | SBC Medical Group Holdings I | netnet | ▫️ | 50% | 5.16 | 10.32 | 2.14 | 20.54 | 3.78 | 0.47 | 119,485 | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | graham | ▫️ | 44% | 7.79 | 6.44 | — | -221 | 2.06 | -5.32 | 4M | — |
-| SBC | SBC Medical Group Holdings I | piotroski | ▫️ | 44% | 5.16 | 10.32 | 2.14 | 20.54 | 3.78 | 0.47 | 119,485 | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | buffett | ▫️ | 33% | 7.79 | 6.44 | — | -221 | 2.06 | -5.32 | 4M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | netnet | ▫️ | 25% | 7.79 | 6.44 | — | -221 | 2.06 | -5.32 | 4M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | custom | ▫️ | 0% | 7.79 | 6.44 | — | -221 | 2.06 | -5.32 | 4M | — |
-| SBC | SBC Medical Group Holdings I | custom | ▫️ | 0% | 5.16 | 10.32 | 2.14 | 20.54 | 3.78 | 0.47 | 119,485 | — |
-| USLM | UNITED STATES LIME & MINERAL | piotroski | ▫️ | 67% | 106 | 22.71 | 4.83 | 21.29 | 19.27 | 0.08 | 106,988 | — |
+| SAFX | XCF GLOBAL, INC. | greenblatt | ✅ | 100% | 0.14 | 0.27 | 0.53 | 197 | 0.11 | 10.14 | 6M | — |
+| LNN | Lindsay Corporation | piotroski | ✅ | 78% | 107 | 15.83 | 2.20 | 13.90 | 3.71 | 0.58 | 117,040 | — |
+| LNN | Lindsay Corporation | lynch | ✅ | 75% | 107 | 15.83 | 2.20 | 13.90 | 3.71 | 0.58 | 117,040 | — |
+| KFY | KORN FERRY | piotroski | ✅ | 100% | 73.03 | 13.99 | 1.94 | 14.06 | 1.94 | 1.06 | 485,269 | — |
+| KFY | KORN FERRY | lynch | ✅ | 75% | 73.03 | 13.99 | 1.94 | 14.06 | 1.94 | 1.06 | 485,269 | — |
+| CVSA | Covista Inc. | lynch | ✅ | 75% | 127 | 18.00 | 3.13 | 17.40 | 1.09 | 1.08 | 339,552 | — |
+| DAKT | Daktronics, Inc. | piotroski | ✅ | 89% | 18.21 | 19.79 | 2.99 | 15.09 | 2.31 | — | 651,751 | — |
+| DAKT | Daktronics, Inc. | lynch | ✅ | 75% | 18.21 | 19.79 | 2.99 | 15.09 | 2.31 | — | 651,751 | — |
+| FSS | FEDERAL SIGNAL CORPORATION | lynch | ✅ | 75% | 112 | 28.03 | 5.00 | 17.84 | 3.02 | 0.73 | 630,300 | — |
+| PRDO | PERDOCEO EDUCATION CORP | piotroski | ✅ | 89% | 33.73 | 13.94 | 2.29 | 16.45 | 5.06 | — | 695,745 | — |
+| FULT | FULTON FINANCIAL CORP | lynch | ✅ | 75% | 22.40 | 10.77 | 1.18 | 11.22 | — | 8.20 | 2M | — |
+| ORI | OLD REPUBLIC INTERNATIONAL C | piotroski | ✅ | 78% | 39.66 | 10.66 | 1.69 | 15.82 | — | 4.05 | 2M | — |
+| SHOE | Shoe Station Group, Inc. | graham | ✅ | 89% | 13.76 | 7.24 | 0.55 | 7.58 | 3.76 | 0.74 | 644,486 | — |
+| DRVN | Driven Brands Holdings Inc. | piotroski | ✅ | 78% | 11.92 | 14.02 | 2.55 | 18.27 | 0.75 | 4.42 | 1M | — |
+| BFAM | BRIGHT HORIZONS FAMILY SOLUT | piotroski | ✅ | 89% | 71.15 | 21.18 | 3.05 | 14.42 | 0.52 | 1.90 | 667,122 | — |
+| BFAM | BRIGHT HORIZONS FAMILY SOLUT | lynch | ✅ | 75% | 71.15 | 21.18 | 3.05 | 14.42 | 0.52 | 1.90 | 667,122 | — |
+| SCSC | ScanSource, Inc. | piotroski | ✅ | 78% | 60.02 | 16.49 | 1.43 | 8.66 | 1.76 | 1.12 | 247,838 | — |
+| SCSC | ScanSource, Inc. | lynch | ✅ | 75% | 60.02 | 16.49 | 1.43 | 8.66 | 1.76 | 1.12 | 247,838 | — |
+| MYRG | MYR GROUP INC. | piotroski | ✅ | 89% | 280 | 37.21 | 6.67 | 17.93 | 1.33 | 1.49 | 238,868 | — |
+| ACM | AECOM | piotroski | ✅ | 78% | 58.94 | 14.00 | 3.15 | 22.54 | 1.14 | 3.81 | 1M | — |
+| EXTR | Extreme Networks, Inc. | piotroski | ✅ | 89% | 21.73 | 70.10 | 33.11 | 47.54 | 0.93 | — | 912,828 | — |
+| DLB | Dolby Laboratories, Inc. | piotroski | ✅ | 78% | 59.95 | 22.88 | 2.23 | 9.72 | 3.17 | 0.23 | 512,711 | — |
+| HLIO | HELIOS TECHNOLOGIES, INC. | piotroski | ✅ | 100% | 67.64 | 46.65 | 2.42 | 5.20 | 2.90 | 0.63 | 276,295 | — |
+| HLIO | HELIOS TECHNOLOGIES, INC. | lynch | ✅ | 75% | 67.64 | 46.65 | 2.42 | 5.20 | 2.90 | 0.63 | 276,295 | — |
+| FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 19.12 | 101 | 7.84 | 7.83 | 4.94 | 0.33 | 5M | — |
+| RRX | REGAL REXNORD CORP | piotroski | ✅ | 78% | 154 | 36.67 | 1.50 | 4.08 | 2.15 | — | 821,809 | — |
+| QUAD | Quad/Graphics, Inc. | piotroski | ✅ | 78% | 9.45 | 17.50 | — | -45.38 | 0.86 | -18.90 | 165,701 | — |
+| DAR | DARLING INGREDIENTS INC. | piotroski | ✅ | 78% | 61.36 | 157 | 2.07 | 1.33 | 1.50 | 1.16 | 3M | — |
+| GXO | GXO Logistics, Inc. | piotroski | ✅ | 78% | 47.18 | 168 | 1.84 | 1.07 | 0.85 | — | 1M | — |
+| SAFX | XCF GLOBAL, INC. | graham | ▫️ | 44% | 0.14 | 0.27 | 0.53 | 197 | 0.11 | 10.14 | 6M | — |
+| SAFX | XCF GLOBAL, INC. | buffett | ▫️ | 33% | 0.14 | 0.27 | 0.53 | 197 | 0.11 | 10.14 | 6M | — |
+| SAFX | XCF GLOBAL, INC. | lynch | ▫️ | 25% | 0.14 | 0.27 | 0.53 | 197 | 0.11 | 10.14 | 6M | — |
+| SAFX | XCF GLOBAL, INC. | netnet | ▫️ | 25% | 0.14 | 0.27 | 0.53 | 197 | 0.11 | 10.14 | 6M | — |
+| SAFX | XCF GLOBAL, INC. | piotroski | ▫️ | 11% | 0.14 | 0.27 | 0.53 | 197 | 0.11 | 10.14 | 6M | — |
+| SAFX | XCF GLOBAL, INC. | custom | ▫️ | 0% | 0.14 | 0.27 | 0.53 | 197 | 0.11 | 10.14 | 6M | — |
+| ALUB | Alussa Energy Acquisition Co | buffett | ▫️ | 33% | 10.13 | — | — | 42.51 | 4.62 | -1.07 | 184,833 | — |
+| ALUB | Alussa Energy Acquisition Co | lynch | ▫️ | 25% | 10.13 | — | — | 42.51 | 4.62 | -1.07 | 184,833 | — |
+| ALUB | Alussa Energy Acquisition Co | graham | ▫️ | 22% | 10.13 | — | — | 42.51 | 4.62 | -1.07 | 184,833 | — |
+| ALUB | Alussa Energy Acquisition Co | piotroski | ▫️ | 11% | 10.13 | — | — | 42.51 | 4.62 | -1.07 | 184,833 | — |
+| ALUB | Alussa Energy Acquisition Co | greenblatt | ▫️ | 0% | 10.13 | — | — | 42.51 | 4.62 | -1.07 | 184,833 | — |
+| ALUB | Alussa Energy Acquisition Co | netnet | ▫️ | 0% | 10.13 | — | — | 42.51 | 4.62 | -1.07 | 184,833 | — |
+| ALUB | Alussa Energy Acquisition Co | custom | ▫️ | 0% | 10.13 | — | — | 42.51 | 4.62 | -1.07 | 184,833 | — |
+| PPIH | Perma-Pipe International Hol | piotroski | ▫️ | 67% | 27.91 | 13.35 | 2.51 | 18.79 | 1.84 | — | 85,427 | — |
+| PPIH | Perma-Pipe International Hol | graham | ▫️ | 44% | 27.91 | 13.35 | 2.51 | 18.79 | 1.84 | — | 85,427 | — |
+| PPIH | Perma-Pipe International Hol | greenblatt | ▫️ | 33% | 27.91 | 13.35 | 2.51 | 18.79 | 1.84 | — | 85,427 | — |
+| PPIH | Perma-Pipe International Hol | lynch | ▫️ | 25% | 27.91 | 13.35 | 2.51 | 18.79 | 1.84 | — | 85,427 | — |
+| PPIH | Perma-Pipe International Hol | netnet | ▫️ | 25% | 27.91 | 13.35 | 2.51 | 18.79 | 1.84 | — | 85,427 | — |
+| PPIH | Perma-Pipe International Hol | buffett | ▫️ | 17% | 27.91 | 13.35 | 2.51 | 18.79 | 1.84 | — | 85,427 | — |
+| PPIH | Perma-Pipe International Hol | custom | ▫️ | 0% | 27.91 | 13.35 | 2.51 | 18.79 | 1.84 | — | 85,427 | — |
+| LNN | Lindsay Corporation | graham | ▫️ | 56% | 107 | 15.83 | 2.20 | 13.90 | 3.71 | 0.58 | 117,040 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
