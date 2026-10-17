@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-17 01:02 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-17 05:19 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **29** strategy matches passed.
+Screened **75** companies · **32** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| OLED | UNIVERSAL DISPLAY CORPORATIO | piotroski | ✅ | 78% | 77.95 | 15.34 | 2.11 | 13.75 | 10.06 | 0.12 | 995,622 | — |
-| ALSN | ALLISON TRANSMISSION HOLDING | buffett | ✅ | 83% | 112 | 15.25 | 5.09 | 33.37 | 4.85 | 2.26 | 501,686 | — |
-| ALSN | ALLISON TRANSMISSION HOLDING | lynch | ✅ | 75% | 112 | 15.25 | 5.09 | 33.37 | 4.85 | 2.26 | 501,686 | — |
-| SSD | Simpson Manufacturing Co., I | buffett | ✅ | 83% | 176 | 21.41 | 3.64 | 17.00 | 3.54 | 0.51 | 367,060 | — |
-| SSD | Simpson Manufacturing Co., I | piotroski | ✅ | 78% | 176 | 21.41 | 3.64 | 17.00 | 3.54 | 0.51 | 367,060 | — |
-| MTCH | Match Group, Inc. | piotroski | ✅ | 89% | 42.95 | 18.05 | — | -242 | 1.42 | — | 3M | — |
-| MTCH | Match Group, Inc. | lynch | ✅ | 75% | 42.95 | 18.05 | — | -242 | 1.42 | — | 3M | — |
+| FSLR | First Solar, Inc. | lynch | ✅ | 100% | 173 | 12.15 | 1.95 | 16.02 | 2.67 | 0.40 | 2M | — |
+| FSLR | First Solar, Inc. | piotroski | ✅ | 89% | 173 | 12.15 | 1.95 | 16.02 | 2.67 | 0.40 | 2M | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | piotroski | ✅ | 78% | 7.79 | 6.44 | — | -221 | 2.06 | -5.32 | 4M | — |
+| SBC | SBC Medical Group Holdings I | lynch | ✅ | 75% | 5.16 | 10.32 | 2.14 | 20.54 | 3.78 | 0.47 | 119,485 | — |
+| USLM | UNITED STATES LIME & MINERAL | lynch | ✅ | 100% | 106 | 22.71 | 4.83 | 21.29 | 19.27 | 0.08 | 106,988 | — |
+| USLM | UNITED STATES LIME & MINERAL | buffett | ✅ | 83% | 106 | 22.71 | 4.83 | 21.29 | 19.27 | 0.08 | 106,988 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | piotroski | ✅ | 100% | 114 | 20.92 | 3.94 | 18.86 | 0.86 | 0.33 | 150,465 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | lynch | ✅ | 100% | 114 | 20.92 | 3.94 | 18.86 | 0.86 | 0.33 | 150,465 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | buffett | ✅ | 83% | 114 | 20.92 | 3.94 | 18.86 | 0.86 | 0.33 | 150,465 | — |
+| BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 122 | 16.56 | 2.84 | 17.13 | 2.65 | 0.86 | 894,350 | — |
+| BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 122 | 16.56 | 2.84 | 17.13 | 2.65 | 0.86 | 894,350 | — |
+| AGX | ARGAN INC | lynch | ✅ | 75% | 346 | 35.48 | 10.58 | 29.80 | 1.59 | 1.57 | 543,287 | — |
+| ALRM | ALARM.COM HOLDINGS, INC. | piotroski | ✅ | 78% | 57.37 | 23.32 | 3.99 | 15.52 | 1.92 | 1.47 | 462,971 | — |
+| UFPT | UFP Technologies, Inc. | lynch | ✅ | 100% | 292 | 33.33 | 5.37 | 16.12 | 2.68 | 0.55 | 82,205 | — |
+| UFPT | UFP Technologies, Inc. | piotroski | ✅ | 89% | 292 | 33.33 | 5.37 | 16.12 | 2.68 | 0.55 | 82,205 | — |
 | SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 16.65 | 8.81 | 2.18 | 24.66 | 2.26 | 2.62 | 1M | — |
-| AIR | AAR CORP | piotroski | ✅ | 78% | 98.84 | 20.34 | 2.23 | 11.02 | 2.84 | — | 513,108 | — |
-| AIR | AAR CORP | lynch | ✅ | 75% | 98.84 | 20.34 | 2.23 | 11.02 | 2.84 | — | 513,108 | — |
+| BDC | BELDEN INC. | piotroski | ✅ | 89% | 103 | 17.40 | 3.27 | 18.78 | 1.93 | — | 327,792 | — |
 | ADUS | Addus HomeCare Corp | lynch | ✅ | 100% | 116 | 22.22 | 1.97 | 8.84 | 1.80 | 0.32 | 136,879 | — |
 | ADUS | Addus HomeCare Corp | piotroski | ✅ | 89% | 116 | 22.22 | 1.97 | 8.84 | 1.80 | 0.32 | 136,879 | — |
-| BFH | BREAD FINANCIAL HOLDINGS, IN | lynch | ✅ | 75% | 103 | 9.42 | 1.47 | 15.57 | — | 5.81 | 589,348 | — |
-| AM | ANTERO MIDSTREAM CORPORATION | piotroski | ✅ | 78% | 20.64 | 24.00 | 5.05 | 20.95 | 3.41 | 1.98 | 4M | — |
-| NHC | NATIONAL HEALTHCARE CORP | piotroski | ✅ | 100% | 243 | 31.66 | 3.55 | 11.23 | 1.82 | 0.42 | 100,925 | — |
-| NHC | NATIONAL HEALTHCARE CORP | lynch | ✅ | 75% | 243 | 31.66 | 3.55 | 11.23 | 1.82 | 0.42 | 100,925 | — |
-| FHB | FIRST HAWAIIAN, INC. | piotroski | ✅ | 89% | 24.95 | 11.34 | 1.13 | 9.98 | — | 7.65 | 2M | — |
-| GRC | The Gorman-Rupp Company | piotroski | ✅ | 89% | 71.89 | 35.59 | 4.56 | 12.78 | 2.37 | 1.07 | 111,200 | — |
-| WWD | WOODWARD, INC. | piotroski | ✅ | 100% | 328 | 45.69 | 7.87 | 17.23 | 2.08 | 0.80 | 596,730 | — |
+| UMBF | UMB FINANCIAL CORP | lynch | ✅ | 75% | 131 | 14.11 | 1.26 | 9.13 | — | 8.50 | 669,372 | — |
+| EGP | EASTGROUP PROPERTIES, INC. | piotroski | ✅ | 78% | 196 | 40.32 | 2.97 | 7.36 | — | 0.55 | 579,916 | — |
+| EGP | EASTGROUP PROPERTIES, INC. | lynch | ✅ | 75% | 196 | 40.32 | 2.97 | 7.36 | — | 0.55 | 579,916 | — |
 | MD | Pediatrix Medical Group, Inc | piotroski | ✅ | 78% | 27.38 | 14.11 | 2.70 | 19.10 | 1.66 | 1.59 | 534,997 | — |
-| FIVN | Five9, Inc. | piotroski | ✅ | 89% | 32.23 | 71.62 | 3.61 | 5.02 | 4.51 | 1.28 | 2M | — |
-| TRIP | TRIPADVISOR, INC. | piotroski | ✅ | 89% | 9.32 | 30.06 | 1.89 | 6.20 | 1.29 | 3.07 | 3M | — |
-| RH | RH | piotroski | ✅ | 89% | 113 | 17.91 | 36.90 | 206 | 1.19 | 78.80 | 793,718 | — |
-| LUV | SOUTHWEST AIRLINES CO. | piotroski | ✅ | 78% | 39.50 | 50.00 | 2.76 | 5.53 | 0.52 | — | 5M | — |
-| UE | URBAN EDGE PROPERTIES | piotroski | ✅ | 78% | 19.50 | 26.35 | 1.78 | 6.80 | — | 1.41 | 3M | — |
-| SENS | Senseonics Holdings, Inc. | piotroski | ✅ | 78% | 7.77 | — | 5.31 | -113 | 4.83 | 1.07 | 608,476 | — |
-| NEOG | Neogen Corporation | piotroski | ✅ | 89% | 11.81 | — | 1.23 | -0.38 | 3.82 | 0.60 | 2M | — |
-| ORN | ORION GROUP HOLDINGS, INC. | piotroski | ✅ | 78% | 8.52 | 142 | 2.12 | 1.56 | 1.36 | 1.61 | 450,541 | — |
-| TLYS | TILLY’S, INC. | piotroski | ✅ | 78% | 4.60 | — | 1.63 | -20.50 | 1.25 | 2.65 | 121,334 | — |
-| BENFW | Beneficient | buffett | ▫️ | 50% | 0.01 | — | — | 46.19 | — | -1.78 | 10,982 | — |
-| BENFW | Beneficient | piotroski | ▫️ | 33% | 0.01 | — | — | 46.19 | — | -1.78 | 10,982 | — |
-| BENFW | Beneficient | lynch | ▫️ | 25% | 0.01 | — | — | 46.19 | — | -1.78 | 10,982 | — |
-| BENFW | Beneficient | graham | ▫️ | 0% | 0.01 | — | — | 46.19 | — | -1.78 | 10,982 | — |
-| BENFW | Beneficient | greenblatt | ▫️ | 0% | 0.01 | — | — | 46.19 | — | -1.78 | 10,982 | — |
-| BENFW | Beneficient | netnet | ▫️ | 0% | 0.01 | — | — | 46.19 | — | -1.78 | 10,982 | — |
-| BENFW | Beneficient | custom | ▫️ | 0% | 0.01 | — | — | 46.19 | — | -1.78 | 10,982 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | buffett | ▫️ | 67% | 77.95 | 15.34 | 2.11 | 13.75 | 10.06 | 0.12 | 995,622 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | graham | ▫️ | 56% | 77.95 | 15.34 | 2.11 | 13.75 | 10.06 | 0.12 | 995,622 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | lynch | ▫️ | 50% | 77.95 | 15.34 | 2.11 | 13.75 | 10.06 | 0.12 | 995,622 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | netnet | ▫️ | 50% | 77.95 | 15.34 | 2.11 | 13.75 | 10.06 | 0.12 | 995,622 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | greenblatt | ▫️ | 33% | 77.95 | 15.34 | 2.11 | 13.75 | 10.06 | 0.12 | 995,622 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | custom | ▫️ | 0% | 77.95 | 15.34 | 2.11 | 13.75 | 10.06 | 0.12 | 995,622 | — |
-| ALSN | ALLISON TRANSMISSION HOLDING | graham | ▫️ | 56% | 112 | 15.25 | 5.09 | 33.37 | 4.85 | 2.26 | 501,686 | — |
-| ALSN | ALLISON TRANSMISSION HOLDING | piotroski | ▫️ | 56% | 112 | 15.25 | 5.09 | 33.37 | 4.85 | 2.26 | 501,686 | — |
-| ALSN | ALLISON TRANSMISSION HOLDING | greenblatt | ▫️ | 33% | 112 | 15.25 | 5.09 | 33.37 | 4.85 | 2.26 | 501,686 | — |
-| ALSN | ALLISON TRANSMISSION HOLDING | netnet | ▫️ | 25% | 112 | 15.25 | 5.09 | 33.37 | 4.85 | 2.26 | 501,686 | — |
-| ALSN | ALLISON TRANSMISSION HOLDING | custom | ▫️ | 0% | 112 | 15.25 | 5.09 | 33.37 | 4.85 | 2.26 | 501,686 | — |
-| SMCIP | Super Micro Computer, Inc. | graham | ▫️ | 67% | 54.67 | 16.77 | 2.63 | 15.40 | 3.87 | 1.07 | 2M | — |
-| SMCIP | Super Micro Computer, Inc. | buffett | ▫️ | 50% | 54.67 | 16.77 | 2.63 | 15.40 | 3.87 | 1.07 | 2M | — |
-| SMCIP | Super Micro Computer, Inc. | lynch | ▫️ | 50% | 54.67 | 16.77 | 2.63 | 15.40 | 3.87 | 1.07 | 2M | — |
+| CENTA | Central Garden & Pet Company | graham | ✅ | 100% | 36.21 | 14.20 | 1.46 | 10.29 | 3.67 | — | 222,537 | — |
+| CENTA | Central Garden & Pet Company | piotroski | ✅ | 89% | 36.21 | 14.20 | 1.46 | 10.29 | 3.67 | — | 222,537 | — |
+| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.23 | 19.23 | 0.76 | 3.99 | 9.18 | 0.34 | 127,341 | — |
+| CPRI | CAPRI HOLDINGS LIMITED | piotroski | ✅ | 78% | 15.95 | 13.99 | 23.89 | 171 | 1.21 | 39.38 | 3M | — |
+| AMCR | AMCOR PLC | piotroski | ✅ | 89% | 43.85 | 18.42 | 1.72 | 9.38 | 1.25 | 2.15 | 3M | — |
+| ATRC | AtriCure, Inc. | piotroski | ✅ | 78% | 56.07 | — | 5.44 | -2.33 | 3.96 | 0.33 | 648,235 | — |
+| TBCH | TURTLE BEACH CORPORATION | piotroski | ✅ | 78% | 15.20 | 19.74 | 2.42 | 12.24 | 1.98 | 1.09 | 570,247 | — |
+| WGO | WINNEBAGO INDUSTRIES, INC. | piotroski | ✅ | 89% | 24.00 | 26.37 | 0.55 | 2.10 | 2.42 | 0.76 | 595,388 | — |
+| TRLV | TRULIEVE CANNABIS CORP. | piotroski | ✅ | 89% | 10.01 | — | 1.68 | -10.70 | 4.43 | 1.36 | 913,698 | — |
+| FSLR | First Solar, Inc. | graham | ▫️ | 67% | 173 | 12.15 | 1.95 | 16.02 | 2.67 | 0.40 | 2M | — |
+| FSLR | First Solar, Inc. | buffett | ▫️ | 67% | 173 | 12.15 | 1.95 | 16.02 | 2.67 | 0.40 | 2M | — |
+| FSLR | First Solar, Inc. | greenblatt | ▫️ | 67% | 173 | 12.15 | 1.95 | 16.02 | 2.67 | 0.40 | 2M | — |
+| FSLR | First Solar, Inc. | netnet | ▫️ | 50% | 173 | 12.15 | 1.95 | 16.02 | 2.67 | 0.40 | 2M | — |
+| FSLR | First Solar, Inc. | custom | ▫️ | 0% | 173 | 12.15 | 1.95 | 16.02 | 2.67 | 0.40 | 2M | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | greenblatt | ▫️ | 67% | 7.79 | 6.44 | — | -221 | 2.06 | -5.32 | 4M | — |
+| SBC | SBC Medical Group Holdings I | graham | ▫️ | 67% | 5.16 | 10.32 | 2.14 | 20.54 | 3.78 | 0.47 | 119,485 | — |
+| SBC | SBC Medical Group Holdings I | buffett | ▫️ | 67% | 5.16 | 10.32 | 2.14 | 20.54 | 3.78 | 0.47 | 119,485 | — |
+| SBC | SBC Medical Group Holdings I | greenblatt | ▫️ | 67% | 5.16 | 10.32 | 2.14 | 20.54 | 3.78 | 0.47 | 119,485 | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | lynch | ▫️ | 50% | 7.79 | 6.44 | — | -221 | 2.06 | -5.32 | 4M | — |
+| SBC | SBC Medical Group Holdings I | netnet | ▫️ | 50% | 5.16 | 10.32 | 2.14 | 20.54 | 3.78 | 0.47 | 119,485 | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | graham | ▫️ | 44% | 7.79 | 6.44 | — | -221 | 2.06 | -5.32 | 4M | — |
+| SBC | SBC Medical Group Holdings I | piotroski | ▫️ | 44% | 5.16 | 10.32 | 2.14 | 20.54 | 3.78 | 0.47 | 119,485 | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | buffett | ▫️ | 33% | 7.79 | 6.44 | — | -221 | 2.06 | -5.32 | 4M | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | netnet | ▫️ | 25% | 7.79 | 6.44 | — | -221 | 2.06 | -5.32 | 4M | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | custom | ▫️ | 0% | 7.79 | 6.44 | — | -221 | 2.06 | -5.32 | 4M | — |
+| SBC | SBC Medical Group Holdings I | custom | ▫️ | 0% | 5.16 | 10.32 | 2.14 | 20.54 | 3.78 | 0.47 | 119,485 | — |
+| USLM | UNITED STATES LIME & MINERAL | piotroski | ▫️ | 67% | 106 | 22.71 | 4.83 | 21.29 | 19.27 | 0.08 | 106,988 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
