@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-17 09:25 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-17 13:11 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **29** strategy matches passed.
+Screened **75** companies · **31** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| SAFX | XCF GLOBAL, INC. | greenblatt | ✅ | 100% | 0.14 | 0.27 | 0.53 | 197 | 0.11 | 10.14 | 6M | — |
-| LNN | Lindsay Corporation | piotroski | ✅ | 78% | 107 | 15.83 | 2.20 | 13.90 | 3.71 | 0.58 | 117,040 | — |
-| LNN | Lindsay Corporation | lynch | ✅ | 75% | 107 | 15.83 | 2.20 | 13.90 | 3.71 | 0.58 | 117,040 | — |
-| KFY | KORN FERRY | piotroski | ✅ | 100% | 73.03 | 13.99 | 1.94 | 14.06 | 1.94 | 1.06 | 485,269 | — |
-| KFY | KORN FERRY | lynch | ✅ | 75% | 73.03 | 13.99 | 1.94 | 14.06 | 1.94 | 1.06 | 485,269 | — |
-| CVSA | Covista Inc. | lynch | ✅ | 75% | 127 | 18.00 | 3.13 | 17.40 | 1.09 | 1.08 | 339,552 | — |
-| DAKT | Daktronics, Inc. | piotroski | ✅ | 89% | 18.21 | 19.79 | 2.99 | 15.09 | 2.31 | — | 651,751 | — |
-| DAKT | Daktronics, Inc. | lynch | ✅ | 75% | 18.21 | 19.79 | 2.99 | 15.09 | 2.31 | — | 651,751 | — |
-| FSS | FEDERAL SIGNAL CORPORATION | lynch | ✅ | 75% | 112 | 28.03 | 5.00 | 17.84 | 3.02 | 0.73 | 630,300 | — |
-| PRDO | PERDOCEO EDUCATION CORP | piotroski | ✅ | 89% | 33.73 | 13.94 | 2.29 | 16.45 | 5.06 | — | 695,745 | — |
-| FULT | FULTON FINANCIAL CORP | lynch | ✅ | 75% | 22.40 | 10.77 | 1.18 | 11.22 | — | 8.20 | 2M | — |
-| ORI | OLD REPUBLIC INTERNATIONAL C | piotroski | ✅ | 78% | 39.66 | 10.66 | 1.69 | 15.82 | — | 4.05 | 2M | — |
-| SHOE | Shoe Station Group, Inc. | graham | ✅ | 89% | 13.76 | 7.24 | 0.55 | 7.58 | 3.76 | 0.74 | 644,486 | — |
-| DRVN | Driven Brands Holdings Inc. | piotroski | ✅ | 78% | 11.92 | 14.02 | 2.55 | 18.27 | 0.75 | 4.42 | 1M | — |
-| BFAM | BRIGHT HORIZONS FAMILY SOLUT | piotroski | ✅ | 89% | 71.15 | 21.18 | 3.05 | 14.42 | 0.52 | 1.90 | 667,122 | — |
-| BFAM | BRIGHT HORIZONS FAMILY SOLUT | lynch | ✅ | 75% | 71.15 | 21.18 | 3.05 | 14.42 | 0.52 | 1.90 | 667,122 | — |
-| SCSC | ScanSource, Inc. | piotroski | ✅ | 78% | 60.02 | 16.49 | 1.43 | 8.66 | 1.76 | 1.12 | 247,838 | — |
-| SCSC | ScanSource, Inc. | lynch | ✅ | 75% | 60.02 | 16.49 | 1.43 | 8.66 | 1.76 | 1.12 | 247,838 | — |
-| MYRG | MYR GROUP INC. | piotroski | ✅ | 89% | 280 | 37.21 | 6.67 | 17.93 | 1.33 | 1.49 | 238,868 | — |
-| ACM | AECOM | piotroski | ✅ | 78% | 58.94 | 14.00 | 3.15 | 22.54 | 1.14 | 3.81 | 1M | — |
-| EXTR | Extreme Networks, Inc. | piotroski | ✅ | 89% | 21.73 | 70.10 | 33.11 | 47.54 | 0.93 | — | 912,828 | — |
-| DLB | Dolby Laboratories, Inc. | piotroski | ✅ | 78% | 59.95 | 22.88 | 2.23 | 9.72 | 3.17 | 0.23 | 512,711 | — |
-| HLIO | HELIOS TECHNOLOGIES, INC. | piotroski | ✅ | 100% | 67.64 | 46.65 | 2.42 | 5.20 | 2.90 | 0.63 | 276,295 | — |
-| HLIO | HELIOS TECHNOLOGIES, INC. | lynch | ✅ | 75% | 67.64 | 46.65 | 2.42 | 5.20 | 2.90 | 0.63 | 276,295 | — |
-| FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 19.12 | 101 | 7.84 | 7.83 | 4.94 | 0.33 | 5M | — |
-| RRX | REGAL REXNORD CORP | piotroski | ✅ | 78% | 154 | 36.67 | 1.50 | 4.08 | 2.15 | — | 821,809 | — |
-| QUAD | Quad/Graphics, Inc. | piotroski | ✅ | 78% | 9.45 | 17.50 | — | -45.38 | 0.86 | -18.90 | 165,701 | — |
-| DAR | DARLING INGREDIENTS INC. | piotroski | ✅ | 78% | 61.36 | 157 | 2.07 | 1.33 | 1.50 | 1.16 | 3M | — |
-| GXO | GXO Logistics, Inc. | piotroski | ✅ | 78% | 47.18 | 168 | 1.84 | 1.07 | 0.85 | — | 1M | — |
-| SAFX | XCF GLOBAL, INC. | graham | ▫️ | 44% | 0.14 | 0.27 | 0.53 | 197 | 0.11 | 10.14 | 6M | — |
-| SAFX | XCF GLOBAL, INC. | buffett | ▫️ | 33% | 0.14 | 0.27 | 0.53 | 197 | 0.11 | 10.14 | 6M | — |
-| SAFX | XCF GLOBAL, INC. | lynch | ▫️ | 25% | 0.14 | 0.27 | 0.53 | 197 | 0.11 | 10.14 | 6M | — |
-| SAFX | XCF GLOBAL, INC. | netnet | ▫️ | 25% | 0.14 | 0.27 | 0.53 | 197 | 0.11 | 10.14 | 6M | — |
-| SAFX | XCF GLOBAL, INC. | piotroski | ▫️ | 11% | 0.14 | 0.27 | 0.53 | 197 | 0.11 | 10.14 | 6M | — |
-| SAFX | XCF GLOBAL, INC. | custom | ▫️ | 0% | 0.14 | 0.27 | 0.53 | 197 | 0.11 | 10.14 | 6M | — |
-| ALUB | Alussa Energy Acquisition Co | buffett | ▫️ | 33% | 10.13 | — | — | 42.51 | 4.62 | -1.07 | 184,833 | — |
-| ALUB | Alussa Energy Acquisition Co | lynch | ▫️ | 25% | 10.13 | — | — | 42.51 | 4.62 | -1.07 | 184,833 | — |
-| ALUB | Alussa Energy Acquisition Co | graham | ▫️ | 22% | 10.13 | — | — | 42.51 | 4.62 | -1.07 | 184,833 | — |
-| ALUB | Alussa Energy Acquisition Co | piotroski | ▫️ | 11% | 10.13 | — | — | 42.51 | 4.62 | -1.07 | 184,833 | — |
-| ALUB | Alussa Energy Acquisition Co | greenblatt | ▫️ | 0% | 10.13 | — | — | 42.51 | 4.62 | -1.07 | 184,833 | — |
-| ALUB | Alussa Energy Acquisition Co | netnet | ▫️ | 0% | 10.13 | — | — | 42.51 | 4.62 | -1.07 | 184,833 | — |
-| ALUB | Alussa Energy Acquisition Co | custom | ▫️ | 0% | 10.13 | — | — | 42.51 | 4.62 | -1.07 | 184,833 | — |
-| PPIH | Perma-Pipe International Hol | piotroski | ▫️ | 67% | 27.91 | 13.35 | 2.51 | 18.79 | 1.84 | — | 85,427 | — |
-| PPIH | Perma-Pipe International Hol | graham | ▫️ | 44% | 27.91 | 13.35 | 2.51 | 18.79 | 1.84 | — | 85,427 | — |
-| PPIH | Perma-Pipe International Hol | greenblatt | ▫️ | 33% | 27.91 | 13.35 | 2.51 | 18.79 | 1.84 | — | 85,427 | — |
-| PPIH | Perma-Pipe International Hol | lynch | ▫️ | 25% | 27.91 | 13.35 | 2.51 | 18.79 | 1.84 | — | 85,427 | — |
-| PPIH | Perma-Pipe International Hol | netnet | ▫️ | 25% | 27.91 | 13.35 | 2.51 | 18.79 | 1.84 | — | 85,427 | — |
-| PPIH | Perma-Pipe International Hol | buffett | ▫️ | 17% | 27.91 | 13.35 | 2.51 | 18.79 | 1.84 | — | 85,427 | — |
-| PPIH | Perma-Pipe International Hol | custom | ▫️ | 0% | 27.91 | 13.35 | 2.51 | 18.79 | 1.84 | — | 85,427 | — |
-| LNN | Lindsay Corporation | graham | ▫️ | 56% | 107 | 15.83 | 2.20 | 13.90 | 3.71 | 0.58 | 117,040 | — |
+| YELP | YELP INC | greenblatt | ✅ | 100% | 19.88 | 8.87 | 1.82 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC | piotroski | ✅ | 89% | 19.88 | 8.87 | 1.82 | 20.48 | 2.99 | 0.35 | 1M | — |
+| LRN | Stride, Inc. | lynch | ✅ | 100% | 82.39 | 11.54 | 2.39 | 20.72 | 5.94 | 0.49 | 697,982 | — |
+| LRN | Stride, Inc. | piotroski | ✅ | 89% | 82.39 | 11.54 | 2.39 | 20.72 | 5.94 | 0.49 | 697,982 | — |
+| LRN | Stride, Inc. | buffett | ✅ | 83% | 82.39 | 11.54 | 2.39 | 20.72 | 5.94 | 0.49 | 697,982 | — |
+| QNST | QuinStreet, Inc. | greenblatt | ✅ | 100% | 16.32 | 11.66 | 2.94 | 25.14 | 1.22 | 1.23 | 787,701 | — |
+| QNST | QuinStreet, Inc. | lynch | ✅ | 75% | 16.32 | 11.66 | 2.94 | 25.14 | 1.22 | 1.23 | 787,701 | — |
+| HNRG | HALLADOR ENERGY CO | greenblatt | ✅ | 100% | 11.71 | 12.20 | 3.18 | 26.20 | 0.81 | 1.55 | 2M | — |
+| HNRG | HALLADOR ENERGY CO | piotroski | ✅ | 89% | 11.71 | 12.20 | 3.18 | 26.20 | 0.81 | 1.55 | 2M | — |
+| TREE | LendingTree, Inc. | greenblatt | ✅ | 100% | 25.39 | 2.36 | 1.24 | 52.76 | 1.67 | 1.98 | 241,157 | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | buffett | ✅ | 83% | 112 | 15.25 | 5.09 | 33.37 | 4.85 | 2.26 | 501,686 | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | lynch | ✅ | 75% | 112 | 15.25 | 5.09 | 33.37 | 4.85 | 2.26 | 501,686 | — |
+| URBN | Urban Outfitters, Inc. | piotroski | ✅ | 100% | 86.57 | 17.11 | 2.82 | 16.51 | 1.51 | 0.78 | 1M | — |
+| URBN | Urban Outfitters, Inc. | lynch | ✅ | 75% | 86.57 | 17.11 | 2.82 | 16.51 | 1.51 | 0.78 | 1M | — |
+| LMB | LIMBACH HOLDINGS, INC. | piotroski | ✅ | 78% | 48.69 | 15.07 | 3.01 | 19.97 | 1.44 | 0.95 | 240,510 | — |
+| LMB | LIMBACH HOLDINGS, INC. | lynch | ✅ | 75% | 48.69 | 15.07 | 3.01 | 19.97 | 1.44 | 0.95 | 240,510 | — |
+| EBF | ENNIS, INC. | piotroski | ✅ | 78% | 22.36 | 13.47 | 1.86 | 13.81 | 3.72 | 0.16 | 161,720 | — |
+| GGG | GRACO INC. | piotroski | ✅ | 89% | 81.99 | 26.62 | 5.23 | 19.66 | 3.15 | — | 1M | — |
+| GGG | GRACO INC. | buffett | ✅ | 83% | 81.99 | 26.62 | 5.23 | 19.66 | 3.15 | — | 1M | — |
+| GPK | Graphic Packaging Holding Co | lynch | ✅ | 75% | 8.57 | 5.79 | 0.77 | 13.31 | 1.30 | — | 4M | — |
+| IOSP | INNOSPEC INC. | lynch | ✅ | 100% | 96.81 | 20.73 | 1.82 | 8.79 | 2.79 | 0.38 | 173,644 | — |
+| IOSP | INNOSPEC INC. | piotroski | ✅ | 89% | 96.81 | 20.73 | 1.82 | 8.79 | 2.79 | 0.38 | 173,644 | — |
+| OSW | OneSpaWorld Holdings Limited | piotroski | ✅ | 78% | 23.85 | 34.57 | 4.56 | 13.20 | 1.91 | 0.30 | 492,439 | — |
+| FIZZ | National Beverage Corp. | buffett | ✅ | 83% | 34.96 | 17.84 | 5.15 | 28.89 | 4.39 | 0.34 | 482,385 | — |
+| POST | Post Holdings, Inc. | lynch | ✅ | 75% | 78.53 | 14.25 | 1.32 | 8.94 | 1.67 | 2.60 | 679,285 | — |
+| SSTK | SHUTTERSTOCK, INC. | piotroski | ✅ | 89% | 4.44 | 3.55 | 0.28 | 7.83 | 0.54 | 1.33 | 862,188 | — |
+| AVPT | AvePoint, Inc. | piotroski | ✅ | 78% | 14.33 | 95.53 | 6.86 | 7.27 | 2.28 | 0.65 | 2M | — |
+| SHAK | SHAKE SHACK INC. | piotroski | ✅ | 89% | 69.99 | 64.21 | 5.58 | 8.70 | 1.76 | 2.56 | 1M | — |
+| ALNT | ALLIENT INC | piotroski | ✅ | 89% | 92.64 | 70.18 | 5.14 | 7.31 | 3.66 | 0.92 | 247,897 | — |
+| MSGS | MADISON SQUARE GARDEN SPORTS | piotroski | ✅ | 100% | 396 | 1,238 | — | -2.95 | 0.50 | -6.84 | 660,529 | — |
+| LILA | Liberty Latin America Ltd. | piotroski | ✅ | 78% | 8.06 | — | 2.89 | -110 | 1.14 | 20.09 | 257,236 | — |
+| YELP | YELP INC | graham | ▫️ | 78% | 19.88 | 8.87 | 1.82 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC | buffett | ▫️ | 50% | 19.88 | 8.87 | 1.82 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC | lynch | ▫️ | 50% | 19.88 | 8.87 | 1.82 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC | netnet | ▫️ | 50% | 19.88 | 8.87 | 1.82 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC | custom | ▫️ | 0% | 19.88 | 8.87 | 1.82 | 20.48 | 2.99 | 0.35 | 1M | — |
+| LRN | Stride, Inc. | graham | ▫️ | 78% | 82.39 | 11.54 | 2.39 | 20.72 | 5.94 | 0.49 | 697,982 | — |
+| LRN | Stride, Inc. | greenblatt | ▫️ | 67% | 82.39 | 11.54 | 2.39 | 20.72 | 5.94 | 0.49 | 697,982 | — |
+| LRN | Stride, Inc. | netnet | ▫️ | 50% | 82.39 | 11.54 | 2.39 | 20.72 | 5.94 | 0.49 | 697,982 | — |
+| LRN | Stride, Inc. | custom | ▫️ | 0% | 82.39 | 11.54 | 2.39 | 20.72 | 5.94 | 0.49 | 697,982 | — |
+| QNST | QuinStreet, Inc. | piotroski | ▫️ | 67% | 16.32 | 11.66 | 2.94 | 25.14 | 1.22 | 1.23 | 787,701 | — |
+| QNST | QuinStreet, Inc. | buffett | ▫️ | 50% | 16.32 | 11.66 | 2.94 | 25.14 | 1.22 | 1.23 | 787,701 | — |
+| QNST | QuinStreet, Inc. | graham | ▫️ | 44% | 16.32 | 11.66 | 2.94 | 25.14 | 1.22 | 1.23 | 787,701 | — |
+| QNST | QuinStreet, Inc. | netnet | ▫️ | 25% | 16.32 | 11.66 | 2.94 | 25.14 | 1.22 | 1.23 | 787,701 | — |
+| QNST | QuinStreet, Inc. | custom | ▫️ | 0% | 16.32 | 11.66 | 2.94 | 25.14 | 1.22 | 1.23 | 787,701 | — |
+| HNRG | HALLADOR ENERGY CO | lynch | ▫️ | 25% | 11.71 | 12.20 | 3.18 | 26.20 | 0.81 | 1.55 | 2M | — |
+| HNRG | HALLADOR ENERGY CO | netnet | ▫️ | 25% | 11.71 | 12.20 | 3.18 | 26.20 | 0.81 | 1.55 | 2M | — |
+| HNRG | HALLADOR ENERGY CO | graham | ▫️ | 22% | 11.71 | 12.20 | 3.18 | 26.20 | 0.81 | 1.55 | 2M | — |
+| HNRG | HALLADOR ENERGY CO | buffett | ▫️ | 17% | 11.71 | 12.20 | 3.18 | 26.20 | 0.81 | 1.55 | 2M | — |
+| HNRG | HALLADOR ENERGY CO | custom | ▫️ | 0% | 11.71 | 12.20 | 3.18 | 26.20 | 0.81 | 1.55 | 2M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
