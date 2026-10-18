@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-18 04:42 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-18 09:13 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **29** strategy matches passed.
+Screened **75** companies · **26** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| PIPR | PIPER SANDLER COMPANIES | greenblatt | ✅ | 100% | 64.62 | 4.08 | 0.84 | 20.52 | — | 0.74 | 861,893 | — |
-| PIPR | PIPER SANDLER COMPANIES | lynch | ✅ | 100% | 64.62 | 4.08 | 0.84 | 20.52 | — | 0.74 | 861,893 | — |
-| PIPR | PIPER SANDLER COMPANIES | piotroski | ✅ | 89% | 64.62 | 4.08 | 0.84 | 20.52 | — | 0.74 | 861,893 | — |
-| YELP | YELP INC | greenblatt | ✅ | 100% | 19.88 | 8.87 | 1.82 | 20.48 | 2.99 | 0.35 | 1M | — |
-| YELP | YELP INC | piotroski | ✅ | 89% | 19.88 | 8.87 | 1.82 | 20.48 | 2.99 | 0.35 | 1M | — |
-| VRRM | VERRA MOBILITY CORPORATION | piotroski | ✅ | 100% | 2.86 | 3.36 | 1.57 | 46.64 | 2.09 | 4.62 | 3M | — |
-| SON | Sonoco Products Company | piotroski | ✅ | 89% | 49.79 | 4.94 | 1.37 | 27.75 | 1.05 | 2.08 | 838,045 | — |
-| SON | Sonoco Products Company | lynch | ✅ | 75% | 49.79 | 4.94 | 1.37 | 27.75 | 1.05 | 2.08 | 838,045 | — |
-| NSSC | NAPCO SECURITY TECHNOLOGIES, | buffett | ✅ | 100% | 35.57 | 29.64 | 6.68 | 22.53 | 4.90 | 0.25 | 212,343 | — |
-| NSSC | NAPCO SECURITY TECHNOLOGIES, | lynch | ✅ | 75% | 35.57 | 29.64 | 6.68 | 22.53 | 4.90 | 0.25 | 212,343 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | piotroski | ✅ | 100% | 168 | 23.75 | 8.14 | 34.27 | 1.46 | — | 282,026 | — |
-| XPEL | XPEL, INC. | buffett | ✅ | 100% | 43.81 | 23.68 | 4.33 | 18.28 | 3.25 | 0.35 | 182,148 | — |
-| XPEL | XPEL, INC. | lynch | ✅ | 75% | 43.81 | 23.68 | 4.33 | 18.28 | 3.25 | 0.35 | 182,148 | — |
-| FRST | PRIMIS FINANCIAL CORP. | lynch | ✅ | 75% | 15.47 | 6.21 | 0.90 | 14.53 | — | 8.57 | 107,368 | — |
-| SFM | Sprouts Farmers Market, Inc. | greenblatt | ✅ | 100% | 65.20 | 12.28 | 4.59 | 37.32 | 0.93 | 1.96 | 2M | — |
-| SFM | Sprouts Farmers Market, Inc. | piotroski | ✅ | 78% | 65.20 | 12.28 | 4.59 | 37.32 | 0.93 | 1.96 | 2M | — |
-| GPK | Graphic Packaging Holding Co | lynch | ✅ | 75% | 8.57 | 5.79 | 0.77 | 13.31 | 1.30 | — | 4M | — |
-| AGX | ARGAN INC | lynch | ✅ | 75% | 346 | 35.48 | 10.58 | 29.80 | 1.59 | 1.57 | 543,287 | — |
-| HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 122 | 47.59 | 309 | 649 | 4.66 | 50.73 | 2M | — |
-| ORI | OLD REPUBLIC INTERNATIONAL C | piotroski | ✅ | 78% | 39.66 | 10.66 | 1.69 | 15.82 | — | 4.05 | 2M | — |
-| OPY | OPPENHEIMER HOLDINGS INC. | piotroski | ✅ | 78% | 101 | 7.71 | 1.16 | 15.08 | — | 2.77 | 96,062 | — |
-| PKE | PARK AEROSPACE CORP. | piotroski | ✅ | 100% | 26.31 | 46.98 | 4.07 | 8.67 | 18.24 | 0.09 | 267,069 | — |
-| PKE | PARK AEROSPACE CORP. | lynch | ✅ | 75% | 26.31 | 46.98 | 4.07 | 8.67 | 18.24 | 0.09 | 267,069 | — |
+| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 116 | 22.08 | 4.22 | 19.12 | 2.99 | — | 199,595 | — |
+| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 116 | 22.08 | 4.22 | 19.12 | 2.99 | — | 199,595 | — |
+| WLDN | WILLDAN GROUP, INC. | piotroski | ✅ | 78% | 72.23 | 20.70 | 3.57 | 17.24 | 1.56 | 0.79 | 221,397 | — |
+| SFD | SMITHFIELD FOODS, INC. | graham | ✅ | 100% | 18.64 | 7.43 | 1.08 | 14.51 | 2.97 | — | 1M | — |
+| ABG | ASBURY AUTOMOTIVE GROUP, INC | piotroski | ✅ | 78% | 170 | 6.77 | 0.86 | 12.64 | 0.95 | — | 271,908 | — |
+| ABG | ASBURY AUTOMOTIVE GROUP, INC | lynch | ✅ | 75% | 170 | 6.77 | 0.86 | 12.64 | 0.95 | — | 271,908 | — |
+| DORM | Dorman Products, Inc. | piotroski | ✅ | 89% | 124 | 18.66 | 2.58 | 13.82 | 3.09 | — | 252,571 | — |
+| BYND | BEYOND MEAT, INC. | greenblatt | ✅ | 100% | 6.85 | — | — | -21,968 | 4.56 | — | 763,573 | — |
+| CWEN | Clearway Energy, Inc. | lynch | ✅ | 75% | 29.93 | 6.20 | 0.18 | 2.91 | 1.13 | 1.85 | 1M | — |
+| AGCO | AGCO CORP /DE | piotroski | ✅ | 89% | 104 | 10.64 | 1.81 | 17.00 | 1.39 | 1.72 | 713,383 | — |
+| SCSC | ScanSource, Inc. | piotroski | ✅ | 78% | 60.02 | 16.49 | 1.43 | 8.66 | 1.76 | 1.12 | 247,838 | — |
+| SCSC | ScanSource, Inc. | lynch | ✅ | 75% | 60.02 | 16.49 | 1.43 | 8.66 | 1.76 | 1.12 | 247,838 | — |
+| BSY | BENTLEY SYSTEMS, INCORPORATE | piotroski | ✅ | 100% | 35.37 | 41.61 | 9.91 | 23.36 | 0.56 | 1.99 | 2M | — |
+| BSY | BENTLEY SYSTEMS, INCORPORATE | buffett | ✅ | 83% | 35.37 | 41.61 | 9.91 | 23.36 | 0.56 | 1.99 | 2M | — |
+| EXTR | Extreme Networks, Inc. | piotroski | ✅ | 89% | 21.73 | 70.10 | 33.11 | 47.54 | 0.93 | — | 701,823 | — |
 | IDT | IDT CORP | piotroski | ✅ | 78% | 80.67 | 23.32 | 5.35 | 22.96 | 1.86 | 0.94 | 191,553 | — |
-| WOR | WORTHINGTON ENTERPRISES, INC | piotroski | ✅ | 89% | 64.24 | 20.46 | 3.11 | 15.20 | 2.37 | 0.80 | 221,979 | — |
-| AIOT | Powerfleet, Inc. | piotroski | ✅ | 78% | 2.39 | — | 0.67 | -4.32 | 1.13 | 1.00 | 3M | — |
-| NXDR | Nextdoor Holdings, Inc | piotroski | ✅ | 78% | 2.46 | — | 2.20 | -12.57 | 14.03 | 0.13 | 2M | — |
+| IMAX | IMAX Corporation | piotroski | ✅ | 78% | 50.82 | 80.67 | 8.35 | 10.32 | — | 1.38 | 831,893 | — |
+| UGI | UGI CORPORATION | piotroski | ✅ | 78% | 38.43 | 12.44 | 1.76 | 14.19 | 0.89 | 2.23 | 2M | — |
+| HAYW | Hayward Holdings, Inc. | piotroski | ✅ | 100% | 11.83 | 17.40 | 1.65 | 9.51 | 2.94 | 0.98 | 3M | — |
+| MAGN | Magnera Corporation | piotroski | ✅ | 78% | 11.05 | — | 0.37 | -14.94 | 2.37 | 2.75 | 453,652 | — |
+| LFST | LifeStance Health Group, Inc | piotroski | ✅ | 89% | 11.74 | 475 | 3.02 | 0.64 | 1.65 | 0.45 | 3M | — |
+| GCO | GENESCO INC | piotroski | ✅ | 89% | 37.10 | 29.68 | 0.70 | 2.34 | 1.64 | 1.46 | 123,293 | — |
+| TRLV | TRULIEVE CANNABIS CORP. | piotroski | ✅ | 89% | 10.01 | — | 1.68 | -10.70 | 4.43 | 1.36 | 913,698 | — |
+| SHC | SOTERA HEALTH COMPANY | piotroski | ✅ | 78% | 17.89 | 66.26 | 8.46 | 12.86 | 2.46 | 4.38 | 2M | — |
+| GXO | GXO Logistics, Inc. | piotroski | ✅ | 78% | 47.18 | 168 | 1.84 | 1.07 | 0.85 | — | 1M | — |
 | TPC | Tutor Perini Corporation | piotroski | ✅ | 78% | 77.65 | 51.42 | 3.40 | 6.60 | 1.27 | 3.20 | 523,628 | — |
-| TLYS | TILLY’S, INC. | piotroski | ✅ | 78% | 4.60 | — | 1.63 | -20.50 | 1.25 | 2.65 | 121,334 | — |
-| BWET | Amplify Commodity Trust | greenblatt | ▫️ | 67% | 899 | — | — | 176 | — | 0.17 | 73,615 | — |
-| BWET | Amplify Commodity Trust | buffett | ▫️ | 50% | 899 | — | — | 176 | — | 0.17 | 73,615 | — |
-| BWET | Amplify Commodity Trust | lynch | ▫️ | 50% | 899 | — | — | 176 | — | 0.17 | 73,615 | — |
-| BWET | Amplify Commodity Trust | piotroski | ▫️ | 33% | 899 | — | — | 176 | — | 0.17 | 73,615 | — |
-| BWET | Amplify Commodity Trust | netnet | ▫️ | 25% | 899 | — | — | 176 | — | 0.17 | 73,615 | — |
-| BWET | Amplify Commodity Trust | graham | ▫️ | 22% | 899 | — | — | 176 | — | 0.17 | 73,615 | — |
-| BWET | Amplify Commodity Trust | custom | ▫️ | 0% | 899 | — | — | 176 | — | 0.17 | 73,615 | — |
-| PIPR | PIPER SANDLER COMPANIES | graham | ▫️ | 78% | 64.62 | 4.08 | 0.84 | 20.52 | — | 0.74 | 861,893 | — |
-| PIPR | PIPER SANDLER COMPANIES | buffett | ▫️ | 50% | 64.62 | 4.08 | 0.84 | 20.52 | — | 0.74 | 861,893 | — |
-| PIPR | PIPER SANDLER COMPANIES | netnet | ▫️ | 25% | 64.62 | 4.08 | 0.84 | 20.52 | — | 0.74 | 861,893 | — |
-| PIPR | PIPER SANDLER COMPANIES | custom | ▫️ | 0% | 64.62 | 4.08 | 0.84 | 20.52 | — | 0.74 | 861,893 | — |
-| YELP | YELP INC | graham | ▫️ | 78% | 19.88 | 8.87 | 1.82 | 20.48 | 2.99 | 0.35 | 1M | — |
-| YELP | YELP INC | buffett | ▫️ | 50% | 19.88 | 8.87 | 1.82 | 20.48 | 2.99 | 0.35 | 1M | — |
-| YELP | YELP INC | lynch | ▫️ | 50% | 19.88 | 8.87 | 1.82 | 20.48 | 2.99 | 0.35 | 1M | — |
-| YELP | YELP INC | netnet | ▫️ | 50% | 19.88 | 8.87 | 1.82 | 20.48 | 2.99 | 0.35 | 1M | — |
-| YELP | YELP INC | custom | ▫️ | 0% | 19.88 | 8.87 | 1.82 | 20.48 | 2.99 | 0.35 | 1M | — |
-| VRRM | VERRA MOBILITY CORPORATION | graham | ▫️ | 67% | 2.86 | 3.36 | 1.57 | 46.64 | 2.09 | 4.62 | 3M | — |
-| VRRM | VERRA MOBILITY CORPORATION | greenblatt | ▫️ | 67% | 2.86 | 3.36 | 1.57 | 46.64 | 2.09 | 4.62 | 3M | — |
-| VRRM | VERRA MOBILITY CORPORATION | buffett | ▫️ | 50% | 2.86 | 3.36 | 1.57 | 46.64 | 2.09 | 4.62 | 3M | — |
-| VRRM | VERRA MOBILITY CORPORATION | lynch | ▫️ | 25% | 2.86 | 3.36 | 1.57 | 46.64 | 2.09 | 4.62 | 3M | — |
-| VRRM | VERRA MOBILITY CORPORATION | netnet | ▫️ | 25% | 2.86 | 3.36 | 1.57 | 46.64 | 2.09 | 4.62 | 3M | — |
+| UROY | Uranium Royalty Corp. | greenblatt | ▫️ | 67% | 3.54 | 12.21 | 1.58 | 12.87 | 5.94 | 0.19 | 2M | — |
+| UROY | Uranium Royalty Corp. | graham | ▫️ | 56% | 3.54 | 12.21 | 1.58 | 12.87 | 5.94 | 0.19 | 2M | — |
+| UROY | Uranium Royalty Corp. | lynch | ▫️ | 50% | 3.54 | 12.21 | 1.58 | 12.87 | 5.94 | 0.19 | 2M | — |
+| UROY | Uranium Royalty Corp. | netnet | ▫️ | 50% | 3.54 | 12.21 | 1.58 | 12.87 | 5.94 | 0.19 | 2M | — |
+| UROY | Uranium Royalty Corp. | buffett | ▫️ | 33% | 3.54 | 12.21 | 1.58 | 12.87 | 5.94 | 0.19 | 2M | — |
+| UROY | Uranium Royalty Corp. | piotroski | ▫️ | 33% | 3.54 | 12.21 | 1.58 | 12.87 | 5.94 | 0.19 | 2M | — |
+| UROY | Uranium Royalty Corp. | custom | ▫️ | 0% | 3.54 | 12.21 | 1.58 | 12.87 | 5.94 | 0.19 | 2M | — |
+| IPAR | INTERPARFUMS, INC. | graham | ▫️ | 67% | 116 | 22.08 | 4.22 | 19.12 | 2.99 | — | 199,595 | — |
+| IPAR | INTERPARFUMS, INC. | piotroski | ▫️ | 67% | 116 | 22.08 | 4.22 | 19.12 | 2.99 | — | 199,595 | — |
+| IPAR | INTERPARFUMS, INC. | greenblatt | ▫️ | 33% | 116 | 22.08 | 4.22 | 19.12 | 2.99 | — | 199,595 | — |
+| IPAR | INTERPARFUMS, INC. | netnet | ▫️ | 25% | 116 | 22.08 | 4.22 | 19.12 | 2.99 | — | 199,595 | — |
+| IPAR | INTERPARFUMS, INC. | custom | ▫️ | 0% | 116 | 22.08 | 4.22 | 19.12 | 2.99 | — | 199,595 | — |
+| WLDN | WILLDAN GROUP, INC. | lynch | ▫️ | 50% | 72.23 | 20.70 | 3.57 | 17.24 | 1.56 | 0.79 | 221,397 | — |
+| WLDN | WILLDAN GROUP, INC. | netnet | ▫️ | 50% | 72.23 | 20.70 | 3.57 | 17.24 | 1.56 | 0.79 | 221,397 | — |
+| WLDN | WILLDAN GROUP, INC. | buffett | ▫️ | 33% | 72.23 | 20.70 | 3.57 | 17.24 | 1.56 | 0.79 | 221,397 | — |
+| WLDN | WILLDAN GROUP, INC. | greenblatt | ▫️ | 33% | 72.23 | 20.70 | 3.57 | 17.24 | 1.56 | 0.79 | 221,397 | — |
+| WLDN | WILLDAN GROUP, INC. | graham | ▫️ | 22% | 72.23 | 20.70 | 3.57 | 17.24 | 1.56 | 0.79 | 221,397 | — |
+| WLDN | WILLDAN GROUP, INC. | custom | ▫️ | 0% | 72.23 | 20.70 | 3.57 | 17.24 | 1.56 | 0.79 | 221,397 | — |
+| SFD | SMITHFIELD FOODS, INC. | greenblatt | ▫️ | 67% | 18.64 | 7.43 | 1.08 | 14.51 | 2.97 | — | 1M | — |
+| SFD | SMITHFIELD FOODS, INC. | piotroski | ▫️ | 56% | 18.64 | 7.43 | 1.08 | 14.51 | 2.97 | — | 1M | — |
+| SFD | SMITHFIELD FOODS, INC. | lynch | ▫️ | 50% | 18.64 | 7.43 | 1.08 | 14.51 | 2.97 | — | 1M | — |
+| SFD | SMITHFIELD FOODS, INC. | netnet | ▫️ | 25% | 18.64 | 7.43 | 1.08 | 14.51 | 2.97 | — | 1M | — |
+| SFD | SMITHFIELD FOODS, INC. | buffett | ▫️ | 17% | 18.64 | 7.43 | 1.08 | 14.51 | 2.97 | — | 1M | — |
+| SFD | SMITHFIELD FOODS, INC. | custom | ▫️ | 0% | 18.64 | 7.43 | 1.08 | 14.51 | 2.97 | — | 1M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
