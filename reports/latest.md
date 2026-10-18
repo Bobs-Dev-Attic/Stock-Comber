@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-18 13:10 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-18 18:53 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **32** strategy matches passed.
+Screened **75** companies · **33** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| CRUS | CIRRUS LOGIC, INC. | piotroski | ✅ | 89% | 108 | 13.74 | 2.68 | 19.47 | 7.37 | — | 785,911 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | piotroski | ✅ | 78% | 77.95 | 15.34 | 2.11 | 13.75 | 10.06 | 0.12 | 995,622 | — |
+| VIXM | PROSHARES TRUST II | greenblatt | ✅ | 100% | 12.84 | 0.93 | 0.28 | 29.91 | — | 0.06 | 462,953 | — |
+| FSLR | First Solar, Inc. | lynch | ✅ | 100% | 173 | 12.15 | 1.95 | 16.02 | 2.67 | 0.40 | 2M | — |
+| FSLR | First Solar, Inc. | piotroski | ✅ | 89% | 173 | 12.15 | 1.95 | 16.02 | 2.67 | 0.40 | 2M | — |
+| LPG | DORIAN LPG LTD. | lynch | ✅ | 100% | 53.60 | 11.81 | 2.01 | 17.00 | 2.67 | 0.64 | 429,567 | — |
+| LPG | DORIAN LPG LTD. | piotroski | ✅ | 89% | 53.60 | 11.81 | 2.01 | 17.00 | 2.67 | 0.64 | 429,567 | — |
 | PRI | Primerica, Inc. | greenblatt | ✅ | 100% | 283 | 12.34 | 3.78 | 30.71 | — | 5.14 | 210,016 | — |
 | PRI | Primerica, Inc. | piotroski | ✅ | 89% | 283 | 12.34 | 3.78 | 30.71 | — | 5.14 | 210,016 | — |
-| AX | Axos Financial, Inc. | lynch | ✅ | 75% | 88.14 | 10.39 | 1.58 | 15.49 | — | 8.46 | 259,887 | — |
-| SKYW | SKYWEST INC | piotroski | ✅ | 89% | 91.51 | 8.84 | 1.38 | 15.60 | 0.65 | — | 204,997 | — |
-| WTFC | WINTRUST FINANCIAL CORP | lynch | ✅ | 75% | 144 | 12.64 | 1.35 | 11.35 | — | 8.80 | 280,997 | — |
-| KFY | KORN FERRY | piotroski | ✅ | 100% | 73.03 | 13.99 | 1.94 | 14.06 | 1.94 | 1.06 | 485,269 | — |
-| KFY | KORN FERRY | lynch | ✅ | 75% | 73.03 | 13.99 | 1.94 | 14.06 | 1.94 | 1.06 | 485,269 | — |
-| DUKU | Duke Energy CORP | piotroski | ✅ | 89% | 49.25 | 7.81 | 0.74 | 9.58 | 0.55 | — | 501,522 | — |
-| DUKU | Duke Energy CORP | lynch | ✅ | 75% | 49.25 | 7.81 | 0.74 | 9.58 | 0.55 | — | 501,522 | — |
-| SFM | Sprouts Farmers Market, Inc. | greenblatt | ✅ | 100% | 65.20 | 12.28 | 4.59 | 37.32 | 0.93 | 1.96 | 2M | — |
-| SFM | Sprouts Farmers Market, Inc. | piotroski | ✅ | 78% | 65.20 | 12.28 | 4.59 | 37.32 | 0.93 | 1.96 | 2M | — |
-| AGX | ARGAN INC | lynch | ✅ | 75% | 346 | 35.48 | 10.58 | 29.80 | 1.59 | 1.57 | 543,287 | — |
-| MEDP | Medpace Holdings, Inc. | buffett | ✅ | 83% | 618 | 40.48 | 39.78 | 98.27 | 0.74 | 3.30 | 325,148 | — |
-| MEDP | Medpace Holdings, Inc. | piotroski | ✅ | 78% | 618 | 40.48 | 39.78 | 98.27 | 0.74 | 3.30 | 325,148 | — |
-| BDC | BELDEN INC. | piotroski | ✅ | 89% | 103 | 17.40 | 3.27 | 18.78 | 1.93 | — | 327,792 | — |
-| TRN | TRINITY INDUSTRIES INC | greenblatt | ✅ | 100% | 25.22 | 8.27 | 1.94 | 23.50 | — | 6.76 | 711,726 | — |
-| TRN | TRINITY INDUSTRIES INC | piotroski | ✅ | 78% | 25.22 | 8.27 | 1.94 | 23.50 | — | 6.76 | 711,726 | — |
-| OSW | OneSpaWorld Holdings Limited | piotroski | ✅ | 78% | 23.85 | 34.57 | 4.56 | 13.20 | 1.91 | 0.30 | 492,439 | — |
-| PLUS | ePlus inc. | piotroski | ✅ | 78% | 94.05 | 18.70 | 2.32 | 12.41 | 2.24 | 0.68 | 195,410 | — |
-| FMNB | FARMERS NATIONAL BANC CORP / | piotroski | ✅ | 89% | 15.30 | 10.55 | 1.19 | 11.24 | — | 9.80 | 281,430 | — |
-| WWD | WOODWARD, INC. | piotroski | ✅ | 100% | 328 | 45.69 | 7.87 | 17.23 | 2.08 | 0.80 | 596,730 | — |
-| ZWS | ZURN ELKAY WATER SOLUTIONS C | piotroski | ✅ | 100% | 47.06 | 40.92 | 5.03 | 12.35 | 3.13 | 0.67 | 884,713 | — |
-| MAGN | Magnera Corporation | piotroski | ✅ | 78% | 11.05 | — | 0.37 | -14.94 | 2.37 | 2.75 | 453,652 | — |
-| CRI | CARTER’S, INC. | graham | ✅ | 89% | 31.45 | 12.43 | 1.20 | 9.92 | 2.51 | 1.77 | 898,560 | — |
-| LW | LAMB WESTON HOLDINGS, INC. | piotroski | ✅ | 78% | 53.59 | 25.76 | 4.08 | 15.89 | 1.42 | — | 3M | — |
-| WRBY | Warby Parker Inc. | piotroski | ✅ | 78% | 23.34 | 2,334 | 7.94 | 0.45 | 2.35 | 0.96 | 3M | — |
-| PPLC | PPL Corp | piotroski | ✅ | 78% | 46.86 | 29.47 | 2.34 | 7.94 | 0.86 | — | 401,734 | — |
-| ADT | ADT Inc. | piotroski | ✅ | 89% | 6.87 | — | — | 15.77 | 0.93 | 3.19 | 6M | — |
-| LILA | Liberty Latin America Ltd. | piotroski | ✅ | 78% | 8.06 | — | 2.89 | -110 | 1.14 | 20.09 | 227,630 | — |
-| TPC | Tutor Perini Corporation | piotroski | ✅ | 78% | 77.65 | 51.42 | 3.40 | 6.60 | 1.27 | 3.20 | 523,628 | — |
-| CRUS | CIRRUS LOGIC, INC. | graham | ▫️ | 78% | 108 | 13.74 | 2.68 | 19.47 | 7.37 | — | 785,911 | — |
-| CRUS | CIRRUS LOGIC, INC. | buffett | ▫️ | 67% | 108 | 13.74 | 2.68 | 19.47 | 7.37 | — | 785,911 | — |
-| CRUS | CIRRUS LOGIC, INC. | lynch | ▫️ | 50% | 108 | 13.74 | 2.68 | 19.47 | 7.37 | — | 785,911 | — |
-| CRUS | CIRRUS LOGIC, INC. | greenblatt | ▫️ | 33% | 108 | 13.74 | 2.68 | 19.47 | 7.37 | — | 785,911 | — |
-| CRUS | CIRRUS LOGIC, INC. | netnet | ▫️ | 25% | 108 | 13.74 | 2.68 | 19.47 | 7.37 | — | 785,911 | — |
-| CRUS | CIRRUS LOGIC, INC. | custom | ▫️ | 0% | 108 | 13.74 | 2.68 | 19.47 | 7.37 | — | 785,911 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | buffett | ▫️ | 67% | 77.95 | 15.34 | 2.11 | 13.75 | 10.06 | 0.12 | 995,622 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | graham | ▫️ | 56% | 77.95 | 15.34 | 2.11 | 13.75 | 10.06 | 0.12 | 995,622 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | lynch | ▫️ | 50% | 77.95 | 15.34 | 2.11 | 13.75 | 10.06 | 0.12 | 995,622 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | netnet | ▫️ | 50% | 77.95 | 15.34 | 2.11 | 13.75 | 10.06 | 0.12 | 995,622 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | greenblatt | ▫️ | 33% | 77.95 | 15.34 | 2.11 | 13.75 | 10.06 | 0.12 | 995,622 | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | custom | ▫️ | 0% | 77.95 | 15.34 | 2.11 | 13.75 | 10.06 | 0.12 | 995,622 | — |
+| TRNO | Terreno Realty Corporation | lynch | ✅ | 100% | 64.06 | 16.38 | 1.59 | 9.72 | — | 0.30 | 567,439 | — |
+| AREC | AMERICAN RESOURCES CORPORATI | greenblatt | ✅ | 100% | 1.14 | 1.81 | 1.05 | 58.44 | 2.19 | 0.80 | 3M | — |
+| PJT | PJT Partners Inc. | buffett | ✅ | 83% | 137 | — | — | 58.43 | — | 2.71 | 517,773 | — |
+| PJT | PJT Partners Inc. | piotroski | ✅ | 78% | 137 | — | — | 58.43 | — | 2.71 | 517,773 | — |
+| IBEX | IBEX Limited | piotroski | ✅ | 100% | 45.65 | 14.58 | 3.97 | 27.22 | 2.10 | 0.82 | 80,680 | — |
+| VISN | Vistance Networks, Inc. | greenblatt | ✅ | 100% | 5.80 | 0.60 | — | -227 | 3.88 | -9.06 | 5M | — |
+| JOE | The St. Joe Company | piotroski | ✅ | 89% | 68.41 | 34.38 | 5.17 | 15.09 | — | 0.97 | 175,111 | — |
+| HRB | H&R BLOCK INC | greenblatt | ✅ | 100% | 48.67 | 8.60 | 53.38 | 624 | 1.13 | 26.72 | 2M | — |
+| HRB | H&R BLOCK INC | piotroski | ✅ | 89% | 48.67 | 8.60 | 53.38 | 624 | 1.13 | 26.72 | 2M | — |
+| FIZZ | National Beverage Corp. | buffett | ✅ | 83% | 34.96 | 17.84 | 5.15 | 28.89 | 4.39 | 0.34 | 482,437 | — |
+| BFAM | BRIGHT HORIZONS FAMILY SOLUT | piotroski | ✅ | 89% | 71.15 | 21.18 | 3.05 | 14.42 | 0.52 | 1.90 | 667,121 | — |
+| BFAM | BRIGHT HORIZONS FAMILY SOLUT | lynch | ✅ | 75% | 71.15 | 21.18 | 3.05 | 14.42 | 0.52 | 1.90 | 667,121 | — |
+| WWD | WOODWARD, INC. | piotroski | ✅ | 100% | 328 | 45.69 | 7.87 | 17.23 | 2.08 | 0.80 | 596,746 | — |
+| AIOT | Powerfleet, Inc. | piotroski | ✅ | 78% | 2.39 | — | 0.67 | -4.32 | 1.13 | 1.00 | 3M | — |
+| MLKN | MillerKnoll, Inc. | piotroski | ✅ | 100% | 21.07 | 15.96 | 1.09 | 6.82 | 1.58 | 1.93 | 461,795 | — |
+| FROG | JFrog Ltd. | piotroski | ✅ | 78% | 84.31 | — | 11.04 | -8.09 | 2.14 | 0.51 | 5M | — |
+| XERS | XERIS BIOPHARMA HOLDINGS, IN | piotroski | ✅ | 89% | 10.31 | — | 130 | 4.05 | 2.19 | 27.02 | 2M | — |
+| INNV | InnovAge Holding Corp. | piotroski | ✅ | 78% | 8.85 | — | 5.10 | -1.08 | 1.05 | 1.23 | 381,988 | — |
+| QUAD | Quad/Graphics, Inc. | piotroski | ✅ | 78% | 9.45 | 17.50 | — | -45.38 | 0.86 | -18.90 | 165,701 | — |
+| THO | THOR INDUSTRIES, INC. | piotroski | ✅ | 78% | 68.44 | 20.25 | 0.84 | 4.17 | 1.77 | — | 1M | — |
+| USNA | USANA HEALTH SCIENCES, INC. | piotroski | ✅ | 78% | 15.54 | 26.79 | 0.54 | 2.02 | 2.24 | 0.29 | 211,700 | — |
+| DBD | Diebold Nixdorf, Incorporate | piotroski | ✅ | 78% | 66.83 | 26.31 | 2.26 | 8.60 | 1.30 | 2.50 | 211,335 | — |
+| ARKO | ARKO Corp. | piotroski | ✅ | 78% | 4.10 | 27.33 | 1.76 | 8.51 | 1.66 | 11.85 | 425,076 | — |
+| TRLV | TRULIEVE CANNABIS CORP. | piotroski | ✅ | 89% | 10.01 | — | 1.68 | -10.70 | 4.43 | 1.36 | 913,698 | — |
+| GXO | GXO Logistics, Inc. | piotroski | ✅ | 78% | 47.18 | 168 | 1.84 | 1.07 | 0.85 | — | 1M | — |
+| ORN | ORION GROUP HOLDINGS, INC. | piotroski | ✅ | 78% | 8.52 | 142 | 2.12 | 1.56 | 1.36 | 1.61 | 450,541 | — |
+| VIXM | PROSHARES TRUST II | lynch | ▫️ | 50% | 12.84 | 0.93 | 0.28 | 29.91 | — | 0.06 | 462,953 | — |
+| VIXM | PROSHARES TRUST II | graham | ▫️ | 44% | 12.84 | 0.93 | 0.28 | 29.91 | — | 0.06 | 462,953 | — |
+| VIXM | PROSHARES TRUST II | buffett | ▫️ | 33% | 12.84 | 0.93 | 0.28 | 29.91 | — | 0.06 | 462,953 | — |
+| VIXM | PROSHARES TRUST II | piotroski | ▫️ | 33% | 12.84 | 0.93 | 0.28 | 29.91 | — | 0.06 | 462,953 | — |
+| VIXM | PROSHARES TRUST II | netnet | ▫️ | 25% | 12.84 | 0.93 | 0.28 | 29.91 | — | 0.06 | 462,953 | — |
+| VIXM | PROSHARES TRUST II | custom | ▫️ | 0% | 12.84 | 0.93 | 0.28 | 29.91 | — | 0.06 | 462,953 | — |
+| FSLR | First Solar, Inc. | graham | ▫️ | 67% | 173 | 12.15 | 1.95 | 16.02 | 2.67 | 0.40 | 2M | — |
+| FSLR | First Solar, Inc. | buffett | ▫️ | 67% | 173 | 12.15 | 1.95 | 16.02 | 2.67 | 0.40 | 2M | — |
+| FSLR | First Solar, Inc. | greenblatt | ▫️ | 67% | 173 | 12.15 | 1.95 | 16.02 | 2.67 | 0.40 | 2M | — |
+| FSLR | First Solar, Inc. | netnet | ▫️ | 50% | 173 | 12.15 | 1.95 | 16.02 | 2.67 | 0.40 | 2M | — |
+| FSLR | First Solar, Inc. | custom | ▫️ | 0% | 173 | 12.15 | 1.95 | 16.02 | 2.67 | 0.40 | 2M | — |
+| LPG | DORIAN LPG LTD. | buffett | ▫️ | 67% | 53.60 | 11.81 | 2.01 | 17.00 | 2.67 | 0.64 | 429,567 | — |
+| LPG | DORIAN LPG LTD. | greenblatt | ▫️ | 67% | 53.60 | 11.81 | 2.01 | 17.00 | 2.67 | 0.64 | 429,567 | — |
+| LPG | DORIAN LPG LTD. | graham | ▫️ | 56% | 53.60 | 11.81 | 2.01 | 17.00 | 2.67 | 0.64 | 429,567 | — |
+| LPG | DORIAN LPG LTD. | netnet | ▫️ | 25% | 53.60 | 11.81 | 2.01 | 17.00 | 2.67 | 0.64 | 429,567 | — |
+| LPG | DORIAN LPG LTD. | custom | ▫️ | 0% | 53.60 | 11.81 | 2.01 | 17.00 | 2.67 | 0.64 | 429,567 | — |
 | PRI | Primerica, Inc. | buffett | ▫️ | 67% | 283 | 12.34 | 3.78 | 30.71 | — | 5.14 | 210,016 | — |
-| PRI | Primerica, Inc. | graham | ▫️ | 56% | 283 | 12.34 | 3.78 | 30.71 | — | 5.14 | 210,016 | — |
-| PRI | Primerica, Inc. | lynch | ▫️ | 50% | 283 | 12.34 | 3.78 | 30.71 | — | 5.14 | 210,016 | — |
-| PRI | Primerica, Inc. | netnet | ▫️ | 25% | 283 | 12.34 | 3.78 | 30.71 | — | 5.14 | 210,016 | — |
-| PRI | Primerica, Inc. | custom | ▫️ | 0% | 283 | 12.34 | 3.78 | 30.71 | — | 5.14 | 210,016 | — |
-| AX | Axos Financial, Inc. | buffett | ▫️ | 67% | 88.14 | 10.39 | 1.58 | 15.49 | — | 8.46 | 259,887 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
