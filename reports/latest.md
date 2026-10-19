@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-19 00:49 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-19 05:24 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **34** strategy matches passed.
+Screened **75** companies · **39** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| GOOGM | Alphabet Inc. | graham | ✅ | 100% | 48.48 | 4.48 | 1.43 | 31.83 | 2.01 | 0.43 | 499,757 | — |
-| GOOGM | Alphabet Inc. | buffett | ✅ | 100% | 48.48 | 4.48 | 1.43 | 31.83 | 2.01 | 0.43 | 499,757 | — |
-| GOOGM | Alphabet Inc. | greenblatt | ✅ | 100% | 48.48 | 4.48 | 1.43 | 31.83 | 2.01 | 0.43 | 499,757 | — |
-| GOOGM | Alphabet Inc. | lynch | ✅ | 100% | 48.48 | 4.48 | 1.43 | 31.83 | 2.01 | 0.43 | 499,757 | — |
-| PD | PAGERDUTY, INC. | greenblatt | ✅ | 100% | 16.16 | 8.64 | 5.93 | 68.37 | 2.01 | 2.84 | 2M | — |
-| WHD | Cactus, Inc. | lynch | ✅ | 75% | 61.71 | — | — | 13.54 | 5.81 | 0.36 | 581,552 | — |
-| SON | Sonoco Products Company | piotroski | ✅ | 89% | 49.79 | 4.94 | 1.37 | 27.75 | 1.05 | 2.08 | 838,035 | — |
-| SON | Sonoco Products Company | lynch | ✅ | 75% | 49.79 | 4.94 | 1.37 | 27.75 | 1.05 | 2.08 | 838,035 | — |
-| OII | OCEANEERING INTERNATIONAL IN | piotroski | ✅ | 78% | 43.79 | 12.55 | 4.14 | 33.04 | 1.99 | — | 865,963 | — |
-| CHH | CHOICE HOTELS INTERNATIONAL  | piotroski | ✅ | 78% | 108 | 13.72 | 27.86 | 204 | 0.87 | 15.10 | 576,453 | — |
-| CHH | CHOICE HOTELS INTERNATIONAL  | lynch | ✅ | 75% | 108 | 13.72 | 27.86 | 204 | 0.87 | 15.10 | 576,453 | — |
+| QNST | QuinStreet, Inc. | greenblatt | ✅ | 100% | 16.32 | 11.66 | 2.94 | 25.14 | 1.22 | 1.23 | 787,704 | — |
+| QNST | QuinStreet, Inc. | lynch | ✅ | 75% | 16.32 | 11.66 | 2.94 | 25.14 | 1.22 | 1.23 | 787,704 | — |
+| LPG | DORIAN LPG LTD. | lynch | ✅ | 100% | 53.60 | 11.81 | 2.01 | 17.00 | 2.67 | 0.64 | 429,567 | — |
+| LPG | DORIAN LPG LTD. | piotroski | ✅ | 89% | 53.60 | 11.81 | 2.01 | 17.00 | 2.67 | 0.64 | 429,567 | — |
+| NBR | NABORS INDUSTRIES LTD | piotroski | ✅ | 78% | 78.20 | 4.50 | 1.91 | 48.52 | 1.56 | 5.67 | 158,539 | — |
+| REX | REX AMERICAN RESOURCES CORPO | lynch | ✅ | 75% | 41.72 | 16.69 | 2.27 | 15.57 | 5.94 | — | 298,465 | — |
+| URBN | Urban Outfitters, Inc. | piotroski | ✅ | 100% | 86.57 | 17.11 | 2.82 | 16.51 | 1.51 | 0.78 | 1M | — |
+| URBN | Urban Outfitters, Inc. | lynch | ✅ | 75% | 86.57 | 17.11 | 2.82 | 16.51 | 1.51 | 0.78 | 1M | — |
+| CRS | CARPENTER TECHNOLOGY CORPORA | piotroski | ✅ | 89% | 377 | 35.85 | 8.53 | 23.78 | 3.81 | 0.72 | 507,305 | — |
+| EVR | EVERCORE INC. | buffett | ✅ | 83% | 254 | 18.08 | 5.27 | 29.14 | 2.16 | 1.50 | 590,444 | — |
+| EVR | EVERCORE INC. | piotroski | ✅ | 78% | 254 | 18.08 | 5.27 | 29.14 | 2.16 | 1.50 | 590,444 | — |
 | KRYS | Krystal Biotech, Inc. | piotroski | ✅ | 89% | 317 | 46.28 | 7.77 | 16.80 | 9.95 | 0.09 | 226,232 | — |
-| LMB | LIMBACH HOLDINGS, INC. | piotroski | ✅ | 78% | 48.69 | 15.07 | 3.01 | 19.97 | 1.44 | 0.95 | 240,510 | — |
-| LMB | LIMBACH HOLDINGS, INC. | lynch | ✅ | 75% | 48.69 | 15.07 | 3.01 | 19.97 | 1.44 | 0.95 | 240,510 | — |
-| ACEL | Accel Entertainment, Inc. | piotroski | ✅ | 78% | 10.88 | 18.13 | 3.48 | 19.09 | 2.61 | — | 493,224 | — |
-| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 16.65 | 8.81 | 2.18 | 24.66 | 2.26 | 2.62 | 1M | — |
-| BDC | BELDEN INC. | piotroski | ✅ | 89% | 103 | 17.40 | 3.27 | 18.78 | 1.93 | — | 327,792 | — |
-| OSW | OneSpaWorld Holdings Limited | piotroski | ✅ | 78% | 23.85 | 34.57 | 4.56 | 13.20 | 1.91 | 0.30 | 492,475 | — |
-| BFAM | BRIGHT HORIZONS FAMILY SOLUT | piotroski | ✅ | 89% | 71.15 | 21.18 | 3.05 | 14.42 | 0.52 | 1.90 | 667,121 | — |
-| BFAM | BRIGHT HORIZONS FAMILY SOLUT | lynch | ✅ | 75% | 71.15 | 21.18 | 3.05 | 14.42 | 0.52 | 1.90 | 667,121 | — |
-| AGCO | AGCO CORP /DE | piotroski | ✅ | 89% | 104 | 10.64 | 1.81 | 17.00 | 1.39 | 1.72 | 713,381 | — |
-| BSY | BENTLEY SYSTEMS, INCORPORATE | piotroski | ✅ | 100% | 35.37 | 41.61 | 9.91 | 23.36 | 0.56 | 1.99 | 2M | — |
-| BSY | BENTLEY SYSTEMS, INCORPORATE | buffett | ✅ | 83% | 35.37 | 41.61 | 9.91 | 23.36 | 0.56 | 1.99 | 2M | — |
-| ABM | ABM INDUSTRIES INCORPORATED | piotroski | ✅ | 89% | 51.15 | 19.75 | 1.80 | 9.09 | 1.48 | 1.95 | 462,894 | — |
-| R | RYDER SYSTEM INC | piotroski | ✅ | 100% | 238 | 19.97 | 3.27 | 16.35 | 0.89 | 4.37 | 518,823 | — |
-| MD | Pediatrix Medical Group, Inc | piotroski | ✅ | 78% | 27.38 | 14.11 | 2.70 | 19.10 | 1.66 | 1.59 | 534,997 | — |
-| CYH | COMMUNITY HEALTH SYSTEMS, IN | piotroski | ✅ | 89% | 2.88 | 0.76 | — | -36.51 | 1.46 | -10.07 | 957,302 | — |
-| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.23 | 19.23 | 0.76 | 3.99 | 9.18 | 0.34 | 146,791 | — |
-| AIOT | Powerfleet, Inc. | piotroski | ✅ | 78% | 2.39 | — | 0.67 | -4.32 | 1.13 | 1.00 | 3M | — |
+| KFY | KORN FERRY | piotroski | ✅ | 100% | 73.03 | 13.99 | 1.94 | 14.06 | 1.94 | 1.06 | 485,269 | — |
+| KFY | KORN FERRY | lynch | ✅ | 75% | 73.03 | 13.99 | 1.94 | 14.06 | 1.94 | 1.06 | 485,269 | — |
+| HBANP | Huntington Bancshares Incorp | lynch | ✅ | 75% | 15.42 | 11.09 | 0.95 | 9.08 | — | 8.25 | 97,036 | — |
+| SFM | Sprouts Farmers Market, Inc. | greenblatt | ✅ | 100% | 65.20 | 12.28 | 4.59 | 37.32 | 0.93 | 1.96 | 2M | — |
+| SFM | Sprouts Farmers Market, Inc. | piotroski | ✅ | 78% | 65.20 | 12.28 | 4.59 | 37.32 | 0.93 | 1.96 | 2M | — |
+| FSS | FEDERAL SIGNAL CORPORATION | lynch | ✅ | 75% | 112 | 28.03 | 5.00 | 17.84 | 3.02 | 0.73 | 630,300 | — |
+| CRVL | CORVEL CORPORATION | buffett | ✅ | 83% | 79.69 | 37.24 | 10.44 | 27.99 | 2.03 | 0.63 | 175,893 | — |
+| CRVL | CORVEL CORPORATION | piotroski | ✅ | 78% | 79.69 | 37.24 | 10.44 | 27.99 | 2.03 | 0.63 | 175,893 | — |
+| CRVL | CORVEL CORPORATION | lynch | ✅ | 75% | 79.69 | 37.24 | 10.44 | 27.99 | 2.03 | 0.63 | 175,893 | — |
+| AIR | AAR CORP | piotroski | ✅ | 78% | 98.84 | 20.34 | 2.23 | 11.02 | 2.84 | — | 537,723 | — |
+| AIR | AAR CORP | lynch | ✅ | 75% | 98.84 | 20.34 | 2.23 | 11.02 | 2.84 | — | 537,723 | — |
+| BURL | BURLINGTON STORES, INC. | piotroski | ✅ | 78% | 263 | 27.62 | 9.32 | 33.76 | 1.23 | — | 1M | — |
+| FIZZ | National Beverage Corp. | buffett | ✅ | 83% | 34.96 | 17.84 | 5.15 | 28.89 | 4.39 | 0.34 | 482,437 | — |
+| GEO | The GEO Group, Inc. | piotroski | ✅ | 78% | 28.66 | 15.75 | 2.66 | 16.89 | 2.01 | — | 3M | — |
+| GEO | The GEO Group, Inc. | lynch | ✅ | 75% | 28.66 | 15.75 | 2.66 | 16.89 | 2.01 | — | 3M | — |
+| BFAM | BRIGHT HORIZONS FAMILY SOLUT | piotroski | ✅ | 89% | 71.15 | 21.18 | 3.05 | 14.42 | 0.52 | 1.90 | 667,122 | — |
+| BFAM | BRIGHT HORIZONS FAMILY SOLUT | lynch | ✅ | 75% | 71.15 | 21.18 | 3.05 | 14.42 | 0.52 | 1.90 | 667,122 | — |
+| WLY | JOHN WILEY & SONS, INC. | piotroski | ✅ | 100% | 52.72 | 12.67 | 3.31 | 26.13 | 0.54 | 2.06 | 244,094 | — |
+| KNTK | KINETIK HOLDINGS INC. | lynch | ✅ | 75% | 55.30 | 21.03 | — | -31.53 | 0.69 | -7.37 | 897,375 | — |
+| HLIO | HELIOS TECHNOLOGIES, INC. | piotroski | ✅ | 100% | 67.64 | 46.65 | 2.42 | 5.20 | 2.90 | 0.63 | 276,295 | — |
+| HLIO | HELIOS TECHNOLOGIES, INC. | lynch | ✅ | 75% | 67.64 | 46.65 | 2.42 | 5.20 | 2.90 | 0.63 | 276,295 | — |
+| HAYW | Hayward Holdings, Inc. | piotroski | ✅ | 100% | 11.83 | 17.40 | 1.65 | 9.51 | 2.94 | 0.98 | 3M | — |
+| SHAK | SHAKE SHACK INC. | piotroski | ✅ | 89% | 69.99 | 64.21 | 5.58 | 8.70 | 1.76 | 2.56 | 1M | — |
+| AMCR | AMCOR PLC | piotroski | ✅ | 89% | 43.85 | 18.42 | 1.72 | 9.38 | 1.25 | 2.15 | 3M | — |
 | MLKN | MillerKnoll, Inc. | piotroski | ✅ | 100% | 21.07 | 15.96 | 1.09 | 6.82 | 1.58 | 1.93 | 461,795 | — |
-| KOP | KOPPERS HOLDINGS INC. | piotroski | ✅ | 89% | 43.32 | 15.81 | 1.54 | 9.76 | 2.94 | 2.29 | 107,920 | — |
-| MSGS | MADISON SQUARE GARDEN SPORTS | piotroski | ✅ | 100% | 396 | 1,238 | — | -2.95 | 0.50 | -6.84 | 660,529 | — |
-| AEIS | ADVANCED ENERGY INDUSTRIES,  | piotroski | ✅ | 78% | 238 | 61.99 | 6.74 | 10.89 | 1.59 | 0.86 | 854,527 | — |
-| CTRI | Centuri Holdings, Inc. | piotroski | ✅ | 78% | 19.73 | 78.92 | 2.04 | 2.57 | 1.78 | 1.75 | 2M | — |
-| GOOGM | Alphabet Inc. | piotroski | ▫️ | 67% | 48.48 | 4.48 | 1.43 | 31.83 | 2.01 | 0.43 | 499,757 | — |
-| GOOGM | Alphabet Inc. | netnet | ▫️ | 50% | 48.48 | 4.48 | 1.43 | 31.83 | 2.01 | 0.43 | 499,757 | — |
-| GOOGM | Alphabet Inc. | custom | ▫️ | 0% | 48.48 | 4.48 | 1.43 | 31.83 | 2.01 | 0.43 | 499,757 | — |
-| PD | PAGERDUTY, INC. | piotroski | ▫️ | 67% | 16.16 | 8.64 | 5.93 | 68.37 | 2.01 | 2.84 | 2M | — |
-| PD | PAGERDUTY, INC. | buffett | ▫️ | 50% | 16.16 | 8.64 | 5.93 | 68.37 | 2.01 | 2.84 | 2M | — |
-| PD | PAGERDUTY, INC. | graham | ▫️ | 33% | 16.16 | 8.64 | 5.93 | 68.37 | 2.01 | 2.84 | 2M | — |
-| PD | PAGERDUTY, INC. | lynch | ▫️ | 25% | 16.16 | 8.64 | 5.93 | 68.37 | 2.01 | 2.84 | 2M | — |
-| PD | PAGERDUTY, INC. | netnet | ▫️ | 25% | 16.16 | 8.64 | 5.93 | 68.37 | 2.01 | 2.84 | 2M | — |
-| PD | PAGERDUTY, INC. | custom | ▫️ | 0% | 16.16 | 8.64 | 5.93 | 68.37 | 2.01 | 2.84 | 2M | — |
-| WHD | Cactus, Inc. | graham | ▫️ | 67% | 61.71 | — | — | 13.54 | 5.81 | 0.36 | 581,552 | — |
-| WHD | Cactus, Inc. | piotroski | ▫️ | 56% | 61.71 | — | — | 13.54 | 5.81 | 0.36 | 581,552 | — |
-| WHD | Cactus, Inc. | buffett | ▫️ | 50% | 61.71 | — | — | 13.54 | 5.81 | 0.36 | 581,552 | — |
-| WHD | Cactus, Inc. | greenblatt | ▫️ | 33% | 61.71 | — | — | 13.54 | 5.81 | 0.36 | 581,552 | — |
-| WHD | Cactus, Inc. | netnet | ▫️ | 25% | 61.71 | — | — | 13.54 | 5.81 | 0.36 | 581,552 | — |
-| WHD | Cactus, Inc. | custom | ▫️ | 0% | 61.71 | — | — | 13.54 | 5.81 | 0.36 | 581,552 | — |
-| SON | Sonoco Products Company | graham | ▫️ | 67% | 49.79 | 4.94 | 1.37 | 27.75 | 1.05 | 2.08 | 838,035 | — |
+| TBCH | TURTLE BEACH CORPORATION | piotroski | ✅ | 78% | 15.20 | 19.74 | 2.42 | 12.24 | 1.98 | 1.09 | 514,465 | — |
+| ORN | ORION GROUP HOLDINGS, INC. | piotroski | ✅ | 78% | 8.52 | 142 | 2.12 | 1.56 | 1.36 | 1.61 | 450,541 | — |
+| GEF | GREIF, INC. | buffett | ▫️ | 67% | 82.12 | — | — | 28.82 | 1.27 | — | 467,533 | — |
+| GEF | GREIF, INC. | greenblatt | ▫️ | 67% | 82.12 | — | — | 28.82 | 1.27 | — | 467,533 | — |
+| GEF | GREIF, INC. | piotroski | ▫️ | 56% | 82.12 | — | — | 28.82 | 1.27 | — | 467,533 | — |
+| GEF | GREIF, INC. | graham | ▫️ | 44% | 82.12 | — | — | 28.82 | 1.27 | — | 467,533 | — |
+| GEF | GREIF, INC. | lynch | ▫️ | 25% | 82.12 | — | — | 28.82 | 1.27 | — | 467,533 | — |
+| GEF | GREIF, INC. | netnet | ▫️ | 25% | 82.12 | — | — | 28.82 | 1.27 | — | 467,533 | — |
+| GEF | GREIF, INC. | custom | ▫️ | 0% | 82.12 | — | — | 28.82 | 1.27 | — | 467,533 | — |
+| QNST | QuinStreet, Inc. | piotroski | ▫️ | 67% | 16.32 | 11.66 | 2.94 | 25.14 | 1.22 | 1.23 | 787,704 | — |
+| QNST | QuinStreet, Inc. | buffett | ▫️ | 50% | 16.32 | 11.66 | 2.94 | 25.14 | 1.22 | 1.23 | 787,704 | — |
+| QNST | QuinStreet, Inc. | graham | ▫️ | 44% | 16.32 | 11.66 | 2.94 | 25.14 | 1.22 | 1.23 | 787,704 | — |
+| QNST | QuinStreet, Inc. | netnet | ▫️ | 25% | 16.32 | 11.66 | 2.94 | 25.14 | 1.22 | 1.23 | 787,704 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
