@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-19 17:26 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-19 21:46 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **41** strategy matches passed.
+Screened **75** companies · **31** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| KRP | Kimbell Royalty Partners, LP | piotroski | ✅ | 78% | 16.32 | — | — | — | 8.64 | — | 553,595 | — |
-| KMT | KENNAMETAL INC. | graham | ✅ | 89% | 30.71 | 6.95 | 1.51 | 21.81 | 2.62 | 0.99 | 335,692 | — |
-| KMT | KENNAMETAL INC. | lynch | ✅ | 75% | 30.71 | 6.95 | 1.51 | 21.81 | 2.62 | 0.99 | 335,692 | — |
-| USLM | UNITED STATES LIME & MINERAL | lynch | ✅ | 100% | 106 | 22.76 | 4.84 | 21.29 | 19.27 | 0.08 | 44,791 | — |
-| USLM | UNITED STATES LIME & MINERAL | buffett | ✅ | 83% | 106 | 22.76 | 4.84 | 21.29 | 19.27 | 0.08 | 44,791 | — |
-| AX | Axos Financial, Inc. | lynch | ✅ | 75% | 87.99 | 10.38 | 1.57 | 15.49 | — | 8.46 | 94,340 | — |
-| IBP | Installed Building Products, | piotroski | ✅ | 89% | 182 | 18.77 | 7.01 | 37.39 | 3.03 | 1.91 | 96,808 | — |
-| IBP | Installed Building Products, | lynch | ✅ | 75% | 182 | 18.77 | 7.01 | 37.39 | 3.03 | 1.91 | 96,808 | — |
-| AREC | AMERICAN RESOURCES CORPORATI | greenblatt | ✅ | 100% | 1.14 | 1.81 | 1.05 | 58.44 | 2.19 | 0.80 | 3M | — |
-| KFY | KORN FERRY | piotroski | ✅ | 100% | 72.20 | 13.83 | 1.92 | 14.06 | 1.94 | 1.06 | 64,715 | — |
-| KFY | KORN FERRY | lynch | ✅ | 75% | 72.20 | 13.83 | 1.92 | 14.06 | 1.94 | 1.06 | 64,715 | — |
-| CVSA | Covista Inc. | lynch | ✅ | 75% | 127 | 18.00 | 3.13 | 17.40 | 1.09 | 1.08 | 339,556 | — |
-| DUKU | Duke Energy CORP | piotroski | ✅ | 89% | 48.70 | 7.72 | 0.73 | 9.58 | 0.55 | — | 35,321 | — |
-| DUKU | Duke Energy CORP | lynch | ✅ | 75% | 48.70 | 7.72 | 0.73 | 9.58 | 0.55 | — | 35,321 | — |
-| CIM | CHIMERA INVESTMENT CORPORATI | lynch | ✅ | 75% | 8.13 | 4.73 | 0.27 | 8.96 | — | 5.14 | 774,449 | — |
-| FSS | FEDERAL SIGNAL CORPORATION | lynch | ✅ | 75% | 112 | 28.03 | 5.00 | 17.84 | 3.02 | 0.73 | 630,300 | — |
-| MTCH | Match Group, Inc. | piotroski | ✅ | 89% | 42.95 | 18.05 | — | -242 | 1.42 | — | 3M | — |
-| MTCH | Match Group, Inc. | lynch | ✅ | 75% | 42.95 | 18.05 | — | -242 | 1.42 | — | 3M | — |
-| WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 12.38 | 2.44 | 1.41 | 57.56 | 1.39 | 2.18 | 234,169 | — |
-| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 16.65 | 8.81 | 2.18 | 24.66 | 2.26 | 2.62 | 1M | — |
-| ADUS | Addus HomeCare Corp | lynch | ✅ | 100% | 115 | 22.03 | 1.95 | 8.84 | 1.80 | 0.32 | 34,751 | — |
-| ADUS | Addus HomeCare Corp | piotroski | ✅ | 89% | 115 | 22.03 | 1.95 | 8.84 | 1.80 | 0.32 | 34,751 | — |
-| OPY | OPPENHEIMER HOLDINGS INC. | piotroski | ✅ | 78% | 99.57 | 7.64 | 1.15 | 15.08 | — | 2.77 | 82,203 | — |
-| PKE | PARK AEROSPACE CORP. | piotroski | ✅ | 100% | 26.06 | 46.54 | 4.03 | 8.67 | 18.24 | 0.09 | 73,024 | — |
-| PKE | PARK AEROSPACE CORP. | lynch | ✅ | 75% | 26.06 | 46.54 | 4.03 | 8.67 | 18.24 | 0.09 | 73,024 | — |
-| BBWI | BATH & BODY WORKS, INC. | greenblatt | ✅ | 100% | 19.93 | 6.41 | — | -50.66 | 1.27 | — | 2M | — |
-| DLB | Dolby Laboratories, Inc. | piotroski | ✅ | 78% | 59.95 | 22.88 | 2.23 | 9.72 | 3.17 | 0.23 | 512,711 | — |
-| APG | APi Group Corporation | piotroski | ✅ | 89% | 40.05 | — | 4.89 | 8.86 | 1.50 | 1.62 | 367,284 | — |
-| TRIP | TRIPADVISOR, INC. | piotroski | ✅ | 89% | 9.24 | 29.81 | 1.88 | 6.20 | 1.29 | 3.07 | 1M | — |
-| SPOK | SPOK HOLDINGS, INC. | piotroski | ✅ | 78% | 10.48 | 13.97 | 1.51 | 10.85 | 1.18 | 0.41 | 65,368 | — |
-| IEX | IDEX CORP | piotroski | ✅ | 78% | 233 | 36.38 | 4.36 | 12.00 | 2.86 | 0.72 | 171,123 | — |
-| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 46.40 | 44.62 | — | -29.14 | 1.60 | -6.05 | 403,221 | — |
-| AMCX | AMC Global Media Inc. | piotroski | ✅ | 78% | 10.08 | 6.07 | 0.58 | 9.11 | 1.67 | 2.98 | 227,541 | — |
-| NPKI | NPK International Inc. | piotroski | ✅ | 78% | 10.91 | 24.24 | 2.66 | 11.09 | 1.43 | 0.26 | 158,378 | — |
-| LFST | LifeStance Health Group, Inc | piotroski | ✅ | 89% | 11.71 | 474 | 3.01 | 0.64 | 1.65 | 0.45 | 618,284 | — |
-| HCSG | HEALTHCARE SERVICES GROUP, I | piotroski | ✅ | 100% | 21.27 | 26.27 | 3.05 | 11.58 | 3.38 | — | 210,927 | — |
-| PLXS | PLEXUS CORP. | piotroski | ✅ | 89% | 237 | 37.80 | 4.49 | 11.89 | 1.58 | 1.16 | 115,519 | — |
-| NEOG | Neogen Corporation | piotroski | ✅ | 89% | 11.69 | — | 1.21 | -0.38 | 3.82 | 0.60 | 495,059 | — |
-| SMG | Scotts Miracle-Gro Co | piotroski | ✅ | 78% | 54.63 | 22.12 | — | -40.62 | 1.27 | -8.67 | 241,254 | — |
-| TRLV | TRULIEVE CANNABIS CORP. | piotroski | ✅ | 89% | 10.37 | — | 1.73 | -10.70 | 4.43 | 1.36 | 519,363 | — |
-| ORN | ORION GROUP HOLDINGS, INC. | piotroski | ✅ | 78% | 8.52 | 142 | 2.12 | 1.56 | 1.36 | 1.61 | 450,541 | — |
-| KRP | Kimbell Royalty Partners, LP | graham | ▫️ | 33% | 16.32 | — | — | — | 8.64 | — | 553,595 | — |
-| KRP | Kimbell Royalty Partners, LP | greenblatt | ▫️ | 33% | 16.32 | — | — | — | 8.64 | — | 553,595 | — |
-| KRP | Kimbell Royalty Partners, LP | lynch | ▫️ | 25% | 16.32 | — | — | — | 8.64 | — | 553,595 | — |
-| KRP | Kimbell Royalty Partners, LP | netnet | ▫️ | 25% | 16.32 | — | — | — | 8.64 | — | 553,595 | — |
-| KRP | Kimbell Royalty Partners, LP | buffett | ▫️ | 17% | 16.32 | — | — | — | 8.64 | — | 553,595 | — |
-| KRP | Kimbell Royalty Partners, LP | custom | ▫️ | 0% | 16.32 | — | — | — | 8.64 | — | 553,595 | — |
-| KMT | KENNAMETAL INC. | piotroski | ▫️ | 67% | 30.71 | 6.95 | 1.51 | 21.81 | 2.62 | 0.99 | 335,692 | — |
-| KMT | KENNAMETAL INC. | greenblatt | ▫️ | 67% | 30.71 | 6.95 | 1.51 | 21.81 | 2.62 | 0.99 | 335,692 | — |
-| KMT | KENNAMETAL INC. | buffett | ▫️ | 50% | 30.71 | 6.95 | 1.51 | 21.81 | 2.62 | 0.99 | 335,692 | — |
+| POWL | Powell Industries, Inc. | greenblatt | ✅ | 100% | 166 | 11.15 | 3.15 | 28.21 | 2.09 | 0.73 | 621,336 | — |
+| POWL | Powell Industries, Inc. | piotroski | ✅ | 78% | 166 | 11.15 | 3.15 | 28.21 | 2.09 | 0.73 | 621,336 | — |
+| POWL | Powell Industries, Inc. | lynch | ✅ | 75% | 166 | 11.15 | 3.15 | 28.21 | 2.09 | 0.73 | 621,336 | — |
+| FSLR | First Solar, Inc. | lynch | ✅ | 100% | 172 | 12.09 | 1.94 | 16.02 | 2.67 | 0.40 | 2M | — |
+| FSLR | First Solar, Inc. | piotroski | ✅ | 89% | 172 | 12.09 | 1.94 | 16.02 | 2.67 | 0.40 | 2M | — |
+| USLM | UNITED STATES LIME & MINERAL | lynch | ✅ | 100% | 107 | 22.84 | 4.86 | 21.29 | 19.27 | 0.08 | 104,002 | — |
+| USLM | UNITED STATES LIME & MINERAL | buffett | ✅ | 83% | 107 | 22.84 | 4.86 | 21.29 | 19.27 | 0.08 | 104,002 | — |
+| NBR | NABORS INDUSTRIES LTD | piotroski | ✅ | 78% | 80.06 | 4.60 | 1.95 | 48.52 | 1.56 | 5.67 | 147,146 | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | piotroski | ✅ | 100% | 167 | 23.64 | 8.10 | 34.27 | 1.46 | — | 216,530 | — |
+| RILY | BRC Group Holdings, Inc. | greenblatt | ✅ | 100% | 4.44 | 0.45 | — | -179 | — | -10.65 | 859,149 | — |
+| RILY | BRC Group Holdings, Inc. | lynch | ✅ | 75% | 4.44 | 0.45 | — | -179 | — | -10.65 | 859,149 | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | buffett | ✅ | 83% | 111 | 15.11 | 5.04 | 33.37 | 4.85 | 2.26 | 561,095 | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | lynch | ✅ | 75% | 111 | 15.11 | 5.04 | 33.37 | 4.85 | 2.26 | 561,095 | — |
+| FHI | Federated Hermes, Inc. | greenblatt | ✅ | 100% | 55.25 | 10.77 | 3.47 | 33.69 | 2.75 | 0.81 | 468,460 | — |
+| FHI | Federated Hermes, Inc. | piotroski | ✅ | 89% | 55.25 | 10.77 | 3.47 | 33.69 | 2.75 | 0.81 | 468,460 | — |
+| SMPL | The Simply Good Foods Compan | graham | ✅ | 100% | 11.00 | 10.78 | 0.62 | 5.73 | 3.64 | 0.33 | 2M | — |
+| SMPL | The Simply Good Foods Compan | lynch | ✅ | 100% | 11.00 | 10.78 | 0.62 | 5.73 | 3.64 | 0.33 | 2M | — |
+| CRS | CARPENTER TECHNOLOGY CORPORA | piotroski | ✅ | 89% | 379 | 35.98 | 8.56 | 23.78 | 3.81 | 0.72 | 716,905 | — |
+| FTDR | Frontdoor, Inc. | piotroski | ✅ | 89% | 79.84 | 23.35 | 24.58 | 105 | 1.55 | — | 691,013 | — |
+| FTDR | Frontdoor, Inc. | buffett | ✅ | 83% | 79.84 | 23.35 | 24.58 | 105 | 1.55 | — | 691,013 | — |
+| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 16.46 | 8.71 | 2.15 | 24.66 | 2.26 | 2.62 | 949,323 | — |
+| EFC | Ellington Financial Inc. | lynch | ✅ | 75% | 11.35 | 9.54 | 0.62 | 6.47 | — | 9.53 | 3M | — |
+| CSTM | Constellium SE | piotroski | ✅ | 100% | 25.55 | 13.31 | 3.81 | 28.68 | 1.29 | 4.60 | 1M | — |
+| BURL | BURLINGTON STORES, INC. | piotroski | ✅ | 78% | 263 | 27.63 | 9.32 | 33.76 | 1.23 | — | 1M | — |
+| SIRI | SIRIUS XM HOLDINGS INC. | lynch | ✅ | 75% | 26.84 | 12.04 | 0.83 | 6.96 | 0.30 | 1.36 | 2M | — |
+| BKU | BankUnited, Inc. | piotroski | ✅ | 89% | 41.31 | 11.70 | 1.01 | 8.79 | — | 10.47 | 951,022 | — |
+| WWD | WOODWARD, INC. | piotroski | ✅ | 100% | 329 | 45.80 | 7.89 | 17.23 | 2.08 | 0.80 | 717,278 | — |
+| MAGN | Magnera Corporation | piotroski | ✅ | 78% | 10.96 | — | 0.37 | -14.94 | 2.37 | 2.75 | 377,813 | — |
+| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 45.54 | 43.79 | — | -29.14 | 1.60 | -6.05 | 240,944 | — |
+| CHEF | CHEFS’ WAREHOUSE, INC. | piotroski | ✅ | 100% | 111 | 66.24 | 8.47 | 11.97 | 2.05 | 2.36 | 248,604 | — |
+| PBI | PITNEY BOWES INC | piotroski | ✅ | 78% | 16.84 | 20.05 | — | -18.03 | 0.71 | -4.95 | 1M | — |
+| POWL | Powell Industries, Inc. | graham | ▫️ | 78% | 166 | 11.15 | 3.15 | 28.21 | 2.09 | 0.73 | 621,336 | — |
+| POWL | Powell Industries, Inc. | buffett | ▫️ | 67% | 166 | 11.15 | 3.15 | 28.21 | 2.09 | 0.73 | 621,336 | — |
+| POWL | Powell Industries, Inc. | netnet | ▫️ | 50% | 166 | 11.15 | 3.15 | 28.21 | 2.09 | 0.73 | 621,336 | — |
+| POWL | Powell Industries, Inc. | custom | ▫️ | 0% | 166 | 11.15 | 3.15 | 28.21 | 2.09 | 0.73 | 621,336 | — |
+| FSLR | First Solar, Inc. | graham | ▫️ | 67% | 172 | 12.09 | 1.94 | 16.02 | 2.67 | 0.40 | 2M | — |
+| FSLR | First Solar, Inc. | buffett | ▫️ | 67% | 172 | 12.09 | 1.94 | 16.02 | 2.67 | 0.40 | 2M | — |
+| FSLR | First Solar, Inc. | greenblatt | ▫️ | 67% | 172 | 12.09 | 1.94 | 16.02 | 2.67 | 0.40 | 2M | — |
+| FSLR | First Solar, Inc. | netnet | ▫️ | 50% | 172 | 12.09 | 1.94 | 16.02 | 2.67 | 0.40 | 2M | — |
+| FSLR | First Solar, Inc. | custom | ▫️ | 0% | 172 | 12.09 | 1.94 | 16.02 | 2.67 | 0.40 | 2M | — |
+| USLM | UNITED STATES LIME & MINERAL | piotroski | ▫️ | 67% | 107 | 22.84 | 4.86 | 21.29 | 19.27 | 0.08 | 104,002 | — |
+| USLM | UNITED STATES LIME & MINERAL | greenblatt | ▫️ | 67% | 107 | 22.84 | 4.86 | 21.29 | 19.27 | 0.08 | 104,002 | — |
+| USLM | UNITED STATES LIME & MINERAL | graham | ▫️ | 56% | 107 | 22.84 | 4.86 | 21.29 | 19.27 | 0.08 | 104,002 | — |
+| USLM | UNITED STATES LIME & MINERAL | netnet | ▫️ | 50% | 107 | 22.84 | 4.86 | 21.29 | 19.27 | 0.08 | 104,002 | — |
+| USLM | UNITED STATES LIME & MINERAL | custom | ▫️ | 0% | 107 | 22.84 | 4.86 | 21.29 | 19.27 | 0.08 | 104,002 | — |
+| NBR | NABORS INDUSTRIES LTD | greenblatt | ▫️ | 67% | 80.06 | 4.60 | 1.95 | 48.52 | 1.56 | 5.67 | 147,146 | — |
+| NBR | NABORS INDUSTRIES LTD | graham | ▫️ | 44% | 80.06 | 4.60 | 1.95 | 48.52 | 1.56 | 5.67 | 147,146 | — |
+| NBR | NABORS INDUSTRIES LTD | lynch | ▫️ | 25% | 80.06 | 4.60 | 1.95 | 48.52 | 1.56 | 5.67 | 147,146 | — |
+| NBR | NABORS INDUSTRIES LTD | netnet | ▫️ | 25% | 80.06 | 4.60 | 1.95 | 48.52 | 1.56 | 5.67 | 147,146 | — |
+| NBR | NABORS INDUSTRIES LTD | buffett | ▫️ | 17% | 80.06 | 4.60 | 1.95 | 48.52 | 1.56 | 5.67 | 147,146 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
