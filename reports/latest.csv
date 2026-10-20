@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-REPX,"Riley Exploration Permian, Inc.",piotroski,True,7,9,77.8,48.84,6.43,1.63,25.36,0.60,0.84,71.49,"140,744",—
-BKE,"BUCKLE, INC",greenblatt,True,3,3,100.0,46.62,11.26,5.57,49.39,1.89,1.33,27.93,"153,638",—
-BKE,"BUCKLE, INC",buffett,True,5,6,83.3,46.62,11.26,5.57,49.39,1.89,1.33,27.93,"153,638",—
-MHO,"M/I HOMES, INC.",lynch,True,3,4,75.0,122,8.28,1.05,12.73,—,0.51,196,"282,433",—
-HBANP,Huntington Bancshares Incorporated,lynch,True,3,4,75.0,15.03,10.81,0.93,9.08,—,8.25,22.49,"148,019",—
-GEO,"The GEO Group, Inc.",piotroski,True,7,9,77.8,27.95,15.36,2.59,16.89,2.01,—,21.01,"640,765",—
-GEO,"The GEO Group, Inc.",lynch,True,3,4,75.0,27.95,15.36,2.59,16.89,2.01,—,21.01,"640,765",—
-PCTY,PAYLOCITY HOLDING CORPORATION,piotroski,True,8,9,88.9,169,34.40,7.59,22.08,1.09,3.00,49.69,"259,811",—
-PLUS,ePlus inc.,piotroski,True,7,9,77.8,95.01,18.89,2.34,12.41,2.24,0.68,67.73,"129,196",—
-KEX,KIRBY CORPORATION,piotroski,True,8,9,88.9,136,21.54,2.26,10.49,1.53,—,92.69,"471,379",—
-UMBF,UMB FINANCIAL CORP,lynch,True,3,4,75.0,130,13.96,1.24,9.13,—,8.50,148,"429,153",—
-BSY,"BENTLEY SYSTEMS, INCORPORATED",piotroski,True,9,9,100.0,38.26,45.01,10.71,23.36,0.56,1.99,8.26,1M,—
-BSY,"BENTLEY SYSTEMS, INCORPORATED",buffett,True,5,6,83.3,38.26,45.01,10.71,23.36,0.56,1.99,8.26,1M,—
-FMNB,FARMERS NATIONAL BANC CORP /OH/,piotroski,True,8,9,88.9,15.39,10.61,1.19,11.24,—,9.80,20.52,"137,267",—
-CENTA,Central Garden & Pet Company,graham,True,9,9,100.0,36.86,14.45,1.49,10.29,3.67,—,37.73,"105,710",—
-CENTA,Central Garden & Pet Company,piotroski,True,8,9,88.9,36.86,14.45,1.49,10.29,3.67,—,37.73,"105,710",—
-APG,APi Group Corporation,piotroski,True,8,9,88.9,39.91,—,4.87,8.86,1.50,1.62,—,2M,—
-IEX,IDEX CORP,piotroski,True,7,9,77.8,232,36.24,4.34,12.00,2.86,0.72,87.83,"278,931",—
-SHAK,SHAKE SHACK INC.,piotroski,True,8,9,88.9,70.87,65.02,5.65,8.70,1.76,2.56,17.55,"611,663",—
-MOS,MOSAIC CO,piotroski,True,8,9,88.9,17.92,10.54,0.47,4.47,1.32,—,38.07,13M,—
-PHIN,PHINIA INC.,piotroski,True,8,9,88.9,58.28,17.99,1.47,8.19,1.86,1.41,53.71,"145,142",—
-CRI,"CARTER’S, INC.",graham,True,8,9,88.9,33.47,13.23,1.28,9.92,2.51,1.77,38.57,"507,630",—
-FUL,FULLER H B CO,piotroski,True,7,9,77.8,51.06,18.57,1.41,7.59,1.70,1.59,47.32,"627,432",—
-QUAD,"Quad/Graphics, Inc.",piotroski,True,7,9,77.8,9.49,17.57,—,-45.38,0.86,-18.90,—,"88,608",—
-DBD,"Diebold Nixdorf, Incorporated",piotroski,True,7,9,77.8,68.62,27.02,2.32,8.60,1.30,2.50,41.11,"66,687",—
-AVNW,"Aviat Networks, Inc.",piotroski,True,7,9,77.8,19.74,104,0.96,0.95,1.97,1.24,9.37,"143,618",—
-CTRI,"Centuri Holdings, Inc.",piotroski,True,7,9,77.8,19.93,79.72,2.06,2.57,1.78,1.75,7.37,"871,237",—
-REPX,"Riley Exploration Permian, Inc.",greenblatt,False,2,3,66.7,48.84,6.43,1.63,25.36,0.60,0.84,71.49,"140,744",—
-REPX,"Riley Exploration Permian, Inc.",graham,False,3,9,33.3,48.84,6.43,1.63,25.36,0.60,0.84,71.49,"140,744",—
-REPX,"Riley Exploration Permian, Inc.",buffett,False,2,6,33.3,48.84,6.43,1.63,25.36,0.60,0.84,71.49,"140,744",—
-REPX,"Riley Exploration Permian, Inc.",lynch,False,1,4,25.0,48.84,6.43,1.63,25.36,0.60,0.84,71.49,"140,744",—
-REPX,"Riley Exploration Permian, Inc.",netnet,False,1,4,25.0,48.84,6.43,1.63,25.36,0.60,0.84,71.49,"140,744",—
-REPX,"Riley Exploration Permian, Inc.",custom,False,0,0,0.0,48.84,6.43,1.63,25.36,0.60,0.84,71.49,"140,744",—
-IDR,"IDAHO STRATEGIC RESOURCES, INC",buffett,False,4,6,66.7,21.04,18.46,2.86,15.45,13.96,0.05,13.74,"333,974",—
-IDR,"IDAHO STRATEGIC RESOURCES, INC",piotroski,False,6,9,66.7,21.04,18.46,2.86,15.45,13.96,0.05,13.74,"333,974",—
-IDR,"IDAHO STRATEGIC RESOURCES, INC",lynch,False,2,4,50.0,21.04,18.46,2.86,15.45,13.96,0.05,13.74,"333,974",—
-IDR,"IDAHO STRATEGIC RESOURCES, INC",netnet,False,2,4,50.0,21.04,18.46,2.86,15.45,13.96,0.05,13.74,"333,974",—
-IDR,"IDAHO STRATEGIC RESOURCES, INC",graham,False,3,9,33.3,21.04,18.46,2.86,15.45,13.96,0.05,13.74,"333,974",—
-IDR,"IDAHO STRATEGIC RESOURCES, INC",greenblatt,False,1,3,33.3,21.04,18.46,2.86,15.45,13.96,0.05,13.74,"333,974",—
-IDR,"IDAHO STRATEGIC RESOURCES, INC",custom,False,0,0,0.0,21.04,18.46,2.86,15.45,13.96,0.05,13.74,"333,974",—
-BKE,"BUCKLE, INC",graham,False,6,9,66.7,46.62,11.26,5.57,49.39,1.89,1.33,27.93,"153,638",—
-BKE,"BUCKLE, INC",piotroski,False,6,9,66.7,46.62,11.26,5.57,49.39,1.89,1.33,27.93,"153,638",—
-BKE,"BUCKLE, INC",lynch,False,1,4,25.0,46.62,11.26,5.57,49.39,1.89,1.33,27.93,"153,638",—
-BKE,"BUCKLE, INC",netnet,False,1,4,25.0,46.62,11.26,5.57,49.39,1.89,1.33,27.93,"153,638",—
-BKE,"BUCKLE, INC",custom,False,0,0,0.0,46.62,11.26,5.57,49.39,1.89,1.33,27.93,"153,638",—
-MHO,"M/I HOMES, INC.",graham,False,7,9,77.8,122,8.28,1.05,12.73,—,0.51,196,"282,433",—
-MHO,"M/I HOMES, INC.",greenblatt,False,2,3,66.7,122,8.28,1.05,12.73,—,0.51,196,"282,433",—
-MHO,"M/I HOMES, INC.",piotroski,False,4,9,44.4,122,8.28,1.05,12.73,—,0.51,196,"282,433",—
-MHO,"M/I HOMES, INC.",buffett,False,2,6,33.3,122,8.28,1.05,12.73,—,0.51,196,"282,433",—
-MHO,"M/I HOMES, INC.",netnet,False,1,4,25.0,122,8.28,1.05,12.73,—,0.51,196,"282,433",—
+BYD,BOYD GAMING CORP,greenblatt,True,3,3,100.0,71.62,3.17,2.24,70.66,0.54,—,127,1M,—
+BYD,BOYD GAMING CORP,piotroski,True,7,9,77.8,71.62,3.17,2.24,70.66,0.54,—,127,1M,—
+BBW,BUILD-A-BEAR WORKSHOP INC,greenblatt,True,3,3,100.0,24.56,6.16,2.07,33.67,1.55,—,32.62,"204,571",—
+YELP,YELP INC,greenblatt,True,3,3,100.0,20.28,9.05,1.86,20.48,2.99,0.35,23.46,1M,—
+YELP,YELP INC,piotroski,True,8,9,88.9,20.28,9.05,1.86,20.48,2.99,0.35,23.46,1M,—
+POWL,"Powell Industries, Inc.",greenblatt,True,3,3,100.0,165,11.10,3.13,28.21,2.09,0.73,133,"836,997",—
+POWL,"Powell Industries, Inc.",piotroski,True,7,9,77.8,165,11.10,3.13,28.21,2.09,0.73,133,"836,997",—
+POWL,"Powell Industries, Inc.",lynch,True,3,4,75.0,165,11.10,3.13,28.21,2.09,0.73,133,"836,997",—
+TRNO,Terreno Realty Corporation,lynch,True,4,4,100.0,65.28,16.70,1.62,9.72,—,0.30,59.59,"799,341",—
+IBP,"Installed Building Products, Inc.",piotroski,True,8,9,88.9,189,19.50,7.29,37.39,3.03,1.91,75.33,"487,899",—
+IBP,"Installed Building Products, Inc.",lynch,True,3,4,75.0,189,19.50,7.29,37.39,3.03,1.91,75.33,"487,899",—
+OFG,OFG Bancorp,lynch,True,3,4,75.0,52.95,11.56,1.71,14.76,—,7.97,56.57,"279,047",—
+MTCH,"Match Group, Inc.",piotroski,True,8,9,88.9,46.53,19.55,—,-242,1.42,—,—,4M,—
+MTCH,"Match Group, Inc.",lynch,True,3,4,75.0,46.53,19.55,—,-242,1.42,—,—,4M,—
+ACEL,"Accel Entertainment, Inc.",piotroski,True,7,9,77.8,10.83,18.05,3.47,19.09,2.61,—,6.49,"554,558",—
+HALO,"HALOZYME THERAPEUTICS, INC.",buffett,True,5,6,83.3,124,48.58,316,649,4.66,50.73,4.76,2M,—
+SR,Spire Inc.,piotroski,True,7,9,77.8,82.89,18.97,0.00,8.02,0.32,—,"75,348","557,170",—
+SR,Spire Inc.,lynch,True,3,4,75.0,82.89,18.97,0.00,8.02,0.32,—,"75,348","557,170",—
+KALU,KAISER ALUMINUM CORPORATION,piotroski,True,7,9,77.8,153,22.53,3.07,13.62,2.95,2.10,87.01,"263,474",—
+KALU,KAISER ALUMINUM CORPORATION,lynch,True,3,4,75.0,153,22.53,3.07,13.62,2.95,2.10,87.01,"263,474",—
+BSY,"BENTLEY SYSTEMS, INCORPORATED",piotroski,True,9,9,100.0,38.13,44.86,10.68,23.36,0.56,1.99,8.26,3M,—
+BSY,"BENTLEY SYSTEMS, INCORPORATED",buffett,True,5,6,83.3,38.13,44.86,10.68,23.36,0.56,1.99,8.26,3M,—
+ABM,ABM INDUSTRIES INCORPORATED,piotroski,True,8,9,88.9,51.56,19.91,1.81,9.09,1.48,1.95,40.74,"253,558",—
+MD,"Pediatrix Medical Group, Inc.",piotroski,True,7,9,77.8,28.08,14.47,2.77,19.10,1.66,1.59,21.05,"707,858",—
+IDT,IDT CORP,piotroski,True,7,9,77.8,84.46,24.41,5.60,22.96,1.86,0.94,34.26,"226,745",—
+ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.20,19.09,0.75,3.99,9.18,0.34,5.26,"80,185",—
+QUAD,"Quad/Graphics, Inc.",piotroski,True,7,9,77.8,9.56,17.70,—,-45.38,0.86,-18.90,—,"155,220",—
+ADT,ADT Inc.,piotroski,True,8,9,88.9,6.79,—,—,15.77,0.93,3.19,—,7M,—
+DAR,DARLING INGREDIENTS INC.,piotroski,True,7,9,77.8,59.22,152,2.00,1.33,1.50,1.16,16.11,2M,—
+SHC,SOTERA HEALTH COMPANY,piotroski,True,7,9,77.8,17.93,66.41,8.47,12.86,2.46,4.38,3.59,2M,—
+BYD,BOYD GAMING CORP,buffett,False,4,6,66.7,71.62,3.17,2.24,70.66,0.54,—,127,1M,—
+BYD,BOYD GAMING CORP,graham,False,5,9,55.6,71.62,3.17,2.24,70.66,0.54,—,127,1M,—
+BYD,BOYD GAMING CORP,lynch,False,1,4,25.0,71.62,3.17,2.24,70.66,0.54,—,127,1M,—
+BYD,BOYD GAMING CORP,netnet,False,1,4,25.0,71.62,3.17,2.24,70.66,0.54,—,127,1M,—
+BYD,BOYD GAMING CORP,custom,False,0,0,0.0,71.62,3.17,2.24,70.66,0.54,—,127,1M,—
+BBW,BUILD-A-BEAR WORKSHOP INC,graham,False,5,9,55.6,24.56,6.16,2.07,33.67,1.55,—,32.62,"204,571",—
+BBW,BUILD-A-BEAR WORKSHOP INC,piotroski,False,5,9,55.6,24.56,6.16,2.07,33.67,1.55,—,32.62,"204,571",—
+BBW,BUILD-A-BEAR WORKSHOP INC,buffett,False,3,6,50.0,24.56,6.16,2.07,33.67,1.55,—,32.62,"204,571",—
+BBW,BUILD-A-BEAR WORKSHOP INC,lynch,False,1,4,25.0,24.56,6.16,2.07,33.67,1.55,—,32.62,"204,571",—
+BBW,BUILD-A-BEAR WORKSHOP INC,netnet,False,1,4,25.0,24.56,6.16,2.07,33.67,1.55,—,32.62,"204,571",—
+BBW,BUILD-A-BEAR WORKSHOP INC,custom,False,0,0,0.0,24.56,6.16,2.07,33.67,1.55,—,32.62,"204,571",—
+YELP,YELP INC,graham,False,7,9,77.8,20.28,9.05,1.86,20.48,2.99,0.35,23.46,1M,—
+YELP,YELP INC,buffett,False,3,6,50.0,20.28,9.05,1.86,20.48,2.99,0.35,23.46,1M,—
+YELP,YELP INC,lynch,False,2,4,50.0,20.28,9.05,1.86,20.48,2.99,0.35,23.46,1M,—
+YELP,YELP INC,netnet,False,2,4,50.0,20.28,9.05,1.86,20.48,2.99,0.35,23.46,1M,—
+YELP,YELP INC,custom,False,0,0,0.0,20.28,9.05,1.86,20.48,2.99,0.35,23.46,1M,—
+POWL,"Powell Industries, Inc.",graham,False,7,9,77.8,165,11.10,3.13,28.21,2.09,0.73,133,"836,997",—
+POWL,"Powell Industries, Inc.",buffett,False,4,6,66.7,165,11.10,3.13,28.21,2.09,0.73,133,"836,997",—
+POWL,"Powell Industries, Inc.",netnet,False,2,4,50.0,165,11.10,3.13,28.21,2.09,0.73,133,"836,997",—
+POWL,"Powell Industries, Inc.",custom,False,0,0,0.0,165,11.10,3.13,28.21,2.09,0.73,133,"836,997",—

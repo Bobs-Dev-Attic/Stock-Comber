@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-20 18:58 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-20 22:10 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **27** strategy matches passed.
+Screened **75** companies · **30** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| REPX | Riley Exploration Permian, I | piotroski | ✅ | 78% | 48.84 | 6.43 | 1.63 | 25.36 | 0.60 | 0.84 | 140,744 | — |
-| BKE | BUCKLE, INC | greenblatt | ✅ | 100% | 46.62 | 11.26 | 5.57 | 49.39 | 1.89 | 1.33 | 153,638 | — |
-| BKE | BUCKLE, INC | buffett | ✅ | 83% | 46.62 | 11.26 | 5.57 | 49.39 | 1.89 | 1.33 | 153,638 | — |
-| MHO | M/I HOMES, INC. | lynch | ✅ | 75% | 122 | 8.28 | 1.05 | 12.73 | — | 0.51 | 282,433 | — |
-| HBANP | Huntington Bancshares Incorp | lynch | ✅ | 75% | 15.03 | 10.81 | 0.93 | 9.08 | — | 8.25 | 148,019 | — |
-| GEO | The GEO Group, Inc. | piotroski | ✅ | 78% | 27.95 | 15.36 | 2.59 | 16.89 | 2.01 | — | 640,765 | — |
-| GEO | The GEO Group, Inc. | lynch | ✅ | 75% | 27.95 | 15.36 | 2.59 | 16.89 | 2.01 | — | 640,765 | — |
-| PCTY | PAYLOCITY HOLDING CORPORATIO | piotroski | ✅ | 89% | 169 | 34.40 | 7.59 | 22.08 | 1.09 | 3.00 | 259,811 | — |
-| PLUS | ePlus inc. | piotroski | ✅ | 78% | 95.01 | 18.89 | 2.34 | 12.41 | 2.24 | 0.68 | 129,196 | — |
-| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 136 | 21.54 | 2.26 | 10.49 | 1.53 | — | 471,379 | — |
-| UMBF | UMB FINANCIAL CORP | lynch | ✅ | 75% | 130 | 13.96 | 1.24 | 9.13 | — | 8.50 | 429,153 | — |
-| BSY | BENTLEY SYSTEMS, INCORPORATE | piotroski | ✅ | 100% | 38.26 | 45.01 | 10.71 | 23.36 | 0.56 | 1.99 | 1M | — |
-| BSY | BENTLEY SYSTEMS, INCORPORATE | buffett | ✅ | 83% | 38.26 | 45.01 | 10.71 | 23.36 | 0.56 | 1.99 | 1M | — |
-| FMNB | FARMERS NATIONAL BANC CORP / | piotroski | ✅ | 89% | 15.39 | 10.61 | 1.19 | 11.24 | — | 9.80 | 137,267 | — |
-| CENTA | Central Garden & Pet Company | graham | ✅ | 100% | 36.86 | 14.45 | 1.49 | 10.29 | 3.67 | — | 105,710 | — |
-| CENTA | Central Garden & Pet Company | piotroski | ✅ | 89% | 36.86 | 14.45 | 1.49 | 10.29 | 3.67 | — | 105,710 | — |
-| APG | APi Group Corporation | piotroski | ✅ | 89% | 39.91 | — | 4.87 | 8.86 | 1.50 | 1.62 | 2M | — |
-| IEX | IDEX CORP | piotroski | ✅ | 78% | 232 | 36.24 | 4.34 | 12.00 | 2.86 | 0.72 | 278,931 | — |
-| SHAK | SHAKE SHACK INC. | piotroski | ✅ | 89% | 70.87 | 65.02 | 5.65 | 8.70 | 1.76 | 2.56 | 611,663 | — |
-| MOS | MOSAIC CO | piotroski | ✅ | 89% | 17.92 | 10.54 | 0.47 | 4.47 | 1.32 | — | 13M | — |
-| PHIN | PHINIA INC. | piotroski | ✅ | 89% | 58.28 | 17.99 | 1.47 | 8.19 | 1.86 | 1.41 | 145,142 | — |
-| CRI | CARTER’S, INC. | graham | ✅ | 89% | 33.47 | 13.23 | 1.28 | 9.92 | 2.51 | 1.77 | 507,630 | — |
-| FUL | FULLER H B CO | piotroski | ✅ | 78% | 51.06 | 18.57 | 1.41 | 7.59 | 1.70 | 1.59 | 627,432 | — |
-| QUAD | Quad/Graphics, Inc. | piotroski | ✅ | 78% | 9.49 | 17.57 | — | -45.38 | 0.86 | -18.90 | 88,608 | — |
-| DBD | Diebold Nixdorf, Incorporate | piotroski | ✅ | 78% | 68.62 | 27.02 | 2.32 | 8.60 | 1.30 | 2.50 | 66,687 | — |
-| AVNW | Aviat Networks, Inc. | piotroski | ✅ | 78% | 19.74 | 104 | 0.96 | 0.95 | 1.97 | 1.24 | 143,618 | — |
-| CTRI | Centuri Holdings, Inc. | piotroski | ✅ | 78% | 19.93 | 79.72 | 2.06 | 2.57 | 1.78 | 1.75 | 871,237 | — |
-| REPX | Riley Exploration Permian, I | greenblatt | ▫️ | 67% | 48.84 | 6.43 | 1.63 | 25.36 | 0.60 | 0.84 | 140,744 | — |
-| REPX | Riley Exploration Permian, I | graham | ▫️ | 33% | 48.84 | 6.43 | 1.63 | 25.36 | 0.60 | 0.84 | 140,744 | — |
-| REPX | Riley Exploration Permian, I | buffett | ▫️ | 33% | 48.84 | 6.43 | 1.63 | 25.36 | 0.60 | 0.84 | 140,744 | — |
-| REPX | Riley Exploration Permian, I | lynch | ▫️ | 25% | 48.84 | 6.43 | 1.63 | 25.36 | 0.60 | 0.84 | 140,744 | — |
-| REPX | Riley Exploration Permian, I | netnet | ▫️ | 25% | 48.84 | 6.43 | 1.63 | 25.36 | 0.60 | 0.84 | 140,744 | — |
-| REPX | Riley Exploration Permian, I | custom | ▫️ | 0% | 48.84 | 6.43 | 1.63 | 25.36 | 0.60 | 0.84 | 140,744 | — |
-| IDR | IDAHO STRATEGIC RESOURCES, I | buffett | ▫️ | 67% | 21.04 | 18.46 | 2.86 | 15.45 | 13.96 | 0.05 | 333,974 | — |
-| IDR | IDAHO STRATEGIC RESOURCES, I | piotroski | ▫️ | 67% | 21.04 | 18.46 | 2.86 | 15.45 | 13.96 | 0.05 | 333,974 | — |
-| IDR | IDAHO STRATEGIC RESOURCES, I | lynch | ▫️ | 50% | 21.04 | 18.46 | 2.86 | 15.45 | 13.96 | 0.05 | 333,974 | — |
-| IDR | IDAHO STRATEGIC RESOURCES, I | netnet | ▫️ | 50% | 21.04 | 18.46 | 2.86 | 15.45 | 13.96 | 0.05 | 333,974 | — |
-| IDR | IDAHO STRATEGIC RESOURCES, I | graham | ▫️ | 33% | 21.04 | 18.46 | 2.86 | 15.45 | 13.96 | 0.05 | 333,974 | — |
-| IDR | IDAHO STRATEGIC RESOURCES, I | greenblatt | ▫️ | 33% | 21.04 | 18.46 | 2.86 | 15.45 | 13.96 | 0.05 | 333,974 | — |
-| IDR | IDAHO STRATEGIC RESOURCES, I | custom | ▫️ | 0% | 21.04 | 18.46 | 2.86 | 15.45 | 13.96 | 0.05 | 333,974 | — |
-| BKE | BUCKLE, INC | graham | ▫️ | 67% | 46.62 | 11.26 | 5.57 | 49.39 | 1.89 | 1.33 | 153,638 | — |
-| BKE | BUCKLE, INC | piotroski | ▫️ | 67% | 46.62 | 11.26 | 5.57 | 49.39 | 1.89 | 1.33 | 153,638 | — |
-| BKE | BUCKLE, INC | lynch | ▫️ | 25% | 46.62 | 11.26 | 5.57 | 49.39 | 1.89 | 1.33 | 153,638 | — |
-| BKE | BUCKLE, INC | netnet | ▫️ | 25% | 46.62 | 11.26 | 5.57 | 49.39 | 1.89 | 1.33 | 153,638 | — |
-| BKE | BUCKLE, INC | custom | ▫️ | 0% | 46.62 | 11.26 | 5.57 | 49.39 | 1.89 | 1.33 | 153,638 | — |
-| MHO | M/I HOMES, INC. | graham | ▫️ | 78% | 122 | 8.28 | 1.05 | 12.73 | — | 0.51 | 282,433 | — |
-| MHO | M/I HOMES, INC. | greenblatt | ▫️ | 67% | 122 | 8.28 | 1.05 | 12.73 | — | 0.51 | 282,433 | — |
-| MHO | M/I HOMES, INC. | piotroski | ▫️ | 44% | 122 | 8.28 | 1.05 | 12.73 | — | 0.51 | 282,433 | — |
-| MHO | M/I HOMES, INC. | buffett | ▫️ | 33% | 122 | 8.28 | 1.05 | 12.73 | — | 0.51 | 282,433 | — |
-| MHO | M/I HOMES, INC. | netnet | ▫️ | 25% | 122 | 8.28 | 1.05 | 12.73 | — | 0.51 | 282,433 | — |
+| BYD | BOYD GAMING CORP | greenblatt | ✅ | 100% | 71.62 | 3.17 | 2.24 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | piotroski | ✅ | 78% | 71.62 | 3.17 | 2.24 | 70.66 | 0.54 | — | 1M | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | greenblatt | ✅ | 100% | 24.56 | 6.16 | 2.07 | 33.67 | 1.55 | — | 204,571 | — |
+| YELP | YELP INC | greenblatt | ✅ | 100% | 20.28 | 9.05 | 1.86 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC | piotroski | ✅ | 89% | 20.28 | 9.05 | 1.86 | 20.48 | 2.99 | 0.35 | 1M | — |
+| POWL | Powell Industries, Inc. | greenblatt | ✅ | 100% | 165 | 11.10 | 3.13 | 28.21 | 2.09 | 0.73 | 836,997 | — |
+| POWL | Powell Industries, Inc. | piotroski | ✅ | 78% | 165 | 11.10 | 3.13 | 28.21 | 2.09 | 0.73 | 836,997 | — |
+| POWL | Powell Industries, Inc. | lynch | ✅ | 75% | 165 | 11.10 | 3.13 | 28.21 | 2.09 | 0.73 | 836,997 | — |
+| TRNO | Terreno Realty Corporation | lynch | ✅ | 100% | 65.28 | 16.70 | 1.62 | 9.72 | — | 0.30 | 799,341 | — |
+| IBP | Installed Building Products, | piotroski | ✅ | 89% | 189 | 19.50 | 7.29 | 37.39 | 3.03 | 1.91 | 487,899 | — |
+| IBP | Installed Building Products, | lynch | ✅ | 75% | 189 | 19.50 | 7.29 | 37.39 | 3.03 | 1.91 | 487,899 | — |
+| OFG | OFG Bancorp | lynch | ✅ | 75% | 52.95 | 11.56 | 1.71 | 14.76 | — | 7.97 | 279,047 | — |
+| MTCH | Match Group, Inc. | piotroski | ✅ | 89% | 46.53 | 19.55 | — | -242 | 1.42 | — | 4M | — |
+| MTCH | Match Group, Inc. | lynch | ✅ | 75% | 46.53 | 19.55 | — | -242 | 1.42 | — | 4M | — |
+| ACEL | Accel Entertainment, Inc. | piotroski | ✅ | 78% | 10.83 | 18.05 | 3.47 | 19.09 | 2.61 | — | 554,558 | — |
+| HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 124 | 48.58 | 316 | 649 | 4.66 | 50.73 | 2M | — |
+| SR | Spire Inc. | piotroski | ✅ | 78% | 82.89 | 18.97 | 0.00 | 8.02 | 0.32 | — | 557,170 | — |
+| SR | Spire Inc. | lynch | ✅ | 75% | 82.89 | 18.97 | 0.00 | 8.02 | 0.32 | — | 557,170 | — |
+| KALU | KAISER ALUMINUM CORPORATION | piotroski | ✅ | 78% | 153 | 22.53 | 3.07 | 13.62 | 2.95 | 2.10 | 263,474 | — |
+| KALU | KAISER ALUMINUM CORPORATION | lynch | ✅ | 75% | 153 | 22.53 | 3.07 | 13.62 | 2.95 | 2.10 | 263,474 | — |
+| BSY | BENTLEY SYSTEMS, INCORPORATE | piotroski | ✅ | 100% | 38.13 | 44.86 | 10.68 | 23.36 | 0.56 | 1.99 | 3M | — |
+| BSY | BENTLEY SYSTEMS, INCORPORATE | buffett | ✅ | 83% | 38.13 | 44.86 | 10.68 | 23.36 | 0.56 | 1.99 | 3M | — |
+| ABM | ABM INDUSTRIES INCORPORATED | piotroski | ✅ | 89% | 51.56 | 19.91 | 1.81 | 9.09 | 1.48 | 1.95 | 253,558 | — |
+| MD | Pediatrix Medical Group, Inc | piotroski | ✅ | 78% | 28.08 | 14.47 | 2.77 | 19.10 | 1.66 | 1.59 | 707,858 | — |
+| IDT | IDT CORP | piotroski | ✅ | 78% | 84.46 | 24.41 | 5.60 | 22.96 | 1.86 | 0.94 | 226,745 | — |
+| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.20 | 19.09 | 0.75 | 3.99 | 9.18 | 0.34 | 80,185 | — |
+| QUAD | Quad/Graphics, Inc. | piotroski | ✅ | 78% | 9.56 | 17.70 | — | -45.38 | 0.86 | -18.90 | 155,220 | — |
+| ADT | ADT Inc. | piotroski | ✅ | 89% | 6.79 | — | — | 15.77 | 0.93 | 3.19 | 7M | — |
+| DAR | DARLING INGREDIENTS INC. | piotroski | ✅ | 78% | 59.22 | 152 | 2.00 | 1.33 | 1.50 | 1.16 | 2M | — |
+| SHC | SOTERA HEALTH COMPANY | piotroski | ✅ | 78% | 17.93 | 66.41 | 8.47 | 12.86 | 2.46 | 4.38 | 2M | — |
+| BYD | BOYD GAMING CORP | buffett | ▫️ | 67% | 71.62 | 3.17 | 2.24 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | graham | ▫️ | 56% | 71.62 | 3.17 | 2.24 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | lynch | ▫️ | 25% | 71.62 | 3.17 | 2.24 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | netnet | ▫️ | 25% | 71.62 | 3.17 | 2.24 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | custom | ▫️ | 0% | 71.62 | 3.17 | 2.24 | 70.66 | 0.54 | — | 1M | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | graham | ▫️ | 56% | 24.56 | 6.16 | 2.07 | 33.67 | 1.55 | — | 204,571 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | piotroski | ▫️ | 56% | 24.56 | 6.16 | 2.07 | 33.67 | 1.55 | — | 204,571 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | buffett | ▫️ | 50% | 24.56 | 6.16 | 2.07 | 33.67 | 1.55 | — | 204,571 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | lynch | ▫️ | 25% | 24.56 | 6.16 | 2.07 | 33.67 | 1.55 | — | 204,571 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | netnet | ▫️ | 25% | 24.56 | 6.16 | 2.07 | 33.67 | 1.55 | — | 204,571 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | custom | ▫️ | 0% | 24.56 | 6.16 | 2.07 | 33.67 | 1.55 | — | 204,571 | — |
+| YELP | YELP INC | graham | ▫️ | 78% | 20.28 | 9.05 | 1.86 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC | buffett | ▫️ | 50% | 20.28 | 9.05 | 1.86 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC | lynch | ▫️ | 50% | 20.28 | 9.05 | 1.86 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC | netnet | ▫️ | 50% | 20.28 | 9.05 | 1.86 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC | custom | ▫️ | 0% | 20.28 | 9.05 | 1.86 | 20.48 | 2.99 | 0.35 | 1M | — |
+| POWL | Powell Industries, Inc. | graham | ▫️ | 78% | 165 | 11.10 | 3.13 | 28.21 | 2.09 | 0.73 | 836,997 | — |
+| POWL | Powell Industries, Inc. | buffett | ▫️ | 67% | 165 | 11.10 | 3.13 | 28.21 | 2.09 | 0.73 | 836,997 | — |
+| POWL | Powell Industries, Inc. | netnet | ▫️ | 50% | 165 | 11.10 | 3.13 | 28.21 | 2.09 | 0.73 | 836,997 | — |
+| POWL | Powell Industries, Inc. | custom | ▫️ | 0% | 165 | 11.10 | 3.13 | 28.21 | 2.09 | 0.73 | 836,997 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
