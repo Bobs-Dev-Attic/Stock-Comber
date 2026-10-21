@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-20 22:10 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-21 04:55 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **30** strategy matches passed.
+Screened **75** companies · **31** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| BYD | BOYD GAMING CORP | greenblatt | ✅ | 100% | 71.62 | 3.17 | 2.24 | 70.66 | 0.54 | — | 1M | — |
-| BYD | BOYD GAMING CORP | piotroski | ✅ | 78% | 71.62 | 3.17 | 2.24 | 70.66 | 0.54 | — | 1M | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | greenblatt | ✅ | 100% | 24.56 | 6.16 | 2.07 | 33.67 | 1.55 | — | 204,571 | — |
 | YELP | YELP INC | greenblatt | ✅ | 100% | 20.28 | 9.05 | 1.86 | 20.48 | 2.99 | 0.35 | 1M | — |
 | YELP | YELP INC | piotroski | ✅ | 89% | 20.28 | 9.05 | 1.86 | 20.48 | 2.99 | 0.35 | 1M | — |
-| POWL | Powell Industries, Inc. | greenblatt | ✅ | 100% | 165 | 11.10 | 3.13 | 28.21 | 2.09 | 0.73 | 836,997 | — |
-| POWL | Powell Industries, Inc. | piotroski | ✅ | 78% | 165 | 11.10 | 3.13 | 28.21 | 2.09 | 0.73 | 836,997 | — |
-| POWL | Powell Industries, Inc. | lynch | ✅ | 75% | 165 | 11.10 | 3.13 | 28.21 | 2.09 | 0.73 | 836,997 | — |
-| TRNO | Terreno Realty Corporation | lynch | ✅ | 100% | 65.28 | 16.70 | 1.62 | 9.72 | — | 0.30 | 799,341 | — |
-| IBP | Installed Building Products, | piotroski | ✅ | 89% | 189 | 19.50 | 7.29 | 37.39 | 3.03 | 1.91 | 487,899 | — |
-| IBP | Installed Building Products, | lynch | ✅ | 75% | 189 | 19.50 | 7.29 | 37.39 | 3.03 | 1.91 | 487,899 | — |
-| OFG | OFG Bancorp | lynch | ✅ | 75% | 52.95 | 11.56 | 1.71 | 14.76 | — | 7.97 | 279,047 | — |
-| MTCH | Match Group, Inc. | piotroski | ✅ | 89% | 46.53 | 19.55 | — | -242 | 1.42 | — | 4M | — |
-| MTCH | Match Group, Inc. | lynch | ✅ | 75% | 46.53 | 19.55 | — | -242 | 1.42 | — | 4M | — |
-| ACEL | Accel Entertainment, Inc. | piotroski | ✅ | 78% | 10.83 | 18.05 | 3.47 | 19.09 | 2.61 | — | 554,558 | — |
+| GRBK | Green Brick Partners, Inc. | buffett | ✅ | 100% | 61.99 | 8.77 | 1.46 | 16.85 | — | 0.32 | 246,883 | — |
+| GRBK | Green Brick Partners, Inc. | lynch | ✅ | 100% | 61.99 | 8.77 | 1.46 | 16.85 | — | 0.32 | 246,883 | — |
+| SON | Sonoco Products Company | piotroski | ✅ | 89% | 50.83 | 5.05 | 1.40 | 27.75 | 1.05 | 2.08 | 2M | — |
+| SON | Sonoco Products Company | lynch | ✅ | 75% | 50.83 | 5.05 | 1.40 | 27.75 | 1.05 | 2.08 | 2M | — |
+| PRI | Primerica, Inc. | greenblatt | ✅ | 100% | 285 | 12.43 | 3.80 | 30.71 | — | 5.14 | 173,808 | — |
+| PRI | Primerica, Inc. | piotroski | ✅ | 89% | 285 | 12.43 | 3.80 | 30.71 | — | 5.14 | 173,808 | — |
+| NSSC | NAPCO SECURITY TECHNOLOGIES, | buffett | ✅ | 100% | 36.45 | 30.38 | 6.85 | 22.53 | 4.90 | 0.25 | 206,647 | — |
+| NSSC | NAPCO SECURITY TECHNOLOGIES, | lynch | ✅ | 75% | 36.45 | 30.38 | 6.85 | 22.53 | 4.90 | 0.25 | 206,647 | — |
+| SEATW | Vivid Seats Inc. | greenblatt | ✅ | 100% | 0.02 | 0.02 | — | -947 | 0.59 | -8.48 | 2M | — |
+| PRDO | PERDOCEO EDUCATION CORP | piotroski | ✅ | 89% | 33.37 | 13.79 | 2.27 | 16.45 | 5.06 | — | 395,094 | — |
+| FTDR | Frontdoor, Inc. | piotroski | ✅ | 89% | 80.48 | 23.53 | 24.78 | 105 | 1.55 | — | 691,055 | — |
+| FTDR | Frontdoor, Inc. | buffett | ✅ | 83% | 80.48 | 23.53 | 24.78 | 105 | 1.55 | — | 691,055 | — |
+| FSS | FEDERAL SIGNAL CORPORATION | lynch | ✅ | 75% | 115 | 28.59 | 5.10 | 17.84 | 3.02 | 0.73 | 503,342 | — |
 | HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 124 | 48.58 | 316 | 649 | 4.66 | 50.73 | 2M | — |
-| SR | Spire Inc. | piotroski | ✅ | 78% | 82.89 | 18.97 | 0.00 | 8.02 | 0.32 | — | 557,170 | — |
-| SR | Spire Inc. | lynch | ✅ | 75% | 82.89 | 18.97 | 0.00 | 8.02 | 0.32 | — | 557,170 | — |
-| KALU | KAISER ALUMINUM CORPORATION | piotroski | ✅ | 78% | 153 | 22.53 | 3.07 | 13.62 | 2.95 | 2.10 | 263,474 | — |
-| KALU | KAISER ALUMINUM CORPORATION | lynch | ✅ | 75% | 153 | 22.53 | 3.07 | 13.62 | 2.95 | 2.10 | 263,474 | — |
-| BSY | BENTLEY SYSTEMS, INCORPORATE | piotroski | ✅ | 100% | 38.13 | 44.86 | 10.68 | 23.36 | 0.56 | 1.99 | 3M | — |
-| BSY | BENTLEY SYSTEMS, INCORPORATE | buffett | ✅ | 83% | 38.13 | 44.86 | 10.68 | 23.36 | 0.56 | 1.99 | 3M | — |
-| ABM | ABM INDUSTRIES INCORPORATED | piotroski | ✅ | 89% | 51.56 | 19.91 | 1.81 | 9.09 | 1.48 | 1.95 | 253,558 | — |
-| MD | Pediatrix Medical Group, Inc | piotroski | ✅ | 78% | 28.08 | 14.47 | 2.77 | 19.10 | 1.66 | 1.59 | 707,858 | — |
+| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 17.05 | 9.02 | 2.23 | 24.66 | 2.26 | 2.62 | 1M | — |
+| EFC | Ellington Financial Inc. | lynch | ✅ | 75% | 11.48 | 9.65 | 0.63 | 6.47 | — | 9.53 | 2M | — |
+| OSW | OneSpaWorld Holdings Limited | piotroski | ✅ | 78% | 23.97 | 34.74 | 4.58 | 13.20 | 1.91 | 0.30 | 617,149 | — |
+| PCTY | PAYLOCITY HOLDING CORPORATIO | piotroski | ✅ | 89% | 170 | 34.57 | 7.63 | 22.08 | 1.09 | 3.00 | 696,297 | — |
+| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 136 | 21.52 | 2.26 | 10.49 | 1.53 | — | 367,146 | — |
+| INVH | Invitation Homes Inc. | piotroski | ✅ | 78% | 27.00 | 28.12 | 1.74 | 6.17 | — | 0.96 | 5M | — |
+| ACM | AECOM | piotroski | ✅ | 78% | 58.99 | 14.01 | 3.15 | 22.54 | 1.14 | 3.81 | 1M | — |
 | IDT | IDT CORP | piotroski | ✅ | 78% | 84.46 | 24.41 | 5.60 | 22.96 | 1.86 | 0.94 | 226,745 | — |
-| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.20 | 19.09 | 0.75 | 3.99 | 9.18 | 0.34 | 80,185 | — |
-| QUAD | Quad/Graphics, Inc. | piotroski | ✅ | 78% | 9.56 | 17.70 | — | -45.38 | 0.86 | -18.90 | 155,220 | — |
-| ADT | ADT Inc. | piotroski | ✅ | 89% | 6.79 | — | — | 15.77 | 0.93 | 3.19 | 7M | — |
+| CHRW | C. H. ROBINSON WORLDWIDE, IN | piotroski | ✅ | 78% | 141 | 29.10 | 9.25 | 31.81 | 1.53 | 1.74 | 1M | — |
+| SGRY | Surgery Partners, Inc. | piotroski | ✅ | 78% | 15.49 | — | 1.15 | -4.55 | 1.87 | — | 4M | — |
+| SENS | Senseonics Holdings, Inc. | piotroski | ✅ | 78% | 8.21 | — | 5.61 | -113 | 4.83 | 1.07 | 366,168 | — |
+| MYE | Myers Industries, Inc. | piotroski | ✅ | 78% | 32.27 | 34.70 | 4.12 | 11.87 | 1.67 | 1.89 | 268,104 | — |
+| ARKO | ARKO Corp. | piotroski | ✅ | 78% | 4.03 | 26.87 | 1.73 | 8.51 | 1.66 | 11.85 | 529,877 | — |
 | DAR | DARLING INGREDIENTS INC. | piotroski | ✅ | 78% | 59.22 | 152 | 2.00 | 1.33 | 1.50 | 1.16 | 2M | — |
-| SHC | SOTERA HEALTH COMPANY | piotroski | ✅ | 78% | 17.93 | 66.41 | 8.47 | 12.86 | 2.46 | 4.38 | 2M | — |
-| BYD | BOYD GAMING CORP | buffett | ▫️ | 67% | 71.62 | 3.17 | 2.24 | 70.66 | 0.54 | — | 1M | — |
-| BYD | BOYD GAMING CORP | graham | ▫️ | 56% | 71.62 | 3.17 | 2.24 | 70.66 | 0.54 | — | 1M | — |
-| BYD | BOYD GAMING CORP | lynch | ▫️ | 25% | 71.62 | 3.17 | 2.24 | 70.66 | 0.54 | — | 1M | — |
-| BYD | BOYD GAMING CORP | netnet | ▫️ | 25% | 71.62 | 3.17 | 2.24 | 70.66 | 0.54 | — | 1M | — |
-| BYD | BOYD GAMING CORP | custom | ▫️ | 0% | 71.62 | 3.17 | 2.24 | 70.66 | 0.54 | — | 1M | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | graham | ▫️ | 56% | 24.56 | 6.16 | 2.07 | 33.67 | 1.55 | — | 204,571 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | piotroski | ▫️ | 56% | 24.56 | 6.16 | 2.07 | 33.67 | 1.55 | — | 204,571 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | buffett | ▫️ | 50% | 24.56 | 6.16 | 2.07 | 33.67 | 1.55 | — | 204,571 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | lynch | ▫️ | 25% | 24.56 | 6.16 | 2.07 | 33.67 | 1.55 | — | 204,571 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | netnet | ▫️ | 25% | 24.56 | 6.16 | 2.07 | 33.67 | 1.55 | — | 204,571 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | custom | ▫️ | 0% | 24.56 | 6.16 | 2.07 | 33.67 | 1.55 | — | 204,571 | — |
+| TDAY | USA TODAY CO., INC. | piotroski | ✅ | 78% | 7.01 | 701 | 6.60 | 1.13 | 0.75 | 10.85 | 1M | — |
 | YELP | YELP INC | graham | ▫️ | 78% | 20.28 | 9.05 | 1.86 | 20.48 | 2.99 | 0.35 | 1M | — |
 | YELP | YELP INC | buffett | ▫️ | 50% | 20.28 | 9.05 | 1.86 | 20.48 | 2.99 | 0.35 | 1M | — |
 | YELP | YELP INC | lynch | ▫️ | 50% | 20.28 | 9.05 | 1.86 | 20.48 | 2.99 | 0.35 | 1M | — |
 | YELP | YELP INC | netnet | ▫️ | 50% | 20.28 | 9.05 | 1.86 | 20.48 | 2.99 | 0.35 | 1M | — |
 | YELP | YELP INC | custom | ▫️ | 0% | 20.28 | 9.05 | 1.86 | 20.48 | 2.99 | 0.35 | 1M | — |
-| POWL | Powell Industries, Inc. | graham | ▫️ | 78% | 165 | 11.10 | 3.13 | 28.21 | 2.09 | 0.73 | 836,997 | — |
-| POWL | Powell Industries, Inc. | buffett | ▫️ | 67% | 165 | 11.10 | 3.13 | 28.21 | 2.09 | 0.73 | 836,997 | — |
-| POWL | Powell Industries, Inc. | netnet | ▫️ | 50% | 165 | 11.10 | 3.13 | 28.21 | 2.09 | 0.73 | 836,997 | — |
-| POWL | Powell Industries, Inc. | custom | ▫️ | 0% | 165 | 11.10 | 3.13 | 28.21 | 2.09 | 0.73 | 836,997 | — |
+| GRBK | Green Brick Partners, Inc. | graham | ▫️ | 78% | 61.99 | 8.77 | 1.46 | 16.85 | — | 0.32 | 246,883 | — |
+| GRBK | Green Brick Partners, Inc. | greenblatt | ▫️ | 67% | 61.99 | 8.77 | 1.46 | 16.85 | — | 0.32 | 246,883 | — |
+| GRBK | Green Brick Partners, Inc. | piotroski | ▫️ | 44% | 61.99 | 8.77 | 1.46 | 16.85 | — | 0.32 | 246,883 | — |
+| GRBK | Green Brick Partners, Inc. | netnet | ▫️ | 25% | 61.99 | 8.77 | 1.46 | 16.85 | — | 0.32 | 246,883 | — |
+| GRBK | Green Brick Partners, Inc. | custom | ▫️ | 0% | 61.99 | 8.77 | 1.46 | 16.85 | — | 0.32 | 246,883 | — |
+| SON | Sonoco Products Company | graham | ▫️ | 67% | 50.83 | 5.05 | 1.40 | 27.75 | 1.05 | 2.08 | 2M | — |
+| SON | Sonoco Products Company | buffett | ▫️ | 67% | 50.83 | 5.05 | 1.40 | 27.75 | 1.05 | 2.08 | 2M | — |
+| SON | Sonoco Products Company | greenblatt | ▫️ | 67% | 50.83 | 5.05 | 1.40 | 27.75 | 1.05 | 2.08 | 2M | — |
+| SON | Sonoco Products Company | netnet | ▫️ | 25% | 50.83 | 5.05 | 1.40 | 27.75 | 1.05 | 2.08 | 2M | — |
+| SON | Sonoco Products Company | custom | ▫️ | 0% | 50.83 | 5.05 | 1.40 | 27.75 | 1.05 | 2.08 | 2M | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | piotroski | ▫️ | 44% | 25.63 | — | — | — | 2.10 | — | 241,302 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | graham | ▫️ | 33% | 25.63 | — | — | — | 2.10 | — | 241,302 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | buffett | ▫️ | 33% | 25.63 | — | — | — | 2.10 | — | 241,302 | — |
+| ARLP | ALLIANCE RESOURCE PARTNERS L | greenblatt | ▫️ | 33% | 25.63 | — | — | — | 2.10 | — | 241,302 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
