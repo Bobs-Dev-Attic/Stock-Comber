@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-21 22:18 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-22 05:25 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **38** strategy matches passed.
+Screened **75** companies · **25** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| GOOGM | Alphabet Inc. | graham | ✅ | 100% | 47.73 | 4.42 | 1.41 | 31.83 | 2.01 | 0.43 | 976,295 | — |
-| GOOGM | Alphabet Inc. | buffett | ✅ | 100% | 47.73 | 4.42 | 1.41 | 31.83 | 2.01 | 0.43 | 976,295 | — |
-| GOOGM | Alphabet Inc. | greenblatt | ✅ | 100% | 47.73 | 4.42 | 1.41 | 31.83 | 2.01 | 0.43 | 976,295 | — |
-| GOOGM | Alphabet Inc. | lynch | ✅ | 100% | 47.73 | 4.42 | 1.41 | 31.83 | 2.01 | 0.43 | 976,295 | — |
-| USLM | UNITED STATES LIME & MINERAL | lynch | ✅ | 100% | 107 | 22.82 | 4.86 | 21.29 | 19.27 | 0.08 | 157,229 | — |
-| USLM | UNITED STATES LIME & MINERAL | buffett | ✅ | 83% | 107 | 22.82 | 4.86 | 21.29 | 19.27 | 0.08 | 157,229 | — |
 | WHD | Cactus, Inc. | lynch | ✅ | 75% | 64.17 | — | — | 13.54 | 5.81 | 0.36 | 394,588 | — |
-| RLI | RLI Corp | buffett | ✅ | 83% | 63.90 | 14.62 | 3.32 | 22.68 | — | 2.47 | 1M | — |
-| RLI | RLI Corp | piotroski | ✅ | 78% | 63.90 | 14.62 | 3.32 | 22.68 | — | 2.47 | 1M | — |
-| RLI | RLI Corp | lynch | ✅ | 75% | 63.90 | 14.62 | 3.32 | 22.68 | — | 2.47 | 1M | — |
-| FHI | Federated Hermes, Inc. | greenblatt | ✅ | 100% | 56.07 | 10.93 | 3.52 | 33.69 | 2.75 | 0.81 | 676,655 | — |
-| FHI | Federated Hermes, Inc. | piotroski | ✅ | 89% | 56.07 | 10.93 | 3.52 | 33.69 | 2.75 | 0.81 | 676,655 | — |
-| MWA | Mueller Water Products, Inc. | piotroski | ✅ | 89% | 21.86 | 17.92 | 3.51 | 19.53 | 3.54 | 0.87 | 1M | — |
-| MWA | Mueller Water Products, Inc. | lynch | ✅ | 75% | 21.86 | 17.92 | 3.51 | 19.53 | 3.54 | 0.87 | 1M | — |
-| SSD | Simpson Manufacturing Co., I | buffett | ✅ | 83% | 180 | 21.86 | 3.71 | 17.00 | 3.54 | 0.51 | 464,678 | — |
-| SSD | Simpson Manufacturing Co., I | piotroski | ✅ | 78% | 180 | 21.86 | 3.71 | 17.00 | 3.54 | 0.51 | 464,678 | — |
-| KFY | KORN FERRY | piotroski | ✅ | 100% | 73.07 | 14.00 | 1.95 | 14.06 | 1.94 | 1.06 | 321,238 | — |
-| KFY | KORN FERRY | lynch | ✅ | 75% | 73.07 | 14.00 | 1.95 | 14.06 | 1.94 | 1.06 | 321,238 | — |
-| GNTX | GENTEX CORPORATION | buffett | ✅ | 83% | 21.00 | 12.07 | 1.84 | 15.47 | 2.91 | 0.18 | 3M | — |
-| FTDR | Frontdoor, Inc. | piotroski | ✅ | 89% | 80.85 | 23.64 | 24.89 | 105 | 1.55 | — | 567,681 | — |
-| FTDR | Frontdoor, Inc. | buffett | ✅ | 83% | 80.85 | 23.64 | 24.89 | 105 | 1.55 | — | 567,681 | — |
-| FSS | FEDERAL SIGNAL CORPORATION | lynch | ✅ | 75% | 117 | 29.10 | 5.19 | 17.84 | 3.02 | 0.73 | 438,930 | — |
-| WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 12.96 | 2.56 | 1.47 | 57.56 | 1.39 | 2.18 | 632,591 | — |
-| AOS | A. O. Smith Corporation | piotroski | ✅ | 78% | 59.65 | 15.49 | 4.56 | 29.40 | 1.50 | 0.69 | 1M | — |
-| LNC | LINCOLN NATIONAL CORP | lynch | ✅ | 75% | 40.39 | 6.93 | 0.69 | 10.79 | — | 37.25 | 2M | — |
-| SARO | StandardAero, Inc. | piotroski | ✅ | 89% | 21.45 | 25.84 | 2.69 | 10.40 | 2.20 | 1.46 | 3M | — |
-| DLB | Dolby Laboratories, Inc. | piotroski | ✅ | 78% | 62.52 | 23.86 | 2.32 | 9.72 | 3.17 | 0.23 | 429,980 | — |
-| PACS | PACS Group, Inc. | piotroski | ✅ | 89% | 46.76 | 38.33 | 7.74 | 20.23 | 1.07 | 4.89 | 648,380 | — |
-| IMAX | IMAX Corporation | piotroski | ✅ | 78% | 53.09 | 84.27 | 8.73 | 10.32 | — | 1.38 | 731,896 | — |
-| MAGN | Magnera Corporation | piotroski | ✅ | 78% | 11.20 | — | 0.37 | -14.94 | 2.37 | 2.75 | 383,716 | — |
-| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 45.32 | 43.58 | — | -29.14 | 1.60 | -6.05 | 397,137 | — |
-| MOS | MOSAIC CO | piotroski | ✅ | 89% | 17.68 | 10.40 | 0.47 | 4.47 | 1.32 | — | 13M | — |
-| TBCH | TURTLE BEACH CORPORATION | piotroski | ✅ | 78% | 16.27 | 21.13 | 2.59 | 12.24 | 1.98 | 1.09 | 1M | — |
-| FROG | JFrog Ltd. | piotroski | ✅ | 78% | 96.30 | — | 12.61 | -8.09 | 2.14 | 0.51 | 1M | — |
-| APPN | APPIAN CORPORATION | piotroski | ✅ | 78% | 48.73 | 2,436 | — | -2.62 | 1.15 | -15.71 | 2M | — |
-| WGO | WINNEBAGO INDUSTRIES, INC. | piotroski | ✅ | 78% | 25.64 | 21.19 | 0.59 | 2.79 | 2.17 | 0.70 | 2M | — |
-| ARKO | ARKO Corp. | piotroski | ✅ | 78% | 3.99 | 26.60 | 1.72 | 8.51 | 1.66 | 11.85 | 494,441 | — |
+| URBN | Urban Outfitters, Inc. | piotroski | ✅ | 100% | 86.96 | 17.19 | 2.84 | 16.51 | 1.51 | 0.78 | 533,964 | — |
+| URBN | Urban Outfitters, Inc. | lynch | ✅ | 75% | 86.96 | 17.19 | 2.84 | 16.51 | 1.51 | 0.78 | 533,964 | — |
+| FTDR | Frontdoor, Inc. | piotroski | ✅ | 89% | 80.85 | 23.64 | 24.89 | 105 | 1.55 | — | 567,684 | — |
+| FTDR | Frontdoor, Inc. | buffett | ✅ | 83% | 80.85 | 23.64 | 24.89 | 105 | 1.55 | — | 567,684 | — |
+| GPK | Graphic Packaging Holding Co | lynch | ✅ | 75% | 8.39 | 5.67 | 0.75 | 13.31 | 1.30 | — | 17M | — |
+| AGX | ARGAN INC | lynch | ✅ | 75% | 346 | 35.51 | 10.58 | 29.80 | 1.59 | 1.57 | 350,870 | — |
+| CRVL | CORVEL CORPORATION | buffett | ✅ | 83% | 80.71 | 37.71 | 10.57 | 27.99 | 2.03 | 0.63 | 125,077 | — |
+| CRVL | CORVEL CORPORATION | piotroski | ✅ | 78% | 80.71 | 37.71 | 10.57 | 27.99 | 2.03 | 0.63 | 125,077 | — |
+| CRVL | CORVEL CORPORATION | lynch | ✅ | 75% | 80.71 | 37.71 | 10.57 | 27.99 | 2.03 | 0.63 | 125,077 | — |
+| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 16.60 | 8.78 | 2.17 | 24.66 | 2.26 | 2.62 | 1M | — |
+| ADUS | Addus HomeCare Corp | lynch | ✅ | 100% | 118 | 22.60 | 2.00 | 8.84 | 1.80 | 0.32 | 163,545 | — |
+| ADUS | Addus HomeCare Corp | piotroski | ✅ | 89% | 118 | 22.60 | 2.00 | 8.84 | 1.80 | 0.32 | 163,545 | — |
+| ORI | OLD REPUBLIC INTERNATIONAL C | piotroski | ✅ | 78% | 40.13 | 10.79 | 1.71 | 15.82 | — | 4.05 | 3M | — |
+| OSW | OneSpaWorld Holdings Limited | piotroski | ✅ | 78% | 23.93 | 34.68 | 4.57 | 13.20 | 1.91 | 0.30 | 473,484 | — |
+| PKE | PARK AEROSPACE CORP. | piotroski | ✅ | 100% | 25.59 | 45.70 | 3.96 | 8.67 | 18.24 | 0.09 | 190,279 | — |
+| PKE | PARK AEROSPACE CORP. | lynch | ✅ | 75% | 25.59 | 45.70 | 3.96 | 8.67 | 18.24 | 0.09 | 190,279 | — |
+| BCPC | Balchem Corporation | piotroski | ✅ | 100% | 171 | 35.95 | 4.43 | 12.31 | 2.07 | 0.34 | 342,917 | — |
+| EMBC | EMBECTA CORP. | piotroski | ✅ | 78% | 6.68 | 4.12 | — | -14.66 | 2.41 | — | 706,689 | — |
+| BBY | Best Buy Co., Inc. | piotroski | ✅ | 89% | 94.12 | 18.67 | 6.74 | 36.07 | 1.11 | — | 2M | — |
+| MLKN | MillerKnoll, Inc. | piotroski | ✅ | 100% | 20.22 | 15.32 | 1.04 | 6.82 | 1.58 | 1.93 | 570,616 | — |
+| THO | THOR INDUSTRIES, INC. | piotroski | ✅ | 78% | 66.43 | 19.65 | 0.82 | 4.17 | 1.77 | — | 1M | — |
+| DBD | Diebold Nixdorf, Incorporate | piotroski | ✅ | 78% | 68.16 | 26.83 | 2.31 | 8.60 | 1.30 | 2.50 | 217,166 | — |
+| DAR | DARLING INGREDIENTS INC. | piotroski | ✅ | 78% | 59.09 | 152 | 2.00 | 1.33 | 1.50 | 1.16 | 2M | — |
 | TDAY | USA TODAY CO., INC. | piotroski | ✅ | 78% | 6.92 | 692 | 6.51 | 1.13 | 0.75 | 10.85 | 2M | — |
-| GOOGM | Alphabet Inc. | piotroski | ▫️ | 67% | 47.73 | 4.42 | 1.41 | 31.83 | 2.01 | 0.43 | 976,295 | — |
-| GOOGM | Alphabet Inc. | netnet | ▫️ | 50% | 47.73 | 4.42 | 1.41 | 31.83 | 2.01 | 0.43 | 976,295 | — |
-| GOOGM | Alphabet Inc. | custom | ▫️ | 0% | 47.73 | 4.42 | 1.41 | 31.83 | 2.01 | 0.43 | 976,295 | — |
-| USLM | UNITED STATES LIME & MINERAL | piotroski | ▫️ | 67% | 107 | 22.82 | 4.86 | 21.29 | 19.27 | 0.08 | 157,229 | — |
-| USLM | UNITED STATES LIME & MINERAL | greenblatt | ▫️ | 67% | 107 | 22.82 | 4.86 | 21.29 | 19.27 | 0.08 | 157,229 | — |
-| USLM | UNITED STATES LIME & MINERAL | graham | ▫️ | 56% | 107 | 22.82 | 4.86 | 21.29 | 19.27 | 0.08 | 157,229 | — |
-| USLM | UNITED STATES LIME & MINERAL | netnet | ▫️ | 50% | 107 | 22.82 | 4.86 | 21.29 | 19.27 | 0.08 | 157,229 | — |
-| USLM | UNITED STATES LIME & MINERAL | custom | ▫️ | 0% | 107 | 22.82 | 4.86 | 21.29 | 19.27 | 0.08 | 157,229 | — |
+| AAAU | GOLDMAN SACHS PHYSICAL GOLD  | greenblatt | ▫️ | 67% | 40.75 | 2.46 | — | — | — | — | 901,382 | — |
+| AAAU | GOLDMAN SACHS PHYSICAL GOLD  | lynch | ▫️ | 50% | 40.75 | 2.46 | — | — | — | — | 901,382 | — |
+| AAAU | GOLDMAN SACHS PHYSICAL GOLD  | piotroski | ▫️ | 33% | 40.75 | 2.46 | — | — | — | — | 901,382 | — |
+| AAAU | GOLDMAN SACHS PHYSICAL GOLD  | netnet | ▫️ | 25% | 40.75 | 2.46 | — | — | — | — | 901,382 | — |
+| AAAU | GOLDMAN SACHS PHYSICAL GOLD  | graham | ▫️ | 22% | 40.75 | 2.46 | — | — | — | — | 901,382 | — |
+| AAAU | GOLDMAN SACHS PHYSICAL GOLD  | buffett | ▫️ | 17% | 40.75 | 2.46 | — | — | — | — | 901,382 | — |
+| AAAU | GOLDMAN SACHS PHYSICAL GOLD  | custom | ▫️ | 0% | 40.75 | 2.46 | — | — | — | — | 901,382 | — |
 | WHD | Cactus, Inc. | graham | ▫️ | 67% | 64.17 | — | — | 13.54 | 5.81 | 0.36 | 394,588 | — |
 | WHD | Cactus, Inc. | piotroski | ▫️ | 56% | 64.17 | — | — | 13.54 | 5.81 | 0.36 | 394,588 | — |
 | WHD | Cactus, Inc. | buffett | ▫️ | 50% | 64.17 | — | — | 13.54 | 5.81 | 0.36 | 394,588 | — |
 | WHD | Cactus, Inc. | greenblatt | ▫️ | 33% | 64.17 | — | — | 13.54 | 5.81 | 0.36 | 394,588 | — |
+| WHD | Cactus, Inc. | netnet | ▫️ | 25% | 64.17 | — | — | 13.54 | 5.81 | 0.36 | 394,588 | — |
+| WHD | Cactus, Inc. | custom | ▫️ | 0% | 64.17 | — | — | 13.54 | 5.81 | 0.36 | 394,588 | — |
+| URBN | Urban Outfitters, Inc. | graham | ▫️ | 56% | 86.96 | 17.19 | 2.84 | 16.51 | 1.51 | 0.78 | 533,964 | — |
+| URBN | Urban Outfitters, Inc. | buffett | ▫️ | 50% | 86.96 | 17.19 | 2.84 | 16.51 | 1.51 | 0.78 | 533,964 | — |
+| URBN | Urban Outfitters, Inc. | greenblatt | ▫️ | 33% | 86.96 | 17.19 | 2.84 | 16.51 | 1.51 | 0.78 | 533,964 | — |
+| URBN | Urban Outfitters, Inc. | netnet | ▫️ | 25% | 86.96 | 17.19 | 2.84 | 16.51 | 1.51 | 0.78 | 533,964 | — |
+| URBN | Urban Outfitters, Inc. | custom | ▫️ | 0% | 86.96 | 17.19 | 2.84 | 16.51 | 1.51 | 0.78 | 533,964 | — |
+| ESTC | ELASTIC N.V. | piotroski | ▫️ | 56% | 98.81 | 28.81 | 8.30 | 28.81 | 1.68 | 1.47 | 1M | — |
+| ESTC | ELASTIC N.V. | buffett | ▫️ | 50% | 98.81 | 28.81 | 8.30 | 28.81 | 1.68 | 1.47 | 1M | — |
+| ESTC | ELASTIC N.V. | netnet | ▫️ | 50% | 98.81 | 28.81 | 8.30 | 28.81 | 1.68 | 1.47 | 1M | — |
+| ESTC | ELASTIC N.V. | graham | ▫️ | 33% | 98.81 | 28.81 | 8.30 | 28.81 | 1.68 | 1.47 | 1M | — |
+| ESTC | ELASTIC N.V. | greenblatt | ▫️ | 33% | 98.81 | 28.81 | 8.30 | 28.81 | 1.68 | 1.47 | 1M | — |
+| ESTC | ELASTIC N.V. | lynch | ▫️ | 25% | 98.81 | 28.81 | 8.30 | 28.81 | 1.68 | 1.47 | 1M | — |
+| ESTC | ELASTIC N.V. | custom | ▫️ | 0% | 98.81 | 28.81 | 8.30 | 28.81 | 1.68 | 1.47 | 1M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
