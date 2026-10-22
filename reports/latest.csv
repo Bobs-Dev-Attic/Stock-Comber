@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-WHD,"Cactus, Inc.",lynch,True,3,4,75.0,64.17,—,—,13.54,5.81,0.36,—,"394,588",—
+CLSKW,"CleanSpark, Inc.",netnet,True,4,4,100.0,0.22,—,0.03,16.76,4.18,0.46,—,15.00,—
+KMT,KENNAMETAL INC.,graham,True,8,9,88.9,31.11,7.04,1.53,21.81,2.62,0.99,44.90,1M,—
+KMT,KENNAMETAL INC.,lynch,True,3,4,75.0,31.11,7.04,1.53,21.81,2.62,0.99,44.90,1M,—
+SPNT,SIRIUSPOINT LTD.,lynch,True,3,4,75.0,25.68,7.05,1.26,18.61,—,4.09,40.78,"546,387",—
+NBR,NABORS INDUSTRIES LTD,piotroski,True,7,9,77.8,81.02,4.66,1.98,48.52,1.56,5.67,127,"141,062",—
+ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.21,5.25,0.15,4.91,1.93,0.73,1.14,"3,028",—
 URBN,"Urban Outfitters, Inc.",piotroski,True,9,9,100.0,86.96,17.19,2.84,16.51,1.51,0.78,59.09,"533,964",—
 URBN,"Urban Outfitters, Inc.",lynch,True,3,4,75.0,86.96,17.19,2.84,16.51,1.51,0.78,59.09,"533,964",—
-FTDR,"Frontdoor, Inc.",piotroski,True,8,9,88.9,80.85,23.64,24.89,105,1.55,—,15.81,"567,684",—
-FTDR,"Frontdoor, Inc.",buffett,True,5,6,83.3,80.85,23.64,24.89,105,1.55,—,15.81,"567,684",—
-GPK,Graphic Packaging Holding Co,lynch,True,3,4,75.0,8.39,5.67,0.75,13.31,1.30,—,19.25,17M,—
-AGX,ARGAN INC,lynch,True,3,4,75.0,346,35.51,10.58,29.80,1.59,1.57,84.62,"350,870",—
-CRVL,CORVEL CORPORATION,buffett,True,5,6,83.3,80.71,37.71,10.57,27.99,2.03,0.63,19.18,"125,077",—
-CRVL,CORVEL CORPORATION,piotroski,True,7,9,77.8,80.71,37.71,10.57,27.99,2.03,0.63,19.18,"125,077",—
-CRVL,CORVEL CORPORATION,lynch,True,3,4,75.0,80.71,37.71,10.57,27.99,2.03,0.63,19.18,"125,077",—
-SBH,"SALLY BEAUTY HOLDINGS, INC.",piotroski,True,8,9,88.9,16.60,8.78,2.17,24.66,2.26,2.62,18.04,1M,—
-ADUS,Addus HomeCare Corp,lynch,True,4,4,100.0,118,22.60,2.00,8.84,1.80,0.32,83.25,"163,545",—
-ADUS,Addus HomeCare Corp,piotroski,True,8,9,88.9,118,22.60,2.00,8.84,1.80,0.32,83.25,"163,545",—
-ORI,OLD REPUBLIC INTERNATIONAL CORPORATION,piotroski,True,7,9,77.8,40.13,10.79,1.71,15.82,—,4.05,44.38,3M,—
+BELFA,BEL FUSE INC /NJ,piotroski,True,8,9,88.9,177,—,—,14.46,3.02,0.98,—,"190,473",—
+HBANP,Huntington Bancshares Incorporated,lynch,True,3,4,75.0,14.99,10.79,0.93,9.08,—,8.25,22.49,"101,668",—
+SNA,Snap-on Inc,buffett,True,5,6,83.3,369,19.22,3.30,17.14,4.79,0.41,220,"532,183",—
+AGX,ARGAN INC,lynch,True,3,4,75.0,346,35.51,10.58,29.80,1.59,1.57,84.62,"349,964",—
+BYND,"BEYOND MEAT, INC.",greenblatt,True,3,3,100.0,6.82,—,—,"-21,968",4.56,—,—,"657,485",—
+EZPW,"EZCORP, INC.",piotroski,True,7,9,77.8,33.20,23.38,2.70,10.69,5.61,0.90,19.82,"334,747",—
 OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,23.93,34.68,4.57,13.20,1.91,0.30,9.01,"473,484",—
-PKE,PARK AEROSPACE CORP.,piotroski,True,9,9,100.0,25.59,45.70,3.96,8.67,18.24,0.09,9.02,"190,279",—
-PKE,PARK AEROSPACE CORP.,lynch,True,3,4,75.0,25.59,45.70,3.96,8.67,18.24,0.09,9.02,"190,279",—
-BCPC,Balchem Corporation,piotroski,True,9,9,100.0,171,35.95,4.43,12.31,2.07,0.34,64.20,"342,917",—
-EMBC,EMBECTA CORP.,piotroski,True,7,9,77.8,6.68,4.12,—,-14.66,2.41,—,—,"706,689",—
-BBY,"Best Buy Co., Inc.",piotroski,True,8,9,88.9,94.12,18.67,6.74,36.07,1.11,—,39.81,2M,—
-MLKN,"MillerKnoll, Inc.",piotroski,True,9,9,100.0,20.22,15.32,1.04,6.82,1.58,1.93,23.98,"570,616",—
-THO,"THOR INDUSTRIES, INC.",piotroski,True,7,9,77.8,66.43,19.65,0.82,4.17,1.77,—,78.52,1M,—
-DBD,"Diebold Nixdorf, Incorporated",piotroski,True,7,9,77.8,68.16,26.83,2.31,8.60,1.30,2.50,41.11,"217,166",—
+PLUS,ePlus inc.,piotroski,True,7,9,77.8,94.14,18.72,2.32,12.41,2.24,0.68,67.73,"217,151",—
+KALU,KAISER ALUMINUM CORPORATION,piotroski,True,7,9,77.8,154,22.74,3.10,13.62,2.95,2.10,87.01,"355,136",—
+KALU,KAISER ALUMINUM CORPORATION,lynch,True,3,4,75.0,154,22.74,3.10,13.62,2.95,2.10,87.01,"355,136",—
+JJSF,J&J SNACK FOODS CORP.,lynch,True,3,4,75.0,81.75,24.33,1.65,6.79,2.72,—,61.14,"190,796",—
+CHEF,"CHEFS’ WAREHOUSE, INC.",piotroski,True,9,9,100.0,110,65.54,8.38,11.97,2.05,2.36,22.28,"495,367",—
+CBZ,"CBIZ, Inc.",piotroski,True,7,9,77.8,54.85,29.97,1.97,6.55,1.22,1.50,33.87,1M,—
+TBCH,TURTLE BEACH CORPORATION,piotroski,True,7,9,77.8,16.27,21.13,2.59,12.24,1.98,1.09,10.43,1M,—
 DAR,DARLING INGREDIENTS INC.,piotroski,True,7,9,77.8,59.09,152,2.00,1.33,1.50,1.16,16.11,2M,—
-TDAY,"USA TODAY CO., INC.",piotroski,True,7,9,77.8,6.92,692,6.51,1.13,0.75,10.85,0.49,2M,—
-AAAU,GOLDMAN SACHS PHYSICAL GOLD ETF,greenblatt,False,2,3,66.7,40.75,2.46,—,—,—,—,—,"901,382",—
-AAAU,GOLDMAN SACHS PHYSICAL GOLD ETF,lynch,False,2,4,50.0,40.75,2.46,—,—,—,—,—,"901,382",—
-AAAU,GOLDMAN SACHS PHYSICAL GOLD ETF,piotroski,False,3,9,33.3,40.75,2.46,—,—,—,—,—,"901,382",—
-AAAU,GOLDMAN SACHS PHYSICAL GOLD ETF,netnet,False,1,4,25.0,40.75,2.46,—,—,—,—,—,"901,382",—
-AAAU,GOLDMAN SACHS PHYSICAL GOLD ETF,graham,False,2,9,22.2,40.75,2.46,—,—,—,—,—,"901,382",—
-AAAU,GOLDMAN SACHS PHYSICAL GOLD ETF,buffett,False,1,6,16.7,40.75,2.46,—,—,—,—,—,"901,382",—
-AAAU,GOLDMAN SACHS PHYSICAL GOLD ETF,custom,False,0,0,0.0,40.75,2.46,—,—,—,—,—,"901,382",—
-WHD,"Cactus, Inc.",graham,False,6,9,66.7,64.17,—,—,13.54,5.81,0.36,—,"394,588",—
-WHD,"Cactus, Inc.",piotroski,False,5,9,55.6,64.17,—,—,13.54,5.81,0.36,—,"394,588",—
-WHD,"Cactus, Inc.",buffett,False,3,6,50.0,64.17,—,—,13.54,5.81,0.36,—,"394,588",—
-WHD,"Cactus, Inc.",greenblatt,False,1,3,33.3,64.17,—,—,13.54,5.81,0.36,—,"394,588",—
-WHD,"Cactus, Inc.",netnet,False,1,4,25.0,64.17,—,—,13.54,5.81,0.36,—,"394,588",—
-WHD,"Cactus, Inc.",custom,False,0,0,0.0,64.17,—,—,13.54,5.81,0.36,—,"394,588",—
-URBN,"Urban Outfitters, Inc.",graham,False,5,9,55.6,86.96,17.19,2.84,16.51,1.51,0.78,59.09,"533,964",—
-URBN,"Urban Outfitters, Inc.",buffett,False,3,6,50.0,86.96,17.19,2.84,16.51,1.51,0.78,59.09,"533,964",—
-URBN,"Urban Outfitters, Inc.",greenblatt,False,1,3,33.3,86.96,17.19,2.84,16.51,1.51,0.78,59.09,"533,964",—
-URBN,"Urban Outfitters, Inc.",netnet,False,1,4,25.0,86.96,17.19,2.84,16.51,1.51,0.78,59.09,"533,964",—
-URBN,"Urban Outfitters, Inc.",custom,False,0,0,0.0,86.96,17.19,2.84,16.51,1.51,0.78,59.09,"533,964",—
-ESTC,ELASTIC N.V.,piotroski,False,5,9,55.6,98.81,28.81,8.30,28.81,1.68,1.47,30.31,1M,—
-ESTC,ELASTIC N.V.,buffett,False,3,6,50.0,98.81,28.81,8.30,28.81,1.68,1.47,30.31,1M,—
-ESTC,ELASTIC N.V.,netnet,False,2,4,50.0,98.81,28.81,8.30,28.81,1.68,1.47,30.31,1M,—
-ESTC,ELASTIC N.V.,graham,False,3,9,33.3,98.81,28.81,8.30,28.81,1.68,1.47,30.31,1M,—
-ESTC,ELASTIC N.V.,greenblatt,False,1,3,33.3,98.81,28.81,8.30,28.81,1.68,1.47,30.31,1M,—
-ESTC,ELASTIC N.V.,lynch,False,1,4,25.0,98.81,28.81,8.30,28.81,1.68,1.47,30.31,1M,—
-ESTC,ELASTIC N.V.,custom,False,0,0,0.0,98.81,28.81,8.30,28.81,1.68,1.47,30.31,1M,—
+LILA,Liberty Latin America Ltd.,piotroski,True,7,9,77.8,8.02,—,2.88,-110,1.14,20.09,—,"269,722",—
+ORN,"ORION GROUP HOLDINGS, INC.",piotroski,True,7,9,77.8,8.66,144,2.16,1.56,1.36,1.61,2.33,"351,765",—
+CLSKW,"CleanSpark, Inc.",greenblatt,False,2,3,66.7,0.22,—,0.03,16.76,4.18,0.46,—,15.00,—
+CLSKW,"CleanSpark, Inc.",graham,False,5,9,55.6,0.22,—,0.03,16.76,4.18,0.46,—,15.00,—
+CLSKW,"CleanSpark, Inc.",piotroski,False,5,9,55.6,0.22,—,0.03,16.76,4.18,0.46,—,15.00,—
+CLSKW,"CleanSpark, Inc.",buffett,False,3,6,50.0,0.22,—,0.03,16.76,4.18,0.46,—,15.00,—
+CLSKW,"CleanSpark, Inc.",lynch,False,2,4,50.0,0.22,—,0.03,16.76,4.18,0.46,—,15.00,—
+CLSKW,"CleanSpark, Inc.",custom,False,0,0,0.0,0.22,—,0.03,16.76,4.18,0.46,—,15.00,—
+KMT,KENNAMETAL INC.,piotroski,False,6,9,66.7,31.11,7.04,1.53,21.81,2.62,0.99,44.90,1M,—
+KMT,KENNAMETAL INC.,greenblatt,False,2,3,66.7,31.11,7.04,1.53,21.81,2.62,0.99,44.90,1M,—
+KMT,KENNAMETAL INC.,buffett,False,3,6,50.0,31.11,7.04,1.53,21.81,2.62,0.99,44.90,1M,—
+KMT,KENNAMETAL INC.,netnet,False,2,4,50.0,31.11,7.04,1.53,21.81,2.62,0.99,44.90,1M,—
+KMT,KENNAMETAL INC.,custom,False,0,0,0.0,31.11,7.04,1.53,21.81,2.62,0.99,44.90,1M,—
+SPNT,SIRIUSPOINT LTD.,graham,False,6,9,66.7,25.68,7.05,1.26,18.61,—,4.09,40.78,"546,387",—
+SPNT,SIRIUSPOINT LTD.,piotroski,False,6,9,66.7,25.68,7.05,1.26,18.61,—,4.09,40.78,"546,387",—
+SPNT,SIRIUSPOINT LTD.,greenblatt,False,2,3,66.7,25.68,7.05,1.26,18.61,—,4.09,40.78,"546,387",—
+SPNT,SIRIUSPOINT LTD.,buffett,False,3,6,50.0,25.68,7.05,1.26,18.61,—,4.09,40.78,"546,387",—
+SPNT,SIRIUSPOINT LTD.,netnet,False,1,4,25.0,25.68,7.05,1.26,18.61,—,4.09,40.78,"546,387",—
+SPNT,SIRIUSPOINT LTD.,custom,False,0,0,0.0,25.68,7.05,1.26,18.61,—,4.09,40.78,"546,387",—
+WES,"Western Midstream Partners, LP",lynch,False,2,4,50.0,44.58,—,—,—,1.34,—,—,1M,—
+WES,"Western Midstream Partners, LP",piotroski,False,4,9,44.4,44.58,—,—,—,1.34,—,—,1M,—
+WES,"Western Midstream Partners, LP",graham,False,3,9,33.3,44.58,—,—,—,1.34,—,—,1M,—
+WES,"Western Midstream Partners, LP",buffett,False,2,6,33.3,44.58,—,—,—,1.34,—,—,1M,—
+WES,"Western Midstream Partners, LP",greenblatt,False,1,3,33.3,44.58,—,—,—,1.34,—,—,1M,—
+WES,"Western Midstream Partners, LP",netnet,False,1,4,25.0,44.58,—,—,—,1.34,—,—,1M,—
+WES,"Western Midstream Partners, LP",custom,False,0,0,0.0,44.58,—,—,—,1.34,—,—,1M,—
+NBR,NABORS INDUSTRIES LTD,greenblatt,False,2,3,66.7,81.02,4.66,1.98,48.52,1.56,5.67,127,"141,062",—
