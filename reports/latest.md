@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-22 10:21 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-22 15:19 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **25** strategy matches passed.
+Screened **75** companies · **30** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| CLSKW | CleanSpark, Inc. | netnet | ✅ | 100% | 0.22 | — | 0.03 | 16.76 | 4.18 | 0.46 | 15.00 | — |
-| KMT | KENNAMETAL INC. | graham | ✅ | 89% | 31.11 | 7.04 | 1.53 | 21.81 | 2.62 | 0.99 | 1M | — |
-| KMT | KENNAMETAL INC. | lynch | ✅ | 75% | 31.11 | 7.04 | 1.53 | 21.81 | 2.62 | 0.99 | 1M | — |
-| SPNT | SIRIUSPOINT LTD. | lynch | ✅ | 75% | 25.68 | 7.05 | 1.26 | 18.61 | — | 4.09 | 546,387 | — |
-| NBR | NABORS INDUSTRIES LTD | piotroski | ✅ | 78% | 81.02 | 4.66 | 1.98 | 48.52 | 1.56 | 5.67 | 141,062 | — |
-| ANNAW | AleAnna, Inc. | piotroski | ✅ | 78% | 0.21 | 5.25 | 0.15 | 4.91 | 1.93 | 0.73 | 3,028 | — |
-| URBN | Urban Outfitters, Inc. | piotroski | ✅ | 100% | 86.96 | 17.19 | 2.84 | 16.51 | 1.51 | 0.78 | 533,964 | — |
-| URBN | Urban Outfitters, Inc. | lynch | ✅ | 75% | 86.96 | 17.19 | 2.84 | 16.51 | 1.51 | 0.78 | 533,964 | — |
-| BELFA | BEL FUSE INC /NJ | piotroski | ✅ | 89% | 177 | — | — | 14.46 | 3.02 | 0.98 | 190,473 | — |
-| HBANP | Huntington Bancshares Incorp | lynch | ✅ | 75% | 14.99 | 10.79 | 0.93 | 9.08 | — | 8.25 | 101,668 | — |
-| SNA | Snap-on Inc | buffett | ✅ | 83% | 369 | 19.22 | 3.30 | 17.14 | 4.79 | 0.41 | 532,183 | — |
-| AGX | ARGAN INC | lynch | ✅ | 75% | 346 | 35.51 | 10.58 | 29.80 | 1.59 | 1.57 | 349,964 | — |
-| BYND | BEYOND MEAT, INC. | greenblatt | ✅ | 100% | 6.82 | — | — | -21,968 | 4.56 | — | 657,485 | — |
-| EZPW | EZCORP, INC. | piotroski | ✅ | 78% | 33.20 | 23.38 | 2.70 | 10.69 | 5.61 | 0.90 | 334,747 | — |
-| OSW | OneSpaWorld Holdings Limited | piotroski | ✅ | 78% | 23.93 | 34.68 | 4.57 | 13.20 | 1.91 | 0.30 | 473,484 | — |
-| PLUS | ePlus inc. | piotroski | ✅ | 78% | 94.14 | 18.72 | 2.32 | 12.41 | 2.24 | 0.68 | 217,151 | — |
-| KALU | KAISER ALUMINUM CORPORATION | piotroski | ✅ | 78% | 154 | 22.74 | 3.10 | 13.62 | 2.95 | 2.10 | 355,136 | — |
-| KALU | KAISER ALUMINUM CORPORATION | lynch | ✅ | 75% | 154 | 22.74 | 3.10 | 13.62 | 2.95 | 2.10 | 355,136 | — |
-| JJSF | J&J SNACK FOODS CORP. | lynch | ✅ | 75% | 81.75 | 24.33 | 1.65 | 6.79 | 2.72 | — | 190,796 | — |
-| CHEF | CHEFS’ WAREHOUSE, INC. | piotroski | ✅ | 100% | 110 | 65.54 | 8.38 | 11.97 | 2.05 | 2.36 | 495,367 | — |
-| CBZ | CBIZ, Inc. | piotroski | ✅ | 78% | 54.85 | 29.97 | 1.97 | 6.55 | 1.22 | 1.50 | 1M | — |
-| TBCH | TURTLE BEACH CORPORATION | piotroski | ✅ | 78% | 16.27 | 21.13 | 2.59 | 12.24 | 1.98 | 1.09 | 1M | — |
-| DAR | DARLING INGREDIENTS INC. | piotroski | ✅ | 78% | 59.09 | 152 | 2.00 | 1.33 | 1.50 | 1.16 | 2M | — |
-| LILA | Liberty Latin America Ltd. | piotroski | ✅ | 78% | 8.02 | — | 2.88 | -110 | 1.14 | 20.09 | 269,722 | — |
-| ORN | ORION GROUP HOLDINGS, INC. | piotroski | ✅ | 78% | 8.66 | 144 | 2.16 | 1.56 | 1.36 | 1.61 | 351,765 | — |
-| CLSKW | CleanSpark, Inc. | greenblatt | ▫️ | 67% | 0.22 | — | 0.03 | 16.76 | 4.18 | 0.46 | 15.00 | — |
-| CLSKW | CleanSpark, Inc. | graham | ▫️ | 56% | 0.22 | — | 0.03 | 16.76 | 4.18 | 0.46 | 15.00 | — |
-| CLSKW | CleanSpark, Inc. | piotroski | ▫️ | 56% | 0.22 | — | 0.03 | 16.76 | 4.18 | 0.46 | 15.00 | — |
-| CLSKW | CleanSpark, Inc. | buffett | ▫️ | 50% | 0.22 | — | 0.03 | 16.76 | 4.18 | 0.46 | 15.00 | — |
-| CLSKW | CleanSpark, Inc. | lynch | ▫️ | 50% | 0.22 | — | 0.03 | 16.76 | 4.18 | 0.46 | 15.00 | — |
-| CLSKW | CleanSpark, Inc. | custom | ▫️ | 0% | 0.22 | — | 0.03 | 16.76 | 4.18 | 0.46 | 15.00 | — |
-| KMT | KENNAMETAL INC. | piotroski | ▫️ | 67% | 31.11 | 7.04 | 1.53 | 21.81 | 2.62 | 0.99 | 1M | — |
-| KMT | KENNAMETAL INC. | greenblatt | ▫️ | 67% | 31.11 | 7.04 | 1.53 | 21.81 | 2.62 | 0.99 | 1M | — |
-| KMT | KENNAMETAL INC. | buffett | ▫️ | 50% | 31.11 | 7.04 | 1.53 | 21.81 | 2.62 | 0.99 | 1M | — |
-| KMT | KENNAMETAL INC. | netnet | ▫️ | 50% | 31.11 | 7.04 | 1.53 | 21.81 | 2.62 | 0.99 | 1M | — |
-| KMT | KENNAMETAL INC. | custom | ▫️ | 0% | 31.11 | 7.04 | 1.53 | 21.81 | 2.62 | 0.99 | 1M | — |
-| SPNT | SIRIUSPOINT LTD. | graham | ▫️ | 67% | 25.68 | 7.05 | 1.26 | 18.61 | — | 4.09 | 546,387 | — |
-| SPNT | SIRIUSPOINT LTD. | piotroski | ▫️ | 67% | 25.68 | 7.05 | 1.26 | 18.61 | — | 4.09 | 546,387 | — |
-| SPNT | SIRIUSPOINT LTD. | greenblatt | ▫️ | 67% | 25.68 | 7.05 | 1.26 | 18.61 | — | 4.09 | 546,387 | — |
-| SPNT | SIRIUSPOINT LTD. | buffett | ▫️ | 50% | 25.68 | 7.05 | 1.26 | 18.61 | — | 4.09 | 546,387 | — |
-| SPNT | SIRIUSPOINT LTD. | netnet | ▫️ | 25% | 25.68 | 7.05 | 1.26 | 18.61 | — | 4.09 | 546,387 | — |
-| SPNT | SIRIUSPOINT LTD. | custom | ▫️ | 0% | 25.68 | 7.05 | 1.26 | 18.61 | — | 4.09 | 546,387 | — |
-| WES | Western Midstream Partners,  | lynch | ▫️ | 50% | 44.58 | — | — | — | 1.34 | — | 1M | — |
-| WES | Western Midstream Partners,  | piotroski | ▫️ | 44% | 44.58 | — | — | — | 1.34 | — | 1M | — |
-| WES | Western Midstream Partners,  | graham | ▫️ | 33% | 44.58 | — | — | — | 1.34 | — | 1M | — |
-| WES | Western Midstream Partners,  | buffett | ▫️ | 33% | 44.58 | — | — | — | 1.34 | — | 1M | — |
-| WES | Western Midstream Partners,  | greenblatt | ▫️ | 33% | 44.58 | — | — | — | 1.34 | — | 1M | — |
-| WES | Western Midstream Partners,  | netnet | ▫️ | 25% | 44.58 | — | — | — | 1.34 | — | 1M | — |
-| WES | Western Midstream Partners,  | custom | ▫️ | 0% | 44.58 | — | — | — | 1.34 | — | 1M | — |
-| NBR | NABORS INDUSTRIES LTD | greenblatt | ▫️ | 67% | 81.02 | 4.66 | 1.98 | 48.52 | 1.56 | 5.67 | 141,062 | — |
+| VITL | Vital Farms, Inc. | graham | ✅ | 100% | 9.01 | 6.26 | 1.18 | 18.87 | 2.16 | 0.48 | 321,676 | — |
+| VITL | Vital Farms, Inc. | lynch | ✅ | 100% | 9.01 | 6.26 | 1.18 | 18.87 | 2.16 | 0.48 | 321,676 | — |
+| WING | WINGSTOP INC. | lynch | ✅ | 100% | 120 | 19.32 | — | -23.65 | 3.26 | -1.94 | 1M | — |
+| SSD | Simpson Manufacturing Co., I | buffett | ✅ | 83% | 180 | 21.86 | 3.71 | 17.00 | 3.54 | 0.51 | 522,856 | — |
+| SSD | Simpson Manufacturing Co., I | piotroski | ✅ | 78% | 180 | 21.86 | 3.71 | 17.00 | 3.54 | 0.51 | 522,856 | — |
+| LMB | LIMBACH HOLDINGS, INC. | piotroski | ✅ | 78% | 48.34 | 14.97 | 2.98 | 19.97 | 1.44 | 0.95 | 105,658 | — |
+| LMB | LIMBACH HOLDINGS, INC. | lynch | ✅ | 75% | 48.34 | 14.97 | 2.98 | 19.97 | 1.44 | 0.95 | 105,658 | — |
+| OVV | Ovintiv Inc. | piotroski | ✅ | 89% | 68.74 | 14.38 | 1.59 | 11.09 | 0.54 | 0.82 | 622,200 | — |
+| AOS | A. O. Smith Corporation | piotroski | ✅ | 78% | 61.67 | 16.02 | 4.71 | 29.40 | 1.50 | 0.69 | 363,983 | — |
+| MEDP | Medpace Holdings, Inc. | buffett | ✅ | 83% | 674 | 44.12 | 43.36 | 98.27 | 0.74 | 3.30 | 289,862 | — |
+| MEDP | Medpace Holdings, Inc. | piotroski | ✅ | 78% | 674 | 44.12 | 43.36 | 98.27 | 0.74 | 3.30 | 289,862 | — |
+| KALU | KAISER ALUMINUM CORPORATION | piotroski | ✅ | 78% | 121 | 17.90 | 2.44 | 13.62 | 2.95 | 2.10 | 294,899 | — |
+| KALU | KAISER ALUMINUM CORPORATION | lynch | ✅ | 75% | 121 | 17.90 | 2.44 | 13.62 | 2.95 | 2.10 | 294,899 | — |
+| FIZZ | National Beverage Corp. | buffett | ✅ | 83% | 36.27 | 18.51 | 5.35 | 28.89 | 4.39 | 0.34 | 44,145 | — |
+| RGA | REINSURANCE GROUP OF AMERICA | piotroski | ✅ | 78% | 270 | 15.26 | 1.34 | 8.78 | — | 10.63 | 63,085 | — |
+| RGA | REINSURANCE GROUP OF AMERICA | lynch | ✅ | 75% | 270 | 15.26 | 1.34 | 8.78 | — | 10.63 | 63,085 | — |
+| CPK | CHESAPEAKE UTILITIES CORP | piotroski | ✅ | 78% | 130 | 21.76 | 1.91 | 8.78 | 0.45 | — | 132,817 | — |
+| GRC | The Gorman-Rupp Company | piotroski | ✅ | 89% | 69.27 | 34.29 | 4.39 | 12.78 | 2.37 | 1.07 | 56,451 | — |
+| BCO | BRINK’S CO | piotroski | ✅ | 78% | 109 | 23.18 | 16.64 | 71.91 | 1.51 | 24.96 | 415,738 | — |
+| EXTR | Extreme Networks, Inc. | piotroski | ✅ | 89% | 22.54 | 72.71 | 34.34 | 47.54 | 0.93 | — | 931,281 | — |
+| TRIP | TRIPADVISOR, INC. | piotroski | ✅ | 89% | 9.44 | 30.45 | 1.92 | 6.20 | 1.29 | 3.07 | 3M | — |
+| SPOK | SPOK HOLDINGS, INC. | piotroski | ✅ | 78% | 10.63 | 14.17 | 1.53 | 10.85 | 1.18 | 0.41 | 31,445 | — |
+| UGI | UGI CORPORATION | piotroski | ✅ | 78% | 38.34 | 12.41 | 1.76 | 14.19 | 0.89 | 2.23 | 136,541 | — |
+| CPRI | CAPRI HOLDINGS LIMITED | piotroski | ✅ | 78% | 15.70 | 13.77 | 23.52 | 171 | 1.21 | 39.38 | 3M | — |
+| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 45.32 | 43.58 | — | -29.14 | 1.60 | -6.05 | 397,138 | — |
+| WWW | WOLVERINE WORLD WIDE, INC. | piotroski | ✅ | 78% | 20.53 | 18.01 | 4.11 | 23.48 | 1.40 | — | 120,071 | — |
+| MOS | MOSAIC CO | piotroski | ✅ | 89% | 17.18 | 10.11 | 0.45 | 4.47 | 1.32 | — | 3M | — |
+| CVI | CVR ENERGY, INC | piotroski | ✅ | 89% | 60.73 | 225 | 8.36 | 3.70 | 1.79 | — | 855,414 | — |
+| ZUMZ | ZUMIEZ INC | piotroski | ✅ | 89% | 14.15 | 18.14 | 0.75 | 4.13 | 2.01 | 0.99 | 28,033 | — |
+| MYE | Myers Industries, Inc. | piotroski | ✅ | 78% | 32.72 | 35.18 | 4.18 | 11.87 | 1.67 | 1.89 | 55,786 | — |
+| CLSK | CleanSpark, Inc. | greenblatt | ▫️ | 67% | 8.20 | — | 1.20 | 16.76 | 4.18 | 0.46 | 6M | — |
+| CLSK | CleanSpark, Inc. | graham | ▫️ | 56% | 8.20 | — | 1.20 | 16.76 | 4.18 | 0.46 | 6M | — |
+| CLSK | CleanSpark, Inc. | piotroski | ▫️ | 56% | 8.20 | — | 1.20 | 16.76 | 4.18 | 0.46 | 6M | — |
+| CLSK | CleanSpark, Inc. | buffett | ▫️ | 50% | 8.20 | — | 1.20 | 16.76 | 4.18 | 0.46 | 6M | — |
+| CLSK | CleanSpark, Inc. | lynch | ▫️ | 50% | 8.20 | — | 1.20 | 16.76 | 4.18 | 0.46 | 6M | — |
+| CLSK | CleanSpark, Inc. | netnet | ▫️ | 50% | 8.20 | — | 1.20 | 16.76 | 4.18 | 0.46 | 6M | — |
+| CLSK | CleanSpark, Inc. | custom | ▫️ | 0% | 8.20 | — | 1.20 | 16.76 | 4.18 | 0.46 | 6M | — |
+| VITL | Vital Farms, Inc. | greenblatt | ▫️ | 67% | 9.01 | 6.26 | 1.18 | 18.87 | 2.16 | 0.48 | 321,676 | — |
+| VITL | Vital Farms, Inc. | buffett | ▫️ | 50% | 9.01 | 6.26 | 1.18 | 18.87 | 2.16 | 0.48 | 321,676 | — |
+| VITL | Vital Farms, Inc. | netnet | ▫️ | 50% | 9.01 | 6.26 | 1.18 | 18.87 | 2.16 | 0.48 | 321,676 | — |
+| VITL | Vital Farms, Inc. | piotroski | ▫️ | 33% | 9.01 | 6.26 | 1.18 | 18.87 | 2.16 | 0.48 | 321,676 | — |
+| VITL | Vital Farms, Inc. | custom | ▫️ | 0% | 9.01 | 6.26 | 1.18 | 18.87 | 2.16 | 0.48 | 321,676 | — |
+| WING | WINGSTOP INC. | buffett | ▫️ | 67% | 120 | 19.32 | — | -23.65 | 3.26 | -1.94 | 1M | — |
+| WING | WINGSTOP INC. | piotroski | ▫️ | 67% | 120 | 19.32 | — | -23.65 | 3.26 | -1.94 | 1M | — |
+| WING | WINGSTOP INC. | greenblatt | ▫️ | 67% | 120 | 19.32 | — | -23.65 | 3.26 | -1.94 | 1M | — |
+| WING | WINGSTOP INC. | graham | ▫️ | 33% | 120 | 19.32 | — | -23.65 | 3.26 | -1.94 | 1M | — |
+| WING | WINGSTOP INC. | netnet | ▫️ | 25% | 120 | 19.32 | — | -23.65 | 3.26 | -1.94 | 1M | — |
+| WING | WINGSTOP INC. | custom | ▫️ | 0% | 120 | 19.32 | — | -23.65 | 3.26 | -1.94 | 1M | — |
+| ORC | Orchid Island Capital, Inc. | greenblatt | ▫️ | 67% | 4.97 | 4.01 | 0.46 | 11.59 | — | 7.51 | 2M | — |
+| ORC | Orchid Island Capital, Inc. | graham | ▫️ | 56% | 4.97 | 4.01 | 0.46 | 11.59 | — | 7.51 | 2M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
