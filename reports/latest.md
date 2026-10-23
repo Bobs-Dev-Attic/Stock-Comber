@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-22 22:32 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-23 00:57 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **26** strategy matches passed.
+Screened **75** companies · **36** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| REX | REX AMERICAN RESOURCES CORPO | lynch | ✅ | 75% | 39.82 | 15.93 | 2.17 | 15.57 | 5.94 | — | 226,656 | — |
-| AREC | AMERICAN RESOURCES CORPORATI | greenblatt | ✅ | 100% | 1.11 | 1.76 | 1.02 | 58.44 | 2.19 | 0.80 | 2M | — |
-| ANNAW | AleAnna, Inc. | piotroski | ✅ | 78% | 0.22 | 5.50 | 0.15 | 4.91 | 1.93 | 0.73 | 2,446 | — |
-| IBP | Installed Building Products, | piotroski | ✅ | 89% | 198 | 20.40 | 7.63 | 37.39 | 3.03 | 1.91 | 279,070 | — |
-| IBP | Installed Building Products, | lynch | ✅ | 75% | 198 | 20.40 | 7.63 | 37.39 | 3.03 | 1.91 | 279,070 | — |
-| SEATW | Vivid Seats Inc. | greenblatt | ✅ | 100% | 0.02 | 0.02 | — | -947 | 0.59 | -8.48 | 2M | — |
+| GOOGM | Alphabet Inc. | graham | ✅ | 100% | 46.65 | 4.32 | 1.37 | 31.83 | 2.01 | 0.43 | 271,242 | — |
+| GOOGM | Alphabet Inc. | buffett | ✅ | 100% | 46.65 | 4.32 | 1.37 | 31.83 | 2.01 | 0.43 | 271,242 | — |
+| GOOGM | Alphabet Inc. | greenblatt | ✅ | 100% | 46.65 | 4.32 | 1.37 | 31.83 | 2.01 | 0.43 | 271,242 | — |
+| GOOGM | Alphabet Inc. | lynch | ✅ | 100% | 46.65 | 4.32 | 1.37 | 31.83 | 2.01 | 0.43 | 271,242 | — |
+| NBR | NABORS INDUSTRIES LTD | piotroski | ✅ | 78% | 77.80 | 4.47 | 1.90 | 48.52 | 1.56 | 5.67 | 216,539 | — |
+| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 116 | 22.15 | 4.24 | 19.12 | 2.99 | — | 277,868 | — |
+| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 116 | 22.15 | 4.24 | 19.12 | 2.99 | — | 277,868 | — |
+| BKE | BUCKLE, INC | greenblatt | ✅ | 100% | 47.48 | 11.47 | 5.67 | 49.39 | 1.89 | 1.33 | 311,448 | — |
+| BKE | BUCKLE, INC | buffett | ✅ | 83% | 47.48 | 11.47 | 5.67 | 49.39 | 1.89 | 1.33 | 311,448 | — |
+| URBN | Urban Outfitters, Inc. | piotroski | ✅ | 100% | 88.29 | 17.45 | 2.88 | 16.51 | 1.51 | 0.78 | 630,292 | — |
+| URBN | Urban Outfitters, Inc. | lynch | ✅ | 75% | 88.29 | 17.45 | 2.88 | 16.51 | 1.51 | 0.78 | 630,292 | — |
+| EVR | EVERCORE INC. | buffett | ✅ | 83% | 255 | 18.18 | 5.30 | 29.14 | 2.16 | 1.50 | 607,116 | — |
+| EVR | EVERCORE INC. | piotroski | ✅ | 78% | 255 | 18.18 | 5.30 | 29.14 | 2.16 | 1.50 | 607,116 | — |
+| KFY | KORN FERRY | piotroski | ✅ | 100% | 76.35 | 14.63 | 2.03 | 14.06 | 1.94 | 1.06 | 403,171 | — |
+| KFY | KORN FERRY | lynch | ✅ | 75% | 76.35 | 14.63 | 2.03 | 14.06 | 1.94 | 1.06 | 403,171 | — |
 | ABG | ASBURY AUTOMOTIVE GROUP, INC | piotroski | ✅ | 78% | 173 | 6.90 | 0.87 | 12.64 | 0.95 | — | 481,657 | — |
 | ABG | ASBURY AUTOMOTIVE GROUP, INC | lynch | ✅ | 75% | 173 | 6.90 | 0.87 | 12.64 | 0.95 | — | 481,657 | — |
-| AGX | ARGAN INC | lynch | ✅ | 75% | 330 | 33.91 | 10.11 | 29.80 | 1.59 | 1.57 | 381,127 | — |
-| AOS | A. O. Smith Corporation | piotroski | ✅ | 78% | 62.47 | 16.23 | 4.77 | 29.40 | 1.50 | 0.69 | 2M | — |
-| KTB | KONTOOR BRANDS, INC. | lynch | ✅ | 75% | 77.78 | 19.20 | 7.73 | 40.27 | 1.82 | 3.57 | 589,854 | — |
-| HRB | H&R BLOCK INC | greenblatt | ✅ | 100% | 50.08 | 8.85 | 54.93 | 624 | 1.13 | 26.72 | 2M | — |
-| HRB | H&R BLOCK INC | piotroski | ✅ | 89% | 50.08 | 8.85 | 54.93 | 624 | 1.13 | 26.72 | 2M | — |
-| EFC | Ellington Financial Inc. | lynch | ✅ | 75% | 11.63 | 9.77 | 0.64 | 6.47 | — | 9.53 | 1M | — |
-| TBB | AT&T INC. | piotroski | ✅ | 78% | 17.98 | 5.91 | 1.02 | 17.36 | 0.91 | — | 135,412 | — |
-| BSY | BENTLEY SYSTEMS, INCORPORATE | piotroski | ✅ | 100% | 39.41 | 46.36 | 11.04 | 23.36 | 0.56 | 1.99 | 3M | — |
-| BSY | BENTLEY SYSTEMS, INCORPORATE | buffett | ✅ | 83% | 39.41 | 46.36 | 11.04 | 23.36 | 0.56 | 1.99 | 3M | — |
-| EMBC | EMBECTA CORP. | piotroski | ✅ | 78% | 6.86 | 4.23 | — | -14.66 | 2.41 | — | 922,040 | — |
-| MD | Pediatrix Medical Group, Inc | piotroski | ✅ | 78% | 29.55 | 15.23 | 2.91 | 19.10 | 1.66 | 1.59 | 1M | — |
-| IMAX | IMAX Corporation | piotroski | ✅ | 78% | 52.31 | 83.03 | 8.60 | 10.32 | — | 1.38 | 792,405 | — |
-| VVX | V2X, Inc. | piotroski | ✅ | 100% | 73.36 | 29.94 | 2.15 | 7.18 | 1.22 | 2.02 | 348,384 | — |
-| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 50.62 | 48.67 | — | -29.14 | 1.60 | -6.05 | 731,573 | — |
-| CHEF | CHEFS’ WAREHOUSE, INC. | piotroski | ✅ | 100% | 107 | 63.86 | 8.17 | 11.97 | 2.05 | 2.36 | 512,560 | — |
+| GPK | Graphic Packaging Holding Co | lynch | ✅ | 75% | 9.04 | 6.11 | 0.81 | 13.31 | 1.30 | — | 12M | — |
+| ACEL | Accel Entertainment, Inc. | piotroski | ✅ | 78% | 10.97 | 18.28 | 3.51 | 19.09 | 2.61 | — | 472,605 | — |
+| HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 125 | 48.65 | 316 | 649 | 4.66 | 50.73 | 5M | — |
+| BDC | BELDEN INC. | piotroski | ✅ | 89% | 103 | 17.51 | 3.29 | 18.78 | 1.93 | — | 486,352 | — |
+| TRN | TRINITY INDUSTRIES INC | greenblatt | ✅ | 100% | 25.82 | 8.47 | 1.99 | 23.50 | — | 6.76 | 779,067 | — |
+| TRN | TRINITY INDUSTRIES INC | piotroski | ✅ | 78% | 25.82 | 8.47 | 1.99 | 23.50 | — | 6.76 | 779,067 | — |
+| OSW | OneSpaWorld Holdings Limited | piotroski | ✅ | 78% | 24.29 | 35.20 | 4.64 | 13.20 | 1.91 | 0.30 | 431,057 | — |
+| TOST | Toast, Inc. | piotroski | ✅ | 78% | 33.42 | 59.68 | 9.55 | 16.10 | 2.75 | 0.48 | 9M | — |
+| AXTA | AXALTA COATING SYSTEMS LTD. | lynch | ✅ | 75% | 35.05 | 20.14 | 3.24 | 16.11 | 2.06 | 2.22 | 2M | — |
+| CW | CURTISS-WRIGHT CORPORATION | piotroski | ✅ | 89% | 474 | 36.85 | 7.04 | 19.11 | 1.44 | 1.06 | 545,264 | — |
+| SCSC | ScanSource, Inc. | piotroski | ✅ | 78% | 59.96 | 16.47 | 1.43 | 8.66 | 1.76 | 1.12 | 369,122 | — |
+| SCSC | ScanSource, Inc. | lynch | ✅ | 75% | 59.96 | 16.47 | 1.43 | 8.66 | 1.76 | 1.12 | 369,122 | — |
+| CPRI | CAPRI HOLDINGS LIMITED | piotroski | ✅ | 78% | 16.36 | 14.35 | 24.51 | 171 | 1.21 | 39.38 | 3M | — |
+| RH | RH | piotroski | ✅ | 89% | 140 | 22.21 | 45.77 | 206 | 1.19 | 78.80 | 2M | — |
 | LFST | LifeStance Health Group, Inc | piotroski | ✅ | 89% | 12.56 | 508 | 3.23 | 0.64 | 1.65 | 0.45 | 4M | — |
-| BJRI | BJ’S RESTAURANTS, INC. | piotroski | ✅ | 78% | 58.79 | 27.22 | 3.63 | 13.33 | 0.40 | 1.77 | 464,255 | — |
-| SHC | SOTERA HEALTH COMPANY | piotroski | ✅ | 78% | 18.13 | 67.15 | 8.57 | 12.86 | 2.46 | 4.38 | 3M | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | piotroski | ▫️ | 44% | 25.85 | — | — | — | 2.10 | — | 199,474 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | graham | ▫️ | 33% | 25.85 | — | — | — | 2.10 | — | 199,474 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | buffett | ▫️ | 33% | 25.85 | — | — | — | 2.10 | — | 199,474 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | greenblatt | ▫️ | 33% | 25.85 | — | — | — | 2.10 | — | 199,474 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | lynch | ▫️ | 25% | 25.85 | — | — | — | 2.10 | — | 199,474 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | netnet | ▫️ | 25% | 25.85 | — | — | — | 2.10 | — | 199,474 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | custom | ▫️ | 0% | 25.85 | — | — | — | 2.10 | — | 199,474 | — |
-| REX | REX AMERICAN RESOURCES CORPO | piotroski | ▫️ | 67% | 39.82 | 15.93 | 2.17 | 15.57 | 5.94 | — | 226,656 | — |
-| REX | REX AMERICAN RESOURCES CORPO | graham | ▫️ | 56% | 39.82 | 15.93 | 2.17 | 15.57 | 5.94 | — | 226,656 | — |
-| REX | REX AMERICAN RESOURCES CORPO | buffett | ▫️ | 50% | 39.82 | 15.93 | 2.17 | 15.57 | 5.94 | — | 226,656 | — |
-| REX | REX AMERICAN RESOURCES CORPO | greenblatt | ▫️ | 33% | 39.82 | 15.93 | 2.17 | 15.57 | 5.94 | — | 226,656 | — |
-| REX | REX AMERICAN RESOURCES CORPO | netnet | ▫️ | 25% | 39.82 | 15.93 | 2.17 | 15.57 | 5.94 | — | 226,656 | — |
-| REX | REX AMERICAN RESOURCES CORPO | custom | ▫️ | 0% | 39.82 | 15.93 | 2.17 | 15.57 | 5.94 | — | 226,656 | — |
-| ANNAW | AleAnna, Inc. | greenblatt | ▫️ | 67% | 0.22 | 5.50 | 0.15 | 4.91 | 1.93 | 0.73 | 2,446 | — |
-| AREC | AMERICAN RESOURCES CORPORATI | graham | ▫️ | 67% | 1.11 | 1.76 | 1.02 | 58.44 | 2.19 | 0.80 | 2M | — |
-| ANNAW | AleAnna, Inc. | graham | ▫️ | 56% | 0.22 | 5.50 | 0.15 | 4.91 | 1.93 | 0.73 | 2,446 | — |
-| ANNAW | AleAnna, Inc. | lynch | ▫️ | 50% | 0.22 | 5.50 | 0.15 | 4.91 | 1.93 | 0.73 | 2,446 | — |
-| AREC | AMERICAN RESOURCES CORPORATI | lynch | ▫️ | 50% | 1.11 | 1.76 | 1.02 | 58.44 | 2.19 | 0.80 | 2M | — |
-| AREC | AMERICAN RESOURCES CORPORATI | netnet | ▫️ | 50% | 1.11 | 1.76 | 1.02 | 58.44 | 2.19 | 0.80 | 2M | — |
-| AREC | AMERICAN RESOURCES CORPORATI | piotroski | ▫️ | 33% | 1.11 | 1.76 | 1.02 | 58.44 | 2.19 | 0.80 | 2M | — |
-| ANNAW | AleAnna, Inc. | netnet | ▫️ | 25% | 0.22 | 5.50 | 0.15 | 4.91 | 1.93 | 0.73 | 2,446 | — |
-| ANNAW | AleAnna, Inc. | buffett | ▫️ | 17% | 0.22 | 5.50 | 0.15 | 4.91 | 1.93 | 0.73 | 2,446 | — |
-| AREC | AMERICAN RESOURCES CORPORATI | buffett | ▫️ | 17% | 1.11 | 1.76 | 1.02 | 58.44 | 2.19 | 0.80 | 2M | — |
-| ANNAW | AleAnna, Inc. | custom | ▫️ | 0% | 0.22 | 5.50 | 0.15 | 4.91 | 1.93 | 0.73 | 2,446 | — |
+| RRX | REGAL REXNORD CORP | piotroski | ✅ | 78% | 149 | 35.41 | 1.45 | 4.08 | 2.15 | — | 2M | — |
+| THO | THOR INDUSTRIES, INC. | piotroski | ✅ | 78% | 70.71 | 20.92 | 0.87 | 4.17 | 1.77 | — | 773,290 | — |
+| WGO | WINNEBAGO INDUSTRIES, INC. | piotroski | ✅ | 78% | 28.57 | 23.61 | 0.66 | 2.79 | 2.17 | 0.70 | 2M | — |
+| GXO | GXO Logistics, Inc. | piotroski | ✅ | 78% | 48.91 | 175 | 1.91 | 1.07 | 0.85 | — | 681,286 | — |
+| GOOGM | Alphabet Inc. | piotroski | ▫️ | 67% | 46.65 | 4.32 | 1.37 | 31.83 | 2.01 | 0.43 | 271,242 | — |
+| GOOGM | Alphabet Inc. | netnet | ▫️ | 50% | 46.65 | 4.32 | 1.37 | 31.83 | 2.01 | 0.43 | 271,242 | — |
+| GOOGM | Alphabet Inc. | custom | ▫️ | 0% | 46.65 | 4.32 | 1.37 | 31.83 | 2.01 | 0.43 | 271,242 | — |
+| NBR | NABORS INDUSTRIES LTD | greenblatt | ▫️ | 67% | 77.80 | 4.47 | 1.90 | 48.52 | 1.56 | 5.67 | 216,539 | — |
+| NBR | NABORS INDUSTRIES LTD | graham | ▫️ | 44% | 77.80 | 4.47 | 1.90 | 48.52 | 1.56 | 5.67 | 216,539 | — |
+| NBR | NABORS INDUSTRIES LTD | lynch | ▫️ | 25% | 77.80 | 4.47 | 1.90 | 48.52 | 1.56 | 5.67 | 216,539 | — |
+| NBR | NABORS INDUSTRIES LTD | netnet | ▫️ | 25% | 77.80 | 4.47 | 1.90 | 48.52 | 1.56 | 5.67 | 216,539 | — |
+| NBR | NABORS INDUSTRIES LTD | buffett | ▫️ | 17% | 77.80 | 4.47 | 1.90 | 48.52 | 1.56 | 5.67 | 216,539 | — |
+| NBR | NABORS INDUSTRIES LTD | custom | ▫️ | 0% | 77.80 | 4.47 | 1.90 | 48.52 | 1.56 | 5.67 | 216,539 | — |
+| IPAR | INTERPARFUMS, INC. | graham | ▫️ | 67% | 116 | 22.15 | 4.24 | 19.12 | 2.99 | — | 277,868 | — |
+| IPAR | INTERPARFUMS, INC. | piotroski | ▫️ | 67% | 116 | 22.15 | 4.24 | 19.12 | 2.99 | — | 277,868 | — |
+| IPAR | INTERPARFUMS, INC. | greenblatt | ▫️ | 33% | 116 | 22.15 | 4.24 | 19.12 | 2.99 | — | 277,868 | — |
+| IPAR | INTERPARFUMS, INC. | netnet | ▫️ | 25% | 116 | 22.15 | 4.24 | 19.12 | 2.99 | — | 277,868 | — |
+| IPAR | INTERPARFUMS, INC. | custom | ▫️ | 0% | 116 | 22.15 | 4.24 | 19.12 | 2.99 | — | 277,868 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
