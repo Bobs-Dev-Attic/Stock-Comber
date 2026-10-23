@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-23 00:57 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-23 05:36 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **36** strategy matches passed.
+Screened **75** companies · **32** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| GOOGM | Alphabet Inc. | graham | ✅ | 100% | 46.65 | 4.32 | 1.37 | 31.83 | 2.01 | 0.43 | 271,242 | — |
-| GOOGM | Alphabet Inc. | buffett | ✅ | 100% | 46.65 | 4.32 | 1.37 | 31.83 | 2.01 | 0.43 | 271,242 | — |
-| GOOGM | Alphabet Inc. | greenblatt | ✅ | 100% | 46.65 | 4.32 | 1.37 | 31.83 | 2.01 | 0.43 | 271,242 | — |
-| GOOGM | Alphabet Inc. | lynch | ✅ | 100% | 46.65 | 4.32 | 1.37 | 31.83 | 2.01 | 0.43 | 271,242 | — |
-| NBR | NABORS INDUSTRIES LTD | piotroski | ✅ | 78% | 77.80 | 4.47 | 1.90 | 48.52 | 1.56 | 5.67 | 216,539 | — |
-| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 116 | 22.15 | 4.24 | 19.12 | 2.99 | — | 277,868 | — |
-| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 116 | 22.15 | 4.24 | 19.12 | 2.99 | — | 277,868 | — |
-| BKE | BUCKLE, INC | greenblatt | ✅ | 100% | 47.48 | 11.47 | 5.67 | 49.39 | 1.89 | 1.33 | 311,448 | — |
-| BKE | BUCKLE, INC | buffett | ✅ | 83% | 47.48 | 11.47 | 5.67 | 49.39 | 1.89 | 1.33 | 311,448 | — |
-| URBN | Urban Outfitters, Inc. | piotroski | ✅ | 100% | 88.29 | 17.45 | 2.88 | 16.51 | 1.51 | 0.78 | 630,292 | — |
-| URBN | Urban Outfitters, Inc. | lynch | ✅ | 75% | 88.29 | 17.45 | 2.88 | 16.51 | 1.51 | 0.78 | 630,292 | — |
-| EVR | EVERCORE INC. | buffett | ✅ | 83% | 255 | 18.18 | 5.30 | 29.14 | 2.16 | 1.50 | 607,116 | — |
-| EVR | EVERCORE INC. | piotroski | ✅ | 78% | 255 | 18.18 | 5.30 | 29.14 | 2.16 | 1.50 | 607,116 | — |
-| KFY | KORN FERRY | piotroski | ✅ | 100% | 76.35 | 14.63 | 2.03 | 14.06 | 1.94 | 1.06 | 403,171 | — |
-| KFY | KORN FERRY | lynch | ✅ | 75% | 76.35 | 14.63 | 2.03 | 14.06 | 1.94 | 1.06 | 403,171 | — |
-| ABG | ASBURY AUTOMOTIVE GROUP, INC | piotroski | ✅ | 78% | 173 | 6.90 | 0.87 | 12.64 | 0.95 | — | 481,657 | — |
-| ABG | ASBURY AUTOMOTIVE GROUP, INC | lynch | ✅ | 75% | 173 | 6.90 | 0.87 | 12.64 | 0.95 | — | 481,657 | — |
-| GPK | Graphic Packaging Holding Co | lynch | ✅ | 75% | 9.04 | 6.11 | 0.81 | 13.31 | 1.30 | — | 12M | — |
-| ACEL | Accel Entertainment, Inc. | piotroski | ✅ | 78% | 10.97 | 18.28 | 3.51 | 19.09 | 2.61 | — | 472,605 | — |
-| HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 125 | 48.65 | 316 | 649 | 4.66 | 50.73 | 5M | — |
-| BDC | BELDEN INC. | piotroski | ✅ | 89% | 103 | 17.51 | 3.29 | 18.78 | 1.93 | — | 486,352 | — |
-| TRN | TRINITY INDUSTRIES INC | greenblatt | ✅ | 100% | 25.82 | 8.47 | 1.99 | 23.50 | — | 6.76 | 779,067 | — |
-| TRN | TRINITY INDUSTRIES INC | piotroski | ✅ | 78% | 25.82 | 8.47 | 1.99 | 23.50 | — | 6.76 | 779,067 | — |
+| KRP | Kimbell Royalty Partners, LP | piotroski | ✅ | 78% | 16.48 | — | — | — | 8.64 | — | 925,273 | — |
+| SAFX | XCF GLOBAL, INC. | greenblatt | ✅ | 100% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 13M | — |
+| LPG | DORIAN LPG LTD. | lynch | ✅ | 100% | 51.44 | 11.33 | 1.92 | 17.00 | 2.67 | 0.64 | 520,960 | — |
+| LPG | DORIAN LPG LTD. | piotroski | ✅ | 89% | 51.44 | 11.33 | 1.92 | 17.00 | 2.67 | 0.64 | 520,960 | — |
+| REX | REX AMERICAN RESOURCES CORPO | lynch | ✅ | 75% | 39.82 | 15.93 | 2.17 | 15.57 | 5.94 | — | 226,656 | — |
+| AREC | AMERICAN RESOURCES CORPORATI | greenblatt | ✅ | 100% | 1.11 | 1.76 | 1.02 | 58.44 | 2.19 | 0.80 | 2M | — |
+| ANNAW | AleAnna, Inc. | piotroski | ✅ | 78% | 0.22 | 5.50 | 0.15 | 4.91 | 1.93 | 0.73 | 2,446 | — |
+| SMPL | The Simply Good Foods Compan | graham | ✅ | 100% | 11.08 | 10.86 | 0.62 | 5.73 | 3.64 | 0.33 | 2M | — |
+| SMPL | The Simply Good Foods Compan | lynch | ✅ | 100% | 11.08 | 10.86 | 0.62 | 5.73 | 3.64 | 0.33 | 2M | — |
+| PATH | UiPath, Inc. | piotroski | ✅ | 89% | 13.94 | 26.81 | 3.65 | 13.56 | 2.48 | 0.53 | 36M | — |
+| SFD | SMITHFIELD FOODS, INC. | graham | ✅ | 100% | 18.81 | 7.49 | 1.09 | 14.51 | 2.97 | — | 2M | — |
+| JOE | The St. Joe Company | piotroski | ✅ | 89% | 69.45 | 34.90 | 5.25 | 15.09 | — | 0.97 | 182,149 | — |
+| ORI | OLD REPUBLIC INTERNATIONAL C | piotroski | ✅ | 78% | 40.08 | 10.77 | 1.70 | 15.82 | — | 4.05 | 3M | — |
+| GEO | The GEO Group, Inc. | piotroski | ✅ | 78% | 26.94 | 14.80 | 2.50 | 16.89 | 2.01 | — | 3M | — |
+| GEO | The GEO Group, Inc. | lynch | ✅ | 75% | 26.94 | 14.80 | 2.50 | 16.89 | 2.01 | — | 3M | — |
 | OSW | OneSpaWorld Holdings Limited | piotroski | ✅ | 78% | 24.29 | 35.20 | 4.64 | 13.20 | 1.91 | 0.30 | 431,057 | — |
-| TOST | Toast, Inc. | piotroski | ✅ | 78% | 33.42 | 59.68 | 9.55 | 16.10 | 2.75 | 0.48 | 9M | — |
-| AXTA | AXALTA COATING SYSTEMS LTD. | lynch | ✅ | 75% | 35.05 | 20.14 | 3.24 | 16.11 | 2.06 | 2.22 | 2M | — |
-| CW | CURTISS-WRIGHT CORPORATION | piotroski | ✅ | 89% | 474 | 36.85 | 7.04 | 19.11 | 1.44 | 1.06 | 545,264 | — |
-| SCSC | ScanSource, Inc. | piotroski | ✅ | 78% | 59.96 | 16.47 | 1.43 | 8.66 | 1.76 | 1.12 | 369,122 | — |
-| SCSC | ScanSource, Inc. | lynch | ✅ | 75% | 59.96 | 16.47 | 1.43 | 8.66 | 1.76 | 1.12 | 369,122 | — |
-| CPRI | CAPRI HOLDINGS LIMITED | piotroski | ✅ | 78% | 16.36 | 14.35 | 24.51 | 171 | 1.21 | 39.38 | 3M | — |
-| RH | RH | piotroski | ✅ | 89% | 140 | 22.21 | 45.77 | 206 | 1.19 | 78.80 | 2M | — |
-| LFST | LifeStance Health Group, Inc | piotroski | ✅ | 89% | 12.56 | 508 | 3.23 | 0.64 | 1.65 | 0.45 | 4M | — |
+| PCTY | Paylocity Holding Corporatio | piotroski | ✅ | 89% | 178 | 36.11 | 7.97 | 22.08 | 1.09 | 3.00 | 686,461 | — |
+| CWEN | Clearway Energy, Inc. | lynch | ✅ | 75% | 31.43 | 6.51 | 0.19 | 2.91 | 1.13 | 1.85 | 1M | — |
+| KNTK | KINETIK HOLDINGS INC. | lynch | ✅ | 75% | 54.64 | 20.78 | — | -31.53 | 0.69 | -7.37 | 1M | — |
+| FMNB | FARMERS NATIONAL BANC CORP / | piotroski | ✅ | 89% | 15.66 | 10.80 | 1.21 | 11.24 | — | 9.80 | 303,452 | — |
+| HLIO | HELIOS TECHNOLOGIES, INC. | piotroski | ✅ | 100% | 66.59 | 45.92 | 2.38 | 5.20 | 2.90 | 0.63 | 337,964 | — |
+| HLIO | HELIOS TECHNOLOGIES, INC. | lynch | ✅ | 75% | 66.59 | 45.92 | 2.38 | 5.20 | 2.90 | 0.63 | 337,964 | — |
+| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.18 | 19.00 | 0.75 | 3.99 | 9.18 | 0.34 | 132,674 | — |
+| KOP | KOPPERS HOLDINGS INC. | piotroski | ✅ | 89% | 40.75 | 14.87 | 1.45 | 9.76 | 2.94 | 2.29 | 173,321 | — |
 | RRX | REGAL REXNORD CORP | piotroski | ✅ | 78% | 149 | 35.41 | 1.45 | 4.08 | 2.15 | — | 2M | — |
-| THO | THOR INDUSTRIES, INC. | piotroski | ✅ | 78% | 70.71 | 20.92 | 0.87 | 4.17 | 1.77 | — | 773,290 | — |
-| WGO | WINNEBAGO INDUSTRIES, INC. | piotroski | ✅ | 78% | 28.57 | 23.61 | 0.66 | 2.79 | 2.17 | 0.70 | 2M | — |
-| GXO | GXO Logistics, Inc. | piotroski | ✅ | 78% | 48.91 | 175 | 1.91 | 1.07 | 0.85 | — | 681,286 | — |
-| GOOGM | Alphabet Inc. | piotroski | ▫️ | 67% | 46.65 | 4.32 | 1.37 | 31.83 | 2.01 | 0.43 | 271,242 | — |
-| GOOGM | Alphabet Inc. | netnet | ▫️ | 50% | 46.65 | 4.32 | 1.37 | 31.83 | 2.01 | 0.43 | 271,242 | — |
-| GOOGM | Alphabet Inc. | custom | ▫️ | 0% | 46.65 | 4.32 | 1.37 | 31.83 | 2.01 | 0.43 | 271,242 | — |
-| NBR | NABORS INDUSTRIES LTD | greenblatt | ▫️ | 67% | 77.80 | 4.47 | 1.90 | 48.52 | 1.56 | 5.67 | 216,539 | — |
-| NBR | NABORS INDUSTRIES LTD | graham | ▫️ | 44% | 77.80 | 4.47 | 1.90 | 48.52 | 1.56 | 5.67 | 216,539 | — |
-| NBR | NABORS INDUSTRIES LTD | lynch | ▫️ | 25% | 77.80 | 4.47 | 1.90 | 48.52 | 1.56 | 5.67 | 216,539 | — |
-| NBR | NABORS INDUSTRIES LTD | netnet | ▫️ | 25% | 77.80 | 4.47 | 1.90 | 48.52 | 1.56 | 5.67 | 216,539 | — |
-| NBR | NABORS INDUSTRIES LTD | buffett | ▫️ | 17% | 77.80 | 4.47 | 1.90 | 48.52 | 1.56 | 5.67 | 216,539 | — |
-| NBR | NABORS INDUSTRIES LTD | custom | ▫️ | 0% | 77.80 | 4.47 | 1.90 | 48.52 | 1.56 | 5.67 | 216,539 | — |
-| IPAR | INTERPARFUMS, INC. | graham | ▫️ | 67% | 116 | 22.15 | 4.24 | 19.12 | 2.99 | — | 277,868 | — |
-| IPAR | INTERPARFUMS, INC. | piotroski | ▫️ | 67% | 116 | 22.15 | 4.24 | 19.12 | 2.99 | — | 277,868 | — |
-| IPAR | INTERPARFUMS, INC. | greenblatt | ▫️ | 33% | 116 | 22.15 | 4.24 | 19.12 | 2.99 | — | 277,868 | — |
-| IPAR | INTERPARFUMS, INC. | netnet | ▫️ | 25% | 116 | 22.15 | 4.24 | 19.12 | 2.99 | — | 277,868 | — |
-| IPAR | INTERPARFUMS, INC. | custom | ▫️ | 0% | 116 | 22.15 | 4.24 | 19.12 | 2.99 | — | 277,868 | — |
+| SPHR | SPHERE ENTERTAINMENT CO. | piotroski | ✅ | 78% | 112 | 151 | 2.26 | 1.50 | 1.09 | 0.89 | 586,741 | — |
+| MSGS | MADISON SQUARE GARDEN SPORTS | piotroski | ✅ | 100% | 389 | 1,217 | — | -2.95 | 0.50 | -6.84 | 420,264 | — |
+| CVI | CVR ENERGY, INC | piotroski | ✅ | 89% | 58.63 | 217 | 8.07 | 3.70 | 1.79 | — | 611,285 | — |
+| DBD | Diebold Nixdorf, Incorporate | piotroski | ✅ | 78% | 69.26 | 27.27 | 2.34 | 8.60 | 1.30 | 2.50 | 196,242 | — |
+| ARKO | ARKO Corp. | piotroski | ✅ | 78% | 4.09 | 27.30 | 1.76 | 8.51 | 1.66 | 11.85 | 634,942 | — |
+| ORN | ORION GROUP HOLDINGS, INC. | piotroski | ✅ | 78% | 8.41 | 140 | 2.10 | 1.56 | 1.36 | 1.61 | 513,397 | — |
+| TLYS | TILLY’S, INC. | piotroski | ✅ | 78% | 4.44 | — | 1.57 | -20.50 | 1.25 | 2.65 | 73,061 | — |
+| KRP | Kimbell Royalty Partners, LP | graham | ▫️ | 33% | 16.48 | — | — | — | 8.64 | — | 925,273 | — |
+| KRP | Kimbell Royalty Partners, LP | greenblatt | ▫️ | 33% | 16.48 | — | — | — | 8.64 | — | 925,273 | — |
+| KRP | Kimbell Royalty Partners, LP | lynch | ▫️ | 25% | 16.48 | — | — | — | 8.64 | — | 925,273 | — |
+| KRP | Kimbell Royalty Partners, LP | netnet | ▫️ | 25% | 16.48 | — | — | — | 8.64 | — | 925,273 | — |
+| KRP | Kimbell Royalty Partners, LP | buffett | ▫️ | 17% | 16.48 | — | — | — | 8.64 | — | 925,273 | — |
+| KRP | Kimbell Royalty Partners, LP | custom | ▫️ | 0% | 16.48 | — | — | — | 8.64 | — | 925,273 | — |
+| SAFX | XCF GLOBAL, INC. | graham | ▫️ | 44% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 13M | — |
+| SAFX | XCF GLOBAL, INC. | buffett | ▫️ | 33% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 13M | — |
+| SAFX | XCF GLOBAL, INC. | lynch | ▫️ | 25% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 13M | — |
+| SAFX | XCF GLOBAL, INC. | netnet | ▫️ | 25% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 13M | — |
+| SAFX | XCF GLOBAL, INC. | piotroski | ▫️ | 11% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 13M | — |
+| SAFX | XCF GLOBAL, INC. | custom | ▫️ | 0% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 13M | — |
+| LPG | DORIAN LPG LTD. | graham | ▫️ | 67% | 51.44 | 11.33 | 1.92 | 17.00 | 2.67 | 0.64 | 520,960 | — |
+| LPG | DORIAN LPG LTD. | buffett | ▫️ | 67% | 51.44 | 11.33 | 1.92 | 17.00 | 2.67 | 0.64 | 520,960 | — |
+| LPG | DORIAN LPG LTD. | greenblatt | ▫️ | 67% | 51.44 | 11.33 | 1.92 | 17.00 | 2.67 | 0.64 | 520,960 | — |
+| LPG | DORIAN LPG LTD. | netnet | ▫️ | 25% | 51.44 | 11.33 | 1.92 | 17.00 | 2.67 | 0.64 | 520,960 | — |
+| LPG | DORIAN LPG LTD. | custom | ▫️ | 0% | 51.44 | 11.33 | 1.92 | 17.00 | 2.67 | 0.64 | 520,960 | — |
+| REX | REX AMERICAN RESOURCES CORPO | piotroski | ▫️ | 67% | 39.82 | 15.93 | 2.17 | 15.57 | 5.94 | — | 226,656 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
