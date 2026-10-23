@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-YELP,YELP INC,greenblatt,True,3,3,100.0,19.95,8.90,1.83,20.48,2.99,0.35,23.46,"517,835",—
-YELP,YELP INC,piotroski,True,8,9,88.9,19.95,8.90,1.83,20.48,2.99,0.35,23.46,"517,835",—
-NBR,NABORS INDUSTRIES LTD,piotroski,True,7,9,77.8,80.56,4.63,1.97,48.52,1.56,5.67,127,"137,336",—
-CVSA,Covista Inc.,lynch,True,3,4,75.0,131,18.65,3.24,17.40,1.09,1.08,80.09,"153,568",—
-SFD,"SMITHFIELD FOODS, INC.",graham,True,9,9,100.0,18.55,7.39,1.07,14.51,2.97,—,31.27,1M,—
-SEATW,Vivid Seats Inc.,greenblatt,True,3,3,100.0,0.02,0.02,—,-947,0.59,-8.48,—,2M,—
-VISN,"Vistance Networks, Inc.",greenblatt,True,3,3,100.0,6.13,0.64,—,-227,3.88,-9.06,—,4M,—
-PGY,Pagaya Technologies Ltd.,piotroski,True,7,9,77.8,18.95,20.38,3.28,16.96,—,2.00,10.99,1M,—
-NYT,THE NEW YORK TIMES COMPANY,piotroski,True,9,9,100.0,69.42,33.22,5.61,16.85,1.54,—,24.12,2M,—
-ORI,OLD REPUBLIC INTERNATIONAL CORPORATION,piotroski,True,7,9,77.8,40.08,10.77,1.70,15.82,—,4.05,44.38,3M,—
-TRN,TRINITY INDUSTRIES INC,greenblatt,True,3,3,100.0,25.82,8.47,1.99,23.50,—,6.76,29.86,"779,076",—
-TRN,TRINITY INDUSTRIES INC,piotroski,True,7,9,77.8,25.82,8.47,1.99,23.50,—,6.76,29.86,"779,076",—
-AGCO,AGCO CORP /DE,piotroski,True,8,9,88.9,106,10.89,1.85,17.00,1.39,1.72,112,"567,112",—
-VIRT,"Virtu Financial, Inc.",piotroski,True,7,9,77.8,56.03,10.92,3.02,29.60,—,11.49,46.27,"333,147",—
-DLB,"Dolby Laboratories, Inc.",piotroski,True,7,9,77.8,63.28,24.15,2.35,9.72,3.17,0.23,39.82,"501,314",—
-CENTA,Central Garden & Pet Company,piotroski,True,8,9,88.9,38.81,15.22,1.56,10.29,3.67,—,37.73,"461,318",—
-IDT,IDT CORP,piotroski,True,7,9,77.8,82.48,23.84,5.47,22.96,1.86,0.94,34.26,"70,426",—
-LNT,ALLIANT ENERGY CORP,piotroski,True,7,9,77.8,69.74,22.21,2.45,11.04,0.80,—,44.83,1M,—
-HAYW,"Hayward Holdings, Inc.",piotroski,True,9,9,100.0,12.69,18.65,1.77,9.51,2.94,0.98,10.47,2M,—
-CPRI,CAPRI HOLDINGS LIMITED,piotroski,True,7,9,77.8,16.36,14.35,24.51,171,1.21,39.38,4.14,3M,—
-INNV,InnovAge Holding Corp.,piotroski,True,7,9,77.8,9.52,—,5.48,-1.08,1.05,1.23,—,"950,830",—
-DAR,DARLING INGREDIENTS INC.,piotroski,True,7,9,77.8,55.64,143,1.88,1.33,1.50,1.16,16.11,3M,—
-ORN,"ORION GROUP HOLDINGS, INC.",piotroski,True,7,9,77.8,8.41,140,2.10,1.56,1.36,1.61,2.33,"513,409",—
-AAAU,GOLDMAN SACHS PHYSICAL GOLD ETF,greenblatt,False,2,3,66.7,39.36,2.37,—,—,—,—,—,1M,—
-AAAU,GOLDMAN SACHS PHYSICAL GOLD ETF,lynch,False,2,4,50.0,39.36,2.37,—,—,—,—,—,1M,—
-AAAU,GOLDMAN SACHS PHYSICAL GOLD ETF,piotroski,False,3,9,33.3,39.36,2.37,—,—,—,—,—,1M,—
-AAAU,GOLDMAN SACHS PHYSICAL GOLD ETF,netnet,False,1,4,25.0,39.36,2.37,—,—,—,—,—,1M,—
-AAAU,GOLDMAN SACHS PHYSICAL GOLD ETF,graham,False,2,9,22.2,39.36,2.37,—,—,—,—,—,1M,—
-AAAU,GOLDMAN SACHS PHYSICAL GOLD ETF,buffett,False,1,6,16.7,39.36,2.37,—,—,—,—,—,1M,—
-AAAU,GOLDMAN SACHS PHYSICAL GOLD ETF,custom,False,0,0,0.0,39.36,2.37,—,—,—,—,—,1M,—
-YELP,YELP INC,graham,False,7,9,77.8,19.95,8.90,1.83,20.48,2.99,0.35,23.46,"517,835",—
-YELP,YELP INC,buffett,False,3,6,50.0,19.95,8.90,1.83,20.48,2.99,0.35,23.46,"517,835",—
-YELP,YELP INC,lynch,False,2,4,50.0,19.95,8.90,1.83,20.48,2.99,0.35,23.46,"517,835",—
-YELP,YELP INC,netnet,False,2,4,50.0,19.95,8.90,1.83,20.48,2.99,0.35,23.46,"517,835",—
-YELP,YELP INC,custom,False,0,0,0.0,19.95,8.90,1.83,20.48,2.99,0.35,23.46,"517,835",—
-NBR,NABORS INDUSTRIES LTD,greenblatt,False,2,3,66.7,80.56,4.63,1.97,48.52,1.56,5.67,127,"137,336",—
-NBR,NABORS INDUSTRIES LTD,graham,False,4,9,44.4,80.56,4.63,1.97,48.52,1.56,5.67,127,"137,336",—
-NBR,NABORS INDUSTRIES LTD,lynch,False,1,4,25.0,80.56,4.63,1.97,48.52,1.56,5.67,127,"137,336",—
-NBR,NABORS INDUSTRIES LTD,netnet,False,1,4,25.0,80.56,4.63,1.97,48.52,1.56,5.67,127,"137,336",—
-NBR,NABORS INDUSTRIES LTD,buffett,False,1,6,16.7,80.56,4.63,1.97,48.52,1.56,5.67,127,"137,336",—
-NBR,NABORS INDUSTRIES LTD,custom,False,0,0,0.0,80.56,4.63,1.97,48.52,1.56,5.67,127,"137,336",—
-LNTH,"Lantheus Holdings, Inc.",piotroski,False,5,9,55.6,99.91,29.30,6.27,21.43,2.70,1.04,34.95,"352,477",—
-LNTH,"Lantheus Holdings, Inc.",buffett,False,3,6,50.0,99.91,29.30,6.27,21.43,2.70,1.04,34.95,"352,477",—
-LNTH,"Lantheus Holdings, Inc.",graham,False,3,9,33.3,99.91,29.30,6.27,21.43,2.70,1.04,34.95,"352,477",—
-LNTH,"Lantheus Holdings, Inc.",greenblatt,False,1,3,33.3,99.91,29.30,6.27,21.43,2.70,1.04,34.95,"352,477",—
-LNTH,"Lantheus Holdings, Inc.",lynch,False,1,4,25.0,99.91,29.30,6.27,21.43,2.70,1.04,34.95,"352,477",—
-LNTH,"Lantheus Holdings, Inc.",netnet,False,1,4,25.0,99.91,29.30,6.27,21.43,2.70,1.04,34.95,"352,477",—
-LNTH,"Lantheus Holdings, Inc.",custom,False,0,0,0.0,99.91,29.30,6.27,21.43,2.70,1.04,34.95,"352,477",—
-WT,"WisdomTree, Inc.",buffett,False,4,6,66.7,21.15,28.20,7.41,26.38,1.75,2.66,6.94,"700,824",—
-WT,"WisdomTree, Inc.",piotroski,False,6,9,66.7,21.15,28.20,7.41,26.38,1.75,2.66,6.94,"700,824",—
+MLI,"MUELLER INDUSTRIES, INC",buffett,True,6,6,100.0,54.11,7.89,1.88,23.84,5.92,0.15,66.66,2M,—
+MLI,"MUELLER INDUSTRIES, INC",greenblatt,True,3,3,100.0,54.11,7.89,1.88,23.84,5.92,0.15,66.66,2M,—
+MLI,"MUELLER INDUSTRIES, INC",lynch,True,4,4,100.0,54.11,7.89,1.88,23.84,5.92,0.15,66.66,2M,—
+MLI,"MUELLER INDUSTRIES, INC",graham,True,8,9,88.9,54.11,7.89,1.88,23.84,5.92,0.15,66.66,2M,—
+MLI,"MUELLER INDUSTRIES, INC",piotroski,True,7,9,77.8,54.11,7.89,1.88,23.84,5.92,0.15,66.66,2M,—
+CF,"CF INDUSTRIES HOLDINGS, INC.",greenblatt,True,3,3,100.0,121,13.45,4.05,37.16,3.37,—,77.59,2M,—
+CF,"CF INDUSTRIES HOLDINGS, INC.",piotroski,True,8,9,88.9,121,13.45,4.05,37.16,3.37,—,77.59,2M,—
+CF,"CF INDUSTRIES HOLDINGS, INC.",buffett,True,5,6,83.3,121,13.45,4.05,37.16,3.37,—,77.59,2M,—
+CF,"CF INDUSTRIES HOLDINGS, INC.",lynch,True,3,4,75.0,121,13.45,4.05,37.16,3.37,—,77.59,2M,—
+TMDX,"TransMedics Group, Inc.",piotroski,True,7,9,77.8,70.74,14.53,6.06,40.22,7.14,1.26,35.76,"789,576",—
+IPAR,"INTERPARFUMS, INC.",buffett,True,5,6,83.3,115,21.99,4.20,19.12,2.99,—,56.84,"155,552",—
+IPAR,"INTERPARFUMS, INC.",lynch,True,3,4,75.0,115,21.99,4.20,19.12,2.99,—,56.84,"155,552",—
+IBP,"Installed Building Products, Inc.",piotroski,True,8,9,88.9,199,20.51,7.67,37.39,3.03,1.91,75.33,"367,602",—
+IBP,"Installed Building Products, Inc.",lynch,True,3,4,75.0,199,20.51,7.67,37.39,3.03,1.91,75.33,"367,602",—
+KRYS,"Krystal Biotech, Inc.",piotroski,True,8,9,88.9,312,45.54,7.65,16.80,9.95,0.09,79.16,"270,034",—
+DAKT,"Daktronics, Inc.",piotroski,True,8,9,88.9,20.60,22.39,3.38,15.09,2.31,—,11.23,"606,844",—
+SBAC,SBA COMMUNICATIONS CORPORATION,piotroski,True,7,9,77.8,185,18.85,—,-21.71,0.29,—,—,3M,—
+DAKT,"Daktronics, Inc.",lynch,True,3,4,75.0,20.60,22.39,3.38,15.09,2.31,—,11.23,"606,844",—
+SBH,"SALLY BEAUTY HOLDINGS, INC.",piotroski,True,8,9,88.9,17.40,9.21,2.27,24.66,2.26,2.62,18.04,1M,—
+EZPW,"EZCORP, INC.",piotroski,True,7,9,77.8,28.70,20.21,2.33,10.69,5.61,0.90,19.82,2M,—
+BFH,"BREAD FINANCIAL HOLDINGS, INC.",lynch,True,3,4,75.0,99.89,9.17,1.43,15.57,—,5.81,131,"687,765",—
+OPY,OPPENHEIMER HOLDINGS INC.,piotroski,True,7,9,77.8,101,7.75,1.17,15.08,—,2.77,159,"69,657",—
+LNC,LINCOLN NATIONAL CORP,lynch,True,3,4,75.0,39.84,6.83,0.68,10.79,—,37.25,87.69,2M,—
+TILE,INTERFACE INC,piotroski,True,8,9,88.9,36.42,18.58,3.36,18.12,2.34,0.88,21.85,"430,628",—
+BBWI,"BATH & BODY WORKS, INC.",greenblatt,True,3,3,100.0,20.95,6.74,—,-50.66,1.27,—,—,5M,—
+ABM,ABM INDUSTRIES INCORPORATED,piotroski,True,8,9,88.9,53.67,20.72,1.88,9.09,1.48,1.95,40.74,"287,542",—
+MD,"Pediatrix Medical Group, Inc.",piotroski,True,7,9,77.8,29.29,15.10,2.88,19.10,1.66,1.59,21.05,"574,761",—
+VMD,"VIEMED HEALTHCARE, INC.",piotroski,True,7,9,77.8,9.80,26.49,2.83,10.55,1.18,0.39,5.37,"123,145",—
+NPKI,NPK International Inc.,piotroski,True,7,9,77.8,10.89,24.20,2.66,11.09,1.43,0.26,6.44,"516,444",—
+GCO,GENESCO INC,piotroski,True,8,9,88.9,36.99,29.59,0.69,2.34,1.64,1.46,38.74,"89,556",—
+ZUMZ,ZUMIEZ INC,piotroski,True,8,9,88.9,14.11,18.09,0.75,4.13,2.01,0.99,18.16,"260,392",—
+CALX,"Calix, Inc",piotroski,True,7,9,77.8,36.47,140,2.94,2.08,4.24,0.23,8.52,"859,754",—
+LILA,Liberty Latin America Ltd.,piotroski,True,7,9,77.8,8.04,—,2.89,-110,1.14,20.09,—,"167,425",—
+TDAY,"USA TODAY CO., INC.",piotroski,True,7,9,77.8,6.86,686,6.46,1.13,0.75,10.85,0.49,2M,—
+MLI,"MUELLER INDUSTRIES, INC",netnet,False,2,4,50.0,54.11,7.89,1.88,23.84,5.92,0.15,66.66,2M,—
+MLI,"MUELLER INDUSTRIES, INC",custom,False,0,0,0.0,54.11,7.89,1.88,23.84,5.92,0.15,66.66,2M,—
+CF,"CF INDUSTRIES HOLDINGS, INC.",graham,False,6,9,66.7,121,13.45,4.05,37.16,3.37,—,77.59,2M,—
+CF,"CF INDUSTRIES HOLDINGS, INC.",netnet,False,1,4,25.0,121,13.45,4.05,37.16,3.37,—,77.59,2M,—
+CF,"CF INDUSTRIES HOLDINGS, INC.",custom,False,0,0,0.0,121,13.45,4.05,37.16,3.37,—,77.59,2M,—
+TMDX,"TransMedics Group, Inc.",greenblatt,False,2,3,66.7,70.74,14.53,6.06,40.22,7.14,1.26,35.76,"789,576",—
+TMDX,"TransMedics Group, Inc.",netnet,False,2,4,50.0,70.74,14.53,6.06,40.22,7.14,1.26,35.76,"789,576",—
+TMDX,"TransMedics Group, Inc.",graham,False,4,9,44.4,70.74,14.53,6.06,40.22,7.14,1.26,35.76,"789,576",—
+TMDX,"TransMedics Group, Inc.",buffett,False,2,6,33.3,70.74,14.53,6.06,40.22,7.14,1.26,35.76,"789,576",—
+TMDX,"TransMedics Group, Inc.",lynch,False,1,4,25.0,70.74,14.53,6.06,40.22,7.14,1.26,35.76,"789,576",—
+TMDX,"TransMedics Group, Inc.",custom,False,0,0,0.0,70.74,14.53,6.06,40.22,7.14,1.26,35.76,"789,576",—
+GEF,"GREIF, INC.",buffett,False,4,6,66.7,82.27,—,—,28.82,1.27,—,—,"466,114",—
+GEF,"GREIF, INC.",greenblatt,False,2,3,66.7,82.27,—,—,28.82,1.27,—,—,"466,114",—
+GEF,"GREIF, INC.",piotroski,False,5,9,55.6,82.27,—,—,28.82,1.27,—,—,"466,114",—
+GEF,"GREIF, INC.",graham,False,4,9,44.4,82.27,—,—,28.82,1.27,—,—,"466,114",—
+GEF,"GREIF, INC.",lynch,False,1,4,25.0,82.27,—,—,28.82,1.27,—,—,"466,114",—

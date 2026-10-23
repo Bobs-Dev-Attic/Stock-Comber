@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-23 19:10 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-23 22:01 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **23** strategy matches passed.
+Screened **75** companies · **34** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| YELP | YELP INC | greenblatt | ✅ | 100% | 19.95 | 8.90 | 1.83 | 20.48 | 2.99 | 0.35 | 517,835 | — |
-| YELP | YELP INC | piotroski | ✅ | 89% | 19.95 | 8.90 | 1.83 | 20.48 | 2.99 | 0.35 | 517,835 | — |
-| NBR | NABORS INDUSTRIES LTD | piotroski | ✅ | 78% | 80.56 | 4.63 | 1.97 | 48.52 | 1.56 | 5.67 | 137,336 | — |
-| CVSA | Covista Inc. | lynch | ✅ | 75% | 131 | 18.65 | 3.24 | 17.40 | 1.09 | 1.08 | 153,568 | — |
-| SFD | SMITHFIELD FOODS, INC. | graham | ✅ | 100% | 18.55 | 7.39 | 1.07 | 14.51 | 2.97 | — | 1M | — |
-| SEATW | Vivid Seats Inc. | greenblatt | ✅ | 100% | 0.02 | 0.02 | — | -947 | 0.59 | -8.48 | 2M | — |
-| VISN | Vistance Networks, Inc. | greenblatt | ✅ | 100% | 6.13 | 0.64 | — | -227 | 3.88 | -9.06 | 4M | — |
-| PGY | Pagaya Technologies Ltd. | piotroski | ✅ | 78% | 18.95 | 20.38 | 3.28 | 16.96 | — | 2.00 | 1M | — |
-| NYT | THE NEW YORK TIMES COMPANY | piotroski | ✅ | 100% | 69.42 | 33.22 | 5.61 | 16.85 | 1.54 | — | 2M | — |
-| ORI | OLD REPUBLIC INTERNATIONAL C | piotroski | ✅ | 78% | 40.08 | 10.77 | 1.70 | 15.82 | — | 4.05 | 3M | — |
-| TRN | TRINITY INDUSTRIES INC | greenblatt | ✅ | 100% | 25.82 | 8.47 | 1.99 | 23.50 | — | 6.76 | 779,076 | — |
-| TRN | TRINITY INDUSTRIES INC | piotroski | ✅ | 78% | 25.82 | 8.47 | 1.99 | 23.50 | — | 6.76 | 779,076 | — |
-| AGCO | AGCO CORP /DE | piotroski | ✅ | 89% | 106 | 10.89 | 1.85 | 17.00 | 1.39 | 1.72 | 567,112 | — |
-| VIRT | Virtu Financial, Inc. | piotroski | ✅ | 78% | 56.03 | 10.92 | 3.02 | 29.60 | — | 11.49 | 333,147 | — |
-| DLB | Dolby Laboratories, Inc. | piotroski | ✅ | 78% | 63.28 | 24.15 | 2.35 | 9.72 | 3.17 | 0.23 | 501,314 | — |
-| CENTA | Central Garden & Pet Company | piotroski | ✅ | 89% | 38.81 | 15.22 | 1.56 | 10.29 | 3.67 | — | 461,318 | — |
-| IDT | IDT CORP | piotroski | ✅ | 78% | 82.48 | 23.84 | 5.47 | 22.96 | 1.86 | 0.94 | 70,426 | — |
-| LNT | ALLIANT ENERGY CORP | piotroski | ✅ | 78% | 69.74 | 22.21 | 2.45 | 11.04 | 0.80 | — | 1M | — |
-| HAYW | Hayward Holdings, Inc. | piotroski | ✅ | 100% | 12.69 | 18.65 | 1.77 | 9.51 | 2.94 | 0.98 | 2M | — |
-| CPRI | CAPRI HOLDINGS LIMITED | piotroski | ✅ | 78% | 16.36 | 14.35 | 24.51 | 171 | 1.21 | 39.38 | 3M | — |
-| INNV | InnovAge Holding Corp. | piotroski | ✅ | 78% | 9.52 | — | 5.48 | -1.08 | 1.05 | 1.23 | 950,830 | — |
-| DAR | DARLING INGREDIENTS INC. | piotroski | ✅ | 78% | 55.64 | 143 | 1.88 | 1.33 | 1.50 | 1.16 | 3M | — |
-| ORN | ORION GROUP HOLDINGS, INC. | piotroski | ✅ | 78% | 8.41 | 140 | 2.10 | 1.56 | 1.36 | 1.61 | 513,409 | — |
-| AAAU | GOLDMAN SACHS PHYSICAL GOLD  | greenblatt | ▫️ | 67% | 39.36 | 2.37 | — | — | — | — | 1M | — |
-| AAAU | GOLDMAN SACHS PHYSICAL GOLD  | lynch | ▫️ | 50% | 39.36 | 2.37 | — | — | — | — | 1M | — |
-| AAAU | GOLDMAN SACHS PHYSICAL GOLD  | piotroski | ▫️ | 33% | 39.36 | 2.37 | — | — | — | — | 1M | — |
-| AAAU | GOLDMAN SACHS PHYSICAL GOLD  | netnet | ▫️ | 25% | 39.36 | 2.37 | — | — | — | — | 1M | — |
-| AAAU | GOLDMAN SACHS PHYSICAL GOLD  | graham | ▫️ | 22% | 39.36 | 2.37 | — | — | — | — | 1M | — |
-| AAAU | GOLDMAN SACHS PHYSICAL GOLD  | buffett | ▫️ | 17% | 39.36 | 2.37 | — | — | — | — | 1M | — |
-| AAAU | GOLDMAN SACHS PHYSICAL GOLD  | custom | ▫️ | 0% | 39.36 | 2.37 | — | — | — | — | 1M | — |
-| YELP | YELP INC | graham | ▫️ | 78% | 19.95 | 8.90 | 1.83 | 20.48 | 2.99 | 0.35 | 517,835 | — |
-| YELP | YELP INC | buffett | ▫️ | 50% | 19.95 | 8.90 | 1.83 | 20.48 | 2.99 | 0.35 | 517,835 | — |
-| YELP | YELP INC | lynch | ▫️ | 50% | 19.95 | 8.90 | 1.83 | 20.48 | 2.99 | 0.35 | 517,835 | — |
-| YELP | YELP INC | netnet | ▫️ | 50% | 19.95 | 8.90 | 1.83 | 20.48 | 2.99 | 0.35 | 517,835 | — |
-| YELP | YELP INC | custom | ▫️ | 0% | 19.95 | 8.90 | 1.83 | 20.48 | 2.99 | 0.35 | 517,835 | — |
-| NBR | NABORS INDUSTRIES LTD | greenblatt | ▫️ | 67% | 80.56 | 4.63 | 1.97 | 48.52 | 1.56 | 5.67 | 137,336 | — |
-| NBR | NABORS INDUSTRIES LTD | graham | ▫️ | 44% | 80.56 | 4.63 | 1.97 | 48.52 | 1.56 | 5.67 | 137,336 | — |
-| NBR | NABORS INDUSTRIES LTD | lynch | ▫️ | 25% | 80.56 | 4.63 | 1.97 | 48.52 | 1.56 | 5.67 | 137,336 | — |
-| NBR | NABORS INDUSTRIES LTD | netnet | ▫️ | 25% | 80.56 | 4.63 | 1.97 | 48.52 | 1.56 | 5.67 | 137,336 | — |
-| NBR | NABORS INDUSTRIES LTD | buffett | ▫️ | 17% | 80.56 | 4.63 | 1.97 | 48.52 | 1.56 | 5.67 | 137,336 | — |
-| NBR | NABORS INDUSTRIES LTD | custom | ▫️ | 0% | 80.56 | 4.63 | 1.97 | 48.52 | 1.56 | 5.67 | 137,336 | — |
-| LNTH | Lantheus Holdings, Inc. | piotroski | ▫️ | 56% | 99.91 | 29.30 | 6.27 | 21.43 | 2.70 | 1.04 | 352,477 | — |
-| LNTH | Lantheus Holdings, Inc. | buffett | ▫️ | 50% | 99.91 | 29.30 | 6.27 | 21.43 | 2.70 | 1.04 | 352,477 | — |
-| LNTH | Lantheus Holdings, Inc. | graham | ▫️ | 33% | 99.91 | 29.30 | 6.27 | 21.43 | 2.70 | 1.04 | 352,477 | — |
-| LNTH | Lantheus Holdings, Inc. | greenblatt | ▫️ | 33% | 99.91 | 29.30 | 6.27 | 21.43 | 2.70 | 1.04 | 352,477 | — |
-| LNTH | Lantheus Holdings, Inc. | lynch | ▫️ | 25% | 99.91 | 29.30 | 6.27 | 21.43 | 2.70 | 1.04 | 352,477 | — |
-| LNTH | Lantheus Holdings, Inc. | netnet | ▫️ | 25% | 99.91 | 29.30 | 6.27 | 21.43 | 2.70 | 1.04 | 352,477 | — |
-| LNTH | Lantheus Holdings, Inc. | custom | ▫️ | 0% | 99.91 | 29.30 | 6.27 | 21.43 | 2.70 | 1.04 | 352,477 | — |
-| WT | WisdomTree, Inc. | buffett | ▫️ | 67% | 21.15 | 28.20 | 7.41 | 26.38 | 1.75 | 2.66 | 700,824 | — |
-| WT | WisdomTree, Inc. | piotroski | ▫️ | 67% | 21.15 | 28.20 | 7.41 | 26.38 | 1.75 | 2.66 | 700,824 | — |
+| MLI | MUELLER INDUSTRIES, INC | buffett | ✅ | 100% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
+| MLI | MUELLER INDUSTRIES, INC | greenblatt | ✅ | 100% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
+| MLI | MUELLER INDUSTRIES, INC | lynch | ✅ | 100% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
+| MLI | MUELLER INDUSTRIES, INC | graham | ✅ | 89% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
+| MLI | MUELLER INDUSTRIES, INC | piotroski | ✅ | 78% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | greenblatt | ✅ | 100% | 121 | 13.45 | 4.05 | 37.16 | 3.37 | — | 2M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | piotroski | ✅ | 89% | 121 | 13.45 | 4.05 | 37.16 | 3.37 | — | 2M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | buffett | ✅ | 83% | 121 | 13.45 | 4.05 | 37.16 | 3.37 | — | 2M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | lynch | ✅ | 75% | 121 | 13.45 | 4.05 | 37.16 | 3.37 | — | 2M | — |
+| TMDX | TransMedics Group, Inc. | piotroski | ✅ | 78% | 70.74 | 14.53 | 6.06 | 40.22 | 7.14 | 1.26 | 789,576 | — |
+| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 115 | 21.99 | 4.20 | 19.12 | 2.99 | — | 155,552 | — |
+| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 115 | 21.99 | 4.20 | 19.12 | 2.99 | — | 155,552 | — |
+| IBP | Installed Building Products, | piotroski | ✅ | 89% | 199 | 20.51 | 7.67 | 37.39 | 3.03 | 1.91 | 367,602 | — |
+| IBP | Installed Building Products, | lynch | ✅ | 75% | 199 | 20.51 | 7.67 | 37.39 | 3.03 | 1.91 | 367,602 | — |
+| KRYS | Krystal Biotech, Inc. | piotroski | ✅ | 89% | 312 | 45.54 | 7.65 | 16.80 | 9.95 | 0.09 | 270,034 | — |
+| DAKT | Daktronics, Inc. | piotroski | ✅ | 89% | 20.60 | 22.39 | 3.38 | 15.09 | 2.31 | — | 606,844 | — |
+| SBAC | SBA COMMUNICATIONS CORPORATI | piotroski | ✅ | 78% | 185 | 18.85 | — | -21.71 | 0.29 | — | 3M | — |
+| DAKT | Daktronics, Inc. | lynch | ✅ | 75% | 20.60 | 22.39 | 3.38 | 15.09 | 2.31 | — | 606,844 | — |
+| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 17.40 | 9.21 | 2.27 | 24.66 | 2.26 | 2.62 | 1M | — |
+| EZPW | EZCORP, INC. | piotroski | ✅ | 78% | 28.70 | 20.21 | 2.33 | 10.69 | 5.61 | 0.90 | 2M | — |
+| BFH | BREAD FINANCIAL HOLDINGS, IN | lynch | ✅ | 75% | 99.89 | 9.17 | 1.43 | 15.57 | — | 5.81 | 687,765 | — |
+| OPY | OPPENHEIMER HOLDINGS INC. | piotroski | ✅ | 78% | 101 | 7.75 | 1.17 | 15.08 | — | 2.77 | 69,657 | — |
+| LNC | LINCOLN NATIONAL CORP | lynch | ✅ | 75% | 39.84 | 6.83 | 0.68 | 10.79 | — | 37.25 | 2M | — |
+| TILE | INTERFACE INC | piotroski | ✅ | 89% | 36.42 | 18.58 | 3.36 | 18.12 | 2.34 | 0.88 | 430,628 | — |
+| BBWI | BATH & BODY WORKS, INC. | greenblatt | ✅ | 100% | 20.95 | 6.74 | — | -50.66 | 1.27 | — | 5M | — |
+| ABM | ABM INDUSTRIES INCORPORATED | piotroski | ✅ | 89% | 53.67 | 20.72 | 1.88 | 9.09 | 1.48 | 1.95 | 287,542 | — |
+| MD | Pediatrix Medical Group, Inc | piotroski | ✅ | 78% | 29.29 | 15.10 | 2.88 | 19.10 | 1.66 | 1.59 | 574,761 | — |
+| VMD | VIEMED HEALTHCARE, INC. | piotroski | ✅ | 78% | 9.80 | 26.49 | 2.83 | 10.55 | 1.18 | 0.39 | 123,145 | — |
+| NPKI | NPK International Inc. | piotroski | ✅ | 78% | 10.89 | 24.20 | 2.66 | 11.09 | 1.43 | 0.26 | 516,444 | — |
+| GCO | GENESCO INC | piotroski | ✅ | 89% | 36.99 | 29.59 | 0.69 | 2.34 | 1.64 | 1.46 | 89,556 | — |
+| ZUMZ | ZUMIEZ INC | piotroski | ✅ | 89% | 14.11 | 18.09 | 0.75 | 4.13 | 2.01 | 0.99 | 260,392 | — |
+| CALX | Calix, Inc | piotroski | ✅ | 78% | 36.47 | 140 | 2.94 | 2.08 | 4.24 | 0.23 | 859,754 | — |
+| LILA | Liberty Latin America Ltd. | piotroski | ✅ | 78% | 8.04 | — | 2.89 | -110 | 1.14 | 20.09 | 167,425 | — |
+| TDAY | USA TODAY CO., INC. | piotroski | ✅ | 78% | 6.86 | 686 | 6.46 | 1.13 | 0.75 | 10.85 | 2M | — |
+| MLI | MUELLER INDUSTRIES, INC | netnet | ▫️ | 50% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
+| MLI | MUELLER INDUSTRIES, INC | custom | ▫️ | 0% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | graham | ▫️ | 67% | 121 | 13.45 | 4.05 | 37.16 | 3.37 | — | 2M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | netnet | ▫️ | 25% | 121 | 13.45 | 4.05 | 37.16 | 3.37 | — | 2M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | custom | ▫️ | 0% | 121 | 13.45 | 4.05 | 37.16 | 3.37 | — | 2M | — |
+| TMDX | TransMedics Group, Inc. | greenblatt | ▫️ | 67% | 70.74 | 14.53 | 6.06 | 40.22 | 7.14 | 1.26 | 789,576 | — |
+| TMDX | TransMedics Group, Inc. | netnet | ▫️ | 50% | 70.74 | 14.53 | 6.06 | 40.22 | 7.14 | 1.26 | 789,576 | — |
+| TMDX | TransMedics Group, Inc. | graham | ▫️ | 44% | 70.74 | 14.53 | 6.06 | 40.22 | 7.14 | 1.26 | 789,576 | — |
+| TMDX | TransMedics Group, Inc. | buffett | ▫️ | 33% | 70.74 | 14.53 | 6.06 | 40.22 | 7.14 | 1.26 | 789,576 | — |
+| TMDX | TransMedics Group, Inc. | lynch | ▫️ | 25% | 70.74 | 14.53 | 6.06 | 40.22 | 7.14 | 1.26 | 789,576 | — |
+| TMDX | TransMedics Group, Inc. | custom | ▫️ | 0% | 70.74 | 14.53 | 6.06 | 40.22 | 7.14 | 1.26 | 789,576 | — |
+| GEF | GREIF, INC. | buffett | ▫️ | 67% | 82.27 | — | — | 28.82 | 1.27 | — | 466,114 | — |
+| GEF | GREIF, INC. | greenblatt | ▫️ | 67% | 82.27 | — | — | 28.82 | 1.27 | — | 466,114 | — |
+| GEF | GREIF, INC. | piotroski | ▫️ | 56% | 82.27 | — | — | 28.82 | 1.27 | — | 466,114 | — |
+| GEF | GREIF, INC. | graham | ▫️ | 44% | 82.27 | — | — | 28.82 | 1.27 | — | 466,114 | — |
+| GEF | GREIF, INC. | lynch | ▫️ | 25% | 82.27 | — | — | 28.82 | 1.27 | — | 466,114 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
