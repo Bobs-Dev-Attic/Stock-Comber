@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-HCI,"HCI Group, Inc.",greenblatt,True,3,3,100.0,204,9.00,2.53,28.72,—,1.36,203,"74,677",—
-HCI,"HCI Group, Inc.",piotroski,True,7,9,77.8,204,9.00,2.53,28.72,—,1.36,203,"74,677",—
-LRN,"Stride, Inc.",lynch,True,4,4,100.0,80.33,11.25,2.33,20.72,5.94,0.49,74.43,"629,846",—
-LRN,"Stride, Inc.",piotroski,True,8,9,88.9,80.33,11.25,2.33,20.72,5.94,0.49,74.43,"629,846",—
-LRN,"Stride, Inc.",buffett,True,5,6,83.3,80.33,11.25,2.33,20.72,5.94,0.49,74.43,"629,846",—
-IPAR,"INTERPARFUMS, INC.",buffett,True,5,6,83.3,116,22.15,4.24,19.12,2.99,—,56.84,"278,171",—
-IPAR,"INTERPARFUMS, INC.",lynch,True,3,4,75.0,116,22.15,4.24,19.12,2.99,—,56.84,"278,171",—
-AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",piotroski,True,9,9,100.0,171,24.21,8.30,34.27,1.46,—,57.37,"590,869",—
-FRST,PRIMIS FINANCIAL CORP.,lynch,True,3,4,75.0,15.40,6.18,0.90,14.53,—,8.57,30.98,"22,420",—
-BKE,"BUCKLE, INC",greenblatt,True,3,3,100.0,46.29,11.18,5.53,49.39,1.89,1.33,27.93,"51,972",—
-BKE,"BUCKLE, INC",buffett,True,5,6,83.3,46.29,11.18,5.53,49.39,1.89,1.33,27.93,"51,972",—
-WLDN,"WILLDAN GROUP, INC.",piotroski,True,7,9,77.8,71.92,20.61,3.56,17.24,1.56,0.79,39.85,"28,987",—
-SNA,Snap-on Inc,buffett,True,5,6,83.3,354,18.43,3.16,17.14,4.79,0.41,220,"231,576",—
-SBAC,SBA COMMUNICATIONS CORPORATION,piotroski,True,7,9,77.8,186,19.02,—,-21.71,0.29,—,—,1M,—
-HALO,"HALOZYME THERAPEUTICS, INC.",buffett,True,5,6,83.3,125,48.65,316,649,4.66,50.73,4.76,5M,—
-IOSP,INNOSPEC INC.,lynch,True,4,4,100.0,97.89,20.96,1.84,8.79,2.79,0.38,74.67,"27,280",—
-IOSP,INNOSPEC INC.,piotroski,True,8,9,88.9,97.89,20.96,1.84,8.79,2.79,0.38,74.67,"27,280",—
-BDC,BELDEN INC.,piotroski,True,8,9,88.9,104,17.58,3.30,18.78,1.93,—,64.66,"41,286",—
-JJSF,J&J SNACK FOODS CORP.,lynch,True,3,4,75.0,83.69,24.91,1.69,6.79,2.72,—,61.14,"23,401",—
-RSI,"Rush Street Interactive, Inc.",piotroski,True,7,9,77.8,16.36,52.77,26.24,22.62,1.93,2.41,2.09,4M,—
-BCO,BRINK’S CO,piotroski,True,7,9,77.8,114,24.29,17.43,71.91,1.51,24.96,26.26,"134,414",—
-NDSN,NORDSON CORPORATION,buffett,True,5,6,83.3,320,37.60,5.98,15.92,1.64,—,101,"83,094",—
-NDSN,NORDSON CORPORATION,piotroski,True,7,9,77.8,320,37.60,5.98,15.92,1.64,—,101,"83,094",—
-IEX,IDEX CORP,piotroski,True,7,9,77.8,228,35.56,4.26,12.00,2.86,0.72,87.83,"176,163",—
-CHEF,"CHEFS’ WAREHOUSE, INC.",piotroski,True,9,9,100.0,106,63.21,8.08,11.97,2.05,2.36,22.28,"60,608",—
-MOS,MOSAIC CO,piotroski,True,8,9,88.9,17.27,10.16,0.46,4.47,1.32,—,38.07,13M,—
-LW,"LAMB WESTON HOLDINGS, INC.",piotroski,True,7,9,77.8,55.31,26.59,4.22,15.89,1.42,—,24.78,"398,888",—
-USNA,"USANA HEALTH SCIENCES, INC.",piotroski,True,7,9,77.8,14.52,25.03,0.51,2.02,2.24,0.29,19.35,"253,115",—
-HCI,"HCI Group, Inc.",buffett,False,4,6,66.7,204,9.00,2.53,28.72,—,1.36,203,"74,677",—
-HCI,"HCI Group, Inc.",lynch,False,2,4,50.0,204,9.00,2.53,28.72,—,1.36,203,"74,677",—
-HCI,"HCI Group, Inc.",graham,False,4,9,44.4,204,9.00,2.53,28.72,—,1.36,203,"74,677",—
-HCI,"HCI Group, Inc.",netnet,False,1,4,25.0,204,9.00,2.53,28.72,—,1.36,203,"74,677",—
-HCI,"HCI Group, Inc.",custom,False,0,0,0.0,204,9.00,2.53,28.72,—,1.36,203,"74,677",—
-LRN,"Stride, Inc.",graham,False,7,9,77.8,80.33,11.25,2.33,20.72,5.94,0.49,74.43,"629,846",—
-LRN,"Stride, Inc.",greenblatt,False,2,3,66.7,80.33,11.25,2.33,20.72,5.94,0.49,74.43,"629,846",—
-LRN,"Stride, Inc.",netnet,False,2,4,50.0,80.33,11.25,2.33,20.72,5.94,0.49,74.43,"629,846",—
-LRN,"Stride, Inc.",custom,False,0,0,0.0,80.33,11.25,2.33,20.72,5.94,0.49,74.43,"629,846",—
-UROY,Uranium Royalty Corp.,greenblatt,False,2,3,66.7,3.38,11.66,1.51,12.87,5.94,0.19,3.83,2M,—
-UROY,Uranium Royalty Corp.,graham,False,5,9,55.6,3.38,11.66,1.51,12.87,5.94,0.19,3.83,2M,—
-UROY,Uranium Royalty Corp.,lynch,False,2,4,50.0,3.38,11.66,1.51,12.87,5.94,0.19,3.83,2M,—
-UROY,Uranium Royalty Corp.,netnet,False,2,4,50.0,3.38,11.66,1.51,12.87,5.94,0.19,3.83,2M,—
-UROY,Uranium Royalty Corp.,buffett,False,2,6,33.3,3.38,11.66,1.51,12.87,5.94,0.19,3.83,2M,—
-UROY,Uranium Royalty Corp.,piotroski,False,3,9,33.3,3.38,11.66,1.51,12.87,5.94,0.19,3.83,2M,—
-UROY,Uranium Royalty Corp.,custom,False,0,0,0.0,3.38,11.66,1.51,12.87,5.94,0.19,3.83,2M,—
-CEPF,"CANTOR EQUITY PARTNERS IV, INC.",greenblatt,False,2,3,66.7,10.27,—,—,"4,306",—,0.67,—,"4,109",—
-CEPF,"CANTOR EQUITY PARTNERS IV, INC.",lynch,False,2,4,50.0,10.27,—,—,"4,306",—,0.67,—,"4,109",—
-CEPF,"CANTOR EQUITY PARTNERS IV, INC.",netnet,False,1,4,25.0,10.27,—,—,"4,306",—,0.67,—,"4,109",—
-CEPF,"CANTOR EQUITY PARTNERS IV, INC.",buffett,False,1,6,16.7,10.27,—,—,"4,306",—,0.67,—,"4,109",—
-CEPF,"CANTOR EQUITY PARTNERS IV, INC.",graham,False,1,9,11.1,10.27,—,—,"4,306",—,0.67,—,"4,109",—
-CEPF,"CANTOR EQUITY PARTNERS IV, INC.",piotroski,False,1,9,11.1,10.27,—,—,"4,306",—,0.67,—,"4,109",—
+YELP,YELP INC,greenblatt,True,3,3,100.0,19.95,8.90,1.83,20.48,2.99,0.35,23.46,"517,835",—
+YELP,YELP INC,piotroski,True,8,9,88.9,19.95,8.90,1.83,20.48,2.99,0.35,23.46,"517,835",—
+NBR,NABORS INDUSTRIES LTD,piotroski,True,7,9,77.8,80.56,4.63,1.97,48.52,1.56,5.67,127,"137,336",—
+CVSA,Covista Inc.,lynch,True,3,4,75.0,131,18.65,3.24,17.40,1.09,1.08,80.09,"153,568",—
+SFD,"SMITHFIELD FOODS, INC.",graham,True,9,9,100.0,18.55,7.39,1.07,14.51,2.97,—,31.27,1M,—
+SEATW,Vivid Seats Inc.,greenblatt,True,3,3,100.0,0.02,0.02,—,-947,0.59,-8.48,—,2M,—
+VISN,"Vistance Networks, Inc.",greenblatt,True,3,3,100.0,6.13,0.64,—,-227,3.88,-9.06,—,4M,—
+PGY,Pagaya Technologies Ltd.,piotroski,True,7,9,77.8,18.95,20.38,3.28,16.96,—,2.00,10.99,1M,—
+NYT,THE NEW YORK TIMES COMPANY,piotroski,True,9,9,100.0,69.42,33.22,5.61,16.85,1.54,—,24.12,2M,—
+ORI,OLD REPUBLIC INTERNATIONAL CORPORATION,piotroski,True,7,9,77.8,40.08,10.77,1.70,15.82,—,4.05,44.38,3M,—
+TRN,TRINITY INDUSTRIES INC,greenblatt,True,3,3,100.0,25.82,8.47,1.99,23.50,—,6.76,29.86,"779,076",—
+TRN,TRINITY INDUSTRIES INC,piotroski,True,7,9,77.8,25.82,8.47,1.99,23.50,—,6.76,29.86,"779,076",—
+AGCO,AGCO CORP /DE,piotroski,True,8,9,88.9,106,10.89,1.85,17.00,1.39,1.72,112,"567,112",—
+VIRT,"Virtu Financial, Inc.",piotroski,True,7,9,77.8,56.03,10.92,3.02,29.60,—,11.49,46.27,"333,147",—
+DLB,"Dolby Laboratories, Inc.",piotroski,True,7,9,77.8,63.28,24.15,2.35,9.72,3.17,0.23,39.82,"501,314",—
+CENTA,Central Garden & Pet Company,piotroski,True,8,9,88.9,38.81,15.22,1.56,10.29,3.67,—,37.73,"461,318",—
+IDT,IDT CORP,piotroski,True,7,9,77.8,82.48,23.84,5.47,22.96,1.86,0.94,34.26,"70,426",—
+LNT,ALLIANT ENERGY CORP,piotroski,True,7,9,77.8,69.74,22.21,2.45,11.04,0.80,—,44.83,1M,—
+HAYW,"Hayward Holdings, Inc.",piotroski,True,9,9,100.0,12.69,18.65,1.77,9.51,2.94,0.98,10.47,2M,—
+CPRI,CAPRI HOLDINGS LIMITED,piotroski,True,7,9,77.8,16.36,14.35,24.51,171,1.21,39.38,4.14,3M,—
+INNV,InnovAge Holding Corp.,piotroski,True,7,9,77.8,9.52,—,5.48,-1.08,1.05,1.23,—,"950,830",—
+DAR,DARLING INGREDIENTS INC.,piotroski,True,7,9,77.8,55.64,143,1.88,1.33,1.50,1.16,16.11,3M,—
+ORN,"ORION GROUP HOLDINGS, INC.",piotroski,True,7,9,77.8,8.41,140,2.10,1.56,1.36,1.61,2.33,"513,409",—
+AAAU,GOLDMAN SACHS PHYSICAL GOLD ETF,greenblatt,False,2,3,66.7,39.36,2.37,—,—,—,—,—,1M,—
+AAAU,GOLDMAN SACHS PHYSICAL GOLD ETF,lynch,False,2,4,50.0,39.36,2.37,—,—,—,—,—,1M,—
+AAAU,GOLDMAN SACHS PHYSICAL GOLD ETF,piotroski,False,3,9,33.3,39.36,2.37,—,—,—,—,—,1M,—
+AAAU,GOLDMAN SACHS PHYSICAL GOLD ETF,netnet,False,1,4,25.0,39.36,2.37,—,—,—,—,—,1M,—
+AAAU,GOLDMAN SACHS PHYSICAL GOLD ETF,graham,False,2,9,22.2,39.36,2.37,—,—,—,—,—,1M,—
+AAAU,GOLDMAN SACHS PHYSICAL GOLD ETF,buffett,False,1,6,16.7,39.36,2.37,—,—,—,—,—,1M,—
+AAAU,GOLDMAN SACHS PHYSICAL GOLD ETF,custom,False,0,0,0.0,39.36,2.37,—,—,—,—,—,1M,—
+YELP,YELP INC,graham,False,7,9,77.8,19.95,8.90,1.83,20.48,2.99,0.35,23.46,"517,835",—
+YELP,YELP INC,buffett,False,3,6,50.0,19.95,8.90,1.83,20.48,2.99,0.35,23.46,"517,835",—
+YELP,YELP INC,lynch,False,2,4,50.0,19.95,8.90,1.83,20.48,2.99,0.35,23.46,"517,835",—
+YELP,YELP INC,netnet,False,2,4,50.0,19.95,8.90,1.83,20.48,2.99,0.35,23.46,"517,835",—
+YELP,YELP INC,custom,False,0,0,0.0,19.95,8.90,1.83,20.48,2.99,0.35,23.46,"517,835",—
+NBR,NABORS INDUSTRIES LTD,greenblatt,False,2,3,66.7,80.56,4.63,1.97,48.52,1.56,5.67,127,"137,336",—
+NBR,NABORS INDUSTRIES LTD,graham,False,4,9,44.4,80.56,4.63,1.97,48.52,1.56,5.67,127,"137,336",—
+NBR,NABORS INDUSTRIES LTD,lynch,False,1,4,25.0,80.56,4.63,1.97,48.52,1.56,5.67,127,"137,336",—
+NBR,NABORS INDUSTRIES LTD,netnet,False,1,4,25.0,80.56,4.63,1.97,48.52,1.56,5.67,127,"137,336",—
+NBR,NABORS INDUSTRIES LTD,buffett,False,1,6,16.7,80.56,4.63,1.97,48.52,1.56,5.67,127,"137,336",—
+NBR,NABORS INDUSTRIES LTD,custom,False,0,0,0.0,80.56,4.63,1.97,48.52,1.56,5.67,127,"137,336",—
+LNTH,"Lantheus Holdings, Inc.",piotroski,False,5,9,55.6,99.91,29.30,6.27,21.43,2.70,1.04,34.95,"352,477",—
+LNTH,"Lantheus Holdings, Inc.",buffett,False,3,6,50.0,99.91,29.30,6.27,21.43,2.70,1.04,34.95,"352,477",—
+LNTH,"Lantheus Holdings, Inc.",graham,False,3,9,33.3,99.91,29.30,6.27,21.43,2.70,1.04,34.95,"352,477",—
+LNTH,"Lantheus Holdings, Inc.",greenblatt,False,1,3,33.3,99.91,29.30,6.27,21.43,2.70,1.04,34.95,"352,477",—
+LNTH,"Lantheus Holdings, Inc.",lynch,False,1,4,25.0,99.91,29.30,6.27,21.43,2.70,1.04,34.95,"352,477",—
+LNTH,"Lantheus Holdings, Inc.",netnet,False,1,4,25.0,99.91,29.30,6.27,21.43,2.70,1.04,34.95,"352,477",—
+LNTH,"Lantheus Holdings, Inc.",custom,False,0,0,0.0,99.91,29.30,6.27,21.43,2.70,1.04,34.95,"352,477",—
+WT,"WisdomTree, Inc.",buffett,False,4,6,66.7,21.15,28.20,7.41,26.38,1.75,2.66,6.94,"700,824",—
+WT,"WisdomTree, Inc.",piotroski,False,6,9,66.7,21.15,28.20,7.41,26.38,1.75,2.66,6.94,"700,824",—

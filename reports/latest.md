@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-23 15:18 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-23 19:10 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **28** strategy matches passed.
+Screened **75** companies · **23** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| HCI | HCI Group, Inc. | greenblatt | ✅ | 100% | 204 | 9.00 | 2.53 | 28.72 | — | 1.36 | 74,677 | — |
-| HCI | HCI Group, Inc. | piotroski | ✅ | 78% | 204 | 9.00 | 2.53 | 28.72 | — | 1.36 | 74,677 | — |
-| LRN | Stride, Inc. | lynch | ✅ | 100% | 80.33 | 11.25 | 2.33 | 20.72 | 5.94 | 0.49 | 629,846 | — |
-| LRN | Stride, Inc. | piotroski | ✅ | 89% | 80.33 | 11.25 | 2.33 | 20.72 | 5.94 | 0.49 | 629,846 | — |
-| LRN | Stride, Inc. | buffett | ✅ | 83% | 80.33 | 11.25 | 2.33 | 20.72 | 5.94 | 0.49 | 629,846 | — |
-| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 116 | 22.15 | 4.24 | 19.12 | 2.99 | — | 278,171 | — |
-| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 116 | 22.15 | 4.24 | 19.12 | 2.99 | — | 278,171 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | piotroski | ✅ | 100% | 171 | 24.21 | 8.30 | 34.27 | 1.46 | — | 590,869 | — |
-| FRST | PRIMIS FINANCIAL CORP. | lynch | ✅ | 75% | 15.40 | 6.18 | 0.90 | 14.53 | — | 8.57 | 22,420 | — |
-| BKE | BUCKLE, INC | greenblatt | ✅ | 100% | 46.29 | 11.18 | 5.53 | 49.39 | 1.89 | 1.33 | 51,972 | — |
-| BKE | BUCKLE, INC | buffett | ✅ | 83% | 46.29 | 11.18 | 5.53 | 49.39 | 1.89 | 1.33 | 51,972 | — |
-| WLDN | WILLDAN GROUP, INC. | piotroski | ✅ | 78% | 71.92 | 20.61 | 3.56 | 17.24 | 1.56 | 0.79 | 28,987 | — |
-| SNA | Snap-on Inc | buffett | ✅ | 83% | 354 | 18.43 | 3.16 | 17.14 | 4.79 | 0.41 | 231,576 | — |
-| SBAC | SBA COMMUNICATIONS CORPORATI | piotroski | ✅ | 78% | 186 | 19.02 | — | -21.71 | 0.29 | — | 1M | — |
-| HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 125 | 48.65 | 316 | 649 | 4.66 | 50.73 | 5M | — |
-| IOSP | INNOSPEC INC. | lynch | ✅ | 100% | 97.89 | 20.96 | 1.84 | 8.79 | 2.79 | 0.38 | 27,280 | — |
-| IOSP | INNOSPEC INC. | piotroski | ✅ | 89% | 97.89 | 20.96 | 1.84 | 8.79 | 2.79 | 0.38 | 27,280 | — |
-| BDC | BELDEN INC. | piotroski | ✅ | 89% | 104 | 17.58 | 3.30 | 18.78 | 1.93 | — | 41,286 | — |
-| JJSF | J&J SNACK FOODS CORP. | lynch | ✅ | 75% | 83.69 | 24.91 | 1.69 | 6.79 | 2.72 | — | 23,401 | — |
-| RSI | Rush Street Interactive, Inc | piotroski | ✅ | 78% | 16.36 | 52.77 | 26.24 | 22.62 | 1.93 | 2.41 | 4M | — |
-| BCO | BRINK’S CO | piotroski | ✅ | 78% | 114 | 24.29 | 17.43 | 71.91 | 1.51 | 24.96 | 134,414 | — |
-| NDSN | NORDSON CORPORATION | buffett | ✅ | 83% | 320 | 37.60 | 5.98 | 15.92 | 1.64 | — | 83,094 | — |
-| NDSN | NORDSON CORPORATION | piotroski | ✅ | 78% | 320 | 37.60 | 5.98 | 15.92 | 1.64 | — | 83,094 | — |
-| IEX | IDEX CORP | piotroski | ✅ | 78% | 228 | 35.56 | 4.26 | 12.00 | 2.86 | 0.72 | 176,163 | — |
-| CHEF | CHEFS’ WAREHOUSE, INC. | piotroski | ✅ | 100% | 106 | 63.21 | 8.08 | 11.97 | 2.05 | 2.36 | 60,608 | — |
-| MOS | MOSAIC CO | piotroski | ✅ | 89% | 17.27 | 10.16 | 0.46 | 4.47 | 1.32 | — | 13M | — |
-| LW | LAMB WESTON HOLDINGS, INC. | piotroski | ✅ | 78% | 55.31 | 26.59 | 4.22 | 15.89 | 1.42 | — | 398,888 | — |
-| USNA | USANA HEALTH SCIENCES, INC. | piotroski | ✅ | 78% | 14.52 | 25.03 | 0.51 | 2.02 | 2.24 | 0.29 | 253,115 | — |
-| HCI | HCI Group, Inc. | buffett | ▫️ | 67% | 204 | 9.00 | 2.53 | 28.72 | — | 1.36 | 74,677 | — |
-| HCI | HCI Group, Inc. | lynch | ▫️ | 50% | 204 | 9.00 | 2.53 | 28.72 | — | 1.36 | 74,677 | — |
-| HCI | HCI Group, Inc. | graham | ▫️ | 44% | 204 | 9.00 | 2.53 | 28.72 | — | 1.36 | 74,677 | — |
-| HCI | HCI Group, Inc. | netnet | ▫️ | 25% | 204 | 9.00 | 2.53 | 28.72 | — | 1.36 | 74,677 | — |
-| HCI | HCI Group, Inc. | custom | ▫️ | 0% | 204 | 9.00 | 2.53 | 28.72 | — | 1.36 | 74,677 | — |
-| LRN | Stride, Inc. | graham | ▫️ | 78% | 80.33 | 11.25 | 2.33 | 20.72 | 5.94 | 0.49 | 629,846 | — |
-| LRN | Stride, Inc. | greenblatt | ▫️ | 67% | 80.33 | 11.25 | 2.33 | 20.72 | 5.94 | 0.49 | 629,846 | — |
-| LRN | Stride, Inc. | netnet | ▫️ | 50% | 80.33 | 11.25 | 2.33 | 20.72 | 5.94 | 0.49 | 629,846 | — |
-| LRN | Stride, Inc. | custom | ▫️ | 0% | 80.33 | 11.25 | 2.33 | 20.72 | 5.94 | 0.49 | 629,846 | — |
-| UROY | Uranium Royalty Corp. | greenblatt | ▫️ | 67% | 3.38 | 11.66 | 1.51 | 12.87 | 5.94 | 0.19 | 2M | — |
-| UROY | Uranium Royalty Corp. | graham | ▫️ | 56% | 3.38 | 11.66 | 1.51 | 12.87 | 5.94 | 0.19 | 2M | — |
-| UROY | Uranium Royalty Corp. | lynch | ▫️ | 50% | 3.38 | 11.66 | 1.51 | 12.87 | 5.94 | 0.19 | 2M | — |
-| UROY | Uranium Royalty Corp. | netnet | ▫️ | 50% | 3.38 | 11.66 | 1.51 | 12.87 | 5.94 | 0.19 | 2M | — |
-| UROY | Uranium Royalty Corp. | buffett | ▫️ | 33% | 3.38 | 11.66 | 1.51 | 12.87 | 5.94 | 0.19 | 2M | — |
-| UROY | Uranium Royalty Corp. | piotroski | ▫️ | 33% | 3.38 | 11.66 | 1.51 | 12.87 | 5.94 | 0.19 | 2M | — |
-| UROY | Uranium Royalty Corp. | custom | ▫️ | 0% | 3.38 | 11.66 | 1.51 | 12.87 | 5.94 | 0.19 | 2M | — |
-| CEPF | CANTOR EQUITY PARTNERS IV, I | greenblatt | ▫️ | 67% | 10.27 | — | — | 4,306 | — | 0.67 | 4,109 | — |
-| CEPF | CANTOR EQUITY PARTNERS IV, I | lynch | ▫️ | 50% | 10.27 | — | — | 4,306 | — | 0.67 | 4,109 | — |
-| CEPF | CANTOR EQUITY PARTNERS IV, I | netnet | ▫️ | 25% | 10.27 | — | — | 4,306 | — | 0.67 | 4,109 | — |
-| CEPF | CANTOR EQUITY PARTNERS IV, I | buffett | ▫️ | 17% | 10.27 | — | — | 4,306 | — | 0.67 | 4,109 | — |
-| CEPF | CANTOR EQUITY PARTNERS IV, I | graham | ▫️ | 11% | 10.27 | — | — | 4,306 | — | 0.67 | 4,109 | — |
-| CEPF | CANTOR EQUITY PARTNERS IV, I | piotroski | ▫️ | 11% | 10.27 | — | — | 4,306 | — | 0.67 | 4,109 | — |
+| YELP | YELP INC | greenblatt | ✅ | 100% | 19.95 | 8.90 | 1.83 | 20.48 | 2.99 | 0.35 | 517,835 | — |
+| YELP | YELP INC | piotroski | ✅ | 89% | 19.95 | 8.90 | 1.83 | 20.48 | 2.99 | 0.35 | 517,835 | — |
+| NBR | NABORS INDUSTRIES LTD | piotroski | ✅ | 78% | 80.56 | 4.63 | 1.97 | 48.52 | 1.56 | 5.67 | 137,336 | — |
+| CVSA | Covista Inc. | lynch | ✅ | 75% | 131 | 18.65 | 3.24 | 17.40 | 1.09 | 1.08 | 153,568 | — |
+| SFD | SMITHFIELD FOODS, INC. | graham | ✅ | 100% | 18.55 | 7.39 | 1.07 | 14.51 | 2.97 | — | 1M | — |
+| SEATW | Vivid Seats Inc. | greenblatt | ✅ | 100% | 0.02 | 0.02 | — | -947 | 0.59 | -8.48 | 2M | — |
+| VISN | Vistance Networks, Inc. | greenblatt | ✅ | 100% | 6.13 | 0.64 | — | -227 | 3.88 | -9.06 | 4M | — |
+| PGY | Pagaya Technologies Ltd. | piotroski | ✅ | 78% | 18.95 | 20.38 | 3.28 | 16.96 | — | 2.00 | 1M | — |
+| NYT | THE NEW YORK TIMES COMPANY | piotroski | ✅ | 100% | 69.42 | 33.22 | 5.61 | 16.85 | 1.54 | — | 2M | — |
+| ORI | OLD REPUBLIC INTERNATIONAL C | piotroski | ✅ | 78% | 40.08 | 10.77 | 1.70 | 15.82 | — | 4.05 | 3M | — |
+| TRN | TRINITY INDUSTRIES INC | greenblatt | ✅ | 100% | 25.82 | 8.47 | 1.99 | 23.50 | — | 6.76 | 779,076 | — |
+| TRN | TRINITY INDUSTRIES INC | piotroski | ✅ | 78% | 25.82 | 8.47 | 1.99 | 23.50 | — | 6.76 | 779,076 | — |
+| AGCO | AGCO CORP /DE | piotroski | ✅ | 89% | 106 | 10.89 | 1.85 | 17.00 | 1.39 | 1.72 | 567,112 | — |
+| VIRT | Virtu Financial, Inc. | piotroski | ✅ | 78% | 56.03 | 10.92 | 3.02 | 29.60 | — | 11.49 | 333,147 | — |
+| DLB | Dolby Laboratories, Inc. | piotroski | ✅ | 78% | 63.28 | 24.15 | 2.35 | 9.72 | 3.17 | 0.23 | 501,314 | — |
+| CENTA | Central Garden & Pet Company | piotroski | ✅ | 89% | 38.81 | 15.22 | 1.56 | 10.29 | 3.67 | — | 461,318 | — |
+| IDT | IDT CORP | piotroski | ✅ | 78% | 82.48 | 23.84 | 5.47 | 22.96 | 1.86 | 0.94 | 70,426 | — |
+| LNT | ALLIANT ENERGY CORP | piotroski | ✅ | 78% | 69.74 | 22.21 | 2.45 | 11.04 | 0.80 | — | 1M | — |
+| HAYW | Hayward Holdings, Inc. | piotroski | ✅ | 100% | 12.69 | 18.65 | 1.77 | 9.51 | 2.94 | 0.98 | 2M | — |
+| CPRI | CAPRI HOLDINGS LIMITED | piotroski | ✅ | 78% | 16.36 | 14.35 | 24.51 | 171 | 1.21 | 39.38 | 3M | — |
+| INNV | InnovAge Holding Corp. | piotroski | ✅ | 78% | 9.52 | — | 5.48 | -1.08 | 1.05 | 1.23 | 950,830 | — |
+| DAR | DARLING INGREDIENTS INC. | piotroski | ✅ | 78% | 55.64 | 143 | 1.88 | 1.33 | 1.50 | 1.16 | 3M | — |
+| ORN | ORION GROUP HOLDINGS, INC. | piotroski | ✅ | 78% | 8.41 | 140 | 2.10 | 1.56 | 1.36 | 1.61 | 513,409 | — |
+| AAAU | GOLDMAN SACHS PHYSICAL GOLD  | greenblatt | ▫️ | 67% | 39.36 | 2.37 | — | — | — | — | 1M | — |
+| AAAU | GOLDMAN SACHS PHYSICAL GOLD  | lynch | ▫️ | 50% | 39.36 | 2.37 | — | — | — | — | 1M | — |
+| AAAU | GOLDMAN SACHS PHYSICAL GOLD  | piotroski | ▫️ | 33% | 39.36 | 2.37 | — | — | — | — | 1M | — |
+| AAAU | GOLDMAN SACHS PHYSICAL GOLD  | netnet | ▫️ | 25% | 39.36 | 2.37 | — | — | — | — | 1M | — |
+| AAAU | GOLDMAN SACHS PHYSICAL GOLD  | graham | ▫️ | 22% | 39.36 | 2.37 | — | — | — | — | 1M | — |
+| AAAU | GOLDMAN SACHS PHYSICAL GOLD  | buffett | ▫️ | 17% | 39.36 | 2.37 | — | — | — | — | 1M | — |
+| AAAU | GOLDMAN SACHS PHYSICAL GOLD  | custom | ▫️ | 0% | 39.36 | 2.37 | — | — | — | — | 1M | — |
+| YELP | YELP INC | graham | ▫️ | 78% | 19.95 | 8.90 | 1.83 | 20.48 | 2.99 | 0.35 | 517,835 | — |
+| YELP | YELP INC | buffett | ▫️ | 50% | 19.95 | 8.90 | 1.83 | 20.48 | 2.99 | 0.35 | 517,835 | — |
+| YELP | YELP INC | lynch | ▫️ | 50% | 19.95 | 8.90 | 1.83 | 20.48 | 2.99 | 0.35 | 517,835 | — |
+| YELP | YELP INC | netnet | ▫️ | 50% | 19.95 | 8.90 | 1.83 | 20.48 | 2.99 | 0.35 | 517,835 | — |
+| YELP | YELP INC | custom | ▫️ | 0% | 19.95 | 8.90 | 1.83 | 20.48 | 2.99 | 0.35 | 517,835 | — |
+| NBR | NABORS INDUSTRIES LTD | greenblatt | ▫️ | 67% | 80.56 | 4.63 | 1.97 | 48.52 | 1.56 | 5.67 | 137,336 | — |
+| NBR | NABORS INDUSTRIES LTD | graham | ▫️ | 44% | 80.56 | 4.63 | 1.97 | 48.52 | 1.56 | 5.67 | 137,336 | — |
+| NBR | NABORS INDUSTRIES LTD | lynch | ▫️ | 25% | 80.56 | 4.63 | 1.97 | 48.52 | 1.56 | 5.67 | 137,336 | — |
+| NBR | NABORS INDUSTRIES LTD | netnet | ▫️ | 25% | 80.56 | 4.63 | 1.97 | 48.52 | 1.56 | 5.67 | 137,336 | — |
+| NBR | NABORS INDUSTRIES LTD | buffett | ▫️ | 17% | 80.56 | 4.63 | 1.97 | 48.52 | 1.56 | 5.67 | 137,336 | — |
+| NBR | NABORS INDUSTRIES LTD | custom | ▫️ | 0% | 80.56 | 4.63 | 1.97 | 48.52 | 1.56 | 5.67 | 137,336 | — |
+| LNTH | Lantheus Holdings, Inc. | piotroski | ▫️ | 56% | 99.91 | 29.30 | 6.27 | 21.43 | 2.70 | 1.04 | 352,477 | — |
+| LNTH | Lantheus Holdings, Inc. | buffett | ▫️ | 50% | 99.91 | 29.30 | 6.27 | 21.43 | 2.70 | 1.04 | 352,477 | — |
+| LNTH | Lantheus Holdings, Inc. | graham | ▫️ | 33% | 99.91 | 29.30 | 6.27 | 21.43 | 2.70 | 1.04 | 352,477 | — |
+| LNTH | Lantheus Holdings, Inc. | greenblatt | ▫️ | 33% | 99.91 | 29.30 | 6.27 | 21.43 | 2.70 | 1.04 | 352,477 | — |
+| LNTH | Lantheus Holdings, Inc. | lynch | ▫️ | 25% | 99.91 | 29.30 | 6.27 | 21.43 | 2.70 | 1.04 | 352,477 | — |
+| LNTH | Lantheus Holdings, Inc. | netnet | ▫️ | 25% | 99.91 | 29.30 | 6.27 | 21.43 | 2.70 | 1.04 | 352,477 | — |
+| LNTH | Lantheus Holdings, Inc. | custom | ▫️ | 0% | 99.91 | 29.30 | 6.27 | 21.43 | 2.70 | 1.04 | 352,477 | — |
+| WT | WisdomTree, Inc. | buffett | ▫️ | 67% | 21.15 | 28.20 | 7.41 | 26.38 | 1.75 | 2.66 | 700,824 | — |
+| WT | WisdomTree, Inc. | piotroski | ▫️ | 67% | 21.15 | 28.20 | 7.41 | 26.38 | 1.75 | 2.66 | 700,824 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
