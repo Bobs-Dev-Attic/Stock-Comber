@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-24 04:13 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-24 08:46 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **35** strategy matches passed.
+Screened **75** companies · **32** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| MLI | MUELLER INDUSTRIES, INC | buffett | ✅ | 100% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
-| MLI | MUELLER INDUSTRIES, INC | greenblatt | ✅ | 100% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
-| MLI | MUELLER INDUSTRIES, INC | lynch | ✅ | 100% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
-| MLI | MUELLER INDUSTRIES, INC | graham | ✅ | 89% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
-| MLI | MUELLER INDUSTRIES, INC | piotroski | ✅ | 78% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
-| SAFX | XCF GLOBAL, INC. | greenblatt | ✅ | 100% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 10M | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | greenblatt | ✅ | 100% | 2.43 | 12.15 | 2.71 | 22.71 | 4.86 | 0.39 | 543,158 | — |
-| WHD | Cactus, Inc. | lynch | ✅ | 75% | 63.15 | — | — | 13.54 | 5.81 | 0.36 | 686,872 | — |
-| WING | WINGSTOP INC. | lynch | ✅ | 100% | 120 | 19.25 | — | -23.65 | 3.26 | -1.94 | 899,582 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | piotroski | ✅ | 100% | 168 | 23.75 | 8.14 | 34.27 | 1.46 | — | 432,296 | — |
-| ALSN | ALLISON TRANSMISSION HOLDING | buffett | ✅ | 83% | 106 | 14.50 | 4.84 | 33.37 | 4.85 | 2.26 | 657,911 | — |
-| ALSN | ALLISON TRANSMISSION HOLDING | lynch | ✅ | 75% | 106 | 14.50 | 4.84 | 33.37 | 4.85 | 2.26 | 657,911 | — |
-| AREC | AMERICAN RESOURCES CORPORATI | greenblatt | ✅ | 100% | 1.14 | 1.81 | 1.05 | 58.44 | 2.19 | 0.80 | 2M | — |
-| HBANP | Huntington Bancshares Incorp | lynch | ✅ | 75% | 14.93 | 10.74 | 0.92 | 9.08 | — | 8.25 | 79,400 | — |
-| LMB | LIMBACH HOLDINGS, INC. | piotroski | ✅ | 78% | 47.57 | 14.73 | 2.94 | 19.97 | 1.44 | 0.95 | 127,187 | — |
-| LMB | LIMBACH HOLDINGS, INC. | lynch | ✅ | 75% | 47.57 | 14.73 | 2.94 | 19.97 | 1.44 | 0.95 | 127,187 | — |
-| MCY | MERCURY GENERAL CORPORATION | piotroski | ✅ | 78% | 103 | 10.53 | 2.36 | 22.38 | — | 2.96 | 210,717 | — |
-| ALRM | ALARM.COM HOLDINGS, INC. | piotroski | ✅ | 78% | 64.14 | 26.07 | 4.46 | 15.52 | 1.92 | 1.47 | 744,229 | — |
-| HOG | Harley-Davidson, Inc. | graham | ✅ | 100% | 28.96 | 10.42 | 1.12 | 10.79 | 2.10 | — | 3M | — |
-| HOG | Harley-Davidson, Inc. | piotroski | ✅ | 89% | 28.96 | 10.42 | 1.12 | 10.79 | 2.10 | — | 3M | — |
-| DLB | Dolby Laboratories, Inc. | piotroski | ✅ | 78% | 62.85 | 23.99 | 2.34 | 9.72 | 3.17 | 0.23 | 454,859 | — |
-| IDT | IDT Corporation | piotroski | ✅ | 78% | 82.47 | 23.84 | 5.47 | 22.96 | 1.86 | 0.94 | 151,672 | — |
-| IMAX | IMAX Corporation | piotroski | ✅ | 78% | 53.38 | 84.73 | 8.77 | 10.32 | — | 1.38 | 930,191 | — |
-| FAF | FIRST AMERICAN FINANCIAL COR | piotroski | ✅ | 89% | 64.72 | 10.79 | 1.22 | 11.31 | — | 1.95 | 1M | — |
+| LFMD | LifeMD, Inc. | greenblatt | ✅ | 100% | 2.13 | 8.52 | 4.15 | 61.99 | 1.25 | 2.04 | 402,066 | — |
+| OII | OCEANEERING INTERNATIONAL IN | greenblatt | ✅ | 100% | 39.27 | 11.25 | 3.71 | 33.04 | 1.99 | — | 2M | — |
+| OII | OCEANEERING INTERNATIONAL IN | piotroski | ✅ | 78% | 39.27 | 11.25 | 3.71 | 33.04 | 1.99 | — | 2M | — |
+| NBR | NABORS INDUSTRIES LTD | piotroski | ✅ | 78% | 81.03 | 4.66 | 1.98 | 48.52 | 1.56 | 5.67 | 245,807 | — |
+| XPEL | XPEL, INC. | buffett | ✅ | 100% | 43.14 | 23.32 | 4.26 | 18.28 | 3.25 | 0.35 | 184,932 | — |
+| XPEL | XPEL, INC. | lynch | ✅ | 75% | 43.14 | 23.32 | 4.26 | 18.28 | 3.25 | 0.35 | 184,932 | — |
+| VTOL | Bristow Group Inc. | piotroski | ✅ | 78% | 40.54 | 9.38 | 1.14 | 12.18 | 1.90 | 1.18 | 424,470 | — |
+| AES | THE AES CORPORATION | greenblatt | ✅ | 100% | 15.00 | 11.90 | 2.64 | 22.40 | 0.77 | — | 7M | — |
+| WLDN | WILLDAN GROUP, INC. | piotroski | ✅ | 78% | 72.48 | 20.77 | 3.58 | 17.24 | 1.56 | 0.79 | 176,704 | — |
+| SBAC | SBA COMMUNICATIONS CORPORATI | piotroski | ✅ | 78% | 185 | 18.85 | — | -21.71 | 0.29 | — | 3M | — |
+| SKY | Champion Homes, Inc. | piotroski | ✅ | 89% | 78.92 | 21.56 | 2.83 | 13.15 | 2.48 | — | 721,929 | — |
+| UFPT | UFP Technologies, Inc. | lynch | ✅ | 100% | 296 | 33.80 | 5.45 | 16.12 | 2.68 | 0.55 | 112,194 | — |
+| UFPT | UFP Technologies, Inc. | piotroski | ✅ | 89% | 296 | 33.80 | 5.45 | 16.12 | 2.68 | 0.55 | 112,194 | — |
+| MEDP | Medpace Holdings, Inc. | buffett | ✅ | 83% | 669 | 43.80 | 43.04 | 98.27 | 0.74 | 3.30 | 306,923 | — |
+| MEDP | Medpace Holdings, Inc. | piotroski | ✅ | 78% | 669 | 43.80 | 43.04 | 98.27 | 0.74 | 3.30 | 306,923 | — |
+| BFH | BREAD FINANCIAL HOLDINGS, IN | lynch | ✅ | 75% | 99.89 | 9.17 | 1.43 | 15.57 | — | 5.81 | 687,765 | — |
+| FIZZ | National Beverage Corp. | buffett | ✅ | 83% | 36.15 | 18.44 | 5.33 | 28.89 | 4.39 | 0.34 | 237,758 | — |
+| AXTA | AXALTA COATING SYSTEMS LTD. | lynch | ✅ | 75% | 34.14 | 19.62 | 3.16 | 16.11 | 2.06 | 2.22 | 2M | — |
+| CW | CURTISS-WRIGHT CORPORATION | piotroski | ✅ | 89% | 465 | 36.13 | 6.91 | 19.11 | 1.44 | 1.06 | 626,720 | — |
+| SSRM | SSR Mining Inc. | piotroski | ✅ | 78% | 28.38 | 15.34 | 1.76 | 11.28 | 2.08 | 0.51 | 2M | — |
+| NDSN | NORDSON CORPORATION | buffett | ✅ | 83% | 319 | 37.47 | 5.96 | 15.92 | 1.64 | — | 372,311 | — |
+| NDSN | NORDSON CORPORATION | piotroski | ✅ | 78% | 319 | 37.47 | 5.96 | 15.92 | 1.64 | — | 372,311 | — |
+| EXTR | Extreme Networks, Inc. | piotroski | ✅ | 89% | 21.97 | 70.87 | 33.47 | 47.54 | 0.93 | — | 915,440 | — |
+| UGI | UGI CORPORATION | piotroski | ✅ | 78% | 38.49 | 12.46 | 1.77 | 14.19 | 0.89 | 2.23 | 1M | — |
 | CPRI | CAPRI HOLDINGS LIMITED | piotroski | ✅ | 78% | 15.87 | 13.92 | 23.77 | 171 | 1.21 | 39.38 | 3M | — |
-| AIOT | Powerfleet, Inc. | piotroski | ✅ | 78% | 2.66 | — | 0.75 | -4.32 | 1.13 | 1.00 | 957,909 | — |
-| ATRC | AtriCure, Inc. | piotroski | ✅ | 78% | 58.97 | — | 5.72 | -2.33 | 3.96 | 0.33 | 497,089 | — |
-| CBZ | CBIZ, Inc. | piotroski | ✅ | 78% | 54.94 | 30.02 | 1.97 | 6.55 | 1.22 | 1.50 | 1M | — |
-| MLKN | MillerKnoll, Inc. | piotroski | ✅ | 100% | 21.14 | 16.02 | 1.09 | 6.82 | 1.58 | 1.93 | 359,441 | — |
-| RRX | REGAL REXNORD CORP | piotroski | ✅ | 78% | 148 | 35.22 | 1.44 | 4.08 | 2.15 | — | 833,341 | — |
-| MPAA | MOTORCAR PARTS OF AMERICA, I | piotroski | ✅ | 78% | 10.18 | 16.42 | 0.76 | 4.66 | 1.46 | 2.83 | 61,771 | — |
-| FROG | JFrog Ltd. | piotroski | ✅ | 78% | 101 | — | 13.18 | -8.09 | 2.14 | 0.51 | 2M | — |
-| QUAD | Quad/Graphics, Inc. | piotroski | ✅ | 78% | 9.44 | 17.48 | — | -45.38 | 0.86 | -18.90 | 235,780 | — |
-| DBD | Diebold Nixdorf, Incorporate | piotroski | ✅ | 78% | 69.18 | 27.24 | 2.34 | 8.60 | 1.30 | 2.50 | 207,878 | — |
-| PTON | PELOTON INTERACTIVE, INC. | piotroski | ✅ | 89% | 5.37 | 38.36 | — | -45.24 | 2.84 | -15.72 | 6M | — |
-| MLI | MUELLER INDUSTRIES, INC | netnet | ▫️ | 50% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
-| MLI | MUELLER INDUSTRIES, INC | custom | ▫️ | 0% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
-| SAFX | XCF GLOBAL, INC. | graham | ▫️ | 44% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 10M | — |
-| SAFX | XCF GLOBAL, INC. | buffett | ▫️ | 33% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 10M | — |
-| SAFX | XCF GLOBAL, INC. | lynch | ▫️ | 25% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 10M | — |
-| SAFX | XCF GLOBAL, INC. | netnet | ▫️ | 25% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 10M | — |
-| SAFX | XCF GLOBAL, INC. | piotroski | ▫️ | 11% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 10M | — |
-| SAFX | XCF GLOBAL, INC. | custom | ▫️ | 0% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 10M | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | piotroski | ▫️ | 67% | 2.43 | 12.15 | 2.71 | 22.71 | 4.86 | 0.39 | 543,158 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | buffett | ▫️ | 50% | 2.43 | 12.15 | 2.71 | 22.71 | 4.86 | 0.39 | 543,158 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | lynch | ▫️ | 50% | 2.43 | 12.15 | 2.71 | 22.71 | 4.86 | 0.39 | 543,158 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | netnet | ▫️ | 50% | 2.43 | 12.15 | 2.71 | 22.71 | 4.86 | 0.39 | 543,158 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | graham | ▫️ | 44% | 2.43 | 12.15 | 2.71 | 22.71 | 4.86 | 0.39 | 543,158 | — |
-| NAGE | NIAGEN BIOSCIENCE, INC. | custom | ▫️ | 0% | 2.43 | 12.15 | 2.71 | 22.71 | 4.86 | 0.39 | 543,158 | — |
-| WHD | Cactus, Inc. | graham | ▫️ | 67% | 63.15 | — | — | 13.54 | 5.81 | 0.36 | 686,872 | — |
+| PHIN | PHINIA INC. | piotroski | ✅ | 89% | 57.32 | 17.69 | 1.45 | 8.19 | 1.86 | 1.41 | 338,996 | — |
+| LUV | SOUTHWEST AIRLINES CO. | piotroski | ✅ | 78% | 41.75 | 52.85 | 2.92 | 5.53 | 0.52 | — | 8M | — |
+| RH | RH | piotroski | ✅ | 89% | 137 | 21.78 | 44.88 | 206 | 1.19 | 78.80 | 796,185 | — |
+| LOCO | EL POLLO LOCO HOLDINGS, INC. | piotroski | ✅ | 89% | 14.42 | 16.02 | 1.46 | 9.10 | 0.32 | 1.08 | 270,520 | — |
+| HCSG | HEALTHCARE SERVICES GROUP, I | piotroski | ✅ | 100% | 25.30 | 31.23 | 3.62 | 11.58 | 3.38 | — | 1M | — |
+| NEOG | Neogen Corporation | piotroski | ✅ | 89% | 12.19 | — | 1.27 | -0.38 | 3.82 | 0.60 | 3M | — |
+| AVNW | Aviat Networks, Inc. | piotroski | ✅ | 78% | 19.17 | 101 | 0.93 | 0.95 | 1.97 | 1.24 | 93,845 | — |
+| LFMD | LifeMD, Inc. | piotroski | ▫️ | 67% | 2.13 | 8.52 | 4.15 | 61.99 | 1.25 | 2.04 | 402,066 | — |
+| LFMD | LifeMD, Inc. | netnet | ▫️ | 50% | 2.13 | 8.52 | 4.15 | 61.99 | 1.25 | 2.04 | 402,066 | — |
+| LFMD | LifeMD, Inc. | graham | ▫️ | 33% | 2.13 | 8.52 | 4.15 | 61.99 | 1.25 | 2.04 | 402,066 | — |
+| LFMD | LifeMD, Inc. | buffett | ▫️ | 33% | 2.13 | 8.52 | 4.15 | 61.99 | 1.25 | 2.04 | 402,066 | — |
+| LFMD | LifeMD, Inc. | lynch | ▫️ | 25% | 2.13 | 8.52 | 4.15 | 61.99 | 1.25 | 2.04 | 402,066 | — |
+| LFMD | LifeMD, Inc. | custom | ▫️ | 0% | 2.13 | 8.52 | 4.15 | 61.99 | 1.25 | 2.04 | 402,066 | — |
+| OII | OCEANEERING INTERNATIONAL IN | buffett | ▫️ | 50% | 39.27 | 11.25 | 3.71 | 33.04 | 1.99 | — | 2M | — |
+| OII | OCEANEERING INTERNATIONAL IN | graham | ▫️ | 44% | 39.27 | 11.25 | 3.71 | 33.04 | 1.99 | — | 2M | — |
+| OII | OCEANEERING INTERNATIONAL IN | lynch | ▫️ | 25% | 39.27 | 11.25 | 3.71 | 33.04 | 1.99 | — | 2M | — |
+| OII | OCEANEERING INTERNATIONAL IN | netnet | ▫️ | 25% | 39.27 | 11.25 | 3.71 | 33.04 | 1.99 | — | 2M | — |
+| OII | OCEANEERING INTERNATIONAL IN | custom | ▫️ | 0% | 39.27 | 11.25 | 3.71 | 33.04 | 1.99 | — | 2M | — |
+| NBR | NABORS INDUSTRIES LTD | greenblatt | ▫️ | 67% | 81.03 | 4.66 | 1.98 | 48.52 | 1.56 | 5.67 | 245,807 | — |
+| NBR | NABORS INDUSTRIES LTD | graham | ▫️ | 44% | 81.03 | 4.66 | 1.98 | 48.52 | 1.56 | 5.67 | 245,807 | — |
+| NBR | NABORS INDUSTRIES LTD | lynch | ▫️ | 25% | 81.03 | 4.66 | 1.98 | 48.52 | 1.56 | 5.67 | 245,807 | — |
+| NBR | NABORS INDUSTRIES LTD | netnet | ▫️ | 25% | 81.03 | 4.66 | 1.98 | 48.52 | 1.56 | 5.67 | 245,807 | — |
+| NBR | NABORS INDUSTRIES LTD | buffett | ▫️ | 17% | 81.03 | 4.66 | 1.98 | 48.52 | 1.56 | 5.67 | 245,807 | — |
+| NBR | NABORS INDUSTRIES LTD | custom | ▫️ | 0% | 81.03 | 4.66 | 1.98 | 48.52 | 1.56 | 5.67 | 245,807 | — |
+| XPEL | XPEL, INC. | graham | ▫️ | 56% | 43.14 | 23.32 | 4.26 | 18.28 | 3.25 | 0.35 | 184,932 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
