@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-SITC,SITE Centers Corp.,greenblatt,True,3,3,100.0,3.74,1.11,0.59,53.13,—,0.25,21.97,3M,—
-SITC,SITE Centers Corp.,lynch,True,4,4,100.0,3.74,1.11,0.59,53.13,—,0.25,21.97,3M,—
-GMED,"GLOBUS MEDICAL, INC.",piotroski,True,9,9,100.0,81.41,20.77,2.44,11.76,4.26,0.16,54.25,"768,462",—
-GMED,"GLOBUS MEDICAL, INC.",lynch,True,4,4,100.0,81.41,20.77,2.44,11.76,4.26,0.16,54.25,"768,462",—
-BKE,"BUCKLE, INC",greenblatt,True,3,3,100.0,46.54,11.24,5.56,49.39,1.89,1.33,27.93,"455,430",—
-BKE,"BUCKLE, INC",buffett,True,5,6,83.3,46.54,11.24,5.56,49.39,1.89,1.33,27.93,"455,430",—
-MHO,"M/I HOMES, INC.",lynch,True,3,4,75.0,124,8.41,1.07,12.73,—,0.51,196,"448,327",—
-EVR,EVERCORE INC.,buffett,True,5,6,83.3,252,17.93,5.22,29.14,2.16,1.50,123,"569,681",—
-EVR,EVERCORE INC.,piotroski,True,7,9,77.8,252,17.93,5.22,29.14,2.16,1.50,123,"569,681",—
-OFG,OFG Bancorp,lynch,True,3,4,75.0,51.27,11.19,1.65,14.76,—,7.97,56.57,"303,903",—
-GBX,"THE GREENBRIER COMPANIES, INC.",lynch,True,3,4,75.0,38.09,6.00,0.80,13.32,—,—,82.54,"446,116",—
-SEATW,Vivid Seats Inc.,greenblatt,True,3,3,100.0,0.02,0.02,—,-947,0.59,-8.48,—,2M,—
-DAKT,"Daktronics, Inc.",piotroski,True,8,9,88.9,20.60,22.39,3.38,15.09,2.31,—,11.23,"607,447",—
-SBAC,SBA COMMUNICATIONS CORPORATION,piotroski,True,7,9,77.8,185,18.85,—,-21.71,0.29,—,—,3M,—
-DAKT,"Daktronics, Inc.",lynch,True,3,4,75.0,20.60,22.39,3.38,15.09,2.31,—,11.23,"607,447",—
-GPK,Graphic Packaging Holding Co,lynch,True,3,4,75.0,8.77,5.93,0.79,13.31,1.30,—,19.25,5M,—
-JOE,The St. Joe Company,piotroski,True,8,9,88.9,67.57,33.95,5.11,15.09,—,0.97,24.33,"160,100",—
-HRB,H&R BLOCK INC,greenblatt,True,3,3,100.0,49.69,8.78,54.50,624,1.13,26.72,10.78,1M,—
-HRB,H&R BLOCK INC,piotroski,True,8,9,88.9,49.69,8.78,54.50,624,1.13,26.72,10.78,1M,—
-NHC,NATIONAL HEALTHCARE CORP,piotroski,True,9,9,100.0,236,30.77,3.46,11.23,1.82,0.42,109,"192,910",—
-NHC,NATIONAL HEALTHCARE CORP,lynch,True,3,4,75.0,236,30.77,3.46,11.23,1.82,0.42,109,"192,910",—
-INVH,Invitation Homes Inc.,piotroski,True,7,9,77.8,27.54,28.69,1.77,6.17,—,0.96,18.32,7M,—
-TILE,INTERFACE INC,piotroski,True,8,9,88.9,36.42,18.58,3.36,18.12,2.34,0.88,21.85,"430,628",—
-TBB,AT&T INC.,piotroski,True,7,9,77.8,17.78,5.85,1.01,17.36,0.91,—,34.72,"95,493",—
-POST,"Post Holdings, Inc.",lynch,True,3,4,75.0,80.56,14.62,1.35,8.94,1.67,2.60,86.01,"661,175",—
-RSI,"Rush Street Interactive, Inc.",piotroski,True,7,9,77.8,15.90,51.29,25.50,22.62,1.93,2.41,2.09,2M,—
-OPLN,"OPENLANE, Inc.",piotroski,True,8,9,88.9,37.69,—,3.25,14.32,1.16,—,—,"856,888",—
-DLB,"Dolby Laboratories, Inc.",piotroski,True,7,9,77.8,62.85,23.99,2.34,9.72,3.17,0.23,39.82,"454,859",—
-LNT,ALLIANT ENERGY CORP,piotroski,True,7,9,77.8,69.66,22.18,2.45,11.04,0.80,—,44.83,3M,—
+POWL,"Powell Industries, Inc.",greenblatt,True,3,3,100.0,151,10.16,2.87,28.21,2.09,0.73,133,"732,906",—
+POWL,"Powell Industries, Inc.",piotroski,True,7,9,77.8,151,10.16,2.87,28.21,2.09,0.73,133,"732,906",—
+POWL,"Powell Industries, Inc.",lynch,True,3,4,75.0,151,10.16,2.87,28.21,2.09,0.73,133,"732,906",—
+AREC,AMERICAN RESOURCES CORPORATION,greenblatt,True,3,3,100.0,1.14,1.81,1.05,58.44,2.19,0.80,3.92,2M,—
+PJT,PJT Partners Inc.,buffett,True,5,6,83.3,141,—,—,58.43,—,2.71,—,"411,046",—
+PJT,PJT Partners Inc.,piotroski,True,7,9,77.8,141,—,—,58.43,—,2.71,—,"411,046",—
+BKV,BKV Corp,piotroski,True,7,9,77.8,20.36,10.28,0.87,8.49,1.78,0.52,32.34,3M,—
+PATH,"UiPath, Inc.",piotroski,True,8,9,88.9,14.13,27.17,3.70,13.56,2.48,0.53,6.69,27M,—
+BYND,"BEYOND MEAT, INC.",greenblatt,True,3,3,100.0,7.15,—,—,"-21,968",4.56,—,—,"864,529",—
+BDC,BELDEN INC.,piotroski,True,8,9,88.9,104,17.62,3.31,18.78,1.93,—,64.66,"328,258",—
+FIZZ,National Beverage Corp.,buffett,True,5,6,83.3,36.15,18.44,5.33,28.89,4.39,0.34,17.30,"237,758",—
+TOST,"Toast, Inc.",piotroski,True,7,9,77.8,32.71,58.41,9.35,16.10,2.75,0.48,6.64,5M,—
+AXTA,AXALTA COATING SYSTEMS LTD.,lynch,True,3,4,75.0,34.14,19.62,3.16,16.11,2.06,2.22,20.57,2M,—
+UMBF,UMB FINANCIAL CORP,lynch,True,3,4,75.0,136,14.59,1.30,9.13,—,8.50,148,"652,860",—
+JJSF,J&J SNACK FOODS CORP.,lynch,True,3,4,75.0,83.67,24.90,1.69,6.79,2.72,—,61.14,"130,411",—
+VCYT,"VERACYTE, INC.",piotroski,True,8,9,88.9,47.93,58.45,2.95,5.07,8.15,0.07,17.32,"905,985",—
+POST,"Post Holdings, Inc.",lynch,True,3,4,75.0,80.56,14.62,1.35,8.94,1.67,2.60,86.01,"661,173",—
+CURB,Curbline Properties Corp.,piotroski,True,7,9,77.8,28.86,78.00,1.59,2.09,—,0.29,12.29,2M,—
+CURB,Curbline Properties Corp.,lynch,True,3,4,75.0,28.86,78.00,1.59,2.09,—,0.29,12.29,2M,—
+NMRK,"NEWMARK GROUP, INC.",piotroski,True,8,9,88.9,11.52,16.94,2.00,8.63,1.05,2.24,9.39,2M,—
+WOR,"WORTHINGTON ENTERPRISES, INC",piotroski,True,8,9,88.9,63.65,20.27,3.08,15.20,2.37,0.80,38.20,"294,242",—
+MAGN,Magnera Corporation,piotroski,True,7,9,77.8,11.93,—,0.40,-14.94,2.37,2.75,—,"362,053",—
+MOS,MOSAIC CO,piotroski,True,8,9,88.9,17.84,10.49,0.47,4.47,1.32,—,38.07,17M,—
 LUV,SOUTHWEST AIRLINES CO.,piotroski,True,7,9,77.8,41.75,52.85,2.92,5.53,0.52,—,15.94,8M,—
-AMCR,AMCOR PLC,piotroski,True,8,9,88.9,46.11,19.37,1.81,9.38,1.25,2.15,36.90,3M,—
-TBCH,TURTLE BEACH CORPORATION,piotroski,True,7,9,77.8,16.46,21.38,2.62,12.24,1.98,1.09,10.43,"498,900",—
-GCO,GENESCO INC,piotroski,True,8,9,88.9,36.99,29.59,0.69,2.34,1.64,1.46,38.74,"89,556",—
-RRX,REGAL REXNORD CORP,piotroski,True,7,9,77.8,148,35.22,1.44,4.08,2.15,—,98.55,"833,341",—
-PBI,PITNEY BOWES INC,piotroski,True,7,9,77.8,17.35,20.65,—,-18.03,0.71,-4.95,—,2M,—
-THO,"THOR INDUSTRIES, INC.",piotroski,True,7,9,77.8,70.10,20.74,0.86,4.17,1.77,—,78.52,"946,646",—
-PRLB,Proto Labs Inc,piotroski,True,8,9,88.9,85.61,97.28,3.08,3.15,3.49,0.13,23.46,"180,990",—
-SITC,SITE Centers Corp.,graham,False,6,9,66.7,3.74,1.11,0.59,53.13,—,0.25,21.97,3M,—
-SITC,SITE Centers Corp.,buffett,False,4,6,66.7,3.74,1.11,0.59,53.13,—,0.25,21.97,3M,—
-SITC,SITE Centers Corp.,piotroski,False,5,9,55.6,3.74,1.11,0.59,53.13,—,0.25,21.97,3M,—
-SITC,SITE Centers Corp.,netnet,False,1,4,25.0,3.74,1.11,0.59,53.13,—,0.25,21.97,3M,—
-SITC,SITE Centers Corp.,custom,False,0,0,0.0,3.74,1.11,0.59,53.13,—,0.25,21.97,3M,—
-UROY,Uranium Royalty Corp.,greenblatt,False,2,3,66.7,3.43,11.83,1.53,12.87,5.94,0.19,3.83,3M,—
-UROY,Uranium Royalty Corp.,graham,False,5,9,55.6,3.43,11.83,1.53,12.87,5.94,0.19,3.83,3M,—
-UROY,Uranium Royalty Corp.,lynch,False,2,4,50.0,3.43,11.83,1.53,12.87,5.94,0.19,3.83,3M,—
-UROY,Uranium Royalty Corp.,netnet,False,2,4,50.0,3.43,11.83,1.53,12.87,5.94,0.19,3.83,3M,—
-UROY,Uranium Royalty Corp.,buffett,False,2,6,33.3,3.43,11.83,1.53,12.87,5.94,0.19,3.83,3M,—
-UROY,Uranium Royalty Corp.,piotroski,False,3,9,33.3,3.43,11.83,1.53,12.87,5.94,0.19,3.83,3M,—
-UROY,Uranium Royalty Corp.,custom,False,0,0,0.0,3.43,11.83,1.53,12.87,5.94,0.19,3.83,3M,—
-GMED,"GLOBUS MEDICAL, INC.",graham,False,6,9,66.7,81.41,20.77,2.44,11.76,4.26,0.16,54.25,"768,462",—
+TBCH,TURTLE BEACH CORPORATION,piotroski,True,7,9,77.8,16.46,21.38,2.62,12.24,1.98,1.09,10.43,"499,902",—
+HCSG,"HEALTHCARE SERVICES GROUP, INC.",piotroski,True,9,9,100.0,25.30,31.23,3.62,11.58,3.38,—,11.28,1M,—
+SHC,SOTERA HEALTH COMPANY,piotroski,True,7,9,77.8,18.10,67.04,8.55,12.86,2.46,4.38,3.59,2M,—
+POWL,"Powell Industries, Inc.",graham,False,7,9,77.8,151,10.16,2.87,28.21,2.09,0.73,133,"732,906",—
+POWL,"Powell Industries, Inc.",buffett,False,4,6,66.7,151,10.16,2.87,28.21,2.09,0.73,133,"732,906",—
+POWL,"Powell Industries, Inc.",netnet,False,2,4,50.0,151,10.16,2.87,28.21,2.09,0.73,133,"732,906",—
+POWL,"Powell Industries, Inc.",custom,False,0,0,0.0,151,10.16,2.87,28.21,2.09,0.73,133,"732,906",—
+AREC,AMERICAN RESOURCES CORPORATION,graham,False,6,9,66.7,1.14,1.81,1.05,58.44,2.19,0.80,3.92,2M,—
+AREC,AMERICAN RESOURCES CORPORATION,lynch,False,2,4,50.0,1.14,1.81,1.05,58.44,2.19,0.80,3.92,2M,—
+AREC,AMERICAN RESOURCES CORPORATION,netnet,False,2,4,50.0,1.14,1.81,1.05,58.44,2.19,0.80,3.92,2M,—
+AREC,AMERICAN RESOURCES CORPORATION,piotroski,False,3,9,33.3,1.14,1.81,1.05,58.44,2.19,0.80,3.92,2M,—
+AREC,AMERICAN RESOURCES CORPORATION,buffett,False,1,6,16.7,1.14,1.81,1.05,58.44,2.19,0.80,3.92,2M,—
+AREC,AMERICAN RESOURCES CORPORATION,custom,False,0,0,0.0,1.14,1.81,1.05,58.44,2.19,0.80,3.92,2M,—
+PJT,PJT Partners Inc.,greenblatt,False,2,3,66.7,141,—,—,58.43,—,2.71,—,"411,046",—
+PJT,PJT Partners Inc.,graham,False,4,9,44.4,141,—,—,58.43,—,2.71,—,"411,046",—
+PJT,PJT Partners Inc.,lynch,False,1,4,25.0,141,—,—,58.43,—,2.71,—,"411,046",—
+PJT,PJT Partners Inc.,netnet,False,1,4,25.0,141,—,—,58.43,—,2.71,—,"411,046",—
+PJT,PJT Partners Inc.,custom,False,0,0,0.0,141,—,—,58.43,—,2.71,—,"411,046",—
+BKV,BKV Corp,greenblatt,False,2,3,66.7,20.36,10.28,0.87,8.49,1.78,0.52,32.34,3M,—
+BKV,BKV Corp,graham,False,5,9,55.6,20.36,10.28,0.87,8.49,1.78,0.52,32.34,3M,—
+BKV,BKV Corp,lynch,False,2,4,50.0,20.36,10.28,0.87,8.49,1.78,0.52,32.34,3M,—
+BKV,BKV Corp,netnet,False,1,4,25.0,20.36,10.28,0.87,8.49,1.78,0.52,32.34,3M,—
+BKV,BKV Corp,buffett,False,1,6,16.7,20.36,10.28,0.87,8.49,1.78,0.52,32.34,3M,—
+BKV,BKV Corp,custom,False,0,0,0.0,20.36,10.28,0.87,8.49,1.78,0.52,32.34,3M,—
+TRAK,"REPOSITRAK, INC.",buffett,False,4,6,66.7,7.32,18.77,2.66,14.48,3.85,0.16,4.92,"50,409",—
+TRAK,"REPOSITRAK, INC.",piotroski,False,6,9,66.7,7.32,18.77,2.66,14.48,3.85,0.16,4.92,"50,409",—
