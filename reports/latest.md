@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-25 06:14 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-25 10:46 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **37** strategy matches passed.
+Screened **75** companies · **32** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| MLI | MUELLER INDUSTRIES, INC | buffett | ✅ | 100% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
-| MLI | MUELLER INDUSTRIES, INC | greenblatt | ✅ | 100% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
-| MLI | MUELLER INDUSTRIES, INC | lynch | ✅ | 100% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
-| MLI | MUELLER INDUSTRIES, INC | graham | ✅ | 89% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
-| MLI | MUELLER INDUSTRIES, INC | piotroski | ✅ | 78% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
-| SAFX | XCF GLOBAL, INC. | greenblatt | ✅ | 100% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 10M | — |
+| KMT | KENNAMETAL INC. | graham | ✅ | 100% | 29.46 | 6.67 | 1.45 | 21.81 | 2.62 | 0.99 | 1M | — |
+| KMT | KENNAMETAL INC. | lynch | ✅ | 75% | 29.46 | 6.67 | 1.45 | 21.81 | 2.62 | 0.99 | 1M | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | piotroski | ✅ | 78% | 7.65 | 6.32 | — | -221 | 2.06 | -5.32 | 3M | — |
+| USLM | UNITED STATES LIME & MINERAL | lynch | ✅ | 100% | 112 | 23.92 | 5.09 | 21.29 | 19.27 | 0.08 | 146,356 | — |
+| USLM | UNITED STATES LIME & MINERAL | buffett | ✅ | 83% | 112 | 23.92 | 5.09 | 21.29 | 19.27 | 0.08 | 146,356 | — |
 | SON | Sonoco Products Company | piotroski | ✅ | 89% | 50.12 | 4.98 | 1.38 | 27.75 | 1.05 | 2.08 | 2M | — |
 | SON | Sonoco Products Company | lynch | ✅ | 75% | 50.12 | 4.98 | 1.38 | 27.75 | 1.05 | 2.08 | 2M | — |
-| ESE | ESCO TECHNOLOGIES INC. | lynch | ✅ | 100% | 232 | 20.10 | 3.90 | 19.42 | 1.35 | 0.56 | 331,668 | — |
-| XPEL | XPEL, INC. | buffett | ✅ | 100% | 43.14 | 23.32 | 4.26 | 18.28 | 3.25 | 0.35 | 184,932 | — |
-| XPEL | XPEL, INC. | lynch | ✅ | 75% | 43.14 | 23.32 | 4.26 | 18.28 | 3.25 | 0.35 | 184,932 | — |
-| PJT | PJT Partners Inc. | buffett | ✅ | 83% | 141 | — | — | 58.43 | — | 2.71 | 416,209 | — |
-| PJT | PJT Partners Inc. | piotroski | ✅ | 78% | 141 | — | — | 58.43 | — | 2.71 | 416,209 | — |
-| CVSA | Covista Inc. | lynch | ✅ | 75% | 132 | 18.72 | 3.26 | 17.40 | 1.09 | 1.08 | 250,018 | — |
-| ABG | ASBURY AUTOMOTIVE GROUP, INC | piotroski | ✅ | 78% | 173 | 6.87 | 0.87 | 12.64 | 0.95 | — | 251,278 | — |
-| ABG | ASBURY AUTOMOTIVE GROUP, INC | lynch | ✅ | 75% | 173 | 6.87 | 0.87 | 12.64 | 0.95 | — | 251,278 | — |
-| HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 126 | 49.07 | 319 | 649 | 4.66 | 50.73 | 2M | — |
-| HST | HOST HOTELS & RESORTS, INC. | piotroski | ✅ | 78% | 24.72 | 22.47 | 2.62 | 11.67 | — | 0.96 | 8M | — |
-| JOE | The St. Joe Company | piotroski | ✅ | 89% | 67.57 | 33.95 | 5.11 | 15.09 | — | 0.97 | 160,100 | — |
-| HRB | H&R BLOCK INC | greenblatt | ✅ | 100% | 49.69 | 8.78 | 54.50 | 624 | 1.13 | 26.72 | 1M | — |
-| HRB | H&R BLOCK INC | piotroski | ✅ | 89% | 49.69 | 8.78 | 54.50 | 624 | 1.13 | 26.72 | 1M | — |
-| RGA | REINSURANCE GROUP OF AMERICA | piotroski | ✅ | 78% | 264 | 14.92 | 1.31 | 8.78 | — | 10.63 | 352,174 | — |
-| RGA | REINSURANCE GROUP OF AMERICA | lynch | ✅ | 75% | 264 | 14.92 | 1.31 | 8.78 | — | 10.63 | 352,174 | — |
-| JJSF | J&J SNACK FOODS CORP. | lynch | ✅ | 75% | 83.67 | 24.90 | 1.69 | 6.79 | 2.72 | — | 130,411 | — |
-| TBB | AT&T INC. | piotroski | ✅ | 78% | 17.78 | 5.85 | 1.01 | 17.36 | 0.91 | — | 95,493 | — |
-| POST | Post Holdings, Inc. | lynch | ✅ | 75% | 80.56 | 14.62 | 1.35 | 8.94 | 1.67 | 2.60 | 661,175 | — |
-| HLIO | HELIOS TECHNOLOGIES, INC. | piotroski | ✅ | 100% | 66.16 | 45.63 | 2.37 | 5.20 | 2.90 | 0.63 | 324,960 | — |
-| HLIO | HELIOS TECHNOLOGIES, INC. | lynch | ✅ | 75% | 66.16 | 45.63 | 2.37 | 5.20 | 2.90 | 0.63 | 324,960 | — |
-| TRIP | TRIPADVISOR, INC. | piotroski | ✅ | 89% | 9.41 | 30.35 | 1.91 | 6.20 | 1.29 | 3.07 | 3M | — |
-| IEX | IDEX CORP | piotroski | ✅ | 78% | 229 | 35.73 | 4.28 | 12.00 | 2.86 | 0.72 | 770,982 | — |
-| AMCX | AMC Global Media Inc. | piotroski | ✅ | 78% | 9.18 | 5.53 | 0.53 | 9.11 | 1.67 | 2.98 | 932,780 | — |
+| CRS | CARPENTER TECHNOLOGY CORPORA | piotroski | ✅ | 89% | 285 | 27.06 | 6.44 | 23.78 | 3.81 | 0.72 | 2M | — |
+| BELFA | BEL FUSE INC /NJ | piotroski | ✅ | 89% | 161 | — | — | 14.46 | 3.02 | 0.98 | 60,270 | — |
+| SEATW | Vivid Seats Inc. | greenblatt | ✅ | 100% | 0.02 | 0.02 | — | -947 | 0.59 | -8.48 | 2M | — |
+| IIIN | Insteel Industries Inc. | graham | ✅ | 89% | 27.77 | 13.22 | 1.46 | 11.04 | 3.97 | — | 263,153 | — |
+| IIIN | Insteel Industries Inc. | piotroski | ✅ | 78% | 27.77 | 13.22 | 1.46 | 11.04 | 3.97 | — | 263,153 | — |
+| IIIN | Insteel Industries Inc. | lynch | ✅ | 75% | 27.77 | 13.22 | 1.46 | 11.04 | 3.97 | — | 263,153 | — |
+| WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 12.87 | 2.54 | 1.46 | 57.56 | 1.39 | 2.18 | 599,971 | — |
+| GTX | Garrett Motion Inc. | lynch | ✅ | 100% | 21.55 | 14.18 | — | -38.65 | 0.97 | -3.95 | 6M | — |
+| GTX | Garrett Motion Inc. | piotroski | ✅ | 89% | 21.55 | 14.18 | — | -38.65 | 0.97 | -3.95 | 6M | — |
+| OPY | OPPENHEIMER HOLDINGS INC. | piotroski | ✅ | 78% | 101 | 7.75 | 1.17 | 15.08 | — | 2.77 | 69,657 | — |
+| INVH | Invitation Homes Inc. | piotroski | ✅ | 78% | 27.54 | 28.69 | 1.77 | 6.17 | — | 0.96 | 7M | — |
+| BSY | BENTLEY SYSTEMS, INCORPORATE | piotroski | ✅ | 100% | 39.70 | 46.71 | 11.12 | 23.36 | 0.56 | 1.99 | 2M | — |
+| BSY | BENTLEY SYSTEMS, INCORPORATE | buffett | ✅ | 83% | 39.70 | 46.71 | 11.12 | 23.36 | 0.56 | 1.99 | 2M | — |
+| ACM | AECOM | piotroski | ✅ | 78% | 60.49 | 14.37 | 3.24 | 22.54 | 1.14 | 3.81 | 868,422 | — |
+| FAF | FIRST AMERICAN FINANCIAL COR | piotroski | ✅ | 89% | 64.72 | 10.79 | 1.22 | 11.31 | — | 1.95 | 1M | — |
+| ZWS | ZURN ELKAY WATER SOLUTIONS C | piotroski | ✅ | 100% | 48.55 | 42.22 | 5.19 | 12.35 | 3.13 | 0.67 | 1M | — |
+| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.21 | 19.14 | 0.75 | 3.99 | 9.18 | 0.34 | 289,120 | — |
+| LNT | ALLIANT ENERGY CORP | piotroski | ✅ | 78% | 69.66 | 22.18 | 2.45 | 11.04 | 0.80 | — | 3M | — |
+| CPRI | CAPRI HOLDINGS LIMITED | piotroski | ✅ | 78% | 15.87 | 13.92 | 23.77 | 171 | 1.21 | 39.38 | 3M | — |
 | CHRW | C. H. ROBINSON WORLDWIDE, IN | piotroski | ✅ | 78% | 141 | 29.23 | 9.29 | 31.81 | 1.53 | 1.74 | 1M | — |
-| EVCM | EverCommerce Inc. | piotroski | ✅ | 78% | 9.23 | 92.30 | 2.37 | 2.45 | 2.11 | 0.91 | 87,262 | — |
-| EGHT | 8x8, Inc. | piotroski | ✅ | 78% | 2.13 | 213 | 2.07 | 1.12 | 1.09 | 3.52 | 852,242 | — |
-| ADT | ADT Inc. | piotroski | ✅ | 89% | 6.90 | — | — | 15.77 | 0.93 | 3.19 | 5M | — |
-| AVNW | Aviat Networks, Inc. | piotroski | ✅ | 78% | 19.17 | 101 | 0.93 | 0.95 | 1.97 | 1.24 | 93,847 | — |
-| PTON | PELOTON INTERACTIVE, INC. | piotroski | ✅ | 89% | 5.37 | 38.36 | — | -45.24 | 2.84 | -15.72 | 6M | — |
-| MLI | MUELLER INDUSTRIES, INC | netnet | ▫️ | 50% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
-| MLI | MUELLER INDUSTRIES, INC | custom | ▫️ | 0% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
-| SAFX | XCF GLOBAL, INC. | graham | ▫️ | 44% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 10M | — |
-| SAFX | XCF GLOBAL, INC. | buffett | ▫️ | 33% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 10M | — |
-| SAFX | XCF GLOBAL, INC. | lynch | ▫️ | 25% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 10M | — |
-| SAFX | XCF GLOBAL, INC. | netnet | ▫️ | 25% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 10M | — |
-| SAFX | XCF GLOBAL, INC. | piotroski | ▫️ | 11% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 10M | — |
-| SAFX | XCF GLOBAL, INC. | custom | ▫️ | 0% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 10M | — |
+| GCO | GENESCO INC | piotroski | ✅ | 89% | 36.99 | 29.59 | 0.69 | 2.34 | 1.64 | 1.46 | 89,556 | — |
+| TRLV | TRULIEVE CANNABIS CORP. | piotroski | ✅ | 89% | 10.42 | — | 1.74 | -10.70 | 4.43 | 1.36 | 1M | — |
+| SHC | SOTERA HEALTH COMPANY | piotroski | ✅ | 78% | 18.10 | 67.04 | 8.55 | 12.86 | 2.46 | 4.38 | 2M | — |
+| CTRI | Centuri Holdings, Inc. | piotroski | ✅ | 78% | 19.34 | 77.36 | 2.00 | 2.57 | 1.78 | 1.75 | 1M | — |
+| AMN | AMN HEALTHCARE SERVICES, INC | piotroski | ✅ | 78% | 48.01 | — | 2.88 | -14.90 | 0.94 | 2.26 | 920,597 | — |
+| KMT | KENNAMETAL INC. | piotroski | ▫️ | 67% | 29.46 | 6.67 | 1.45 | 21.81 | 2.62 | 0.99 | 1M | — |
+| KMT | KENNAMETAL INC. | greenblatt | ▫️ | 67% | 29.46 | 6.67 | 1.45 | 21.81 | 2.62 | 0.99 | 1M | — |
+| KMT | KENNAMETAL INC. | buffett | ▫️ | 50% | 29.46 | 6.67 | 1.45 | 21.81 | 2.62 | 0.99 | 1M | — |
+| KMT | KENNAMETAL INC. | netnet | ▫️ | 50% | 29.46 | 6.67 | 1.45 | 21.81 | 2.62 | 0.99 | 1M | — |
+| KMT | KENNAMETAL INC. | custom | ▫️ | 0% | 29.46 | 6.67 | 1.45 | 21.81 | 2.62 | 0.99 | 1M | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | greenblatt | ▫️ | 67% | 7.65 | 6.32 | — | -221 | 2.06 | -5.32 | 3M | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | lynch | ▫️ | 50% | 7.65 | 6.32 | — | -221 | 2.06 | -5.32 | 3M | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | graham | ▫️ | 44% | 7.65 | 6.32 | — | -221 | 2.06 | -5.32 | 3M | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | buffett | ▫️ | 33% | 7.65 | 6.32 | — | -221 | 2.06 | -5.32 | 3M | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | netnet | ▫️ | 25% | 7.65 | 6.32 | — | -221 | 2.06 | -5.32 | 3M | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | custom | ▫️ | 0% | 7.65 | 6.32 | — | -221 | 2.06 | -5.32 | 3M | — |
+| USLM | UNITED STATES LIME & MINERAL | piotroski | ▫️ | 67% | 112 | 23.92 | 5.09 | 21.29 | 19.27 | 0.08 | 146,356 | — |
+| USLM | UNITED STATES LIME & MINERAL | greenblatt | ▫️ | 67% | 112 | 23.92 | 5.09 | 21.29 | 19.27 | 0.08 | 146,356 | — |
+| USLM | UNITED STATES LIME & MINERAL | graham | ▫️ | 56% | 112 | 23.92 | 5.09 | 21.29 | 19.27 | 0.08 | 146,356 | — |
+| USLM | UNITED STATES LIME & MINERAL | netnet | ▫️ | 50% | 112 | 23.92 | 5.09 | 21.29 | 19.27 | 0.08 | 146,356 | — |
+| USLM | UNITED STATES LIME & MINERAL | custom | ▫️ | 0% | 112 | 23.92 | 5.09 | 21.29 | 19.27 | 0.08 | 146,356 | — |
 | SON | Sonoco Products Company | graham | ▫️ | 67% | 50.12 | 4.98 | 1.38 | 27.75 | 1.05 | 2.08 | 2M | — |
 | SON | Sonoco Products Company | buffett | ▫️ | 67% | 50.12 | 4.98 | 1.38 | 27.75 | 1.05 | 2.08 | 2M | — |
-| SON | Sonoco Products Company | greenblatt | ▫️ | 67% | 50.12 | 4.98 | 1.38 | 27.75 | 1.05 | 2.08 | 2M | — |
-| SON | Sonoco Products Company | netnet | ▫️ | 25% | 50.12 | 4.98 | 1.38 | 27.75 | 1.05 | 2.08 | 2M | — |
-| SON | Sonoco Products Company | custom | ▫️ | 0% | 50.12 | 4.98 | 1.38 | 27.75 | 1.05 | 2.08 | 2M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
