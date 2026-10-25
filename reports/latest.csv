@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-VITL,"Vital Farms, Inc.",graham,True,9,9,100.0,9.14,6.35,1.20,18.87,2.16,0.48,15.73,1M,—
-VITL,"Vital Farms, Inc.",lynch,True,4,4,100.0,9.14,6.35,1.20,18.87,2.16,0.48,15.73,1M,—
-FSLR,"First Solar, Inc.",lynch,True,4,4,100.0,172,12.10,1.94,16.02,2.67,0.40,168,1M,—
-FSLR,"First Solar, Inc.",piotroski,True,8,9,88.9,172,12.10,1.94,16.02,2.67,0.40,168,1M,—
-AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",piotroski,True,9,9,100.0,168,23.75,8.14,34.27,1.46,—,57.37,"432,296",—
-RILY,"BRC Group Holdings, Inc.",greenblatt,True,3,3,100.0,4.03,0.41,—,-179,—,-10.65,—,"845,195",—
-ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",buffett,True,5,6,83.3,106,14.50,4.84,33.37,4.85,2.26,60.19,"657,911",—
-RILY,"BRC Group Holdings, Inc.",lynch,True,3,4,75.0,4.03,0.41,—,-179,—,-10.65,—,"845,195",—
-ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",lynch,True,3,4,75.0,106,14.50,4.84,33.37,4.85,2.26,60.19,"657,911",—
-VTOL,Bristow Group Inc.,piotroski,True,7,9,77.8,40.54,9.38,1.14,12.18,1.90,1.18,58.71,"424,470",—
-ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.26,6.50,0.18,4.91,1.93,0.73,1.14,"5,666",—
-AES,THE AES CORPORATION,greenblatt,True,3,3,100.0,15.00,11.90,2.64,22.40,0.77,—,12.70,7M,—
+MLI,"MUELLER INDUSTRIES, INC",buffett,True,6,6,100.0,54.11,7.89,1.88,23.84,5.92,0.15,66.66,2M,—
+MLI,"MUELLER INDUSTRIES, INC",greenblatt,True,3,3,100.0,54.11,7.89,1.88,23.84,5.92,0.15,66.66,2M,—
+MLI,"MUELLER INDUSTRIES, INC",lynch,True,4,4,100.0,54.11,7.89,1.88,23.84,5.92,0.15,66.66,2M,—
+MLI,"MUELLER INDUSTRIES, INC",graham,True,8,9,88.9,54.11,7.89,1.88,23.84,5.92,0.15,66.66,2M,—
+MLI,"MUELLER INDUSTRIES, INC",piotroski,True,7,9,77.8,54.11,7.89,1.88,23.84,5.92,0.15,66.66,2M,—
+SAFX,"XCF GLOBAL, INC.",greenblatt,True,3,3,100.0,0.16,0.31,0.60,197,0.11,10.14,1.76,10M,—
+SON,Sonoco Products Company,piotroski,True,8,9,88.9,50.12,4.98,1.38,27.75,1.05,2.08,90.68,2M,—
+SON,Sonoco Products Company,lynch,True,3,4,75.0,50.12,4.98,1.38,27.75,1.05,2.08,90.68,2M,—
+ESE,ESCO TECHNOLOGIES INC.,lynch,True,4,4,100.0,232,20.10,3.90,19.42,1.35,0.56,124,"331,668",—
+XPEL,"XPEL, INC.",buffett,True,6,6,100.0,43.14,23.32,4.26,18.28,3.25,0.35,20.53,"184,932",—
+XPEL,"XPEL, INC.",lynch,True,3,4,75.0,43.14,23.32,4.26,18.28,3.25,0.35,20.53,"184,932",—
 PJT,PJT Partners Inc.,buffett,True,5,6,83.3,141,—,—,58.43,—,2.71,—,"416,209",—
 PJT,PJT Partners Inc.,piotroski,True,7,9,77.8,141,—,—,58.43,—,2.71,—,"416,209",—
-AGX,ARGAN INC,lynch,True,3,4,75.0,331,33.99,10.13,29.80,1.59,1.57,84.62,"272,266",—
-VISN,"Vistance Networks, Inc.",greenblatt,True,3,3,100.0,6.10,0.63,—,-227,3.88,-9.06,—,7M,—
-BANC,"BANC OF CALIFORNIA, INC.",piotroski,True,7,9,77.8,17.92,15.32,0.82,6.47,—,8.83,24.01,2M,—
-KTB,"KONTOOR BRANDS, INC.",lynch,True,3,4,75.0,76.04,18.78,7.55,40.27,1.82,3.57,30.29,"681,730",—
+CVSA,Covista Inc.,lynch,True,3,4,75.0,132,18.72,3.26,17.40,1.09,1.08,80.09,"250,018",—
+ABG,"ASBURY AUTOMOTIVE GROUP, INC.",piotroski,True,7,9,77.8,173,6.87,0.87,12.64,0.95,—,335,"251,278",—
+ABG,"ASBURY AUTOMOTIVE GROUP, INC.",lynch,True,3,4,75.0,173,6.87,0.87,12.64,0.95,—,335,"251,278",—
+HALO,"HALOZYME THERAPEUTICS, INC.",buffett,True,5,6,83.3,126,49.07,319,649,4.66,50.73,4.76,2M,—
+HST,"HOST HOTELS & RESORTS, INC.",piotroski,True,7,9,77.8,24.72,22.47,2.62,11.67,—,0.96,15.29,8M,—
+JOE,The St. Joe Company,piotroski,True,8,9,88.9,67.57,33.95,5.11,15.09,—,0.97,24.33,"160,100",—
 HRB,H&R BLOCK INC,greenblatt,True,3,3,100.0,49.69,8.78,54.50,624,1.13,26.72,10.78,1M,—
 HRB,H&R BLOCK INC,piotroski,True,8,9,88.9,49.69,8.78,54.50,624,1.13,26.72,10.78,1M,—
-DRVN,Driven Brands Holdings Inc.,piotroski,True,7,9,77.8,11.74,13.81,2.51,18.27,0.75,4.42,9.46,2M,—
-INVH,Invitation Homes Inc.,piotroski,True,7,9,77.8,27.54,28.69,1.77,6.17,—,0.96,18.32,7M,—
-BCO,BRINK’S CO,piotroski,True,7,9,77.8,111,23.72,17.03,71.91,1.51,24.96,26.26,"540,720",—
-MD,"Pediatrix Medical Group, Inc.",piotroski,True,7,9,77.8,29.29,15.10,2.88,19.10,1.66,1.59,21.05,"574,761",—
-DLB,"Dolby Laboratories, Inc.",piotroski,True,7,9,77.8,62.85,23.99,2.34,9.72,3.17,0.23,39.82,"454,859",—
-ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.21,19.14,0.75,3.99,9.18,0.34,5.26,"289,120",—
-KN,Knowles Corporation,piotroski,True,7,9,77.8,32.17,64.34,3.65,5.70,2.75,—,9.96,1M,—
-TBCH,TURTLE BEACH CORPORATION,piotroski,True,7,9,77.8,16.46,21.38,2.62,12.24,1.98,1.09,10.43,"499,902",—
-GCO,GENESCO INC,piotroski,True,8,9,88.9,36.99,29.59,0.69,2.34,1.64,1.46,38.74,"89,556",—
-MPAA,"MOTORCAR PARTS OF AMERICA, INC.",piotroski,True,7,9,77.8,10.18,16.42,0.76,4.66,1.46,2.83,13.63,"61,771",—
-SPHR,SPHERE ENTERTAINMENT CO.,piotroski,True,7,9,77.8,109,147,2.21,1.50,1.09,0.89,28.65,"406,742",—
-CVI,"CVR ENERGY, INC",piotroski,True,8,9,88.9,58.16,215,8.01,3.70,1.79,—,6.64,"770,903",—
-VITL,"Vital Farms, Inc.",greenblatt,False,2,3,66.7,9.14,6.35,1.20,18.87,2.16,0.48,15.73,1M,—
-VITL,"Vital Farms, Inc.",buffett,False,3,6,50.0,9.14,6.35,1.20,18.87,2.16,0.48,15.73,1M,—
-VITL,"Vital Farms, Inc.",netnet,False,2,4,50.0,9.14,6.35,1.20,18.87,2.16,0.48,15.73,1M,—
-VITL,"Vital Farms, Inc.",piotroski,False,3,9,33.3,9.14,6.35,1.20,18.87,2.16,0.48,15.73,1M,—
-VITL,"Vital Farms, Inc.",custom,False,0,0,0.0,9.14,6.35,1.20,18.87,2.16,0.48,15.73,1M,—
-FSLR,"First Solar, Inc.",graham,False,6,9,66.7,172,12.10,1.94,16.02,2.67,0.40,168,1M,—
-FSLR,"First Solar, Inc.",buffett,False,4,6,66.7,172,12.10,1.94,16.02,2.67,0.40,168,1M,—
-FSLR,"First Solar, Inc.",greenblatt,False,2,3,66.7,172,12.10,1.94,16.02,2.67,0.40,168,1M,—
-FSLR,"First Solar, Inc.",netnet,False,2,4,50.0,172,12.10,1.94,16.02,2.67,0.40,168,1M,—
-FSLR,"First Solar, Inc.",custom,False,0,0,0.0,172,12.10,1.94,16.02,2.67,0.40,168,1M,—
-DUOL,"Duolingo, Inc.",buffett,False,4,6,66.7,143,16.69,5.13,30.74,2.61,0.48,73.33,"762,338",—
-DUOL,"Duolingo, Inc.",greenblatt,False,2,3,66.7,143,16.69,5.13,30.74,2.61,0.48,73.33,"762,338",—
-DUOL,"Duolingo, Inc.",piotroski,False,5,9,55.6,143,16.69,5.13,30.74,2.61,0.48,73.33,"762,338",—
-DUOL,"Duolingo, Inc.",lynch,False,2,4,50.0,143,16.69,5.13,30.74,2.61,0.48,73.33,"762,338",—
-DUOL,"Duolingo, Inc.",netnet,False,2,4,50.0,143,16.69,5.13,30.74,2.61,0.48,73.33,"762,338",—
-DUOL,"Duolingo, Inc.",graham,False,4,9,44.4,143,16.69,5.13,30.74,2.61,0.48,73.33,"762,338",—
-DUOL,"Duolingo, Inc.",custom,False,0,0,0.0,143,16.69,5.13,30.74,2.61,0.48,73.33,"762,338",—
-UROY,Uranium Royalty Corp.,greenblatt,False,2,3,66.7,3.43,11.83,1.53,12.87,5.94,0.19,3.83,3M,—
+RGA,"REINSURANCE GROUP OF AMERICA, INCORPORATED",piotroski,True,7,9,77.8,264,14.92,1.31,8.78,—,10.63,283,"352,174",—
+RGA,"REINSURANCE GROUP OF AMERICA, INCORPORATED",lynch,True,3,4,75.0,264,14.92,1.31,8.78,—,10.63,283,"352,174",—
+JJSF,J&J SNACK FOODS CORP.,lynch,True,3,4,75.0,83.67,24.90,1.69,6.79,2.72,—,61.14,"130,411",—
+TBB,AT&T INC.,piotroski,True,7,9,77.8,17.78,5.85,1.01,17.36,0.91,—,34.72,"95,493",—
+POST,"Post Holdings, Inc.",lynch,True,3,4,75.0,80.56,14.62,1.35,8.94,1.67,2.60,86.01,"661,175",—
+HLIO,"HELIOS TECHNOLOGIES, INC.",piotroski,True,9,9,100.0,66.16,45.63,2.37,5.20,2.90,0.63,30.21,"324,960",—
+HLIO,"HELIOS TECHNOLOGIES, INC.",lynch,True,3,4,75.0,66.16,45.63,2.37,5.20,2.90,0.63,30.21,"324,960",—
+TRIP,"TRIPADVISOR, INC.",piotroski,True,8,9,88.9,9.41,30.35,1.91,6.20,1.29,3.07,5.86,3M,—
+IEX,IDEX CORP,piotroski,True,7,9,77.8,229,35.73,4.28,12.00,2.86,0.72,87.83,"770,982",—
+AMCX,AMC Global Media Inc.,piotroski,True,7,9,77.8,9.18,5.53,0.53,9.11,1.67,2.98,25.46,"932,780",—
+CHRW,"C. H. ROBINSON WORLDWIDE, INC.",piotroski,True,7,9,77.8,141,29.23,9.29,31.81,1.53,1.74,40.63,1M,—
+EVCM,EverCommerce Inc.,piotroski,True,7,9,77.8,9.23,92.30,2.37,2.45,2.11,0.91,2.96,"87,262",—
+EGHT,"8x8, Inc.",piotroski,True,7,9,77.8,2.13,213,2.07,1.12,1.09,3.52,0.48,"852,242",—
+ADT,ADT Inc.,piotroski,True,8,9,88.9,6.90,—,—,15.77,0.93,3.19,—,5M,—
+AVNW,"Aviat Networks, Inc.",piotroski,True,7,9,77.8,19.17,101,0.93,0.95,1.97,1.24,9.37,"93,847",—
+PTON,"PELOTON INTERACTIVE, INC.",piotroski,True,8,9,88.9,5.37,38.36,—,-45.24,2.84,-15.72,—,6M,—
+MLI,"MUELLER INDUSTRIES, INC",netnet,False,2,4,50.0,54.11,7.89,1.88,23.84,5.92,0.15,66.66,2M,—
+MLI,"MUELLER INDUSTRIES, INC",custom,False,0,0,0.0,54.11,7.89,1.88,23.84,5.92,0.15,66.66,2M,—
+SAFX,"XCF GLOBAL, INC.",graham,False,4,9,44.4,0.16,0.31,0.60,197,0.11,10.14,1.76,10M,—
+SAFX,"XCF GLOBAL, INC.",buffett,False,2,6,33.3,0.16,0.31,0.60,197,0.11,10.14,1.76,10M,—
+SAFX,"XCF GLOBAL, INC.",lynch,False,1,4,25.0,0.16,0.31,0.60,197,0.11,10.14,1.76,10M,—
+SAFX,"XCF GLOBAL, INC.",netnet,False,1,4,25.0,0.16,0.31,0.60,197,0.11,10.14,1.76,10M,—
+SAFX,"XCF GLOBAL, INC.",piotroski,False,1,9,11.1,0.16,0.31,0.60,197,0.11,10.14,1.76,10M,—
+SAFX,"XCF GLOBAL, INC.",custom,False,0,0,0.0,0.16,0.31,0.60,197,0.11,10.14,1.76,10M,—
+SON,Sonoco Products Company,graham,False,6,9,66.7,50.12,4.98,1.38,27.75,1.05,2.08,90.68,2M,—
+SON,Sonoco Products Company,buffett,False,4,6,66.7,50.12,4.98,1.38,27.75,1.05,2.08,90.68,2M,—
+SON,Sonoco Products Company,greenblatt,False,2,3,66.7,50.12,4.98,1.38,27.75,1.05,2.08,90.68,2M,—
+SON,Sonoco Products Company,netnet,False,1,4,25.0,50.12,4.98,1.38,27.75,1.05,2.08,90.68,2M,—
+SON,Sonoco Products Company,custom,False,0,0,0.0,50.12,4.98,1.38,27.75,1.05,2.08,90.68,2M,—
