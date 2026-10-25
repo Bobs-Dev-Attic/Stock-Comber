@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-24 21:30 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-25 01:22 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **27** strategy matches passed.
+Screened **75** companies · **32** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| POWL | Powell Industries, Inc. | greenblatt | ✅ | 100% | 151 | 10.16 | 2.87 | 28.21 | 2.09 | 0.73 | 732,906 | — |
-| POWL | Powell Industries, Inc. | piotroski | ✅ | 78% | 151 | 10.16 | 2.87 | 28.21 | 2.09 | 0.73 | 732,906 | — |
-| POWL | Powell Industries, Inc. | lynch | ✅ | 75% | 151 | 10.16 | 2.87 | 28.21 | 2.09 | 0.73 | 732,906 | — |
-| AREC | AMERICAN RESOURCES CORPORATI | greenblatt | ✅ | 100% | 1.14 | 1.81 | 1.05 | 58.44 | 2.19 | 0.80 | 2M | — |
-| PJT | PJT Partners Inc. | buffett | ✅ | 83% | 141 | — | — | 58.43 | — | 2.71 | 411,046 | — |
-| PJT | PJT Partners Inc. | piotroski | ✅ | 78% | 141 | — | — | 58.43 | — | 2.71 | 411,046 | — |
-| BKV | BKV Corp | piotroski | ✅ | 78% | 20.36 | 10.28 | 0.87 | 8.49 | 1.78 | 0.52 | 3M | — |
-| PATH | UiPath, Inc. | piotroski | ✅ | 89% | 14.13 | 27.17 | 3.70 | 13.56 | 2.48 | 0.53 | 27M | — |
-| BYND | BEYOND MEAT, INC. | greenblatt | ✅ | 100% | 7.15 | — | — | -21,968 | 4.56 | — | 864,529 | — |
-| BDC | BELDEN INC. | piotroski | ✅ | 89% | 104 | 17.62 | 3.31 | 18.78 | 1.93 | — | 328,258 | — |
-| FIZZ | National Beverage Corp. | buffett | ✅ | 83% | 36.15 | 18.44 | 5.33 | 28.89 | 4.39 | 0.34 | 237,758 | — |
-| TOST | Toast, Inc. | piotroski | ✅ | 78% | 32.71 | 58.41 | 9.35 | 16.10 | 2.75 | 0.48 | 5M | — |
-| AXTA | AXALTA COATING SYSTEMS LTD. | lynch | ✅ | 75% | 34.14 | 19.62 | 3.16 | 16.11 | 2.06 | 2.22 | 2M | — |
-| UMBF | UMB FINANCIAL CORP | lynch | ✅ | 75% | 136 | 14.59 | 1.30 | 9.13 | — | 8.50 | 652,860 | — |
-| JJSF | J&J SNACK FOODS CORP. | lynch | ✅ | 75% | 83.67 | 24.90 | 1.69 | 6.79 | 2.72 | — | 130,411 | — |
-| VCYT | VERACYTE, INC. | piotroski | ✅ | 89% | 47.93 | 58.45 | 2.95 | 5.07 | 8.15 | 0.07 | 905,985 | — |
-| POST | Post Holdings, Inc. | lynch | ✅ | 75% | 80.56 | 14.62 | 1.35 | 8.94 | 1.67 | 2.60 | 661,173 | — |
-| CURB | Curbline Properties Corp. | piotroski | ✅ | 78% | 28.86 | 78.00 | 1.59 | 2.09 | — | 0.29 | 2M | — |
-| CURB | Curbline Properties Corp. | lynch | ✅ | 75% | 28.86 | 78.00 | 1.59 | 2.09 | — | 0.29 | 2M | — |
-| NMRK | NEWMARK GROUP, INC. | piotroski | ✅ | 89% | 11.52 | 16.94 | 2.00 | 8.63 | 1.05 | 2.24 | 2M | — |
-| WOR | WORTHINGTON ENTERPRISES, INC | piotroski | ✅ | 89% | 63.65 | 20.27 | 3.08 | 15.20 | 2.37 | 0.80 | 294,242 | — |
-| MAGN | Magnera Corporation | piotroski | ✅ | 78% | 11.93 | — | 0.40 | -14.94 | 2.37 | 2.75 | 362,053 | — |
-| MOS | MOSAIC CO | piotroski | ✅ | 89% | 17.84 | 10.49 | 0.47 | 4.47 | 1.32 | — | 17M | — |
-| LUV | SOUTHWEST AIRLINES CO. | piotroski | ✅ | 78% | 41.75 | 52.85 | 2.92 | 5.53 | 0.52 | — | 8M | — |
+| VITL | Vital Farms, Inc. | graham | ✅ | 100% | 9.14 | 6.35 | 1.20 | 18.87 | 2.16 | 0.48 | 1M | — |
+| VITL | Vital Farms, Inc. | lynch | ✅ | 100% | 9.14 | 6.35 | 1.20 | 18.87 | 2.16 | 0.48 | 1M | — |
+| FSLR | First Solar, Inc. | lynch | ✅ | 100% | 172 | 12.10 | 1.94 | 16.02 | 2.67 | 0.40 | 1M | — |
+| FSLR | First Solar, Inc. | piotroski | ✅ | 89% | 172 | 12.10 | 1.94 | 16.02 | 2.67 | 0.40 | 1M | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | piotroski | ✅ | 100% | 168 | 23.75 | 8.14 | 34.27 | 1.46 | — | 432,296 | — |
+| RILY | BRC Group Holdings, Inc. | greenblatt | ✅ | 100% | 4.03 | 0.41 | — | -179 | — | -10.65 | 845,195 | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | buffett | ✅ | 83% | 106 | 14.50 | 4.84 | 33.37 | 4.85 | 2.26 | 657,911 | — |
+| RILY | BRC Group Holdings, Inc. | lynch | ✅ | 75% | 4.03 | 0.41 | — | -179 | — | -10.65 | 845,195 | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | lynch | ✅ | 75% | 106 | 14.50 | 4.84 | 33.37 | 4.85 | 2.26 | 657,911 | — |
+| VTOL | Bristow Group Inc. | piotroski | ✅ | 78% | 40.54 | 9.38 | 1.14 | 12.18 | 1.90 | 1.18 | 424,470 | — |
+| ANNAW | AleAnna, Inc. | piotroski | ✅ | 78% | 0.26 | 6.50 | 0.18 | 4.91 | 1.93 | 0.73 | 5,666 | — |
+| AES | THE AES CORPORATION | greenblatt | ✅ | 100% | 15.00 | 11.90 | 2.64 | 22.40 | 0.77 | — | 7M | — |
+| PJT | PJT Partners Inc. | buffett | ✅ | 83% | 141 | — | — | 58.43 | — | 2.71 | 416,209 | — |
+| PJT | PJT Partners Inc. | piotroski | ✅ | 78% | 141 | — | — | 58.43 | — | 2.71 | 416,209 | — |
+| AGX | ARGAN INC | lynch | ✅ | 75% | 331 | 33.99 | 10.13 | 29.80 | 1.59 | 1.57 | 272,266 | — |
+| VISN | Vistance Networks, Inc. | greenblatt | ✅ | 100% | 6.10 | 0.63 | — | -227 | 3.88 | -9.06 | 7M | — |
+| BANC | BANC OF CALIFORNIA, INC. | piotroski | ✅ | 78% | 17.92 | 15.32 | 0.82 | 6.47 | — | 8.83 | 2M | — |
+| KTB | KONTOOR BRANDS, INC. | lynch | ✅ | 75% | 76.04 | 18.78 | 7.55 | 40.27 | 1.82 | 3.57 | 681,730 | — |
+| HRB | H&R BLOCK INC | greenblatt | ✅ | 100% | 49.69 | 8.78 | 54.50 | 624 | 1.13 | 26.72 | 1M | — |
+| HRB | H&R BLOCK INC | piotroski | ✅ | 89% | 49.69 | 8.78 | 54.50 | 624 | 1.13 | 26.72 | 1M | — |
+| DRVN | Driven Brands Holdings Inc. | piotroski | ✅ | 78% | 11.74 | 13.81 | 2.51 | 18.27 | 0.75 | 4.42 | 2M | — |
+| INVH | Invitation Homes Inc. | piotroski | ✅ | 78% | 27.54 | 28.69 | 1.77 | 6.17 | — | 0.96 | 7M | — |
+| BCO | BRINK’S CO | piotroski | ✅ | 78% | 111 | 23.72 | 17.03 | 71.91 | 1.51 | 24.96 | 540,720 | — |
+| MD | Pediatrix Medical Group, Inc | piotroski | ✅ | 78% | 29.29 | 15.10 | 2.88 | 19.10 | 1.66 | 1.59 | 574,761 | — |
+| DLB | Dolby Laboratories, Inc. | piotroski | ✅ | 78% | 62.85 | 23.99 | 2.34 | 9.72 | 3.17 | 0.23 | 454,859 | — |
+| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.21 | 19.14 | 0.75 | 3.99 | 9.18 | 0.34 | 289,120 | — |
+| KN | Knowles Corporation | piotroski | ✅ | 78% | 32.17 | 64.34 | 3.65 | 5.70 | 2.75 | — | 1M | — |
 | TBCH | TURTLE BEACH CORPORATION | piotroski | ✅ | 78% | 16.46 | 21.38 | 2.62 | 12.24 | 1.98 | 1.09 | 499,902 | — |
-| HCSG | HEALTHCARE SERVICES GROUP, I | piotroski | ✅ | 100% | 25.30 | 31.23 | 3.62 | 11.58 | 3.38 | — | 1M | — |
-| SHC | SOTERA HEALTH COMPANY | piotroski | ✅ | 78% | 18.10 | 67.04 | 8.55 | 12.86 | 2.46 | 4.38 | 2M | — |
-| POWL | Powell Industries, Inc. | graham | ▫️ | 78% | 151 | 10.16 | 2.87 | 28.21 | 2.09 | 0.73 | 732,906 | — |
-| POWL | Powell Industries, Inc. | buffett | ▫️ | 67% | 151 | 10.16 | 2.87 | 28.21 | 2.09 | 0.73 | 732,906 | — |
-| POWL | Powell Industries, Inc. | netnet | ▫️ | 50% | 151 | 10.16 | 2.87 | 28.21 | 2.09 | 0.73 | 732,906 | — |
-| POWL | Powell Industries, Inc. | custom | ▫️ | 0% | 151 | 10.16 | 2.87 | 28.21 | 2.09 | 0.73 | 732,906 | — |
-| AREC | AMERICAN RESOURCES CORPORATI | graham | ▫️ | 67% | 1.14 | 1.81 | 1.05 | 58.44 | 2.19 | 0.80 | 2M | — |
-| AREC | AMERICAN RESOURCES CORPORATI | lynch | ▫️ | 50% | 1.14 | 1.81 | 1.05 | 58.44 | 2.19 | 0.80 | 2M | — |
-| AREC | AMERICAN RESOURCES CORPORATI | netnet | ▫️ | 50% | 1.14 | 1.81 | 1.05 | 58.44 | 2.19 | 0.80 | 2M | — |
-| AREC | AMERICAN RESOURCES CORPORATI | piotroski | ▫️ | 33% | 1.14 | 1.81 | 1.05 | 58.44 | 2.19 | 0.80 | 2M | — |
-| AREC | AMERICAN RESOURCES CORPORATI | buffett | ▫️ | 17% | 1.14 | 1.81 | 1.05 | 58.44 | 2.19 | 0.80 | 2M | — |
-| AREC | AMERICAN RESOURCES CORPORATI | custom | ▫️ | 0% | 1.14 | 1.81 | 1.05 | 58.44 | 2.19 | 0.80 | 2M | — |
-| PJT | PJT Partners Inc. | greenblatt | ▫️ | 67% | 141 | — | — | 58.43 | — | 2.71 | 411,046 | — |
-| PJT | PJT Partners Inc. | graham | ▫️ | 44% | 141 | — | — | 58.43 | — | 2.71 | 411,046 | — |
-| PJT | PJT Partners Inc. | lynch | ▫️ | 25% | 141 | — | — | 58.43 | — | 2.71 | 411,046 | — |
-| PJT | PJT Partners Inc. | netnet | ▫️ | 25% | 141 | — | — | 58.43 | — | 2.71 | 411,046 | — |
-| PJT | PJT Partners Inc. | custom | ▫️ | 0% | 141 | — | — | 58.43 | — | 2.71 | 411,046 | — |
-| BKV | BKV Corp | greenblatt | ▫️ | 67% | 20.36 | 10.28 | 0.87 | 8.49 | 1.78 | 0.52 | 3M | — |
-| BKV | BKV Corp | graham | ▫️ | 56% | 20.36 | 10.28 | 0.87 | 8.49 | 1.78 | 0.52 | 3M | — |
-| BKV | BKV Corp | lynch | ▫️ | 50% | 20.36 | 10.28 | 0.87 | 8.49 | 1.78 | 0.52 | 3M | — |
-| BKV | BKV Corp | netnet | ▫️ | 25% | 20.36 | 10.28 | 0.87 | 8.49 | 1.78 | 0.52 | 3M | — |
-| BKV | BKV Corp | buffett | ▫️ | 17% | 20.36 | 10.28 | 0.87 | 8.49 | 1.78 | 0.52 | 3M | — |
-| BKV | BKV Corp | custom | ▫️ | 0% | 20.36 | 10.28 | 0.87 | 8.49 | 1.78 | 0.52 | 3M | — |
-| TRAK | REPOSITRAK, INC. | buffett | ▫️ | 67% | 7.32 | 18.77 | 2.66 | 14.48 | 3.85 | 0.16 | 50,409 | — |
-| TRAK | REPOSITRAK, INC. | piotroski | ▫️ | 67% | 7.32 | 18.77 | 2.66 | 14.48 | 3.85 | 0.16 | 50,409 | — |
+| GCO | GENESCO INC | piotroski | ✅ | 89% | 36.99 | 29.59 | 0.69 | 2.34 | 1.64 | 1.46 | 89,556 | — |
+| MPAA | MOTORCAR PARTS OF AMERICA, I | piotroski | ✅ | 78% | 10.18 | 16.42 | 0.76 | 4.66 | 1.46 | 2.83 | 61,771 | — |
+| SPHR | SPHERE ENTERTAINMENT CO. | piotroski | ✅ | 78% | 109 | 147 | 2.21 | 1.50 | 1.09 | 0.89 | 406,742 | — |
+| CVI | CVR ENERGY, INC | piotroski | ✅ | 89% | 58.16 | 215 | 8.01 | 3.70 | 1.79 | — | 770,903 | — |
+| VITL | Vital Farms, Inc. | greenblatt | ▫️ | 67% | 9.14 | 6.35 | 1.20 | 18.87 | 2.16 | 0.48 | 1M | — |
+| VITL | Vital Farms, Inc. | buffett | ▫️ | 50% | 9.14 | 6.35 | 1.20 | 18.87 | 2.16 | 0.48 | 1M | — |
+| VITL | Vital Farms, Inc. | netnet | ▫️ | 50% | 9.14 | 6.35 | 1.20 | 18.87 | 2.16 | 0.48 | 1M | — |
+| VITL | Vital Farms, Inc. | piotroski | ▫️ | 33% | 9.14 | 6.35 | 1.20 | 18.87 | 2.16 | 0.48 | 1M | — |
+| VITL | Vital Farms, Inc. | custom | ▫️ | 0% | 9.14 | 6.35 | 1.20 | 18.87 | 2.16 | 0.48 | 1M | — |
+| FSLR | First Solar, Inc. | graham | ▫️ | 67% | 172 | 12.10 | 1.94 | 16.02 | 2.67 | 0.40 | 1M | — |
+| FSLR | First Solar, Inc. | buffett | ▫️ | 67% | 172 | 12.10 | 1.94 | 16.02 | 2.67 | 0.40 | 1M | — |
+| FSLR | First Solar, Inc. | greenblatt | ▫️ | 67% | 172 | 12.10 | 1.94 | 16.02 | 2.67 | 0.40 | 1M | — |
+| FSLR | First Solar, Inc. | netnet | ▫️ | 50% | 172 | 12.10 | 1.94 | 16.02 | 2.67 | 0.40 | 1M | — |
+| FSLR | First Solar, Inc. | custom | ▫️ | 0% | 172 | 12.10 | 1.94 | 16.02 | 2.67 | 0.40 | 1M | — |
+| DUOL | Duolingo, Inc. | buffett | ▫️ | 67% | 143 | 16.69 | 5.13 | 30.74 | 2.61 | 0.48 | 762,338 | — |
+| DUOL | Duolingo, Inc. | greenblatt | ▫️ | 67% | 143 | 16.69 | 5.13 | 30.74 | 2.61 | 0.48 | 762,338 | — |
+| DUOL | Duolingo, Inc. | piotroski | ▫️ | 56% | 143 | 16.69 | 5.13 | 30.74 | 2.61 | 0.48 | 762,338 | — |
+| DUOL | Duolingo, Inc. | lynch | ▫️ | 50% | 143 | 16.69 | 5.13 | 30.74 | 2.61 | 0.48 | 762,338 | — |
+| DUOL | Duolingo, Inc. | netnet | ▫️ | 50% | 143 | 16.69 | 5.13 | 30.74 | 2.61 | 0.48 | 762,338 | — |
+| DUOL | Duolingo, Inc. | graham | ▫️ | 44% | 143 | 16.69 | 5.13 | 30.74 | 2.61 | 0.48 | 762,338 | — |
+| DUOL | Duolingo, Inc. | custom | ▫️ | 0% | 143 | 16.69 | 5.13 | 30.74 | 2.61 | 0.48 | 762,338 | — |
+| UROY | Uranium Royalty Corp. | greenblatt | ▫️ | 67% | 3.43 | 11.83 | 1.53 | 12.87 | 5.94 | 0.19 | 3M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
