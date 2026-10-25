@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-KMT,KENNAMETAL INC.,graham,True,9,9,100.0,29.46,6.67,1.45,21.81,2.62,0.99,44.90,1M,—
-KMT,KENNAMETAL INC.,lynch,True,3,4,75.0,29.46,6.67,1.45,21.81,2.62,0.99,44.90,1M,—
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",piotroski,True,7,9,77.8,7.65,6.32,—,-221,2.06,-5.32,—,3M,—
-USLM,UNITED STATES LIME & MINERALS INC,lynch,True,4,4,100.0,112,23.92,5.09,21.29,19.27,0.08,48.03,"146,356",—
-USLM,UNITED STATES LIME & MINERALS INC,buffett,True,5,6,83.3,112,23.92,5.09,21.29,19.27,0.08,48.03,"146,356",—
-SON,Sonoco Products Company,piotroski,True,8,9,88.9,50.12,4.98,1.38,27.75,1.05,2.08,90.68,2M,—
-SON,Sonoco Products Company,lynch,True,3,4,75.0,50.12,4.98,1.38,27.75,1.05,2.08,90.68,2M,—
-CRS,CARPENTER TECHNOLOGY CORPORATION,piotroski,True,8,9,88.9,285,27.06,6.44,23.78,3.81,0.72,102,2M,—
-BELFA,BEL FUSE INC /NJ,piotroski,True,8,9,88.9,161,—,—,14.46,3.02,0.98,—,"60,270",—
-SEATW,Vivid Seats Inc.,greenblatt,True,3,3,100.0,0.02,0.02,—,-947,0.59,-8.48,—,2M,—
-IIIN,Insteel Industries Inc.,graham,True,8,9,88.9,27.77,13.22,1.46,11.04,3.97,—,29.96,"263,153",—
-IIIN,Insteel Industries Inc.,piotroski,True,7,9,77.8,27.77,13.22,1.46,11.04,3.97,—,29.96,"263,153",—
-IIIN,Insteel Industries Inc.,lynch,True,3,4,75.0,27.77,13.22,1.46,11.04,3.97,—,29.96,"263,153",—
-WNC,WABASH NATIONAL CORPORATION,greenblatt,True,3,3,100.0,12.87,2.54,1.46,57.56,1.39,2.18,31.68,"599,971",—
-GTX,Garrett Motion Inc.,lynch,True,4,4,100.0,21.55,14.18,—,-38.65,0.97,-3.95,—,6M,—
-GTX,Garrett Motion Inc.,piotroski,True,8,9,88.9,21.55,14.18,—,-38.65,0.97,-3.95,—,6M,—
-OPY,OPPENHEIMER HOLDINGS INC.,piotroski,True,7,9,77.8,101,7.75,1.17,15.08,—,2.77,159,"69,657",—
-INVH,Invitation Homes Inc.,piotroski,True,7,9,77.8,27.54,28.69,1.77,6.17,—,0.96,18.32,7M,—
-BSY,"BENTLEY SYSTEMS, INCORPORATED",piotroski,True,9,9,100.0,39.70,46.71,11.12,23.36,0.56,1.99,8.26,2M,—
-BSY,"BENTLEY SYSTEMS, INCORPORATED",buffett,True,5,6,83.3,39.70,46.71,11.12,23.36,0.56,1.99,8.26,2M,—
-ACM,AECOM,piotroski,True,7,9,77.8,60.49,14.37,3.24,22.54,1.14,3.81,42.08,"868,422",—
+SBC,SBC Medical Group Holdings Incorporated,lynch,True,3,4,75.0,5.28,10.56,2.19,20.54,3.78,0.47,5.21,"295,854",—
+VEL,"Velocity Financial, Inc.",lynch,True,3,4,75.0,15.30,5.56,0.87,15.62,—,9.97,33.01,"150,228",—
+AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",piotroski,True,9,9,100.0,168,23.75,8.14,34.27,1.46,—,57.37,"432,296",—
+AX,"Axos Financial, Inc.",lynch,True,3,4,75.0,91.79,10.82,1.64,15.49,—,8.46,103,"258,375",—
+OTTR,OTTER TAIL CORPORATION,lynch,True,3,4,75.0,90.49,13.82,2.05,14.82,2.28,—,80.71,"134,757",—
+URBN,"Urban Outfitters, Inc.",piotroski,True,9,9,100.0,86.55,17.10,2.82,16.51,1.51,0.78,59.09,"766,197",—
+URBN,"Urban Outfitters, Inc.",lynch,True,3,4,75.0,86.55,17.10,2.82,16.51,1.51,0.78,59.09,"766,197",—
+CVSA,Covista Inc.,lynch,True,3,4,75.0,132,18.72,3.26,17.40,1.09,1.08,80.09,"250,018",—
+EBF,"ENNIS, INC.",piotroski,True,7,9,77.8,22.64,13.64,1.88,13.81,3.72,0.16,21.19,"123,801",—
+OVV,Ovintiv Inc.,piotroski,True,8,9,88.9,72.27,15.12,1.68,11.09,0.54,0.82,68.09,3M,—
+SHOE,"Shoe Station Group, Inc.",graham,True,8,9,88.9,14.13,7.44,0.56,7.58,3.76,0.74,32.72,"682,121",—
+KEX,KIRBY CORPORATION,piotroski,True,8,9,88.9,133,21.03,2.21,10.49,1.53,—,92.69,"566,954",—
+PCTY,Paylocity Holding Corporation,piotroski,True,8,9,88.9,177,36.01,7.95,22.08,1.09,3.00,49.69,"456,922",—
+AXTA,AXALTA COATING SYSTEMS LTD.,lynch,True,3,4,75.0,34.14,19.62,3.16,16.11,2.06,2.22,20.57,2M,—
+BFAM,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,piotroski,True,8,9,88.9,71.40,21.25,3.06,14.42,0.52,1.90,41.99,1M,—
+BFAM,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,lynch,True,3,4,75.0,71.40,21.25,3.06,14.42,0.52,1.90,41.99,1M,—
+WWD,"WOODWARD, INC.",piotroski,True,9,9,100.0,304,42.22,7.27,17.23,2.08,0.80,82.19,1M,—
+CENTA,Central Garden & Pet Company,piotroski,True,8,9,88.9,39.10,15.33,1.58,10.29,3.67,—,37.73,"840,312",—
+UGI,UGI CORPORATION,piotroski,True,7,9,77.8,38.49,12.46,1.77,14.19,0.89,2.23,38.93,1M,—
 FAF,FIRST AMERICAN FINANCIAL CORPORATION,piotroski,True,8,9,88.9,64.72,10.79,1.22,11.31,—,1.95,84.61,1M,—
-ZWS,ZURN ELKAY WATER SOLUTIONS CORPORATION,piotroski,True,9,9,100.0,48.55,42.22,5.19,12.35,3.13,0.67,15.56,1M,—
+FIGS,"FIGS, Inc.",piotroski,True,8,9,88.9,20.20,106,8.29,7.83,4.94,0.33,3.23,3M,—
 ACTG,Acacia Research Corporation,piotroski,True,8,9,88.9,4.21,19.14,0.75,3.99,9.18,0.34,5.26,"289,120",—
-LNT,ALLIANT ENERGY CORP,piotroski,True,7,9,77.8,69.66,22.18,2.45,11.04,0.80,—,44.83,3M,—
-CPRI,CAPRI HOLDINGS LIMITED,piotroski,True,7,9,77.8,15.87,13.92,23.77,171,1.21,39.38,4.14,3M,—
-CHRW,"C. H. ROBINSON WORLDWIDE, INC.",piotroski,True,7,9,77.8,141,29.23,9.29,31.81,1.53,1.74,40.63,1M,—
-GCO,GENESCO INC,piotroski,True,8,9,88.9,36.99,29.59,0.69,2.34,1.64,1.46,38.74,"89,556",—
-TRLV,TRULIEVE CANNABIS CORP.,piotroski,True,8,9,88.9,10.42,—,1.74,-10.70,4.43,1.36,—,1M,—
-SHC,SOTERA HEALTH COMPANY,piotroski,True,7,9,77.8,18.10,67.04,8.55,12.86,2.46,4.38,3.59,2M,—
+FUL,FULLER H B CO,piotroski,True,7,9,77.8,49.61,18.04,1.37,7.59,1.70,1.59,47.32,"663,001",—
+MLKN,"MillerKnoll, Inc.",piotroski,True,9,9,100.0,21.14,16.02,1.09,6.82,1.58,1.93,23.98,"359,441",—
+PLXS,PLEXUS CORP.,piotroski,True,8,9,88.9,217,34.66,4.12,11.89,1.58,1.16,86.13,"327,495",—
+PBI,PITNEY BOWES INC,piotroski,True,7,9,77.8,17.35,20.65,—,-18.03,0.71,-4.95,—,2M,—
+ZUMZ,ZUMIEZ INC,piotroski,True,8,9,88.9,14.11,18.09,0.75,4.13,2.01,0.99,18.16,"260,392",—
+DIOD,DIODES INC /DEL/,piotroski,True,8,9,88.9,81.07,56.69,2.00,3.52,3.32,0.27,36.08,"480,212",—
 CTRI,"Centuri Holdings, Inc.",piotroski,True,7,9,77.8,19.34,77.36,2.00,2.57,1.78,1.75,7.37,1M,—
+TPC,Tutor Perini Corporation,piotroski,True,7,9,77.8,76.86,50.90,3.37,6.60,1.27,3.20,27.84,"298,489",—
 AMN,"AMN HEALTHCARE SERVICES, INC.",piotroski,True,7,9,77.8,48.01,—,2.88,-14.90,0.94,2.26,—,"920,597",—
-KMT,KENNAMETAL INC.,piotroski,False,6,9,66.7,29.46,6.67,1.45,21.81,2.62,0.99,44.90,1M,—
-KMT,KENNAMETAL INC.,greenblatt,False,2,3,66.7,29.46,6.67,1.45,21.81,2.62,0.99,44.90,1M,—
-KMT,KENNAMETAL INC.,buffett,False,3,6,50.0,29.46,6.67,1.45,21.81,2.62,0.99,44.90,1M,—
-KMT,KENNAMETAL INC.,netnet,False,2,4,50.0,29.46,6.67,1.45,21.81,2.62,0.99,44.90,1M,—
-KMT,KENNAMETAL INC.,custom,False,0,0,0.0,29.46,6.67,1.45,21.81,2.62,0.99,44.90,1M,—
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",greenblatt,False,2,3,66.7,7.65,6.32,—,-221,2.06,-5.32,—,3M,—
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",lynch,False,2,4,50.0,7.65,6.32,—,-221,2.06,-5.32,—,3M,—
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",graham,False,4,9,44.4,7.65,6.32,—,-221,2.06,-5.32,—,3M,—
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",buffett,False,2,6,33.3,7.65,6.32,—,-221,2.06,-5.32,—,3M,—
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",netnet,False,1,4,25.0,7.65,6.32,—,-221,2.06,-5.32,—,3M,—
-BCRX,"BIOCRYST PHARMACEUTICALS, INC.",custom,False,0,0,0.0,7.65,6.32,—,-221,2.06,-5.32,—,3M,—
-USLM,UNITED STATES LIME & MINERALS INC,piotroski,False,6,9,66.7,112,23.92,5.09,21.29,19.27,0.08,48.03,"146,356",—
-USLM,UNITED STATES LIME & MINERALS INC,greenblatt,False,2,3,66.7,112,23.92,5.09,21.29,19.27,0.08,48.03,"146,356",—
-USLM,UNITED STATES LIME & MINERALS INC,graham,False,5,9,55.6,112,23.92,5.09,21.29,19.27,0.08,48.03,"146,356",—
-USLM,UNITED STATES LIME & MINERALS INC,netnet,False,2,4,50.0,112,23.92,5.09,21.29,19.27,0.08,48.03,"146,356",—
-USLM,UNITED STATES LIME & MINERALS INC,custom,False,0,0,0.0,112,23.92,5.09,21.29,19.27,0.08,48.03,"146,356",—
-SON,Sonoco Products Company,graham,False,6,9,66.7,50.12,4.98,1.38,27.75,1.05,2.08,90.68,2M,—
-SON,Sonoco Products Company,buffett,False,4,6,66.7,50.12,4.98,1.38,27.75,1.05,2.08,90.68,2M,—
+SBC,SBC Medical Group Holdings Incorporated,buffett,False,4,6,66.7,5.28,10.56,2.19,20.54,3.78,0.47,5.21,"295,854",—
+SBC,SBC Medical Group Holdings Incorporated,greenblatt,False,2,3,66.7,5.28,10.56,2.19,20.54,3.78,0.47,5.21,"295,854",—
+SBC,SBC Medical Group Holdings Incorporated,graham,False,5,9,55.6,5.28,10.56,2.19,20.54,3.78,0.47,5.21,"295,854",—
+SBC,SBC Medical Group Holdings Incorporated,netnet,False,2,4,50.0,5.28,10.56,2.19,20.54,3.78,0.47,5.21,"295,854",—
+SBC,SBC Medical Group Holdings Incorporated,piotroski,False,4,9,44.4,5.28,10.56,2.19,20.54,3.78,0.47,5.21,"295,854",—
+SBC,SBC Medical Group Holdings Incorporated,custom,False,0,0,0.0,5.28,10.56,2.19,20.54,3.78,0.47,5.21,"295,854",—
+VEL,"Velocity Financial, Inc.",graham,False,6,9,66.7,15.30,5.56,0.87,15.62,—,9.97,33.01,"150,228",—
+VEL,"Velocity Financial, Inc.",greenblatt,False,2,3,66.7,15.30,5.56,0.87,15.62,—,9.97,33.01,"150,228",—
+VEL,"Velocity Financial, Inc.",buffett,False,3,6,50.0,15.30,5.56,0.87,15.62,—,9.97,33.01,"150,228",—
+VEL,"Velocity Financial, Inc.",piotroski,False,4,9,44.4,15.30,5.56,0.87,15.62,—,9.97,33.01,"150,228",—
+VEL,"Velocity Financial, Inc.",netnet,False,1,4,25.0,15.30,5.56,0.87,15.62,—,9.97,33.01,"150,228",—
+VEL,"Velocity Financial, Inc.",custom,False,0,0,0.0,15.30,5.56,0.87,15.62,—,9.97,33.01,"150,228",—
+AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",buffett,False,4,6,66.7,168,23.75,8.14,34.27,1.46,—,57.37,"432,296",—
+AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",greenblatt,False,2,3,66.7,168,23.75,8.14,34.27,1.46,—,57.37,"432,296",—
+AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",graham,False,3,9,33.3,168,23.75,8.14,34.27,1.46,—,57.37,"432,296",—
+AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",lynch,False,1,4,25.0,168,23.75,8.14,34.27,1.46,—,57.37,"432,296",—
+AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",netnet,False,1,4,25.0,168,23.75,8.14,34.27,1.46,—,57.37,"432,296",—
+AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",custom,False,0,0,0.0,168,23.75,8.14,34.27,1.46,—,57.37,"432,296",—
+AX,"Axos Financial, Inc.",buffett,False,4,6,66.7,91.79,10.82,1.64,15.49,—,8.46,103,"258,375",—
