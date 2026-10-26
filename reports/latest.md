@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-26 17:15 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-26 21:34 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **24** strategy matches passed.
+Screened **75** companies · **26** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| BBW | BUILD-A-BEAR WORKSHOP INC | greenblatt | ✅ | 100% | 23.79 | 5.96 | 2.01 | 33.67 | 1.55 | — | 270,487 | — |
-| KMT | KENNAMETAL INC. | graham | ✅ | 100% | 29.96 | 6.78 | 1.48 | 21.81 | 2.62 | 0.99 | 204,889 | — |
-| KMT | KENNAMETAL INC. | lynch | ✅ | 75% | 29.96 | 6.78 | 1.48 | 21.81 | 2.62 | 0.99 | 204,889 | — |
-| VEL | Velocity Financial, Inc. | lynch | ✅ | 75% | 15.37 | 5.59 | 0.87 | 15.62 | — | 9.97 | 30,532 | — |
-| BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 113 | 15.40 | 2.64 | 17.13 | 2.65 | 0.86 | 437,422 | — |
-| BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 113 | 15.40 | 2.64 | 17.13 | 2.65 | 0.86 | 437,422 | — |
-| NBR | NABORS INDUSTRIES LTD | piotroski | ✅ | 78% | 82.89 | 4.77 | 2.02 | 48.52 | 1.56 | 5.67 | 65,646 | — |
-| KRYS | Krystal Biotech, Inc. | piotroski | ✅ | 89% | 313 | 45.73 | 7.68 | 16.80 | 9.95 | 0.09 | 77,397 | — |
-| ACEL | Accel Entertainment, Inc. | piotroski | ✅ | 78% | 11.00 | 18.33 | 3.52 | 19.09 | 2.61 | — | 622,320 | — |
-| TRN | TRINITY INDUSTRIES INC | greenblatt | ✅ | 100% | 25.54 | 8.37 | 1.97 | 23.50 | — | 6.76 | 819,375 | — |
-| TRN | TRINITY INDUSTRIES INC | piotroski | ✅ | 78% | 25.54 | 8.37 | 1.97 | 23.50 | — | 6.76 | 819,375 | — |
-| SHOE | Shoe Station Group, Inc. | graham | ✅ | 89% | 13.97 | 7.36 | 0.56 | 7.58 | 3.76 | 0.74 | 213,237 | — |
-| GEO | The GEO Group, Inc. | piotroski | ✅ | 78% | 28.17 | 15.48 | 2.61 | 16.89 | 2.01 | — | 246,372 | — |
-| GEO | The GEO Group, Inc. | lynch | ✅ | 75% | 28.17 | 15.48 | 2.61 | 16.89 | 2.01 | — | 246,372 | — |
-| OSW | OneSpaWorld Holdings Limited | piotroski | ✅ | 78% | 24.11 | 34.94 | 4.61 | 13.20 | 1.91 | 0.30 | 166,663 | — |
-| FIZZ | National Beverage Corp. | buffett | ✅ | 83% | 35.79 | 18.26 | 5.27 | 28.89 | 4.39 | 0.34 | 84,519 | — |
-| OPY | OPPENHEIMER HOLDINGS INC. | piotroski | ✅ | 78% | 101 | 7.75 | 1.17 | 15.08 | — | 2.77 | 69,657 | — |
-| AGCO | AGCO CORP /DE | piotroski | ✅ | 89% | 106 | 10.88 | 1.85 | 17.00 | 1.39 | 1.72 | 574,468 | — |
-| RGA | REINSURANCE GROUP OF AMERICA | piotroski | ✅ | 78% | 266 | 15.06 | 1.32 | 8.78 | — | 10.63 | 143,715 | — |
-| RGA | REINSURANCE GROUP OF AMERICA | lynch | ✅ | 75% | 266 | 15.06 | 1.32 | 8.78 | — | 10.63 | 143,715 | — |
-| GRC | The Gorman-Rupp Company | piotroski | ✅ | 89% | 74.98 | 37.12 | 4.75 | 12.78 | 2.37 | 1.07 | 68,296 | — |
-| FMNB | FARMERS NATIONAL BANC CORP / | piotroski | ✅ | 89% | 15.69 | 10.82 | 1.22 | 11.24 | — | 9.80 | 281,100 | — |
-| LUV | SOUTHWEST AIRLINES CO. | piotroski | ✅ | 78% | 42.33 | 53.58 | 2.96 | 5.53 | 0.52 | — | 3M | — |
-| NEOG | Neogen Corporation | piotroski | ✅ | 89% | 12.28 | — | 1.28 | -0.38 | 3.82 | 0.60 | 494,751 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | graham | ▫️ | 56% | 23.79 | 5.96 | 2.01 | 33.67 | 1.55 | — | 270,487 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | piotroski | ▫️ | 56% | 23.79 | 5.96 | 2.01 | 33.67 | 1.55 | — | 270,487 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | buffett | ▫️ | 50% | 23.79 | 5.96 | 2.01 | 33.67 | 1.55 | — | 270,487 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | lynch | ▫️ | 25% | 23.79 | 5.96 | 2.01 | 33.67 | 1.55 | — | 270,487 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | netnet | ▫️ | 25% | 23.79 | 5.96 | 2.01 | 33.67 | 1.55 | — | 270,487 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | custom | ▫️ | 0% | 23.79 | 5.96 | 2.01 | 33.67 | 1.55 | — | 270,487 | — |
-| KMT | KENNAMETAL INC. | piotroski | ▫️ | 67% | 29.96 | 6.78 | 1.48 | 21.81 | 2.62 | 0.99 | 204,889 | — |
-| KMT | KENNAMETAL INC. | greenblatt | ▫️ | 67% | 29.96 | 6.78 | 1.48 | 21.81 | 2.62 | 0.99 | 204,889 | — |
-| KMT | KENNAMETAL INC. | buffett | ▫️ | 50% | 29.96 | 6.78 | 1.48 | 21.81 | 2.62 | 0.99 | 204,889 | — |
-| KMT | KENNAMETAL INC. | netnet | ▫️ | 50% | 29.96 | 6.78 | 1.48 | 21.81 | 2.62 | 0.99 | 204,889 | — |
-| KMT | KENNAMETAL INC. | custom | ▫️ | 0% | 29.96 | 6.78 | 1.48 | 21.81 | 2.62 | 0.99 | 204,889 | — |
-| VEL | Velocity Financial, Inc. | graham | ▫️ | 67% | 15.37 | 5.59 | 0.87 | 15.62 | — | 9.97 | 30,532 | — |
-| VEL | Velocity Financial, Inc. | greenblatt | ▫️ | 67% | 15.37 | 5.59 | 0.87 | 15.62 | — | 9.97 | 30,532 | — |
-| VEL | Velocity Financial, Inc. | buffett | ▫️ | 50% | 15.37 | 5.59 | 0.87 | 15.62 | — | 9.97 | 30,532 | — |
-| VEL | Velocity Financial, Inc. | piotroski | ▫️ | 44% | 15.37 | 5.59 | 0.87 | 15.62 | — | 9.97 | 30,532 | — |
-| VEL | Velocity Financial, Inc. | netnet | ▫️ | 25% | 15.37 | 5.59 | 0.87 | 15.62 | — | 9.97 | 30,532 | — |
-| VEL | Velocity Financial, Inc. | custom | ▫️ | 0% | 15.37 | 5.59 | 0.87 | 15.62 | — | 9.97 | 30,532 | — |
-| BOOT | Boot Barn Holdings, Inc. | graham | ▫️ | 67% | 113 | 15.40 | 2.64 | 17.13 | 2.65 | 0.86 | 437,422 | — |
-| BOOT | Boot Barn Holdings, Inc. | buffett | ▫️ | 67% | 113 | 15.40 | 2.64 | 17.13 | 2.65 | 0.86 | 437,422 | — |
-| BOOT | Boot Barn Holdings, Inc. | greenblatt | ▫️ | 33% | 113 | 15.40 | 2.64 | 17.13 | 2.65 | 0.86 | 437,422 | — |
-| BOOT | Boot Barn Holdings, Inc. | netnet | ▫️ | 25% | 113 | 15.40 | 2.64 | 17.13 | 2.65 | 0.86 | 437,422 | — |
-| BOOT | Boot Barn Holdings, Inc. | custom | ▫️ | 0% | 113 | 15.40 | 2.64 | 17.13 | 2.65 | 0.86 | 437,422 | — |
-| NBR | NABORS INDUSTRIES LTD | greenblatt | ▫️ | 67% | 82.89 | 4.77 | 2.02 | 48.52 | 1.56 | 5.67 | 65,646 | — |
-| NBR | NABORS INDUSTRIES LTD | graham | ▫️ | 44% | 82.89 | 4.77 | 2.02 | 48.52 | 1.56 | 5.67 | 65,646 | — |
-| NBR | NABORS INDUSTRIES LTD | lynch | ▫️ | 25% | 82.89 | 4.77 | 2.02 | 48.52 | 1.56 | 5.67 | 65,646 | — |
-| NBR | NABORS INDUSTRIES LTD | netnet | ▫️ | 25% | 82.89 | 4.77 | 2.02 | 48.52 | 1.56 | 5.67 | 65,646 | — |
+| BYD | BOYD GAMING CORP | greenblatt | ✅ | 100% | 72.46 | 3.21 | 2.27 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | piotroski | ✅ | 78% | 72.46 | 3.21 | 2.27 | 70.66 | 0.54 | — | 1M | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | greenblatt | ✅ | 100% | 2.44 | 12.20 | 2.72 | 22.71 | 4.86 | 0.39 | 405,770 | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | piotroski | ✅ | 78% | 27.33 | 6.02 | 1.77 | 29.41 | 1.47 | 1.81 | 1M | — |
+| WHD | Cactus, Inc. | lynch | ✅ | 75% | 64.34 | — | — | 13.54 | 5.81 | 0.36 | 683,908 | — |
+| SBAC | SBA COMMUNICATIONS CORPORATI | piotroski | ✅ | 78% | 186 | 18.97 | — | -21.71 | 0.29 | — | 1M | — |
+| PRDO | PERDOCEO EDUCATION CORP | piotroski | ✅ | 89% | 32.71 | 13.52 | 2.23 | 16.45 | 5.06 | — | 598,161 | — |
+| HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 128 | 50.00 | 325 | 649 | 4.66 | 50.73 | 1M | — |
+| PAYC | Paycom Software, Inc. | buffett | ✅ | 83% | 268 | 33.20 | 8.69 | 26.19 | 1.09 | 3.39 | 607,792 | — |
+| EFC | Ellington Financial Inc. | lynch | ✅ | 75% | 11.71 | 9.84 | 0.64 | 6.47 | — | 9.53 | 1M | — |
+| KBR | KBR, Inc. | piotroski | ✅ | 89% | 40.02 | 12.47 | 3.43 | 27.61 | 1.22 | 3.37 | 2M | — |
+| TOST | Toast, Inc. | piotroski | ✅ | 78% | 32.13 | 57.38 | 9.18 | 16.10 | 2.75 | 0.48 | 5M | — |
+| SCSC | ScanSource, Inc. | piotroski | ✅ | 78% | 60.98 | 16.75 | 1.45 | 8.66 | 1.76 | 1.12 | 247,487 | — |
+| SCSC | ScanSource, Inc. | lynch | ✅ | 75% | 60.98 | 16.75 | 1.45 | 8.66 | 1.76 | 1.12 | 247,487 | — |
+| BBWI | BATH & BODY WORKS, INC. | greenblatt | ✅ | 100% | 21.38 | 6.87 | — | -50.66 | 1.27 | — | 5M | — |
+| GBX | THE GREENBRIER COMPANIES, IN | lynch | ✅ | 75% | 38.30 | 15.38 | 0.77 | 5.02 | — | — | 881,488 | — |
+| IEX | IDEX CORP | piotroski | ✅ | 78% | 231 | 36.05 | 4.32 | 12.00 | 2.86 | 0.72 | 657,151 | — |
+| UGI | UGI CORPORATION | piotroski | ✅ | 78% | 39.11 | 12.66 | 1.79 | 14.19 | 0.89 | 2.23 | 1M | — |
+| WWW | WOLVERINE WORLD WIDE, INC. | piotroski | ✅ | 78% | 20.28 | 17.79 | 4.06 | 23.48 | 1.40 | — | 801,885 | — |
+| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 47.92 | 46.08 | — | -29.14 | 1.60 | -6.05 | 421,760 | — |
+| NPKI | NPK International Inc. | piotroski | ✅ | 78% | 11.01 | 24.47 | 2.69 | 11.09 | 1.43 | 0.26 | 542,009 | — |
+| FUL | FULLER H B CO | piotroski | ✅ | 78% | 49.13 | 17.87 | 1.36 | 7.59 | 1.70 | 1.59 | 406,086 | — |
+| ZUMZ | ZUMIEZ INC | piotroski | ✅ | 89% | 13.72 | 17.59 | 0.73 | 4.13 | 2.01 | 0.99 | 293,893 | — |
+| PRLB | Proto Labs Inc | piotroski | ✅ | 89% | 86.41 | 98.19 | 3.11 | 3.15 | 3.49 | 0.13 | 152,959 | — |
+| PTON | PELOTON INTERACTIVE, INC. | piotroski | ✅ | 89% | 5.25 | 37.50 | — | -45.24 | 2.84 | -15.72 | 6M | — |
+| TPC | Tutor Perini Corporation | piotroski | ✅ | 78% | 78.49 | 51.98 | 3.44 | 6.60 | 1.27 | 3.20 | 273,383 | — |
+| BYD | BOYD GAMING CORP | buffett | ▫️ | 67% | 72.46 | 3.21 | 2.27 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | graham | ▫️ | 56% | 72.46 | 3.21 | 2.27 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | lynch | ▫️ | 25% | 72.46 | 3.21 | 2.27 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | netnet | ▫️ | 25% | 72.46 | 3.21 | 2.27 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | custom | ▫️ | 0% | 72.46 | 3.21 | 2.27 | 70.66 | 0.54 | — | 1M | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | piotroski | ▫️ | 67% | 2.44 | 12.20 | 2.72 | 22.71 | 4.86 | 0.39 | 405,770 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | buffett | ▫️ | 50% | 2.44 | 12.20 | 2.72 | 22.71 | 4.86 | 0.39 | 405,770 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | lynch | ▫️ | 50% | 2.44 | 12.20 | 2.72 | 22.71 | 4.86 | 0.39 | 405,770 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | netnet | ▫️ | 50% | 2.44 | 12.20 | 2.72 | 22.71 | 4.86 | 0.39 | 405,770 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | graham | ▫️ | 44% | 2.44 | 12.20 | 2.72 | 22.71 | 4.86 | 0.39 | 405,770 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | custom | ▫️ | 0% | 2.44 | 12.20 | 2.72 | 22.71 | 4.86 | 0.39 | 405,770 | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | graham | ▫️ | 67% | 27.33 | 6.02 | 1.77 | 29.41 | 1.47 | 1.81 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | greenblatt | ▫️ | 67% | 27.33 | 6.02 | 1.77 | 29.41 | 1.47 | 1.81 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | buffett | ▫️ | 50% | 27.33 | 6.02 | 1.77 | 29.41 | 1.47 | 1.81 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | lynch | ▫️ | 50% | 27.33 | 6.02 | 1.77 | 29.41 | 1.47 | 1.81 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | netnet | ▫️ | 25% | 27.33 | 6.02 | 1.77 | 29.41 | 1.47 | 1.81 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | custom | ▫️ | 0% | 27.33 | 6.02 | 1.77 | 29.41 | 1.47 | 1.81 | 1M | — |
+| WHD | Cactus, Inc. | graham | ▫️ | 67% | 64.34 | — | — | 13.54 | 5.81 | 0.36 | 683,908 | — |
+| WHD | Cactus, Inc. | piotroski | ▫️ | 56% | 64.34 | — | — | 13.54 | 5.81 | 0.36 | 683,908 | — |
+| WHD | Cactus, Inc. | buffett | ▫️ | 50% | 64.34 | — | — | 13.54 | 5.81 | 0.36 | 683,908 | — |
+| WHD | Cactus, Inc. | greenblatt | ▫️ | 33% | 64.34 | — | — | 13.54 | 5.81 | 0.36 | 683,908 | — |
+| WHD | Cactus, Inc. | netnet | ▫️ | 25% | 64.34 | — | — | 13.54 | 5.81 | 0.36 | 683,908 | — |
+| WHD | Cactus, Inc. | custom | ▫️ | 0% | 64.34 | — | — | 13.54 | 5.81 | 0.36 | 683,908 | — |
+| LNTH | Lantheus Holdings, Inc. | piotroski | ▫️ | 56% | 99.92 | 29.30 | 6.28 | 21.43 | 2.70 | 1.04 | 431,646 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
