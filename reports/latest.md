@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-25 22:29 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-26 05:13 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **32** strategy matches passed.
+Screened **75** companies · **31** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| CF | CF INDUSTRIES HOLDINGS, INC. | greenblatt | ✅ | 100% | 121 | 13.45 | 4.05 | 37.16 | 3.37 | — | 2M | — |
-| CF | CF INDUSTRIES HOLDINGS, INC. | piotroski | ✅ | 89% | 121 | 13.45 | 4.05 | 37.16 | 3.37 | — | 2M | — |
-| CF | CF INDUSTRIES HOLDINGS, INC. | buffett | ✅ | 83% | 121 | 13.45 | 4.05 | 37.16 | 3.37 | — | 2M | — |
-| CF | CF INDUSTRIES HOLDINGS, INC. | lynch | ✅ | 75% | 121 | 13.45 | 4.05 | 37.16 | 3.37 | — | 2M | — |
-| FSLR | First Solar, Inc. | lynch | ✅ | 100% | 172 | 12.10 | 1.94 | 16.02 | 2.67 | 0.40 | 1M | — |
-| FSLR | First Solar, Inc. | piotroski | ✅ | 89% | 172 | 12.10 | 1.94 | 16.02 | 2.67 | 0.40 | 1M | — |
-| VRRM | VERRA MOBILITY CORPORATION | piotroski | ✅ | 100% | 3.09 | 3.64 | 1.70 | 46.64 | 2.09 | 4.62 | 3M | — |
-| REX | REX AMERICAN RESOURCES CORPO | lynch | ✅ | 75% | 39.83 | 15.93 | 2.17 | 15.57 | 5.94 | — | 203,607 | — |
-| GMED | GLOBUS MEDICAL, INC. | piotroski | ✅ | 100% | 81.41 | 20.77 | 2.44 | 11.76 | 4.26 | 0.16 | 768,462 | — |
-| GMED | GLOBUS MEDICAL, INC. | lynch | ✅ | 100% | 81.41 | 20.77 | 2.44 | 11.76 | 4.26 | 0.16 | 768,462 | — |
-| AROC | Archrock, Inc. | piotroski | ✅ | 89% | 29.12 | 15.91 | 3.41 | 21.61 | 1.54 | 1.92 | 1M | — |
-| EVR | EVERCORE INC. | buffett | ✅ | 83% | 252 | 17.93 | 5.22 | 29.14 | 2.16 | 1.50 | 569,681 | — |
-| EVR | EVERCORE INC. | piotroski | ✅ | 78% | 252 | 17.93 | 5.22 | 29.14 | 2.16 | 1.50 | 569,681 | — |
-| IBEX | IBEX Limited | piotroski | ✅ | 100% | 47.23 | 15.09 | 4.11 | 27.22 | 2.10 | 0.82 | 93,358 | — |
-| HST | HOST HOTELS & RESORTS, INC. | piotroski | ✅ | 78% | 24.72 | 22.47 | 2.62 | 11.67 | — | 0.96 | 8M | — |
-| TILE | INTERFACE INC | piotroski | ✅ | 89% | 36.42 | 18.58 | 3.36 | 18.12 | 2.34 | 0.88 | 430,633 | — |
-| CW | CURTISS-WRIGHT CORPORATION | piotroski | ✅ | 89% | 465 | 36.13 | 6.91 | 19.11 | 1.44 | 1.06 | 626,720 | — |
-| SIRI | SIRIUS XM HOLDINGS INC. | lynch | ✅ | 75% | 27.63 | 12.39 | 0.85 | 6.96 | 0.30 | 1.36 | 3M | — |
-| BBWI | BATH & BODY WORKS, INC. | greenblatt | ✅ | 100% | 20.95 | 6.74 | — | -50.66 | 1.27 | — | 5M | — |
-| EXTR | Extreme Networks, Inc. | piotroski | ✅ | 89% | 21.97 | 70.87 | 33.47 | 47.54 | 0.93 | — | 915,440 | — |
-| HLIO | HELIOS TECHNOLOGIES, INC. | piotroski | ✅ | 100% | 66.16 | 45.63 | 2.37 | 5.20 | 2.90 | 0.63 | 324,962 | — |
-| HLIO | HELIOS TECHNOLOGIES, INC. | lynch | ✅ | 75% | 66.16 | 45.63 | 2.37 | 5.20 | 2.90 | 0.63 | 324,962 | — |
-| CBU | COMMUNITY FINANCIAL SYSTEM,  | piotroski | ✅ | 89% | 62.42 | 15.72 | 1.64 | 10.49 | — | 7.63 | 190,463 | — |
-| LNT | ALLIANT ENERGY CORP | piotroski | ✅ | 78% | 69.66 | 22.18 | 2.45 | 11.04 | 0.80 | — | 3M | — |
-| CPRI | CAPRI HOLDINGS LIMITED | piotroski | ✅ | 78% | 15.87 | 13.92 | 23.77 | 171 | 1.21 | 39.38 | 3M | — |
-| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 48.50 | 46.63 | — | -29.14 | 1.60 | -6.05 | 369,105 | — |
-| MOS | MOSAIC CO | piotroski | ✅ | 89% | 17.84 | 10.49 | 0.47 | 4.47 | 1.32 | — | 17M | — |
-| LUV | SOUTHWEST AIRLINES CO. | piotroski | ✅ | 78% | 41.75 | 52.85 | 2.92 | 5.53 | 0.52 | — | 8M | — |
-| LW | LAMB WESTON HOLDINGS, INC. | piotroski | ✅ | 78% | 53.83 | 25.88 | 4.10 | 15.89 | 1.42 | — | 2M | — |
-| AEIS | ADVANCED ENERGY INDUSTRIES,  | piotroski | ✅ | 78% | 217 | 56.41 | 6.14 | 10.89 | 1.59 | 0.86 | 773,163 | — |
-| AVNW | Aviat Networks, Inc. | piotroski | ✅ | 78% | 19.17 | 101 | 0.93 | 0.95 | 1.97 | 1.24 | 93,847 | — |
-| SEDG | SOLAREDGE TECHNOLOGIES, INC. | piotroski | ✅ | 78% | 33.32 | — | 4.60 | -94.85 | 2.17 | — | 1M | — |
-| CF | CF INDUSTRIES HOLDINGS, INC. | graham | ▫️ | 67% | 121 | 13.45 | 4.05 | 37.16 | 3.37 | — | 2M | — |
-| CF | CF INDUSTRIES HOLDINGS, INC. | netnet | ▫️ | 25% | 121 | 13.45 | 4.05 | 37.16 | 3.37 | — | 2M | — |
-| CF | CF INDUSTRIES HOLDINGS, INC. | custom | ▫️ | 0% | 121 | 13.45 | 4.05 | 37.16 | 3.37 | — | 2M | — |
-| FSLR | First Solar, Inc. | graham | ▫️ | 67% | 172 | 12.10 | 1.94 | 16.02 | 2.67 | 0.40 | 1M | — |
-| FSLR | First Solar, Inc. | buffett | ▫️ | 67% | 172 | 12.10 | 1.94 | 16.02 | 2.67 | 0.40 | 1M | — |
-| FSLR | First Solar, Inc. | greenblatt | ▫️ | 67% | 172 | 12.10 | 1.94 | 16.02 | 2.67 | 0.40 | 1M | — |
-| FSLR | First Solar, Inc. | netnet | ▫️ | 50% | 172 | 12.10 | 1.94 | 16.02 | 2.67 | 0.40 | 1M | — |
-| FSLR | First Solar, Inc. | custom | ▫️ | 0% | 172 | 12.10 | 1.94 | 16.02 | 2.67 | 0.40 | 1M | — |
-| VRRM | VERRA MOBILITY CORPORATION | graham | ▫️ | 67% | 3.09 | 3.64 | 1.70 | 46.64 | 2.09 | 4.62 | 3M | — |
-| VRRM | VERRA MOBILITY CORPORATION | greenblatt | ▫️ | 67% | 3.09 | 3.64 | 1.70 | 46.64 | 2.09 | 4.62 | 3M | — |
-| VRRM | VERRA MOBILITY CORPORATION | buffett | ▫️ | 50% | 3.09 | 3.64 | 1.70 | 46.64 | 2.09 | 4.62 | 3M | — |
-| VRRM | VERRA MOBILITY CORPORATION | lynch | ▫️ | 25% | 3.09 | 3.64 | 1.70 | 46.64 | 2.09 | 4.62 | 3M | — |
-| VRRM | VERRA MOBILITY CORPORATION | netnet | ▫️ | 25% | 3.09 | 3.64 | 1.70 | 46.64 | 2.09 | 4.62 | 3M | — |
-| VRRM | VERRA MOBILITY CORPORATION | custom | ▫️ | 0% | 3.09 | 3.64 | 1.70 | 46.64 | 2.09 | 4.62 | 3M | — |
-| UNIT | Uniti Group Inc. | greenblatt | ▫️ | 67% | 5.07 | 1.04 | 3.55 | 343 | 0.74 | 30.65 | 4M | — |
-| UNIT | Uniti Group Inc. | graham | ▫️ | 44% | 5.07 | 1.04 | 3.55 | 343 | 0.74 | 30.65 | 4M | — |
-| UNIT | Uniti Group Inc. | buffett | ▫️ | 33% | 5.07 | 1.04 | 3.55 | 343 | 0.74 | 30.65 | 4M | — |
-| UNIT | Uniti Group Inc. | lynch | ▫️ | 25% | 5.07 | 1.04 | 3.55 | 343 | 0.74 | 30.65 | 4M | — |
+| MLI | MUELLER INDUSTRIES, INC | buffett | ✅ | 100% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
+| MLI | MUELLER INDUSTRIES, INC | greenblatt | ✅ | 100% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
+| MLI | MUELLER INDUSTRIES, INC | lynch | ✅ | 100% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
+| MLI | MUELLER INDUSTRIES, INC | graham | ✅ | 89% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
+| MLI | MUELLER INDUSTRIES, INC | piotroski | ✅ | 78% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
+| SAFX | XCF GLOBAL, INC. | greenblatt | ✅ | 100% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 10M | — |
+| BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 115 | 15.67 | 2.68 | 17.13 | 2.65 | 0.86 | 809,328 | — |
+| BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 115 | 15.67 | 2.68 | 17.13 | 2.65 | 0.86 | 809,328 | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | piotroski | ✅ | 78% | 86.98 | 17.12 | 2.35 | 13.75 | 10.06 | 0.12 | 1M | — |
+| MHO | M/I HOMES, INC. | lynch | ✅ | 75% | 124 | 8.41 | 1.07 | 12.73 | — | 0.51 | 469,430 | — |
+| DAKT | Daktronics, Inc. | piotroski | ✅ | 89% | 20.60 | 22.39 | 3.38 | 15.09 | 2.31 | — | 607,447 | — |
+| EBF | ENNIS, INC. | piotroski | ✅ | 78% | 22.64 | 13.64 | 1.88 | 13.81 | 3.72 | 0.16 | 123,801 | — |
+| DAKT | Daktronics, Inc. | lynch | ✅ | 75% | 20.60 | 22.39 | 3.38 | 15.09 | 2.31 | — | 607,447 | — |
+| HOG | Harley-Davidson, Inc. | graham | ✅ | 100% | 28.96 | 10.42 | 1.12 | 10.79 | 2.10 | — | 3M | — |
+| HOG | Harley-Davidson, Inc. | piotroski | ✅ | 89% | 28.96 | 10.42 | 1.12 | 10.79 | 2.10 | — | 3M | — |
+| MEDP | Medpace Holdings, Inc. | buffett | ✅ | 83% | 669 | 43.80 | 43.04 | 98.27 | 0.74 | 3.30 | 309,433 | — |
+| MEDP | Medpace Holdings, Inc. | piotroski | ✅ | 78% | 669 | 43.80 | 43.04 | 98.27 | 0.74 | 3.30 | 309,433 | — |
+| HRB | H&R BLOCK INC | greenblatt | ✅ | 100% | 49.69 | 8.78 | 54.50 | 624 | 1.13 | 26.72 | 1M | — |
+| HRB | H&R BLOCK INC | piotroski | ✅ | 89% | 49.69 | 8.78 | 54.50 | 624 | 1.13 | 26.72 | 1M | — |
+| POST | Post Holdings, Inc. | lynch | ✅ | 75% | 80.56 | 14.62 | 1.35 | 8.94 | 1.67 | 2.60 | 661,175 | — |
+| SCSC | ScanSource, Inc. | piotroski | ✅ | 78% | 61.05 | 16.77 | 1.45 | 8.66 | 1.76 | 1.12 | 209,395 | — |
+| SCSC | ScanSource, Inc. | lynch | ✅ | 75% | 61.05 | 16.77 | 1.45 | 8.66 | 1.76 | 1.12 | 209,395 | — |
+| HAYW | Hayward Holdings, Inc. | piotroski | ✅ | 100% | 12.67 | 18.63 | 1.77 | 9.51 | 2.94 | 0.98 | 3M | — |
+| MCS | MARCUS CORP | piotroski | ✅ | 78% | 27.97 | 68.94 | 1.91 | 2.77 | 0.40 | — | 218,402 | — |
+| FUL | FULLER H B CO | piotroski | ✅ | 78% | 49.61 | 18.04 | 1.37 | 7.59 | 1.70 | 1.59 | 663,001 | — |
+| GCO | GENESCO INC | piotroski | ✅ | 89% | 36.99 | 29.59 | 0.69 | 2.34 | 1.64 | 1.46 | 89,556 | — |
+| RRX | REGAL REXNORD CORP | piotroski | ✅ | 78% | 148 | 35.22 | 1.44 | 4.08 | 2.15 | — | 833,341 | — |
+| CALX | Calix, Inc | piotroski | ✅ | 78% | 36.47 | 140 | 2.94 | 2.08 | 4.24 | 0.23 | 859,790 | — |
+| ARKO | ARKO Corp. | piotroski | ✅ | 78% | 3.81 | 25.40 | 1.64 | 8.51 | 1.66 | 11.85 | 534,767 | — |
+| DBD | Diebold Nixdorf, Incorporate | piotroski | ✅ | 78% | 69.18 | 27.24 | 2.34 | 8.60 | 1.30 | 2.50 | 207,878 | — |
+| LILA | Liberty Latin America Ltd. | piotroski | ✅ | 78% | 8.04 | — | 2.89 | -110 | 1.14 | 20.09 | 167,425 | — |
+| MLI | MUELLER INDUSTRIES, INC | netnet | ▫️ | 50% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
+| MLI | MUELLER INDUSTRIES, INC | custom | ▫️ | 0% | 54.11 | 7.89 | 1.88 | 23.84 | 5.92 | 0.15 | 2M | — |
+| SAFX | XCF GLOBAL, INC. | graham | ▫️ | 44% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 10M | — |
+| SAFX | XCF GLOBAL, INC. | buffett | ▫️ | 33% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 10M | — |
+| SAFX | XCF GLOBAL, INC. | lynch | ▫️ | 25% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 10M | — |
+| SAFX | XCF GLOBAL, INC. | netnet | ▫️ | 25% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 10M | — |
+| SAFX | XCF GLOBAL, INC. | piotroski | ▫️ | 11% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 10M | — |
+| SAFX | XCF GLOBAL, INC. | custom | ▫️ | 0% | 0.16 | 0.31 | 0.60 | 197 | 0.11 | 10.14 | 10M | — |
+| BOOT | Boot Barn Holdings, Inc. | graham | ▫️ | 67% | 115 | 15.67 | 2.68 | 17.13 | 2.65 | 0.86 | 809,328 | — |
+| BOOT | Boot Barn Holdings, Inc. | buffett | ▫️ | 67% | 115 | 15.67 | 2.68 | 17.13 | 2.65 | 0.86 | 809,328 | — |
+| BOOT | Boot Barn Holdings, Inc. | greenblatt | ▫️ | 33% | 115 | 15.67 | 2.68 | 17.13 | 2.65 | 0.86 | 809,328 | — |
+| BOOT | Boot Barn Holdings, Inc. | netnet | ▫️ | 25% | 115 | 15.67 | 2.68 | 17.13 | 2.65 | 0.86 | 809,328 | — |
+| BOOT | Boot Barn Holdings, Inc. | custom | ▫️ | 0% | 115 | 15.67 | 2.68 | 17.13 | 2.65 | 0.86 | 809,328 | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | buffett | ▫️ | 67% | 86.98 | 17.12 | 2.35 | 13.75 | 10.06 | 0.12 | 1M | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | graham | ▫️ | 56% | 86.98 | 17.12 | 2.35 | 13.75 | 10.06 | 0.12 | 1M | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | lynch | ▫️ | 50% | 86.98 | 17.12 | 2.35 | 13.75 | 10.06 | 0.12 | 1M | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | netnet | ▫️ | 50% | 86.98 | 17.12 | 2.35 | 13.75 | 10.06 | 0.12 | 1M | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | greenblatt | ▫️ | 33% | 86.98 | 17.12 | 2.35 | 13.75 | 10.06 | 0.12 | 1M | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | custom | ▫️ | 0% | 86.98 | 17.12 | 2.35 | 13.75 | 10.06 | 0.12 | 1M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
