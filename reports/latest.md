@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-28 15:54 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-28 20:49 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **36** strategy matches passed.
+Screened **75** companies · **29** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| PPLT | abrdn Platinum ETF Trust | greenblatt | ✅ | 100% | 13.95 | 0.13 | 0.06 | 46.86 | — | 0.00 | 766,762 | — |
-| PPLT | abrdn Platinum ETF Trust | lynch | ✅ | 75% | 13.95 | 0.13 | 0.06 | 46.86 | — | 0.00 | 766,762 | — |
-| SON | Sonoco Products Company | piotroski | ✅ | 89% | 48.90 | 4.86 | 1.35 | 27.75 | 1.05 | 2.08 | 149,576 | — |
-| SON | Sonoco Products Company | lynch | ✅ | 75% | 48.90 | 4.86 | 1.35 | 27.75 | 1.05 | 2.08 | 149,576 | — |
-| LPG | DORIAN LPG LTD. | lynch | ✅ | 100% | 54.28 | 11.96 | 2.03 | 17.00 | 2.67 | 0.64 | 389,409 | — |
-| LPG | DORIAN LPG LTD. | piotroski | ✅ | 89% | 54.28 | 11.96 | 2.03 | 17.00 | 2.67 | 0.64 | 389,409 | — |
-| AX | Axos Financial, Inc. | lynch | ✅ | 75% | 91.08 | 10.74 | 1.63 | 15.49 | — | 8.46 | 44,836 | — |
-| IBP | Installed Building Products, | piotroski | ✅ | 89% | 201 | 20.68 | 7.73 | 37.39 | 3.03 | 1.91 | 34,655 | — |
-| IBP | Installed Building Products, | lynch | ✅ | 75% | 201 | 20.68 | 7.73 | 37.39 | 3.03 | 1.91 | 34,655 | — |
-| SSD | Simpson Manufacturing Co., I | buffett | ✅ | 83% | 192 | 23.26 | 3.95 | 17.00 | 3.54 | 0.51 | 486,437 | — |
-| SSD | Simpson Manufacturing Co., I | piotroski | ✅ | 78% | 192 | 23.26 | 3.95 | 17.00 | 3.54 | 0.51 | 486,437 | — |
-| LMB | LIMBACH HOLDINGS, INC. | piotroski | ✅ | 78% | 50.17 | 15.53 | 3.10 | 19.97 | 1.44 | 0.95 | 40,139 | — |
-| LMB | LIMBACH HOLDINGS, INC. | lynch | ✅ | 75% | 50.17 | 15.53 | 3.10 | 19.97 | 1.44 | 0.95 | 40,139 | — |
-| EBF | ENNIS, INC. | piotroski | ✅ | 78% | 22.09 | 13.31 | 1.84 | 13.81 | 3.72 | 0.16 | 21,751 | — |
-| AIR | AAR CORP | piotroski | ✅ | 78% | 100 | 20.59 | 2.26 | 11.02 | 2.84 | — | 659,761 | — |
-| AIR | AAR CORP | lynch | ✅ | 75% | 100 | 20.59 | 2.26 | 11.02 | 2.84 | — | 659,761 | — |
-| KALU | KAISER ALUMINUM CORPORATION | piotroski | ✅ | 78% | 119 | 17.52 | 2.39 | 13.62 | 2.95 | 2.10 | 206,889 | — |
-| KALU | KAISER ALUMINUM CORPORATION | lynch | ✅ | 75% | 119 | 17.52 | 2.39 | 13.62 | 2.95 | 2.10 | 206,889 | — |
-| TRN | TRINITY INDUSTRIES INC | greenblatt | ✅ | 100% | 25.34 | 8.31 | 1.95 | 23.50 | — | 6.76 | 141,616 | — |
-| TRN | TRINITY INDUSTRIES INC | piotroski | ✅ | 78% | 25.34 | 8.31 | 1.95 | 23.50 | — | 6.76 | 141,616 | — |
-| BCPC | Balchem Corporation | piotroski | ✅ | 100% | 167 | 35.11 | 4.32 | 12.31 | 2.07 | 0.34 | 37,198 | — |
-| POST | Post Holdings, Inc. | lynch | ✅ | 75% | 79.40 | 14.41 | 1.33 | 8.94 | 1.67 | 2.60 | 621,248 | — |
-| BSY | BENTLEY SYSTEMS, INCORPORATE | piotroski | ✅ | 100% | 39.41 | 46.36 | 11.04 | 23.36 | 0.56 | 1.99 | 315,138 | — |
-| BSY | BENTLEY SYSTEMS, INCORPORATE | buffett | ✅ | 83% | 39.41 | 46.36 | 11.04 | 23.36 | 0.56 | 1.99 | 315,138 | — |
-| ACM | AECOM | piotroski | ✅ | 78% | 62.44 | 14.83 | 3.34 | 22.54 | 1.14 | 3.81 | 211,481 | — |
-| BJ | BJ’S WHOLESALE CLUB HOLDINGS | piotroski | ✅ | 89% | 104 | 23.70 | 6.24 | 26.32 | 0.75 | 2.42 | 224,369 | — |
-| UGI | UGI CORPORATION | piotroski | ✅ | 78% | 38.84 | 12.57 | 1.78 | 14.19 | 0.89 | 2.23 | 290,971 | — |
-| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.30 | 19.55 | 0.77 | 3.99 | 9.18 | 0.34 | 160,791 | — |
-| SHAK | SHAKE SHACK INC. | piotroski | ✅ | 89% | 67.94 | 62.33 | 5.41 | 8.70 | 1.76 | 2.56 | 322,501 | — |
-| MAGN | Magnera Corporation | piotroski | ✅ | 78% | 11.89 | — | 0.40 | -14.94 | 2.37 | 2.75 | 266,994 | — |
-| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 46.15 | 44.38 | — | -29.14 | 1.60 | -6.05 | 628,479 | — |
-| RH | RH | piotroski | ✅ | 89% | 142 | 22.53 | 46.43 | 206 | 1.19 | 78.80 | 117,144 | — |
-| MPAA | MOTORCAR PARTS OF AMERICA, I | piotroski | ✅ | 78% | 10.44 | 16.83 | 0.78 | 4.66 | 1.46 | 2.83 | 17,539 | — |
-| USNA | USANA HEALTH SCIENCES, INC. | piotroski | ✅ | 78% | 14.07 | 24.26 | 0.49 | 2.02 | 2.24 | 0.29 | 136,801 | — |
-| DAR | DARLING INGREDIENTS INC. | piotroski | ✅ | 78% | 55.40 | 142 | 1.87 | 1.33 | 1.50 | 1.16 | 527,187 | — |
-| PTON | PELOTON INTERACTIVE, INC. | piotroski | ✅ | 89% | 5.25 | 37.50 | — | -45.24 | 2.84 | -15.72 | 1M | — |
-| PPLT | abrdn Platinum ETF Trust | graham | ▫️ | 56% | 13.95 | 0.13 | 0.06 | 46.86 | — | 0.00 | 766,762 | — |
-| PPLT | abrdn Platinum ETF Trust | buffett | ▫️ | 50% | 13.95 | 0.13 | 0.06 | 46.86 | — | 0.00 | 766,762 | — |
-| PPLT | abrdn Platinum ETF Trust | piotroski | ▫️ | 33% | 13.95 | 0.13 | 0.06 | 46.86 | — | 0.00 | 766,762 | — |
-| PPLT | abrdn Platinum ETF Trust | netnet | ▫️ | 25% | 13.95 | 0.13 | 0.06 | 46.86 | — | 0.00 | 766,762 | — |
-| PPLT | abrdn Platinum ETF Trust | custom | ▫️ | 0% | 13.95 | 0.13 | 0.06 | 46.86 | — | 0.00 | 766,762 | — |
-| SON | Sonoco Products Company | graham | ▫️ | 67% | 48.90 | 4.86 | 1.35 | 27.75 | 1.05 | 2.08 | 149,576 | — |
-| SON | Sonoco Products Company | buffett | ▫️ | 67% | 48.90 | 4.86 | 1.35 | 27.75 | 1.05 | 2.08 | 149,576 | — |
-| SON | Sonoco Products Company | greenblatt | ▫️ | 67% | 48.90 | 4.86 | 1.35 | 27.75 | 1.05 | 2.08 | 149,576 | — |
-| SON | Sonoco Products Company | netnet | ▫️ | 25% | 48.90 | 4.86 | 1.35 | 27.75 | 1.05 | 2.08 | 149,576 | — |
-| SON | Sonoco Products Company | custom | ▫️ | 0% | 48.90 | 4.86 | 1.35 | 27.75 | 1.05 | 2.08 | 149,576 | — |
-| LPG | DORIAN LPG LTD. | buffett | ▫️ | 67% | 54.28 | 11.96 | 2.03 | 17.00 | 2.67 | 0.64 | 389,409 | — |
-| LPG | DORIAN LPG LTD. | greenblatt | ▫️ | 67% | 54.28 | 11.96 | 2.03 | 17.00 | 2.67 | 0.64 | 389,409 | — |
-| LPG | DORIAN LPG LTD. | graham | ▫️ | 56% | 54.28 | 11.96 | 2.03 | 17.00 | 2.67 | 0.64 | 389,409 | — |
-| LPG | DORIAN LPG LTD. | netnet | ▫️ | 25% | 54.28 | 11.96 | 2.03 | 17.00 | 2.67 | 0.64 | 389,409 | — |
+| SIVR | abrdn Silver ETF Trust | greenblatt | ✅ | 100% | 51.59 | 1.10 | 0.57 | 52.24 | — | 0.00 | 2M | — |
+| SIVR | abrdn Silver ETF Trust | lynch | ✅ | 75% | 51.59 | 1.10 | 0.57 | 52.24 | — | 0.00 | 2M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | greenblatt | ✅ | 100% | 120 | 13.37 | 4.02 | 37.16 | 3.37 | — | 1M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | piotroski | ✅ | 89% | 120 | 13.37 | 4.02 | 37.16 | 3.37 | — | 1M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | buffett | ✅ | 83% | 120 | 13.37 | 4.02 | 37.16 | 3.37 | — | 1M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | lynch | ✅ | 75% | 120 | 13.37 | 4.02 | 37.16 | 3.37 | — | 1M | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | buffett | ✅ | 83% | 109 | 14.91 | 4.98 | 33.37 | 4.85 | 2.26 | 600,829 | — |
+| ALSN | ALLISON TRANSMISSION HOLDING | lynch | ✅ | 75% | 109 | 14.91 | 4.98 | 33.37 | 4.85 | 2.26 | 600,829 | — |
+| PJT | PJT Partners Inc. | buffett | ✅ | 83% | 149 | — | — | 58.43 | — | 2.71 | 460,204 | — |
+| PJT | PJT Partners Inc. | piotroski | ✅ | 78% | 149 | — | — | 58.43 | — | 2.71 | 460,204 | — |
+| KFY | KORN FERRY | piotroski | ✅ | 100% | 75.18 | 14.40 | 2.00 | 14.06 | 1.94 | 1.06 | 296,621 | — |
+| KFY | KORN FERRY | lynch | ✅ | 75% | 75.18 | 14.40 | 2.00 | 14.06 | 1.94 | 1.06 | 296,621 | — |
+| EBF | ENNIS, INC. | piotroski | ✅ | 78% | 22.23 | 13.39 | 1.85 | 13.81 | 3.72 | 0.16 | 136,204 | — |
+| PGY | Pagaya Technologies Ltd. | piotroski | ✅ | 78% | 20.47 | 22.01 | 3.54 | 16.96 | — | 2.00 | 3M | — |
+| JOE | The St. Joe Company | piotroski | ✅ | 89% | 68.13 | 34.24 | 5.15 | 15.09 | — | 0.97 | 185,924 | — |
+| GEO | The GEO Group, Inc. | piotroski | ✅ | 78% | 27.57 | 15.15 | 2.56 | 16.89 | 2.01 | — | 1M | — |
+| GEO | The GEO Group, Inc. | lynch | ✅ | 75% | 27.57 | 15.15 | 2.56 | 16.89 | 2.01 | — | 1M | — |
+| LNC | LINCOLN NATIONAL CORP | lynch | ✅ | 75% | 40.66 | 6.97 | 0.69 | 10.79 | — | 37.25 | 1M | — |
+| TILE | INTERFACE INC | piotroski | ✅ | 89% | 35.93 | 18.33 | 3.32 | 18.12 | 2.34 | 0.88 | 279,217 | — |
+| WLY | JOHN WILEY & SONS, INC. | piotroski | ✅ | 100% | 50.58 | 12.16 | 3.18 | 26.13 | 0.54 | 2.06 | 378,539 | — |
+| BCPC | Balchem Corporation | piotroski | ✅ | 100% | 166 | 35.01 | 4.31 | 12.31 | 2.07 | 0.34 | 168,099 | — |
+| WCC | WESCO International, Inc. | lynch | ✅ | 75% | 347 | 26.61 | 3.42 | 12.72 | 2.20 | 2.28 | 987,664 | — |
+| PRK | PARK NATIONAL CORPORATION | piotroski | ✅ | 89% | 178 | 16.06 | 2.14 | 13.31 | — | 6.25 | 137,905 | — |
+| GBX | THE GREENBRIER COMPANIES, IN | lynch | ✅ | 75% | 37.48 | 15.05 | 0.76 | 5.02 | — | — | 1M | — |
+| IEX | IDEX CORP | piotroski | ✅ | 78% | 239 | 37.21 | 4.46 | 12.00 | 2.86 | 0.72 | 2M | — |
+| MLKN | MillerKnoll, Inc. | piotroski | ✅ | 100% | 20.76 | 15.73 | 1.07 | 6.82 | 1.58 | 1.93 | 539,563 | — |
+| RRX | REGAL REXNORD CORP | piotroski | ✅ | 78% | 158 | 37.67 | 1.54 | 4.08 | 2.15 | — | 1M | — |
+| MKSI | MKS INC. | piotroski | ✅ | 89% | 218 | 49.94 | 5.43 | 10.85 | 2.71 | 2.24 | 970,271 | — |
+| AVNW | Aviat Networks, Inc. | piotroski | ✅ | 78% | 20.53 | 108 | 1.00 | 0.95 | 1.97 | 1.24 | 166,584 | — |
+| SIVR | abrdn Silver ETF Trust | graham | ▫️ | 56% | 51.59 | 1.10 | 0.57 | 52.24 | — | 0.00 | 2M | — |
+| SIVR | abrdn Silver ETF Trust | buffett | ▫️ | 50% | 51.59 | 1.10 | 0.57 | 52.24 | — | 0.00 | 2M | — |
+| SIVR | abrdn Silver ETF Trust | piotroski | ▫️ | 33% | 51.59 | 1.10 | 0.57 | 52.24 | — | 0.00 | 2M | — |
+| SIVR | abrdn Silver ETF Trust | netnet | ▫️ | 25% | 51.59 | 1.10 | 0.57 | 52.24 | — | 0.00 | 2M | — |
+| SIVR | abrdn Silver ETF Trust | custom | ▫️ | 0% | 51.59 | 1.10 | 0.57 | 52.24 | — | 0.00 | 2M | — |
+| PURR | Hyperliquid Strategies Inc | graham | ▫️ | 67% | 9.97 | 3.11 | 0.42 | 16.31 | 41.62 | 0.10 | 9M | — |
+| PURR | Hyperliquid Strategies Inc | greenblatt | ▫️ | 67% | 9.97 | 3.11 | 0.42 | 16.31 | 41.62 | 0.10 | 9M | — |
+| PURR | Hyperliquid Strategies Inc | buffett | ▫️ | 50% | 9.97 | 3.11 | 0.42 | 16.31 | 41.62 | 0.10 | 9M | — |
+| PURR | Hyperliquid Strategies Inc | lynch | ▫️ | 50% | 9.97 | 3.11 | 0.42 | 16.31 | 41.62 | 0.10 | 9M | — |
+| PURR | Hyperliquid Strategies Inc | netnet | ▫️ | 25% | 9.97 | 3.11 | 0.42 | 16.31 | 41.62 | 0.10 | 9M | — |
+| PURR | Hyperliquid Strategies Inc | piotroski | ▫️ | 11% | 9.97 | 3.11 | 0.42 | 16.31 | 41.62 | 0.10 | 9M | — |
+| PURR | Hyperliquid Strategies Inc | custom | ▫️ | 0% | 9.97 | 3.11 | 0.42 | 16.31 | 41.62 | 0.10 | 9M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | graham | ▫️ | 67% | 120 | 13.37 | 4.02 | 37.16 | 3.37 | — | 1M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | netnet | ▫️ | 25% | 120 | 13.37 | 4.02 | 37.16 | 3.37 | — | 1M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | custom | ▫️ | 0% | 120 | 13.37 | 4.02 | 37.16 | 3.37 | — | 1M | — |
+| BENFW | Beneficient | buffett | ▫️ | 50% | 0.01 | — | — | 46.19 | — | -1.78 | 652 | — |
+| BENFW | Beneficient | piotroski | ▫️ | 33% | 0.01 | — | — | 46.19 | — | -1.78 | 652 | — |
+| BENFW | Beneficient | lynch | ▫️ | 25% | 0.01 | — | — | 46.19 | — | -1.78 | 652 | — |
+| BENFW | Beneficient | graham | ▫️ | 0% | 0.01 | — | — | 46.19 | — | -1.78 | 652 | — |
+| BENFW | Beneficient | greenblatt | ▫️ | 0% | 0.01 | — | — | 46.19 | — | -1.78 | 652 | — |
+| BENFW | Beneficient | netnet | ▫️ | 0% | 0.01 | — | — | 46.19 | — | -1.78 | 652 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
