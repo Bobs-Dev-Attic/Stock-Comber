@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-28 20:49 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-29 06:01 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **29** strategy matches passed.
+Screened **75** companies · **38** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| SIVR | abrdn Silver ETF Trust | greenblatt | ✅ | 100% | 51.59 | 1.10 | 0.57 | 52.24 | — | 0.00 | 2M | — |
-| SIVR | abrdn Silver ETF Trust | lynch | ✅ | 75% | 51.59 | 1.10 | 0.57 | 52.24 | — | 0.00 | 2M | — |
-| CF | CF INDUSTRIES HOLDINGS, INC. | greenblatt | ✅ | 100% | 120 | 13.37 | 4.02 | 37.16 | 3.37 | — | 1M | — |
-| CF | CF INDUSTRIES HOLDINGS, INC. | piotroski | ✅ | 89% | 120 | 13.37 | 4.02 | 37.16 | 3.37 | — | 1M | — |
-| CF | CF INDUSTRIES HOLDINGS, INC. | buffett | ✅ | 83% | 120 | 13.37 | 4.02 | 37.16 | 3.37 | — | 1M | — |
-| CF | CF INDUSTRIES HOLDINGS, INC. | lynch | ✅ | 75% | 120 | 13.37 | 4.02 | 37.16 | 3.37 | — | 1M | — |
+| YELP | YELP INC | greenblatt | ✅ | 100% | 18.42 | 8.22 | 1.69 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC | piotroski | ✅ | 89% | 18.42 | 8.22 | 1.69 | 20.48 | 2.99 | 0.35 | 1M | — |
+| VITL | Vital Farms, Inc. | graham | ✅ | 100% | 9.25 | 6.42 | 1.21 | 18.87 | 2.16 | 0.48 | 2M | — |
+| VITL | Vital Farms, Inc. | lynch | ✅ | 100% | 9.25 | 6.42 | 1.21 | 18.87 | 2.16 | 0.48 | 2M | — |
+| LRN | STRIDE, INC. | lynch | ✅ | 100% | 80.10 | 11.22 | 2.32 | 20.72 | 5.94 | 0.49 | 622,366 | — |
+| LRN | STRIDE, INC. | piotroski | ✅ | 89% | 80.10 | 11.22 | 2.32 | 20.72 | 5.94 | 0.49 | 622,366 | — |
+| LRN | STRIDE, INC. | buffett | ✅ | 83% | 80.10 | 11.22 | 2.32 | 20.72 | 5.94 | 0.49 | 622,366 | — |
+| WHD | Cactus, Inc. | lynch | ✅ | 75% | 64.34 | — | — | 13.54 | 5.81 | 0.36 | 643,654 | — |
+| XPEL | XPEL, INC. | buffett | ✅ | 100% | 43.87 | 23.71 | 4.33 | 18.28 | 3.25 | 0.35 | 203,013 | — |
+| XPEL | XPEL, INC. | lynch | ✅ | 75% | 43.87 | 23.71 | 4.33 | 18.28 | 3.25 | 0.35 | 203,013 | — |
 | ALSN | ALLISON TRANSMISSION HOLDING | buffett | ✅ | 83% | 109 | 14.91 | 4.98 | 33.37 | 4.85 | 2.26 | 600,829 | — |
 | ALSN | ALLISON TRANSMISSION HOLDING | lynch | ✅ | 75% | 109 | 14.91 | 4.98 | 33.37 | 4.85 | 2.26 | 600,829 | — |
-| PJT | PJT Partners Inc. | buffett | ✅ | 83% | 149 | — | — | 58.43 | — | 2.71 | 460,204 | — |
-| PJT | PJT Partners Inc. | piotroski | ✅ | 78% | 149 | — | — | 58.43 | — | 2.71 | 460,204 | — |
-| KFY | KORN FERRY | piotroski | ✅ | 100% | 75.18 | 14.40 | 2.00 | 14.06 | 1.94 | 1.06 | 296,621 | — |
-| KFY | KORN FERRY | lynch | ✅ | 75% | 75.18 | 14.40 | 2.00 | 14.06 | 1.94 | 1.06 | 296,621 | — |
-| EBF | ENNIS, INC. | piotroski | ✅ | 78% | 22.23 | 13.39 | 1.85 | 13.81 | 3.72 | 0.16 | 136,204 | — |
-| PGY | Pagaya Technologies Ltd. | piotroski | ✅ | 78% | 20.47 | 22.01 | 3.54 | 16.96 | — | 2.00 | 3M | — |
-| JOE | The St. Joe Company | piotroski | ✅ | 89% | 68.13 | 34.24 | 5.15 | 15.09 | — | 0.97 | 185,924 | — |
-| GEO | The GEO Group, Inc. | piotroski | ✅ | 78% | 27.57 | 15.15 | 2.56 | 16.89 | 2.01 | — | 1M | — |
-| GEO | The GEO Group, Inc. | lynch | ✅ | 75% | 27.57 | 15.15 | 2.56 | 16.89 | 2.01 | — | 1M | — |
-| LNC | LINCOLN NATIONAL CORP | lynch | ✅ | 75% | 40.66 | 6.97 | 0.69 | 10.79 | — | 37.25 | 1M | — |
-| TILE | INTERFACE INC | piotroski | ✅ | 89% | 35.93 | 18.33 | 3.32 | 18.12 | 2.34 | 0.88 | 279,217 | — |
-| WLY | JOHN WILEY & SONS, INC. | piotroski | ✅ | 100% | 50.58 | 12.16 | 3.18 | 26.13 | 0.54 | 2.06 | 378,539 | — |
-| BCPC | Balchem Corporation | piotroski | ✅ | 100% | 166 | 35.01 | 4.31 | 12.31 | 2.07 | 0.34 | 168,099 | — |
-| WCC | WESCO International, Inc. | lynch | ✅ | 75% | 347 | 26.61 | 3.42 | 12.72 | 2.20 | 2.28 | 987,664 | — |
-| PRK | PARK NATIONAL CORPORATION | piotroski | ✅ | 89% | 178 | 16.06 | 2.14 | 13.31 | — | 6.25 | 137,905 | — |
-| GBX | THE GREENBRIER COMPANIES, IN | lynch | ✅ | 75% | 37.48 | 15.05 | 0.76 | 5.02 | — | — | 1M | — |
-| IEX | IDEX CORP | piotroski | ✅ | 78% | 239 | 37.21 | 4.46 | 12.00 | 2.86 | 0.72 | 2M | — |
-| MLKN | MillerKnoll, Inc. | piotroski | ✅ | 100% | 20.76 | 15.73 | 1.07 | 6.82 | 1.58 | 1.93 | 539,563 | — |
-| RRX | REGAL REXNORD CORP | piotroski | ✅ | 78% | 158 | 37.67 | 1.54 | 4.08 | 2.15 | — | 1M | — |
-| MKSI | MKS INC. | piotroski | ✅ | 89% | 218 | 49.94 | 5.43 | 10.85 | 2.71 | 2.24 | 970,271 | — |
-| AVNW | Aviat Networks, Inc. | piotroski | ✅ | 78% | 20.53 | 108 | 1.00 | 0.95 | 1.97 | 1.24 | 166,584 | — |
-| SIVR | abrdn Silver ETF Trust | graham | ▫️ | 56% | 51.59 | 1.10 | 0.57 | 52.24 | — | 0.00 | 2M | — |
-| SIVR | abrdn Silver ETF Trust | buffett | ▫️ | 50% | 51.59 | 1.10 | 0.57 | 52.24 | — | 0.00 | 2M | — |
-| SIVR | abrdn Silver ETF Trust | piotroski | ▫️ | 33% | 51.59 | 1.10 | 0.57 | 52.24 | — | 0.00 | 2M | — |
-| SIVR | abrdn Silver ETF Trust | netnet | ▫️ | 25% | 51.59 | 1.10 | 0.57 | 52.24 | — | 0.00 | 2M | — |
-| SIVR | abrdn Silver ETF Trust | custom | ▫️ | 0% | 51.59 | 1.10 | 0.57 | 52.24 | — | 0.00 | 2M | — |
-| PURR | Hyperliquid Strategies Inc | graham | ▫️ | 67% | 9.97 | 3.11 | 0.42 | 16.31 | 41.62 | 0.10 | 9M | — |
-| PURR | Hyperliquid Strategies Inc | greenblatt | ▫️ | 67% | 9.97 | 3.11 | 0.42 | 16.31 | 41.62 | 0.10 | 9M | — |
-| PURR | Hyperliquid Strategies Inc | buffett | ▫️ | 50% | 9.97 | 3.11 | 0.42 | 16.31 | 41.62 | 0.10 | 9M | — |
-| PURR | Hyperliquid Strategies Inc | lynch | ▫️ | 50% | 9.97 | 3.11 | 0.42 | 16.31 | 41.62 | 0.10 | 9M | — |
-| PURR | Hyperliquid Strategies Inc | netnet | ▫️ | 25% | 9.97 | 3.11 | 0.42 | 16.31 | 41.62 | 0.10 | 9M | — |
-| PURR | Hyperliquid Strategies Inc | piotroski | ▫️ | 11% | 9.97 | 3.11 | 0.42 | 16.31 | 41.62 | 0.10 | 9M | — |
-| PURR | Hyperliquid Strategies Inc | custom | ▫️ | 0% | 9.97 | 3.11 | 0.42 | 16.31 | 41.62 | 0.10 | 9M | — |
-| CF | CF INDUSTRIES HOLDINGS, INC. | graham | ▫️ | 67% | 120 | 13.37 | 4.02 | 37.16 | 3.37 | — | 1M | — |
-| CF | CF INDUSTRIES HOLDINGS, INC. | netnet | ▫️ | 25% | 120 | 13.37 | 4.02 | 37.16 | 3.37 | — | 1M | — |
-| CF | CF INDUSTRIES HOLDINGS, INC. | custom | ▫️ | 0% | 120 | 13.37 | 4.02 | 37.16 | 3.37 | — | 1M | — |
-| BENFW | Beneficient | buffett | ▫️ | 50% | 0.01 | — | — | 46.19 | — | -1.78 | 652 | — |
-| BENFW | Beneficient | piotroski | ▫️ | 33% | 0.01 | — | — | 46.19 | — | -1.78 | 652 | — |
-| BENFW | Beneficient | lynch | ▫️ | 25% | 0.01 | — | — | 46.19 | — | -1.78 | 652 | — |
-| BENFW | Beneficient | graham | ▫️ | 0% | 0.01 | — | — | 46.19 | — | -1.78 | 652 | — |
-| BENFW | Beneficient | greenblatt | ▫️ | 0% | 0.01 | — | — | 46.19 | — | -1.78 | 652 | — |
-| BENFW | Beneficient | netnet | ▫️ | 0% | 0.01 | — | — | 46.19 | — | -1.78 | 652 | — |
+| BKE | BUCKLE, INC | greenblatt | ✅ | 100% | 45.46 | 10.98 | 5.43 | 49.39 | 1.89 | 1.33 | 329,008 | — |
+| BKE | BUCKLE, INC | buffett | ✅ | 83% | 45.46 | 10.98 | 5.43 | 49.39 | 1.89 | 1.33 | 329,008 | — |
+| PJT | PJT Partners Inc. | buffett | ✅ | 83% | 149 | — | — | 58.43 | — | 2.71 | 485,509 | — |
+| PJT | PJT Partners Inc. | piotroski | ✅ | 78% | 149 | — | — | 58.43 | — | 2.71 | 485,509 | — |
+| BELFA | BEL FUSE INC /NJ | piotroski | ✅ | 89% | 180 | — | — | 14.46 | 3.02 | 0.98 | 89,561 | — |
+| LII | LENNOX INTERNATIONAL INC | lynch | ✅ | 75% | 333 | 14.60 | 10.12 | 69.28 | 1.60 | 2.51 | 2M | — |
+| KRYS | Krystal Biotech, Inc. | piotroski | ✅ | 89% | 321 | 46.99 | 7.89 | 16.80 | 9.95 | 0.09 | 199,841 | — |
+| LMB | LIMBACH HOLDINGS, INC. | piotroski | ✅ | 78% | 50.72 | 15.70 | 3.13 | 19.97 | 1.44 | 0.95 | 173,330 | — |
+| LMB | LIMBACH HOLDINGS, INC. | lynch | ✅ | 75% | 50.72 | 15.70 | 3.13 | 19.97 | 1.44 | 0.95 | 173,330 | — |
+| AOS | A. O. Smith Corporation | piotroski | ✅ | 78% | 60.86 | 15.81 | 4.65 | 29.40 | 1.50 | 0.69 | 3M | — |
+| BYND | BEYOND MEAT, INC. | greenblatt | ✅ | 100% | 7.13 | — | — | -21,968 | 4.56 | — | 601,031 | — |
+| JOE | The St. Joe Company | piotroski | ✅ | 89% | 68.13 | 34.24 | 5.15 | 15.09 | — | 0.97 | 190,624 | — |
+| HRB | H&R BLOCK INC | greenblatt | ✅ | 100% | 47.80 | 8.45 | 52.43 | 624 | 1.13 | 26.72 | 1M | — |
+| HRB | H&R BLOCK INC | piotroski | ✅ | 89% | 47.80 | 8.45 | 52.43 | 624 | 1.13 | 26.72 | 1M | — |
+| CWEN | Clearway Energy, Inc. | lynch | ✅ | 75% | 32.77 | 6.79 | 0.20 | 2.91 | 1.13 | 1.85 | 1M | — |
+| OPY | OPPENHEIMER HOLDINGS INC. | piotroski | ✅ | 78% | 107 | 8.20 | 1.24 | 15.08 | — | 2.77 | 75,561 | — |
+| UMBF | UMB FINANCIAL CORP | lynch | ✅ | 75% | 132 | 14.25 | 1.27 | 9.13 | — | 8.50 | 1M | — |
+| POST | Post Holdings, Inc. | lynch | ✅ | 75% | 80.28 | 14.57 | 1.35 | 8.94 | 1.67 | 2.60 | 846,542 | — |
+| RSI | Rush Street Interactive, Inc | piotroski | ✅ | 78% | 15.13 | 48.81 | 24.26 | 22.62 | 1.93 | 2.41 | 6M | — |
+| GBX | THE GREENBRIER COMPANIES, IN | lynch | ✅ | 75% | 37.48 | 15.05 | 0.76 | 5.02 | — | — | 628,960 | — |
+| SPOK | SPOK HOLDINGS, INC. | piotroski | ✅ | 78% | 10.18 | 13.57 | 1.46 | 10.85 | 1.18 | 0.41 | 186,199 | — |
+| APG | APi Group Corporation | piotroski | ✅ | 89% | 41.34 | — | 5.04 | 8.86 | 1.50 | 1.62 | 4M | — |
+| WOR | WORTHINGTON ENTERPRISES, INC | piotroski | ✅ | 89% | 63.58 | 20.25 | 3.08 | 15.20 | 2.37 | 0.80 | 198,905 | — |
+| SGRY | Surgery Partners, Inc. | piotroski | ✅ | 78% | 23.24 | — | 1.73 | -4.55 | 1.87 | — | 3M | — |
+| MLKN | MillerKnoll, Inc. | piotroski | ✅ | 100% | 20.74 | 15.71 | 1.07 | 6.82 | 1.58 | 1.93 | 396,437 | — |
+| WGO | WINNEBAGO INDUSTRIES, INC. | piotroski | ✅ | 78% | 28.63 | 23.66 | 0.66 | 2.79 | 2.17 | 0.70 | 608,620 | — |
+| YELP | YELP INC | graham | ▫️ | 78% | 18.42 | 8.22 | 1.69 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC | buffett | ▫️ | 50% | 18.42 | 8.22 | 1.69 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC | lynch | ▫️ | 50% | 18.42 | 8.22 | 1.69 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC | netnet | ▫️ | 50% | 18.42 | 8.22 | 1.69 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC | custom | ▫️ | 0% | 18.42 | 8.22 | 1.69 | 20.48 | 2.99 | 0.35 | 1M | — |
+| HGTY | HAGERTY, INC. | piotroski | ▫️ | 67% | 15.44 | — | — | 67.43 | — | 6.09 | 427,365 | — |
+| HGTY | HAGERTY, INC. | greenblatt | ▫️ | 67% | 15.44 | — | — | 67.43 | — | 6.09 | 427,365 | — |
+| VITL | Vital Farms, Inc. | greenblatt | ▫️ | 67% | 9.25 | 6.42 | 1.21 | 18.87 | 2.16 | 0.48 | 2M | — |
+| HGTY | HAGERTY, INC. | buffett | ▫️ | 50% | 15.44 | — | — | 67.43 | — | 6.09 | 427,365 | — |
+| VITL | Vital Farms, Inc. | buffett | ▫️ | 50% | 9.25 | 6.42 | 1.21 | 18.87 | 2.16 | 0.48 | 2M | — |
+| VITL | Vital Farms, Inc. | netnet | ▫️ | 50% | 9.25 | 6.42 | 1.21 | 18.87 | 2.16 | 0.48 | 2M | — |
+| VITL | Vital Farms, Inc. | piotroski | ▫️ | 33% | 9.25 | 6.42 | 1.21 | 18.87 | 2.16 | 0.48 | 2M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.

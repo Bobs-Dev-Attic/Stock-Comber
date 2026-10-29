@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-SIVR,abrdn Silver ETF Trust,greenblatt,True,3,3,100.0,51.59,1.10,0.57,52.24,—,0.00,309,2M,—
-SIVR,abrdn Silver ETF Trust,lynch,True,3,4,75.0,51.59,1.10,0.57,52.24,—,0.00,309,2M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",greenblatt,True,3,3,100.0,120,13.37,4.02,37.16,3.37,—,77.59,1M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",piotroski,True,8,9,88.9,120,13.37,4.02,37.16,3.37,—,77.59,1M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",buffett,True,5,6,83.3,120,13.37,4.02,37.16,3.37,—,77.59,1M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",lynch,True,3,4,75.0,120,13.37,4.02,37.16,3.37,—,77.59,1M,—
+YELP,YELP INC,greenblatt,True,3,3,100.0,18.42,8.22,1.69,20.48,2.99,0.35,23.46,1M,—
+YELP,YELP INC,piotroski,True,8,9,88.9,18.42,8.22,1.69,20.48,2.99,0.35,23.46,1M,—
+VITL,"Vital Farms, Inc.",graham,True,9,9,100.0,9.25,6.42,1.21,18.87,2.16,0.48,15.73,2M,—
+VITL,"Vital Farms, Inc.",lynch,True,4,4,100.0,9.25,6.42,1.21,18.87,2.16,0.48,15.73,2M,—
+LRN,"STRIDE, INC.",lynch,True,4,4,100.0,80.10,11.22,2.32,20.72,5.94,0.49,74.43,"622,366",—
+LRN,"STRIDE, INC.",piotroski,True,8,9,88.9,80.10,11.22,2.32,20.72,5.94,0.49,74.43,"622,366",—
+LRN,"STRIDE, INC.",buffett,True,5,6,83.3,80.10,11.22,2.32,20.72,5.94,0.49,74.43,"622,366",—
+WHD,"Cactus, Inc.",lynch,True,3,4,75.0,64.34,—,—,13.54,5.81,0.36,—,"643,654",—
+XPEL,"XPEL, INC.",buffett,True,6,6,100.0,43.87,23.71,4.33,18.28,3.25,0.35,20.53,"203,013",—
+XPEL,"XPEL, INC.",lynch,True,3,4,75.0,43.87,23.71,4.33,18.28,3.25,0.35,20.53,"203,013",—
 ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",buffett,True,5,6,83.3,109,14.91,4.98,33.37,4.85,2.26,60.19,"600,829",—
 ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",lynch,True,3,4,75.0,109,14.91,4.98,33.37,4.85,2.26,60.19,"600,829",—
-PJT,PJT Partners Inc.,buffett,True,5,6,83.3,149,—,—,58.43,—,2.71,—,"460,204",—
-PJT,PJT Partners Inc.,piotroski,True,7,9,77.8,149,—,—,58.43,—,2.71,—,"460,204",—
-KFY,KORN FERRY,piotroski,True,9,9,100.0,75.18,14.40,2.00,14.06,1.94,1.06,66.42,"296,621",—
-KFY,KORN FERRY,lynch,True,3,4,75.0,75.18,14.40,2.00,14.06,1.94,1.06,66.42,"296,621",—
-EBF,"ENNIS, INC.",piotroski,True,7,9,77.8,22.23,13.39,1.85,13.81,3.72,0.16,21.19,"136,204",—
-PGY,Pagaya Technologies Ltd.,piotroski,True,7,9,77.8,20.47,22.01,3.54,16.96,—,2.00,10.99,3M,—
-JOE,The St. Joe Company,piotroski,True,8,9,88.9,68.13,34.24,5.15,15.09,—,0.97,24.33,"185,924",—
-GEO,"The GEO Group, Inc.",piotroski,True,7,9,77.8,27.57,15.15,2.56,16.89,2.01,—,21.01,1M,—
-GEO,"The GEO Group, Inc.",lynch,True,3,4,75.0,27.57,15.15,2.56,16.89,2.01,—,21.01,1M,—
-LNC,LINCOLN NATIONAL CORP,lynch,True,3,4,75.0,40.66,6.97,0.69,10.79,—,37.25,87.69,1M,—
-TILE,INTERFACE INC,piotroski,True,8,9,88.9,35.93,18.33,3.32,18.12,2.34,0.88,21.85,"279,217",—
-WLY,"JOHN WILEY & SONS, INC.",piotroski,True,9,9,100.0,50.58,12.16,3.18,26.13,0.54,2.06,38.61,"378,539",—
-BCPC,Balchem Corporation,piotroski,True,9,9,100.0,166,35.01,4.31,12.31,2.07,0.34,64.20,"168,099",—
-WCC,"WESCO International, Inc.",lynch,True,3,4,75.0,347,26.61,3.42,12.72,2.20,2.28,173,"987,664",—
-PRK,PARK NATIONAL CORPORATION,piotroski,True,8,9,88.9,178,16.06,2.14,13.31,—,6.25,144,"137,905",—
-GBX,"THE GREENBRIER COMPANIES, INC.",lynch,True,3,4,75.0,37.48,15.05,0.76,5.02,—,—,52.67,1M,—
-IEX,IDEX CORP,piotroski,True,7,9,77.8,239,37.21,4.46,12.00,2.86,0.72,87.83,2M,—
-MLKN,"MillerKnoll, Inc.",piotroski,True,9,9,100.0,20.76,15.73,1.07,6.82,1.58,1.93,23.98,"539,563",—
-RRX,REGAL REXNORD CORP,piotroski,True,7,9,77.8,158,37.67,1.54,4.08,2.15,—,98.55,1M,—
-MKSI,MKS INC.,piotroski,True,8,9,88.9,218,49.94,5.43,10.85,2.71,2.24,62.84,"970,271",—
-AVNW,"Aviat Networks, Inc.",piotroski,True,7,9,77.8,20.53,108,1.00,0.95,1.97,1.24,9.37,"166,584",—
-SIVR,abrdn Silver ETF Trust,graham,False,5,9,55.6,51.59,1.10,0.57,52.24,—,0.00,309,2M,—
-SIVR,abrdn Silver ETF Trust,buffett,False,3,6,50.0,51.59,1.10,0.57,52.24,—,0.00,309,2M,—
-SIVR,abrdn Silver ETF Trust,piotroski,False,3,9,33.3,51.59,1.10,0.57,52.24,—,0.00,309,2M,—
-SIVR,abrdn Silver ETF Trust,netnet,False,1,4,25.0,51.59,1.10,0.57,52.24,—,0.00,309,2M,—
-SIVR,abrdn Silver ETF Trust,custom,False,0,0,0.0,51.59,1.10,0.57,52.24,—,0.00,309,2M,—
-PURR,Hyperliquid Strategies Inc,graham,False,6,9,66.7,9.97,3.11,0.42,16.31,41.62,0.10,41.17,9M,—
-PURR,Hyperliquid Strategies Inc,greenblatt,False,2,3,66.7,9.97,3.11,0.42,16.31,41.62,0.10,41.17,9M,—
-PURR,Hyperliquid Strategies Inc,buffett,False,3,6,50.0,9.97,3.11,0.42,16.31,41.62,0.10,41.17,9M,—
-PURR,Hyperliquid Strategies Inc,lynch,False,2,4,50.0,9.97,3.11,0.42,16.31,41.62,0.10,41.17,9M,—
-PURR,Hyperliquid Strategies Inc,netnet,False,1,4,25.0,9.97,3.11,0.42,16.31,41.62,0.10,41.17,9M,—
-PURR,Hyperliquid Strategies Inc,piotroski,False,1,9,11.1,9.97,3.11,0.42,16.31,41.62,0.10,41.17,9M,—
-PURR,Hyperliquid Strategies Inc,custom,False,0,0,0.0,9.97,3.11,0.42,16.31,41.62,0.10,41.17,9M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",graham,False,6,9,66.7,120,13.37,4.02,37.16,3.37,—,77.59,1M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",netnet,False,1,4,25.0,120,13.37,4.02,37.16,3.37,—,77.59,1M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",custom,False,0,0,0.0,120,13.37,4.02,37.16,3.37,—,77.59,1M,—
-BENFW,Beneficient,buffett,False,3,6,50.0,0.01,—,—,46.19,—,-1.78,—,652,—
-BENFW,Beneficient,piotroski,False,3,9,33.3,0.01,—,—,46.19,—,-1.78,—,652,—
-BENFW,Beneficient,lynch,False,1,4,25.0,0.01,—,—,46.19,—,-1.78,—,652,—
-BENFW,Beneficient,graham,False,0,9,0.0,0.01,—,—,46.19,—,-1.78,—,652,—
-BENFW,Beneficient,greenblatt,False,0,3,0.0,0.01,—,—,46.19,—,-1.78,—,652,—
-BENFW,Beneficient,netnet,False,0,4,0.0,0.01,—,—,46.19,—,-1.78,—,652,—
+BKE,"BUCKLE, INC",greenblatt,True,3,3,100.0,45.46,10.98,5.43,49.39,1.89,1.33,27.93,"329,008",—
+BKE,"BUCKLE, INC",buffett,True,5,6,83.3,45.46,10.98,5.43,49.39,1.89,1.33,27.93,"329,008",—
+PJT,PJT Partners Inc.,buffett,True,5,6,83.3,149,—,—,58.43,—,2.71,—,"485,509",—
+PJT,PJT Partners Inc.,piotroski,True,7,9,77.8,149,—,—,58.43,—,2.71,—,"485,509",—
+BELFA,BEL FUSE INC /NJ,piotroski,True,8,9,88.9,180,—,—,14.46,3.02,0.98,—,"89,561",—
+LII,LENNOX INTERNATIONAL INC,lynch,True,3,4,75.0,333,14.60,10.12,69.28,1.60,2.51,130,2M,—
+KRYS,"Krystal Biotech, Inc.",piotroski,True,8,9,88.9,321,46.99,7.89,16.80,9.95,0.09,79.16,"199,841",—
+LMB,"LIMBACH HOLDINGS, INC.",piotroski,True,7,9,77.8,50.72,15.70,3.13,19.97,1.44,0.95,34.31,"173,330",—
+LMB,"LIMBACH HOLDINGS, INC.",lynch,True,3,4,75.0,50.72,15.70,3.13,19.97,1.44,0.95,34.31,"173,330",—
+AOS,A. O. Smith Corporation,piotroski,True,7,9,77.8,60.86,15.81,4.65,29.40,1.50,0.69,33.68,3M,—
+BYND,"BEYOND MEAT, INC.",greenblatt,True,3,3,100.0,7.13,—,—,"-21,968",4.56,—,—,"601,031",—
+JOE,The St. Joe Company,piotroski,True,8,9,88.9,68.13,34.24,5.15,15.09,—,0.97,24.33,"190,624",—
+HRB,H&R BLOCK INC,greenblatt,True,3,3,100.0,47.80,8.45,52.43,624,1.13,26.72,10.78,1M,—
+HRB,H&R BLOCK INC,piotroski,True,8,9,88.9,47.80,8.45,52.43,624,1.13,26.72,10.78,1M,—
+CWEN,"Clearway Energy, Inc.",lynch,True,3,4,75.0,32.77,6.79,0.20,2.91,1.13,1.85,134,1M,—
+OPY,OPPENHEIMER HOLDINGS INC.,piotroski,True,7,9,77.8,107,8.20,1.24,15.08,—,2.77,159,"75,561",—
+UMBF,UMB FINANCIAL CORP,lynch,True,3,4,75.0,132,14.25,1.27,9.13,—,8.50,148,1M,—
+POST,"Post Holdings, Inc.",lynch,True,3,4,75.0,80.28,14.57,1.35,8.94,1.67,2.60,86.01,"846,542",—
+RSI,"Rush Street Interactive, Inc.",piotroski,True,7,9,77.8,15.13,48.81,24.26,22.62,1.93,2.41,2.09,6M,—
+GBX,"THE GREENBRIER COMPANIES, INC.",lynch,True,3,4,75.0,37.48,15.05,0.76,5.02,—,—,52.67,"628,960",—
+SPOK,"SPOK HOLDINGS, INC.",piotroski,True,7,9,77.8,10.18,13.57,1.46,10.85,1.18,0.41,10.83,"186,199",—
+APG,APi Group Corporation,piotroski,True,8,9,88.9,41.34,—,5.04,8.86,1.50,1.62,—,4M,—
+WOR,"WORTHINGTON ENTERPRISES, INC",piotroski,True,8,9,88.9,63.58,20.25,3.08,15.20,2.37,0.80,38.20,"198,905",—
+SGRY,"Surgery Partners, Inc.",piotroski,True,7,9,77.8,23.24,—,1.73,-4.55,1.87,—,—,3M,—
+MLKN,"MillerKnoll, Inc.",piotroski,True,9,9,100.0,20.74,15.71,1.07,6.82,1.58,1.93,23.98,"396,437",—
+WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,7,9,77.8,28.63,23.66,0.66,2.79,2.17,0.70,34.43,"608,620",—
+YELP,YELP INC,graham,False,7,9,77.8,18.42,8.22,1.69,20.48,2.99,0.35,23.46,1M,—
+YELP,YELP INC,buffett,False,3,6,50.0,18.42,8.22,1.69,20.48,2.99,0.35,23.46,1M,—
+YELP,YELP INC,lynch,False,2,4,50.0,18.42,8.22,1.69,20.48,2.99,0.35,23.46,1M,—
+YELP,YELP INC,netnet,False,2,4,50.0,18.42,8.22,1.69,20.48,2.99,0.35,23.46,1M,—
+YELP,YELP INC,custom,False,0,0,0.0,18.42,8.22,1.69,20.48,2.99,0.35,23.46,1M,—
+HGTY,"HAGERTY, INC.",piotroski,False,6,9,66.7,15.44,—,—,67.43,—,6.09,—,"427,365",—
+HGTY,"HAGERTY, INC.",greenblatt,False,2,3,66.7,15.44,—,—,67.43,—,6.09,—,"427,365",—
+VITL,"Vital Farms, Inc.",greenblatt,False,2,3,66.7,9.25,6.42,1.21,18.87,2.16,0.48,15.73,2M,—
+HGTY,"HAGERTY, INC.",buffett,False,3,6,50.0,15.44,—,—,67.43,—,6.09,—,"427,365",—
+VITL,"Vital Farms, Inc.",buffett,False,3,6,50.0,9.25,6.42,1.21,18.87,2.16,0.48,15.73,2M,—
+VITL,"Vital Farms, Inc.",netnet,False,2,4,50.0,9.25,6.42,1.21,18.87,2.16,0.48,15.73,2M,—
+VITL,"Vital Farms, Inc.",piotroski,False,3,9,33.3,9.25,6.42,1.21,18.87,2.16,0.48,15.73,2M,—
