@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-29 22:13 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-30 01:44 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **31** strategy matches passed.
+Screened **75** companies · **27** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| BBW | BUILD-A-BEAR WORKSHOP INC | greenblatt | ✅ | 100% | 27.48 | 6.89 | 2.32 | 33.67 | 1.55 | — | 945,726 | — |
-| USLM | UNITED STATES LIME & MINERAL | lynch | ✅ | 100% | 114 | 24.39 | 5.19 | 21.29 | 19.27 | 0.08 | 124,626 | — |
-| USLM | UNITED STATES LIME & MINERAL | buffett | ✅ | 83% | 114 | 24.39 | 5.19 | 21.29 | 19.27 | 0.08 | 124,626 | — |
-| PRI | Primerica, Inc. | greenblatt | ✅ | 100% | 284 | 12.38 | 3.79 | 30.71 | — | 5.14 | 181,949 | — |
-| PRI | Primerica, Inc. | piotroski | ✅ | 89% | 284 | 12.38 | 3.79 | 30.71 | — | 5.14 | 181,949 | — |
-| SEIC | SEI INVESTMENTS COMPANY | buffett | ✅ | 83% | 105 | 18.60 | 5.44 | 29.22 | 3.29 | — | 675,012 | — |
-| AX | AXOS FINANCIAL, INC. | lynch | ✅ | 75% | 92.55 | 10.91 | 1.66 | 15.49 | — | 8.46 | 346,770 | — |
-| ALSN | ALLISON TRANSMISSION HOLDING | buffett | ✅ | 83% | 110 | 15.00 | 5.01 | 33.37 | 4.85 | 2.26 | 664,545 | — |
-| ALSN | ALLISON TRANSMISSION HOLDING | lynch | ✅ | 75% | 110 | 15.00 | 5.01 | 33.37 | 4.85 | 2.26 | 664,545 | — |
-| MWA | Mueller Water Products, Inc. | piotroski | ✅ | 89% | 22.78 | 18.67 | 3.65 | 19.53 | 3.54 | 0.87 | 2M | — |
-| MWA | Mueller Water Products, Inc. | lynch | ✅ | 75% | 22.78 | 18.67 | 3.65 | 19.53 | 3.54 | 0.87 | 2M | — |
-| AREC | AMERICAN RESOURCES CORPORATI | greenblatt | ✅ | 100% | 1.27 | 2.02 | 1.17 | 58.44 | 2.19 | 0.80 | 4M | — |
-| AES | THE AES CORPORATION | greenblatt | ✅ | 100% | 15.05 | 11.94 | 2.64 | 22.40 | 0.77 | — | 9M | — |
-| PRDO | PERDOCEO EDUCATION CORP | piotroski | ✅ | 89% | 31.38 | 12.97 | 2.13 | 16.45 | 5.06 | — | 494,811 | — |
-| ALRM | ALARM.COM HOLDINGS, INC. | piotroski | ✅ | 78% | 66.54 | 27.05 | 4.62 | 15.52 | 1.92 | 1.47 | 532,748 | — |
-| HRB | H&R BLOCK INC | greenblatt | ✅ | 100% | 49.68 | 8.78 | 54.49 | 624 | 1.13 | 26.72 | 2M | — |
-| HRB | H&R BLOCK INC | piotroski | ✅ | 89% | 49.68 | 8.78 | 54.49 | 624 | 1.13 | 26.72 | 2M | — |
-| NJR | NEW JERSEY RESOURCES CORPORA | piotroski | ✅ | 78% | 53.11 | 15.95 | 2.24 | 14.03 | 0.73 | — | 569,935 | — |
-| EWBC | EAST WEST BANCORP, INC. | lynch | ✅ | 75% | 133 | 13.97 | 2.08 | 14.89 | — | 8.04 | 1M | — |
-| WLY | JOHN WILEY & SONS, INC. | piotroski | ✅ | 100% | 51.44 | 12.37 | 3.23 | 26.13 | 0.54 | 2.06 | 335,418 | — |
-| TILE | INTERFACE INC | piotroski | ✅ | 89% | 36.87 | 18.81 | 3.40 | 18.12 | 2.34 | 0.88 | 251,344 | — |
-| AGCO | AGCO CORP /DE | piotroski | ✅ | 89% | 108 | 11.06 | 1.88 | 17.00 | 1.39 | 1.72 | 2M | — |
-| EGP | EASTGROUP PROPERTIES, INC. | piotroski | ✅ | 78% | 200 | 41.02 | 3.02 | 7.36 | — | 0.55 | 588,828 | — |
-| EGP | EASTGROUP PROPERTIES, INC. | lynch | ✅ | 75% | 200 | 41.02 | 3.02 | 7.36 | — | 0.55 | 588,828 | — |
-| RSI | Rush Street Interactive, Inc | piotroski | ✅ | 78% | 13.62 | 43.94 | 21.84 | 22.62 | 1.93 | 2.41 | 10M | — |
-| CENTA | Central Garden & Pet Company | piotroski | ✅ | 89% | 38.79 | 15.21 | 1.56 | 10.29 | 3.67 | — | 327,013 | — |
-| PFH | PRUDENTIAL FINANCIAL INC | piotroski | ✅ | 78% | 14.97 | 1.50 | 0.16 | 11.02 | — | 22.76 | 65,390 | — |
-| ZWS | ZURN ELKAY WATER SOLUTIONS C | piotroski | ✅ | 100% | 44.73 | 38.90 | 4.78 | 12.35 | 3.13 | 0.67 | 2M | — |
-| UGI | UGI CORPORATION | piotroski | ✅ | 78% | 38.56 | 12.48 | 1.77 | 14.19 | 0.89 | 2.23 | 876,707 | — |
-| FUL | FULLER H B CO | piotroski | ✅ | 78% | 49.69 | 18.07 | 1.37 | 7.59 | 1.70 | 1.59 | 703,577 | — |
+| VRRM | VERRA MOBILITY CORPORATION | piotroski | ✅ | 100% | 3.34 | 3.93 | 1.84 | 46.64 | 2.09 | 4.62 | 4M | — |
+| SPNT | SIRIUSPOINT LTD. | lynch | ✅ | 75% | 25.95 | 7.13 | 1.28 | 18.61 | — | 4.09 | 875,265 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | piotroski | ✅ | 100% | 112 | 20.58 | 3.88 | 18.86 | 0.86 | 0.33 | 133,273 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | lynch | ✅ | 100% | 112 | 20.58 | 3.88 | 18.86 | 0.86 | 0.33 | 133,273 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | buffett | ✅ | 83% | 112 | 20.58 | 3.88 | 18.86 | 0.86 | 0.33 | 133,273 | — |
+| KRYS | Krystal Biotech, Inc. | piotroski | ✅ | 89% | 325 | 47.45 | 7.97 | 16.80 | 9.95 | 0.09 | 190,762 | — |
+| VISN | Vistance Networks, Inc. | greenblatt | ✅ | 100% | 6.69 | 0.69 | — | -227 | 3.88 | -9.06 | 5M | — |
+| HOG | Harley-Davidson, Inc. | graham | ✅ | 100% | 30.33 | 10.91 | 1.17 | 10.79 | 2.10 | — | 4M | — |
+| HOG | Harley-Davidson, Inc. | piotroski | ✅ | 89% | 30.33 | 10.91 | 1.17 | 10.79 | 2.10 | — | 4M | — |
+| BURL | BURLINGTON STORES, INC. | piotroski | ✅ | 78% | 242 | 25.48 | 8.60 | 33.76 | 1.23 | — | 1M | — |
+| EFC | Ellington Financial Inc. | lynch | ✅ | 75% | 11.83 | 9.94 | 0.65 | 6.47 | — | 9.53 | 2M | — |
+| SR | Spire Inc. | piotroski | ✅ | 78% | 86.72 | 19.84 | 0.00 | 8.02 | 0.32 | — | 662,786 | — |
+| SR | Spire Inc. | lynch | ✅ | 75% | 86.72 | 19.84 | 0.00 | 8.02 | 0.32 | — | 662,786 | — |
+| OSW | OneSpaWorld Holdings Limited | piotroski | ✅ | 78% | 30.10 | 43.62 | 5.75 | 13.20 | 1.91 | 0.30 | 2M | — |
+| CW | CURTISS-WRIGHT CORPORATION | piotroski | ✅ | 89% | 497 | 38.60 | 7.38 | 19.11 | 1.44 | 1.06 | 385,008 | — |
+| BCPC | Balchem Corporation | piotroski | ✅ | 100% | 170 | 35.87 | 4.42 | 12.31 | 2.07 | 0.34 | 193,938 | — |
+| BBWI | BATH & BODY WORKS, INC. | greenblatt | ✅ | 100% | 22.78 | 7.32 | — | -50.66 | 1.27 | — | 6M | — |
+| EMBC | EMBECTA CORP. | piotroski | ✅ | 78% | 6.56 | 4.05 | — | -14.66 | 2.41 | — | 1M | — |
+| MOS | MOSAIC CO | piotroski | ✅ | 89% | 18.23 | 10.72 | 0.48 | 4.47 | 1.32 | — | 7M | — |
+| RH | RH | piotroski | ✅ | 89% | 151 | 23.90 | 49.25 | 206 | 1.19 | 78.80 | 954,195 | — |
+| FUL | FULLER H B CO | piotroski | ✅ | 78% | 49.69 | 18.07 | 1.37 | 7.59 | 1.70 | 1.59 | 703,687 | — |
+| SPHR | SPHERE ENTERTAINMENT CO. | piotroski | ✅ | 78% | 113 | 153 | 2.29 | 1.50 | 1.09 | 0.89 | 515,337 | — |
 | MSGS | MSG KNICKERBOCKERS CORP. | piotroski | ✅ | 100% | 384 | 1,201 | — | -2.95 | 0.50 | -6.84 | 261,286 | — |
-| CLSK | CleanSpark, Inc. | greenblatt | ▫️ | 67% | 8.20 | — | 1.20 | 16.76 | 4.18 | 0.46 | 12M | — |
-| CLSK | CleanSpark, Inc. | graham | ▫️ | 56% | 8.20 | — | 1.20 | 16.76 | 4.18 | 0.46 | 12M | — |
-| CLSK | CleanSpark, Inc. | piotroski | ▫️ | 56% | 8.20 | — | 1.20 | 16.76 | 4.18 | 0.46 | 12M | — |
-| CLSK | CleanSpark, Inc. | buffett | ▫️ | 50% | 8.20 | — | 1.20 | 16.76 | 4.18 | 0.46 | 12M | — |
-| CLSK | CleanSpark, Inc. | lynch | ▫️ | 50% | 8.20 | — | 1.20 | 16.76 | 4.18 | 0.46 | 12M | — |
-| CLSK | CleanSpark, Inc. | netnet | ▫️ | 50% | 8.20 | — | 1.20 | 16.76 | 4.18 | 0.46 | 12M | — |
-| CLSK | CleanSpark, Inc. | custom | ▫️ | 0% | 8.20 | — | 1.20 | 16.76 | 4.18 | 0.46 | 12M | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | graham | ▫️ | 56% | 27.48 | 6.89 | 2.32 | 33.67 | 1.55 | — | 945,726 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | piotroski | ▫️ | 56% | 27.48 | 6.89 | 2.32 | 33.67 | 1.55 | — | 945,726 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | buffett | ▫️ | 50% | 27.48 | 6.89 | 2.32 | 33.67 | 1.55 | — | 945,726 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | lynch | ▫️ | 25% | 27.48 | 6.89 | 2.32 | 33.67 | 1.55 | — | 945,726 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | netnet | ▫️ | 25% | 27.48 | 6.89 | 2.32 | 33.67 | 1.55 | — | 945,726 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | custom | ▫️ | 0% | 27.48 | 6.89 | 2.32 | 33.67 | 1.55 | — | 945,726 | — |
-| USLM | UNITED STATES LIME & MINERAL | piotroski | ▫️ | 67% | 114 | 24.39 | 5.19 | 21.29 | 19.27 | 0.08 | 124,626 | — |
-| USLM | UNITED STATES LIME & MINERAL | greenblatt | ▫️ | 67% | 114 | 24.39 | 5.19 | 21.29 | 19.27 | 0.08 | 124,626 | — |
-| USLM | UNITED STATES LIME & MINERAL | graham | ▫️ | 56% | 114 | 24.39 | 5.19 | 21.29 | 19.27 | 0.08 | 124,626 | — |
-| USLM | UNITED STATES LIME & MINERAL | netnet | ▫️ | 50% | 114 | 24.39 | 5.19 | 21.29 | 19.27 | 0.08 | 124,626 | — |
-| USLM | UNITED STATES LIME & MINERAL | custom | ▫️ | 0% | 114 | 24.39 | 5.19 | 21.29 | 19.27 | 0.08 | 124,626 | — |
-| PRI | Primerica, Inc. | buffett | ▫️ | 67% | 284 | 12.38 | 3.79 | 30.71 | — | 5.14 | 181,949 | — |
+| CVI | CVR ENERGY, INC | piotroski | ✅ | 89% | 56.82 | 210 | 7.82 | 3.70 | 1.79 | — | 564,093 | — |
+| BNED | BARNES & NOBLE EDUCATION, IN | piotroski | ✅ | 89% | 12.72 | 25.96 | 1.50 | 5.73 | 1.71 | 1.51 | 166,396 | — |
+| TRLV | TRULIEVE CANNABIS CORP. | piotroski | ✅ | 89% | 10.60 | — | 1.77 | -10.70 | 4.43 | 1.36 | 1M | — |
+| TEN | TENNECO INC | piotroski | ✅ | 89% | 54.51 | 130 | 53.61 | 41.18 | 1.24 | 131 | 269,870 | — |
+| VRRM | VERRA MOBILITY CORPORATION | graham | ▫️ | 67% | 3.34 | 3.93 | 1.84 | 46.64 | 2.09 | 4.62 | 4M | — |
+| VRRM | VERRA MOBILITY CORPORATION | greenblatt | ▫️ | 67% | 3.34 | 3.93 | 1.84 | 46.64 | 2.09 | 4.62 | 4M | — |
+| VRRM | VERRA MOBILITY CORPORATION | buffett | ▫️ | 50% | 3.34 | 3.93 | 1.84 | 46.64 | 2.09 | 4.62 | 4M | — |
+| VRRM | VERRA MOBILITY CORPORATION | lynch | ▫️ | 25% | 3.34 | 3.93 | 1.84 | 46.64 | 2.09 | 4.62 | 4M | — |
+| VRRM | VERRA MOBILITY CORPORATION | netnet | ▫️ | 25% | 3.34 | 3.93 | 1.84 | 46.64 | 2.09 | 4.62 | 4M | — |
+| VRRM | VERRA MOBILITY CORPORATION | custom | ▫️ | 0% | 3.34 | 3.93 | 1.84 | 46.64 | 2.09 | 4.62 | 4M | — |
+| SPNT | SIRIUSPOINT LTD. | graham | ▫️ | 67% | 25.95 | 7.13 | 1.28 | 18.61 | — | 4.09 | 875,265 | — |
+| SPNT | SIRIUSPOINT LTD. | piotroski | ▫️ | 67% | 25.95 | 7.13 | 1.28 | 18.61 | — | 4.09 | 875,265 | — |
+| SPNT | SIRIUSPOINT LTD. | greenblatt | ▫️ | 67% | 25.95 | 7.13 | 1.28 | 18.61 | — | 4.09 | 875,265 | — |
+| SPNT | SIRIUSPOINT LTD. | buffett | ▫️ | 50% | 25.95 | 7.13 | 1.28 | 18.61 | — | 4.09 | 875,265 | — |
+| SPNT | SIRIUSPOINT LTD. | netnet | ▫️ | 25% | 25.95 | 7.13 | 1.28 | 18.61 | — | 4.09 | 875,265 | — |
+| SPNT | SIRIUSPOINT LTD. | custom | ▫️ | 0% | 25.95 | 7.13 | 1.28 | 18.61 | — | 4.09 | 875,265 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | graham | ▫️ | 33% | 112 | 20.58 | 3.88 | 18.86 | 0.86 | 0.33 | 133,273 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | greenblatt | ▫️ | 33% | 112 | 20.58 | 3.88 | 18.86 | 0.86 | 0.33 | 133,273 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | netnet | ▫️ | 25% | 112 | 20.58 | 3.88 | 18.86 | 0.86 | 0.33 | 133,273 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | custom | ▫️ | 0% | 112 | 20.58 | 3.88 | 18.86 | 0.86 | 0.33 | 133,273 | — |
+| KRYS | Krystal Biotech, Inc. | buffett | ▫️ | 50% | 325 | 47.45 | 7.97 | 16.80 | 9.95 | 0.09 | 190,762 | — |
+| KRYS | Krystal Biotech, Inc. | lynch | ▫️ | 50% | 325 | 47.45 | 7.97 | 16.80 | 9.95 | 0.09 | 190,762 | — |
+| KRYS | Krystal Biotech, Inc. | netnet | ▫️ | 50% | 325 | 47.45 | 7.97 | 16.80 | 9.95 | 0.09 | 190,762 | — |
+| KRYS | Krystal Biotech, Inc. | graham | ▫️ | 33% | 325 | 47.45 | 7.97 | 16.80 | 9.95 | 0.09 | 190,762 | — |
+| KRYS | Krystal Biotech, Inc. | greenblatt | ▫️ | 33% | 325 | 47.45 | 7.97 | 16.80 | 9.95 | 0.09 | 190,762 | — |
+| KRYS | Krystal Biotech, Inc. | custom | ▫️ | 0% | 325 | 47.45 | 7.97 | 16.80 | 9.95 | 0.09 | 190,762 | — |
+| CRC | California Resources Corp | graham | ▫️ | 67% | 54.67 | 13.17 | 1.30 | 9.88 | 0.89 | — | 632,883 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
