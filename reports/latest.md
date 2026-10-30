@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-30 19:47 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-30 23:23 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **28** strategy matches passed.
+Screened **75** companies · **38** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| CRS | CARPENTER TECHNOLOGY CORPORA | piotroski | ✅ | 89% | 281 | 26.73 | 6.36 | 23.78 | 3.81 | 0.72 | 902,727 | — |
-| SEATW | Vivid Seats Inc. | greenblatt | ✅ | 100% | 0.02 | 0.02 | — | -947 | 0.59 | -8.48 | 2M | — |
-| EBF | ENNIS, INC. | piotroski | ✅ | 78% | 21.51 | 12.96 | 1.79 | 13.81 | 3.72 | 0.16 | 88,358 | — |
-| FTDR | Frontdoor, Inc. | piotroski | ✅ | 89% | 87.51 | 25.59 | 26.94 | 105 | 1.55 | — | 326,064 | — |
-| FTDR | Frontdoor, Inc. | buffett | ✅ | 83% | 87.51 | 25.59 | 26.94 | 105 | 1.55 | — | 326,064 | — |
-| GL | GLOBE LIFE INC. | piotroski | ✅ | 78% | 159 | 11.30 | 2.20 | 19.44 | — | 4.16 | 244,302 | — |
-| JOE | The St. Joe Company | piotroski | ✅ | 89% | 69.03 | 34.69 | 5.22 | 15.09 | — | 0.97 | 241,832 | — |
-| KALU | KAISER ALUMINUM CORPORATION | piotroski | ✅ | 78% | 114 | 16.91 | 2.30 | 13.62 | 2.95 | 2.10 | 224,038 | — |
-| KALU | KAISER ALUMINUM CORPORATION | lynch | ✅ | 75% | 114 | 16.91 | 2.30 | 13.62 | 2.95 | 2.10 | 224,038 | — |
-| EWBC | EAST WEST BANCORP, INC. | lynch | ✅ | 75% | 130 | 13.70 | 2.04 | 14.89 | — | 8.04 | 361,353 | — |
-| TOST | Toast, Inc. | piotroski | ✅ | 78% | 31.50 | 56.25 | 9.00 | 16.10 | 2.75 | 0.48 | 6M | — |
-| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 146 | 23.06 | 2.42 | 10.49 | 1.53 | — | 1M | — |
-| WLY | JOHN WILEY & SONS, INC. | piotroski | ✅ | 100% | 51.44 | 12.37 | 3.23 | 26.13 | 0.54 | 2.06 | 335,648 | — |
-| RSI | Rush Street Interactive, Inc | piotroski | ✅ | 78% | 13.62 | 43.94 | 21.84 | 22.62 | 1.93 | 2.41 | 10M | — |
-| EMBC | EMBECTA CORP. | piotroski | ✅ | 78% | 6.28 | 3.87 | — | -14.66 | 2.41 | — | 471,194 | — |
-| KNTK | KINETIK HOLDINGS INC. | lynch | ✅ | 75% | 58.09 | 22.09 | — | -31.53 | 0.69 | -7.37 | 1M | — |
-| CENTA | Central Garden & Pet Company | piotroski | ✅ | 89% | 39.08 | 15.32 | 1.57 | 10.29 | 3.67 | — | 366,206 | — |
-| III | Information Services Group I | piotroski | ✅ | 78% | 6.08 | 32.00 | 3.23 | 9.87 | 2.34 | 1.23 | 163,082 | — |
-| UGI | UGI CORPORATION | piotroski | ✅ | 78% | 38.49 | 12.46 | 1.77 | 14.19 | 0.89 | 2.23 | 562,029 | — |
-| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.33 | 19.66 | 0.77 | 3.99 | 9.18 | 0.34 | 60,084 | — |
-| SPOK | SPOK HOLDINGS, INC. | piotroski | ✅ | 78% | 12.05 | 16.07 | 1.73 | 10.85 | 1.18 | 0.41 | 322,971 | — |
-| AIOT | Powerfleet, Inc. | piotroski | ✅ | 78% | 2.86 | — | 0.80 | -4.32 | 1.13 | 1.00 | 2M | — |
-| SGRY | Surgery Partners, Inc. | piotroski | ✅ | 78% | 23.21 | — | 1.72 | -4.55 | 1.87 | — | 3M | — |
-| HAYW | Hayward Holdings, Inc. | piotroski | ✅ | 100% | 16.11 | 23.70 | 2.25 | 9.51 | 2.94 | 0.98 | 4M | — |
-| QUAD | Quad/Graphics, Inc. | piotroski | ✅ | 78% | 7.20 | 13.32 | — | -45.38 | 0.86 | -18.90 | 628,293 | — |
-| PBI | PITNEY BOWES INC | piotroski | ✅ | 78% | 16.23 | 19.33 | — | -18.03 | 0.71 | -4.95 | 2M | — |
-| AEIS | ADVANCED ENERGY INDUSTRIES,  | piotroski | ✅ | 78% | 220 | 57.35 | 6.24 | 10.89 | 1.59 | 0.86 | 471,822 | — |
-| CTRI | Centuri Holdings, Inc. | piotroski | ✅ | 78% | 21.32 | 85.28 | 2.21 | 2.57 | 1.78 | 1.75 | 659,320 | — |
-| CRS | CARPENTER TECHNOLOGY CORPORA | buffett | ▫️ | 50% | 281 | 26.73 | 6.36 | 23.78 | 3.81 | 0.72 | 902,727 | — |
-| CRS | CARPENTER TECHNOLOGY CORPORA | lynch | ▫️ | 50% | 281 | 26.73 | 6.36 | 23.78 | 3.81 | 0.72 | 902,727 | — |
-| CRS | CARPENTER TECHNOLOGY CORPORA | netnet | ▫️ | 50% | 281 | 26.73 | 6.36 | 23.78 | 3.81 | 0.72 | 902,727 | — |
-| CRS | CARPENTER TECHNOLOGY CORPORA | graham | ▫️ | 44% | 281 | 26.73 | 6.36 | 23.78 | 3.81 | 0.72 | 902,727 | — |
-| CRS | CARPENTER TECHNOLOGY CORPORA | greenblatt | ▫️ | 33% | 281 | 26.73 | 6.36 | 23.78 | 3.81 | 0.72 | 902,727 | — |
-| CRS | CARPENTER TECHNOLOGY CORPORA | custom | ▫️ | 0% | 281 | 26.73 | 6.36 | 23.78 | 3.81 | 0.72 | 902,727 | — |
-| RUN | Sunrun Inc. | greenblatt | ▫️ | 67% | 7.33 | 4.29 | 0.62 | 14.36 | 1.66 | 5.63 | 8M | — |
-| RUN | Sunrun Inc. | graham | ▫️ | 56% | 7.33 | 4.29 | 0.62 | 14.36 | 1.66 | 5.63 | 8M | — |
-| RUN | Sunrun Inc. | piotroski | ▫️ | 56% | 7.33 | 4.29 | 0.62 | 14.36 | 1.66 | 5.63 | 8M | — |
-| RUN | Sunrun Inc. | lynch | ▫️ | 25% | 7.33 | 4.29 | 0.62 | 14.36 | 1.66 | 5.63 | 8M | — |
-| RUN | Sunrun Inc. | netnet | ▫️ | 25% | 7.33 | 4.29 | 0.62 | 14.36 | 1.66 | 5.63 | 8M | — |
-| RUN | Sunrun Inc. | buffett | ▫️ | 17% | 7.33 | 4.29 | 0.62 | 14.36 | 1.66 | 5.63 | 8M | — |
-| RUN | Sunrun Inc. | custom | ▫️ | 0% | 7.33 | 4.29 | 0.62 | 14.36 | 1.66 | 5.63 | 8M | — |
-| SEATW | Vivid Seats Inc. | lynch | ▫️ | 50% | 0.02 | 0.02 | — | -947 | 0.59 | -8.48 | 2M | — |
-| SEATW | Vivid Seats Inc. | piotroski | ▫️ | 44% | 0.02 | 0.02 | — | -947 | 0.59 | -8.48 | 2M | — |
-| SEATW | Vivid Seats Inc. | buffett | ▫️ | 33% | 0.02 | 0.02 | — | -947 | 0.59 | -8.48 | 2M | — |
-| SEATW | Vivid Seats Inc. | netnet | ▫️ | 25% | 0.02 | 0.02 | — | -947 | 0.59 | -8.48 | 2M | — |
-| SEATW | Vivid Seats Inc. | graham | ▫️ | 11% | 0.02 | 0.02 | — | -947 | 0.59 | -8.48 | 2M | — |
-| SEATW | Vivid Seats Inc. | custom | ▫️ | 0% | 0.02 | 0.02 | — | -947 | 0.59 | -8.48 | 2M | — |
-| EBF | ENNIS, INC. | graham | ▫️ | 67% | 21.51 | 12.96 | 1.79 | 13.81 | 3.72 | 0.16 | 88,358 | — |
-| EBF | ENNIS, INC. | buffett | ▫️ | 67% | 21.51 | 12.96 | 1.79 | 13.81 | 3.72 | 0.16 | 88,358 | — |
-| EBF | ENNIS, INC. | lynch | ▫️ | 50% | 21.51 | 12.96 | 1.79 | 13.81 | 3.72 | 0.16 | 88,358 | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | greenblatt | ✅ | 100% | 123 | 13.75 | 4.13 | 37.16 | 3.37 | — | 2M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | piotroski | ✅ | 89% | 123 | 13.75 | 4.13 | 37.16 | 3.37 | — | 2M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | buffett | ✅ | 83% | 123 | 13.75 | 4.13 | 37.16 | 3.37 | — | 2M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | lynch | ✅ | 75% | 123 | 13.75 | 4.13 | 37.16 | 3.37 | — | 2M | — |
+| YELP | YELP INC | greenblatt | ✅ | 100% | 19.09 | 8.52 | 1.75 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC | piotroski | ✅ | 89% | 19.09 | 8.52 | 1.75 | 20.48 | 2.99 | 0.35 | 1M | — |
+| LRN | STRIDE, INC. | lynch | ✅ | 100% | 78.36 | 10.97 | 2.27 | 20.72 | 5.94 | 0.49 | 634,124 | — |
+| LRN | STRIDE, INC. | piotroski | ✅ | 89% | 78.36 | 10.97 | 2.27 | 20.72 | 5.94 | 0.49 | 634,124 | — |
+| LRN | STRIDE, INC. | buffett | ✅ | 83% | 78.36 | 10.97 | 2.27 | 20.72 | 5.94 | 0.49 | 634,124 | — |
+| WHD | Cactus, Inc. | lynch | ✅ | 75% | 65.70 | — | — | 13.54 | 5.81 | 0.36 | 753,915 | — |
+| PRI | Primerica, Inc. | greenblatt | ✅ | 100% | 281 | 12.27 | 3.76 | 30.71 | — | 5.14 | 211,894 | — |
+| PRI | Primerica, Inc. | piotroski | ✅ | 89% | 281 | 12.27 | 3.76 | 30.71 | — | 5.14 | 211,894 | — |
+| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 18.15 | 9.60 | 2.37 | 24.66 | 2.26 | 2.62 | 2M | — |
+| KALU | KAISER ALUMINUM CORPORATION | piotroski | ✅ | 78% | 116 | 17.18 | 2.34 | 13.62 | 2.95 | 2.10 | 405,788 | — |
+| KALU | KAISER ALUMINUM CORPORATION | lynch | ✅ | 75% | 116 | 17.18 | 2.34 | 13.62 | 2.95 | 2.10 | 405,788 | — |
+| HRB | H&R BLOCK INC | greenblatt | ✅ | 100% | 51.31 | 9.07 | 56.28 | 624 | 1.13 | 26.72 | 3M | — |
+| HRB | H&R BLOCK INC | piotroski | ✅ | 89% | 51.31 | 9.07 | 56.28 | 624 | 1.13 | 26.72 | 3M | — |
+| BFAM | BRIGHT HORIZONS FAMILY SOLUT | piotroski | ✅ | 89% | 54.98 | 16.36 | 2.36 | 14.42 | 0.52 | 1.90 | 7M | — |
+| BFAM | BRIGHT HORIZONS FAMILY SOLUT | lynch | ✅ | 75% | 54.98 | 16.36 | 2.36 | 14.42 | 0.52 | 1.90 | 7M | — |
+| PLUS | ePlus inc. | piotroski | ✅ | 78% | 92.91 | 18.47 | 2.29 | 12.41 | 2.24 | 0.68 | 260,762 | — |
+| FIZZ | National Beverage Corp. | buffett | ✅ | 83% | 35.30 | 18.01 | 5.20 | 28.89 | 4.39 | 0.34 | 278,002 | — |
+| WLY | JOHN WILEY & SONS, INC. | piotroski | ✅ | 100% | 51.17 | 12.30 | 3.21 | 26.13 | 0.54 | 2.06 | 397,335 | — |
+| CW | CURTISS-WRIGHT CORPORATION | piotroski | ✅ | 89% | 476 | 36.99 | 7.07 | 19.11 | 1.44 | 1.06 | 261,044 | — |
+| SCSC | ScanSource, Inc. | piotroski | ✅ | 78% | 57.71 | 15.85 | 1.37 | 8.66 | 1.76 | 1.12 | 416,488 | — |
+| SCSC | ScanSource, Inc. | lynch | ✅ | 75% | 57.71 | 15.85 | 1.37 | 8.66 | 1.76 | 1.12 | 416,488 | — |
+| CPK | CHESAPEAKE UTILITIES CORP | piotroski | ✅ | 78% | 136 | 22.85 | 2.00 | 8.78 | 0.45 | — | 177,513 | — |
+| DLB | Dolby Laboratories, Inc. | piotroski | ✅ | 78% | 61.99 | 23.66 | 2.30 | 9.72 | 3.17 | 0.23 | 688,770 | — |
+| UMH | UMH PROPERTIES, INC. | piotroski | ✅ | 78% | 15.15 | 216 | 1.42 | 2.90 | — | 0.87 | 495,749 | — |
+| PACS | PACS Group, Inc. | piotroski | ✅ | 89% | 47.81 | 39.19 | 7.91 | 20.23 | 1.07 | 4.89 | 591,191 | — |
+| TRIP | TRIPADVISOR, INC. | piotroski | ✅ | 89% | 9.22 | 29.74 | 1.87 | 6.20 | 1.29 | 3.07 | 4M | — |
+| FAF | FIRST AMERICAN FINANCIAL COR | piotroski | ✅ | 89% | 63.82 | 10.64 | 1.20 | 11.31 | — | 1.95 | 1M | — |
+| CXW | CORECIVIC, INC. | piotroski | ✅ | 89% | 30.88 | 28.59 | 2.35 | 8.29 | 1.66 | 1.32 | 1M | — |
+| VMD | VIEMED HEALTHCARE, INC. | piotroski | ✅ | 78% | 9.67 | 26.14 | 2.79 | 10.55 | 1.18 | 0.39 | 119,529 | — |
+| KN | Knowles Corporation | piotroski | ✅ | 78% | 32.87 | 65.74 | 3.73 | 5.70 | 2.75 | — | 886,766 | — |
+| PHIN | PHINIA INC. | piotroski | ✅ | 89% | 62.92 | 19.42 | 1.59 | 8.19 | 1.86 | 1.41 | 430,845 | — |
+| MCS | MARCUS CORP | piotroski | ✅ | 78% | 26.55 | 65.44 | 1.82 | 2.77 | 0.40 | — | 303,557 | — |
+| SENS | Senseonics Holdings, Inc. | piotroski | ✅ | 78% | 9.51 | — | 6.50 | -113 | 4.83 | 1.07 | 988,571 | — |
+| BJRI | BJ’S RESTAURANTS, INC. | piotroski | ✅ | 78% | 62.53 | 28.95 | 3.86 | 13.33 | 0.40 | 1.77 | 396,123 | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | graham | ▫️ | 67% | 123 | 13.75 | 4.13 | 37.16 | 3.37 | — | 2M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | netnet | ▫️ | 25% | 123 | 13.75 | 4.13 | 37.16 | 3.37 | — | 2M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | custom | ▫️ | 0% | 123 | 13.75 | 4.13 | 37.16 | 3.37 | — | 2M | — |
+| YELP | YELP INC | graham | ▫️ | 78% | 19.09 | 8.52 | 1.75 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC | buffett | ▫️ | 50% | 19.09 | 8.52 | 1.75 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC | lynch | ▫️ | 50% | 19.09 | 8.52 | 1.75 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC | netnet | ▫️ | 50% | 19.09 | 8.52 | 1.75 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC | custom | ▫️ | 0% | 19.09 | 8.52 | 1.75 | 20.48 | 2.99 | 0.35 | 1M | — |
+| LRN | STRIDE, INC. | graham | ▫️ | 78% | 78.36 | 10.97 | 2.27 | 20.72 | 5.94 | 0.49 | 634,124 | — |
+| LRN | STRIDE, INC. | greenblatt | ▫️ | 67% | 78.36 | 10.97 | 2.27 | 20.72 | 5.94 | 0.49 | 634,124 | — |
+| LRN | STRIDE, INC. | netnet | ▫️ | 50% | 78.36 | 10.97 | 2.27 | 20.72 | 5.94 | 0.49 | 634,124 | — |
+| LRN | STRIDE, INC. | custom | ▫️ | 0% | 78.36 | 10.97 | 2.27 | 20.72 | 5.94 | 0.49 | 634,124 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
