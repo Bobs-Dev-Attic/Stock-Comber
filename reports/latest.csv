@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-CF,"CF INDUSTRIES HOLDINGS, INC.",greenblatt,True,3,3,100.0,123,13.75,4.13,37.16,3.37,—,77.59,2M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",piotroski,True,8,9,88.9,123,13.75,4.13,37.16,3.37,—,77.59,2M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",buffett,True,5,6,83.3,123,13.75,4.13,37.16,3.37,—,77.59,2M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",lynch,True,3,4,75.0,123,13.75,4.13,37.16,3.37,—,77.59,2M,—
-YELP,YELP INC,greenblatt,True,3,3,100.0,19.09,8.52,1.75,20.48,2.99,0.35,23.46,1M,—
-YELP,YELP INC,piotroski,True,8,9,88.9,19.09,8.52,1.75,20.48,2.99,0.35,23.46,1M,—
-LRN,"STRIDE, INC.",lynch,True,4,4,100.0,78.36,10.97,2.27,20.72,5.94,0.49,74.43,"634,124",—
-LRN,"STRIDE, INC.",piotroski,True,8,9,88.9,78.36,10.97,2.27,20.72,5.94,0.49,74.43,"634,124",—
-LRN,"STRIDE, INC.",buffett,True,5,6,83.3,78.36,10.97,2.27,20.72,5.94,0.49,74.43,"634,124",—
-WHD,"Cactus, Inc.",lynch,True,3,4,75.0,65.70,—,—,13.54,5.81,0.36,—,"753,915",—
-PRI,"Primerica, Inc.",greenblatt,True,3,3,100.0,281,12.27,3.76,30.71,—,5.14,196,"211,894",—
-PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,281,12.27,3.76,30.71,—,5.14,196,"211,894",—
-SBH,"SALLY BEAUTY HOLDINGS, INC.",piotroski,True,8,9,88.9,18.15,9.60,2.37,24.66,2.26,2.62,18.04,2M,—
-KALU,KAISER ALUMINUM CORPORATION,piotroski,True,7,9,77.8,116,17.18,2.34,13.62,2.95,2.10,87.01,"405,788",—
-KALU,KAISER ALUMINUM CORPORATION,lynch,True,3,4,75.0,116,17.18,2.34,13.62,2.95,2.10,87.01,"405,788",—
+UVE,"UNIVERSAL INSURANCE HOLDINGS, INC.",greenblatt,True,3,3,100.0,48.50,7.67,2.55,33.20,—,4.15,52.02,"279,702",—
+UVE,"UNIVERSAL INSURANCE HOLDINGS, INC.",piotroski,True,8,9,88.9,48.50,7.67,2.55,33.20,—,4.15,52.02,"279,702",—
+PPC,PILGRIM’S PRIDE CORPORATION,piotroski,True,7,9,77.8,28.72,6.33,1.86,29.41,1.47,1.81,39.71,1M,—
+CRS,CARPENTER TECHNOLOGY CORPORATION,piotroski,True,8,9,88.9,283,26.91,6.40,23.78,3.81,0.72,102,1M,—
+RILY,"BRC Group Holdings, Inc.",greenblatt,True,3,3,100.0,4.06,0.41,—,-179,—,-10.65,—,1M,—
+RILY,"BRC Group Holdings, Inc.",lynch,True,3,4,75.0,4.06,0.41,—,-179,—,-10.65,—,1M,—
+SFM,"Sprouts Farmers Market, Inc.",greenblatt,True,3,3,100.0,49.70,9.36,3.50,37.32,0.93,1.96,41.21,10M,—
+SFM,"Sprouts Farmers Market, Inc.",piotroski,True,7,9,77.8,49.70,9.36,3.50,37.32,0.93,1.96,41.21,10M,—
+LII,LENNOX INTERNATIONAL INC,lynch,True,3,4,75.0,344,15.10,10.47,69.28,1.60,2.51,130,"824,144",—
+KFY,KORN FERRY,piotroski,True,9,9,100.0,76.55,14.66,2.04,14.06,1.94,1.06,66.42,"224,075",—
+KFY,KORN FERRY,lynch,True,3,4,75.0,76.55,14.66,2.04,14.06,1.94,1.06,66.42,"224,075",—
+PRDO,PERDOCEO EDUCATION CORP,piotroski,True,8,9,88.9,29.81,12.32,2.03,16.45,5.06,—,28.29,"728,574",—
 HRB,H&R BLOCK INC,greenblatt,True,3,3,100.0,51.31,9.07,56.28,624,1.13,26.72,10.78,3M,—
 HRB,H&R BLOCK INC,piotroski,True,8,9,88.9,51.31,9.07,56.28,624,1.13,26.72,10.78,3M,—
-BFAM,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,piotroski,True,8,9,88.9,54.98,16.36,2.36,14.42,0.52,1.90,41.99,7M,—
-BFAM,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,lynch,True,3,4,75.0,54.98,16.36,2.36,14.42,0.52,1.90,41.99,7M,—
-PLUS,ePlus inc.,piotroski,True,7,9,77.8,92.91,18.47,2.29,12.41,2.24,0.68,67.73,"260,762",—
-FIZZ,National Beverage Corp.,buffett,True,5,6,83.3,35.30,18.01,5.20,28.89,4.39,0.34,17.30,"278,002",—
-WLY,"JOHN WILEY & SONS, INC.",piotroski,True,9,9,100.0,51.17,12.30,3.21,26.13,0.54,2.06,38.61,"397,335",—
-CW,CURTISS-WRIGHT CORPORATION,piotroski,True,8,9,88.9,476,36.99,7.07,19.11,1.44,1.06,140,"261,044",—
-SCSC,"ScanSource, Inc.",piotroski,True,7,9,77.8,57.71,15.85,1.37,8.66,1.76,1.12,58.64,"416,488",—
-SCSC,"ScanSource, Inc.",lynch,True,3,4,75.0,57.71,15.85,1.37,8.66,1.76,1.12,58.64,"416,488",—
-CPK,CHESAPEAKE UTILITIES CORP,piotroski,True,7,9,77.8,136,22.85,2.00,8.78,0.45,—,95.61,"177,513",—
-DLB,"Dolby Laboratories, Inc.",piotroski,True,7,9,77.8,61.99,23.66,2.30,9.72,3.17,0.23,39.82,"688,770",—
-UMH,"UMH PROPERTIES, INC.",piotroski,True,7,9,77.8,15.15,216,1.42,2.90,—,0.87,4.10,"495,749",—
-PACS,"PACS Group, Inc.",piotroski,True,8,9,88.9,47.81,39.19,7.91,20.23,1.07,4.89,12.88,"591,191",—
-TRIP,"TRIPADVISOR, INC.",piotroski,True,8,9,88.9,9.22,29.74,1.87,6.20,1.29,3.07,5.86,4M,—
-FAF,FIRST AMERICAN FINANCIAL CORPORATION,piotroski,True,8,9,88.9,63.82,10.64,1.20,11.31,—,1.95,84.61,1M,—
-CXW,"CORECIVIC, INC.",piotroski,True,8,9,88.9,30.88,28.59,2.35,8.29,1.66,1.32,17.86,1M,—
-VMD,"VIEMED HEALTHCARE, INC.",piotroski,True,7,9,77.8,9.67,26.14,2.79,10.55,1.18,0.39,5.37,"119,529",—
-KN,Knowles Corporation,piotroski,True,7,9,77.8,32.87,65.74,3.73,5.70,2.75,—,9.96,"886,766",—
-PHIN,PHINIA INC.,piotroski,True,8,9,88.9,62.92,19.42,1.59,8.19,1.86,1.41,53.71,"430,845",—
-MCS,MARCUS CORP,piotroski,True,7,9,77.8,26.55,65.44,1.82,2.77,0.40,—,11.55,"303,557",—
-SENS,"Senseonics Holdings, Inc.",piotroski,True,7,9,77.8,9.51,—,6.50,-113,4.83,1.07,—,"988,571",—
-BJRI,"BJ’S RESTAURANTS, INC.",piotroski,True,7,9,77.8,62.53,28.95,3.86,13.33,0.40,1.77,28.05,"396,123",—
-CF,"CF INDUSTRIES HOLDINGS, INC.",graham,False,6,9,66.7,123,13.75,4.13,37.16,3.37,—,77.59,2M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",netnet,False,1,4,25.0,123,13.75,4.13,37.16,3.37,—,77.59,2M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",custom,False,0,0,0.0,123,13.75,4.13,37.16,3.37,—,77.59,2M,—
-YELP,YELP INC,graham,False,7,9,77.8,19.09,8.52,1.75,20.48,2.99,0.35,23.46,1M,—
-YELP,YELP INC,buffett,False,3,6,50.0,19.09,8.52,1.75,20.48,2.99,0.35,23.46,1M,—
-YELP,YELP INC,lynch,False,2,4,50.0,19.09,8.52,1.75,20.48,2.99,0.35,23.46,1M,—
-YELP,YELP INC,netnet,False,2,4,50.0,19.09,8.52,1.75,20.48,2.99,0.35,23.46,1M,—
-YELP,YELP INC,custom,False,0,0,0.0,19.09,8.52,1.75,20.48,2.99,0.35,23.46,1M,—
-LRN,"STRIDE, INC.",graham,False,7,9,77.8,78.36,10.97,2.27,20.72,5.94,0.49,74.43,"634,124",—
-LRN,"STRIDE, INC.",greenblatt,False,2,3,66.7,78.36,10.97,2.27,20.72,5.94,0.49,74.43,"634,124",—
-LRN,"STRIDE, INC.",netnet,False,2,4,50.0,78.36,10.97,2.27,20.72,5.94,0.49,74.43,"634,124",—
-LRN,"STRIDE, INC.",custom,False,0,0,0.0,78.36,10.97,2.27,20.72,5.94,0.49,74.43,"634,124",—
+HOG,"Harley-Davidson, Inc.",graham,True,9,9,100.0,31.22,11.23,1.21,10.79,2.10,—,40.25,3M,—
+HOG,"Harley-Davidson, Inc.",piotroski,True,8,9,88.9,31.22,11.23,1.21,10.79,2.10,—,40.25,3M,—
+OPY,OPPENHEIMER HOLDINGS INC.,piotroski,True,7,9,77.8,86.20,6.61,1.00,15.08,—,2.77,159,"264,927",—
+EGP,"EASTGROUP PROPERTIES, INC.",piotroski,True,7,9,77.8,199,40.83,3.00,7.36,—,0.55,85.17,"587,706",—
+EGP,"EASTGROUP PROPERTIES, INC.",lynch,True,3,4,75.0,199,40.83,3.00,7.36,—,0.55,85.17,"587,706",—
+EHC,Encompass Health Corporation,piotroski,True,9,9,100.0,136,24.53,5.70,23.22,1.08,1.56,54.53,2M,—
+TBB,AT&T INC.,piotroski,True,7,9,77.8,17.75,5.84,1.01,17.36,0.91,—,34.72,"363,963",—
+WCC,"WESCO International, Inc.",lynch,True,3,4,75.0,343,26.29,3.38,12.72,2.20,2.28,173,"557,388",—
+WAFD,"WaFd, Inc.",piotroski,True,7,9,77.8,29.35,11.16,0.77,7.44,—,7.78,47.34,"657,827",—
+KRT,Karat Packaging Inc.,piotroski,True,7,9,77.8,53.97,34.60,7.29,21.07,2.30,0.88,16.12,"106,556",—
+CENTA,Central Garden & Pet Company,piotroski,True,8,9,88.9,39.12,15.34,1.58,10.29,3.67,—,37.73,"457,888",—
+RBA,"RB Global, Inc",piotroski,True,7,9,77.8,89.69,43.97,3.01,7.69,1.10,1.09,36.99,3M,—
+FIGS,"FIGS, Inc.",piotroski,True,8,9,88.9,21.31,112,8.74,7.83,4.94,0.33,3.23,3M,—
+MAGN,Magnera Corporation,piotroski,True,7,9,77.8,11.80,—,0.39,-14.94,2.37,2.75,—,"253,199",—
+CBZ,"CBIZ, Inc.",piotroski,True,7,9,77.8,54.98,30.04,1.97,6.55,1.22,1.50,33.87,4M,—
+TBCH,TURTLE BEACH CORPORATION,piotroski,True,7,9,77.8,16.05,20.84,2.56,12.24,1.98,1.09,10.43,"490,766",—
+QUAD,"Quad/Graphics, Inc.",piotroski,True,7,9,77.8,7.20,13.33,—,-45.38,0.86,-18.90,—,"742,021",—
+WRBY,Warby Parker Inc.,piotroski,True,7,9,77.8,24.61,"2,461",8.37,0.45,2.35,0.96,0.81,3M,—
+POWW,Outdoor Holding Company,piotroski,True,8,9,88.9,2.37,—,1.18,-1.51,3.96,0.14,—,"385,852",—
+DAR,DARLING INGREDIENTS INC.,piotroski,True,7,9,77.8,55.73,143,1.88,1.33,1.50,1.16,16.11,2M,—
+TDAY,"USA TODAY CO., INC.",piotroski,True,7,9,77.8,6.18,618,5.82,1.13,0.75,10.85,0.49,3M,—
+HGTY,"HAGERTY, INC.",piotroski,False,6,9,66.7,15.58,—,—,67.43,—,6.09,—,"160,683",—
+HGTY,"HAGERTY, INC.",greenblatt,False,2,3,66.7,15.58,—,—,67.43,—,6.09,—,"160,683",—
+HGTY,"HAGERTY, INC.",buffett,False,3,6,50.0,15.58,—,—,67.43,—,6.09,—,"160,683",—
+HGTY,"HAGERTY, INC.",lynch,False,1,4,25.0,15.58,—,—,67.43,—,6.09,—,"160,683",—
+HGTY,"HAGERTY, INC.",netnet,False,1,4,25.0,15.58,—,—,67.43,—,6.09,—,"160,683",—
+HGTY,"HAGERTY, INC.",graham,False,1,9,11.1,15.58,—,—,67.43,—,6.09,—,"160,683",—
+HGTY,"HAGERTY, INC.",custom,False,0,0,0.0,15.58,—,—,67.43,—,6.09,—,"160,683",—
+UVE,"UNIVERSAL INSURANCE HOLDINGS, INC.",buffett,False,4,6,66.7,48.50,7.67,2.55,33.20,—,4.15,52.02,"279,702",—
+UVE,"UNIVERSAL INSURANCE HOLDINGS, INC.",graham,False,5,9,55.6,48.50,7.67,2.55,33.20,—,4.15,52.02,"279,702",—
+UVE,"UNIVERSAL INSURANCE HOLDINGS, INC.",lynch,False,2,4,50.0,48.50,7.67,2.55,33.20,—,4.15,52.02,"279,702",—
+UVE,"UNIVERSAL INSURANCE HOLDINGS, INC.",netnet,False,1,4,25.0,48.50,7.67,2.55,33.20,—,4.15,52.02,"279,702",—
+UVE,"UNIVERSAL INSURANCE HOLDINGS, INC.",custom,False,0,0,0.0,48.50,7.67,2.55,33.20,—,4.15,52.02,"279,702",—
+GEF,"GREIF, INC.",buffett,False,4,6,66.7,81.99,—,—,28.82,1.27,—,—,"339,911",—
+GEF,"GREIF, INC.",greenblatt,False,2,3,66.7,81.99,—,—,28.82,1.27,—,—,"339,911",—
+GEF,"GREIF, INC.",piotroski,False,5,9,55.6,81.99,—,—,28.82,1.27,—,—,"339,911",—
