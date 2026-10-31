@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-31 14:55 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-31 19:01 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **28** strategy matches passed.
+Screened **75** companies · **33** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| ACAD | ACADIA PHARMACEUTICALS INC. | greenblatt | ✅ | 100% | 20.59 | 8.95 | 2.85 | 31.86 | 3.83 | 0.27 | 1M | — |
-| UCFIW | CN Healthy Food Tech Group C | greenblatt | ✅ | 100% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 0.00 | — |
-| UCFIW | CN Healthy Food Tech Group C | netnet | ✅ | 100% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 0.00 | — |
-| QNST | QuinStreet, Inc. | greenblatt | ✅ | 100% | 17.40 | 12.43 | 3.13 | 25.14 | 1.22 | 1.23 | 783,575 | — |
-| QNST | QuinStreet, Inc. | lynch | ✅ | 75% | 17.40 | 12.43 | 3.13 | 25.14 | 1.22 | 1.23 | 783,575 | — |
-| PRI | Primerica, Inc. | greenblatt | ✅ | 100% | 281 | 12.27 | 3.76 | 30.71 | — | 5.14 | 211,898 | — |
-| PRI | Primerica, Inc. | piotroski | ✅ | 89% | 281 | 12.27 | 3.76 | 30.71 | — | 5.14 | 211,898 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | piotroski | ✅ | 100% | 166 | 23.49 | 8.05 | 34.27 | 1.46 | — | 616,106 | — |
-| SFM | Sprouts Farmers Market, Inc. | greenblatt | ✅ | 100% | 49.70 | 9.36 | 3.50 | 37.32 | 0.93 | 1.96 | 10M | — |
-| SFM | Sprouts Farmers Market, Inc. | piotroski | ✅ | 78% | 49.70 | 9.36 | 3.50 | 37.32 | 0.93 | 1.96 | 10M | — |
-| AES | THE AES CORPORATION | greenblatt | ✅ | 100% | 14.83 | 11.77 | 2.61 | 22.40 | 0.77 | — | 9M | — |
-| MTCH | Match Group, Inc. | piotroski | ✅ | 89% | 41.41 | 17.40 | — | -242 | 1.42 | — | 6M | — |
-| MTCH | Match Group, Inc. | lynch | ✅ | 75% | 41.41 | 17.40 | — | -242 | 1.42 | — | 6M | — |
-| BYND | BEYOND MEAT, INC. | greenblatt | ✅ | 100% | 6.91 | — | — | -21,968 | 4.56 | — | 1M | — |
-| JOE | The St. Joe Company | piotroski | ✅ | 89% | 70.02 | 35.19 | 5.30 | 15.09 | — | 0.97 | 371,167 | — |
-| DY | DYCOM INDUSTRIES, INC. | lynch | ✅ | 75% | 228 | 23.82 | 3.60 | 15.12 | 2.74 | 2.22 | 636,187 | — |
-| KRT | Karat Packaging Inc. | piotroski | ✅ | 78% | 53.97 | 34.60 | 7.29 | 21.07 | 2.30 | 0.88 | 106,560 | — |
-| BJ | BJ’S WHOLESALE CLUB HOLDINGS | piotroski | ✅ | 89% | 107 | 24.50 | 6.45 | 26.32 | 0.75 | 2.42 | 2M | — |
-| PFH | PRUDENTIAL FINANCIAL INC | piotroski | ✅ | 78% | 14.94 | 1.50 | 0.16 | 11.02 | — | 22.76 | 104,559 | — |
-| NMRK | NEWMARK GROUP, INC. | piotroski | ✅ | 89% | 11.52 | 16.94 | 2.00 | 8.63 | 1.05 | 2.24 | 4M | — |
-| IEX | IDEX CORP | piotroski | ✅ | 78% | 234 | 36.48 | 4.37 | 12.00 | 2.86 | 0.72 | 632,667 | — |
-| AMCX | AMC Global Media Inc. | piotroski | ✅ | 78% | 7.89 | 4.75 | 0.45 | 9.11 | 1.67 | 2.98 | 615,578 | — |
-| LUV | SOUTHWEST AIRLINES CO | piotroski | ✅ | 78% | 42.43 | 53.71 | 2.97 | 5.53 | 0.52 | — | 4M | — |
-| CRI | CARTER’S, INC. | graham | ✅ | 89% | 31.54 | 12.47 | 1.21 | 9.92 | 2.51 | 1.77 | 2M | — |
-| HCSG | HEALTHCARE SERVICES GROUP, I | piotroski | ✅ | 100% | 24.52 | 30.27 | 3.51 | 11.58 | 3.38 | — | 627,272 | — |
-| RRX | REGAL REXNORD CORP | piotroski | ✅ | 78% | 157 | 37.44 | 1.53 | 4.08 | 2.15 | — | 1M | — |
-| THO | THOR INDUSTRIES, INC. | piotroski | ✅ | 78% | 73.90 | 21.86 | 0.91 | 4.17 | 1.77 | — | 758,351 | — |
-| AVNW | Aviat Networks, Inc. | piotroski | ✅ | 78% | 20.17 | 106 | 0.98 | 0.95 | 1.97 | 1.24 | 259,613 | — |
-| ACAD | ACADIA PHARMACEUTICALS INC. | buffett | ▫️ | 67% | 20.59 | 8.95 | 2.85 | 31.86 | 3.83 | 0.27 | 1M | — |
-| ACAD | ACADIA PHARMACEUTICALS INC. | piotroski | ▫️ | 67% | 20.59 | 8.95 | 2.85 | 31.86 | 3.83 | 0.27 | 1M | — |
-| ACAD | ACADIA PHARMACEUTICALS INC. | graham | ▫️ | 56% | 20.59 | 8.95 | 2.85 | 31.86 | 3.83 | 0.27 | 1M | — |
-| ACAD | ACADIA PHARMACEUTICALS INC. | lynch | ▫️ | 50% | 20.59 | 8.95 | 2.85 | 31.86 | 3.83 | 0.27 | 1M | — |
-| ACAD | ACADIA PHARMACEUTICALS INC. | netnet | ▫️ | 50% | 20.59 | 8.95 | 2.85 | 31.86 | 3.83 | 0.27 | 1M | — |
-| ACAD | ACADIA PHARMACEUTICALS INC. | custom | ▫️ | 0% | 20.59 | 8.95 | 2.85 | 31.86 | 3.83 | 0.27 | 1M | — |
-| UCFIW | CN Healthy Food Tech Group C | graham | ▫️ | 56% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 0.00 | — |
-| UCFIW | CN Healthy Food Tech Group C | piotroski | ▫️ | 44% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 0.00 | — |
-| UCFIW | CN Healthy Food Tech Group C | buffett | ▫️ | 33% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 0.00 | — |
-| UCFIW | CN Healthy Food Tech Group C | lynch | ▫️ | 25% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 0.00 | — |
-| UCFIW | CN Healthy Food Tech Group C | custom | ▫️ | 0% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 0.00 | — |
-| QNST | QuinStreet, Inc. | piotroski | ▫️ | 67% | 17.40 | 12.43 | 3.13 | 25.14 | 1.22 | 1.23 | 783,575 | — |
-| QNST | QuinStreet, Inc. | buffett | ▫️ | 50% | 17.40 | 12.43 | 3.13 | 25.14 | 1.22 | 1.23 | 783,575 | — |
-| QNST | QuinStreet, Inc. | graham | ▫️ | 44% | 17.40 | 12.43 | 3.13 | 25.14 | 1.22 | 1.23 | 783,575 | — |
-| QNST | QuinStreet, Inc. | netnet | ▫️ | 25% | 17.40 | 12.43 | 3.13 | 25.14 | 1.22 | 1.23 | 783,575 | — |
-| QNST | QuinStreet, Inc. | custom | ▫️ | 0% | 17.40 | 12.43 | 3.13 | 25.14 | 1.22 | 1.23 | 783,575 | — |
-| PRI | Primerica, Inc. | buffett | ▫️ | 67% | 281 | 12.27 | 3.76 | 30.71 | — | 5.14 | 211,898 | — |
-| PRI | Primerica, Inc. | graham | ▫️ | 56% | 281 | 12.27 | 3.76 | 30.71 | — | 5.14 | 211,898 | — |
-| PRI | Primerica, Inc. | lynch | ▫️ | 50% | 281 | 12.27 | 3.76 | 30.71 | — | 5.14 | 211,898 | — |
-| PRI | Primerica, Inc. | netnet | ▫️ | 25% | 281 | 12.27 | 3.76 | 30.71 | — | 5.14 | 211,898 | — |
-| PRI | Primerica, Inc. | custom | ▫️ | 0% | 281 | 12.27 | 3.76 | 30.71 | — | 5.14 | 211,898 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | buffett | ▫️ | 67% | 166 | 23.49 | 8.05 | 34.27 | 1.46 | — | 616,106 | — |
+| FSLR | First Solar, Inc. | lynch | ✅ | 100% | 174 | 12.27 | 1.97 | 16.02 | 2.67 | 0.40 | 3M | — |
+| FSLR | First Solar, Inc. | piotroski | ✅ | 89% | 174 | 12.27 | 1.97 | 16.02 | 2.67 | 0.40 | 3M | — |
+| VRRM | VERRA MOBILITY CORPORATION | piotroski | ✅ | 100% | 2.80 | 3.29 | 1.54 | 46.64 | 2.09 | 4.62 | 13M | — |
+| RILY | BRC Group Holdings, Inc. | greenblatt | ✅ | 100% | 4.06 | 0.41 | — | -179 | — | -10.65 | 1M | — |
+| RILY | BRC Group Holdings, Inc. | lynch | ✅ | 75% | 4.06 | 0.41 | — | -179 | — | -10.65 | 1M | — |
+| XPEL | XPEL, INC. | buffett | ✅ | 100% | 45.65 | 24.68 | 4.51 | 18.28 | 3.25 | 0.35 | 155,195 | — |
+| XPEL | XPEL, INC. | lynch | ✅ | 75% | 45.65 | 24.68 | 4.51 | 18.28 | 3.25 | 0.35 | 155,195 | — |
+| URBN | Urban Outfitters, Inc. | piotroski | ✅ | 100% | 90.72 | 17.93 | 2.96 | 16.51 | 1.51 | 0.78 | 809,701 | — |
+| URBN | Urban Outfitters, Inc. | lynch | ✅ | 75% | 90.72 | 17.93 | 2.96 | 16.51 | 1.51 | 0.78 | 809,701 | — |
+| BELFA | BEL FUSE INC /NJ | piotroski | ✅ | 89% | 189 | — | — | 14.46 | 3.02 | 0.98 | 162,502 | — |
+| WTFC | WINTRUST FINANCIAL CORP | lynch | ✅ | 75% | 152 | 13.37 | 1.43 | 11.35 | — | 8.80 | 448,793 | — |
+| LMB | LIMBACH HOLDINGS, INC. | piotroski | ✅ | 78% | 48.40 | 14.98 | 2.99 | 19.97 | 1.44 | 0.95 | 144,589 | — |
+| LMB | LIMBACH HOLDINGS, INC. | lynch | ✅ | 75% | 48.40 | 14.98 | 2.99 | 19.97 | 1.44 | 0.95 | 144,589 | — |
+| FSS | FEDERAL SIGNAL CORPORATION | lynch | ✅ | 75% | 113 | 28.10 | 5.01 | 17.84 | 3.02 | 0.73 | 539,221 | — |
+| WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 11.74 | 2.32 | 1.33 | 57.56 | 1.39 | 2.18 | 2M | — |
+| UFPT | UFP Technologies, Inc. | lynch | ✅ | 100% | 284 | 32.51 | 5.24 | 16.12 | 2.68 | 0.55 | 85,062 | — |
+| UFPT | UFP Technologies, Inc. | piotroski | ✅ | 89% | 284 | 32.51 | 5.24 | 16.12 | 2.68 | 0.55 | 85,062 | — |
+| IOSP | INNOSPEC INC. | lynch | ✅ | 100% | 99.89 | 21.39 | 1.88 | 8.79 | 2.79 | 0.38 | 215,805 | — |
+| IOSP | INNOSPEC INC. | piotroski | ✅ | 89% | 99.89 | 21.39 | 1.88 | 8.79 | 2.79 | 0.38 | 215,805 | — |
+| CSTM | Constellium SE | piotroski | ✅ | 100% | 23.11 | 12.04 | 3.45 | 28.68 | 1.29 | 4.60 | 2M | — |
+| BURL | BURLINGTON STORES, INC. | piotroski | ✅ | 78% | 237 | 24.93 | 8.41 | 33.76 | 1.23 | — | 1M | — |
+| PLUS | ePlus inc. | piotroski | ✅ | 78% | 92.91 | 18.47 | 2.29 | 12.41 | 2.24 | 0.68 | 260,762 | — |
+| POST | Post Holdings, Inc. | lynch | ✅ | 75% | 83.22 | 15.10 | 1.39 | 8.94 | 1.67 | 2.60 | 552,501 | — |
+| RSI | Rush Street Interactive, Inc | piotroski | ✅ | 78% | 12.12 | 39.10 | 19.44 | 22.62 | 1.93 | 2.41 | 13M | — |
+| BCO | BRINK’S CO | piotroski | ✅ | 78% | 103 | 21.90 | 15.72 | 71.91 | 1.51 | 24.96 | 395,130 | — |
+| KNTK | KINETIK HOLDINGS INC. | lynch | ✅ | 75% | 56.60 | 21.52 | — | -31.53 | 0.69 | -7.37 | 1M | — |
+| SARO | StandardAero, Inc. | piotroski | ✅ | 89% | 23.38 | 28.17 | 2.93 | 10.40 | 2.20 | 1.46 | 5M | — |
+| FBNC | First Bancorp | piotroski | ✅ | 78% | 63.60 | 23.73 | 1.59 | 6.71 | — | 6.66 | 176,042 | — |
+| LFST | LifeStance Health Group, Inc | piotroski | ✅ | 89% | 13.40 | 542 | 3.45 | 0.64 | 1.65 | 0.45 | 2M | — |
+| LXP | LXP INDUSTRIAL TRUST | piotroski | ✅ | 78% | 61.18 | 33.62 | 1.76 | 5.56 | — | 0.73 | 3M | — |
+| MYE | Myers Industries, Inc. | piotroski | ✅ | 78% | 29.57 | 31.80 | 3.77 | 11.87 | 1.67 | 1.89 | 603,754 | — |
+| SMG | Scotts Miracle-Gro Co | piotroski | ✅ | 78% | 62.24 | 25.20 | — | -40.62 | 1.27 | -8.67 | 1M | — |
+| PTON | PELOTON INTERACTIVE, INC. | piotroski | ✅ | 89% | 5.12 | 36.57 | — | -45.24 | 2.84 | -15.72 | 5M | — |
+| FSLR | First Solar, Inc. | graham | ▫️ | 67% | 174 | 12.27 | 1.97 | 16.02 | 2.67 | 0.40 | 3M | — |
+| FSLR | First Solar, Inc. | buffett | ▫️ | 67% | 174 | 12.27 | 1.97 | 16.02 | 2.67 | 0.40 | 3M | — |
+| FSLR | First Solar, Inc. | greenblatt | ▫️ | 67% | 174 | 12.27 | 1.97 | 16.02 | 2.67 | 0.40 | 3M | — |
+| FSLR | First Solar, Inc. | netnet | ▫️ | 50% | 174 | 12.27 | 1.97 | 16.02 | 2.67 | 0.40 | 3M | — |
+| FSLR | First Solar, Inc. | custom | ▫️ | 0% | 174 | 12.27 | 1.97 | 16.02 | 2.67 | 0.40 | 3M | — |
+| VRRM | VERRA MOBILITY CORPORATION | graham | ▫️ | 67% | 2.80 | 3.29 | 1.54 | 46.64 | 2.09 | 4.62 | 13M | — |
+| VRRM | VERRA MOBILITY CORPORATION | greenblatt | ▫️ | 67% | 2.80 | 3.29 | 1.54 | 46.64 | 2.09 | 4.62 | 13M | — |
+| VRRM | VERRA MOBILITY CORPORATION | buffett | ▫️ | 50% | 2.80 | 3.29 | 1.54 | 46.64 | 2.09 | 4.62 | 13M | — |
+| VRRM | VERRA MOBILITY CORPORATION | lynch | ▫️ | 25% | 2.80 | 3.29 | 1.54 | 46.64 | 2.09 | 4.62 | 13M | — |
+| VRRM | VERRA MOBILITY CORPORATION | netnet | ▫️ | 25% | 2.80 | 3.29 | 1.54 | 46.64 | 2.09 | 4.62 | 13M | — |
+| VRRM | VERRA MOBILITY CORPORATION | custom | ▫️ | 0% | 2.80 | 3.29 | 1.54 | 46.64 | 2.09 | 4.62 | 13M | — |
+| MGY | Magnolia Oil & Gas Corp | piotroski | ▫️ | 67% | 26.50 | 15.12 | 2.46 | 16.27 | 1.54 | — | 2M | — |
+| MGY | Magnolia Oil & Gas Corp | buffett | ▫️ | 50% | 26.50 | 15.12 | 2.46 | 16.27 | 1.54 | — | 2M | — |
+| MGY | Magnolia Oil & Gas Corp | graham | ▫️ | 33% | 26.50 | 15.12 | 2.46 | 16.27 | 1.54 | — | 2M | — |
+| MGY | Magnolia Oil & Gas Corp | greenblatt | ▫️ | 33% | 26.50 | 15.12 | 2.46 | 16.27 | 1.54 | — | 2M | — |
+| MGY | Magnolia Oil & Gas Corp | lynch | ▫️ | 25% | 26.50 | 15.12 | 2.46 | 16.27 | 1.54 | — | 2M | — |
+| MGY | Magnolia Oil & Gas Corp | netnet | ▫️ | 25% | 26.50 | 15.12 | 2.46 | 16.27 | 1.54 | — | 2M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
