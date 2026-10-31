@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-31 02:33 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-31 08:43 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **35** strategy matches passed.
+Screened **75** companies · **33** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| UVE | UNIVERSAL INSURANCE HOLDINGS | greenblatt | ✅ | 100% | 48.50 | 7.67 | 2.55 | 33.20 | — | 4.15 | 279,702 | — |
-| UVE | UNIVERSAL INSURANCE HOLDINGS | piotroski | ✅ | 89% | 48.50 | 7.67 | 2.55 | 33.20 | — | 4.15 | 279,702 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | piotroski | ✅ | 78% | 28.72 | 6.33 | 1.86 | 29.41 | 1.47 | 1.81 | 1M | — |
-| CRS | CARPENTER TECHNOLOGY CORPORA | piotroski | ✅ | 89% | 283 | 26.91 | 6.40 | 23.78 | 3.81 | 0.72 | 1M | — |
-| RILY | BRC Group Holdings, Inc. | greenblatt | ✅ | 100% | 4.06 | 0.41 | — | -179 | — | -10.65 | 1M | — |
-| RILY | BRC Group Holdings, Inc. | lynch | ✅ | 75% | 4.06 | 0.41 | — | -179 | — | -10.65 | 1M | — |
+| VITL | Vital Farms, Inc. | graham | ✅ | 100% | 8.67 | 6.02 | 1.14 | 18.87 | 2.16 | 0.48 | 2M | — |
+| VITL | Vital Farms, Inc. | lynch | ✅ | 100% | 8.67 | 6.02 | 1.14 | 18.87 | 2.16 | 0.48 | 2M | — |
+| OTTR | OTTER TAIL CORPORATION | lynch | ✅ | 75% | 90.35 | 13.79 | 2.04 | 14.82 | 2.28 | — | 199,950 | — |
+| PFS | PROVIDENT FINANCIAL SERVICES | piotroski | ✅ | 78% | 22.94 | 10.29 | 1.06 | 10.28 | — | 7.82 | 955,934 | — |
+| PFS | PROVIDENT FINANCIAL SERVICES | lynch | ✅ | 75% | 22.94 | 10.29 | 1.06 | 10.28 | — | 7.82 | 955,934 | — |
 | SFM | Sprouts Farmers Market, Inc. | greenblatt | ✅ | 100% | 49.70 | 9.36 | 3.50 | 37.32 | 0.93 | 1.96 | 10M | — |
 | SFM | Sprouts Farmers Market, Inc. | piotroski | ✅ | 78% | 49.70 | 9.36 | 3.50 | 37.32 | 0.93 | 1.96 | 10M | — |
-| LII | LENNOX INTERNATIONAL INC | lynch | ✅ | 75% | 344 | 15.10 | 10.47 | 69.28 | 1.60 | 2.51 | 824,144 | — |
-| KFY | KORN FERRY | piotroski | ✅ | 100% | 76.55 | 14.66 | 2.04 | 14.06 | 1.94 | 1.06 | 224,075 | — |
-| KFY | KORN FERRY | lynch | ✅ | 75% | 76.55 | 14.66 | 2.04 | 14.06 | 1.94 | 1.06 | 224,075 | — |
-| PRDO | PERDOCEO EDUCATION CORP | piotroski | ✅ | 89% | 29.81 | 12.32 | 2.03 | 16.45 | 5.06 | — | 728,574 | — |
-| HRB | H&R BLOCK INC | greenblatt | ✅ | 100% | 51.31 | 9.07 | 56.28 | 624 | 1.13 | 26.72 | 3M | — |
-| HRB | H&R BLOCK INC | piotroski | ✅ | 89% | 51.31 | 9.07 | 56.28 | 624 | 1.13 | 26.72 | 3M | — |
-| HOG | Harley-Davidson, Inc. | graham | ✅ | 100% | 31.22 | 11.23 | 1.21 | 10.79 | 2.10 | — | 3M | — |
-| HOG | Harley-Davidson, Inc. | piotroski | ✅ | 89% | 31.22 | 11.23 | 1.21 | 10.79 | 2.10 | — | 3M | — |
+| IBP | Installed Building Products, | piotroski | ✅ | 89% | 213 | 21.97 | 8.21 | 37.39 | 3.03 | 1.91 | 279,068 | — |
+| IBP | Installed Building Products, | lynch | ✅ | 75% | 213 | 21.97 | 8.21 | 37.39 | 3.03 | 1.91 | 279,068 | — |
+| SEATW | Vivid Seats Inc. | greenblatt | ✅ | 100% | 0.02 | 0.02 | — | -947 | 0.59 | -8.48 | 2M | — |
+| KRG | KITE REALTY GROUP TRUST | piotroski | ✅ | 89% | 25.07 | 18.30 | 1.78 | 9.72 | — | 1.13 | 3M | — |
+| DUKU | Duke Energy CORP | piotroski | ✅ | 89% | 51.33 | 8.13 | 0.77 | 9.58 | 0.55 | — | 5M | — |
+| DUKU | Duke Energy CORP | lynch | ✅ | 75% | 51.33 | 8.13 | 0.77 | 9.58 | 0.55 | — | 5M | — |
+| CSTM | Constellium SE | piotroski | ✅ | 100% | 23.11 | 12.04 | 3.45 | 28.68 | 1.29 | 4.60 | 2M | — |
+| EFC | Ellington Financial Inc. | lynch | ✅ | 75% | 11.41 | 9.59 | 0.63 | 6.47 | — | 9.53 | 2M | — |
+| ORI | OLD REPUBLIC INTERNATIONAL C | piotroski | ✅ | 78% | 38.52 | 10.35 | 1.64 | 15.82 | — | 4.05 | 2M | — |
+| ADUS | Addus HomeCare Corp | piotroski | ✅ | 89% | 126 | 24.05 | 2.13 | 8.84 | 1.80 | 0.32 | 300,292 | — |
+| ADUS | Addus HomeCare Corp | lynch | ✅ | 75% | 126 | 24.05 | 2.13 | 8.84 | 1.80 | 0.32 | 300,292 | — |
+| PCTY | Paylocity Holding Corporatio | piotroski | ✅ | 89% | 171 | 34.74 | 7.66 | 22.08 | 1.09 | 3.00 | 835,723 | — |
 | OPY | OPPENHEIMER HOLDINGS INC. | piotroski | ✅ | 78% | 86.20 | 6.61 | 1.00 | 15.08 | — | 2.77 | 264,927 | — |
-| EGP | EASTGROUP PROPERTIES, INC. | piotroski | ✅ | 78% | 199 | 40.83 | 3.00 | 7.36 | — | 0.55 | 587,706 | — |
-| EGP | EASTGROUP PROPERTIES, INC. | lynch | ✅ | 75% | 199 | 40.83 | 3.00 | 7.36 | — | 0.55 | 587,706 | — |
-| EHC | Encompass Health Corporation | piotroski | ✅ | 100% | 136 | 24.53 | 5.70 | 23.22 | 1.08 | 1.56 | 2M | — |
-| TBB | AT&T INC. | piotroski | ✅ | 78% | 17.75 | 5.84 | 1.01 | 17.36 | 0.91 | — | 363,963 | — |
-| WCC | WESCO International, Inc. | lynch | ✅ | 75% | 343 | 26.29 | 3.38 | 12.72 | 2.20 | 2.28 | 557,388 | — |
-| WAFD | WaFd, Inc. | piotroski | ✅ | 78% | 29.35 | 11.16 | 0.77 | 7.44 | — | 7.78 | 657,827 | — |
-| KRT | Karat Packaging Inc. | piotroski | ✅ | 78% | 53.97 | 34.60 | 7.29 | 21.07 | 2.30 | 0.88 | 106,556 | — |
-| CENTA | Central Garden & Pet Company | piotroski | ✅ | 89% | 39.12 | 15.34 | 1.58 | 10.29 | 3.67 | — | 457,888 | — |
-| RBA | RB Global, Inc | piotroski | ✅ | 78% | 89.69 | 43.97 | 3.01 | 7.69 | 1.10 | 1.09 | 3M | — |
-| FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 21.31 | 112 | 8.74 | 7.83 | 4.94 | 0.33 | 3M | — |
-| MAGN | Magnera Corporation | piotroski | ✅ | 78% | 11.80 | — | 0.39 | -14.94 | 2.37 | 2.75 | 253,199 | — |
-| CBZ | CBIZ, Inc. | piotroski | ✅ | 78% | 54.98 | 30.04 | 1.97 | 6.55 | 1.22 | 1.50 | 4M | — |
-| TBCH | TURTLE BEACH CORPORATION | piotroski | ✅ | 78% | 16.05 | 20.84 | 2.56 | 12.24 | 1.98 | 1.09 | 490,766 | — |
+| WLY | JOHN WILEY & SONS, INC. | piotroski | ✅ | 100% | 51.17 | 12.30 | 3.21 | 26.13 | 0.54 | 2.06 | 397,344 | — |
+| SIRI | Sirius XM Holdings Inc. | lynch | ✅ | 75% | 29.01 | 13.01 | 0.90 | 6.96 | 0.30 | 1.36 | 7M | — |
+| SCSC | ScanSource, Inc. | piotroski | ✅ | 78% | 57.71 | 15.85 | 1.37 | 8.66 | 1.76 | 1.12 | 416,488 | — |
+| SCSC | ScanSource, Inc. | lynch | ✅ | 75% | 57.71 | 15.85 | 1.37 | 8.66 | 1.76 | 1.12 | 416,488 | — |
+| FMNB | FARMERS NATIONAL BANC CORP / | piotroski | ✅ | 89% | 15.64 | 10.79 | 1.21 | 11.24 | — | 9.80 | 349,518 | — |
+| PFH | PRUDENTIAL FINANCIAL INC | piotroski | ✅ | 78% | 14.94 | 1.50 | 0.16 | 11.02 | — | 22.76 | 104,559 | — |
+| VMD | VIEMED HEALTHCARE, INC. | piotroski | ✅ | 78% | 9.67 | 26.14 | 2.79 | 10.55 | 1.18 | 0.39 | 119,529 | — |
+| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 47.60 | 45.77 | — | -29.14 | 1.60 | -6.05 | 327,549 | — |
+| GCO | GENESCO INC | piotroski | ✅ | 89% | 37.65 | 30.12 | 0.71 | 2.34 | 1.64 | 1.46 | 143,008 | — |
 | QUAD | Quad/Graphics, Inc. | piotroski | ✅ | 78% | 7.20 | 13.33 | — | -45.38 | 0.86 | -18.90 | 742,021 | — |
-| WRBY | Warby Parker Inc. | piotroski | ✅ | 78% | 24.61 | 2,461 | 8.37 | 0.45 | 2.35 | 0.96 | 3M | — |
-| POWW | Outdoor Holding Company | piotroski | ✅ | 89% | 2.37 | — | 1.18 | -1.51 | 3.96 | 0.14 | 385,852 | — |
-| DAR | DARLING INGREDIENTS INC. | piotroski | ✅ | 78% | 55.73 | 143 | 1.88 | 1.33 | 1.50 | 1.16 | 2M | — |
-| TDAY | USA TODAY CO., INC. | piotroski | ✅ | 78% | 6.18 | 618 | 5.82 | 1.13 | 0.75 | 10.85 | 3M | — |
-| HGTY | HAGERTY, INC. | piotroski | ▫️ | 67% | 15.58 | — | — | 67.43 | — | 6.09 | 160,683 | — |
-| HGTY | HAGERTY, INC. | greenblatt | ▫️ | 67% | 15.58 | — | — | 67.43 | — | 6.09 | 160,683 | — |
-| HGTY | HAGERTY, INC. | buffett | ▫️ | 50% | 15.58 | — | — | 67.43 | — | 6.09 | 160,683 | — |
-| HGTY | HAGERTY, INC. | lynch | ▫️ | 25% | 15.58 | — | — | 67.43 | — | 6.09 | 160,683 | — |
-| HGTY | HAGERTY, INC. | netnet | ▫️ | 25% | 15.58 | — | — | 67.43 | — | 6.09 | 160,683 | — |
-| HGTY | HAGERTY, INC. | graham | ▫️ | 11% | 15.58 | — | — | 67.43 | — | 6.09 | 160,683 | — |
-| HGTY | HAGERTY, INC. | custom | ▫️ | 0% | 15.58 | — | — | 67.43 | — | 6.09 | 160,683 | — |
-| UVE | UNIVERSAL INSURANCE HOLDINGS | buffett | ▫️ | 67% | 48.50 | 7.67 | 2.55 | 33.20 | — | 4.15 | 279,702 | — |
-| UVE | UNIVERSAL INSURANCE HOLDINGS | graham | ▫️ | 56% | 48.50 | 7.67 | 2.55 | 33.20 | — | 4.15 | 279,702 | — |
-| UVE | UNIVERSAL INSURANCE HOLDINGS | lynch | ▫️ | 50% | 48.50 | 7.67 | 2.55 | 33.20 | — | 4.15 | 279,702 | — |
-| UVE | UNIVERSAL INSURANCE HOLDINGS | netnet | ▫️ | 25% | 48.50 | 7.67 | 2.55 | 33.20 | — | 4.15 | 279,702 | — |
-| UVE | UNIVERSAL INSURANCE HOLDINGS | custom | ▫️ | 0% | 48.50 | 7.67 | 2.55 | 33.20 | — | 4.15 | 279,702 | — |
-| GEF | GREIF, INC. | buffett | ▫️ | 67% | 81.99 | — | — | 28.82 | 1.27 | — | 339,911 | — |
-| GEF | GREIF, INC. | greenblatt | ▫️ | 67% | 81.99 | — | — | 28.82 | 1.27 | — | 339,911 | — |
-| GEF | GREIF, INC. | piotroski | ▫️ | 56% | 81.99 | — | — | 28.82 | 1.27 | — | 339,911 | — |
+| BNED | BARNES & NOBLE EDUCATION, IN | piotroski | ✅ | 89% | 12.67 | 25.86 | 1.49 | 5.73 | 1.71 | 1.51 | 257,926 | — |
+| AVNW | Aviat Networks, Inc. | piotroski | ✅ | 78% | 20.17 | 106 | 0.98 | 0.95 | 1.97 | 1.24 | 259,613 | — |
+| LILA | Liberty Latin America Ltd. | piotroski | ✅ | 78% | 8.44 | — | 3.03 | -110 | 1.14 | 20.09 | 380,038 | — |
+| VITL | Vital Farms, Inc. | greenblatt | ▫️ | 67% | 8.67 | 6.02 | 1.14 | 18.87 | 2.16 | 0.48 | 2M | — |
+| VITL | Vital Farms, Inc. | buffett | ▫️ | 50% | 8.67 | 6.02 | 1.14 | 18.87 | 2.16 | 0.48 | 2M | — |
+| VITL | Vital Farms, Inc. | netnet | ▫️ | 50% | 8.67 | 6.02 | 1.14 | 18.87 | 2.16 | 0.48 | 2M | — |
+| VITL | Vital Farms, Inc. | piotroski | ▫️ | 33% | 8.67 | 6.02 | 1.14 | 18.87 | 2.16 | 0.48 | 2M | — |
+| VITL | Vital Farms, Inc. | custom | ▫️ | 0% | 8.67 | 6.02 | 1.14 | 18.87 | 2.16 | 0.48 | 2M | — |
+| DEC | Diversified Energy Company | greenblatt | ▫️ | 67% | 14.44 | 3.15 | 1.09 | 34.66 | 0.60 | 5.26 | 1M | — |
+| DEC | Diversified Energy Company | graham | ▫️ | 56% | 14.44 | 3.15 | 1.09 | 34.66 | 0.60 | 5.26 | 1M | — |
+| DEC | Diversified Energy Company | buffett | ▫️ | 33% | 14.44 | 3.15 | 1.09 | 34.66 | 0.60 | 5.26 | 1M | — |
+| DEC | Diversified Energy Company | piotroski | ▫️ | 33% | 14.44 | 3.15 | 1.09 | 34.66 | 0.60 | 5.26 | 1M | — |
+| DEC | Diversified Energy Company | lynch | ▫️ | 25% | 14.44 | 3.15 | 1.09 | 34.66 | 0.60 | 5.26 | 1M | — |
+| DEC | Diversified Energy Company | netnet | ▫️ | 25% | 14.44 | 3.15 | 1.09 | 34.66 | 0.60 | 5.26 | 1M | — |
+| DEC | Diversified Energy Company | custom | ▫️ | 0% | 14.44 | 3.15 | 1.09 | 34.66 | 0.60 | 5.26 | 1M | — |
+| OTTR | OTTER TAIL CORPORATION | graham | ▫️ | 67% | 90.35 | 13.79 | 2.04 | 14.82 | 2.28 | — | 199,950 | — |
+| OTTR | OTTER TAIL CORPORATION | piotroski | ▫️ | 67% | 90.35 | 13.79 | 2.04 | 14.82 | 2.28 | — | 199,950 | — |
+| OTTR | OTTER TAIL CORPORATION | buffett | ▫️ | 50% | 90.35 | 13.79 | 2.04 | 14.82 | 2.28 | — | 199,950 | — |
+| OTTR | OTTER TAIL CORPORATION | greenblatt | ▫️ | 33% | 90.35 | 13.79 | 2.04 | 14.82 | 2.28 | — | 199,950 | — |
+| OTTR | OTTER TAIL CORPORATION | netnet | ▫️ | 25% | 90.35 | 13.79 | 2.04 | 14.82 | 2.28 | — | 199,950 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
