@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-FSLR,"First Solar, Inc.",lynch,True,4,4,100.0,174,12.27,1.97,16.02,2.67,0.40,168,3M,—
-FSLR,"First Solar, Inc.",piotroski,True,8,9,88.9,174,12.27,1.97,16.02,2.67,0.40,168,3M,—
-VRRM,VERRA MOBILITY CORPORATION,piotroski,True,9,9,100.0,2.80,3.29,1.54,46.64,2.09,4.62,5.89,13M,—
-RILY,"BRC Group Holdings, Inc.",greenblatt,True,3,3,100.0,4.06,0.41,—,-179,—,-10.65,—,1M,—
-RILY,"BRC Group Holdings, Inc.",lynch,True,3,4,75.0,4.06,0.41,—,-179,—,-10.65,—,1M,—
-XPEL,"XPEL, INC.",buffett,True,6,6,100.0,45.65,24.68,4.51,18.28,3.25,0.35,20.53,"155,195",—
-XPEL,"XPEL, INC.",lynch,True,3,4,75.0,45.65,24.68,4.51,18.28,3.25,0.35,20.53,"155,195",—
-URBN,"Urban Outfitters, Inc.",piotroski,True,9,9,100.0,90.72,17.93,2.96,16.51,1.51,0.78,59.09,"809,701",—
-URBN,"Urban Outfitters, Inc.",lynch,True,3,4,75.0,90.72,17.93,2.96,16.51,1.51,0.78,59.09,"809,701",—
-BELFA,BEL FUSE INC /NJ,piotroski,True,8,9,88.9,189,—,—,14.46,3.02,0.98,—,"162,502",—
-WTFC,WINTRUST FINANCIAL CORP,lynch,True,3,4,75.0,152,13.37,1.43,11.35,—,8.80,166,"448,793",—
-LMB,"LIMBACH HOLDINGS, INC.",piotroski,True,7,9,77.8,48.40,14.98,2.99,19.97,1.44,0.95,34.31,"144,589",—
-LMB,"LIMBACH HOLDINGS, INC.",lynch,True,3,4,75.0,48.40,14.98,2.99,19.97,1.44,0.95,34.31,"144,589",—
-FSS,FEDERAL SIGNAL CORPORATION,lynch,True,3,4,75.0,113,28.10,5.01,17.84,3.02,0.73,45.03,"539,221",—
-WNC,WABASH NATIONAL CORPORATION,greenblatt,True,3,3,100.0,11.74,2.32,1.33,57.56,1.39,2.18,31.68,2M,—
-UFPT,"UFP Technologies, Inc.",lynch,True,4,4,100.0,284,32.51,5.24,16.12,2.68,0.55,103,"85,062",—
-UFPT,"UFP Technologies, Inc.",piotroski,True,8,9,88.9,284,32.51,5.24,16.12,2.68,0.55,103,"85,062",—
-IOSP,INNOSPEC INC.,lynch,True,4,4,100.0,99.89,21.39,1.88,8.79,2.79,0.38,74.67,"215,805",—
-IOSP,INNOSPEC INC.,piotroski,True,8,9,88.9,99.89,21.39,1.88,8.79,2.79,0.38,74.67,"215,805",—
-CSTM,Constellium SE,piotroski,True,9,9,100.0,23.11,12.04,3.45,28.68,1.29,4.60,17.02,2M,—
-BURL,"BURLINGTON STORES, INC.",piotroski,True,7,9,77.8,237,24.93,8.41,33.76,1.23,—,77.66,1M,—
-PLUS,ePlus inc.,piotroski,True,7,9,77.8,92.91,18.47,2.29,12.41,2.24,0.68,67.73,"260,762",—
-POST,"Post Holdings, Inc.",lynch,True,3,4,75.0,83.22,15.10,1.39,8.94,1.67,2.60,86.01,"552,501",—
-RSI,"Rush Street Interactive, Inc.",piotroski,True,7,9,77.8,12.12,39.10,19.44,22.62,1.93,2.41,2.09,13M,—
-BCO,BRINK’S CO,piotroski,True,7,9,77.8,103,21.90,15.72,71.91,1.51,24.96,26.26,"395,130",—
-KNTK,KINETIK HOLDINGS INC.,lynch,True,3,4,75.0,56.60,21.52,—,-31.53,0.69,-7.37,—,1M,—
+KMT,KENNAMETAL INC.,graham,True,9,9,100.0,29.10,6.58,1.44,21.81,2.62,0.99,44.90,"907,378",—
+KMT,KENNAMETAL INC.,lynch,True,3,4,75.0,29.10,6.58,1.44,21.81,2.62,0.99,44.90,"907,378",—
+PPC,PILGRIM’S PRIDE CORPORATION,piotroski,True,7,9,77.8,28.72,6.33,1.86,29.41,1.47,1.81,39.71,1M,—
+AIV,Apartment Investment and Management Company,greenblatt,True,3,3,100.0,1.57,0.41,0.61,151,—,3.10,14.95,2M,—
+EBF,"ENNIS, INC.",piotroski,True,7,9,77.8,21.38,12.88,1.78,13.81,3.72,0.16,21.19,"155,483",—
+IBEX,IBEX Limited,piotroski,True,9,9,100.0,44.73,14.29,3.89,27.22,2.10,0.82,28.45,"80,799",—
+OVV,Ovintiv Inc.,piotroski,True,8,9,88.9,72.62,15.19,1.68,11.09,0.54,0.82,68.09,3M,—
+AGX,ARGAN INC,lynch,True,3,4,75.0,344,35.33,10.53,29.80,1.59,1.57,84.62,"168,441",—
+GTX,Garrett Motion Inc.,lynch,True,4,4,100.0,20.91,13.76,—,-38.65,0.97,-3.95,—,4M,—
+GTX,Garrett Motion Inc.,piotroski,True,8,9,88.9,20.91,13.76,—,-38.65,0.97,-3.95,—,4M,—
+GL,GLOBE LIFE INC.,piotroski,True,7,9,77.8,159,11.31,2.20,19.44,—,4.16,151,"602,280",—
+NHC,NATIONAL HEALTHCARE CORP,piotroski,True,9,9,100.0,206,26.88,3.02,11.23,1.82,0.42,109,"135,868",—
+NHC,NATIONAL HEALTHCARE CORP,lynch,True,3,4,75.0,206,26.88,3.02,11.23,1.82,0.42,109,"135,868",—
+FIVE,"Five Below, Inc.",piotroski,True,9,9,100.0,241,37.24,6.09,16.35,2.01,1.25,75.89,"860,238",—
+AM,ANTERO MIDSTREAM CORPORATION,piotroski,True,7,9,77.8,21.47,24.97,5.25,20.95,3.41,1.98,8.90,3M,—
+CW,CURTISS-WRIGHT CORPORATION,piotroski,True,8,9,88.9,476,36.99,7.07,19.11,1.44,1.06,140,"261,044",—
 SARO,"StandardAero, Inc.",piotroski,True,8,9,88.9,23.38,28.17,2.93,10.40,2.20,1.46,12.21,5M,—
-FBNC,First Bancorp,piotroski,True,7,9,77.8,63.60,23.73,1.59,6.71,—,6.66,49.05,"176,042",—
-LFST,"LifeStance Health Group, Inc.",piotroski,True,8,9,88.9,13.40,542,3.45,0.64,1.65,0.45,1.47,2M,—
-LXP,LXP INDUSTRIAL TRUST,piotroski,True,7,9,77.8,61.18,33.62,1.76,5.56,—,0.73,37.74,3M,—
-MYE,"Myers Industries, Inc.",piotroski,True,7,9,77.8,29.57,31.80,3.77,11.87,1.67,1.89,12.80,"603,754",—
-SMG,Scotts Miracle-Gro Co,piotroski,True,7,9,77.8,62.24,25.20,—,-40.62,1.27,-8.67,—,1M,—
-PTON,"PELOTON INTERACTIVE, INC.",piotroski,True,8,9,88.9,5.12,36.57,—,-45.24,2.84,-15.72,—,5M,—
-FSLR,"First Solar, Inc.",graham,False,6,9,66.7,174,12.27,1.97,16.02,2.67,0.40,168,3M,—
-FSLR,"First Solar, Inc.",buffett,False,4,6,66.7,174,12.27,1.97,16.02,2.67,0.40,168,3M,—
-FSLR,"First Solar, Inc.",greenblatt,False,2,3,66.7,174,12.27,1.97,16.02,2.67,0.40,168,3M,—
-FSLR,"First Solar, Inc.",netnet,False,2,4,50.0,174,12.27,1.97,16.02,2.67,0.40,168,3M,—
-FSLR,"First Solar, Inc.",custom,False,0,0,0.0,174,12.27,1.97,16.02,2.67,0.40,168,3M,—
-VRRM,VERRA MOBILITY CORPORATION,graham,False,6,9,66.7,2.80,3.29,1.54,46.64,2.09,4.62,5.89,13M,—
-VRRM,VERRA MOBILITY CORPORATION,greenblatt,False,2,3,66.7,2.80,3.29,1.54,46.64,2.09,4.62,5.89,13M,—
-VRRM,VERRA MOBILITY CORPORATION,buffett,False,3,6,50.0,2.80,3.29,1.54,46.64,2.09,4.62,5.89,13M,—
-VRRM,VERRA MOBILITY CORPORATION,lynch,False,1,4,25.0,2.80,3.29,1.54,46.64,2.09,4.62,5.89,13M,—
-VRRM,VERRA MOBILITY CORPORATION,netnet,False,1,4,25.0,2.80,3.29,1.54,46.64,2.09,4.62,5.89,13M,—
-VRRM,VERRA MOBILITY CORPORATION,custom,False,0,0,0.0,2.80,3.29,1.54,46.64,2.09,4.62,5.89,13M,—
-MGY,Magnolia Oil & Gas Corp,piotroski,False,6,9,66.7,26.50,15.12,2.46,16.27,1.54,—,20.61,2M,—
-MGY,Magnolia Oil & Gas Corp,buffett,False,3,6,50.0,26.50,15.12,2.46,16.27,1.54,—,20.61,2M,—
-MGY,Magnolia Oil & Gas Corp,graham,False,3,9,33.3,26.50,15.12,2.46,16.27,1.54,—,20.61,2M,—
-MGY,Magnolia Oil & Gas Corp,greenblatt,False,1,3,33.3,26.50,15.12,2.46,16.27,1.54,—,20.61,2M,—
-MGY,Magnolia Oil & Gas Corp,lynch,False,1,4,25.0,26.50,15.12,2.46,16.27,1.54,—,20.61,2M,—
-MGY,Magnolia Oil & Gas Corp,netnet,False,1,4,25.0,26.50,15.12,2.46,16.27,1.54,—,20.61,2M,—
+PFH,PRUDENTIAL FINANCIAL INC,piotroski,True,7,9,77.8,14.94,1.50,0.16,11.02,—,22.76,144,"104,559",—
+CCK,"CROWN HOLDINGS, INC.",piotroski,True,8,9,88.9,119,18.69,4.60,24.61,1.03,—,60.99,"719,141",—
+NPKI,NPK International Inc.,piotroski,True,7,9,77.8,9.35,20.78,2.28,11.09,1.43,0.26,6.44,4M,—
+AIOT,"Powerfleet, Inc.",piotroski,True,7,9,77.8,2.89,—,0.81,-4.32,1.13,1.00,—,2M,—
+RRX,REGAL REXNORD CORP,piotroski,True,7,9,77.8,157,37.44,1.53,4.08,2.15,—,98.55,1M,—
+QUAD,"Quad/Graphics, Inc.",piotroski,True,7,9,77.8,7.20,13.33,—,-45.38,0.86,-18.90,—,"742,021",—
+USNA,"USANA HEALTH SCIENCES, INC.",piotroski,True,7,9,77.8,14.31,24.67,0.50,2.02,2.24,0.29,19.35,"141,020",—
+AVNW,"Aviat Networks, Inc.",piotroski,True,7,9,77.8,20.17,106,0.98,0.95,1.97,1.24,9.37,"259,613",—
+KMT,KENNAMETAL INC.,piotroski,False,6,9,66.7,29.10,6.58,1.44,21.81,2.62,0.99,44.90,"907,378",—
+KMT,KENNAMETAL INC.,greenblatt,False,2,3,66.7,29.10,6.58,1.44,21.81,2.62,0.99,44.90,"907,378",—
+KMT,KENNAMETAL INC.,buffett,False,3,6,50.0,29.10,6.58,1.44,21.81,2.62,0.99,44.90,"907,378",—
+KMT,KENNAMETAL INC.,netnet,False,2,4,50.0,29.10,6.58,1.44,21.81,2.62,0.99,44.90,"907,378",—
+KMT,KENNAMETAL INC.,custom,False,0,0,0.0,29.10,6.58,1.44,21.81,2.62,0.99,44.90,"907,378",—
+PPC,PILGRIM’S PRIDE CORPORATION,graham,False,6,9,66.7,28.72,6.33,1.86,29.41,1.47,1.81,39.71,1M,—
+PPC,PILGRIM’S PRIDE CORPORATION,greenblatt,False,2,3,66.7,28.72,6.33,1.86,29.41,1.47,1.81,39.71,1M,—
+PPC,PILGRIM’S PRIDE CORPORATION,buffett,False,3,6,50.0,28.72,6.33,1.86,29.41,1.47,1.81,39.71,1M,—
+PPC,PILGRIM’S PRIDE CORPORATION,lynch,False,2,4,50.0,28.72,6.33,1.86,29.41,1.47,1.81,39.71,1M,—
+PPC,PILGRIM’S PRIDE CORPORATION,netnet,False,1,4,25.0,28.72,6.33,1.86,29.41,1.47,1.81,39.71,1M,—
+PPC,PILGRIM’S PRIDE CORPORATION,custom,False,0,0,0.0,28.72,6.33,1.86,29.41,1.47,1.81,39.71,1M,—
+UROY,Uranium Royalty Corp.,graham,False,6,9,66.7,3.35,11.55,1.49,12.87,5.94,0.19,3.83,3M,—
+UROY,Uranium Royalty Corp.,greenblatt,False,2,3,66.7,3.35,11.55,1.49,12.87,5.94,0.19,3.83,3M,—
+UROY,Uranium Royalty Corp.,lynch,False,2,4,50.0,3.35,11.55,1.49,12.87,5.94,0.19,3.83,3M,—
+UROY,Uranium Royalty Corp.,netnet,False,2,4,50.0,3.35,11.55,1.49,12.87,5.94,0.19,3.83,3M,—
+UROY,Uranium Royalty Corp.,buffett,False,2,6,33.3,3.35,11.55,1.49,12.87,5.94,0.19,3.83,3M,—
+UROY,Uranium Royalty Corp.,piotroski,False,3,9,33.3,3.35,11.55,1.49,12.87,5.94,0.19,3.83,3M,—
+UROY,Uranium Royalty Corp.,custom,False,0,0,0.0,3.35,11.55,1.49,12.87,5.94,0.19,3.83,3M,—
+AIV,Apartment Investment and Management Company,piotroski,False,5,9,55.6,1.57,0.41,0.61,151,—,3.10,14.95,2M,—
+AIV,Apartment Investment and Management Company,graham,False,4,9,44.4,1.57,0.41,0.61,151,—,3.10,14.95,2M,—
+AIV,Apartment Investment and Management Company,buffett,False,2,6,33.3,1.57,0.41,0.61,151,—,3.10,14.95,2M,—
+AIV,Apartment Investment and Management Company,lynch,False,1,4,25.0,1.57,0.41,0.61,151,—,3.10,14.95,2M,—
+AIV,Apartment Investment and Management Company,netnet,False,1,4,25.0,1.57,0.41,0.61,151,—,3.10,14.95,2M,—
+AIV,Apartment Investment and Management Company,custom,False,0,0,0.0,1.57,0.41,0.61,151,—,3.10,14.95,2M,—
+EBF,"ENNIS, INC.",graham,False,6,9,66.7,21.38,12.88,1.78,13.81,3.72,0.16,21.19,"155,483",—

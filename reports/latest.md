@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-10-31 19:01 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-10-31 22:09 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **33** strategy matches passed.
+Screened **75** companies · **25** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| FSLR | First Solar, Inc. | lynch | ✅ | 100% | 174 | 12.27 | 1.97 | 16.02 | 2.67 | 0.40 | 3M | — |
-| FSLR | First Solar, Inc. | piotroski | ✅ | 89% | 174 | 12.27 | 1.97 | 16.02 | 2.67 | 0.40 | 3M | — |
-| VRRM | VERRA MOBILITY CORPORATION | piotroski | ✅ | 100% | 2.80 | 3.29 | 1.54 | 46.64 | 2.09 | 4.62 | 13M | — |
-| RILY | BRC Group Holdings, Inc. | greenblatt | ✅ | 100% | 4.06 | 0.41 | — | -179 | — | -10.65 | 1M | — |
-| RILY | BRC Group Holdings, Inc. | lynch | ✅ | 75% | 4.06 | 0.41 | — | -179 | — | -10.65 | 1M | — |
-| XPEL | XPEL, INC. | buffett | ✅ | 100% | 45.65 | 24.68 | 4.51 | 18.28 | 3.25 | 0.35 | 155,195 | — |
-| XPEL | XPEL, INC. | lynch | ✅ | 75% | 45.65 | 24.68 | 4.51 | 18.28 | 3.25 | 0.35 | 155,195 | — |
-| URBN | Urban Outfitters, Inc. | piotroski | ✅ | 100% | 90.72 | 17.93 | 2.96 | 16.51 | 1.51 | 0.78 | 809,701 | — |
-| URBN | Urban Outfitters, Inc. | lynch | ✅ | 75% | 90.72 | 17.93 | 2.96 | 16.51 | 1.51 | 0.78 | 809,701 | — |
-| BELFA | BEL FUSE INC /NJ | piotroski | ✅ | 89% | 189 | — | — | 14.46 | 3.02 | 0.98 | 162,502 | — |
-| WTFC | WINTRUST FINANCIAL CORP | lynch | ✅ | 75% | 152 | 13.37 | 1.43 | 11.35 | — | 8.80 | 448,793 | — |
-| LMB | LIMBACH HOLDINGS, INC. | piotroski | ✅ | 78% | 48.40 | 14.98 | 2.99 | 19.97 | 1.44 | 0.95 | 144,589 | — |
-| LMB | LIMBACH HOLDINGS, INC. | lynch | ✅ | 75% | 48.40 | 14.98 | 2.99 | 19.97 | 1.44 | 0.95 | 144,589 | — |
-| FSS | FEDERAL SIGNAL CORPORATION | lynch | ✅ | 75% | 113 | 28.10 | 5.01 | 17.84 | 3.02 | 0.73 | 539,221 | — |
-| WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 11.74 | 2.32 | 1.33 | 57.56 | 1.39 | 2.18 | 2M | — |
-| UFPT | UFP Technologies, Inc. | lynch | ✅ | 100% | 284 | 32.51 | 5.24 | 16.12 | 2.68 | 0.55 | 85,062 | — |
-| UFPT | UFP Technologies, Inc. | piotroski | ✅ | 89% | 284 | 32.51 | 5.24 | 16.12 | 2.68 | 0.55 | 85,062 | — |
-| IOSP | INNOSPEC INC. | lynch | ✅ | 100% | 99.89 | 21.39 | 1.88 | 8.79 | 2.79 | 0.38 | 215,805 | — |
-| IOSP | INNOSPEC INC. | piotroski | ✅ | 89% | 99.89 | 21.39 | 1.88 | 8.79 | 2.79 | 0.38 | 215,805 | — |
-| CSTM | Constellium SE | piotroski | ✅ | 100% | 23.11 | 12.04 | 3.45 | 28.68 | 1.29 | 4.60 | 2M | — |
-| BURL | BURLINGTON STORES, INC. | piotroski | ✅ | 78% | 237 | 24.93 | 8.41 | 33.76 | 1.23 | — | 1M | — |
-| PLUS | ePlus inc. | piotroski | ✅ | 78% | 92.91 | 18.47 | 2.29 | 12.41 | 2.24 | 0.68 | 260,762 | — |
-| POST | Post Holdings, Inc. | lynch | ✅ | 75% | 83.22 | 15.10 | 1.39 | 8.94 | 1.67 | 2.60 | 552,501 | — |
-| RSI | Rush Street Interactive, Inc | piotroski | ✅ | 78% | 12.12 | 39.10 | 19.44 | 22.62 | 1.93 | 2.41 | 13M | — |
-| BCO | BRINK’S CO | piotroski | ✅ | 78% | 103 | 21.90 | 15.72 | 71.91 | 1.51 | 24.96 | 395,130 | — |
-| KNTK | KINETIK HOLDINGS INC. | lynch | ✅ | 75% | 56.60 | 21.52 | — | -31.53 | 0.69 | -7.37 | 1M | — |
+| KMT | KENNAMETAL INC. | graham | ✅ | 100% | 29.10 | 6.58 | 1.44 | 21.81 | 2.62 | 0.99 | 907,378 | — |
+| KMT | KENNAMETAL INC. | lynch | ✅ | 75% | 29.10 | 6.58 | 1.44 | 21.81 | 2.62 | 0.99 | 907,378 | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | piotroski | ✅ | 78% | 28.72 | 6.33 | 1.86 | 29.41 | 1.47 | 1.81 | 1M | — |
+| AIV | Apartment Investment and Man | greenblatt | ✅ | 100% | 1.57 | 0.41 | 0.61 | 151 | — | 3.10 | 2M | — |
+| EBF | ENNIS, INC. | piotroski | ✅ | 78% | 21.38 | 12.88 | 1.78 | 13.81 | 3.72 | 0.16 | 155,483 | — |
+| IBEX | IBEX Limited | piotroski | ✅ | 100% | 44.73 | 14.29 | 3.89 | 27.22 | 2.10 | 0.82 | 80,799 | — |
+| OVV | Ovintiv Inc. | piotroski | ✅ | 89% | 72.62 | 15.19 | 1.68 | 11.09 | 0.54 | 0.82 | 3M | — |
+| AGX | ARGAN INC | lynch | ✅ | 75% | 344 | 35.33 | 10.53 | 29.80 | 1.59 | 1.57 | 168,441 | — |
+| GTX | Garrett Motion Inc. | lynch | ✅ | 100% | 20.91 | 13.76 | — | -38.65 | 0.97 | -3.95 | 4M | — |
+| GTX | Garrett Motion Inc. | piotroski | ✅ | 89% | 20.91 | 13.76 | — | -38.65 | 0.97 | -3.95 | 4M | — |
+| GL | GLOBE LIFE INC. | piotroski | ✅ | 78% | 159 | 11.31 | 2.20 | 19.44 | — | 4.16 | 602,280 | — |
+| NHC | NATIONAL HEALTHCARE CORP | piotroski | ✅ | 100% | 206 | 26.88 | 3.02 | 11.23 | 1.82 | 0.42 | 135,868 | — |
+| NHC | NATIONAL HEALTHCARE CORP | lynch | ✅ | 75% | 206 | 26.88 | 3.02 | 11.23 | 1.82 | 0.42 | 135,868 | — |
+| FIVE | Five Below, Inc. | piotroski | ✅ | 100% | 241 | 37.24 | 6.09 | 16.35 | 2.01 | 1.25 | 860,238 | — |
+| AM | ANTERO MIDSTREAM CORPORATION | piotroski | ✅ | 78% | 21.47 | 24.97 | 5.25 | 20.95 | 3.41 | 1.98 | 3M | — |
+| CW | CURTISS-WRIGHT CORPORATION | piotroski | ✅ | 89% | 476 | 36.99 | 7.07 | 19.11 | 1.44 | 1.06 | 261,044 | — |
 | SARO | StandardAero, Inc. | piotroski | ✅ | 89% | 23.38 | 28.17 | 2.93 | 10.40 | 2.20 | 1.46 | 5M | — |
-| FBNC | First Bancorp | piotroski | ✅ | 78% | 63.60 | 23.73 | 1.59 | 6.71 | — | 6.66 | 176,042 | — |
-| LFST | LifeStance Health Group, Inc | piotroski | ✅ | 89% | 13.40 | 542 | 3.45 | 0.64 | 1.65 | 0.45 | 2M | — |
-| LXP | LXP INDUSTRIAL TRUST | piotroski | ✅ | 78% | 61.18 | 33.62 | 1.76 | 5.56 | — | 0.73 | 3M | — |
-| MYE | Myers Industries, Inc. | piotroski | ✅ | 78% | 29.57 | 31.80 | 3.77 | 11.87 | 1.67 | 1.89 | 603,754 | — |
-| SMG | Scotts Miracle-Gro Co | piotroski | ✅ | 78% | 62.24 | 25.20 | — | -40.62 | 1.27 | -8.67 | 1M | — |
-| PTON | PELOTON INTERACTIVE, INC. | piotroski | ✅ | 89% | 5.12 | 36.57 | — | -45.24 | 2.84 | -15.72 | 5M | — |
-| FSLR | First Solar, Inc. | graham | ▫️ | 67% | 174 | 12.27 | 1.97 | 16.02 | 2.67 | 0.40 | 3M | — |
-| FSLR | First Solar, Inc. | buffett | ▫️ | 67% | 174 | 12.27 | 1.97 | 16.02 | 2.67 | 0.40 | 3M | — |
-| FSLR | First Solar, Inc. | greenblatt | ▫️ | 67% | 174 | 12.27 | 1.97 | 16.02 | 2.67 | 0.40 | 3M | — |
-| FSLR | First Solar, Inc. | netnet | ▫️ | 50% | 174 | 12.27 | 1.97 | 16.02 | 2.67 | 0.40 | 3M | — |
-| FSLR | First Solar, Inc. | custom | ▫️ | 0% | 174 | 12.27 | 1.97 | 16.02 | 2.67 | 0.40 | 3M | — |
-| VRRM | VERRA MOBILITY CORPORATION | graham | ▫️ | 67% | 2.80 | 3.29 | 1.54 | 46.64 | 2.09 | 4.62 | 13M | — |
-| VRRM | VERRA MOBILITY CORPORATION | greenblatt | ▫️ | 67% | 2.80 | 3.29 | 1.54 | 46.64 | 2.09 | 4.62 | 13M | — |
-| VRRM | VERRA MOBILITY CORPORATION | buffett | ▫️ | 50% | 2.80 | 3.29 | 1.54 | 46.64 | 2.09 | 4.62 | 13M | — |
-| VRRM | VERRA MOBILITY CORPORATION | lynch | ▫️ | 25% | 2.80 | 3.29 | 1.54 | 46.64 | 2.09 | 4.62 | 13M | — |
-| VRRM | VERRA MOBILITY CORPORATION | netnet | ▫️ | 25% | 2.80 | 3.29 | 1.54 | 46.64 | 2.09 | 4.62 | 13M | — |
-| VRRM | VERRA MOBILITY CORPORATION | custom | ▫️ | 0% | 2.80 | 3.29 | 1.54 | 46.64 | 2.09 | 4.62 | 13M | — |
-| MGY | Magnolia Oil & Gas Corp | piotroski | ▫️ | 67% | 26.50 | 15.12 | 2.46 | 16.27 | 1.54 | — | 2M | — |
-| MGY | Magnolia Oil & Gas Corp | buffett | ▫️ | 50% | 26.50 | 15.12 | 2.46 | 16.27 | 1.54 | — | 2M | — |
-| MGY | Magnolia Oil & Gas Corp | graham | ▫️ | 33% | 26.50 | 15.12 | 2.46 | 16.27 | 1.54 | — | 2M | — |
-| MGY | Magnolia Oil & Gas Corp | greenblatt | ▫️ | 33% | 26.50 | 15.12 | 2.46 | 16.27 | 1.54 | — | 2M | — |
-| MGY | Magnolia Oil & Gas Corp | lynch | ▫️ | 25% | 26.50 | 15.12 | 2.46 | 16.27 | 1.54 | — | 2M | — |
-| MGY | Magnolia Oil & Gas Corp | netnet | ▫️ | 25% | 26.50 | 15.12 | 2.46 | 16.27 | 1.54 | — | 2M | — |
+| PFH | PRUDENTIAL FINANCIAL INC | piotroski | ✅ | 78% | 14.94 | 1.50 | 0.16 | 11.02 | — | 22.76 | 104,559 | — |
+| CCK | CROWN HOLDINGS, INC. | piotroski | ✅ | 89% | 119 | 18.69 | 4.60 | 24.61 | 1.03 | — | 719,141 | — |
+| NPKI | NPK International Inc. | piotroski | ✅ | 78% | 9.35 | 20.78 | 2.28 | 11.09 | 1.43 | 0.26 | 4M | — |
+| AIOT | Powerfleet, Inc. | piotroski | ✅ | 78% | 2.89 | — | 0.81 | -4.32 | 1.13 | 1.00 | 2M | — |
+| RRX | REGAL REXNORD CORP | piotroski | ✅ | 78% | 157 | 37.44 | 1.53 | 4.08 | 2.15 | — | 1M | — |
+| QUAD | Quad/Graphics, Inc. | piotroski | ✅ | 78% | 7.20 | 13.33 | — | -45.38 | 0.86 | -18.90 | 742,021 | — |
+| USNA | USANA HEALTH SCIENCES, INC. | piotroski | ✅ | 78% | 14.31 | 24.67 | 0.50 | 2.02 | 2.24 | 0.29 | 141,020 | — |
+| AVNW | Aviat Networks, Inc. | piotroski | ✅ | 78% | 20.17 | 106 | 0.98 | 0.95 | 1.97 | 1.24 | 259,613 | — |
+| KMT | KENNAMETAL INC. | piotroski | ▫️ | 67% | 29.10 | 6.58 | 1.44 | 21.81 | 2.62 | 0.99 | 907,378 | — |
+| KMT | KENNAMETAL INC. | greenblatt | ▫️ | 67% | 29.10 | 6.58 | 1.44 | 21.81 | 2.62 | 0.99 | 907,378 | — |
+| KMT | KENNAMETAL INC. | buffett | ▫️ | 50% | 29.10 | 6.58 | 1.44 | 21.81 | 2.62 | 0.99 | 907,378 | — |
+| KMT | KENNAMETAL INC. | netnet | ▫️ | 50% | 29.10 | 6.58 | 1.44 | 21.81 | 2.62 | 0.99 | 907,378 | — |
+| KMT | KENNAMETAL INC. | custom | ▫️ | 0% | 29.10 | 6.58 | 1.44 | 21.81 | 2.62 | 0.99 | 907,378 | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | graham | ▫️ | 67% | 28.72 | 6.33 | 1.86 | 29.41 | 1.47 | 1.81 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | greenblatt | ▫️ | 67% | 28.72 | 6.33 | 1.86 | 29.41 | 1.47 | 1.81 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | buffett | ▫️ | 50% | 28.72 | 6.33 | 1.86 | 29.41 | 1.47 | 1.81 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | lynch | ▫️ | 50% | 28.72 | 6.33 | 1.86 | 29.41 | 1.47 | 1.81 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | netnet | ▫️ | 25% | 28.72 | 6.33 | 1.86 | 29.41 | 1.47 | 1.81 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | custom | ▫️ | 0% | 28.72 | 6.33 | 1.86 | 29.41 | 1.47 | 1.81 | 1M | — |
+| UROY | Uranium Royalty Corp. | graham | ▫️ | 67% | 3.35 | 11.55 | 1.49 | 12.87 | 5.94 | 0.19 | 3M | — |
+| UROY | Uranium Royalty Corp. | greenblatt | ▫️ | 67% | 3.35 | 11.55 | 1.49 | 12.87 | 5.94 | 0.19 | 3M | — |
+| UROY | Uranium Royalty Corp. | lynch | ▫️ | 50% | 3.35 | 11.55 | 1.49 | 12.87 | 5.94 | 0.19 | 3M | — |
+| UROY | Uranium Royalty Corp. | netnet | ▫️ | 50% | 3.35 | 11.55 | 1.49 | 12.87 | 5.94 | 0.19 | 3M | — |
+| UROY | Uranium Royalty Corp. | buffett | ▫️ | 33% | 3.35 | 11.55 | 1.49 | 12.87 | 5.94 | 0.19 | 3M | — |
+| UROY | Uranium Royalty Corp. | piotroski | ▫️ | 33% | 3.35 | 11.55 | 1.49 | 12.87 | 5.94 | 0.19 | 3M | — |
+| UROY | Uranium Royalty Corp. | custom | ▫️ | 0% | 3.35 | 11.55 | 1.49 | 12.87 | 5.94 | 0.19 | 3M | — |
+| AIV | Apartment Investment and Man | piotroski | ▫️ | 56% | 1.57 | 0.41 | 0.61 | 151 | — | 3.10 | 2M | — |
+| AIV | Apartment Investment and Man | graham | ▫️ | 44% | 1.57 | 0.41 | 0.61 | 151 | — | 3.10 | 2M | — |
+| AIV | Apartment Investment and Man | buffett | ▫️ | 33% | 1.57 | 0.41 | 0.61 | 151 | — | 3.10 | 2M | — |
+| AIV | Apartment Investment and Man | lynch | ▫️ | 25% | 1.57 | 0.41 | 0.61 | 151 | — | 3.10 | 2M | — |
+| AIV | Apartment Investment and Man | netnet | ▫️ | 25% | 1.57 | 0.41 | 0.61 | 151 | — | 3.10 | 2M | — |
+| AIV | Apartment Investment and Man | custom | ▫️ | 0% | 1.57 | 0.41 | 0.61 | 151 | — | 3.10 | 2M | — |
+| EBF | ENNIS, INC. | graham | ▫️ | 67% | 21.38 | 12.88 | 1.78 | 13.81 | 3.72 | 0.16 | 155,483 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
