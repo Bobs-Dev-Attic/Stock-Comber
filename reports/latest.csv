@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-HNRG,HALLADOR ENERGY CO,greenblatt,True,3,3,100.0,11.22,11.69,3.05,26.20,0.81,1.55,8.92,"828,226",—
-HNRG,HALLADOR ENERGY CO,piotroski,True,8,9,88.9,11.22,11.69,3.05,26.20,0.81,1.55,8.92,"828,226",—
-QNST,"QuinStreet, Inc.",greenblatt,True,3,3,100.0,17.40,12.43,3.13,25.14,1.22,1.23,13.23,"783,577",—
-QNST,"QuinStreet, Inc.",lynch,True,3,4,75.0,17.40,12.43,3.13,25.14,1.22,1.23,13.23,"783,577",—
-ESE,ESCO TECHNOLOGIES INC.,lynch,True,4,4,100.0,238,20.58,4.00,19.42,1.35,0.56,124,"233,933",—
-PRI,"Primerica, Inc.",greenblatt,True,3,3,100.0,281,12.27,3.76,30.71,—,5.14,196,"211,894",—
-PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,281,12.27,3.76,30.71,—,5.14,196,"211,894",—
+GRBK,"Green Brick Partners, Inc.",buffett,True,6,6,100.0,60.86,8.61,1.44,16.85,—,0.32,82.05,"404,378",—
+GRBK,"Green Brick Partners, Inc.",lynch,True,4,4,100.0,60.86,8.61,1.44,16.85,—,0.32,82.05,"404,378",—
+KMT,KENNAMETAL INC.,graham,True,9,9,100.0,29.10,6.58,1.44,21.81,2.62,0.99,44.90,"907,387",—
+KMT,KENNAMETAL INC.,lynch,True,3,4,75.0,29.10,6.58,1.44,21.81,2.62,0.99,44.90,"907,387",—
+SBC,SBC Medical Group Holdings Incorporated,lynch,True,3,4,75.0,5.28,10.55,2.19,20.54,3.78,0.47,5.21,"155,292",—
+VEL,"Velocity Financial, Inc.",lynch,True,3,4,75.0,15.72,5.72,0.89,15.62,—,9.97,33.01,"116,117",—
 SKYW,SKYWEST INC,piotroski,True,8,9,88.9,82.33,7.95,1.24,15.60,0.65,—,124,"829,206",—
-ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.21,5.25,0.15,4.91,1.93,0.73,1.14,"4,043",—
-FCFS,"FIRSTCASH HOLDINGS, INC.",piotroski,True,7,9,77.8,181,24.43,3.54,14.51,4.55,1.33,92.39,"783,771",—
-FCFS,"FIRSTCASH HOLDINGS, INC.",lynch,True,3,4,75.0,181,24.43,3.54,14.51,4.55,1.33,92.39,"783,771",—
-WNC,WABASH NATIONAL CORPORATION,greenblatt,True,3,3,100.0,11.74,2.32,1.33,57.56,1.39,2.18,31.68,2M,—
-ACEL,"Accel Entertainment, Inc.",piotroski,True,7,9,77.8,11.36,18.93,3.64,19.09,2.61,—,6.49,"393,354",—
-IOSP,INNOSPEC INC.,lynch,True,4,4,100.0,99.89,21.39,1.88,8.79,2.79,0.38,74.67,"216,475",—
-IOSP,INNOSPEC INC.,piotroski,True,8,9,88.9,99.89,21.39,1.88,8.79,2.79,0.38,74.67,"216,475",—
-CNA,CNA FINANCIAL CORPORATION,piotroski,True,7,9,77.8,48.68,10.38,1.14,11.00,—,4.98,67.10,"494,579",—
-EFC,Ellington Financial Inc.,lynch,True,3,4,75.0,11.41,9.59,0.63,6.47,—,9.53,22.10,2M,—
-KALU,KAISER ALUMINUM CORPORATION,piotroski,True,7,9,77.8,116,17.18,2.34,13.62,2.95,2.10,87.01,"459,173",—
-KALU,KAISER ALUMINUM CORPORATION,lynch,True,3,4,75.0,116,17.18,2.34,13.62,2.95,2.10,87.01,"459,173",—
-BDC,BELDEN INC.,piotroski,True,8,9,88.9,106,17.88,3.36,18.78,1.93,—,64.66,"637,659",—
-BFAM,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,piotroski,True,8,9,88.9,54.98,16.36,2.36,14.42,0.52,1.90,41.99,7M,—
-BFAM,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,lynch,True,3,4,75.0,54.98,16.36,2.36,14.42,0.52,1.90,41.99,7M,—
-FIZZ,National Beverage Corp.,buffett,True,5,6,83.3,35.30,18.01,5.20,28.89,4.39,0.34,17.30,"278,061",—
-RGA,"REINSURANCE GROUP OF AMERICA, INCORPORATED",piotroski,True,7,9,77.8,265,14.96,1.31,8.78,—,10.63,283,"430,740",—
-RGA,"REINSURANCE GROUP OF AMERICA, INCORPORATED",lynch,True,3,4,75.0,265,14.96,1.31,8.78,—,10.63,283,"430,740",—
-OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,30.22,43.80,5.77,13.20,1.91,0.30,9.01,2M,—
-CW,CURTISS-WRIGHT CORPORATION,piotroski,True,8,9,88.9,476,36.99,7.07,19.11,1.44,1.06,140,"261,052",—
-SCSC,"ScanSource, Inc.",piotroski,True,7,9,77.8,57.71,15.85,1.37,8.66,1.76,1.12,58.64,"416,772",—
-SCSC,"ScanSource, Inc.",lynch,True,3,4,75.0,57.71,15.85,1.37,8.66,1.76,1.12,58.64,"416,772",—
-BKU,"BankUnited, Inc.",piotroski,True,8,9,88.9,43.00,12.18,1.05,8.79,—,10.47,57.13,"722,501",—
-R,RYDER SYSTEM INC,piotroski,True,9,9,100.0,283,23.66,3.87,16.35,0.89,4.37,140,"426,375",—
-BJ,"BJ’S WHOLESALE CLUB HOLDINGS, INC.",piotroski,True,8,9,88.9,107,24.50,6.45,26.32,0.75,2.42,40.50,2M,—
-NPKI,NPK International Inc.,piotroski,True,7,9,77.8,9.35,20.78,2.28,11.09,1.43,0.26,6.44,4M,—
-CHRW,"C.H. ROBINSON WORLDWIDE, INC.",piotroski,True,7,9,77.8,125,25.80,8.20,31.81,1.53,1.74,40.63,4M,—
-SHAK,SHAKE SHACK INC.,piotroski,True,8,9,88.9,70.48,64.66,5.61,8.70,1.76,2.56,17.55,"955,020",—
-CHEF,"CHEFS’ WAREHOUSE, INC.",piotroski,True,9,9,100.0,104,62.04,7.93,11.97,2.05,2.36,22.28,"560,983",—
-LW,"LAMB WESTON HOLDINGS, INC.",piotroski,True,7,9,77.8,54.08,26.00,4.12,15.89,1.42,—,24.78,2M,—
-WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,7,9,77.8,30.61,25.30,0.70,2.79,2.17,0.70,34.43,"697,161",—
-TPC,Tutor Perini Corporation,piotroski,True,7,9,77.8,79.82,52.86,3.50,6.60,1.27,3.20,27.84,"311,651",—
-TLYS,"TILLY’S, INC.",piotroski,True,7,9,77.8,4.21,—,1.49,-20.50,1.25,2.65,—,"163,743",—
-HNRG,HALLADOR ENERGY CO,lynch,False,1,4,25.0,11.22,11.69,3.05,26.20,0.81,1.55,8.92,"828,226",—
-HNRG,HALLADOR ENERGY CO,netnet,False,1,4,25.0,11.22,11.69,3.05,26.20,0.81,1.55,8.92,"828,226",—
-HNRG,HALLADOR ENERGY CO,graham,False,2,9,22.2,11.22,11.69,3.05,26.20,0.81,1.55,8.92,"828,226",—
-HNRG,HALLADOR ENERGY CO,buffett,False,1,6,16.7,11.22,11.69,3.05,26.20,0.81,1.55,8.92,"828,226",—
-HNRG,HALLADOR ENERGY CO,custom,False,0,0,0.0,11.22,11.69,3.05,26.20,0.81,1.55,8.92,"828,226",—
-QNST,"QuinStreet, Inc.",piotroski,False,6,9,66.7,17.40,12.43,3.13,25.14,1.22,1.23,13.23,"783,577",—
-QNST,"QuinStreet, Inc.",buffett,False,3,6,50.0,17.40,12.43,3.13,25.14,1.22,1.23,13.23,"783,577",—
-QNST,"QuinStreet, Inc.",graham,False,4,9,44.4,17.40,12.43,3.13,25.14,1.22,1.23,13.23,"783,577",—
-QNST,"QuinStreet, Inc.",netnet,False,1,4,25.0,17.40,12.43,3.13,25.14,1.22,1.23,13.23,"783,577",—
-QNST,"QuinStreet, Inc.",custom,False,0,0,0.0,17.40,12.43,3.13,25.14,1.22,1.23,13.23,"783,577",—
+MWA,"Mueller Water Products, Inc.",piotroski,True,8,9,88.9,22.79,18.68,3.66,19.53,3.54,0.87,13.08,1M,—
+MWA,"Mueller Water Products, Inc.",lynch,True,3,4,75.0,22.79,18.68,3.66,19.53,3.54,0.87,13.08,1M,—
+AROC,"Archrock, Inc.",piotroski,True,8,9,88.9,31.70,17.32,3.71,21.61,1.54,1.92,18.75,1M,—
+BELFA,BEL FUSE INC /NJ,piotroski,True,8,9,88.9,189,—,—,14.46,3.02,0.98,—,"162,504",—
+EBF,"ENNIS, INC.",piotroski,True,7,9,77.8,21.38,12.88,1.78,13.81,3.72,0.16,21.19,"155,483",—
+FSS,FEDERAL SIGNAL CORPORATION,lynch,True,3,4,75.0,113,28.10,5.01,17.84,3.02,0.73,45.03,"539,221",—
+BANC,"BANC OF CALIFORNIA, INC.",piotroski,True,7,9,77.8,18.23,15.58,0.83,6.47,—,8.83,24.01,3M,—
+GEO,"The GEO Group, Inc.",piotroski,True,7,9,77.8,28.52,15.67,2.65,16.89,2.01,—,21.01,2M,—
+GEO,"The GEO Group, Inc.",lynch,True,3,4,75.0,28.52,15.67,2.65,16.89,2.01,—,21.01,2M,—
+EWBC,"EAST WEST BANCORP, INC.",lynch,True,3,4,75.0,131,13.74,2.05,14.89,—,8.04,117,"710,995",—
+AM,ANTERO MIDSTREAM CORPORATION,piotroski,True,7,9,77.8,21.47,24.97,5.25,20.95,3.41,1.98,8.90,3M,—
+SIRI,Sirius XM Holdings Inc.,lynch,True,3,4,75.0,29.01,13.01,0.90,6.96,0.30,1.36,40.31,7M,—
+CPK,CHESAPEAKE UTILITIES CORP,piotroski,True,7,9,77.8,136,22.85,2.00,8.78,0.45,—,95.61,"177,518",—
+DRH,DIAMONDROCK HOSPITALITY CO,piotroski,True,7,9,77.8,14.25,32.39,2.05,7.01,—,1.07,8.30,3M,—
+ABM,ABM INDUSTRIES INCORPORATED,piotroski,True,8,9,88.9,53.48,20.65,1.88,9.09,1.48,1.95,40.74,"519,277",—
+GRC,The Gorman-Rupp Company,piotroski,True,8,9,88.9,71.93,35.61,4.56,12.78,2.37,1.07,26.77,"127,754",—
+IEX,IDEX CORP,piotroski,True,7,9,77.8,234,36.48,4.37,12.00,2.86,0.72,87.83,"632,669",—
+VVX,"V2X, Inc.",piotroski,True,9,9,100.0,80.37,32.80,2.36,7.18,1.22,2.02,43.35,"423,233",—
+DBD,"Diebold Nixdorf, Incorporated",piotroski,True,7,9,77.8,55.05,21.67,1.86,8.60,1.30,2.50,41.11,"739,957",—
+THO,"THOR INDUSTRIES, INC.",piotroski,True,7,9,77.8,73.90,21.86,0.91,4.17,1.77,—,78.52,"758,351",—
+AMN,"AMN HEALTHCARE SERVICES, INC.",piotroski,True,7,9,77.8,47.11,—,2.83,-14.90,0.94,2.26,—,"599,000",—
+GRBK,"Green Brick Partners, Inc.",graham,False,7,9,77.8,60.86,8.61,1.44,16.85,—,0.32,82.05,"404,378",—
+GRBK,"Green Brick Partners, Inc.",greenblatt,False,2,3,66.7,60.86,8.61,1.44,16.85,—,0.32,82.05,"404,378",—
+GRBK,"Green Brick Partners, Inc.",piotroski,False,4,9,44.4,60.86,8.61,1.44,16.85,—,0.32,82.05,"404,378",—
+GRBK,"Green Brick Partners, Inc.",netnet,False,1,4,25.0,60.86,8.61,1.44,16.85,—,0.32,82.05,"404,378",—
+GRBK,"Green Brick Partners, Inc.",custom,False,0,0,0.0,60.86,8.61,1.44,16.85,—,0.32,82.05,"404,378",—
+KMT,KENNAMETAL INC.,piotroski,False,6,9,66.7,29.10,6.58,1.44,21.81,2.62,0.99,44.90,"907,387",—
+KMT,KENNAMETAL INC.,greenblatt,False,2,3,66.7,29.10,6.58,1.44,21.81,2.62,0.99,44.90,"907,387",—
+KMT,KENNAMETAL INC.,buffett,False,3,6,50.0,29.10,6.58,1.44,21.81,2.62,0.99,44.90,"907,387",—
+KMT,KENNAMETAL INC.,netnet,False,2,4,50.0,29.10,6.58,1.44,21.81,2.62,0.99,44.90,"907,387",—
+KMT,KENNAMETAL INC.,custom,False,0,0,0.0,29.10,6.58,1.44,21.81,2.62,0.99,44.90,"907,387",—
+SBC,SBC Medical Group Holdings Incorporated,buffett,False,4,6,66.7,5.28,10.55,2.19,20.54,3.78,0.47,5.21,"155,292",—
+SBC,SBC Medical Group Holdings Incorporated,greenblatt,False,2,3,66.7,5.28,10.55,2.19,20.54,3.78,0.47,5.21,"155,292",—
+SBC,SBC Medical Group Holdings Incorporated,graham,False,5,9,55.6,5.28,10.55,2.19,20.54,3.78,0.47,5.21,"155,292",—
+SBC,SBC Medical Group Holdings Incorporated,netnet,False,2,4,50.0,5.28,10.55,2.19,20.54,3.78,0.47,5.21,"155,292",—
+SBC,SBC Medical Group Holdings Incorporated,piotroski,False,4,9,44.4,5.28,10.55,2.19,20.54,3.78,0.47,5.21,"155,292",—
+SBC,SBC Medical Group Holdings Incorporated,custom,False,0,0,0.0,5.28,10.55,2.19,20.54,3.78,0.47,5.21,"155,292",—
+VEL,"Velocity Financial, Inc.",graham,False,6,9,66.7,15.72,5.72,0.89,15.62,—,9.97,33.01,"116,117",—
+VEL,"Velocity Financial, Inc.",greenblatt,False,2,3,66.7,15.72,5.72,0.89,15.62,—,9.97,33.01,"116,117",—
+VEL,"Velocity Financial, Inc.",buffett,False,3,6,50.0,15.72,5.72,0.89,15.62,—,9.97,33.01,"116,117",—
+VEL,"Velocity Financial, Inc.",piotroski,False,4,9,44.4,15.72,5.72,0.89,15.62,—,9.97,33.01,"116,117",—
+VEL,"Velocity Financial, Inc.",netnet,False,1,4,25.0,15.72,5.72,0.89,15.62,—,9.97,33.01,"116,117",—
+VEL,"Velocity Financial, Inc.",custom,False,0,0,0.0,15.72,5.72,0.89,15.62,—,9.97,33.01,"116,117",—
