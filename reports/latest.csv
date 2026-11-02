@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-PRI,"Primerica, Inc.",greenblatt,True,3,3,100.0,281,12.27,3.76,30.71,—,5.14,196,"211,894",—
-PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,281,12.27,3.76,30.71,—,5.14,196,"211,894",—
-FBP,FIRST BANCORP,piotroski,True,8,9,88.9,26.18,12.18,2.14,17.53,—,8.73,24.33,2M,—
-FBP,FIRST BANCORP,lynch,True,3,4,75.0,26.18,12.18,2.14,17.53,—,8.73,24.33,2M,—
-ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.21,5.25,0.15,4.91,1.93,0.73,1.14,"4,043",—
-KFY,KORN FERRY,piotroski,True,9,9,100.0,76.55,14.66,2.04,14.06,1.94,1.06,66.42,"224,077",—
-KFY,KORN FERRY,lynch,True,3,4,75.0,76.55,14.66,2.04,14.06,1.94,1.06,66.42,"224,077",—
-SNA,Snap-on Inc,buffett,True,5,6,83.3,356,18.53,3.18,17.14,4.79,0.41,220,"497,202",—
-DUKU,Duke Energy CORP,piotroski,True,8,9,88.9,51.33,8.13,0.77,9.58,0.55,—,97.33,5M,—
-DUKU,Duke Energy CORP,lynch,True,3,4,75.0,51.33,8.13,0.77,9.58,0.55,—,97.33,5M,—
-CIM,CHIMERA INVESTMENT CORPORATION,lynch,True,3,4,75.0,8.30,4.83,0.27,8.96,—,5.14,34.44,1M,—
-SKY,"Champion Homes, Inc.",piotroski,True,8,9,88.9,84.70,23.14,3.04,13.15,2.48,—,47.88,1M,—
-FICO,FAIR ISAAC CORP,piotroski,True,7,9,77.8,711,26.80,—,-37.34,0.83,-2.07,—,"686,903",—
-FICO,FAIR ISAAC CORP,lynch,True,3,4,75.0,711,26.80,—,-37.34,0.83,-2.07,—,"686,903",—
-HOG,"Harley-Davidson, Inc.",graham,True,9,9,100.0,31.22,11.23,1.21,10.79,2.10,—,40.25,3M,—
-HOG,"Harley-Davidson, Inc.",piotroski,True,8,9,88.9,31.22,11.23,1.21,10.79,2.10,—,40.25,3M,—
-PCTY,Paylocity Holding Corporation,piotroski,True,8,9,88.9,171,34.74,7.66,22.08,1.09,3.00,49.69,"835,726",—
-FIZZ,National Beverage Corp.,buffett,True,5,6,83.3,35.30,18.01,5.20,28.89,4.39,0.34,17.30,"278,061",—
-KEX,KIRBY CORPORATION,piotroski,True,8,9,88.9,144,22.74,2.39,10.49,1.53,—,92.69,"589,377",—
-AXTA,AXALTA COATING SYSTEMS LTD.,lynch,True,3,4,75.0,34.07,19.58,3.15,16.11,2.06,2.22,20.57,2M,—
-PEN,"Penumbra, Inc",piotroski,True,8,9,88.9,319,70.56,8.78,12.45,6.64,0.28,60.79,"497,747",—
-PKE,PARK AEROSPACE CORP.,piotroski,True,9,9,100.0,25.76,46.00,3.99,8.67,18.24,0.09,9.02,"185,444",—
-PKE,PARK AEROSPACE CORP.,lynch,True,3,4,75.0,25.76,46.00,3.99,8.67,18.24,0.09,9.02,"185,444",—
-OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,30.22,43.80,5.77,13.20,1.91,0.30,9.01,2M,—
-CW,CURTISS-WRIGHT CORPORATION,piotroski,True,8,9,88.9,476,36.99,7.07,19.11,1.44,1.06,140,"261,052",—
-SIRI,Sirius XM Holdings Inc.,lynch,True,3,4,75.0,29.01,13.01,0.90,6.96,0.30,1.36,40.31,7M,—
-TBB,AT&T INC.,piotroski,True,7,9,77.8,17.75,5.84,1.01,17.36,0.91,—,34.72,"363,949",—
-SCSC,"ScanSource, Inc.",piotroski,True,7,9,77.8,57.71,15.85,1.37,8.66,1.76,1.12,58.64,"416,772",—
-SCSC,"ScanSource, Inc.",lynch,True,3,4,75.0,57.71,15.85,1.37,8.66,1.76,1.12,58.64,"416,772",—
-HLIO,"HELIOS TECHNOLOGIES, INC.",piotroski,True,9,9,100.0,66.15,45.62,2.36,5.20,2.90,0.63,30.21,"308,592",—
-HLIO,"HELIOS TECHNOLOGIES, INC.",lynch,True,3,4,75.0,66.15,45.62,2.36,5.20,2.90,0.63,30.21,"308,592",—
-SARO,"StandardAero, Inc.",piotroski,True,8,9,88.9,23.38,28.17,2.93,10.40,2.20,1.46,12.21,5M,—
-CENTA,Central Garden & Pet Company,piotroski,True,8,9,88.9,39.12,15.34,1.58,10.29,3.67,—,37.73,"457,888",—
-NPKI,NPK International Inc.,piotroski,True,7,9,77.8,9.35,20.78,2.28,11.09,1.43,0.26,6.44,4M,—
+BYD,BOYD GAMING CORP,greenblatt,True,3,3,100.0,77.34,3.43,2.42,70.66,0.54,—,127,"464,360",—
+BYD,BOYD GAMING CORP,piotroski,True,7,9,77.8,77.34,3.43,2.42,70.66,0.54,—,127,"464,360",—
+GRBK,"Green Brick Partners, Inc.",buffett,True,6,6,100.0,60.86,8.61,1.44,16.85,—,0.32,82.05,"404,378",—
+GRBK,"Green Brick Partners, Inc.",lynch,True,4,4,100.0,60.86,8.61,1.44,16.85,—,0.32,82.05,"404,378",—
+WHD,"Cactus, Inc.",lynch,True,3,4,75.0,65.70,—,—,13.54,5.81,0.36,—,"753,917",—
+PRI,"Primerica, Inc.",greenblatt,True,3,3,100.0,281,12.27,3.76,30.71,—,5.14,196,"211,898",—
+PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,281,12.27,3.76,30.71,—,5.14,196,"211,898",—
+CRS,CARPENTER TECHNOLOGY CORPORATION,piotroski,True,8,9,88.9,289,27.46,6.54,23.78,3.81,0.72,102,"622,742",—
+AX,"AXOS FINANCIAL, INC.",lynch,True,3,4,75.0,96.32,11.36,1.72,15.49,—,8.46,103,"204,626",—
+XPEL,"XPEL, INC.",buffett,True,6,6,100.0,45.65,24.68,4.51,18.28,3.25,0.35,20.53,"155,276",—
+XPEL,"XPEL, INC.",lynch,True,3,4,75.0,45.65,24.68,4.51,18.28,3.25,0.35,20.53,"155,276",—
+AROC,"Archrock, Inc.",piotroski,True,8,9,88.9,31.70,17.32,3.71,21.61,1.54,1.92,18.75,1M,—
+AES,THE AES CORPORATION,greenblatt,True,3,3,100.0,14.83,11.77,2.61,22.40,0.77,—,12.70,9M,—
+FSS,FEDERAL SIGNAL CORPORATION,lynch,True,3,4,75.0,113,28.10,5.01,17.84,3.02,0.73,45.03,"539,221",—
+NYT,THE NEW YORK TIMES COMPANY,piotroski,True,9,9,100.0,70.17,33.57,5.67,16.85,1.54,—,24.12,3M,—
+DY,"DYCOM INDUSTRIES, INC.",lynch,True,3,4,75.0,228,23.82,3.60,15.12,2.74,2.22,117,"636,319",—
+NIC,"NICOLET BANKSHARES, INC",lynch,True,3,4,75.0,176,17.96,2.15,11.98,—,6.30,134,"89,600",—
+LNC,LINCOLN NATIONAL CORP,lynch,True,3,4,75.0,41.56,7.13,0.71,10.79,—,37.25,87.69,"515,132",—
+VIRT,"Virtu Financial, Inc.",piotroski,True,7,9,77.8,54.38,10.60,2.93,29.60,—,11.49,46.27,"458,693",—
+BCO,BRINK’S CO,piotroski,True,7,9,77.8,103,21.90,15.72,71.91,1.51,24.96,26.26,"395,130",—
+HLIO,"HELIOS TECHNOLOGIES, INC.",piotroski,True,9,9,100.0,66.15,45.62,2.36,5.20,2.90,0.63,30.21,"308,594",—
+HLIO,"HELIOS TECHNOLOGIES, INC.",lynch,True,3,4,75.0,66.15,45.62,2.36,5.20,2.90,0.63,30.21,"308,594",—
+VCEL,VERICEL CORPORATION,piotroski,True,9,9,100.0,40.24,126,5.92,4.66,5.03,0.38,7.00,"217,528",—
+VCEL,VERICEL CORPORATION,lynch,True,3,4,75.0,40.24,126,5.92,4.66,5.03,0.38,7.00,"217,528",—
+CHRW,"C.H. ROBINSON WORLDWIDE, INC.",piotroski,True,7,9,77.8,125,25.80,8.20,31.81,1.53,1.74,40.63,4M,—
+CPRI,CAPRI HOLDINGS LIMITED,piotroski,True,7,9,77.8,18.68,16.39,27.98,171,1.21,39.38,4.14,10M,—
 HAYW,"Hayward Holdings, Inc.",piotroski,True,9,9,100.0,16.12,23.71,2.25,9.51,2.94,0.98,10.47,6M,—
-CALX,"Calix, Inc",piotroski,True,7,9,77.8,36.82,142,2.97,2.08,4.24,0.23,8.52,"852,118",—
-PCRX,VIATRIS INC.,piotroski,True,7,9,77.8,36.39,227,2.36,1.01,4.54,0.82,7.44,"737,238",—
-PTON,"PELOTON INTERACTIVE, INC.",piotroski,True,8,9,88.9,5.12,36.57,—,-45.24,2.84,-15.72,—,5M,—
-SABR,Sabre Corporation,greenblatt,False,2,3,66.7,1.62,1.21,—,-50.61,1.07,—,—,5M,—
-SABR,Sabre Corporation,piotroski,False,5,9,55.6,1.62,1.21,—,-50.61,1.07,—,—,5M,—
-SABR,Sabre Corporation,lynch,False,1,4,25.0,1.62,1.21,—,-50.61,1.07,—,—,5M,—
-SABR,Sabre Corporation,netnet,False,1,4,25.0,1.62,1.21,—,-50.61,1.07,—,—,5M,—
-SABR,Sabre Corporation,graham,False,2,9,22.2,1.62,1.21,—,-50.61,1.07,—,—,5M,—
-SABR,Sabre Corporation,buffett,False,1,6,16.7,1.62,1.21,—,-50.61,1.07,—,—,5M,—
-SABR,Sabre Corporation,custom,False,0,0,0.0,1.62,1.21,—,-50.61,1.07,—,—,5M,—
-PRI,"Primerica, Inc.",buffett,False,4,6,66.7,281,12.27,3.76,30.71,—,5.14,196,"211,894",—
-PRI,"Primerica, Inc.",graham,False,5,9,55.6,281,12.27,3.76,30.71,—,5.14,196,"211,894",—
-PRI,"Primerica, Inc.",lynch,False,2,4,50.0,281,12.27,3.76,30.71,—,5.14,196,"211,894",—
-PRI,"Primerica, Inc.",netnet,False,1,4,25.0,281,12.27,3.76,30.71,—,5.14,196,"211,894",—
-PRI,"Primerica, Inc.",custom,False,0,0,0.0,281,12.27,3.76,30.71,—,5.14,196,"211,894",—
+SMG,Scotts Miracle-Gro Co,piotroski,True,7,9,77.8,62.24,25.20,—,-40.62,1.27,-8.67,—,1M,—
+TRLV,TRULIEVE CANNABIS CORP.,piotroski,True,8,9,88.9,11.23,—,1.88,-10.70,4.43,1.36,—,1M,—
+TDAY,"USA TODAY CO., INC.",piotroski,True,7,9,77.8,6.08,608,5.73,1.13,0.75,10.85,0.49,"628,439",—
+BYD,BOYD GAMING CORP,buffett,False,4,6,66.7,77.34,3.43,2.42,70.66,0.54,—,127,"464,360",—
+BYD,BOYD GAMING CORP,graham,False,5,9,55.6,77.34,3.43,2.42,70.66,0.54,—,127,"464,360",—
+BYD,BOYD GAMING CORP,lynch,False,1,4,25.0,77.34,3.43,2.42,70.66,0.54,—,127,"464,360",—
+BYD,BOYD GAMING CORP,netnet,False,1,4,25.0,77.34,3.43,2.42,70.66,0.54,—,127,"464,360",—
+BYD,BOYD GAMING CORP,custom,False,0,0,0.0,77.34,3.43,2.42,70.66,0.54,—,127,"464,360",—
+GRBK,"Green Brick Partners, Inc.",graham,False,7,9,77.8,60.86,8.61,1.44,16.85,—,0.32,82.05,"404,378",—
+GRBK,"Green Brick Partners, Inc.",greenblatt,False,2,3,66.7,60.86,8.61,1.44,16.85,—,0.32,82.05,"404,378",—
+GRBK,"Green Brick Partners, Inc.",piotroski,False,4,9,44.4,60.86,8.61,1.44,16.85,—,0.32,82.05,"404,378",—
+GRBK,"Green Brick Partners, Inc.",netnet,False,1,4,25.0,60.86,8.61,1.44,16.85,—,0.32,82.05,"404,378",—
+GRBK,"Green Brick Partners, Inc.",custom,False,0,0,0.0,60.86,8.61,1.44,16.85,—,0.32,82.05,"404,378",—
+GEF,"GREIF, INC.",buffett,False,4,6,66.7,81.99,—,—,28.82,1.27,—,—,"339,911",—
+GEF,"GREIF, INC.",greenblatt,False,2,3,66.7,81.99,—,—,28.82,1.27,—,—,"339,911",—
+GEF,"GREIF, INC.",piotroski,False,5,9,55.6,81.99,—,—,28.82,1.27,—,—,"339,911",—
+GEF,"GREIF, INC.",graham,False,4,9,44.4,81.99,—,—,28.82,1.27,—,—,"339,911",—
+GEF,"GREIF, INC.",lynch,False,1,4,25.0,81.99,—,—,28.82,1.27,—,—,"339,911",—
+GEF,"GREIF, INC.",netnet,False,1,4,25.0,81.99,—,—,28.82,1.27,—,—,"339,911",—
+GEF,"GREIF, INC.",custom,False,0,0,0.0,81.99,—,—,28.82,1.27,—,—,"339,911",—
+WHD,"Cactus, Inc.",graham,False,6,9,66.7,65.70,—,—,13.54,5.81,0.36,—,"753,917",—
+WHD,"Cactus, Inc.",piotroski,False,5,9,55.6,65.70,—,—,13.54,5.81,0.36,—,"753,917",—
+WHD,"Cactus, Inc.",buffett,False,3,6,50.0,65.70,—,—,13.54,5.81,0.36,—,"753,917",—
