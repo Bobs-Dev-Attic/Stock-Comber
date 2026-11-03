@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-11-03 01:10 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-11-03 07:36 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **36** strategy matches passed.
+Screened **75** companies · **26** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| VITL | Vital Farms, Inc. | graham | ✅ | 100% | 9.18 | 6.38 | 1.20 | 18.87 | 2.16 | 0.48 | 2M | — |
-| VITL | Vital Farms, Inc. | lynch | ✅ | 100% | 9.18 | 6.38 | 1.20 | 18.87 | 2.16 | 0.48 | 2M | — |
-| GRBK | Green Brick Partners, Inc. | buffett | ✅ | 100% | 63.73 | 9.01 | 1.51 | 16.85 | — | 0.32 | 468,929 | — |
-| GRBK | Green Brick Partners, Inc. | lynch | ✅ | 100% | 63.73 | 9.01 | 1.51 | 16.85 | — | 0.32 | 468,929 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | piotroski | ✅ | 78% | 28.64 | 6.31 | 1.86 | 29.41 | 1.47 | 1.81 | 2M | — |
-| QNST | QuinStreet, Inc. | lynch | ✅ | 75% | 17.56 | 12.54 | 3.16 | 25.14 | 1.22 | 1.23 | 762,665 | — |
-| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 120 | 22.87 | 4.37 | 19.12 | 2.99 | — | 203,324 | — |
-| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 120 | 22.87 | 4.37 | 19.12 | 2.99 | — | 203,324 | — |
-| XPEL | XPEL, INC. | buffett | ✅ | 100% | 44.84 | 24.24 | 4.43 | 18.28 | 3.25 | 0.35 | 405,709 | — |
-| XPEL | XPEL, INC. | lynch | ✅ | 75% | 44.84 | 24.24 | 4.43 | 18.28 | 3.25 | 0.35 | 405,709 | — |
-| SSD | Simpson Manufacturing Co., I | buffett | ✅ | 83% | 201 | 24.34 | 4.14 | 17.00 | 3.54 | 0.51 | 344,195 | — |
-| SSD | Simpson Manufacturing Co., I | piotroski | ✅ | 78% | 201 | 24.34 | 4.14 | 17.00 | 3.54 | 0.51 | 344,195 | — |
-| WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 11.73 | 2.31 | 1.33 | 57.56 | 1.39 | 2.18 | 2M | — |
-| FTDR | Frontdoor, Inc. | piotroski | ✅ | 89% | 89.30 | 26.11 | 27.49 | 105 | 1.55 | — | 796,182 | — |
-| FTDR | Frontdoor, Inc. | buffett | ✅ | 83% | 89.30 | 26.11 | 27.49 | 105 | 1.55 | — | 796,182 | — |
-| SREA | SEMPRA | lynch | ✅ | 75% | 18.55 | 6.75 | 0.38 | 5.81 | 1.59 | — | 80,668 | — |
-| ACEL | Accel Entertainment, Inc. | piotroski | ✅ | 78% | 11.91 | 19.85 | 3.81 | 19.09 | 2.61 | — | 596,964 | — |
-| JOE | The St. Joe Company | piotroski | ✅ | 89% | 68.90 | 34.62 | 5.21 | 15.09 | — | 0.97 | 222,621 | — |
-| NHC | NATIONAL HEALTHCARE CORP | piotroski | ✅ | 100% | 202 | 26.35 | 2.96 | 11.23 | 1.82 | 0.42 | 165,010 | — |
-| NHC | NATIONAL HEALTHCARE CORP | lynch | ✅ | 75% | 202 | 26.35 | 2.96 | 11.23 | 1.82 | 0.42 | 165,010 | — |
-| SHOE | Shoe Station Group, Inc. | graham | ✅ | 89% | 14.70 | 7.74 | 0.59 | 7.58 | 3.76 | 0.74 | 584,781 | — |
-| LNC | LINCOLN NATIONAL CORP | lynch | ✅ | 75% | 41.63 | 7.14 | 0.71 | 10.79 | — | 37.25 | 2M | — |
-| RGA | REINSURANCE GROUP OF AMERICA | piotroski | ✅ | 78% | 267 | 15.12 | 1.33 | 8.78 | — | 10.63 | 519,052 | — |
-| RGA | REINSURANCE GROUP OF AMERICA | lynch | ✅ | 75% | 267 | 15.12 | 1.33 | 8.78 | — | 10.63 | 519,052 | — |
-| VIRT | Virtu Financial, Inc. | piotroski | ✅ | 78% | 53.68 | 10.46 | 2.89 | 29.60 | — | 11.49 | 1M | — |
-| EGP | EASTGROUP PROPERTIES, INC. | piotroski | ✅ | 78% | 201 | 41.24 | 3.03 | 7.36 | — | 0.55 | 724,678 | — |
-| EGP | EASTGROUP PROPERTIES, INC. | lynch | ✅ | 75% | 201 | 41.24 | 3.03 | 7.36 | — | 0.55 | 724,678 | — |
-| WCC | WESCO International, Inc. | lynch | ✅ | 75% | 336 | 25.71 | 3.30 | 12.72 | 2.20 | 2.28 | 619,735 | — |
-| WWD | WOODWARD, INC. | piotroski | ✅ | 100% | 320 | 44.45 | 7.65 | 17.23 | 2.08 | 0.80 | 809,494 | — |
-| IDT | IDT Corporation | piotroski | ✅ | 78% | 82.27 | 23.78 | 5.46 | 22.96 | 1.86 | 0.94 | 185,045 | — |
-| SHAK | SHAKE SHACK INC. | piotroski | ✅ | 89% | 72.46 | 66.48 | 5.77 | 8.70 | 1.76 | 2.56 | 2M | — |
-| GCO | GENESCO INC | piotroski | ✅ | 89% | 37.62 | 30.10 | 0.70 | 2.34 | 1.64 | 1.46 | 116,085 | — |
-| RRX | REGAL REXNORD CORP | piotroski | ✅ | 78% | 161 | 38.32 | 1.57 | 4.08 | 2.15 | — | 2M | — |
-| ZUMZ | ZUMIEZ INC | piotroski | ✅ | 89% | 14.97 | 19.19 | 0.80 | 4.13 | 2.01 | 0.99 | 235,096 | — |
+| BYD | BOYD GAMING CORP | greenblatt | ✅ | 100% | 77.04 | 3.41 | 2.41 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | piotroski | ✅ | 78% | 77.04 | 3.41 | 2.41 | 70.66 | 0.54 | — | 1M | — |
+| TMDX | TransMedics Group, Inc. | piotroski | ✅ | 78% | 66.67 | 13.69 | 5.71 | 40.22 | 7.14 | 1.26 | 689,608 | — |
+| REX | REX AMERICAN RESOURCES CORPO | lynch | ✅ | 75% | 38.72 | 15.49 | 2.11 | 15.57 | 5.94 | — | 219,838 | — |
+| HBANP | Huntington Bancshares Incorp | lynch | ✅ | 75% | 14.58 | 10.49 | 0.90 | 9.08 | — | 8.25 | 128,365 | — |
+| FULT | FULTON FINANCIAL CORP | lynch | ✅ | 75% | 24.10 | 11.59 | 1.27 | 11.22 | — | 8.20 | 1M | — |
+| LEVI | LEVI STRAUSS & CO | piotroski | ✅ | 78% | 23.03 | 15.88 | 4.04 | 25.37 | 1.55 | 2.01 | 3M | — |
+| MEDP | Medpace Holdings, Inc. | buffett | ✅ | 83% | 648 | 42.42 | 41.69 | 98.27 | 0.74 | 3.30 | 198,727 | — |
+| MEDP | Medpace Holdings, Inc. | piotroski | ✅ | 78% | 648 | 42.42 | 41.69 | 98.27 | 0.74 | 3.30 | 198,727 | — |
+| BURL | BURLINGTON STORES, INC. | piotroski | ✅ | 78% | 239 | 25.11 | 8.47 | 33.76 | 1.23 | — | 1M | — |
+| PLUS | ePlus inc. | piotroski | ✅ | 78% | 89.22 | 17.74 | 2.20 | 12.41 | 2.24 | 0.68 | 311,721 | — |
+| ROL | ROLLINS, INC. | buffett | ✅ | 83% | 36.03 | 33.06 | 12.69 | 38.32 | 0.60 | 1.29 | 5M | — |
+| ADUS | Addus HomeCare Corp | piotroski | ✅ | 89% | 126 | 24.09 | 2.13 | 8.84 | 1.80 | 0.32 | 508,397 | — |
+| ADUS | Addus HomeCare Corp | lynch | ✅ | 75% | 126 | 24.09 | 2.13 | 8.84 | 1.80 | 0.32 | 508,397 | — |
+| OSW | OneSpaWorld Holdings Limited | piotroski | ✅ | 78% | 30.02 | 43.51 | 5.74 | 13.20 | 1.91 | 0.30 | 2M | — |
+| BKU | BankUnited, Inc. | piotroski | ✅ | 89% | 44.04 | 12.48 | 1.07 | 8.79 | — | 10.47 | 816,382 | — |
+| SSTK | SHUTTERSTOCK, INC. | piotroski | ✅ | 89% | 4.20 | 3.36 | 0.26 | 7.83 | 0.54 | 1.33 | 590,223 | — |
+| ZWS | ZURN ELKAY WATER SOLUTIONS C | piotroski | ✅ | 100% | 44.67 | 38.84 | 4.77 | 12.35 | 3.13 | 0.67 | 2M | — |
+| IEX | IDEX CORP | piotroski | ✅ | 78% | 237 | 36.90 | 4.42 | 12.00 | 2.86 | 0.72 | 809,104 | — |
+| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.22 | 19.18 | 0.75 | 3.99 | 9.18 | 0.34 | 112,011 | — |
+| WOR | WORTHINGTON ENTERPRISES, INC | piotroski | ✅ | 89% | 64.94 | 20.68 | 3.14 | 15.20 | 2.37 | 0.80 | 199,347 | — |
+| CRI | CARTER’S, INC. | graham | ✅ | 89% | 31.66 | 12.51 | 1.21 | 9.92 | 2.51 | 1.77 | 2M | — |
+| DBD | Diebold Nixdorf, Incorporate | piotroski | ✅ | 78% | 56.05 | 22.07 | 1.90 | 8.60 | 1.30 | 2.50 | 689,361 | — |
 | SMG | Scotts Miracle-Gro Co | piotroski | ✅ | 78% | 65.13 | 26.37 | — | -40.62 | 1.27 | -8.67 | 1M | — |
-| SHC | SOTERA HEALTH COMPANY | piotroski | ✅ | 78% | 17.74 | 65.70 | 8.38 | 12.86 | 2.46 | 4.38 | 3M | — |
-| VITL | Vital Farms, Inc. | greenblatt | ▫️ | 67% | 9.18 | 6.38 | 1.20 | 18.87 | 2.16 | 0.48 | 2M | — |
-| VITL | Vital Farms, Inc. | buffett | ▫️ | 50% | 9.18 | 6.38 | 1.20 | 18.87 | 2.16 | 0.48 | 2M | — |
-| VITL | Vital Farms, Inc. | netnet | ▫️ | 50% | 9.18 | 6.38 | 1.20 | 18.87 | 2.16 | 0.48 | 2M | — |
-| VITL | Vital Farms, Inc. | piotroski | ▫️ | 33% | 9.18 | 6.38 | 1.20 | 18.87 | 2.16 | 0.48 | 2M | — |
-| VITL | Vital Farms, Inc. | custom | ▫️ | 0% | 9.18 | 6.38 | 1.20 | 18.87 | 2.16 | 0.48 | 2M | — |
-| GRBK | Green Brick Partners, Inc. | graham | ▫️ | 67% | 63.73 | 9.01 | 1.51 | 16.85 | — | 0.32 | 468,929 | — |
-| GRBK | Green Brick Partners, Inc. | greenblatt | ▫️ | 67% | 63.73 | 9.01 | 1.51 | 16.85 | — | 0.32 | 468,929 | — |
-| GRBK | Green Brick Partners, Inc. | piotroski | ▫️ | 44% | 63.73 | 9.01 | 1.51 | 16.85 | — | 0.32 | 468,929 | — |
-| GRBK | Green Brick Partners, Inc. | netnet | ▫️ | 25% | 63.73 | 9.01 | 1.51 | 16.85 | — | 0.32 | 468,929 | — |
-| GRBK | Green Brick Partners, Inc. | custom | ▫️ | 0% | 63.73 | 9.01 | 1.51 | 16.85 | — | 0.32 | 468,929 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | graham | ▫️ | 67% | 28.64 | 6.31 | 1.86 | 29.41 | 1.47 | 1.81 | 2M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | greenblatt | ▫️ | 67% | 28.64 | 6.31 | 1.86 | 29.41 | 1.47 | 1.81 | 2M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | buffett | ▫️ | 50% | 28.64 | 6.31 | 1.86 | 29.41 | 1.47 | 1.81 | 2M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | lynch | ▫️ | 50% | 28.64 | 6.31 | 1.86 | 29.41 | 1.47 | 1.81 | 2M | — |
+| ADT | ADT Inc. | piotroski | ✅ | 89% | 9.83 | — | — | 15.77 | 0.93 | 3.19 | 22M | — |
+| LILA | Liberty Latin America Ltd. | piotroski | ✅ | 78% | 8.63 | — | 3.10 | -110 | 1.14 | 20.09 | 319,939 | — |
+| BYD | BOYD GAMING CORP | buffett | ▫️ | 67% | 77.04 | 3.41 | 2.41 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | graham | ▫️ | 56% | 77.04 | 3.41 | 2.41 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | lynch | ▫️ | 25% | 77.04 | 3.41 | 2.41 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | netnet | ▫️ | 25% | 77.04 | 3.41 | 2.41 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | custom | ▫️ | 0% | 77.04 | 3.41 | 2.41 | 70.66 | 0.54 | — | 1M | — |
+| TMDX | TransMedics Group, Inc. | greenblatt | ▫️ | 67% | 66.67 | 13.69 | 5.71 | 40.22 | 7.14 | 1.26 | 689,608 | — |
+| TMDX | TransMedics Group, Inc. | netnet | ▫️ | 50% | 66.67 | 13.69 | 5.71 | 40.22 | 7.14 | 1.26 | 689,608 | — |
+| TMDX | TransMedics Group, Inc. | graham | ▫️ | 44% | 66.67 | 13.69 | 5.71 | 40.22 | 7.14 | 1.26 | 689,608 | — |
+| TMDX | TransMedics Group, Inc. | buffett | ▫️ | 33% | 66.67 | 13.69 | 5.71 | 40.22 | 7.14 | 1.26 | 689,608 | — |
+| TMDX | TransMedics Group, Inc. | lynch | ▫️ | 25% | 66.67 | 13.69 | 5.71 | 40.22 | 7.14 | 1.26 | 689,608 | — |
+| TMDX | TransMedics Group, Inc. | custom | ▫️ | 0% | 66.67 | 13.69 | 5.71 | 40.22 | 7.14 | 1.26 | 689,608 | — |
+| ADMA | ADMA BIOLOGICS, INC. | buffett | ▫️ | 67% | 11.06 | 18.43 | 5.67 | 30.78 | 6.71 | 0.31 | 3M | — |
+| ADMA | ADMA BIOLOGICS, INC. | greenblatt | ▫️ | 67% | 11.06 | 18.43 | 5.67 | 30.78 | 6.71 | 0.31 | 3M | — |
+| ADMA | ADMA BIOLOGICS, INC. | lynch | ▫️ | 50% | 11.06 | 18.43 | 5.67 | 30.78 | 6.71 | 0.31 | 3M | — |
+| ADMA | ADMA BIOLOGICS, INC. | netnet | ▫️ | 50% | 11.06 | 18.43 | 5.67 | 30.78 | 6.71 | 0.31 | 3M | — |
+| ADMA | ADMA BIOLOGICS, INC. | piotroski | ▫️ | 44% | 11.06 | 18.43 | 5.67 | 30.78 | 6.71 | 0.31 | 3M | — |
+| ADMA | ADMA BIOLOGICS, INC. | graham | ▫️ | 33% | 11.06 | 18.43 | 5.67 | 30.78 | 6.71 | 0.31 | 3M | — |
+| ADMA | ADMA BIOLOGICS, INC. | custom | ▫️ | 0% | 11.06 | 18.43 | 5.67 | 30.78 | 6.71 | 0.31 | 3M | — |
+| PPIH | Perma-Pipe International Hol | piotroski | ▫️ | 67% | 29.71 | 14.22 | 2.67 | 18.79 | 1.84 | — | 90,295 | — |
+| PPIH | Perma-Pipe International Hol | graham | ▫️ | 44% | 29.71 | 14.22 | 2.67 | 18.79 | 1.84 | — | 90,295 | — |
+| PPIH | Perma-Pipe International Hol | greenblatt | ▫️ | 33% | 29.71 | 14.22 | 2.67 | 18.79 | 1.84 | — | 90,295 | — |
+| PPIH | Perma-Pipe International Hol | lynch | ▫️ | 25% | 29.71 | 14.22 | 2.67 | 18.79 | 1.84 | — | 90,295 | — |
+| PPIH | Perma-Pipe International Hol | netnet | ▫️ | 25% | 29.71 | 14.22 | 2.67 | 18.79 | 1.84 | — | 90,295 | — |
+| PPIH | Perma-Pipe International Hol | buffett | ▫️ | 17% | 29.71 | 14.22 | 2.67 | 18.79 | 1.84 | — | 90,295 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
