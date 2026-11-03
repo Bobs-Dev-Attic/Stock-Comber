@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-11-03 15:31 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-11-03 21:15 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **32** strategy matches passed.
+Screened **75** companies · **31** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
+| BBW | BUILD-A-BEAR WORKSHOP INC | greenblatt | ✅ | 100% | 29.54 | 7.40 | 2.49 | 33.67 | 1.55 | — | 505,772 | — |
 | NAGE | NIAGEN BIOSCIENCE, INC. | greenblatt | ✅ | 100% | 2.40 | 12.00 | 2.68 | 22.71 | 4.86 | 0.39 | 557,587 | — |
-| LPG | DORIAN LPG LTD. | lynch | ✅ | 100% | 51.16 | 11.27 | 1.91 | 17.00 | 2.67 | 0.64 | 797,133 | — |
-| LPG | DORIAN LPG LTD. | piotroski | ✅ | 89% | 51.16 | 11.27 | 1.91 | 17.00 | 2.67 | 0.64 | 797,133 | — |
-| TOL | Toll Brothers, Inc. | lynch | ✅ | 100% | 150 | 11.10 | 1.81 | 16.28 | — | 0.75 | 106,307 | — |
-| TOL | Toll Brothers, Inc. | buffett | ✅ | 83% | 150 | 11.10 | 1.81 | 16.28 | — | 0.75 | 106,307 | — |
-| TREE | LendingTree, Inc. | greenblatt | ✅ | 100% | 27.08 | 2.51 | 1.33 | 52.76 | 1.67 | 1.98 | 400,673 | — |
-| AX | AXOS FINANCIAL, INC. | lynch | ✅ | 75% | 95.07 | 11.21 | 1.70 | 15.49 | — | 8.46 | 44,528 | — |
-| BKE | BUCKLE, INC | greenblatt | ✅ | 100% | 47.31 | 11.43 | 5.65 | 49.39 | 1.89 | 1.33 | 433,001 | — |
-| BKE | BUCKLE, INC | buffett | ✅ | 83% | 47.31 | 11.43 | 5.65 | 49.39 | 1.89 | 1.33 | 433,001 | — |
-| WING | WINGSTOP INC. | lynch | ✅ | 100% | 160 | 25.75 | — | -23.65 | 3.26 | -1.94 | 290,286 | — |
-| PJT | PJT Partners Inc. | buffett | ✅ | 83% | 149 | — | — | 58.43 | — | 2.71 | 93,502 | — |
-| PJT | PJT Partners Inc. | piotroski | ✅ | 78% | 149 | — | — | 58.43 | — | 2.71 | 93,502 | — |
-| WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 11.73 | 2.31 | 1.33 | 57.56 | 1.39 | 2.18 | 2M | — |
-| AIR | AAR CORP | piotroski | ✅ | 78% | 106 | 21.73 | 2.38 | 11.02 | 2.84 | — | 602,175 | — |
-| AIR | AAR CORP | lynch | ✅ | 75% | 106 | 21.73 | 2.38 | 11.02 | 2.84 | — | 602,175 | — |
-| BDC | BELDEN INC. | piotroski | ✅ | 89% | 107 | 18.18 | 3.42 | 18.78 | 1.93 | — | 531,780 | — |
-| ROL | ROLLINS, INC. | buffett | ✅ | 83% | 37.01 | 33.95 | 13.04 | 38.32 | 0.60 | 1.29 | 1M | — |
-| PCTY | Paylocity Holding Corporatio | piotroski | ✅ | 89% | 172 | 34.99 | 7.72 | 22.08 | 1.09 | 3.00 | 60,288 | — |
-| LNC | LINCOLN NATIONAL CORP | lynch | ✅ | 75% | 41.63 | 7.14 | 0.71 | 10.79 | — | 37.25 | 2M | — |
-| FIVE | Five Below, Inc. | piotroski | ✅ | 100% | 239 | 36.94 | 6.04 | 16.35 | 2.01 | 1.25 | 892,355 | — |
-| JJSF | J&J SNACK FOODS CORP. | lynch | ✅ | 75% | 87.60 | 26.07 | 1.77 | 6.79 | 2.72 | — | 21,938 | — |
-| BKU | BankUnited, Inc. | piotroski | ✅ | 89% | 44.04 | 12.48 | 1.07 | 8.79 | — | 10.47 | 816,382 | — |
-| CPK | CHESAPEAKE UTILITIES CORP | piotroski | ✅ | 78% | 139 | 23.33 | 2.05 | 8.78 | 0.45 | — | 149,572 | — |
-| IMAX | IMAX Corporation | piotroski | ✅ | 78% | 49.80 | 79.05 | 8.19 | 10.32 | — | 1.38 | 579,517 | — |
-| FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 20.94 | 110 | 8.59 | 7.83 | 4.94 | 0.33 | 638,158 | — |
-| ACTG | Acacia Research Corporation | piotroski | ✅ | 89% | 4.22 | 19.18 | 0.75 | 3.99 | 9.18 | 0.34 | 112,011 | — |
-| CCK | CROWN HOLDINGS, INC. | piotroski | ✅ | 89% | 122 | 19.04 | 4.69 | 24.61 | 1.03 | — | 73,954 | — |
-| CHRW | C.H. ROBINSON WORLDWIDE, INC | piotroski | ✅ | 78% | 129 | 26.65 | 8.47 | 31.81 | 1.53 | 1.74 | 2M | — |
-| AIOT | Powerfleet, Inc. | piotroski | ✅ | 78% | 2.84 | — | 0.80 | -4.32 | 1.13 | 1.00 | 91,176 | — |
-| CBZ | CBIZ, Inc. | piotroski | ✅ | 78% | 54.98 | 30.04 | 1.97 | 6.55 | 1.22 | 1.50 | 4M | — |
-| TBCH | TURTLE BEACH CORPORATION | piotroski | ✅ | 78% | 15.73 | 20.43 | 2.50 | 12.24 | 1.98 | 1.09 | 336,160 | — |
-| OMCL | OMNICELL, INC | piotroski | ✅ | 78% | 35.79 | 895 | 1.35 | 0.17 | 1.43 | 0.60 | 65,657 | — |
+| ERIE | ERIE INDEMNITY COMPANY | buffett | ✅ | 100% | 274 | — | — | 24.50 | 1.27 | 0.47 | 246,773 | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | piotroski | ✅ | 78% | 89.84 | 17.69 | 2.43 | 13.75 | 10.06 | 0.12 | 1M | — |
+| BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 137 | 18.68 | 3.20 | 17.13 | 2.65 | 0.86 | 1M | — |
+| BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 137 | 18.68 | 3.20 | 17.13 | 2.65 | 0.86 | 1M | — |
+| ANNAW | AleAnna, Inc. | piotroski | ✅ | 78% | 0.21 | 5.25 | 0.15 | 4.91 | 1.93 | 0.73 | 14,898 | — |
+| AES | THE AES CORPORATION | greenblatt | ✅ | 100% | 14.90 | 11.83 | 2.62 | 22.40 | 0.77 | — | 9M | — |
+| WLDN | WILLDAN GROUP, INC. | piotroski | ✅ | 78% | 72.02 | 20.64 | 3.56 | 17.24 | 1.56 | 0.79 | 159,375 | — |
+| KFY | KORN FERRY | piotroski | ✅ | 100% | 77.97 | 14.94 | 2.08 | 14.06 | 1.94 | 1.06 | 398,441 | — |
+| KFY | KORN FERRY | lynch | ✅ | 75% | 77.97 | 14.94 | 2.08 | 14.06 | 1.94 | 1.06 | 398,441 | — |
+| EVR | EVERCORE INC. | buffett | ✅ | 83% | 297 | 21.15 | 6.16 | 29.14 | 2.16 | 1.50 | 446,328 | — |
+| EVR | EVERCORE INC. | piotroski | ✅ | 78% | 297 | 21.15 | 6.16 | 29.14 | 2.16 | 1.50 | 446,328 | — |
+| LEVI | LEVI STRAUSS & CO | piotroski | ✅ | 78% | 23.03 | 15.88 | 4.04 | 25.37 | 1.55 | 2.01 | 3M | — |
+| FCFS | FIRSTCASH HOLDINGS, INC. | piotroski | ✅ | 78% | 195 | 26.21 | 3.80 | 14.51 | 4.55 | 1.33 | 648,881 | — |
+| KTB | KONTOOR BRANDS, INC. | lynch | ✅ | 75% | 76.92 | 18.99 | 7.64 | 40.27 | 1.82 | 3.57 | 896,571 | — |
+| HST | HOST HOTELS & RESORTS, INC. | piotroski | ✅ | 78% | 25.57 | 23.25 | 2.71 | 11.67 | — | 0.96 | 10M | — |
+| FIZZ | National Beverage Corp. | buffett | ✅ | 83% | 36.56 | 18.65 | 5.39 | 28.89 | 4.39 | 0.34 | 300,010 | — |
+| DRVN | Driven Brands Holdings Inc. | piotroski | ✅ | 78% | 11.29 | 13.28 | 2.41 | 18.27 | 0.75 | 4.42 | 3M | — |
+| RGA | REINSURANCE GROUP OF AMERICA | piotroski | ✅ | 78% | 267 | 15.12 | 1.33 | 8.78 | — | 10.63 | 519,052 | — |
+| RGA | REINSURANCE GROUP OF AMERICA | lynch | ✅ | 75% | 267 | 15.12 | 1.33 | 8.78 | — | 10.63 | 519,052 | — |
+| IEX | IDEX CORP | piotroski | ✅ | 78% | 237 | 37.03 | 4.44 | 12.00 | 2.86 | 0.72 | 794,086 | — |
+| BBY | Best Buy Co., Inc. | piotroski | ✅ | 89% | 93.87 | 18.62 | 6.72 | 36.07 | 1.11 | — | 3M | — |
+| CHEF | CHEFS’ WAREHOUSE, INC. | piotroski | ✅ | 100% | 101 | 60.09 | 7.68 | 11.97 | 2.05 | 2.36 | 393,852 | — |
+| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 51.35 | 49.38 | — | -29.14 | 1.60 | -6.05 | 312,398 | — |
+| AMCR | AMCOR PLC | piotroski | ✅ | 89% | 49.02 | 20.60 | 1.93 | 9.38 | 1.25 | 2.15 | 4M | — |
+| PBI | PITNEY BOWES INC | piotroski | ✅ | 78% | 15.51 | 18.46 | — | -18.03 | 0.71 | -4.95 | 2M | — |
+| INNV | InnovAge Holding Corp. | piotroski | ✅ | 78% | 8.92 | — | 5.14 | -1.08 | 1.05 | 1.23 | 535,206 | — |
+| PTON | PELOTON INTERACTIVE, INC. | piotroski | ✅ | 89% | 5.31 | 37.93 | — | -45.24 | 2.84 | -15.72 | 8M | — |
+| ZG | ZILLOW GROUP, INC. | piotroski | ✅ | 89% | 32.90 | 366 | 1.71 | 0.47 | 3.13 | 0.16 | 3M | — |
+| TLYS | TILLY’S, INC. | piotroski | ✅ | 78% | 4.32 | — | 1.53 | -20.50 | 1.25 | 2.65 | 285,676 | — |
+| CLSK | CleanSpark, Inc. | greenblatt | ▫️ | 67% | 7.15 | — | 1.04 | 16.76 | 4.18 | 0.46 | 14M | — |
+| CLSK | CleanSpark, Inc. | graham | ▫️ | 56% | 7.15 | — | 1.04 | 16.76 | 4.18 | 0.46 | 14M | — |
+| CLSK | CleanSpark, Inc. | piotroski | ▫️ | 56% | 7.15 | — | 1.04 | 16.76 | 4.18 | 0.46 | 14M | — |
+| CLSK | CleanSpark, Inc. | buffett | ▫️ | 50% | 7.15 | — | 1.04 | 16.76 | 4.18 | 0.46 | 14M | — |
+| CLSK | CleanSpark, Inc. | lynch | ▫️ | 50% | 7.15 | — | 1.04 | 16.76 | 4.18 | 0.46 | 14M | — |
+| CLSK | CleanSpark, Inc. | netnet | ▫️ | 50% | 7.15 | — | 1.04 | 16.76 | 4.18 | 0.46 | 14M | — |
+| CLSK | CleanSpark, Inc. | custom | ▫️ | 0% | 7.15 | — | 1.04 | 16.76 | 4.18 | 0.46 | 14M | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | graham | ▫️ | 56% | 29.54 | 7.40 | 2.49 | 33.67 | 1.55 | — | 505,772 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | piotroski | ▫️ | 56% | 29.54 | 7.40 | 2.49 | 33.67 | 1.55 | — | 505,772 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | buffett | ▫️ | 50% | 29.54 | 7.40 | 2.49 | 33.67 | 1.55 | — | 505,772 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | lynch | ▫️ | 25% | 29.54 | 7.40 | 2.49 | 33.67 | 1.55 | — | 505,772 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | netnet | ▫️ | 25% | 29.54 | 7.40 | 2.49 | 33.67 | 1.55 | — | 505,772 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | custom | ▫️ | 0% | 29.54 | 7.40 | 2.49 | 33.67 | 1.55 | — | 505,772 | — |
 | NAGE | NIAGEN BIOSCIENCE, INC. | piotroski | ▫️ | 67% | 2.40 | 12.00 | 2.68 | 22.71 | 4.86 | 0.39 | 557,587 | — |
 | NAGE | NIAGEN BIOSCIENCE, INC. | buffett | ▫️ | 50% | 2.40 | 12.00 | 2.68 | 22.71 | 4.86 | 0.39 | 557,587 | — |
 | NAGE | NIAGEN BIOSCIENCE, INC. | lynch | ▫️ | 50% | 2.40 | 12.00 | 2.68 | 22.71 | 4.86 | 0.39 | 557,587 | — |
 | NAGE | NIAGEN BIOSCIENCE, INC. | netnet | ▫️ | 50% | 2.40 | 12.00 | 2.68 | 22.71 | 4.86 | 0.39 | 557,587 | — |
 | NAGE | NIAGEN BIOSCIENCE, INC. | graham | ▫️ | 44% | 2.40 | 12.00 | 2.68 | 22.71 | 4.86 | 0.39 | 557,587 | — |
 | NAGE | NIAGEN BIOSCIENCE, INC. | custom | ▫️ | 0% | 2.40 | 12.00 | 2.68 | 22.71 | 4.86 | 0.39 | 557,587 | — |
-| ADMA | ADMA BIOLOGICS, INC. | buffett | ▫️ | 67% | 11.06 | 18.43 | 5.67 | 30.78 | 6.71 | 0.31 | 3M | — |
-| ADMA | ADMA BIOLOGICS, INC. | greenblatt | ▫️ | 67% | 11.06 | 18.43 | 5.67 | 30.78 | 6.71 | 0.31 | 3M | — |
-| ADMA | ADMA BIOLOGICS, INC. | lynch | ▫️ | 50% | 11.06 | 18.43 | 5.67 | 30.78 | 6.71 | 0.31 | 3M | — |
-| ADMA | ADMA BIOLOGICS, INC. | netnet | ▫️ | 50% | 11.06 | 18.43 | 5.67 | 30.78 | 6.71 | 0.31 | 3M | — |
-| ADMA | ADMA BIOLOGICS, INC. | piotroski | ▫️ | 44% | 11.06 | 18.43 | 5.67 | 30.78 | 6.71 | 0.31 | 3M | — |
-| ADMA | ADMA BIOLOGICS, INC. | graham | ▫️ | 33% | 11.06 | 18.43 | 5.67 | 30.78 | 6.71 | 0.31 | 3M | — |
-| ADMA | ADMA BIOLOGICS, INC. | custom | ▫️ | 0% | 11.06 | 18.43 | 5.67 | 30.78 | 6.71 | 0.31 | 3M | — |
-| INSW | INTERNATIONAL SEAWAYS, INC. | buffett | ▫️ | 67% | 106 | 16.96 | 2.59 | 15.31 | 3.71 | 0.32 | 864,405 | — |
-| INSW | INTERNATIONAL SEAWAYS, INC. | piotroski | ▫️ | 67% | 106 | 16.96 | 2.59 | 15.31 | 3.71 | 0.32 | 864,405 | — |
-| INSW | INTERNATIONAL SEAWAYS, INC. | lynch | ▫️ | 50% | 106 | 16.96 | 2.59 | 15.31 | 3.71 | 0.32 | 864,405 | — |
-| INSW | INTERNATIONAL SEAWAYS, INC. | graham | ▫️ | 33% | 106 | 16.96 | 2.59 | 15.31 | 3.71 | 0.32 | 864,405 | — |
-| INSW | INTERNATIONAL SEAWAYS, INC. | greenblatt | ▫️ | 33% | 106 | 16.96 | 2.59 | 15.31 | 3.71 | 0.32 | 864,405 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
