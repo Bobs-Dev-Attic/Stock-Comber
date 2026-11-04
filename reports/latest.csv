@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
+SAFX,"XCF GLOBAL, INC.",greenblatt,True,3,3,100.0,0.11,0.20,0.40,197,0.11,10.14,1.76,9M,—
+NAGE,"NIAGEN BIOSCIENCE, INC.",greenblatt,True,3,3,100.0,2.36,11.80,2.63,22.71,4.86,0.39,2.01,"549,748",—
+VITL,"Vital Farms, Inc.",graham,True,9,9,100.0,10.63,7.38,1.39,18.87,2.16,0.48,15.73,"381,352",—
+VITL,"Vital Farms, Inc.",lynch,True,4,4,100.0,10.63,7.38,1.39,18.87,2.16,0.48,15.73,"381,352",—
 GRBK,"Green Brick Partners, Inc.",buffett,True,6,6,100.0,61.69,8.73,1.46,16.85,—,0.32,82.05,"472,722",—
 GRBK,"Green Brick Partners, Inc.",lynch,True,4,4,100.0,61.69,8.73,1.46,16.85,—,0.32,82.05,"472,722",—
-VRRM,VERRA MOBILITY CORPORATION,piotroski,True,9,9,100.0,2.66,3.13,1.46,46.64,2.09,4.62,5.89,5M,—
-USLM,UNITED STATES LIME & MINERALS INC,lynch,True,4,4,100.0,121,25.92,5.51,21.29,19.27,0.08,48.03,"179,122",—
-USLM,UNITED STATES LIME & MINERALS INC,buffett,True,5,6,83.3,121,25.92,5.51,21.29,19.27,0.08,48.03,"179,122",—
-BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,134,18.18,3.11,17.13,2.65,0.86,84.23,"770,709",—
-BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,134,18.18,3.11,17.13,2.65,0.86,84.23,"770,709",—
-AREC,AMERICAN RESOURCES CORPORATION,greenblatt,True,3,3,100.0,1.06,1.69,0.98,58.44,2.19,0.80,3.92,3M,—
-EVR,EVERCORE INC.,buffett,True,5,6,83.3,297,21.15,6.16,29.14,2.16,1.50,123,"461,462",—
-EVR,EVERCORE INC.,piotroski,True,7,9,77.8,297,21.15,6.16,29.14,2.16,1.50,123,"461,462",—
+HNRG,HALLADOR ENERGY CO,greenblatt,True,3,3,100.0,9.87,10.28,2.68,26.20,0.81,1.55,8.92,"500,360",—
+HNRG,HALLADOR ENERGY CO,piotroski,True,8,9,88.9,9.87,10.28,2.68,26.20,0.81,1.55,8.92,"500,360",—
+XPEL,"XPEL, INC.",buffett,True,6,6,100.0,42.49,22.97,4.20,18.28,3.25,0.35,20.53,"556,676",—
+XPEL,"XPEL, INC.",lynch,True,3,4,75.0,42.49,22.97,4.20,18.28,3.25,0.35,20.53,"556,676",—
+RILY,"BRC Group Holdings, Inc.",greenblatt,True,3,3,100.0,3.95,0.40,—,-179,—,-10.65,—,"395,284",—
+RILY,"BRC Group Holdings, Inc.",lynch,True,3,4,75.0,3.95,0.40,—,-179,—,-10.65,—,"395,284",—
+BKE,"BUCKLE, INC",greenblatt,True,3,3,100.0,46.22,11.16,5.52,49.39,1.89,1.33,27.93,"445,854",—
+BKE,"BUCKLE, INC",buffett,True,5,6,83.3,46.22,11.16,5.52,49.39,1.89,1.33,27.93,"445,854",—
+AREC,AMERICAN RESOURCES CORPORATION,greenblatt,True,3,3,100.0,1.05,1.67,0.97,58.44,2.19,0.80,3.92,"543,496",—
+PJT,PJT Partners Inc.,buffett,True,5,6,83.3,157,—,—,58.43,—,2.71,—,"86,091",—
+PJT,PJT Partners Inc.,piotroski,True,7,9,77.8,157,—,—,58.43,—,2.71,—,"86,091",—
+WLDN,"WILLDAN GROUP, INC.",piotroski,True,7,9,77.8,74.64,21.39,3.69,17.24,1.56,0.79,39.85,"132,600",—
+SFD,"SMITHFIELD FOODS, INC.",graham,True,9,9,100.0,18.36,7.31,1.06,14.51,2.97,—,31.27,3M,—
+EBF,"ENNIS, INC.",piotroski,True,7,9,77.8,21.10,12.71,1.76,13.81,3.72,0.16,21.19,"18,615",—
 SKY,"Champion Homes, Inc.",piotroski,True,8,9,88.9,86.37,23.60,3.10,13.15,2.48,—,47.88,1M,—
-SREA,SEMPRA,lynch,True,3,4,75.0,18.42,6.70,0.38,5.81,1.59,—,54.68,"104,028",—
-JOE,The St. Joe Company,piotroski,True,8,9,88.9,67.07,33.70,5.07,15.09,—,0.97,24.33,"314,351",—
-HOG,"Harley-Davidson, Inc.",graham,True,9,9,100.0,33.32,11.99,1.29,10.79,2.10,—,40.25,3M,—
-HOG,"Harley-Davidson, Inc.",piotroski,True,8,9,88.9,33.32,11.99,1.29,10.79,2.10,—,40.25,3M,—
-NHC,NATIONAL HEALTHCARE CORP,piotroski,True,9,9,100.0,206,26.84,3.01,11.23,1.82,0.42,109,"148,720",—
-NHC,NATIONAL HEALTHCARE CORP,lynch,True,3,4,75.0,206,26.84,3.01,11.23,1.82,0.42,109,"148,720",—
-FIVE,"Five Below, Inc.",piotroski,True,9,9,100.0,236,36.51,5.97,16.35,2.01,1.25,75.89,"663,035",—
-UMBF,UMB FINANCIAL CORP,lynch,True,3,4,75.0,136,14.65,1.30,9.13,—,8.50,148,"591,204",—
-OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,30.04,43.54,5.74,13.20,1.91,0.30,9.01,2M,—
-AGCO,AGCO CORP /DE,piotroski,True,8,9,88.9,111,11.40,1.94,17.00,1.39,1.72,112,1M,—
-CW,CURTISS-WRIGHT CORPORATION,piotroski,True,8,9,88.9,498,38.68,7.39,19.11,1.44,1.06,140,"435,072",—
-SSRM,SSR MINING INC.,piotroski,True,7,9,77.8,26.16,14.14,1.62,11.28,2.08,0.51,25.94,2M,—
-GRC,The Gorman-Rupp Company,piotroski,True,8,9,88.9,74.96,37.11,4.75,12.78,2.37,1.07,26.77,"135,335",—
-DLB,"Dolby Laboratories, Inc.",piotroski,True,7,9,77.8,63.32,24.17,2.35,9.72,3.17,0.23,39.82,"748,208",—
-BJ,"BJ’S WHOLESALE CLUB HOLDINGS, INC.",piotroski,True,8,9,88.9,109,24.99,6.58,26.32,0.75,2.42,40.50,2M,—
-PACS,"PACS Group, Inc.",piotroski,True,8,9,88.9,46.68,38.26,7.73,20.23,1.07,4.89,12.88,"802,863",—
-SHAK,SHAKE SHACK INC.,piotroski,True,8,9,88.9,70.14,64.35,5.59,8.70,1.76,2.56,17.55,1M,—
-CPRI,CAPRI HOLDINGS LIMITED,piotroski,True,7,9,77.8,20.06,17.60,30.05,171,1.21,39.38,4.14,4M,—
-FUL,FULLER H B CO,piotroski,True,7,9,77.8,50.19,18.25,1.39,7.59,1.70,1.59,47.32,"638,564",—
+CRVL,CORVEL CORPORATION,buffett,True,5,6,83.3,85.51,39.96,11.20,27.99,2.03,0.63,19.18,"25,027",—
+CRVL,CORVEL CORPORATION,piotroski,True,7,9,77.8,85.51,39.96,11.20,27.99,2.03,0.63,19.18,"25,027",—
+CRVL,CORVEL CORPORATION,lynch,True,3,4,75.0,85.51,39.96,11.20,27.99,2.03,0.63,19.18,"25,027",—
+PEN,"Penumbra, Inc",piotroski,True,8,9,88.9,323,71.41,8.88,12.45,6.64,0.28,60.79,"114,383",—
+UDR,"UDR, Inc.",piotroski,True,7,9,77.8,36.81,32.58,3.71,11.49,—,1.96,15.89,1M,—
+UDR,"UDR, Inc.",lynch,True,3,4,75.0,36.81,32.58,3.71,11.49,—,1.96,15.89,1M,—
+VCYT,"VERACYTE, INC.",piotroski,True,8,9,88.9,50.64,61.76,3.12,5.07,8.15,0.07,17.32,"216,520",—
+WWD,"WOODWARD, INC.",piotroski,True,9,9,100.0,317,44.10,7.59,17.23,2.08,0.80,82.19,"171,210",—
+AMH,AMERICAN HOMES 4 RENT,lynch,True,4,4,100.0,31.52,26.71,1.66,7.30,—,0.79,22.44,3M,—
+CENTA,Central Garden & Pet Company,piotroski,True,8,9,88.9,41.45,16.25,1.67,10.29,3.67,—,37.73,"62,601",—
+III,Information Services Group Inc.,piotroski,True,7,9,77.8,6.01,31.63,3.20,9.87,2.34,1.23,2.84,"686,301",—
+CCK,"CROWN HOLDINGS, INC.",piotroski,True,8,9,88.9,122,19.19,4.72,24.61,1.03,—,60.99,"98,780",—
+RH,RH,piotroski,True,8,9,88.9,142,22.57,46.51,206,1.19,78.80,20.85,"248,750",—
+MCS,MARCUS CORP,piotroski,True,7,9,77.8,27.84,68.62,1.90,2.77,0.40,—,11.55,"27,314",—
+LW,"LAMB WESTON HOLDINGS, INC.",piotroski,True,7,9,77.8,55.72,26.79,4.25,15.89,1.42,—,24.78,"225,040",—
 GCO,GENESCO INC,piotroski,True,8,9,88.9,36.53,29.22,0.68,2.34,1.64,1.46,38.74,"114,363",—
-QUAD,"Quad/Graphics, Inc.",piotroski,True,7,9,77.8,7.46,13.81,—,-45.38,0.86,-18.90,—,"602,170",—
-ZUMZ,ZUMIEZ INC,piotroski,True,8,9,88.9,14.29,18.32,0.76,4.13,2.01,0.99,18.16,"200,542",—
-MKSI,MKS INC.,piotroski,True,8,9,88.9,205,46.95,5.11,10.85,2.71,2.24,62.84,2M,—
-SMG,Scotts Miracle-Gro Co,piotroski,True,7,9,77.8,61.80,25.02,—,-40.62,1.27,-8.67,—,2M,—
-THO,"THOR Industries, Inc.",piotroski,True,7,9,77.8,77.41,22.90,0.95,4.17,1.77,—,78.52,1M,—
-ADT,ADT Inc.,piotroski,True,8,9,88.9,9.85,—,—,15.77,0.93,3.19,—,34M,—
-AVNW,"Aviat Networks, Inc.",piotroski,True,7,9,77.8,20.12,106,0.98,0.95,1.97,1.24,9.37,"113,708",—
-GRBK,"Green Brick Partners, Inc.",graham,False,7,9,77.8,61.69,8.73,1.46,16.85,—,0.32,82.05,"472,722",—
-GRBK,"Green Brick Partners, Inc.",greenblatt,False,2,3,66.7,61.69,8.73,1.46,16.85,—,0.32,82.05,"472,722",—
-GRBK,"Green Brick Partners, Inc.",piotroski,False,4,9,44.4,61.69,8.73,1.46,16.85,—,0.32,82.05,"472,722",—
-GRBK,"Green Brick Partners, Inc.",netnet,False,1,4,25.0,61.69,8.73,1.46,16.85,—,0.32,82.05,"472,722",—
-GRBK,"Green Brick Partners, Inc.",custom,False,0,0,0.0,61.69,8.73,1.46,16.85,—,0.32,82.05,"472,722",—
-VRRM,VERRA MOBILITY CORPORATION,graham,False,7,9,77.8,2.66,3.13,1.46,46.64,2.09,4.62,5.89,5M,—
-VRRM,VERRA MOBILITY CORPORATION,greenblatt,False,2,3,66.7,2.66,3.13,1.46,46.64,2.09,4.62,5.89,5M,—
-VRRM,VERRA MOBILITY CORPORATION,buffett,False,3,6,50.0,2.66,3.13,1.46,46.64,2.09,4.62,5.89,5M,—
-VRRM,VERRA MOBILITY CORPORATION,lynch,False,1,4,25.0,2.66,3.13,1.46,46.64,2.09,4.62,5.89,5M,—
-VRRM,VERRA MOBILITY CORPORATION,netnet,False,1,4,25.0,2.66,3.13,1.46,46.64,2.09,4.62,5.89,5M,—
-VRRM,VERRA MOBILITY CORPORATION,custom,False,0,0,0.0,2.66,3.13,1.46,46.64,2.09,4.62,5.89,5M,—
-USLM,UNITED STATES LIME & MINERALS INC,piotroski,False,6,9,66.7,121,25.92,5.51,21.29,19.27,0.08,48.03,"179,122",—
+MYE,"Myers Industries, Inc.",piotroski,True,7,9,77.8,28.25,30.38,3.61,11.87,1.67,1.89,12.80,"45,509",—
+NEOG,Neogen Corporation,piotroski,True,8,9,88.9,12.10,—,1.26,-0.38,3.82,0.60,—,2M,—
+CTRI,"Centuri Holdings, Inc.",piotroski,True,7,9,77.8,19.92,79.68,2.06,2.57,1.78,1.75,7.37,"483,913",—
+SAFX,"XCF GLOBAL, INC.",graham,False,4,9,44.4,0.11,0.20,0.40,197,0.11,10.14,1.76,9M,—
+SAFX,"XCF GLOBAL, INC.",buffett,False,2,6,33.3,0.11,0.20,0.40,197,0.11,10.14,1.76,9M,—
+SAFX,"XCF GLOBAL, INC.",lynch,False,1,4,25.0,0.11,0.20,0.40,197,0.11,10.14,1.76,9M,—
+SAFX,"XCF GLOBAL, INC.",netnet,False,1,4,25.0,0.11,0.20,0.40,197,0.11,10.14,1.76,9M,—
+SAFX,"XCF GLOBAL, INC.",piotroski,False,1,9,11.1,0.11,0.20,0.40,197,0.11,10.14,1.76,9M,—
+SAFX,"XCF GLOBAL, INC.",custom,False,0,0,0.0,0.11,0.20,0.40,197,0.11,10.14,1.76,9M,—
+NAGE,"NIAGEN BIOSCIENCE, INC.",piotroski,False,6,9,66.7,2.36,11.80,2.63,22.71,4.86,0.39,2.01,"549,748",—
+NAGE,"NIAGEN BIOSCIENCE, INC.",buffett,False,3,6,50.0,2.36,11.80,2.63,22.71,4.86,0.39,2.01,"549,748",—
+NAGE,"NIAGEN BIOSCIENCE, INC.",lynch,False,2,4,50.0,2.36,11.80,2.63,22.71,4.86,0.39,2.01,"549,748",—
+NAGE,"NIAGEN BIOSCIENCE, INC.",netnet,False,2,4,50.0,2.36,11.80,2.63,22.71,4.86,0.39,2.01,"549,748",—
