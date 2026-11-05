@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-11-05 16:48 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-11-05 22:28 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **28** strategy matches passed.
+Screened **75** companies · **26** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| UCFIW | CN Healthy Food Tech Group C | greenblatt | ✅ | 100% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
-| UCFIW | CN Healthy Food Tech Group C | netnet | ✅ | 100% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | greenblatt | ✅ | 100% | 29.36 | 7.36 | 2.48 | 33.67 | 1.55 | — | 133,561 | — |
-| WHD | Cactus, Inc. | lynch | ✅ | 75% | 58.07 | — | — | 13.54 | 5.81 | 0.36 | 894,779 | — |
-| SKYW | SKYWEST INC | piotroski | ✅ | 89% | 81.09 | 7.83 | 1.22 | 15.60 | 0.65 | — | 80,651 | — |
-| GMED | GLOBUS MEDICAL, INC. | piotroski | ✅ | 100% | 81.75 | 20.86 | 2.45 | 11.76 | 4.26 | 0.16 | 1M | — |
-| GMED | GLOBUS MEDICAL, INC. | lynch | ✅ | 100% | 81.75 | 20.86 | 2.45 | 11.76 | 4.26 | 0.16 | 1M | — |
-| BKE | BUCKLE, INC | greenblatt | ✅ | 100% | 47.88 | 11.57 | 5.72 | 49.39 | 1.89 | 1.33 | 547,055 | — |
-| BKE | BUCKLE, INC | buffett | ✅ | 83% | 47.88 | 11.57 | 5.72 | 49.39 | 1.89 | 1.33 | 547,055 | — |
-| AES | THE AES CORPORATION | greenblatt | ✅ | 100% | 14.90 | 11.83 | 2.62 | 22.40 | 0.77 | — | 14M | — |
-| BELFA | BEL FUSE INC /NJ | piotroski | ✅ | 89% | 174 | — | — | 14.46 | 3.02 | 0.98 | 85,175 | — |
-| TOST | Toast, Inc. | piotroski | ✅ | 78% | 34.63 | 61.84 | 9.90 | 16.10 | 2.75 | 0.48 | 6M | — |
-| DRVN | Driven Brands Holdings Inc. | piotroski | ✅ | 78% | 11.91 | 14.01 | 2.54 | 18.27 | 0.75 | 4.42 | 3M | — |
-| TRN | TRINITY INDUSTRIES INC | greenblatt | ✅ | 100% | 30.67 | 10.06 | 2.36 | 23.50 | — | 6.76 | 276,990 | — |
-| TRN | TRINITY INDUSTRIES INC | piotroski | ✅ | 78% | 30.67 | 10.06 | 2.36 | 23.50 | — | 6.76 | 276,990 | — |
-| OSW | OneSpaWorld Holdings Limited | piotroski | ✅ | 78% | 31.29 | 45.35 | 5.98 | 13.20 | 1.91 | 0.30 | 1M | — |
-| ELS | EQUITY LIFESTYLE PROPERTIES, | buffett | ✅ | 83% | 62.60 | 31.14 | 7.13 | 22.89 | — | 2.24 | 343,058 | — |
-| EHC | Encompass Health Corporation | piotroski | ✅ | 100% | 142 | 25.56 | 5.93 | 23.22 | 1.08 | 1.56 | 358,720 | — |
-| MYRG | MYR GROUP INC. | piotroski | ✅ | 89% | 247 | 32.75 | 5.87 | 17.93 | 1.33 | 1.49 | 183,307 | — |
-| BCO | BRINK’S CO | piotroski | ✅ | 78% | 113 | 24.10 | 17.30 | 71.91 | 1.51 | 24.96 | 799,670 | — |
-| GRC | The Gorman-Rupp Company | piotroski | ✅ | 89% | 73.84 | 36.55 | 4.68 | 12.78 | 2.37 | 1.07 | 150,961 | — |
-| EMBC | EMBECTA CORP. | piotroski | ✅ | 78% | 6.38 | 3.94 | — | -14.66 | 2.41 | — | 190,599 | — |
-| CHEF | CHEFS’ WAREHOUSE, INC. | piotroski | ✅ | 100% | 105 | 62.45 | 7.99 | 11.97 | 2.05 | 2.36 | 102,742 | — |
-| AMCR | AMCOR PLC | piotroski | ✅ | 89% | 48.50 | 20.38 | 1.91 | 9.38 | 1.25 | 2.15 | 9M | — |
-| GCO | GENESCO INC | piotroski | ✅ | 89% | 39.30 | 31.44 | 0.74 | 2.34 | 1.64 | 1.46 | 277,518 | — |
-| SPHR | SPHERE ENTERTAINMENT CO. | piotroski | ✅ | 78% | 117 | 158 | 2.38 | 1.50 | 1.09 | 0.89 | 723,509 | — |
-| NEOG | Neogen Corporation | piotroski | ✅ | 89% | 12.46 | — | 1.29 | -0.38 | 3.82 | 0.60 | 5M | — |
-| CALX | Calix, Inc | piotroski | ✅ | 78% | 32.48 | 125 | 2.62 | 2.08 | 4.24 | 0.23 | 305,360 | — |
-| UCFIW | CN Healthy Food Tech Group C | graham | ▫️ | 56% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
-| UCFIW | CN Healthy Food Tech Group C | piotroski | ▫️ | 44% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
-| UCFIW | CN Healthy Food Tech Group C | buffett | ▫️ | 33% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
-| UCFIW | CN Healthy Food Tech Group C | lynch | ▫️ | 25% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
-| UCFIW | CN Healthy Food Tech Group C | custom | ▫️ | 0% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | graham | ▫️ | 56% | 29.36 | 7.36 | 2.48 | 33.67 | 1.55 | — | 133,561 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | piotroski | ▫️ | 56% | 29.36 | 7.36 | 2.48 | 33.67 | 1.55 | — | 133,561 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | buffett | ▫️ | 50% | 29.36 | 7.36 | 2.48 | 33.67 | 1.55 | — | 133,561 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | lynch | ▫️ | 25% | 29.36 | 7.36 | 2.48 | 33.67 | 1.55 | — | 133,561 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | netnet | ▫️ | 25% | 29.36 | 7.36 | 2.48 | 33.67 | 1.55 | — | 133,561 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | custom | ▫️ | 0% | 29.36 | 7.36 | 2.48 | 33.67 | 1.55 | — | 133,561 | — |
-| WHD | Cactus, Inc. | graham | ▫️ | 67% | 58.07 | — | — | 13.54 | 5.81 | 0.36 | 894,779 | — |
-| WHD | Cactus, Inc. | piotroski | ▫️ | 56% | 58.07 | — | — | 13.54 | 5.81 | 0.36 | 894,779 | — |
-| WHD | Cactus, Inc. | buffett | ▫️ | 50% | 58.07 | — | — | 13.54 | 5.81 | 0.36 | 894,779 | — |
-| WHD | Cactus, Inc. | greenblatt | ▫️ | 33% | 58.07 | — | — | 13.54 | 5.81 | 0.36 | 894,779 | — |
-| WHD | Cactus, Inc. | netnet | ▫️ | 25% | 58.07 | — | — | 13.54 | 5.81 | 0.36 | 894,779 | — |
-| WHD | Cactus, Inc. | custom | ▫️ | 0% | 58.07 | — | — | 13.54 | 5.81 | 0.36 | 894,779 | — |
-| SKYW | SKYWEST INC | graham | ▫️ | 67% | 81.09 | 7.83 | 1.22 | 15.60 | 0.65 | — | 80,651 | — |
-| SKYW | SKYWEST INC | greenblatt | ▫️ | 67% | 81.09 | 7.83 | 1.22 | 15.60 | 0.65 | — | 80,651 | — |
-| SKYW | SKYWEST INC | buffett | ▫️ | 50% | 81.09 | 7.83 | 1.22 | 15.60 | 0.65 | — | 80,651 | — |
-| SKYW | SKYWEST INC | lynch | ▫️ | 25% | 81.09 | 7.83 | 1.22 | 15.60 | 0.65 | — | 80,651 | — |
-| SKYW | SKYWEST INC | netnet | ▫️ | 25% | 81.09 | 7.83 | 1.22 | 15.60 | 0.65 | — | 80,651 | — |
+| BYD | BOYD GAMING CORP | greenblatt | ✅ | 100% | 77.07 | 3.42 | 2.41 | 70.66 | 0.54 | — | 706,203 | — |
+| BYD | BOYD GAMING CORP | piotroski | ✅ | 78% | 77.07 | 3.42 | 2.41 | 70.66 | 0.54 | — | 706,203 | — |
+| TDW | TIDEWATER INC | piotroski | ✅ | 89% | 69.08 | 10.40 | 2.55 | 24.51 | 2.90 | — | 1M | — |
+| TOL | Toll Brothers, Inc. | lynch | ✅ | 100% | 156 | 11.53 | 1.88 | 16.28 | — | 0.75 | 1M | — |
+| TOL | Toll Brothers, Inc. | buffett | ✅ | 83% | 156 | 11.53 | 1.88 | 16.28 | — | 0.75 | 1M | — |
+| RILY | BRC Group Holdings, Inc. | greenblatt | ✅ | 100% | 3.79 | 0.39 | — | -179 | — | -10.65 | 953,508 | — |
+| RILY | BRC Group Holdings, Inc. | lynch | ✅ | 75% | 3.79 | 0.39 | — | -179 | — | -10.65 | 953,508 | — |
+| TRNO | Terreno Realty Corporation | lynch | ✅ | 100% | 67.09 | 17.16 | 1.66 | 9.72 | — | 0.30 | 887,522 | — |
+| AES | THE AES CORPORATION | greenblatt | ✅ | 100% | 14.89 | 11.82 | 2.62 | 22.40 | 0.77 | — | 13M | — |
+| WTFC | WINTRUST FINANCIAL CORP | lynch | ✅ | 75% | 152 | 13.31 | 1.42 | 11.35 | — | 8.80 | 491,156 | — |
+| MCY | MERCURY GENERAL CORPORATION | piotroski | ✅ | 78% | 84.48 | 8.65 | 1.94 | 22.38 | — | 2.96 | 616,992 | — |
+| KFY | KORN FERRY | piotroski | ✅ | 100% | 77.16 | 14.78 | 2.05 | 14.06 | 1.94 | 1.06 | 358,718 | — |
+| KFY | KORN FERRY | lynch | ✅ | 75% | 77.16 | 14.78 | 2.05 | 14.06 | 1.94 | 1.06 | 358,718 | — |
+| IOSP | INNOSPEC INC. | lynch | ✅ | 100% | 79.13 | 16.94 | 1.49 | 8.79 | 2.79 | 0.38 | 453,348 | — |
+| IOSP | INNOSPEC INC. | piotroski | ✅ | 89% | 79.13 | 16.94 | 1.49 | 8.79 | 2.79 | 0.38 | 453,348 | — |
+| CSTM | Constellium SE | piotroski | ✅ | 100% | 20.99 | 10.93 | 3.13 | 28.68 | 1.29 | 4.60 | 2M | — |
+| EFC | Ellington Financial Inc. | lynch | ✅ | 75% | 11.49 | 9.66 | 0.63 | 6.47 | — | 9.53 | 2M | — |
+| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 18.74 | 9.92 | 2.45 | 24.66 | 2.26 | 2.62 | 1M | — |
+| NJR | NEW JERSEY RESOURCES CORPORA | piotroski | ✅ | 78% | 54.69 | 16.42 | 2.30 | 14.03 | 0.73 | — | 679,624 | — |
+| AM | ANTERO MIDSTREAM CORPORATION | piotroski | ✅ | 78% | 19.17 | 22.29 | 4.69 | 20.95 | 3.41 | 1.98 | 4M | — |
+| SSRM | SSR MINING INC. | piotroski | ✅ | 78% | 27.92 | 15.09 | 1.73 | 11.28 | 2.08 | 0.51 | 3M | — |
+| EXTR | EXTREME NETWORKS, INC. | piotroski | ✅ | 89% | 21.05 | 67.90 | 32.07 | 47.54 | 0.93 | — | 3M | — |
+| IEX | IDEX CORP | piotroski | ✅ | 78% | 223 | 34.73 | 4.16 | 12.00 | 2.86 | 0.72 | 829,242 | — |
+| TBCH | TURTLE BEACH CORPORATION | piotroski | ✅ | 78% | 16.65 | 21.62 | 2.65 | 12.24 | 1.98 | 1.09 | 682,391 | — |
+| MPAA | MOTORCAR PARTS OF AMERICA, I | piotroski | ✅ | 78% | 10.15 | 16.38 | 0.76 | 4.66 | 1.46 | 2.83 | 93,735 | — |
+| TRLV | TRULIEVE CANNABIS CORP. | piotroski | ✅ | 89% | 10.90 | — | 1.82 | -10.70 | 4.43 | 1.36 | 1M | — |
+| BYD | BOYD GAMING CORP | buffett | ▫️ | 67% | 77.07 | 3.42 | 2.41 | 70.66 | 0.54 | — | 706,203 | — |
+| BYD | BOYD GAMING CORP | graham | ▫️ | 56% | 77.07 | 3.42 | 2.41 | 70.66 | 0.54 | — | 706,203 | — |
+| BYD | BOYD GAMING CORP | lynch | ▫️ | 25% | 77.07 | 3.42 | 2.41 | 70.66 | 0.54 | — | 706,203 | — |
+| BYD | BOYD GAMING CORP | netnet | ▫️ | 25% | 77.07 | 3.42 | 2.41 | 70.66 | 0.54 | — | 706,203 | — |
+| BYD | BOYD GAMING CORP | custom | ▫️ | 0% | 77.07 | 3.42 | 2.41 | 70.66 | 0.54 | — | 706,203 | — |
+| TDW | TIDEWATER INC | greenblatt | ▫️ | 67% | 69.08 | 10.40 | 2.55 | 24.51 | 2.90 | — | 1M | — |
+| TDW | TIDEWATER INC | buffett | ▫️ | 50% | 69.08 | 10.40 | 2.55 | 24.51 | 2.90 | — | 1M | — |
+| TDW | TIDEWATER INC | graham | ▫️ | 44% | 69.08 | 10.40 | 2.55 | 24.51 | 2.90 | — | 1M | — |
+| TDW | TIDEWATER INC | lynch | ▫️ | 25% | 69.08 | 10.40 | 2.55 | 24.51 | 2.90 | — | 1M | — |
+| TDW | TIDEWATER INC | netnet | ▫️ | 25% | 69.08 | 10.40 | 2.55 | 24.51 | 2.90 | — | 1M | — |
+| TDW | TIDEWATER INC | custom | ▫️ | 0% | 69.08 | 10.40 | 2.55 | 24.51 | 2.90 | — | 1M | — |
+| TOL | Toll Brothers, Inc. | graham | ▫️ | 67% | 156 | 11.53 | 1.88 | 16.28 | — | 0.75 | 1M | — |
+| TOL | Toll Brothers, Inc. | greenblatt | ▫️ | 67% | 156 | 11.53 | 1.88 | 16.28 | — | 0.75 | 1M | — |
+| TOL | Toll Brothers, Inc. | piotroski | ▫️ | 44% | 156 | 11.53 | 1.88 | 16.28 | — | 0.75 | 1M | — |
+| TOL | Toll Brothers, Inc. | netnet | ▫️ | 25% | 156 | 11.53 | 1.88 | 16.28 | — | 0.75 | 1M | — |
+| TOL | Toll Brothers, Inc. | custom | ▫️ | 0% | 156 | 11.53 | 1.88 | 16.28 | — | 0.75 | 1M | — |
+| NKLR | TERRA INNOVATUM GLOBAL N.V. | greenblatt | ▫️ | 67% | 2.03 | 0.21 | — | -576 | 33.57 | -2.13 | 377,099 | — |
+| NKLR | TERRA INNOVATUM GLOBAL N.V. | lynch | ▫️ | 50% | 2.03 | 0.21 | — | -576 | 33.57 | -2.13 | 377,099 | — |
+| NKLR | TERRA INNOVATUM GLOBAL N.V. | graham | ▫️ | 33% | 2.03 | 0.21 | — | -576 | 33.57 | -2.13 | 377,099 | — |
+| NKLR | TERRA INNOVATUM GLOBAL N.V. | netnet | ▫️ | 25% | 2.03 | 0.21 | — | -576 | 33.57 | -2.13 | 377,099 | — |
+| NKLR | TERRA INNOVATUM GLOBAL N.V. | buffett | ▫️ | 17% | 2.03 | 0.21 | — | -576 | 33.57 | -2.13 | 377,099 | — |
+| NKLR | TERRA INNOVATUM GLOBAL N.V. | piotroski | ▫️ | 11% | 2.03 | 0.21 | — | -576 | 33.57 | -2.13 | 377,099 | — |
+| NKLR | TERRA INNOVATUM GLOBAL N.V. | custom | ▫️ | 0% | 2.03 | 0.21 | — | -576 | 33.57 | -2.13 | 377,099 | — |
+| RILY | BRC Group Holdings, Inc. | buffett | ▫️ | 50% | 3.79 | 0.39 | — | -179 | — | -10.65 | 953,508 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
