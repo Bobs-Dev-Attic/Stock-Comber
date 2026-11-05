@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-11-05 01:49 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-11-05 08:36 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **32** strategy matches passed.
+Screened **75** companies · **36** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| UCFIW | CN Healthy Food Tech Group C | greenblatt | ✅ | 100% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
-| UCFIW | CN Healthy Food Tech Group C | netnet | ✅ | 100% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
-| TOL | Toll Brothers, Inc. | lynch | ✅ | 100% | 158 | 11.75 | 1.91 | 16.28 | — | 0.75 | 1M | — |
-| TOL | Toll Brothers, Inc. | buffett | ✅ | 83% | 158 | 11.75 | 1.91 | 16.28 | — | 0.75 | 1M | — |
-| OTTR | OTTER TAIL CORPORATION | lynch | ✅ | 75% | 83.82 | 12.80 | 1.90 | 14.82 | 2.28 | — | 471,751 | — |
-| CRS | CARPENTER TECHNOLOGY CORPORA | piotroski | ✅ | 89% | 292 | 27.77 | 6.61 | 23.78 | 3.81 | 0.72 | 2M | — |
-| OLED | UNIVERSAL DISPLAY CORPORATIO | piotroski | ✅ | 78% | 89.57 | 17.63 | 2.42 | 13.75 | 10.06 | 0.12 | 925,707 | — |
-| SFM | Sprouts Farmers Market, Inc. | greenblatt | ✅ | 100% | 54.40 | 10.24 | 3.83 | 37.32 | 0.93 | 1.96 | 3M | — |
-| SFM | Sprouts Farmers Market, Inc. | piotroski | ✅ | 78% | 54.40 | 10.24 | 3.83 | 37.32 | 0.93 | 1.96 | 3M | — |
-| SNA | Snap-on Inc | buffett | ✅ | 83% | 369 | 19.21 | 3.29 | 17.14 | 4.79 | 0.41 | 752,273 | — |
-| DAKT | Daktronics, Inc. | piotroski | ✅ | 89% | 20.32 | 22.09 | 3.34 | 15.09 | 2.31 | — | 400,902 | — |
-| DAKT | Daktronics, Inc. | lynch | ✅ | 75% | 20.32 | 22.09 | 3.34 | 15.09 | 2.31 | — | 400,902 | — |
-| LMB | LIMBACH HOLDINGS, INC. | piotroski | ✅ | 78% | 58.11 | 17.99 | 3.59 | 19.97 | 1.44 | 0.95 | 665,958 | — |
-| LMB | LIMBACH HOLDINGS, INC. | lynch | ✅ | 75% | 58.11 | 17.99 | 3.59 | 19.97 | 1.44 | 0.95 | 665,958 | — |
-| FSS | FEDERAL SIGNAL CORPORATION | lynch | ✅ | 75% | 118 | 29.41 | 5.25 | 17.84 | 3.02 | 0.73 | 850,761 | — |
+| SLDE | Slide Insurance Holdings, In | greenblatt | ✅ | 100% | 27.28 | 8.12 | 3.23 | 39.88 | — | 1.62 | 991,890 | — |
+| FSLR | First Solar, Inc. | lynch | ✅ | 100% | 195 | 13.69 | 2.19 | 16.02 | 2.67 | 0.40 | 9M | — |
+| FSLR | First Solar, Inc. | piotroski | ✅ | 89% | 195 | 13.69 | 2.19 | 16.02 | 2.67 | 0.40 | 9M | — |
+| SBC | SBC Medical Group Holdings I | lynch | ✅ | 75% | 5.32 | 10.64 | 2.21 | 20.54 | 3.78 | 0.47 | 103,136 | — |
+| HNRG | HALLADOR ENERGY CO | greenblatt | ✅ | 100% | 9.61 | 10.01 | 2.61 | 26.20 | 0.81 | 1.55 | 2M | — |
+| HNRG | HALLADOR ENERGY CO | piotroski | ✅ | 89% | 9.61 | 10.01 | 2.61 | 26.20 | 0.81 | 1.55 | 2M | — |
+| LPG | DORIAN LPG LTD. | lynch | ✅ | 100% | 49.43 | 10.89 | 1.85 | 17.00 | 2.67 | 0.64 | 718,259 | — |
+| LPG | DORIAN LPG LTD. | piotroski | ✅ | 89% | 49.43 | 10.89 | 1.85 | 17.00 | 2.67 | 0.64 | 718,259 | — |
+| USLM | UNITED STATES LIME & MINERAL | lynch | ✅ | 100% | 123 | 26.42 | 5.62 | 21.29 | 19.27 | 0.08 | 261,242 | — |
+| USLM | UNITED STATES LIME & MINERAL | buffett | ✅ | 83% | 123 | 26.42 | 5.62 | 21.29 | 19.27 | 0.08 | 261,242 | — |
+| REX | REX AMERICAN RESOURCES CORPO | lynch | ✅ | 75% | 39.60 | 15.84 | 2.15 | 15.57 | 5.94 | — | 246,502 | — |
+| SNA | Snap-on Inc | buffett | ✅ | 83% | 369 | 19.21 | 3.29 | 17.14 | 4.79 | 0.41 | 752,357 | — |
+| HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 130 | 50.91 | 331 | 649 | 4.66 | 50.73 | 2M | — |
 | SKY | Champion Homes, Inc. | piotroski | ✅ | 89% | 96.17 | 26.28 | 3.45 | 13.15 | 2.48 | — | 2M | — |
-| EFC | Ellington Financial Inc. | lynch | ✅ | 75% | 11.85 | 9.96 | 0.65 | 6.47 | — | 9.53 | 2M | — |
-| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 19.24 | 10.18 | 2.52 | 24.66 | 2.26 | 2.62 | 2M | — |
-| AIR | AAR CORP | piotroski | ✅ | 78% | 109 | 22.37 | 2.45 | 11.02 | 2.84 | — | 605,001 | — |
-| AIR | AAR CORP | lynch | ✅ | 75% | 109 | 22.37 | 2.45 | 11.02 | 2.84 | — | 605,001 | — |
-| ACEL | Accel Entertainment, Inc. | piotroski | ✅ | 78% | 13.42 | 22.37 | 4.30 | 19.09 | 2.61 | — | 2M | — |
-| TOST | Toast, Inc. | piotroski | ✅ | 78% | 35.37 | 63.16 | 10.11 | 16.10 | 2.75 | 0.48 | 21M | — |
-| PKE | PARK AEROSPACE CORP. | piotroski | ✅ | 100% | 24.73 | 44.16 | 3.83 | 8.67 | 18.24 | 0.09 | 377,664 | — |
-| PKE | PARK AEROSPACE CORP. | lynch | ✅ | 75% | 24.73 | 44.16 | 3.83 | 8.67 | 18.24 | 0.09 | 377,664 | — |
-| AGCO | AGCO CORP /DE | piotroski | ✅ | 89% | 113 | 11.56 | 1.96 | 17.00 | 1.39 | 1.72 | 682,380 | — |
-| JJSF | J&J SNACK FOODS CORP. | lynch | ✅ | 75% | 91.01 | 27.09 | 1.84 | 6.79 | 2.72 | — | 364,955 | — |
-| WWD | WOODWARD, INC. | piotroski | ✅ | 100% | 326 | 45.39 | 7.82 | 17.23 | 2.08 | 0.80 | 920,920 | — |
-| PLXS | PLEXUS CORP. | piotroski | ✅ | 89% | 207 | 33.02 | 3.92 | 11.89 | 1.58 | 1.16 | 343,018 | — |
-| MCS | MARCUS CORP | piotroski | ✅ | 78% | 28.05 | 69.13 | 1.92 | 2.77 | 0.40 | — | 190,125 | — |
-| GCO | GENESCO INC | piotroski | ✅ | 89% | 39.30 | 31.44 | 0.74 | 2.34 | 1.64 | 1.46 | 277,516 | — |
-| HCSG | HEALTHCARE SERVICES GROUP, I | piotroski | ✅ | 100% | 26.54 | 32.77 | 3.80 | 11.58 | 3.38 | — | 694,562 | — |
-| SMG | Scotts Miracle-Gro Co | piotroski | ✅ | 78% | 67.19 | 27.20 | — | -40.62 | 1.27 | -8.67 | 3M | — |
-| UCFIW | CN Healthy Food Tech Group C | graham | ▫️ | 56% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
-| UCFIW | CN Healthy Food Tech Group C | piotroski | ▫️ | 44% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
-| UCFIW | CN Healthy Food Tech Group C | buffett | ▫️ | 33% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
-| UCFIW | CN Healthy Food Tech Group C | lynch | ▫️ | 25% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
-| UCFIW | CN Healthy Food Tech Group C | custom | ▫️ | 0% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
-| HGTY | HAGERTY, INC. | piotroski | ▫️ | 67% | 18.71 | — | — | 67.43 | — | 6.09 | 1M | — |
-| HGTY | HAGERTY, INC. | greenblatt | ▫️ | 67% | 18.71 | — | — | 67.43 | — | 6.09 | 1M | — |
-| HGTY | HAGERTY, INC. | buffett | ▫️ | 50% | 18.71 | — | — | 67.43 | — | 6.09 | 1M | — |
-| HGTY | HAGERTY, INC. | lynch | ▫️ | 25% | 18.71 | — | — | 67.43 | — | 6.09 | 1M | — |
-| HGTY | HAGERTY, INC. | netnet | ▫️ | 25% | 18.71 | — | — | 67.43 | — | 6.09 | 1M | — |
-| HGTY | HAGERTY, INC. | graham | ▫️ | 11% | 18.71 | — | — | 67.43 | — | 6.09 | 1M | — |
-| HGTY | HAGERTY, INC. | custom | ▫️ | 0% | 18.71 | — | — | 67.43 | — | 6.09 | 1M | — |
-| IDR | IDAHO STRATEGIC RESOURCES, I | buffett | ▫️ | 67% | 20.06 | 17.60 | 2.73 | 15.45 | 13.96 | 0.05 | 214,860 | — |
-| IDR | IDAHO STRATEGIC RESOURCES, I | piotroski | ▫️ | 67% | 20.06 | 17.60 | 2.73 | 15.45 | 13.96 | 0.05 | 214,860 | — |
-| IDR | IDAHO STRATEGIC RESOURCES, I | lynch | ▫️ | 50% | 20.06 | 17.60 | 2.73 | 15.45 | 13.96 | 0.05 | 214,860 | — |
-| IDR | IDAHO STRATEGIC RESOURCES, I | netnet | ▫️ | 50% | 20.06 | 17.60 | 2.73 | 15.45 | 13.96 | 0.05 | 214,860 | — |
-| IDR | IDAHO STRATEGIC RESOURCES, I | graham | ▫️ | 33% | 20.06 | 17.60 | 2.73 | 15.45 | 13.96 | 0.05 | 214,860 | — |
-| IDR | IDAHO STRATEGIC RESOURCES, I | greenblatt | ▫️ | 33% | 20.06 | 17.60 | 2.73 | 15.45 | 13.96 | 0.05 | 214,860 | — |
+| UFPT | UFP Technologies, Inc. | lynch | ✅ | 100% | 330 | 37.69 | 6.07 | 16.12 | 2.68 | 0.55 | 358,590 | — |
+| UFPT | UFP Technologies, Inc. | piotroski | ✅ | 89% | 330 | 37.69 | 6.07 | 16.12 | 2.68 | 0.55 | 358,590 | — |
+| HOG | Harley-Davidson, Inc. | graham | ✅ | 100% | 34.59 | 12.44 | 1.34 | 10.79 | 2.10 | — | 2M | — |
+| HOG | Harley-Davidson, Inc. | piotroski | ✅ | 89% | 34.59 | 12.44 | 1.34 | 10.79 | 2.10 | — | 2M | — |
+| OPY | OPPENHEIMER HOLDINGS INC. | piotroski | ✅ | 78% | 91.86 | 7.04 | 1.06 | 15.08 | — | 2.77 | 103,189 | — |
+| FIZZ | National Beverage Corp. | buffett | ✅ | 83% | 37.65 | 19.21 | 5.55 | 28.89 | 4.39 | 0.34 | 383,939 | — |
+| WLY | JOHN WILEY & SONS, INC. | piotroski | ✅ | 100% | 52.30 | 12.57 | 3.28 | 26.13 | 0.54 | 2.06 | 416,643 | — |
+| VCYT | VERACYTE, INC. | piotroski | ✅ | 89% | 52.52 | 64.05 | 3.23 | 5.07 | 8.15 | 0.07 | 2M | — |
+| SSRM | SSR MINING INC. | piotroski | ✅ | 78% | 28.15 | 15.22 | 1.74 | 11.28 | 2.08 | 0.51 | 6M | — |
+| WAFD | WaFd, Inc. | piotroski | ✅ | 78% | 30.13 | 11.46 | 0.80 | 7.44 | — | 7.78 | 761,402 | — |
+| HLIO | HELIOS TECHNOLOGIES, INC. | piotroski | ✅ | 100% | 66.95 | 46.17 | 2.39 | 5.20 | 2.90 | 0.63 | 425,735 | — |
+| HLIO | HELIOS TECHNOLOGIES, INC. | lynch | ✅ | 75% | 66.95 | 46.17 | 2.39 | 5.20 | 2.90 | 0.63 | 425,735 | — |
+| ACM | AECOM | piotroski | ✅ | 78% | 68.20 | 16.20 | 3.65 | 22.54 | 1.14 | 3.81 | 1M | — |
+| ACA | Arcosa, Inc. | piotroski | ✅ | 100% | 149 | 35.18 | 2.77 | 7.89 | 2.20 | 0.89 | 875,023 | — |
+| MAGN | Magnera Corporation | piotroski | ✅ | 78% | 12.66 | — | 0.42 | -14.94 | 2.37 | 2.75 | 438,826 | — |
+| LUV | SOUTHWEST AIRLINES CO | piotroski | ✅ | 78% | 46.42 | 58.76 | 3.25 | 5.53 | 0.52 | — | 8M | — |
+| CRI | CARTER’S, INC. | graham | ✅ | 89% | 33.62 | 13.29 | 1.29 | 9.92 | 2.51 | 1.77 | 1M | — |
+| RH | RH | piotroski | ✅ | 89% | 145 | 22.96 | 47.32 | 206 | 1.19 | 78.80 | 1M | — |
+| MLKN | MillerKnoll, Inc. | piotroski | ✅ | 100% | 22.77 | 17.25 | 1.18 | 6.82 | 1.58 | 1.93 | 523,871 | — |
+| CVI | CVR ENERGY, INC | piotroski | ✅ | 89% | 43.01 | 159 | 5.92 | 3.70 | 1.79 | — | 13M | — |
+| NXDR | Nextdoor Holdings, Inc | piotroski | ✅ | 78% | 2.44 | — | 2.19 | -12.57 | 14.03 | 0.13 | 3M | — |
+| DAR | DARLING INGREDIENTS INC. | piotroski | ✅ | 78% | 52.30 | 134 | 1.77 | 1.33 | 1.50 | 1.16 | 4M | — |
+| SLDE | Slide Insurance Holdings, In | graham | ▫️ | 33% | 27.28 | 8.12 | 3.23 | 39.88 | — | 1.62 | 991,890 | — |
+| SLDE | Slide Insurance Holdings, In | buffett | ▫️ | 33% | 27.28 | 8.12 | 3.23 | 39.88 | — | 1.62 | 991,890 | — |
+| SLDE | Slide Insurance Holdings, In | piotroski | ▫️ | 33% | 27.28 | 8.12 | 3.23 | 39.88 | — | 1.62 | 991,890 | — |
+| SLDE | Slide Insurance Holdings, In | lynch | ▫️ | 25% | 27.28 | 8.12 | 3.23 | 39.88 | — | 1.62 | 991,890 | — |
+| SLDE | Slide Insurance Holdings, In | netnet | ▫️ | 25% | 27.28 | 8.12 | 3.23 | 39.88 | — | 1.62 | 991,890 | — |
+| SLDE | Slide Insurance Holdings, In | custom | ▫️ | 0% | 27.28 | 8.12 | 3.23 | 39.88 | — | 1.62 | 991,890 | — |
+| FSLR | First Solar, Inc. | graham | ▫️ | 67% | 195 | 13.69 | 2.19 | 16.02 | 2.67 | 0.40 | 9M | — |
+| FSLR | First Solar, Inc. | buffett | ▫️ | 67% | 195 | 13.69 | 2.19 | 16.02 | 2.67 | 0.40 | 9M | — |
+| FSLR | First Solar, Inc. | netnet | ▫️ | 50% | 195 | 13.69 | 2.19 | 16.02 | 2.67 | 0.40 | 9M | — |
+| FSLR | First Solar, Inc. | greenblatt | ▫️ | 33% | 195 | 13.69 | 2.19 | 16.02 | 2.67 | 0.40 | 9M | — |
+| FSLR | First Solar, Inc. | custom | ▫️ | 0% | 195 | 13.69 | 2.19 | 16.02 | 2.67 | 0.40 | 9M | — |
+| SBC | SBC Medical Group Holdings I | buffett | ▫️ | 67% | 5.32 | 10.64 | 2.21 | 20.54 | 3.78 | 0.47 | 103,136 | — |
+| SBC | SBC Medical Group Holdings I | greenblatt | ▫️ | 67% | 5.32 | 10.64 | 2.21 | 20.54 | 3.78 | 0.47 | 103,136 | — |
+| SBC | SBC Medical Group Holdings I | graham | ▫️ | 56% | 5.32 | 10.64 | 2.21 | 20.54 | 3.78 | 0.47 | 103,136 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
