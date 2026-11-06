@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-OII,OCEANEERING INTERNATIONAL INC,greenblatt,True,3,3,100.0,34.03,9.75,3.22,33.04,1.99,—,28.81,1M,—
-OII,OCEANEERING INTERNATIONAL INC,piotroski,True,7,9,77.8,34.03,9.75,3.22,33.04,1.99,—,28.81,1M,—
-LPG,DORIAN LPG LTD.,lynch,True,4,4,100.0,46.08,10.15,1.72,17.00,2.67,0.64,52.25,"777,101",—
-LPG,DORIAN LPG LTD.,piotroski,True,8,9,88.9,46.08,10.15,1.72,17.00,2.67,0.64,52.25,"777,101",—
-SKYW,SKYWEST INC,piotroski,True,8,9,88.9,79.91,7.72,1.20,15.60,0.65,—,124,"408,869",—
-NBR,NABORS INDUSTRIES LTD,piotroski,True,7,9,77.8,71.42,4.11,1.74,48.52,1.56,5.67,127,"411,546",—
-AROC,"Archrock, Inc.",piotroski,True,8,9,88.9,26.60,14.54,3.12,21.61,1.54,1.92,18.75,3M,—
-SFD,"SMITHFIELD FOODS, INC.",graham,True,9,9,100.0,19.60,7.81,1.13,14.51,2.97,—,31.27,2M,—
-WNC,WABASH NATIONAL CORPORATION,greenblatt,True,3,3,100.0,11.11,2.19,1.26,57.56,1.39,2.18,31.68,"918,849",—
-SREA,SEMPRA,lynch,True,3,4,75.0,18.80,6.84,0.39,5.81,1.59,—,54.68,"61,428",—
-MEDP,"Medpace Holdings, Inc.",buffett,True,5,6,83.3,635,41.56,40.84,98.27,0.74,3.30,73.11,"315,868",—
-MEDP,"Medpace Holdings, Inc.",piotroski,True,7,9,77.8,635,41.56,40.84,98.27,0.74,3.30,73.11,"315,868",—
-HRB,H&R BLOCK INC,greenblatt,True,3,3,100.0,55.01,9.72,60.34,624,1.13,26.72,10.78,2M,—
-HRB,H&R BLOCK INC,piotroski,True,8,9,88.9,55.01,9.72,60.34,624,1.13,26.72,10.78,2M,—
-NIC,"NICOLET BANKSHARES, INC",lynch,True,3,4,75.0,173,17.67,2.12,11.98,—,6.30,134,"158,803",—
-FIVE,"Five Below, Inc.",piotroski,True,9,9,100.0,241,37.29,6.10,16.35,2.01,1.25,75.89,"624,394",—
-POST,"Post Holdings, Inc.",lynch,True,3,4,75.0,84.72,15.38,1.42,8.94,1.67,2.60,86.01,1M,—
-PAYO,Payoneer Global Inc.,piotroski,True,7,9,77.8,7.17,37.74,3.83,10.39,1.00,11.71,2.83,3M,—
-BJ,"BJ’S WHOLESALE CLUB HOLDINGS, INC.",piotroski,True,8,9,88.9,111,25.40,6.69,26.32,0.75,2.42,40.50,2M,—
-FAF,FIRST AMERICAN FINANCIAL CORPORATION,piotroski,True,8,9,88.9,68.20,11.37,1.29,11.31,—,1.95,84.61,1M,—
-RH,RH,piotroski,True,8,9,88.9,137,21.78,44.88,206,1.19,78.80,20.85,"770,272",—
-FUL,FULLER H B CO,piotroski,True,7,9,77.8,50.22,18.26,1.39,7.59,1.70,1.59,47.32,"585,358",—
-GCO,GENESCO INC,piotroski,True,8,9,88.9,36.97,29.58,0.69,2.34,1.64,1.46,38.74,"129,839",—
-MYE,"Myers Industries, Inc.",piotroski,True,7,9,77.8,26.80,28.82,3.42,11.87,1.67,1.89,12.80,"351,990",—
-NXDR,"Nextdoor Holdings, Inc",piotroski,True,7,9,77.8,2.12,—,1.90,-12.57,14.03,0.13,—,3M,—
-PBI,PITNEY BOWES INC,piotroski,True,7,9,77.8,15.65,18.63,—,-18.03,0.71,-4.95,—,2M,—
-WRBY,Warby Parker Inc.,piotroski,True,7,9,77.8,26.08,"2,608",8.87,0.45,2.35,0.96,0.81,11M,—
-THO,"THOR Industries, Inc.",piotroski,True,7,9,77.8,82.33,24.36,1.02,4.17,1.77,—,78.52,1M,—
-SEDG,"SOLAREDGE TECHNOLOGIES, INC.",piotroski,True,7,9,77.8,26.20,—,3.61,-94.85,2.17,—,—,7M,—
-INSW,"International Seaways, Inc.",buffett,False,4,6,66.7,94.47,15.16,2.32,15.31,3.71,0.32,75.56,"945,550",—
-INSW,"International Seaways, Inc.",piotroski,False,6,9,66.7,94.47,15.16,2.32,15.31,3.71,0.32,75.56,"945,550",—
-INSW,"International Seaways, Inc.",lynch,False,2,4,50.0,94.47,15.16,2.32,15.31,3.71,0.32,75.56,"945,550",—
-INSW,"International Seaways, Inc.",graham,False,3,9,33.3,94.47,15.16,2.32,15.31,3.71,0.32,75.56,"945,550",—
-INSW,"International Seaways, Inc.",greenblatt,False,1,3,33.3,94.47,15.16,2.32,15.31,3.71,0.32,75.56,"945,550",—
-INSW,"International Seaways, Inc.",netnet,False,1,4,25.0,94.47,15.16,2.32,15.31,3.71,0.32,75.56,"945,550",—
-INSW,"International Seaways, Inc.",custom,False,0,0,0.0,94.47,15.16,2.32,15.31,3.71,0.32,75.56,"945,550",—
-OII,OCEANEERING INTERNATIONAL INC,buffett,False,3,6,50.0,34.03,9.75,3.22,33.04,1.99,—,28.81,1M,—
-OII,OCEANEERING INTERNATIONAL INC,graham,False,4,9,44.4,34.03,9.75,3.22,33.04,1.99,—,28.81,1M,—
-OII,OCEANEERING INTERNATIONAL INC,lynch,False,1,4,25.0,34.03,9.75,3.22,33.04,1.99,—,28.81,1M,—
-OII,OCEANEERING INTERNATIONAL INC,netnet,False,1,4,25.0,34.03,9.75,3.22,33.04,1.99,—,28.81,1M,—
-OII,OCEANEERING INTERNATIONAL INC,custom,False,0,0,0.0,34.03,9.75,3.22,33.04,1.99,—,28.81,1M,—
-LPG,DORIAN LPG LTD.,graham,False,6,9,66.7,46.08,10.15,1.72,17.00,2.67,0.64,52.25,"777,101",—
-LPG,DORIAN LPG LTD.,buffett,False,4,6,66.7,46.08,10.15,1.72,17.00,2.67,0.64,52.25,"777,101",—
-LPG,DORIAN LPG LTD.,greenblatt,False,2,3,66.7,46.08,10.15,1.72,17.00,2.67,0.64,52.25,"777,101",—
-LPG,DORIAN LPG LTD.,netnet,False,1,4,25.0,46.08,10.15,1.72,17.00,2.67,0.64,52.25,"777,101",—
-LPG,DORIAN LPG LTD.,custom,False,0,0,0.0,46.08,10.15,1.72,17.00,2.67,0.64,52.25,"777,101",—
-MGY,Magnolia Oil & Gas Corp,piotroski,False,6,9,66.7,23.52,13.42,2.18,16.27,1.54,—,20.61,5M,—
-MGY,Magnolia Oil & Gas Corp,buffett,False,3,6,50.0,23.52,13.42,2.18,16.27,1.54,—,20.61,5M,—
-MGY,Magnolia Oil & Gas Corp,graham,False,4,9,44.4,23.52,13.42,2.18,16.27,1.54,—,20.61,5M,—
-MGY,Magnolia Oil & Gas Corp,greenblatt,False,1,3,33.3,23.52,13.42,2.18,16.27,1.54,—,20.61,5M,—
+GOOGM,Alphabet Inc.,graham,True,9,9,100.0,41.60,3.85,1.23,31.83,2.01,0.43,90.88,"684,335",—
+GOOGM,Alphabet Inc.,buffett,True,6,6,100.0,41.60,3.85,1.23,31.83,2.01,0.43,90.88,"684,335",—
+GOOGM,Alphabet Inc.,greenblatt,True,3,3,100.0,41.60,3.85,1.23,31.83,2.01,0.43,90.88,"684,335",—
+GOOGM,Alphabet Inc.,lynch,True,4,4,100.0,41.60,3.85,1.23,31.83,2.01,0.43,90.88,"684,335",—
+CF,"CF INDUSTRIES HOLDINGS, INC.",greenblatt,True,3,3,100.0,119,13.22,3.98,37.16,3.37,—,77.59,4M,—
+CF,"CF INDUSTRIES HOLDINGS, INC.",piotroski,True,8,9,88.9,119,13.22,3.98,37.16,3.37,—,77.59,4M,—
+CF,"CF INDUSTRIES HOLDINGS, INC.",buffett,True,5,6,83.3,119,13.22,3.98,37.16,3.37,—,77.59,4M,—
+CF,"CF INDUSTRIES HOLDINGS, INC.",lynch,True,3,4,75.0,119,13.22,3.98,37.16,3.37,—,77.59,4M,—
+BBW,BUILD-A-BEAR WORKSHOP INC,greenblatt,True,3,3,100.0,29.58,7.41,2.50,33.67,1.55,—,32.62,"363,972",—
+LRN,"STRIDE, INC.",lynch,True,4,4,100.0,74.87,10.49,2.17,20.72,5.94,0.49,74.43,1M,—
+LRN,"STRIDE, INC.",piotroski,True,8,9,88.9,74.87,10.49,2.17,20.72,5.94,0.49,74.43,1M,—
+LRN,"STRIDE, INC.",buffett,True,5,6,83.3,74.87,10.49,2.17,20.72,5.94,0.49,74.43,1M,—
+GRBK,"Green Brick Partners, Inc.",buffett,True,6,6,100.0,65.90,9.32,1.56,16.85,—,0.32,82.05,"396,967",—
+GRBK,"Green Brick Partners, Inc.",lynch,True,4,4,100.0,65.90,9.32,1.56,16.85,—,0.32,82.05,"396,967",—
+SBC,SBC Medical Group Holdings Incorporated,lynch,True,3,4,75.0,5.02,10.04,2.08,20.54,3.78,0.47,5.21,"182,031",—
+LFMD,"LifeMD, Inc.",greenblatt,True,3,3,100.0,2.29,9.16,4.46,61.99,1.25,2.04,1.70,"597,195",—
+REX,REX AMERICAN RESOURCES CORPORATION,lynch,True,3,4,75.0,39.18,15.67,2.13,15.57,5.94,—,32.16,"258,336",—
+VTOL,Bristow Group Inc.,piotroski,True,7,9,77.8,36.68,8.49,1.03,12.18,1.90,1.18,58.71,"380,524",—
+PFS,PROVIDENT FINANCIAL SERVICES INC,piotroski,True,7,9,77.8,22.94,10.29,1.06,10.28,—,7.82,33.00,1M,—
+PFS,PROVIDENT FINANCIAL SERVICES INC,lynch,True,3,4,75.0,22.94,10.29,1.06,10.28,—,7.82,33.00,1M,—
+ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.20,5.08,0.14,4.91,1.93,0.73,1.14,"22,426",—
+SSD,"Simpson Manufacturing Co., Inc.",buffett,True,5,6,83.3,199,24.13,4.10,17.00,3.54,0.51,94.81,"384,529",—
+SSD,"Simpson Manufacturing Co., Inc.",piotroski,True,7,9,77.8,199,24.13,4.10,17.00,3.54,0.51,94.81,"384,529",—
+ABG,"ASBURY AUTOMOTIVE GROUP, INC.",piotroski,True,7,9,77.8,207,8.24,1.04,12.64,0.95,—,335,"321,390",—
+ABG,"ASBURY AUTOMOTIVE GROUP, INC.",lynch,True,3,4,75.0,207,8.24,1.04,12.64,0.95,—,335,"321,390",—
+LEVI,LEVI STRAUSS & CO,piotroski,True,7,9,77.8,23.10,15.93,4.05,25.37,1.55,2.01,13.64,3M,—
+KTB,"KONTOOR BRANDS, INC.",lynch,True,3,4,75.0,79.18,19.55,7.86,40.27,1.82,3.57,30.29,2M,—
+KEX,KIRBY CORPORATION,piotroski,True,8,9,88.9,119,18.87,1.98,10.49,1.53,—,92.69,1M,—
+DY,"DYCOM INDUSTRIES, INC.",lynch,True,3,4,75.0,193,20.17,3.05,15.12,2.74,2.22,117,"841,027",—
+HQY,"HEALTHEQUITY, INC.",piotroski,True,9,9,100.0,103,42.06,4.29,10.21,3.27,0.60,36.52,1M,—
+HQY,"HEALTHEQUITY, INC.",lynch,True,3,4,75.0,103,42.06,4.29,10.21,3.27,0.60,36.52,1M,—
+FIVE,"Five Below, Inc.",piotroski,True,9,9,100.0,241,37.29,6.10,16.35,2.01,1.25,75.89,"628,702",—
+OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,30.72,44.52,5.87,13.20,1.91,0.30,9.01,"949,312",—
+UDR,"UDR, Inc.",piotroski,True,7,9,77.8,37.01,32.75,3.73,11.49,—,1.96,15.89,6M,—
+UDR,"UDR, Inc.",lynch,True,3,4,75.0,37.01,32.75,3.73,11.49,—,1.96,15.89,6M,—
+CPK,CHESAPEAKE UTILITIES CORP,piotroski,True,7,9,77.8,142,23.73,2.08,8.78,0.45,—,95.61,"241,960",—
+DLB,"Dolby Laboratories, Inc.",piotroski,True,7,9,77.8,64.82,24.74,2.41,9.72,3.17,0.23,39.82,"977,996",—
+CNMD,CONMED CORPORATION,lynch,True,3,4,75.0,52.83,34.99,1.59,4.55,2.14,1.25,33.57,"406,918",—
+CENTA,Central Garden & Pet Company,piotroski,True,8,9,88.9,41.08,16.11,1.66,10.29,3.67,—,37.73,"326,509",—
+AIOT,"Powerfleet, Inc.",piotroski,True,7,9,77.8,2.59,—,0.73,-4.32,1.13,1.00,—,2M,—
+MPAA,"MOTORCAR PARTS OF AMERICA, INC.",piotroski,True,7,9,77.8,10.15,16.38,0.76,4.66,1.46,2.83,13.63,"93,735",—
+PTON,"Peloton Interactive, Inc.",piotroski,True,8,9,88.9,5.66,40.43,—,-45.24,2.84,-15.72,—,18M,—
+LILA,Liberty Latin America Ltd.,piotroski,True,7,9,77.8,8.91,—,3.20,-110,1.14,20.09,—,"750,404",—
+ORN,"ORION GROUP HOLDINGS, INC.",piotroski,True,7,9,77.8,6.89,115,1.72,1.56,1.36,1.61,2.33,1M,—
+GOOGM,Alphabet Inc.,piotroski,False,6,9,66.7,41.60,3.85,1.23,31.83,2.01,0.43,90.88,"684,335",—
+GOOGM,Alphabet Inc.,netnet,False,2,4,50.0,41.60,3.85,1.23,31.83,2.01,0.43,90.88,"684,335",—
+GOOGM,Alphabet Inc.,custom,False,0,0,0.0,41.60,3.85,1.23,31.83,2.01,0.43,90.88,"684,335",—
+CF,"CF INDUSTRIES HOLDINGS, INC.",graham,False,6,9,66.7,119,13.22,3.98,37.16,3.37,—,77.59,4M,—
+CF,"CF INDUSTRIES HOLDINGS, INC.",netnet,False,1,4,25.0,119,13.22,3.98,37.16,3.37,—,77.59,4M,—
+CF,"CF INDUSTRIES HOLDINGS, INC.",custom,False,0,0,0.0,119,13.22,3.98,37.16,3.37,—,77.59,4M,—
