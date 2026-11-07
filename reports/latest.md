@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-11-07 07:27 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-11-07 14:13 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **45** strategy matches passed.
+Screened **75** companies · **23** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| CF | CF INDUSTRIES HOLDINGS, INC. | greenblatt | ✅ | 100% | 119 | 13.31 | 4.00 | 37.16 | 3.37 | — | 2M | — |
-| CF | CF INDUSTRIES HOLDINGS, INC. | piotroski | ✅ | 89% | 119 | 13.31 | 4.00 | 37.16 | 3.37 | — | 2M | — |
-| CF | CF INDUSTRIES HOLDINGS, INC. | buffett | ✅ | 83% | 119 | 13.31 | 4.00 | 37.16 | 3.37 | — | 2M | — |
-| CF | CF INDUSTRIES HOLDINGS, INC. | lynch | ✅ | 75% | 119 | 13.31 | 4.00 | 37.16 | 3.37 | — | 2M | — |
-| TOL | Toll Brothers, Inc. | lynch | ✅ | 100% | 153 | 11.31 | 1.84 | 16.28 | — | 0.75 | 936,015 | — |
-| TOL | Toll Brothers, Inc. | buffett | ✅ | 83% | 153 | 11.31 | 1.84 | 16.28 | — | 0.75 | 936,015 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | piotroski | ✅ | 100% | 109 | 20.03 | 3.77 | 18.86 | 0.86 | 0.33 | 72,625 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | lynch | ✅ | 100% | 109 | 20.03 | 3.77 | 18.86 | 0.86 | 0.33 | 72,625 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | buffett | ✅ | 83% | 109 | 20.03 | 3.77 | 18.86 | 0.86 | 0.33 | 72,625 | — |
-| XPEL | XPEL, INC. | buffett | ✅ | 100% | 38.39 | 20.75 | 3.79 | 18.28 | 3.25 | 0.35 | 677,652 | — |
-| XPEL | XPEL, INC. | lynch | ✅ | 100% | 38.39 | 20.75 | 3.79 | 18.28 | 3.25 | 0.35 | 677,652 | — |
-| OTTR | OTTER TAIL CORPORATION | lynch | ✅ | 75% | 78.44 | 11.98 | 1.77 | 14.82 | 2.28 | — | 305,640 | — |
-| DUKB | Duke Energy CORP | piotroski | ✅ | 89% | 20.42 | 3.24 | 0.31 | 9.58 | 0.55 | — | 135,244 | — |
-| DUKB | Duke Energy CORP | lynch | ✅ | 75% | 20.42 | 3.24 | 0.31 | 9.58 | 0.55 | — | 135,244 | — |
-| GPK | Graphic Packaging Holding Co | lynch | ✅ | 75% | 11.19 | 7.56 | 1.01 | 13.31 | 1.30 | — | 6M | — |
-| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 18.31 | 9.69 | 2.39 | 24.66 | 2.26 | 2.62 | 2M | — |
-| ZION | ZIONS BANCORPORATION, NATION | piotroski | ✅ | 78% | 64.76 | 10.78 | 1.33 | 12.52 | — | 11.39 | 1M | — |
-| AIR | AAR CORP | piotroski | ✅ | 78% | 109 | 22.47 | 2.46 | 11.02 | 2.84 | — | 315,068 | — |
-| AIR | AAR CORP | lynch | ✅ | 75% | 109 | 22.47 | 2.46 | 11.02 | 2.84 | — | 315,068 | — |
-| ORI | OLD REPUBLIC INTERNATIONAL C | piotroski | ✅ | 78% | 39.61 | 10.65 | 1.68 | 15.82 | — | 4.05 | 2M | — |
-| DY | DYCOM INDUSTRIES, INC. | lynch | ✅ | 75% | 208 | 21.71 | 3.28 | 15.12 | 2.74 | 2.22 | 715,361 | — |
-| TRN | TRINITY INDUSTRIES INC | greenblatt | ✅ | 100% | 29.43 | 9.65 | 2.26 | 23.50 | — | 6.76 | 664,354 | — |
-| TRN | TRINITY INDUSTRIES INC | piotroski | ✅ | 78% | 29.43 | 9.65 | 2.26 | 23.50 | — | 6.76 | 664,354 | — |
-| RGA | REINSURANCE GROUP OF AMERICA | piotroski | ✅ | 78% | 262 | 14.80 | 1.30 | 8.78 | — | 10.63 | 729,047 | — |
-| RGA | REINSURANCE GROUP OF AMERICA | lynch | ✅ | 75% | 262 | 14.80 | 1.30 | 8.78 | — | 10.63 | 729,047 | — |
-| POST | Post Holdings, Inc. | lynch | ✅ | 75% | 83.05 | 15.07 | 1.39 | 8.94 | 1.67 | 2.60 | 661,964 | — |
-| BKU | BankUnited, Inc. | piotroski | ✅ | 89% | 44.02 | 12.47 | 1.07 | 8.79 | — | 10.47 | 872,033 | — |
-| SIRI | Sirius XM Holdings Inc. | lynch | ✅ | 75% | 32.40 | 14.53 | 1.00 | 6.96 | 0.30 | 1.36 | 7M | — |
-| BBWI | BATH & BODY WORKS, INC. | greenblatt | ✅ | 100% | 21.36 | 6.87 | — | -50.66 | 1.27 | — | 7M | — |
-| BCO | BRINK’S CO | piotroski | ✅ | 78% | 110 | 23.51 | 16.87 | 71.91 | 1.51 | 24.96 | 528,085 | — |
-| ONTO | ONTO INNOVATION INC. | lynch | ✅ | 75% | 173 | 62.33 | 4.06 | 6.51 | 5.79 | 0.13 | 1M | — |
-| CENTA | Central Garden & Pet Company | piotroski | ✅ | 89% | 40.80 | 16.00 | 1.64 | 10.29 | 3.67 | — | 200,123 | — |
-| APG | APi Group Corporation | piotroski | ✅ | 89% | 40.87 | — | 4.99 | 8.86 | 1.50 | 1.62 | 5M | — |
-| WOR | WORTHINGTON ENTERPRISES, INC | piotroski | ✅ | 89% | 60.50 | 19.27 | 2.93 | 15.20 | 2.37 | 0.80 | 277,342 | — |
-| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 55.55 | 53.41 | — | -29.14 | 1.60 | -6.05 | 318,711 | — |
-| PLXS | PLEXUS CORP. | piotroski | ✅ | 89% | 192 | 30.70 | 3.65 | 11.89 | 1.58 | 1.16 | 253,845 | — |
-| CPRI | CAPRI HOLDINGS LIMITED | piotroski | ✅ | 78% | 20.54 | 18.02 | 30.77 | 171 | 1.21 | 39.38 | 3M | — |
-| LW | LAMB WESTON HOLDINGS, INC. | piotroski | ✅ | 78% | 55.24 | 26.56 | 4.21 | 15.89 | 1.42 | — | 2M | — |
-| HCSG | HEALTHCARE SERVICES GROUP, I | piotroski | ✅ | 100% | 24.28 | 29.98 | 3.48 | 11.58 | 3.38 | — | 684,779 | — |
-| CALX | Calix, Inc | piotroski | ✅ | 78% | 30.60 | 118 | 2.47 | 2.08 | 4.24 | 0.23 | 1M | — |
-| DBD | Diebold Nixdorf, Incorporate | piotroski | ✅ | 78% | 58.27 | 22.94 | 1.97 | 8.60 | 1.30 | 2.50 | 250,015 | — |
-| ADT | ADT Inc. | piotroski | ✅ | 89% | 9.86 | — | — | 15.77 | 0.93 | 3.19 | 15M | — |
-| PTON | Peloton Interactive, Inc. | piotroski | ✅ | 89% | 5.61 | 40.07 | — | -45.24 | 2.84 | -15.72 | 13M | — |
-| LILA | Liberty Latin America Ltd. | piotroski | ✅ | 78% | 8.91 | — | 3.20 | -110 | 1.14 | 20.09 | 709,315 | — |
+| YELP | YELP INC. | greenblatt | ✅ | 100% | 19.46 | 8.69 | 1.78 | 20.48 | 2.99 | 0.35 | 2M | — |
+| YELP | YELP INC. | piotroski | ✅ | 89% | 19.46 | 8.69 | 1.78 | 20.48 | 2.99 | 0.35 | 2M | — |
+| KMT | KENNAMETAL INC. | graham | ✅ | 100% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
+| KMT | KENNAMETAL INC. | lynch | ✅ | 75% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | piotroski | ✅ | 78% | 28.53 | 6.28 | 1.85 | 29.41 | 1.47 | 1.81 | 1M | — |
+| TMDX | TransMedics Group, Inc. | piotroski | ✅ | 78% | 88.24 | 18.12 | 7.56 | 40.22 | 7.14 | 1.26 | 4M | — |
+| SON | Sonoco Products Company | piotroski | ✅ | 89% | 50.43 | 5.01 | 1.39 | 27.75 | 1.05 | 2.08 | 941,292 | — |
+| SON | Sonoco Products Company | lynch | ✅ | 75% | 50.43 | 5.01 | 1.39 | 27.75 | 1.05 | 2.08 | 941,292 | — |
+| AREC | AMERICAN RESOURCES CORPORATI | greenblatt | ✅ | 100% | 1.09 | 1.73 | 1.00 | 58.44 | 2.19 | 0.80 | 2M | — |
+| WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 10.91 | 2.15 | 1.24 | 57.56 | 1.39 | 2.18 | 697,449 | — |
+| CPK | CHESAPEAKE UTILITIES CORP | piotroski | ✅ | 78% | 140 | 23.50 | 2.06 | 8.78 | 0.45 | — | 233,768 | — |
+| XPRO | Expro Group Holdings N.V. | piotroski | ✅ | 89% | 13.19 | 29.31 | 1.00 | 3.37 | 2.16 | 0.47 | 1M | — |
+| BJ | BJ’S WHOLESALE CLUB HOLDINGS | piotroski | ✅ | 89% | 109 | 24.98 | 6.57 | 26.32 | 0.75 | 2.42 | 1M | — |
+| SARO | StandardAero, Inc. | piotroski | ✅ | 89% | 27.63 | 33.29 | 3.46 | 10.40 | 2.20 | 1.46 | 7M | — |
+| ZWS | ZURN ELKAY WATER SOLUTIONS C | piotroski | ✅ | 100% | 43.47 | 37.80 | 4.64 | 12.35 | 3.13 | 0.67 | 1M | — |
+| BBY | Best Buy Co., Inc. | piotroski | ✅ | 89% | 99.63 | 19.77 | 7.13 | 36.07 | 1.11 | — | 3M | — |
+| SCI | SERVICE CORPORATION INTERNAT | piotroski | ✅ | 78% | 73.74 | 19.41 | 6.42 | 33.12 | 0.55 | — | 2M | — |
+| AMCX | AMC Global Media Inc. | piotroski | ✅ | 78% | 8.39 | 5.05 | 0.48 | 9.11 | 1.67 | 2.98 | 467,372 | — |
+| SPHR | SPHERE ENTERTAINMENT CO. | piotroski | ✅ | 78% | 120 | 162 | 2.43 | 1.50 | 1.09 | 0.89 | 1M | — |
+| PBI | PITNEY BOWES INC | piotroski | ✅ | 78% | 15.55 | 18.51 | — | -18.03 | 0.71 | -4.95 | 2M | — |
+| BNED | BARNES & NOBLE EDUCATION, IN | piotroski | ✅ | 89% | 12.58 | 25.67 | 1.48 | 5.73 | 1.71 | 1.51 | 106,361 | — |
+| CTRI | Centuri Holdings, Inc. | piotroski | ✅ | 78% | 20.37 | 81.48 | 2.11 | 2.57 | 1.78 | 1.75 | 2M | — |
 | TLYS | TILLY’S, INC. | piotroski | ✅ | 78% | 4.20 | — | 1.48 | -20.50 | 1.25 | 2.65 | 80,353 | — |
-| CF | CF INDUSTRIES HOLDINGS, INC. | graham | ▫️ | 67% | 119 | 13.31 | 4.00 | 37.16 | 3.37 | — | 2M | — |
-| CF | CF INDUSTRIES HOLDINGS, INC. | netnet | ▫️ | 25% | 119 | 13.31 | 4.00 | 37.16 | 3.37 | — | 2M | — |
-| CF | CF INDUSTRIES HOLDINGS, INC. | custom | ▫️ | 0% | 119 | 13.31 | 4.00 | 37.16 | 3.37 | — | 2M | — |
-| TOL | Toll Brothers, Inc. | graham | ▫️ | 67% | 153 | 11.31 | 1.84 | 16.28 | — | 0.75 | 936,015 | — |
-| TOL | Toll Brothers, Inc. | greenblatt | ▫️ | 67% | 153 | 11.31 | 1.84 | 16.28 | — | 0.75 | 936,015 | — |
+| YELP | YELP INC. | graham | ▫️ | 78% | 19.46 | 8.69 | 1.78 | 20.48 | 2.99 | 0.35 | 2M | — |
+| YELP | YELP INC. | buffett | ▫️ | 50% | 19.46 | 8.69 | 1.78 | 20.48 | 2.99 | 0.35 | 2M | — |
+| YELP | YELP INC. | lynch | ▫️ | 50% | 19.46 | 8.69 | 1.78 | 20.48 | 2.99 | 0.35 | 2M | — |
+| YELP | YELP INC. | netnet | ▫️ | 50% | 19.46 | 8.69 | 1.78 | 20.48 | 2.99 | 0.35 | 2M | — |
+| YELP | YELP INC. | custom | ▫️ | 0% | 19.46 | 8.69 | 1.78 | 20.48 | 2.99 | 0.35 | 2M | — |
+| KMT | KENNAMETAL INC. | piotroski | ▫️ | 67% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
+| KMT | KENNAMETAL INC. | greenblatt | ▫️ | 67% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
+| KMT | KENNAMETAL INC. | buffett | ▫️ | 50% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
+| KMT | KENNAMETAL INC. | netnet | ▫️ | 50% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
+| KMT | KENNAMETAL INC. | custom | ▫️ | 0% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | graham | ▫️ | 67% | 28.53 | 6.28 | 1.85 | 29.41 | 1.47 | 1.81 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | greenblatt | ▫️ | 67% | 28.53 | 6.28 | 1.85 | 29.41 | 1.47 | 1.81 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | buffett | ▫️ | 50% | 28.53 | 6.28 | 1.85 | 29.41 | 1.47 | 1.81 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | lynch | ▫️ | 50% | 28.53 | 6.28 | 1.85 | 29.41 | 1.47 | 1.81 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | netnet | ▫️ | 25% | 28.53 | 6.28 | 1.85 | 29.41 | 1.47 | 1.81 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | custom | ▫️ | 0% | 28.53 | 6.28 | 1.85 | 29.41 | 1.47 | 1.81 | 1M | — |
+| TMDX | TransMedics Group, Inc. | greenblatt | ▫️ | 67% | 88.24 | 18.12 | 7.56 | 40.22 | 7.14 | 1.26 | 4M | — |
+| TMDX | TransMedics Group, Inc. | netnet | ▫️ | 50% | 88.24 | 18.12 | 7.56 | 40.22 | 7.14 | 1.26 | 4M | — |
+| TMDX | TransMedics Group, Inc. | graham | ▫️ | 33% | 88.24 | 18.12 | 7.56 | 40.22 | 7.14 | 1.26 | 4M | — |
+| TMDX | TransMedics Group, Inc. | buffett | ▫️ | 33% | 88.24 | 18.12 | 7.56 | 40.22 | 7.14 | 1.26 | 4M | — |
+| TMDX | TransMedics Group, Inc. | lynch | ▫️ | 25% | 88.24 | 18.12 | 7.56 | 40.22 | 7.14 | 1.26 | 4M | — |
+| TMDX | TransMedics Group, Inc. | custom | ▫️ | 0% | 88.24 | 18.12 | 7.56 | 40.22 | 7.14 | 1.26 | 4M | — |
+| SON | Sonoco Products Company | graham | ▫️ | 67% | 50.43 | 5.01 | 1.39 | 27.75 | 1.05 | 2.08 | 941,292 | — |
+| SON | Sonoco Products Company | buffett | ▫️ | 67% | 50.43 | 5.01 | 1.39 | 27.75 | 1.05 | 2.08 | 941,292 | — |
+| SON | Sonoco Products Company | greenblatt | ▫️ | 67% | 50.43 | 5.01 | 1.39 | 27.75 | 1.05 | 2.08 | 941,292 | — |
+| SON | Sonoco Products Company | netnet | ▫️ | 25% | 50.43 | 5.01 | 1.39 | 27.75 | 1.05 | 2.08 | 941,292 | — |
+| SON | Sonoco Products Company | custom | ▫️ | 0% | 50.43 | 5.01 | 1.39 | 27.75 | 1.05 | 2.08 | 941,292 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
