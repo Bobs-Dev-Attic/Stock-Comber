@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-11-07 18:40 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-11-07 22:19 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **21** strategy matches passed.
+Screened **75** companies · **34** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| ERIE | ERIE INDEMNITY COMPANY | buffett | ✅ | 100% | 273 | — | — | 24.50 | 1.27 | 0.47 | 207,120 | — |
-| SFM | Sprouts Farmers Market, Inc. | greenblatt | ✅ | 100% | 49.10 | 9.25 | 3.45 | 37.32 | 0.93 | 1.96 | 5M | — |
-| SFM | Sprouts Farmers Market, Inc. | piotroski | ✅ | 78% | 49.10 | 9.25 | 3.45 | 37.32 | 0.93 | 1.96 | 5M | — |
+| KMT | KENNAMETAL INC. | graham | ✅ | 100% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
+| KMT | KENNAMETAL INC. | lynch | ✅ | 75% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
+| VRRM | VERRA MOBILITY CORPORATION | piotroski | ✅ | 100% | 2.19 | 2.58 | 1.21 | 46.64 | 2.09 | 4.62 | 5M | — |
+| WHD | Cactus, Inc. | lynch | ✅ | 75% | 58.12 | — | — | 13.54 | 5.81 | 0.36 | 887,827 | — |
+| RAMP | LiveRamp Holdings, Inc. | piotroski | ✅ | 89% | 38.50 | 17.19 | 2.58 | 15.02 | 2.47 | — | 5M | — |
+| PRI | Primerica, Inc. | piotroski | ✅ | 89% | 291 | 12.68 | 3.88 | 30.71 | — | 5.14 | 380,559 | — |
+| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 136 | 25.87 | 4.95 | 19.12 | 2.99 | — | 308,983 | — |
+| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 136 | 25.87 | 4.95 | 19.12 | 2.99 | — | 308,983 | — |
 | AMG | AFFILIATED MANAGERS GROUP, I | buffett | ✅ | 83% | 363 | 15.96 | 3.70 | 22.13 | — | 1.48 | 572,399 | — |
 | AMG | AFFILIATED MANAGERS GROUP, I | piotroski | ✅ | 78% | 363 | 15.96 | 3.70 | 22.13 | — | 1.48 | 572,399 | — |
 | AMG | AFFILIATED MANAGERS GROUP, I | lynch | ✅ | 75% | 363 | 15.96 | 3.70 | 22.13 | — | 1.48 | 572,399 | — |
-| BELFA | BEL FUSE INC /NJ | piotroski | ✅ | 89% | 164 | — | — | 14.46 | 3.02 | 0.98 | 64,288 | — |
-| GGG | GRACO INC. | piotroski | ✅ | 89% | 67.86 | 22.03 | 4.33 | 19.66 | 3.15 | — | 1M | — |
-| GGG | GRACO INC. | buffett | ✅ | 83% | 67.86 | 22.03 | 4.33 | 19.66 | 3.15 | — | 1M | — |
-| VISN | Vistance Networks, Inc. | greenblatt | ✅ | 100% | 5.50 | 0.57 | — | -227 | 3.88 | -9.06 | 9M | — |
-| DORM | Dorman Products, Inc. | piotroski | ✅ | 89% | 137 | 20.59 | 2.85 | 13.82 | 3.09 | — | 228,602 | — |
-| FIZZ | National Beverage Corp. | buffett | ✅ | 83% | 37.14 | 18.95 | 5.47 | 28.89 | 4.39 | 0.34 | 334,121 | — |
-| JJSF | J&J SNACK FOODS CORP. | lynch | ✅ | 75% | 89.83 | 26.74 | 1.82 | 6.79 | 2.72 | — | 192,896 | — |
-| CYH | COMMUNITY HEALTH SYSTEMS, IN | piotroski | ✅ | 89% | 2.21 | 0.59 | — | -36.51 | 1.46 | -10.07 | 2M | — |
-| CCK | CROWN HOLDINGS, INC. | piotroski | ✅ | 89% | 121 | 19.01 | 4.68 | 24.61 | 1.03 | — | 825,484 | — |
-| DT | Dynatrace, Inc. | lynch | ✅ | 75% | 43.44 | 80.44 | 5.05 | 6.23 | 1.35 | 0.69 | 10M | — |
-| SHAK | SHAKE SHACK INC. | piotroski | ✅ | 89% | 71.89 | 65.95 | 5.73 | 8.70 | 1.76 | 2.56 | 1M | — |
-| SPHR | SPHERE ENTERTAINMENT CO. | piotroski | ✅ | 78% | 120 | 162 | 2.43 | 1.50 | 1.09 | 0.89 | 1M | — |
-| MSGS | MSG KNICKERBOCKERS CORP. | piotroski | ✅ | 100% | 384 | 1,201 | — | -2.95 | 0.50 | -6.84 | 261,286 | — |
-| AEIS | ADVANCED ENERGY INDUSTRIES,  | piotroski | ✅ | 78% | 197 | 51.30 | 5.58 | 10.89 | 1.59 | 0.86 | 971,816 | — |
-| ARKO | ARKO Corp. | piotroski | ✅ | 78% | 3.97 | 26.47 | 1.71 | 8.51 | 1.66 | 11.85 | 890,920 | — |
-| ERIE | ERIE INDEMNITY COMPANY | greenblatt | ▫️ | 67% | 273 | — | — | 24.50 | 1.27 | 0.47 | 207,120 | — |
-| ERIE | ERIE INDEMNITY COMPANY | graham | ▫️ | 56% | 273 | — | — | 24.50 | 1.27 | 0.47 | 207,120 | — |
-| ERIE | ERIE INDEMNITY COMPANY | lynch | ▫️ | 50% | 273 | — | — | 24.50 | 1.27 | 0.47 | 207,120 | — |
-| ERIE | ERIE INDEMNITY COMPANY | piotroski | ▫️ | 44% | 273 | — | — | 24.50 | 1.27 | 0.47 | 207,120 | — |
-| ERIE | ERIE INDEMNITY COMPANY | netnet | ▫️ | 25% | 273 | — | — | 24.50 | 1.27 | 0.47 | 207,120 | — |
-| ERIE | ERIE INDEMNITY COMPANY | custom | ▫️ | 0% | 273 | — | — | 24.50 | 1.27 | 0.47 | 207,120 | — |
-| BMNR | BITMINE IMMERSION TECHNOLOGI | graham | ▫️ | 67% | 18.76 | 1.40 | 0.05 | 4.01 | 51.50 | 0.01 | 23M | — |
-| BMNR | BITMINE IMMERSION TECHNOLOGI | piotroski | ▫️ | 67% | 18.76 | 1.40 | 0.05 | 4.01 | 51.50 | 0.01 | 23M | — |
-| BMNR | BITMINE IMMERSION TECHNOLOGI | greenblatt | ▫️ | 67% | 18.76 | 1.40 | 0.05 | 4.01 | 51.50 | 0.01 | 23M | — |
-| BMNR | BITMINE IMMERSION TECHNOLOGI | lynch | ▫️ | 50% | 18.76 | 1.40 | 0.05 | 4.01 | 51.50 | 0.01 | 23M | — |
-| BMNR | BITMINE IMMERSION TECHNOLOGI | netnet | ▫️ | 50% | 18.76 | 1.40 | 0.05 | 4.01 | 51.50 | 0.01 | 23M | — |
-| BMNR | BITMINE IMMERSION TECHNOLOGI | buffett | ▫️ | 33% | 18.76 | 1.40 | 0.05 | 4.01 | 51.50 | 0.01 | 23M | — |
-| BMNR | BITMINE IMMERSION TECHNOLOGI | custom | ▫️ | 0% | 18.76 | 1.40 | 0.05 | 4.01 | 51.50 | 0.01 | 23M | — |
-| SFM | Sprouts Farmers Market, Inc. | buffett | ▫️ | 67% | 49.10 | 9.25 | 3.45 | 37.32 | 0.93 | 1.96 | 5M | — |
-| SFM | Sprouts Farmers Market, Inc. | graham | ▫️ | 56% | 49.10 | 9.25 | 3.45 | 37.32 | 0.93 | 1.96 | 5M | — |
-| SFM | Sprouts Farmers Market, Inc. | lynch | ▫️ | 50% | 49.10 | 9.25 | 3.45 | 37.32 | 0.93 | 1.96 | 5M | — |
-| SFM | Sprouts Farmers Market, Inc. | netnet | ▫️ | 25% | 49.10 | 9.25 | 3.45 | 37.32 | 0.93 | 1.96 | 5M | — |
-| SFM | Sprouts Farmers Market, Inc. | custom | ▫️ | 0% | 49.10 | 9.25 | 3.45 | 37.32 | 0.93 | 1.96 | 5M | — |
-| AMG | AFFILIATED MANAGERS GROUP, I | graham | ▫️ | 44% | 363 | 15.96 | 3.70 | 22.13 | — | 1.48 | 572,399 | — |
-| AMG | AFFILIATED MANAGERS GROUP, I | greenblatt | ▫️ | 33% | 363 | 15.96 | 3.70 | 22.13 | — | 1.48 | 572,399 | — |
-| AMG | AFFILIATED MANAGERS GROUP, I | netnet | ▫️ | 25% | 363 | 15.96 | 3.70 | 22.13 | — | 1.48 | 572,399 | — |
-| AMG | AFFILIATED MANAGERS GROUP, I | custom | ▫️ | 0% | 363 | 15.96 | 3.70 | 22.13 | — | 1.48 | 572,399 | — |
-| BELFA | BEL FUSE INC /NJ | graham | ▫️ | 56% | 164 | — | — | 14.46 | 3.02 | 0.98 | 64,288 | — |
-| BELFA | BEL FUSE INC /NJ | lynch | ▫️ | 50% | 164 | — | — | 14.46 | 3.02 | 0.98 | 64,288 | — |
-| BELFA | BEL FUSE INC /NJ | buffett | ▫️ | 33% | 164 | — | — | 14.46 | 3.02 | 0.98 | 64,288 | — |
-| BELFA | BEL FUSE INC /NJ | greenblatt | ▫️ | 33% | 164 | — | — | 14.46 | 3.02 | 0.98 | 64,288 | — |
-| BELFA | BEL FUSE INC /NJ | netnet | ▫️ | 25% | 164 | — | — | 14.46 | 3.02 | 0.98 | 64,288 | — |
-| BELFA | BEL FUSE INC /NJ | custom | ▫️ | 0% | 164 | — | — | 14.46 | 3.02 | 0.98 | 64,288 | — |
-| GGG | GRACO INC. | graham | ▫️ | 67% | 67.86 | 22.03 | 4.33 | 19.66 | 3.15 | — | 1M | — |
+| EBF | ENNIS, INC. | piotroski | ✅ | 78% | 20.85 | 12.56 | 1.74 | 13.81 | 3.72 | 0.16 | 157,940 | — |
+| SSD | Simpson Manufacturing Co., I | buffett | ✅ | 83% | 197 | 23.89 | 4.06 | 17.00 | 3.54 | 0.51 | 193,068 | — |
+| SSD | Simpson Manufacturing Co., I | piotroski | ✅ | 78% | 197 | 23.89 | 4.06 | 17.00 | 3.54 | 0.51 | 193,068 | — |
+| SBAC | SBA COMMUNICATIONS CORPORATI | piotroski | ✅ | 78% | 189 | 19.33 | — | -21.71 | 0.29 | — | 1M | — |
+| FULT | FULTON FINANCIAL CORP | lynch | ✅ | 75% | 23.76 | 11.42 | 1.25 | 11.22 | — | 8.20 | 1M | — |
+| SREA | SEMPRA | lynch | ✅ | 75% | 18.88 | 6.87 | 0.39 | 5.81 | 1.59 | — | 81,332 | — |
+| ACEL | Accel Entertainment, Inc. | piotroski | ✅ | 78% | 13.72 | 22.87 | 4.39 | 19.09 | 2.61 | — | 792,314 | — |
+| DCI | Donaldson Company, Inc. | buffett | ✅ | 83% | 84.33 | 21.90 | 5.64 | 25.72 | 2.08 | 1.26 | 517,335 | — |
+| TRN | TRINITY INDUSTRIES INC | greenblatt | ✅ | 100% | 29.43 | 9.65 | 2.26 | 23.50 | — | 6.76 | 664,354 | — |
+| TRN | TRINITY INDUSTRIES INC | piotroski | ✅ | 78% | 29.43 | 9.65 | 2.26 | 23.50 | — | 6.76 | 664,354 | — |
+| EGP | EASTGROUP PROPERTIES, INC. | piotroski | ✅ | 78% | 194 | 39.80 | 2.93 | 7.36 | — | 0.55 | 547,017 | — |
+| WCC | WESCO International, Inc. | lynch | ✅ | 75% | 293 | 22.43 | 2.88 | 12.72 | 2.20 | 2.28 | 761,380 | — |
+| EGP | EASTGROUP PROPERTIES, INC. | lynch | ✅ | 75% | 194 | 39.80 | 2.93 | 7.36 | — | 0.55 | 547,017 | — |
+| GRC | The Gorman-Rupp Company | piotroski | ✅ | 89% | 67.76 | 33.54 | 4.30 | 12.78 | 2.37 | 1.07 | 132,441 | — |
+| NDSN | NORDSON CORPORATION | buffett | ✅ | 83% | 310 | 36.41 | 5.79 | 15.92 | 1.64 | — | 405,234 | — |
+| NDSN | NORDSON CORPORATION | piotroski | ✅ | 78% | 310 | 36.41 | 5.79 | 15.92 | 1.64 | — | 405,234 | — |
+| LNT | ALLIANT ENERGY CORPORATION | piotroski | ✅ | 78% | 72.67 | 23.14 | 2.55 | 11.04 | 0.80 | — | 3M | — |
+| KOP | KOPPERS HOLDINGS INC. | piotroski | ✅ | 89% | 29.97 | 10.94 | 1.07 | 9.76 | 2.94 | 2.29 | 354,349 | — |
+| FLS | FLOWSERVE CORP | piotroski | ✅ | 78% | 80.37 | 30.44 | 4.80 | 15.80 | 2.03 | — | 2M | — |
+| CRI | CARTER’S, INC. | graham | ✅ | 89% | 32.01 | 12.65 | 1.23 | 9.92 | 2.51 | 1.77 | 918,497 | — |
+| RRX | REGAL REXNORD CORP | piotroski | ✅ | 78% | 169 | 40.25 | 1.65 | 4.08 | 2.15 | — | 1M | — |
+| VSAT | VIASAT, INC. | piotroski | ✅ | 78% | 63.95 | — | 1.85 | -0.73 | 2.41 | 2.25 | 5M | — |
+| MMI | MARCUS & MILLICHAP, INC. | piotroski | ✅ | 78% | 27.75 | — | 1.79 | -0.32 | 2.55 | 0.37 | 228,794 | — |
+| KMT | KENNAMETAL INC. | piotroski | ▫️ | 67% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
+| KMT | KENNAMETAL INC. | greenblatt | ▫️ | 67% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
+| KMT | KENNAMETAL INC. | buffett | ▫️ | 50% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
+| KMT | KENNAMETAL INC. | netnet | ▫️ | 50% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
+| KMT | KENNAMETAL INC. | custom | ▫️ | 0% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
+| VRRM | VERRA MOBILITY CORPORATION | graham | ▫️ | 78% | 2.19 | 2.58 | 1.21 | 46.64 | 2.09 | 4.62 | 5M | — |
+| VRRM | VERRA MOBILITY CORPORATION | greenblatt | ▫️ | 67% | 2.19 | 2.58 | 1.21 | 46.64 | 2.09 | 4.62 | 5M | — |
+| VRRM | VERRA MOBILITY CORPORATION | buffett | ▫️ | 50% | 2.19 | 2.58 | 1.21 | 46.64 | 2.09 | 4.62 | 5M | — |
+| VRRM | VERRA MOBILITY CORPORATION | lynch | ▫️ | 25% | 2.19 | 2.58 | 1.21 | 46.64 | 2.09 | 4.62 | 5M | — |
+| VRRM | VERRA MOBILITY CORPORATION | netnet | ▫️ | 25% | 2.19 | 2.58 | 1.21 | 46.64 | 2.09 | 4.62 | 5M | — |
+| VRRM | VERRA MOBILITY CORPORATION | custom | ▫️ | 0% | 2.19 | 2.58 | 1.21 | 46.64 | 2.09 | 4.62 | 5M | — |
+| WHD | Cactus, Inc. | graham | ▫️ | 67% | 58.12 | — | — | 13.54 | 5.81 | 0.36 | 887,827 | — |
+| WHD | Cactus, Inc. | piotroski | ▫️ | 56% | 58.12 | — | — | 13.54 | 5.81 | 0.36 | 887,827 | — |
+| WHD | Cactus, Inc. | buffett | ▫️ | 50% | 58.12 | — | — | 13.54 | 5.81 | 0.36 | 887,827 | — |
+| WHD | Cactus, Inc. | greenblatt | ▫️ | 33% | 58.12 | — | — | 13.54 | 5.81 | 0.36 | 887,827 | — |
+| WHD | Cactus, Inc. | netnet | ▫️ | 25% | 58.12 | — | — | 13.54 | 5.81 | 0.36 | 887,827 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
