@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-11-07 14:13 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-11-07 18:40 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **23** strategy matches passed.
+Screened **75** companies · **21** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| YELP | YELP INC. | greenblatt | ✅ | 100% | 19.46 | 8.69 | 1.78 | 20.48 | 2.99 | 0.35 | 2M | — |
-| YELP | YELP INC. | piotroski | ✅ | 89% | 19.46 | 8.69 | 1.78 | 20.48 | 2.99 | 0.35 | 2M | — |
-| KMT | KENNAMETAL INC. | graham | ✅ | 100% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
-| KMT | KENNAMETAL INC. | lynch | ✅ | 75% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | piotroski | ✅ | 78% | 28.53 | 6.28 | 1.85 | 29.41 | 1.47 | 1.81 | 1M | — |
-| TMDX | TransMedics Group, Inc. | piotroski | ✅ | 78% | 88.24 | 18.12 | 7.56 | 40.22 | 7.14 | 1.26 | 4M | — |
-| SON | Sonoco Products Company | piotroski | ✅ | 89% | 50.43 | 5.01 | 1.39 | 27.75 | 1.05 | 2.08 | 941,292 | — |
-| SON | Sonoco Products Company | lynch | ✅ | 75% | 50.43 | 5.01 | 1.39 | 27.75 | 1.05 | 2.08 | 941,292 | — |
-| AREC | AMERICAN RESOURCES CORPORATI | greenblatt | ✅ | 100% | 1.09 | 1.73 | 1.00 | 58.44 | 2.19 | 0.80 | 2M | — |
-| WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 10.91 | 2.15 | 1.24 | 57.56 | 1.39 | 2.18 | 697,449 | — |
-| CPK | CHESAPEAKE UTILITIES CORP | piotroski | ✅ | 78% | 140 | 23.50 | 2.06 | 8.78 | 0.45 | — | 233,768 | — |
-| XPRO | Expro Group Holdings N.V. | piotroski | ✅ | 89% | 13.19 | 29.31 | 1.00 | 3.37 | 2.16 | 0.47 | 1M | — |
-| BJ | BJ’S WHOLESALE CLUB HOLDINGS | piotroski | ✅ | 89% | 109 | 24.98 | 6.57 | 26.32 | 0.75 | 2.42 | 1M | — |
-| SARO | StandardAero, Inc. | piotroski | ✅ | 89% | 27.63 | 33.29 | 3.46 | 10.40 | 2.20 | 1.46 | 7M | — |
-| ZWS | ZURN ELKAY WATER SOLUTIONS C | piotroski | ✅ | 100% | 43.47 | 37.80 | 4.64 | 12.35 | 3.13 | 0.67 | 1M | — |
-| BBY | Best Buy Co., Inc. | piotroski | ✅ | 89% | 99.63 | 19.77 | 7.13 | 36.07 | 1.11 | — | 3M | — |
-| SCI | SERVICE CORPORATION INTERNAT | piotroski | ✅ | 78% | 73.74 | 19.41 | 6.42 | 33.12 | 0.55 | — | 2M | — |
-| AMCX | AMC Global Media Inc. | piotroski | ✅ | 78% | 8.39 | 5.05 | 0.48 | 9.11 | 1.67 | 2.98 | 467,372 | — |
+| ERIE | ERIE INDEMNITY COMPANY | buffett | ✅ | 100% | 273 | — | — | 24.50 | 1.27 | 0.47 | 207,120 | — |
+| SFM | Sprouts Farmers Market, Inc. | greenblatt | ✅ | 100% | 49.10 | 9.25 | 3.45 | 37.32 | 0.93 | 1.96 | 5M | — |
+| SFM | Sprouts Farmers Market, Inc. | piotroski | ✅ | 78% | 49.10 | 9.25 | 3.45 | 37.32 | 0.93 | 1.96 | 5M | — |
+| AMG | AFFILIATED MANAGERS GROUP, I | buffett | ✅ | 83% | 363 | 15.96 | 3.70 | 22.13 | — | 1.48 | 572,399 | — |
+| AMG | AFFILIATED MANAGERS GROUP, I | piotroski | ✅ | 78% | 363 | 15.96 | 3.70 | 22.13 | — | 1.48 | 572,399 | — |
+| AMG | AFFILIATED MANAGERS GROUP, I | lynch | ✅ | 75% | 363 | 15.96 | 3.70 | 22.13 | — | 1.48 | 572,399 | — |
+| BELFA | BEL FUSE INC /NJ | piotroski | ✅ | 89% | 164 | — | — | 14.46 | 3.02 | 0.98 | 64,288 | — |
+| GGG | GRACO INC. | piotroski | ✅ | 89% | 67.86 | 22.03 | 4.33 | 19.66 | 3.15 | — | 1M | — |
+| GGG | GRACO INC. | buffett | ✅ | 83% | 67.86 | 22.03 | 4.33 | 19.66 | 3.15 | — | 1M | — |
+| VISN | Vistance Networks, Inc. | greenblatt | ✅ | 100% | 5.50 | 0.57 | — | -227 | 3.88 | -9.06 | 9M | — |
+| DORM | Dorman Products, Inc. | piotroski | ✅ | 89% | 137 | 20.59 | 2.85 | 13.82 | 3.09 | — | 228,602 | — |
+| FIZZ | National Beverage Corp. | buffett | ✅ | 83% | 37.14 | 18.95 | 5.47 | 28.89 | 4.39 | 0.34 | 334,121 | — |
+| JJSF | J&J SNACK FOODS CORP. | lynch | ✅ | 75% | 89.83 | 26.74 | 1.82 | 6.79 | 2.72 | — | 192,896 | — |
+| CYH | COMMUNITY HEALTH SYSTEMS, IN | piotroski | ✅ | 89% | 2.21 | 0.59 | — | -36.51 | 1.46 | -10.07 | 2M | — |
+| CCK | CROWN HOLDINGS, INC. | piotroski | ✅ | 89% | 121 | 19.01 | 4.68 | 24.61 | 1.03 | — | 825,484 | — |
+| DT | Dynatrace, Inc. | lynch | ✅ | 75% | 43.44 | 80.44 | 5.05 | 6.23 | 1.35 | 0.69 | 10M | — |
+| SHAK | SHAKE SHACK INC. | piotroski | ✅ | 89% | 71.89 | 65.95 | 5.73 | 8.70 | 1.76 | 2.56 | 1M | — |
 | SPHR | SPHERE ENTERTAINMENT CO. | piotroski | ✅ | 78% | 120 | 162 | 2.43 | 1.50 | 1.09 | 0.89 | 1M | — |
-| PBI | PITNEY BOWES INC | piotroski | ✅ | 78% | 15.55 | 18.51 | — | -18.03 | 0.71 | -4.95 | 2M | — |
-| BNED | BARNES & NOBLE EDUCATION, IN | piotroski | ✅ | 89% | 12.58 | 25.67 | 1.48 | 5.73 | 1.71 | 1.51 | 106,361 | — |
-| CTRI | Centuri Holdings, Inc. | piotroski | ✅ | 78% | 20.37 | 81.48 | 2.11 | 2.57 | 1.78 | 1.75 | 2M | — |
-| TLYS | TILLY’S, INC. | piotroski | ✅ | 78% | 4.20 | — | 1.48 | -20.50 | 1.25 | 2.65 | 80,353 | — |
-| YELP | YELP INC. | graham | ▫️ | 78% | 19.46 | 8.69 | 1.78 | 20.48 | 2.99 | 0.35 | 2M | — |
-| YELP | YELP INC. | buffett | ▫️ | 50% | 19.46 | 8.69 | 1.78 | 20.48 | 2.99 | 0.35 | 2M | — |
-| YELP | YELP INC. | lynch | ▫️ | 50% | 19.46 | 8.69 | 1.78 | 20.48 | 2.99 | 0.35 | 2M | — |
-| YELP | YELP INC. | netnet | ▫️ | 50% | 19.46 | 8.69 | 1.78 | 20.48 | 2.99 | 0.35 | 2M | — |
-| YELP | YELP INC. | custom | ▫️ | 0% | 19.46 | 8.69 | 1.78 | 20.48 | 2.99 | 0.35 | 2M | — |
-| KMT | KENNAMETAL INC. | piotroski | ▫️ | 67% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
-| KMT | KENNAMETAL INC. | greenblatt | ▫️ | 67% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
-| KMT | KENNAMETAL INC. | buffett | ▫️ | 50% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
-| KMT | KENNAMETAL INC. | netnet | ▫️ | 50% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
-| KMT | KENNAMETAL INC. | custom | ▫️ | 0% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | graham | ▫️ | 67% | 28.53 | 6.28 | 1.85 | 29.41 | 1.47 | 1.81 | 1M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | greenblatt | ▫️ | 67% | 28.53 | 6.28 | 1.85 | 29.41 | 1.47 | 1.81 | 1M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | buffett | ▫️ | 50% | 28.53 | 6.28 | 1.85 | 29.41 | 1.47 | 1.81 | 1M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | lynch | ▫️ | 50% | 28.53 | 6.28 | 1.85 | 29.41 | 1.47 | 1.81 | 1M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | netnet | ▫️ | 25% | 28.53 | 6.28 | 1.85 | 29.41 | 1.47 | 1.81 | 1M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | custom | ▫️ | 0% | 28.53 | 6.28 | 1.85 | 29.41 | 1.47 | 1.81 | 1M | — |
-| TMDX | TransMedics Group, Inc. | greenblatt | ▫️ | 67% | 88.24 | 18.12 | 7.56 | 40.22 | 7.14 | 1.26 | 4M | — |
-| TMDX | TransMedics Group, Inc. | netnet | ▫️ | 50% | 88.24 | 18.12 | 7.56 | 40.22 | 7.14 | 1.26 | 4M | — |
-| TMDX | TransMedics Group, Inc. | graham | ▫️ | 33% | 88.24 | 18.12 | 7.56 | 40.22 | 7.14 | 1.26 | 4M | — |
-| TMDX | TransMedics Group, Inc. | buffett | ▫️ | 33% | 88.24 | 18.12 | 7.56 | 40.22 | 7.14 | 1.26 | 4M | — |
-| TMDX | TransMedics Group, Inc. | lynch | ▫️ | 25% | 88.24 | 18.12 | 7.56 | 40.22 | 7.14 | 1.26 | 4M | — |
-| TMDX | TransMedics Group, Inc. | custom | ▫️ | 0% | 88.24 | 18.12 | 7.56 | 40.22 | 7.14 | 1.26 | 4M | — |
-| SON | Sonoco Products Company | graham | ▫️ | 67% | 50.43 | 5.01 | 1.39 | 27.75 | 1.05 | 2.08 | 941,292 | — |
-| SON | Sonoco Products Company | buffett | ▫️ | 67% | 50.43 | 5.01 | 1.39 | 27.75 | 1.05 | 2.08 | 941,292 | — |
-| SON | Sonoco Products Company | greenblatt | ▫️ | 67% | 50.43 | 5.01 | 1.39 | 27.75 | 1.05 | 2.08 | 941,292 | — |
-| SON | Sonoco Products Company | netnet | ▫️ | 25% | 50.43 | 5.01 | 1.39 | 27.75 | 1.05 | 2.08 | 941,292 | — |
-| SON | Sonoco Products Company | custom | ▫️ | 0% | 50.43 | 5.01 | 1.39 | 27.75 | 1.05 | 2.08 | 941,292 | — |
+| MSGS | MSG KNICKERBOCKERS CORP. | piotroski | ✅ | 100% | 384 | 1,201 | — | -2.95 | 0.50 | -6.84 | 261,286 | — |
+| AEIS | ADVANCED ENERGY INDUSTRIES,  | piotroski | ✅ | 78% | 197 | 51.30 | 5.58 | 10.89 | 1.59 | 0.86 | 971,816 | — |
+| ARKO | ARKO Corp. | piotroski | ✅ | 78% | 3.97 | 26.47 | 1.71 | 8.51 | 1.66 | 11.85 | 890,920 | — |
+| ERIE | ERIE INDEMNITY COMPANY | greenblatt | ▫️ | 67% | 273 | — | — | 24.50 | 1.27 | 0.47 | 207,120 | — |
+| ERIE | ERIE INDEMNITY COMPANY | graham | ▫️ | 56% | 273 | — | — | 24.50 | 1.27 | 0.47 | 207,120 | — |
+| ERIE | ERIE INDEMNITY COMPANY | lynch | ▫️ | 50% | 273 | — | — | 24.50 | 1.27 | 0.47 | 207,120 | — |
+| ERIE | ERIE INDEMNITY COMPANY | piotroski | ▫️ | 44% | 273 | — | — | 24.50 | 1.27 | 0.47 | 207,120 | — |
+| ERIE | ERIE INDEMNITY COMPANY | netnet | ▫️ | 25% | 273 | — | — | 24.50 | 1.27 | 0.47 | 207,120 | — |
+| ERIE | ERIE INDEMNITY COMPANY | custom | ▫️ | 0% | 273 | — | — | 24.50 | 1.27 | 0.47 | 207,120 | — |
+| BMNR | BITMINE IMMERSION TECHNOLOGI | graham | ▫️ | 67% | 18.76 | 1.40 | 0.05 | 4.01 | 51.50 | 0.01 | 23M | — |
+| BMNR | BITMINE IMMERSION TECHNOLOGI | piotroski | ▫️ | 67% | 18.76 | 1.40 | 0.05 | 4.01 | 51.50 | 0.01 | 23M | — |
+| BMNR | BITMINE IMMERSION TECHNOLOGI | greenblatt | ▫️ | 67% | 18.76 | 1.40 | 0.05 | 4.01 | 51.50 | 0.01 | 23M | — |
+| BMNR | BITMINE IMMERSION TECHNOLOGI | lynch | ▫️ | 50% | 18.76 | 1.40 | 0.05 | 4.01 | 51.50 | 0.01 | 23M | — |
+| BMNR | BITMINE IMMERSION TECHNOLOGI | netnet | ▫️ | 50% | 18.76 | 1.40 | 0.05 | 4.01 | 51.50 | 0.01 | 23M | — |
+| BMNR | BITMINE IMMERSION TECHNOLOGI | buffett | ▫️ | 33% | 18.76 | 1.40 | 0.05 | 4.01 | 51.50 | 0.01 | 23M | — |
+| BMNR | BITMINE IMMERSION TECHNOLOGI | custom | ▫️ | 0% | 18.76 | 1.40 | 0.05 | 4.01 | 51.50 | 0.01 | 23M | — |
+| SFM | Sprouts Farmers Market, Inc. | buffett | ▫️ | 67% | 49.10 | 9.25 | 3.45 | 37.32 | 0.93 | 1.96 | 5M | — |
+| SFM | Sprouts Farmers Market, Inc. | graham | ▫️ | 56% | 49.10 | 9.25 | 3.45 | 37.32 | 0.93 | 1.96 | 5M | — |
+| SFM | Sprouts Farmers Market, Inc. | lynch | ▫️ | 50% | 49.10 | 9.25 | 3.45 | 37.32 | 0.93 | 1.96 | 5M | — |
+| SFM | Sprouts Farmers Market, Inc. | netnet | ▫️ | 25% | 49.10 | 9.25 | 3.45 | 37.32 | 0.93 | 1.96 | 5M | — |
+| SFM | Sprouts Farmers Market, Inc. | custom | ▫️ | 0% | 49.10 | 9.25 | 3.45 | 37.32 | 0.93 | 1.96 | 5M | — |
+| AMG | AFFILIATED MANAGERS GROUP, I | graham | ▫️ | 44% | 363 | 15.96 | 3.70 | 22.13 | — | 1.48 | 572,399 | — |
+| AMG | AFFILIATED MANAGERS GROUP, I | greenblatt | ▫️ | 33% | 363 | 15.96 | 3.70 | 22.13 | — | 1.48 | 572,399 | — |
+| AMG | AFFILIATED MANAGERS GROUP, I | netnet | ▫️ | 25% | 363 | 15.96 | 3.70 | 22.13 | — | 1.48 | 572,399 | — |
+| AMG | AFFILIATED MANAGERS GROUP, I | custom | ▫️ | 0% | 363 | 15.96 | 3.70 | 22.13 | — | 1.48 | 572,399 | — |
+| BELFA | BEL FUSE INC /NJ | graham | ▫️ | 56% | 164 | — | — | 14.46 | 3.02 | 0.98 | 64,288 | — |
+| BELFA | BEL FUSE INC /NJ | lynch | ▫️ | 50% | 164 | — | — | 14.46 | 3.02 | 0.98 | 64,288 | — |
+| BELFA | BEL FUSE INC /NJ | buffett | ▫️ | 33% | 164 | — | — | 14.46 | 3.02 | 0.98 | 64,288 | — |
+| BELFA | BEL FUSE INC /NJ | greenblatt | ▫️ | 33% | 164 | — | — | 14.46 | 3.02 | 0.98 | 64,288 | — |
+| BELFA | BEL FUSE INC /NJ | netnet | ▫️ | 25% | 164 | — | — | 14.46 | 3.02 | 0.98 | 64,288 | — |
+| BELFA | BEL FUSE INC /NJ | custom | ▫️ | 0% | 164 | — | — | 14.46 | 3.02 | 0.98 | 64,288 | — |
+| GGG | GRACO INC. | graham | ▫️ | 67% | 67.86 | 22.03 | 4.33 | 19.66 | 3.15 | — | 1M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
