@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-11-08 19:04 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-11-08 22:49 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **26** strategy matches passed.
+Screened **75** companies · **35** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| SVXY | PROSHARES TRUST II | greenblatt | ✅ | 100% | 54.72 | 3.96 | 1.18 | 29.91 | — | 0.06 | 2M | — |
-| SAFX | XCF GLOBAL, INC. | greenblatt | ✅ | 100% | 0.07 | 0.14 | 0.27 | 197 | 0.11 | 10.14 | 26M | — |
-| LRN | STRIDE, INC. | lynch | ✅ | 100% | 75.00 | 10.50 | 2.17 | 20.72 | 5.94 | 0.49 | 1M | — |
-| LRN | STRIDE, INC. | piotroski | ✅ | 89% | 75.00 | 10.50 | 2.17 | 20.72 | 5.94 | 0.49 | 1M | — |
-| LRN | STRIDE, INC. | buffett | ✅ | 83% | 75.00 | 10.50 | 2.17 | 20.72 | 5.94 | 0.49 | 1M | — |
-| AX | AXOS FINANCIAL, INC. | lynch | ✅ | 75% | 92.67 | 10.93 | 1.66 | 15.49 | — | 8.46 | 254,186 | — |
-| GPK | Graphic Packaging Holding Co | lynch | ✅ | 75% | 11.19 | 7.56 | 1.01 | 13.31 | 1.30 | — | 6M | — |
-| NYT | THE NEW YORK TIMES COMPANY | piotroski | ✅ | 100% | 68.36 | 32.71 | 5.52 | 16.85 | 1.54 | — | 3M | — |
+| BYD | BOYD GAMING CORP | greenblatt | ✅ | 100% | 76.57 | 3.39 | 2.40 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | piotroski | ✅ | 78% | 76.57 | 3.39 | 2.40 | 70.66 | 0.54 | — | 1M | — |
+| TDW | TIDEWATER INC | piotroski | ✅ | 89% | 70.06 | 10.55 | 2.59 | 24.51 | 2.90 | — | 917,771 | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | greenblatt | ✅ | 100% | 119 | 13.31 | 4.00 | 37.16 | 3.37 | — | 2M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | piotroski | ✅ | 89% | 119 | 13.31 | 4.00 | 37.16 | 3.37 | — | 2M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | buffett | ✅ | 83% | 119 | 13.31 | 4.00 | 37.16 | 3.37 | — | 2M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | lynch | ✅ | 75% | 119 | 13.31 | 4.00 | 37.16 | 3.37 | — | 2M | — |
+| YELP | YELP INC. | greenblatt | ✅ | 100% | 19.46 | 8.69 | 1.78 | 20.48 | 2.99 | 0.35 | 2M | — |
+| YELP | YELP INC. | piotroski | ✅ | 89% | 19.46 | 8.69 | 1.78 | 20.48 | 2.99 | 0.35 | 2M | — |
+| OTTR | OTTER TAIL CORPORATION | lynch | ✅ | 75% | 78.44 | 11.98 | 1.77 | 14.82 | 2.28 | — | 305,644 | — |
+| CARG | CarGurus, Inc. | piotroski | ✅ | 89% | 33.74 | 21.77 | 9.05 | 41.66 | 2.81 | 0.77 | 3M | — |
+| AREC | AMERICAN RESOURCES CORPORATI | greenblatt | ✅ | 100% | 1.09 | 1.73 | 1.00 | 58.44 | 2.19 | 0.80 | 2M | — |
+| EXLS | EXLSERVICE HOLDINGS, INC. | piotroski | ✅ | 89% | 43.15 | 28.02 | 7.68 | 27.50 | 2.56 | 0.87 | 2M | — |
+| EXLS | EXLSERVICE HOLDINGS, INC. | buffett | ✅ | 83% | 43.15 | 28.02 | 7.68 | 27.50 | 2.56 | 0.87 | 2M | — |
+| KRYS | Krystal Biotech, Inc. | piotroski | ✅ | 89% | 301 | 43.99 | 7.39 | 16.80 | 9.95 | 0.09 | 234,214 | — |
+| AIR | AAR CORP | piotroski | ✅ | 78% | 109 | 22.47 | 2.46 | 11.02 | 2.84 | — | 315,065 | — |
+| AIR | AAR CORP | lynch | ✅ | 75% | 109 | 22.47 | 2.46 | 11.02 | 2.84 | — | 315,065 | — |
 | CMC | Commercial Metals Company | graham | ✅ | 89% | 62.28 | 10.63 | 1.48 | 13.96 | 2.34 | 1.18 | 1M | — |
-| PCTY | PAYLOCITY HOLDING CORPORATIO | piotroski | ✅ | 89% | 173 | 35.19 | 7.76 | 22.08 | 1.09 | 3.00 | 1M | — |
-| EWBC | EAST WEST BANCORP, INC. | lynch | ✅ | 75% | 129 | 13.53 | 2.01 | 14.89 | — | 8.04 | 637,459 | — |
-| TRN | TRINITY INDUSTRIES INC | greenblatt | ✅ | 100% | 29.43 | 9.65 | 2.26 | 23.50 | — | 6.76 | 664,354 | — |
-| TRN | TRINITY INDUSTRIES INC | piotroski | ✅ | 78% | 29.43 | 9.65 | 2.26 | 23.50 | — | 6.76 | 664,354 | — |
-| FIVE | Five Below, Inc. | piotroski | ✅ | 100% | 240 | 37.14 | 6.07 | 16.35 | 2.01 | 1.25 | 473,848 | — |
-| JJSF | J&J SNACK FOODS CORP. | lynch | ✅ | 75% | 89.83 | 26.74 | 1.82 | 6.79 | 2.72 | — | 192,898 | — |
-| R | RYDER SYSTEM INC | piotroski | ✅ | 100% | 266 | 22.31 | 3.65 | 16.35 | 0.89 | 4.37 | 225,367 | — |
-| SARO | StandardAero, Inc. | piotroski | ✅ | 89% | 27.63 | 33.29 | 3.46 | 10.40 | 2.20 | 1.46 | 7M | — |
-| IDT | IDT Corporation | piotroski | ✅ | 78% | 82.17 | 23.75 | 5.45 | 22.96 | 1.86 | 0.94 | 128,326 | — |
-| ZWS | ZURN ELKAY WATER SOLUTIONS C | piotroski | ✅ | 100% | 43.47 | 37.80 | 4.64 | 12.35 | 3.13 | 0.67 | 1M | — |
+| NHC | NATIONAL HEALTHCARE CORP | piotroski | ✅ | 100% | 209 | 27.23 | 3.06 | 11.23 | 1.82 | 0.42 | 436,223 | — |
+| NHC | NATIONAL HEALTHCARE CORP | lynch | ✅ | 75% | 209 | 27.23 | 3.06 | 11.23 | 1.82 | 0.42 | 436,223 | — |
+| TOST | Toast, Inc. | piotroski | ✅ | 78% | 34.67 | 61.91 | 9.91 | 16.10 | 2.75 | 0.48 | 9M | — |
+| OSW | OneSpaWorld Holdings Limited | piotroski | ✅ | 78% | 31.13 | 45.12 | 5.95 | 13.20 | 1.91 | 0.30 | 835,174 | — |
+| FCF | FIRST COMMONWEALTH FINANCIAL | lynch | ✅ | 75% | 20.91 | 14.22 | 1.39 | 9.80 | — | 6.94 | 471,671 | — |
+| EHC | Encompass Health Corporation | piotroski | ✅ | 100% | 138 | 24.83 | 5.77 | 23.22 | 1.08 | 1.56 | 1M | — |
+| OGE | OGE ENERGY CORP. | piotroski | ✅ | 78% | 50.64 | 21.83 | 2.06 | 9.46 | 0.78 | 1.89 | 3M | — |
+| CPK | CHESAPEAKE UTILITIES CORP | piotroski | ✅ | 78% | 140 | 23.50 | 2.06 | 8.78 | 0.45 | — | 233,766 | — |
 | IEX | IDEX CORP | piotroski | ✅ | 78% | 227 | 35.41 | 4.24 | 12.00 | 2.86 | 0.72 | 1M | — |
-| FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 19.82 | 104 | 8.13 | 7.83 | 4.94 | 0.33 | 7M | — |
-| CCK | CROWN HOLDINGS, INC. | piotroski | ✅ | 89% | 121 | 19.01 | 4.68 | 24.61 | 1.03 | — | 825,484 | — |
-| MAGN | Magnera Corporation | piotroski | ✅ | 78% | 12.34 | — | 0.41 | -14.94 | 2.37 | 2.75 | 306,411 | — |
-| WWW | WOLVERINE WORLD WIDE, INC. | piotroski | ✅ | 78% | 21.33 | 18.71 | 4.27 | 23.48 | 1.40 | — | 693,259 | — |
-| NEOG | Neogen Corporation | piotroski | ✅ | 89% | 11.76 | — | 1.22 | -0.38 | 3.82 | 0.60 | 2M | — |
-| MTRX | MATRIX SERVICE CO | piotroski | ✅ | 78% | 9.64 | — | 1.92 | -1.82 | 0.98 | 3.25 | 929,059 | — |
-| SVXY | PROSHARES TRUST II | lynch | ▫️ | 50% | 54.72 | 3.96 | 1.18 | 29.91 | — | 0.06 | 2M | — |
-| SVXY | PROSHARES TRUST II | graham | ▫️ | 44% | 54.72 | 3.96 | 1.18 | 29.91 | — | 0.06 | 2M | — |
-| SVXY | PROSHARES TRUST II | buffett | ▫️ | 33% | 54.72 | 3.96 | 1.18 | 29.91 | — | 0.06 | 2M | — |
-| SVXY | PROSHARES TRUST II | piotroski | ▫️ | 33% | 54.72 | 3.96 | 1.18 | 29.91 | — | 0.06 | 2M | — |
-| SVXY | PROSHARES TRUST II | netnet | ▫️ | 25% | 54.72 | 3.96 | 1.18 | 29.91 | — | 0.06 | 2M | — |
-| SVXY | PROSHARES TRUST II | custom | ▫️ | 0% | 54.72 | 3.96 | 1.18 | 29.91 | — | 0.06 | 2M | — |
-| SAFX | XCF GLOBAL, INC. | graham | ▫️ | 44% | 0.07 | 0.14 | 0.27 | 197 | 0.11 | 10.14 | 26M | — |
-| SAFX | XCF GLOBAL, INC. | buffett | ▫️ | 33% | 0.07 | 0.14 | 0.27 | 197 | 0.11 | 10.14 | 26M | — |
-| SAFX | XCF GLOBAL, INC. | lynch | ▫️ | 25% | 0.07 | 0.14 | 0.27 | 197 | 0.11 | 10.14 | 26M | — |
-| SAFX | XCF GLOBAL, INC. | netnet | ▫️ | 25% | 0.07 | 0.14 | 0.27 | 197 | 0.11 | 10.14 | 26M | — |
-| SAFX | XCF GLOBAL, INC. | piotroski | ▫️ | 11% | 0.07 | 0.14 | 0.27 | 197 | 0.11 | 10.14 | 26M | — |
-| SAFX | XCF GLOBAL, INC. | custom | ▫️ | 0% | 0.07 | 0.14 | 0.27 | 197 | 0.11 | 10.14 | 26M | — |
-| LRN | STRIDE, INC. | graham | ▫️ | 78% | 75.00 | 10.50 | 2.17 | 20.72 | 5.94 | 0.49 | 1M | — |
-| LRN | STRIDE, INC. | greenblatt | ▫️ | 67% | 75.00 | 10.50 | 2.17 | 20.72 | 5.94 | 0.49 | 1M | — |
-| LRN | STRIDE, INC. | netnet | ▫️ | 50% | 75.00 | 10.50 | 2.17 | 20.72 | 5.94 | 0.49 | 1M | — |
-| LRN | STRIDE, INC. | custom | ▫️ | 0% | 75.00 | 10.50 | 2.17 | 20.72 | 5.94 | 0.49 | 1M | — |
-| AX | AXOS FINANCIAL, INC. | buffett | ▫️ | 67% | 92.67 | 10.93 | 1.66 | 15.49 | — | 8.46 | 254,186 | — |
-| AX | AXOS FINANCIAL, INC. | piotroski | ▫️ | 67% | 92.67 | 10.93 | 1.66 | 15.49 | — | 8.46 | 254,186 | — |
-| AX | AXOS FINANCIAL, INC. | greenblatt | ▫️ | 67% | 92.67 | 10.93 | 1.66 | 15.49 | — | 8.46 | 254,186 | — |
-| AX | AXOS FINANCIAL, INC. | graham | ▫️ | 56% | 92.67 | 10.93 | 1.66 | 15.49 | — | 8.46 | 254,186 | — |
-| AX | AXOS FINANCIAL, INC. | netnet | ▫️ | 25% | 92.67 | 10.93 | 1.66 | 15.49 | — | 8.46 | 254,186 | — |
-| AX | AXOS FINANCIAL, INC. | custom | ▫️ | 0% | 92.67 | 10.93 | 1.66 | 15.49 | — | 8.46 | 254,186 | — |
-| WT | WisdomTree, Inc. | buffett | ▫️ | 67% | 19.48 | 25.97 | 6.83 | 26.38 | 1.75 | 2.66 | 2M | — |
-| WT | WisdomTree, Inc. | piotroski | ▫️ | 67% | 19.48 | 25.97 | 6.83 | 26.38 | 1.75 | 2.66 | 2M | — |
+| CPRI | CAPRI HOLDINGS LIMITED | piotroski | ✅ | 78% | 20.54 | 18.02 | 30.77 | 171 | 1.21 | 39.38 | 3M | — |
+| MCS | MARCUS CORP | piotroski | ✅ | 78% | 26.76 | 65.95 | 1.83 | 2.77 | 0.40 | — | 174,221 | — |
+| RRX | REGAL REXNORD CORP | piotroski | ✅ | 78% | 169 | 40.25 | 1.65 | 4.08 | 2.15 | — | 1M | — |
+| MSGS | MSG KNICKERBOCKERS CORP. | piotroski | ✅ | 100% | 384 | 1,201 | — | -2.95 | 0.50 | -6.84 | 261,286 | — |
+| FROG | JFrog Ltd. | piotroski | ✅ | 78% | 101 | — | 13.22 | -8.09 | 2.14 | 0.51 | 7M | — |
+| CALX | Calix, Inc | piotroski | ✅ | 78% | 30.60 | 118 | 2.47 | 2.08 | 4.24 | 0.23 | 1M | — |
+| ARKO | ARKO Corp. | piotroski | ✅ | 78% | 3.97 | 26.47 | 1.71 | 8.51 | 1.66 | 11.85 | 890,920 | — |
+| LILA | Liberty Latin America Ltd. | piotroski | ✅ | 78% | 8.91 | — | 3.20 | -110 | 1.14 | 20.09 | 709,430 | — |
+| BYD | BOYD GAMING CORP | buffett | ▫️ | 67% | 76.57 | 3.39 | 2.40 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | graham | ▫️ | 56% | 76.57 | 3.39 | 2.40 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | lynch | ▫️ | 25% | 76.57 | 3.39 | 2.40 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | netnet | ▫️ | 25% | 76.57 | 3.39 | 2.40 | 70.66 | 0.54 | — | 1M | — |
+| BYD | BOYD GAMING CORP | custom | ▫️ | 0% | 76.57 | 3.39 | 2.40 | 70.66 | 0.54 | — | 1M | — |
+| TDW | TIDEWATER INC | greenblatt | ▫️ | 67% | 70.06 | 10.55 | 2.59 | 24.51 | 2.90 | — | 917,771 | — |
+| TDW | TIDEWATER INC | buffett | ▫️ | 50% | 70.06 | 10.55 | 2.59 | 24.51 | 2.90 | — | 917,771 | — |
+| TDW | TIDEWATER INC | graham | ▫️ | 44% | 70.06 | 10.55 | 2.59 | 24.51 | 2.90 | — | 917,771 | — |
+| TDW | TIDEWATER INC | lynch | ▫️ | 25% | 70.06 | 10.55 | 2.59 | 24.51 | 2.90 | — | 917,771 | — |
+| TDW | TIDEWATER INC | netnet | ▫️ | 25% | 70.06 | 10.55 | 2.59 | 24.51 | 2.90 | — | 917,771 | — |
+| TDW | TIDEWATER INC | custom | ▫️ | 0% | 70.06 | 10.55 | 2.59 | 24.51 | 2.90 | — | 917,771 | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | graham | ▫️ | 67% | 119 | 13.31 | 4.00 | 37.16 | 3.37 | — | 2M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | netnet | ▫️ | 25% | 119 | 13.31 | 4.00 | 37.16 | 3.37 | — | 2M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | custom | ▫️ | 0% | 119 | 13.31 | 4.00 | 37.16 | 3.37 | — | 2M | — |
+| YELP | YELP INC. | graham | ▫️ | 78% | 19.46 | 8.69 | 1.78 | 20.48 | 2.99 | 0.35 | 2M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
