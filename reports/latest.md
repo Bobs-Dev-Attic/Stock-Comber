@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-11-08 07:29 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-11-08 14:29 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **35** strategy matches passed.
+Screened **75** companies · **34** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| YELP | YELP INC. | greenblatt | ✅ | 100% | 19.46 | 8.69 | 1.78 | 20.48 | 2.99 | 0.35 | 2M | — |
-| YELP | YELP INC. | piotroski | ✅ | 89% | 19.46 | 8.69 | 1.78 | 20.48 | 2.99 | 0.35 | 2M | — |
-| SBC | SBC Medical Group Holdings I | lynch | ✅ | 75% | 5.04 | 10.08 | 2.09 | 20.54 | 3.78 | 0.47 | 155,632 | — |
-| SON | Sonoco Products Company | piotroski | ✅ | 89% | 50.43 | 5.01 | 1.39 | 27.75 | 1.05 | 2.08 | 941,292 | — |
-| SON | Sonoco Products Company | lynch | ✅ | 75% | 50.43 | 5.01 | 1.39 | 27.75 | 1.05 | 2.08 | 941,292 | — |
-| ESE | ESCO TECHNOLOGIES INC. | lynch | ✅ | 100% | 230 | 19.95 | 3.87 | 19.42 | 1.35 | 0.56 | 182,392 | — |
-| BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 131 | 17.82 | 3.05 | 17.13 | 2.65 | 0.86 | 1M | — |
-| BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 131 | 17.82 | 3.05 | 17.13 | 2.65 | 0.86 | 1M | — |
-| ANNAW | AleAnna, Inc. | piotroski | ✅ | 78% | 0.21 | 5.15 | 0.14 | 4.91 | 1.93 | 0.73 | 38,630 | — |
-| DUKU | Duke Energy CORP | piotroski | ✅ | 89% | 50.28 | 7.97 | 0.75 | 9.58 | 0.55 | — | 584,766 | — |
-| DUKU | Duke Energy CORP | lynch | ✅ | 75% | 50.28 | 7.97 | 0.75 | 9.58 | 0.55 | — | 584,766 | — |
-| FCFS | FIRSTCASH HOLDINGS, INC. | piotroski | ✅ | 78% | 186 | 25.02 | 3.63 | 14.51 | 4.55 | 1.33 | 355,090 | — |
-| FCFS | FIRSTCASH HOLDINGS, INC. | lynch | ✅ | 75% | 186 | 25.02 | 3.63 | 14.51 | 4.55 | 1.33 | 355,090 | — |
-| FTDR | Frontdoor, Inc. | piotroski | ✅ | 89% | 97.09 | 28.39 | 29.89 | 105 | 1.55 | — | 1M | — |
-| FTDR | Frontdoor, Inc. | buffett | ✅ | 83% | 97.09 | 28.39 | 29.89 | 105 | 1.55 | — | 1M | — |
-| BURL | BURLINGTON STORES, INC. | piotroski | ✅ | 78% | 247 | 25.95 | 8.76 | 33.76 | 1.23 | — | 1M | — |
-| HOG | HARLEY-DAVIDSON, INC. | graham | ✅ | 100% | 32.66 | 11.75 | 1.26 | 10.79 | 2.10 | — | 2M | — |
-| HOG | HARLEY-DAVIDSON, INC. | piotroski | ✅ | 89% | 32.66 | 11.75 | 1.26 | 10.79 | 2.10 | — | 2M | — |
-| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 121 | 19.12 | 2.01 | 10.49 | 1.53 | — | 684,835 | — |
-| GEO | The GEO Group, Inc. | piotroski | ✅ | 78% | 27.80 | 15.27 | 2.58 | 16.89 | 2.01 | — | 5M | — |
-| GEO | The GEO Group, Inc. | lynch | ✅ | 75% | 27.80 | 15.27 | 2.58 | 16.89 | 2.01 | — | 5M | — |
-| NHC | NATIONAL HEALTHCARE CORP | piotroski | ✅ | 100% | 209 | 27.23 | 3.06 | 11.23 | 1.82 | 0.42 | 436,223 | — |
-| NHC | NATIONAL HEALTHCARE CORP | lynch | ✅ | 75% | 209 | 27.23 | 3.06 | 11.23 | 1.82 | 0.42 | 436,223 | — |
-| OPY | OPPENHEIMER HOLDINGS INC. | piotroski | ✅ | 78% | 90.72 | 6.96 | 1.05 | 15.08 | — | 2.77 | 96,951 | — |
-| AXTA | AXALTA COATING SYSTEMS LTD. | lynch | ✅ | 75% | 36.45 | 20.95 | 3.37 | 16.11 | 2.06 | 2.22 | 2M | — |
-| SIRI | Sirius XM Holdings Inc. | lynch | ✅ | 75% | 32.40 | 14.53 | 1.00 | 6.96 | 0.30 | 1.36 | 7M | — |
-| DLB | Dolby Laboratories, Inc. | piotroski | ✅ | 78% | 64.83 | 24.74 | 2.41 | 9.72 | 3.17 | 0.23 | 533,611 | — |
-| NPKI | NPK International Inc. | piotroski | ✅ | 78% | 8.64 | 19.20 | 2.11 | 11.09 | 1.43 | 0.26 | 1M | — |
-| RBBN | RIBBON COMMUNICATIONS INC. | piotroski | ✅ | 78% | 1.35 | 6.14 | 0.54 | 8.83 | 1.44 | 1.70 | 1M | — |
-| VMD | Viemed Healthcare, Inc. | piotroski | ✅ | 78% | 9.13 | 24.68 | 2.63 | 10.55 | 1.18 | 0.39 | 256,070 | — |
-| PGC | PEAPACK-GLADSTONE FINANCIAL  | piotroski | ✅ | 78% | 45.90 | 21.86 | 1.24 | 5.67 | — | 10.43 | 114,305 | — |
-| MCS | MARCUS CORP | piotroski | ✅ | 78% | 26.76 | 65.95 | 1.83 | 2.77 | 0.40 | — | 174,221 | — |
-| MOS | MOSAIC CO | piotroski | ✅ | 89% | 22.36 | 13.15 | 0.59 | 4.47 | 1.32 | — | 12M | — |
-| TBCH | TURTLE BEACH CORPORATION | piotroski | ✅ | 78% | 15.19 | 19.73 | 2.42 | 12.24 | 1.98 | 1.09 | 1M | — |
-| AEIS | ADVANCED ENERGY INDUSTRIES,  | piotroski | ✅ | 78% | 197 | 51.30 | 5.58 | 10.89 | 1.59 | 0.86 | 971,816 | — |
-| YELP | YELP INC. | graham | ▫️ | 78% | 19.46 | 8.69 | 1.78 | 20.48 | 2.99 | 0.35 | 2M | — |
-| YELP | YELP INC. | buffett | ▫️ | 50% | 19.46 | 8.69 | 1.78 | 20.48 | 2.99 | 0.35 | 2M | — |
-| YELP | YELP INC. | lynch | ▫️ | 50% | 19.46 | 8.69 | 1.78 | 20.48 | 2.99 | 0.35 | 2M | — |
-| YELP | YELP INC. | netnet | ▫️ | 50% | 19.46 | 8.69 | 1.78 | 20.48 | 2.99 | 0.35 | 2M | — |
-| YELP | YELP INC. | custom | ▫️ | 0% | 19.46 | 8.69 | 1.78 | 20.48 | 2.99 | 0.35 | 2M | — |
-| SBC | SBC Medical Group Holdings I | graham | ▫️ | 67% | 5.04 | 10.08 | 2.09 | 20.54 | 3.78 | 0.47 | 155,632 | — |
-| SBC | SBC Medical Group Holdings I | buffett | ▫️ | 67% | 5.04 | 10.08 | 2.09 | 20.54 | 3.78 | 0.47 | 155,632 | — |
-| SBC | SBC Medical Group Holdings I | greenblatt | ▫️ | 67% | 5.04 | 10.08 | 2.09 | 20.54 | 3.78 | 0.47 | 155,632 | — |
-| SBC | SBC Medical Group Holdings I | netnet | ▫️ | 50% | 5.04 | 10.08 | 2.09 | 20.54 | 3.78 | 0.47 | 155,632 | — |
-| SBC | SBC Medical Group Holdings I | piotroski | ▫️ | 44% | 5.04 | 10.08 | 2.09 | 20.54 | 3.78 | 0.47 | 155,632 | — |
-| SBC | SBC Medical Group Holdings I | custom | ▫️ | 0% | 5.04 | 10.08 | 2.09 | 20.54 | 3.78 | 0.47 | 155,632 | — |
-| GSG | iShares S&P GSCI Commodity-I | greenblatt | ▫️ | 33% | 34.46 | 27.35 | — | — | — | — | 1M | — |
-| GSG | iShares S&P GSCI Commodity-I | lynch | ▫️ | 25% | 34.46 | 27.35 | — | — | — | — | 1M | — |
-| GSG | iShares S&P GSCI Commodity-I | netnet | ▫️ | 25% | 34.46 | 27.35 | — | — | — | — | 1M | — |
-| GSG | iShares S&P GSCI Commodity-I | buffett | ▫️ | 17% | 34.46 | 27.35 | — | — | — | — | 1M | — |
+| UCFIW | CN Healthy Food Tech Group C | greenblatt | ✅ | 100% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
+| UCFIW | CN Healthy Food Tech Group C | netnet | ✅ | 100% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
+| PIPR | PIPER SANDLER COMPANIES | greenblatt | ✅ | 100% | 65.92 | 4.17 | 0.86 | 20.52 | — | 0.74 | 821,353 | — |
+| PIPR | PIPER SANDLER COMPANIES | lynch | ✅ | 100% | 65.92 | 4.17 | 0.86 | 20.52 | — | 0.74 | 821,353 | — |
+| PIPR | PIPER SANDLER COMPANIES | piotroski | ✅ | 89% | 65.92 | 4.17 | 0.86 | 20.52 | — | 0.74 | 821,353 | — |
+| KMT | KENNAMETAL INC. | graham | ✅ | 100% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
+| KMT | KENNAMETAL INC. | lynch | ✅ | 75% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
+| AROC | Archrock, Inc. | piotroski | ✅ | 89% | 27.54 | 15.05 | 3.23 | 21.61 | 1.54 | 1.92 | 2M | — |
+| WLDN | WILLDAN GROUP, INC. | piotroski | ✅ | 78% | 66.22 | 18.97 | 3.27 | 17.24 | 1.56 | 0.79 | 411,048 | — |
+| LII | LENNOX INTERNATIONAL INC | lynch | ✅ | 75% | 342 | 15.01 | 10.41 | 69.28 | 1.60 | 2.51 | 471,841 | — |
+| KFY | KORN FERRY | piotroski | ✅ | 100% | 75.38 | 14.44 | 2.01 | 14.06 | 1.94 | 1.06 | 286,160 | — |
+| KFY | KORN FERRY | lynch | ✅ | 75% | 75.38 | 14.44 | 2.01 | 14.06 | 1.94 | 1.06 | 286,160 | — |
+| GPK | Graphic Packaging Holding Co | lynch | ✅ | 75% | 11.19 | 7.56 | 1.01 | 13.31 | 1.30 | — | 6M | — |
+| BANC | BANC OF CALIFORNIA, INC. | piotroski | ✅ | 78% | 17.98 | 15.37 | 0.82 | 6.47 | — | 8.83 | 1M | — |
+| NYT | THE NEW YORK TIMES COMPANY | piotroski | ✅ | 100% | 68.36 | 32.71 | 5.52 | 16.85 | 1.54 | — | 3M | — |
+| GL | GLOBE LIFE INC. | piotroski | ✅ | 78% | 157 | 11.17 | 2.17 | 19.44 | — | 4.16 | 475,444 | — |
+| FIZZ | National Beverage Corp. | buffett | ✅ | 83% | 37.14 | 18.95 | 5.47 | 28.89 | 4.39 | 0.34 | 334,121 | — |
+| XPRO | Expro Group Holdings N.V. | piotroski | ✅ | 89% | 13.19 | 29.31 | 1.00 | 3.37 | 2.16 | 0.47 | 1M | — |
+| NDSN | NORDSON CORPORATION | buffett | ✅ | 83% | 310 | 36.41 | 5.79 | 15.92 | 1.64 | — | 405,234 | — |
+| NDSN | NORDSON CORPORATION | piotroski | ✅ | 78% | 310 | 36.41 | 5.79 | 15.92 | 1.64 | — | 405,234 | — |
+| ONTO | ONTO INNOVATION INC. | lynch | ✅ | 75% | 173 | 62.33 | 4.06 | 6.51 | 5.79 | 0.13 | 1M | — |
+| R | RYDER SYSTEM INC | piotroski | ✅ | 100% | 266 | 22.31 | 3.65 | 16.35 | 0.89 | 4.37 | 225,367 | — |
+| SAFT | SAFETY INSURANCE GROUP, INC. | piotroski | ✅ | 78% | 104 | 15.56 | 1.72 | 11.12 | — | 1.77 | 87,447 | — |
+| FAF | FIRST AMERICAN FINANCIAL COR | piotroski | ✅ | 89% | 67.01 | 11.17 | 1.26 | 11.31 | — | 1.95 | 1M | — |
+| AMCX | AMC Global Media Inc. | piotroski | ✅ | 78% | 8.39 | 5.05 | 0.48 | 9.11 | 1.67 | 2.98 | 467,372 | — |
+| CRI | CARTER’S, INC. | graham | ✅ | 89% | 32.01 | 12.65 | 1.23 | 9.92 | 2.51 | 1.77 | 918,497 | — |
+| MLKN | MillerKnoll, Inc. | piotroski | ✅ | 100% | 21.49 | 16.28 | 1.11 | 6.82 | 1.58 | 1.93 | 205,900 | — |
+| SENS | Senseonics Holdings, Inc. | piotroski | ✅ | 78% | 8.59 | — | 5.87 | -113 | 4.83 | 1.07 | 865,827 | — |
+| INNV | InnovAge Holding Corp. | piotroski | ✅ | 78% | 8.97 | — | 5.17 | -1.08 | 1.05 | 1.23 | 750,308 | — |
+| THO | THOR Industries, Inc. | piotroski | ✅ | 78% | 80.77 | 23.90 | 1.00 | 4.17 | 1.77 | — | 747,775 | — |
+| ADT | ADT Inc. | piotroski | ✅ | 89% | 9.86 | — | — | 15.77 | 0.93 | 3.19 | 15M | — |
+| GXO | GXO Logistics, Inc. | piotroski | ✅ | 78% | 55.18 | 197 | 2.15 | 1.07 | 0.85 | — | 1M | — |
+| TPC | Tutor Perini Corporation | piotroski | ✅ | 78% | 89.89 | 59.53 | 3.94 | 6.60 | 1.27 | 3.20 | 1M | — |
+| TLYS | TILLY’S, INC. | piotroski | ✅ | 78% | 4.20 | — | 1.48 | -20.50 | 1.25 | 2.65 | 80,353 | — |
+| UCFIW | CN Healthy Food Tech Group C | graham | ▫️ | 56% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
+| UCFIW | CN Healthy Food Tech Group C | piotroski | ▫️ | 44% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
+| UCFIW | CN Healthy Food Tech Group C | buffett | ▫️ | 33% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
+| UCFIW | CN Healthy Food Tech Group C | lynch | ▫️ | 25% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
+| UCFIW | CN Healthy Food Tech Group C | custom | ▫️ | 0% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
+| PIPR | PIPER SANDLER COMPANIES | graham | ▫️ | 78% | 65.92 | 4.17 | 0.86 | 20.52 | — | 0.74 | 821,353 | — |
+| PIPR | PIPER SANDLER COMPANIES | buffett | ▫️ | 50% | 65.92 | 4.17 | 0.86 | 20.52 | — | 0.74 | 821,353 | — |
+| PIPR | PIPER SANDLER COMPANIES | netnet | ▫️ | 25% | 65.92 | 4.17 | 0.86 | 20.52 | — | 0.74 | 821,353 | — |
+| PIPR | PIPER SANDLER COMPANIES | custom | ▫️ | 0% | 65.92 | 4.17 | 0.86 | 20.52 | — | 0.74 | 821,353 | — |
+| KMT | KENNAMETAL INC. | piotroski | ▫️ | 67% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
+| KMT | KENNAMETAL INC. | greenblatt | ▫️ | 67% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
+| KMT | KENNAMETAL INC. | buffett | ▫️ | 50% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
+| KMT | KENNAMETAL INC. | netnet | ▫️ | 50% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
+| KMT | KENNAMETAL INC. | custom | ▫️ | 0% | 23.00 | 5.20 | 1.13 | 21.81 | 2.62 | 0.99 | 4M | — |
+| XZO | Exzeo Group, Inc. | greenblatt | ▫️ | 67% | 16.29 | 16.45 | 5.14 | 32.56 | 3.86 | 0.37 | 244,090 | — |
+| XZO | Exzeo Group, Inc. | buffett | ▫️ | 50% | 16.29 | 16.45 | 5.14 | 32.56 | 3.86 | 0.37 | 244,090 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
