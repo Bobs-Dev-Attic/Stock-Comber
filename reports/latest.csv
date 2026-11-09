@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-BYD,BOYD GAMING CORP,greenblatt,True,3,3,100.0,76.57,3.39,2.40,70.66,0.54,—,127,1M,—
-BYD,BOYD GAMING CORP,piotroski,True,7,9,77.8,76.57,3.39,2.40,70.66,0.54,—,127,1M,—
-TDW,TIDEWATER INC,piotroski,True,8,9,88.9,70.06,10.55,2.59,24.51,2.90,—,63.60,"917,771",—
-CF,"CF INDUSTRIES HOLDINGS, INC.",greenblatt,True,3,3,100.0,119,13.31,4.00,37.16,3.37,—,77.59,2M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",piotroski,True,8,9,88.9,119,13.31,4.00,37.16,3.37,—,77.59,2M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",buffett,True,5,6,83.3,119,13.31,4.00,37.16,3.37,—,77.59,2M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",lynch,True,3,4,75.0,119,13.31,4.00,37.16,3.37,—,77.59,2M,—
-YELP,YELP INC.,greenblatt,True,3,3,100.0,19.46,8.69,1.78,20.48,2.99,0.35,23.46,2M,—
-YELP,YELP INC.,piotroski,True,8,9,88.9,19.46,8.69,1.78,20.48,2.99,0.35,23.46,2M,—
-OTTR,OTTER TAIL CORPORATION,lynch,True,3,4,75.0,78.44,11.98,1.77,14.82,2.28,—,80.71,"305,644",—
-CARG,"CarGurus, Inc.",piotroski,True,8,9,88.9,33.74,21.77,9.05,41.66,2.81,0.77,11.40,3M,—
-AREC,AMERICAN RESOURCES CORPORATION,greenblatt,True,3,3,100.0,1.09,1.73,1.00,58.44,2.19,0.80,3.92,2M,—
-EXLS,"EXLSERVICE HOLDINGS, INC.",piotroski,True,8,9,88.9,43.15,28.02,7.68,27.50,2.56,0.87,13.95,2M,—
-EXLS,"EXLSERVICE HOLDINGS, INC.",buffett,True,5,6,83.3,43.15,28.02,7.68,27.50,2.56,0.87,13.95,2M,—
-KRYS,"Krystal Biotech, Inc.",piotroski,True,8,9,88.9,301,43.99,7.39,16.80,9.95,0.09,79.16,"234,214",—
-AIR,AAR CORP,piotroski,True,7,9,77.8,109,22.47,2.46,11.02,2.84,—,69.66,"315,065",—
-AIR,AAR CORP,lynch,True,3,4,75.0,109,22.47,2.46,11.02,2.84,—,69.66,"315,065",—
-CMC,Commercial Metals Company,graham,True,8,9,88.9,62.28,10.63,1.48,13.96,2.34,1.18,74.40,1M,—
-NHC,NATIONAL HEALTHCARE CORP,piotroski,True,9,9,100.0,209,27.23,3.06,11.23,1.82,0.42,109,"436,223",—
-NHC,NATIONAL HEALTHCARE CORP,lynch,True,3,4,75.0,209,27.23,3.06,11.23,1.82,0.42,109,"436,223",—
-TOST,"Toast, Inc.",piotroski,True,7,9,77.8,34.67,61.91,9.91,16.10,2.75,0.48,6.64,9M,—
-OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,31.13,45.12,5.95,13.20,1.91,0.30,9.01,"835,174",—
-FCF,FIRST COMMONWEALTH FINANCIAL CORP /PA/,lynch,True,3,4,75.0,20.91,14.22,1.39,9.80,—,6.94,22.28,"471,671",—
-EHC,Encompass Health Corporation,piotroski,True,9,9,100.0,138,24.83,5.77,23.22,1.08,1.56,54.53,1M,—
-OGE,OGE ENERGY CORP.,piotroski,True,7,9,77.8,50.64,21.83,2.06,9.46,0.78,1.89,35.82,3M,—
-CPK,CHESAPEAKE UTILITIES CORP,piotroski,True,7,9,77.8,140,23.50,2.06,8.78,0.45,—,95.61,"233,766",—
-IEX,IDEX CORP,piotroski,True,7,9,77.8,227,35.41,4.24,12.00,2.86,0.72,87.83,1M,—
-CPRI,CAPRI HOLDINGS LIMITED,piotroski,True,7,9,77.8,20.54,18.02,30.77,171,1.21,39.38,4.14,3M,—
-MCS,MARCUS CORP,piotroski,True,7,9,77.8,26.76,65.95,1.83,2.77,0.40,—,11.55,"174,221",—
-RRX,REGAL REXNORD CORP,piotroski,True,7,9,77.8,169,40.25,1.65,4.08,2.15,—,98.55,1M,—
-MSGS,MSG KNICKERBOCKERS CORP.,piotroski,True,9,9,100.0,384,"1,201",—,-2.95,0.50,-6.84,—,"261,286",—
-FROG,JFrog Ltd.,piotroski,True,7,9,77.8,101,—,13.22,-8.09,2.14,0.51,—,7M,—
-CALX,"Calix, Inc",piotroski,True,7,9,77.8,30.60,118,2.47,2.08,4.24,0.23,8.52,1M,—
-ARKO,ARKO Corp.,piotroski,True,7,9,77.8,3.97,26.47,1.71,8.51,1.66,11.85,2.80,"890,920",—
-LILA,Liberty Latin America Ltd.,piotroski,True,7,9,77.8,8.91,—,3.20,-110,1.14,20.09,—,"709,430",—
-BYD,BOYD GAMING CORP,buffett,False,4,6,66.7,76.57,3.39,2.40,70.66,0.54,—,127,1M,—
-BYD,BOYD GAMING CORP,graham,False,5,9,55.6,76.57,3.39,2.40,70.66,0.54,—,127,1M,—
-BYD,BOYD GAMING CORP,lynch,False,1,4,25.0,76.57,3.39,2.40,70.66,0.54,—,127,1M,—
-BYD,BOYD GAMING CORP,netnet,False,1,4,25.0,76.57,3.39,2.40,70.66,0.54,—,127,1M,—
-BYD,BOYD GAMING CORP,custom,False,0,0,0.0,76.57,3.39,2.40,70.66,0.54,—,127,1M,—
-TDW,TIDEWATER INC,greenblatt,False,2,3,66.7,70.06,10.55,2.59,24.51,2.90,—,63.60,"917,771",—
-TDW,TIDEWATER INC,buffett,False,3,6,50.0,70.06,10.55,2.59,24.51,2.90,—,63.60,"917,771",—
-TDW,TIDEWATER INC,graham,False,4,9,44.4,70.06,10.55,2.59,24.51,2.90,—,63.60,"917,771",—
-TDW,TIDEWATER INC,lynch,False,1,4,25.0,70.06,10.55,2.59,24.51,2.90,—,63.60,"917,771",—
-TDW,TIDEWATER INC,netnet,False,1,4,25.0,70.06,10.55,2.59,24.51,2.90,—,63.60,"917,771",—
-TDW,TIDEWATER INC,custom,False,0,0,0.0,70.06,10.55,2.59,24.51,2.90,—,63.60,"917,771",—
-CF,"CF INDUSTRIES HOLDINGS, INC.",graham,False,6,9,66.7,119,13.31,4.00,37.16,3.37,—,77.59,2M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",netnet,False,1,4,25.0,119,13.31,4.00,37.16,3.37,—,77.59,2M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",custom,False,0,0,0.0,119,13.31,4.00,37.16,3.37,—,77.59,2M,—
-YELP,YELP INC.,graham,False,7,9,77.8,19.46,8.69,1.78,20.48,2.99,0.35,23.46,2M,—
+POWL,"Powell Industries, Inc.",greenblatt,True,3,3,100.0,133,8.96,2.53,28.21,2.09,0.73,133,"863,678",—
+POWL,"Powell Industries, Inc.",piotroski,True,7,9,77.8,133,8.96,2.53,28.21,2.09,0.73,133,"863,678",—
+POWL,"Powell Industries, Inc.",lynch,True,3,4,75.0,133,8.96,2.53,28.21,2.09,0.73,133,"863,678",—
+SBC,SBC Medical Group Holdings Incorporated,lynch,True,3,4,75.0,5.04,10.08,2.09,20.54,3.78,0.47,5.21,"155,632",—
+LFMD,"LifeMD, Inc.",greenblatt,True,3,3,100.0,2.37,9.48,4.62,61.99,1.25,2.04,1.70,"920,650",—
+AROC,"Archrock, Inc.",piotroski,True,8,9,88.9,27.54,15.05,3.23,21.61,1.54,1.92,18.75,2M,—
+AMG,"AFFILIATED MANAGERS GROUP, INC.",buffett,True,5,6,83.3,363,15.96,3.70,22.13,—,1.48,224,"572,399",—
+AMG,"AFFILIATED MANAGERS GROUP, INC.",piotroski,True,7,9,77.8,363,15.96,3.70,22.13,—,1.48,224,"572,399",—
+AMG,"AFFILIATED MANAGERS GROUP, INC.",lynch,True,3,4,75.0,363,15.96,3.70,22.13,—,1.48,224,"572,399",—
+PATH,"UiPath, Inc.",piotroski,True,8,9,88.9,13.00,25.00,3.40,13.56,2.48,0.53,6.69,18M,—
+OTLC,"Oncotelic Therapeutics, Inc.",greenblatt,True,3,3,100.0,0.01,0.02,0.02,94.87,0.07,0.50,2.87,"36,655",—
+HBANP,Huntington Bancshares Incorporated,lynch,True,3,4,75.0,15.01,10.80,0.93,9.08,—,8.25,22.49,"75,427",—
+DUKB,Duke Energy CORP,piotroski,True,8,9,88.9,20.42,3.24,0.31,9.58,0.55,—,97.33,"135,244",—
+DUKB,Duke Energy CORP,lynch,True,3,4,75.0,20.42,3.24,0.31,9.58,0.55,—,97.33,"135,244",—
+KTB,"KONTOOR BRANDS, INC.",lynch,True,3,4,75.0,77.06,19.03,7.65,40.27,1.82,3.57,30.29,2M,—
+CNA,CNA FINANCIAL CORPORATION,piotroski,True,7,9,77.8,47.32,10.09,1.11,11.00,—,4.98,67.10,"420,703",—
+KEX,KIRBY CORPORATION,piotroski,True,8,9,88.9,121,19.12,2.01,10.49,1.53,—,92.69,"684,825",—
+GEO,"The GEO Group, Inc.",piotroski,True,7,9,77.8,27.80,15.27,2.58,16.89,2.01,—,21.01,5M,—
+GEO,"The GEO Group, Inc.",lynch,True,3,4,75.0,27.80,15.27,2.58,16.89,2.01,—,21.01,5M,—
+ROL,"ROLLINS, INC.",buffett,True,5,6,83.3,37.95,34.82,13.37,38.32,0.60,1.29,8.34,8M,—
+DY,"DYCOM INDUSTRIES, INC.",lynch,True,3,4,75.0,208,21.71,3.28,15.12,2.74,2.22,117,"715,361",—
+PCTY,PAYLOCITY HOLDING CORPORATION,piotroski,True,8,9,88.9,173,35.19,7.76,22.08,1.09,3.00,49.69,1M,—
+BCPC,Balchem Corporation,piotroski,True,9,9,100.0,174,36.72,4.52,12.31,2.07,0.34,64.20,"425,478",—
+MD,"Pediatrix Medical Group, Inc.",piotroski,True,7,9,77.8,31.29,16.13,3.08,19.10,1.66,1.59,21.05,"491,257",—
+ACA,"Arcosa, Inc.",piotroski,True,9,9,100.0,149,35.18,2.77,7.89,2.20,0.89,71.71,"875,023",—
+RNG,"RingCentral, Inc.",piotroski,True,8,9,88.9,72.07,150,—,-7.38,0.63,-3.18,—,2M,—
+FLS,FLOWSERVE CORP,piotroski,True,7,9,77.8,80.37,30.44,4.80,15.80,2.03,—,31.52,2M,—
+LUV,SOUTHWEST AIRLINES CO,piotroski,True,7,9,77.8,44.45,56.27,3.11,5.53,0.52,—,15.94,6M,—
+MLKN,"MillerKnoll, Inc.",piotroski,True,9,9,100.0,21.49,16.28,1.11,6.82,1.58,1.93,23.98,"205,903",—
+GCO,GENESCO INC,piotroski,True,8,9,88.9,36.07,28.86,0.68,2.34,1.64,1.46,38.74,"140,993",—
+AVNW,"Aviat Networks, Inc.",piotroski,True,7,9,77.8,17.66,92.95,0.86,0.95,1.97,1.24,9.37,"245,604",—
+POWL,"Powell Industries, Inc.",graham,False,7,9,77.8,133,8.96,2.53,28.21,2.09,0.73,133,"863,678",—
+POWL,"Powell Industries, Inc.",buffett,False,4,6,66.7,133,8.96,2.53,28.21,2.09,0.73,133,"863,678",—
+POWL,"Powell Industries, Inc.",netnet,False,2,4,50.0,133,8.96,2.53,28.21,2.09,0.73,133,"863,678",—
+POWL,"Powell Industries, Inc.",custom,False,0,0,0.0,133,8.96,2.53,28.21,2.09,0.73,133,"863,678",—
+SBC,SBC Medical Group Holdings Incorporated,graham,False,6,9,66.7,5.04,10.08,2.09,20.54,3.78,0.47,5.21,"155,632",—
+SBC,SBC Medical Group Holdings Incorporated,buffett,False,4,6,66.7,5.04,10.08,2.09,20.54,3.78,0.47,5.21,"155,632",—
+SBC,SBC Medical Group Holdings Incorporated,greenblatt,False,2,3,66.7,5.04,10.08,2.09,20.54,3.78,0.47,5.21,"155,632",—
+SBC,SBC Medical Group Holdings Incorporated,netnet,False,2,4,50.0,5.04,10.08,2.09,20.54,3.78,0.47,5.21,"155,632",—
+SBC,SBC Medical Group Holdings Incorporated,piotroski,False,4,9,44.4,5.04,10.08,2.09,20.54,3.78,0.47,5.21,"155,632",—
+SBC,SBC Medical Group Holdings Incorporated,custom,False,0,0,0.0,5.04,10.08,2.09,20.54,3.78,0.47,5.21,"155,632",—
+LFMD,"LifeMD, Inc.",piotroski,False,6,9,66.7,2.37,9.48,4.62,61.99,1.25,2.04,1.70,"920,650",—
+LFMD,"LifeMD, Inc.",netnet,False,2,4,50.0,2.37,9.48,4.62,61.99,1.25,2.04,1.70,"920,650",—
+LFMD,"LifeMD, Inc.",graham,False,3,9,33.3,2.37,9.48,4.62,61.99,1.25,2.04,1.70,"920,650",—
+LFMD,"LifeMD, Inc.",buffett,False,2,6,33.3,2.37,9.48,4.62,61.99,1.25,2.04,1.70,"920,650",—
+LFMD,"LifeMD, Inc.",lynch,False,1,4,25.0,2.37,9.48,4.62,61.99,1.25,2.04,1.70,"920,650",—
+LFMD,"LifeMD, Inc.",custom,False,0,0,0.0,2.37,9.48,4.62,61.99,1.25,2.04,1.70,"920,650",—
+AROC,"Archrock, Inc.",buffett,False,3,6,50.0,27.54,15.05,3.23,21.61,1.54,1.92,18.75,2M,—
+AROC,"Archrock, Inc.",graham,False,3,9,33.3,27.54,15.05,3.23,21.61,1.54,1.92,18.75,2M,—
+AROC,"Archrock, Inc.",greenblatt,False,1,3,33.3,27.54,15.05,3.23,21.61,1.54,1.92,18.75,2M,—
