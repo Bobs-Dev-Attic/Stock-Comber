@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-11-09 02:01 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-11-09 09:00 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **31** strategy matches passed.
+Screened **75** companies · **29** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| POWL | Powell Industries, Inc. | greenblatt | ✅ | 100% | 133 | 8.96 | 2.53 | 28.21 | 2.09 | 0.73 | 863,678 | — |
-| POWL | Powell Industries, Inc. | piotroski | ✅ | 78% | 133 | 8.96 | 2.53 | 28.21 | 2.09 | 0.73 | 863,678 | — |
-| POWL | Powell Industries, Inc. | lynch | ✅ | 75% | 133 | 8.96 | 2.53 | 28.21 | 2.09 | 0.73 | 863,678 | — |
-| SBC | SBC Medical Group Holdings I | lynch | ✅ | 75% | 5.04 | 10.08 | 2.09 | 20.54 | 3.78 | 0.47 | 155,632 | — |
-| LFMD | LifeMD, Inc. | greenblatt | ✅ | 100% | 2.37 | 9.48 | 4.62 | 61.99 | 1.25 | 2.04 | 920,650 | — |
-| AROC | Archrock, Inc. | piotroski | ✅ | 89% | 27.54 | 15.05 | 3.23 | 21.61 | 1.54 | 1.92 | 2M | — |
-| AMG | AFFILIATED MANAGERS GROUP, I | buffett | ✅ | 83% | 363 | 15.96 | 3.70 | 22.13 | — | 1.48 | 572,399 | — |
-| AMG | AFFILIATED MANAGERS GROUP, I | piotroski | ✅ | 78% | 363 | 15.96 | 3.70 | 22.13 | — | 1.48 | 572,399 | — |
-| AMG | AFFILIATED MANAGERS GROUP, I | lynch | ✅ | 75% | 363 | 15.96 | 3.70 | 22.13 | — | 1.48 | 572,399 | — |
-| PATH | UiPath, Inc. | piotroski | ✅ | 89% | 13.00 | 25.00 | 3.40 | 13.56 | 2.48 | 0.53 | 18M | — |
-| OTLC | Oncotelic Therapeutics, Inc. | greenblatt | ✅ | 100% | 0.01 | 0.02 | 0.02 | 94.87 | 0.07 | 0.50 | 36,655 | — |
-| HBANP | Huntington Bancshares Incorp | lynch | ✅ | 75% | 15.01 | 10.80 | 0.93 | 9.08 | — | 8.25 | 75,427 | — |
-| DUKB | Duke Energy CORP | piotroski | ✅ | 89% | 20.42 | 3.24 | 0.31 | 9.58 | 0.55 | — | 135,244 | — |
-| DUKB | Duke Energy CORP | lynch | ✅ | 75% | 20.42 | 3.24 | 0.31 | 9.58 | 0.55 | — | 135,244 | — |
-| KTB | KONTOOR BRANDS, INC. | lynch | ✅ | 75% | 77.06 | 19.03 | 7.65 | 40.27 | 1.82 | 3.57 | 2M | — |
-| CNA | CNA FINANCIAL CORPORATION | piotroski | ✅ | 78% | 47.32 | 10.09 | 1.11 | 11.00 | — | 4.98 | 420,703 | — |
-| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 121 | 19.12 | 2.01 | 10.49 | 1.53 | — | 684,825 | — |
-| GEO | The GEO Group, Inc. | piotroski | ✅ | 78% | 27.80 | 15.27 | 2.58 | 16.89 | 2.01 | — | 5M | — |
-| GEO | The GEO Group, Inc. | lynch | ✅ | 75% | 27.80 | 15.27 | 2.58 | 16.89 | 2.01 | — | 5M | — |
-| ROL | ROLLINS, INC. | buffett | ✅ | 83% | 37.95 | 34.82 | 13.37 | 38.32 | 0.60 | 1.29 | 8M | — |
-| DY | DYCOM INDUSTRIES, INC. | lynch | ✅ | 75% | 208 | 21.71 | 3.28 | 15.12 | 2.74 | 2.22 | 715,361 | — |
-| PCTY | PAYLOCITY HOLDING CORPORATIO | piotroski | ✅ | 89% | 173 | 35.19 | 7.76 | 22.08 | 1.09 | 3.00 | 1M | — |
-| BCPC | Balchem Corporation | piotroski | ✅ | 100% | 174 | 36.72 | 4.52 | 12.31 | 2.07 | 0.34 | 425,478 | — |
-| MD | Pediatrix Medical Group, Inc | piotroski | ✅ | 78% | 31.29 | 16.13 | 3.08 | 19.10 | 1.66 | 1.59 | 491,257 | — |
-| ACA | Arcosa, Inc. | piotroski | ✅ | 100% | 149 | 35.18 | 2.77 | 7.89 | 2.20 | 0.89 | 875,023 | — |
-| RNG | RingCentral, Inc. | piotroski | ✅ | 89% | 72.07 | 150 | — | -7.38 | 0.63 | -3.18 | 2M | — |
+| MCRI | MONARCH CASINO & RESORT, INC | piotroski | ✅ | 100% | 109 | 20.03 | 3.77 | 18.86 | 0.86 | 0.33 | 72,632 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | lynch | ✅ | 100% | 109 | 20.03 | 3.77 | 18.86 | 0.86 | 0.33 | 72,632 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | buffett | ✅ | 83% | 109 | 20.03 | 3.77 | 18.86 | 0.86 | 0.33 | 72,632 | — |
+| TRNO | Terreno Realty Corporation | lynch | ✅ | 100% | 66.41 | 16.98 | 1.65 | 9.72 | — | 0.30 | 684,188 | — |
+| VTOL | Bristow Group Inc. | piotroski | ✅ | 78% | 37.41 | 8.66 | 1.05 | 12.18 | 1.90 | 1.18 | 211,453 | — |
+| ANNAW | AleAnna, Inc. | piotroski | ✅ | 78% | 0.21 | 5.15 | 0.14 | 4.91 | 1.93 | 0.73 | 38,630 | — |
+| EBF | ENNIS, INC. | piotroski | ✅ | 78% | 20.85 | 12.56 | 1.74 | 13.81 | 3.72 | 0.16 | 157,940 | — |
+| SSD | Simpson Manufacturing Co., I | buffett | ✅ | 83% | 197 | 23.89 | 4.06 | 17.00 | 3.54 | 0.51 | 223,252 | — |
+| SSD | Simpson Manufacturing Co., I | piotroski | ✅ | 78% | 197 | 23.89 | 4.06 | 17.00 | 3.54 | 0.51 | 223,252 | — |
+| HST | HOST HOTELS & RESORTS, INC. | piotroski | ✅ | 78% | 24.62 | 22.38 | 2.61 | 11.67 | — | 0.96 | 9M | — |
+| ORI | OLD REPUBLIC INTERNATIONAL C | piotroski | ✅ | 78% | 39.61 | 10.65 | 1.68 | 15.82 | — | 4.05 | 2M | — |
+| ADUS | Addus HomeCare Corp | piotroski | ✅ | 89% | 124 | 23.81 | 2.11 | 8.84 | 1.80 | 0.32 | 276,628 | — |
+| ADUS | Addus HomeCare Corp | lynch | ✅ | 75% | 124 | 23.81 | 2.11 | 8.84 | 1.80 | 0.32 | 276,628 | — |
+| EWBC | EAST WEST BANCORP, INC. | lynch | ✅ | 75% | 129 | 13.53 | 2.01 | 14.89 | — | 8.04 | 637,459 | — |
+| SCSC | ScanSource, Inc. | graham | ✅ | 89% | 42.78 | 11.75 | 1.02 | 8.66 | 1.76 | 1.12 | 695,825 | — |
+| SCSC | ScanSource, Inc. | piotroski | ✅ | 78% | 42.78 | 11.75 | 1.02 | 8.66 | 1.76 | 1.12 | 695,825 | — |
+| SCSC | ScanSource, Inc. | lynch | ✅ | 75% | 42.78 | 11.75 | 1.02 | 8.66 | 1.76 | 1.12 | 695,825 | — |
+| TBB | AT&T INC. | piotroski | ✅ | 78% | 18.34 | 6.03 | 1.04 | 17.36 | 0.91 | — | 132,917 | — |
+| OGE | OGE ENERGY CORP. | piotroski | ✅ | 78% | 50.64 | 21.83 | 2.06 | 9.46 | 0.78 | 1.89 | 3M | — |
+| MYRG | MYR GROUP INC. | piotroski | ✅ | 89% | 263 | 34.92 | 6.26 | 17.93 | 1.33 | 1.49 | 474,162 | — |
+| SPOK | SPOK HOLDINGS, INC. | piotroski | ✅ | 78% | 11.76 | 15.68 | 1.69 | 10.85 | 1.18 | 0.41 | 205,244 | — |
+| ACTG | ACACIA RESEARCH CORP | piotroski | ✅ | 89% | 4.25 | 19.32 | 0.76 | 3.99 | 9.18 | 0.34 | 279,452 | — |
 | FLS | FLOWSERVE CORP | piotroski | ✅ | 78% | 80.37 | 30.44 | 4.80 | 15.80 | 2.03 | — | 2M | — |
-| LUV | SOUTHWEST AIRLINES CO | piotroski | ✅ | 78% | 44.45 | 56.27 | 3.11 | 5.53 | 0.52 | — | 6M | — |
-| MLKN | MillerKnoll, Inc. | piotroski | ✅ | 100% | 21.49 | 16.28 | 1.11 | 6.82 | 1.58 | 1.93 | 205,903 | — |
-| GCO | GENESCO INC | piotroski | ✅ | 89% | 36.07 | 28.86 | 0.68 | 2.34 | 1.64 | 1.46 | 140,993 | — |
-| AVNW | Aviat Networks, Inc. | piotroski | ✅ | 78% | 17.66 | 92.95 | 0.86 | 0.95 | 1.97 | 1.24 | 245,604 | — |
-| POWL | Powell Industries, Inc. | graham | ▫️ | 78% | 133 | 8.96 | 2.53 | 28.21 | 2.09 | 0.73 | 863,678 | — |
-| POWL | Powell Industries, Inc. | buffett | ▫️ | 67% | 133 | 8.96 | 2.53 | 28.21 | 2.09 | 0.73 | 863,678 | — |
-| POWL | Powell Industries, Inc. | netnet | ▫️ | 50% | 133 | 8.96 | 2.53 | 28.21 | 2.09 | 0.73 | 863,678 | — |
-| POWL | Powell Industries, Inc. | custom | ▫️ | 0% | 133 | 8.96 | 2.53 | 28.21 | 2.09 | 0.73 | 863,678 | — |
-| SBC | SBC Medical Group Holdings I | graham | ▫️ | 67% | 5.04 | 10.08 | 2.09 | 20.54 | 3.78 | 0.47 | 155,632 | — |
-| SBC | SBC Medical Group Holdings I | buffett | ▫️ | 67% | 5.04 | 10.08 | 2.09 | 20.54 | 3.78 | 0.47 | 155,632 | — |
-| SBC | SBC Medical Group Holdings I | greenblatt | ▫️ | 67% | 5.04 | 10.08 | 2.09 | 20.54 | 3.78 | 0.47 | 155,632 | — |
-| SBC | SBC Medical Group Holdings I | netnet | ▫️ | 50% | 5.04 | 10.08 | 2.09 | 20.54 | 3.78 | 0.47 | 155,632 | — |
-| SBC | SBC Medical Group Holdings I | piotroski | ▫️ | 44% | 5.04 | 10.08 | 2.09 | 20.54 | 3.78 | 0.47 | 155,632 | — |
-| SBC | SBC Medical Group Holdings I | custom | ▫️ | 0% | 5.04 | 10.08 | 2.09 | 20.54 | 3.78 | 0.47 | 155,632 | — |
-| LFMD | LifeMD, Inc. | piotroski | ▫️ | 67% | 2.37 | 9.48 | 4.62 | 61.99 | 1.25 | 2.04 | 920,650 | — |
-| LFMD | LifeMD, Inc. | netnet | ▫️ | 50% | 2.37 | 9.48 | 4.62 | 61.99 | 1.25 | 2.04 | 920,650 | — |
-| LFMD | LifeMD, Inc. | graham | ▫️ | 33% | 2.37 | 9.48 | 4.62 | 61.99 | 1.25 | 2.04 | 920,650 | — |
-| LFMD | LifeMD, Inc. | buffett | ▫️ | 33% | 2.37 | 9.48 | 4.62 | 61.99 | 1.25 | 2.04 | 920,650 | — |
-| LFMD | LifeMD, Inc. | lynch | ▫️ | 25% | 2.37 | 9.48 | 4.62 | 61.99 | 1.25 | 2.04 | 920,650 | — |
-| LFMD | LifeMD, Inc. | custom | ▫️ | 0% | 2.37 | 9.48 | 4.62 | 61.99 | 1.25 | 2.04 | 920,650 | — |
-| AROC | Archrock, Inc. | buffett | ▫️ | 50% | 27.54 | 15.05 | 3.23 | 21.61 | 1.54 | 1.92 | 2M | — |
-| AROC | Archrock, Inc. | graham | ▫️ | 33% | 27.54 | 15.05 | 3.23 | 21.61 | 1.54 | 1.92 | 2M | — |
-| AROC | Archrock, Inc. | greenblatt | ▫️ | 33% | 27.54 | 15.05 | 3.23 | 21.61 | 1.54 | 1.92 | 2M | — |
+| AMCR | AMCOR PLC | piotroski | ✅ | 89% | 44.87 | 18.85 | 1.77 | 9.38 | 1.25 | 2.15 | 4M | — |
+| MOS | MOSAIC CO | piotroski | ✅ | 89% | 22.36 | 13.15 | 0.59 | 4.47 | 1.32 | — | 12M | — |
+| MYE | Myers Industries, Inc. | piotroski | ✅ | 78% | 26.95 | 28.98 | 3.44 | 11.87 | 1.67 | 1.89 | 299,568 | — |
+| CALX | Calix, Inc | piotroski | ✅ | 78% | 30.60 | 118 | 2.47 | 2.08 | 4.24 | 0.23 | 1M | — |
+| ZG | ZILLOW GROUP, INC. | piotroski | ✅ | 89% | 30.36 | 337 | 1.58 | 0.47 | 3.13 | 0.16 | 799,373 | — |
+| LILA | Liberty Latin America Ltd. | piotroski | ✅ | 78% | 8.91 | — | 3.20 | -110 | 1.14 | 20.09 | 709,430 | — |
+| UROY | Uranium Royalty Corp. | graham | ▫️ | 67% | 3.04 | 10.48 | 1.36 | 12.87 | 5.94 | 0.19 | 3M | — |
+| UROY | Uranium Royalty Corp. | greenblatt | ▫️ | 67% | 3.04 | 10.48 | 1.36 | 12.87 | 5.94 | 0.19 | 3M | — |
+| UROY | Uranium Royalty Corp. | lynch | ▫️ | 50% | 3.04 | 10.48 | 1.36 | 12.87 | 5.94 | 0.19 | 3M | — |
+| UROY | Uranium Royalty Corp. | netnet | ▫️ | 50% | 3.04 | 10.48 | 1.36 | 12.87 | 5.94 | 0.19 | 3M | — |
+| UROY | Uranium Royalty Corp. | buffett | ▫️ | 33% | 3.04 | 10.48 | 1.36 | 12.87 | 5.94 | 0.19 | 3M | — |
+| UROY | Uranium Royalty Corp. | piotroski | ▫️ | 33% | 3.04 | 10.48 | 1.36 | 12.87 | 5.94 | 0.19 | 3M | — |
+| UROY | Uranium Royalty Corp. | custom | ▫️ | 0% | 3.04 | 10.48 | 1.36 | 12.87 | 5.94 | 0.19 | 3M | — |
+| MCRI | MONARCH CASINO & RESORT, INC | graham | ▫️ | 33% | 109 | 20.03 | 3.77 | 18.86 | 0.86 | 0.33 | 72,632 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | greenblatt | ▫️ | 33% | 109 | 20.03 | 3.77 | 18.86 | 0.86 | 0.33 | 72,632 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | netnet | ▫️ | 25% | 109 | 20.03 | 3.77 | 18.86 | 0.86 | 0.33 | 72,632 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | custom | ▫️ | 0% | 109 | 20.03 | 3.77 | 18.86 | 0.86 | 0.33 | 72,632 | — |
+| VTOL | Bristow Group Inc. | greenblatt | ▫️ | 67% | 37.41 | 8.66 | 1.05 | 12.18 | 1.90 | 1.18 | 211,453 | — |
+| VTOL | Bristow Group Inc. | graham | ▫️ | 56% | 37.41 | 8.66 | 1.05 | 12.18 | 1.90 | 1.18 | 211,453 | — |
+| TRNO | Terreno Realty Corporation | piotroski | ▫️ | 56% | 66.41 | 16.98 | 1.65 | 9.72 | — | 0.30 | 684,188 | — |
+| TRNO | Terreno Realty Corporation | buffett | ▫️ | 50% | 66.41 | 16.98 | 1.65 | 9.72 | — | 0.30 | 684,188 | — |
+| TRNO | Terreno Realty Corporation | graham | ▫️ | 33% | 66.41 | 16.98 | 1.65 | 9.72 | — | 0.30 | 684,188 | — |
+| TRNO | Terreno Realty Corporation | greenblatt | ▫️ | 33% | 66.41 | 16.98 | 1.65 | 9.72 | — | 0.30 | 684,188 | — |
+| VTOL | Bristow Group Inc. | lynch | ▫️ | 25% | 37.41 | 8.66 | 1.05 | 12.18 | 1.90 | 1.18 | 211,453 | — |
+| VTOL | Bristow Group Inc. | netnet | ▫️ | 25% | 37.41 | 8.66 | 1.05 | 12.18 | 1.90 | 1.18 | 211,453 | — |
+| TRNO | Terreno Realty Corporation | netnet | ▫️ | 25% | 66.41 | 16.98 | 1.65 | 9.72 | — | 0.30 | 684,188 | — |
+| VTOL | Bristow Group Inc. | buffett | ▫️ | 0% | 37.41 | 8.66 | 1.05 | 12.18 | 1.90 | 1.18 | 211,453 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
