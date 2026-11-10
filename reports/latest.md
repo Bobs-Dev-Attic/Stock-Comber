@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-11-10 02:12 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-11-10 09:33 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **36** strategy matches passed.
+Screened **75** companies · **31** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
+| BYD | BOYD GAMING CORP | greenblatt | ✅ | 100% | 77.86 | 3.45 | 2.44 | 70.66 | 0.54 | — | 608,469 | — |
+| BYD | BOYD GAMING CORP | piotroski | ✅ | 78% | 77.86 | 3.45 | 2.44 | 70.66 | 0.54 | — | 608,469 | — |
 | PSIX | POWER SOLUTIONS INTERNATIONA | greenblatt | ✅ | 100% | 37.72 | 7.64 | 4.87 | 63.82 | 3.15 | 1.38 | 669,121 | — |
 | PSIX | POWER SOLUTIONS INTERNATIONA | piotroski | ✅ | 89% | 37.72 | 7.64 | 4.87 | 63.82 | 3.15 | 1.38 | 669,121 | — |
-| ERIE | ERIE INDEMNITY COMPANY | buffett | ✅ | 100% | 271 | — | — | 24.50 | 1.27 | 0.47 | 117,694 | — |
-| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 136 | 25.98 | 4.97 | 19.12 | 2.99 | — | 307,618 | — |
-| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 136 | 25.98 | 4.97 | 19.12 | 2.99 | — | 307,618 | — |
-| SFM | Sprouts Farmers Market, Inc. | greenblatt | ✅ | 100% | 49.58 | 9.34 | 3.49 | 37.32 | 0.93 | 1.96 | 5M | — |
-| SEZL | SEZZLE INC. | piotroski | ✅ | 89% | 151 | 40.55 | 31.75 | 78.40 | 3.92 | 1.36 | 583,365 | — |
-| SFM | Sprouts Farmers Market, Inc. | piotroski | ✅ | 78% | 49.58 | 9.34 | 3.49 | 37.32 | 0.93 | 1.96 | 5M | — |
-| URBN | Urban Outfitters, Inc. | piotroski | ✅ | 100% | 88.27 | 17.44 | 2.88 | 16.51 | 1.51 | 0.78 | 815,136 | — |
-| URBN | Urban Outfitters, Inc. | lynch | ✅ | 75% | 88.27 | 17.44 | 2.88 | 16.51 | 1.51 | 0.78 | 815,136 | — |
-| LII | LENNOX INTERNATIONAL INC | lynch | ✅ | 75% | 349 | 15.33 | 10.64 | 69.28 | 1.60 | 2.51 | 553,947 | — |
-| ACIC | American Coastal Insurance C | greenblatt | ✅ | 100% | 10.01 | 4.66 | 1.57 | 33.64 | — | 2.38 | 194,625 | — |
-| GPK | Graphic Packaging Holding Co | lynch | ✅ | 75% | 10.84 | 7.32 | 0.97 | 13.31 | 1.30 | — | 5M | — |
-| CSTM | Constellium SE | piotroski | ✅ | 100% | 22.76 | 11.85 | 3.39 | 28.68 | 1.29 | 4.60 | 1M | — |
-| HRB | H&R Block, Inc. | greenblatt | ✅ | 100% | 50.98 | 9.01 | 55.92 | 624 | 1.13 | 26.72 | 2M | — |
-| HRB | H&R Block, Inc. | piotroski | ✅ | 89% | 50.98 | 9.01 | 55.92 | 624 | 1.13 | 26.72 | 2M | — |
-| BURL | BURLINGTON STORES, INC. | piotroski | ✅ | 78% | 257 | 27.04 | 9.13 | 33.76 | 1.23 | — | 1M | — |
-| JOE | The St. Joe Company | piotroski | ✅ | 89% | 75.13 | 37.75 | 5.68 | 15.09 | — | 0.97 | 471,239 | — |
-| ACEL | Accel Entertainment, Inc. | piotroski | ✅ | 78% | 13.90 | 23.17 | 4.45 | 19.09 | 2.61 | — | 594,288 | — |
-| PLUS | ePlus inc. | piotroski | ✅ | 78% | 94.46 | 18.78 | 2.33 | 12.41 | 2.24 | 0.68 | 257,983 | — |
-| DCI | Donaldson Company, Inc. | buffett | ✅ | 83% | 88.21 | 22.91 | 5.89 | 25.72 | 2.08 | 1.26 | 548,391 | — |
-| INVH | Invitation Homes Inc. | piotroski | ✅ | 78% | 27.20 | 28.33 | 1.75 | 6.17 | — | 0.96 | 5M | — |
-| RGA | REINSURANCE GROUP OF AMERICA | piotroski | ✅ | 78% | 267 | 15.08 | 1.32 | 8.78 | — | 10.63 | 478,002 | — |
-| RGA | REINSURANCE GROUP OF AMERICA | lynch | ✅ | 75% | 267 | 15.08 | 1.32 | 8.78 | — | 10.63 | 478,002 | — |
+| VRRM | VERRA MOBILITY CORPORATION | piotroski | ✅ | 100% | 2.13 | 2.51 | 1.17 | 46.64 | 2.09 | 4.62 | 5M | — |
+| NBR | NABORS INDUSTRIES LTD | piotroski | ✅ | 78% | 76.94 | 4.42 | 1.88 | 48.52 | 1.56 | 5.67 | 305,561 | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | piotroski | ✅ | 78% | 90.01 | 17.72 | 2.44 | 13.75 | 10.06 | 0.12 | 469,648 | — |
+| RRC | RANGE RESOURCES CORPORATION | piotroski | ✅ | 89% | 48.85 | 17.83 | 2.71 | 15.24 | 0.67 | 0.72 | 10M | — |
+| BELFA | BEL FUSE INC /NJ | piotroski | ✅ | 89% | 180 | — | — | 14.46 | 3.02 | 0.98 | 70,173 | — |
+| INOD | INNODATA INC. | lynch | ✅ | 75% | 36.96 | 40.17 | 12.08 | 30.03 | 2.68 | 0.57 | 2M | — |
+| FCFS | FIRSTCASH HOLDINGS, INC. | piotroski | ✅ | 78% | 188 | 25.31 | 3.67 | 14.51 | 4.55 | 1.33 | 479,066 | — |
+| FCFS | FIRSTCASH HOLDINGS, INC. | lynch | ✅ | 75% | 188 | 25.31 | 3.67 | 14.51 | 4.55 | 1.33 | 479,066 | — |
+| HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 103 | 40.20 | 261 | 649 | 4.66 | 50.73 | 3M | — |
+| WMS | ADVANCED DRAINAGE SYSTEMS, I | buffett | ✅ | 83% | 131 | 24.08 | 5.52 | 22.94 | 2.42 | 1.37 | 973,725 | — |
+| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 19.49 | 10.31 | 2.55 | 24.66 | 2.26 | 2.62 | 2M | — |
+| CWEN | Clearway Energy, Inc. | lynch | ✅ | 75% | 34.70 | 7.19 | 0.21 | 2.91 | 1.13 | 1.85 | 1M | — |
+| UMBF | UMB FINANCIAL CORP | lynch | ✅ | 75% | 137 | 14.71 | 1.31 | 9.13 | — | 8.50 | 559,958 | — |
+| AXTA | AXALTA COATING SYSTEMS LTD. | lynch | ✅ | 75% | 37.53 | 21.57 | 3.47 | 16.11 | 2.06 | 2.22 | 2M | — |
 | LTH | Life Time Group Holdings, In | piotroski | ✅ | 89% | 46.89 | 28.25 | 3.38 | 11.95 | 0.63 | 1.56 | 2M | — |
-| CW | CURTISS-WRIGHT CORPORATION | piotroski | ✅ | 89% | 482 | 37.45 | 7.16 | 19.11 | 1.44 | 1.06 | 346,811 | — |
-| POST | Post Holdings, Inc. | lynch | ✅ | 75% | 82.25 | 14.93 | 1.38 | 8.94 | 1.67 | 2.60 | 808,040 | — |
-| BBWI | BATH & BODY WORKS, INC. | greenblatt | ✅ | 100% | 21.76 | 7.00 | — | -50.66 | 1.27 | — | 6M | — |
-| TRIP | TRIPADVISOR, INC. | piotroski | ✅ | 89% | 7.12 | 22.97 | 1.45 | 6.20 | 1.29 | 3.07 | 13M | — |
-| WOR | WORTHINGTON ENTERPRISES, INC | piotroski | ✅ | 89% | 62.67 | 19.96 | 3.03 | 15.20 | 2.37 | 0.80 | 224,480 | — |
-| BBY | Best Buy Co., Inc. | piotroski | ✅ | 89% | 106 | 21.09 | 7.61 | 36.07 | 1.11 | — | 4M | — |
-| PLXS | PLEXUS CORP. | piotroski | ✅ | 89% | 206 | 32.85 | 3.90 | 11.89 | 1.58 | 1.16 | 229,807 | — |
-| BJRI | BJ’S RESTAURANTS, INC. | piotroski | ✅ | 78% | 57.71 | 26.72 | 3.57 | 13.33 | 0.40 | 1.77 | 606,470 | — |
-| CGNX | COGNEX CORP | piotroski | ✅ | 89% | 50.34 | 74.03 | 5.71 | 7.67 | 3.80 | 0.35 | 3M | — |
-| SMG | Scotts Miracle-Gro Co | piotroski | ✅ | 78% | 66.34 | 26.86 | — | -40.62 | 1.27 | -8.67 | 1M | — |
-| PTON | Peloton Interactive, Inc. | piotroski | ✅ | 89% | 5.95 | 42.50 | — | -45.24 | 2.84 | -15.72 | 20M | — |
+| FCF | FIRST COMMONWEALTH FINANCIAL | lynch | ✅ | 75% | 21.12 | 14.37 | 1.41 | 9.80 | — | 6.94 | 760,591 | — |
+| OPLN | OPENLANE, Inc. | piotroski | ✅ | 89% | 34.90 | — | 3.01 | 14.32 | 1.16 | — | 846,713 | — |
+| UGI | UGI CORPORATION | piotroski | ✅ | 78% | 37.49 | 12.13 | 1.72 | 14.19 | 0.89 | 2.23 | 1M | — |
+| FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 21.58 | 114 | 8.85 | 7.83 | 4.94 | 0.33 | 5M | — |
+| CHEF | CHEFS’ WAREHOUSE, INC. | piotroski | ✅ | 100% | 107 | 63.85 | 8.17 | 11.97 | 2.05 | 2.36 | 385,558 | — |
+| FLS | FLOWSERVE CORP | piotroski | ✅ | 78% | 85.83 | 32.51 | 5.13 | 15.80 | 2.03 | — | 2M | — |
+| RH | RH | piotroski | ✅ | 89% | 137 | 21.65 | 44.62 | 206 | 1.19 | 78.80 | 802,981 | — |
+| MOS | MOSAIC CO | piotroski | ✅ | 89% | 22.77 | 13.39 | 0.60 | 4.47 | 1.32 | — | 10M | — |
+| NEOG | Neogen Corporation | piotroski | ✅ | 89% | 12.08 | — | 1.26 | -0.38 | 3.82 | 0.60 | 8M | — |
+| ZUMZ | ZUMIEZ INC | piotroski | ✅ | 89% | 14.66 | 18.79 | 0.78 | 4.13 | 2.01 | 0.99 | 120,371 | — |
+| USNA | USANA HEALTH SCIENCES, INC. | piotroski | ✅ | 78% | 13.85 | 23.88 | 0.48 | 2.02 | 2.24 | 0.29 | 249,806 | — |
+| CALX | Calix, Inc | piotroski | ✅ | 78% | 32.16 | 124 | 2.59 | 2.08 | 4.24 | 0.23 | 1M | — |
+| BYD | BOYD GAMING CORP | buffett | ▫️ | 67% | 77.86 | 3.45 | 2.44 | 70.66 | 0.54 | — | 608,469 | — |
+| BYD | BOYD GAMING CORP | graham | ▫️ | 56% | 77.86 | 3.45 | 2.44 | 70.66 | 0.54 | — | 608,469 | — |
+| BYD | BOYD GAMING CORP | lynch | ▫️ | 25% | 77.86 | 3.45 | 2.44 | 70.66 | 0.54 | — | 608,469 | — |
+| BYD | BOYD GAMING CORP | netnet | ▫️ | 25% | 77.86 | 3.45 | 2.44 | 70.66 | 0.54 | — | 608,469 | — |
+| BYD | BOYD GAMING CORP | custom | ▫️ | 0% | 77.86 | 3.45 | 2.44 | 70.66 | 0.54 | — | 608,469 | — |
 | PSIX | POWER SOLUTIONS INTERNATIONA | graham | ▫️ | 56% | 37.72 | 7.64 | 4.87 | 63.82 | 3.15 | 1.38 | 669,121 | — |
 | PSIX | POWER SOLUTIONS INTERNATIONA | netnet | ▫️ | 50% | 37.72 | 7.64 | 4.87 | 63.82 | 3.15 | 1.38 | 669,121 | — |
 | PSIX | POWER SOLUTIONS INTERNATIONA | buffett | ▫️ | 33% | 37.72 | 7.64 | 4.87 | 63.82 | 3.15 | 1.38 | 669,121 | — |
 | PSIX | POWER SOLUTIONS INTERNATIONA | lynch | ▫️ | 25% | 37.72 | 7.64 | 4.87 | 63.82 | 3.15 | 1.38 | 669,121 | — |
 | PSIX | POWER SOLUTIONS INTERNATIONA | custom | ▫️ | 0% | 37.72 | 7.64 | 4.87 | 63.82 | 3.15 | 1.38 | 669,121 | — |
-| ERIE | ERIE INDEMNITY COMPANY | greenblatt | ▫️ | 67% | 271 | — | — | 24.50 | 1.27 | 0.47 | 117,694 | — |
-| ERIE | ERIE INDEMNITY COMPANY | graham | ▫️ | 56% | 271 | — | — | 24.50 | 1.27 | 0.47 | 117,694 | — |
-| ERIE | ERIE INDEMNITY COMPANY | lynch | ▫️ | 50% | 271 | — | — | 24.50 | 1.27 | 0.47 | 117,694 | — |
-| ERIE | ERIE INDEMNITY COMPANY | piotroski | ▫️ | 44% | 271 | — | — | 24.50 | 1.27 | 0.47 | 117,694 | — |
-| ERIE | ERIE INDEMNITY COMPANY | netnet | ▫️ | 25% | 271 | — | — | 24.50 | 1.27 | 0.47 | 117,694 | — |
-| ERIE | ERIE INDEMNITY COMPANY | custom | ▫️ | 0% | 271 | — | — | 24.50 | 1.27 | 0.47 | 117,694 | — |
-| IPAR | INTERPARFUMS, INC. | graham | ▫️ | 67% | 136 | 25.98 | 4.97 | 19.12 | 2.99 | — | 307,618 | — |
-| IPAR | INTERPARFUMS, INC. | piotroski | ▫️ | 67% | 136 | 25.98 | 4.97 | 19.12 | 2.99 | — | 307,618 | — |
-| IPAR | INTERPARFUMS, INC. | greenblatt | ▫️ | 33% | 136 | 25.98 | 4.97 | 19.12 | 2.99 | — | 307,618 | — |
+| VRRM | VERRA MOBILITY CORPORATION | graham | ▫️ | 78% | 2.13 | 2.51 | 1.17 | 46.64 | 2.09 | 4.62 | 5M | — |
+| VRRM | VERRA MOBILITY CORPORATION | greenblatt | ▫️ | 67% | 2.13 | 2.51 | 1.17 | 46.64 | 2.09 | 4.62 | 5M | — |
+| VRRM | VERRA MOBILITY CORPORATION | buffett | ▫️ | 50% | 2.13 | 2.51 | 1.17 | 46.64 | 2.09 | 4.62 | 5M | — |
+| VRRM | VERRA MOBILITY CORPORATION | lynch | ▫️ | 25% | 2.13 | 2.51 | 1.17 | 46.64 | 2.09 | 4.62 | 5M | — |
+| VRRM | VERRA MOBILITY CORPORATION | netnet | ▫️ | 25% | 2.13 | 2.51 | 1.17 | 46.64 | 2.09 | 4.62 | 5M | — |
+| VRRM | VERRA MOBILITY CORPORATION | custom | ▫️ | 0% | 2.13 | 2.51 | 1.17 | 46.64 | 2.09 | 4.62 | 5M | — |
+| NBR | NABORS INDUSTRIES LTD | greenblatt | ▫️ | 67% | 76.94 | 4.42 | 1.88 | 48.52 | 1.56 | 5.67 | 305,561 | — |
+| NBR | NABORS INDUSTRIES LTD | graham | ▫️ | 44% | 76.94 | 4.42 | 1.88 | 48.52 | 1.56 | 5.67 | 305,561 | — |
+| NBR | NABORS INDUSTRIES LTD | lynch | ▫️ | 25% | 76.94 | 4.42 | 1.88 | 48.52 | 1.56 | 5.67 | 305,561 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
