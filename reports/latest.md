@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-11-10 17:21 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-11-10 22:33 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **32** strategy matches passed.
+Screened **75** companies · **34** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| GOOGM | Alphabet Inc. | graham | ✅ | 100% | 41.97 | 3.88 | 1.24 | 31.83 | 2.01 | 0.43 | 393,947 | — |
-| GOOGM | Alphabet Inc. | buffett | ✅ | 100% | 41.97 | 3.88 | 1.24 | 31.83 | 2.01 | 0.43 | 393,947 | — |
-| GOOGM | Alphabet Inc. | greenblatt | ✅ | 100% | 41.97 | 3.88 | 1.24 | 31.83 | 2.01 | 0.43 | 393,947 | — |
-| GOOGM | Alphabet Inc. | lynch | ✅ | 100% | 41.97 | 3.88 | 1.24 | 31.83 | 2.01 | 0.43 | 393,947 | — |
-| BYD | BOYD GAMING CORP | greenblatt | ✅ | 100% | 77.68 | 3.44 | 2.43 | 70.66 | 0.54 | — | 99,030 | — |
-| BYD | BOYD GAMING CORP | piotroski | ✅ | 78% | 77.68 | 3.44 | 2.43 | 70.66 | 0.54 | — | 99,030 | — |
-| PSIX | POWER SOLUTIONS INTERNATIONA | greenblatt | ✅ | 100% | 35.63 | 7.21 | 4.60 | 63.82 | 3.15 | 1.38 | 310,431 | — |
-| PSIX | POWER SOLUTIONS INTERNATIONA | piotroski | ✅ | 89% | 35.63 | 7.21 | 4.60 | 63.82 | 3.15 | 1.38 | 310,431 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | piotroski | ✅ | 78% | 29.58 | 6.52 | 1.92 | 29.41 | 1.47 | 1.81 | 944,503 | — |
-| PLMR | Palomar Holdings, Inc. | piotroski | ✅ | 78% | 158 | 22.03 | 4.61 | 20.91 | — | 2.24 | 123,365 | — |
-| URBN | Urban Outfitters, Inc. | piotroski | ✅ | 100% | 88.27 | 17.44 | 2.88 | 16.51 | 1.51 | 0.78 | 815,138 | — |
-| URBN | Urban Outfitters, Inc. | lynch | ✅ | 75% | 88.27 | 17.44 | 2.88 | 16.51 | 1.51 | 0.78 | 815,138 | — |
-| BKV | BKV CORPORATION | piotroski | ✅ | 78% | 18.89 | 9.54 | 0.80 | 8.49 | 1.78 | 0.52 | 367,075 | — |
-| BELFA | BEL FUSE INC /NJ | piotroski | ✅ | 89% | 180 | — | — | 14.46 | 3.02 | 0.98 | 70,173 | — |
-| DAKT | Daktronics, Inc. | piotroski | ✅ | 89% | 19.70 | 21.41 | 3.23 | 15.09 | 2.31 | — | 56,142 | — |
-| DAKT | Daktronics, Inc. | lynch | ✅ | 75% | 19.70 | 21.41 | 3.23 | 15.09 | 2.31 | — | 56,142 | — |
-| SIGI | SELECTIVE INSURANCE GROUP, I | piotroski | ✅ | 78% | 103 | 13.76 | 1.74 | 12.92 | — | 3.20 | 157,936 | — |
-| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 124 | 19.65 | 2.06 | 10.49 | 1.53 | — | 911,805 | — |
-| KBR | KBR, Inc. | piotroski | ✅ | 89% | 39.22 | 12.22 | 3.37 | 27.61 | 1.22 | 3.37 | 186,169 | — |
-| LEA | LEAR CORP | lynch | ✅ | 75% | 109 | 13.38 | 1.16 | 8.68 | 1.35 | — | 215,369 | — |
-| KNTK | KINETIK HOLDINGS INC. | lynch | ✅ | 75% | 50.33 | 19.14 | — | -31.53 | 0.69 | -7.37 | 1M | — |
-| MYRG | MYR GROUP INC. | piotroski | ✅ | 89% | 272 | 36.17 | 6.49 | 17.93 | 1.33 | 1.49 | 57,198 | — |
-| AMH | AMERICAN HOMES 4 RENT | lynch | ✅ | 75% | 32.90 | 27.88 | 1.73 | 7.30 | — | 0.79 | 2M | — |
-| CENTA | Central Garden & Pet Company | piotroski | ✅ | 89% | 41.55 | 16.29 | 1.67 | 10.29 | 3.67 | — | 200,065 | — |
-| LB | LandBridge Corporation | piotroski | ✅ | 78% | 67.48 | 71.79 | 15.18 | 8.85 | 4.87 | 1.68 | 188,318 | — |
-| GPAT | GP-Act III Acquisition Corp. | lynch | ✅ | 75% | 11.07 | — | — | -82.10 | 0.30 | -1.01 | 109 | — |
-| CHEF | CHEFS’ WAREHOUSE, INC. | piotroski | ✅ | 100% | 107 | 63.85 | 8.17 | 11.97 | 2.05 | 2.36 | 385,561 | — |
-| CFFN | Capitol Federal Financial, I | piotroski | ✅ | 78% | 8.57 | 16.49 | 1.06 | 6.49 | — | 8.33 | 203,074 | — |
-| SITE | SiteOne Landscape Supply, In | piotroski | ✅ | 89% | 116 | 34.44 | 3.15 | 9.15 | 2.47 | 0.93 | 132,470 | — |
-| ALNT | ALLIENT INC | piotroski | ✅ | 89% | 85.01 | 64.40 | 4.72 | 7.31 | 3.66 | 0.92 | 42,452 | — |
-| ARKO | ARKO Corp. | piotroski | ✅ | 78% | 4.21 | 28.10 | 1.81 | 8.51 | 1.66 | 11.85 | 159,556 | — |
-| ORN | ORION GROUP HOLDINGS, INC. | piotroski | ✅ | 78% | 7.56 | 126 | 1.88 | 1.56 | 1.36 | 1.61 | 101,484 | — |
-| GOOGM | Alphabet Inc. | piotroski | ▫️ | 67% | 41.97 | 3.88 | 1.24 | 31.83 | 2.01 | 0.43 | 393,947 | — |
-| GOOGM | Alphabet Inc. | netnet | ▫️ | 50% | 41.97 | 3.88 | 1.24 | 31.83 | 2.01 | 0.43 | 393,947 | — |
-| GOOGM | Alphabet Inc. | custom | ▫️ | 0% | 41.97 | 3.88 | 1.24 | 31.83 | 2.01 | 0.43 | 393,947 | — |
-| BYD | BOYD GAMING CORP | buffett | ▫️ | 67% | 77.68 | 3.44 | 2.43 | 70.66 | 0.54 | — | 99,030 | — |
-| BYD | BOYD GAMING CORP | graham | ▫️ | 56% | 77.68 | 3.44 | 2.43 | 70.66 | 0.54 | — | 99,030 | — |
-| BYD | BOYD GAMING CORP | lynch | ▫️ | 25% | 77.68 | 3.44 | 2.43 | 70.66 | 0.54 | — | 99,030 | — |
-| BYD | BOYD GAMING CORP | netnet | ▫️ | 25% | 77.68 | 3.44 | 2.43 | 70.66 | 0.54 | — | 99,030 | — |
-| BYD | BOYD GAMING CORP | custom | ▫️ | 0% | 77.68 | 3.44 | 2.43 | 70.66 | 0.54 | — | 99,030 | — |
-| PSIX | POWER SOLUTIONS INTERNATIONA | graham | ▫️ | 56% | 35.63 | 7.21 | 4.60 | 63.82 | 3.15 | 1.38 | 310,431 | — |
-| PSIX | POWER SOLUTIONS INTERNATIONA | netnet | ▫️ | 50% | 35.63 | 7.21 | 4.60 | 63.82 | 3.15 | 1.38 | 310,431 | — |
-| PSIX | POWER SOLUTIONS INTERNATIONA | buffett | ▫️ | 33% | 35.63 | 7.21 | 4.60 | 63.82 | 3.15 | 1.38 | 310,431 | — |
-| PSIX | POWER SOLUTIONS INTERNATIONA | lynch | ▫️ | 25% | 35.63 | 7.21 | 4.60 | 63.82 | 3.15 | 1.38 | 310,431 | — |
-| PSIX | POWER SOLUTIONS INTERNATIONA | custom | ▫️ | 0% | 35.63 | 7.21 | 4.60 | 63.82 | 3.15 | 1.38 | 310,431 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | graham | ▫️ | 67% | 29.58 | 6.52 | 1.92 | 29.41 | 1.47 | 1.81 | 944,503 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | greenblatt | ▫️ | 67% | 29.58 | 6.52 | 1.92 | 29.41 | 1.47 | 1.81 | 944,503 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | buffett | ▫️ | 50% | 29.58 | 6.52 | 1.92 | 29.41 | 1.47 | 1.81 | 944,503 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | lynch | ▫️ | 50% | 29.58 | 6.52 | 1.92 | 29.41 | 1.47 | 1.81 | 944,503 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | netnet | ▫️ | 25% | 29.58 | 6.52 | 1.92 | 29.41 | 1.47 | 1.81 | 944,503 | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | greenblatt | ✅ | 100% | 122 | 13.64 | 4.10 | 37.16 | 3.37 | — | 3M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | piotroski | ✅ | 89% | 122 | 13.64 | 4.10 | 37.16 | 3.37 | — | 3M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | buffett | ✅ | 83% | 122 | 13.64 | 4.10 | 37.16 | 3.37 | — | 3M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | lynch | ✅ | 75% | 122 | 13.64 | 4.10 | 37.16 | 3.37 | — | 3M | — |
+| TDW | TIDEWATER INC | piotroski | ✅ | 89% | 73.98 | 11.14 | 2.73 | 24.51 | 2.90 | — | 1M | — |
+| YELP | YELP INC. | greenblatt | ✅ | 100% | 20.15 | 9.00 | 1.85 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC. | piotroski | ✅ | 89% | 20.15 | 9.00 | 1.85 | 20.48 | 2.99 | 0.35 | 1M | — |
+| SAFX | XCF GLOBAL, INC. | greenblatt | ✅ | 100% | 0.08 | 0.15 | 0.29 | 197 | 0.11 | 10.14 | 6M | — |
+| NSSC | NAPCO SECURITY TECHNOLOGIES, | buffett | ✅ | 100% | 31.34 | 26.12 | 5.89 | 22.53 | 4.90 | 0.25 | 399,101 | — |
+| NSSC | NAPCO SECURITY TECHNOLOGIES, | lynch | ✅ | 75% | 31.34 | 26.12 | 5.89 | 22.53 | 4.90 | 0.25 | 399,101 | — |
+| PFS | PROVIDENT FINANCIAL SERVICES | piotroski | ✅ | 78% | 23.15 | 10.38 | 1.07 | 10.28 | — | 7.82 | 654,938 | — |
+| PFS | PROVIDENT FINANCIAL SERVICES | lynch | ✅ | 75% | 23.15 | 10.38 | 1.07 | 10.28 | — | 7.82 | 654,938 | — |
+| MWA | Mueller Water Products, Inc. | piotroski | ✅ | 89% | 24.36 | 19.97 | 3.91 | 19.53 | 3.54 | 0.87 | 1M | — |
+| MWA | Mueller Water Products, Inc. | lynch | ✅ | 75% | 24.36 | 19.97 | 3.91 | 19.53 | 3.54 | 0.87 | 1M | — |
+| WLDN | WILLDAN GROUP, INC. | piotroski | ✅ | 78% | 67.18 | 19.25 | 3.32 | 17.24 | 1.56 | 0.79 | 268,321 | — |
+| HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 103 | 40.23 | 261 | 649 | 4.66 | 50.73 | 2M | — |
+| CRVL | CORVEL CORPORATION | buffett | ✅ | 83% | 83.64 | 39.08 | 10.95 | 27.99 | 2.03 | 0.63 | 157,682 | — |
+| CRVL | CORVEL CORPORATION | piotroski | ✅ | 78% | 83.64 | 39.08 | 10.95 | 27.99 | 2.03 | 0.63 | 157,682 | — |
+| CRVL | CORVEL CORPORATION | lynch | ✅ | 75% | 83.64 | 39.08 | 10.95 | 27.99 | 2.03 | 0.63 | 157,682 | — |
+| GL | GLOBE LIFE INC. | piotroski | ✅ | 78% | 163 | 11.62 | 2.26 | 19.44 | — | 4.16 | 431,144 | — |
+| ROL | ROLLINS, INC. | buffett | ✅ | 83% | 38.42 | 35.25 | 13.53 | 38.32 | 0.60 | 1.29 | 4M | — |
+| DRVN | Driven Brands Holdings Inc. | piotroski | ✅ | 78% | 12.10 | 14.24 | 2.58 | 18.27 | 0.75 | 4.42 | 769,165 | — |
+| PKE | PARK AEROSPACE CORP. | piotroski | ✅ | 100% | 24.83 | 44.34 | 3.84 | 8.67 | 18.24 | 0.09 | 147,079 | — |
+| PKE | PARK AEROSPACE CORP. | lynch | ✅ | 75% | 24.83 | 44.34 | 3.84 | 8.67 | 18.24 | 0.09 | 147,079 | — |
+| BCPC | Balchem Corporation | piotroski | ✅ | 100% | 174 | 36.53 | 4.50 | 12.31 | 2.07 | 0.34 | 188,867 | — |
+| LCII | LCI INDUSTRIES | piotroski | ✅ | 89% | 97.98 | 12.94 | 1.79 | 13.83 | 2.85 | 1.33 | 378,794 | — |
+| SARO | StandardAero, Inc. | piotroski | ✅ | 89% | 28.49 | 34.33 | 3.57 | 10.40 | 2.20 | 1.46 | 6M | — |
+| FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 22.39 | 118 | 9.19 | 7.83 | 4.94 | 0.33 | 4M | — |
+| MAGN | Magnera Corporation | piotroski | ✅ | 78% | 13.05 | — | 0.44 | -14.94 | 2.37 | 2.75 | 332,569 | — |
+| SITE | SiteOne Landscape Supply, In | piotroski | ✅ | 89% | 116 | 34.47 | 3.16 | 9.15 | 2.47 | 0.93 | 548,629 | — |
+| CPRI | CAPRI HOLDINGS LIMITED | piotroski | ✅ | 78% | 21.73 | 19.06 | 32.55 | 171 | 1.21 | 39.38 | 3M | — |
+| POWW | Outdoor Holding Company | piotroski | ✅ | 89% | 2.31 | — | 1.15 | -1.51 | 3.96 | 0.14 | 766,618 | — |
+| OMCL | OMNICELL, INC | piotroski | ✅ | 78% | 35.90 | 898 | 1.35 | 0.17 | 1.43 | 0.60 | 560,174 | — |
+| TLYS | TILLY’S, INC. | piotroski | ✅ | 78% | 4.11 | — | 1.45 | -20.50 | 1.25 | 2.65 | 140,825 | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | graham | ▫️ | 67% | 122 | 13.64 | 4.10 | 37.16 | 3.37 | — | 3M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | netnet | ▫️ | 25% | 122 | 13.64 | 4.10 | 37.16 | 3.37 | — | 3M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | custom | ▫️ | 0% | 122 | 13.64 | 4.10 | 37.16 | 3.37 | — | 3M | — |
+| TDW | TIDEWATER INC | greenblatt | ▫️ | 67% | 73.98 | 11.14 | 2.73 | 24.51 | 2.90 | — | 1M | — |
+| TDW | TIDEWATER INC | buffett | ▫️ | 50% | 73.98 | 11.14 | 2.73 | 24.51 | 2.90 | — | 1M | — |
+| TDW | TIDEWATER INC | graham | ▫️ | 44% | 73.98 | 11.14 | 2.73 | 24.51 | 2.90 | — | 1M | — |
+| TDW | TIDEWATER INC | lynch | ▫️ | 25% | 73.98 | 11.14 | 2.73 | 24.51 | 2.90 | — | 1M | — |
+| TDW | TIDEWATER INC | netnet | ▫️ | 25% | 73.98 | 11.14 | 2.73 | 24.51 | 2.90 | — | 1M | — |
+| TDW | TIDEWATER INC | custom | ▫️ | 0% | 73.98 | 11.14 | 2.73 | 24.51 | 2.90 | — | 1M | — |
+| YELP | YELP INC. | graham | ▫️ | 78% | 20.15 | 9.00 | 1.85 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC. | buffett | ▫️ | 50% | 20.15 | 9.00 | 1.85 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC. | lynch | ▫️ | 50% | 20.15 | 9.00 | 1.85 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC. | netnet | ▫️ | 50% | 20.15 | 9.00 | 1.85 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC. | custom | ▫️ | 0% | 20.15 | 9.00 | 1.85 | 20.48 | 2.99 | 0.35 | 1M | — |
+| SAFX | XCF GLOBAL, INC. | graham | ▫️ | 44% | 0.08 | 0.15 | 0.29 | 197 | 0.11 | 10.14 | 6M | — |
+| SAFX | XCF GLOBAL, INC. | buffett | ▫️ | 33% | 0.08 | 0.15 | 0.29 | 197 | 0.11 | 10.14 | 6M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
