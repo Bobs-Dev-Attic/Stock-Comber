@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-BBW,BUILD-A-BEAR WORKSHOP INC,greenblatt,True,3,3,100.0,31.53,7.90,2.66,33.67,1.55,—,32.62,"234,837",—
-BKE,"BUCKLE, INC",greenblatt,True,3,3,100.0,41.96,10.14,5.01,49.39,1.89,1.33,27.93,"649,105",—
-BKE,"BUCKLE, INC",buffett,True,5,6,83.3,41.96,10.14,5.01,49.39,1.89,1.33,27.93,"649,105",—
-CVSA,Covista Inc.,lynch,True,3,4,75.0,114,16.20,2.82,17.40,1.09,1.08,80.09,"161,417",—
-KRYS,"Krystal Biotech, Inc.",piotroski,True,8,9,88.9,301,44.01,7.39,16.80,9.95,0.09,79.16,"152,079",—
-DUKB,Duke Energy CORP,piotroski,True,8,9,88.9,20.57,3.26,0.31,9.58,0.55,—,97.33,"24,647",—
-DUKB,Duke Energy CORP,lynch,True,3,4,75.0,20.57,3.26,0.31,9.58,0.55,—,97.33,"24,647",—
-OVV,Ovintiv Inc.,piotroski,True,8,9,88.9,60.59,12.68,1.41,11.09,0.54,0.82,68.09,2M,—
-FICO,Fair Isaac Corp,piotroski,True,8,9,88.9,705,19.40,—,-21.56,0.99,-1.54,—,"676,295",—
-FICO,Fair Isaac Corp,lynch,True,3,4,75.0,705,19.40,—,-21.56,0.99,-1.54,—,"676,295",—
-SNA,Snap-on Inc,buffett,True,5,6,83.3,367,19.14,3.28,17.14,4.79,0.41,220,"327,573",—
-DAKT,"Daktronics, Inc.",piotroski,True,8,9,88.9,19.96,21.70,3.28,15.09,2.31,—,11.23,"100,566",—
-DAKT,"Daktronics, Inc.",lynch,True,3,4,75.0,19.96,21.70,3.28,15.09,2.31,—,11.23,"100,566",—
-PAYC,"Paycom Software, Inc.",buffett,True,5,6,83.3,239,29.59,7.75,26.19,1.09,3.39,74.90,"529,972",—
-HRB,H&R BLOCK INC,greenblatt,True,3,3,100.0,52.02,9.19,57.05,624,1.13,26.72,10.78,"652,008",—
-HRB,H&R BLOCK INC,piotroski,True,8,9,88.9,52.02,9.19,57.05,624,1.13,26.72,10.78,"652,008",—
-ZION,"ZIONS BANCORPORATION, NATIONAL ASSOCIATION",piotroski,True,7,9,77.8,66.83,11.12,1.37,12.52,—,11.39,81.23,"669,286",—
-ORI,OLD REPUBLIC INTERNATIONAL CORPORATION,piotroski,True,7,9,77.8,39.61,10.65,1.68,15.82,—,4.05,44.38,2M,—
-GEO,"The GEO Group, Inc.",piotroski,True,7,9,77.8,27.80,15.27,2.58,16.89,2.01,—,21.01,5M,—
-GEO,"The GEO Group, Inc.",lynch,True,3,4,75.0,27.80,15.27,2.58,16.89,2.01,—,21.01,5M,—
-OPY,OPPENHEIMER HOLDINGS INC.,piotroski,True,7,9,77.8,93.23,7.15,1.08,15.08,—,2.77,159,"38,901",—
-AM,ANTERO MIDSTREAM CORPORATION,piotroski,True,7,9,77.8,19.42,22.58,4.75,20.95,3.41,1.98,8.90,1M,—
-TOST,"Toast, Inc.",piotroski,True,7,9,77.8,34.56,61.71,9.88,16.10,2.75,0.48,6.64,4M,—
-DRVN,Driven Brands Holdings Inc.,piotroski,True,7,9,77.8,11.89,13.99,2.54,18.27,0.75,4.42,9.46,1M,—
-SCSC,"ScanSource, Inc.",graham,True,8,9,88.9,42.78,11.75,1.02,8.66,1.76,1.12,58.64,"695,825",—
-SCSC,"ScanSource, Inc.",piotroski,True,7,9,77.8,42.78,11.75,1.02,8.66,1.76,1.12,58.64,"695,825",—
-INVH,Invitation Homes Inc.,piotroski,True,7,9,77.8,27.31,28.45,1.76,6.17,—,0.96,18.32,2M,—
-SCSC,"ScanSource, Inc.",lynch,True,3,4,75.0,42.78,11.75,1.02,8.66,1.76,1.12,58.64,"695,825",—
-UMBF,UMB FINANCIAL CORP,lynch,True,3,4,75.0,134,14.40,1.28,9.13,—,8.50,148,"341,521",—
-OGE,OGE ENERGY CORP.,piotroski,True,7,9,77.8,50.74,21.87,2.06,9.46,0.78,1.89,35.82,"794,324",—
-SIRI,Sirius XM Holdings Inc.,lynch,True,3,4,75.0,32.98,14.79,1.02,6.96,0.30,1.36,40.31,3M,—
-KNTK,KINETIK HOLDINGS INC.,lynch,True,3,4,75.0,49.95,18.99,—,-31.53,0.69,-7.37,—,"752,424",—
-ONTO,ONTO INNOVATION INC.,lynch,True,3,4,75.0,192,69.14,4.51,6.51,5.79,0.13,51.64,"659,071",—
-BJ,"BJ’S WHOLESALE CLUB HOLDINGS, INC.",piotroski,True,8,9,88.9,109,24.98,6.57,26.32,0.75,2.42,40.50,1M,—
-ACM,AECOM,piotroski,True,7,9,77.8,70.39,16.72,3.76,22.54,1.14,3.81,42.08,"401,926",—
-ACTG,ACACIA RESEARCH CORP,piotroski,True,8,9,88.9,4.25,19.32,0.76,3.99,9.18,0.34,5.26,"279,452",—
-NMRK,"NEWMARK GROUP, INC.",piotroski,True,8,9,88.9,12.12,17.83,2.10,8.63,1.05,2.24,9.39,"655,490",—
-VVX,"V2X, Inc.",piotroski,True,9,9,100.0,81.30,33.18,2.39,7.18,1.22,2.02,43.35,"85,906",—
-MCS,MARCUS CORP,piotroski,True,7,9,77.8,27.11,66.80,1.85,2.77,0.40,—,11.55,"47,678",—
-LOCO,"EL POLLO LOCO HOLDINGS, INC.",piotroski,True,8,9,88.9,15.42,17.13,1.56,9.10,0.32,1.08,14.16,"256,339",—
-HAYW,"Hayward Holdings, Inc.",piotroski,True,9,9,100.0,16.24,23.88,2.27,9.51,2.94,0.98,10.47,2M,—
-GCO,GENESCO INC,piotroski,True,8,9,88.9,36.07,28.86,0.68,2.34,1.64,1.46,38.74,"140,993",—
-SENS,"Senseonics Holdings, Inc.",piotroski,True,7,9,77.8,9.65,—,6.60,-113,4.83,1.07,—,"503,671",—
-MTRX,MATRIX SERVICE CO,piotroski,True,7,9,77.8,9.65,—,1.92,-1.82,0.98,3.25,—,"211,677",—
-PTON,"Peloton Interactive, Inc.",piotroski,True,8,9,88.9,5.95,42.46,—,-45.24,2.84,-15.72,—,12M,—
-BBW,BUILD-A-BEAR WORKSHOP INC,graham,False,5,9,55.6,31.53,7.90,2.66,33.67,1.55,—,32.62,"234,837",—
-BBW,BUILD-A-BEAR WORKSHOP INC,piotroski,False,5,9,55.6,31.53,7.90,2.66,33.67,1.55,—,32.62,"234,837",—
-BBW,BUILD-A-BEAR WORKSHOP INC,buffett,False,3,6,50.0,31.53,7.90,2.66,33.67,1.55,—,32.62,"234,837",—
-BBW,BUILD-A-BEAR WORKSHOP INC,lynch,False,1,4,25.0,31.53,7.90,2.66,33.67,1.55,—,32.62,"234,837",—
-BBW,BUILD-A-BEAR WORKSHOP INC,netnet,False,1,4,25.0,31.53,7.90,2.66,33.67,1.55,—,32.62,"234,837",—
+PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",greenblatt,True,3,3,100.0,37.72,7.64,4.87,63.82,3.15,1.38,29.34,"669,121",—
+PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",piotroski,True,8,9,88.9,37.72,7.64,4.87,63.82,3.15,1.38,29.34,"669,121",—
+ERIE,ERIE INDEMNITY COMPANY,buffett,True,6,6,100.0,271,—,—,24.50,1.27,0.47,—,"117,694",—
+IPAR,"INTERPARFUMS, INC.",buffett,True,5,6,83.3,136,25.98,4.97,19.12,2.99,—,56.84,"307,618",—
+IPAR,"INTERPARFUMS, INC.",lynch,True,3,4,75.0,136,25.98,4.97,19.12,2.99,—,56.84,"307,618",—
+SFM,"Sprouts Farmers Market, Inc.",greenblatt,True,3,3,100.0,49.58,9.34,3.49,37.32,0.93,1.96,41.21,5M,—
+SEZL,SEZZLE INC.,piotroski,True,8,9,88.9,151,40.55,31.75,78.40,3.92,1.36,19.94,"583,365",—
+SFM,"Sprouts Farmers Market, Inc.",piotroski,True,7,9,77.8,49.58,9.34,3.49,37.32,0.93,1.96,41.21,5M,—
+URBN,"Urban Outfitters, Inc.",piotroski,True,9,9,100.0,88.27,17.44,2.88,16.51,1.51,0.78,59.09,"815,136",—
+URBN,"Urban Outfitters, Inc.",lynch,True,3,4,75.0,88.27,17.44,2.88,16.51,1.51,0.78,59.09,"815,136",—
+LII,LENNOX INTERNATIONAL INC,lynch,True,3,4,75.0,349,15.33,10.64,69.28,1.60,2.51,130,"553,947",—
+ACIC,American Coastal Insurance Corporation,greenblatt,True,3,3,100.0,10.01,4.66,1.57,33.64,—,2.38,17.57,"194,625",—
+GPK,Graphic Packaging Holding Co,lynch,True,3,4,75.0,10.84,7.32,0.97,13.31,1.30,—,19.25,5M,—
+CSTM,Constellium SE,piotroski,True,9,9,100.0,22.76,11.85,3.39,28.68,1.29,4.60,17.02,1M,—
+HRB,"H&R Block, Inc.",greenblatt,True,3,3,100.0,50.98,9.01,55.92,624,1.13,26.72,10.78,2M,—
+HRB,"H&R Block, Inc.",piotroski,True,8,9,88.9,50.98,9.01,55.92,624,1.13,26.72,10.78,2M,—
+BURL,"BURLINGTON STORES, INC.",piotroski,True,7,9,77.8,257,27.04,9.13,33.76,1.23,—,77.66,1M,—
+JOE,The St. Joe Company,piotroski,True,8,9,88.9,75.13,37.75,5.68,15.09,—,0.97,24.33,"471,239",—
+ACEL,"Accel Entertainment, Inc.",piotroski,True,7,9,77.8,13.90,23.17,4.45,19.09,2.61,—,6.49,"594,288",—
+PLUS,ePlus inc.,piotroski,True,7,9,77.8,94.46,18.78,2.33,12.41,2.24,0.68,67.73,"257,983",—
+DCI,"Donaldson Company, Inc.",buffett,True,5,6,83.3,88.21,22.91,5.89,25.72,2.08,1.26,36.01,"548,391",—
+INVH,Invitation Homes Inc.,piotroski,True,7,9,77.8,27.20,28.33,1.75,6.17,—,0.96,18.32,5M,—
+RGA,"REINSURANCE GROUP OF AMERICA, INCORPORATED",piotroski,True,7,9,77.8,267,15.08,1.32,8.78,—,10.63,283,"478,002",—
+RGA,"REINSURANCE GROUP OF AMERICA, INCORPORATED",lynch,True,3,4,75.0,267,15.08,1.32,8.78,—,10.63,283,"478,002",—
+LTH,"Life Time Group Holdings, Inc.",piotroski,True,8,9,88.9,46.89,28.25,3.38,11.95,0.63,1.56,22.76,2M,—
+CW,CURTISS-WRIGHT CORPORATION,piotroski,True,8,9,88.9,482,37.45,7.16,19.11,1.44,1.06,140,"346,811",—
+POST,"Post Holdings, Inc.",lynch,True,3,4,75.0,82.25,14.93,1.38,8.94,1.67,2.60,86.01,"808,040",—
+BBWI,"BATH & BODY WORKS, INC.",greenblatt,True,3,3,100.0,21.76,7.00,—,-50.66,1.27,—,—,6M,—
+TRIP,"TRIPADVISOR, INC.",piotroski,True,8,9,88.9,7.12,22.97,1.45,6.20,1.29,3.07,5.86,13M,—
+WOR,"WORTHINGTON ENTERPRISES, INC",piotroski,True,8,9,88.9,62.67,19.96,3.03,15.20,2.37,0.80,38.20,"224,480",—
+BBY,"Best Buy Co., Inc.",piotroski,True,8,9,88.9,106,21.09,7.61,36.07,1.11,—,39.81,4M,—
+PLXS,PLEXUS CORP.,piotroski,True,8,9,88.9,206,32.85,3.90,11.89,1.58,1.16,86.13,"229,807",—
+BJRI,"BJ’S RESTAURANTS, INC.",piotroski,True,7,9,77.8,57.71,26.72,3.57,13.33,0.40,1.77,28.05,"606,470",—
+CGNX,COGNEX CORP,piotroski,True,8,9,88.9,50.34,74.03,5.71,7.67,3.80,0.35,11.61,3M,—
+SMG,Scotts Miracle-Gro Co,piotroski,True,7,9,77.8,66.34,26.86,—,-40.62,1.27,-8.67,—,1M,—
+PTON,"Peloton Interactive, Inc.",piotroski,True,8,9,88.9,5.95,42.50,—,-45.24,2.84,-15.72,—,20M,—
+PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",graham,False,5,9,55.6,37.72,7.64,4.87,63.82,3.15,1.38,29.34,"669,121",—
+PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",netnet,False,2,4,50.0,37.72,7.64,4.87,63.82,3.15,1.38,29.34,"669,121",—
+PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",buffett,False,2,6,33.3,37.72,7.64,4.87,63.82,3.15,1.38,29.34,"669,121",—
+PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",lynch,False,1,4,25.0,37.72,7.64,4.87,63.82,3.15,1.38,29.34,"669,121",—
+PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",custom,False,0,0,0.0,37.72,7.64,4.87,63.82,3.15,1.38,29.34,"669,121",—
+ERIE,ERIE INDEMNITY COMPANY,greenblatt,False,2,3,66.7,271,—,—,24.50,1.27,0.47,—,"117,694",—
+ERIE,ERIE INDEMNITY COMPANY,graham,False,5,9,55.6,271,—,—,24.50,1.27,0.47,—,"117,694",—
+ERIE,ERIE INDEMNITY COMPANY,lynch,False,2,4,50.0,271,—,—,24.50,1.27,0.47,—,"117,694",—
+ERIE,ERIE INDEMNITY COMPANY,piotroski,False,4,9,44.4,271,—,—,24.50,1.27,0.47,—,"117,694",—
+ERIE,ERIE INDEMNITY COMPANY,netnet,False,1,4,25.0,271,—,—,24.50,1.27,0.47,—,"117,694",—
+ERIE,ERIE INDEMNITY COMPANY,custom,False,0,0,0.0,271,—,—,24.50,1.27,0.47,—,"117,694",—
+IPAR,"INTERPARFUMS, INC.",graham,False,6,9,66.7,136,25.98,4.97,19.12,2.99,—,56.84,"307,618",—
+IPAR,"INTERPARFUMS, INC.",piotroski,False,6,9,66.7,136,25.98,4.97,19.12,2.99,—,56.84,"307,618",—
+IPAR,"INTERPARFUMS, INC.",greenblatt,False,1,3,33.3,136,25.98,4.97,19.12,2.99,—,56.84,"307,618",—
