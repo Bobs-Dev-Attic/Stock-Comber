@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-CF,"CF INDUSTRIES HOLDINGS, INC.",greenblatt,True,3,3,100.0,122,13.64,4.10,37.16,3.37,—,77.59,3M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",piotroski,True,8,9,88.9,122,13.64,4.10,37.16,3.37,—,77.59,3M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",buffett,True,5,6,83.3,122,13.64,4.10,37.16,3.37,—,77.59,3M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",lynch,True,3,4,75.0,122,13.64,4.10,37.16,3.37,—,77.59,3M,—
-TDW,TIDEWATER INC,piotroski,True,8,9,88.9,73.98,11.14,2.73,24.51,2.90,—,63.60,1M,—
-YELP,YELP INC.,greenblatt,True,3,3,100.0,20.15,9.00,1.85,20.48,2.99,0.35,23.46,1M,—
-YELP,YELP INC.,piotroski,True,8,9,88.9,20.15,9.00,1.85,20.48,2.99,0.35,23.46,1M,—
-SAFX,"XCF GLOBAL, INC.",greenblatt,True,3,3,100.0,0.08,0.15,0.29,197,0.11,10.14,1.76,6M,—
-NSSC,"NAPCO SECURITY TECHNOLOGIES, INC",buffett,True,6,6,100.0,31.34,26.12,5.89,22.53,4.90,0.25,11.99,"399,101",—
-NSSC,"NAPCO SECURITY TECHNOLOGIES, INC",lynch,True,3,4,75.0,31.34,26.12,5.89,22.53,4.90,0.25,11.99,"399,101",—
-PFS,"PROVIDENT FINANCIAL SERVICES, INC.",piotroski,True,7,9,77.8,23.15,10.38,1.07,10.28,—,7.82,33.00,"654,938",—
-PFS,"PROVIDENT FINANCIAL SERVICES, INC.",lynch,True,3,4,75.0,23.15,10.38,1.07,10.28,—,7.82,33.00,"654,938",—
-MWA,"Mueller Water Products, Inc.",piotroski,True,8,9,88.9,24.36,19.97,3.91,19.53,3.54,0.87,13.08,1M,—
-MWA,"Mueller Water Products, Inc.",lynch,True,3,4,75.0,24.36,19.97,3.91,19.53,3.54,0.87,13.08,1M,—
-WLDN,"WILLDAN GROUP, INC.",piotroski,True,7,9,77.8,67.18,19.25,3.32,17.24,1.56,0.79,39.85,"268,321",—
-HALO,"HALOZYME THERAPEUTICS, INC.",buffett,True,5,6,83.3,103,40.23,261,649,4.66,50.73,4.76,2M,—
-CRVL,CORVEL CORPORATION,buffett,True,5,6,83.3,83.64,39.08,10.95,27.99,2.03,0.63,19.18,"157,682",—
-CRVL,CORVEL CORPORATION,piotroski,True,7,9,77.8,83.64,39.08,10.95,27.99,2.03,0.63,19.18,"157,682",—
-CRVL,CORVEL CORPORATION,lynch,True,3,4,75.0,83.64,39.08,10.95,27.99,2.03,0.63,19.18,"157,682",—
-GL,GLOBE LIFE INC.,piotroski,True,7,9,77.8,163,11.62,2.26,19.44,—,4.16,151,"431,144",—
-ROL,"ROLLINS, INC.",buffett,True,5,6,83.3,38.42,35.25,13.53,38.32,0.60,1.29,8.34,4M,—
-DRVN,Driven Brands Holdings Inc.,piotroski,True,7,9,77.8,12.10,14.24,2.58,18.27,0.75,4.42,9.46,"769,165",—
-PKE,PARK AEROSPACE CORP.,piotroski,True,9,9,100.0,24.83,44.34,3.84,8.67,18.24,0.09,9.02,"147,079",—
-PKE,PARK AEROSPACE CORP.,lynch,True,3,4,75.0,24.83,44.34,3.84,8.67,18.24,0.09,9.02,"147,079",—
-BCPC,Balchem Corporation,piotroski,True,9,9,100.0,174,36.53,4.50,12.31,2.07,0.34,64.20,"188,867",—
-LCII,LCI INDUSTRIES,piotroski,True,8,9,88.9,97.98,12.94,1.79,13.83,2.85,1.33,96.57,"378,794",—
-SARO,"StandardAero, Inc.",piotroski,True,8,9,88.9,28.49,34.33,3.57,10.40,2.20,1.46,12.21,6M,—
-FIGS,"FIGS, Inc.",piotroski,True,8,9,88.9,22.39,118,9.19,7.83,4.94,0.33,3.23,4M,—
-MAGN,Magnera Corporation,piotroski,True,7,9,77.8,13.05,—,0.44,-14.94,2.37,2.75,—,"332,569",—
-SITE,"SiteOne Landscape Supply, Inc.",piotroski,True,8,9,88.9,116,34.47,3.16,9.15,2.47,0.93,52.83,"548,629",—
-CPRI,CAPRI HOLDINGS LIMITED,piotroski,True,7,9,77.8,21.73,19.06,32.55,171,1.21,39.38,4.14,3M,—
-POWW,Outdoor Holding Company,piotroski,True,8,9,88.9,2.31,—,1.15,-1.51,3.96,0.14,—,"766,618",—
-OMCL,"OMNICELL, INC",piotroski,True,7,9,77.8,35.90,898,1.35,0.17,1.43,0.60,4.89,"560,174",—
-TLYS,"TILLY’S, INC.",piotroski,True,7,9,77.8,4.11,—,1.45,-20.50,1.25,2.65,—,"140,825",—
-CF,"CF INDUSTRIES HOLDINGS, INC.",graham,False,6,9,66.7,122,13.64,4.10,37.16,3.37,—,77.59,3M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",netnet,False,1,4,25.0,122,13.64,4.10,37.16,3.37,—,77.59,3M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",custom,False,0,0,0.0,122,13.64,4.10,37.16,3.37,—,77.59,3M,—
-TDW,TIDEWATER INC,greenblatt,False,2,3,66.7,73.98,11.14,2.73,24.51,2.90,—,63.60,1M,—
-TDW,TIDEWATER INC,buffett,False,3,6,50.0,73.98,11.14,2.73,24.51,2.90,—,63.60,1M,—
-TDW,TIDEWATER INC,graham,False,4,9,44.4,73.98,11.14,2.73,24.51,2.90,—,63.60,1M,—
-TDW,TIDEWATER INC,lynch,False,1,4,25.0,73.98,11.14,2.73,24.51,2.90,—,63.60,1M,—
-TDW,TIDEWATER INC,netnet,False,1,4,25.0,73.98,11.14,2.73,24.51,2.90,—,63.60,1M,—
-TDW,TIDEWATER INC,custom,False,0,0,0.0,73.98,11.14,2.73,24.51,2.90,—,63.60,1M,—
-YELP,YELP INC.,graham,False,7,9,77.8,20.15,9.00,1.85,20.48,2.99,0.35,23.46,1M,—
-YELP,YELP INC.,buffett,False,3,6,50.0,20.15,9.00,1.85,20.48,2.99,0.35,23.46,1M,—
-YELP,YELP INC.,lynch,False,2,4,50.0,20.15,9.00,1.85,20.48,2.99,0.35,23.46,1M,—
-YELP,YELP INC.,netnet,False,2,4,50.0,20.15,9.00,1.85,20.48,2.99,0.35,23.46,1M,—
-YELP,YELP INC.,custom,False,0,0,0.0,20.15,9.00,1.85,20.48,2.99,0.35,23.46,1M,—
-SAFX,"XCF GLOBAL, INC.",graham,False,4,9,44.4,0.08,0.15,0.29,197,0.11,10.14,1.76,6M,—
-SAFX,"XCF GLOBAL, INC.",buffett,False,2,6,33.3,0.08,0.15,0.29,197,0.11,10.14,1.76,6M,—
+GOOGM,Alphabet Inc.,graham,True,9,9,100.0,41.98,3.88,1.24,31.83,2.01,0.43,90.88,"641,055",—
+GOOGM,Alphabet Inc.,buffett,True,6,6,100.0,41.98,3.88,1.24,31.83,2.01,0.43,90.88,"641,055",—
+GOOGM,Alphabet Inc.,greenblatt,True,3,3,100.0,41.98,3.88,1.24,31.83,2.01,0.43,90.88,"641,055",—
+GOOGM,Alphabet Inc.,lynch,True,4,4,100.0,41.98,3.88,1.24,31.83,2.01,0.43,90.88,"641,055",—
+AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",piotroski,True,9,9,100.0,177,25.00,8.57,34.27,1.46,—,57.37,"350,350",—
+IPAR,"INTERPARFUMS, INC.",buffett,True,5,6,83.3,136,25.87,4.95,19.12,2.99,—,56.84,"279,160",—
+IPAR,"INTERPARFUMS, INC.",lynch,True,3,4,75.0,136,25.87,4.95,19.12,2.99,—,56.84,"279,160",—
+FHI,"Federated Hermes, Inc.",greenblatt,True,3,3,100.0,65.53,12.77,4.11,33.69,2.75,0.81,42.89,"783,347",—
+FHI,"Federated Hermes, Inc.",piotroski,True,8,9,88.9,65.53,12.77,4.11,33.69,2.75,0.81,42.89,"783,347",—
+SBAC,SBA COMMUNICATIONS CORPORATION,piotroski,True,7,9,77.8,191,19.53,—,-21.71,0.29,—,—,"879,740",—
+FCFS,"FIRSTCASH HOLDINGS, INC.",piotroski,True,7,9,77.8,183,24.72,3.59,14.51,4.55,1.33,92.39,"410,482",—
+FCFS,"FIRSTCASH HOLDINGS, INC.",lynch,True,3,4,75.0,183,24.72,3.59,14.51,4.55,1.33,92.39,"410,482",—
+WNC,WABASH NATIONAL CORPORATION,greenblatt,True,3,3,100.0,11.57,2.28,1.31,57.56,1.39,2.18,31.68,"281,574",—
+LEVI,LEVI STRAUSS & CO,piotroski,True,7,9,77.8,24.39,16.82,4.28,25.37,1.55,2.01,13.64,2M,—
+HST,"HOST HOTELS & RESORTS, INC.",piotroski,True,7,9,77.8,25.93,23.57,2.74,11.67,—,0.96,15.29,8M,—
+INVH,Invitation Homes Inc.,piotroski,True,7,9,77.8,27.09,28.22,1.74,6.17,—,0.96,18.32,5M,—
+JJSF,J&J SNACK FOODS CORP.,lynch,True,3,4,75.0,89.42,26.61,1.81,6.79,2.72,—,61.14,"139,594",—
+POST,"Post Holdings, Inc.",lynch,True,3,4,75.0,81.83,14.85,1.37,8.94,1.67,2.60,86.01,"624,192",—
+EHC,Encompass Health Corporation,piotroski,True,9,9,100.0,143,25.72,5.97,23.22,1.08,1.56,54.53,1M,—
+CPK,CHESAPEAKE UTILITIES CORP,piotroski,True,7,9,77.8,141,23.58,2.07,8.78,0.45,—,95.61,"122,604",—
+MYRG,MYR GROUP INC.,piotroski,True,8,9,88.9,273,36.23,6.50,17.93,1.33,1.49,84.34,"195,464",—
+ACTG,ACACIA RESEARCH CORP,piotroski,True,8,9,88.9,4.17,18.95,0.75,3.99,9.18,0.34,5.26,"267,249",—
+RH,RH,piotroski,True,8,9,88.9,135,21.37,44.03,206,1.19,78.80,20.85,"521,892",—
+LUV,SOUTHWEST AIRLINES CO,piotroski,True,7,9,77.8,46.32,58.63,3.24,5.53,0.52,—,15.94,5M,—
+CRI,"CARTER’S, INC.",graham,True,8,9,88.9,34.29,13.55,1.31,9.92,2.51,1.77,38.57,1M,—
+BNED,"BARNES & NOBLE EDUCATION, INC.",piotroski,True,8,9,88.9,13.06,26.65,1.54,5.73,1.71,1.51,9.68,"101,757",—
+ADT,ADT Inc.,piotroski,True,8,9,88.9,9.90,—,—,15.77,0.93,3.19,—,17M,—
+TRLV,TRULIEVE CANNABIS CORP.,piotroski,True,8,9,88.9,11.09,—,1.86,-10.70,4.43,1.36,—,"947,767",—
+PTON,"Peloton Interactive, Inc.",piotroski,True,8,9,88.9,5.81,41.50,—,-45.24,2.84,-15.72,—,6M,—
+GOOGM,Alphabet Inc.,piotroski,False,6,9,66.7,41.98,3.88,1.24,31.83,2.01,0.43,90.88,"641,055",—
+GOOGM,Alphabet Inc.,netnet,False,2,4,50.0,41.98,3.88,1.24,31.83,2.01,0.43,90.88,"641,055",—
+GOOGM,Alphabet Inc.,custom,False,0,0,0.0,41.98,3.88,1.24,31.83,2.01,0.43,90.88,"641,055",—
+INSW,"International Seaways, Inc.",buffett,False,4,6,66.7,98.25,15.77,2.41,15.31,3.71,0.32,75.56,"879,606",—
+INSW,"International Seaways, Inc.",piotroski,False,6,9,66.7,98.25,15.77,2.41,15.31,3.71,0.32,75.56,"879,606",—
+INSW,"International Seaways, Inc.",lynch,False,2,4,50.0,98.25,15.77,2.41,15.31,3.71,0.32,75.56,"879,606",—
+INSW,"International Seaways, Inc.",graham,False,3,9,33.3,98.25,15.77,2.41,15.31,3.71,0.32,75.56,"879,606",—
+INSW,"International Seaways, Inc.",greenblatt,False,1,3,33.3,98.25,15.77,2.41,15.31,3.71,0.32,75.56,"879,606",—
+INSW,"International Seaways, Inc.",netnet,False,1,4,25.0,98.25,15.77,2.41,15.31,3.71,0.32,75.56,"879,606",—
+INSW,"International Seaways, Inc.",custom,False,0,0,0.0,98.25,15.77,2.41,15.31,3.71,0.32,75.56,"879,606",—
+UNG,"United States Natural Gas Fund, LP",piotroski,False,5,9,55.6,10.42,—,—,—,—,—,—,28M,—
+UNG,"United States Natural Gas Fund, LP",greenblatt,False,1,3,33.3,10.42,—,—,—,—,—,—,28M,—
+UNG,"United States Natural Gas Fund, LP",lynch,False,1,4,25.0,10.42,—,—,—,—,—,—,28M,—
+UNG,"United States Natural Gas Fund, LP",netnet,False,1,4,25.0,10.42,—,—,—,—,—,—,28M,—
+UNG,"United States Natural Gas Fund, LP",buffett,False,1,6,16.7,10.42,—,—,—,—,—,—,28M,—
+UNG,"United States Natural Gas Fund, LP",graham,False,0,9,0.0,10.42,—,—,—,—,—,—,28M,—
+UNG,"United States Natural Gas Fund, LP",custom,False,0,0,0.0,10.42,—,—,—,—,—,—,28M,—
+CEPF,"CANTOR EQUITY PARTNERS IV, INC.",greenblatt,False,2,3,66.7,10.33,—,—,"4,306",—,0.67,—,"62,232",—
+CEPF,"CANTOR EQUITY PARTNERS IV, INC.",lynch,False,2,4,50.0,10.33,—,—,"4,306",—,0.67,—,"62,232",—
+CEPF,"CANTOR EQUITY PARTNERS IV, INC.",netnet,False,1,4,25.0,10.33,—,—,"4,306",—,0.67,—,"62,232",—
+CEPF,"CANTOR EQUITY PARTNERS IV, INC.",buffett,False,1,6,16.7,10.33,—,—,"4,306",—,0.67,—,"62,232",—
