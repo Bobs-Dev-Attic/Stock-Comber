@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-11-11 08:56 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-11-11 16:50 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **40** strategy matches passed.
+Screened **75** companies · **32** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| BBW | BUILD-A-BEAR WORKSHOP INC | greenblatt | ✅ | 100% | 30.09 | 7.54 | 2.54 | 33.67 | 1.55 | — | 361,611 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | piotroski | ✅ | 100% | 110 | 20.29 | 3.82 | 18.86 | 0.86 | 0.33 | 118,077 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | lynch | ✅ | 100% | 110 | 20.29 | 3.82 | 18.86 | 0.86 | 0.33 | 118,077 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | buffett | ✅ | 83% | 110 | 20.29 | 3.82 | 18.86 | 0.86 | 0.33 | 118,077 | — |
-| OTTR | OTTER TAIL CORPORATION | lynch | ✅ | 75% | 79.77 | 12.18 | 1.80 | 14.82 | 2.28 | — | 255,157 | — |
-| XPEL | XPEL, INC. | buffett | ✅ | 100% | 40.03 | 21.64 | 3.95 | 18.28 | 3.25 | 0.35 | 378,264 | — |
-| XPEL | XPEL, INC. | lynch | ✅ | 100% | 40.03 | 21.64 | 3.95 | 18.28 | 3.25 | 0.35 | 378,264 | — |
-| PFS | PROVIDENT FINANCIAL SERVICES | piotroski | ✅ | 78% | 23.15 | 10.38 | 1.07 | 10.28 | — | 7.82 | 654,938 | — |
-| PFS | PROVIDENT FINANCIAL SERVICES | lynch | ✅ | 75% | 23.15 | 10.38 | 1.07 | 10.28 | — | 7.82 | 654,938 | — |
-| FN | FABRINET | buffett | ✅ | 83% | 349 | 26.71 | 5.15 | 19.27 | 2.25 | 0.59 | 1M | — |
-| FN | FABRINET | lynch | ✅ | 75% | 349 | 26.71 | 5.15 | 19.27 | 2.25 | 0.59 | 1M | — |
-| ALSN | ALLISON TRANSMISSION HOLDING | buffett | ✅ | 83% | 126 | 17.13 | 5.72 | 33.37 | 4.85 | 2.26 | 779,590 | — |
-| AES | THE AES CORPORATION | greenblatt | ✅ | 100% | 14.92 | 11.84 | 2.62 | 22.40 | 0.77 | — | 5M | — |
-| EBF | ENNIS, INC. | piotroski | ✅ | 78% | 21.12 | 12.72 | 1.76 | 13.81 | 3.72 | 0.16 | 112,960 | — |
-| FCFS | FIRSTCASH HOLDINGS, INC. | piotroski | ✅ | 78% | 183 | 24.72 | 3.59 | 14.51 | 4.55 | 1.33 | 410,482 | — |
-| FCFS | FIRSTCASH HOLDINGS, INC. | lynch | ✅ | 75% | 183 | 24.72 | 3.59 | 14.51 | 4.55 | 1.33 | 410,482 | — |
-| KTB | KONTOOR BRANDS, INC. | lynch | ✅ | 75% | 82.79 | 20.44 | 8.22 | 40.27 | 1.82 | 3.57 | 966,390 | — |
-| BFAM | BRIGHT HORIZONS FAMILY SOLUT | piotroski | ✅ | 89% | 51.74 | 15.40 | 2.22 | 14.42 | 0.52 | 1.90 | 1M | — |
-| BFAM | BRIGHT HORIZONS FAMILY SOLUT | lynch | ✅ | 75% | 51.74 | 15.40 | 2.22 | 14.42 | 0.52 | 1.90 | 1M | — |
-| ADUS | Addus HomeCare Corp | piotroski | ✅ | 89% | 126 | 24.19 | 2.14 | 8.84 | 1.80 | 0.32 | 225,846 | — |
-| ADUS | Addus HomeCare Corp | lynch | ✅ | 75% | 126 | 24.19 | 2.14 | 8.84 | 1.80 | 0.32 | 225,846 | — |
-| DCI | Donaldson Company, Inc. | buffett | ✅ | 83% | 87.35 | 22.69 | 5.84 | 25.72 | 2.08 | 1.26 | 572,192 | — |
-| TOST | Toast, Inc. | piotroski | ✅ | 78% | 34.52 | 61.64 | 9.87 | 16.10 | 2.75 | 0.48 | 11M | — |
-| CWEN | Clearway Energy, Inc. | lynch | ✅ | 75% | 34.65 | 7.18 | 0.21 | 2.91 | 1.13 | 1.85 | 2M | — |
-| AM | ANTERO MIDSTREAM CORPORATION | piotroski | ✅ | 78% | 19.78 | 23.00 | 4.84 | 20.95 | 3.41 | 1.98 | 2M | — |
-| DRVN | Driven Brands Holdings Inc. | piotroski | ✅ | 78% | 12.10 | 14.24 | 2.58 | 18.27 | 0.75 | 4.42 | 769,165 | — |
-| APOG | APOGEE ENTERPRISES, INC. | piotroski | ✅ | 78% | 47.83 | 18.98 | 2.01 | 10.58 | 1.65 | — | 301,562 | — |
-| APOG | APOGEE ENTERPRISES, INC. | lynch | ✅ | 75% | 47.83 | 18.98 | 2.01 | 10.58 | 1.65 | — | 301,562 | — |
-| SIRI | Sirius XM Holdings Inc. | lynch | ✅ | 75% | 32.24 | 14.46 | 1.00 | 6.96 | 0.30 | 1.36 | 4M | — |
-| MYRG | MYR GROUP INC. | piotroski | ✅ | 89% | 273 | 36.23 | 6.50 | 17.93 | 1.33 | 1.49 | 195,464 | — |
-| ONTO | ONTO INNOVATION INC. | lynch | ✅ | 75% | 198 | 71.05 | 4.63 | 6.51 | 5.79 | 0.13 | 2M | — |
-| PFH | Prudential Financial, Inc. | piotroski | ✅ | 78% | 15.04 | 1.51 | 0.16 | 11.02 | — | 22.76 | 54,316 | — |
-| IEX | IDEX CORP | piotroski | ✅ | 78% | 237 | 36.96 | 4.43 | 12.00 | 2.86 | 0.72 | 397,088 | — |
-| AMCX | AMC Global Media Inc. | piotroski | ✅ | 78% | 8.61 | 5.19 | 0.50 | 9.11 | 1.67 | 2.98 | 1M | — |
-| VVX | V2X, Inc. | piotroski | ✅ | 100% | 82.71 | 33.76 | 2.43 | 7.18 | 1.22 | 2.02 | 292,870 | — |
-| CFFN | Capitol Federal Financial, I | piotroski | ✅ | 78% | 8.60 | 16.54 | 1.07 | 6.49 | — | 8.33 | 709,530 | — |
-| ALGN | ALIGN TECHNOLOGY, INC. | piotroski | ✅ | 78% | 174 | 30.84 | 3.12 | 10.13 | 1.36 | 0.54 | 2M | — |
-| ATRC | AtriCure, Inc. | piotroski | ✅ | 78% | 56.26 | — | 5.46 | -2.33 | 3.96 | 0.33 | 838,143 | — |
-| OMCL | OMNICELL, INC | piotroski | ✅ | 78% | 35.90 | 898 | 1.35 | 0.17 | 1.43 | 0.60 | 560,174 | — |
-| AMN | AMN HEALTHCARE SERVICES, INC | piotroski | ✅ | 78% | 37.81 | — | 2.27 | -14.90 | 0.94 | 2.26 | 683,879 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | graham | ▫️ | 56% | 30.09 | 7.54 | 2.54 | 33.67 | 1.55 | — | 361,611 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | piotroski | ▫️ | 56% | 30.09 | 7.54 | 2.54 | 33.67 | 1.55 | — | 361,611 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | buffett | ▫️ | 50% | 30.09 | 7.54 | 2.54 | 33.67 | 1.55 | — | 361,611 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | lynch | ▫️ | 25% | 30.09 | 7.54 | 2.54 | 33.67 | 1.55 | — | 361,611 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | netnet | ▫️ | 25% | 30.09 | 7.54 | 2.54 | 33.67 | 1.55 | — | 361,611 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | custom | ▫️ | 0% | 30.09 | 7.54 | 2.54 | 33.67 | 1.55 | — | 361,611 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | graham | ▫️ | 33% | 110 | 20.29 | 3.82 | 18.86 | 0.86 | 0.33 | 118,077 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | greenblatt | ▫️ | 33% | 110 | 20.29 | 3.82 | 18.86 | 0.86 | 0.33 | 118,077 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | netnet | ▫️ | 25% | 110 | 20.29 | 3.82 | 18.86 | 0.86 | 0.33 | 118,077 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | custom | ▫️ | 0% | 110 | 20.29 | 3.82 | 18.86 | 0.86 | 0.33 | 118,077 | — |
+| PIPR | PIPER SANDLER COMPANIES | greenblatt | ✅ | 100% | 66.70 | 4.22 | 0.87 | 20.52 | — | 0.74 | 72,662 | — |
+| PIPR | PIPER SANDLER COMPANIES | lynch | ✅ | 100% | 66.70 | 4.22 | 0.87 | 20.52 | — | 0.74 | 72,662 | — |
+| PIPR | PIPER SANDLER COMPANIES | piotroski | ✅ | 89% | 66.70 | 4.22 | 0.87 | 20.52 | — | 0.74 | 72,662 | — |
+| VTOL | Bristow Group Inc. | piotroski | ✅ | 78% | 41.09 | 9.51 | 1.16 | 12.18 | 1.90 | 1.18 | 59,401 | — |
+| DUKB | Duke Energy CORP | piotroski | ✅ | 89% | 20.28 | 3.21 | 0.30 | 9.58 | 0.55 | — | 16,861 | — |
+| DUKB | Duke Energy CORP | lynch | ✅ | 75% | 20.28 | 3.21 | 0.30 | 9.58 | 0.55 | — | 16,861 | — |
+| EBF | ENNIS, INC. | piotroski | ✅ | 78% | 20.98 | 12.64 | 1.75 | 13.81 | 3.72 | 0.16 | 23,164 | — |
+| SSD | Simpson Manufacturing Co., I | buffett | ✅ | 83% | 200 | 24.28 | 4.13 | 17.00 | 3.54 | 0.51 | 49,677 | — |
+| SSD | Simpson Manufacturing Co., I | piotroski | ✅ | 78% | 200 | 24.28 | 4.13 | 17.00 | 3.54 | 0.51 | 49,677 | — |
+| AGX | ARGAN INC | lynch | ✅ | 75% | 321 | 32.95 | 9.82 | 29.80 | 1.59 | 1.57 | 122,729 | — |
+| UTI | UNIVERSAL TECHNICAL INSTITUT | piotroski | ✅ | 78% | 23.41 | 20.72 | 3.97 | 19.21 | 1.07 | 1.52 | 216,475 | — |
+| GPK | Graphic Packaging Holding Co | lynch | ✅ | 75% | 11.14 | 7.53 | 1.00 | 13.31 | 1.30 | — | 5M | — |
+| EFSC | ENTERPRISE FINANCIAL SERVICE | lynch | ✅ | 75% | 62.26 | 11.72 | 1.14 | 9.87 | — | 7.48 | 48,598 | — |
+| EZPW | EZCORP, INC. | piotroski | ✅ | 78% | 28.64 | 20.17 | 2.33 | 10.69 | 5.61 | 0.90 | 100,013 | — |
+| HOG | HARLEY-DAVIDSON, INC. | graham | ✅ | 100% | 34.22 | 12.31 | 1.32 | 10.79 | 2.10 | — | 2M | — |
+| HOG | HARLEY-DAVIDSON, INC. | piotroski | ✅ | 89% | 34.22 | 12.31 | 1.32 | 10.79 | 2.10 | — | 2M | — |
+| SR | Spire Inc. | piotroski | ✅ | 78% | 88.57 | 20.27 | 0.00 | 8.02 | 0.32 | — | 82,859 | — |
+| SR | Spire Inc. | lynch | ✅ | 75% | 88.57 | 20.27 | 0.00 | 8.02 | 0.32 | — | 82,859 | — |
+| PCTY | PAYLOCITY HOLDING CORPORATIO | piotroski | ✅ | 89% | 179 | 36.47 | 8.05 | 22.08 | 1.09 | 3.00 | 312,308 | — |
+| FIVE | Five Below, Inc. | piotroski | ✅ | 100% | 249 | 38.46 | 6.29 | 16.35 | 2.01 | 1.25 | 187,513 | — |
+| AGCO | AGCO CORP /DE | piotroski | ✅ | 89% | 114 | 11.68 | 1.99 | 17.00 | 1.39 | 1.72 | 84,859 | — |
+| OGE | OGE ENERGY CORP. | piotroski | ✅ | 78% | 50.92 | 21.95 | 2.07 | 9.46 | 0.78 | 1.89 | 355,377 | — |
+| KNTK | KINETIK HOLDINGS INC. | lynch | ✅ | 75% | 52.08 | 19.80 | — | -31.53 | 0.69 | -7.37 | 1M | — |
+| R | RYDER SYSTEM INC | piotroski | ✅ | 100% | 281 | 23.56 | 3.85 | 16.35 | 0.89 | 4.37 | 65,973 | — |
+| ACM | AECOM | piotroski | ✅ | 78% | 70.16 | 16.66 | 3.75 | 22.54 | 1.14 | 3.81 | 232,887 | — |
+| GDYN | Grid Dynamics Holdings, Inc. | piotroski | ✅ | 89% | 13.66 | 124 | 2.19 | 1.78 | 8.43 | 0.13 | 587,963 | — |
+| VCEL | VERICEL CORPORATION | piotroski | ✅ | 100% | 58.08 | 182 | 8.54 | 4.66 | 5.03 | 0.38 | 154,210 | — |
+| VCEL | VERICEL CORPORATION | lynch | ✅ | 75% | 58.08 | 182 | 8.54 | 4.66 | 5.03 | 0.38 | 154,210 | — |
+| NPKI | NPK International Inc. | piotroski | ✅ | 78% | 9.07 | 20.16 | 2.21 | 11.09 | 1.43 | 0.26 | 1M | — |
+| VMD | Viemed Healthcare, Inc. | piotroski | ✅ | 78% | 9.05 | 24.46 | 2.61 | 10.55 | 1.18 | 0.39 | 36,818 | — |
+| MAGN | Magnera Corporation | piotroski | ✅ | 78% | 13.01 | — | 0.43 | -14.94 | 2.37 | 2.75 | 74,191 | — |
+| HCSG | HEALTHCARE SERVICES GROUP, I | piotroski | ✅ | 100% | 25.30 | 31.23 | 3.62 | 11.58 | 3.38 | — | 574,645 | — |
+| PIPR | PIPER SANDLER COMPANIES | graham | ▫️ | 78% | 66.70 | 4.22 | 0.87 | 20.52 | — | 0.74 | 72,662 | — |
+| PIPR | PIPER SANDLER COMPANIES | buffett | ▫️ | 50% | 66.70 | 4.22 | 0.87 | 20.52 | — | 0.74 | 72,662 | — |
+| PIPR | PIPER SANDLER COMPANIES | netnet | ▫️ | 25% | 66.70 | 4.22 | 0.87 | 20.52 | — | 0.74 | 72,662 | — |
+| PIPR | PIPER SANDLER COMPANIES | custom | ▫️ | 0% | 66.70 | 4.22 | 0.87 | 20.52 | — | 0.74 | 72,662 | — |
+| VTOL | Bristow Group Inc. | greenblatt | ▫️ | 67% | 41.09 | 9.51 | 1.16 | 12.18 | 1.90 | 1.18 | 59,401 | — |
+| VTOL | Bristow Group Inc. | graham | ▫️ | 56% | 41.09 | 9.51 | 1.16 | 12.18 | 1.90 | 1.18 | 59,401 | — |
+| VTOL | Bristow Group Inc. | lynch | ▫️ | 25% | 41.09 | 9.51 | 1.16 | 12.18 | 1.90 | 1.18 | 59,401 | — |
+| VTOL | Bristow Group Inc. | netnet | ▫️ | 25% | 41.09 | 9.51 | 1.16 | 12.18 | 1.90 | 1.18 | 59,401 | — |
+| VTOL | Bristow Group Inc. | buffett | ▫️ | 0% | 41.09 | 9.51 | 1.16 | 12.18 | 1.90 | 1.18 | 59,401 | — |
+| VTOL | Bristow Group Inc. | custom | ▫️ | 0% | 41.09 | 9.51 | 1.16 | 12.18 | 1.90 | 1.18 | 59,401 | — |
+| DUKB | Duke Energy CORP | graham | ▫️ | 78% | 20.28 | 3.21 | 0.30 | 9.58 | 0.55 | — | 16,861 | — |
+| DUKB | Duke Energy CORP | greenblatt | ▫️ | 67% | 20.28 | 3.21 | 0.30 | 9.58 | 0.55 | — | 16,861 | — |
+| DUKB | Duke Energy CORP | buffett | ▫️ | 33% | 20.28 | 3.21 | 0.30 | 9.58 | 0.55 | — | 16,861 | — |
+| DUKB | Duke Energy CORP | netnet | ▫️ | 25% | 20.28 | 3.21 | 0.30 | 9.58 | 0.55 | — | 16,861 | — |
+| DUKB | Duke Energy CORP | custom | ▫️ | 0% | 20.28 | 3.21 | 0.30 | 9.58 | 0.55 | — | 16,861 | — |
+| EBF | ENNIS, INC. | graham | ▫️ | 78% | 20.98 | 12.64 | 1.75 | 13.81 | 3.72 | 0.16 | 23,164 | — |
+| EBF | ENNIS, INC. | buffett | ▫️ | 67% | 20.98 | 12.64 | 1.75 | 13.81 | 3.72 | 0.16 | 23,164 | — |
+| EBF | ENNIS, INC. | lynch | ▫️ | 50% | 20.98 | 12.64 | 1.75 | 13.81 | 3.72 | 0.16 | 23,164 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
