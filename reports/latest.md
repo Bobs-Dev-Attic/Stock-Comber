@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-11-12 03:47 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-11-12 11:55 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **24** strategy matches passed.
+Screened **75** companies · **22** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| PIPR | PIPER SANDLER COMPANIES | greenblatt | ✅ | 100% | 66.53 | 4.21 | 0.86 | 20.52 | — | 0.74 | 373,537 | — |
-| PIPR | PIPER SANDLER COMPANIES | lynch | ✅ | 100% | 66.53 | 4.21 | 0.86 | 20.52 | — | 0.74 | 373,537 | — |
-| PIPR | PIPER SANDLER COMPANIES | piotroski | ✅ | 89% | 66.53 | 4.21 | 0.86 | 20.52 | — | 0.74 | 373,537 | — |
-| AES | THE AES CORPORATION | greenblatt | ✅ | 100% | 14.92 | 11.84 | 2.62 | 22.40 | 0.77 | — | 3M | — |
-| DFH | DREAM FINDERS HOMES, INC. | lynch | ✅ | 75% | 11.99 | 5.60 | 0.85 | 15.25 | — | 1.49 | 1M | — |
-| IOSP | INNOSPEC INC. | lynch | ✅ | 100% | 78.29 | 16.76 | 1.48 | 8.79 | 2.79 | 0.38 | 193,392 | — |
-| IOSP | INNOSPEC INC. | piotroski | ✅ | 89% | 78.29 | 16.76 | 1.48 | 8.79 | 2.79 | 0.38 | 193,392 | — |
-| GL | GLOBE LIFE INC. | piotroski | ✅ | 78% | 162 | 11.50 | 2.23 | 19.44 | — | 4.16 | 389,644 | — |
-| ZION | ZIONS BANCORPORATION, NATION | piotroski | ✅ | 78% | 66.54 | 11.07 | 1.36 | 12.52 | — | 11.39 | 2M | — |
-| NJR | NEW JERSEY RESOURCES CORPORA | piotroski | ✅ | 78% | 54.82 | 16.46 | 2.31 | 14.03 | 0.73 | — | 475,189 | — |
-| KBR | KBR, Inc. | piotroski | ✅ | 89% | 36.29 | 11.31 | 3.11 | 27.61 | 1.22 | 3.37 | 3M | — |
-| OLLI | Ollie's Bargain Outlet Holdi | piotroski | ✅ | 78% | 95.35 | 24.51 | 3.12 | 12.74 | 2.41 | 0.57 | 966,975 | — |
-| CURB | Curbline Properties Corp. | piotroski | ✅ | 78% | 29.25 | 79.05 | 1.61 | 2.09 | — | 0.29 | 941,522 | — |
-| CURB | Curbline Properties Corp. | lynch | ✅ | 75% | 29.25 | 79.05 | 1.61 | 2.09 | — | 0.29 | 941,522 | — |
-| PACS | PACS Group, Inc. | piotroski | ✅ | 89% | 50.06 | 41.03 | 8.29 | 20.23 | 1.07 | 4.89 | 1M | — |
-| SPOK | SPOK HOLDINGS, INC. | piotroski | ✅ | 78% | 11.84 | 15.79 | 1.70 | 10.85 | 1.18 | 0.41 | 100,625 | — |
-| CHRW | C.H. ROBINSON WORLDWIDE, INC | piotroski | ✅ | 78% | 134 | 27.69 | 8.81 | 31.81 | 1.53 | 1.74 | 1M | — |
-| SHAK | SHAKE SHACK INC. | piotroski | ✅ | 89% | 75.04 | 68.84 | 5.98 | 8.70 | 1.76 | 2.56 | 662,324 | — |
-| VVX | V2X, Inc. | piotroski | ✅ | 100% | 82.17 | 33.54 | 2.41 | 7.18 | 1.22 | 2.02 | 213,653 | — |
-| CFFN | Capitol Federal Financial, I | piotroski | ✅ | 78% | 8.56 | 16.46 | 1.06 | 6.49 | — | 8.33 | 828,793 | — |
-| FLS | FLOWSERVE CORP | piotroski | ✅ | 78% | 85.20 | 32.27 | 5.09 | 15.80 | 2.03 | — | 1M | — |
-| AEIS | ADVANCED ENERGY INDUSTRIES,  | piotroski | ✅ | 78% | 232 | 60.31 | 6.56 | 10.89 | 1.59 | 0.86 | 665,850 | — |
-| AVNW | AVIAT NETWORKS, INC. | piotroski | ✅ | 78% | 16.44 | 86.53 | 0.80 | 0.95 | 1.97 | 1.24 | 454,913 | — |
-| TPC | Tutor Perini Corporation | piotroski | ✅ | 78% | 101 | 67.11 | 4.44 | 6.60 | 1.27 | 3.20 | 1M | — |
-| PIPR | PIPER SANDLER COMPANIES | graham | ▫️ | 78% | 66.53 | 4.21 | 0.86 | 20.52 | — | 0.74 | 373,537 | — |
-| PIPR | PIPER SANDLER COMPANIES | buffett | ▫️ | 50% | 66.53 | 4.21 | 0.86 | 20.52 | — | 0.74 | 373,537 | — |
-| PIPR | PIPER SANDLER COMPANIES | netnet | ▫️ | 25% | 66.53 | 4.21 | 0.86 | 20.52 | — | 0.74 | 373,537 | — |
-| PIPR | PIPER SANDLER COMPANIES | custom | ▫️ | 0% | 66.53 | 4.21 | 0.86 | 20.52 | — | 0.74 | 373,537 | — |
-| AES | THE AES CORPORATION | piotroski | ▫️ | 56% | 14.92 | 11.84 | 2.62 | 22.40 | 0.77 | — | 3M | — |
-| AES | THE AES CORPORATION | lynch | ▫️ | 50% | 14.92 | 11.84 | 2.62 | 22.40 | 0.77 | — | 3M | — |
-| AES | THE AES CORPORATION | graham | ▫️ | 44% | 14.92 | 11.84 | 2.62 | 22.40 | 0.77 | — | 3M | — |
-| AES | THE AES CORPORATION | buffett | ▫️ | 33% | 14.92 | 11.84 | 2.62 | 22.40 | 0.77 | — | 3M | — |
-| AES | THE AES CORPORATION | netnet | ▫️ | 25% | 14.92 | 11.84 | 2.62 | 22.40 | 0.77 | — | 3M | — |
-| AES | THE AES CORPORATION | custom | ▫️ | 0% | 14.92 | 11.84 | 2.62 | 22.40 | 0.77 | — | 3M | — |
-| DFH | DREAM FINDERS HOMES, INC. | graham | ▫️ | 78% | 11.99 | 5.60 | 0.85 | 15.25 | — | 1.49 | 1M | — |
-| DFH | DREAM FINDERS HOMES, INC. | greenblatt | ▫️ | 67% | 11.99 | 5.60 | 0.85 | 15.25 | — | 1.49 | 1M | — |
-| DFH | DREAM FINDERS HOMES, INC. | buffett | ▫️ | 33% | 11.99 | 5.60 | 0.85 | 15.25 | — | 1.49 | 1M | — |
-| DFH | DREAM FINDERS HOMES, INC. | netnet | ▫️ | 25% | 11.99 | 5.60 | 0.85 | 15.25 | — | 1.49 | 1M | — |
-| DFH | DREAM FINDERS HOMES, INC. | piotroski | ▫️ | 22% | 11.99 | 5.60 | 0.85 | 15.25 | — | 1.49 | 1M | — |
-| DFH | DREAM FINDERS HOMES, INC. | custom | ▫️ | 0% | 11.99 | 5.60 | 0.85 | 15.25 | — | 1.49 | 1M | — |
-| IOSP | INNOSPEC INC. | graham | ▫️ | 78% | 78.29 | 16.76 | 1.48 | 8.79 | 2.79 | 0.38 | 193,392 | — |
-| IOSP | INNOSPEC INC. | buffett | ▫️ | 50% | 78.29 | 16.76 | 1.48 | 8.79 | 2.79 | 0.38 | 193,392 | — |
-| IOSP | INNOSPEC INC. | netnet | ▫️ | 50% | 78.29 | 16.76 | 1.48 | 8.79 | 2.79 | 0.38 | 193,392 | — |
-| IOSP | INNOSPEC INC. | greenblatt | ▫️ | 33% | 78.29 | 16.76 | 1.48 | 8.79 | 2.79 | 0.38 | 193,392 | — |
-| IOSP | INNOSPEC INC. | custom | ▫️ | 0% | 78.29 | 16.76 | 1.48 | 8.79 | 2.79 | 0.38 | 193,392 | — |
-| GL | GLOBE LIFE INC. | buffett | ▫️ | 67% | 162 | 11.50 | 2.23 | 19.44 | — | 4.16 | 389,644 | — |
-| GL | GLOBE LIFE INC. | greenblatt | ▫️ | 67% | 162 | 11.50 | 2.23 | 19.44 | — | 4.16 | 389,644 | — |
-| GL | GLOBE LIFE INC. | graham | ▫️ | 56% | 162 | 11.50 | 2.23 | 19.44 | — | 4.16 | 389,644 | — |
-| GL | GLOBE LIFE INC. | lynch | ▫️ | 25% | 162 | 11.50 | 2.23 | 19.44 | — | 4.16 | 389,644 | — |
-| GL | GLOBE LIFE INC. | netnet | ▫️ | 25% | 162 | 11.50 | 2.23 | 19.44 | — | 4.16 | 389,644 | — |
+| SM | SM ENERGY CO | piotroski | ✅ | 78% | 31.16 | 5.52 | 0.74 | 13.47 | 0.69 | — | 4M | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | piotroski | ✅ | 100% | 177 | 24.95 | 8.55 | 34.27 | 1.46 | — | 362,177 | — |
+| AROC | Archrock, Inc. | piotroski | ✅ | 89% | 26.65 | 14.56 | 3.12 | 21.61 | 1.54 | 1.92 | 3M | — |
+| VAL | Valaris Limited | greenblatt | ✅ | 100% | 80.69 | 5.82 | 1.80 | 31.01 | 1.77 | 0.67 | 507,777 | — |
+| VAL | Valaris Limited | piotroski | ✅ | 89% | 80.69 | 5.82 | 1.80 | 31.01 | 1.77 | 0.67 | 507,777 | — |
+| PATH | UiPath, Inc. | piotroski | ✅ | 89% | 13.14 | 25.27 | 3.44 | 13.56 | 2.48 | 0.53 | 16M | — |
+| GGG | GRACO INC. | piotroski | ✅ | 89% | 72.98 | 23.69 | 4.65 | 19.66 | 3.15 | — | 3M | — |
+| GGG | GRACO INC. | buffett | ✅ | 83% | 72.98 | 23.69 | 4.65 | 19.66 | 3.15 | — | 3M | — |
+| PCTY | PAYLOCITY HOLDING CORPORATIO | piotroski | ✅ | 89% | 180 | 36.59 | 8.07 | 22.08 | 1.09 | 3.00 | 918,416 | — |
+| FHN | FIRST HORIZON CORP | piotroski | ✅ | 78% | 23.53 | 12.58 | 1.36 | 11.10 | — | 8.45 | 4M | — |
+| EGP | EASTGROUP PROPERTIES, INC. | piotroski | ✅ | 78% | 198 | 40.64 | 2.99 | 7.36 | — | 0.55 | 314,550 | — |
+| EGP | EASTGROUP PROPERTIES, INC. | lynch | ✅ | 75% | 198 | 40.64 | 2.99 | 7.36 | — | 0.55 | 314,550 | — |
+| CW | CURTISS-WRIGHT CORPORATION | piotroski | ✅ | 89% | 479 | 37.25 | 7.12 | 19.11 | 1.44 | 1.06 | 201,559 | — |
+| TBB | AT&T INC. | piotroski | ✅ | 78% | 18.16 | 5.97 | 1.03 | 17.36 | 0.91 | — | 105,537 | — |
+| ONTO | ONTO INNOVATION INC. | lynch | ✅ | 75% | 215 | 77.36 | 5.04 | 6.51 | 5.79 | 0.13 | 1M | — |
+| BJ | BJ’S WHOLESALE CLUB HOLDINGS | piotroski | ✅ | 89% | 111 | 25.28 | 6.65 | 26.32 | 0.75 | 2.42 | 1M | — |
+| APG | APi Group Corporation | piotroski | ✅ | 89% | 44.04 | — | 5.37 | 8.86 | 1.50 | 1.62 | 3M | — |
+| NPKI | NPK International Inc. | piotroski | ✅ | 78% | 9.36 | 20.80 | 2.28 | 11.09 | 1.43 | 0.26 | 893,424 | — |
+| GCO | GENESCO INC | piotroski | ✅ | 89% | 36.98 | 29.58 | 0.69 | 2.34 | 1.64 | 1.46 | 133,035 | — |
+| QUAD | Quad/Graphics, Inc. | piotroski | ✅ | 78% | 7.56 | 14.00 | — | -45.38 | 0.86 | -18.90 | 292,254 | — |
+| INNV | InnovAge Holding Corp. | piotroski | ✅ | 78% | 9.50 | — | 5.47 | -1.08 | 1.05 | 1.23 | 385,520 | — |
+| SHC | SOTERA HEALTH COMPANY | piotroski | ✅ | 78% | 16.44 | 60.89 | 7.77 | 12.86 | 2.46 | 4.38 | 3M | — |
+| SM | SM ENERGY CO | graham | ▫️ | 67% | 31.16 | 5.52 | 0.74 | 13.47 | 0.69 | — | 4M | — |
+| SM | SM ENERGY CO | greenblatt | ▫️ | 67% | 31.16 | 5.52 | 0.74 | 13.47 | 0.69 | — | 4M | — |
+| SM | SM ENERGY CO | lynch | ▫️ | 25% | 31.16 | 5.52 | 0.74 | 13.47 | 0.69 | — | 4M | — |
+| SM | SM ENERGY CO | netnet | ▫️ | 25% | 31.16 | 5.52 | 0.74 | 13.47 | 0.69 | — | 4M | — |
+| SM | SM ENERGY CO | buffett | ▫️ | 17% | 31.16 | 5.52 | 0.74 | 13.47 | 0.69 | — | 4M | — |
+| SM | SM ENERGY CO | custom | ▫️ | 0% | 31.16 | 5.52 | 0.74 | 13.47 | 0.69 | — | 4M | — |
+| INSW | International Seaways, Inc. | buffett | ▫️ | 67% | 101 | 16.26 | 2.49 | 15.31 | 3.71 | 0.32 | 681,885 | — |
+| INSW | International Seaways, Inc. | piotroski | ▫️ | 67% | 101 | 16.26 | 2.49 | 15.31 | 3.71 | 0.32 | 681,885 | — |
+| INSW | International Seaways, Inc. | lynch | ▫️ | 50% | 101 | 16.26 | 2.49 | 15.31 | 3.71 | 0.32 | 681,885 | — |
+| INSW | International Seaways, Inc. | graham | ▫️ | 33% | 101 | 16.26 | 2.49 | 15.31 | 3.71 | 0.32 | 681,885 | — |
+| INSW | International Seaways, Inc. | greenblatt | ▫️ | 33% | 101 | 16.26 | 2.49 | 15.31 | 3.71 | 0.32 | 681,885 | — |
+| INSW | International Seaways, Inc. | netnet | ▫️ | 25% | 101 | 16.26 | 2.49 | 15.31 | 3.71 | 0.32 | 681,885 | — |
+| INSW | International Seaways, Inc. | custom | ▫️ | 0% | 101 | 16.26 | 2.49 | 15.31 | 3.71 | 0.32 | 681,885 | — |
+| UROY | Uranium Royalty Corp. | graham | ▫️ | 67% | 2.98 | 10.28 | 1.33 | 12.87 | 5.94 | 0.19 | 2M | — |
+| UROY | Uranium Royalty Corp. | greenblatt | ▫️ | 67% | 2.98 | 10.28 | 1.33 | 12.87 | 5.94 | 0.19 | 2M | — |
+| UROY | Uranium Royalty Corp. | lynch | ▫️ | 50% | 2.98 | 10.28 | 1.33 | 12.87 | 5.94 | 0.19 | 2M | — |
+| UROY | Uranium Royalty Corp. | netnet | ▫️ | 50% | 2.98 | 10.28 | 1.33 | 12.87 | 5.94 | 0.19 | 2M | — |
+| UROY | Uranium Royalty Corp. | buffett | ▫️ | 33% | 2.98 | 10.28 | 1.33 | 12.87 | 5.94 | 0.19 | 2M | — |
+| UROY | Uranium Royalty Corp. | piotroski | ▫️ | 33% | 2.98 | 10.28 | 1.33 | 12.87 | 5.94 | 0.19 | 2M | — |
+| UROY | Uranium Royalty Corp. | custom | ▫️ | 0% | 2.98 | 10.28 | 1.33 | 12.87 | 5.94 | 0.19 | 2M | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | buffett | ▫️ | 67% | 177 | 24.95 | 8.55 | 34.27 | 1.46 | — | 362,177 | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | greenblatt | ▫️ | 67% | 177 | 24.95 | 8.55 | 34.27 | 1.46 | — | 362,177 | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | graham | ▫️ | 33% | 177 | 24.95 | 8.55 | 34.27 | 1.46 | — | 362,177 | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | lynch | ▫️ | 25% | 177 | 24.95 | 8.55 | 34.27 | 1.46 | — | 362,177 | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | netnet | ▫️ | 25% | 177 | 24.95 | 8.55 | 34.27 | 1.46 | — | 362,177 | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | custom | ▫️ | 0% | 177 | 24.95 | 8.55 | 34.27 | 1.46 | — | 362,177 | — |
+| AROC | Archrock, Inc. | buffett | ▫️ | 50% | 26.65 | 14.56 | 3.12 | 21.61 | 1.54 | 1.92 | 3M | — |
+| AROC | Archrock, Inc. | graham | ▫️ | 44% | 26.65 | 14.56 | 3.12 | 21.61 | 1.54 | 1.92 | 3M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
