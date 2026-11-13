@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-11-13 06:48 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-11-13 15:06 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **40** strategy matches passed.
+Screened **75** companies · **32** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| SAFX | XCF GLOBAL, INC. | greenblatt | ✅ | 100% | 0.07 | 0.13 | 0.26 | 197 | 0.11 | 10.14 | 11M | — |
-| KMT | KENNAMETAL INC. | graham | ✅ | 100% | 24.26 | 5.49 | 1.20 | 21.81 | 2.62 | 0.99 | 2M | — |
-| KMT | KENNAMETAL INC. | lynch | ✅ | 75% | 24.26 | 5.49 | 1.20 | 21.81 | 2.62 | 0.99 | 2M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | piotroski | ✅ | 78% | 27.25 | 6.00 | 1.77 | 29.41 | 1.47 | 1.81 | 1M | — |
-| RAMP | LiveRamp Holdings, Inc. | piotroski | ✅ | 89% | 38.50 | 17.19 | 2.58 | 15.02 | 2.47 | — | 5M | — |
-| QNST | QuinStreet, Inc. | lynch | ✅ | 75% | 19.12 | 13.66 | 3.44 | 25.14 | 1.22 | 1.23 | 635,457 | — |
-| XPEL | XPEL, INC. | buffett | ✅ | 100% | 37.62 | 20.34 | 3.72 | 18.28 | 3.25 | 0.35 | 258,700 | — |
-| XPEL | XPEL, INC. | lynch | ✅ | 100% | 37.62 | 20.34 | 3.72 | 18.28 | 3.25 | 0.35 | 258,700 | — |
-| AX | AXOS FINANCIAL, INC. | lynch | ✅ | 75% | 91.29 | 10.77 | 1.63 | 15.49 | — | 8.46 | 197,386 | — |
-| TREE | LendingTree, Inc. | greenblatt | ✅ | 100% | 35.31 | 3.28 | 1.73 | 52.76 | 1.67 | 1.98 | 253,030 | — |
-| BKE | BUCKLE, INC | greenblatt | ✅ | 100% | 43.94 | 10.61 | 5.25 | 49.39 | 1.89 | 1.33 | 834,698 | — |
-| BKE | BUCKLE, INC | buffett | ✅ | 83% | 43.94 | 10.61 | 5.25 | 49.39 | 1.89 | 1.33 | 834,698 | — |
-| SFM | Sprouts Farmers Market, Inc. | greenblatt | ✅ | 100% | 51.38 | 9.68 | 3.61 | 37.32 | 0.93 | 1.96 | 3M | — |
-| SFM | Sprouts Farmers Market, Inc. | piotroski | ✅ | 78% | 51.38 | 9.68 | 3.61 | 37.32 | 0.93 | 1.96 | 3M | — |
-| SSD | Simpson Manufacturing Co., I | buffett | ✅ | 83% | 199 | 24.12 | 4.10 | 17.00 | 3.54 | 0.51 | 217,946 | — |
-| SSD | Simpson Manufacturing Co., I | piotroski | ✅ | 78% | 199 | 24.12 | 4.10 | 17.00 | 3.54 | 0.51 | 217,946 | — |
-| FICO | Fair Isaac Corp | piotroski | ✅ | 89% | 717 | 19.75 | — | -21.56 | 0.99 | -1.54 | 550,497 | — |
-| FICO | Fair Isaac Corp | lynch | ✅ | 75% | 717 | 19.75 | — | -21.56 | 0.99 | -1.54 | 550,497 | — |
-| LMB | LIMBACH HOLDINGS, INC. | piotroski | ✅ | 78% | 56.65 | 17.54 | 3.50 | 19.97 | 1.44 | 0.95 | 88,736 | — |
-| LMB | LIMBACH HOLDINGS, INC. | lynch | ✅ | 75% | 56.65 | 17.54 | 3.50 | 19.97 | 1.44 | 0.95 | 88,736 | — |
-| FULT | FULTON FINANCIAL CORP | lynch | ✅ | 75% | 23.84 | 11.46 | 1.25 | 11.22 | — | 8.20 | 799,837 | — |
-| GL | GLOBE LIFE INC. | piotroski | ✅ | 78% | 160 | 11.38 | 2.21 | 19.44 | — | 4.16 | 319,104 | — |
-| CNA | CNA FINANCIAL CORPORATION | piotroski | ✅ | 78% | 48.29 | 10.30 | 1.13 | 11.00 | — | 4.98 | 360,160 | — |
-| BANF | BancFirst Corporation | lynch | ✅ | 75% | 119 | 16.68 | 2.16 | 12.98 | — | 7.00 | 199,849 | — |
-| NHC | NATIONAL HEALTHCARE CORP | piotroski | ✅ | 100% | 211 | 27.48 | 3.09 | 11.23 | 1.82 | 0.42 | 64,908 | — |
-| NHC | NATIONAL HEALTHCARE CORP | lynch | ✅ | 75% | 211 | 27.48 | 3.09 | 11.23 | 1.82 | 0.42 | 64,908 | — |
-| ATLC | Atlanticus Holdings Corporat | greenblatt | ✅ | 100% | 79.30 | 13.31 | 2.50 | 20.08 | — | 11.47 | 110,345 | — |
-| INVH | Invitation Homes Inc. | piotroski | ✅ | 78% | 26.65 | 27.76 | 1.71 | 6.17 | — | 0.96 | 5M | — |
-| PKE | PARK AEROSPACE CORP. | piotroski | ✅ | 100% | 24.70 | 44.11 | 3.82 | 8.67 | 18.24 | 0.09 | 157,561 | — |
-| PKE | PARK AEROSPACE CORP. | lynch | ✅ | 75% | 24.70 | 44.11 | 3.82 | 8.67 | 18.24 | 0.09 | 157,561 | — |
-| FCF | FIRST COMMONWEALTH FINANCIAL | lynch | ✅ | 75% | 20.92 | 14.23 | 1.39 | 9.80 | — | 6.94 | 579,095 | — |
-| BBWI | BATH & BODY WORKS, INC. | greenblatt | ✅ | 100% | 21.08 | 6.78 | — | -50.66 | 1.27 | — | 5M | — |
-| CART | MAPLEBEAR INC. | piotroski | ✅ | 78% | 58.48 | 36.55 | 6.49 | 17.75 | 2.40 | 0.39 | 2M | — |
-| SCI | SERVICE CORPORATION INTERNAT | piotroski | ✅ | 78% | 74.97 | 19.73 | 6.53 | 33.12 | 0.55 | — | 948,963 | — |
-| FLS | FLOWSERVE CORP | piotroski | ✅ | 78% | 83.66 | 31.69 | 5.00 | 15.80 | 2.03 | — | 972,192 | — |
-| LUV | SOUTHWEST AIRLINES CO | piotroski | ✅ | 78% | 45.23 | 57.25 | 3.16 | 5.53 | 0.52 | — | 4M | — |
-| LFST | LifeStance Health Group, Inc | piotroski | ✅ | 89% | 14.15 | 573 | 3.64 | 0.64 | 1.65 | 0.45 | 5M | — |
-| HII | HUNTINGTON INGALLS INDUSTRIE | piotroski | ✅ | 100% | 308 | 20.03 | 2.39 | 11.93 | 1.13 | 1.51 | 483,969 | — |
-| TRLV | TRULIEVE CANNABIS CORP. | piotroski | ✅ | 89% | 11.15 | — | 1.87 | -10.70 | 4.43 | 1.36 | 2M | — |
-| SHC | SOTERA HEALTH COMPANY | piotroski | ✅ | 78% | 16.30 | 60.37 | 7.70 | 12.86 | 2.46 | 4.38 | 2M | — |
-| SAFX | XCF GLOBAL, INC. | graham | ▫️ | 44% | 0.07 | 0.13 | 0.26 | 197 | 0.11 | 10.14 | 11M | — |
-| SAFX | XCF GLOBAL, INC. | buffett | ▫️ | 33% | 0.07 | 0.13 | 0.26 | 197 | 0.11 | 10.14 | 11M | — |
-| SAFX | XCF GLOBAL, INC. | lynch | ▫️ | 25% | 0.07 | 0.13 | 0.26 | 197 | 0.11 | 10.14 | 11M | — |
-| SAFX | XCF GLOBAL, INC. | netnet | ▫️ | 25% | 0.07 | 0.13 | 0.26 | 197 | 0.11 | 10.14 | 11M | — |
-| SAFX | XCF GLOBAL, INC. | piotroski | ▫️ | 11% | 0.07 | 0.13 | 0.26 | 197 | 0.11 | 10.14 | 11M | — |
-| SAFX | XCF GLOBAL, INC. | custom | ▫️ | 0% | 0.07 | 0.13 | 0.26 | 197 | 0.11 | 10.14 | 11M | — |
-| KMT | KENNAMETAL INC. | piotroski | ▫️ | 67% | 24.26 | 5.49 | 1.20 | 21.81 | 2.62 | 0.99 | 2M | — |
-| KMT | KENNAMETAL INC. | greenblatt | ▫️ | 67% | 24.26 | 5.49 | 1.20 | 21.81 | 2.62 | 0.99 | 2M | — |
-| KMT | KENNAMETAL INC. | buffett | ▫️ | 50% | 24.26 | 5.49 | 1.20 | 21.81 | 2.62 | 0.99 | 2M | — |
-| KMT | KENNAMETAL INC. | netnet | ▫️ | 50% | 24.26 | 5.49 | 1.20 | 21.81 | 2.62 | 0.99 | 2M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | greenblatt | ✅ | 100% | 125 | 13.93 | 4.19 | 37.16 | 3.37 | — | 1M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | piotroski | ✅ | 89% | 125 | 13.93 | 4.19 | 37.16 | 3.37 | — | 1M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | buffett | ✅ | 83% | 125 | 13.93 | 4.19 | 37.16 | 3.37 | — | 1M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | lynch | ✅ | 75% | 125 | 13.93 | 4.19 | 37.16 | 3.37 | — | 1M | — |
+| NSSC | NAPCO SECURITY TECHNOLOGIES, | buffett | ✅ | 100% | 30.34 | 25.28 | 5.70 | 22.53 | 4.90 | 0.25 | 274,679 | — |
+| NSSC | NAPCO SECURITY TECHNOLOGIES, | lynch | ✅ | 75% | 30.34 | 25.28 | 5.70 | 22.53 | 4.90 | 0.25 | 274,679 | — |
+| VTOL | Bristow Group Inc. | piotroski | ✅ | 78% | 40.67 | 9.41 | 1.15 | 12.18 | 1.90 | 1.18 | 49,166 | — |
+| GPK | Graphic Packaging Holding Co | lynch | ✅ | 75% | 10.79 | 7.29 | 0.97 | 13.31 | 1.30 | — | 4M | — |
+| HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 99.91 | 39.03 | 254 | 649 | 4.66 | 50.73 | 101,405 | — |
+| EFC | Ellington Financial Inc. | lynch | ✅ | 75% | 10.93 | 9.18 | 0.60 | 6.47 | — | 9.53 | 253,424 | — |
+| CMC | Commercial Metals Company | graham | ✅ | 89% | 61.95 | 10.57 | 1.48 | 13.96 | 2.34 | 1.18 | 59,666 | — |
+| VCYT | VERACYTE, INC. | piotroski | ✅ | 89% | 23.82 | 29.05 | 1.47 | 5.07 | 8.15 | 0.07 | 105,724 | — |
+| ROL | ROLLINS, INC. | buffett | ✅ | 83% | 37.91 | 34.78 | 13.35 | 38.32 | 0.60 | 1.29 | 4M | — |
+| PCTY | PAYLOCITY HOLDING CORPORATIO | piotroski | ✅ | 89% | 180 | 36.65 | 8.09 | 22.08 | 1.09 | 3.00 | 19,724 | — |
+| TRN | TRINITY INDUSTRIES INC | greenblatt | ✅ | 100% | 30.00 | 9.84 | 2.31 | 23.50 | — | 6.76 | 18,743 | — |
+| TRN | TRINITY INDUSTRIES INC | piotroski | ✅ | 78% | 30.00 | 9.84 | 2.31 | 23.50 | — | 6.76 | 18,743 | — |
+| UMBF | UMB FINANCIAL CORP | lynch | ✅ | 75% | 133 | 14.36 | 1.28 | 9.13 | — | 8.50 | 14,164 | — |
+| SCSC | ScanSource, Inc. | graham | ✅ | 89% | 44.26 | 12.16 | 1.05 | 8.66 | 1.76 | 1.12 | 321,278 | — |
+| SCSC | ScanSource, Inc. | piotroski | ✅ | 78% | 44.26 | 12.16 | 1.05 | 8.66 | 1.76 | 1.12 | 321,278 | — |
+| SCSC | ScanSource, Inc. | lynch | ✅ | 75% | 44.26 | 12.16 | 1.05 | 8.66 | 1.76 | 1.12 | 321,278 | — |
+| FHN | FIRST HORIZON CORP | piotroski | ✅ | 78% | 23.38 | 12.50 | 1.35 | 11.10 | — | 8.45 | 369,555 | — |
+| EMBC | EMBECTA CORP. | piotroski | ✅ | 78% | 6.38 | 3.94 | — | -14.66 | 2.41 | — | 24,966 | — |
+| WOR | WORTHINGTON ENTERPRISES, INC | piotroski | ✅ | 89% | 58.45 | 18.61 | 2.83 | 15.20 | 2.37 | 0.80 | 3,218 | — |
+| LB | LandBridge Corporation | piotroski | ✅ | 78% | 73.01 | 77.67 | 16.42 | 8.85 | 4.87 | 1.68 | 37,081 | — |
+| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 45.66 | 43.90 | — | -29.14 | 1.60 | -6.05 | 362,294 | — |
+| SGRY | Surgery Partners, Inc. | piotroski | ✅ | 78% | 26.66 | — | 1.98 | -4.55 | 1.87 | — | 127,704 | — |
+| HII | HUNTINGTON INGALLS INDUSTRIE | piotroski | ✅ | 100% | 303 | 19.69 | 2.35 | 11.93 | 1.13 | 1.51 | 20,899 | — |
+| AEIS | ADVANCED ENERGY INDUSTRIES,  | piotroski | ✅ | 78% | 219 | 57.00 | 6.20 | 10.89 | 1.59 | 0.86 | 29,606 | — |
+| CALX | Calix, Inc | piotroski | ✅ | 78% | 32.68 | 126 | 2.64 | 2.08 | 4.24 | 0.23 | 572,013 | — |
+| VSAT | VIASAT, INC. | piotroski | ✅ | 78% | 68.53 | — | 1.98 | -0.73 | 2.41 | 2.25 | 70,250 | — |
+| THO | THOR Industries, Inc. | piotroski | ✅ | 78% | 78.28 | 23.16 | 0.97 | 4.17 | 1.77 | — | 39,785 | — |
+| ARKO | ARKO Corp. | piotroski | ✅ | 78% | 4.12 | 27.43 | 1.77 | 8.51 | 1.66 | 11.85 | 27,579 | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | graham | ▫️ | 67% | 125 | 13.93 | 4.19 | 37.16 | 3.37 | — | 1M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | netnet | ▫️ | 25% | 125 | 13.93 | 4.19 | 37.16 | 3.37 | — | 1M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | custom | ▫️ | 0% | 125 | 13.93 | 4.19 | 37.16 | 3.37 | — | 1M | — |
+| NSSC | NAPCO SECURITY TECHNOLOGIES, | greenblatt | ▫️ | 67% | 30.34 | 25.28 | 5.70 | 22.53 | 4.90 | 0.25 | 274,679 | — |
+| NSSC | NAPCO SECURITY TECHNOLOGIES, | graham | ▫️ | 56% | 30.34 | 25.28 | 5.70 | 22.53 | 4.90 | 0.25 | 274,679 | — |
+| NSSC | NAPCO SECURITY TECHNOLOGIES, | piotroski | ▫️ | 56% | 30.34 | 25.28 | 5.70 | 22.53 | 4.90 | 0.25 | 274,679 | — |
+| NSSC | NAPCO SECURITY TECHNOLOGIES, | netnet | ▫️ | 50% | 30.34 | 25.28 | 5.70 | 22.53 | 4.90 | 0.25 | 274,679 | — |
+| NSSC | NAPCO SECURITY TECHNOLOGIES, | custom | ▫️ | 0% | 30.34 | 25.28 | 5.70 | 22.53 | 4.90 | 0.25 | 274,679 | — |
+| VTOL | Bristow Group Inc. | greenblatt | ▫️ | 67% | 40.67 | 9.41 | 1.15 | 12.18 | 1.90 | 1.18 | 49,166 | — |
+| VTOL | Bristow Group Inc. | graham | ▫️ | 56% | 40.67 | 9.41 | 1.15 | 12.18 | 1.90 | 1.18 | 49,166 | — |
+| VTOL | Bristow Group Inc. | lynch | ▫️ | 25% | 40.67 | 9.41 | 1.15 | 12.18 | 1.90 | 1.18 | 49,166 | — |
+| VTOL | Bristow Group Inc. | netnet | ▫️ | 25% | 40.67 | 9.41 | 1.15 | 12.18 | 1.90 | 1.18 | 49,166 | — |
+| VTOL | Bristow Group Inc. | buffett | ▫️ | 0% | 40.67 | 9.41 | 1.15 | 12.18 | 1.90 | 1.18 | 49,166 | — |
+| VTOL | Bristow Group Inc. | custom | ▫️ | 0% | 40.67 | 9.41 | 1.15 | 12.18 | 1.90 | 1.18 | 49,166 | — |
+| GPK | Graphic Packaging Holding Co | graham | ▫️ | 78% | 10.79 | 7.29 | 0.97 | 13.31 | 1.30 | — | 4M | — |
+| GPK | Graphic Packaging Holding Co | greenblatt | ▫️ | 67% | 10.79 | 7.29 | 0.97 | 13.31 | 1.30 | — | 4M | — |
+| GPK | Graphic Packaging Holding Co | piotroski | ▫️ | 56% | 10.79 | 7.29 | 0.97 | 13.31 | 1.30 | — | 4M | — |
+| GPK | Graphic Packaging Holding Co | netnet | ▫️ | 25% | 10.79 | 7.29 | 0.97 | 13.31 | 1.30 | — | 4M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
