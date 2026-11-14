@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-11-14 01:35 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-11-14 07:56 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **35** strategy matches passed.
+Screened **75** companies · **38** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| BBW | BUILD-A-BEAR WORKSHOP INC | greenblatt | ✅ | 100% | 29.40 | 7.37 | 2.48 | 33.67 | 1.55 | — | 383,114 | — |
-| RAMP | LiveRamp Holdings, Inc. | piotroski | ✅ | 89% | 38.50 | 17.19 | 2.58 | 15.02 | 2.47 | — | 5M | — |
-| CRS | CARPENTER TECHNOLOGY CORPORA | piotroski | ✅ | 89% | 292 | 27.72 | 6.60 | 23.78 | 3.81 | 0.72 | 1M | — |
-| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 133 | 25.45 | 4.87 | 19.12 | 2.99 | — | 221,692 | — |
-| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 133 | 25.45 | 4.87 | 19.12 | 2.99 | — | 221,692 | — |
-| HL | HECLA MINING CO/DE/ | piotroski | ✅ | 89% | 13.10 | 26.73 | 3.31 | 12.41 | 2.72 | 0.37 | 22M | — |
-| AIT | APPLIED INDUSTRIAL TECHNOLOG | piotroski | ✅ | 78% | 298 | 27.18 | 6.05 | 22.27 | 2.58 | 0.62 | 114,237 | — |
-| AIT | APPLIED INDUSTRIAL TECHNOLOG | lynch | ✅ | 75% | 298 | 27.18 | 6.05 | 22.27 | 2.58 | 0.62 | 114,237 | — |
-| KRYS | Krystal Biotech, Inc. | piotroski | ✅ | 89% | 305 | 44.62 | 7.50 | 16.80 | 9.95 | 0.09 | 109,685 | — |
-| GTM | ZoomInfo Technologies Inc. | piotroski | ✅ | 89% | 3.30 | 8.68 | 0.71 | 8.23 | 0.72 | 3.27 | 4M | — |
-| KTB | KONTOOR BRANDS, INC. | lynch | ✅ | 75% | 81.56 | 20.14 | 8.10 | 40.27 | 1.82 | 3.57 | 576,508 | — |
-| JOE | The St. Joe Company | piotroski | ✅ | 89% | 70.36 | 35.36 | 5.32 | 15.09 | — | 0.97 | 139,540 | — |
-| BDC | BELDEN INC. | piotroski | ✅ | 89% | 102 | 17.24 | 3.24 | 18.78 | 1.93 | — | 233,157 | — |
-| PLUS | ePlus inc. | piotroski | ✅ | 78% | 96.44 | 19.17 | 2.38 | 12.41 | 2.24 | 0.68 | 180,682 | — |
-| DCI | Donaldson Company, Inc. | buffett | ✅ | 83% | 86.70 | 22.52 | 5.79 | 25.72 | 2.08 | 1.26 | 350,069 | — |
-| TOST | Toast, Inc. | piotroski | ✅ | 78% | 34.68 | 61.93 | 9.91 | 16.10 | 2.75 | 0.48 | 8M | — |
-| INVH | Invitation Homes Inc. | piotroski | ✅ | 78% | 26.85 | 27.97 | 1.73 | 6.17 | — | 0.96 | 4M | — |
-| TBB | AT&T INC. | piotroski | ✅ | 78% | 17.63 | 5.80 | 1.00 | 17.36 | 0.91 | — | 101,934 | — |
-| POST | Post Holdings, Inc. | lynch | ✅ | 75% | 81.18 | 14.73 | 1.36 | 8.94 | 1.67 | 2.60 | 451,384 | — |
-| BBWI | BATH & BODY WORKS, INC. | greenblatt | ✅ | 100% | 21.39 | 6.88 | — | -50.66 | 1.27 | — | 4M | — |
-| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 18.96 | 9.39 | 2.11 | 22.51 | 2.37 | 2.27 | 1M | — |
-| SSTK | SHUTTERSTOCK, INC. | piotroski | ✅ | 89% | 2.92 | 2.34 | 0.18 | 7.83 | 0.54 | 1.33 | 981,796 | — |
-| CURB | Curbline Properties Corp. | piotroski | ✅ | 78% | 29.15 | 78.78 | 1.61 | 2.09 | — | 0.29 | 793,479 | — |
-| CURB | Curbline Properties Corp. | lynch | ✅ | 75% | 29.15 | 78.78 | 1.61 | 2.09 | — | 0.29 | 793,479 | — |
-| ZWS | ZURN ELKAY WATER SOLUTIONS C | piotroski | ✅ | 100% | 45.87 | 39.89 | 4.90 | 12.35 | 3.13 | 0.67 | 800,915 | — |
-| CYH | COMMUNITY HEALTH SYSTEMS, IN | piotroski | ✅ | 89% | 2.24 | 0.59 | — | -36.51 | 1.46 | -10.07 | 2M | — |
-| MAGN | Magnera Corporation | piotroski | ✅ | 78% | 12.64 | — | 0.42 | -14.94 | 2.37 | 2.75 | 186,730 | — |
+| BYD | BOYD GAMING CORP | greenblatt | ✅ | 100% | 77.24 | 3.42 | 2.42 | 70.66 | 0.54 | — | 563,805 | — |
+| BYD | BOYD GAMING CORP | piotroski | ✅ | 78% | 77.24 | 3.42 | 2.42 | 70.66 | 0.54 | — | 563,805 | — |
+| DECK | DECKERS OUTDOOR CORP | greenblatt | ✅ | 100% | 86.82 | 12.37 | 5.06 | 40.97 | 3.54 | — | 2M | — |
+| DECK | DECKERS OUTDOOR CORP | buffett | ✅ | 83% | 86.82 | 12.37 | 5.06 | 40.97 | 3.54 | — | 2M | — |
+| DECK | DECKERS OUTDOOR CORP | piotroski | ✅ | 78% | 86.82 | 12.37 | 5.06 | 40.97 | 3.54 | — | 2M | — |
+| DECK | DECKERS OUTDOOR CORP | lynch | ✅ | 75% | 86.82 | 12.37 | 5.06 | 40.97 | 3.54 | — | 2M | — |
+| KMT | KENNAMETAL INC. | graham | ✅ | 100% | 23.99 | 5.43 | 1.18 | 21.81 | 2.62 | 0.99 | 1M | — |
+| KMT | KENNAMETAL INC. | lynch | ✅ | 75% | 23.99 | 5.43 | 1.18 | 21.81 | 2.62 | 0.99 | 1M | — |
+| VRRM | VERRA MOBILITY CORPORATION | piotroski | ✅ | 100% | 1.84 | 2.16 | 1.01 | 46.64 | 2.09 | 4.62 | 4M | — |
+| TREE | LendingTree, Inc. | greenblatt | ✅ | 100% | 35.76 | 3.32 | 1.75 | 52.76 | 1.67 | 1.98 | 221,685 | — |
+| EZPW | EZCORP, INC. | piotroski | ✅ | 89% | 27.55 | 13.31 | 1.93 | 13.91 | 4.54 | 0.87 | 2M | — |
+| CARG | CarGurus, Inc. | piotroski | ✅ | 89% | 34.81 | 22.46 | 9.34 | 41.66 | 2.81 | 0.77 | 775,455 | — |
+| UHS | UNIVERSAL HEALTH SERVICES, I | piotroski | ✅ | 89% | 194 | 8.40 | 1.72 | 20.46 | 1.05 | — | 448,255 | — |
+| LII | LENNOX INTERNATIONAL INC | lynch | ✅ | 75% | 352 | 15.45 | 10.71 | 69.28 | 1.60 | 2.51 | 600,128 | — |
+| KFY | KORN FERRY | piotroski | ✅ | 100% | 75.55 | 14.47 | 2.01 | 14.06 | 1.94 | 1.06 | 375,593 | — |
+| KFY | KORN FERRY | lynch | ✅ | 75% | 75.55 | 14.47 | 2.01 | 14.06 | 1.94 | 1.06 | 375,593 | — |
+| DUKB | Duke Energy CORP | piotroski | ✅ | 89% | 19.93 | 3.16 | 0.30 | 9.58 | 0.55 | — | 84,860 | — |
+| DUKB | Duke Energy CORP | lynch | ✅ | 75% | 19.93 | 3.16 | 0.30 | 9.58 | 0.55 | — | 84,860 | — |
+| DAKT | Daktronics, Inc. | piotroski | ✅ | 89% | 19.26 | 20.93 | 3.16 | 15.09 | 2.31 | — | 252,281 | — |
+| DAKT | Daktronics, Inc. | lynch | ✅ | 75% | 19.26 | 20.93 | 3.16 | 15.09 | 2.31 | — | 252,281 | — |
+| SSB | SOUTHSTATE BANK CORP | lynch | ✅ | 75% | 105 | 13.29 | 1.17 | 8.82 | — | 6.42 | 560,125 | — |
+| VCYT | VERACYTE, INC. | piotroski | ✅ | 89% | 24.33 | 29.67 | 1.50 | 5.07 | 8.15 | 0.07 | 2M | — |
+| BFH | BREAD FINANCIAL HOLDINGS, IN | lynch | ✅ | 75% | 98.61 | 9.06 | 1.41 | 15.57 | — | 5.81 | 319,181 | — |
+| OPY | OPPENHEIMER HOLDINGS INC. | piotroski | ✅ | 78% | 89.25 | 6.84 | 1.03 | 15.08 | — | 2.77 | 80,627 | — |
+| CWEN | Clearway Energy, Inc. | lynch | ✅ | 75% | 33.42 | 6.92 | 0.20 | 2.91 | 1.13 | 1.85 | 845,264 | — |
+| EHC | Encompass Health Corporation | piotroski | ✅ | 100% | 141 | 25.45 | 5.91 | 23.22 | 1.08 | 1.56 | 502,861 | — |
+| MD | Pediatrix Medical Group, Inc | piotroski | ✅ | 78% | 31.30 | 16.13 | 3.08 | 19.10 | 1.66 | 1.59 | 468,055 | — |
+| PACS | PACS Group, Inc. | piotroski | ✅ | 89% | 48.32 | 39.61 | 8.00 | 20.23 | 1.07 | 4.89 | 464,464 | — |
+| LNT | ALLIANT ENERGY CORPORATION | piotroski | ✅ | 78% | 73.43 | 23.39 | 2.58 | 11.04 | 0.80 | — | 2M | — |
+| SCI | SERVICE CORPORATION INTERNAT | piotroski | ✅ | 78% | 74.98 | 19.73 | 6.53 | 33.12 | 0.55 | — | 998,448 | — |
 | WWW | WOLVERINE WORLD WIDE, INC. | piotroski | ✅ | 78% | 24.89 | 21.83 | 4.98 | 23.48 | 1.40 | — | 3M | — |
-| HII | HUNTINGTON INGALLS INDUSTRIE | piotroski | ✅ | 100% | 306 | 19.90 | 2.37 | 11.93 | 1.13 | 1.51 | 334,693 | — |
-| FET | FORUM ENERGY TECHNOLOGIES, I | piotroski | ✅ | 78% | 76.87 | — | 3.14 | -3.32 | 2.17 | 1.58 | 122,665 | — |
-| NEOG | Neogen Corporation | piotroski | ✅ | 89% | 11.23 | — | 1.17 | -0.38 | 3.82 | 0.60 | 2M | — |
-| AEIS | ADVANCED ENERGY INDUSTRIES,  | piotroski | ✅ | 78% | 220 | 57.21 | 6.22 | 10.89 | 1.59 | 0.86 | 630,526 | — |
-| ARKO | ARKO Corp. | piotroski | ✅ | 78% | 4.00 | 26.67 | 1.72 | 8.51 | 1.66 | 11.85 | 629,294 | — |
-| LILA | Liberty Latin America Ltd. | piotroski | ✅ | 78% | 9.84 | — | 3.53 | -110 | 1.14 | 20.09 | 396,995 | — |
-| TLYS | TILLY’S, INC. | piotroski | ✅ | 78% | 4.22 | — | 1.49 | -20.50 | 1.25 | 2.65 | 90,059 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | graham | ▫️ | 56% | 29.40 | 7.37 | 2.48 | 33.67 | 1.55 | — | 383,114 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | piotroski | ▫️ | 56% | 29.40 | 7.37 | 2.48 | 33.67 | 1.55 | — | 383,114 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | buffett | ▫️ | 50% | 29.40 | 7.37 | 2.48 | 33.67 | 1.55 | — | 383,114 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | lynch | ▫️ | 25% | 29.40 | 7.37 | 2.48 | 33.67 | 1.55 | — | 383,114 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | netnet | ▫️ | 25% | 29.40 | 7.37 | 2.48 | 33.67 | 1.55 | — | 383,114 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | custom | ▫️ | 0% | 29.40 | 7.37 | 2.48 | 33.67 | 1.55 | — | 383,114 | — |
-| RAMP | LiveRamp Holdings, Inc. | buffett | ▫️ | 50% | 38.50 | 17.19 | 2.58 | 15.02 | 2.47 | — | 5M | — |
-| RAMP | LiveRamp Holdings, Inc. | graham | ▫️ | 44% | 38.50 | 17.19 | 2.58 | 15.02 | 2.47 | — | 5M | — |
-| RAMP | LiveRamp Holdings, Inc. | greenblatt | ▫️ | 33% | 38.50 | 17.19 | 2.58 | 15.02 | 2.47 | — | 5M | — |
-| RAMP | LiveRamp Holdings, Inc. | lynch | ▫️ | 25% | 38.50 | 17.19 | 2.58 | 15.02 | 2.47 | — | 5M | — |
-| RAMP | LiveRamp Holdings, Inc. | netnet | ▫️ | 25% | 38.50 | 17.19 | 2.58 | 15.02 | 2.47 | — | 5M | — |
-| RAMP | LiveRamp Holdings, Inc. | custom | ▫️ | 0% | 38.50 | 17.19 | 2.58 | 15.02 | 2.47 | — | 5M | — |
-| CRS | CARPENTER TECHNOLOGY CORPORA | buffett | ▫️ | 50% | 292 | 27.72 | 6.60 | 23.78 | 3.81 | 0.72 | 1M | — |
-| CRS | CARPENTER TECHNOLOGY CORPORA | lynch | ▫️ | 50% | 292 | 27.72 | 6.60 | 23.78 | 3.81 | 0.72 | 1M | — |
-| CRS | CARPENTER TECHNOLOGY CORPORA | netnet | ▫️ | 50% | 292 | 27.72 | 6.60 | 23.78 | 3.81 | 0.72 | 1M | — |
+| MPAA | Motorcar Parts of America, I | piotroski | ✅ | 78% | 7.62 | 12.30 | 0.57 | 4.66 | 1.46 | 2.83 | 134,880 | — |
+| LFST | LifeStance Health Group, Inc | piotroski | ✅ | 89% | 14.08 | 570 | 3.62 | 0.64 | 1.65 | 0.45 | 4M | — |
+| HCSG | HEALTHCARE SERVICES GROUP, I | piotroski | ✅ | 100% | 24.90 | 30.74 | 3.56 | 11.58 | 3.38 | — | 274,850 | — |
+| INNV | InnovAge Holding Corp. | piotroski | ✅ | 78% | 9.47 | — | 5.45 | -1.08 | 1.05 | 1.23 | 334,550 | — |
+| EVCM | EverCommerce Inc. | piotroski | ✅ | 78% | 6.33 | 63.30 | 1.62 | 2.45 | 2.11 | 0.91 | 150,723 | — |
+| OMCL | OMNICELL, INC | piotroski | ✅ | 78% | 35.03 | 876 | 1.32 | 0.17 | 1.43 | 0.60 | 313,243 | — |
+| AMN | AMN HEALTHCARE SERVICES, INC | piotroski | ✅ | 78% | 38.02 | — | 2.28 | -14.90 | 0.94 | 2.26 | 574,442 | — |
+| BYD | BOYD GAMING CORP | buffett | ▫️ | 67% | 77.24 | 3.42 | 2.42 | 70.66 | 0.54 | — | 563,805 | — |
+| BYD | BOYD GAMING CORP | graham | ▫️ | 56% | 77.24 | 3.42 | 2.42 | 70.66 | 0.54 | — | 563,805 | — |
+| BYD | BOYD GAMING CORP | lynch | ▫️ | 25% | 77.24 | 3.42 | 2.42 | 70.66 | 0.54 | — | 563,805 | — |
+| BYD | BOYD GAMING CORP | netnet | ▫️ | 25% | 77.24 | 3.42 | 2.42 | 70.66 | 0.54 | — | 563,805 | — |
+| BYD | BOYD GAMING CORP | custom | ▫️ | 0% | 77.24 | 3.42 | 2.42 | 70.66 | 0.54 | — | 563,805 | — |
+| DECK | DECKERS OUTDOOR CORP | graham | ▫️ | 78% | 86.82 | 12.37 | 5.06 | 40.97 | 3.54 | — | 2M | — |
+| DECK | DECKERS OUTDOOR CORP | netnet | ▫️ | 25% | 86.82 | 12.37 | 5.06 | 40.97 | 3.54 | — | 2M | — |
+| DECK | DECKERS OUTDOOR CORP | custom | ▫️ | 0% | 86.82 | 12.37 | 5.06 | 40.97 | 3.54 | — | 2M | — |
+| KMT | KENNAMETAL INC. | piotroski | ▫️ | 67% | 23.99 | 5.43 | 1.18 | 21.81 | 2.62 | 0.99 | 1M | — |
+| KMT | KENNAMETAL INC. | greenblatt | ▫️ | 67% | 23.99 | 5.43 | 1.18 | 21.81 | 2.62 | 0.99 | 1M | — |
+| KMT | KENNAMETAL INC. | buffett | ▫️ | 50% | 23.99 | 5.43 | 1.18 | 21.81 | 2.62 | 0.99 | 1M | — |
+| KMT | KENNAMETAL INC. | netnet | ▫️ | 50% | 23.99 | 5.43 | 1.18 | 21.81 | 2.62 | 0.99 | 1M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
