@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-BBW,BUILD-A-BEAR WORKSHOP INC,greenblatt,True,3,3,100.0,28.41,7.12,2.40,33.67,1.55,—,32.62,"273,304",—
-LRN,"STRIDE, INC.",lynch,True,4,4,100.0,75.82,10.62,2.20,20.72,5.94,0.49,74.43,"630,025",—
-LRN,"STRIDE, INC.",piotroski,True,8,9,88.9,75.82,10.62,2.20,20.72,5.94,0.49,74.43,"630,025",—
-LRN,"STRIDE, INC.",buffett,True,5,6,83.3,75.82,10.62,2.20,20.72,5.94,0.49,74.43,"630,025",—
-TREE,"LendingTree, Inc.",greenblatt,True,3,3,100.0,35.31,3.28,1.73,52.76,1.67,1.98,70.33,"253,030",—
-ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.20,4.88,0.14,4.91,1.93,0.73,1.14,"5,300",—
-VAL,Valaris Limited,greenblatt,True,3,3,100.0,84.14,6.07,1.88,31.01,1.77,0.67,118,"688,751",—
-VAL,Valaris Limited,piotroski,True,8,9,88.9,84.14,6.07,1.88,31.01,1.77,0.67,118,"688,751",—
-KFY,KORN FERRY,piotroski,True,9,9,100.0,75.75,14.51,2.02,14.06,1.94,1.06,66.42,"347,908",—
-KFY,KORN FERRY,lynch,True,3,4,75.0,75.75,14.51,2.02,14.06,1.94,1.06,66.42,"347,908",—
-SFD,"SMITHFIELD FOODS, INC.",graham,True,9,9,100.0,18.98,7.56,1.10,14.51,2.97,—,31.27,2M,—
-FICO,Fair Isaac Corp,piotroski,True,8,9,88.9,717,19.75,—,-21.56,0.99,-1.54,—,"550,497",—
-SNA,Snap-on Inc,buffett,True,5,6,83.3,369,19.21,3.29,17.14,4.79,0.41,220,"465,664",—
-FICO,Fair Isaac Corp,lynch,True,3,4,75.0,717,19.75,—,-21.56,0.99,-1.54,—,"550,497",—
-AGX,ARGAN INC,lynch,True,3,4,75.0,306,31.47,9.38,29.80,1.59,1.57,84.62,"119,076",—
-FSS,FEDERAL SIGNAL CORPORATION,lynch,True,3,4,75.0,115,28.77,5.13,17.84,3.02,0.73,45.03,"274,569",—
-GTX,Garrett Motion Inc.,lynch,True,4,4,100.0,20.88,13.74,—,-38.65,0.97,-3.95,—,2M,—
-GTX,Garrett Motion Inc.,piotroski,True,8,9,88.9,20.88,13.74,—,-38.65,0.97,-3.95,—,2M,—
-BDC,BELDEN INC.,piotroski,True,8,9,88.9,102,17.29,3.25,18.78,1.93,—,64.66,"219,771",—
-BFAM,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,piotroski,True,8,9,88.9,52.79,15.71,2.26,14.42,0.52,1.90,41.99,"858,287",—
-BFAM,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,lynch,True,3,4,75.0,52.79,15.71,2.26,14.42,0.52,1.90,41.99,"858,287",—
-NJR,NEW JERSEY RESOURCES CORPORATION,piotroski,True,7,9,77.8,55.59,16.69,2.34,14.03,0.73,—,42.17,"510,370",—
-KRT,Karat Packaging Inc.,piotroski,True,7,9,77.8,33.45,21.44,4.52,21.07,2.30,0.88,16.12,"377,594",—
+BBW,BUILD-A-BEAR WORKSHOP INC,greenblatt,True,3,3,100.0,29.40,7.37,2.48,33.67,1.55,—,32.62,"383,114",—
+RAMP,"LiveRamp Holdings, Inc.",piotroski,True,8,9,88.9,38.50,17.19,2.58,15.02,2.47,—,27.44,5M,—
+CRS,CARPENTER TECHNOLOGY CORPORATION,piotroski,True,8,9,88.9,292,27.72,6.60,23.78,3.81,0.72,102,1M,—
+IPAR,"INTERPARFUMS, INC.",buffett,True,5,6,83.3,133,25.45,4.87,19.12,2.99,—,56.84,"221,692",—
+IPAR,"INTERPARFUMS, INC.",lynch,True,3,4,75.0,133,25.45,4.87,19.12,2.99,—,56.84,"221,692",—
+HL,HECLA MINING CO/DE/,piotroski,True,8,9,88.9,13.10,26.73,3.31,12.41,2.72,0.37,6.60,22M,—
+AIT,"APPLIED INDUSTRIAL TECHNOLOGIES, INC.",piotroski,True,7,9,77.8,298,27.18,6.05,22.27,2.58,0.62,110,"114,237",—
+AIT,"APPLIED INDUSTRIAL TECHNOLOGIES, INC.",lynch,True,3,4,75.0,298,27.18,6.05,22.27,2.58,0.62,110,"114,237",—
+KRYS,"Krystal Biotech, Inc.",piotroski,True,8,9,88.9,305,44.62,7.50,16.80,9.95,0.09,79.16,"109,685",—
+GTM,ZoomInfo Technologies Inc.,piotroski,True,8,9,88.9,3.30,8.68,0.71,8.23,0.72,3.27,6.31,4M,—
+KTB,"KONTOOR BRANDS, INC.",lynch,True,3,4,75.0,81.56,20.14,8.10,40.27,1.82,3.57,30.29,"576,508",—
+JOE,The St. Joe Company,piotroski,True,8,9,88.9,70.36,35.36,5.32,15.09,—,0.97,24.33,"139,540",—
+BDC,BELDEN INC.,piotroski,True,8,9,88.9,102,17.24,3.24,18.78,1.93,—,64.66,"233,157",—
+PLUS,ePlus inc.,piotroski,True,7,9,77.8,96.44,19.17,2.38,12.41,2.24,0.68,67.73,"180,682",—
+DCI,"Donaldson Company, Inc.",buffett,True,5,6,83.3,86.70,22.52,5.79,25.72,2.08,1.26,36.01,"350,069",—
+TOST,"Toast, Inc.",piotroski,True,7,9,77.8,34.68,61.93,9.91,16.10,2.75,0.48,6.64,8M,—
 INVH,Invitation Homes Inc.,piotroski,True,7,9,77.8,26.85,27.97,1.73,6.17,—,0.96,18.32,4M,—
-PKE,PARK AEROSPACE CORP.,piotroski,True,9,9,100.0,24.33,43.45,3.77,8.67,18.24,0.09,9.02,"113,337",—
-PKE,PARK AEROSPACE CORP.,lynch,True,3,4,75.0,24.33,43.45,3.77,8.67,18.24,0.09,9.02,"113,337",—
-EXTR,"EXTREME NETWORKS, INC.",piotroski,True,8,9,88.9,26.75,86.29,40.75,47.54,0.93,—,2.14,2M,—
-CNMD,CONMED CORPORATION,lynch,True,3,4,75.0,50.59,33.50,1.53,4.55,2.14,1.25,33.57,"189,711",—
-MD,"Pediatrix Medical Group, Inc.",piotroski,True,7,9,77.8,31.30,16.13,3.08,19.10,1.66,1.59,21.05,"467,901",—
-DTM,"DT Midstream, Inc.",piotroski,True,7,9,77.8,120,27.84,2.59,9.31,1.07,1.10,66.86,"514,494",—
-SARO,"StandardAero, Inc.",piotroski,True,8,9,88.9,27.56,33.20,3.45,10.40,2.20,1.46,12.21,5M,—
-IDT,IDT Corporation,piotroski,True,7,9,77.8,82.80,23.93,5.49,22.96,1.86,0.94,34.26,"124,166",—
-IEX,IDEX CORP,piotroski,True,7,9,77.8,238,37.13,4.45,12.00,2.86,0.72,87.83,"500,494",—
-GSHD,"GOOSEHEAD INSURANCE, INC.",lynch,True,3,4,75.0,45.66,43.90,—,-29.14,1.60,-6.05,—,"362,294",—
-TECH,BIO-TECHNE Corp,piotroski,True,8,9,88.9,72.80,62.76,5.42,8.63,4.55,—,18.72,2M,—
-LFST,"LifeStance Health Group, Inc.",piotroski,True,8,9,88.9,14.08,570,3.62,0.64,1.65,0.45,1.47,4M,—
-BNED,"BARNES & NOBLE EDUCATION, INC.",piotroski,True,8,9,88.9,12.80,26.12,1.50,5.73,1.71,1.51,9.68,"158,775",—
-TPC,Tutor Perini Corporation,piotroski,True,7,9,77.8,100,66.44,4.40,6.60,1.27,3.20,27.84,1M,—
-BBW,BUILD-A-BEAR WORKSHOP INC,graham,False,5,9,55.6,28.41,7.12,2.40,33.67,1.55,—,32.62,"273,304",—
-BBW,BUILD-A-BEAR WORKSHOP INC,piotroski,False,5,9,55.6,28.41,7.12,2.40,33.67,1.55,—,32.62,"273,304",—
-BBW,BUILD-A-BEAR WORKSHOP INC,buffett,False,3,6,50.0,28.41,7.12,2.40,33.67,1.55,—,32.62,"273,304",—
-BBW,BUILD-A-BEAR WORKSHOP INC,lynch,False,1,4,25.0,28.41,7.12,2.40,33.67,1.55,—,32.62,"273,304",—
-BBW,BUILD-A-BEAR WORKSHOP INC,netnet,False,1,4,25.0,28.41,7.12,2.40,33.67,1.55,—,32.62,"273,304",—
-BBW,BUILD-A-BEAR WORKSHOP INC,custom,False,0,0,0.0,28.41,7.12,2.40,33.67,1.55,—,32.62,"273,304",—
-LRN,"STRIDE, INC.",graham,False,7,9,77.8,75.82,10.62,2.20,20.72,5.94,0.49,74.43,"630,025",—
-LRN,"STRIDE, INC.",greenblatt,False,2,3,66.7,75.82,10.62,2.20,20.72,5.94,0.49,74.43,"630,025",—
-LRN,"STRIDE, INC.",netnet,False,2,4,50.0,75.82,10.62,2.20,20.72,5.94,0.49,74.43,"630,025",—
-LRN,"STRIDE, INC.",custom,False,0,0,0.0,75.82,10.62,2.20,20.72,5.94,0.49,74.43,"630,025",—
-SMCIP,"Super Micro Computer, Inc.",graham,False,7,9,77.8,46.38,14.23,2.23,15.40,3.87,1.07,39.03,"748,247",—
-SMCIP,"Super Micro Computer, Inc.",buffett,False,3,6,50.0,46.38,14.23,2.23,15.40,3.87,1.07,39.03,"748,247",—
+TBB,AT&T INC.,piotroski,True,7,9,77.8,17.63,5.80,1.00,17.36,0.91,—,34.72,"101,934",—
+POST,"Post Holdings, Inc.",lynch,True,3,4,75.0,81.18,14.73,1.36,8.94,1.67,2.60,86.01,"451,384",—
+BBWI,"BATH & BODY WORKS, INC.",greenblatt,True,3,3,100.0,21.39,6.88,—,-50.66,1.27,—,—,4M,—
+SBH,"SALLY BEAUTY HOLDINGS, INC.",piotroski,True,8,9,88.9,18.96,9.39,2.11,22.51,2.37,2.27,20.22,1M,—
+SSTK,"SHUTTERSTOCK, INC.",piotroski,True,8,9,88.9,2.92,2.34,0.18,7.83,0.54,1.33,21.23,"981,796",—
+CURB,Curbline Properties Corp.,piotroski,True,7,9,77.8,29.15,78.78,1.61,2.09,—,0.29,12.29,"793,479",—
+CURB,Curbline Properties Corp.,lynch,True,3,4,75.0,29.15,78.78,1.61,2.09,—,0.29,12.29,"793,479",—
+ZWS,ZURN ELKAY WATER SOLUTIONS CORPORATION,piotroski,True,9,9,100.0,45.87,39.89,4.90,12.35,3.13,0.67,15.56,"800,915",—
+CYH,"COMMUNITY HEALTH SYSTEMS, INC.",piotroski,True,8,9,88.9,2.24,0.59,—,-36.51,1.46,-10.07,—,2M,—
+MAGN,Magnera Corporation,piotroski,True,7,9,77.8,12.64,—,0.42,-14.94,2.37,2.75,—,"186,730",—
+WWW,"WOLVERINE WORLD WIDE, INC.",piotroski,True,7,9,77.8,24.89,21.83,4.98,23.48,1.40,—,11.32,3M,—
+HII,"HUNTINGTON INGALLS INDUSTRIES, INC.",piotroski,True,9,9,100.0,306,19.90,2.37,11.93,1.13,1.51,211,"334,693",—
+FET,"FORUM ENERGY TECHNOLOGIES, INC.",piotroski,True,7,9,77.8,76.87,—,3.14,-3.32,2.17,1.58,—,"122,665",—
+NEOG,Neogen Corporation,piotroski,True,8,9,88.9,11.23,—,1.17,-0.38,3.82,0.60,—,2M,—
+AEIS,"ADVANCED ENERGY INDUSTRIES, INC.",piotroski,True,7,9,77.8,220,57.21,6.22,10.89,1.59,0.86,55.23,"630,526",—
+ARKO,ARKO Corp.,piotroski,True,7,9,77.8,4.00,26.67,1.72,8.51,1.66,11.85,2.80,"629,294",—
+LILA,Liberty Latin America Ltd.,piotroski,True,7,9,77.8,9.84,—,3.53,-110,1.14,20.09,—,"396,995",—
+TLYS,"TILLY’S, INC.",piotroski,True,7,9,77.8,4.22,—,1.49,-20.50,1.25,2.65,—,"90,059",—
+BBW,BUILD-A-BEAR WORKSHOP INC,graham,False,5,9,55.6,29.40,7.37,2.48,33.67,1.55,—,32.62,"383,114",—
+BBW,BUILD-A-BEAR WORKSHOP INC,piotroski,False,5,9,55.6,29.40,7.37,2.48,33.67,1.55,—,32.62,"383,114",—
+BBW,BUILD-A-BEAR WORKSHOP INC,buffett,False,3,6,50.0,29.40,7.37,2.48,33.67,1.55,—,32.62,"383,114",—
+BBW,BUILD-A-BEAR WORKSHOP INC,lynch,False,1,4,25.0,29.40,7.37,2.48,33.67,1.55,—,32.62,"383,114",—
+BBW,BUILD-A-BEAR WORKSHOP INC,netnet,False,1,4,25.0,29.40,7.37,2.48,33.67,1.55,—,32.62,"383,114",—
+BBW,BUILD-A-BEAR WORKSHOP INC,custom,False,0,0,0.0,29.40,7.37,2.48,33.67,1.55,—,32.62,"383,114",—
+RAMP,"LiveRamp Holdings, Inc.",buffett,False,3,6,50.0,38.50,17.19,2.58,15.02,2.47,—,27.44,5M,—
+RAMP,"LiveRamp Holdings, Inc.",graham,False,4,9,44.4,38.50,17.19,2.58,15.02,2.47,—,27.44,5M,—
+RAMP,"LiveRamp Holdings, Inc.",greenblatt,False,1,3,33.3,38.50,17.19,2.58,15.02,2.47,—,27.44,5M,—
+RAMP,"LiveRamp Holdings, Inc.",lynch,False,1,4,25.0,38.50,17.19,2.58,15.02,2.47,—,27.44,5M,—
+RAMP,"LiveRamp Holdings, Inc.",netnet,False,1,4,25.0,38.50,17.19,2.58,15.02,2.47,—,27.44,5M,—
+RAMP,"LiveRamp Holdings, Inc.",custom,False,0,0,0.0,38.50,17.19,2.58,15.02,2.47,—,27.44,5M,—
+CRS,CARPENTER TECHNOLOGY CORPORATION,buffett,False,3,6,50.0,292,27.72,6.60,23.78,3.81,0.72,102,1M,—
+CRS,CARPENTER TECHNOLOGY CORPORATION,lynch,False,2,4,50.0,292,27.72,6.60,23.78,3.81,0.72,102,1M,—
+CRS,CARPENTER TECHNOLOGY CORPORATION,netnet,False,2,4,50.0,292,27.72,6.60,23.78,3.81,0.72,102,1M,—
