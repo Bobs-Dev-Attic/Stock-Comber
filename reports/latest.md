@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-11-14 19:39 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-11-14 23:20 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **29** strategy matches passed.
+Screened **75** companies · **37** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | piotroski | ✅ | 78% | 7.61 | 6.29 | — | -221 | 2.06 | -5.32 | 2M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | piotroski | ✅ | 78% | 28.12 | 6.19 | 1.82 | 29.41 | 1.47 | 1.81 | 836,352 | — |
-| HBANP | Huntington Bancshares Incorp | lynch | ✅ | 75% | 14.49 | 10.42 | 0.90 | 9.08 | — | 8.25 | 79,827 | — |
-| SNA | Snap-on Inc | buffett | ✅ | 83% | 369 | 19.21 | 3.29 | 17.14 | 4.79 | 0.41 | 465,681 | — |
-| PGY | Pagaya Technologies Ltd. | piotroski | ✅ | 78% | 16.87 | 18.14 | 2.92 | 16.96 | — | 2.00 | 1M | — |
-| DUKU | Duke Energy CORP | piotroski | ✅ | 89% | 51.48 | 8.16 | 0.77 | 9.58 | 0.55 | — | 152,394 | — |
-| DUKU | Duke Energy CORP | lynch | ✅ | 75% | 51.48 | 8.16 | 0.77 | 9.58 | 0.55 | — | 152,394 | — |
-| HALO | HALOZYME THERAPEUTICS, INC. | buffett | ✅ | 83% | 100 | 39.17 | 255 | 649 | 4.66 | 50.73 | 2M | — |
-| PAYC | Paycom Software, Inc. | buffett | ✅ | 83% | 249 | 30.80 | 8.07 | 26.19 | 1.09 | 3.39 | 683,301 | — |
-| DORM | Dorman Products, Inc. | piotroski | ✅ | 89% | 132 | 19.93 | 2.75 | 13.82 | 3.09 | — | 206,482 | — |
-| PNR | Pentair plc | buffett | ✅ | 83% | 68.30 | 17.25 | 2.92 | 16.90 | 1.61 | 0.78 | 1M | — |
-| PNR | Pentair plc | piotroski | ✅ | 78% | 68.30 | 17.25 | 2.92 | 16.90 | 1.61 | 0.78 | 1M | — |
-| CNA | CNA FINANCIAL CORPORATION | piotroski | ✅ | 78% | 48.55 | 10.35 | 1.14 | 11.00 | — | 4.98 | 369,398 | — |
-| HOG | HARLEY-DAVIDSON, INC. | graham | ✅ | 100% | 32.38 | 11.65 | 1.25 | 10.79 | 2.10 | — | 1M | — |
-| HOG | HARLEY-DAVIDSON, INC. | piotroski | ✅ | 89% | 32.38 | 11.65 | 1.25 | 10.79 | 2.10 | — | 1M | — |
-| APOG | APOGEE ENTERPRISES, INC. | piotroski | ✅ | 78% | 47.17 | 18.72 | 1.98 | 10.58 | 1.65 | — | 173,689 | — |
-| APOG | APOGEE ENTERPRISES, INC. | lynch | ✅ | 75% | 47.17 | 18.72 | 1.98 | 10.58 | 1.65 | — | 173,689 | — |
-| LB | LandBridge Corporation | piotroski | ✅ | 78% | 73.15 | 77.82 | 16.45 | 8.85 | 4.87 | 1.68 | 496,329 | — |
-| FAF | FIRST AMERICAN FINANCIAL COR | piotroski | ✅ | 89% | 64.87 | 10.81 | 1.22 | 11.31 | — | 1.95 | 996,985 | — |
-| MAGN | Magnera Corporation | piotroski | ✅ | 78% | 12.64 | — | 0.42 | -14.94 | 2.37 | 2.75 | 186,730 | — |
-| AIOT | POWERFLEET, INC. | piotroski | ✅ | 78% | 2.43 | — | 0.68 | -4.32 | 1.13 | 1.00 | 3M | — |
-| FLS | FLOWSERVE CORP | piotroski | ✅ | 78% | 83.10 | 31.48 | 4.97 | 15.80 | 2.03 | — | 1M | — |
-| LUV | SOUTHWEST AIRLINES CO | piotroski | ✅ | 78% | 44.94 | 56.89 | 3.14 | 5.53 | 0.52 | — | 3M | — |
-| HAYW | Hayward Holdings, Inc. | piotroski | ✅ | 100% | 16.45 | 24.19 | 2.29 | 9.51 | 2.94 | 0.98 | 3M | — |
-| WRBY | Warby Parker Inc. | piotroski | ✅ | 78% | 27.44 | 2,744 | 9.33 | 0.45 | 2.35 | 0.96 | 2M | — |
-| VSAT | VIASAT, INC. | piotroski | ✅ | 78% | 67.72 | — | 1.96 | -0.73 | 2.41 | 2.25 | 1M | — |
-| BXP | BXP, INC. | piotroski | ✅ | 89% | 63.78 | 36.66 | 1.97 | 5.38 | — | 3.59 | 781,484 | — |
-| AVNW | AVIAT NETWORKS, INC. | piotroski | ✅ | 78% | 17.35 | 91.32 | 0.85 | 0.95 | 1.97 | 1.24 | 203,794 | — |
+| UCFIW | CN Healthy Food Tech Group C | greenblatt | ✅ | 100% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
+| UCFIW | CN Healthy Food Tech Group C | netnet | ✅ | 100% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
+| VRRM | VERRA MOBILITY CORPORATION | piotroski | ✅ | 100% | 1.84 | 2.16 | 1.01 | 46.64 | 2.09 | 4.62 | 4M | — |
+| QNST | QuinStreet, Inc. | lynch | ✅ | 75% | 18.98 | 13.56 | 3.42 | 25.14 | 1.22 | 1.23 | 520,069 | — |
+| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 133 | 25.45 | 4.87 | 19.12 | 2.99 | — | 221,692 | — |
+| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 133 | 25.45 | 4.87 | 19.12 | 2.99 | — | 221,692 | — |
+| FN | FABRINET | lynch | ✅ | 100% | 328 | 25.13 | 4.84 | 19.27 | 2.25 | 0.59 | 1M | — |
+| FN | FABRINET | buffett | ✅ | 83% | 328 | 25.13 | 4.84 | 19.27 | 2.25 | 0.59 | 1M | — |
+| URBN | Urban Outfitters, Inc. | piotroski | ✅ | 100% | 86.34 | 17.06 | 2.82 | 16.51 | 1.51 | 0.78 | 969,912 | — |
+| URBN | Urban Outfitters, Inc. | lynch | ✅ | 75% | 86.34 | 17.06 | 2.82 | 16.51 | 1.51 | 0.78 | 969,912 | — |
+| UHS | UNIVERSAL HEALTH SERVICES, I | piotroski | ✅ | 89% | 194 | 8.40 | 1.72 | 20.46 | 1.05 | — | 448,253 | — |
+| AGX | ARGAN INC | lynch | ✅ | 75% | 306 | 31.47 | 9.38 | 29.80 | 1.59 | 1.57 | 124,963 | — |
+| IOSP | INNOSPEC INC. | lynch | ✅ | 100% | 80.39 | 17.21 | 1.52 | 8.79 | 2.79 | 0.38 | 184,721 | — |
+| IOSP | INNOSPEC INC. | piotroski | ✅ | 89% | 80.39 | 17.21 | 1.52 | 8.79 | 2.79 | 0.38 | 184,721 | — |
+| JOE | The St. Joe Company | piotroski | ✅ | 89% | 70.36 | 35.36 | 5.32 | 15.09 | — | 0.97 | 142,762 | — |
+| ORI | OLD REPUBLIC INTERNATIONAL C | piotroski | ✅ | 78% | 39.68 | 10.67 | 1.69 | 15.82 | — | 4.05 | 1M | — |
+| NHC | NATIONAL HEALTHCARE CORP | piotroski | ✅ | 100% | 208 | 27.11 | 3.04 | 11.23 | 1.82 | 0.42 | 74,493 | — |
+| NHC | NATIONAL HEALTHCARE CORP | lynch | ✅ | 75% | 208 | 27.11 | 3.04 | 11.23 | 1.82 | 0.42 | 74,493 | — |
+| PLUS | ePlus inc. | piotroski | ✅ | 78% | 96.44 | 19.17 | 2.38 | 12.41 | 2.24 | 0.68 | 180,682 | — |
+| PEN | Penumbra, Inc | piotroski | ✅ | 89% | 321 | 71.00 | 8.83 | 12.45 | 6.64 | 0.28 | 237,595 | — |
+| EGP | EASTGROUP PROPERTIES, INC. | piotroski | ✅ | 78% | 198 | 40.58 | 2.99 | 7.36 | — | 0.55 | 364,671 | — |
+| EGP | EASTGROUP PROPERTIES, INC. | lynch | ✅ | 75% | 198 | 40.58 | 2.99 | 7.36 | — | 0.55 | 364,671 | — |
+| ABM | ABM INDUSTRIES INCORPORATED | piotroski | ✅ | 89% | 54.64 | 21.10 | 1.92 | 9.09 | 1.48 | 1.95 | 308,626 | — |
+| UGI | UGI CORPORATION | piotroski | ✅ | 78% | 37.72 | 12.21 | 1.73 | 14.19 | 0.89 | 2.23 | 880,388 | — |
+| ZWS | ZURN ELKAY WATER SOLUTIONS C | piotroski | ✅ | 100% | 45.87 | 39.89 | 4.90 | 12.35 | 3.13 | 0.67 | 800,915 | — |
+| IEX | IDEX CORP | piotroski | ✅ | 78% | 238 | 37.07 | 4.44 | 12.00 | 2.86 | 0.72 | 521,856 | — |
+| RGEN | REPLIGEN CORP | netnet | ✅ | 100% | 168 | 195 | 0.00 | 2.32 | 8.37 | 0.40 | 510,106 | — |
+| VVX | V2X, Inc. | piotroski | ✅ | 100% | 80.28 | 32.77 | 2.36 | 7.18 | 1.22 | 2.02 | 238,748 | — |
+| AMCX | AMC Global Media Inc. | piotroski | ✅ | 78% | 9.50 | 5.72 | 0.55 | 9.11 | 1.67 | 2.98 | 443,977 | — |
+| MOS | MOSAIC CO | piotroski | ✅ | 89% | 21.92 | 12.89 | 0.58 | 4.47 | 1.32 | — | 5M | — |
+| SMP | Standard Motor Products, Inc | piotroski | ✅ | 89% | 44.03 | 23.93 | 1.45 | 6.05 | 2.13 | 1.90 | 98,570 | — |
+| CALX | Calix, Inc | piotroski | ✅ | 78% | 32.17 | 124 | 2.59 | 2.08 | 4.24 | 0.23 | 563,235 | — |
+| DBD | Diebold Nixdorf, Incorporate | piotroski | ✅ | 78% | 55.05 | 21.67 | 1.86 | 8.60 | 1.30 | 2.50 | 340,605 | — |
+| TRLV | TRULIEVE CANNABIS CORP. | piotroski | ✅ | 89% | 10.90 | — | 1.82 | -10.70 | 4.43 | 1.36 | 1M | — |
 | PTON | Peloton Interactive, Inc. | piotroski | ✅ | 89% | 5.70 | 40.71 | — | -45.24 | 2.84 | -15.72 | 8M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | greenblatt | ▫️ | 67% | 7.61 | 6.29 | — | -221 | 2.06 | -5.32 | 2M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | lynch | ▫️ | 50% | 7.61 | 6.29 | — | -221 | 2.06 | -5.32 | 2M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | graham | ▫️ | 44% | 7.61 | 6.29 | — | -221 | 2.06 | -5.32 | 2M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | buffett | ▫️ | 33% | 7.61 | 6.29 | — | -221 | 2.06 | -5.32 | 2M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | netnet | ▫️ | 25% | 7.61 | 6.29 | — | -221 | 2.06 | -5.32 | 2M | — |
-| BCRX | BIOCRYST PHARMACEUTICALS, IN | custom | ▫️ | 0% | 7.61 | 6.29 | — | -221 | 2.06 | -5.32 | 2M | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | graham | ▫️ | 67% | 28.12 | 6.19 | 1.82 | 29.41 | 1.47 | 1.81 | 836,352 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | greenblatt | ▫️ | 67% | 28.12 | 6.19 | 1.82 | 29.41 | 1.47 | 1.81 | 836,352 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | buffett | ▫️ | 50% | 28.12 | 6.19 | 1.82 | 29.41 | 1.47 | 1.81 | 836,352 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | lynch | ▫️ | 50% | 28.12 | 6.19 | 1.82 | 29.41 | 1.47 | 1.81 | 836,352 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | netnet | ▫️ | 25% | 28.12 | 6.19 | 1.82 | 29.41 | 1.47 | 1.81 | 836,352 | — |
-| PPC | PILGRIM’S PRIDE CORPORATION | custom | ▫️ | 0% | 28.12 | 6.19 | 1.82 | 29.41 | 1.47 | 1.81 | 836,352 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | piotroski | ▫️ | 44% | 25.27 | — | — | — | 2.10 | — | 418,863 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | graham | ▫️ | 33% | 25.27 | — | — | — | 2.10 | — | 418,863 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | buffett | ▫️ | 33% | 25.27 | — | — | — | 2.10 | — | 418,863 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | greenblatt | ▫️ | 33% | 25.27 | — | — | — | 2.10 | — | 418,863 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | lynch | ▫️ | 25% | 25.27 | — | — | — | 2.10 | — | 418,863 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | netnet | ▫️ | 25% | 25.27 | — | — | — | 2.10 | — | 418,863 | — |
-| ARLP | ALLIANCE RESOURCE PARTNERS L | custom | ▫️ | 0% | 25.27 | — | — | — | 2.10 | — | 418,863 | — |
-| HBANP | Huntington Bancshares Incorp | graham | ▫️ | 78% | 14.49 | 10.42 | 0.90 | 9.08 | — | 8.25 | 79,827 | — |
-| HBANP | Huntington Bancshares Incorp | piotroski | ▫️ | 67% | 14.49 | 10.42 | 0.90 | 9.08 | — | 8.25 | 79,827 | — |
+| UNFI | United Natural Foods, Inc. | piotroski | ✅ | 78% | 48.70 | 36.34 | 1.89 | 5.18 | 1.29 | 3.38 | 301,226 | — |
+| TPC | Tutor Perini Corporation | piotroski | ✅ | 78% | 98.79 | 65.42 | 4.33 | 6.60 | 1.27 | 3.20 | 335,290 | — |
+| UCFIW | CN Healthy Food Tech Group C | graham | ▫️ | 56% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
+| UCFIW | CN Healthy Food Tech Group C | piotroski | ▫️ | 44% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
+| UCFIW | CN Healthy Food Tech Group C | buffett | ▫️ | 33% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
+| UCFIW | CN Healthy Food Tech Group C | lynch | ▫️ | 25% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
+| UCFIW | CN Healthy Food Tech Group C | custom | ▫️ | 0% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
+| VRRM | VERRA MOBILITY CORPORATION | graham | ▫️ | 78% | 1.84 | 2.16 | 1.01 | 46.64 | 2.09 | 4.62 | 4M | — |
+| VRRM | VERRA MOBILITY CORPORATION | greenblatt | ▫️ | 67% | 1.84 | 2.16 | 1.01 | 46.64 | 2.09 | 4.62 | 4M | — |
+| VRRM | VERRA MOBILITY CORPORATION | buffett | ▫️ | 50% | 1.84 | 2.16 | 1.01 | 46.64 | 2.09 | 4.62 | 4M | — |
+| VRRM | VERRA MOBILITY CORPORATION | lynch | ▫️ | 25% | 1.84 | 2.16 | 1.01 | 46.64 | 2.09 | 4.62 | 4M | — |
+| VRRM | VERRA MOBILITY CORPORATION | netnet | ▫️ | 25% | 1.84 | 2.16 | 1.01 | 46.64 | 2.09 | 4.62 | 4M | — |
+| VRRM | VERRA MOBILITY CORPORATION | custom | ▫️ | 0% | 1.84 | 2.16 | 1.01 | 46.64 | 2.09 | 4.62 | 4M | — |
+| QNST | QuinStreet, Inc. | piotroski | ▫️ | 67% | 18.98 | 13.56 | 3.42 | 25.14 | 1.22 | 1.23 | 520,069 | — |
+| QNST | QuinStreet, Inc. | greenblatt | ▫️ | 67% | 18.98 | 13.56 | 3.42 | 25.14 | 1.22 | 1.23 | 520,069 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
