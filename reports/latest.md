@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-11-15 10:04 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-11-15 16:55 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **37** strategy matches passed.
+Screened **75** companies · **31** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| AMSC | AMERICAN SUPERCONDUCTOR CORP | greenblatt | ✅ | 100% | 24.13 | 7.91 | 1.91 | 24.09 | 2.39 | 0.33 | 525,302 | — |
-| SBC | SBC Medical Group Holdings I | lynch | ✅ | 75% | 7.35 | 14.70 | 3.05 | 20.54 | 3.78 | 0.47 | 2M | — |
-| TREE | LendingTree, Inc. | greenblatt | ✅ | 100% | 35.76 | 3.32 | 1.75 | 52.76 | 1.67 | 1.98 | 221,678 | — |
-| BKE | BUCKLE, INC | greenblatt | ✅ | 100% | 43.60 | 10.53 | 5.21 | 49.39 | 1.89 | 1.33 | 514,399 | — |
-| BKE | BUCKLE, INC | buffett | ✅ | 83% | 43.60 | 10.53 | 5.21 | 49.39 | 1.89 | 1.33 | 514,399 | — |
-| CWCO | CONSOLIDATED WATER CO. LTD. | lynch | ✅ | 100% | 24.90 | 21.84 | 1.80 | 8.27 | 6.12 | 0.14 | 143,284 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | greenblatt | ✅ | 100% | 29.40 | 7.37 | 2.48 | 33.67 | 1.55 | — | 387,363 | — |
+| VRRM | VERRA MOBILITY CORPORATION | piotroski | ✅ | 100% | 1.84 | 2.16 | 1.01 | 46.64 | 2.09 | 4.62 | 4M | — |
+| SON | Sonoco Products Company | piotroski | ✅ | 89% | 48.94 | 4.86 | 1.35 | 27.75 | 1.05 | 2.08 | 717,515 | — |
+| SON | Sonoco Products Company | lynch | ✅ | 75% | 48.94 | 4.86 | 1.35 | 27.75 | 1.05 | 2.08 | 717,515 | — |
+| NSSC | NAPCO SECURITY TECHNOLOGIES, | buffett | ✅ | 100% | 30.22 | 25.18 | 5.68 | 22.53 | 4.90 | 0.25 | 253,400 | — |
+| NSSC | NAPCO SECURITY TECHNOLOGIES, | lynch | ✅ | 75% | 30.22 | 25.18 | 5.68 | 22.53 | 4.90 | 0.25 | 253,400 | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | piotroski | ✅ | 100% | 176 | 24.82 | 8.51 | 34.27 | 1.46 | — | 236,358 | — |
+| BKV | BKV CORPORATION | piotroski | ✅ | 78% | 19.25 | 9.72 | 0.82 | 8.49 | 1.78 | 0.52 | 951,087 | — |
+| KFY | KORN FERRY | piotroski | ✅ | 100% | 75.55 | 14.47 | 2.01 | 14.06 | 1.94 | 1.06 | 375,593 | — |
+| KFY | KORN FERRY | lynch | ✅ | 75% | 75.55 | 14.47 | 2.01 | 14.06 | 1.94 | 1.06 | 375,593 | — |
 | SFD | SMITHFIELD FOODS, INC. | graham | ✅ | 100% | 19.19 | 7.65 | 1.11 | 14.51 | 2.97 | — | 2M | — |
-| DUKU | Duke Energy CORP | piotroski | ✅ | 89% | 51.48 | 8.16 | 0.77 | 9.58 | 0.55 | — | 152,394 | — |
-| DUKU | Duke Energy CORP | lynch | ✅ | 75% | 51.48 | 8.16 | 0.77 | 9.58 | 0.55 | — | 152,394 | — |
-| LMB | LIMBACH HOLDINGS, INC. | piotroski | ✅ | 78% | 56.03 | 17.35 | 3.46 | 19.97 | 1.44 | 0.95 | 64,488 | — |
-| LMB | LIMBACH HOLDINGS, INC. | lynch | ✅ | 75% | 56.03 | 17.35 | 3.46 | 19.97 | 1.44 | 0.95 | 64,488 | — |
-| FCFS | FIRSTCASH HOLDINGS, INC. | piotroski | ✅ | 78% | 185 | 24.89 | 3.61 | 14.51 | 4.55 | 1.33 | 499,933 | — |
-| FCFS | FIRSTCASH HOLDINGS, INC. | lynch | ✅ | 75% | 185 | 24.89 | 3.61 | 14.51 | 4.55 | 1.33 | 499,933 | — |
-| GTM | ZoomInfo Technologies Inc. | piotroski | ✅ | 89% | 3.30 | 8.68 | 0.71 | 8.23 | 0.72 | 3.27 | 4M | — |
-| FTDR | Frontdoor, Inc. | piotroski | ✅ | 89% | 96.64 | 28.26 | 29.75 | 105 | 1.55 | — | 533,035 | — |
-| FTDR | Frontdoor, Inc. | buffett | ✅ | 83% | 96.64 | 28.26 | 29.75 | 105 | 1.55 | — | 533,035 | — |
-| CSTM | Constellium SE | piotroski | ✅ | 100% | 22.36 | 11.65 | 3.33 | 28.68 | 1.29 | 4.60 | 993,328 | — |
-| KALU | KAISER ALUMINUM CORPORATION | piotroski | ✅ | 78% | 108 | 16.03 | 2.18 | 13.62 | 2.95 | 2.10 | 153,809 | — |
-| KALU | KAISER ALUMINUM CORPORATION | lynch | ✅ | 75% | 108 | 16.03 | 2.18 | 13.62 | 2.95 | 2.10 | 153,809 | — |
-| ADUS | Addus HomeCare Corp | lynch | ✅ | 100% | 123 | 23.56 | 2.08 | 8.84 | 1.80 | 0.32 | 105,094 | — |
-| ADUS | Addus HomeCare Corp | piotroski | ✅ | 89% | 123 | 23.56 | 2.08 | 8.84 | 1.80 | 0.32 | 105,094 | — |
-| NHC | NATIONAL HEALTHCARE CORP | piotroski | ✅ | 100% | 208 | 27.11 | 3.04 | 11.23 | 1.82 | 0.42 | 74,493 | — |
-| NHC | NATIONAL HEALTHCARE CORP | lynch | ✅ | 75% | 208 | 27.11 | 3.04 | 11.23 | 1.82 | 0.42 | 74,493 | — |
-| DRVN | Driven Brands Holdings Inc. | piotroski | ✅ | 78% | 11.33 | 13.33 | 2.42 | 18.27 | 0.75 | 4.42 | 858,107 | — |
-| SXI | STANDEX INTERNATIONAL CORP/D | piotroski | ✅ | 78% | 241 | 27.77 | 3.85 | 13.85 | 2.40 | — | 109,055 | — |
-| PEN | Penumbra, Inc | piotroski | ✅ | 89% | 321 | 71.00 | 8.83 | 12.45 | 6.64 | 0.28 | 237,595 | — |
-| FIVE | Five Below, Inc. | piotroski | ✅ | 100% | 247 | 38.13 | 6.24 | 16.35 | 2.01 | 1.25 | 500,010 | — |
-| TBB | AT&T INC. | piotroski | ✅ | 78% | 17.63 | 5.80 | 1.00 | 17.36 | 0.91 | — | 101,939 | — |
-| APOG | APOGEE ENTERPRISES, INC. | piotroski | ✅ | 78% | 47.17 | 18.72 | 1.98 | 10.58 | 1.65 | — | 173,689 | — |
-| APOG | APOGEE ENTERPRISES, INC. | lynch | ✅ | 75% | 47.17 | 18.72 | 1.98 | 10.58 | 1.65 | — | 173,689 | — |
-| SIRI | SIRIUS XM HOLDINGS INC. | lynch | ✅ | 75% | 31.85 | 14.28 | 0.98 | 6.96 | 0.30 | 1.36 | 3M | — |
-| DPZ | Domino’s Pizza, Inc. | piotroski | ✅ | 89% | 342 | 19.45 | — | -15.42 | 1.65 | -1.44 | 742,357 | — |
-| HII | HUNTINGTON INGALLS INDUSTRIE | piotroski | ✅ | 100% | 306 | 19.90 | 2.37 | 11.93 | 1.13 | 1.51 | 347,874 | — |
-| FET | FORUM ENERGY TECHNOLOGIES, I | piotroski | ✅ | 78% | 76.87 | — | 3.14 | -3.32 | 2.17 | 1.58 | 122,733 | — |
-| RRX | REGAL REXNORD CORP | piotroski | ✅ | 78% | 176 | 42.00 | 1.72 | 4.08 | 2.15 | — | 1M | — |
-| VSAT | VIASAT, INC. | piotroski | ✅ | 78% | 67.72 | — | 1.96 | -0.73 | 2.41 | 2.25 | 1M | — |
-| TRLV | TRULIEVE CANNABIS CORP. | piotroski | ✅ | 89% | 10.90 | — | 1.82 | -10.70 | 4.43 | 1.36 | 1M | — |
-| AMSC | AMERICAN SUPERCONDUCTOR CORP | buffett | ▫️ | 67% | 24.13 | 7.91 | 1.91 | 24.09 | 2.39 | 0.33 | 525,302 | — |
-| AMSC | AMERICAN SUPERCONDUCTOR CORP | piotroski | ▫️ | 67% | 24.13 | 7.91 | 1.91 | 24.09 | 2.39 | 0.33 | 525,302 | — |
-| AMSC | AMERICAN SUPERCONDUCTOR CORP | graham | ▫️ | 56% | 24.13 | 7.91 | 1.91 | 24.09 | 2.39 | 0.33 | 525,302 | — |
-| AMSC | AMERICAN SUPERCONDUCTOR CORP | lynch | ▫️ | 50% | 24.13 | 7.91 | 1.91 | 24.09 | 2.39 | 0.33 | 525,302 | — |
-| AMSC | AMERICAN SUPERCONDUCTOR CORP | netnet | ▫️ | 50% | 24.13 | 7.91 | 1.91 | 24.09 | 2.39 | 0.33 | 525,302 | — |
-| AMSC | AMERICAN SUPERCONDUCTOR CORP | custom | ▫️ | 0% | 24.13 | 7.91 | 1.91 | 24.09 | 2.39 | 0.33 | 525,302 | — |
-| SBC | SBC Medical Group Holdings I | buffett | ▫️ | 67% | 7.35 | 14.70 | 3.05 | 20.54 | 3.78 | 0.47 | 2M | — |
-| SBC | SBC Medical Group Holdings I | graham | ▫️ | 56% | 7.35 | 14.70 | 3.05 | 20.54 | 3.78 | 0.47 | 2M | — |
-| SBC | SBC Medical Group Holdings I | netnet | ▫️ | 50% | 7.35 | 14.70 | 3.05 | 20.54 | 3.78 | 0.47 | 2M | — |
-| SBC | SBC Medical Group Holdings I | piotroski | ▫️ | 44% | 7.35 | 14.70 | 3.05 | 20.54 | 3.78 | 0.47 | 2M | — |
-| SBC | SBC Medical Group Holdings I | greenblatt | ▫️ | 33% | 7.35 | 14.70 | 3.05 | 20.54 | 3.78 | 0.47 | 2M | — |
-| SBC | SBC Medical Group Holdings I | custom | ▫️ | 0% | 7.35 | 14.70 | 3.05 | 20.54 | 3.78 | 0.47 | 2M | — |
-| TREE | LendingTree, Inc. | piotroski | ▫️ | 67% | 35.76 | 3.32 | 1.75 | 52.76 | 1.67 | 1.98 | 221,678 | — |
+| AGX | ARGAN INC | lynch | ✅ | 75% | 306 | 31.47 | 9.38 | 29.80 | 1.59 | 1.57 | 119,179 | — |
+| LOPE | GRAND CANYON EDUCATION, INC. | buffett | ✅ | 83% | 121 | 15.64 | 4.52 | 28.94 | 3.65 | 0.33 | 719,792 | — |
+| AYI | ACUITY INC | piotroski | ✅ | 89% | 331 | 19.39 | 3.46 | 17.86 | 1.69 | 0.64 | 183,217 | — |
+| UDR | UDR, Inc. | piotroski | ✅ | 78% | 36.44 | 32.25 | 3.67 | 11.49 | — | 1.96 | 2M | — |
+| UDR | UDR, Inc. | lynch | ✅ | 75% | 36.44 | 32.25 | 3.67 | 11.49 | — | 1.96 | 2M | — |
+| JJSF | J&J SNACK FOODS CORP. | lynch | ✅ | 75% | 88.39 | 26.31 | 1.79 | 6.79 | 2.72 | — | 125,845 | — |
+| LTH | Life Time Group Holdings, In | piotroski | ✅ | 89% | 46.52 | 28.02 | 3.36 | 11.95 | 0.63 | 1.56 | 2M | — |
+| BCPC | Balchem Corporation | piotroski | ✅ | 100% | 173 | 36.45 | 4.49 | 12.31 | 2.07 | 0.34 | 144,012 | — |
+| CPK | CHESAPEAKE UTILITIES CORP | piotroski | ✅ | 78% | 140 | 23.47 | 2.06 | 8.78 | 0.45 | — | 113,290 | — |
+| GBX | THE GREENBRIER COMPANIES, IN | lynch | ✅ | 75% | 41.40 | 16.63 | 0.84 | 5.02 | — | — | 314,967 | — |
+| IDT | IDT Corporation | piotroski | ✅ | 78% | 83.09 | 24.01 | 5.51 | 22.96 | 1.86 | 0.94 | 124,297 | — |
+| ZWS | ZURN ELKAY WATER SOLUTIONS C | piotroski | ✅ | 100% | 45.87 | 39.89 | 4.90 | 12.35 | 3.13 | 0.67 | 1M | — |
+| KOP | KOPPERS HOLDINGS INC. | piotroski | ✅ | 89% | 31.16 | 11.37 | 1.11 | 9.76 | 2.94 | 2.29 | 172,247 | — |
+| SITE | SiteOne Landscape Supply, In | piotroski | ✅ | 89% | 113 | 33.40 | 3.06 | 9.15 | 2.47 | 0.93 | 685,332 | — |
+| HAYW | Hayward Holdings, Inc. | piotroski | ✅ | 100% | 16.45 | 24.19 | 2.29 | 9.51 | 2.94 | 0.98 | 3M | — |
+| WRBY | Warby Parker Inc. | piotroski | ✅ | 78% | 27.44 | 2,744 | 9.33 | 0.45 | 2.35 | 0.96 | 2M | — |
+| FROG | JFrog Ltd. | piotroski | ✅ | 78% | 114 | — | 14.87 | -8.09 | 2.14 | 0.51 | 2M | — |
+| USNA | USANA HEALTH SCIENCES, INC. | piotroski | ✅ | 78% | 13.24 | 22.83 | 0.46 | 2.02 | 2.24 | 0.29 | 167,451 | — |
+| EGHT | 8x8, Inc. | piotroski | ✅ | 78% | 2.31 | 231 | 2.25 | 1.12 | 1.09 | 3.52 | 487,378 | — |
+| OMCL | OMNICELL, INC | piotroski | ✅ | 78% | 35.03 | 876 | 1.32 | 0.17 | 1.43 | 0.60 | 313,243 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | graham | ▫️ | 56% | 29.40 | 7.37 | 2.48 | 33.67 | 1.55 | — | 387,363 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | piotroski | ▫️ | 56% | 29.40 | 7.37 | 2.48 | 33.67 | 1.55 | — | 387,363 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | buffett | ▫️ | 50% | 29.40 | 7.37 | 2.48 | 33.67 | 1.55 | — | 387,363 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | lynch | ▫️ | 25% | 29.40 | 7.37 | 2.48 | 33.67 | 1.55 | — | 387,363 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | netnet | ▫️ | 25% | 29.40 | 7.37 | 2.48 | 33.67 | 1.55 | — | 387,363 | — |
+| BBW | BUILD-A-BEAR WORKSHOP INC | custom | ▫️ | 0% | 29.40 | 7.37 | 2.48 | 33.67 | 1.55 | — | 387,363 | — |
+| VRRM | VERRA MOBILITY CORPORATION | graham | ▫️ | 78% | 1.84 | 2.16 | 1.01 | 46.64 | 2.09 | 4.62 | 4M | — |
+| VRRM | VERRA MOBILITY CORPORATION | greenblatt | ▫️ | 67% | 1.84 | 2.16 | 1.01 | 46.64 | 2.09 | 4.62 | 4M | — |
+| VRRM | VERRA MOBILITY CORPORATION | buffett | ▫️ | 50% | 1.84 | 2.16 | 1.01 | 46.64 | 2.09 | 4.62 | 4M | — |
+| VRRM | VERRA MOBILITY CORPORATION | lynch | ▫️ | 25% | 1.84 | 2.16 | 1.01 | 46.64 | 2.09 | 4.62 | 4M | — |
+| VRRM | VERRA MOBILITY CORPORATION | netnet | ▫️ | 25% | 1.84 | 2.16 | 1.01 | 46.64 | 2.09 | 4.62 | 4M | — |
+| VRRM | VERRA MOBILITY CORPORATION | custom | ▫️ | 0% | 1.84 | 2.16 | 1.01 | 46.64 | 2.09 | 4.62 | 4M | — |
+| SON | Sonoco Products Company | graham | ▫️ | 67% | 48.94 | 4.86 | 1.35 | 27.75 | 1.05 | 2.08 | 717,515 | — |
+| SON | Sonoco Products Company | buffett | ▫️ | 67% | 48.94 | 4.86 | 1.35 | 27.75 | 1.05 | 2.08 | 717,515 | — |
+| SON | Sonoco Products Company | greenblatt | ▫️ | 67% | 48.94 | 4.86 | 1.35 | 27.75 | 1.05 | 2.08 | 717,515 | — |
+| SON | Sonoco Products Company | netnet | ▫️ | 25% | 48.94 | 4.86 | 1.35 | 27.75 | 1.05 | 2.08 | 717,515 | — |
+| SON | Sonoco Products Company | custom | ▫️ | 0% | 48.94 | 4.86 | 1.35 | 27.75 | 1.05 | 2.08 | 717,515 | — |
+| UNIT | Uniti Group Inc. | greenblatt | ▫️ | 67% | 4.88 | 1.00 | 3.42 | 343 | 0.74 | 30.65 | 9M | — |
+| UNIT | Uniti Group Inc. | graham | ▫️ | 44% | 4.88 | 1.00 | 3.42 | 343 | 0.74 | 30.65 | 9M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
