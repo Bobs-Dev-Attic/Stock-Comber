@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-11-14 23:20 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-11-15 02:48 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **37** strategy matches passed.
+Screened **75** companies · **36** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| UCFIW | CN Healthy Food Tech Group C | greenblatt | ✅ | 100% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
-| UCFIW | CN Healthy Food Tech Group C | netnet | ✅ | 100% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
-| VRRM | VERRA MOBILITY CORPORATION | piotroski | ✅ | 100% | 1.84 | 2.16 | 1.01 | 46.64 | 2.09 | 4.62 | 4M | — |
-| QNST | QuinStreet, Inc. | lynch | ✅ | 75% | 18.98 | 13.56 | 3.42 | 25.14 | 1.22 | 1.23 | 520,069 | — |
-| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 133 | 25.45 | 4.87 | 19.12 | 2.99 | — | 221,692 | — |
-| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 133 | 25.45 | 4.87 | 19.12 | 2.99 | — | 221,692 | — |
-| FN | FABRINET | lynch | ✅ | 100% | 328 | 25.13 | 4.84 | 19.27 | 2.25 | 0.59 | 1M | — |
-| FN | FABRINET | buffett | ✅ | 83% | 328 | 25.13 | 4.84 | 19.27 | 2.25 | 0.59 | 1M | — |
-| URBN | Urban Outfitters, Inc. | piotroski | ✅ | 100% | 86.34 | 17.06 | 2.82 | 16.51 | 1.51 | 0.78 | 969,912 | — |
-| URBN | Urban Outfitters, Inc. | lynch | ✅ | 75% | 86.34 | 17.06 | 2.82 | 16.51 | 1.51 | 0.78 | 969,912 | — |
-| UHS | UNIVERSAL HEALTH SERVICES, I | piotroski | ✅ | 89% | 194 | 8.40 | 1.72 | 20.46 | 1.05 | — | 448,253 | — |
-| AGX | ARGAN INC | lynch | ✅ | 75% | 306 | 31.47 | 9.38 | 29.80 | 1.59 | 1.57 | 124,963 | — |
-| IOSP | INNOSPEC INC. | lynch | ✅ | 100% | 80.39 | 17.21 | 1.52 | 8.79 | 2.79 | 0.38 | 184,721 | — |
-| IOSP | INNOSPEC INC. | piotroski | ✅ | 89% | 80.39 | 17.21 | 1.52 | 8.79 | 2.79 | 0.38 | 184,721 | — |
-| JOE | The St. Joe Company | piotroski | ✅ | 89% | 70.36 | 35.36 | 5.32 | 15.09 | — | 0.97 | 142,762 | — |
-| ORI | OLD REPUBLIC INTERNATIONAL C | piotroski | ✅ | 78% | 39.68 | 10.67 | 1.69 | 15.82 | — | 4.05 | 1M | — |
+| AMSC | AMERICAN SUPERCONDUCTOR CORP | greenblatt | ✅ | 100% | 24.13 | 7.91 | 1.91 | 24.09 | 2.39 | 0.33 | 525,302 | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | greenblatt | ✅ | 100% | 125 | 13.95 | 4.19 | 37.16 | 3.37 | — | 1M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | piotroski | ✅ | 89% | 125 | 13.95 | 4.19 | 37.16 | 3.37 | — | 1M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | buffett | ✅ | 83% | 125 | 13.95 | 4.19 | 37.16 | 3.37 | — | 1M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | lynch | ✅ | 75% | 125 | 13.95 | 4.19 | 37.16 | 3.37 | — | 1M | — |
+| TOL | Toll Brothers, Inc. | lynch | ✅ | 100% | 148 | 10.96 | 1.78 | 16.28 | — | 0.75 | 724,967 | — |
+| TOL | Toll Brothers, Inc. | buffett | ✅ | 83% | 148 | 10.96 | 1.78 | 16.28 | — | 0.75 | 724,967 | — |
+| GMED | GLOBUS MEDICAL, INC. | piotroski | ✅ | 100% | 72.14 | 18.40 | 2.16 | 11.76 | 4.26 | 0.16 | 2M | — |
+| GMED | GLOBUS MEDICAL, INC. | lynch | ✅ | 100% | 72.14 | 18.40 | 2.16 | 11.76 | 4.26 | 0.16 | 2M | — |
+| OLED | UNIVERSAL DISPLAY CORPORATIO | piotroski | ✅ | 78% | 89.29 | 17.58 | 2.42 | 13.75 | 10.06 | 0.12 | 421,931 | — |
+| AWI | ARMSTRONG WORLD INDUSTRIES,  | piotroski | ✅ | 100% | 176 | 24.82 | 8.51 | 34.27 | 1.46 | — | 236,358 | — |
+| HL | HECLA MINING CO/DE/ | piotroski | ✅ | 89% | 13.10 | 26.73 | 3.31 | 12.41 | 2.72 | 0.37 | 22M | — |
+| LII | LENNOX INTERNATIONAL INC | lynch | ✅ | 75% | 352 | 15.45 | 10.71 | 69.28 | 1.60 | 2.51 | 600,128 | — |
+| FICO | Fair Isaac Corp | piotroski | ✅ | 89% | 720 | 19.83 | — | -21.56 | 0.99 | -1.54 | 502,327 | — |
+| FICO | Fair Isaac Corp | lynch | ✅ | 75% | 720 | 19.83 | — | -21.56 | 0.99 | -1.54 | 502,327 | — |
+| BANC | BANC OF CALIFORNIA, INC. | piotroski | ✅ | 78% | 17.83 | 15.24 | 0.81 | 6.47 | — | 8.83 | 2M | — |
+| GL | GLOBE LIFE INC. | piotroski | ✅ | 78% | 161 | 11.42 | 2.22 | 19.44 | — | 4.16 | 360,623 | — |
+| BFAM | BRIGHT HORIZONS FAMILY SOLUT | piotroski | ✅ | 89% | 52.68 | 15.68 | 2.26 | 14.42 | 0.52 | 1.90 | 979,658 | — |
+| BFAM | BRIGHT HORIZONS FAMILY SOLUT | lynch | ✅ | 75% | 52.68 | 15.68 | 2.26 | 14.42 | 0.52 | 1.90 | 979,658 | — |
+| AYI | ACUITY INC | piotroski | ✅ | 89% | 331 | 19.39 | 3.46 | 17.86 | 1.69 | 0.64 | 183,217 | — |
+| ACEL | Accel Entertainment, Inc. | piotroski | ✅ | 78% | 13.55 | 22.58 | 4.34 | 19.09 | 2.61 | — | 461,561 | — |
+| CMC | Commercial Metals Company | graham | ✅ | 89% | 62.13 | 10.60 | 1.48 | 13.96 | 2.34 | 1.18 | 888,048 | — |
 | NHC | NATIONAL HEALTHCARE CORP | piotroski | ✅ | 100% | 208 | 27.11 | 3.04 | 11.23 | 1.82 | 0.42 | 74,493 | — |
+| KEX | KIRBY CORPORATION | piotroski | ✅ | 89% | 130 | 20.49 | 2.15 | 10.49 | 1.53 | — | 421,998 | — |
 | NHC | NATIONAL HEALTHCARE CORP | lynch | ✅ | 75% | 208 | 27.11 | 3.04 | 11.23 | 1.82 | 0.42 | 74,493 | — |
-| PLUS | ePlus inc. | piotroski | ✅ | 78% | 96.44 | 19.17 | 2.38 | 12.41 | 2.24 | 0.68 | 180,682 | — |
-| PEN | Penumbra, Inc | piotroski | ✅ | 89% | 321 | 71.00 | 8.83 | 12.45 | 6.64 | 0.28 | 237,595 | — |
-| EGP | EASTGROUP PROPERTIES, INC. | piotroski | ✅ | 78% | 198 | 40.58 | 2.99 | 7.36 | — | 0.55 | 364,671 | — |
-| EGP | EASTGROUP PROPERTIES, INC. | lynch | ✅ | 75% | 198 | 40.58 | 2.99 | 7.36 | — | 0.55 | 364,671 | — |
-| ABM | ABM INDUSTRIES INCORPORATED | piotroski | ✅ | 89% | 54.64 | 21.10 | 1.92 | 9.09 | 1.48 | 1.95 | 308,626 | — |
-| UGI | UGI CORPORATION | piotroski | ✅ | 78% | 37.72 | 12.21 | 1.73 | 14.19 | 0.89 | 2.23 | 880,388 | — |
-| ZWS | ZURN ELKAY WATER SOLUTIONS C | piotroski | ✅ | 100% | 45.87 | 39.89 | 4.90 | 12.35 | 3.13 | 0.67 | 800,915 | — |
-| IEX | IDEX CORP | piotroski | ✅ | 78% | 238 | 37.07 | 4.44 | 12.00 | 2.86 | 0.72 | 521,856 | — |
-| RGEN | REPLIGEN CORP | netnet | ✅ | 100% | 168 | 195 | 0.00 | 2.32 | 8.37 | 0.40 | 510,106 | — |
-| VVX | V2X, Inc. | piotroski | ✅ | 100% | 80.28 | 32.77 | 2.36 | 7.18 | 1.22 | 2.02 | 238,748 | — |
-| AMCX | AMC Global Media Inc. | piotroski | ✅ | 78% | 9.50 | 5.72 | 0.55 | 9.11 | 1.67 | 2.98 | 443,977 | — |
-| MOS | MOSAIC CO | piotroski | ✅ | 89% | 21.92 | 12.89 | 0.58 | 4.47 | 1.32 | — | 5M | — |
-| SMP | Standard Motor Products, Inc | piotroski | ✅ | 89% | 44.03 | 23.93 | 1.45 | 6.05 | 2.13 | 1.90 | 98,570 | — |
+| FIZZ | National Beverage Corp. | buffett | ✅ | 83% | 37.23 | 18.99 | 5.49 | 28.89 | 4.39 | 0.34 | 251,570 | — |
+| MD | Pediatrix Medical Group, Inc | piotroski | ✅ | 78% | 31.30 | 16.13 | 3.08 | 19.10 | 1.66 | 1.59 | 468,055 | — |
+| ACM | AECOM | piotroski | ✅ | 78% | 70.50 | 16.75 | 3.77 | 22.54 | 1.14 | 3.81 | 1M | — |
+| UGI | UGI CORPORATION | piotroski | ✅ | 78% | 37.72 | 12.21 | 1.73 | 14.19 | 0.89 | 2.23 | 881,028 | — |
+| NPKI | NPK International Inc. | piotroski | ✅ | 78% | 9.03 | 20.07 | 2.20 | 11.09 | 1.43 | 0.26 | 1M | — |
+| HCSG | HEALTHCARE SERVICES GROUP, I | piotroski | ✅ | 100% | 24.90 | 30.74 | 3.56 | 11.58 | 3.38 | — | 274,962 | — |
+| AEIS | ADVANCED ENERGY INDUSTRIES,  | piotroski | ✅ | 78% | 220 | 57.21 | 6.22 | 10.89 | 1.59 | 0.86 | 630,526 | — |
 | CALX | Calix, Inc | piotroski | ✅ | 78% | 32.17 | 124 | 2.59 | 2.08 | 4.24 | 0.23 | 563,235 | — |
-| DBD | Diebold Nixdorf, Incorporate | piotroski | ✅ | 78% | 55.05 | 21.67 | 1.86 | 8.60 | 1.30 | 2.50 | 340,605 | — |
-| TRLV | TRULIEVE CANNABIS CORP. | piotroski | ✅ | 89% | 10.90 | — | 1.82 | -10.70 | 4.43 | 1.36 | 1M | — |
-| PTON | Peloton Interactive, Inc. | piotroski | ✅ | 89% | 5.70 | 40.71 | — | -45.24 | 2.84 | -15.72 | 8M | — |
-| UNFI | United Natural Foods, Inc. | piotroski | ✅ | 78% | 48.70 | 36.34 | 1.89 | 5.18 | 1.29 | 3.38 | 301,226 | — |
-| TPC | Tutor Perini Corporation | piotroski | ✅ | 78% | 98.79 | 65.42 | 4.33 | 6.60 | 1.27 | 3.20 | 335,290 | — |
-| UCFIW | CN Healthy Food Tech Group C | graham | ▫️ | 56% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
-| UCFIW | CN Healthy Food Tech Group C | piotroski | ▫️ | 44% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
-| UCFIW | CN Healthy Food Tech Group C | buffett | ▫️ | 33% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
-| UCFIW | CN Healthy Food Tech Group C | lynch | ▫️ | 25% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
-| UCFIW | CN Healthy Food Tech Group C | custom | ▫️ | 0% | 0.09 | 0.53 | 0.22 | 42.33 | 1.50 | 1.25 | 147,751 | — |
-| VRRM | VERRA MOBILITY CORPORATION | graham | ▫️ | 78% | 1.84 | 2.16 | 1.01 | 46.64 | 2.09 | 4.62 | 4M | — |
-| VRRM | VERRA MOBILITY CORPORATION | greenblatt | ▫️ | 67% | 1.84 | 2.16 | 1.01 | 46.64 | 2.09 | 4.62 | 4M | — |
-| VRRM | VERRA MOBILITY CORPORATION | buffett | ▫️ | 50% | 1.84 | 2.16 | 1.01 | 46.64 | 2.09 | 4.62 | 4M | — |
-| VRRM | VERRA MOBILITY CORPORATION | lynch | ▫️ | 25% | 1.84 | 2.16 | 1.01 | 46.64 | 2.09 | 4.62 | 4M | — |
-| VRRM | VERRA MOBILITY CORPORATION | netnet | ▫️ | 25% | 1.84 | 2.16 | 1.01 | 46.64 | 2.09 | 4.62 | 4M | — |
-| VRRM | VERRA MOBILITY CORPORATION | custom | ▫️ | 0% | 1.84 | 2.16 | 1.01 | 46.64 | 2.09 | 4.62 | 4M | — |
-| QNST | QuinStreet, Inc. | piotroski | ▫️ | 67% | 18.98 | 13.56 | 3.42 | 25.14 | 1.22 | 1.23 | 520,069 | — |
-| QNST | QuinStreet, Inc. | greenblatt | ▫️ | 67% | 18.98 | 13.56 | 3.42 | 25.14 | 1.22 | 1.23 | 520,069 | — |
+| ADT | ADT Inc. | piotroski | ✅ | 89% | 9.90 | — | — | 15.77 | 0.93 | 3.19 | 8M | — |
+| OMCL | OMNICELL, INC | piotroski | ✅ | 78% | 35.03 | 876 | 1.32 | 0.17 | 1.43 | 0.60 | 313,243 | — |
+| ORN | ORION GROUP HOLDINGS, INC. | piotroski | ✅ | 78% | 7.57 | 126 | 1.89 | 1.56 | 1.36 | 1.61 | 335,850 | — |
+| AMSC | AMERICAN SUPERCONDUCTOR CORP | buffett | ▫️ | 67% | 24.13 | 7.91 | 1.91 | 24.09 | 2.39 | 0.33 | 525,302 | — |
+| AMSC | AMERICAN SUPERCONDUCTOR CORP | piotroski | ▫️ | 67% | 24.13 | 7.91 | 1.91 | 24.09 | 2.39 | 0.33 | 525,302 | — |
+| AMSC | AMERICAN SUPERCONDUCTOR CORP | graham | ▫️ | 56% | 24.13 | 7.91 | 1.91 | 24.09 | 2.39 | 0.33 | 525,302 | — |
+| AMSC | AMERICAN SUPERCONDUCTOR CORP | lynch | ▫️ | 50% | 24.13 | 7.91 | 1.91 | 24.09 | 2.39 | 0.33 | 525,302 | — |
+| AMSC | AMERICAN SUPERCONDUCTOR CORP | netnet | ▫️ | 50% | 24.13 | 7.91 | 1.91 | 24.09 | 2.39 | 0.33 | 525,302 | — |
+| AMSC | AMERICAN SUPERCONDUCTOR CORP | custom | ▫️ | 0% | 24.13 | 7.91 | 1.91 | 24.09 | 2.39 | 0.33 | 525,302 | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | graham | ▫️ | 67% | 125 | 13.95 | 4.19 | 37.16 | 3.37 | — | 1M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | netnet | ▫️ | 25% | 125 | 13.95 | 4.19 | 37.16 | 3.37 | — | 1M | — |
+| CF | CF INDUSTRIES HOLDINGS, INC. | custom | ▫️ | 0% | 125 | 13.95 | 4.19 | 37.16 | 3.37 | — | 1M | — |
+| TOL | Toll Brothers, Inc. | graham | ▫️ | 67% | 148 | 10.96 | 1.78 | 16.28 | — | 0.75 | 724,967 | — |
+| TOL | Toll Brothers, Inc. | greenblatt | ▫️ | 67% | 148 | 10.96 | 1.78 | 16.28 | — | 0.75 | 724,967 | — |
+| TOL | Toll Brothers, Inc. | piotroski | ▫️ | 44% | 148 | 10.96 | 1.78 | 16.28 | — | 0.75 | 724,967 | — |
+| TOL | Toll Brothers, Inc. | netnet | ▫️ | 25% | 148 | 10.96 | 1.78 | 16.28 | — | 0.75 | 724,967 | — |
+| TOL | Toll Brothers, Inc. | custom | ▫️ | 0% | 148 | 10.96 | 1.78 | 16.28 | — | 0.75 | 724,967 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
