@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
 AMSC,AMERICAN SUPERCONDUCTOR CORP /DE/,greenblatt,True,3,3,100.0,24.13,7.91,1.91,24.09,2.39,0.33,29.47,"525,302",—
-CF,"CF INDUSTRIES HOLDINGS, INC.",greenblatt,True,3,3,100.0,125,13.95,4.19,37.16,3.37,—,77.59,1M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",piotroski,True,8,9,88.9,125,13.95,4.19,37.16,3.37,—,77.59,1M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",buffett,True,5,6,83.3,125,13.95,4.19,37.16,3.37,—,77.59,1M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",lynch,True,3,4,75.0,125,13.95,4.19,37.16,3.37,—,77.59,1M,—
-TOL,"Toll Brothers, Inc.",lynch,True,4,4,100.0,148,10.96,1.78,16.28,—,0.75,159,"724,967",—
-TOL,"Toll Brothers, Inc.",buffett,True,5,6,83.3,148,10.96,1.78,16.28,—,0.75,159,"724,967",—
-GMED,"GLOBUS MEDICAL, INC.",piotroski,True,9,9,100.0,72.14,18.40,2.16,11.76,4.26,0.16,54.25,2M,—
-GMED,"GLOBUS MEDICAL, INC.",lynch,True,4,4,100.0,72.14,18.40,2.16,11.76,4.26,0.16,54.25,2M,—
-OLED,UNIVERSAL DISPLAY CORPORATION,piotroski,True,7,9,77.8,89.29,17.58,2.42,13.75,10.06,0.12,64.99,"421,931",—
-AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",piotroski,True,9,9,100.0,176,24.82,8.51,34.27,1.46,—,57.37,"236,358",—
-HL,HECLA MINING CO/DE/,piotroski,True,8,9,88.9,13.10,26.73,3.31,12.41,2.72,0.37,6.60,22M,—
-LII,LENNOX INTERNATIONAL INC,lynch,True,3,4,75.0,352,15.45,10.71,69.28,1.60,2.51,130,"600,128",—
-FICO,Fair Isaac Corp,piotroski,True,8,9,88.9,720,19.83,—,-21.56,0.99,-1.54,—,"502,327",—
-FICO,Fair Isaac Corp,lynch,True,3,4,75.0,720,19.83,—,-21.56,0.99,-1.54,—,"502,327",—
-BANC,"BANC OF CALIFORNIA, INC.",piotroski,True,7,9,77.8,17.83,15.24,0.81,6.47,—,8.83,24.01,2M,—
-GL,GLOBE LIFE INC.,piotroski,True,7,9,77.8,161,11.42,2.22,19.44,—,4.16,151,"360,623",—
-BFAM,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,piotroski,True,8,9,88.9,52.68,15.68,2.26,14.42,0.52,1.90,41.99,"979,658",—
-BFAM,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,lynch,True,3,4,75.0,52.68,15.68,2.26,14.42,0.52,1.90,41.99,"979,658",—
-AYI,ACUITY INC,piotroski,True,8,9,88.9,331,19.39,3.46,17.86,1.69,0.64,191,"183,217",—
-ACEL,"Accel Entertainment, Inc.",piotroski,True,7,9,77.8,13.55,22.58,4.34,19.09,2.61,—,6.49,"461,561",—
-CMC,Commercial Metals Company,graham,True,8,9,88.9,62.13,10.60,1.48,13.96,2.34,1.18,74.40,"888,048",—
+SBC,SBC Medical Group Holdings Incorporated,lynch,True,3,4,75.0,7.35,14.70,3.05,20.54,3.78,0.47,5.21,2M,—
+TREE,"LendingTree, Inc.",greenblatt,True,3,3,100.0,35.76,3.32,1.75,52.76,1.67,1.98,70.33,"221,678",—
+BKE,"BUCKLE, INC",greenblatt,True,3,3,100.0,43.60,10.53,5.21,49.39,1.89,1.33,27.93,"514,399",—
+BKE,"BUCKLE, INC",buffett,True,5,6,83.3,43.60,10.53,5.21,49.39,1.89,1.33,27.93,"514,399",—
+CWCO,CONSOLIDATED WATER CO. LTD.,lynch,True,4,4,100.0,24.90,21.84,1.80,8.27,6.12,0.14,18.85,"143,284",—
+SFD,"SMITHFIELD FOODS, INC.",graham,True,9,9,100.0,19.19,7.65,1.11,14.51,2.97,—,31.27,2M,—
+DUKU,Duke Energy CORP,piotroski,True,8,9,88.9,51.48,8.16,0.77,9.58,0.55,—,97.33,"152,394",—
+DUKU,Duke Energy CORP,lynch,True,3,4,75.0,51.48,8.16,0.77,9.58,0.55,—,97.33,"152,394",—
+LMB,"LIMBACH HOLDINGS, INC.",piotroski,True,7,9,77.8,56.03,17.35,3.46,19.97,1.44,0.95,34.31,"64,488",—
+LMB,"LIMBACH HOLDINGS, INC.",lynch,True,3,4,75.0,56.03,17.35,3.46,19.97,1.44,0.95,34.31,"64,488",—
+FCFS,"FIRSTCASH HOLDINGS, INC.",piotroski,True,7,9,77.8,185,24.89,3.61,14.51,4.55,1.33,92.39,"499,933",—
+FCFS,"FIRSTCASH HOLDINGS, INC.",lynch,True,3,4,75.0,185,24.89,3.61,14.51,4.55,1.33,92.39,"499,933",—
+GTM,ZoomInfo Technologies Inc.,piotroski,True,8,9,88.9,3.30,8.68,0.71,8.23,0.72,3.27,6.31,4M,—
+FTDR,"Frontdoor, Inc.",piotroski,True,8,9,88.9,96.64,28.26,29.75,105,1.55,—,15.81,"533,035",—
+FTDR,"Frontdoor, Inc.",buffett,True,5,6,83.3,96.64,28.26,29.75,105,1.55,—,15.81,"533,035",—
+CSTM,Constellium SE,piotroski,True,9,9,100.0,22.36,11.65,3.33,28.68,1.29,4.60,17.02,"993,328",—
+KALU,KAISER ALUMINUM CORPORATION,piotroski,True,7,9,77.8,108,16.03,2.18,13.62,2.95,2.10,87.01,"153,809",—
+KALU,KAISER ALUMINUM CORPORATION,lynch,True,3,4,75.0,108,16.03,2.18,13.62,2.95,2.10,87.01,"153,809",—
+ADUS,Addus HomeCare Corp,lynch,True,4,4,100.0,123,23.56,2.08,8.84,1.80,0.32,83.25,"105,094",—
+ADUS,Addus HomeCare Corp,piotroski,True,8,9,88.9,123,23.56,2.08,8.84,1.80,0.32,83.25,"105,094",—
 NHC,NATIONAL HEALTHCARE CORP,piotroski,True,9,9,100.0,208,27.11,3.04,11.23,1.82,0.42,109,"74,493",—
-KEX,KIRBY CORPORATION,piotroski,True,8,9,88.9,130,20.49,2.15,10.49,1.53,—,92.69,"421,998",—
 NHC,NATIONAL HEALTHCARE CORP,lynch,True,3,4,75.0,208,27.11,3.04,11.23,1.82,0.42,109,"74,493",—
-FIZZ,National Beverage Corp.,buffett,True,5,6,83.3,37.23,18.99,5.49,28.89,4.39,0.34,17.30,"251,570",—
-MD,"Pediatrix Medical Group, Inc.",piotroski,True,7,9,77.8,31.30,16.13,3.08,19.10,1.66,1.59,21.05,"468,055",—
-ACM,AECOM,piotroski,True,7,9,77.8,70.50,16.75,3.77,22.54,1.14,3.81,42.08,1M,—
-UGI,UGI CORPORATION,piotroski,True,7,9,77.8,37.72,12.21,1.73,14.19,0.89,2.23,38.93,"881,028",—
-NPKI,NPK International Inc.,piotroski,True,7,9,77.8,9.03,20.07,2.20,11.09,1.43,0.26,6.44,1M,—
-HCSG,"HEALTHCARE SERVICES GROUP, INC.",piotroski,True,9,9,100.0,24.90,30.74,3.56,11.58,3.38,—,11.28,"274,962",—
-AEIS,"ADVANCED ENERGY INDUSTRIES, INC.",piotroski,True,7,9,77.8,220,57.21,6.22,10.89,1.59,0.86,55.23,"630,526",—
-CALX,"Calix, Inc",piotroski,True,7,9,77.8,32.17,124,2.59,2.08,4.24,0.23,8.52,"563,235",—
-ADT,ADT Inc.,piotroski,True,8,9,88.9,9.90,—,—,15.77,0.93,3.19,—,8M,—
-OMCL,"OMNICELL, INC",piotroski,True,7,9,77.8,35.03,876,1.32,0.17,1.43,0.60,4.89,"313,243",—
-ORN,"ORION GROUP HOLDINGS, INC.",piotroski,True,7,9,77.8,7.57,126,1.89,1.56,1.36,1.61,2.33,"335,850",—
+DRVN,Driven Brands Holdings Inc.,piotroski,True,7,9,77.8,11.33,13.33,2.42,18.27,0.75,4.42,9.46,"858,107",—
+SXI,STANDEX INTERNATIONAL CORP/DE/,piotroski,True,7,9,77.8,241,27.77,3.85,13.85,2.40,—,110,"109,055",—
+PEN,"Penumbra, Inc",piotroski,True,8,9,88.9,321,71.00,8.83,12.45,6.64,0.28,60.79,"237,595",—
+FIVE,"Five Below, Inc.",piotroski,True,9,9,100.0,247,38.13,6.24,16.35,2.01,1.25,75.89,"500,010",—
+TBB,AT&T INC.,piotroski,True,7,9,77.8,17.63,5.80,1.00,17.36,0.91,—,34.72,"101,939",—
+APOG,"APOGEE ENTERPRISES, INC.",piotroski,True,7,9,77.8,47.17,18.72,1.98,10.58,1.65,—,36.72,"173,689",—
+APOG,"APOGEE ENTERPRISES, INC.",lynch,True,3,4,75.0,47.17,18.72,1.98,10.58,1.65,—,36.72,"173,689",—
+SIRI,SIRIUS XM HOLDINGS INC.,lynch,True,3,4,75.0,31.85,14.28,0.98,6.96,0.30,1.36,40.31,3M,—
+DPZ,"Domino’s Pizza, Inc.",piotroski,True,8,9,88.9,342,19.45,—,-15.42,1.65,-1.44,—,"742,357",—
+HII,"HUNTINGTON INGALLS INDUSTRIES, INC.",piotroski,True,9,9,100.0,306,19.90,2.37,11.93,1.13,1.51,211,"347,874",—
+FET,"FORUM ENERGY TECHNOLOGIES, INC.",piotroski,True,7,9,77.8,76.87,—,3.14,-3.32,2.17,1.58,—,"122,733",—
+RRX,REGAL REXNORD CORP,piotroski,True,7,9,77.8,176,42.00,1.72,4.08,2.15,—,98.55,1M,—
+VSAT,"VIASAT, INC.",piotroski,True,7,9,77.8,67.72,—,1.96,-0.73,2.41,2.25,—,1M,—
+TRLV,TRULIEVE CANNABIS CORP.,piotroski,True,8,9,88.9,10.90,—,1.82,-10.70,4.43,1.36,—,1M,—
 AMSC,AMERICAN SUPERCONDUCTOR CORP /DE/,buffett,False,4,6,66.7,24.13,7.91,1.91,24.09,2.39,0.33,29.47,"525,302",—
 AMSC,AMERICAN SUPERCONDUCTOR CORP /DE/,piotroski,False,6,9,66.7,24.13,7.91,1.91,24.09,2.39,0.33,29.47,"525,302",—
 AMSC,AMERICAN SUPERCONDUCTOR CORP /DE/,graham,False,5,9,55.6,24.13,7.91,1.91,24.09,2.39,0.33,29.47,"525,302",—
 AMSC,AMERICAN SUPERCONDUCTOR CORP /DE/,lynch,False,2,4,50.0,24.13,7.91,1.91,24.09,2.39,0.33,29.47,"525,302",—
 AMSC,AMERICAN SUPERCONDUCTOR CORP /DE/,netnet,False,2,4,50.0,24.13,7.91,1.91,24.09,2.39,0.33,29.47,"525,302",—
 AMSC,AMERICAN SUPERCONDUCTOR CORP /DE/,custom,False,0,0,0.0,24.13,7.91,1.91,24.09,2.39,0.33,29.47,"525,302",—
-CF,"CF INDUSTRIES HOLDINGS, INC.",graham,False,6,9,66.7,125,13.95,4.19,37.16,3.37,—,77.59,1M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",netnet,False,1,4,25.0,125,13.95,4.19,37.16,3.37,—,77.59,1M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",custom,False,0,0,0.0,125,13.95,4.19,37.16,3.37,—,77.59,1M,—
-TOL,"Toll Brothers, Inc.",graham,False,6,9,66.7,148,10.96,1.78,16.28,—,0.75,159,"724,967",—
-TOL,"Toll Brothers, Inc.",greenblatt,False,2,3,66.7,148,10.96,1.78,16.28,—,0.75,159,"724,967",—
-TOL,"Toll Brothers, Inc.",piotroski,False,4,9,44.4,148,10.96,1.78,16.28,—,0.75,159,"724,967",—
-TOL,"Toll Brothers, Inc.",netnet,False,1,4,25.0,148,10.96,1.78,16.28,—,0.75,159,"724,967",—
-TOL,"Toll Brothers, Inc.",custom,False,0,0,0.0,148,10.96,1.78,16.28,—,0.75,159,"724,967",—
+SBC,SBC Medical Group Holdings Incorporated,buffett,False,4,6,66.7,7.35,14.70,3.05,20.54,3.78,0.47,5.21,2M,—
+SBC,SBC Medical Group Holdings Incorporated,graham,False,5,9,55.6,7.35,14.70,3.05,20.54,3.78,0.47,5.21,2M,—
+SBC,SBC Medical Group Holdings Incorporated,netnet,False,2,4,50.0,7.35,14.70,3.05,20.54,3.78,0.47,5.21,2M,—
+SBC,SBC Medical Group Holdings Incorporated,piotroski,False,4,9,44.4,7.35,14.70,3.05,20.54,3.78,0.47,5.21,2M,—
+SBC,SBC Medical Group Holdings Incorporated,greenblatt,False,1,3,33.3,7.35,14.70,3.05,20.54,3.78,0.47,5.21,2M,—
+SBC,SBC Medical Group Holdings Incorporated,custom,False,0,0,0.0,7.35,14.70,3.05,20.54,3.78,0.47,5.21,2M,—
+TREE,"LendingTree, Inc.",piotroski,False,6,9,66.7,35.76,3.32,1.75,52.76,1.67,1.98,70.33,"221,678",—
