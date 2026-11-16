@@ -1,8 +1,8 @@
 # Stock-Comber screening report
 
-_Generated 2026-11-16 01:16 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-11-16 07:54 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **29** strategy matches passed.
+Screened **75** companies · **23** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
@@ -12,29 +12,23 @@ Screened **75** companies · **29** strategy matches passed.
 | MLI | MUELLER INDUSTRIES, INC | graham | ✅ | 89% | 54.89 | 8.00 | 1.91 | 23.84 | 5.92 | 0.15 | 1M | — |
 | MLI | MUELLER INDUSTRIES, INC | piotroski | ✅ | 78% | 54.89 | 8.00 | 1.91 | 23.84 | 5.92 | 0.15 | 1M | — |
 | BBW | BUILD-A-BEAR WORKSHOP INC | greenblatt | ✅ | 100% | 29.40 | 7.37 | 2.48 | 33.67 | 1.55 | — | 383,316 | — |
-| USLM | UNITED STATES LIME & MINERAL | lynch | ✅ | 100% | 111 | 23.81 | 5.06 | 21.29 | 19.27 | 0.08 | 112,483 | — |
-| USLM | UNITED STATES LIME & MINERAL | buffett | ✅ | 83% | 111 | 23.81 | 5.06 | 21.29 | 19.27 | 0.08 | 112,483 | — |
-| SBC | SBC Medical Group Holdings I | lynch | ✅ | 75% | 7.35 | 14.70 | 3.05 | 20.54 | 3.78 | 0.47 | 2M | — |
-| AGX | ARGAN INC | lynch | ✅ | 75% | 306 | 31.47 | 9.38 | 29.80 | 1.59 | 1.57 | 119,179 | — |
-| CRVL | CORVEL CORPORATION | buffett | ✅ | 83% | 85.69 | 40.04 | 11.22 | 27.99 | 2.03 | 0.63 | 117,709 | — |
-| CRVL | CORVEL CORPORATION | piotroski | ✅ | 78% | 85.69 | 40.04 | 11.22 | 27.99 | 2.03 | 0.63 | 117,709 | — |
-| CRVL | CORVEL CORPORATION | lynch | ✅ | 75% | 85.69 | 40.04 | 11.22 | 27.99 | 2.03 | 0.63 | 117,709 | — |
-| ADUS | Addus HomeCare Corp | lynch | ✅ | 100% | 123 | 23.56 | 2.08 | 8.84 | 1.80 | 0.32 | 105,100 | — |
-| ADUS | Addus HomeCare Corp | piotroski | ✅ | 89% | 123 | 23.56 | 2.08 | 8.84 | 1.80 | 0.32 | 105,100 | — |
-| FIZZ | National Beverage Corp. | buffett | ✅ | 83% | 37.23 | 18.99 | 5.49 | 28.89 | 4.39 | 0.34 | 251,570 | — |
-| CWEN | Clearway Energy, Inc. | lynch | ✅ | 75% | 33.42 | 6.92 | 0.20 | 2.91 | 1.13 | 1.85 | 845,264 | — |
-| ONTO | ONTO INNOVATION INC. | lynch | ✅ | 75% | 204 | 73.24 | 4.78 | 6.51 | 5.79 | 0.13 | 807,593 | — |
-| SAFT | SAFETY INSURANCE GROUP, INC. | piotroski | ✅ | 78% | 104 | 15.59 | 1.73 | 11.12 | — | 1.77 | 45,299 | — |
-| UGI | UGI CORPORATION | piotroski | ✅ | 78% | 37.72 | 12.21 | 1.73 | 14.19 | 0.89 | 2.23 | 881,028 | — |
-| DT | Dynatrace, Inc. | lynch | ✅ | 75% | 44.80 | 82.96 | 5.21 | 6.23 | 1.35 | 0.69 | 5M | — |
-| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 46.01 | 44.24 | — | -29.14 | 1.60 | -6.05 | 261,380 | — |
-| PRVA | Privia Health Group, Inc. | piotroski | ✅ | 78% | 24.55 | 136 | 4.29 | 3.11 | 1.60 | 0.78 | 2M | — |
-| CPRI | CAPRI HOLDINGS LIMITED | piotroski | ✅ | 78% | 21.46 | 18.82 | 32.15 | 171 | 1.21 | 39.38 | 3M | — |
+| KMT | KENNAMETAL INC. | graham | ✅ | 100% | 23.99 | 5.43 | 1.18 | 21.81 | 2.62 | 0.99 | 1M | — |
+| KMT | KENNAMETAL INC. | lynch | ✅ | 75% | 23.99 | 5.43 | 1.18 | 21.81 | 2.62 | 0.99 | 1M | — |
+| WHD | Cactus, Inc. | lynch | ✅ | 75% | 62.28 | — | — | 13.54 | 5.81 | 0.36 | 326,048 | — |
+| ERIE | ERIE INDEMNITY COMPANY | buffett | ✅ | 100% | 275 | — | — | 24.50 | 1.27 | 0.47 | 106,272 | — |
+| PARR | Par Pacific Holdings, Inc. | piotroski | ✅ | 78% | 73.10 | 10.21 | 2.50 | 24.44 | 1.61 | 1.51 | 520,510 | — |
+| BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 138 | 18.72 | 3.21 | 17.13 | 2.65 | 0.86 | 765,559 | — |
+| BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 138 | 18.72 | 3.21 | 17.13 | 2.65 | 0.86 | 765,559 | — |
+| MWA | Mueller Water Products, Inc. | piotroski | ✅ | 89% | 24.20 | 19.84 | 3.88 | 19.53 | 3.54 | 0.87 | 1M | — |
+| MWA | Mueller Water Products, Inc. | lynch | ✅ | 75% | 24.20 | 19.84 | 3.88 | 19.53 | 3.54 | 0.87 | 1M | — |
+| OSW | OneSpaWorld Holdings Limited | piotroski | ✅ | 78% | 30.80 | 44.64 | 5.88 | 13.20 | 1.91 | 0.30 | 765,254 | — |
+| XPRO | Expro Group Holdings N.V. | piotroski | ✅ | 89% | 13.51 | 30.02 | 1.02 | 3.37 | 2.16 | 0.47 | 791,336 | — |
+| SHAK | SHAKE SHACK INC. | piotroski | ✅ | 89% | 74.98 | 68.79 | 5.97 | 8.70 | 1.76 | 2.56 | 1M | — |
 | LW | LAMB WESTON HOLDINGS, INC. | piotroski | ✅ | 78% | 56.06 | 26.95 | 4.27 | 15.89 | 1.42 | — | 1M | — |
-| MYE | Myers Industries, Inc. | piotroski | ✅ | 78% | 28.07 | 30.18 | 3.58 | 11.87 | 1.67 | 1.89 | 218,598 | — |
-| WGO | WINNEBAGO INDUSTRIES, INC. | piotroski | ✅ | 78% | 30.96 | 25.59 | 0.71 | 2.79 | 2.17 | 0.70 | 463,863 | — |
-| BXP | BXP, INC. | piotroski | ✅ | 89% | 63.78 | 36.66 | 1.97 | 5.38 | — | 3.59 | 781,484 | — |
-| SNDR | Schneider National, Inc. | piotroski | ✅ | 78% | 29.34 | 49.73 | 1.71 | 3.43 | 2.13 | 0.60 | 563,132 | — |
+| SENS | Senseonics Holdings, Inc. | piotroski | ✅ | 78% | 10.58 | — | 7.23 | -113 | 4.83 | 1.07 | 1M | — |
+| NXDR | Nextdoor Holdings, Inc | piotroski | ✅ | 78% | 2.04 | — | 1.83 | -12.57 | 14.03 | 0.13 | 2M | — |
+| CGNX | COGNEX CORP | piotroski | ✅ | 89% | 50.01 | 73.54 | 5.68 | 7.67 | 3.80 | 0.35 | 1M | — |
+| TRLV | TRULIEVE CANNABIS CORP. | piotroski | ✅ | 89% | 10.90 | — | 1.82 | -10.70 | 4.43 | 1.36 | 1M | — |
 | MLI | MUELLER INDUSTRIES, INC | netnet | ▫️ | 50% | 54.89 | 8.00 | 1.91 | 23.84 | 5.92 | 0.15 | 1M | — |
 | MLI | MUELLER INDUSTRIES, INC | custom | ▫️ | 0% | 54.89 | 8.00 | 1.91 | 23.84 | 5.92 | 0.15 | 1M | — |
 | BBW | BUILD-A-BEAR WORKSHOP INC | graham | ▫️ | 56% | 29.40 | 7.37 | 2.48 | 33.67 | 1.55 | — | 383,316 | — |
@@ -43,18 +37,24 @@ Screened **75** companies · **29** strategy matches passed.
 | BBW | BUILD-A-BEAR WORKSHOP INC | lynch | ▫️ | 25% | 29.40 | 7.37 | 2.48 | 33.67 | 1.55 | — | 383,316 | — |
 | BBW | BUILD-A-BEAR WORKSHOP INC | netnet | ▫️ | 25% | 29.40 | 7.37 | 2.48 | 33.67 | 1.55 | — | 383,316 | — |
 | BBW | BUILD-A-BEAR WORKSHOP INC | custom | ▫️ | 0% | 29.40 | 7.37 | 2.48 | 33.67 | 1.55 | — | 383,316 | — |
-| USLM | UNITED STATES LIME & MINERAL | piotroski | ▫️ | 67% | 111 | 23.81 | 5.06 | 21.29 | 19.27 | 0.08 | 112,483 | — |
-| USLM | UNITED STATES LIME & MINERAL | greenblatt | ▫️ | 67% | 111 | 23.81 | 5.06 | 21.29 | 19.27 | 0.08 | 112,483 | — |
-| USLM | UNITED STATES LIME & MINERAL | graham | ▫️ | 56% | 111 | 23.81 | 5.06 | 21.29 | 19.27 | 0.08 | 112,483 | — |
-| USLM | UNITED STATES LIME & MINERAL | netnet | ▫️ | 50% | 111 | 23.81 | 5.06 | 21.29 | 19.27 | 0.08 | 112,483 | — |
-| USLM | UNITED STATES LIME & MINERAL | custom | ▫️ | 0% | 111 | 23.81 | 5.06 | 21.29 | 19.27 | 0.08 | 112,483 | — |
-| SBC | SBC Medical Group Holdings I | buffett | ▫️ | 67% | 7.35 | 14.70 | 3.05 | 20.54 | 3.78 | 0.47 | 2M | — |
-| SBC | SBC Medical Group Holdings I | graham | ▫️ | 56% | 7.35 | 14.70 | 3.05 | 20.54 | 3.78 | 0.47 | 2M | — |
-| SBC | SBC Medical Group Holdings I | netnet | ▫️ | 50% | 7.35 | 14.70 | 3.05 | 20.54 | 3.78 | 0.47 | 2M | — |
-| SBC | SBC Medical Group Holdings I | piotroski | ▫️ | 44% | 7.35 | 14.70 | 3.05 | 20.54 | 3.78 | 0.47 | 2M | — |
-| SBC | SBC Medical Group Holdings I | greenblatt | ▫️ | 33% | 7.35 | 14.70 | 3.05 | 20.54 | 3.78 | 0.47 | 2M | — |
-| SBC | SBC Medical Group Holdings I | custom | ▫️ | 0% | 7.35 | 14.70 | 3.05 | 20.54 | 3.78 | 0.47 | 2M | — |
-| SMCIP | Super Micro Computer, Inc. | graham | ▫️ | 78% | 46.38 | 14.23 | 2.23 | 15.40 | 3.87 | 1.07 | 748,247 | — |
-| SMCIP | Super Micro Computer, Inc. | buffett | ▫️ | 50% | 46.38 | 14.23 | 2.23 | 15.40 | 3.87 | 1.07 | 748,247 | — |
+| KMT | KENNAMETAL INC. | piotroski | ▫️ | 67% | 23.99 | 5.43 | 1.18 | 21.81 | 2.62 | 0.99 | 1M | — |
+| KMT | KENNAMETAL INC. | greenblatt | ▫️ | 67% | 23.99 | 5.43 | 1.18 | 21.81 | 2.62 | 0.99 | 1M | — |
+| KMT | KENNAMETAL INC. | buffett | ▫️ | 50% | 23.99 | 5.43 | 1.18 | 21.81 | 2.62 | 0.99 | 1M | — |
+| KMT | KENNAMETAL INC. | netnet | ▫️ | 50% | 23.99 | 5.43 | 1.18 | 21.81 | 2.62 | 0.99 | 1M | — |
+| KMT | KENNAMETAL INC. | custom | ▫️ | 0% | 23.99 | 5.43 | 1.18 | 21.81 | 2.62 | 0.99 | 1M | — |
+| XZO | Exzeo Group, Inc. | greenblatt | ▫️ | 67% | 16.00 | 16.16 | 5.05 | 32.56 | 3.86 | 0.37 | 103,470 | — |
+| XZO | Exzeo Group, Inc. | buffett | ▫️ | 50% | 16.00 | 16.16 | 5.05 | 32.56 | 3.86 | 0.37 | 103,470 | — |
+| XZO | Exzeo Group, Inc. | lynch | ▫️ | 50% | 16.00 | 16.16 | 5.05 | 32.56 | 3.86 | 0.37 | 103,470 | — |
+| XZO | Exzeo Group, Inc. | netnet | ▫️ | 50% | 16.00 | 16.16 | 5.05 | 32.56 | 3.86 | 0.37 | 103,470 | — |
+| XZO | Exzeo Group, Inc. | graham | ▫️ | 33% | 16.00 | 16.16 | 5.05 | 32.56 | 3.86 | 0.37 | 103,470 | — |
+| XZO | Exzeo Group, Inc. | piotroski | ▫️ | 33% | 16.00 | 16.16 | 5.05 | 32.56 | 3.86 | 0.37 | 103,470 | — |
+| XZO | Exzeo Group, Inc. | custom | ▫️ | 0% | 16.00 | 16.16 | 5.05 | 32.56 | 3.86 | 0.37 | 103,470 | — |
+| WHD | Cactus, Inc. | graham | ▫️ | 67% | 62.28 | — | — | 13.54 | 5.81 | 0.36 | 326,048 | — |
+| WHD | Cactus, Inc. | piotroski | ▫️ | 56% | 62.28 | — | — | 13.54 | 5.81 | 0.36 | 326,048 | — |
+| WHD | Cactus, Inc. | buffett | ▫️ | 50% | 62.28 | — | — | 13.54 | 5.81 | 0.36 | 326,048 | — |
+| WHD | Cactus, Inc. | greenblatt | ▫️ | 33% | 62.28 | — | — | 13.54 | 5.81 | 0.36 | 326,048 | — |
+| WHD | Cactus, Inc. | netnet | ▫️ | 25% | 62.28 | — | — | 13.54 | 5.81 | 0.36 | 326,048 | — |
+| WHD | Cactus, Inc. | custom | ▫️ | 0% | 62.28 | — | — | 13.54 | 5.81 | 0.36 | 326,048 | — |
+| ERIE | ERIE INDEMNITY COMPANY | greenblatt | ▫️ | 67% | 275 | — | — | 24.50 | 1.27 | 0.47 | 106,272 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.

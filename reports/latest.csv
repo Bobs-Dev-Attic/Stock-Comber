@@ -5,29 +5,23 @@ MLI,"MUELLER INDUSTRIES, INC",lynch,True,4,4,100.0,54.89,8.00,1.91,23.84,5.92,0.
 MLI,"MUELLER INDUSTRIES, INC",graham,True,8,9,88.9,54.89,8.00,1.91,23.84,5.92,0.15,66.66,1M,—
 MLI,"MUELLER INDUSTRIES, INC",piotroski,True,7,9,77.8,54.89,8.00,1.91,23.84,5.92,0.15,66.66,1M,—
 BBW,BUILD-A-BEAR WORKSHOP INC,greenblatt,True,3,3,100.0,29.40,7.37,2.48,33.67,1.55,—,32.62,"383,316",—
-USLM,UNITED STATES LIME & MINERALS INC,lynch,True,4,4,100.0,111,23.81,5.06,21.29,19.27,0.08,48.03,"112,483",—
-USLM,UNITED STATES LIME & MINERALS INC,buffett,True,5,6,83.3,111,23.81,5.06,21.29,19.27,0.08,48.03,"112,483",—
-SBC,SBC Medical Group Holdings Incorporated,lynch,True,3,4,75.0,7.35,14.70,3.05,20.54,3.78,0.47,5.21,2M,—
-AGX,ARGAN INC,lynch,True,3,4,75.0,306,31.47,9.38,29.80,1.59,1.57,84.62,"119,179",—
-CRVL,CORVEL CORPORATION,buffett,True,5,6,83.3,85.69,40.04,11.22,27.99,2.03,0.63,19.18,"117,709",—
-CRVL,CORVEL CORPORATION,piotroski,True,7,9,77.8,85.69,40.04,11.22,27.99,2.03,0.63,19.18,"117,709",—
-CRVL,CORVEL CORPORATION,lynch,True,3,4,75.0,85.69,40.04,11.22,27.99,2.03,0.63,19.18,"117,709",—
-ADUS,Addus HomeCare Corp,lynch,True,4,4,100.0,123,23.56,2.08,8.84,1.80,0.32,83.25,"105,100",—
-ADUS,Addus HomeCare Corp,piotroski,True,8,9,88.9,123,23.56,2.08,8.84,1.80,0.32,83.25,"105,100",—
-FIZZ,National Beverage Corp.,buffett,True,5,6,83.3,37.23,18.99,5.49,28.89,4.39,0.34,17.30,"251,570",—
-CWEN,"Clearway Energy, Inc.",lynch,True,3,4,75.0,33.42,6.92,0.20,2.91,1.13,1.85,134,"845,264",—
-ONTO,ONTO INNOVATION INC.,lynch,True,3,4,75.0,204,73.24,4.78,6.51,5.79,0.13,51.64,"807,593",—
-SAFT,"SAFETY INSURANCE GROUP, INC.",piotroski,True,7,9,77.8,104,15.59,1.73,11.12,—,1.77,95.51,"45,299",—
-UGI,UGI CORPORATION,piotroski,True,7,9,77.8,37.72,12.21,1.73,14.19,0.89,2.23,38.93,"881,028",—
-DT,"Dynatrace, Inc.",lynch,True,3,4,75.0,44.80,82.96,5.21,6.23,1.35,0.69,10.22,5M,—
-GSHD,"GOOSEHEAD INSURANCE, INC.",lynch,True,3,4,75.0,46.01,44.24,—,-29.14,1.60,-6.05,—,"261,380",—
-PRVA,"Privia Health Group, Inc.",piotroski,True,7,9,77.8,24.55,136,4.29,3.11,1.60,0.78,4.81,2M,—
-CPRI,CAPRI HOLDINGS LIMITED,piotroski,True,7,9,77.8,21.46,18.82,32.15,171,1.21,39.38,4.14,3M,—
+KMT,KENNAMETAL INC.,graham,True,9,9,100.0,23.99,5.43,1.18,21.81,2.62,0.99,44.90,1M,—
+KMT,KENNAMETAL INC.,lynch,True,3,4,75.0,23.99,5.43,1.18,21.81,2.62,0.99,44.90,1M,—
+WHD,"Cactus, Inc.",lynch,True,3,4,75.0,62.28,—,—,13.54,5.81,0.36,—,"326,048",—
+ERIE,ERIE INDEMNITY COMPANY,buffett,True,6,6,100.0,275,—,—,24.50,1.27,0.47,—,"106,272",—
+PARR,"Par Pacific Holdings, Inc.",piotroski,True,7,9,77.8,73.10,10.21,2.50,24.44,1.61,1.51,68.70,"520,510",—
+BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,138,18.72,3.21,17.13,2.65,0.86,84.23,"765,559",—
+BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,138,18.72,3.21,17.13,2.65,0.86,84.23,"765,559",—
+MWA,"Mueller Water Products, Inc.",piotroski,True,8,9,88.9,24.20,19.84,3.88,19.53,3.54,0.87,13.08,1M,—
+MWA,"Mueller Water Products, Inc.",lynch,True,3,4,75.0,24.20,19.84,3.88,19.53,3.54,0.87,13.08,1M,—
+OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,30.80,44.64,5.88,13.20,1.91,0.30,9.01,"765,254",—
+XPRO,Expro Group Holdings N.V.,piotroski,True,8,9,88.9,13.51,30.02,1.02,3.37,2.16,0.47,11.58,"791,336",—
+SHAK,SHAKE SHACK INC.,piotroski,True,8,9,88.9,74.98,68.79,5.97,8.70,1.76,2.56,17.55,1M,—
 LW,"LAMB WESTON HOLDINGS, INC.",piotroski,True,7,9,77.8,56.06,26.95,4.27,15.89,1.42,—,24.78,1M,—
-MYE,"Myers Industries, Inc.",piotroski,True,7,9,77.8,28.07,30.18,3.58,11.87,1.67,1.89,12.80,"218,598",—
-WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,7,9,77.8,30.96,25.59,0.71,2.79,2.17,0.70,34.43,"463,863",—
-BXP,"BXP, INC.",piotroski,True,8,9,88.9,63.78,36.66,1.97,5.38,—,3.59,35.61,"781,484",—
-SNDR,"Schneider National, Inc.",piotroski,True,7,9,77.8,29.34,49.73,1.71,3.43,2.13,0.60,15.11,"563,132",—
+SENS,"Senseonics Holdings, Inc.",piotroski,True,7,9,77.8,10.58,—,7.23,-113,4.83,1.07,—,1M,—
+NXDR,"Nextdoor Holdings, Inc",piotroski,True,7,9,77.8,2.04,—,1.83,-12.57,14.03,0.13,—,2M,—
+CGNX,COGNEX CORP,piotroski,True,8,9,88.9,50.01,73.54,5.68,7.67,3.80,0.35,11.61,1M,—
+TRLV,TRULIEVE CANNABIS CORP.,piotroski,True,8,9,88.9,10.90,—,1.82,-10.70,4.43,1.36,—,1M,—
 MLI,"MUELLER INDUSTRIES, INC",netnet,False,2,4,50.0,54.89,8.00,1.91,23.84,5.92,0.15,66.66,1M,—
 MLI,"MUELLER INDUSTRIES, INC",custom,False,0,0,0.0,54.89,8.00,1.91,23.84,5.92,0.15,66.66,1M,—
 BBW,BUILD-A-BEAR WORKSHOP INC,graham,False,5,9,55.6,29.40,7.37,2.48,33.67,1.55,—,32.62,"383,316",—
@@ -36,16 +30,22 @@ BBW,BUILD-A-BEAR WORKSHOP INC,buffett,False,3,6,50.0,29.40,7.37,2.48,33.67,1.55,
 BBW,BUILD-A-BEAR WORKSHOP INC,lynch,False,1,4,25.0,29.40,7.37,2.48,33.67,1.55,—,32.62,"383,316",—
 BBW,BUILD-A-BEAR WORKSHOP INC,netnet,False,1,4,25.0,29.40,7.37,2.48,33.67,1.55,—,32.62,"383,316",—
 BBW,BUILD-A-BEAR WORKSHOP INC,custom,False,0,0,0.0,29.40,7.37,2.48,33.67,1.55,—,32.62,"383,316",—
-USLM,UNITED STATES LIME & MINERALS INC,piotroski,False,6,9,66.7,111,23.81,5.06,21.29,19.27,0.08,48.03,"112,483",—
-USLM,UNITED STATES LIME & MINERALS INC,greenblatt,False,2,3,66.7,111,23.81,5.06,21.29,19.27,0.08,48.03,"112,483",—
-USLM,UNITED STATES LIME & MINERALS INC,graham,False,5,9,55.6,111,23.81,5.06,21.29,19.27,0.08,48.03,"112,483",—
-USLM,UNITED STATES LIME & MINERALS INC,netnet,False,2,4,50.0,111,23.81,5.06,21.29,19.27,0.08,48.03,"112,483",—
-USLM,UNITED STATES LIME & MINERALS INC,custom,False,0,0,0.0,111,23.81,5.06,21.29,19.27,0.08,48.03,"112,483",—
-SBC,SBC Medical Group Holdings Incorporated,buffett,False,4,6,66.7,7.35,14.70,3.05,20.54,3.78,0.47,5.21,2M,—
-SBC,SBC Medical Group Holdings Incorporated,graham,False,5,9,55.6,7.35,14.70,3.05,20.54,3.78,0.47,5.21,2M,—
-SBC,SBC Medical Group Holdings Incorporated,netnet,False,2,4,50.0,7.35,14.70,3.05,20.54,3.78,0.47,5.21,2M,—
-SBC,SBC Medical Group Holdings Incorporated,piotroski,False,4,9,44.4,7.35,14.70,3.05,20.54,3.78,0.47,5.21,2M,—
-SBC,SBC Medical Group Holdings Incorporated,greenblatt,False,1,3,33.3,7.35,14.70,3.05,20.54,3.78,0.47,5.21,2M,—
-SBC,SBC Medical Group Holdings Incorporated,custom,False,0,0,0.0,7.35,14.70,3.05,20.54,3.78,0.47,5.21,2M,—
-SMCIP,"Super Micro Computer, Inc.",graham,False,7,9,77.8,46.38,14.23,2.23,15.40,3.87,1.07,39.03,"748,247",—
-SMCIP,"Super Micro Computer, Inc.",buffett,False,3,6,50.0,46.38,14.23,2.23,15.40,3.87,1.07,39.03,"748,247",—
+KMT,KENNAMETAL INC.,piotroski,False,6,9,66.7,23.99,5.43,1.18,21.81,2.62,0.99,44.90,1M,—
+KMT,KENNAMETAL INC.,greenblatt,False,2,3,66.7,23.99,5.43,1.18,21.81,2.62,0.99,44.90,1M,—
+KMT,KENNAMETAL INC.,buffett,False,3,6,50.0,23.99,5.43,1.18,21.81,2.62,0.99,44.90,1M,—
+KMT,KENNAMETAL INC.,netnet,False,2,4,50.0,23.99,5.43,1.18,21.81,2.62,0.99,44.90,1M,—
+KMT,KENNAMETAL INC.,custom,False,0,0,0.0,23.99,5.43,1.18,21.81,2.62,0.99,44.90,1M,—
+XZO,"Exzeo Group, Inc.",greenblatt,False,2,3,66.7,16.00,16.16,5.05,32.56,3.86,0.37,8.40,"103,470",—
+XZO,"Exzeo Group, Inc.",buffett,False,3,6,50.0,16.00,16.16,5.05,32.56,3.86,0.37,8.40,"103,470",—
+XZO,"Exzeo Group, Inc.",lynch,False,2,4,50.0,16.00,16.16,5.05,32.56,3.86,0.37,8.40,"103,470",—
+XZO,"Exzeo Group, Inc.",netnet,False,2,4,50.0,16.00,16.16,5.05,32.56,3.86,0.37,8.40,"103,470",—
+XZO,"Exzeo Group, Inc.",graham,False,3,9,33.3,16.00,16.16,5.05,32.56,3.86,0.37,8.40,"103,470",—
+XZO,"Exzeo Group, Inc.",piotroski,False,3,9,33.3,16.00,16.16,5.05,32.56,3.86,0.37,8.40,"103,470",—
+XZO,"Exzeo Group, Inc.",custom,False,0,0,0.0,16.00,16.16,5.05,32.56,3.86,0.37,8.40,"103,470",—
+WHD,"Cactus, Inc.",graham,False,6,9,66.7,62.28,—,—,13.54,5.81,0.36,—,"326,048",—
+WHD,"Cactus, Inc.",piotroski,False,5,9,55.6,62.28,—,—,13.54,5.81,0.36,—,"326,048",—
+WHD,"Cactus, Inc.",buffett,False,3,6,50.0,62.28,—,—,13.54,5.81,0.36,—,"326,048",—
+WHD,"Cactus, Inc.",greenblatt,False,1,3,33.3,62.28,—,—,13.54,5.81,0.36,—,"326,048",—
+WHD,"Cactus, Inc.",netnet,False,1,4,25.0,62.28,—,—,13.54,5.81,0.36,—,"326,048",—
+WHD,"Cactus, Inc.",custom,False,0,0,0.0,62.28,—,—,13.54,5.81,0.36,—,"326,048",—
+ERIE,ERIE INDEMNITY COMPANY,greenblatt,False,2,3,66.7,275,—,—,24.50,1.27,0.47,—,"106,272",—
