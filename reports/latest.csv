@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-MLI,"MUELLER INDUSTRIES, INC",buffett,True,6,6,100.0,54.89,8.00,1.91,23.84,5.92,0.15,66.66,1M,—
-MLI,"MUELLER INDUSTRIES, INC",greenblatt,True,3,3,100.0,54.89,8.00,1.91,23.84,5.92,0.15,66.66,1M,—
-MLI,"MUELLER INDUSTRIES, INC",lynch,True,4,4,100.0,54.89,8.00,1.91,23.84,5.92,0.15,66.66,1M,—
-MLI,"MUELLER INDUSTRIES, INC",graham,True,8,9,88.9,54.89,8.00,1.91,23.84,5.92,0.15,66.66,1M,—
-MLI,"MUELLER INDUSTRIES, INC",piotroski,True,7,9,77.8,54.89,8.00,1.91,23.84,5.92,0.15,66.66,1M,—
-BBW,BUILD-A-BEAR WORKSHOP INC,greenblatt,True,3,3,100.0,29.40,7.37,2.48,33.67,1.55,—,32.62,"383,316",—
-KMT,KENNAMETAL INC.,graham,True,9,9,100.0,23.99,5.43,1.18,21.81,2.62,0.99,44.90,1M,—
-KMT,KENNAMETAL INC.,lynch,True,3,4,75.0,23.99,5.43,1.18,21.81,2.62,0.99,44.90,1M,—
-WHD,"Cactus, Inc.",lynch,True,3,4,75.0,62.28,—,—,13.54,5.81,0.36,—,"326,048",—
-ERIE,ERIE INDEMNITY COMPANY,buffett,True,6,6,100.0,275,—,—,24.50,1.27,0.47,—,"106,272",—
-PARR,"Par Pacific Holdings, Inc.",piotroski,True,7,9,77.8,73.10,10.21,2.50,24.44,1.61,1.51,68.70,"520,510",—
-BOOT,"Boot Barn Holdings, Inc.",piotroski,True,8,9,88.9,138,18.72,3.21,17.13,2.65,0.86,84.23,"765,559",—
-BOOT,"Boot Barn Holdings, Inc.",lynch,True,3,4,75.0,138,18.72,3.21,17.13,2.65,0.86,84.23,"765,559",—
-MWA,"Mueller Water Products, Inc.",piotroski,True,8,9,88.9,24.20,19.84,3.88,19.53,3.54,0.87,13.08,1M,—
-MWA,"Mueller Water Products, Inc.",lynch,True,3,4,75.0,24.20,19.84,3.88,19.53,3.54,0.87,13.08,1M,—
-OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,30.80,44.64,5.88,13.20,1.91,0.30,9.01,"765,254",—
-XPRO,Expro Group Holdings N.V.,piotroski,True,8,9,88.9,13.51,30.02,1.02,3.37,2.16,0.47,11.58,"791,336",—
-SHAK,SHAKE SHACK INC.,piotroski,True,8,9,88.9,74.98,68.79,5.97,8.70,1.76,2.56,17.55,1M,—
-LW,"LAMB WESTON HOLDINGS, INC.",piotroski,True,7,9,77.8,56.06,26.95,4.27,15.89,1.42,—,24.78,1M,—
-SENS,"Senseonics Holdings, Inc.",piotroski,True,7,9,77.8,10.58,—,7.23,-113,4.83,1.07,—,1M,—
-NXDR,"Nextdoor Holdings, Inc",piotroski,True,7,9,77.8,2.04,—,1.83,-12.57,14.03,0.13,—,2M,—
-CGNX,COGNEX CORP,piotroski,True,8,9,88.9,50.01,73.54,5.68,7.67,3.80,0.35,11.61,1M,—
-TRLV,TRULIEVE CANNABIS CORP.,piotroski,True,8,9,88.9,10.90,—,1.82,-10.70,4.43,1.36,—,1M,—
-MLI,"MUELLER INDUSTRIES, INC",netnet,False,2,4,50.0,54.89,8.00,1.91,23.84,5.92,0.15,66.66,1M,—
-MLI,"MUELLER INDUSTRIES, INC",custom,False,0,0,0.0,54.89,8.00,1.91,23.84,5.92,0.15,66.66,1M,—
-BBW,BUILD-A-BEAR WORKSHOP INC,graham,False,5,9,55.6,29.40,7.37,2.48,33.67,1.55,—,32.62,"383,316",—
-BBW,BUILD-A-BEAR WORKSHOP INC,piotroski,False,5,9,55.6,29.40,7.37,2.48,33.67,1.55,—,32.62,"383,316",—
-BBW,BUILD-A-BEAR WORKSHOP INC,buffett,False,3,6,50.0,29.40,7.37,2.48,33.67,1.55,—,32.62,"383,316",—
-BBW,BUILD-A-BEAR WORKSHOP INC,lynch,False,1,4,25.0,29.40,7.37,2.48,33.67,1.55,—,32.62,"383,316",—
-BBW,BUILD-A-BEAR WORKSHOP INC,netnet,False,1,4,25.0,29.40,7.37,2.48,33.67,1.55,—,32.62,"383,316",—
-BBW,BUILD-A-BEAR WORKSHOP INC,custom,False,0,0,0.0,29.40,7.37,2.48,33.67,1.55,—,32.62,"383,316",—
-KMT,KENNAMETAL INC.,piotroski,False,6,9,66.7,23.99,5.43,1.18,21.81,2.62,0.99,44.90,1M,—
-KMT,KENNAMETAL INC.,greenblatt,False,2,3,66.7,23.99,5.43,1.18,21.81,2.62,0.99,44.90,1M,—
-KMT,KENNAMETAL INC.,buffett,False,3,6,50.0,23.99,5.43,1.18,21.81,2.62,0.99,44.90,1M,—
-KMT,KENNAMETAL INC.,netnet,False,2,4,50.0,23.99,5.43,1.18,21.81,2.62,0.99,44.90,1M,—
-KMT,KENNAMETAL INC.,custom,False,0,0,0.0,23.99,5.43,1.18,21.81,2.62,0.99,44.90,1M,—
-XZO,"Exzeo Group, Inc.",greenblatt,False,2,3,66.7,16.00,16.16,5.05,32.56,3.86,0.37,8.40,"103,470",—
-XZO,"Exzeo Group, Inc.",buffett,False,3,6,50.0,16.00,16.16,5.05,32.56,3.86,0.37,8.40,"103,470",—
-XZO,"Exzeo Group, Inc.",lynch,False,2,4,50.0,16.00,16.16,5.05,32.56,3.86,0.37,8.40,"103,470",—
-XZO,"Exzeo Group, Inc.",netnet,False,2,4,50.0,16.00,16.16,5.05,32.56,3.86,0.37,8.40,"103,470",—
-XZO,"Exzeo Group, Inc.",graham,False,3,9,33.3,16.00,16.16,5.05,32.56,3.86,0.37,8.40,"103,470",—
-XZO,"Exzeo Group, Inc.",piotroski,False,3,9,33.3,16.00,16.16,5.05,32.56,3.86,0.37,8.40,"103,470",—
-XZO,"Exzeo Group, Inc.",custom,False,0,0,0.0,16.00,16.16,5.05,32.56,3.86,0.37,8.40,"103,470",—
-WHD,"Cactus, Inc.",graham,False,6,9,66.7,62.28,—,—,13.54,5.81,0.36,—,"326,048",—
-WHD,"Cactus, Inc.",piotroski,False,5,9,55.6,62.28,—,—,13.54,5.81,0.36,—,"326,048",—
-WHD,"Cactus, Inc.",buffett,False,3,6,50.0,62.28,—,—,13.54,5.81,0.36,—,"326,048",—
-WHD,"Cactus, Inc.",greenblatt,False,1,3,33.3,62.28,—,—,13.54,5.81,0.36,—,"326,048",—
-WHD,"Cactus, Inc.",netnet,False,1,4,25.0,62.28,—,—,13.54,5.81,0.36,—,"326,048",—
-WHD,"Cactus, Inc.",custom,False,0,0,0.0,62.28,—,—,13.54,5.81,0.36,—,"326,048",—
-ERIE,ERIE INDEMNITY COMPANY,greenblatt,False,2,3,66.7,275,—,—,24.50,1.27,0.47,—,"106,272",—
+YELP,YELP INC.,greenblatt,True,3,3,100.0,20.52,9.16,1.88,20.48,2.99,0.35,23.46,"287,757",—
+YELP,YELP INC.,piotroski,True,8,9,88.9,20.52,9.16,1.88,20.48,2.99,0.35,23.46,"287,757",—
+HNRG,HALLADOR ENERGY CO,greenblatt,True,3,3,100.0,10.31,10.74,2.80,26.20,0.81,1.55,8.92,"137,185",—
+HNRG,HALLADOR ENERGY CO,piotroski,True,8,9,88.9,10.31,10.74,2.80,26.20,0.81,1.55,8.92,"137,185",—
+CRS,CARPENTER TECHNOLOGY CORPORATION,piotroski,True,8,9,88.9,292,27.72,6.60,23.78,3.81,0.72,102,1M,—
+HL,HECLA MINING CO/DE/,piotroski,True,8,9,88.9,12.46,25.42,3.15,12.41,2.72,0.37,6.60,15M,—
+MHO,"M/I HOMES, INC.",lynch,True,3,4,75.0,126,8.54,1.09,12.73,—,0.51,196,"31,748",—
+DFH,"DREAM FINDERS HOMES, INC.",lynch,True,3,4,75.0,10.64,4.97,0.76,15.25,—,1.49,26.02,"237,930",—
+DUKB,Duke Energy CORP,piotroski,True,8,9,88.9,19.96,3.16,0.30,9.58,0.55,—,97.33,"31,489",—
+DUKB,Duke Energy CORP,lynch,True,3,4,75.0,19.96,3.16,0.30,9.58,0.55,—,97.33,"31,489",—
+SBAC,SBA COMMUNICATIONS CORPORATION,piotroski,True,7,9,77.8,187,19.05,—,-21.71,0.29,—,—,"169,999",—
+EFC,Ellington Financial Inc.,lynch,True,3,4,75.0,11.02,9.26,0.60,6.47,—,9.53,22.10,1M,—
+TILE,INTERFACE INC,piotroski,True,8,9,88.9,30.73,15.68,2.84,18.12,2.34,0.88,21.85,"108,321",—
+LNC,LINCOLN NATIONAL CORPORATION,lynch,True,3,4,75.0,41.47,7.11,0.71,10.79,—,37.25,87.69,"298,771",—
+PEN,"Penumbra, Inc",piotroski,True,8,9,88.9,321,71.00,8.83,12.45,6.64,0.28,60.79,"237,595",—
+HAFC,HANMI FINANCIAL CORPORATION,piotroski,True,8,9,88.9,32.30,12.87,1.22,9.55,—,8.88,38.69,"31,562",—
+RGA,"REINSURANCE GROUP OF AMERICA, INCORPORATED",piotroski,True,7,9,77.8,272,15.36,1.35,8.78,—,10.63,283,"153,089",—
+RGA,"REINSURANCE GROUP OF AMERICA, INCORPORATED",lynch,True,3,4,75.0,272,15.36,1.35,8.78,—,10.63,283,"153,089",—
+OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,31.07,45.02,5.94,13.20,1.91,0.30,9.01,"236,037",—
+BKU,"BankUnited, Inc.",piotroski,True,8,9,88.9,43.80,12.41,1.07,8.79,—,10.47,57.13,"345,730",—
+SSRM,SSR MINING INC.,piotroski,True,7,9,77.8,27.15,14.68,1.68,11.28,2.08,0.51,25.94,3M,—
+KNTK,KINETIK HOLDINGS INC.,lynch,True,3,4,75.0,55.40,21.06,—,-31.53,0.69,-7.37,—,"669,739",—
+DLB,"Dolby Laboratories, Inc.",piotroski,True,7,9,77.8,63.61,24.28,2.36,9.72,3.17,0.23,39.82,1M,—
+BJ,"BJ’S WHOLESALE CLUB HOLDINGS, INC.",piotroski,True,8,9,88.9,111,25.38,6.68,26.32,0.75,2.42,40.50,"491,516",—
+NPKI,NPK International Inc.,piotroski,True,7,9,77.8,9.03,20.07,2.20,11.09,1.43,0.26,6.44,1M,—
+VVX,"V2X, Inc.",piotroski,True,9,9,100.0,79.60,32.49,2.34,7.18,1.22,2.02,43.35,"46,803",—
+AMCX,AMC Global Media Inc.,piotroski,True,7,9,77.8,9.30,5.61,0.54,9.11,1.67,2.98,25.46,"82,193",—
+PLXS,PLEXUS CORP.,piotroski,True,8,9,88.9,207,33.04,3.93,11.89,1.58,1.16,86.13,"75,852",—
+AEIS,"ADVANCED ENERGY INDUSTRIES, INC.",piotroski,True,7,9,77.8,211,54.89,5.97,10.89,1.59,0.86,55.23,"129,018",—
+CALX,"Calix, Inc",piotroski,True,7,9,77.8,32.17,124,2.59,2.08,4.24,0.23,8.52,"563,235",—
+SNDR,"Schneider National, Inc.",piotroski,True,7,9,77.8,29.25,49.58,1.70,3.43,2.13,0.60,15.11,"89,014",—
+DAR,DARLING INGREDIENTS INC.,piotroski,True,7,9,77.8,53.62,137,1.81,1.33,1.50,1.16,16.11,"399,371",—
+PTON,"Peloton Interactive, Inc.",piotroski,True,8,9,88.9,5.64,40.29,—,-45.24,2.84,-15.72,—,3M,—
+YELP,YELP INC.,graham,False,7,9,77.8,20.52,9.16,1.88,20.48,2.99,0.35,23.46,"287,757",—
+YELP,YELP INC.,buffett,False,3,6,50.0,20.52,9.16,1.88,20.48,2.99,0.35,23.46,"287,757",—
+YELP,YELP INC.,lynch,False,2,4,50.0,20.52,9.16,1.88,20.48,2.99,0.35,23.46,"287,757",—
+YELP,YELP INC.,netnet,False,2,4,50.0,20.52,9.16,1.88,20.48,2.99,0.35,23.46,"287,757",—
+YELP,YELP INC.,custom,False,0,0,0.0,20.52,9.16,1.88,20.48,2.99,0.35,23.46,"287,757",—
+UROY,Uranium Royalty Corp.,graham,False,6,9,66.7,2.67,9.22,1.19,12.87,5.94,0.19,3.83,1M,—
+UROY,Uranium Royalty Corp.,greenblatt,False,2,3,66.7,2.67,9.22,1.19,12.87,5.94,0.19,3.83,1M,—
+UROY,Uranium Royalty Corp.,lynch,False,2,4,50.0,2.67,9.22,1.19,12.87,5.94,0.19,3.83,1M,—
+UROY,Uranium Royalty Corp.,netnet,False,2,4,50.0,2.67,9.22,1.19,12.87,5.94,0.19,3.83,1M,—
+UROY,Uranium Royalty Corp.,buffett,False,2,6,33.3,2.67,9.22,1.19,12.87,5.94,0.19,3.83,1M,—
+UROY,Uranium Royalty Corp.,piotroski,False,3,9,33.3,2.67,9.22,1.19,12.87,5.94,0.19,3.83,1M,—
+UROY,Uranium Royalty Corp.,custom,False,0,0,0.0,2.67,9.22,1.19,12.87,5.94,0.19,3.83,1M,—
+HNRG,HALLADOR ENERGY CO,lynch,False,1,4,25.0,10.31,10.74,2.80,26.20,0.81,1.55,8.92,"137,185",—
+HNRG,HALLADOR ENERGY CO,netnet,False,1,4,25.0,10.31,10.74,2.80,26.20,0.81,1.55,8.92,"137,185",—
+HNRG,HALLADOR ENERGY CO,graham,False,2,9,22.2,10.31,10.74,2.80,26.20,0.81,1.55,8.92,"137,185",—
+HNRG,HALLADOR ENERGY CO,buffett,False,1,6,16.7,10.31,10.74,2.80,26.20,0.81,1.55,8.92,"137,185",—
+HNRG,HALLADOR ENERGY CO,custom,False,0,0,0.0,10.31,10.74,2.80,26.20,0.81,1.55,8.92,"137,185",—
