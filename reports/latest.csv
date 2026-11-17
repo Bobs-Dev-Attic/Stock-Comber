@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-UVXY,PROSHARES TRUST II,greenblatt,True,3,3,100.0,20.45,1.48,0.44,29.91,—,0.06,120,16M,—
-YELP,YELP INC.,greenblatt,True,3,3,100.0,20.56,9.18,1.88,20.48,2.99,0.35,23.46,"933,190",—
-YELP,YELP INC.,piotroski,True,8,9,88.9,20.56,9.18,1.88,20.48,2.99,0.35,23.46,"933,190",—
-DECK,DECKERS OUTDOOR CORP,greenblatt,True,3,3,100.0,83.46,11.89,4.87,40.97,3.54,—,52.04,4M,—
-DECK,DECKERS OUTDOOR CORP,buffett,True,5,6,83.3,83.46,11.89,4.87,40.97,3.54,—,52.04,4M,—
-DECK,DECKERS OUTDOOR CORP,piotroski,True,7,9,77.8,83.46,11.89,4.87,40.97,3.54,—,52.04,4M,—
-DECK,DECKERS OUTDOOR CORP,lynch,True,3,4,75.0,83.46,11.89,4.87,40.97,3.54,—,52.04,4M,—
-LFMD,"LIFEMD, INC.",greenblatt,True,3,3,100.0,1.85,7.40,3.61,61.99,1.25,2.04,1.70,1M,—
+FSLR,"First Solar, Inc.",lynch,True,4,4,100.0,162,11.43,1.83,16.02,2.67,0.40,168,3M,—
+FSLR,"First Solar, Inc.",piotroski,True,8,9,88.9,162,11.43,1.83,16.02,2.67,0.40,168,3M,—
+ERIE,ERIE INDEMNITY COMPANY,buffett,True,6,6,100.0,276,—,—,24.50,1.27,0.47,—,"184,562",—
+XPEL,"XPEL, INC.",buffett,True,6,6,100.0,36.83,19.91,3.64,18.28,3.25,0.35,20.53,"283,943",—
+XPEL,"XPEL, INC.",lynch,True,4,4,100.0,36.83,19.91,3.64,18.28,3.25,0.35,20.53,"283,943",—
+AWI,"ARMSTRONG WORLD INDUSTRIES, INC.",piotroski,True,9,9,100.0,175,24.66,8.45,34.27,1.46,—,57.37,"352,215",—
 SFM,"Sprouts Farmers Market, Inc.",greenblatt,True,3,3,100.0,50.17,9.45,3.53,37.32,0.93,1.96,41.21,2M,—
 SFM,"Sprouts Farmers Market, Inc.",piotroski,True,7,9,77.8,50.17,9.45,3.53,37.32,0.93,1.96,41.21,2M,—
-AES,THE AES CORPORATION,greenblatt,True,3,3,100.0,14.94,11.86,2.63,22.40,0.77,—,12.70,9M,—
-AIT,"APPLIED INDUSTRIAL TECHNOLOGIES, INC.",piotroski,True,7,9,77.8,293,26.76,5.96,22.27,2.58,0.62,110,"220,522",—
-AIT,"APPLIED INDUSTRIAL TECHNOLOGIES, INC.",lynch,True,3,4,75.0,293,26.76,5.96,22.27,2.58,0.62,110,"220,522",—
-LII,LENNOX INTERNATIONAL INC,lynch,True,3,4,75.0,335,14.71,10.21,69.28,1.60,2.51,130,"728,388",—
-WLDN,"WILLDAN GROUP, INC.",piotroski,True,7,9,77.8,70.13,20.09,3.47,17.24,1.56,0.79,39.85,"243,266",—
-DUKB,Duke Energy CORP,piotroski,True,8,9,88.9,19.92,3.16,0.30,9.58,0.55,—,97.33,"48,433",—
-DUKB,Duke Energy CORP,lynch,True,3,4,75.0,19.92,3.16,0.30,9.58,0.55,—,97.33,"48,433",—
-FICO,Fair Isaac Corp,piotroski,True,8,9,88.9,717,19.75,—,-21.56,0.99,-1.54,—,"422,636",—
-FICO,Fair Isaac Corp,lynch,True,3,4,75.0,717,19.75,—,-21.56,0.99,-1.54,—,"422,636",—
-ACLS,AXCELIS TECHNOLOGIES INC,lynch,True,3,4,75.0,99.22,26.11,3.04,11.62,4.77,0.32,52.85,"241,912",—
-CSTM,Constellium SE,piotroski,True,9,9,100.0,21.79,11.35,3.25,28.68,1.29,4.60,17.02,1M,—
-PNR,Pentair plc,buffett,True,5,6,83.3,68.44,17.28,2.93,16.90,1.61,0.78,45.64,2M,—
-PNR,Pentair plc,piotroski,True,7,9,77.8,68.44,17.28,2.93,16.90,1.61,0.78,45.64,2M,—
-BFAM,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,piotroski,True,8,9,88.9,52.52,15.63,2.25,14.42,0.52,1.90,41.99,1M,—
-BFAM,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,lynch,True,3,4,75.0,52.52,15.63,2.25,14.42,0.52,1.90,41.99,1M,—
-ADUS,Addus HomeCare Corp,piotroski,True,8,9,88.9,125,23.87,2.11,8.84,1.80,0.32,83.25,"171,174",—
-ADUS,Addus HomeCare Corp,lynch,True,3,4,75.0,125,23.87,2.11,8.84,1.80,0.32,83.25,"171,174",—
+KFY,KORN FERRY,piotroski,True,9,9,100.0,76.29,14.61,2.03,14.06,1.94,1.06,66.42,"364,192",—
+KFY,KORN FERRY,lynch,True,3,4,75.0,76.29,14.61,2.03,14.06,1.94,1.06,66.42,"364,192",—
+SFD,"SMITHFIELD FOODS, INC.",graham,True,9,9,100.0,19.26,7.67,1.11,14.51,2.97,—,31.27,2M,—
+DAKT,"Daktronics, Inc.",piotroski,True,8,9,88.9,19.16,20.83,3.15,15.09,2.31,—,11.23,"373,751",—
+DAKT,"Daktronics, Inc.",lynch,True,3,4,75.0,19.16,20.83,3.15,15.09,2.31,—,11.23,"373,751",—
+AIR,AAR CORP,piotroski,True,7,9,77.8,106,21.83,2.39,11.02,2.84,—,69.66,"348,628",—
+AIR,AAR CORP,lynch,True,3,4,75.0,106,21.83,2.39,11.02,2.84,—,69.66,"348,628",—
+SIGI,"SELECTIVE INSURANCE GROUP, INC",piotroski,True,7,9,77.8,104,13.86,1.76,12.92,—,3.20,99.81,"423,119",—
+TILE,INTERFACE INC,piotroski,True,8,9,88.9,30.61,15.62,2.83,18.12,2.34,0.88,21.85,"429,055",—
 TOST,"Toast, Inc.",piotroski,True,7,9,77.8,35.00,62.50,10.00,16.10,2.75,0.48,6.64,7M,—
-FIVE,"Five Below, Inc.",piotroski,True,9,9,100.0,242,37.34,6.11,16.35,2.01,1.25,75.89,"551,907",—
-CW,CURTISS-WRIGHT CORPORATION,piotroski,True,8,9,88.9,454,35.27,6.74,19.11,1.44,1.06,140,"225,305",—
-AGCO,AGCO CORP /DE,piotroski,True,8,9,88.9,109,11.15,1.90,17.00,1.39,1.72,112,"523,040",—
+PCTY,PAYLOCITY HOLDING CORPORATION,piotroski,True,8,9,88.9,184,37.49,8.27,22.08,1.09,3.00,49.69,"994,848",—
+SCSC,"ScanSource, Inc.",graham,True,8,9,88.9,44.44,12.21,1.06,8.66,1.76,1.12,58.64,"384,076",—
+SCSC,"ScanSource, Inc.",piotroski,True,7,9,77.8,44.44,12.21,1.06,8.66,1.76,1.12,58.64,"384,076",—
+SCSC,"ScanSource, Inc.",lynch,True,3,4,75.0,44.44,12.21,1.06,8.66,1.76,1.12,58.64,"384,076",—
 VIRT,"Virtu Financial, Inc.",piotroski,True,7,9,77.8,58.30,11.36,3.14,29.60,—,11.49,46.27,1M,—
-NDSN,NORDSON CORPORATION,buffett,True,5,6,83.3,323,37.90,6.03,15.92,1.64,—,101,"237,424",—
-NDSN,NORDSON CORPORATION,piotroski,True,7,9,77.8,323,37.90,6.03,15.92,1.64,—,101,"237,424",—
-ACM,AECOM,piotroski,True,7,9,77.8,72.50,17.22,3.88,22.54,1.14,3.81,42.08,2M,—
-BBY,"Best Buy Co., Inc.",piotroski,True,8,9,88.9,103,20.51,7.40,36.07,1.11,—,39.81,2M,—
-GSHD,"GOOSEHEAD INSURANCE, INC.",lynch,True,3,4,75.0,48.81,46.93,—,-29.14,1.60,-6.05,—,"451,770",—
-SCI,SERVICE CORPORATION INTERNATIONAL,piotroski,True,7,9,77.8,75.81,19.95,6.60,33.12,0.55,—,31.33,1M,—
-GCO,GENESCO INC,piotroski,True,8,9,88.9,34.74,27.79,0.65,2.34,1.64,1.46,38.74,"110,808",—
-PTON,"Peloton Interactive, Inc.",piotroski,True,8,9,88.9,5.33,38.07,—,-45.24,2.84,-15.72,—,12M,—
-TPC,Tutor Perini Corporation,piotroski,True,7,9,77.8,96.75,64.07,4.24,6.60,1.27,3.20,27.84,"335,573",—
-AMN,"AMN HEALTHCARE SERVICES, INC.",piotroski,True,7,9,77.8,39.64,—,2.38,-14.90,0.94,2.26,—,"657,234",—
-UVXY,PROSHARES TRUST II,lynch,False,2,4,50.0,20.45,1.48,0.44,29.91,—,0.06,120,16M,—
-UVXY,PROSHARES TRUST II,graham,False,4,9,44.4,20.45,1.48,0.44,29.91,—,0.06,120,16M,—
-UVXY,PROSHARES TRUST II,buffett,False,2,6,33.3,20.45,1.48,0.44,29.91,—,0.06,120,16M,—
-UVXY,PROSHARES TRUST II,piotroski,False,3,9,33.3,20.45,1.48,0.44,29.91,—,0.06,120,16M,—
-UVXY,PROSHARES TRUST II,netnet,False,1,4,25.0,20.45,1.48,0.44,29.91,—,0.06,120,16M,—
-UVXY,PROSHARES TRUST II,custom,False,0,0,0.0,20.45,1.48,0.44,29.91,—,0.06,120,16M,—
-YELP,YELP INC.,graham,False,7,9,77.8,20.56,9.18,1.88,20.48,2.99,0.35,23.46,"933,190",—
-YELP,YELP INC.,buffett,False,3,6,50.0,20.56,9.18,1.88,20.48,2.99,0.35,23.46,"933,190",—
+APOG,"APOGEE ENTERPRISES, INC.",piotroski,True,7,9,77.8,46.49,18.45,1.95,10.58,1.65,—,36.72,"206,292",—
+APOG,"APOGEE ENTERPRISES, INC.",lynch,True,3,4,75.0,46.49,18.45,1.95,10.58,1.65,—,36.72,"206,292",—
+SSRM,SSR MINING INC.,piotroski,True,7,9,77.8,26.17,14.15,1.62,11.28,2.08,0.51,25.94,4M,—
+ONB,Old National Bancorp,lynch,True,3,4,75.0,24.79,13.85,1.07,7.88,—,7.49,30.60,2M,—
+UGI,UGI CORPORATION,piotroski,True,7,9,77.8,37.86,12.25,1.74,14.19,0.89,2.23,38.93,"952,936",—
+FAF,FIRST AMERICAN FINANCIAL CORPORATION,piotroski,True,8,9,88.9,65.98,11.00,1.24,11.31,—,1.95,84.61,"912,723",—
+HGV,Hilton Grand Vacations Inc.,piotroski,True,8,9,88.9,45.01,50.57,3.20,6.28,—,7.83,16.80,"911,632",—
+SENS,"Senseonics Holdings, Inc.",piotroski,True,7,9,77.8,10.90,—,7.45,-113,4.83,1.07,—,3M,—
+SPHR,SPHERE ENTERTAINMENT CO.,piotroski,True,7,9,77.8,125,170,2.55,1.50,1.09,0.89,28.65,"785,391",—
+USNA,"USANA HEALTH SCIENCES, INC.",piotroski,True,7,9,77.8,13.54,23.34,0.47,2.02,2.24,0.29,19.35,"185,879",—
+AVNW,"AVIAT NETWORKS, INC.",piotroski,True,7,9,77.8,16.56,87.16,0.81,0.95,1.97,1.24,9.37,"261,527",—
+SHC,SOTERA HEALTH COMPANY,piotroski,True,7,9,77.8,16.25,60.19,7.68,12.86,2.46,4.38,3.59,3M,—
+HZEN,Grayscale Horizen Trust (ZEN),greenblatt,False,2,3,66.7,0.45,4.35,—,—,—,—,—,"29,006",—
+HZEN,Grayscale Horizen Trust (ZEN),piotroski,False,3,9,33.3,0.45,4.35,—,—,—,—,—,"29,006",—
+HZEN,Grayscale Horizen Trust (ZEN),lynch,False,1,4,25.0,0.45,4.35,—,—,—,—,—,"29,006",—
+HZEN,Grayscale Horizen Trust (ZEN),netnet,False,1,4,25.0,0.45,4.35,—,—,—,—,—,"29,006",—
+HZEN,Grayscale Horizen Trust (ZEN),graham,False,1,9,11.1,0.45,4.35,—,—,—,—,—,"29,006",—
+HZEN,Grayscale Horizen Trust (ZEN),buffett,False,0,6,0.0,0.45,4.35,—,—,—,—,—,"29,006",—
+HZEN,Grayscale Horizen Trust (ZEN),custom,False,0,0,0.0,0.45,4.35,—,—,—,—,—,"29,006",—
+FSLR,"First Solar, Inc.",graham,False,7,9,77.8,162,11.43,1.83,16.02,2.67,0.40,168,3M,—
+FSLR,"First Solar, Inc.",buffett,False,4,6,66.7,162,11.43,1.83,16.02,2.67,0.40,168,3M,—
+FSLR,"First Solar, Inc.",greenblatt,False,2,3,66.7,162,11.43,1.83,16.02,2.67,0.40,168,3M,—
+FSLR,"First Solar, Inc.",netnet,False,2,4,50.0,162,11.43,1.83,16.02,2.67,0.40,168,3M,—
+FSLR,"First Solar, Inc.",custom,False,0,0,0.0,162,11.43,1.83,16.02,2.67,0.40,168,3M,—
+INSW,"International Seaways, Inc.",buffett,False,4,6,66.7,102,16.39,2.51,15.31,3.71,0.32,75.56,"582,915",—
+INSW,"International Seaways, Inc.",piotroski,False,6,9,66.7,102,16.39,2.51,15.31,3.71,0.32,75.56,"582,915",—
+INSW,"International Seaways, Inc.",lynch,False,2,4,50.0,102,16.39,2.51,15.31,3.71,0.32,75.56,"582,915",—
