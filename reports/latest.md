@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-11-18 06:11 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-11-18 15:15 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **29** strategy matches passed.
+Screened **75** companies · **33** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| ERIE | ERIE INDEMNITY COMPANY | buffett | ✅ | 100% | 273 | — | — | 24.50 | 1.27 | 0.47 | 131,738 | — |
-| PRI | Primerica, Inc. | piotroski | ✅ | 89% | 297 | 12.96 | 3.97 | 30.71 | — | 5.14 | 247,581 | — |
-| EZPW | EZCORP, INC. | piotroski | ✅ | 89% | 27.00 | 13.04 | 1.90 | 13.91 | 4.54 | 0.87 | 899,675 | — |
-| ANNAW | AleAnna, Inc. | piotroski | ✅ | 78% | 0.18 | 4.62 | 0.13 | 4.91 | 1.93 | 0.73 | 49,566 | — |
-| HL | HECLA MINING CO/DE/ | piotroski | ✅ | 89% | 12.50 | 25.51 | 3.16 | 12.41 | 2.72 | 0.37 | 22M | — |
-| BELFA | BEL FUSE INC /NJ | piotroski | ✅ | 89% | 169 | — | — | 14.46 | 3.02 | 0.98 | 81,114 | — |
-| DUKB | Duke Energy CORP | piotroski | ✅ | 89% | 19.75 | 3.13 | 0.30 | 9.58 | 0.55 | — | 76,781 | — |
-| DUKB | Duke Energy CORP | lynch | ✅ | 75% | 19.75 | 3.13 | 0.30 | 9.58 | 0.55 | — | 76,781 | — |
-| UTI | UNIVERSAL TECHNICAL INSTITUT | piotroski | ✅ | 78% | 21.86 | 19.35 | 3.71 | 19.21 | 1.07 | 1.52 | 893,999 | — |
-| SREA | SEMPRA | lynch | ✅ | 75% | 17.92 | 6.52 | 0.37 | 5.81 | 1.59 | — | 116,534 | — |
-| JOE | The St. Joe Company | piotroski | ✅ | 89% | 68.48 | 34.41 | 5.18 | 15.09 | — | 0.97 | 279,489 | — |
-| CWEN | Clearway Energy, Inc. | lynch | ✅ | 75% | 31.31 | 6.48 | 0.19 | 2.91 | 1.13 | 1.85 | 1M | — |
-| WLY | JOHN WILEY & SONS, INC. | piotroski | ✅ | 100% | 50.17 | 12.06 | 3.15 | 26.13 | 0.54 | 2.06 | 453,428 | — |
-| UDR | UDR, Inc. | piotroski | ✅ | 78% | 36.07 | 31.92 | 3.63 | 11.49 | — | 1.96 | 3M | — |
-| UDR | UDR, Inc. | lynch | ✅ | 75% | 36.07 | 31.92 | 3.63 | 11.49 | — | 1.96 | 3M | — |
-| LTH | Life Time Group Holdings, In | piotroski | ✅ | 89% | 46.73 | 28.15 | 3.37 | 11.95 | 0.63 | 1.56 | 3M | — |
-| WCC | WESCO International, Inc. | lynch | ✅ | 75% | 315 | 24.13 | 3.10 | 12.72 | 2.20 | 2.28 | 469,291 | — |
-| BCO | BRINK’S CO | piotroski | ✅ | 78% | 114 | 24.36 | 17.49 | 71.91 | 1.51 | 24.96 | 392,354 | — |
-| KNTK | KINETIK HOLDINGS INC. | lynch | ✅ | 75% | 54.23 | 20.62 | — | -31.53 | 0.69 | -7.37 | 1M | — |
-| DLB | DOLBY LABORATORIES, INC. | piotroski | ✅ | 89% | 58.82 | 21.79 | 2.16 | 9.90 | 3.18 | 0.21 | 4M | — |
-| ACTG | ACACIA RESEARCH CORP | piotroski | ✅ | 89% | 4.06 | 18.45 | 0.73 | 3.99 | 9.18 | 0.34 | 146,151 | — |
-| CCK | CROWN HOLDINGS, INC. | piotroski | ✅ | 89% | 120 | 18.86 | 4.64 | 24.61 | 1.03 | — | 565,686 | — |
-| SHAK | SHAKE SHACK INC. | piotroski | ✅ | 89% | 72.78 | 66.77 | 5.80 | 8.70 | 1.76 | 2.56 | 609,255 | — |
-| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 49.64 | 47.73 | — | -29.14 | 1.60 | -6.05 | 536,478 | — |
-| FUL | FULLER H B CO | piotroski | ✅ | 78% | 47.79 | 17.38 | 1.32 | 7.59 | 1.70 | 1.59 | 435,493 | — |
-| DBD | Diebold Nixdorf, Incorporate | piotroski | ✅ | 78% | 52.75 | 20.77 | 1.78 | 8.60 | 1.30 | 2.50 | 274,593 | — |
-| WGO | WINNEBAGO INDUSTRIES, INC. | piotroski | ✅ | 78% | 30.36 | 25.09 | 0.70 | 2.79 | 2.17 | 0.70 | 385,855 | — |
-| CTRI | Centuri Holdings, Inc. | piotroski | ✅ | 78% | 21.42 | 85.68 | 2.22 | 2.57 | 1.78 | 1.75 | 1M | — |
-| LILA | Liberty Latin America Ltd. | piotroski | ✅ | 78% | 9.90 | — | 3.55 | -110 | 1.14 | 20.09 | 287,744 | — |
-| ERIE | ERIE INDEMNITY COMPANY | greenblatt | ▫️ | 67% | 273 | — | — | 24.50 | 1.27 | 0.47 | 131,738 | — |
-| ERIE | ERIE INDEMNITY COMPANY | graham | ▫️ | 56% | 273 | — | — | 24.50 | 1.27 | 0.47 | 131,738 | — |
-| ERIE | ERIE INDEMNITY COMPANY | lynch | ▫️ | 50% | 273 | — | — | 24.50 | 1.27 | 0.47 | 131,738 | — |
-| ERIE | ERIE INDEMNITY COMPANY | piotroski | ▫️ | 44% | 273 | — | — | 24.50 | 1.27 | 0.47 | 131,738 | — |
-| ERIE | ERIE INDEMNITY COMPANY | netnet | ▫️ | 25% | 273 | — | — | 24.50 | 1.27 | 0.47 | 131,738 | — |
-| ERIE | ERIE INDEMNITY COMPANY | custom | ▫️ | 0% | 273 | — | — | 24.50 | 1.27 | 0.47 | 131,738 | — |
-| PPIH | Perma-Pipe International Hol | piotroski | ▫️ | 67% | 26.97 | 12.90 | 2.42 | 18.79 | 1.84 | — | 70,595 | — |
-| PPIH | Perma-Pipe International Hol | graham | ▫️ | 44% | 26.97 | 12.90 | 2.42 | 18.79 | 1.84 | — | 70,595 | — |
-| PPIH | Perma-Pipe International Hol | greenblatt | ▫️ | 33% | 26.97 | 12.90 | 2.42 | 18.79 | 1.84 | — | 70,595 | — |
-| PPIH | Perma-Pipe International Hol | lynch | ▫️ | 25% | 26.97 | 12.90 | 2.42 | 18.79 | 1.84 | — | 70,595 | — |
-| PPIH | Perma-Pipe International Hol | netnet | ▫️ | 25% | 26.97 | 12.90 | 2.42 | 18.79 | 1.84 | — | 70,595 | — |
-| PPIH | Perma-Pipe International Hol | buffett | ▫️ | 17% | 26.97 | 12.90 | 2.42 | 18.79 | 1.84 | — | 70,595 | — |
-| PPIH | Perma-Pipe International Hol | custom | ▫️ | 0% | 26.97 | 12.90 | 2.42 | 18.79 | 1.84 | — | 70,595 | — |
-| PRI | Primerica, Inc. | buffett | ▫️ | 67% | 297 | 12.96 | 3.97 | 30.71 | — | 5.14 | 247,581 | — |
-| PRI | Primerica, Inc. | greenblatt | ▫️ | 67% | 297 | 12.96 | 3.97 | 30.71 | — | 5.14 | 247,581 | — |
-| PRI | Primerica, Inc. | graham | ▫️ | 56% | 297 | 12.96 | 3.97 | 30.71 | — | 5.14 | 247,581 | — |
-| PRI | Primerica, Inc. | lynch | ▫️ | 50% | 297 | 12.96 | 3.97 | 30.71 | — | 5.14 | 247,581 | — |
-| PRI | Primerica, Inc. | netnet | ▫️ | 25% | 297 | 12.96 | 3.97 | 30.71 | — | 5.14 | 247,581 | — |
-| PRI | Primerica, Inc. | custom | ▫️ | 0% | 297 | 12.96 | 3.97 | 30.71 | — | 5.14 | 247,581 | — |
-| SMCIP | Super Micro Computer, Inc. | graham | ▫️ | 78% | 42.28 | 12.97 | 2.04 | 15.40 | 3.87 | 1.07 | 670,799 | — |
-| SMCIP | Super Micro Computer, Inc. | buffett | ▫️ | 50% | 42.28 | 12.97 | 2.04 | 15.40 | 3.87 | 1.07 | 670,799 | — |
+| PSIX | POWER SOLUTIONS INTERNATIONA | greenblatt | ✅ | 100% | 33.62 | 6.81 | 4.34 | 63.82 | 3.15 | 1.38 | 118,186 | — |
+| PSIX | POWER SOLUTIONS INTERNATIONA | piotroski | ✅ | 89% | 33.62 | 6.81 | 4.34 | 63.82 | 3.15 | 1.38 | 118,186 | — |
+| KMT | KENNAMETAL INC. | graham | ✅ | 100% | 23.04 | 5.21 | 1.14 | 21.81 | 2.62 | 0.99 | 2M | — |
+| KMT | KENNAMETAL INC. | lynch | ✅ | 75% | 23.04 | 5.21 | 1.14 | 21.81 | 2.62 | 0.99 | 2M | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | piotroski | ✅ | 78% | 7.59 | 6.28 | — | -221 | 2.06 | -5.32 | 263,516 | — |
+| UVE | UNIVERSAL INSURANCE HOLDINGS | greenblatt | ✅ | 100% | 47.87 | 7.57 | 2.52 | 33.20 | — | 4.15 | 12,701 | — |
+| UVE | UNIVERSAL INSURANCE HOLDINGS | piotroski | ✅ | 89% | 47.87 | 7.57 | 2.52 | 33.20 | — | 4.15 | 12,701 | — |
+| LPG | DORIAN LPG LTD. | lynch | ✅ | 100% | 45.30 | 9.98 | 1.69 | 17.00 | 2.67 | 0.64 | 419,437 | — |
+| LPG | DORIAN LPG LTD. | piotroski | ✅ | 89% | 45.30 | 9.98 | 1.69 | 17.00 | 2.67 | 0.64 | 419,437 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | piotroski | ✅ | 100% | 110 | 20.34 | 3.83 | 18.86 | 0.86 | 0.33 | 8,444 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | lynch | ✅ | 100% | 110 | 20.34 | 3.83 | 18.86 | 0.86 | 0.33 | 8,444 | — |
+| MCRI | MONARCH CASINO & RESORT, INC | buffett | ✅ | 83% | 110 | 20.34 | 3.83 | 18.86 | 0.86 | 0.33 | 8,444 | — |
+| SFD | SMITHFIELD FOODS, INC. | graham | ✅ | 100% | 18.95 | 7.55 | 1.09 | 14.51 | 2.97 | — | 1M | — |
+| AYI | ACUITY INC | piotroski | ✅ | 89% | 327 | 19.19 | 3.43 | 17.86 | 1.69 | 0.64 | 15,200 | — |
+| DRVN | Driven Brands Holdings Inc. | piotroski | ✅ | 78% | 10.81 | 12.72 | 2.31 | 18.27 | 0.75 | 4.42 | 1M | — |
+| PLUS | ePlus inc. | piotroski | ✅ | 78% | 96.88 | 19.26 | 2.39 | 12.41 | 2.24 | 0.68 | 21,330 | — |
+| INVH | Invitation Homes Inc. | piotroski | ✅ | 78% | 26.34 | 27.44 | 1.70 | 6.17 | — | 0.96 | 407,029 | — |
+| WWD | WOODWARD, INC. | piotroski | ✅ | 100% | 313 | 43.52 | 7.49 | 17.23 | 2.08 | 0.80 | 75,175 | — |
+| CART | MAPLEBEAR INC. | piotroski | ✅ | 78% | 58.76 | 36.72 | 6.52 | 17.75 | 2.40 | 0.39 | 375,599 | — |
+| GBX | GREENBRIER COMPANIES INC | lynch | ✅ | 75% | 37.37 | 15.01 | 0.75 | 5.02 | — | — | 62,666 | — |
+| SSTK | SHUTTERSTOCK, INC. | piotroski | ✅ | 89% | 2.38 | 1.90 | 0.15 | 7.83 | 0.54 | 1.33 | 1M | — |
+| ALLY | Ally Financial Inc. | piotroski | ✅ | 78% | 37.77 | 15.94 | 0.76 | 5.50 | — | 11.65 | 418,313 | — |
+| IEX | IDEX CORP | piotroski | ✅ | 78% | 233 | 36.29 | 4.35 | 12.00 | 2.86 | 0.72 | 595,944 | — |
+| MAGN | Magnera Corporation | piotroski | ✅ | 78% | 11.73 | — | 0.39 | -14.94 | 2.37 | 2.75 | 17,508 | — |
+| AIOT | POWERFLEET, INC. | piotroski | ✅ | 78% | 2.11 | — | 0.59 | -4.32 | 1.13 | 1.00 | 341,749 | — |
+| GCO | GENESCO INC | piotroski | ✅ | 89% | 34.98 | 27.98 | 0.66 | 2.34 | 1.64 | 1.46 | 8,705 | — |
+| HCSG | HEALTHCARE SERVICES GROUP, I | piotroski | ✅ | 100% | 24.69 | 30.48 | 3.53 | 11.58 | 3.38 | — | 454,369 | — |
+| SPHR | SPHERE ENTERTAINMENT CO. | piotroski | ✅ | 78% | 127 | 171 | 2.57 | 1.50 | 1.09 | 0.89 | 50,877 | — |
+| SMG | Scotts Miracle-Gro Co | piotroski | ✅ | 78% | 62.55 | 25.32 | — | -40.62 | 1.27 | -8.67 | 807,689 | — |
+| WGO | WINNEBAGO INDUSTRIES, INC. | piotroski | ✅ | 78% | 31.06 | 25.67 | 0.71 | 2.79 | 2.17 | 0.70 | 34,814 | — |
+| TRLV | TRULIEVE CANNABIS CORP. | piotroski | ✅ | 89% | 10.24 | — | 1.71 | -10.70 | 4.43 | 1.36 | 210,549 | — |
+| OMCL | OMNICELL, INC | piotroski | ✅ | 78% | 34.73 | 868 | 1.31 | 0.17 | 1.43 | 0.60 | 29,957 | — |
+| TPC | Tutor Perini Corporation | piotroski | ✅ | 78% | 97.92 | 64.84 | 4.29 | 6.60 | 1.27 | 3.20 | 43,504 | — |
+| PSIX | POWER SOLUTIONS INTERNATIONA | graham | ▫️ | 56% | 33.62 | 6.81 | 4.34 | 63.82 | 3.15 | 1.38 | 118,186 | — |
+| PSIX | POWER SOLUTIONS INTERNATIONA | netnet | ▫️ | 50% | 33.62 | 6.81 | 4.34 | 63.82 | 3.15 | 1.38 | 118,186 | — |
+| PSIX | POWER SOLUTIONS INTERNATIONA | buffett | ▫️ | 33% | 33.62 | 6.81 | 4.34 | 63.82 | 3.15 | 1.38 | 118,186 | — |
+| PSIX | POWER SOLUTIONS INTERNATIONA | lynch | ▫️ | 25% | 33.62 | 6.81 | 4.34 | 63.82 | 3.15 | 1.38 | 118,186 | — |
+| PSIX | POWER SOLUTIONS INTERNATIONA | custom | ▫️ | 0% | 33.62 | 6.81 | 4.34 | 63.82 | 3.15 | 1.38 | 118,186 | — |
+| KMT | KENNAMETAL INC. | piotroski | ▫️ | 67% | 23.04 | 5.21 | 1.14 | 21.81 | 2.62 | 0.99 | 2M | — |
+| KMT | KENNAMETAL INC. | greenblatt | ▫️ | 67% | 23.04 | 5.21 | 1.14 | 21.81 | 2.62 | 0.99 | 2M | — |
+| KMT | KENNAMETAL INC. | buffett | ▫️ | 50% | 23.04 | 5.21 | 1.14 | 21.81 | 2.62 | 0.99 | 2M | — |
+| KMT | KENNAMETAL INC. | netnet | ▫️ | 50% | 23.04 | 5.21 | 1.14 | 21.81 | 2.62 | 0.99 | 2M | — |
+| KMT | KENNAMETAL INC. | custom | ▫️ | 0% | 23.04 | 5.21 | 1.14 | 21.81 | 2.62 | 0.99 | 2M | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | greenblatt | ▫️ | 67% | 7.59 | 6.28 | — | -221 | 2.06 | -5.32 | 263,516 | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | lynch | ▫️ | 50% | 7.59 | 6.28 | — | -221 | 2.06 | -5.32 | 263,516 | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | graham | ▫️ | 44% | 7.59 | 6.28 | — | -221 | 2.06 | -5.32 | 263,516 | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | buffett | ▫️ | 33% | 7.59 | 6.28 | — | -221 | 2.06 | -5.32 | 263,516 | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | netnet | ▫️ | 25% | 7.59 | 6.28 | — | -221 | 2.06 | -5.32 | 263,516 | — |
+| BCRX | BIOCRYST PHARMACEUTICALS, IN | custom | ▫️ | 0% | 7.59 | 6.28 | — | -221 | 2.06 | -5.32 | 263,516 | — |
+| UVE | UNIVERSAL INSURANCE HOLDINGS | buffett | ▫️ | 67% | 47.87 | 7.57 | 2.52 | 33.20 | — | 4.15 | 12,701 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.

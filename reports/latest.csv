@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-ERIE,ERIE INDEMNITY COMPANY,buffett,True,6,6,100.0,273,—,—,24.50,1.27,0.47,—,"131,738",—
-PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,297,12.96,3.97,30.71,—,5.14,196,"247,581",—
-EZPW,"EZCORP, INC.",piotroski,True,8,9,88.9,27.00,13.04,1.90,13.91,4.54,0.87,25.76,"899,675",—
-ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.18,4.62,0.13,4.91,1.93,0.73,1.14,"49,566",—
-HL,HECLA MINING CO/DE/,piotroski,True,8,9,88.9,12.50,25.51,3.16,12.41,2.72,0.37,6.60,22M,—
-BELFA,BEL FUSE INC /NJ,piotroski,True,8,9,88.9,169,—,—,14.46,3.02,0.98,—,"81,114",—
-DUKB,Duke Energy CORP,piotroski,True,8,9,88.9,19.75,3.13,0.30,9.58,0.55,—,97.33,"76,781",—
-DUKB,Duke Energy CORP,lynch,True,3,4,75.0,19.75,3.13,0.30,9.58,0.55,—,97.33,"76,781",—
-UTI,"UNIVERSAL TECHNICAL INSTITUTE, INC",piotroski,True,7,9,77.8,21.86,19.35,3.71,19.21,1.07,1.52,12.25,"893,999",—
-SREA,SEMPRA,lynch,True,3,4,75.0,17.92,6.52,0.37,5.81,1.59,—,54.68,"116,534",—
-JOE,The St. Joe Company,piotroski,True,8,9,88.9,68.48,34.41,5.18,15.09,—,0.97,24.33,"279,489",—
-CWEN,"Clearway Energy, Inc.",lynch,True,3,4,75.0,31.31,6.48,0.19,2.91,1.13,1.85,134,1M,—
-WLY,"JOHN WILEY & SONS, INC.",piotroski,True,9,9,100.0,50.17,12.06,3.15,26.13,0.54,2.06,38.61,"453,428",—
-UDR,"UDR, Inc.",piotroski,True,7,9,77.8,36.07,31.92,3.63,11.49,—,1.96,15.89,3M,—
-UDR,"UDR, Inc.",lynch,True,3,4,75.0,36.07,31.92,3.63,11.49,—,1.96,15.89,3M,—
-LTH,"Life Time Group Holdings, Inc.",piotroski,True,8,9,88.9,46.73,28.15,3.37,11.95,0.63,1.56,22.76,3M,—
-WCC,"WESCO International, Inc.",lynch,True,3,4,75.0,315,24.13,3.10,12.72,2.20,2.28,173,"469,291",—
-BCO,BRINK’S CO,piotroski,True,7,9,77.8,114,24.36,17.49,71.91,1.51,24.96,26.26,"392,354",—
-KNTK,KINETIK HOLDINGS INC.,lynch,True,3,4,75.0,54.23,20.62,—,-31.53,0.69,-7.37,—,1M,—
-DLB,"DOLBY LABORATORIES, INC.",piotroski,True,8,9,88.9,58.82,21.79,2.16,9.90,3.18,0.21,40.68,4M,—
-ACTG,ACACIA RESEARCH CORP,piotroski,True,8,9,88.9,4.06,18.45,0.73,3.99,9.18,0.34,5.26,"146,151",—
-CCK,"CROWN HOLDINGS, INC.",piotroski,True,8,9,88.9,120,18.86,4.64,24.61,1.03,—,60.99,"565,686",—
-SHAK,SHAKE SHACK INC.,piotroski,True,8,9,88.9,72.78,66.77,5.80,8.70,1.76,2.56,17.55,"609,255",—
-GSHD,"GOOSEHEAD INSURANCE, INC.",lynch,True,3,4,75.0,49.64,47.73,—,-29.14,1.60,-6.05,—,"536,478",—
-FUL,FULLER H B CO,piotroski,True,7,9,77.8,47.79,17.38,1.32,7.59,1.70,1.59,47.32,"435,493",—
-DBD,"Diebold Nixdorf, Incorporated",piotroski,True,7,9,77.8,52.75,20.77,1.78,8.60,1.30,2.50,41.11,"274,593",—
-WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,7,9,77.8,30.36,25.09,0.70,2.79,2.17,0.70,34.43,"385,855",—
-CTRI,"Centuri Holdings, Inc.",piotroski,True,7,9,77.8,21.42,85.68,2.22,2.57,1.78,1.75,7.37,1M,—
-LILA,Liberty Latin America Ltd.,piotroski,True,7,9,77.8,9.90,—,3.55,-110,1.14,20.09,—,"287,744",—
-ERIE,ERIE INDEMNITY COMPANY,greenblatt,False,2,3,66.7,273,—,—,24.50,1.27,0.47,—,"131,738",—
-ERIE,ERIE INDEMNITY COMPANY,graham,False,5,9,55.6,273,—,—,24.50,1.27,0.47,—,"131,738",—
-ERIE,ERIE INDEMNITY COMPANY,lynch,False,2,4,50.0,273,—,—,24.50,1.27,0.47,—,"131,738",—
-ERIE,ERIE INDEMNITY COMPANY,piotroski,False,4,9,44.4,273,—,—,24.50,1.27,0.47,—,"131,738",—
-ERIE,ERIE INDEMNITY COMPANY,netnet,False,1,4,25.0,273,—,—,24.50,1.27,0.47,—,"131,738",—
-ERIE,ERIE INDEMNITY COMPANY,custom,False,0,0,0.0,273,—,—,24.50,1.27,0.47,—,"131,738",—
-PPIH,"Perma-Pipe International Holdings, Inc.",piotroski,False,6,9,66.7,26.97,12.90,2.42,18.79,1.84,—,22.87,"70,595",—
-PPIH,"Perma-Pipe International Holdings, Inc.",graham,False,4,9,44.4,26.97,12.90,2.42,18.79,1.84,—,22.87,"70,595",—
-PPIH,"Perma-Pipe International Holdings, Inc.",greenblatt,False,1,3,33.3,26.97,12.90,2.42,18.79,1.84,—,22.87,"70,595",—
-PPIH,"Perma-Pipe International Holdings, Inc.",lynch,False,1,4,25.0,26.97,12.90,2.42,18.79,1.84,—,22.87,"70,595",—
-PPIH,"Perma-Pipe International Holdings, Inc.",netnet,False,1,4,25.0,26.97,12.90,2.42,18.79,1.84,—,22.87,"70,595",—
-PPIH,"Perma-Pipe International Holdings, Inc.",buffett,False,1,6,16.7,26.97,12.90,2.42,18.79,1.84,—,22.87,"70,595",—
-PPIH,"Perma-Pipe International Holdings, Inc.",custom,False,0,0,0.0,26.97,12.90,2.42,18.79,1.84,—,22.87,"70,595",—
-PRI,"Primerica, Inc.",buffett,False,4,6,66.7,297,12.96,3.97,30.71,—,5.14,196,"247,581",—
-PRI,"Primerica, Inc.",greenblatt,False,2,3,66.7,297,12.96,3.97,30.71,—,5.14,196,"247,581",—
-PRI,"Primerica, Inc.",graham,False,5,9,55.6,297,12.96,3.97,30.71,—,5.14,196,"247,581",—
-PRI,"Primerica, Inc.",lynch,False,2,4,50.0,297,12.96,3.97,30.71,—,5.14,196,"247,581",—
-PRI,"Primerica, Inc.",netnet,False,1,4,25.0,297,12.96,3.97,30.71,—,5.14,196,"247,581",—
-PRI,"Primerica, Inc.",custom,False,0,0,0.0,297,12.96,3.97,30.71,—,5.14,196,"247,581",—
-SMCIP,"Super Micro Computer, Inc.",graham,False,7,9,77.8,42.28,12.97,2.04,15.40,3.87,1.07,39.03,"670,799",—
-SMCIP,"Super Micro Computer, Inc.",buffett,False,3,6,50.0,42.28,12.97,2.04,15.40,3.87,1.07,39.03,"670,799",—
+PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",greenblatt,True,3,3,100.0,33.62,6.81,4.34,63.82,3.15,1.38,29.34,"118,186",—
+PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",piotroski,True,8,9,88.9,33.62,6.81,4.34,63.82,3.15,1.38,29.34,"118,186",—
+KMT,KENNAMETAL INC.,graham,True,9,9,100.0,23.04,5.21,1.14,21.81,2.62,0.99,44.90,2M,—
+KMT,KENNAMETAL INC.,lynch,True,3,4,75.0,23.04,5.21,1.14,21.81,2.62,0.99,44.90,2M,—
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",piotroski,True,7,9,77.8,7.59,6.28,—,-221,2.06,-5.32,—,"263,516",—
+UVE,"UNIVERSAL INSURANCE HOLDINGS, INC.",greenblatt,True,3,3,100.0,47.87,7.57,2.52,33.20,—,4.15,52.02,"12,701",—
+UVE,"UNIVERSAL INSURANCE HOLDINGS, INC.",piotroski,True,8,9,88.9,47.87,7.57,2.52,33.20,—,4.15,52.02,"12,701",—
+LPG,DORIAN LPG LTD.,lynch,True,4,4,100.0,45.30,9.98,1.69,17.00,2.67,0.64,52.25,"419,437",—
+LPG,DORIAN LPG LTD.,piotroski,True,8,9,88.9,45.30,9.98,1.69,17.00,2.67,0.64,52.25,"419,437",—
+MCRI,"MONARCH CASINO & RESORT, INC.",piotroski,True,9,9,100.0,110,20.34,3.83,18.86,0.86,0.33,59.33,"8,444",—
+MCRI,"MONARCH CASINO & RESORT, INC.",lynch,True,4,4,100.0,110,20.34,3.83,18.86,0.86,0.33,59.33,"8,444",—
+MCRI,"MONARCH CASINO & RESORT, INC.",buffett,True,5,6,83.3,110,20.34,3.83,18.86,0.86,0.33,59.33,"8,444",—
+SFD,"SMITHFIELD FOODS, INC.",graham,True,9,9,100.0,18.95,7.55,1.09,14.51,2.97,—,31.27,1M,—
+AYI,ACUITY INC,piotroski,True,8,9,88.9,327,19.19,3.43,17.86,1.69,0.64,191,"15,200",—
+DRVN,Driven Brands Holdings Inc.,piotroski,True,7,9,77.8,10.81,12.72,2.31,18.27,0.75,4.42,9.46,1M,—
+PLUS,ePlus inc.,piotroski,True,7,9,77.8,96.88,19.26,2.39,12.41,2.24,0.68,67.73,"21,330",—
+INVH,Invitation Homes Inc.,piotroski,True,7,9,77.8,26.34,27.44,1.70,6.17,—,0.96,18.32,"407,029",—
+WWD,"WOODWARD, INC.",piotroski,True,9,9,100.0,313,43.52,7.49,17.23,2.08,0.80,82.19,"75,175",—
+CART,MAPLEBEAR INC.,piotroski,True,7,9,77.8,58.76,36.72,6.52,17.75,2.40,0.39,18.01,"375,599",—
+GBX,GREENBRIER COMPANIES INC,lynch,True,3,4,75.0,37.37,15.01,0.75,5.02,—,—,52.67,"62,666",—
+SSTK,"SHUTTERSTOCK, INC.",piotroski,True,8,9,88.9,2.38,1.90,0.15,7.83,0.54,1.33,21.23,1M,—
+ALLY,Ally Financial Inc.,piotroski,True,7,9,77.8,37.77,15.94,0.76,5.50,—,11.65,51.38,"418,313",—
+IEX,IDEX CORP,piotroski,True,7,9,77.8,233,36.29,4.35,12.00,2.86,0.72,87.83,"595,944",—
+MAGN,Magnera Corporation,piotroski,True,7,9,77.8,11.73,—,0.39,-14.94,2.37,2.75,—,"17,508",—
+AIOT,"POWERFLEET, INC.",piotroski,True,7,9,77.8,2.11,—,0.59,-4.32,1.13,1.00,—,"341,749",—
+GCO,GENESCO INC,piotroski,True,8,9,88.9,34.98,27.98,0.66,2.34,1.64,1.46,38.74,"8,705",—
+HCSG,"HEALTHCARE SERVICES GROUP, INC.",piotroski,True,9,9,100.0,24.69,30.48,3.53,11.58,3.38,—,11.28,"454,369",—
+SPHR,SPHERE ENTERTAINMENT CO.,piotroski,True,7,9,77.8,127,171,2.57,1.50,1.09,0.89,28.65,"50,877",—
+SMG,Scotts Miracle-Gro Co,piotroski,True,7,9,77.8,62.55,25.32,—,-40.62,1.27,-8.67,—,"807,689",—
+WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,7,9,77.8,31.06,25.67,0.71,2.79,2.17,0.70,34.43,"34,814",—
+TRLV,TRULIEVE CANNABIS CORP.,piotroski,True,8,9,88.9,10.24,—,1.71,-10.70,4.43,1.36,—,"210,549",—
+OMCL,"OMNICELL, INC",piotroski,True,7,9,77.8,34.73,868,1.31,0.17,1.43,0.60,4.89,"29,957",—
+TPC,Tutor Perini Corporation,piotroski,True,7,9,77.8,97.92,64.84,4.29,6.60,1.27,3.20,27.84,"43,504",—
+PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",graham,False,5,9,55.6,33.62,6.81,4.34,63.82,3.15,1.38,29.34,"118,186",—
+PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",netnet,False,2,4,50.0,33.62,6.81,4.34,63.82,3.15,1.38,29.34,"118,186",—
+PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",buffett,False,2,6,33.3,33.62,6.81,4.34,63.82,3.15,1.38,29.34,"118,186",—
+PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",lynch,False,1,4,25.0,33.62,6.81,4.34,63.82,3.15,1.38,29.34,"118,186",—
+PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",custom,False,0,0,0.0,33.62,6.81,4.34,63.82,3.15,1.38,29.34,"118,186",—
+KMT,KENNAMETAL INC.,piotroski,False,6,9,66.7,23.04,5.21,1.14,21.81,2.62,0.99,44.90,2M,—
+KMT,KENNAMETAL INC.,greenblatt,False,2,3,66.7,23.04,5.21,1.14,21.81,2.62,0.99,44.90,2M,—
+KMT,KENNAMETAL INC.,buffett,False,3,6,50.0,23.04,5.21,1.14,21.81,2.62,0.99,44.90,2M,—
+KMT,KENNAMETAL INC.,netnet,False,2,4,50.0,23.04,5.21,1.14,21.81,2.62,0.99,44.90,2M,—
+KMT,KENNAMETAL INC.,custom,False,0,0,0.0,23.04,5.21,1.14,21.81,2.62,0.99,44.90,2M,—
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",greenblatt,False,2,3,66.7,7.59,6.28,—,-221,2.06,-5.32,—,"263,516",—
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",lynch,False,2,4,50.0,7.59,6.28,—,-221,2.06,-5.32,—,"263,516",—
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",graham,False,4,9,44.4,7.59,6.28,—,-221,2.06,-5.32,—,"263,516",—
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",buffett,False,2,6,33.3,7.59,6.28,—,-221,2.06,-5.32,—,"263,516",—
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",netnet,False,1,4,25.0,7.59,6.28,—,-221,2.06,-5.32,—,"263,516",—
+BCRX,"BIOCRYST PHARMACEUTICALS, INC.",custom,False,0,0,0.0,7.59,6.28,—,-221,2.06,-5.32,—,"263,516",—
+UVE,"UNIVERSAL INSURANCE HOLDINGS, INC.",buffett,False,4,6,66.7,47.87,7.57,2.52,33.20,—,4.15,52.02,"12,701",—
