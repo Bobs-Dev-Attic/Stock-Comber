@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-UCFIW,CN Healthy Food Tech Group Corp.,greenblatt,True,3,3,100.0,0.09,0.53,0.22,42.33,1.50,1.25,1.25,"147,751",—
-UCFIW,CN Healthy Food Tech Group Corp.,netnet,True,4,4,100.0,0.09,0.53,0.22,42.33,1.50,1.25,1.25,"147,751",—
-CF,"CF INDUSTRIES HOLDINGS, INC.",greenblatt,True,3,3,100.0,119,13.30,4.00,37.16,3.37,—,77.59,1M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",piotroski,True,8,9,88.9,119,13.30,4.00,37.16,3.37,—,77.59,1M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",buffett,True,5,6,83.3,119,13.30,4.00,37.16,3.37,—,77.59,1M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",lynch,True,3,4,75.0,119,13.30,4.00,37.16,3.37,—,77.59,1M,—
-DECK,DECKERS OUTDOOR CORP,greenblatt,True,3,3,100.0,81.48,11.61,4.75,40.97,3.54,—,52.04,5M,—
-DECK,DECKERS OUTDOOR CORP,buffett,True,5,6,83.3,81.48,11.61,4.75,40.97,3.54,—,52.04,5M,—
-DECK,DECKERS OUTDOOR CORP,piotroski,True,7,9,77.8,81.48,11.61,4.75,40.97,3.54,—,52.04,5M,—
-DECK,DECKERS OUTDOOR CORP,lynch,True,3,4,75.0,81.48,11.61,4.75,40.97,3.54,—,52.04,5M,—
-SPNT,SIRIUSPOINT LTD.,lynch,True,3,4,75.0,25.92,7.12,1.28,18.61,—,4.09,40.78,"876,077",—
-PLMR,"Palomar Holdings, Inc.",piotroski,True,7,9,77.8,158,22.05,4.61,20.91,—,2.24,74.38,"228,191",—
-PRDO,PERDOCEO EDUCATION CORP,piotroski,True,8,9,88.9,28.87,11.93,1.96,16.45,5.06,—,28.29,"589,261",—
+ERIE,ERIE INDEMNITY COMPANY,buffett,True,6,6,100.0,273,—,—,24.50,1.27,0.47,—,"131,738",—
+PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,297,12.96,3.97,30.71,—,5.14,196,"247,581",—
+EZPW,"EZCORP, INC.",piotroski,True,8,9,88.9,27.00,13.04,1.90,13.91,4.54,0.87,25.76,"899,675",—
+ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.18,4.62,0.13,4.91,1.93,0.73,1.14,"49,566",—
+HL,HECLA MINING CO/DE/,piotroski,True,8,9,88.9,12.50,25.51,3.16,12.41,2.72,0.37,6.60,22M,—
+BELFA,BEL FUSE INC /NJ,piotroski,True,8,9,88.9,169,—,—,14.46,3.02,0.98,—,"81,114",—
 DUKB,Duke Energy CORP,piotroski,True,8,9,88.9,19.75,3.13,0.30,9.58,0.55,—,97.33,"76,781",—
 DUKB,Duke Energy CORP,lynch,True,3,4,75.0,19.75,3.13,0.30,9.58,0.55,—,97.33,"76,781",—
-SNA,Snap-on Inc,buffett,True,5,6,83.3,361,18.80,3.22,17.14,4.79,0.41,220,"296,373",—
+UTI,"UNIVERSAL TECHNICAL INSTITUTE, INC",piotroski,True,7,9,77.8,21.86,19.35,3.71,19.21,1.07,1.52,12.25,"893,999",—
+SREA,SEMPRA,lynch,True,3,4,75.0,17.92,6.52,0.37,5.81,1.59,—,54.68,"116,534",—
+JOE,The St. Joe Company,piotroski,True,8,9,88.9,68.48,34.41,5.18,15.09,—,0.97,24.33,"279,489",—
 CWEN,"Clearway Energy, Inc.",lynch,True,3,4,75.0,31.31,6.48,0.19,2.91,1.13,1.85,134,1M,—
-INVH,Invitation Homes Inc.,piotroski,True,7,9,77.8,26.72,27.83,1.72,6.17,—,0.96,18.32,6M,—
-AGCO,AGCO CORP /DE,piotroski,True,8,9,88.9,107,10.93,1.86,17.00,1.39,1.72,112,"389,683",—
-FHN,FIRST HORIZON CORP,piotroski,True,7,9,77.8,22.89,12.24,1.32,11.10,—,8.45,26.99,4M,—
-EGP,"EASTGROUP PROPERTIES, INC.",piotroski,True,7,9,77.8,194,39.81,2.93,7.36,—,0.55,85.17,"624,006",—
-EGP,"EASTGROUP PROPERTIES, INC.",lynch,True,3,4,75.0,194,39.81,2.93,7.36,—,0.55,85.17,"624,006",—
-BCO,BRINK’S CO,piotroski,True,7,9,77.8,114,24.36,17.49,71.91,1.51,24.96,26.26,"392,343",—
-AMH,AMERICAN HOMES 4 RENT,lynch,True,3,4,75.0,32.18,27.27,1.70,7.30,—,0.79,22.44,3M,—
-NPKI,NPK International Inc.,piotroski,True,7,9,77.8,8.39,18.64,2.05,11.09,1.43,0.26,6.44,1M,—
-KN,Knowles Corporation,piotroski,True,7,9,77.8,32.70,65.40,3.71,5.70,2.75,—,9.96,"878,497",—
-HII,"HUNTINGTON INGALLS INDUSTRIES, INC.",piotroski,True,9,9,100.0,297,19.33,2.30,11.93,1.13,1.51,211,"410,755",—
-PBI,PITNEY BOWES INC,piotroski,True,7,9,77.8,15.10,17.98,—,-18.03,0.71,-4.95,—,1M,—
-ZUMZ,ZUMIEZ INC,piotroski,True,8,9,88.9,13.30,17.05,0.71,4.13,2.01,0.99,18.16,"137,719",—
-UCFIW,CN Healthy Food Tech Group Corp.,graham,False,5,9,55.6,0.09,0.53,0.22,42.33,1.50,1.25,1.25,"147,751",—
-UCFIW,CN Healthy Food Tech Group Corp.,piotroski,False,4,9,44.4,0.09,0.53,0.22,42.33,1.50,1.25,1.25,"147,751",—
-UCFIW,CN Healthy Food Tech Group Corp.,buffett,False,2,6,33.3,0.09,0.53,0.22,42.33,1.50,1.25,1.25,"147,751",—
-UCFIW,CN Healthy Food Tech Group Corp.,lynch,False,1,4,25.0,0.09,0.53,0.22,42.33,1.50,1.25,1.25,"147,751",—
-UCFIW,CN Healthy Food Tech Group Corp.,custom,False,0,0,0.0,0.09,0.53,0.22,42.33,1.50,1.25,1.25,"147,751",—
-CF,"CF INDUSTRIES HOLDINGS, INC.",graham,False,6,9,66.7,119,13.30,4.00,37.16,3.37,—,77.59,1M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",netnet,False,1,4,25.0,119,13.30,4.00,37.16,3.37,—,77.59,1M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",custom,False,0,0,0.0,119,13.30,4.00,37.16,3.37,—,77.59,1M,—
-HGTY,"HAGERTY, INC.",piotroski,False,6,9,66.7,16.25,—,—,67.43,—,6.09,—,"679,119",—
-HGTY,"HAGERTY, INC.",greenblatt,False,2,3,66.7,16.25,—,—,67.43,—,6.09,—,"679,119",—
-HGTY,"HAGERTY, INC.",buffett,False,3,6,50.0,16.25,—,—,67.43,—,6.09,—,"679,119",—
-HGTY,"HAGERTY, INC.",lynch,False,1,4,25.0,16.25,—,—,67.43,—,6.09,—,"679,119",—
-HGTY,"HAGERTY, INC.",netnet,False,1,4,25.0,16.25,—,—,67.43,—,6.09,—,"679,119",—
-HGTY,"HAGERTY, INC.",graham,False,1,9,11.1,16.25,—,—,67.43,—,6.09,—,"679,119",—
-HGTY,"HAGERTY, INC.",custom,False,0,0,0.0,16.25,—,—,67.43,—,6.09,—,"679,119",—
-DECK,DECKERS OUTDOOR CORP,graham,False,7,9,77.8,81.48,11.61,4.75,40.97,3.54,—,52.04,5M,—
-DECK,DECKERS OUTDOOR CORP,netnet,False,1,4,25.0,81.48,11.61,4.75,40.97,3.54,—,52.04,5M,—
-DECK,DECKERS OUTDOOR CORP,custom,False,0,0,0.0,81.48,11.61,4.75,40.97,3.54,—,52.04,5M,—
-SPNT,SIRIUSPOINT LTD.,graham,False,6,9,66.7,25.92,7.12,1.28,18.61,—,4.09,40.78,"876,077",—
-SPNT,SIRIUSPOINT LTD.,piotroski,False,6,9,66.7,25.92,7.12,1.28,18.61,—,4.09,40.78,"876,077",—
-SPNT,SIRIUSPOINT LTD.,greenblatt,False,2,3,66.7,25.92,7.12,1.28,18.61,—,4.09,40.78,"876,077",—
+WLY,"JOHN WILEY & SONS, INC.",piotroski,True,9,9,100.0,50.17,12.06,3.15,26.13,0.54,2.06,38.61,"453,428",—
+UDR,"UDR, Inc.",piotroski,True,7,9,77.8,36.07,31.92,3.63,11.49,—,1.96,15.89,3M,—
+UDR,"UDR, Inc.",lynch,True,3,4,75.0,36.07,31.92,3.63,11.49,—,1.96,15.89,3M,—
+LTH,"Life Time Group Holdings, Inc.",piotroski,True,8,9,88.9,46.73,28.15,3.37,11.95,0.63,1.56,22.76,3M,—
+WCC,"WESCO International, Inc.",lynch,True,3,4,75.0,315,24.13,3.10,12.72,2.20,2.28,173,"469,291",—
+BCO,BRINK’S CO,piotroski,True,7,9,77.8,114,24.36,17.49,71.91,1.51,24.96,26.26,"392,354",—
+KNTK,KINETIK HOLDINGS INC.,lynch,True,3,4,75.0,54.23,20.62,—,-31.53,0.69,-7.37,—,1M,—
+DLB,"DOLBY LABORATORIES, INC.",piotroski,True,8,9,88.9,58.82,21.79,2.16,9.90,3.18,0.21,40.68,4M,—
+ACTG,ACACIA RESEARCH CORP,piotroski,True,8,9,88.9,4.06,18.45,0.73,3.99,9.18,0.34,5.26,"146,151",—
+CCK,"CROWN HOLDINGS, INC.",piotroski,True,8,9,88.9,120,18.86,4.64,24.61,1.03,—,60.99,"565,686",—
+SHAK,SHAKE SHACK INC.,piotroski,True,8,9,88.9,72.78,66.77,5.80,8.70,1.76,2.56,17.55,"609,255",—
+GSHD,"GOOSEHEAD INSURANCE, INC.",lynch,True,3,4,75.0,49.64,47.73,—,-29.14,1.60,-6.05,—,"536,478",—
+FUL,FULLER H B CO,piotroski,True,7,9,77.8,47.79,17.38,1.32,7.59,1.70,1.59,47.32,"435,493",—
+DBD,"Diebold Nixdorf, Incorporated",piotroski,True,7,9,77.8,52.75,20.77,1.78,8.60,1.30,2.50,41.11,"274,593",—
+WGO,"WINNEBAGO INDUSTRIES, INC.",piotroski,True,7,9,77.8,30.36,25.09,0.70,2.79,2.17,0.70,34.43,"385,855",—
+CTRI,"Centuri Holdings, Inc.",piotroski,True,7,9,77.8,21.42,85.68,2.22,2.57,1.78,1.75,7.37,1M,—
+LILA,Liberty Latin America Ltd.,piotroski,True,7,9,77.8,9.90,—,3.55,-110,1.14,20.09,—,"287,744",—
+ERIE,ERIE INDEMNITY COMPANY,greenblatt,False,2,3,66.7,273,—,—,24.50,1.27,0.47,—,"131,738",—
+ERIE,ERIE INDEMNITY COMPANY,graham,False,5,9,55.6,273,—,—,24.50,1.27,0.47,—,"131,738",—
+ERIE,ERIE INDEMNITY COMPANY,lynch,False,2,4,50.0,273,—,—,24.50,1.27,0.47,—,"131,738",—
+ERIE,ERIE INDEMNITY COMPANY,piotroski,False,4,9,44.4,273,—,—,24.50,1.27,0.47,—,"131,738",—
+ERIE,ERIE INDEMNITY COMPANY,netnet,False,1,4,25.0,273,—,—,24.50,1.27,0.47,—,"131,738",—
+ERIE,ERIE INDEMNITY COMPANY,custom,False,0,0,0.0,273,—,—,24.50,1.27,0.47,—,"131,738",—
+PPIH,"Perma-Pipe International Holdings, Inc.",piotroski,False,6,9,66.7,26.97,12.90,2.42,18.79,1.84,—,22.87,"70,595",—
+PPIH,"Perma-Pipe International Holdings, Inc.",graham,False,4,9,44.4,26.97,12.90,2.42,18.79,1.84,—,22.87,"70,595",—
+PPIH,"Perma-Pipe International Holdings, Inc.",greenblatt,False,1,3,33.3,26.97,12.90,2.42,18.79,1.84,—,22.87,"70,595",—
+PPIH,"Perma-Pipe International Holdings, Inc.",lynch,False,1,4,25.0,26.97,12.90,2.42,18.79,1.84,—,22.87,"70,595",—
+PPIH,"Perma-Pipe International Holdings, Inc.",netnet,False,1,4,25.0,26.97,12.90,2.42,18.79,1.84,—,22.87,"70,595",—
+PPIH,"Perma-Pipe International Holdings, Inc.",buffett,False,1,6,16.7,26.97,12.90,2.42,18.79,1.84,—,22.87,"70,595",—
+PPIH,"Perma-Pipe International Holdings, Inc.",custom,False,0,0,0.0,26.97,12.90,2.42,18.79,1.84,—,22.87,"70,595",—
+PRI,"Primerica, Inc.",buffett,False,4,6,66.7,297,12.96,3.97,30.71,—,5.14,196,"247,581",—
+PRI,"Primerica, Inc.",greenblatt,False,2,3,66.7,297,12.96,3.97,30.71,—,5.14,196,"247,581",—
+PRI,"Primerica, Inc.",graham,False,5,9,55.6,297,12.96,3.97,30.71,—,5.14,196,"247,581",—
+PRI,"Primerica, Inc.",lynch,False,2,4,50.0,297,12.96,3.97,30.71,—,5.14,196,"247,581",—
+PRI,"Primerica, Inc.",netnet,False,1,4,25.0,297,12.96,3.97,30.71,—,5.14,196,"247,581",—
+PRI,"Primerica, Inc.",custom,False,0,0,0.0,297,12.96,3.97,30.71,—,5.14,196,"247,581",—
+SMCIP,"Super Micro Computer, Inc.",graham,False,7,9,77.8,42.28,12.97,2.04,15.40,3.87,1.07,39.03,"670,799",—
+SMCIP,"Super Micro Computer, Inc.",buffett,False,3,6,50.0,42.28,12.97,2.04,15.40,3.87,1.07,39.03,"670,799",—
