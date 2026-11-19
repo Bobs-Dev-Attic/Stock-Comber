@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",greenblatt,True,3,3,100.0,33.19,6.72,4.29,63.82,3.15,1.38,29.34,"631,996",—
-PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",piotroski,True,8,9,88.9,33.19,6.72,4.29,63.82,3.15,1.38,29.34,"631,996",—
-WHD,"Cactus, Inc.",lynch,True,3,4,75.0,59.38,—,—,13.54,5.81,0.36,—,"405,401",—
-SBC,SBC Medical Group Holdings Incorporated,lynch,True,3,4,75.0,6.27,12.54,2.60,20.54,3.78,0.47,5.21,"564,433",—
-ERIE,ERIE INDEMNITY COMPANY,buffett,True,6,6,100.0,276,—,—,24.50,1.27,0.47,—,"153,352",—
-OLED,UNIVERSAL DISPLAY CORPORATION,piotroski,True,7,9,77.8,82.76,16.29,2.24,13.75,10.06,0.12,64.99,"605,091",—
-AX,"AXOS FINANCIAL, INC.",lynch,True,3,4,75.0,88.20,10.40,1.58,15.49,—,8.46,103,"225,342",—
-PRDO,PERDOCEO EDUCATION CORP,piotroski,True,8,9,88.9,29.23,12.08,1.99,16.45,5.06,—,28.29,"946,169",—
-SSD,"Simpson Manufacturing Co., Inc.",buffett,True,5,6,83.3,197,23.91,4.06,17.00,3.54,0.51,94.81,"479,194",—
-SSD,"Simpson Manufacturing Co., Inc.",piotroski,True,7,9,77.8,197,23.91,4.06,17.00,3.54,0.51,94.81,"479,194",—
-FTDR,"Frontdoor, Inc.",piotroski,True,8,9,88.9,93.59,27.37,28.81,105,1.55,—,15.81,"873,827",—
-FTDR,"Frontdoor, Inc.",buffett,True,5,6,83.3,93.59,27.37,28.81,105,1.55,—,15.81,"873,827",—
-MEDP,"Medpace Holdings, Inc.",buffett,True,5,6,83.3,647,42.33,41.61,98.27,0.74,3.30,73.11,"211,746",—
-MEDP,"Medpace Holdings, Inc.",piotroski,True,7,9,77.8,647,42.33,41.61,98.27,0.74,3.30,73.11,"211,746",—
-BDC,BELDEN INC.,piotroski,True,8,9,88.9,104,17.63,3.31,18.78,1.93,—,64.66,"296,510",—
-ACEL,"Accel Entertainment, Inc.",piotroski,True,7,9,77.8,13.46,22.43,4.31,19.09,2.61,—,6.49,"373,718",—
-SHOE,"Shoe Station Group, Inc.",graham,True,8,9,88.9,15.04,7.92,0.60,7.58,3.76,0.74,32.72,"903,759",—
-AM,ANTERO MIDSTREAM CORPORATION,piotroski,True,7,9,77.8,20.27,23.57,4.96,20.95,3.41,1.98,8.90,3M,—
-RGA,"REINSURANCE GROUP OF AMERICA, INCORPORATED",piotroski,True,7,9,77.8,266,15.01,1.32,8.78,—,10.63,283,"418,863",—
-RGA,"REINSURANCE GROUP OF AMERICA, INCORPORATED",lynch,True,3,4,75.0,266,15.01,1.32,8.78,—,10.63,283,"418,863",—
-SSRM,SSR MINING INC.,piotroski,True,7,9,77.8,24.19,13.08,1.50,11.28,2.08,0.51,25.94,5M,—
-CPK,CHESAPEAKE UTILITIES CORP,piotroski,True,7,9,77.8,139,23.23,2.04,8.78,0.45,—,95.61,"236,437",—
-NMRK,"NEWMARK GROUP, INC.",piotroski,True,8,9,88.9,10.00,14.71,1.73,8.63,1.05,2.24,9.39,2M,—
-PGC,PEAPACK-GLADSTONE FINANCIAL CORPORATION,piotroski,True,7,9,77.8,44.48,21.18,1.20,5.67,—,10.43,41.86,"107,921",—
-CFFN,"Capitol Federal Financial, Inc.",piotroski,True,7,9,77.8,8.05,15.48,1.00,6.49,—,8.33,9.71,"807,592",—
-CHRW,"C.H. ROBINSON WORLDWIDE, INC.",piotroski,True,7,9,77.8,137,28.46,9.05,31.81,1.53,1.74,40.63,3M,—
-AMCR,Amcor plc,piotroski,True,8,9,88.9,43.70,18.36,1.72,9.38,1.25,2.15,36.90,3M,—
-MOS,MOSAIC CO,piotroski,True,8,9,88.9,19.93,11.72,0.53,4.47,1.32,—,38.07,10M,—
-QUAD,"Quad/Graphics, Inc.",piotroski,True,7,9,77.8,7.54,13.96,—,-45.38,0.86,-18.90,—,"318,354",—
-SNDR,"Schneider National, Inc.",piotroski,True,7,9,77.8,28.94,49.05,1.68,3.43,2.13,0.60,15.11,"559,007",—
-UNFI,"United Natural Foods, Inc.",piotroski,True,7,9,77.8,51.89,38.72,2.01,5.18,1.29,3.38,27.90,"760,400",—
-PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",graham,False,5,9,55.6,33.19,6.72,4.29,63.82,3.15,1.38,29.34,"631,996",—
-PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",netnet,False,2,4,50.0,33.19,6.72,4.29,63.82,3.15,1.38,29.34,"631,996",—
-PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",buffett,False,2,6,33.3,33.19,6.72,4.29,63.82,3.15,1.38,29.34,"631,996",—
-PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",lynch,False,1,4,25.0,33.19,6.72,4.29,63.82,3.15,1.38,29.34,"631,996",—
-PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",custom,False,0,0,0.0,33.19,6.72,4.29,63.82,3.15,1.38,29.34,"631,996",—
-XZO,"Exzeo Group, Inc.",greenblatt,False,2,3,66.7,15.75,15.91,4.97,32.56,3.86,0.37,8.40,"131,384",—
-XZO,"Exzeo Group, Inc.",buffett,False,3,6,50.0,15.75,15.91,4.97,32.56,3.86,0.37,8.40,"131,384",—
-XZO,"Exzeo Group, Inc.",lynch,False,2,4,50.0,15.75,15.91,4.97,32.56,3.86,0.37,8.40,"131,384",—
-XZO,"Exzeo Group, Inc.",netnet,False,2,4,50.0,15.75,15.91,4.97,32.56,3.86,0.37,8.40,"131,384",—
-XZO,"Exzeo Group, Inc.",graham,False,3,9,33.3,15.75,15.91,4.97,32.56,3.86,0.37,8.40,"131,384",—
-XZO,"Exzeo Group, Inc.",piotroski,False,3,9,33.3,15.75,15.91,4.97,32.56,3.86,0.37,8.40,"131,384",—
-XZO,"Exzeo Group, Inc.",custom,False,0,0,0.0,15.75,15.91,4.97,32.56,3.86,0.37,8.40,"131,384",—
-WHD,"Cactus, Inc.",graham,False,6,9,66.7,59.38,—,—,13.54,5.81,0.36,—,"405,401",—
-SBC,SBC Medical Group Holdings Incorporated,buffett,False,4,6,66.7,6.27,12.54,2.60,20.54,3.78,0.47,5.21,"564,433",—
-WHD,"Cactus, Inc.",piotroski,False,5,9,55.6,59.38,—,—,13.54,5.81,0.36,—,"405,401",—
-SBC,SBC Medical Group Holdings Incorporated,graham,False,5,9,55.6,6.27,12.54,2.60,20.54,3.78,0.47,5.21,"564,433",—
-WHD,"Cactus, Inc.",buffett,False,3,6,50.0,59.38,—,—,13.54,5.81,0.36,—,"405,401",—
-SBC,SBC Medical Group Holdings Incorporated,netnet,False,2,4,50.0,6.27,12.54,2.60,20.54,3.78,0.47,5.21,"564,433",—
-SBC,SBC Medical Group Holdings Incorporated,piotroski,False,4,9,44.4,6.27,12.54,2.60,20.54,3.78,0.47,5.21,"564,433",—
+ERIE,ERIE INDEMNITY COMPANY,buffett,True,6,6,100.0,269,—,—,24.50,1.27,0.47,—,"121,906",—
+RLI,RLI Corp,buffett,True,5,6,83.3,71.35,16.33,3.71,22.68,—,2.47,43.50,"626,949",—
+RLI,RLI Corp,piotroski,True,7,9,77.8,71.35,16.33,3.71,22.68,—,2.47,43.50,"626,949",—
+RLI,RLI Corp,lynch,True,3,4,75.0,71.35,16.33,3.71,22.68,—,2.47,43.50,"626,949",—
+REX,REX AMERICAN RESOURCES CORPORATION,lynch,True,3,4,75.0,34.78,13.91,1.89,15.57,5.94,—,32.16,"98,313",—
+XPEL,"XPEL, INC.",buffett,True,6,6,100.0,37.70,20.38,3.72,18.28,3.25,0.35,20.53,"211,478",—
+XPEL,"XPEL, INC.",lynch,True,4,4,100.0,37.70,20.38,3.72,18.28,3.25,0.35,20.53,"211,478",—
+VAL,Valaris Limited,greenblatt,True,3,3,100.0,73.02,5.27,1.63,31.01,1.77,0.67,118,"547,704",—
+VAL,Valaris Limited,piotroski,True,8,9,88.9,73.02,5.27,1.63,31.01,1.77,0.67,118,"547,704",—
+KRYS,"Krystal Biotech, Inc.",piotroski,True,8,9,88.9,316,46.22,7.76,16.80,9.95,0.09,79.16,"186,716",—
+SNA,Snap-on Inc,buffett,True,5,6,83.3,362,18.86,3.23,17.14,4.79,0.41,220,"714,102",—
+EFC,Ellington Financial Inc.,lynch,True,3,4,75.0,10.96,9.21,0.60,6.47,—,9.53,22.10,2M,—
+AYI,ACUITY INC,piotroski,True,8,9,88.9,320,18.79,3.35,17.86,1.69,0.64,191,"93,405",—
+ATLC,Atlanticus Holdings Corporation,greenblatt,True,3,3,100.0,79.45,13.33,2.50,20.08,—,11.47,65.25,"48,050",—
+FHN,FIRST HORIZON CORP,piotroski,True,7,9,77.8,22.28,11.91,1.29,11.10,—,8.45,26.99,5M,—
+SIRI,SIRIUS XM HOLDINGS INC.,lynch,True,3,4,75.0,32.22,14.45,0.99,6.96,0.30,1.36,40.31,4M,—
+DLB,"DOLBY LABORATORIES, INC.",piotroski,True,8,9,88.9,56.77,21.03,2.08,9.90,3.18,0.21,40.68,3M,—
+DRS,"Leonardo DRS, Inc.",piotroski,True,8,9,88.9,32.83,31.87,3.23,10.18,1.89,—,15.34,"437,421",—
+WOR,"WORTHINGTON ENTERPRISES, INC",piotroski,True,8,9,88.9,56.99,18.15,2.76,15.20,2.37,0.80,38.20,"85,001",—
+VMD,"Viemed Healthcare, Inc.",piotroski,True,7,9,77.8,8.62,23.30,2.49,10.55,1.18,0.39,5.37,"112,697",—
+RGEN,REPLIGEN CORP,netnet,True,4,4,100.0,171,199,0.00,2.32,8.37,0.40,849,"506,263",—
+FLS,FLOWSERVE CORP,piotroski,True,7,9,77.8,80.14,30.36,4.79,15.80,2.03,—,31.52,"674,830",—
+VSAT,"VIASAT, INC.",piotroski,True,7,9,77.8,61.42,—,1.78,-0.73,2.41,2.25,—,"905,400",—
+UNFI,"United Natural Foods, Inc.",piotroski,True,7,9,77.8,50.49,37.68,1.96,5.18,1.29,3.38,27.90,"233,464",—
+UNIT,Uniti Group Inc.,greenblatt,False,2,3,66.7,3.87,0.79,2.71,343,0.74,30.65,12.50,5M,—
+UNIT,Uniti Group Inc.,graham,False,4,9,44.4,3.87,0.79,2.71,343,0.74,30.65,12.50,5M,—
+UNIT,Uniti Group Inc.,buffett,False,2,6,33.3,3.87,0.79,2.71,343,0.74,30.65,12.50,5M,—
+UNIT,Uniti Group Inc.,lynch,False,1,4,25.0,3.87,0.79,2.71,343,0.74,30.65,12.50,5M,—
+UNIT,Uniti Group Inc.,netnet,False,1,4,25.0,3.87,0.79,2.71,343,0.74,30.65,12.50,5M,—
+UNIT,Uniti Group Inc.,piotroski,False,2,9,22.2,3.87,0.79,2.71,343,0.74,30.65,12.50,5M,—
+UNIT,Uniti Group Inc.,custom,False,0,0,0.0,3.87,0.79,2.71,343,0.74,30.65,12.50,5M,—
+ADMA,"ADMA BIOLOGICS, INC.",buffett,False,4,6,66.7,13.56,22.60,6.96,30.78,6.71,0.31,5.13,3M,—
+ADMA,"ADMA BIOLOGICS, INC.",greenblatt,False,2,3,66.7,13.56,22.60,6.96,30.78,6.71,0.31,5.13,3M,—
+ADMA,"ADMA BIOLOGICS, INC.",lynch,False,2,4,50.0,13.56,22.60,6.96,30.78,6.71,0.31,5.13,3M,—
+ADMA,"ADMA BIOLOGICS, INC.",netnet,False,2,4,50.0,13.56,22.60,6.96,30.78,6.71,0.31,5.13,3M,—
+ADMA,"ADMA BIOLOGICS, INC.",piotroski,False,4,9,44.4,13.56,22.60,6.96,30.78,6.71,0.31,5.13,3M,—
+ADMA,"ADMA BIOLOGICS, INC.",graham,False,3,9,33.3,13.56,22.60,6.96,30.78,6.71,0.31,5.13,3M,—
+ADMA,"ADMA BIOLOGICS, INC.",custom,False,0,0,0.0,13.56,22.60,6.96,30.78,6.71,0.31,5.13,3M,—
+ERIE,ERIE INDEMNITY COMPANY,greenblatt,False,2,3,66.7,269,—,—,24.50,1.27,0.47,—,"121,906",—
+ERIE,ERIE INDEMNITY COMPANY,graham,False,5,9,55.6,269,—,—,24.50,1.27,0.47,—,"121,906",—
+ERIE,ERIE INDEMNITY COMPANY,lynch,False,2,4,50.0,269,—,—,24.50,1.27,0.47,—,"121,906",—
+ERIE,ERIE INDEMNITY COMPANY,piotroski,False,4,9,44.4,269,—,—,24.50,1.27,0.47,—,"121,906",—
+ERIE,ERIE INDEMNITY COMPANY,netnet,False,1,4,25.0,269,—,—,24.50,1.27,0.47,—,"121,906",—
+ERIE,ERIE INDEMNITY COMPANY,custom,False,0,0,0.0,269,—,—,24.50,1.27,0.47,—,"121,906",—
+RLI,RLI Corp,greenblatt,False,2,3,66.7,71.35,16.33,3.71,22.68,—,2.47,43.50,"626,949",—
+RLI,RLI Corp,graham,False,4,9,44.4,71.35,16.33,3.71,22.68,—,2.47,43.50,"626,949",—
+RLI,RLI Corp,netnet,False,1,4,25.0,71.35,16.33,3.71,22.68,—,2.47,43.50,"626,949",—
+RLI,RLI Corp,custom,False,0,0,0.0,71.35,16.33,3.71,22.68,—,2.47,43.50,"626,949",—
+REX,REX AMERICAN RESOURCES CORPORATION,graham,False,6,9,66.7,34.78,13.91,1.89,15.57,5.94,—,32.16,"98,313",—
+REX,REX AMERICAN RESOURCES CORPORATION,piotroski,False,6,9,66.7,34.78,13.91,1.89,15.57,5.94,—,32.16,"98,313",—
