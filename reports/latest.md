@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-11-19 20:45 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-11-20 02:07 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **24** strategy matches passed.
+Screened **75** companies · **29** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| ERIE | ERIE INDEMNITY COMPANY | buffett | ✅ | 100% | 269 | — | — | 24.50 | 1.27 | 0.47 | 121,906 | — |
-| RLI | RLI Corp | buffett | ✅ | 83% | 71.35 | 16.33 | 3.71 | 22.68 | — | 2.47 | 626,949 | — |
-| RLI | RLI Corp | piotroski | ✅ | 78% | 71.35 | 16.33 | 3.71 | 22.68 | — | 2.47 | 626,949 | — |
-| RLI | RLI Corp | lynch | ✅ | 75% | 71.35 | 16.33 | 3.71 | 22.68 | — | 2.47 | 626,949 | — |
-| REX | REX AMERICAN RESOURCES CORPO | lynch | ✅ | 75% | 34.78 | 13.91 | 1.89 | 15.57 | 5.94 | — | 98,313 | — |
-| XPEL | XPEL, INC. | buffett | ✅ | 100% | 37.70 | 20.38 | 3.72 | 18.28 | 3.25 | 0.35 | 211,478 | — |
-| XPEL | XPEL, INC. | lynch | ✅ | 100% | 37.70 | 20.38 | 3.72 | 18.28 | 3.25 | 0.35 | 211,478 | — |
-| VAL | Valaris Limited | greenblatt | ✅ | 100% | 73.02 | 5.27 | 1.63 | 31.01 | 1.77 | 0.67 | 547,704 | — |
-| VAL | Valaris Limited | piotroski | ✅ | 89% | 73.02 | 5.27 | 1.63 | 31.01 | 1.77 | 0.67 | 547,704 | — |
-| KRYS | Krystal Biotech, Inc. | piotroski | ✅ | 89% | 316 | 46.22 | 7.76 | 16.80 | 9.95 | 0.09 | 186,716 | — |
-| SNA | Snap-on Inc | buffett | ✅ | 83% | 362 | 18.86 | 3.23 | 17.14 | 4.79 | 0.41 | 714,102 | — |
-| EFC | Ellington Financial Inc. | lynch | ✅ | 75% | 10.96 | 9.21 | 0.60 | 6.47 | — | 9.53 | 2M | — |
-| AYI | ACUITY INC | piotroski | ✅ | 89% | 320 | 18.79 | 3.35 | 17.86 | 1.69 | 0.64 | 93,405 | — |
-| ATLC | Atlanticus Holdings Corporat | greenblatt | ✅ | 100% | 79.45 | 13.33 | 2.50 | 20.08 | — | 11.47 | 48,050 | — |
-| FHN | FIRST HORIZON CORP | piotroski | ✅ | 78% | 22.28 | 11.91 | 1.29 | 11.10 | — | 8.45 | 5M | — |
-| SIRI | SIRIUS XM HOLDINGS INC. | lynch | ✅ | 75% | 32.22 | 14.45 | 0.99 | 6.96 | 0.30 | 1.36 | 4M | — |
-| DLB | DOLBY LABORATORIES, INC. | piotroski | ✅ | 89% | 56.77 | 21.03 | 2.08 | 9.90 | 3.18 | 0.21 | 3M | — |
-| DRS | Leonardo DRS, Inc. | piotroski | ✅ | 89% | 32.83 | 31.87 | 3.23 | 10.18 | 1.89 | — | 437,421 | — |
-| WOR | WORTHINGTON ENTERPRISES, INC | piotroski | ✅ | 89% | 56.99 | 18.15 | 2.76 | 15.20 | 2.37 | 0.80 | 85,001 | — |
-| VMD | Viemed Healthcare, Inc. | piotroski | ✅ | 78% | 8.62 | 23.30 | 2.49 | 10.55 | 1.18 | 0.39 | 112,697 | — |
-| RGEN | REPLIGEN CORP | netnet | ✅ | 100% | 171 | 199 | 0.00 | 2.32 | 8.37 | 0.40 | 506,263 | — |
-| FLS | FLOWSERVE CORP | piotroski | ✅ | 78% | 80.14 | 30.36 | 4.79 | 15.80 | 2.03 | — | 674,830 | — |
-| VSAT | VIASAT, INC. | piotroski | ✅ | 78% | 61.42 | — | 1.78 | -0.73 | 2.41 | 2.25 | 905,400 | — |
-| UNFI | United Natural Foods, Inc. | piotroski | ✅ | 78% | 50.49 | 37.68 | 1.96 | 5.18 | 1.29 | 3.38 | 233,464 | — |
-| UNIT | Uniti Group Inc. | greenblatt | ▫️ | 67% | 3.87 | 0.79 | 2.71 | 343 | 0.74 | 30.65 | 5M | — |
-| UNIT | Uniti Group Inc. | graham | ▫️ | 44% | 3.87 | 0.79 | 2.71 | 343 | 0.74 | 30.65 | 5M | — |
-| UNIT | Uniti Group Inc. | buffett | ▫️ | 33% | 3.87 | 0.79 | 2.71 | 343 | 0.74 | 30.65 | 5M | — |
-| UNIT | Uniti Group Inc. | lynch | ▫️ | 25% | 3.87 | 0.79 | 2.71 | 343 | 0.74 | 30.65 | 5M | — |
-| UNIT | Uniti Group Inc. | netnet | ▫️ | 25% | 3.87 | 0.79 | 2.71 | 343 | 0.74 | 30.65 | 5M | — |
-| UNIT | Uniti Group Inc. | piotroski | ▫️ | 22% | 3.87 | 0.79 | 2.71 | 343 | 0.74 | 30.65 | 5M | — |
-| UNIT | Uniti Group Inc. | custom | ▫️ | 0% | 3.87 | 0.79 | 2.71 | 343 | 0.74 | 30.65 | 5M | — |
-| ADMA | ADMA BIOLOGICS, INC. | buffett | ▫️ | 67% | 13.56 | 22.60 | 6.96 | 30.78 | 6.71 | 0.31 | 3M | — |
-| ADMA | ADMA BIOLOGICS, INC. | greenblatt | ▫️ | 67% | 13.56 | 22.60 | 6.96 | 30.78 | 6.71 | 0.31 | 3M | — |
-| ADMA | ADMA BIOLOGICS, INC. | lynch | ▫️ | 50% | 13.56 | 22.60 | 6.96 | 30.78 | 6.71 | 0.31 | 3M | — |
-| ADMA | ADMA BIOLOGICS, INC. | netnet | ▫️ | 50% | 13.56 | 22.60 | 6.96 | 30.78 | 6.71 | 0.31 | 3M | — |
-| ADMA | ADMA BIOLOGICS, INC. | piotroski | ▫️ | 44% | 13.56 | 22.60 | 6.96 | 30.78 | 6.71 | 0.31 | 3M | — |
-| ADMA | ADMA BIOLOGICS, INC. | graham | ▫️ | 33% | 13.56 | 22.60 | 6.96 | 30.78 | 6.71 | 0.31 | 3M | — |
-| ADMA | ADMA BIOLOGICS, INC. | custom | ▫️ | 0% | 13.56 | 22.60 | 6.96 | 30.78 | 6.71 | 0.31 | 3M | — |
-| ERIE | ERIE INDEMNITY COMPANY | greenblatt | ▫️ | 67% | 269 | — | — | 24.50 | 1.27 | 0.47 | 121,906 | — |
-| ERIE | ERIE INDEMNITY COMPANY | graham | ▫️ | 56% | 269 | — | — | 24.50 | 1.27 | 0.47 | 121,906 | — |
-| ERIE | ERIE INDEMNITY COMPANY | lynch | ▫️ | 50% | 269 | — | — | 24.50 | 1.27 | 0.47 | 121,906 | — |
-| ERIE | ERIE INDEMNITY COMPANY | piotroski | ▫️ | 44% | 269 | — | — | 24.50 | 1.27 | 0.47 | 121,906 | — |
-| ERIE | ERIE INDEMNITY COMPANY | netnet | ▫️ | 25% | 269 | — | — | 24.50 | 1.27 | 0.47 | 121,906 | — |
-| ERIE | ERIE INDEMNITY COMPANY | custom | ▫️ | 0% | 269 | — | — | 24.50 | 1.27 | 0.47 | 121,906 | — |
-| RLI | RLI Corp | greenblatt | ▫️ | 67% | 71.35 | 16.33 | 3.71 | 22.68 | — | 2.47 | 626,949 | — |
-| RLI | RLI Corp | graham | ▫️ | 44% | 71.35 | 16.33 | 3.71 | 22.68 | — | 2.47 | 626,949 | — |
-| RLI | RLI Corp | netnet | ▫️ | 25% | 71.35 | 16.33 | 3.71 | 22.68 | — | 2.47 | 626,949 | — |
-| RLI | RLI Corp | custom | ▫️ | 0% | 71.35 | 16.33 | 3.71 | 22.68 | — | 2.47 | 626,949 | — |
-| REX | REX AMERICAN RESOURCES CORPO | graham | ▫️ | 67% | 34.78 | 13.91 | 1.89 | 15.57 | 5.94 | — | 98,313 | — |
-| REX | REX AMERICAN RESOURCES CORPO | piotroski | ▫️ | 67% | 34.78 | 13.91 | 1.89 | 15.57 | 5.94 | — | 98,313 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | greenblatt | ✅ | 100% | 1.87 | 9.35 | 2.09 | 22.71 | 4.86 | 0.39 | 493,741 | — |
+| YELP | YELP INC. | greenblatt | ✅ | 100% | 18.56 | 8.29 | 1.70 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC. | piotroski | ✅ | 89% | 18.56 | 8.29 | 1.70 | 20.48 | 2.99 | 0.35 | 1M | — |
+| PFS | PROVIDENT FINANCIAL SERVICES | piotroski | ✅ | 78% | 21.67 | 9.72 | 1.00 | 10.28 | — | 7.82 | 849,595 | — |
+| PFS | PROVIDENT FINANCIAL SERVICES | lynch | ✅ | 75% | 21.67 | 9.72 | 1.00 | 10.28 | — | 7.82 | 849,595 | — |
+| PATH | UiPath, Inc. | piotroski | ✅ | 89% | 11.23 | 21.60 | 2.94 | 13.56 | 2.48 | 0.53 | 25M | — |
+| UHS | UNIVERSAL HEALTH SERVICES, I | piotroski | ✅ | 89% | 175 | 7.57 | 1.55 | 20.46 | 1.05 | — | 741,716 | — |
+| SSD | Simpson Manufacturing Co., I | buffett | ✅ | 83% | 190 | 23.09 | 3.92 | 17.00 | 3.54 | 0.51 | 453,172 | — |
+| SSD | Simpson Manufacturing Co., I | piotroski | ✅ | 78% | 190 | 23.09 | 3.92 | 17.00 | 3.54 | 0.51 | 453,172 | — |
+| FSS | FEDERAL SIGNAL CORPORATION | lynch | ✅ | 75% | 111 | 27.60 | 4.93 | 17.84 | 3.02 | 0.73 | 417,640 | — |
+| VICR | VICOR CORPORATION | piotroski | ✅ | 89% | 142 | 54.22 | 9.04 | 16.66 | 8.99 | 0.10 | 643,178 | — |
+| VICR | VICOR CORPORATION | buffett | ✅ | 83% | 142 | 54.22 | 9.04 | 16.66 | 8.99 | 0.10 | 643,178 | — |
+| VICR | VICOR CORPORATION | lynch | ✅ | 75% | 142 | 54.22 | 9.04 | 16.66 | 8.99 | 0.10 | 643,178 | — |
+| LEVI | LEVI STRAUSS & CO | piotroski | ✅ | 78% | 23.53 | 16.23 | 4.13 | 25.37 | 1.55 | 2.01 | 2M | — |
+| ZION | ZIONS BANCORPORATION, NATION | piotroski | ✅ | 78% | 62.24 | 10.36 | 1.28 | 12.52 | — | 11.39 | 2M | — |
+| RDVT | RED VIOLET, INC. | piotroski | ✅ | 89% | 72.29 | 79.44 | 10.31 | 13.03 | 7.18 | 0.11 | 249,010 | — |
+| BANF | BancFirst Corporation | lynch | ✅ | 75% | 118 | 16.58 | 2.15 | 12.98 | — | 7.00 | 309,065 | — |
+| TRN | TRINITY INDUSTRIES INC | greenblatt | ✅ | 100% | 28.86 | 9.46 | 2.22 | 23.50 | — | 6.76 | 649,931 | — |
+| TRN | TRINITY INDUSTRIES INC | piotroski | ✅ | 78% | 28.86 | 9.46 | 2.22 | 23.50 | — | 6.76 | 649,931 | — |
+| LTH | Life Time Group Holdings, In | piotroski | ✅ | 89% | 46.54 | 28.04 | 3.36 | 11.95 | 0.63 | 1.56 | 2M | — |
+| DBX | Dropbox, Inc. | piotroski | ✅ | 89% | 33.80 | 18.17 | — | -28.29 | 0.63 | -2.58 | 3M | — |
+| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 18.27 | 9.04 | 2.03 | 22.51 | 2.37 | 2.27 | 1M | — |
+| MYRG | MYR GROUP INC. | piotroski | ✅ | 89% | 265 | 35.24 | 6.32 | 17.93 | 1.33 | 1.49 | 243,048 | — |
+| PGC | PEAPACK-GLADSTONE FINANCIAL  | piotroski | ✅ | 78% | 43.94 | 20.92 | 1.18 | 5.67 | — | 10.43 | 144,494 | — |
+| LFST | LifeStance Health Group, Inc | piotroski | ✅ | 89% | 13.34 | 540 | 3.43 | 0.64 | 1.65 | 0.45 | 5M | — |
+| TRC | TEJON RANCH CO. | piotroski | ✅ | 78% | 17.02 | — | 0.97 | 0.02 | 4.14 | 0.29 | 169,615 | — |
+| SENS | Senseonics Holdings, Inc. | piotroski | ✅ | 78% | 8.90 | — | 6.09 | -113 | 4.83 | 1.07 | 1M | — |
+| DBD | Diebold Nixdorf, Incorporate | piotroski | ✅ | 78% | 50.27 | 19.79 | 1.70 | 8.60 | 1.30 | 2.50 | 330,919 | — |
+| TRLV | TRULIEVE CANNABIS CORP. | piotroski | ✅ | 89% | 9.35 | — | 1.57 | -10.70 | 4.43 | 1.36 | 2M | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | piotroski | ▫️ | 67% | 1.87 | 9.35 | 2.09 | 22.71 | 4.86 | 0.39 | 493,741 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | graham | ▫️ | 56% | 1.87 | 9.35 | 2.09 | 22.71 | 4.86 | 0.39 | 493,741 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | buffett | ▫️ | 50% | 1.87 | 9.35 | 2.09 | 22.71 | 4.86 | 0.39 | 493,741 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | lynch | ▫️ | 50% | 1.87 | 9.35 | 2.09 | 22.71 | 4.86 | 0.39 | 493,741 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | netnet | ▫️ | 50% | 1.87 | 9.35 | 2.09 | 22.71 | 4.86 | 0.39 | 493,741 | — |
+| NAGE | NIAGEN BIOSCIENCE, INC. | custom | ▫️ | 0% | 1.87 | 9.35 | 2.09 | 22.71 | 4.86 | 0.39 | 493,741 | — |
+| YELP | YELP INC. | graham | ▫️ | 78% | 18.56 | 8.29 | 1.70 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC. | buffett | ▫️ | 50% | 18.56 | 8.29 | 1.70 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC. | lynch | ▫️ | 50% | 18.56 | 8.29 | 1.70 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC. | netnet | ▫️ | 50% | 18.56 | 8.29 | 1.70 | 20.48 | 2.99 | 0.35 | 1M | — |
+| YELP | YELP INC. | custom | ▫️ | 0% | 18.56 | 8.29 | 1.70 | 20.48 | 2.99 | 0.35 | 1M | — |
+| PFS | PROVIDENT FINANCIAL SERVICES | graham | ▫️ | 67% | 21.67 | 9.72 | 1.00 | 10.28 | — | 7.82 | 849,595 | — |
+| PFS | PROVIDENT FINANCIAL SERVICES | greenblatt | ▫️ | 67% | 21.67 | 9.72 | 1.00 | 10.28 | — | 7.82 | 849,595 | — |
+| PFS | PROVIDENT FINANCIAL SERVICES | buffett | ▫️ | 50% | 21.67 | 9.72 | 1.00 | 10.28 | — | 7.82 | 849,595 | — |
+| PFS | PROVIDENT FINANCIAL SERVICES | netnet | ▫️ | 25% | 21.67 | 9.72 | 1.00 | 10.28 | — | 7.82 | 849,595 | — |
+| PFS | PROVIDENT FINANCIAL SERVICES | custom | ▫️ | 0% | 21.67 | 9.72 | 1.00 | 10.28 | — | 7.82 | 849,595 | — |
+| PATH | UiPath, Inc. | lynch | ▫️ | 50% | 11.23 | 21.60 | 2.94 | 13.56 | 2.48 | 0.53 | 25M | — |
+| PATH | UiPath, Inc. | netnet | ▫️ | 50% | 11.23 | 21.60 | 2.94 | 13.56 | 2.48 | 0.53 | 25M | — |
+| PATH | UiPath, Inc. | graham | ▫️ | 44% | 11.23 | 21.60 | 2.94 | 13.56 | 2.48 | 0.53 | 25M | — |
+| PATH | UiPath, Inc. | buffett | ▫️ | 33% | 11.23 | 21.60 | 2.94 | 13.56 | 2.48 | 0.53 | 25M | — |
+| PATH | UiPath, Inc. | greenblatt | ▫️ | 33% | 11.23 | 21.60 | 2.94 | 13.56 | 2.48 | 0.53 | 25M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
