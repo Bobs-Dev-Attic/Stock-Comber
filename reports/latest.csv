@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-HRTG,"Heritage Insurance Holdings, Inc.",greenblatt,True,3,3,100.0,32.46,5.14,1.99,38.71,—,3.35,48.18,"71,226",—
-HRTG,"Heritage Insurance Holdings, Inc.",piotroski,True,7,9,77.8,32.46,5.14,1.99,38.71,—,3.35,48.18,"71,226",—
-SLV,iShares Silver Trust,lynch,True,3,4,75.0,37.06,0.91,—,—,—,—,—,29M,—
-NREF,"NexPoint Real Estate Finance, Inc.",lynch,True,3,4,75.0,11.29,3.96,1.22,31.74,—,11.57,24.34,"75,059",—
-BKE,"BUCKLE, INC",greenblatt,True,3,3,100.0,41.78,10.09,4.99,49.39,1.89,1.33,27.93,"528,156",—
-BKE,"BUCKLE, INC",buffett,True,5,6,83.3,41.78,10.09,4.99,49.39,1.89,1.33,27.93,"528,156",—
-TREE,"LendingTree, Inc.",greenblatt,True,3,3,100.0,34.30,3.18,1.68,52.76,1.67,1.98,70.33,"83,823",—
-GFF,GRIFFON CORP,lynch,True,3,4,75.0,104,14.68,15.37,105,2.66,4.60,32.82,"424,070",—
-LII,LENNOX INTERNATIONAL INC,lynch,True,3,4,75.0,342,15.02,10.42,69.28,1.60,2.51,130,"235,446",—
-KRYS,"Krystal Biotech, Inc.",piotroski,True,8,9,88.9,314,45.94,7.72,16.80,9.95,0.09,79.16,"111,491",—
-FICO,Fair Isaac Corp,piotroski,True,8,9,88.9,678,18.66,—,-21.56,0.99,-1.54,—,"422,131",—
-FICO,Fair Isaac Corp,lynch,True,3,4,75.0,678,18.66,—,-21.56,0.99,-1.54,—,"422,131",—
-WMS,"ADVANCED DRAINAGE SYSTEMS, INC.",buffett,True,5,6,83.3,113,20.81,4.77,22.94,2.42,1.37,53.88,"360,348",—
-GPK,Graphic Packaging Holding Co,lynch,True,3,4,75.0,10.28,6.95,0.92,13.31,1.30,—,19.25,1M,—
-AOS,A. O. Smith Corporation,piotroski,True,7,9,77.8,63.94,16.61,4.88,29.40,1.50,0.69,33.68,"528,645",—
-NHC,NATIONAL HEALTHCARE CORP,piotroski,True,9,9,100.0,190,24.80,2.79,11.23,1.82,0.42,109,"46,486",—
-NHC,NATIONAL HEALTHCARE CORP,lynch,True,3,4,75.0,190,24.80,2.79,11.23,1.82,0.42,109,"46,486",—
-ADUS,Addus HomeCare Corp,lynch,True,4,4,100.0,121,23.19,2.05,8.84,1.80,0.32,83.25,"344,704",—
-ADUS,Addus HomeCare Corp,piotroski,True,8,9,88.9,121,23.19,2.05,8.84,1.80,0.32,83.25,"344,704",—
-PLUS,ePlus inc.,piotroski,True,7,9,77.8,92.80,18.45,2.29,12.41,2.24,0.68,67.73,"61,439",—
-OPY,OPPENHEIMER HOLDINGS INC.,piotroski,True,7,9,77.8,82.66,6.34,0.96,15.08,—,2.77,159,"51,735",—
-LQDT,"LIQUIDITY SERVICES, INC",piotroski,True,8,9,88.9,32.19,28.24,4.22,14.98,1.75,0.67,13.99,"346,973",—
-BSY,"BENTLEY SYSTEMS, INCORPORATED",piotroski,True,9,9,100.0,41.99,49.40,11.76,23.36,0.56,1.99,8.26,"528,070",—
-BSY,"BENTLEY SYSTEMS, INCORPORATED",buffett,True,5,6,83.3,41.99,49.40,11.76,23.36,0.56,1.99,8.26,"528,070",—
-CMPR,Cimpress plc,piotroski,True,8,9,88.9,54.16,14.29,—,-19.41,0.73,-5.26,—,"109,479",—
-GDRX,"GoodRx Holdings, Inc.",piotroski,True,7,9,77.8,3.00,33.28,1.73,4.94,2.61,1.28,1.87,"773,823",—
-PGC,PEAPACK-GLADSTONE FINANCIAL CORPORATION,piotroski,True,7,9,77.8,43.52,20.72,1.17,5.67,—,10.43,41.86,"40,038",—
-RH,RH,piotroski,True,8,9,88.9,109,17.28,35.61,206,1.19,78.80,20.85,"341,916",—
-MOS,MOSAIC CO,piotroski,True,8,9,88.9,19.06,11.21,0.50,4.47,1.32,—,38.07,4M,—
-MCS,MARCUS CORP,piotroski,True,7,9,77.8,25.79,63.56,1.76,2.77,0.40,—,11.55,"96,496",—
-DBD,"Diebold Nixdorf, Incorporated",piotroski,True,7,9,77.8,50.84,20.02,1.72,8.60,1.30,2.50,41.11,"141,123",—
-HRTG,"Heritage Insurance Holdings, Inc.",buffett,False,4,6,66.7,32.46,5.14,1.99,38.71,—,3.35,48.18,"71,226",—
-HRTG,"Heritage Insurance Holdings, Inc.",graham,False,5,9,55.6,32.46,5.14,1.99,38.71,—,3.35,48.18,"71,226",—
-HRTG,"Heritage Insurance Holdings, Inc.",lynch,False,2,4,50.0,32.46,5.14,1.99,38.71,—,3.35,48.18,"71,226",—
-HRTG,"Heritage Insurance Holdings, Inc.",netnet,False,1,4,25.0,32.46,5.14,1.99,38.71,—,3.35,48.18,"71,226",—
-HRTG,"Heritage Insurance Holdings, Inc.",custom,False,0,0,0.0,32.46,5.14,1.99,38.71,—,3.35,48.18,"71,226",—
-SLV,iShares Silver Trust,greenblatt,False,1,3,33.3,37.06,0.91,—,—,—,—,—,29M,—
-SLV,iShares Silver Trust,netnet,False,1,4,25.0,37.06,0.91,—,—,—,—,—,29M,—
-SLV,iShares Silver Trust,graham,False,2,9,22.2,37.06,0.91,—,—,—,—,—,29M,—
-SLV,iShares Silver Trust,buffett,False,1,6,16.7,37.06,0.91,—,—,—,—,—,29M,—
-SLV,iShares Silver Trust,piotroski,False,0,9,0.0,37.06,0.91,—,—,—,—,—,29M,—
-SLV,iShares Silver Trust,custom,False,0,0,0.0,37.06,0.91,—,—,—,—,—,29M,—
-NREF,"NexPoint Real Estate Finance, Inc.",graham,False,6,9,66.7,11.29,3.96,1.22,31.74,—,11.57,24.34,"75,059",—
-NREF,"NexPoint Real Estate Finance, Inc.",greenblatt,False,2,3,66.7,11.29,3.96,1.22,31.74,—,11.57,24.34,"75,059",—
-NREF,"NexPoint Real Estate Finance, Inc.",piotroski,False,4,9,44.4,11.29,3.96,1.22,31.74,—,11.57,24.34,"75,059",—
-NREF,"NexPoint Real Estate Finance, Inc.",buffett,False,2,6,33.3,11.29,3.96,1.22,31.74,—,11.57,24.34,"75,059",—
-NREF,"NexPoint Real Estate Finance, Inc.",netnet,False,1,4,25.0,11.29,3.96,1.22,31.74,—,11.57,24.34,"75,059",—
-NREF,"NexPoint Real Estate Finance, Inc.",custom,False,0,0,0.0,11.29,3.96,1.22,31.74,—,11.57,24.34,"75,059",—
-PPIH,"Perma-Pipe International Holdings, Inc.",piotroski,False,6,9,66.7,27.09,12.96,2.44,18.79,1.84,—,22.87,"98,881",—
-PPIH,"Perma-Pipe International Holdings, Inc.",graham,False,4,9,44.4,27.09,12.96,2.44,18.79,1.84,—,22.87,"98,881",—
+IAU,ISHARES GOLD TRUST,lynch,True,3,4,75.0,66.23,2.07,—,—,—,—,—,13M,—
+BSM,"Black Stone Minerals, L.P.",piotroski,True,7,9,77.8,13.37,—,—,—,3.88,—,—,"471,086",—
+SAFX,"XCF Global, Inc.",greenblatt,True,3,3,100.0,0.04,0.08,0.16,197,0.11,10.14,1.76,13M,—
+FSLR,"First Solar, Inc.",lynch,True,4,4,100.0,138,9.68,1.55,16.02,2.67,0.40,168,4M,—
+FSLR,"First Solar, Inc.",piotroski,True,8,9,88.9,138,9.68,1.55,16.02,2.67,0.40,168,4M,—
+REX,REX AMERICAN RESOURCES CORPORATION,lynch,True,3,4,75.0,33.94,13.58,1.85,15.57,5.94,—,32.16,"209,310",—
+OLED,UNIVERSAL DISPLAY CORPORATION,piotroski,True,7,9,77.8,77.62,15.28,2.10,13.75,10.06,0.12,64.99,"694,855",—
+SEIC,SEI INVESTMENTS COMPANY,buffett,True,5,6,83.3,101,17.90,5.23,29.22,3.29,—,49.40,"944,321",—
+IPAR,"INTERPARFUMS, INC.",buffett,True,5,6,83.3,137,26.23,5.01,19.12,2.99,—,56.84,"335,194",—
+IPAR,"INTERPARFUMS, INC.",lynch,True,3,4,75.0,137,26.23,5.01,19.12,2.99,—,56.84,"335,194",—
+INOD,INNODATA INC.,lynch,True,3,4,75.0,28.12,30.57,9.19,30.03,2.68,0.57,7.96,2M,—
+EBF,"ENNIS, INC.",piotroski,True,7,9,77.8,19.86,11.96,1.65,13.81,3.72,0.16,21.19,"196,550",—
+EBF,"ENNIS, INC.",lynch,True,3,4,75.0,19.86,11.96,1.65,13.81,3.72,0.16,21.19,"196,550",—
+WWD,"WOODWARD, INC.",piotroski,True,7,9,77.8,327,34.41,8.18,23.77,2.04,1.19,92.35,2M,—
+KTB,"KONTOOR BRANDS, INC.",lynch,True,3,4,75.0,79.58,19.65,7.90,40.27,1.82,3.57,30.29,"730,567",—
+CMC,Commercial Metals Company,graham,True,8,9,88.9,54.48,9.30,1.30,13.96,2.34,1.18,74.40,1M,—
+ALG,ALAMO GROUP INC.,graham,True,9,9,100.0,126,14.62,1.32,9.04,4.57,0.40,136,"199,005",—
+ROL,"ROLLINS, INC.",buffett,True,5,6,83.3,37.82,34.70,13.32,38.32,0.60,1.29,8.34,5M,—
+FIVE,"Five Below, Inc.",piotroski,True,9,9,100.0,221,34.19,5.59,16.35,2.01,1.25,75.89,"758,579",—
+TOST,"Toast, Inc.",piotroski,True,7,9,77.8,31.42,56.11,8.98,16.10,2.75,0.48,6.64,8M,—
+AXTA,AXALTA COATING SYSTEMS LTD.,lynch,True,3,4,75.0,34.12,19.61,3.16,16.11,2.06,2.22,20.57,1M,—
+RRR,"RED ROCK RESORTS, INC.",piotroski,True,8,9,88.9,46.09,14.77,22.70,90.27,0.79,18.41,11.94,"843,998",—
+PEN,"Penumbra, Inc",piotroski,True,8,9,88.9,319,70.60,8.78,12.45,6.64,0.28,60.79,"205,382",—
+OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,30.15,43.70,5.76,13.20,1.91,0.30,9.01,"560,969",—
+SHLS,"Shoals Technologies Group, Inc.",piotroski,True,7,9,77.8,6.48,32.40,1.82,5.60,2.03,0.51,4.00,6M,—
+SHLS,"Shoals Technologies Group, Inc.",lynch,True,3,4,75.0,6.48,32.40,1.82,5.60,2.03,0.51,4.00,6M,—
+GRC,The Gorman-Rupp Company,piotroski,True,8,9,88.9,64.03,31.70,4.06,12.78,2.37,1.07,26.77,"145,733",—
+SHAK,SHAKE SHACK INC.,piotroski,True,8,9,88.9,71.96,66.02,5.73,8.70,1.76,2.56,17.55,1M,—
+HGV,Hilton Grand Vacations Inc.,piotroski,True,8,9,88.9,43.67,49.07,3.10,6.28,—,7.83,16.80,1M,—
+HII,"HUNTINGTON INGALLS INDUSTRIES, INC.",piotroski,True,9,9,100.0,280,18.22,2.17,11.93,1.13,1.51,211,"418,181",—
+MTRX,MATRIX SERVICE CO,piotroski,True,7,9,77.8,7.87,—,1.57,-1.82,0.98,3.25,—,"657,315",—
+MMI,"MARCUS & MILLICHAP, INC.",piotroski,True,7,9,77.8,22.77,—,1.47,-0.32,2.55,0.37,—,"354,941",—
+IAU,ISHARES GOLD TRUST,greenblatt,False,1,3,33.3,66.23,2.07,—,—,—,—,—,13M,—
+IAU,ISHARES GOLD TRUST,netnet,False,1,4,25.0,66.23,2.07,—,—,—,—,—,13M,—
+IAU,ISHARES GOLD TRUST,graham,False,2,9,22.2,66.23,2.07,—,—,—,—,—,13M,—
+IAU,ISHARES GOLD TRUST,buffett,False,1,6,16.7,66.23,2.07,—,—,—,—,—,13M,—
+IAU,ISHARES GOLD TRUST,piotroski,False,0,9,0.0,66.23,2.07,—,—,—,—,—,13M,—
+IAU,ISHARES GOLD TRUST,custom,False,0,0,0.0,66.23,2.07,—,—,—,—,—,13M,—
+BSM,"Black Stone Minerals, L.P.",lynch,False,2,4,50.0,13.37,—,—,—,3.88,—,—,"471,086",—
+BSM,"Black Stone Minerals, L.P.",graham,False,4,9,44.4,13.37,—,—,—,3.88,—,—,"471,086",—
+BSM,"Black Stone Minerals, L.P.",buffett,False,2,6,33.3,13.37,—,—,—,3.88,—,—,"471,086",—
+BSM,"Black Stone Minerals, L.P.",greenblatt,False,1,3,33.3,13.37,—,—,—,3.88,—,—,"471,086",—
+BSM,"Black Stone Minerals, L.P.",netnet,False,1,4,25.0,13.37,—,—,—,3.88,—,—,"471,086",—
+BSM,"Black Stone Minerals, L.P.",custom,False,0,0,0.0,13.37,—,—,—,3.88,—,—,"471,086",—
+SAFX,"XCF Global, Inc.",graham,False,4,9,44.4,0.04,0.08,0.16,197,0.11,10.14,1.76,13M,—
+SAFX,"XCF Global, Inc.",buffett,False,2,6,33.3,0.04,0.08,0.16,197,0.11,10.14,1.76,13M,—
+SAFX,"XCF Global, Inc.",lynch,False,1,4,25.0,0.04,0.08,0.16,197,0.11,10.14,1.76,13M,—
+SAFX,"XCF Global, Inc.",netnet,False,1,4,25.0,0.04,0.08,0.16,197,0.11,10.14,1.76,13M,—
+SAFX,"XCF Global, Inc.",piotroski,False,1,9,11.1,0.04,0.08,0.16,197,0.11,10.14,1.76,13M,—
+SAFX,"XCF Global, Inc.",custom,False,0,0,0.0,0.04,0.08,0.16,197,0.11,10.14,1.76,13M,—
