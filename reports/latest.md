@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-11-20 09:30 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-11-20 18:03 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **32** strategy matches passed.
+Screened **75** companies · **31** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| BSM | Black Stone Minerals, L.P. | piotroski | ✅ | 78% | 13.47 | — | — | — | 3.88 | — | 225,877 | — |
-| YELP | YELP INC. | greenblatt | ✅ | 100% | 18.56 | 8.29 | 1.70 | 20.48 | 2.99 | 0.35 | 1M | — |
-| YELP | YELP INC. | piotroski | ✅ | 89% | 18.56 | 8.29 | 1.70 | 20.48 | 2.99 | 0.35 | 1M | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | greenblatt | ✅ | 100% | 28.87 | 7.24 | 2.44 | 33.67 | 1.55 | — | 270,277 | — |
-| NBR | NABORS INDUSTRIES LTD | piotroski | ✅ | 78% | 74.32 | 4.27 | 1.81 | 48.52 | 1.56 | 5.67 | 135,361 | — |
-| MTG | MGIC Investment Corp | lynch | ✅ | 75% | 26.69 | 8.50 | 1.22 | 14.34 | — | 0.29 | 3M | — |
+| HRTG | Heritage Insurance Holdings, | greenblatt | ✅ | 100% | 32.46 | 5.14 | 1.99 | 38.71 | — | 3.35 | 71,226 | — |
+| HRTG | Heritage Insurance Holdings, | piotroski | ✅ | 78% | 32.46 | 5.14 | 1.99 | 38.71 | — | 3.35 | 71,226 | — |
+| SLV | iShares Silver Trust | lynch | ✅ | 75% | 37.06 | 0.91 | — | — | — | — | 29M | — |
+| NREF | NexPoint Real Estate Finance | lynch | ✅ | 75% | 11.29 | 3.96 | 1.22 | 31.74 | — | 11.57 | 75,059 | — |
 | BKE | BUCKLE, INC | greenblatt | ✅ | 100% | 41.78 | 10.09 | 4.99 | 49.39 | 1.89 | 1.33 | 528,156 | — |
 | BKE | BUCKLE, INC | buffett | ✅ | 83% | 41.78 | 10.09 | 4.99 | 49.39 | 1.89 | 1.33 | 528,156 | — |
-| BOOT | Boot Barn Holdings, Inc. | piotroski | ✅ | 89% | 139 | 18.96 | 3.25 | 17.13 | 2.65 | 0.86 | 796,614 | — |
-| BOOT | Boot Barn Holdings, Inc. | lynch | ✅ | 75% | 139 | 18.96 | 3.25 | 17.13 | 2.65 | 0.86 | 796,614 | — |
-| TREE | LendingTree, Inc. | greenblatt | ✅ | 100% | 34.69 | 3.22 | 1.70 | 52.76 | 1.67 | 1.98 | 474,428 | — |
-| FN | FABRINET | lynch | ✅ | 100% | 312 | 23.89 | 4.60 | 19.27 | 2.25 | 0.59 | 728,675 | — |
-| FN | FABRINET | buffett | ✅ | 83% | 312 | 23.89 | 4.60 | 19.27 | 2.25 | 0.59 | 728,675 | — |
-| DAKT | Daktronics, Inc. | piotroski | ✅ | 89% | 18.80 | 20.43 | 3.09 | 15.09 | 2.31 | — | 457,034 | — |
-| DAKT | Daktronics, Inc. | lynch | ✅ | 75% | 18.80 | 20.43 | 3.09 | 15.09 | 2.31 | — | 457,034 | — |
-| AYI | ACUITY INC | piotroski | ✅ | 89% | 320 | 18.79 | 3.36 | 17.86 | 1.69 | 0.64 | 169,811 | — |
-| BURL | BURLINGTON STORES, INC. | piotroski | ✅ | 78% | 246 | 25.82 | 8.71 | 33.76 | 1.23 | — | 1M | — |
-| HOG | HARLEY-DAVIDSON, INC. | graham | ✅ | 100% | 32.70 | 11.76 | 1.26 | 10.79 | 2.10 | — | 2M | — |
-| HOG | HARLEY-DAVIDSON, INC. | piotroski | ✅ | 89% | 32.70 | 11.76 | 1.26 | 10.79 | 2.10 | — | 2M | — |
-| DY | DYCOM INDUSTRIES, INC. | lynch | ✅ | 75% | 221 | 23.15 | 3.50 | 15.12 | 2.74 | 2.22 | 704,155 | — |
-| CWEN | Clearway Energy, Inc. | lynch | ✅ | 75% | 30.77 | 6.37 | 0.19 | 2.91 | 1.13 | 1.85 | 2M | — |
-| STRA | Strategic Education, Inc. | graham | ✅ | 89% | 52.92 | 9.78 | 0.75 | 7.69 | 1.27 | 0.24 | 379,523 | — |
-| STRA | Strategic Education, Inc. | piotroski | ✅ | 89% | 52.92 | 9.78 | 0.75 | 7.69 | 1.27 | 0.24 | 379,523 | — |
-| BKU | BankUnited, Inc. | piotroski | ✅ | 89% | 41.64 | 11.80 | 1.01 | 8.79 | — | 10.47 | 610,857 | — |
-| DTM | DT Midstream, Inc. | piotroski | ✅ | 78% | 115 | 26.72 | 2.49 | 9.31 | 1.07 | 1.10 | 578,150 | — |
-| FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 20.32 | 107 | 8.34 | 7.83 | 4.94 | 0.33 | 3M | — |
-| SONO | SONOS, INC. | piotroski | ✅ | 78% | 17.06 | 23.37 | 5.38 | 23.12 | 1.50 | 1.42 | 2M | — |
-| VVX | V2X, Inc. | piotroski | ✅ | 100% | 77.00 | 31.43 | 2.26 | 7.18 | 1.22 | 2.02 | 257,562 | — |
-| FLS | FLOWSERVE CORP | piotroski | ✅ | 78% | 79.88 | 30.26 | 4.77 | 15.80 | 2.03 | — | 1M | — |
-| SENS | Senseonics Holdings, Inc. | piotroski | ✅ | 78% | 8.90 | — | 6.09 | -113 | 4.83 | 1.07 | 1M | — |
-| CTRI | Centuri Holdings, Inc. | piotroski | ✅ | 78% | 21.03 | 84.12 | 2.18 | 2.57 | 1.78 | 1.75 | 1M | — |
-| LILA | Liberty Latin America Ltd. | piotroski | ✅ | 78% | 9.38 | — | 3.37 | -110 | 1.14 | 20.09 | 360,180 | — |
-| BSM | Black Stone Minerals, L.P. | lynch | ▫️ | 50% | 13.47 | — | — | — | 3.88 | — | 225,877 | — |
-| BSM | Black Stone Minerals, L.P. | graham | ▫️ | 44% | 13.47 | — | — | — | 3.88 | — | 225,877 | — |
-| BSM | Black Stone Minerals, L.P. | buffett | ▫️ | 33% | 13.47 | — | — | — | 3.88 | — | 225,877 | — |
-| BSM | Black Stone Minerals, L.P. | greenblatt | ▫️ | 33% | 13.47 | — | — | — | 3.88 | — | 225,877 | — |
-| BSM | Black Stone Minerals, L.P. | netnet | ▫️ | 25% | 13.47 | — | — | — | 3.88 | — | 225,877 | — |
-| BSM | Black Stone Minerals, L.P. | custom | ▫️ | 0% | 13.47 | — | — | — | 3.88 | — | 225,877 | — |
-| YELP | YELP INC. | graham | ▫️ | 78% | 18.56 | 8.29 | 1.70 | 20.48 | 2.99 | 0.35 | 1M | — |
-| YELP | YELP INC. | buffett | ▫️ | 50% | 18.56 | 8.29 | 1.70 | 20.48 | 2.99 | 0.35 | 1M | — |
-| YELP | YELP INC. | lynch | ▫️ | 50% | 18.56 | 8.29 | 1.70 | 20.48 | 2.99 | 0.35 | 1M | — |
-| YELP | YELP INC. | netnet | ▫️ | 50% | 18.56 | 8.29 | 1.70 | 20.48 | 2.99 | 0.35 | 1M | — |
-| YELP | YELP INC. | custom | ▫️ | 0% | 18.56 | 8.29 | 1.70 | 20.48 | 2.99 | 0.35 | 1M | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | graham | ▫️ | 56% | 28.87 | 7.24 | 2.44 | 33.67 | 1.55 | — | 270,277 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | piotroski | ▫️ | 56% | 28.87 | 7.24 | 2.44 | 33.67 | 1.55 | — | 270,277 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | buffett | ▫️ | 50% | 28.87 | 7.24 | 2.44 | 33.67 | 1.55 | — | 270,277 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | lynch | ▫️ | 25% | 28.87 | 7.24 | 2.44 | 33.67 | 1.55 | — | 270,277 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | netnet | ▫️ | 25% | 28.87 | 7.24 | 2.44 | 33.67 | 1.55 | — | 270,277 | — |
-| BBW | BUILD-A-BEAR WORKSHOP INC | custom | ▫️ | 0% | 28.87 | 7.24 | 2.44 | 33.67 | 1.55 | — | 270,277 | — |
-| HGTY | HAGERTY, INC. | piotroski | ▫️ | 67% | 16.18 | — | — | 67.43 | — | 6.09 | 877,369 | — |
+| TREE | LendingTree, Inc. | greenblatt | ✅ | 100% | 34.30 | 3.18 | 1.68 | 52.76 | 1.67 | 1.98 | 83,823 | — |
+| GFF | GRIFFON CORP | lynch | ✅ | 75% | 104 | 14.68 | 15.37 | 105 | 2.66 | 4.60 | 424,070 | — |
+| LII | LENNOX INTERNATIONAL INC | lynch | ✅ | 75% | 342 | 15.02 | 10.42 | 69.28 | 1.60 | 2.51 | 235,446 | — |
+| KRYS | Krystal Biotech, Inc. | piotroski | ✅ | 89% | 314 | 45.94 | 7.72 | 16.80 | 9.95 | 0.09 | 111,491 | — |
+| FICO | Fair Isaac Corp | piotroski | ✅ | 89% | 678 | 18.66 | — | -21.56 | 0.99 | -1.54 | 422,131 | — |
+| FICO | Fair Isaac Corp | lynch | ✅ | 75% | 678 | 18.66 | — | -21.56 | 0.99 | -1.54 | 422,131 | — |
+| WMS | ADVANCED DRAINAGE SYSTEMS, I | buffett | ✅ | 83% | 113 | 20.81 | 4.77 | 22.94 | 2.42 | 1.37 | 360,348 | — |
+| GPK | Graphic Packaging Holding Co | lynch | ✅ | 75% | 10.28 | 6.95 | 0.92 | 13.31 | 1.30 | — | 1M | — |
+| AOS | A. O. Smith Corporation | piotroski | ✅ | 78% | 63.94 | 16.61 | 4.88 | 29.40 | 1.50 | 0.69 | 528,645 | — |
+| NHC | NATIONAL HEALTHCARE CORP | piotroski | ✅ | 100% | 190 | 24.80 | 2.79 | 11.23 | 1.82 | 0.42 | 46,486 | — |
+| NHC | NATIONAL HEALTHCARE CORP | lynch | ✅ | 75% | 190 | 24.80 | 2.79 | 11.23 | 1.82 | 0.42 | 46,486 | — |
+| ADUS | Addus HomeCare Corp | lynch | ✅ | 100% | 121 | 23.19 | 2.05 | 8.84 | 1.80 | 0.32 | 344,704 | — |
+| ADUS | Addus HomeCare Corp | piotroski | ✅ | 89% | 121 | 23.19 | 2.05 | 8.84 | 1.80 | 0.32 | 344,704 | — |
+| PLUS | ePlus inc. | piotroski | ✅ | 78% | 92.80 | 18.45 | 2.29 | 12.41 | 2.24 | 0.68 | 61,439 | — |
+| OPY | OPPENHEIMER HOLDINGS INC. | piotroski | ✅ | 78% | 82.66 | 6.34 | 0.96 | 15.08 | — | 2.77 | 51,735 | — |
+| LQDT | LIQUIDITY SERVICES, INC | piotroski | ✅ | 89% | 32.19 | 28.24 | 4.22 | 14.98 | 1.75 | 0.67 | 346,973 | — |
+| BSY | BENTLEY SYSTEMS, INCORPORATE | piotroski | ✅ | 100% | 41.99 | 49.40 | 11.76 | 23.36 | 0.56 | 1.99 | 528,070 | — |
+| BSY | BENTLEY SYSTEMS, INCORPORATE | buffett | ✅ | 83% | 41.99 | 49.40 | 11.76 | 23.36 | 0.56 | 1.99 | 528,070 | — |
+| CMPR | Cimpress plc | piotroski | ✅ | 89% | 54.16 | 14.29 | — | -19.41 | 0.73 | -5.26 | 109,479 | — |
+| GDRX | GoodRx Holdings, Inc. | piotroski | ✅ | 78% | 3.00 | 33.28 | 1.73 | 4.94 | 2.61 | 1.28 | 773,823 | — |
+| PGC | PEAPACK-GLADSTONE FINANCIAL  | piotroski | ✅ | 78% | 43.52 | 20.72 | 1.17 | 5.67 | — | 10.43 | 40,038 | — |
+| RH | RH | piotroski | ✅ | 89% | 109 | 17.28 | 35.61 | 206 | 1.19 | 78.80 | 341,916 | — |
+| MOS | MOSAIC CO | piotroski | ✅ | 89% | 19.06 | 11.21 | 0.50 | 4.47 | 1.32 | — | 4M | — |
+| MCS | MARCUS CORP | piotroski | ✅ | 78% | 25.79 | 63.56 | 1.76 | 2.77 | 0.40 | — | 96,496 | — |
+| DBD | Diebold Nixdorf, Incorporate | piotroski | ✅ | 78% | 50.84 | 20.02 | 1.72 | 8.60 | 1.30 | 2.50 | 141,123 | — |
+| HRTG | Heritage Insurance Holdings, | buffett | ▫️ | 67% | 32.46 | 5.14 | 1.99 | 38.71 | — | 3.35 | 71,226 | — |
+| HRTG | Heritage Insurance Holdings, | graham | ▫️ | 56% | 32.46 | 5.14 | 1.99 | 38.71 | — | 3.35 | 71,226 | — |
+| HRTG | Heritage Insurance Holdings, | lynch | ▫️ | 50% | 32.46 | 5.14 | 1.99 | 38.71 | — | 3.35 | 71,226 | — |
+| HRTG | Heritage Insurance Holdings, | netnet | ▫️ | 25% | 32.46 | 5.14 | 1.99 | 38.71 | — | 3.35 | 71,226 | — |
+| HRTG | Heritage Insurance Holdings, | custom | ▫️ | 0% | 32.46 | 5.14 | 1.99 | 38.71 | — | 3.35 | 71,226 | — |
+| SLV | iShares Silver Trust | greenblatt | ▫️ | 33% | 37.06 | 0.91 | — | — | — | — | 29M | — |
+| SLV | iShares Silver Trust | netnet | ▫️ | 25% | 37.06 | 0.91 | — | — | — | — | 29M | — |
+| SLV | iShares Silver Trust | graham | ▫️ | 22% | 37.06 | 0.91 | — | — | — | — | 29M | — |
+| SLV | iShares Silver Trust | buffett | ▫️ | 17% | 37.06 | 0.91 | — | — | — | — | 29M | — |
+| SLV | iShares Silver Trust | piotroski | ▫️ | 0% | 37.06 | 0.91 | — | — | — | — | 29M | — |
+| SLV | iShares Silver Trust | custom | ▫️ | 0% | 37.06 | 0.91 | — | — | — | — | 29M | — |
+| NREF | NexPoint Real Estate Finance | graham | ▫️ | 67% | 11.29 | 3.96 | 1.22 | 31.74 | — | 11.57 | 75,059 | — |
+| NREF | NexPoint Real Estate Finance | greenblatt | ▫️ | 67% | 11.29 | 3.96 | 1.22 | 31.74 | — | 11.57 | 75,059 | — |
+| NREF | NexPoint Real Estate Finance | piotroski | ▫️ | 44% | 11.29 | 3.96 | 1.22 | 31.74 | — | 11.57 | 75,059 | — |
+| NREF | NexPoint Real Estate Finance | buffett | ▫️ | 33% | 11.29 | 3.96 | 1.22 | 31.74 | — | 11.57 | 75,059 | — |
+| NREF | NexPoint Real Estate Finance | netnet | ▫️ | 25% | 11.29 | 3.96 | 1.22 | 31.74 | — | 11.57 | 75,059 | — |
+| NREF | NexPoint Real Estate Finance | custom | ▫️ | 0% | 11.29 | 3.96 | 1.22 | 31.74 | — | 11.57 | 75,059 | — |
+| PPIH | Perma-Pipe International Hol | piotroski | ▫️ | 67% | 27.09 | 12.96 | 2.44 | 18.79 | 1.84 | — | 98,881 | — |
+| PPIH | Perma-Pipe International Hol | graham | ▫️ | 44% | 27.09 | 12.96 | 2.44 | 18.79 | 1.84 | — | 98,881 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
