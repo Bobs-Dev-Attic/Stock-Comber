@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-WHD,"Cactus, Inc.",lynch,True,3,4,75.0,56.91,—,—,13.54,5.81,0.36,—,"452,291",—
-DAKT,"Daktronics, Inc.",piotroski,True,8,9,88.9,18.12,19.70,2.98,15.09,2.31,—,11.23,"473,788",—
-DAKT,"Daktronics, Inc.",lynch,True,3,4,75.0,18.12,19.70,2.98,15.09,2.31,—,11.23,"473,788",—
-OVV,Ovintiv Inc.,piotroski,True,8,9,88.9,60.85,12.73,1.41,11.09,0.54,0.82,68.09,2M,—
-GL,GLOBE LIFE INC.,piotroski,True,7,9,77.8,152,10.78,2.09,19.44,—,4.16,151,"579,040",—
-BDC,BELDEN INC.,piotroski,True,8,9,88.9,92.79,15.70,2.95,18.78,1.93,—,64.66,"639,262",—
-ADUS,Addus HomeCare Corp,lynch,True,4,4,100.0,122,23.47,2.08,8.84,1.80,0.32,83.25,"254,345",—
-ADUS,Addus HomeCare Corp,piotroski,True,8,9,88.9,122,23.47,2.08,8.84,1.80,0.32,83.25,"254,345",—
-CW,CURTISS-WRIGHT CORPORATION,piotroski,True,8,9,88.9,441,34.25,6.55,19.11,1.44,1.06,140,"401,906",—
-FCF,FIRST COMMONWEALTH FINANCIAL CORP /PA/,lynch,True,3,4,75.0,20.03,13.63,1.33,9.80,—,6.94,22.28,"832,112",—
-M,"Macy's, Inc.",piotroski,True,8,9,88.9,23.17,9.99,1.32,13.21,1.49,—,30.29,6M,—
-CMPR,Cimpress plc,piotroski,True,8,9,88.9,53.81,14.20,—,-19.41,0.73,-5.26,—,"560,803",—
-BJ,"BJ’S WHOLESALE CLUB HOLDINGS, INC.",piotroski,True,8,9,88.9,105,23.93,6.30,26.32,0.75,2.42,40.50,6M,—
-WOR,"WORTHINGTON ENTERPRISES, INC",piotroski,True,8,9,88.9,55.40,17.64,2.68,15.20,2.37,0.80,38.20,"349,935",—
-ALLY,Ally Financial Inc.,piotroski,True,7,9,77.8,36.32,15.32,0.73,5.50,—,11.65,51.38,4M,—
-SCI,SERVICE CORPORATION INTERNATIONAL,piotroski,True,7,9,77.8,69.14,18.19,6.02,33.12,0.55,—,31.33,6M,—
-AMCX,AMC Global Media Inc.,piotroski,True,7,9,77.8,8.74,5.27,0.50,9.11,1.67,2.98,25.46,"528,456",—
-MAGN,Magnera Corporation,piotroski,True,7,9,77.8,12.89,—,0.43,-14.94,2.37,2.75,—,"708,280",—
-PRVA,"Privia Health Group, Inc.",piotroski,True,7,9,77.8,25.05,139,4.38,3.11,1.60,0.78,4.81,2M,—
-RRX,REGAL REXNORD CORP,piotroski,True,7,9,77.8,152,36.27,1.48,4.08,2.15,—,98.55,1M,—
-HCSG,"HEALTHCARE SERVICES GROUP, INC.",piotroski,True,9,9,100.0,24.72,30.52,3.54,11.58,3.38,—,11.28,"551,901",—
-ENR,"ENERGIZER HOLDINGS, INC.",piotroski,True,7,9,77.8,28.56,17.10,7.40,43.30,2.24,15.52,12.04,2M,—
-ADT,ADT Inc.,piotroski,True,8,9,88.9,9.87,—,—,15.77,0.93,3.19,—,18M,—
-SHC,SOTERA HEALTH COMPANY,piotroski,True,7,9,77.8,15.91,58.93,7.52,12.86,2.46,4.38,3.59,2M,—
-LILA,Liberty Latin America Ltd.,piotroski,True,7,9,77.8,9.24,—,3.32,-110,1.14,20.09,—,"584,723",—
-WHD,"Cactus, Inc.",graham,False,6,9,66.7,56.91,—,—,13.54,5.81,0.36,—,"452,291",—
-WHD,"Cactus, Inc.",piotroski,False,5,9,55.6,56.91,—,—,13.54,5.81,0.36,—,"452,291",—
-WHD,"Cactus, Inc.",buffett,False,3,6,50.0,56.91,—,—,13.54,5.81,0.36,—,"452,291",—
-WHD,"Cactus, Inc.",greenblatt,False,1,3,33.3,56.91,—,—,13.54,5.81,0.36,—,"452,291",—
-WHD,"Cactus, Inc.",netnet,False,1,4,25.0,56.91,—,—,13.54,5.81,0.36,—,"452,291",—
-WHD,"Cactus, Inc.",custom,False,0,0,0.0,56.91,—,—,13.54,5.81,0.36,—,"452,291",—
-WLFC,WILLIS LEASE FINANCE CORP,graham,False,7,9,77.8,41.96,2.73,0.44,17.18,—,4.85,181,"282,197",—
-WLFC,WILLIS LEASE FINANCE CORP,buffett,False,4,6,66.7,41.96,2.73,0.44,17.18,—,4.85,181,"282,197",—
-WLFC,WILLIS LEASE FINANCE CORP,greenblatt,False,2,3,66.7,41.96,2.73,0.44,17.18,—,4.85,181,"282,197",—
-WLFC,WILLIS LEASE FINANCE CORP,piotroski,False,5,9,55.6,41.96,2.73,0.44,17.18,—,4.85,181,"282,197",—
-WLFC,WILLIS LEASE FINANCE CORP,lynch,False,2,4,50.0,41.96,2.73,0.44,17.18,—,4.85,181,"282,197",—
-WLFC,WILLIS LEASE FINANCE CORP,netnet,False,1,4,25.0,41.96,2.73,0.44,17.18,—,4.85,181,"282,197",—
-WLFC,WILLIS LEASE FINANCE CORP,custom,False,0,0,0.0,41.96,2.73,0.44,17.18,—,4.85,181,"282,197",—
-DAKT,"Daktronics, Inc.",graham,False,5,9,55.6,18.12,19.70,2.98,15.09,2.31,—,11.23,"473,788",—
-DAKT,"Daktronics, Inc.",buffett,False,3,6,50.0,18.12,19.70,2.98,15.09,2.31,—,11.23,"473,788",—
-DAKT,"Daktronics, Inc.",greenblatt,False,1,3,33.3,18.12,19.70,2.98,15.09,2.31,—,11.23,"473,788",—
-DAKT,"Daktronics, Inc.",netnet,False,1,4,25.0,18.12,19.70,2.98,15.09,2.31,—,11.23,"473,788",—
-DAKT,"Daktronics, Inc.",custom,False,0,0,0.0,18.12,19.70,2.98,15.09,2.31,—,11.23,"473,788",—
-OVV,Ovintiv Inc.,graham,False,6,9,66.7,60.85,12.73,1.41,11.09,0.54,0.82,68.09,2M,—
-OVV,Ovintiv Inc.,buffett,False,2,6,33.3,60.85,12.73,1.41,11.09,0.54,0.82,68.09,2M,—
-OVV,Ovintiv Inc.,greenblatt,False,1,3,33.3,60.85,12.73,1.41,11.09,0.54,0.82,68.09,2M,—
-OVV,Ovintiv Inc.,lynch,False,1,4,25.0,60.85,12.73,1.41,11.09,0.54,0.82,68.09,2M,—
-OVV,Ovintiv Inc.,netnet,False,1,4,25.0,60.85,12.73,1.41,11.09,0.54,0.82,68.09,2M,—
-OVV,Ovintiv Inc.,custom,False,0,0,0.0,60.85,12.73,1.41,11.09,0.54,0.82,68.09,2M,—
-GL,GLOBE LIFE INC.,buffett,False,4,6,66.7,152,10.78,2.09,19.44,—,4.16,151,"579,040",—
+PFS,"PROVIDENT FINANCIAL SERVICES, INC.",piotroski,True,7,9,77.8,21.40,9.60,0.99,10.28,—,7.82,33.00,1M,—
+PFS,"PROVIDENT FINANCIAL SERVICES, INC.",lynch,True,3,4,75.0,21.40,9.60,0.99,10.28,—,7.82,33.00,1M,—
+SFM,"Sprouts Farmers Market, Inc.",greenblatt,True,3,3,100.0,48.81,9.19,3.43,37.32,0.93,1.96,41.21,5M,—
+SFM,"Sprouts Farmers Market, Inc.",piotroski,True,7,9,77.8,48.81,9.19,3.43,37.32,0.93,1.96,41.21,5M,—
+AIT,"APPLIED INDUSTRIAL TECHNOLOGIES, INC.",piotroski,True,7,9,77.8,275,25.11,5.59,22.27,2.58,0.62,110,"335,805",—
+AIT,"APPLIED INDUSTRIAL TECHNOLOGIES, INC.",lynch,True,3,4,75.0,275,25.11,5.59,22.27,2.58,0.62,110,"335,805",—
+PAHC,Phibro Animal Health Corporation,piotroski,True,8,9,88.9,33.29,13.70,3.54,25.87,2.96,2.89,22.68,"155,540",—
+PJT,PJT Partners Inc.,buffett,True,5,6,83.3,141,—,—,58.43,—,2.71,—,"378,124",—
+PJT,PJT Partners Inc.,piotroski,True,7,9,77.8,141,—,—,58.43,—,2.71,—,"378,124",—
+UTI,"UNIVERSAL TECHNICAL INSTITUTE, INC",piotroski,True,7,9,77.8,17.17,15.19,2.91,19.21,1.07,1.52,12.25,3M,—
+DUKB,Duke Energy CORP,piotroski,True,8,9,88.9,19.76,3.13,0.30,9.58,0.55,—,97.33,"169,732",—
+DUKB,Duke Energy CORP,lynch,True,3,4,75.0,19.76,3.13,0.30,9.58,0.55,—,97.33,"169,732",—
+DUKU,Duke Energy CORP,piotroski,True,8,9,88.9,50.25,7.96,0.75,9.58,0.55,—,97.33,"56,583",—
+DUKU,Duke Energy CORP,lynch,True,3,4,75.0,50.25,7.96,0.75,9.58,0.55,—,97.33,"56,583",—
+LMB,"LIMBACH HOLDINGS, INC.",piotroski,True,7,9,77.8,52.89,16.37,3.27,19.97,1.44,0.95,34.31,"261,034",—
+LMB,"LIMBACH HOLDINGS, INC.",lynch,True,3,4,75.0,52.89,16.37,3.27,19.97,1.44,0.95,34.31,"261,034",—
+ABG,"ASBURY AUTOMOTIVE GROUP, INC.",piotroski,True,7,9,77.8,199,7.92,1.00,12.64,0.95,—,335,"249,427",—
+ABG,"ASBURY AUTOMOTIVE GROUP, INC.",lynch,True,3,4,75.0,199,7.92,1.00,12.64,0.95,—,335,"249,427",—
+BDC,BELDEN INC.,piotroski,True,8,9,88.9,92.79,15.70,2.95,18.78,1.93,—,64.66,"639,087",—
+AIR,AAR CORP,piotroski,True,7,9,77.8,102,20.95,2.30,11.02,2.84,—,69.66,"514,519",—
+AIR,AAR CORP,lynch,True,3,4,75.0,102,20.95,2.30,11.02,2.84,—,69.66,"514,519",—
+PLUS,ePlus inc.,piotroski,True,7,9,77.8,92.13,18.32,2.27,12.41,2.24,0.68,67.73,"171,856",—
+OPY,OPPENHEIMER HOLDINGS INC.,piotroski,True,7,9,77.8,82.70,6.34,0.96,15.08,—,2.77,159,"100,299",—
+FIZZ,National Beverage Corp.,buffett,True,5,6,83.3,37.46,19.11,5.52,28.89,4.39,0.34,17.30,"280,246",—
+FHN,FIRST HORIZON CORP,piotroski,True,7,9,77.8,21.76,11.64,1.26,11.10,—,8.45,26.99,7M,—
+UDR,"UDR, Inc.",piotroski,True,7,9,77.8,35.45,31.37,3.57,11.49,—,1.96,15.89,4M,—
+UDR,"UDR, Inc.",lynch,True,3,4,75.0,35.45,31.37,3.57,11.49,—,1.96,15.89,4M,—
+SSRM,SSR MINING INC.,piotroski,True,7,9,77.8,21.59,11.67,1.34,11.28,2.08,0.51,25.94,7M,—
+ZWS,ZURN ELKAY WATER SOLUTIONS CORPORATION,piotroski,True,9,9,100.0,43.95,38.22,4.69,12.35,3.13,0.67,15.56,1M,—
+SHAK,SHAKE SHACK INC.,piotroski,True,8,9,88.9,71.96,66.02,5.73,8.70,1.76,2.56,17.55,1M,—
+FUL,FULLER H B CO,piotroski,True,7,9,77.8,46.24,16.81,1.28,7.59,1.70,1.59,47.32,"485,050",—
+CRI,"CARTER’S, INC.",graham,True,8,9,88.9,35.53,14.04,1.36,9.92,2.51,1.77,38.57,1M,—
+TBCH,TURTLE BEACH CORPORATION,piotroski,True,7,9,77.8,14.90,19.35,2.37,12.24,1.98,1.09,10.43,1M,—
+ZUMZ,ZUMIEZ INC,piotroski,True,8,9,88.9,13.01,16.68,0.69,4.13,2.01,0.99,18.16,"184,580",—
+SNDR,"Schneider National, Inc.",piotroski,True,7,9,77.8,27.74,47.02,1.61,3.43,2.13,0.60,15.11,"532,590",—
+TLYS,"TILLY’S, INC.",piotroski,True,7,9,77.8,3.99,—,1.41,-20.50,1.25,2.65,—,"81,714",—
+JCAP,"Jefferson Capital, Inc. / DE",greenblatt,False,2,3,66.7,20.72,3.67,1.31,39.48,—,3.38,44.87,"185,126",—
+JCAP,"Jefferson Capital, Inc. / DE",graham,False,4,9,44.4,20.72,3.67,1.31,39.48,—,3.38,44.87,"185,126",—
+JCAP,"Jefferson Capital, Inc. / DE",buffett,False,2,6,33.3,20.72,3.67,1.31,39.48,—,3.38,44.87,"185,126",—
+JCAP,"Jefferson Capital, Inc. / DE",piotroski,False,3,9,33.3,20.72,3.67,1.31,39.48,—,3.38,44.87,"185,126",—
+JCAP,"Jefferson Capital, Inc. / DE",lynch,False,1,4,25.0,20.72,3.67,1.31,39.48,—,3.38,44.87,"185,126",—
+JCAP,"Jefferson Capital, Inc. / DE",netnet,False,1,4,25.0,20.72,3.67,1.31,39.48,—,3.38,44.87,"185,126",—
+JCAP,"Jefferson Capital, Inc. / DE",custom,False,0,0,0.0,20.72,3.67,1.31,39.48,—,3.38,44.87,"185,126",—
+MGY,Magnolia Oil & Gas Corp,piotroski,False,6,9,66.7,22.84,13.03,2.12,16.27,1.54,—,20.61,3M,—
+MGY,Magnolia Oil & Gas Corp,buffett,False,3,6,50.0,22.84,13.03,2.12,16.27,1.54,—,20.61,3M,—
+MGY,Magnolia Oil & Gas Corp,graham,False,4,9,44.4,22.84,13.03,2.12,16.27,1.54,—,20.61,3M,—
+MGY,Magnolia Oil & Gas Corp,greenblatt,False,1,3,33.3,22.84,13.03,2.12,16.27,1.54,—,20.61,3M,—
+MGY,Magnolia Oil & Gas Corp,lynch,False,1,4,25.0,22.84,13.03,2.12,16.27,1.54,—,20.61,3M,—
+MGY,Magnolia Oil & Gas Corp,netnet,False,1,4,25.0,22.84,13.03,2.12,16.27,1.54,—,20.61,3M,—
+MGY,Magnolia Oil & Gas Corp,custom,False,0,0,0.0,22.84,13.03,2.12,16.27,1.54,—,20.61,3M,—
