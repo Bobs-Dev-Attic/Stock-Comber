@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-GRBK,"Green Brick Partners, Inc.",buffett,True,6,6,100.0,56.93,8.05,1.35,16.85,—,0.32,82.05,"296,963",—
-GRBK,"Green Brick Partners, Inc.",lynch,True,4,4,100.0,56.93,8.05,1.35,16.85,—,0.32,82.05,"296,963",—
-VRRM,VERRA MOBILITY CORPORATION,piotroski,True,9,9,100.0,1.60,1.88,0.88,46.64,2.09,4.62,5.89,5M,—
-TMDX,"TransMedics Group, Inc.",piotroski,True,7,9,77.8,85.25,17.51,7.31,40.22,7.14,1.26,35.76,2M,—
-CASH,"PATHWARD FINANCIAL, INC.",greenblatt,True,3,3,100.0,68.83,8.75,1.89,21.66,—,7.36,80.37,"313,814",—
-CASH,"PATHWARD FINANCIAL, INC.",buffett,True,5,6,83.3,68.83,8.75,1.89,21.66,—,7.36,80.37,"313,814",—
-SMCIP,"Super Micro Computer, Inc.",graham,True,8,9,88.9,38.42,11.79,1.85,15.40,3.87,1.07,39.03,"33,721",—
-AX,"AXOS FINANCIAL, INC.",lynch,True,3,4,75.0,84.46,9.96,1.51,15.49,—,8.46,103,"388,726",—
-SFD,"SMITHFIELD FOODS, INC.",graham,True,9,9,100.0,19.13,7.62,1.10,14.51,2.97,—,31.27,1M,—
-HALO,"HALOZYME THERAPEUTICS, INC.",buffett,True,5,6,83.3,91.35,35.68,232,649,4.66,50.73,4.76,2M,—
-WWD,"WOODWARD, INC.",piotroski,True,7,9,77.8,327,34.41,8.18,23.77,2.04,1.19,92.35,2M,—
-HOG,"HARLEY-DAVIDSON, INC.",graham,True,9,9,100.0,32.52,11.70,1.26,10.79,2.10,—,40.25,2M,—
-HOG,"HARLEY-DAVIDSON, INC.",piotroski,True,8,9,88.9,32.52,11.70,1.26,10.79,2.10,—,40.25,2M,—
+DECK,DECKERS OUTDOOR CORP,greenblatt,True,3,3,100.0,77.94,11.10,4.55,40.97,3.54,—,52.04,5M,—
+DECK,DECKERS OUTDOOR CORP,buffett,True,5,6,83.3,77.94,11.10,4.55,40.97,3.54,—,52.04,5M,—
+DECK,DECKERS OUTDOOR CORP,piotroski,True,7,9,77.8,77.94,11.10,4.55,40.97,3.54,—,52.04,5M,—
+DECK,DECKERS OUTDOOR CORP,lynch,True,3,4,75.0,77.94,11.10,4.55,40.97,3.54,—,52.04,5M,—
+OTTR,OTTER TAIL CORPORATION,lynch,True,3,4,75.0,76.58,11.69,1.73,14.82,2.28,—,80.71,"361,954",—
+OSPN,OneSpan Inc.,greenblatt,True,3,3,100.0,21.92,11.66,3.13,26.82,1.50,0.46,17.20,"732,063",—
+IBP,"Installed Building Products, Inc.",piotroski,True,8,9,88.9,221,22.80,8.52,37.39,3.03,1.91,75.33,"333,945",—
+KFY,KORN FERRY,piotroski,True,9,9,100.0,73.24,14.03,1.95,14.06,1.94,1.06,66.42,"430,875",—
+KFY,KORN FERRY,lynch,True,3,4,75.0,73.24,14.03,1.95,14.06,1.94,1.06,66.42,"430,875",—
 ADUS,Addus HomeCare Corp,lynch,True,4,4,100.0,122,23.47,2.08,8.84,1.80,0.32,83.25,"254,343",—
 ADUS,Addus HomeCare Corp,piotroski,True,8,9,88.9,122,23.47,2.08,8.84,1.80,0.32,83.25,"254,343",—
-RGA,"REINSURANCE GROUP OF AMERICA, INCORPORATED",piotroski,True,7,9,77.8,267,15.08,1.32,8.78,—,10.63,283,"603,776",—
-RGA,"REINSURANCE GROUP OF AMERICA, INCORPORATED",lynch,True,3,4,75.0,267,15.08,1.32,8.78,—,10.63,283,"603,776",—
-OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,30.15,43.70,5.76,13.20,1.91,0.30,9.01,"560,972",—
-BCPC,Balchem Corporation,piotroski,True,9,9,100.0,164,34.43,4.24,12.31,2.07,0.34,64.20,"237,738",—
-BJ,"BJ’S WHOLESALE CLUB HOLDINGS, INC.",piotroski,True,8,9,88.9,105,23.93,6.30,26.32,0.75,2.42,40.50,6M,—
+AXTA,AXALTA COATING SYSTEMS LTD.,lynch,True,3,4,75.0,34.12,19.61,3.16,16.11,2.06,2.22,20.57,1M,—
+HLIO,"HELIOS TECHNOLOGIES, INC.",piotroski,True,9,9,100.0,42.10,29.03,1.51,5.20,2.90,0.63,30.21,"553,379",—
+HLIO,"HELIOS TECHNOLOGIES, INC.",lynch,True,3,4,75.0,42.10,29.03,1.51,5.20,2.90,0.63,30.21,"553,379",—
+CMPR,Cimpress plc,piotroski,True,8,9,88.9,53.81,14.20,—,-19.41,0.73,-5.26,—,"560,803",—
+ONTO,ONTO INNOVATION INC.,lynch,True,3,4,75.0,170,61.21,3.99,6.51,5.79,0.13,51.64,1M,—
+FMNB,FARMERS NATIONAL BANC CORP /OH/,piotroski,True,8,9,88.9,14.70,10.14,1.14,11.24,—,9.80,20.52,"363,030",—
+DLB,"DOLBY LABORATORIES, INC.",piotroski,True,8,9,88.9,55.33,20.49,2.03,9.90,3.18,0.21,40.68,1M,—
 SARO,"StandardAero, Inc.",piotroski,True,8,9,88.9,26.57,32.01,3.33,10.40,2.20,1.46,12.21,3M,—
-DCTH,"DELCATH SYSTEMS, INC.",piotroski,True,7,9,77.8,18.79,268,6.74,2.43,10.92,0.11,2.09,"592,121",—
-MAGN,Magnera Corporation,piotroski,True,7,9,77.8,12.89,—,0.43,-14.94,2.37,2.75,—,"708,280",—
-CHEF,"CHEFS’ WAREHOUSE, INC.",piotroski,True,9,9,100.0,103,61.11,7.82,11.97,2.05,2.36,22.28,"362,138",—
-SGRY,"Surgery Partners, Inc.",piotroski,True,7,9,77.8,26.78,—,1.99,-4.55,1.87,—,—,1M,—
-RRX,REGAL REXNORD CORP,piotroski,True,7,9,77.8,152,36.27,1.48,4.08,2.15,—,98.55,1M,—
-MYE,"Myers Industries, Inc.",piotroski,True,7,9,77.8,25.95,27.90,3.31,11.87,1.67,1.89,12.80,"425,065",—
+LB,LandBridge Corporation,piotroski,True,7,9,77.8,70.39,74.88,15.83,8.85,4.87,1.68,9.70,"863,139",—
+GDRX,"GoodRx Holdings, Inc.",piotroski,True,7,9,77.8,2.92,32.44,1.69,4.94,2.61,1.28,1.87,2M,—
+LNT,ALLIANT ENERGY CORPORATION,piotroski,True,7,9,77.8,71.62,22.81,2.52,11.04,0.80,—,44.83,3M,—
+DT,"Dynatrace, Inc.",lynch,True,3,4,75.0,43.45,80.46,5.05,6.23,1.35,0.69,10.22,6M,—
+FUL,FULLER H B CO,piotroski,True,7,9,77.8,46.24,16.81,1.28,7.59,1.70,1.59,47.32,"485,054",—
+GCO,GENESCO INC,piotroski,True,8,9,88.9,32.71,26.17,0.61,2.34,1.64,1.46,38.74,"168,086",—
 NEOG,Neogen Corporation,piotroski,True,8,9,88.9,10.55,—,1.10,-0.38,3.82,0.60,—,3M,—
-BJRI,"BJ’S RESTAURANTS, INC.",piotroski,True,7,9,77.8,57.50,26.62,3.55,13.33,0.40,1.77,28.05,"382,747",—
-DBD,"Diebold Nixdorf, Incorporated",piotroski,True,7,9,77.8,51.86,20.42,1.75,8.60,1.30,2.50,41.11,"515,337",—
-GRBK,"Green Brick Partners, Inc.",graham,False,7,9,77.8,56.93,8.05,1.35,16.85,—,0.32,82.05,"296,963",—
-GRBK,"Green Brick Partners, Inc.",greenblatt,False,2,3,66.7,56.93,8.05,1.35,16.85,—,0.32,82.05,"296,963",—
-GRBK,"Green Brick Partners, Inc.",piotroski,False,4,9,44.4,56.93,8.05,1.35,16.85,—,0.32,82.05,"296,963",—
-GRBK,"Green Brick Partners, Inc.",netnet,False,1,4,25.0,56.93,8.05,1.35,16.85,—,0.32,82.05,"296,963",—
-GRBK,"Green Brick Partners, Inc.",custom,False,0,0,0.0,56.93,8.05,1.35,16.85,—,0.32,82.05,"296,963",—
-VRRM,VERRA MOBILITY CORPORATION,graham,False,7,9,77.8,1.60,1.88,0.88,46.64,2.09,4.62,5.89,5M,—
-VRRM,VERRA MOBILITY CORPORATION,greenblatt,False,2,3,66.7,1.60,1.88,0.88,46.64,2.09,4.62,5.89,5M,—
-VRRM,VERRA MOBILITY CORPORATION,buffett,False,3,6,50.0,1.60,1.88,0.88,46.64,2.09,4.62,5.89,5M,—
-VRRM,VERRA MOBILITY CORPORATION,lynch,False,1,4,25.0,1.60,1.88,0.88,46.64,2.09,4.62,5.89,5M,—
-VRRM,VERRA MOBILITY CORPORATION,netnet,False,1,4,25.0,1.60,1.88,0.88,46.64,2.09,4.62,5.89,5M,—
-VRRM,VERRA MOBILITY CORPORATION,custom,False,0,0,0.0,1.60,1.88,0.88,46.64,2.09,4.62,5.89,5M,—
-TMDX,"TransMedics Group, Inc.",greenblatt,False,2,3,66.7,85.25,17.51,7.31,40.22,7.14,1.26,35.76,2M,—
-TMDX,"TransMedics Group, Inc.",netnet,False,2,4,50.0,85.25,17.51,7.31,40.22,7.14,1.26,35.76,2M,—
-TMDX,"TransMedics Group, Inc.",graham,False,3,9,33.3,85.25,17.51,7.31,40.22,7.14,1.26,35.76,2M,—
-TMDX,"TransMedics Group, Inc.",buffett,False,2,6,33.3,85.25,17.51,7.31,40.22,7.14,1.26,35.76,2M,—
-TMDX,"TransMedics Group, Inc.",lynch,False,1,4,25.0,85.25,17.51,7.31,40.22,7.14,1.26,35.76,2M,—
-TMDX,"TransMedics Group, Inc.",custom,False,0,0,0.0,85.25,17.51,7.31,40.22,7.14,1.26,35.76,2M,—
-CASH,"PATHWARD FINANCIAL, INC.",graham,False,6,9,66.7,68.83,8.75,1.89,21.66,—,7.36,80.37,"313,814",—
-CASH,"PATHWARD FINANCIAL, INC.",piotroski,False,6,9,66.7,68.83,8.75,1.89,21.66,—,7.36,80.37,"313,814",—
-CASH,"PATHWARD FINANCIAL, INC.",lynch,False,2,4,50.0,68.83,8.75,1.89,21.66,—,7.36,80.37,"313,814",—
+SMG,Scotts Miracle-Gro Co,piotroski,True,7,9,77.8,58.60,23.72,—,-40.62,1.27,-8.67,—,"928,602",—
+PRLB,"Proto Labs, Inc.",piotroski,True,8,9,88.9,57.52,65.36,2.07,3.15,3.49,0.13,23.46,"343,498",—
+TLYS,"TILLY’S, INC.",piotroski,True,7,9,77.8,3.99,—,1.41,-20.50,1.25,2.65,—,"81,712",—
+DECK,DECKERS OUTDOOR CORP,graham,False,7,9,77.8,77.94,11.10,4.55,40.97,3.54,—,52.04,5M,—
+DECK,DECKERS OUTDOOR CORP,netnet,False,1,4,25.0,77.94,11.10,4.55,40.97,3.54,—,52.04,5M,—
+DECK,DECKERS OUTDOOR CORP,custom,False,0,0,0.0,77.94,11.10,4.55,40.97,3.54,—,52.04,5M,—
+NKLR,TERRA INNOVATUM GLOBAL N.V.,greenblatt,False,2,3,66.7,2.01,0.21,—,-576,33.57,-2.13,—,"455,603",—
+NKLR,TERRA INNOVATUM GLOBAL N.V.,lynch,False,2,4,50.0,2.01,0.21,—,-576,33.57,-2.13,—,"455,603",—
+NKLR,TERRA INNOVATUM GLOBAL N.V.,graham,False,3,9,33.3,2.01,0.21,—,-576,33.57,-2.13,—,"455,603",—
+NKLR,TERRA INNOVATUM GLOBAL N.V.,netnet,False,1,4,25.0,2.01,0.21,—,-576,33.57,-2.13,—,"455,603",—
+NKLR,TERRA INNOVATUM GLOBAL N.V.,buffett,False,1,6,16.7,2.01,0.21,—,-576,33.57,-2.13,—,"455,603",—
+NKLR,TERRA INNOVATUM GLOBAL N.V.,piotroski,False,1,9,11.1,2.01,0.21,—,-576,33.57,-2.13,—,"455,603",—
+NKLR,TERRA INNOVATUM GLOBAL N.V.,custom,False,0,0,0.0,2.01,0.21,—,-576,33.57,-2.13,—,"455,603",—
+OTTR,OTTER TAIL CORPORATION,graham,False,7,9,77.8,76.58,11.69,1.73,14.82,2.28,—,80.71,"361,954",—
+OTTR,OTTER TAIL CORPORATION,piotroski,False,6,9,66.7,76.58,11.69,1.73,14.82,2.28,—,80.71,"361,954",—
+OTTR,OTTER TAIL CORPORATION,greenblatt,False,2,3,66.7,76.58,11.69,1.73,14.82,2.28,—,80.71,"361,954",—
+OTTR,OTTER TAIL CORPORATION,buffett,False,3,6,50.0,76.58,11.69,1.73,14.82,2.28,—,80.71,"361,954",—
+OTTR,OTTER TAIL CORPORATION,netnet,False,1,4,25.0,76.58,11.69,1.73,14.82,2.28,—,80.71,"361,954",—
+OTTR,OTTER TAIL CORPORATION,custom,False,0,0,0.0,76.58,11.69,1.73,14.82,2.28,—,80.71,"361,954",—
+OSPN,OneSpan Inc.,piotroski,False,6,9,66.7,21.92,11.66,3.13,26.82,1.50,0.46,17.20,"732,063",—
+OSPN,OneSpan Inc.,buffett,False,3,6,50.0,21.92,11.66,3.13,26.82,1.50,0.46,17.20,"732,063",—
+OSPN,OneSpan Inc.,lynch,False,2,4,50.0,21.92,11.66,3.13,26.82,1.50,0.46,17.20,"732,063",—
+OSPN,OneSpan Inc.,netnet,False,2,4,50.0,21.92,11.66,3.13,26.82,1.50,0.46,17.20,"732,063",—
+OSPN,OneSpan Inc.,graham,False,3,9,33.3,21.92,11.66,3.13,26.82,1.50,0.46,17.20,"732,063",—
