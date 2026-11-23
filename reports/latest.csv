@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-BSM,"Black Stone Minerals, L.P.",piotroski,True,7,9,77.8,13.37,—,—,—,3.88,—,—,"471,086",—
-REPX,"Riley Exploration Permian, Inc.",piotroski,True,7,9,77.8,41.04,5.41,1.37,25.36,0.60,0.84,71.49,"167,486",—
-UCFIW,CN Healthy Food Tech Group Corp.,greenblatt,True,3,3,100.0,0.09,0.53,0.22,42.33,1.50,1.25,1.25,"147,751",—
-UCFIW,CN Healthy Food Tech Group Corp.,netnet,True,4,4,100.0,0.09,0.53,0.22,42.33,1.50,1.25,1.25,"147,751",—
-NBR,NABORS INDUSTRIES LTD,piotroski,True,7,9,77.8,69.51,4.00,1.70,48.52,1.56,5.67,127,"335,516",—
-IPAR,"INTERPARFUMS, INC.",buffett,True,5,6,83.3,137,26.23,5.01,19.12,2.99,—,56.84,"335,200",—
-IPAR,"INTERPARFUMS, INC.",lynch,True,3,4,75.0,137,26.23,5.01,19.12,2.99,—,56.84,"335,200",—
-UTI,"UNIVERSAL TECHNICAL INSTITUTE, INC",piotroski,True,7,9,77.8,17.17,15.19,2.91,19.21,1.07,1.52,12.25,3M,—
-SFD,"SMITHFIELD FOODS, INC.",graham,True,9,9,100.0,19.13,7.62,1.10,14.51,2.97,—,31.27,1M,—
-HRB,"H&R Block, Inc.",greenblatt,True,3,3,100.0,46.01,8.13,50.47,624,1.13,26.72,10.78,2M,—
-HRB,"H&R Block, Inc.",piotroski,True,8,9,88.9,46.01,8.13,50.47,624,1.13,26.72,10.78,2M,—
-BFAM,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,piotroski,True,8,9,88.9,50.15,14.93,2.15,14.42,0.52,1.90,41.99,1M,—
-BFAM,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,lynch,True,3,4,75.0,50.15,14.93,2.15,14.42,0.52,1.90,41.99,1M,—
-BURL,"BURLINGTON STORES, INC.",piotroski,True,7,9,77.8,245,25.80,8.71,33.76,1.23,—,77.66,1M,—
+BYD,BOYD GAMING CORP,greenblatt,True,3,3,100.0,75.21,3.33,2.36,70.66,0.54,—,127,"5,564",—
+BYD,BOYD GAMING CORP,piotroski,True,7,9,77.8,75.21,3.33,2.36,70.66,0.54,—,127,"5,564",—
+KRP,"Kimbell Royalty Partners, LP",piotroski,True,7,9,77.8,13.99,—,—,—,8.64,—,—,"135,561",—
+LRN,"STRIDE, INC.",lynch,True,4,4,100.0,76.09,10.66,2.21,20.72,5.94,0.49,74.43,"16,657",—
+LRN,"STRIDE, INC.",piotroski,True,8,9,88.9,76.09,10.66,2.21,20.72,5.94,0.49,74.43,"16,657",—
+LRN,"STRIDE, INC.",buffett,True,5,6,83.3,76.09,10.66,2.21,20.72,5.94,0.49,74.43,"16,657",—
+ESE,ESCO TECHNOLOGIES INC.,lynch,True,4,4,100.0,210,18.22,3.54,19.42,1.35,0.56,124,"413,342",—
+OLED,UNIVERSAL DISPLAY CORPORATION,piotroski,True,7,9,77.8,77.62,15.28,2.10,13.75,10.06,0.12,64.99,"703,894",—
+TREE,"LendingTree, Inc.",greenblatt,True,3,3,100.0,34.88,3.24,1.71,52.76,1.67,1.98,70.33,"339,737",—
+ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",buffett,True,5,6,83.3,120,16.36,5.46,33.37,4.85,2.26,60.19,"3,619",—
+LII,LENNOX INTERNATIONAL INC,lynch,True,3,4,75.0,334,14.68,10.18,69.28,1.60,2.51,130,"687,834",—
+LECO,LINCOLN ELECTRIC HOLDINGS INC,buffett,True,5,6,83.3,257,27.54,9.76,35.42,1.82,1.57,74.27,"3,483",—
+LECO,LINCOLN ELECTRIC HOLDINGS INC,piotroski,True,7,9,77.8,257,27.54,9.76,35.42,1.82,1.57,74.27,"3,483",—
+GPK,Graphic Packaging Holding Co,lynch,True,3,4,75.0,10.16,6.86,0.91,13.31,1.30,—,19.25,5M,—
+VICR,VICOR CORPORATION,piotroski,True,8,9,88.9,149,56.98,9.50,16.66,8.99,0.10,30.32,"87,882",—
+VICR,VICOR CORPORATION,buffett,True,5,6,83.3,149,56.98,9.50,16.66,8.99,0.10,30.32,"87,882",—
+VICR,VICOR CORPORATION,lynch,True,3,4,75.0,149,56.98,9.50,16.66,8.99,0.10,30.32,"87,882",—
+HRB,"H&R Block, Inc.",greenblatt,True,3,3,100.0,45.45,8.03,49.86,624,1.13,26.72,10.78,"28,808",—
+HRB,"H&R Block, Inc.",piotroski,True,8,9,88.9,45.45,8.03,49.86,624,1.13,26.72,10.78,"28,808",—
 ORI,OLD REPUBLIC INTERNATIONAL CORP,piotroski,True,7,9,77.8,39.91,10.73,1.70,15.82,—,4.05,44.38,1M,—
-AR,ANTERO RESOURCES CORPORATION,piotroski,True,9,9,100.0,35.67,17.57,1.48,8.93,0.55,0.73,33.23,4M,—
-SHOE,"Shoe Station Group, Inc.",graham,True,8,9,88.9,14.26,7.51,0.57,7.58,3.76,0.74,32.72,"570,584",—
-GEO,"The GEO Group, Inc.",piotroski,True,7,9,77.8,29.63,16.28,2.75,16.89,2.01,—,21.01,2M,—
-GEO,"The GEO Group, Inc.",lynch,True,3,4,75.0,29.63,16.28,2.75,16.89,2.01,—,21.01,2M,—
-AM,ANTERO MIDSTREAM CORPORATION,piotroski,True,7,9,77.8,19.73,22.94,4.82,20.95,3.41,1.98,8.90,4M,—
-OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,30.15,43.70,5.76,13.20,1.91,0.30,9.01,"560,972",—
-JJSF,J&J SNACK FOODS CORP.,lynch,True,3,4,75.0,94.33,28.07,1.91,6.79,2.72,—,61.14,"286,185",—
-HLIO,"HELIOS TECHNOLOGIES, INC.",piotroski,True,9,9,100.0,42.10,29.03,1.51,5.20,2.90,0.63,30.21,"553,379",—
-HLIO,"HELIOS TECHNOLOGIES, INC.",lynch,True,3,4,75.0,42.10,29.03,1.51,5.20,2.90,0.63,30.21,"553,379",—
-ABM,ABM INDUSTRIES INCORPORATED,piotroski,True,8,9,88.9,53.61,20.70,1.88,9.09,1.48,1.95,40.74,"309,151",—
-DRS,"Leonardo DRS, Inc.",piotroski,True,8,9,88.9,31.27,30.36,3.08,10.18,1.89,—,15.34,1M,—
-IEX,IDEX CORP,piotroski,True,7,9,77.8,220,34.27,4.11,12.00,2.86,0.72,87.83,"760,180",—
-ACTG,ACACIA RESEARCH CORP,piotroski,True,8,9,88.9,4.04,18.36,0.72,3.99,9.18,0.34,5.26,"293,493",—
-AIOT,"POWERFLEET, INC.",piotroski,True,7,9,77.8,1.88,—,0.53,-4.32,1.13,1.00,—,5M,—
-PHIN,PHINIA INC.,piotroski,True,8,9,88.9,68.54,21.15,1.73,8.19,1.86,1.41,53.71,"573,227",—
-CVI,CVR ENERGY INC,piotroski,True,8,9,88.9,32.85,122,4.52,3.70,1.79,—,6.64,2M,—
-CGNX,COGNEX CORP,piotroski,True,8,9,88.9,44.36,65.24,5.04,7.67,3.80,0.35,11.61,5M,—
-VSAT,"VIASAT, INC.",piotroski,True,7,9,77.8,56.26,—,1.63,-0.73,2.41,2.25,—,3M,—
-AMN,"AMN HEALTHCARE SERVICES, INC.",piotroski,True,7,9,77.8,35.68,—,2.14,-14.90,0.94,2.26,—,"817,962",—
-BSM,"Black Stone Minerals, L.P.",lynch,False,2,4,50.0,13.37,—,—,—,3.88,—,—,"471,086",—
-BSM,"Black Stone Minerals, L.P.",graham,False,4,9,44.4,13.37,—,—,—,3.88,—,—,"471,086",—
-BSM,"Black Stone Minerals, L.P.",buffett,False,2,6,33.3,13.37,—,—,—,3.88,—,—,"471,086",—
-BSM,"Black Stone Minerals, L.P.",greenblatt,False,1,3,33.3,13.37,—,—,—,3.88,—,—,"471,086",—
-BSM,"Black Stone Minerals, L.P.",netnet,False,1,4,25.0,13.37,—,—,—,3.88,—,—,"471,086",—
-BSM,"Black Stone Minerals, L.P.",custom,False,0,0,0.0,13.37,—,—,—,3.88,—,—,"471,086",—
-REPX,"Riley Exploration Permian, Inc.",greenblatt,False,2,3,66.7,41.04,5.41,1.37,25.36,0.60,0.84,71.49,"167,486",—
-REPX,"Riley Exploration Permian, Inc.",graham,False,4,9,44.4,41.04,5.41,1.37,25.36,0.60,0.84,71.49,"167,486",—
-REPX,"Riley Exploration Permian, Inc.",buffett,False,2,6,33.3,41.04,5.41,1.37,25.36,0.60,0.84,71.49,"167,486",—
-REPX,"Riley Exploration Permian, Inc.",lynch,False,1,4,25.0,41.04,5.41,1.37,25.36,0.60,0.84,71.49,"167,486",—
-REPX,"Riley Exploration Permian, Inc.",netnet,False,1,4,25.0,41.04,5.41,1.37,25.36,0.60,0.84,71.49,"167,486",—
-REPX,"Riley Exploration Permian, Inc.",custom,False,0,0,0.0,41.04,5.41,1.37,25.36,0.60,0.84,71.49,"167,486",—
-UCFIW,CN Healthy Food Tech Group Corp.,graham,False,5,9,55.6,0.09,0.53,0.22,42.33,1.50,1.25,1.25,"147,751",—
-UCFIW,CN Healthy Food Tech Group Corp.,piotroski,False,4,9,44.4,0.09,0.53,0.22,42.33,1.50,1.25,1.25,"147,751",—
-UCFIW,CN Healthy Food Tech Group Corp.,buffett,False,2,6,33.3,0.09,0.53,0.22,42.33,1.50,1.25,1.25,"147,751",—
-UCFIW,CN Healthy Food Tech Group Corp.,lynch,False,1,4,25.0,0.09,0.53,0.22,42.33,1.50,1.25,1.25,"147,751",—
+PEN,"Penumbra, Inc",piotroski,True,8,9,88.9,320,70.84,8.81,12.45,6.64,0.28,60.79,"3,105",—
+LEA,LEAR CORP,lynch,True,3,4,75.0,104,12.82,1.11,8.68,1.35,—,131,"4,800",—
+BKU,"BankUnited, Inc.",piotroski,True,8,9,88.9,41.69,11.81,1.01,8.79,—,10.47,57.13,"11,697",—
+GRC,The Gorman-Rupp Company,piotroski,True,8,9,88.9,64.03,31.70,4.06,12.78,2.37,1.07,26.77,"145,735",—
+FIGS,"FIGS, Inc.",piotroski,True,8,9,88.9,20.45,108,8.39,7.83,4.94,0.33,3.23,"85,764",—
+RGEN,REPLIGEN CORP,netnet,True,4,4,100.0,171,198,0.00,2.32,8.37,0.40,849,"22,500",—
+MOS,MOSAIC CO,piotroski,True,8,9,88.9,19.12,11.25,0.50,4.47,1.32,—,38.07,"187,623",—
+DAR,DARLING INGREDIENTS INC.,piotroski,True,7,9,77.8,50.62,130,1.71,1.33,1.50,1.16,16.11,2M,—
+TLYS,"TILLY’S, INC.",piotroski,True,7,9,77.8,3.99,—,1.41,-20.50,1.25,2.65,—,"81,714",—
+BYD,BOYD GAMING CORP,buffett,False,4,6,66.7,75.21,3.33,2.36,70.66,0.54,—,127,"5,564",—
+BYD,BOYD GAMING CORP,graham,False,5,9,55.6,75.21,3.33,2.36,70.66,0.54,—,127,"5,564",—
+KRP,"Kimbell Royalty Partners, LP",graham,False,3,9,33.3,13.99,—,—,—,8.64,—,—,"135,561",—
+KRP,"Kimbell Royalty Partners, LP",greenblatt,False,1,3,33.3,13.99,—,—,—,8.64,—,—,"135,561",—
+BYD,BOYD GAMING CORP,lynch,False,1,4,25.0,75.21,3.33,2.36,70.66,0.54,—,127,"5,564",—
+BYD,BOYD GAMING CORP,netnet,False,1,4,25.0,75.21,3.33,2.36,70.66,0.54,—,127,"5,564",—
+KRP,"Kimbell Royalty Partners, LP",lynch,False,1,4,25.0,13.99,—,—,—,8.64,—,—,"135,561",—
+KRP,"Kimbell Royalty Partners, LP",netnet,False,1,4,25.0,13.99,—,—,—,8.64,—,—,"135,561",—
+KRP,"Kimbell Royalty Partners, LP",buffett,False,1,6,16.7,13.99,—,—,—,8.64,—,—,"135,561",—
+BYD,BOYD GAMING CORP,custom,False,0,0,0.0,75.21,3.33,2.36,70.66,0.54,—,127,"5,564",—
+KRP,"Kimbell Royalty Partners, LP",custom,False,0,0,0.0,13.99,—,—,—,8.64,—,—,"135,561",—
+LRN,"STRIDE, INC.",graham,False,7,9,77.8,76.09,10.66,2.21,20.72,5.94,0.49,74.43,"16,657",—
+LRN,"STRIDE, INC.",greenblatt,False,2,3,66.7,76.09,10.66,2.21,20.72,5.94,0.49,74.43,"16,657",—
+LRN,"STRIDE, INC.",netnet,False,2,4,50.0,76.09,10.66,2.21,20.72,5.94,0.49,74.43,"16,657",—
+LRN,"STRIDE, INC.",custom,False,0,0,0.0,76.09,10.66,2.21,20.72,5.94,0.49,74.43,"16,657",—
+ESE,ESCO TECHNOLOGIES INC.,buffett,False,4,6,66.7,210,18.22,3.54,19.42,1.35,0.56,124,"413,342",—
+ESE,ESCO TECHNOLOGIES INC.,graham,False,5,9,55.6,210,18.22,3.54,19.42,1.35,0.56,124,"413,342",—
+ESE,ESCO TECHNOLOGIES INC.,piotroski,False,5,9,55.6,210,18.22,3.54,19.42,1.35,0.56,124,"413,342",—
+ESE,ESCO TECHNOLOGIES INC.,greenblatt,False,1,3,33.3,210,18.22,3.54,19.42,1.35,0.56,124,"413,342",—
+ESE,ESCO TECHNOLOGIES INC.,netnet,False,1,4,25.0,210,18.22,3.54,19.42,1.35,0.56,124,"413,342",—
+ESE,ESCO TECHNOLOGIES INC.,custom,False,0,0,0.0,210,18.22,3.54,19.42,1.35,0.56,124,"413,342",—
