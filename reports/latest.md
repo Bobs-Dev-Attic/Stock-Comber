@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-11-24 11:53 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-11-24 21:45 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **39** strategy matches passed.
+Screened **75** companies · **35** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| HLNE | HAMILTON LANE INC | buffett | ✅ | 83% | 85.55 | — | — | 27.23 | — | 0.92 | 797,019 | — |
-| SLDE | Slide Insurance Holdings, In | greenblatt | ✅ | 100% | 25.57 | 7.61 | 3.03 | 39.88 | — | 1.62 | 905,236 | — |
-| TOL | Toll Brothers, Inc. | lynch | ✅ | 100% | 146 | 10.86 | 1.77 | 16.28 | — | 0.75 | 809,104 | — |
-| TOL | Toll Brothers, Inc. | buffett | ✅ | 83% | 146 | 10.86 | 1.77 | 16.28 | — | 0.75 | 809,104 | — |
-| BKE | BUCKLE, INC | greenblatt | ✅ | 100% | 45.38 | 10.96 | 5.42 | 49.39 | 1.89 | 1.33 | 706,933 | — |
-| BKE | BUCKLE, INC | buffett | ✅ | 83% | 45.38 | 10.96 | 5.42 | 49.39 | 1.89 | 1.33 | 706,933 | — |
-| IPAR | INTERPARFUMS, INC. | buffett | ✅ | 83% | 136 | 26.03 | 4.98 | 19.12 | 2.99 | — | 320,720 | — |
-| IPAR | INTERPARFUMS, INC. | lynch | ✅ | 75% | 136 | 26.03 | 4.98 | 19.12 | 2.99 | — | 320,720 | — |
-| WLDN | WILLDAN GROUP, INC. | piotroski | ✅ | 78% | 70.10 | 20.09 | 3.47 | 17.24 | 1.56 | 0.79 | 233,502 | — |
-| UTI | UNIVERSAL TECHNICAL INSTITUT | piotroski | ✅ | 78% | 19.19 | 16.98 | 3.25 | 19.21 | 1.07 | 1.52 | 3M | — |
-| CSL | CARLISLE COMPANIES INCORPORA | buffett | ✅ | 83% | 391 | 22.84 | 9.41 | 41.26 | 3.09 | — | 318,462 | — |
-| AOS | A. O. Smith Corporation | piotroski | ✅ | 78% | 65.00 | 16.88 | 4.96 | 29.40 | 1.50 | 0.69 | 1M | — |
-| EFSC | ENTERPRISE FINANCIAL SERVICE | lynch | ✅ | 75% | 59.31 | 11.17 | 1.08 | 9.87 | — | 7.48 | 313,583 | — |
-| CNA | CNA FINANCIAL CORPORATION | piotroski | ✅ | 78% | 48.10 | 10.26 | 1.13 | 11.00 | — | 4.98 | 439,339 | — |
-| OHI | OMEGA HEALTHCARE INVESTORS,  | piotroski | ✅ | 78% | 45.85 | 23.63 | 2.70 | 11.39 | — | 0.89 | 2M | — |
-| OHI | OMEGA HEALTHCARE INVESTORS,  | lynch | ✅ | 75% | 45.85 | 23.63 | 2.70 | 11.39 | — | 0.89 | 2M | — |
-| HRB | H&R Block, Inc. | greenblatt | ✅ | 100% | 45.98 | 8.12 | 50.43 | 624 | 1.13 | 26.72 | 2M | — |
-| HRB | H&R Block, Inc. | piotroski | ✅ | 89% | 45.98 | 8.12 | 50.43 | 624 | 1.13 | 26.72 | 2M | — |
-| ORI | OLD REPUBLIC INTERNATIONAL C | piotroski | ✅ | 78% | 40.06 | 10.77 | 1.70 | 15.82 | — | 4.05 | 981,304 | — |
-| NHC | NATIONAL HEALTHCARE CORP | piotroski | ✅ | 100% | 194 | 25.35 | 2.85 | 11.23 | 1.82 | 0.42 | 63,713 | — |
-| NHC | NATIONAL HEALTHCARE CORP | lynch | ✅ | 75% | 194 | 25.35 | 2.85 | 11.23 | 1.82 | 0.42 | 63,713 | — |
-| DRVN | Driven Brands Holdings Inc. | piotroski | ✅ | 78% | 10.75 | 12.65 | 2.30 | 18.27 | 0.75 | 4.42 | 996,183 | — |
-| TOST | Toast, Inc. | piotroski | ✅ | 78% | 32.47 | 57.98 | 9.28 | 16.10 | 2.75 | 0.48 | 6M | — |
-| AM | ANTERO MIDSTREAM CORPORATION | piotroski | ✅ | 78% | 19.79 | 23.01 | 4.84 | 20.95 | 3.41 | 1.98 | 4M | — |
-| PEN | Penumbra, Inc | piotroski | ✅ | 89% | 321 | 70.92 | 8.82 | 12.45 | 6.64 | 0.28 | 406,740 | — |
-| PKE | PARK AEROSPACE CORP. | piotroski | ✅ | 100% | 23.58 | 42.11 | 3.65 | 8.67 | 18.24 | 0.09 | 201,872 | — |
-| PKE | PARK AEROSPACE CORP. | lynch | ✅ | 75% | 23.58 | 42.11 | 3.65 | 8.67 | 18.24 | 0.09 | 201,872 | — |
-| CW | CURTISS-WRIGHT CORPORATION | piotroski | ✅ | 89% | 463 | 35.96 | 6.87 | 19.11 | 1.44 | 1.06 | 271,865 | — |
-| EHC | Encompass Health Corporation | piotroski | ✅ | 100% | 134 | 24.22 | 5.62 | 23.22 | 1.08 | 1.56 | 735,446 | — |
-| DLX | DELUXE CORPORATION | piotroski | ✅ | 78% | 25.20 | 14.00 | 1.68 | 12.06 | 1.04 | — | 487,996 | — |
-| LCII | LCI INDUSTRIES | piotroski | ✅ | 89% | 102 | 13.42 | 1.86 | 13.83 | 2.85 | 1.33 | 193,479 | — |
-| ONTO | ONTO INNOVATION INC. | lynch | ✅ | 75% | 191 | 68.70 | 4.48 | 6.51 | 5.79 | 0.13 | 855,926 | — |
-| DPZ | Domino’s Pizza, Inc. | piotroski | ✅ | 89% | 355 | 20.22 | — | -15.42 | 1.65 | -1.44 | 548,500 | — |
-| ALGN | ALIGN TECHNOLOGY, INC. | piotroski | ✅ | 78% | 162 | 28.73 | 2.91 | 10.13 | 1.36 | 0.54 | 1M | — |
-| CHRW | C.H. ROBINSON WORLDWIDE, INC | piotroski | ✅ | 78% | 137 | 28.40 | 9.03 | 31.81 | 1.53 | 1.74 | 1M | — |
-| FUL | FULLER H B CO | piotroski | ✅ | 78% | 48.17 | 17.52 | 1.33 | 7.59 | 1.70 | 1.59 | 433,374 | — |
-| CGNX | COGNEX CORP | piotroski | ✅ | 89% | 48.47 | 71.28 | 5.50 | 7.67 | 3.80 | 0.35 | 2M | — |
-| BNED | BARNES & NOBLE EDUCATION, IN | piotroski | ✅ | 89% | 12.34 | 25.18 | 1.45 | 5.73 | 1.71 | 1.51 | 106,960 | — |
-| TRLV | TRULIEVE CANNABIS CORP. | piotroski | ✅ | 89% | 9.16 | — | 1.53 | -10.70 | 4.43 | 1.36 | 1M | — |
-| HLNE | HAMILTON LANE INC | greenblatt | ▫️ | 67% | 85.55 | — | — | 27.23 | — | 0.92 | 797,019 | — |
-| HLNE | HAMILTON LANE INC | piotroski | ▫️ | 56% | 85.55 | — | — | 27.23 | — | 0.92 | 797,019 | — |
-| HLNE | HAMILTON LANE INC | lynch | ▫️ | 50% | 85.55 | — | — | 27.23 | — | 0.92 | 797,019 | — |
-| HLNE | HAMILTON LANE INC | graham | ▫️ | 44% | 85.55 | — | — | 27.23 | — | 0.92 | 797,019 | — |
-| HLNE | HAMILTON LANE INC | netnet | ▫️ | 25% | 85.55 | — | — | 27.23 | — | 0.92 | 797,019 | — |
-| HLNE | HAMILTON LANE INC | custom | ▫️ | 0% | 85.55 | — | — | 27.23 | — | 0.92 | 797,019 | — |
-| SLDE | Slide Insurance Holdings, In | graham | ▫️ | 33% | 25.57 | 7.61 | 3.03 | 39.88 | — | 1.62 | 905,236 | — |
-| SLDE | Slide Insurance Holdings, In | buffett | ▫️ | 33% | 25.57 | 7.61 | 3.03 | 39.88 | — | 1.62 | 905,236 | — |
-| SLDE | Slide Insurance Holdings, In | piotroski | ▫️ | 33% | 25.57 | 7.61 | 3.03 | 39.88 | — | 1.62 | 905,236 | — |
-| SLDE | Slide Insurance Holdings, In | lynch | ▫️ | 25% | 25.57 | 7.61 | 3.03 | 39.88 | — | 1.62 | 905,236 | — |
-| SLDE | Slide Insurance Holdings, In | netnet | ▫️ | 25% | 25.57 | 7.61 | 3.03 | 39.88 | — | 1.62 | 905,236 | — |
+| GOOGN | Alphabet Inc. | graham | ✅ | 100% | 41.24 | 3.81 | 1.21 | 31.83 | 2.01 | 0.43 | 601,145 | — |
+| GOOGN | Alphabet Inc. | buffett | ✅ | 100% | 41.24 | 3.81 | 1.21 | 31.83 | 2.01 | 0.43 | 601,145 | — |
+| GOOGN | Alphabet Inc. | greenblatt | ✅ | 100% | 41.24 | 3.81 | 1.21 | 31.83 | 2.01 | 0.43 | 601,145 | — |
+| GOOGN | Alphabet Inc. | lynch | ✅ | 100% | 41.24 | 3.81 | 1.21 | 31.83 | 2.01 | 0.43 | 601,145 | — |
+| DECK | DECKERS OUTDOOR CORP | greenblatt | ✅ | 100% | 84.29 | 12.01 | 4.92 | 40.97 | 3.54 | — | 3M | — |
+| DECK | DECKERS OUTDOOR CORP | buffett | ✅ | 83% | 84.29 | 12.01 | 4.92 | 40.97 | 3.54 | — | 3M | — |
+| DECK | DECKERS OUTDOOR CORP | piotroski | ✅ | 78% | 84.29 | 12.01 | 4.92 | 40.97 | 3.54 | — | 3M | — |
+| DECK | DECKERS OUTDOOR CORP | lynch | ✅ | 75% | 84.29 | 12.01 | 4.92 | 40.97 | 3.54 | — | 3M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | piotroski | ✅ | 78% | 28.36 | 6.25 | 1.84 | 29.41 | 1.47 | 1.81 | 1M | — |
+| OTTR | OTTER TAIL CORPORATION | lynch | ✅ | 75% | 78.53 | 11.99 | 1.78 | 14.82 | 2.28 | — | 189,962 | — |
+| LII | LENNOX INTERNATIONAL INC | lynch | ✅ | 75% | 341 | 14.98 | 10.39 | 69.28 | 1.60 | 2.51 | 594,901 | — |
+| CWCO | CONSOLIDATED WATER CO. LTD. | lynch | ✅ | 100% | 24.72 | 21.68 | 1.79 | 8.27 | 6.12 | 0.14 | 91,539 | — |
+| SSD | Simpson Manufacturing Co., I | buffett | ✅ | 83% | 194 | 23.60 | 4.01 | 17.00 | 3.54 | 0.51 | 285,785 | — |
+| SSD | Simpson Manufacturing Co., I | piotroski | ✅ | 78% | 194 | 23.60 | 4.01 | 17.00 | 3.54 | 0.51 | 285,785 | — |
+| CVCO | CAVCO INDUSTRIES, INC. | piotroski | ✅ | 89% | 687 | 28.66 | 4.95 | 17.27 | 2.46 | 0.35 | 95,173 | — |
+| CVCO | CAVCO INDUSTRIES, INC. | buffett | ✅ | 83% | 687 | 28.66 | 4.95 | 17.27 | 2.46 | 0.35 | 95,173 | — |
+| CVCO | CAVCO INDUSTRIES, INC. | lynch | ✅ | 75% | 687 | 28.66 | 4.95 | 17.27 | 2.46 | 0.35 | 95,173 | — |
+| ACLS | AXCELIS TECHNOLOGIES INC | lynch | ✅ | 75% | 96.84 | 25.48 | 2.96 | 11.62 | 4.77 | 0.32 | 496,297 | — |
+| GLPI | Gaming and Leisure Propertie | buffett | ✅ | 83% | 38.63 | 13.09 | 2.34 | 17.83 | — | 1.71 | 2M | — |
+| GLPI | Gaming and Leisure Propertie | piotroski | ✅ | 78% | 38.63 | 13.09 | 2.34 | 17.83 | — | 1.71 | 2M | — |
+| EFSC | ENTERPRISE FINANCIAL SERVICE | lynch | ✅ | 75% | 59.63 | 11.23 | 1.09 | 9.87 | — | 7.48 | 200,199 | — |
+| EFC | Ellington Financial Inc. | lynch | ✅ | 75% | 11.40 | 9.58 | 0.62 | 6.47 | — | 9.53 | 1M | — |
+| AR | ANTERO RESOURCES CORPORATION | piotroski | ✅ | 100% | 35.67 | 17.57 | 1.48 | 8.93 | 0.55 | 0.73 | 3M | — |
+| CW | CURTISS-WRIGHT CORPORATION | piotroski | ✅ | 89% | 449 | 34.89 | 6.67 | 19.11 | 1.44 | 1.06 | 219,325 | — |
+| AIZ | Assurant, Inc. | piotroski | ✅ | 89% | 323 | 19.06 | 2.81 | 14.86 | — | 5.18 | 306,348 | — |
+| HLIO | HELIOS TECHNOLOGIES, INC. | piotroski | ✅ | 100% | 44.67 | 30.81 | 1.60 | 5.20 | 2.90 | 0.63 | 427,352 | — |
+| HLIO | HELIOS TECHNOLOGIES, INC. | lynch | ✅ | 75% | 44.67 | 30.81 | 1.60 | 5.20 | 2.90 | 0.63 | 427,352 | — |
+| KNTK | KINETIK HOLDINGS INC. | lynch | ✅ | 75% | 53.00 | 20.15 | — | -31.53 | 0.69 | -7.37 | 1M | — |
+| ACTG | ACACIA RESEARCH CORP | piotroski | ✅ | 89% | 3.99 | 18.14 | 0.71 | 3.99 | 9.18 | 0.34 | 179,279 | — |
+| FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 20.48 | 108 | 8.40 | 7.83 | 4.94 | 0.33 | 2M | — |
+| AIOT | POWERFLEET, INC. | piotroski | ✅ | 78% | 1.90 | — | 0.53 | -4.32 | 1.13 | 1.00 | 4M | — |
+| CHRW | C.H. ROBINSON WORLDWIDE, INC | piotroski | ✅ | 78% | 141 | 29.10 | 9.25 | 31.81 | 1.53 | 1.74 | 1M | — |
+| TRC | TEJON RANCH CO. | piotroski | ✅ | 78% | 16.28 | — | 0.92 | 0.02 | 4.14 | 0.29 | 126,817 | — |
+| CALX | Calix, Inc | piotroski | ✅ | 78% | 33.21 | 128 | 2.68 | 2.08 | 4.24 | 0.23 | 983,859 | — |
+| SNDR | Schneider National, Inc. | piotroski | ✅ | 78% | 28.06 | 47.56 | 1.63 | 3.43 | 2.13 | 0.60 | 604,271 | — |
+| GOOGN | Alphabet Inc. | piotroski | ▫️ | 67% | 41.24 | 3.81 | 1.21 | 31.83 | 2.01 | 0.43 | 601,145 | — |
+| GOOGN | Alphabet Inc. | netnet | ▫️ | 50% | 41.24 | 3.81 | 1.21 | 31.83 | 2.01 | 0.43 | 601,145 | — |
+| GOOGN | Alphabet Inc. | custom | ▫️ | 0% | 41.24 | 3.81 | 1.21 | 31.83 | 2.01 | 0.43 | 601,145 | — |
+| DECK | DECKERS OUTDOOR CORP | graham | ▫️ | 78% | 84.29 | 12.01 | 4.92 | 40.97 | 3.54 | — | 3M | — |
+| DECK | DECKERS OUTDOOR CORP | netnet | ▫️ | 25% | 84.29 | 12.01 | 4.92 | 40.97 | 3.54 | — | 3M | — |
+| DECK | DECKERS OUTDOOR CORP | custom | ▫️ | 0% | 84.29 | 12.01 | 4.92 | 40.97 | 3.54 | — | 3M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | graham | ▫️ | 67% | 28.36 | 6.25 | 1.84 | 29.41 | 1.47 | 1.81 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | greenblatt | ▫️ | 67% | 28.36 | 6.25 | 1.84 | 29.41 | 1.47 | 1.81 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | buffett | ▫️ | 50% | 28.36 | 6.25 | 1.84 | 29.41 | 1.47 | 1.81 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | lynch | ▫️ | 50% | 28.36 | 6.25 | 1.84 | 29.41 | 1.47 | 1.81 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | netnet | ▫️ | 25% | 28.36 | 6.25 | 1.84 | 29.41 | 1.47 | 1.81 | 1M | — |
+| PPC | PILGRIM’S PRIDE CORPORATION | custom | ▫️ | 0% | 28.36 | 6.25 | 1.84 | 29.41 | 1.47 | 1.81 | 1M | — |
+| OTTR | OTTER TAIL CORPORATION | graham | ▫️ | 78% | 78.53 | 11.99 | 1.78 | 14.82 | 2.28 | — | 189,962 | — |
+| OTTR | OTTER TAIL CORPORATION | piotroski | ▫️ | 67% | 78.53 | 11.99 | 1.78 | 14.82 | 2.28 | — | 189,962 | — |
+| OTTR | OTTER TAIL CORPORATION | greenblatt | ▫️ | 67% | 78.53 | 11.99 | 1.78 | 14.82 | 2.28 | — | 189,962 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
