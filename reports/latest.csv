@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-BYD,BOYD GAMING CORP,greenblatt,True,3,3,100.0,75.21,3.33,2.36,70.66,0.54,—,127,"5,564",—
-BYD,BOYD GAMING CORP,piotroski,True,7,9,77.8,75.21,3.33,2.36,70.66,0.54,—,127,"5,564",—
-KRP,"Kimbell Royalty Partners, LP",piotroski,True,7,9,77.8,13.99,—,—,—,8.64,—,—,"135,561",—
-LRN,"STRIDE, INC.",lynch,True,4,4,100.0,76.09,10.66,2.21,20.72,5.94,0.49,74.43,"16,657",—
-LRN,"STRIDE, INC.",piotroski,True,8,9,88.9,76.09,10.66,2.21,20.72,5.94,0.49,74.43,"16,657",—
-LRN,"STRIDE, INC.",buffett,True,5,6,83.3,76.09,10.66,2.21,20.72,5.94,0.49,74.43,"16,657",—
-ESE,ESCO TECHNOLOGIES INC.,lynch,True,4,4,100.0,210,18.22,3.54,19.42,1.35,0.56,124,"413,342",—
-OLED,UNIVERSAL DISPLAY CORPORATION,piotroski,True,7,9,77.8,77.62,15.28,2.10,13.75,10.06,0.12,64.99,"703,894",—
-TREE,"LendingTree, Inc.",greenblatt,True,3,3,100.0,34.88,3.24,1.71,52.76,1.67,1.98,70.33,"339,737",—
-ALSN,"ALLISON TRANSMISSION HOLDINGS, INC.",buffett,True,5,6,83.3,120,16.36,5.46,33.37,4.85,2.26,60.19,"3,619",—
-LII,LENNOX INTERNATIONAL INC,lynch,True,3,4,75.0,334,14.68,10.18,69.28,1.60,2.51,130,"687,834",—
-LECO,LINCOLN ELECTRIC HOLDINGS INC,buffett,True,5,6,83.3,257,27.54,9.76,35.42,1.82,1.57,74.27,"3,483",—
-LECO,LINCOLN ELECTRIC HOLDINGS INC,piotroski,True,7,9,77.8,257,27.54,9.76,35.42,1.82,1.57,74.27,"3,483",—
-GPK,Graphic Packaging Holding Co,lynch,True,3,4,75.0,10.16,6.86,0.91,13.31,1.30,—,19.25,5M,—
-VICR,VICOR CORPORATION,piotroski,True,8,9,88.9,149,56.98,9.50,16.66,8.99,0.10,30.32,"87,882",—
-VICR,VICOR CORPORATION,buffett,True,5,6,83.3,149,56.98,9.50,16.66,8.99,0.10,30.32,"87,882",—
-VICR,VICOR CORPORATION,lynch,True,3,4,75.0,149,56.98,9.50,16.66,8.99,0.10,30.32,"87,882",—
-HRB,"H&R Block, Inc.",greenblatt,True,3,3,100.0,45.45,8.03,49.86,624,1.13,26.72,10.78,"28,808",—
-HRB,"H&R Block, Inc.",piotroski,True,8,9,88.9,45.45,8.03,49.86,624,1.13,26.72,10.78,"28,808",—
-ORI,OLD REPUBLIC INTERNATIONAL CORP,piotroski,True,7,9,77.8,39.91,10.73,1.70,15.82,—,4.05,44.38,1M,—
-PEN,"Penumbra, Inc",piotroski,True,8,9,88.9,320,70.84,8.81,12.45,6.64,0.28,60.79,"3,105",—
-LEA,LEAR CORP,lynch,True,3,4,75.0,104,12.82,1.11,8.68,1.35,—,131,"4,800",—
-BKU,"BankUnited, Inc.",piotroski,True,8,9,88.9,41.69,11.81,1.01,8.79,—,10.47,57.13,"11,697",—
-GRC,The Gorman-Rupp Company,piotroski,True,8,9,88.9,64.03,31.70,4.06,12.78,2.37,1.07,26.77,"145,735",—
-FIGS,"FIGS, Inc.",piotroski,True,8,9,88.9,20.45,108,8.39,7.83,4.94,0.33,3.23,"85,764",—
-RGEN,REPLIGEN CORP,netnet,True,4,4,100.0,171,198,0.00,2.32,8.37,0.40,849,"22,500",—
-MOS,MOSAIC CO,piotroski,True,8,9,88.9,19.12,11.25,0.50,4.47,1.32,—,38.07,"187,623",—
-DAR,DARLING INGREDIENTS INC.,piotroski,True,7,9,77.8,50.62,130,1.71,1.33,1.50,1.16,16.11,2M,—
-TLYS,"TILLY’S, INC.",piotroski,True,7,9,77.8,3.99,—,1.41,-20.50,1.25,2.65,—,"81,714",—
-BYD,BOYD GAMING CORP,buffett,False,4,6,66.7,75.21,3.33,2.36,70.66,0.54,—,127,"5,564",—
-BYD,BOYD GAMING CORP,graham,False,5,9,55.6,75.21,3.33,2.36,70.66,0.54,—,127,"5,564",—
-KRP,"Kimbell Royalty Partners, LP",graham,False,3,9,33.3,13.99,—,—,—,8.64,—,—,"135,561",—
-KRP,"Kimbell Royalty Partners, LP",greenblatt,False,1,3,33.3,13.99,—,—,—,8.64,—,—,"135,561",—
-BYD,BOYD GAMING CORP,lynch,False,1,4,25.0,75.21,3.33,2.36,70.66,0.54,—,127,"5,564",—
-BYD,BOYD GAMING CORP,netnet,False,1,4,25.0,75.21,3.33,2.36,70.66,0.54,—,127,"5,564",—
-KRP,"Kimbell Royalty Partners, LP",lynch,False,1,4,25.0,13.99,—,—,—,8.64,—,—,"135,561",—
-KRP,"Kimbell Royalty Partners, LP",netnet,False,1,4,25.0,13.99,—,—,—,8.64,—,—,"135,561",—
-KRP,"Kimbell Royalty Partners, LP",buffett,False,1,6,16.7,13.99,—,—,—,8.64,—,—,"135,561",—
-BYD,BOYD GAMING CORP,custom,False,0,0,0.0,75.21,3.33,2.36,70.66,0.54,—,127,"5,564",—
-KRP,"Kimbell Royalty Partners, LP",custom,False,0,0,0.0,13.99,—,—,—,8.64,—,—,"135,561",—
-LRN,"STRIDE, INC.",graham,False,7,9,77.8,76.09,10.66,2.21,20.72,5.94,0.49,74.43,"16,657",—
-LRN,"STRIDE, INC.",greenblatt,False,2,3,66.7,76.09,10.66,2.21,20.72,5.94,0.49,74.43,"16,657",—
-LRN,"STRIDE, INC.",netnet,False,2,4,50.0,76.09,10.66,2.21,20.72,5.94,0.49,74.43,"16,657",—
-LRN,"STRIDE, INC.",custom,False,0,0,0.0,76.09,10.66,2.21,20.72,5.94,0.49,74.43,"16,657",—
-ESE,ESCO TECHNOLOGIES INC.,buffett,False,4,6,66.7,210,18.22,3.54,19.42,1.35,0.56,124,"413,342",—
-ESE,ESCO TECHNOLOGIES INC.,graham,False,5,9,55.6,210,18.22,3.54,19.42,1.35,0.56,124,"413,342",—
-ESE,ESCO TECHNOLOGIES INC.,piotroski,False,5,9,55.6,210,18.22,3.54,19.42,1.35,0.56,124,"413,342",—
-ESE,ESCO TECHNOLOGIES INC.,greenblatt,False,1,3,33.3,210,18.22,3.54,19.42,1.35,0.56,124,"413,342",—
-ESE,ESCO TECHNOLOGIES INC.,netnet,False,1,4,25.0,210,18.22,3.54,19.42,1.35,0.56,124,"413,342",—
-ESE,ESCO TECHNOLOGIES INC.,custom,False,0,0,0.0,210,18.22,3.54,19.42,1.35,0.56,124,"413,342",—
+EVER,"EverQuote, Inc.",greenblatt,True,3,3,100.0,27.35,10.40,4.34,41.72,2.94,0.37,19.32,"734,742",—
+HNRG,HALLADOR ENERGY CO,greenblatt,True,3,3,100.0,9.45,9.84,2.57,26.20,0.81,1.55,8.92,"992,794",—
+HNRG,HALLADOR ENERGY CO,piotroski,True,8,9,88.9,9.45,9.84,2.57,26.20,0.81,1.55,8.92,"992,794",—
+ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.22,5.40,0.15,4.91,1.93,0.73,1.14,"2,169",—
+AES,THE AES CORPORATION,greenblatt,True,3,3,100.0,15.03,11.93,2.64,22.40,0.77,—,12.70,10M,—
+PAYC,"Paycom Software, Inc.",buffett,True,5,6,83.3,243,30.10,7.88,26.19,1.09,3.39,74.90,"545,253",—
+WMS,"ADVANCED DRAINAGE SYSTEMS, INC.",buffett,True,5,6,83.3,117,21.45,4.92,22.94,2.42,1.37,53.88,"693,217",—
+KALU,KAISER ALUMINUM CORPORATION,piotroski,True,7,9,77.8,99.12,14.64,1.99,13.62,2.95,2.10,87.01,"269,874",—
+KALU,KAISER ALUMINUM CORPORATION,lynch,True,3,4,75.0,99.12,14.64,1.99,13.62,2.95,2.10,87.01,"269,874",—
+CNA,CNA FINANCIAL CORPORATION,piotroski,True,7,9,77.8,48.10,10.26,1.13,11.00,—,4.98,67.10,"439,334",—
+BFAM,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,piotroski,True,8,9,88.9,50.41,15.00,2.16,14.42,0.52,1.90,41.99,1M,—
+BFAM,BRIGHT HORIZONS FAMILY SOLUTIONS INC.,lynch,True,3,4,75.0,50.41,15.00,2.16,14.42,0.52,1.90,41.99,1M,—
+EFC,Ellington Financial Inc.,lynch,True,3,4,75.0,11.23,9.44,0.62,6.47,—,9.53,22.10,2M,—
+LNC,LINCOLN NATIONAL CORPORATION,lynch,True,3,4,75.0,40.34,6.92,0.69,10.79,—,37.25,87.69,2M,—
+INVH,Invitation Homes Inc.,piotroski,True,7,9,77.8,26.65,27.76,1.71,6.17,—,0.96,18.32,8M,—
+UMBF,UMB FINANCIAL CORP,lynch,True,3,4,75.0,129,13.86,1.23,9.13,—,8.50,148,"419,698",—
+AGCO,AGCO CORP /DE,piotroski,True,8,9,88.9,105,10.81,1.84,17.00,1.39,1.72,112,"802,412",—
+DLX,DELUXE CORPORATION,piotroski,True,7,9,77.8,25.20,14.00,1.68,12.06,1.04,—,24.61,"487,996",—
+RSI,"Rush Street Interactive, Inc.",piotroski,True,7,9,77.8,11.43,36.87,18.33,22.62,1.93,2.41,2.09,3M,—
+BCGWW,"Binah Capital Group, Inc.",piotroski,True,7,9,77.8,0.06,1.50,0.06,12.63,—,2.84,0.98,"24,573",—
+DLB,"DOLBY LABORATORIES, INC.",piotroski,True,8,9,88.9,56.50,20.93,2.07,9.90,3.18,0.21,40.68,1M,—
+FAF,FIRST AMERICAN FINANCIAL CORPORATION,piotroski,True,8,9,88.9,64.91,10.82,1.22,11.31,—,1.95,84.61,"873,712",—
+KN,Knowles Corporation,piotroski,True,7,9,77.8,33.64,67.28,3.82,5.70,2.75,—,9.96,"393,019",—
+HCSG,"HEALTHCARE SERVICES GROUP, INC.",piotroski,True,9,9,100.0,25.05,30.93,3.59,11.58,3.38,—,11.28,"458,206",—
+NEOG,Neogen Corporation,piotroski,True,8,9,88.9,10.96,—,1.14,-0.38,3.82,0.60,—,2M,—
+AEIS,"ADVANCED ENERGY INDUSTRIES, INC.",piotroski,True,7,9,77.8,214,55.75,6.06,10.89,1.59,0.86,55.23,"568,324",—
+SHC,SOTERA HEALTH COMPANY,piotroski,True,7,9,77.8,16.17,59.89,7.64,12.86,2.46,4.38,3.59,3M,—
+EVER,"EverQuote, Inc.",piotroski,False,6,9,66.7,27.35,10.40,4.34,41.72,2.94,0.37,19.32,"734,742",—
+EVER,"EverQuote, Inc.",buffett,False,3,6,50.0,27.35,10.40,4.34,41.72,2.94,0.37,19.32,"734,742",—
+EVER,"EverQuote, Inc.",lynch,False,2,4,50.0,27.35,10.40,4.34,41.72,2.94,0.37,19.32,"734,742",—
+EVER,"EverQuote, Inc.",netnet,False,2,4,50.0,27.35,10.40,4.34,41.72,2.94,0.37,19.32,"734,742",—
+EVER,"EverQuote, Inc.",graham,False,4,9,44.4,27.35,10.40,4.34,41.72,2.94,0.37,19.32,"734,742",—
+EVER,"EverQuote, Inc.",custom,False,0,0,0.0,27.35,10.40,4.34,41.72,2.94,0.37,19.32,"734,742",—
+HNRG,HALLADOR ENERGY CO,lynch,False,1,4,25.0,9.45,9.84,2.57,26.20,0.81,1.55,8.92,"992,794",—
+HNRG,HALLADOR ENERGY CO,netnet,False,1,4,25.0,9.45,9.84,2.57,26.20,0.81,1.55,8.92,"992,794",—
+HNRG,HALLADOR ENERGY CO,graham,False,2,9,22.2,9.45,9.84,2.57,26.20,0.81,1.55,8.92,"992,794",—
+HNRG,HALLADOR ENERGY CO,buffett,False,1,6,16.7,9.45,9.84,2.57,26.20,0.81,1.55,8.92,"992,794",—
+HNRG,HALLADOR ENERGY CO,custom,False,0,0,0.0,9.45,9.84,2.57,26.20,0.81,1.55,8.92,"992,794",—
+ANNAW,"AleAnna, Inc.",greenblatt,False,2,3,66.7,0.22,5.40,0.15,4.91,1.93,0.73,1.14,"2,169",—
+ANNAW,"AleAnna, Inc.",graham,False,5,9,55.6,0.22,5.40,0.15,4.91,1.93,0.73,1.14,"2,169",—
+ANNAW,"AleAnna, Inc.",lynch,False,2,4,50.0,0.22,5.40,0.15,4.91,1.93,0.73,1.14,"2,169",—
+ANNAW,"AleAnna, Inc.",netnet,False,1,4,25.0,0.22,5.40,0.15,4.91,1.93,0.73,1.14,"2,169",—
+ANNAW,"AleAnna, Inc.",buffett,False,1,6,16.7,0.22,5.40,0.15,4.91,1.93,0.73,1.14,"2,169",—
+ANNAW,"AleAnna, Inc.",custom,False,0,0,0.0,0.22,5.40,0.15,4.91,1.93,0.73,1.14,"2,169",—
+AES,THE AES CORPORATION,piotroski,False,5,9,55.6,15.03,11.93,2.64,22.40,0.77,—,12.70,10M,—
+AES,THE AES CORPORATION,lynch,False,2,4,50.0,15.03,11.93,2.64,22.40,0.77,—,12.70,10M,—
+AES,THE AES CORPORATION,graham,False,4,9,44.4,15.03,11.93,2.64,22.40,0.77,—,12.70,10M,—
+AES,THE AES CORPORATION,buffett,False,2,6,33.3,15.03,11.93,2.64,22.40,0.77,—,12.70,10M,—
+AES,THE AES CORPORATION,netnet,False,1,4,25.0,15.03,11.93,2.64,22.40,0.77,—,12.70,10M,—
+AES,THE AES CORPORATION,custom,False,0,0,0.0,15.03,11.93,2.64,22.40,0.77,—,12.70,10M,—
