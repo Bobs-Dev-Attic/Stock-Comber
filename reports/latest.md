@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-11-25 04:43 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-11-25 15:00 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **34** strategy matches passed.
+Screened **75** companies · **30** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| HCI | HCI Group, Inc. | greenblatt | ✅ | 100% | 190 | 8.35 | 2.35 | 28.72 | — | 1.36 | 183,191 | — |
-| HCI | HCI Group, Inc. | piotroski | ✅ | 78% | 190 | 8.35 | 2.35 | 28.72 | — | 1.36 | 183,191 | — |
-| WHD | Cactus, Inc. | lynch | ✅ | 75% | 59.01 | — | — | 13.54 | 5.81 | 0.36 | 462,877 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | piotroski | ✅ | 100% | 106 | 19.48 | 3.67 | 18.86 | 0.86 | 0.33 | 65,851 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | lynch | ✅ | 100% | 106 | 19.48 | 3.67 | 18.86 | 0.86 | 0.33 | 65,851 | — |
-| MCRI | MONARCH CASINO & RESORT, INC | buffett | ✅ | 83% | 106 | 19.48 | 3.67 | 18.86 | 0.86 | 0.33 | 65,851 | — |
-| CHH | CHOICE HOTELS INTERNATIONAL  | piotroski | ✅ | 78% | 120 | 15.23 | 30.92 | 204 | 0.87 | 15.10 | 410,672 | — |
-| CHH | CHOICE HOTELS INTERNATIONAL  | lynch | ✅ | 75% | 120 | 15.23 | 30.92 | 204 | 0.87 | 15.10 | 410,672 | — |
-| FN | FABRINET | lynch | ✅ | 100% | 290 | 22.23 | 4.29 | 19.27 | 2.25 | 0.59 | 791,169 | — |
-| AWI | ARMSTRONG WORLD INDUSTRIES,  | piotroski | ✅ | 100% | 176 | 24.87 | 8.52 | 34.27 | 1.46 | — | 765,441 | — |
-| FN | FABRINET | buffett | ✅ | 83% | 290 | 22.23 | 4.29 | 19.27 | 2.25 | 0.59 | 791,169 | — |
-| KFY | KORN FERRY | piotroski | ✅ | 100% | 74.58 | 14.29 | 1.99 | 14.06 | 1.94 | 1.06 | 371,016 | — |
-| KFY | KORN FERRY | lynch | ✅ | 75% | 74.58 | 14.29 | 1.99 | 14.06 | 1.94 | 1.06 | 371,016 | — |
-| SSD | Simpson Manufacturing Co., I | buffett | ✅ | 83% | 194 | 23.60 | 4.01 | 17.00 | 3.54 | 0.51 | 302,075 | — |
-| SSD | Simpson Manufacturing Co., I | piotroski | ✅ | 78% | 194 | 23.60 | 4.01 | 17.00 | 3.54 | 0.51 | 302,075 | — |
-| ACLS | AXCELIS TECHNOLOGIES INC | lynch | ✅ | 75% | 96.84 | 25.48 | 2.96 | 11.62 | 4.77 | 0.32 | 498,327 | — |
-| WNC | WABASH NATIONAL CORPORATION | greenblatt | ✅ | 100% | 10.35 | 2.04 | 1.18 | 57.56 | 1.39 | 2.18 | 482,450 | — |
-| HRB | H&R BLOCK INC | greenblatt | ✅ | 100% | 45.75 | 8.08 | 50.18 | 624 | 1.13 | 26.72 | 1M | — |
-| HRB | H&R BLOCK INC | piotroski | ✅ | 89% | 45.75 | 8.08 | 50.18 | 624 | 1.13 | 26.72 | 1M | — |
-| EFC | Ellington Financial Inc. | lynch | ✅ | 75% | 11.40 | 9.58 | 0.62 | 6.47 | — | 9.53 | 1M | — |
-| CMC | COMMERCIAL METALS COMPANY | graham | ✅ | 89% | 56.25 | 9.60 | 1.34 | 13.96 | 2.34 | 1.18 | 1M | — |
-| TILE | INTERFACE INC | piotroski | ✅ | 89% | 31.42 | 16.03 | 2.90 | 18.12 | 2.34 | 0.88 | 492,344 | — |
-| UMBF | UMB FINANCIAL CORP | lynch | ✅ | 75% | 129 | 13.87 | 1.23 | 9.13 | — | 8.50 | 286,161 | — |
-| JJSF | J&J SNACK FOODS CORP. | lynch | ✅ | 75% | 94.28 | 28.06 | 1.91 | 6.79 | 2.72 | — | 177,346 | — |
-| BBWI | BATH & BODY WORKS, INC. | greenblatt | ✅ | 100% | 19.53 | 6.28 | — | -50.66 | 1.27 | — | 6M | — |
-| BJ | BJ’S WHOLESALE CLUB HOLDINGS | piotroski | ✅ | 89% | 104 | 23.76 | 6.25 | 26.32 | 0.75 | 2.42 | 2M | — |
-| SARO | StandardAero, Inc. | piotroski | ✅ | 89% | 27.04 | 32.58 | 3.39 | 10.40 | 2.20 | 1.46 | 3M | — |
-| IEX | IDEX CORP | piotroski | ✅ | 78% | 226 | 35.22 | 4.22 | 12.00 | 2.86 | 0.72 | 1M | — |
-| ULS | UL Solutions Inc. | piotroski | ✅ | 78% | 75.83 | 47.39 | 12.20 | 25.75 | 1.32 | 1.29 | 375,140 | — |
-| CGNX | COGNEX CORP | piotroski | ✅ | 89% | 46.48 | 68.35 | 5.28 | 7.67 | 3.80 | 0.35 | 2M | — |
-| USNA | USANA HEALTH SCIENCES, INC. | piotroski | ✅ | 78% | 12.88 | 22.21 | 0.45 | 2.02 | 2.24 | 0.29 | 164,496 | — |
-| VSAT | VIASAT, INC. | piotroski | ✅ | 78% | 60.46 | — | 1.75 | -0.73 | 2.41 | 2.25 | 2M | — |
-| THO | THOR Industries, Inc. | piotroski | ✅ | 78% | 78.63 | 23.26 | 0.97 | 4.17 | 1.77 | — | 475,172 | — |
-| TDAY | USA TODAY CO., INC. | piotroski | ✅ | 78% | 6.30 | 630 | 5.93 | 1.13 | 0.75 | 10.85 | 2M | — |
-| HCI | HCI Group, Inc. | buffett | ▫️ | 67% | 190 | 8.35 | 2.35 | 28.72 | — | 1.36 | 183,191 | — |
-| HCI | HCI Group, Inc. | graham | ▫️ | 56% | 190 | 8.35 | 2.35 | 28.72 | — | 1.36 | 183,191 | — |
-| HCI | HCI Group, Inc. | lynch | ▫️ | 50% | 190 | 8.35 | 2.35 | 28.72 | — | 1.36 | 183,191 | — |
-| HCI | HCI Group, Inc. | netnet | ▫️ | 25% | 190 | 8.35 | 2.35 | 28.72 | — | 1.36 | 183,191 | — |
-| HCI | HCI Group, Inc. | custom | ▫️ | 0% | 190 | 8.35 | 2.35 | 28.72 | — | 1.36 | 183,191 | — |
-| PURR | Hyperliquid Strategies Inc | graham | ▫️ | 67% | 7.74 | 2.41 | 0.33 | 16.31 | 41.62 | 0.10 | 8M | — |
-| PURR | Hyperliquid Strategies Inc | greenblatt | ▫️ | 67% | 7.74 | 2.41 | 0.33 | 16.31 | 41.62 | 0.10 | 8M | — |
-| PURR | Hyperliquid Strategies Inc | buffett | ▫️ | 50% | 7.74 | 2.41 | 0.33 | 16.31 | 41.62 | 0.10 | 8M | — |
-| PURR | Hyperliquid Strategies Inc | lynch | ▫️ | 50% | 7.74 | 2.41 | 0.33 | 16.31 | 41.62 | 0.10 | 8M | — |
-| PURR | Hyperliquid Strategies Inc | netnet | ▫️ | 25% | 7.74 | 2.41 | 0.33 | 16.31 | 41.62 | 0.10 | 8M | — |
-| PURR | Hyperliquid Strategies Inc | piotroski | ▫️ | 11% | 7.74 | 2.41 | 0.33 | 16.31 | 41.62 | 0.10 | 8M | — |
-| PURR | Hyperliquid Strategies Inc | custom | ▫️ | 0% | 7.74 | 2.41 | 0.33 | 16.31 | 41.62 | 0.10 | 8M | — |
-| UNIT | Uniti Group Inc. | greenblatt | ▫️ | 67% | 3.97 | 0.82 | 2.78 | 343 | 0.74 | 30.65 | 6M | — |
-| UNIT | Uniti Group Inc. | graham | ▫️ | 44% | 3.97 | 0.82 | 2.78 | 343 | 0.74 | 30.65 | 6M | — |
-| UNIT | Uniti Group Inc. | buffett | ▫️ | 33% | 3.97 | 0.82 | 2.78 | 343 | 0.74 | 30.65 | 6M | — |
-| UNIT | Uniti Group Inc. | lynch | ▫️ | 25% | 3.97 | 0.82 | 2.78 | 343 | 0.74 | 30.65 | 6M | — |
+| AMSC | AMERICAN SUPERCONDUCTOR CORP | greenblatt | ✅ | 100% | 19.38 | 6.35 | 1.53 | 24.09 | 2.39 | 0.33 | 63,077 | — |
+| ESE | ESCO TECHNOLOGIES INC. | lynch | ✅ | 100% | 216 | 18.70 | 3.63 | 19.42 | 1.35 | 0.56 | 323,258 | 5.89 |
+| MWA | MUELLER WATER PRODUCTS, INC. | lynch | ✅ | 100% | 24.09 | 17.09 | 3.29 | 19.26 | 4.45 | 0.76 | 1M | — |
+| MWA | MUELLER WATER PRODUCTS, INC. | piotroski | ✅ | 89% | 24.09 | 17.09 | 3.29 | 19.26 | 4.45 | 0.76 | 1M | — |
+| FHI | Federated Hermes, Inc. | greenblatt | ✅ | 100% | 58.98 | 11.50 | 3.70 | 33.69 | 2.75 | 0.81 | 16,765 | — |
+| FHI | Federated Hermes, Inc. | piotroski | ✅ | 89% | 58.98 | 11.50 | 3.70 | 33.69 | 2.75 | 0.81 | 16,765 | — |
+| CVSA | Covista Inc. | lynch | ✅ | 75% | 112 | 15.87 | 2.76 | 17.40 | 1.09 | 1.08 | 4,214 | — |
+| LII | LENNOX INTERNATIONAL INC | lynch | ✅ | 75% | 343 | 15.04 | 10.43 | 69.28 | 1.60 | 2.51 | 39,309 | — |
+| GGG | GRACO INC. | piotroski | ✅ | 89% | 72.11 | 23.41 | 4.60 | 19.66 | 3.15 | — | 2M | -1.77 |
+| GGG | GRACO INC. | buffett | ✅ | 83% | 72.11 | 23.41 | 4.60 | 19.66 | 3.15 | — | 2M | -1.77 |
+| EBF | ENNIS, INC. | piotroski | ✅ | 78% | 19.73 | 11.89 | 1.64 | 13.81 | 3.72 | 0.16 | 4,078 | — |
+| EBF | ENNIS, INC. | lynch | ✅ | 75% | 19.73 | 11.89 | 1.64 | 13.81 | 3.72 | 0.16 | 4,078 | — |
+| FICO | Fair Isaac Corp | piotroski | ✅ | 89% | 703 | 19.36 | — | -21.56 | 0.99 | -1.54 | 791,837 | 4.46 |
+| FICO | Fair Isaac Corp | lynch | ✅ | 75% | 703 | 19.36 | — | -21.56 | 0.99 | -1.54 | 791,837 | 4.46 |
+| CNA | CNA FINANCIAL CORPORATION | piotroski | ✅ | 78% | 48.73 | 10.39 | 1.14 | 11.00 | — | 4.98 | 261,131 | -0.80 |
+| TILE | INTERFACE INC | piotroski | ✅ | 89% | 30.93 | 15.78 | 2.86 | 18.12 | 2.34 | 0.88 | 14,261 | — |
+| AM | ANTERO MIDSTREAM CORPORATION | piotroski | ✅ | 78% | 20.10 | 23.37 | 4.91 | 20.95 | 3.41 | 1.98 | 3M | -11.13 |
+| PKE | PARK AEROSPACE CORP. | piotroski | ✅ | 100% | 22.62 | 40.39 | 3.50 | 8.67 | 18.24 | 0.09 | 16,138 | — |
+| PKE | PARK AEROSPACE CORP. | lynch | ✅ | 75% | 22.62 | 40.39 | 3.50 | 8.67 | 18.24 | 0.09 | 16,138 | — |
+| BCGWW | Binah Capital Group, Inc. | piotroski | ✅ | 78% | 0.06 | 1.50 | 0.06 | 12.63 | — | 2.84 | 2,136 | — |
+| ABM | ABM INDUSTRIES INCORPORATED | piotroski | ✅ | 89% | 54.77 | 21.15 | 1.92 | 9.09 | 1.48 | 1.95 | 327,637 | 13.84 |
+| DRS | Leonardo DRS, Inc. | piotroski | ✅ | 89% | 32.17 | 31.23 | 3.17 | 10.18 | 1.89 | — | 21,567 | — |
+| ARMK | Aramark | piotroski | ✅ | 100% | 56.09 | 34.62 | 4.31 | 12.42 | 1.00 | — | 352,588 | — |
+| FIGS | FIGS, Inc. | piotroski | ✅ | 89% | 19.65 | 103 | 8.06 | 7.83 | 4.94 | 0.33 | 265,370 | — |
+| PGC | PEAPACK-GLADSTONE FINANCIAL  | piotroski | ✅ | 78% | 43.75 | 20.83 | 1.18 | 5.67 | — | 10.43 | 2,396 | — |
+| LNT | ALLIANT ENERGY CORPORATION | piotroski | ✅ | 78% | 72.81 | 23.19 | 2.56 | 11.04 | 0.80 | — | 48,158 | — |
+| GSHD | GOOSEHEAD INSURANCE, INC. | lynch | ✅ | 75% | 45.47 | 43.72 | — | -29.14 | 1.60 | -6.05 | 254,199 | -62.21 |
+| CHRW | C.H. ROBINSON WORLDWIDE, INC | piotroski | ✅ | 78% | 141 | 29.10 | 9.25 | 31.81 | 1.53 | 1.74 | 1M | -13.62 |
+| FUL | FULLER H B CO | piotroski | ✅ | 78% | 48.58 | 17.67 | 1.34 | 7.59 | 1.70 | 1.59 | 442,774 | -7.75 |
+| TBCH | TURTLE BEACH CORPORATION | piotroski | ✅ | 78% | 15.14 | 19.66 | 2.41 | 12.24 | 1.98 | 1.09 | 17,074 | — |
+| AMSC | AMERICAN SUPERCONDUCTOR CORP | buffett | ▫️ | 67% | 19.38 | 6.35 | 1.53 | 24.09 | 2.39 | 0.33 | 63,077 | — |
+| AMSC | AMERICAN SUPERCONDUCTOR CORP | piotroski | ▫️ | 67% | 19.38 | 6.35 | 1.53 | 24.09 | 2.39 | 0.33 | 63,077 | — |
+| AMSC | AMERICAN SUPERCONDUCTOR CORP | graham | ▫️ | 56% | 19.38 | 6.35 | 1.53 | 24.09 | 2.39 | 0.33 | 63,077 | — |
+| AMSC | AMERICAN SUPERCONDUCTOR CORP | lynch | ▫️ | 50% | 19.38 | 6.35 | 1.53 | 24.09 | 2.39 | 0.33 | 63,077 | — |
+| AMSC | AMERICAN SUPERCONDUCTOR CORP | netnet | ▫️ | 50% | 19.38 | 6.35 | 1.53 | 24.09 | 2.39 | 0.33 | 63,077 | — |
+| AMSC | AMERICAN SUPERCONDUCTOR CORP | custom | ▫️ | 0% | 19.38 | 6.35 | 1.53 | 24.09 | 2.39 | 0.33 | 63,077 | — |
+| HGTY | HAGERTY, INC. | piotroski | ▫️ | 67% | 16.25 | — | — | 67.43 | — | 6.09 | 14,469 | — |
+| HGTY | HAGERTY, INC. | greenblatt | ▫️ | 67% | 16.25 | — | — | 67.43 | — | 6.09 | 14,469 | — |
+| HGTY | HAGERTY, INC. | buffett | ▫️ | 50% | 16.25 | — | — | 67.43 | — | 6.09 | 14,469 | — |
+| HGTY | HAGERTY, INC. | lynch | ▫️ | 25% | 16.25 | — | — | 67.43 | — | 6.09 | 14,469 | — |
+| HGTY | HAGERTY, INC. | netnet | ▫️ | 25% | 16.25 | — | — | 67.43 | — | 6.09 | 14,469 | — |
+| HGTY | HAGERTY, INC. | graham | ▫️ | 11% | 16.25 | — | — | 67.43 | — | 6.09 | 14,469 | — |
+| HGTY | HAGERTY, INC. | custom | ▫️ | 0% | 16.25 | — | — | 67.43 | — | 6.09 | 14,469 | — |
+| ESE | ESCO TECHNOLOGIES INC. | buffett | ▫️ | 67% | 216 | 18.70 | 3.63 | 19.42 | 1.35 | 0.56 | 323,258 | 5.89 |
+| ESE | ESCO TECHNOLOGIES INC. | graham | ▫️ | 56% | 216 | 18.70 | 3.63 | 19.42 | 1.35 | 0.56 | 323,258 | 5.89 |
+| ESE | ESCO TECHNOLOGIES INC. | piotroski | ▫️ | 56% | 216 | 18.70 | 3.63 | 19.42 | 1.35 | 0.56 | 323,258 | 5.89 |
+| ESE | ESCO TECHNOLOGIES INC. | greenblatt | ▫️ | 33% | 216 | 18.70 | 3.63 | 19.42 | 1.35 | 0.56 | 323,258 | 5.89 |
+| ESE | ESCO TECHNOLOGIES INC. | netnet | ▫️ | 25% | 216 | 18.70 | 3.63 | 19.42 | 1.35 | 0.56 | 323,258 | 5.89 |
+| ESE | ESCO TECHNOLOGIES INC. | custom | ▫️ | 0% | 216 | 18.70 | 3.63 | 19.42 | 1.35 | 0.56 | 323,258 | 5.89 |
+| MWA | MUELLER WATER PRODUCTS, INC. | graham | ▫️ | 67% | 24.09 | 17.09 | 3.29 | 19.26 | 4.45 | 0.76 | 1M | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
