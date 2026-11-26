@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-KRP,"Kimbell Royalty Partners, LP",piotroski,True,7,9,77.8,13.95,—,—,—,8.64,—,—,"543,590",—
-SAFX,"XCF Global, Inc.",greenblatt,True,3,3,100.0,0.04,0.09,0.17,197,0.11,10.14,1.76,9M,—
-KMT,KENNAMETAL INC.,graham,True,9,9,100.0,22.57,5.11,1.11,21.81,2.62,0.99,44.90,1M,—
-KMT,KENNAMETAL INC.,lynch,True,3,4,75.0,22.57,5.11,1.11,21.81,2.62,0.99,44.90,1M,—
-VRRM,VERRA MOBILITY CORPORATION,piotroski,True,9,9,100.0,1.77,2.08,0.97,46.64,2.09,4.62,5.89,6M,—
-SBC,SBC Medical Group Holdings Incorporated,lynch,True,3,4,75.0,5.69,11.38,2.36,20.54,3.78,0.47,5.21,"226,620",—
-BELFA,BEL FUSE INC /NJ,piotroski,True,8,9,88.9,162,—,—,14.46,3.02,0.98,—,"126,327",—
-LII,LENNOX INTERNATIONAL INC,lynch,True,3,4,75.0,350,15.36,10.65,69.28,1.60,2.51,130,"647,092",—
-KBR,"KBR, Inc.",piotroski,True,8,9,88.9,34.06,10.61,2.92,27.61,1.22,3.37,29.01,2M,—
-SHOE,"Shoe Station Group, Inc.",graham,True,8,9,88.9,11.16,5.87,0.45,7.58,3.76,0.74,32.72,2M,—
-FIVE,"Five Below, Inc.",piotroski,True,9,9,100.0,218,33.71,5.51,16.35,2.01,1.25,75.89,"977,379",—
-FIZZ,National Beverage Corp.,buffett,True,5,6,83.3,37.25,19.01,5.49,28.89,4.39,0.34,17.30,"261,728",—
-CW,CURTISS-WRIGHT CORPORATION,piotroski,True,8,9,88.9,447,34.74,6.64,19.11,1.44,1.06,140,"243,747",—
-STRA,"Strategic Education, Inc.",graham,True,8,9,88.9,53.34,9.86,0.76,7.69,1.27,0.24,92.54,"250,925",—
-STRA,"Strategic Education, Inc.",piotroski,True,8,9,88.9,53.34,9.86,0.76,7.69,1.27,0.24,92.54,"250,925",—
-BCO,BRINK’S CO,piotroski,True,7,9,77.8,123,26.27,18.86,71.91,1.51,24.96,26.26,"464,610",—
-DPZ,"Domino’s Pizza, Inc.",piotroski,True,8,9,88.9,362,20.58,—,-15.42,1.65,-1.44,—,"624,498",—
-ARMK,Aramark,piotroski,True,9,9,100.0,57.80,35.68,4.44,12.42,1.00,—,21.79,3M,—
-FUL,FULLER H B CO,piotroski,True,7,9,77.8,49.77,18.10,1.38,7.59,1.70,1.59,47.32,"445,631",—
-FET,"FORUM ENERGY TECHNOLOGIES, INC.",piotroski,True,7,9,77.8,74.09,—,3.02,-3.32,2.17,1.58,—,"125,363",—
-HCSG,"HEALTHCARE SERVICES GROUP, INC.",piotroski,True,9,9,100.0,25.43,31.40,3.64,11.58,3.38,—,11.28,"561,145",—
-KRP,"Kimbell Royalty Partners, LP",graham,False,3,9,33.3,13.95,—,—,—,8.64,—,—,"543,590",—
-KRP,"Kimbell Royalty Partners, LP",greenblatt,False,1,3,33.3,13.95,—,—,—,8.64,—,—,"543,590",—
-KRP,"Kimbell Royalty Partners, LP",lynch,False,1,4,25.0,13.95,—,—,—,8.64,—,—,"543,590",—
-KRP,"Kimbell Royalty Partners, LP",netnet,False,1,4,25.0,13.95,—,—,—,8.64,—,—,"543,590",—
-KRP,"Kimbell Royalty Partners, LP",buffett,False,1,6,16.7,13.95,—,—,—,8.64,—,—,"543,590",—
-KRP,"Kimbell Royalty Partners, LP",custom,False,0,0,0.0,13.95,—,—,—,8.64,—,—,"543,590",—
-SAFX,"XCF Global, Inc.",graham,False,4,9,44.4,0.04,0.09,0.17,197,0.11,10.14,1.76,9M,—
-SAFX,"XCF Global, Inc.",buffett,False,2,6,33.3,0.04,0.09,0.17,197,0.11,10.14,1.76,9M,—
-SAFX,"XCF Global, Inc.",lynch,False,1,4,25.0,0.04,0.09,0.17,197,0.11,10.14,1.76,9M,—
-SAFX,"XCF Global, Inc.",netnet,False,1,4,25.0,0.04,0.09,0.17,197,0.11,10.14,1.76,9M,—
-SAFX,"XCF Global, Inc.",piotroski,False,1,9,11.1,0.04,0.09,0.17,197,0.11,10.14,1.76,9M,—
-SAFX,"XCF Global, Inc.",custom,False,0,0,0.0,0.04,0.09,0.17,197,0.11,10.14,1.76,9M,—
-KMT,KENNAMETAL INC.,piotroski,False,6,9,66.7,22.57,5.11,1.11,21.81,2.62,0.99,44.90,1M,—
-KMT,KENNAMETAL INC.,greenblatt,False,2,3,66.7,22.57,5.11,1.11,21.81,2.62,0.99,44.90,1M,—
-KMT,KENNAMETAL INC.,buffett,False,3,6,50.0,22.57,5.11,1.11,21.81,2.62,0.99,44.90,1M,—
-KMT,KENNAMETAL INC.,netnet,False,2,4,50.0,22.57,5.11,1.11,21.81,2.62,0.99,44.90,1M,—
-KMT,KENNAMETAL INC.,custom,False,0,0,0.0,22.57,5.11,1.11,21.81,2.62,0.99,44.90,1M,—
-VRRM,VERRA MOBILITY CORPORATION,graham,False,7,9,77.8,1.77,2.08,0.97,46.64,2.09,4.62,5.89,6M,—
-VRRM,VERRA MOBILITY CORPORATION,greenblatt,False,2,3,66.7,1.77,2.08,0.97,46.64,2.09,4.62,5.89,6M,—
-VRRM,VERRA MOBILITY CORPORATION,buffett,False,3,6,50.0,1.77,2.08,0.97,46.64,2.09,4.62,5.89,6M,—
-VRRM,VERRA MOBILITY CORPORATION,lynch,False,1,4,25.0,1.77,2.08,0.97,46.64,2.09,4.62,5.89,6M,—
-VRRM,VERRA MOBILITY CORPORATION,netnet,False,1,4,25.0,1.77,2.08,0.97,46.64,2.09,4.62,5.89,6M,—
-VRRM,VERRA MOBILITY CORPORATION,custom,False,0,0,0.0,1.77,2.08,0.97,46.64,2.09,4.62,5.89,6M,—
-SBC,SBC Medical Group Holdings Incorporated,buffett,False,4,6,66.7,5.69,11.38,2.36,20.54,3.78,0.47,5.21,"226,620",—
-SBC,SBC Medical Group Holdings Incorporated,greenblatt,False,2,3,66.7,5.69,11.38,2.36,20.54,3.78,0.47,5.21,"226,620",—
-SBC,SBC Medical Group Holdings Incorporated,graham,False,5,9,55.6,5.69,11.38,2.36,20.54,3.78,0.47,5.21,"226,620",—
-SBC,SBC Medical Group Holdings Incorporated,netnet,False,2,4,50.0,5.69,11.38,2.36,20.54,3.78,0.47,5.21,"226,620",—
-SBC,SBC Medical Group Holdings Incorporated,piotroski,False,4,9,44.4,5.69,11.38,2.36,20.54,3.78,0.47,5.21,"226,620",—
-SBC,SBC Medical Group Holdings Incorporated,custom,False,0,0,0.0,5.69,11.38,2.36,20.54,3.78,0.47,5.21,"226,620",—
+DECK,DECKERS OUTDOOR CORP,greenblatt,True,3,3,100.0,85.56,12.19,4.99,40.97,3.54,—,52.04,3M,—
+DECK,DECKERS OUTDOOR CORP,buffett,True,5,6,83.3,85.56,12.19,4.99,40.97,3.54,—,52.04,3M,—
+DECK,DECKERS OUTDOOR CORP,piotroski,True,7,9,77.8,85.56,12.19,4.99,40.97,3.54,—,52.04,3M,—
+DECK,DECKERS OUTDOOR CORP,lynch,True,3,4,75.0,85.56,12.19,4.99,40.97,3.54,—,52.04,3M,—
+BKE,"BUCKLE, INC",greenblatt,True,3,3,100.0,43.56,10.52,5.20,49.39,1.89,1.33,27.93,"393,915",—
+BKE,"BUCKLE, INC",buffett,True,5,6,83.3,43.56,10.52,5.20,49.39,1.89,1.33,27.93,"393,915",—
+AREC,AMERICAN RESOURCES CORPORATION,greenblatt,True,3,3,100.0,0.74,1.18,0.68,58.44,2.19,0.80,3.92,12M,—
+UHS,"UNIVERSAL HEALTH SERVICES, INC.",piotroski,True,8,9,88.9,191,8.25,1.69,20.46,1.05,—,242,"605,602",—
+WTFC,WINTRUST FINANCIAL CORP,lynch,True,3,4,75.0,149,13.07,1.39,11.35,—,8.80,166,"553,159",—
+HST,"HOST HOTELS & RESORTS, INC.",piotroski,True,7,9,77.8,24.88,22.62,2.63,11.67,—,0.96,15.29,7M,—
+WAFD,"WAFD, INC.",piotroski,True,7,9,77.8,27.10,8.44,0.68,8.53,—,8.08,53.68,"539,594",—
+ATLC,Atlanticus Holdings Corporation,greenblatt,True,3,3,100.0,79.44,13.33,2.50,20.08,—,11.47,65.25,"61,554",—
+OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,31.09,45.06,5.94,13.20,1.91,0.30,9.01,"375,358",—
+RGA,"REINSURANCE GROUP OF AMERICA, INCORPORATED",piotroski,True,7,9,77.8,278,15.73,1.38,8.78,—,10.63,283,"575,323",—
+RGA,"REINSURANCE GROUP OF AMERICA, INCORPORATED",lynch,True,3,4,75.0,278,15.73,1.38,8.78,—,10.63,283,"575,323",—
+RSI,"Rush Street Interactive, Inc.",piotroski,True,7,9,77.8,11.62,37.48,18.63,22.62,1.93,2.41,2.09,2M,—
+RBC,RBC BEARINGS INCORPORATED,piotroski,True,7,9,77.8,477,52.49,4.49,8.56,2.18,0.52,147,"290,734",—
+RBC,RBC BEARINGS INCORPORATED,lynch,True,3,4,75.0,477,52.49,4.49,8.56,2.18,0.52,147,"290,734",—
+KNTK,KINETIK HOLDINGS INC.,lynch,True,3,4,75.0,54.70,20.80,—,-31.53,0.69,-7.37,—,"664,066",—
+CURB,Curbline Properties Corp.,piotroski,True,7,9,77.8,29.33,79.27,1.62,2.09,—,0.29,12.29,2M,—
+CURB,Curbline Properties Corp.,lynch,True,3,4,75.0,29.33,79.27,1.62,2.09,—,0.29,12.29,2M,—
+IEX,IDEX CORP,piotroski,True,7,9,77.8,225,35.14,4.21,12.00,2.86,0.72,87.83,"740,399",—
+FIGS,"FIGS, Inc.",piotroski,True,8,9,88.9,20.88,110,8.57,7.83,4.94,0.33,3.23,3M,—
+NPKI,NPK International Inc.,piotroski,True,7,9,77.8,8.38,18.62,2.05,11.09,1.43,0.26,6.44,"895,670",—
+DT,"Dynatrace, Inc.",lynch,True,3,4,75.0,47.37,87.72,5.51,6.23,1.35,0.69,10.22,4M,—
+TRU,TransUnion,piotroski,True,9,9,100.0,78.74,33.94,3.49,10.26,1.75,1.48,34.33,2M,—
+MPAA,"Motorcar Parts of America, Inc.",piotroski,True,7,9,77.8,7.60,12.26,0.57,4.66,1.46,2.83,13.63,"125,258",—
+TRC,TEJON RANCH CO.,piotroski,True,7,9,77.8,16.51,—,0.94,0.02,4.14,0.29,—,"124,670",—
+ARKO,ARKO Corp.,piotroski,True,7,9,77.8,3.38,22.53,1.45,8.51,1.66,11.85,2.80,"606,184",—
+ADT,ADT Inc.,piotroski,True,8,9,88.9,9.89,—,—,15.77,0.93,3.19,—,21M,—
+MNRO,"MONRO, INC.",piotroski,True,7,9,77.8,7.98,266,0.40,0.37,0.46,1.65,3.65,2M,—
+DECK,DECKERS OUTDOOR CORP,graham,False,7,9,77.8,85.56,12.19,4.99,40.97,3.54,—,52.04,3M,—
+DECK,DECKERS OUTDOOR CORP,netnet,False,1,4,25.0,85.56,12.19,4.99,40.97,3.54,—,52.04,3M,—
+DECK,DECKERS OUTDOOR CORP,custom,False,0,0,0.0,85.56,12.19,4.99,40.97,3.54,—,52.04,3M,—
+UROY,Uranium Royalty Corp.,graham,False,6,9,66.7,2.27,7.83,1.01,12.87,5.94,0.19,3.83,4M,—
+UROY,Uranium Royalty Corp.,greenblatt,False,2,3,66.7,2.27,7.83,1.01,12.87,5.94,0.19,3.83,4M,—
+UROY,Uranium Royalty Corp.,lynch,False,2,4,50.0,2.27,7.83,1.01,12.87,5.94,0.19,3.83,4M,—
+UROY,Uranium Royalty Corp.,netnet,False,2,4,50.0,2.27,7.83,1.01,12.87,5.94,0.19,3.83,4M,—
+UROY,Uranium Royalty Corp.,buffett,False,2,6,33.3,2.27,7.83,1.01,12.87,5.94,0.19,3.83,4M,—
+UROY,Uranium Royalty Corp.,piotroski,False,3,9,33.3,2.27,7.83,1.01,12.87,5.94,0.19,3.83,4M,—
+UROY,Uranium Royalty Corp.,custom,False,0,0,0.0,2.27,7.83,1.01,12.87,5.94,0.19,3.83,4M,—
+WES,"WESTERN MIDSTREAM PARTNERS, LP",lynch,False,2,4,50.0,40.52,—,—,—,1.34,—,—,2M,—
+WES,"WESTERN MIDSTREAM PARTNERS, LP",piotroski,False,4,9,44.4,40.52,—,—,—,1.34,—,—,2M,—
+WES,"WESTERN MIDSTREAM PARTNERS, LP",graham,False,3,9,33.3,40.52,—,—,—,1.34,—,—,2M,—
+WES,"WESTERN MIDSTREAM PARTNERS, LP",buffett,False,2,6,33.3,40.52,—,—,—,1.34,—,—,2M,—
+WES,"WESTERN MIDSTREAM PARTNERS, LP",greenblatt,False,1,3,33.3,40.52,—,—,—,1.34,—,—,2M,—
+WES,"WESTERN MIDSTREAM PARTNERS, LP",netnet,False,1,4,25.0,40.52,—,—,—,1.34,—,—,2M,—
+WES,"WESTERN MIDSTREAM PARTNERS, LP",custom,False,0,0,0.0,40.52,—,—,—,1.34,—,—,2M,—
+BKE,"BUCKLE, INC",graham,False,6,9,66.7,43.56,10.52,5.20,49.39,1.89,1.33,27.93,"393,915",—
+BKE,"BUCKLE, INC",piotroski,False,6,9,66.7,43.56,10.52,5.20,49.39,1.89,1.33,27.93,"393,915",—
