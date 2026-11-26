@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-NAGE,"NIAGEN BIOSCIENCE, INC.",greenblatt,True,3,3,100.0,1.91,9.53,2.13,22.71,4.86,0.39,2.01,"503,569",—
-FN,FABRINET,lynch,True,4,4,100.0,290,22.20,4.28,19.27,2.25,0.59,141,1M,—
-FN,FABRINET,buffett,True,5,6,83.3,290,22.20,4.28,19.27,2.25,0.59,141,1M,—
-IPAR,"INTERPARFUMS, INC.",buffett,True,5,6,83.3,143,27.22,5.21,19.12,2.99,—,56.84,"254,859",—
-IPAR,"INTERPARFUMS, INC.",lynch,True,3,4,75.0,143,27.22,5.21,19.12,2.99,—,56.84,"254,859",—
-AIT,"APPLIED INDUSTRIAL TECHNOLOGIES, INC.",piotroski,True,7,9,77.8,285,26.05,5.80,22.27,2.58,0.62,110,"200,527",—
-AIT,"APPLIED INDUSTRIAL TECHNOLOGIES, INC.",lynch,True,3,4,75.0,285,26.05,5.80,22.27,2.58,0.62,110,"200,527",—
-PGY,Pagaya Technologies Ltd.,piotroski,True,7,9,77.8,14.31,15.39,2.48,16.96,—,2.00,10.99,2M,—
-UTI,"UNIVERSAL TECHNICAL INSTITUTE, INC",piotroski,True,7,9,77.8,18.95,16.77,3.21,19.21,1.07,1.52,12.25,1M,—
-IBP,"Installed Building Products, Inc.",piotroski,True,8,9,88.9,237,24.39,9.12,37.39,3.03,1.91,75.33,"273,444",—
-MTCH,"Match Group, Inc.",piotroski,True,8,9,88.9,41.07,17.26,—,-242,1.42,—,—,3M,—
-MTCH,"Match Group, Inc.",lynch,True,3,4,75.0,41.07,17.26,—,-242,1.42,—,—,3M,—
-CSTM,Constellium SE,piotroski,True,9,9,100.0,20.40,10.62,3.04,28.68,1.29,4.60,17.02,2M,—
-WMS,"ADVANCED DRAINAGE SYSTEMS, INC.",buffett,True,5,6,83.3,121,22.24,5.10,22.94,2.42,1.37,53.88,"746,791",—
-CRVL,CORVEL CORPORATION,buffett,True,5,6,83.3,91.51,42.76,11.98,27.99,2.03,0.63,19.18,"171,881",—
-CRVL,CORVEL CORPORATION,piotroski,True,7,9,77.8,91.51,42.76,11.98,27.99,2.03,0.63,19.18,"171,881",—
-CRVL,CORVEL CORPORATION,lynch,True,3,4,75.0,91.51,42.76,11.98,27.99,2.03,0.63,19.18,"171,881",—
-AIR,AAR CORP,piotroski,True,7,9,77.8,104,21.50,2.35,11.02,2.84,—,69.66,"204,261",—
-AIR,AAR CORP,lynch,True,3,4,75.0,104,21.50,2.35,11.02,2.84,—,69.66,"204,261",—
-PKE,PARK AEROSPACE CORP.,piotroski,True,9,9,100.0,23.27,41.55,3.60,8.67,18.24,0.09,9.02,"174,643",—
-PKE,PARK AEROSPACE CORP.,lynch,True,3,4,75.0,23.27,41.55,3.60,8.67,18.24,0.09,9.02,"174,643",—
-OSW,OneSpaWorld Holdings Limited,piotroski,True,7,9,77.8,31.09,45.06,5.94,13.20,1.91,0.30,9.01,"375,364",—
-TBB,AT&T INC.,piotroski,True,7,9,77.8,18.04,5.93,1.02,17.36,0.91,—,34.72,"265,228",—
-SBH,"SALLY BEAUTY HOLDINGS, INC.",piotroski,True,8,9,88.9,17.97,8.90,2.00,22.51,2.37,2.27,20.22,1M,—
-LCII,LCI INDUSTRIES,piotroski,True,8,9,88.9,105,13.91,1.92,13.83,2.85,1.33,96.57,"216,714",—
-ROAD,"CONSTRUCTION PARTNERS, INC.",piotroski,True,7,9,77.8,72.12,28.51,3.60,12.62,1.60,2.48,33.76,"685,365",—
-ROAD,"CONSTRUCTION PARTNERS, INC.",lynch,True,3,4,75.0,72.12,28.51,3.60,12.62,1.60,2.48,33.76,"685,365",—
-IEX,IDEX CORP,piotroski,True,7,9,77.8,225,35.14,4.21,12.00,2.86,0.72,87.83,"740,394",—
-ALGN,"ALIGN TECHNOLOGY, INC.",piotroski,True,7,9,77.8,165,29.27,2.97,10.13,1.36,0.54,84.21,"762,508",—
-FLYW,FLYWIRE CORPORATION,piotroski,True,8,9,88.9,23.26,211,3.56,1.62,1.50,0.50,4.02,4M,—
-FUL,FULLER H B CO,piotroski,True,7,9,77.8,49.77,18.10,1.38,7.59,1.70,1.59,47.32,"449,589",—
-HCSG,"HEALTHCARE SERVICES GROUP, INC.",piotroski,True,9,9,100.0,25.43,31.40,3.64,11.58,3.38,—,11.28,"561,448",—
-MKSI,MKS INC.,piotroski,True,8,9,88.9,184,42.06,4.58,10.85,2.71,2.24,62.84,2M,—
-THO,"THOR Industries, Inc.",piotroski,True,7,9,77.8,79.32,23.47,0.98,4.17,1.77,—,78.52,"874,219",—
-J,Jacobs Solutions Inc.,piotroski,True,7,9,77.8,145,43.56,5.15,11.41,1.28,—,46.07,2M,—
-NAGE,"NIAGEN BIOSCIENCE, INC.",piotroski,False,6,9,66.7,1.91,9.53,2.13,22.71,4.86,0.39,2.01,"503,569",—
-NAGE,"NIAGEN BIOSCIENCE, INC.",graham,False,5,9,55.6,1.91,9.53,2.13,22.71,4.86,0.39,2.01,"503,569",—
-NAGE,"NIAGEN BIOSCIENCE, INC.",buffett,False,3,6,50.0,1.91,9.53,2.13,22.71,4.86,0.39,2.01,"503,569",—
-NAGE,"NIAGEN BIOSCIENCE, INC.",lynch,False,2,4,50.0,1.91,9.53,2.13,22.71,4.86,0.39,2.01,"503,569",—
-NAGE,"NIAGEN BIOSCIENCE, INC.",netnet,False,2,4,50.0,1.91,9.53,2.13,22.71,4.86,0.39,2.01,"503,569",—
-NAGE,"NIAGEN BIOSCIENCE, INC.",custom,False,0,0,0.0,1.91,9.53,2.13,22.71,4.86,0.39,2.01,"503,569",—
-MGY,Magnolia Oil & Gas Corp,piotroski,False,6,9,66.7,23.08,13.17,2.14,16.27,1.54,—,20.61,3M,—
-MGY,Magnolia Oil & Gas Corp,buffett,False,3,6,50.0,23.08,13.17,2.14,16.27,1.54,—,20.61,3M,—
-MGY,Magnolia Oil & Gas Corp,graham,False,4,9,44.4,23.08,13.17,2.14,16.27,1.54,—,20.61,3M,—
-MGY,Magnolia Oil & Gas Corp,greenblatt,False,1,3,33.3,23.08,13.17,2.14,16.27,1.54,—,20.61,3M,—
-MGY,Magnolia Oil & Gas Corp,lynch,False,1,4,25.0,23.08,13.17,2.14,16.27,1.54,—,20.61,3M,—
-MGY,Magnolia Oil & Gas Corp,netnet,False,1,4,25.0,23.08,13.17,2.14,16.27,1.54,—,20.61,3M,—
-MGY,Magnolia Oil & Gas Corp,custom,False,0,0,0.0,23.08,13.17,2.14,16.27,1.54,—,20.61,3M,—
-NKLR,TERRA INNOVATUM GLOBAL N.V.,greenblatt,False,2,3,66.7,1.89,0.19,—,-576,33.57,-2.13,—,"274,820",—
-NKLR,TERRA INNOVATUM GLOBAL N.V.,lynch,False,2,4,50.0,1.89,0.19,—,-576,33.57,-2.13,—,"274,820",—
+RIGL,RIGEL PHARMACEUTICALS INC,greenblatt,True,3,3,100.0,44.63,2.29,2.15,93.75,2.42,0.31,95.43,"182,000",—
+KRP,"Kimbell Royalty Partners, LP",piotroski,True,7,9,77.8,13.95,—,—,—,8.64,—,—,"543,590",—
+CF,"CF INDUSTRIES HOLDINGS, INC.",greenblatt,True,3,3,100.0,118,13.10,3.94,37.16,3.37,—,77.59,2M,—
+CF,"CF INDUSTRIES HOLDINGS, INC.",piotroski,True,8,9,88.9,118,13.10,3.94,37.16,3.37,—,77.59,2M,—
+CF,"CF INDUSTRIES HOLDINGS, INC.",buffett,True,5,6,83.3,118,13.10,3.94,37.16,3.37,—,77.59,2M,—
+CF,"CF INDUSTRIES HOLDINGS, INC.",lynch,True,3,4,75.0,118,13.10,3.94,37.16,3.37,—,77.59,2M,—
+WHD,"Cactus, Inc.",lynch,True,3,4,75.0,61.43,—,—,13.54,5.81,0.36,—,"476,209",—
+PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,295,12.88,3.94,30.71,—,5.14,196,"229,054",—
+ESNT,ESSENT GROUP LTD.,lynch,True,3,4,75.0,66.17,9.59,1.15,11.99,—,0.29,94.53,"555,224",—
+RRC,RANGE RESOURCES CORPORATION,piotroski,True,8,9,88.9,50.63,18.48,2.81,15.24,0.67,0.72,33.32,4M,—
+ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.18,4.57,0.13,4.91,1.93,0.73,1.14,"2,141",—
+AES,THE AES CORPORATION,greenblatt,True,3,3,100.0,15.02,11.92,2.64,22.40,0.77,—,12.70,7M,—
+CVSA,Covista Inc.,lynch,True,3,4,75.0,113,16.09,2.80,17.40,1.09,1.08,80.09,"224,113",—
+KRYS,"Krystal Biotech, Inc.",piotroski,True,8,9,88.9,345,50.48,8.48,16.80,9.95,0.09,79.16,"222,614",—
+IBP,"Installed Building Products, Inc.",piotroski,True,8,9,88.9,237,24.39,9.12,37.39,3.03,1.91,75.33,"273,428",—
+AGX,ARGAN INC,lynch,True,3,4,75.0,283,29.07,8.67,29.80,1.59,1.57,84.62,"360,064",—
+EG,"EVEREST GROUP, LTD.",piotroski,True,7,9,77.8,434,11.47,1.17,10.29,—,3.04,562,"514,144",—
+EG,"EVEREST GROUP, LTD.",lynch,True,3,4,75.0,434,11.47,1.17,10.29,—,3.04,562,"514,144",—
+CNA,CNA FINANCIAL CORPORATION,piotroski,True,7,9,77.8,49.00,10.45,1.15,11.00,—,4.98,67.10,"433,810",—
+AYI,ACUITY INC,piotroski,True,8,9,88.9,317,18.59,3.32,17.86,1.69,0.64,191,"215,642",—
+DCI,"Donaldson Company, Inc.",buffett,True,5,6,83.3,83.21,21.61,5.56,25.72,2.08,1.26,36.01,"575,352",—
+VCYT,"VERACYTE, INC.",piotroski,True,8,9,88.9,25.94,31.63,1.60,5.07,8.15,0.07,17.32,2M,—
+TILE,INTERFACE INC,piotroski,True,8,9,88.9,32.22,16.44,2.98,18.12,2.34,0.88,21.85,"418,933",—
+DRVN,Driven Brands Holdings Inc.,piotroski,True,7,9,77.8,11.55,13.59,2.47,18.27,0.75,4.42,9.46,"989,105",—
+PEN,"Penumbra, Inc",piotroski,True,8,9,88.9,324,71.58,8.91,12.45,6.64,0.28,60.79,"323,609",—
+MYRG,MYR GROUP INC.,piotroski,True,8,9,88.9,261,34.68,6.22,17.93,1.33,1.49,84.34,"202,959",—
+ARMK,Aramark,piotroski,True,9,9,100.0,57.80,35.68,4.44,12.42,1.00,—,21.79,3M,—
+WOR,"WORTHINGTON ENTERPRISES, INC",piotroski,True,8,9,88.9,58.02,18.48,2.81,15.20,2.37,0.80,38.20,"268,876",—
+ACTG,ACACIA RESEARCH CORP,piotroski,True,8,9,88.9,3.98,18.09,0.71,3.99,9.18,0.34,5.26,"136,593",—
+APG,APi Group Corporation,piotroski,True,8,9,88.9,45.20,—,5.51,8.86,1.50,1.62,—,3M,—
+SCI,SERVICE CORPORATION INTERNATIONAL,piotroski,True,7,9,77.8,73.33,19.30,6.39,33.12,0.55,—,31.33,2M,—
+PRVA,"Privia Health Group, Inc.",piotroski,True,7,9,77.8,25.84,144,4.52,3.11,1.60,0.78,4.81,2M,—
+WRBY,Warby Parker Inc.,piotroski,True,7,9,77.8,22.80,"2,280",7.76,0.45,2.35,0.96,0.81,5M,—
+BNED,"BARNES & NOBLE EDUCATION, INC.",piotroski,True,8,9,88.9,12.32,25.14,1.45,5.73,1.71,1.51,9.68,"148,163",—
+ADNT,Adient plc,piotroski,True,7,9,77.8,15.17,—,0.72,-1.04,1.09,—,—,1M,—
+TLYS,"TILLY’S, INC.",piotroski,True,7,9,77.8,3.99,—,1.41,-20.50,1.25,2.65,—,"69,249",—
+RIGL,RIGEL PHARMACEUTICALS INC,piotroski,False,6,9,66.7,44.63,2.29,2.15,93.75,2.42,0.31,95.43,"182,000",—
+RIGL,RIGEL PHARMACEUTICALS INC,graham,False,5,9,55.6,44.63,2.29,2.15,93.75,2.42,0.31,95.43,"182,000",—
+RIGL,RIGEL PHARMACEUTICALS INC,buffett,False,3,6,50.0,44.63,2.29,2.15,93.75,2.42,0.31,95.43,"182,000",—
+RIGL,RIGEL PHARMACEUTICALS INC,lynch,False,2,4,50.0,44.63,2.29,2.15,93.75,2.42,0.31,95.43,"182,000",—
+RIGL,RIGEL PHARMACEUTICALS INC,netnet,False,2,4,50.0,44.63,2.29,2.15,93.75,2.42,0.31,95.43,"182,000",—
+RIGL,RIGEL PHARMACEUTICALS INC,custom,False,0,0,0.0,44.63,2.29,2.15,93.75,2.42,0.31,95.43,"182,000",—
+KRP,"Kimbell Royalty Partners, LP",graham,False,3,9,33.3,13.95,—,—,—,8.64,—,—,"543,590",—
+KRP,"Kimbell Royalty Partners, LP",greenblatt,False,1,3,33.3,13.95,—,—,—,8.64,—,—,"543,590",—
+KRP,"Kimbell Royalty Partners, LP",lynch,False,1,4,25.0,13.95,—,—,—,8.64,—,—,"543,590",—
+KRP,"Kimbell Royalty Partners, LP",netnet,False,1,4,25.0,13.95,—,—,—,8.64,—,—,"543,590",—
+KRP,"Kimbell Royalty Partners, LP",buffett,False,1,6,16.7,13.95,—,—,—,8.64,—,—,"543,590",—
+KRP,"Kimbell Royalty Partners, LP",custom,False,0,0,0.0,13.95,—,—,—,8.64,—,—,"543,590",—
+CF,"CF INDUSTRIES HOLDINGS, INC.",graham,False,6,9,66.7,118,13.10,3.94,37.16,3.37,—,77.59,2M,—
+CF,"CF INDUSTRIES HOLDINGS, INC.",netnet,False,1,4,25.0,118,13.10,3.94,37.16,3.37,—,77.59,2M,—
