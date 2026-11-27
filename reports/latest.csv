@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-RIGL,RIGEL PHARMACEUTICALS INC,greenblatt,True,3,3,100.0,44.63,2.29,2.15,93.75,2.42,0.31,95.43,"182,000",—
-KRP,"Kimbell Royalty Partners, LP",piotroski,True,7,9,77.8,13.95,—,—,—,8.64,—,—,"543,590",—
-CF,"CF INDUSTRIES HOLDINGS, INC.",greenblatt,True,3,3,100.0,118,13.10,3.94,37.16,3.37,—,77.59,2M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",piotroski,True,8,9,88.9,118,13.10,3.94,37.16,3.37,—,77.59,2M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",buffett,True,5,6,83.3,118,13.10,3.94,37.16,3.37,—,77.59,2M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",lynch,True,3,4,75.0,118,13.10,3.94,37.16,3.37,—,77.59,2M,—
-WHD,"Cactus, Inc.",lynch,True,3,4,75.0,61.43,—,—,13.54,5.81,0.36,—,"476,209",—
-PRI,"Primerica, Inc.",piotroski,True,8,9,88.9,295,12.88,3.94,30.71,—,5.14,196,"229,054",—
-ESNT,ESSENT GROUP LTD.,lynch,True,3,4,75.0,66.17,9.59,1.15,11.99,—,0.29,94.53,"555,224",—
-RRC,RANGE RESOURCES CORPORATION,piotroski,True,8,9,88.9,50.63,18.48,2.81,15.24,0.67,0.72,33.32,4M,—
-ANNAW,"AleAnna, Inc.",piotroski,True,7,9,77.8,0.18,4.57,0.13,4.91,1.93,0.73,1.14,"2,141",—
-AES,THE AES CORPORATION,greenblatt,True,3,3,100.0,15.02,11.92,2.64,22.40,0.77,—,12.70,7M,—
-CVSA,Covista Inc.,lynch,True,3,4,75.0,113,16.09,2.80,17.40,1.09,1.08,80.09,"224,113",—
-KRYS,"Krystal Biotech, Inc.",piotroski,True,8,9,88.9,345,50.48,8.48,16.80,9.95,0.09,79.16,"222,614",—
-IBP,"Installed Building Products, Inc.",piotroski,True,8,9,88.9,237,24.39,9.12,37.39,3.03,1.91,75.33,"273,428",—
+PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",greenblatt,True,3,3,100.0,33.14,6.71,4.28,63.82,3.15,1.38,29.34,"411,588",—
+PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",piotroski,True,8,9,88.9,33.14,6.71,4.28,63.82,3.15,1.38,29.34,"411,588",—
+KMT,KENNAMETAL INC.,graham,True,9,9,100.0,22.57,5.11,1.11,21.81,2.62,0.99,44.90,1M,—
+KMT,KENNAMETAL INC.,lynch,True,3,4,75.0,22.57,5.11,1.11,21.81,2.62,0.99,44.90,1M,—
+AROC,"Archrock, Inc.",piotroski,True,8,9,88.9,26.88,14.69,3.15,21.61,1.54,1.92,18.75,2M,—
 AGX,ARGAN INC,lynch,True,3,4,75.0,283,29.07,8.67,29.80,1.59,1.57,84.62,"360,064",—
-EG,"EVEREST GROUP, LTD.",piotroski,True,7,9,77.8,434,11.47,1.17,10.29,—,3.04,562,"514,144",—
-EG,"EVEREST GROUP, LTD.",lynch,True,3,4,75.0,434,11.47,1.17,10.29,—,3.04,562,"514,144",—
-CNA,CNA FINANCIAL CORPORATION,piotroski,True,7,9,77.8,49.00,10.45,1.15,11.00,—,4.98,67.10,"433,810",—
-AYI,ACUITY INC,piotroski,True,8,9,88.9,317,18.59,3.32,17.86,1.69,0.64,191,"215,642",—
-DCI,"Donaldson Company, Inc.",buffett,True,5,6,83.3,83.21,21.61,5.56,25.72,2.08,1.26,36.01,"575,352",—
-VCYT,"VERACYTE, INC.",piotroski,True,8,9,88.9,25.94,31.63,1.60,5.07,8.15,0.07,17.32,2M,—
-TILE,INTERFACE INC,piotroski,True,8,9,88.9,32.22,16.44,2.98,18.12,2.34,0.88,21.85,"418,933",—
+WWD,"WOODWARD, INC.",piotroski,True,7,9,77.8,344,36.27,8.62,23.77,2.04,1.19,92.35,"912,408",—
 DRVN,Driven Brands Holdings Inc.,piotroski,True,7,9,77.8,11.55,13.59,2.47,18.27,0.75,4.42,9.46,"989,105",—
-PEN,"Penumbra, Inc",piotroski,True,8,9,88.9,324,71.58,8.91,12.45,6.64,0.28,60.79,"323,609",—
-MYRG,MYR GROUP INC.,piotroski,True,8,9,88.9,261,34.68,6.22,17.93,1.33,1.49,84.34,"202,959",—
-ARMK,Aramark,piotroski,True,9,9,100.0,57.80,35.68,4.44,12.42,1.00,—,21.79,3M,—
+FHN,FIRST HORIZON CORP,piotroski,True,7,9,77.8,22.36,11.96,1.29,11.10,—,8.45,26.99,5M,—
+AGCO,AGCO CORP /DE,piotroski,True,8,9,88.9,107,10.94,1.86,17.00,1.39,1.72,112,1M,—
+AIZ,"Assurant, Inc.",piotroski,True,8,9,88.9,326,19.24,2.83,14.86,—,5.18,209,"349,125",—
+DLX,DELUXE CORPORATION,piotroski,True,7,9,77.8,26.10,14.50,1.74,12.06,1.04,—,24.61,"401,505",—
+OGE,OGE ENERGY CORP.,piotroski,True,7,9,77.8,51.39,22.15,2.09,9.46,0.78,1.89,35.82,3M,—
+MD,"Pediatrix Medical Group, Inc.",piotroski,True,7,9,77.8,30.48,15.71,3.00,19.10,1.66,1.59,21.05,"685,356",—
 WOR,"WORTHINGTON ENTERPRISES, INC",piotroski,True,8,9,88.9,58.02,18.48,2.81,15.20,2.37,0.80,38.20,"268,876",—
-ACTG,ACACIA RESEARCH CORP,piotroski,True,8,9,88.9,3.98,18.09,0.71,3.99,9.18,0.34,5.26,"136,593",—
-APG,APi Group Corporation,piotroski,True,8,9,88.9,45.20,—,5.51,8.86,1.50,1.62,—,3M,—
-SCI,SERVICE CORPORATION INTERNATIONAL,piotroski,True,7,9,77.8,73.33,19.30,6.39,33.12,0.55,—,31.33,2M,—
-PRVA,"Privia Health Group, Inc.",piotroski,True,7,9,77.8,25.84,144,4.52,3.11,1.60,0.78,4.81,2M,—
-WRBY,Warby Parker Inc.,piotroski,True,7,9,77.8,22.80,"2,280",7.76,0.45,2.35,0.96,0.81,5M,—
-BNED,"BARNES & NOBLE EDUCATION, INC.",piotroski,True,8,9,88.9,12.32,25.14,1.45,5.73,1.71,1.51,9.68,"148,163",—
-ADNT,Adient plc,piotroski,True,7,9,77.8,15.17,—,0.72,-1.04,1.09,—,—,1M,—
-TLYS,"TILLY’S, INC.",piotroski,True,7,9,77.8,3.99,—,1.41,-20.50,1.25,2.65,—,"69,249",—
-RIGL,RIGEL PHARMACEUTICALS INC,piotroski,False,6,9,66.7,44.63,2.29,2.15,93.75,2.42,0.31,95.43,"182,000",—
-RIGL,RIGEL PHARMACEUTICALS INC,graham,False,5,9,55.6,44.63,2.29,2.15,93.75,2.42,0.31,95.43,"182,000",—
-RIGL,RIGEL PHARMACEUTICALS INC,buffett,False,3,6,50.0,44.63,2.29,2.15,93.75,2.42,0.31,95.43,"182,000",—
-RIGL,RIGEL PHARMACEUTICALS INC,lynch,False,2,4,50.0,44.63,2.29,2.15,93.75,2.42,0.31,95.43,"182,000",—
-RIGL,RIGEL PHARMACEUTICALS INC,netnet,False,2,4,50.0,44.63,2.29,2.15,93.75,2.42,0.31,95.43,"182,000",—
-RIGL,RIGEL PHARMACEUTICALS INC,custom,False,0,0,0.0,44.63,2.29,2.15,93.75,2.42,0.31,95.43,"182,000",—
-KRP,"Kimbell Royalty Partners, LP",graham,False,3,9,33.3,13.95,—,—,—,8.64,—,—,"543,590",—
-KRP,"Kimbell Royalty Partners, LP",greenblatt,False,1,3,33.3,13.95,—,—,—,8.64,—,—,"543,590",—
-KRP,"Kimbell Royalty Partners, LP",lynch,False,1,4,25.0,13.95,—,—,—,8.64,—,—,"543,590",—
-KRP,"Kimbell Royalty Partners, LP",netnet,False,1,4,25.0,13.95,—,—,—,8.64,—,—,"543,590",—
-KRP,"Kimbell Royalty Partners, LP",buffett,False,1,6,16.7,13.95,—,—,—,8.64,—,—,"543,590",—
-KRP,"Kimbell Royalty Partners, LP",custom,False,0,0,0.0,13.95,—,—,—,8.64,—,—,"543,590",—
-CF,"CF INDUSTRIES HOLDINGS, INC.",graham,False,6,9,66.7,118,13.10,3.94,37.16,3.37,—,77.59,2M,—
-CF,"CF INDUSTRIES HOLDINGS, INC.",netnet,False,1,4,25.0,118,13.10,3.94,37.16,3.37,—,77.59,2M,—
+NMRK,"NEWMARK GROUP, INC.",piotroski,True,8,9,88.9,10.58,15.56,1.83,8.63,1.05,2.24,9.39,3M,—
+CPRI,CAPRI HOLDINGS LIMITED,piotroski,True,7,9,77.8,17.99,15.78,26.95,171,1.21,39.38,4.14,3M,—
+MCS,MARCUS CORP,piotroski,True,7,9,77.8,26.23,64.65,1.79,2.77,0.40,—,11.55,"184,481",—
+WWW,"WOLVERINE WORLD WIDE, INC.",piotroski,True,7,9,77.8,25.34,22.23,5.07,23.48,1.40,—,11.32,"971,957",—
+USNA,"USANA HEALTH SCIENCES, INC.",piotroski,True,7,9,77.8,12.46,21.48,0.43,2.02,2.24,0.29,19.35,"154,439",—
+IPGP,IPG PHOTONICS CORP,piotroski,True,7,9,77.8,60.55,82.95,1.21,1.46,6.08,0.14,28.63,"410,529",—
+PTON,"Peloton Interactive, Inc.",piotroski,True,8,9,88.9,5.68,40.57,—,-45.24,2.84,-15.72,—,9M,—
+GXO,"GXO Logistics, Inc.",piotroski,True,7,9,77.8,55.04,197,2.15,1.07,0.85,—,12.71,"812,880",—
+PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",graham,False,5,9,55.6,33.14,6.71,4.28,63.82,3.15,1.38,29.34,"411,588",—
+PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",netnet,False,2,4,50.0,33.14,6.71,4.28,63.82,3.15,1.38,29.34,"411,588",—
+PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",buffett,False,2,6,33.3,33.14,6.71,4.28,63.82,3.15,1.38,29.34,"411,588",—
+PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",lynch,False,1,4,25.0,33.14,6.71,4.28,63.82,3.15,1.38,29.34,"411,588",—
+PSIX,"POWER SOLUTIONS INTERNATIONAL, INC.",custom,False,0,0,0.0,33.14,6.71,4.28,63.82,3.15,1.38,29.34,"411,588",—
+KMT,KENNAMETAL INC.,piotroski,False,6,9,66.7,22.57,5.11,1.11,21.81,2.62,0.99,44.90,1M,—
+KMT,KENNAMETAL INC.,greenblatt,False,2,3,66.7,22.57,5.11,1.11,21.81,2.62,0.99,44.90,1M,—
+KMT,KENNAMETAL INC.,buffett,False,3,6,50.0,22.57,5.11,1.11,21.81,2.62,0.99,44.90,1M,—
+KMT,KENNAMETAL INC.,netnet,False,2,4,50.0,22.57,5.11,1.11,21.81,2.62,0.99,44.90,1M,—
+KMT,KENNAMETAL INC.,custom,False,0,0,0.0,22.57,5.11,1.11,21.81,2.62,0.99,44.90,1M,—
+UNG,"United States Natural Gas Fund, LP",piotroski,False,5,9,55.6,10.30,—,—,—,—,—,—,18M,—
+UNG,"United States Natural Gas Fund, LP",greenblatt,False,1,3,33.3,10.30,—,—,—,—,—,—,18M,—
+UNG,"United States Natural Gas Fund, LP",lynch,False,1,4,25.0,10.30,—,—,—,—,—,—,18M,—
+UNG,"United States Natural Gas Fund, LP",netnet,False,1,4,25.0,10.30,—,—,—,—,—,—,18M,—
+UNG,"United States Natural Gas Fund, LP",buffett,False,1,6,16.7,10.30,—,—,—,—,—,—,18M,—
+UNG,"United States Natural Gas Fund, LP",graham,False,0,9,0.0,10.30,—,—,—,—,—,—,18M,—
+UNG,"United States Natural Gas Fund, LP",custom,False,0,0,0.0,10.30,—,—,—,—,—,—,18M,—
+AROC,"Archrock, Inc.",buffett,False,3,6,50.0,26.88,14.69,3.15,21.61,1.54,1.92,18.75,2M,—
+AROC,"Archrock, Inc.",graham,False,4,9,44.4,26.88,14.69,3.15,21.61,1.54,1.92,18.75,2M,—
+AROC,"Archrock, Inc.",greenblatt,False,1,3,33.3,26.88,14.69,3.15,21.61,1.54,1.92,18.75,2M,—
+AROC,"Archrock, Inc.",lynch,False,1,4,25.0,26.88,14.69,3.15,21.61,1.54,1.92,18.75,2M,—
+AROC,"Archrock, Inc.",netnet,False,1,4,25.0,26.88,14.69,3.15,21.61,1.54,1.92,18.75,2M,—
+AROC,"Archrock, Inc.",custom,False,0,0,0.0,26.88,14.69,3.15,21.61,1.54,1.92,18.75,2M,—
+AGX,ARGAN INC,buffett,False,4,6,66.7,283,29.07,8.67,29.80,1.59,1.57,84.62,"360,064",—
+AGX,ARGAN INC,piotroski,False,6,9,66.7,283,29.07,8.67,29.80,1.59,1.57,84.62,"360,064",—
+AGX,ARGAN INC,greenblatt,False,2,3,66.7,283,29.07,8.67,29.80,1.59,1.57,84.62,"360,064",—
+AGX,ARGAN INC,graham,False,5,9,55.6,283,29.07,8.67,29.80,1.59,1.57,84.62,"360,064",—

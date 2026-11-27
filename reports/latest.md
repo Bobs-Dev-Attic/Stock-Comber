@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-11-26 23:52 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-11-27 05:34 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **36** strategy matches passed.
+Screened **75** companies · **23** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| RIGL | RIGEL PHARMACEUTICALS INC | greenblatt | ✅ | 100% | 44.63 | 2.29 | 2.15 | 93.75 | 2.42 | 0.31 | 182,000 | — |
-| KRP | Kimbell Royalty Partners, LP | piotroski | ✅ | 78% | 13.95 | — | — | — | 8.64 | — | 543,590 | — |
-| CF | CF INDUSTRIES HOLDINGS, INC. | greenblatt | ✅ | 100% | 118 | 13.10 | 3.94 | 37.16 | 3.37 | — | 2M | — |
-| CF | CF INDUSTRIES HOLDINGS, INC. | piotroski | ✅ | 89% | 118 | 13.10 | 3.94 | 37.16 | 3.37 | — | 2M | — |
-| CF | CF INDUSTRIES HOLDINGS, INC. | buffett | ✅ | 83% | 118 | 13.10 | 3.94 | 37.16 | 3.37 | — | 2M | — |
-| CF | CF INDUSTRIES HOLDINGS, INC. | lynch | ✅ | 75% | 118 | 13.10 | 3.94 | 37.16 | 3.37 | — | 2M | — |
-| WHD | Cactus, Inc. | lynch | ✅ | 75% | 61.43 | — | — | 13.54 | 5.81 | 0.36 | 476,209 | — |
-| PRI | Primerica, Inc. | piotroski | ✅ | 89% | 295 | 12.88 | 3.94 | 30.71 | — | 5.14 | 229,054 | — |
-| ESNT | ESSENT GROUP LTD. | lynch | ✅ | 75% | 66.17 | 9.59 | 1.15 | 11.99 | — | 0.29 | 555,224 | — |
-| RRC | RANGE RESOURCES CORPORATION | piotroski | ✅ | 89% | 50.63 | 18.48 | 2.81 | 15.24 | 0.67 | 0.72 | 4M | — |
-| ANNAW | AleAnna, Inc. | piotroski | ✅ | 78% | 0.18 | 4.57 | 0.13 | 4.91 | 1.93 | 0.73 | 2,141 | — |
-| AES | THE AES CORPORATION | greenblatt | ✅ | 100% | 15.02 | 11.92 | 2.64 | 22.40 | 0.77 | — | 7M | — |
-| CVSA | Covista Inc. | lynch | ✅ | 75% | 113 | 16.09 | 2.80 | 17.40 | 1.09 | 1.08 | 224,113 | — |
-| KRYS | Krystal Biotech, Inc. | piotroski | ✅ | 89% | 345 | 50.48 | 8.48 | 16.80 | 9.95 | 0.09 | 222,614 | — |
-| IBP | Installed Building Products, | piotroski | ✅ | 89% | 237 | 24.39 | 9.12 | 37.39 | 3.03 | 1.91 | 273,428 | — |
+| PSIX | POWER SOLUTIONS INTERNATIONA | greenblatt | ✅ | 100% | 33.14 | 6.71 | 4.28 | 63.82 | 3.15 | 1.38 | 411,588 | — |
+| PSIX | POWER SOLUTIONS INTERNATIONA | piotroski | ✅ | 89% | 33.14 | 6.71 | 4.28 | 63.82 | 3.15 | 1.38 | 411,588 | — |
+| KMT | KENNAMETAL INC. | graham | ✅ | 100% | 22.57 | 5.11 | 1.11 | 21.81 | 2.62 | 0.99 | 1M | — |
+| KMT | KENNAMETAL INC. | lynch | ✅ | 75% | 22.57 | 5.11 | 1.11 | 21.81 | 2.62 | 0.99 | 1M | — |
+| AROC | Archrock, Inc. | piotroski | ✅ | 89% | 26.88 | 14.69 | 3.15 | 21.61 | 1.54 | 1.92 | 2M | — |
 | AGX | ARGAN INC | lynch | ✅ | 75% | 283 | 29.07 | 8.67 | 29.80 | 1.59 | 1.57 | 360,064 | — |
-| EG | EVEREST GROUP, LTD. | piotroski | ✅ | 78% | 434 | 11.47 | 1.17 | 10.29 | — | 3.04 | 514,144 | — |
-| EG | EVEREST GROUP, LTD. | lynch | ✅ | 75% | 434 | 11.47 | 1.17 | 10.29 | — | 3.04 | 514,144 | — |
-| CNA | CNA FINANCIAL CORPORATION | piotroski | ✅ | 78% | 49.00 | 10.45 | 1.15 | 11.00 | — | 4.98 | 433,810 | — |
-| AYI | ACUITY INC | piotroski | ✅ | 89% | 317 | 18.59 | 3.32 | 17.86 | 1.69 | 0.64 | 215,642 | — |
-| DCI | Donaldson Company, Inc. | buffett | ✅ | 83% | 83.21 | 21.61 | 5.56 | 25.72 | 2.08 | 1.26 | 575,352 | — |
-| VCYT | VERACYTE, INC. | piotroski | ✅ | 89% | 25.94 | 31.63 | 1.60 | 5.07 | 8.15 | 0.07 | 2M | — |
-| TILE | INTERFACE INC | piotroski | ✅ | 89% | 32.22 | 16.44 | 2.98 | 18.12 | 2.34 | 0.88 | 418,933 | — |
+| WWD | WOODWARD, INC. | piotroski | ✅ | 78% | 344 | 36.27 | 8.62 | 23.77 | 2.04 | 1.19 | 912,408 | — |
 | DRVN | Driven Brands Holdings Inc. | piotroski | ✅ | 78% | 11.55 | 13.59 | 2.47 | 18.27 | 0.75 | 4.42 | 989,105 | — |
-| PEN | Penumbra, Inc | piotroski | ✅ | 89% | 324 | 71.58 | 8.91 | 12.45 | 6.64 | 0.28 | 323,609 | — |
-| MYRG | MYR GROUP INC. | piotroski | ✅ | 89% | 261 | 34.68 | 6.22 | 17.93 | 1.33 | 1.49 | 202,959 | — |
-| ARMK | Aramark | piotroski | ✅ | 100% | 57.80 | 35.68 | 4.44 | 12.42 | 1.00 | — | 3M | — |
+| FHN | FIRST HORIZON CORP | piotroski | ✅ | 78% | 22.36 | 11.96 | 1.29 | 11.10 | — | 8.45 | 5M | — |
+| AGCO | AGCO CORP /DE | piotroski | ✅ | 89% | 107 | 10.94 | 1.86 | 17.00 | 1.39 | 1.72 | 1M | — |
+| AIZ | Assurant, Inc. | piotroski | ✅ | 89% | 326 | 19.24 | 2.83 | 14.86 | — | 5.18 | 349,125 | — |
+| DLX | DELUXE CORPORATION | piotroski | ✅ | 78% | 26.10 | 14.50 | 1.74 | 12.06 | 1.04 | — | 401,505 | — |
+| OGE | OGE ENERGY CORP. | piotroski | ✅ | 78% | 51.39 | 22.15 | 2.09 | 9.46 | 0.78 | 1.89 | 3M | — |
+| MD | Pediatrix Medical Group, Inc | piotroski | ✅ | 78% | 30.48 | 15.71 | 3.00 | 19.10 | 1.66 | 1.59 | 685,356 | — |
 | WOR | WORTHINGTON ENTERPRISES, INC | piotroski | ✅ | 89% | 58.02 | 18.48 | 2.81 | 15.20 | 2.37 | 0.80 | 268,876 | — |
-| ACTG | ACACIA RESEARCH CORP | piotroski | ✅ | 89% | 3.98 | 18.09 | 0.71 | 3.99 | 9.18 | 0.34 | 136,593 | — |
-| APG | APi Group Corporation | piotroski | ✅ | 89% | 45.20 | — | 5.51 | 8.86 | 1.50 | 1.62 | 3M | — |
-| SCI | SERVICE CORPORATION INTERNAT | piotroski | ✅ | 78% | 73.33 | 19.30 | 6.39 | 33.12 | 0.55 | — | 2M | — |
-| PRVA | Privia Health Group, Inc. | piotroski | ✅ | 78% | 25.84 | 144 | 4.52 | 3.11 | 1.60 | 0.78 | 2M | — |
-| WRBY | Warby Parker Inc. | piotroski | ✅ | 78% | 22.80 | 2,280 | 7.76 | 0.45 | 2.35 | 0.96 | 5M | — |
-| BNED | BARNES & NOBLE EDUCATION, IN | piotroski | ✅ | 89% | 12.32 | 25.14 | 1.45 | 5.73 | 1.71 | 1.51 | 148,163 | — |
-| ADNT | Adient plc | piotroski | ✅ | 78% | 15.17 | — | 0.72 | -1.04 | 1.09 | — | 1M | — |
-| TLYS | TILLY’S, INC. | piotroski | ✅ | 78% | 3.99 | — | 1.41 | -20.50 | 1.25 | 2.65 | 69,249 | — |
-| RIGL | RIGEL PHARMACEUTICALS INC | piotroski | ▫️ | 67% | 44.63 | 2.29 | 2.15 | 93.75 | 2.42 | 0.31 | 182,000 | — |
-| RIGL | RIGEL PHARMACEUTICALS INC | graham | ▫️ | 56% | 44.63 | 2.29 | 2.15 | 93.75 | 2.42 | 0.31 | 182,000 | — |
-| RIGL | RIGEL PHARMACEUTICALS INC | buffett | ▫️ | 50% | 44.63 | 2.29 | 2.15 | 93.75 | 2.42 | 0.31 | 182,000 | — |
-| RIGL | RIGEL PHARMACEUTICALS INC | lynch | ▫️ | 50% | 44.63 | 2.29 | 2.15 | 93.75 | 2.42 | 0.31 | 182,000 | — |
-| RIGL | RIGEL PHARMACEUTICALS INC | netnet | ▫️ | 50% | 44.63 | 2.29 | 2.15 | 93.75 | 2.42 | 0.31 | 182,000 | — |
-| RIGL | RIGEL PHARMACEUTICALS INC | custom | ▫️ | 0% | 44.63 | 2.29 | 2.15 | 93.75 | 2.42 | 0.31 | 182,000 | — |
-| KRP | Kimbell Royalty Partners, LP | graham | ▫️ | 33% | 13.95 | — | — | — | 8.64 | — | 543,590 | — |
-| KRP | Kimbell Royalty Partners, LP | greenblatt | ▫️ | 33% | 13.95 | — | — | — | 8.64 | — | 543,590 | — |
-| KRP | Kimbell Royalty Partners, LP | lynch | ▫️ | 25% | 13.95 | — | — | — | 8.64 | — | 543,590 | — |
-| KRP | Kimbell Royalty Partners, LP | netnet | ▫️ | 25% | 13.95 | — | — | — | 8.64 | — | 543,590 | — |
-| KRP | Kimbell Royalty Partners, LP | buffett | ▫️ | 17% | 13.95 | — | — | — | 8.64 | — | 543,590 | — |
-| KRP | Kimbell Royalty Partners, LP | custom | ▫️ | 0% | 13.95 | — | — | — | 8.64 | — | 543,590 | — |
-| CF | CF INDUSTRIES HOLDINGS, INC. | graham | ▫️ | 67% | 118 | 13.10 | 3.94 | 37.16 | 3.37 | — | 2M | — |
-| CF | CF INDUSTRIES HOLDINGS, INC. | netnet | ▫️ | 25% | 118 | 13.10 | 3.94 | 37.16 | 3.37 | — | 2M | — |
+| NMRK | NEWMARK GROUP, INC. | piotroski | ✅ | 89% | 10.58 | 15.56 | 1.83 | 8.63 | 1.05 | 2.24 | 3M | — |
+| CPRI | CAPRI HOLDINGS LIMITED | piotroski | ✅ | 78% | 17.99 | 15.78 | 26.95 | 171 | 1.21 | 39.38 | 3M | — |
+| MCS | MARCUS CORP | piotroski | ✅ | 78% | 26.23 | 64.65 | 1.79 | 2.77 | 0.40 | — | 184,481 | — |
+| WWW | WOLVERINE WORLD WIDE, INC. | piotroski | ✅ | 78% | 25.34 | 22.23 | 5.07 | 23.48 | 1.40 | — | 971,957 | — |
+| USNA | USANA HEALTH SCIENCES, INC. | piotroski | ✅ | 78% | 12.46 | 21.48 | 0.43 | 2.02 | 2.24 | 0.29 | 154,439 | — |
+| IPGP | IPG PHOTONICS CORP | piotroski | ✅ | 78% | 60.55 | 82.95 | 1.21 | 1.46 | 6.08 | 0.14 | 410,529 | — |
+| PTON | Peloton Interactive, Inc. | piotroski | ✅ | 89% | 5.68 | 40.57 | — | -45.24 | 2.84 | -15.72 | 9M | — |
+| GXO | GXO Logistics, Inc. | piotroski | ✅ | 78% | 55.04 | 197 | 2.15 | 1.07 | 0.85 | — | 812,880 | — |
+| PSIX | POWER SOLUTIONS INTERNATIONA | graham | ▫️ | 56% | 33.14 | 6.71 | 4.28 | 63.82 | 3.15 | 1.38 | 411,588 | — |
+| PSIX | POWER SOLUTIONS INTERNATIONA | netnet | ▫️ | 50% | 33.14 | 6.71 | 4.28 | 63.82 | 3.15 | 1.38 | 411,588 | — |
+| PSIX | POWER SOLUTIONS INTERNATIONA | buffett | ▫️ | 33% | 33.14 | 6.71 | 4.28 | 63.82 | 3.15 | 1.38 | 411,588 | — |
+| PSIX | POWER SOLUTIONS INTERNATIONA | lynch | ▫️ | 25% | 33.14 | 6.71 | 4.28 | 63.82 | 3.15 | 1.38 | 411,588 | — |
+| PSIX | POWER SOLUTIONS INTERNATIONA | custom | ▫️ | 0% | 33.14 | 6.71 | 4.28 | 63.82 | 3.15 | 1.38 | 411,588 | — |
+| KMT | KENNAMETAL INC. | piotroski | ▫️ | 67% | 22.57 | 5.11 | 1.11 | 21.81 | 2.62 | 0.99 | 1M | — |
+| KMT | KENNAMETAL INC. | greenblatt | ▫️ | 67% | 22.57 | 5.11 | 1.11 | 21.81 | 2.62 | 0.99 | 1M | — |
+| KMT | KENNAMETAL INC. | buffett | ▫️ | 50% | 22.57 | 5.11 | 1.11 | 21.81 | 2.62 | 0.99 | 1M | — |
+| KMT | KENNAMETAL INC. | netnet | ▫️ | 50% | 22.57 | 5.11 | 1.11 | 21.81 | 2.62 | 0.99 | 1M | — |
+| KMT | KENNAMETAL INC. | custom | ▫️ | 0% | 22.57 | 5.11 | 1.11 | 21.81 | 2.62 | 0.99 | 1M | — |
+| UNG | United States Natural Gas Fu | piotroski | ▫️ | 56% | 10.30 | — | — | — | — | — | 18M | — |
+| UNG | United States Natural Gas Fu | greenblatt | ▫️ | 33% | 10.30 | — | — | — | — | — | 18M | — |
+| UNG | United States Natural Gas Fu | lynch | ▫️ | 25% | 10.30 | — | — | — | — | — | 18M | — |
+| UNG | United States Natural Gas Fu | netnet | ▫️ | 25% | 10.30 | — | — | — | — | — | 18M | — |
+| UNG | United States Natural Gas Fu | buffett | ▫️ | 17% | 10.30 | — | — | — | — | — | 18M | — |
+| UNG | United States Natural Gas Fu | graham | ▫️ | 0% | 10.30 | — | — | — | — | — | 18M | — |
+| UNG | United States Natural Gas Fu | custom | ▫️ | 0% | 10.30 | — | — | — | — | — | 18M | — |
+| AROC | Archrock, Inc. | buffett | ▫️ | 50% | 26.88 | 14.69 | 3.15 | 21.61 | 1.54 | 1.92 | 2M | — |
+| AROC | Archrock, Inc. | graham | ▫️ | 44% | 26.88 | 14.69 | 3.15 | 21.61 | 1.54 | 1.92 | 2M | — |
+| AROC | Archrock, Inc. | greenblatt | ▫️ | 33% | 26.88 | 14.69 | 3.15 | 21.61 | 1.54 | 1.92 | 2M | — |
+| AROC | Archrock, Inc. | lynch | ▫️ | 25% | 26.88 | 14.69 | 3.15 | 21.61 | 1.54 | 1.92 | 2M | — |
+| AROC | Archrock, Inc. | netnet | ▫️ | 25% | 26.88 | 14.69 | 3.15 | 21.61 | 1.54 | 1.92 | 2M | — |
+| AROC | Archrock, Inc. | custom | ▫️ | 0% | 26.88 | 14.69 | 3.15 | 21.61 | 1.54 | 1.92 | 2M | — |
+| AGX | ARGAN INC | buffett | ▫️ | 67% | 283 | 29.07 | 8.67 | 29.80 | 1.59 | 1.57 | 360,064 | — |
+| AGX | ARGAN INC | piotroski | ▫️ | 67% | 283 | 29.07 | 8.67 | 29.80 | 1.59 | 1.57 | 360,064 | — |
+| AGX | ARGAN INC | greenblatt | ▫️ | 67% | 283 | 29.07 | 8.67 | 29.80 | 1.59 | 1.57 | 360,064 | — |
+| AGX | ARGAN INC | graham | ▫️ | 56% | 283 | 29.07 | 8.67 | 29.80 | 1.59 | 1.57 | 360,064 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
