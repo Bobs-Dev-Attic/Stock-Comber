@@ -1,60 +1,60 @@
 # Stock-Comber screening report
 
-_Generated 2026-11-28 05:04 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
+_Generated 2026-11-28 13:57 UTC_ · strategies: **graham, buffett, piotroski, greenblatt, lynch, netnet, custom**
 
-Screened **75** companies · **23** strategy matches passed.
+Screened **75** companies · **42** strategy matches passed.
 
 | Ticker | Company | Strategy | Pass | Score | Price | P/E | P/B | ROE% | Curr | D/E | Vol | Edge% |
 |--------|---------|----------|:----:|------:|------:|----:|----:|-----:|-----:|----:|----:|------:|
-| HRTG | Heritage Insurance Holdings, | greenblatt | ✅ | 100% | 31.36 | 4.96 | 1.92 | 38.71 | — | 3.35 | 81,039 | — |
-| HRTG | Heritage Insurance Holdings, | piotroski | ✅ | 78% | 31.36 | 4.96 | 1.92 | 38.71 | — | 3.35 | 81,039 | — |
-| WHD | Cactus, Inc. | lynch | ✅ | 75% | 63.24 | — | — | 13.54 | 5.81 | 0.36 | 257,753 | — |
-| HNRG | HALLADOR ENERGY CO | greenblatt | ✅ | 100% | 9.63 | 10.03 | 2.62 | 26.20 | 0.81 | 1.55 | 208,241 | — |
-| HNRG | HALLADOR ENERGY CO | piotroski | ✅ | 89% | 9.63 | 10.03 | 2.62 | 26.20 | 0.81 | 1.55 | 208,241 | — |
-| SOLV | SOLVENTUM CORPORATION | piotroski | ✅ | 89% | 87.30 | 9.83 | 3.03 | 30.82 | 1.23 | 1.83 | 354,448 | — |
-| BRBR | BellRing Brands, Inc. | lynch | ✅ | 100% | 16.08 | 12.86 | — | -34.64 | 3.20 | -2.99 | 2M | — |
-| RILY | BRC Group Holdings, Inc. | greenblatt | ✅ | 100% | 2.96 | 0.30 | — | -179 | — | -10.65 | 186,889 | — |
-| RILY | BRC Group Holdings, Inc. | lynch | ✅ | 75% | 2.96 | 0.30 | — | -179 | — | -10.65 | 186,889 | — |
-| TREE | LendingTree, Inc. | greenblatt | ✅ | 100% | 39.74 | 3.69 | 1.95 | 52.76 | 1.67 | 1.98 | 208,867 | — |
-| URBN | Urban Outfitters, Inc. | piotroski | ✅ | 100% | 79.54 | 15.72 | 2.59 | 16.51 | 1.51 | 0.78 | 1M | — |
-| URBN | Urban Outfitters, Inc. | lynch | ✅ | 75% | 79.54 | 15.72 | 2.59 | 16.51 | 1.51 | 0.78 | 1M | — |
-| PEBO | PEOPLES BANCORP INC | lynch | ✅ | 75% | 37.60 | 12.58 | 1.10 | 8.85 | — | 7.00 | 96,726 | — |
+| PSIX | POWER SOLUTIONS INTERNATIONA | greenblatt | ✅ | 100% | 33.76 | 6.83 | 4.36 | 63.82 | 3.15 | 1.38 | 170,187 | — |
+| PSIX | POWER SOLUTIONS INTERNATIONA | piotroski | ✅ | 89% | 33.76 | 6.83 | 4.36 | 63.82 | 3.15 | 1.38 | 170,187 | — |
+| LPG | DORIAN LPG LTD. | lynch | ✅ | 100% | 45.83 | 10.09 | 1.71 | 17.00 | 2.67 | 0.64 | 165,150 | — |
+| LPG | DORIAN LPG LTD. | piotroski | ✅ | 89% | 45.83 | 10.09 | 1.71 | 17.00 | 2.67 | 0.64 | 165,150 | — |
+| SON | Sonoco Products Company | piotroski | ✅ | 89% | 49.09 | 4.87 | 1.35 | 27.75 | 1.05 | 2.08 | 330,775 | — |
+| SON | Sonoco Products Company | lynch | ✅ | 75% | 49.09 | 4.87 | 1.35 | 27.75 | 1.05 | 2.08 | 330,775 | — |
+| TOL | Toll Brothers, Inc. | lynch | ✅ | 100% | 155 | 11.46 | 1.86 | 16.28 | — | 0.75 | 265,612 | — |
+| TOL | Toll Brothers, Inc. | buffett | ✅ | 83% | 155 | 11.46 | 1.86 | 16.28 | — | 0.75 | 265,612 | — |
+| ESE | ESCO TECHNOLOGIES INC. | lynch | ✅ | 100% | 215 | 18.59 | 3.61 | 19.42 | 1.35 | 0.56 | 117,586 | — |
+| REX | REX AMERICAN RESOURCES CORPO | lynch | ✅ | 75% | 34.34 | 13.74 | 1.87 | 15.57 | 5.94 | — | 118,376 | — |
+| OTTR | OTTER TAIL CORPORATION | lynch | ✅ | 75% | 79.63 | 12.16 | 1.80 | 14.82 | 2.28 | — | 81,899 | — |
+| PATH | UiPath, Inc. | piotroski | ✅ | 89% | 12.65 | 24.33 | 3.31 | 13.56 | 2.48 | 0.53 | 11M | — |
+| WLDN | WILLDAN GROUP, INC. | piotroski | ✅ | 78% | 69.76 | 19.99 | 3.45 | 17.24 | 1.56 | 0.79 | 111,606 | — |
+| NJR | NEW JERSEY RESOURCES CORPORA | piotroski | ✅ | 89% | 56.38 | 15.57 | 2.19 | 14.04 | 0.73 | — | 281,642 | — |
+| NJR | NEW JERSEY RESOURCES CORPORA | lynch | ✅ | 75% | 56.38 | 15.57 | 2.19 | 14.04 | 0.73 | — | 281,642 | — |
 | WMG | Warner Music Group Corp. | piotroski | ✅ | 89% | 32.40 | — | — | 79.51 | 0.74 | 10.33 | 1M | — |
-| NIC | NICOLET BANKSHARES, INC | lynch | ✅ | 75% | 170 | 17.40 | 2.08 | 11.98 | — | 6.30 | 47,204 | — |
-| SIRI | SIRIUS XM HOLDINGS INC. | lynch | ✅ | 75% | 33.01 | 14.80 | 1.02 | 6.96 | 0.30 | 1.36 | 2M | — |
-| ARMK | Aramark | piotroski | ✅ | 100% | 58.01 | 35.81 | 4.45 | 12.42 | 1.00 | — | 1M | — |
-| TDOC | TELADOC HEALTH, INC. | piotroski | ✅ | 78% | 8.00 | — | 1.02 | -14.46 | 2.77 | 1.06 | 2M | — |
-| CPRI | CAPRI HOLDINGS LIMITED | piotroski | ✅ | 78% | 18.40 | 16.14 | 27.57 | 171 | 1.21 | 39.38 | 1M | — |
-| MLKN | MillerKnoll, Inc. | piotroski | ✅ | 100% | 20.72 | 15.70 | 1.07 | 6.82 | 1.58 | 1.93 | 155,544 | — |
-| PBI | PITNEY BOWES INC | piotroski | ✅ | 78% | 15.56 | 18.52 | — | -18.03 | 0.71 | -4.95 | 819,909 | — |
-| SNDR | Schneider National, Inc. | piotroski | ✅ | 78% | 28.82 | 48.85 | 1.68 | 3.43 | 2.13 | 0.60 | 296,520 | — |
-| TDAY | USA TODAY CO., INC. | piotroski | ✅ | 78% | 6.37 | 637 | 5.99 | 1.13 | 0.75 | 10.85 | 670,196 | — |
-| HRTG | Heritage Insurance Holdings, | buffett | ▫️ | 67% | 31.36 | 4.96 | 1.92 | 38.71 | — | 3.35 | 81,039 | — |
-| HRTG | Heritage Insurance Holdings, | graham | ▫️ | 56% | 31.36 | 4.96 | 1.92 | 38.71 | — | 3.35 | 81,039 | — |
-| HRTG | Heritage Insurance Holdings, | lynch | ▫️ | 50% | 31.36 | 4.96 | 1.92 | 38.71 | — | 3.35 | 81,039 | — |
-| HRTG | Heritage Insurance Holdings, | netnet | ▫️ | 25% | 31.36 | 4.96 | 1.92 | 38.71 | — | 3.35 | 81,039 | — |
-| HRTG | Heritage Insurance Holdings, | custom | ▫️ | 0% | 31.36 | 4.96 | 1.92 | 38.71 | — | 3.35 | 81,039 | — |
-| DUOL | Duolingo, Inc. | buffett | ▫️ | 67% | 155 | 18.13 | 5.57 | 30.74 | 2.61 | 0.48 | 299,644 | — |
-| DUOL | Duolingo, Inc. | greenblatt | ▫️ | 67% | 155 | 18.13 | 5.57 | 30.74 | 2.61 | 0.48 | 299,644 | — |
-| DUOL | Duolingo, Inc. | piotroski | ▫️ | 56% | 155 | 18.13 | 5.57 | 30.74 | 2.61 | 0.48 | 299,644 | — |
-| DUOL | Duolingo, Inc. | lynch | ▫️ | 50% | 155 | 18.13 | 5.57 | 30.74 | 2.61 | 0.48 | 299,644 | — |
-| DUOL | Duolingo, Inc. | netnet | ▫️ | 50% | 155 | 18.13 | 5.57 | 30.74 | 2.61 | 0.48 | 299,644 | — |
-| DUOL | Duolingo, Inc. | graham | ▫️ | 44% | 155 | 18.13 | 5.57 | 30.74 | 2.61 | 0.48 | 299,644 | — |
-| DUOL | Duolingo, Inc. | custom | ▫️ | 0% | 155 | 18.13 | 5.57 | 30.74 | 2.61 | 0.48 | 299,644 | — |
-| WHD | Cactus, Inc. | graham | ▫️ | 67% | 63.24 | — | — | 13.54 | 5.81 | 0.36 | 257,753 | — |
-| WHD | Cactus, Inc. | piotroski | ▫️ | 56% | 63.24 | — | — | 13.54 | 5.81 | 0.36 | 257,753 | — |
-| WHD | Cactus, Inc. | buffett | ▫️ | 50% | 63.24 | — | — | 13.54 | 5.81 | 0.36 | 257,753 | — |
-| WHD | Cactus, Inc. | greenblatt | ▫️ | 33% | 63.24 | — | — | 13.54 | 5.81 | 0.36 | 257,753 | — |
-| WHD | Cactus, Inc. | netnet | ▫️ | 25% | 63.24 | — | — | 13.54 | 5.81 | 0.36 | 257,753 | — |
-| WHD | Cactus, Inc. | custom | ▫️ | 0% | 63.24 | — | — | 13.54 | 5.81 | 0.36 | 257,753 | — |
-| MGY | Magnolia Oil & Gas Corp | piotroski | ▫️ | 67% | 23.18 | 13.23 | 2.15 | 16.27 | 1.54 | — | 1M | — |
-| MGY | Magnolia Oil & Gas Corp | buffett | ▫️ | 50% | 23.18 | 13.23 | 2.15 | 16.27 | 1.54 | — | 1M | — |
-| MGY | Magnolia Oil & Gas Corp | graham | ▫️ | 44% | 23.18 | 13.23 | 2.15 | 16.27 | 1.54 | — | 1M | — |
-| MGY | Magnolia Oil & Gas Corp | greenblatt | ▫️ | 33% | 23.18 | 13.23 | 2.15 | 16.27 | 1.54 | — | 1M | — |
-| MGY | Magnolia Oil & Gas Corp | lynch | ▫️ | 25% | 23.18 | 13.23 | 2.15 | 16.27 | 1.54 | — | 1M | — |
-| MGY | Magnolia Oil & Gas Corp | netnet | ▫️ | 25% | 23.18 | 13.23 | 2.15 | 16.27 | 1.54 | — | 1M | — |
-| MGY | Magnolia Oil & Gas Corp | custom | ▫️ | 0% | 23.18 | 13.23 | 2.15 | 16.27 | 1.54 | — | 1M | — |
-| HNRG | HALLADOR ENERGY CO | lynch | ▫️ | 25% | 9.63 | 10.03 | 2.62 | 26.20 | 0.81 | 1.55 | 208,241 | — |
-| HNRG | HALLADOR ENERGY CO | netnet | ▫️ | 25% | 9.63 | 10.03 | 2.62 | 26.20 | 0.81 | 1.55 | 208,241 | — |
+| CVCO | CAVCO INDUSTRIES, INC. | piotroski | ✅ | 89% | 710 | 29.61 | 5.11 | 17.27 | 2.46 | 0.35 | 48,993 | — |
+| CVCO | CAVCO INDUSTRIES, INC. | buffett | ✅ | 83% | 710 | 29.61 | 5.11 | 17.27 | 2.46 | 0.35 | 48,993 | — |
+| CVCO | CAVCO INDUSTRIES, INC. | lynch | ✅ | 75% | 710 | 29.61 | 5.11 | 17.27 | 2.46 | 0.35 | 48,993 | — |
+| LMB | LIMBACH HOLDINGS, INC. | piotroski | ✅ | 78% | 55.33 | 17.13 | 3.42 | 19.97 | 1.44 | 0.95 | 40,679 | — |
+| LMB | LIMBACH HOLDINGS, INC. | lynch | ✅ | 75% | 55.33 | 17.13 | 3.42 | 19.97 | 1.44 | 0.95 | 40,679 | — |
+| FSS | FEDERAL SIGNAL CORPORATION | lynch | ✅ | 75% | 118 | 29.38 | 5.24 | 17.84 | 3.02 | 0.73 | 125,765 | — |
+| GPK | Graphic Packaging Holding Co | lynch | ✅ | 75% | 11.90 | 8.04 | 1.07 | 13.31 | 1.30 | — | 2M | — |
+| JOE | The St. Joe Company | piotroski | ✅ | 89% | 66.25 | 33.29 | 5.01 | 15.09 | — | 0.97 | 95,620 | — |
+| TTEK | TETRA TECH, INC. | piotroski | ✅ | 78% | 37.88 | 22.41 | 5.23 | 23.40 | 1.26 | — | 1M | — |
+| HRB | H&R BLOCK INC | greenblatt | ✅ | 100% | 47.15 | 8.33 | 51.72 | 624 | 1.13 | 26.72 | 643,956 | — |
+| HRB | H&R BLOCK INC | piotroski | ✅ | 89% | 47.15 | 8.33 | 51.72 | 624 | 1.13 | 26.72 | 643,956 | — |
+| TRN | TRINITY INDUSTRIES INC | greenblatt | ✅ | 100% | 30.62 | 10.04 | 2.36 | 23.50 | — | 6.76 | 383,249 | — |
+| TRN | TRINITY INDUSTRIES INC | piotroski | ✅ | 78% | 30.62 | 10.04 | 2.36 | 23.50 | — | 6.76 | 383,249 | — |
+| SPSC | SPS COMMERCE, INC. | piotroski | ✅ | 89% | 81.76 | 33.24 | 3.19 | 9.58 | 2.17 | 0.20 | 79,071 | — |
+| SPSC | SPS COMMERCE, INC. | lynch | ✅ | 75% | 81.76 | 33.24 | 3.19 | 9.58 | 2.17 | 0.20 | 79,071 | — |
+| SBH | SALLY BEAUTY HOLDINGS, INC. | piotroski | ✅ | 89% | 18.33 | 9.07 | 2.04 | 22.51 | 2.37 | 2.27 | 534,818 | — |
+| GRC | The Gorman-Rupp Company | piotroski | ✅ | 89% | 69.33 | 34.32 | 4.40 | 12.78 | 2.37 | 1.07 | 90,226 | — |
+| MYRG | MYR GROUP INC. | piotroski | ✅ | 89% | 271 | 36.04 | 6.46 | 17.93 | 1.33 | 1.49 | 80,385 | — |
+| MD | Pediatrix Medical Group, Inc | piotroski | ✅ | 78% | 30.64 | 15.79 | 3.02 | 19.10 | 1.66 | 1.59 | 314,760 | — |
+| CFFN | Capitol Federal Financial, I | piotroski | ✅ | 78% | 8.11 | 11.75 | 1.01 | 8.59 | — | 8.62 | 323,743 | — |
+| FAF | FIRST AMERICAN FINANCIAL COR | piotroski | ✅ | 89% | 66.33 | 11.05 | 1.25 | 11.31 | — | 1.95 | 428,485 | — |
+| JJSF | J&J SNACK FOODS CORP. | piotroski | ✅ | 78% | 95.62 | 25.30 | 1.98 | 7.84 | 2.29 | — | 73,075 | — |
+| MPAA | Motorcar Parts of America, I | piotroski | ✅ | 78% | 7.76 | 12.52 | 0.58 | 4.66 | 1.46 | 2.83 | 55,399 | — |
+| LW | LAMB WESTON HOLDINGS, INC. | piotroski | ✅ | 78% | 52.40 | 25.19 | 3.99 | 15.89 | 1.42 | — | 467,441 | — |
+| BNED | BARNES & NOBLE EDUCATION, IN | piotroski | ✅ | 89% | 12.47 | 25.45 | 1.47 | 5.73 | 1.71 | 1.51 | 61,961 | — |
+| DAR | DARLING INGREDIENTS INC. | piotroski | ✅ | 78% | 48.89 | 125 | 1.65 | 1.33 | 1.50 | 1.16 | 1M | — |
+| PSIX | POWER SOLUTIONS INTERNATIONA | graham | ▫️ | 56% | 33.76 | 6.83 | 4.36 | 63.82 | 3.15 | 1.38 | 170,187 | — |
+| PSIX | POWER SOLUTIONS INTERNATIONA | netnet | ▫️ | 50% | 33.76 | 6.83 | 4.36 | 63.82 | 3.15 | 1.38 | 170,187 | — |
+| PSIX | POWER SOLUTIONS INTERNATIONA | buffett | ▫️ | 33% | 33.76 | 6.83 | 4.36 | 63.82 | 3.15 | 1.38 | 170,187 | — |
+| PSIX | POWER SOLUTIONS INTERNATIONA | lynch | ▫️ | 25% | 33.76 | 6.83 | 4.36 | 63.82 | 3.15 | 1.38 | 170,187 | — |
+| PSIX | POWER SOLUTIONS INTERNATIONA | custom | ▫️ | 0% | 33.76 | 6.83 | 4.36 | 63.82 | 3.15 | 1.38 | 170,187 | — |
+| LPG | DORIAN LPG LTD. | graham | ▫️ | 67% | 45.83 | 10.09 | 1.71 | 17.00 | 2.67 | 0.64 | 165,150 | — |
+| LPG | DORIAN LPG LTD. | buffett | ▫️ | 67% | 45.83 | 10.09 | 1.71 | 17.00 | 2.67 | 0.64 | 165,150 | — |
+| LPG | DORIAN LPG LTD. | greenblatt | ▫️ | 67% | 45.83 | 10.09 | 1.71 | 17.00 | 2.67 | 0.64 | 165,150 | — |
 
 > Educational tool only — not investment advice. Data from SEC EDGAR and Stooq may be delayed or incomplete.
