@@ -1,51 +1,51 @@
 ticker,name,strategy,passed,score,max_score,score_pct,price,pe_ratio,pb_ratio,roe_pct,current_ratio,debt_to_equity,graham_number,avg_volume,backtest_edge_pct
-AMSC,AMERICAN SUPERCONDUCTOR CORP /DE/,greenblatt,True,3,3,100.0,22.98,7.53,1.82,24.09,2.39,0.33,29.47,"482,633",—
-BSM,"Black Stone Minerals, L.P.",piotroski,True,7,9,77.8,13.51,—,—,—,3.88,—,—,"164,800",—
-KMT,KENNAMETAL INC.,graham,True,9,9,100.0,22.98,5.20,1.13,21.81,2.62,0.99,44.90,"622,792",—
-KMT,KENNAMETAL INC.,lynch,True,3,4,75.0,22.98,5.20,1.13,21.81,2.62,0.99,44.90,"622,792",—
-LFMD,"LIFEMD, INC.",greenblatt,True,3,3,100.0,1.55,6.20,3.02,61.99,1.25,2.04,1.70,"877,140",—
-TOL,"Toll Brothers, Inc.",lynch,True,4,4,100.0,155,11.46,1.86,16.28,—,0.75,159,"265,538",—
-TOL,"Toll Brothers, Inc.",buffett,True,5,6,83.3,155,11.46,1.86,16.28,—,0.75,159,"265,538",—
-REX,REX AMERICAN RESOURCES CORPORATION,lynch,True,3,4,75.0,34.34,13.74,1.87,15.57,5.94,—,32.16,"118,375",—
-MWA,"MUELLER WATER PRODUCTS, INC.",lynch,True,4,4,100.0,24.29,17.23,3.32,19.26,4.45,0.76,15.24,"441,804",—
-MWA,"MUELLER WATER PRODUCTS, INC.",piotroski,True,8,9,88.9,24.29,17.23,3.32,19.26,4.45,0.76,15.24,"441,804",—
-FN,FABRINET,lynch,True,4,4,100.0,308,23.57,4.54,19.27,2.25,0.59,141,"517,414",—
-FN,FABRINET,buffett,True,5,6,83.3,308,23.57,4.54,19.27,2.25,0.59,141,"517,414",—
-PLMR,"Palomar Holdings, Inc.",piotroski,True,7,9,77.8,168,23.37,4.89,20.91,—,2.24,74.38,"94,403",—
-IPAR,"INTERPARFUMS, INC.",buffett,True,5,6,83.3,143,27.21,5.20,19.12,2.99,—,56.84,"111,276",—
-IPAR,"INTERPARFUMS, INC.",lynch,True,3,4,75.0,143,27.21,5.20,19.12,2.99,—,56.84,"111,276",—
-GFF,GRIFFON CORP,lynch,True,3,4,75.0,108,15.26,15.97,105,2.66,4.60,32.82,"160,705",—
-SFD,"SMITHFIELD FOODS, INC.",graham,True,9,9,100.0,19.08,7.60,1.10,14.51,2.97,—,31.27,"596,342",—
-WNC,WABASH NATIONAL CORPORATION,greenblatt,True,3,3,100.0,11.41,2.25,1.30,57.56,1.39,2.18,31.68,"302,025",—
-BURL,"BURLINGTON STORES, INC.",piotroski,True,7,9,77.8,253,26.61,8.98,33.76,1.23,—,77.66,"734,712",—
-ADUS,Addus HomeCare Corp,lynch,True,4,4,100.0,124,23.67,2.09,8.84,1.80,0.32,83.25,"71,163",—
-ADUS,Addus HomeCare Corp,piotroski,True,8,9,88.9,124,23.67,2.09,8.84,1.80,0.32,83.25,"71,163",—
-PKE,PARK AEROSPACE CORP.,piotroski,True,9,9,100.0,23.93,42.73,3.70,8.67,18.24,0.09,9.02,"113,583",—
-PKE,PARK AEROSPACE CORP.,lynch,True,3,4,75.0,23.93,42.73,3.70,8.67,18.24,0.09,9.02,"113,583",—
-FHN,FIRST HORIZON CORP,piotroski,True,7,9,77.8,22.56,12.06,1.30,11.10,—,8.45,26.99,3M,—
-CW,CURTISS-WRIGHT CORPORATION,piotroski,True,8,9,88.9,453,35.23,6.74,19.11,1.44,1.06,140,"129,493",—
-BKU,"BankUnited, Inc.",piotroski,True,8,9,88.9,42.37,12.00,1.03,8.79,—,10.47,57.13,"252,636",—
-NBIX,"NEUROCRINE BIOSCIENCES, INC.",piotroski,True,7,9,77.8,165,35.37,5.20,14.71,3.39,0.42,57.75,"948,706",—
-FIVN,"Five9, Inc.",piotroski,True,8,9,88.9,23.58,52.40,2.64,5.02,4.51,1.28,9.51,1M,—
-PFH,PRUDENTIAL FINANCIAL INC,piotroski,True,7,9,77.8,14.40,1.44,0.16,11.02,—,22.76,144,"43,402",—
-AMCX,AMC Global Media Inc.,piotroski,True,7,9,77.8,9.23,5.56,0.53,9.11,1.67,2.98,25.46,"221,527",—
-ATRC,"AtriCure, Inc.",piotroski,True,7,9,77.8,55.27,—,5.36,-2.33,3.96,0.33,—,"238,734",—
-CRI,"CARTER’S, INC.",graham,True,8,9,88.9,36.91,14.59,1.41,9.92,2.51,1.77,38.57,"470,790",—
-VREX,VAREX IMAGING CORPORATION,piotroski,True,7,9,77.8,17.69,197,1.50,0.73,3.37,1.15,4.89,1M,—
-TPC,Tutor Perini Corporation,piotroski,True,7,9,77.8,92.46,61.23,4.05,6.60,1.27,3.20,27.84,"120,102",—
-AMSC,AMERICAN SUPERCONDUCTOR CORP /DE/,buffett,False,4,6,66.7,22.98,7.53,1.82,24.09,2.39,0.33,29.47,"482,633",—
-AMSC,AMERICAN SUPERCONDUCTOR CORP /DE/,piotroski,False,6,9,66.7,22.98,7.53,1.82,24.09,2.39,0.33,29.47,"482,633",—
-AMSC,AMERICAN SUPERCONDUCTOR CORP /DE/,graham,False,5,9,55.6,22.98,7.53,1.82,24.09,2.39,0.33,29.47,"482,633",—
-AMSC,AMERICAN SUPERCONDUCTOR CORP /DE/,lynch,False,2,4,50.0,22.98,7.53,1.82,24.09,2.39,0.33,29.47,"482,633",—
-AMSC,AMERICAN SUPERCONDUCTOR CORP /DE/,netnet,False,2,4,50.0,22.98,7.53,1.82,24.09,2.39,0.33,29.47,"482,633",—
-AMSC,AMERICAN SUPERCONDUCTOR CORP /DE/,custom,False,0,0,0.0,22.98,7.53,1.82,24.09,2.39,0.33,29.47,"482,633",—
-BSM,"Black Stone Minerals, L.P.",lynch,False,2,4,50.0,13.51,—,—,—,3.88,—,—,"164,800",—
-BSM,"Black Stone Minerals, L.P.",graham,False,4,9,44.4,13.51,—,—,—,3.88,—,—,"164,800",—
-BSM,"Black Stone Minerals, L.P.",buffett,False,2,6,33.3,13.51,—,—,—,3.88,—,—,"164,800",—
-BSM,"Black Stone Minerals, L.P.",greenblatt,False,1,3,33.3,13.51,—,—,—,3.88,—,—,"164,800",—
-BSM,"Black Stone Minerals, L.P.",netnet,False,1,4,25.0,13.51,—,—,—,3.88,—,—,"164,800",—
-BSM,"Black Stone Minerals, L.P.",custom,False,0,0,0.0,13.51,—,—,—,3.88,—,—,"164,800",—
-KMT,KENNAMETAL INC.,piotroski,False,6,9,66.7,22.98,5.20,1.13,21.81,2.62,0.99,44.90,"622,792",—
-KMT,KENNAMETAL INC.,greenblatt,False,2,3,66.7,22.98,5.20,1.13,21.81,2.62,0.99,44.90,"622,792",—
-KMT,KENNAMETAL INC.,buffett,False,3,6,50.0,22.98,5.20,1.13,21.81,2.62,0.99,44.90,"622,792",—
-KMT,KENNAMETAL INC.,netnet,False,2,4,50.0,22.98,5.20,1.13,21.81,2.62,0.99,44.90,"622,792",—
+HRTG,"Heritage Insurance Holdings, Inc.",greenblatt,True,3,3,100.0,31.36,4.96,1.92,38.71,—,3.35,48.18,"81,039",—
+HRTG,"Heritage Insurance Holdings, Inc.",piotroski,True,7,9,77.8,31.36,4.96,1.92,38.71,—,3.35,48.18,"81,039",—
+WHD,"Cactus, Inc.",lynch,True,3,4,75.0,63.24,—,—,13.54,5.81,0.36,—,"257,753",—
+HNRG,HALLADOR ENERGY CO,greenblatt,True,3,3,100.0,9.63,10.03,2.62,26.20,0.81,1.55,8.92,"208,241",—
+HNRG,HALLADOR ENERGY CO,piotroski,True,8,9,88.9,9.63,10.03,2.62,26.20,0.81,1.55,8.92,"208,241",—
+SOLV,SOLVENTUM CORPORATION,piotroski,True,8,9,88.9,87.30,9.83,3.03,30.82,1.23,1.83,75.86,"354,448",—
+BRBR,"BellRing Brands, Inc.",lynch,True,4,4,100.0,16.08,12.86,—,-34.64,3.20,-2.99,—,2M,—
+RILY,"BRC Group Holdings, Inc.",greenblatt,True,3,3,100.0,2.96,0.30,—,-179,—,-10.65,—,"186,889",—
+RILY,"BRC Group Holdings, Inc.",lynch,True,3,4,75.0,2.96,0.30,—,-179,—,-10.65,—,"186,889",—
+TREE,"LendingTree, Inc.",greenblatt,True,3,3,100.0,39.74,3.69,1.95,52.76,1.67,1.98,70.33,"208,867",—
+URBN,"Urban Outfitters, Inc.",piotroski,True,9,9,100.0,79.54,15.72,2.59,16.51,1.51,0.78,59.09,1M,—
+URBN,"Urban Outfitters, Inc.",lynch,True,3,4,75.0,79.54,15.72,2.59,16.51,1.51,0.78,59.09,1M,—
+PEBO,PEOPLES BANCORP INC,lynch,True,3,4,75.0,37.60,12.58,1.10,8.85,—,7.00,47.91,"96,726",—
+WMG,Warner Music Group Corp.,piotroski,True,8,9,88.9,32.40,—,—,79.51,0.74,10.33,—,1M,—
+NIC,"NICOLET BANKSHARES, INC",lynch,True,3,4,75.0,170,17.40,2.08,11.98,—,6.30,134,"47,204",—
+SIRI,SIRIUS XM HOLDINGS INC.,lynch,True,3,4,75.0,33.01,14.80,1.02,6.96,0.30,1.36,40.31,2M,—
+ARMK,Aramark,piotroski,True,9,9,100.0,58.01,35.81,4.45,12.42,1.00,—,21.79,1M,—
+TDOC,"TELADOC HEALTH, INC.",piotroski,True,7,9,77.8,8.00,—,1.02,-14.46,2.77,1.06,—,2M,—
+CPRI,CAPRI HOLDINGS LIMITED,piotroski,True,7,9,77.8,18.40,16.14,27.57,171,1.21,39.38,4.14,1M,—
+MLKN,"MillerKnoll, Inc.",piotroski,True,9,9,100.0,20.72,15.70,1.07,6.82,1.58,1.93,23.98,"155,544",—
+PBI,PITNEY BOWES INC,piotroski,True,7,9,77.8,15.56,18.52,—,-18.03,0.71,-4.95,—,"819,909",—
+SNDR,"Schneider National, Inc.",piotroski,True,7,9,77.8,28.82,48.85,1.68,3.43,2.13,0.60,15.11,"296,520",—
+TDAY,"USA TODAY CO., INC.",piotroski,True,7,9,77.8,6.37,637,5.99,1.13,0.75,10.85,0.49,"670,196",—
+HRTG,"Heritage Insurance Holdings, Inc.",buffett,False,4,6,66.7,31.36,4.96,1.92,38.71,—,3.35,48.18,"81,039",—
+HRTG,"Heritage Insurance Holdings, Inc.",graham,False,5,9,55.6,31.36,4.96,1.92,38.71,—,3.35,48.18,"81,039",—
+HRTG,"Heritage Insurance Holdings, Inc.",lynch,False,2,4,50.0,31.36,4.96,1.92,38.71,—,3.35,48.18,"81,039",—
+HRTG,"Heritage Insurance Holdings, Inc.",netnet,False,1,4,25.0,31.36,4.96,1.92,38.71,—,3.35,48.18,"81,039",—
+HRTG,"Heritage Insurance Holdings, Inc.",custom,False,0,0,0.0,31.36,4.96,1.92,38.71,—,3.35,48.18,"81,039",—
+DUOL,"Duolingo, Inc.",buffett,False,4,6,66.7,155,18.13,5.57,30.74,2.61,0.48,73.33,"299,644",—
+DUOL,"Duolingo, Inc.",greenblatt,False,2,3,66.7,155,18.13,5.57,30.74,2.61,0.48,73.33,"299,644",—
+DUOL,"Duolingo, Inc.",piotroski,False,5,9,55.6,155,18.13,5.57,30.74,2.61,0.48,73.33,"299,644",—
+DUOL,"Duolingo, Inc.",lynch,False,2,4,50.0,155,18.13,5.57,30.74,2.61,0.48,73.33,"299,644",—
+DUOL,"Duolingo, Inc.",netnet,False,2,4,50.0,155,18.13,5.57,30.74,2.61,0.48,73.33,"299,644",—
+DUOL,"Duolingo, Inc.",graham,False,4,9,44.4,155,18.13,5.57,30.74,2.61,0.48,73.33,"299,644",—
+DUOL,"Duolingo, Inc.",custom,False,0,0,0.0,155,18.13,5.57,30.74,2.61,0.48,73.33,"299,644",—
+WHD,"Cactus, Inc.",graham,False,6,9,66.7,63.24,—,—,13.54,5.81,0.36,—,"257,753",—
+WHD,"Cactus, Inc.",piotroski,False,5,9,55.6,63.24,—,—,13.54,5.81,0.36,—,"257,753",—
+WHD,"Cactus, Inc.",buffett,False,3,6,50.0,63.24,—,—,13.54,5.81,0.36,—,"257,753",—
+WHD,"Cactus, Inc.",greenblatt,False,1,3,33.3,63.24,—,—,13.54,5.81,0.36,—,"257,753",—
+WHD,"Cactus, Inc.",netnet,False,1,4,25.0,63.24,—,—,13.54,5.81,0.36,—,"257,753",—
+WHD,"Cactus, Inc.",custom,False,0,0,0.0,63.24,—,—,13.54,5.81,0.36,—,"257,753",—
+MGY,Magnolia Oil & Gas Corp,piotroski,False,6,9,66.7,23.18,13.23,2.15,16.27,1.54,—,20.61,1M,—
+MGY,Magnolia Oil & Gas Corp,buffett,False,3,6,50.0,23.18,13.23,2.15,16.27,1.54,—,20.61,1M,—
+MGY,Magnolia Oil & Gas Corp,graham,False,4,9,44.4,23.18,13.23,2.15,16.27,1.54,—,20.61,1M,—
+MGY,Magnolia Oil & Gas Corp,greenblatt,False,1,3,33.3,23.18,13.23,2.15,16.27,1.54,—,20.61,1M,—
+MGY,Magnolia Oil & Gas Corp,lynch,False,1,4,25.0,23.18,13.23,2.15,16.27,1.54,—,20.61,1M,—
+MGY,Magnolia Oil & Gas Corp,netnet,False,1,4,25.0,23.18,13.23,2.15,16.27,1.54,—,20.61,1M,—
+MGY,Magnolia Oil & Gas Corp,custom,False,0,0,0.0,23.18,13.23,2.15,16.27,1.54,—,20.61,1M,—
+HNRG,HALLADOR ENERGY CO,lynch,False,1,4,25.0,9.63,10.03,2.62,26.20,0.81,1.55,8.92,"208,241",—
+HNRG,HALLADOR ENERGY CO,netnet,False,1,4,25.0,9.63,10.03,2.62,26.20,0.81,1.55,8.92,"208,241",—
